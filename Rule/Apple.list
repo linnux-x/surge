@@ -17,6 +17,9 @@ DOMAIN,beatselectronicsllc.tt.omtrdc.net
 DOMAIN,e16991.b.akamaiedge.net
 DOMAIN,edge.apple
 DOMAIN,icons.axm-usercontent-apple.com
+DOMAIN,ingest.apple-studies.com
+DOMAIN,notary-submissions-prod.s3-accelerate.amazonaws.com
+DOMAIN,notary-submissions-prod.s3.us-west-2.amazonaws.com
 DOMAIN,p-events-delivery.akamaized.net
 
 # Apple-owned, product, regional, acquired-brand, and defensive domains

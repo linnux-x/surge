@@ -9,7 +9,17 @@
 
 # Mainland China regional and GCBD services
 DOMAIN,api.smoot.apple.cn
+DOMAIN,apps.apple.com
 DOMAIN,appleintelligencefeedback.care.apple.com
+DOMAIN,communities.apple.com
+DOMAIN,discussionschinese.apple.com
+DOMAIN,fides-pol.apple.com
+DOMAIN,gspe11-2-cn-ssl.ls.apple.com
+DOMAIN,gspe12-cn-ssl.ls.apple.com
+DOMAIN,gspe85-cn-ssl.ls.apple.com
+DOMAIN,init-p01st.push.apple.com
+DOMAIN,init-s01st.push.apple.com
+DOMAIN,maps.apple.com
 DOMAIN-SUFFIX,apple.com.cn
 DOMAIN-SUFFIX,apzones.com
 DOMAIN-SUFFIX,cn.apple.com

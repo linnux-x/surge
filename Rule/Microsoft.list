@@ -1,8 +1,8 @@
 # NAME: Microsoft
 # AUTHOR: Codex
-# UPDATED: 2026-06-13
+# UPDATED: 2026-06-14
 # FORMAT: Surge Ruleset
-# SOURCES: Microsoft Learn, SukkaW/Surge, blackmatrix7/ios_rule_script, Rabbit-Spec/Surge
+# SOURCES: Microsoft Learn, v2fly/domain-list-community, SukkaW/Surge, blackmatrix7/ios_rule_script, Rabbit-Spec/Surge
 # NOTE: Broad Microsoft-owned and Microsoft-service domain coverage.
 # NOTE: Includes Microsoft cloud, productivity, gaming, developer, and major subsidiary domains.
 # NOTE: Shared Akamai roots and domains no longer owned by Microsoft are excluded.
@@ -130,6 +130,7 @@ DOMAIN-SUFFIX,bingagencyawards.com
 DOMAIN-SUFFIX,bingapis.com
 DOMAIN-SUFFIX,bingapistatistics.com
 DOMAIN-SUFFIX,binginternal.com
+DOMAIN-SUFFIX,bingparachute.com
 DOMAIN-SUFFIX,bingit.net
 DOMAIN-SUFFIX,bingiton.com
 DOMAIN-SUFFIX,bingj.com
@@ -211,13 +212,6 @@ DOMAIN-SUFFIX,gearstactics.com
 DOMAIN-SUFFIX,getmicrosoftkey.com
 DOMAIN-SUFFIX,gfx.ms
 DOMAIN-SUFFIX,gigjam.com
-DOMAIN-SUFFIX,github.blog
-DOMAIN-SUFFIX,github.com
-DOMAIN-SUFFIX,github.community
-DOMAIN-SUFFIX,github.io
-DOMAIN-SUFFIX,githubassets.com
-DOMAIN-SUFFIX,githubcopilot.com
-DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,gotcosmos.com
 DOMAIN-SUFFIX,graphengine.io
 DOMAIN-SUFFIX,groupme.com
@@ -252,6 +246,7 @@ DOMAIN-SUFFIX,jwt.ms
 DOMAIN-SUFFIX,kidgrid.tv
 DOMAIN-SUFFIX,king.com
 DOMAIN-SUFFIX,kumo.com
+DOMAIN-SUFFIX,l-msedge.net
 DOMAIN-SUFFIX,latampartneruniversity.com
 DOMAIN-SUFFIX,live.cn
 DOMAIN-SUFFIX,live.com
@@ -448,6 +443,7 @@ DOMAIN-SUFFIX,msftcloudes.cn
 DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-SUFFIX,msfteducation.ca
 DOMAIN-SUFFIX,msftidentity.com
+DOMAIN-SUFFIX,msftncsi.com
 DOMAIN-SUFFIX,msftnet.org
 DOMAIN-SUFFIX,msgamesresearch.com
 DOMAIN-SUFFIX,msgamestudios.com
@@ -478,6 +474,7 @@ DOMAIN-SUFFIX,msra.cn
 DOMAIN-SUFFIX,msropendata.com
 DOMAIN-SUFFIX,mstea.ms
 DOMAIN-SUFFIX,msturing.org
+DOMAIN-SUFFIX,mshome.net
 DOMAIN-SUFFIX,msudalosti.com
 DOMAIN-SUFFIX,msunlimitedcloudsummit.com
 DOMAIN-SUFFIX,msvevent.com
@@ -488,6 +485,7 @@ DOMAIN-SUFFIX,mwf-service.akamaized.net
 DOMAIN-SUFFIX,myhomemsn.com
 DOMAIN-SUFFIX,mymicrosoft.com
 DOMAIN-SUFFIX,nextechafrica.net
+DOMAIN-SUFFIX,nelreports.net
 DOMAIN-SUFFIX,npmjs.com
 DOMAIN-SUFFIX,npmjs.org
 DOMAIN-SUFFIX,nuance.com
@@ -565,6 +563,7 @@ DOMAIN-SUFFIX,renlifang.com
 DOMAIN-SUFFIX,renovacionoffice.com
 DOMAIN-SUFFIX,renovacionxboxlive.com
 DOMAIN-SUFFIX,s-microsoft.com
+DOMAIN-SUFFIX,s-dc-msedge.net
 DOMAIN-SUFFIX,s-msedge.net
 DOMAIN-SUFFIX,s-msft.com
 DOMAIN-SUFFIX,s-msn.com
@@ -586,6 +585,7 @@ DOMAIN-SUFFIX,skypeassets.net
 DOMAIN-SUFFIX,skypeforbusiness.com
 DOMAIN-SUFFIX,slideshare.net
 DOMAIN-SUFFIX,spoprod-a.akamaihd.net
+DOMAIN-SUFFIX,spo-msedge.net
 DOMAIN-SUFFIX,sprinklesapp.com
 DOMAIN-SUFFIX,sqlserveronlinux.com
 DOMAIN-SUFFIX,staffhub.ms
@@ -604,6 +604,7 @@ DOMAIN-SUFFIX,sway.com
 DOMAIN-SUFFIX,syncshop.cn
 DOMAIN-SUFFIX,sysinternals.com
 DOMAIN-SUFFIX,tailwindtraders.com
+DOMAIN-SUFFIX,t-msedge.net
 DOMAIN-SUFFIX,techhub.ms
 DOMAIN-SUFFIX,tellmewhygame.com
 DOMAIN-SUFFIX,tenor.com

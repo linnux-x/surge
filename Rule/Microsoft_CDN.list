@@ -2,7 +2,7 @@
 # AUTHOR: Codex
 # UPDATED: 2026-06-14
 # FORMAT: Surge Ruleset
-# SOURCES: Microsoft Learn, SukkaW/Surge, blackmatrix7/ios_rule_script
+# SOURCES: Microsoft Learn, 21Vianet Azure China, DustinWin/domain-list-custom, SukkaW/Surge, blackmatrix7/ios_rule_script
 # NOTE: Microsoft domains with Mainland China CDN delivery or China-operated service endpoints.
 # NOTE: Includes Microsoft 365 and Azure China services operated by 21Vianet.
 # NOTE: Azure China platform suffixes can also match third-party tenants hosted in that cloud.
@@ -10,7 +10,21 @@
 
 # China-operated and global endpoints required by Microsoft 365 in China
 DOMAIN,activation.sls.microsoft.com
+DOMAIN,bj1.api.bing.com
+DOMAIN,bg.v4.a.dl.ws.microsoft.com
+DOMAIN,bg4.v4.a.dl.ws.microsoft.com
+DOMAIN,build.microsoft.com
+DOMAIN,cdn.marketplaceimages.windowsphone.com
+DOMAIN,cn.bing.com
+DOMAIN,cn.bing.net
+DOMAIN,cn.mm.bing.net
 DOMAIN,crl.microsoft.com
+DOMAIN,dcg.microsoft.com
+DOMAIN,ditu.live.com
+DOMAIN,docs.microsoft.com
+DOMAIN,emoi-cncdn.bing.com
+DOMAIN,fs.microsoft.com
+DOMAIN,learn.microsoft.com
 DOMAIN,login.microsoftonline.com
 DOMAIN,nexusrules.officeapps.live.com
 DOMAIN,ntservicepack.microsoft.com
@@ -20,14 +34,43 @@ DOMAIN,officeclient.microsoft.com
 DOMAIN,ols.officeapps.live.com
 DOMAIN,osi.office.net
 DOMAIN,portal.partner.microsoftonline.cdnsvc.com
+DOMAIN,r.bing.com
 DOMAIN,roaming.officeapps.live.com
+DOMAIN,surface.downloads.prss.microsoft.com
+DOMAIN,th.bing.com
+DOMAIN,wscont1.apps.microsoft.com
+DOMAIN,wscont2.apps.microsoft.com
+DOMAIN,www.microsoft.com
 
 # Mainland China CDN and China-specific Microsoft service domains
+DOMAIN-SUFFIX,21vbc.com
+DOMAIN-SUFFIX,21vbluecloud.com
+DOMAIN-SUFFIX,21vbluecloud.net
 DOMAIN-SUFFIX,aadrm.cn
+DOMAIN-SUFFIX,aggresmart.com
 DOMAIN-SUFFIX,apihub-internal.cn
 DOMAIN-SUFFIX,appserviceenvironment.cn
 DOMAIN-SUFFIX,azcrmc-test.cn
 DOMAIN-SUFFIX,azcrmc.cn
+DOMAIN-SUFFIX,azchcdna.com
+DOMAIN-SUFFIX,azchcdnb.com
+DOMAIN-SUFFIX,azchcdnc.com
+DOMAIN-SUFFIX,azchcdnd.com
+DOMAIN-SUFFIX,azchcdne.com
+DOMAIN-SUFFIX,azchcdnf.com
+DOMAIN-SUFFIX,azchcdng.com
+DOMAIN-SUFFIX,azchcdnh.com
+DOMAIN-SUFFIX,azchcdni.com
+DOMAIN-SUFFIX,azchcdnj.com
+DOMAIN-SUFFIX,azchcdnk.com
+DOMAIN-SUFFIX,azchcdnl.com
+DOMAIN-SUFFIX,azchcdnm.com
+DOMAIN-SUFFIX,azchcdnn.com
+DOMAIN-SUFFIX,azchcdno.com
+DOMAIN-SUFFIX,azchcdnp.com
+DOMAIN-SUFFIX,azchcdnq.com
+DOMAIN-SUFFIX,azchcdnr.com
+DOMAIN-SUFFIX,azchcdns.com
 DOMAIN-SUFFIX,azk8s.cn
 DOMAIN-SUFFIX,aznbcontent.cn
 DOMAIN-SUFFIX,aztask.cn
@@ -38,6 +81,16 @@ DOMAIN-SUFFIX,azure-connectedvehicles-stage.cn
 DOMAIN-SUFFIX,azure-connectedvehicles.cn
 DOMAIN-SUFFIX,azure-devices-provisioning.cn
 DOMAIN-SUFFIX,azure-devices.cn
+DOMAIN-SUFFIX,azure-dns-1.cn
+DOMAIN-SUFFIX,azure-dns-2.cn
+DOMAIN-SUFFIX,azure-dns-3.cn
+DOMAIN-SUFFIX,azure-dns-4.cn
+DOMAIN-SUFFIX,azure-dns-5.cn
+DOMAIN-SUFFIX,azure-dns-6.cn
+DOMAIN-SUFFIX,azure-dns-7.cn
+DOMAIN-SUFFIX,azure-dns-8.cn
+DOMAIN-SUFFIX,azure-dns-9.cn
+DOMAIN-SUFFIX,azure-dns-10.cn
 DOMAIN-SUFFIX,azure-dns.cn
 DOMAIN-SUFFIX,azure.cn
 DOMAIN-SUFFIX,azurecr-test.cn
@@ -50,6 +103,8 @@ DOMAIN-SUFFIX,azurerms.cn
 DOMAIN-SUFFIX,azuresandbox.cn
 DOMAIN-SUFFIX,b2clogin.cn
 DOMAIN-SUFFIX,b3itech.cn
+DOMAIN-SUFFIX,blueaggrestore.com
+DOMAIN-SUFFIX,bluecloudprod.com
 DOMAIN-SUFFIX,bing.com.cn
 DOMAIN-SUFFIX,biying.cn
 DOMAIN-SUFFIX,biying.com.cn
@@ -69,12 +124,14 @@ DOMAIN-SUFFIX,download.prss.microsoft.com
 DOMAIN-SUFFIX,download.visualstudio.microsoft.com
 DOMAIN-SUFFIX,download.windowsupdate.com
 DOMAIN-SUFFIX,dynamics.cn
+DOMAIN-SUFFIX,engkoo.com
 DOMAIN-SUFFIX,hdinsightservices.cn
 DOMAIN-SUFFIX,joinms.com.cn
 DOMAIN-SUFFIX,live.cn
 DOMAIN-SUFFIX,lync.cn
 DOMAIN-SUFFIX,management-azure-devices-provisioning.cn
 DOMAIN-SUFFIX,management-azure-devices.cn
+DOMAIN-SUFFIX,mcchcdn.com
 DOMAIN-SUFFIX,mgmt-azure-api.cn
 DOMAIN-SUFFIX,microsoft-online.cn
 DOMAIN-SUFFIX,microsoft-online.com.cn
@@ -100,6 +157,7 @@ DOMAIN-SUFFIX,mncmsidlab1.cn
 DOMAIN-SUFFIX,msappproxy.cn
 DOMAIN-SUFFIX,msauth.cn
 DOMAIN-SUFFIX,msauthimages.cn
+DOMAIN-SUFFIX,mschcdn.com
 DOMAIN-SUFFIX,msftauth.cn
 DOMAIN-SUFFIX,msftauthimages.cn
 DOMAIN-SUFFIX,msftcenterone.cn
@@ -115,6 +173,7 @@ DOMAIN-SUFFIX,msopentech.cn
 DOMAIN-SUFFIX,mspil.cn
 DOMAIN-SUFFIX,msra.cn
 DOMAIN-SUFFIX,msxiaona.cn
+DOMAIN-SUFFIX,o365cn.com
 DOMAIN-SUFFIX,o365files.cn
 DOMAIN-SUFFIX,office365-net.cn
 DOMAIN-SUFFIX,office365.cn

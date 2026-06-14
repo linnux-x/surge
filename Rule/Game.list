@@ -1,11 +1,12 @@
 # NAME: Game
 # AUTHOR: Codex
-# UPDATED: 2026-06-13
+# UPDATED: 2026-06-14
 # FORMAT: Surge Ruleset
 # SOURCES: Official platform sites, SukkaW/Surge game-download, blackmatrix7/ios_rule_script Game and platform rules
 # NOTE: Overseas game platforms, stores, accounts, multiplayer infrastructure and first-party download/CDN endpoints. Individual game titles, mainland-China services and volatile host IPs are intentionally excluded.
 
 # Dedicated hosts on shared CDN or cloud domains
+DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
 DOMAIN,blizzard.gcdn.cloudn.co.kr
 DOMAIN,blzddist1-a.akamaihd.net
 DOMAIN,blzddist2-a.akamaihd.net
@@ -15,19 +16,27 @@ DOMAIN,cloudsync-prod.s3.amazonaws.com
 DOMAIN,eaasserts-a.akamaihd.net
 DOMAIN,edge.steam-dns.top.comcast.net
 DOMAIN,epicgames-download1.akamaized.net
+DOMAIN,f3b7q2p3.ssl.hwcdn.net
 DOMAIN,gamedownloads-rockstargames-com.akamaized.net
 DOMAIN,luna.amazon.com
 DOMAIN,media-rockstargames-com.akamaized.net
 DOMAIN,origin-a.akamaihd.net
 DOMAIN,originasserts.akamaized.net
 DOMAIN,pf-cdn-content-prod.azureedge.net
+DOMAIN,robloxcorp.s.llnwi.net
 DOMAIN,steam.apac.qtlglb.com
+DOMAIN,steam.cdn.on.net
+DOMAIN,steam.cdn.orcon.net.nz
+DOMAIN,steam.cdn.slingshot.co.nz
+DOMAIN,steam.cdn.webra.ru
 DOMAIN,steam.eca.qtlglb.com
 DOMAIN,steam.naeu.qtlglb.com
 DOMAIN,steam.ru.qtlglb.com
 DOMAIN,steampipe-kr.akamaized.net
 DOMAIN,steampipe-partner.akamaized.net
 DOMAIN,steampipe.akamaized.net
+DOMAIN,steamcloudsweden.blob.core.windows.net
+DOMAIN,steamugcquincy.blob.core.windows.net
 DOMAIN,store-images.s-microsoft.com
 DOMAIN,ubisoft-orbit-savegames.s3.amazonaws.com
 DOMAIN,ubisoft-uplay-savegames.s3.amazonaws.com
@@ -55,6 +64,7 @@ DOMAIN-SUFFIX,steamusercontent-a.akamaihd.net
 DOMAIN-SUFFIX,steamusercontent.com
 DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net
 DOMAIN-SUFFIX,steamvideo-a.akamaihd.net
+DOMAIN-SUFFIX,valve.net
 DOMAIN-SUFFIX,valvesoftware.com
 
 # Epic Games Store, Epic Online Services and Easy Anti-Cheat
@@ -65,10 +75,12 @@ DOMAIN-SUFFIX,egdownload.fastly-edge.com
 DOMAIN-SUFFIX,epicgames.com
 DOMAIN-SUFFIX,epicgames.dev
 DOMAIN-SUFFIX,epicgamescdn.com
+DOMAIN-SUFFIX,fab.com
 DOMAIN-SUFFIX,unrealengine.com
 
 # GOG
 DOMAIN-SUFFIX,gog.com
+DOMAIN-SUFFIX,gog-services.com
 DOMAIN-SUFFIX,gog-statics.com
 DOMAIN-SUFFIX,gog.qtlglb.com
 
@@ -83,6 +95,7 @@ DOMAIN-SUFFIX,origin.tv
 # Ubisoft Connect and Uplay legacy services
 DOMAIN-SUFFIX,ubi.com
 DOMAIN-SUFFIX,ubisoft.com
+DOMAIN-SUFFIX,ubisoftconnect.com
 DOMAIN-SUFFIX,uplay.com
 
 # Battle.net and Blizzard
@@ -177,6 +190,7 @@ DOMAIN-SUFFIX,garena.live
 DOMAIN-SUFFIX,garena.my
 DOMAIN-SUFFIX,garena.ph
 DOMAIN-SUFFIX,garena.sg
+DOMAIN-SUFFIX,garena.tv
 DOMAIN-SUFFIX,garena.tw
 DOMAIN-SUFFIX,garena.vn
 DOMAIN-SUFFIX,garenanow.com
@@ -184,11 +198,39 @@ DOMAIN-SUFFIX,garenanow.com
 # Independent game stores
 DOMAIN-SUFFIX,fanatical.com
 DOMAIN-SUFFIX,gamersgate.com
+DOMAIN-SUFFIX,gamesplanet.com
 DOMAIN-SUFFIX,greenmangaming.com
 DOMAIN-SUFFIX,humblebundle.com
 DOMAIN-SUFFIX,indiegala.com
 DOMAIN-SUFFIX,itch.io
 DOMAIN-SUFFIX,nuuvem.com
+
+# Roblox
+DOMAIN-SUFFIX,rblx.co
+DOMAIN-SUFFIX,rblx.com
+DOMAIN-SUFFIX,rbxcdn.com
+DOMAIN-SUFFIX,rbxinfra.net
+DOMAIN-SUFFIX,rbxlabs.com
+DOMAIN-SUFFIX,roblox.com
+DOMAIN-SUFFIX,roblox.net
+DOMAIN-SUFFIX,roblox.org
+DOMAIN-SUFFIX,robloxlabs.com
+
+# Minecraft, Mojang and PlayFab
+DOMAIN-SUFFIX,minecraft-services.net
+DOMAIN-SUFFIX,minecraft.net
+DOMAIN-SUFFIX,minecraftservices.com
+DOMAIN-SUFFIX,minecraftshop.com
+DOMAIN-SUFFIX,mojang.com
+DOMAIN-SUFFIX,playfab.com
+DOMAIN-SUFFIX,playfabapi.com
+
+# Mod and competitive-gaming platforms
+DOMAIN-SUFFIX,battleye.com
+DOMAIN-SUFFIX,bluestacks.com
+DOMAIN-SUFFIX,curseforge.com
+DOMAIN-SUFFIX,fabricmc.net
+DOMAIN-SUFFIX,faceit.com
 
 # Cloud gaming and VR storefronts
 DOMAIN-SUFFIX,boosteroid.com
@@ -197,3 +239,6 @@ DOMAIN-SUFFIX,nvidiagrid.net
 DOMAIN-SUFFIX,oculus.com
 DOMAIN-SUFFIX,oculuscdn.com
 DOMAIN-SUFFIX,viveport.com
+
+# Stable Ubisoft asset hostname family
+DOMAIN-KEYWORD,ubistatic

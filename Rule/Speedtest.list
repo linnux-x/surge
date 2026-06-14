@@ -14,6 +14,8 @@ DOMAIN,wifiman.ubncloud.com
 
 # Speed-test platforms and measurement networks
 DOMAIN-SUFFIX,fast.com
+DOMAIN-SUFFIX,cdnst.net
+DOMAIN-SUFFIX,cellmaps.com
 DOMAIN-SUFFIX,librespeed.org
 DOMAIN-SUFFIX,measurement-lab.org
 DOMAIN-SUFFIX,measurementlab.net
@@ -25,6 +27,7 @@ DOMAIN-SUFFIX,speedcheck.org
 DOMAIN-SUFFIX,speedof.me
 DOMAIN-SUFFIX,speedsmart.net
 DOMAIN-SUFFIX,testmy.net
+DOMAIN-SUFFIX,webtest.net
 DOMAIN-SUFFIX,wifiman.com
 DOMAIN-SUFFIX,wifiman.me
 

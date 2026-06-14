@@ -9,19 +9,33 @@
 # Service-specific hosts on shared provider domain trees
 DOMAIN,aod.itunes.apple.com
 DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
-DOMAIN,ani.gamer.com.tw
 DOMAIN,apm-misaka.biliapi.net
 DOMAIN,atv-ext.amazon.com
 DOMAIN,atv-ps.amazon.com
+DOMAIN,bahamut.akamaized.net
 DOMAIN,chzzk.naver.com
 DOMAIN,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
+DOMAIN,disneyplus.bn5x.net
 DOMAIN,e13252.dscg.akamaiedge.net
+DOMAIN,gamer-cds.cdn.hinet.net
+DOMAIN,gamer2-cds.cdn.hinet.net
 DOMAIN,hamivideo.cdn.hinet.net
 DOMAIN,h-netflix.online-metrix.net
+DOMAIN,hboasia1-i.akamaihd.net
+DOMAIN,hboasia2-i.akamaihd.net
+DOMAIN,hboasia3-i.akamaihd.net
+DOMAIN,hboasia4-i.akamaihd.net
+DOMAIN,hboasia5-i.akamaihd.net
+DOMAIN,hbolb.onwardsmg.com
+DOMAIN,hbounify-prod.evergent.com
+DOMAIN,hls-amt.itunes.apple.com
+DOMAIN,hls.itunes.apple.com
 DOMAIN,lf16-effectcdn.byteeffecttos-g.com
 DOMAIN,music.apple.com
+DOMAIN,np-edge.itunes.apple.com
 DOMAIN,p-bstarstatic.akamaized.net
 DOMAIN,play-edge.itunes.apple.com
+DOMAIN,prod.hjholdings.tv
 DOMAIN,tv.apple.com
 DOMAIN,tv.dmm.com
 DOMAIN,tv.naver.com
@@ -57,13 +71,19 @@ DOMAIN-SUFFIX,disney-plus.net
 DOMAIN-SUFFIX,disneyplus.com
 DOMAIN-SUFFIX,disneystreaming.com
 DOMAIN-SUFFIX,dssott.com
+DOMAIN-SUFFIX,edgedatg.com
 DOMAIN-SUFFIX,espn.com
 DOMAIN-SUFFIX,espn.net
 DOMAIN-SUFFIX,espncdn.com
 DOMAIN-SUFFIX,espnplus.com
 DOMAIN-SUFFIX,hulu.com
 DOMAIN-SUFFIX,hulu.jp
+DOMAIN-SUFFIX,hulu.tv
+DOMAIN-SUFFIX,hulu.us
+DOMAIN-SUFFIX,huluad.com
 DOMAIN-SUFFIX,huluim.com
+DOMAIN-SUFFIX,huluplus.com
+DOMAIN-SUFFIX,hulustream.com
 
 # Max, HBO, Discovery and Eurosport
 DOMAIN-SUFFIX,discovery.com
@@ -71,10 +91,13 @@ DOMAIN-SUFFIX,discoveryplus.com
 DOMAIN-SUFFIX,dplay.com
 DOMAIN-SUFFIX,eurosport.com
 DOMAIN-SUFFIX,hbo.com
+DOMAIN-SUFFIX,hboasia.com
 DOMAIN-SUFFIX,hbogo.com
 DOMAIN-SUFFIX,hbogoasia.com
+DOMAIN-SUFFIX,hbogoasia.hk
 DOMAIN-SUFFIX,hbomax.com
 DOMAIN-SUFFIX,hbomaxcdn.com
+DOMAIN-SUFFIX,hbonow.com
 DOMAIN-SUFFIX,max.com
 DOMAIN-SUFFIX,maxgo.com
 
@@ -124,6 +147,8 @@ DOMAIN-SUFFIX,applevideo.com
 DOMAIN-SUFFIX,dazn-api.com
 DOMAIN-SUFFIX,dazn.com
 DOMAIN-SUFFIX,dazndn.com
+DOMAIN-SUFFIX,daznfeeds.com
+DOMAIN-SUFFIX,daznservices.com
 DOMAIN-SUFFIX,dzncdn.com
 DOMAIN-SUFFIX,f1tv.formula1.com
 DOMAIN-SUFFIX,mlb.com
@@ -135,6 +160,8 @@ DOMAIN-SUFFIX,nhl.com
 
 # United Kingdom and Europe
 DOMAIN-SUFFIX,bbc.co.uk
+DOMAIN-SUFFIX,bbc.com
+DOMAIN-SUFFIX,bbci.co
 DOMAIN-SUFFIX,bbci.co.uk
 DOMAIN-SUFFIX,bbc.net.uk
 DOMAIN-SUFFIX,britbox.com
@@ -154,9 +181,13 @@ DOMAIN-SUFFIX,rtlplus.com
 DOMAIN-SUFFIX,abema.io
 DOMAIN-SUFFIX,abema.tv
 DOMAIN-SUFFIX,abema-tv.com
+DOMAIN-SUFFIX,dmc.nico
 DOMAIN-SUFFIX,hjholdings.jp
 DOMAIN-SUFFIX,lemino.docomo.ne.jp
 DOMAIN-SUFFIX,nicovideo.jp
+DOMAIN-SUFFIX,nicodic.jp
+DOMAIN-SUFFIX,niconico.com
+DOMAIN-SUFFIX,nicoseiga.jp
 DOMAIN-SUFFIX,nimg.jp
 DOMAIN-SUFFIX,tver.jp
 DOMAIN-SUFFIX,u-next.jp
@@ -172,8 +203,10 @@ DOMAIN-SUFFIX,watcha.com
 DOMAIN-SUFFIX,wavve.com
 
 # Hong Kong, Taiwan and Southeast Asia
+DOMAIN-SUFFIX,bahamut.com.tw
 DOMAIN-SUFFIX,catchplay.com
 DOMAIN-SUFFIX,friday.tw
+DOMAIN-SUFFIX,gamer.com.tw
 DOMAIN-SUFFIX,kktv.me
 DOMAIN-SUFFIX,kktv.com.tw
 DOMAIN-SUFFIX,litv.tv
@@ -184,7 +217,10 @@ DOMAIN-SUFFIX,nowe.com
 DOMAIN-SUFFIX,rthk.hk
 DOMAIN-SUFFIX,rthk.org.hk
 DOMAIN-SUFFIX,tvb.com
+DOMAIN-SUFFIX,tvb.com.au
 DOMAIN-SUFFIX,tvbanywhere.com
+DOMAIN-SUFFIX,tvbanywhere.com.sg
+DOMAIN-SUFFIX,tvbusa.com
 DOMAIN-SUFFIX,viu.com
 DOMAIN-SUFFIX,viu.tv
 
@@ -254,9 +290,12 @@ DOMAIN-SUFFIX,kwaicdn.com
 # Video and live-streaming platforms
 DOMAIN-SUFFIX,dailymotion.com
 DOMAIN-SUFFIX,dmcdn.net
+DOMAIN-SUFFIX,ext-twitch.tv
+DOMAIN-SUFFIX,jtvnw.net
 DOMAIN-SUFFIX,kick.com
 DOMAIN-SUFFIX,kickcdn.com
 DOMAIN-SUFFIX,live-video.net
+DOMAIN-SUFFIX,livestream.com
 DOMAIN-SUFFIX,rumble.com
 DOMAIN-SUFFIX,twitch.tv
 DOMAIN-SUFFIX,twitchcdn.net
@@ -264,18 +303,23 @@ DOMAIN-SUFFIX,twitchsvc.net
 DOMAIN-SUFFIX,ttvnw.net
 DOMAIN-SUFFIX,vimeo.com
 DOMAIN-SUFFIX,vimeocdn.com
+DOMAIN-SUFFIX,vimeoondemand.com
+DOMAIN-SUFFIX,vhx.tv
 
 # Plex and internet television
+DOMAIN-SUFFIX,moviesanywhere.com
 DOMAIN-SUFFIX,pluto.tv
 DOMAIN-SUFFIX,plex.tv
 DOMAIN-SUFFIX,plexapp.com
 DOMAIN-SUFFIX,plexapp.com.cn
 DOMAIN-SUFFIX,roku.com
 DOMAIN-SUFFIX,tubitv.com
+DOMAIN-SUFFIX,tubi.video
 
 # Spotify
 DOMAIN-SUFFIX,pscdn.co
 DOMAIN-SUFFIX,scdn.co
+DOMAIN-SUFFIX,spoti.fi
 DOMAIN-SUFFIX,spotify.com
 DOMAIN-SUFFIX,spotifycdn.com
 DOMAIN-SUFFIX,spotifycdn.net
@@ -300,6 +344,14 @@ DOMAIN-SUFFIX,tidal.com
 DOMAIN-SUFFIX,tidalhifi.com
 DOMAIN-SUFFIX,tunein.com
 DOMAIN-SUFFIX,wimpmusic.com
+
+# Additional service APIs and static delivery
+DOMAIN-SUFFIX,disco-api.com
+DOMAIN-SUFFIX,encoretvb.com
+DOMAIN-SUFFIX,indazn.com
+DOMAIN-SUFFIX,indaznlab.com
+DOMAIN-SUFFIX,pplusstatic.com
+DOMAIN-SUFFIX,watchespn.com
 
 # Service-specific dynamic hostname families
 DOMAIN-KEYWORD,-tiktokcdn-com

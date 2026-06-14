@@ -7,8 +7,8 @@
 # NOTE: CDN/static-asset rules, IP ranges, process names, user agents and unsafe broad keywords are excluded.
 # NOTE: Put CDN.list before Global.list, and Global.list before China.list for verified overseas subdomain exceptions.
 # DOMAIN: 1832
-# DOMAIN-SUFFIX: 28210
-# TOTAL: 30042
+# DOMAIN-SUFFIX: 28237
+# TOTAL: 30069
 
 # Exact service hosts
 DOMAIN,111666.best
@@ -5654,7 +5654,6 @@ DOMAIN-SUFFIX,bitbaby.com
 DOMAIN-SUFFIX,bitballoon.com
 DOMAIN-SUFFIX,bitbank.cc
 DOMAIN-SUFFIX,bitbay.net
-DOMAIN-SUFFIX,bitbucket.io
 DOMAIN-SUFFIX,bitbucket.org
 DOMAIN-SUFFIX,bitchesgirls.com
 DOMAIN-SUFFIX,bitchmomporn.com
@@ -18254,6 +18253,7 @@ DOMAIN-SUFFIX,mirrorsedge.jp
 DOMAIN-SUFFIX,mirrorsedge.net
 DOMAIN-SUFFIX,mirrorsedge2.com
 DOMAIN-SUFFIX,mirrorsedge2d.com
+DOMAIN-SUFFIX,misaka.io
 DOMAIN-SUFFIX,missav.ai
 DOMAIN-SUFFIX,missav.live
 DOMAIN-SUFFIX,missav.uno
@@ -19826,7 +19826,6 @@ DOMAIN-SUFFIX,noypf.com
 DOMAIN-SUFFIX,nozomi.la
 DOMAIN-SUFFIX,npm.community
 DOMAIN-SUFFIX,npm.im
-DOMAIN-SUFFIX,npm.io
 DOMAIN-SUFFIX,npmjs.org
 DOMAIN-SUFFIX,npnt.me
 DOMAIN-SUFFIX,nps.gov
@@ -30055,3 +30054,33 @@ DOMAIN-SUFFIX,zzgays.com
 DOMAIN-SUFFIX,zzitube.com
 DOMAIN-SUFFIX,zzux.com
 DOMAIN-SUFFIX,zzycdz.com
+
+# Verified supplemental international services
+DOMAIN-SUFFIX,0x0.st
+DOMAIN-SUFFIX,4everland.io
+DOMAIN-SUFFIX,cf-ipfs.com
+DOMAIN-SUFFIX,cloudflare-ipfs.com
+DOMAIN-SUFFIX,dota2.com
+DOMAIN-SUFFIX,firebaseapp.com
+DOMAIN-SUFFIX,genshinimpact.com
+DOMAIN-SUFFIX,honkaiimpact3.com
+DOMAIN-SUFFIX,honkaistarrail.com
+DOMAIN-SUFFIX,hoyo.link
+DOMAIN-SUFFIX,ipfs-gateway.cloud
+DOMAIN-SUFFIX,ipns.co
+DOMAIN-SUFFIX,netlify.app
+DOMAIN-SUFFIX,nftstorage.link
+DOMAIN-SUFFIX,pages.dev
+DOMAIN-SUFFIX,relay.firefox.com
+DOMAIN-SUFFIX,rutrk.org
+DOMAIN-SUFFIX,sci-hub.ee
+DOMAIN-SUFFIX,statuspage.io
+DOMAIN-SUFFIX,steamdb.info
+DOMAIN-SUFFIX,torproject.org
+DOMAIN-SUFFIX,vercel.app
+DOMAIN-SUFFIX,vercel.dev
+DOMAIN-SUFFIX,w3s.link
+DOMAIN-SUFFIX,web.app
+DOMAIN-SUFFIX,workers.dev
+DOMAIN-SUFFIX,yostar.net
+DOMAIN-SUFFIX,zenlesszonezero.com

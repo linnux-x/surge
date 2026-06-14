@@ -1,6 +1,6 @@
 # NAME: Telegram
 # AUTHOR: Codex
-# UPDATED: 2026-06-13
+# UPDATED: 2026-06-14
 # FORMAT: Surge Ruleset
 # SOURCES: Telegram services and client source code, current route-origin data, Rabbit-Spec/Surge, blackmatrix7/ios_rule_script, QuixoticHeart/rule-set
 # NOTE: Official Telegram services plus verified backend domains for selected third-party clients. Single-host backup IPs, shared hosting domains and unrelated client analytics are excluded.
@@ -31,7 +31,10 @@ DOMAIN-SUFFIX,telegram.space
 DOMAIN-SUFFIX,telegramdownload.com
 DOMAIN-SUFFIX,telesco.pe
 DOMAIN-SUFFIX,tg.dev
+DOMAIN-SUFFIX,ton.org
+DOMAIN-SUFFIX,toncenter.com
 DOMAIN-SUFFIX,tx.me
+DOMAIN-SUFFIX,usercontent.dev
 DOMAIN-SUFFIX,nicegram.app
 
 # Official Telegram IPv4 networks

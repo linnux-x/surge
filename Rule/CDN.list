@@ -204,10 +204,12 @@ DOMAIN,player.vimeo.com
 DOMAIN-SUFFIX,ant.design
 DOMAIN-SUFFIX,aspnetcdn.com
 DOMAIN-SUFFIX,bootstrapcdn.com
+DOMAIN-SUFFIX,brew.sh
 DOMAIN-SUFFIX,bundle.run
 DOMAIN-SUFFIX,cdnjs.com
 DOMAIN-SUFFIX,deno.land
 DOMAIN-SUFFIX,denopkg.com
+DOMAIN-SUFFIX,docs.rs
 DOMAIN-SUFFIX,esm.run
 DOMAIN-SUFFIX,esm.sh
 DOMAIN-SUFFIX,githack.com
@@ -215,34 +217,47 @@ DOMAIN-SUFFIX,gitcdn.link
 DOMAIN-SUFFIX,gitcdn.top
 DOMAIN-SUFFIX,gitcdn.xyz
 DOMAIN-SUFFIX,gitmirror.com
+DOMAIN-SUFFIX,godoc.org
+DOMAIN-SUFFIX,graphql.org
 DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN-SUFFIX,jspm.dev
 DOMAIN-SUFFIX,jspm.io
 DOMAIN-SUFFIX,jspm.org
 DOMAIN-SUFFIX,npmcdn.com
 DOMAIN-SUFFIX,npmfs.com
+DOMAIN-SUFFIX,npm.io
+DOMAIN-SUFFIX,nodejs.org
+DOMAIN-SUFFIX,pnpm.io
 DOMAIN-SUFFIX,polyfill-fastly.io
 DOMAIN-SUFFIX,rawgit.com
 DOMAIN-SUFFIX,rawgit.org
 DOMAIN-SUFFIX,rawgithub.com
+DOMAIN-SUFFIX,react.dev
+DOMAIN-SUFFIX,reactjs.org
 DOMAIN-SUFFIX,skypack.dev
 DOMAIN-SUFFIX,statically.io
 DOMAIN-SUFFIX,staticaly.com
 DOMAIN-SUFFIX,staticdelivr.com
 DOMAIN-SUFFIX,unpkg.co
 DOMAIN-SUFFIX,unpkg.com
+DOMAIN-SUFFIX,vuejs.org
 DOMAIN-SUFFIX,zencdn.net
+DOMAIN-SUFFIX,ziglang.org
 
 # Code-hosting and project assets
+DOMAIN-SUFFIX,bitbucket.io
 DOMAIN-SUFFIX,bytebucket.org
 DOMAIN-SUFFIX,codeberg.page
+DOMAIN-SUFFIX,docker.io
 DOMAIN-SUFFIX,dockerstatic.com
 DOMAIN-SUFFIX,eclipsecontent.org
 DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,github.io
 DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,gitlab-static.net
 DOMAIN-SUFFIX,gitlab.io
 DOMAIN-SUFFIX,open-vsx.org
+DOMAIN-SUFFIX,quay.io
 DOMAIN-SUFFIX,schemastore.org
 DOMAIN-SUFFIX,shields.io
 DOMAIN-SUFFIX,sourceforge.io
@@ -332,10 +347,12 @@ DOMAIN-SUFFIX,sway-cdn.com
 DOMAIN-SUFFIX,yammerusercontent.com
 
 # AI static resources and user content
+DOMAIN-SUFFIX,ciciaicdn.com
 DOMAIN-SUFFIX,cdn.openaimerge.com
 DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN-SUFFIX,cursor-cdn.com
 DOMAIN-SUFFIX,featureassets.org
+DOMAIN-SUFFIX,manuscdn.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
@@ -354,6 +371,7 @@ DOMAIN-SUFFIX,eaassets-a.akamaihd.net
 DOMAIN-SUFFIX,eac-cdn.com
 DOMAIN-SUFFIX,egdownload.fastly-edge.com
 DOMAIN-SUFFIX,epicgamescdn.com
+DOMAIN-SUFFIX,faceit-cdn.net
 DOMAIN-SUFFIX,forgecdn.net
 DOMAIN-SUFFIX,gog.qtlglb.com
 DOMAIN-SUFFIX,nexoncdn.co.kr
@@ -426,6 +444,9 @@ DOMAIN-SUFFIX,wixmp.com
 DOMAIN-SUFFIX,wmfusercontent.org
 
 # Commerce and hosted-site static assets
+DOMAIN-SUFFIX,1passwordusercontent.ca
+DOMAIN-SUFFIX,1passwordusercontent.com
+DOMAIN-SUFFIX,1passwordusercontent.eu
 DOMAIN-SUFFIX,amaicdn.com
 DOMAIN-SUFFIX,shopifycdn.com
 DOMAIN-SUFFIX,zdassets.com
@@ -451,6 +472,7 @@ DOMAIN-SUFFIX,stripecdn.com
 DOMAIN-SUFFIX,targetimg1.com
 DOMAIN-SUFFIX,tildacdn.com
 DOMAIN-SUFFIX,udemycdn.com
+DOMAIN-SUFFIX,wixstatic.com
 DOMAIN-SUFFIX,zohocdn.com
 DOMAIN-SUFFIX,zohostatic.com
 DOMAIN-SUFFIX,zohowebstatic.com
@@ -499,5 +521,6 @@ DOMAIN-SUFFIX,static-economist.com
 DOMAIN-SUFFIX,tedcdn.com
 DOMAIN-SUFFIX,trbcdn.net
 DOMAIN-SUFFIX,vox-cdn.com
+DOMAIN-SUFFIX,wikia.nocookie.net
 DOMAIN-SUFFIX,yimg.com
 DOMAIN-SUFFIX,yimg.jp

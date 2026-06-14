@@ -1,6 +1,6 @@
 # NAME: YouTube
 # AUTHOR: Codex
-# UPDATED: 2026-06-13
+# UPDATED: 2026-06-14
 # FORMAT: Surge Ruleset
 # SOURCES: YouTube, SukkaW/Surge, Rabbit-Spec/Surge, blackmatrix7/ios_rule_script
 # NOTE: Includes YouTube, YouTube Music, Kids, Gaming, embedded playback, APIs and media delivery.
@@ -18,6 +18,7 @@ DOMAIN-SUFFIX,ggpht.com
 DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,youtu.be
 DOMAIN-SUFFIX,yt.be
+DOMAIN-SUFFIX,yt3.googleusercontent.com
 DOMAIN-SUFFIX,ytimg.com
 
 # Covers official country domains, Music APIs and branded services
