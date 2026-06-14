@@ -1,0 +1,29 @@
+# NAME: YouTube
+# AUTHOR: Codex
+# UPDATED: 2026-06-13
+# FORMAT: Surge Ruleset
+# SOURCES: YouTube, SukkaW/Surge, Rabbit-Spec/Surge, blackmatrix7/ios_rule_script
+# NOTE: Includes YouTube, YouTube Music, Kids, Gaming, embedded playback, APIs and media delivery.
+# NOTE: Shared Google infrastructure and unverified IP ranges are intentionally excluded.
+
+# Explicit product entry point for auditable YouTube Music coverage
+DOMAIN,music.youtube.com
+
+# Service endpoint not covered by the YouTube keyword
+DOMAIN,video.google.com
+
+# Media, images and short links
+DOMAIN-SUFFIX,ggpht.cn
+DOMAIN-SUFFIX,ggpht.com
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,youtu.be
+DOMAIN-SUFFIX,yt.be
+DOMAIN-SUFFIX,ytimg.com
+
+# Covers official country domains, Music APIs and branded services
+DOMAIN-KEYWORD,youtube
+
+# Client fallbacks, including YouTube Music
+USER-AGENT,*YouTubeMusic*
+USER-AGENT,YouTube*
+USER-AGENT,com.google.ios.youtube*

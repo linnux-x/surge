@@ -1,0 +1,217 @@
+# NAME: ChinaMedia
+# AUTHOR: Codex
+# UPDATED: 2026-06-13
+# FORMAT: Surge Ruleset
+# SOURCES: Official service sites, SukkaW/Surge, blackmatrix7/ios_rule_script, Rabbit-Spec/Surge
+# NOTE: Mainland China video, short-video, television, music, audio and live-streaming services.
+# NOTE: International editions, overseas-only delivery domains, shared public cloud ranges and volatile IPs are excluded.
+
+# iQIYI mainland hosts; the iqiyi.com parent suffix is intentionally not used because it also covers intl.iqiyi.com
+DOMAIN,iqiyi.com
+DOMAIN,cache.video.iqiyi.com
+DOMAIN,data.video.iqiyi.com
+DOMAIN,iface2.iqiyi.com
+DOMAIN,m.iqiyi.com
+DOMAIN,www.iqiyi.com
+
+# Tencent Video hosts on shared Tencent domain trees
+DOMAIN,apd-pcdnvodstat.teg.tencent-cloud.net
+DOMAIN,ios.video.mpush.qq.com
+DOMAIN,v.streaming.qq.com
+DOMAIN,video-public-1258344701.shiply-cdn.qq.com
+DOMAIN,video-search-1258344701.shiply-cdn.qq.com
+DOMAIN,video-vip-1258344701.shiply-cdn.qq.com
+DOMAIN,yoo.gtimg.com
+
+# Sohu Video hosts on the broader sohu.com tree
+DOMAIN-SUFFIX,tv.sohu.com
+DOMAIN-SUFFIX,vrs.sohu.com
+
+# Bilibili mainland service and owned media delivery
+DOMAIN-SUFFIX,acg.tv
+DOMAIN-SUFFIX,acgvideo.com
+DOMAIN-SUFFIX,b23.tv
+DOMAIN-SUFFIX,biliapi.com
+DOMAIN-SUFFIX,bilibili.cn
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN-SUFFIX,bilicdn1.com
+DOMAIN-SUFFIX,bilicdn2.com
+DOMAIN-SUFFIX,bilicdn3.com
+DOMAIN-SUFFIX,bilicdn4.com
+DOMAIN-SUFFIX,bilicdn5.com
+DOMAIN-SUFFIX,bilicomic.com
+DOMAIN-SUFFIX,bilicomics.com
+DOMAIN-SUFFIX,biligame.com
+DOMAIN-SUFFIX,biligame.net
+DOMAIN-SUFFIX,biliimg.com
+DOMAIN-SUFFIX,bilivideo.cn
+DOMAIN-SUFFIX,bilivideo.com
+DOMAIN-SUFFIX,bilivideo.net
+DOMAIN-SUFFIX,hdslb.com
+DOMAIN-SUFFIX,hdslb.net
+
+# iQIYI and PPS mainland service domains
+DOMAIN-SUFFIX,71.am
+DOMAIN-SUFFIX,71edge.com
+DOMAIN-SUFFIX,71edge.net
+DOMAIN-SUFFIX,gitv.cn
+DOMAIN-SUFFIX,iqiyiedge.com
+DOMAIN-SUFFIX,iqiyiedge.net
+DOMAIN-SUFFIX,iqiyipic.com
+DOMAIN-SUFFIX,pps.tv
+DOMAIN-SUFFIX,ppsimg.com
+DOMAIN-SUFFIX,ppstream.cn
+DOMAIN-SUFFIX,ppstream.com
+DOMAIN-SUFFIX,ppstream.com.cn
+DOMAIN-SUFFIX,ppstream.net
+DOMAIN-SUFFIX,ppstream.net.cn
+DOMAIN-SUFFIX,ppsurl.com
+DOMAIN-SUFFIX,qiyi.cn
+DOMAIN-SUFFIX,qiyi.com
+DOMAIN-SUFFIX,qiyipic.com
+DOMAIN-SUFFIX,qy.com
+DOMAIN-SUFFIX,qy.net
+
+# Tencent Video
+DOMAIN-SUFFIX,qqvideo.gtimg.com
+DOMAIN-SUFFIX,v.qq.com
+DOMAIN-SUFFIX,v.smtcdns.com
+DOMAIN-SUFFIX,video.qq.com
+
+# Youku, Tudou and CIBN/Kumiao
+DOMAIN-SUFFIX,cibntv.net
+DOMAIN-SUFFIX,kumiao.com
+DOMAIN-SUFFIX,kumiao.tv
+DOMAIN-SUFFIX,soku.com
+DOMAIN-SUFFIX,tudou.com
+DOMAIN-SUFFIX,ykimg.com
+DOMAIN-SUFFIX,youku.com
+DOMAIN-SUFFIX,youku.com.cn
+DOMAIN-SUFFIX,youku.org
+
+# Mango TV and Hunan TV
+DOMAIN-SUFFIX,hifuntv.com
+DOMAIN-SUFFIX,hitv.com
+DOMAIN-SUFFIX,hunaniptv.com
+DOMAIN-SUFFIX,hunantv.com
+DOMAIN-SUFFIX,imgo.tv
+DOMAIN-SUFFIX,mgtv.com
+DOMAIN-SUFFIX,tazai.com
+
+# Douyin, Xigua Video and Toutiao media
+DOMAIN-SUFFIX,amemv.com
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-SUFFIX,douyincdn.com
+DOMAIN-SUFFIX,douyinliving.com
+DOMAIN-SUFFIX,douyinpic.com
+DOMAIN-SUFFIX,douyinstatic.com
+DOMAIN-SUFFIX,douyinvod.com
+DOMAIN-SUFFIX,huoshan.com
+DOMAIN-SUFFIX,huoshanzhibo.com
+DOMAIN-SUFFIX,idouyinvod.com
+DOMAIN-SUFFIX,iesdouyin.com
+DOMAIN-SUFFIX,ixgvideo.com
+DOMAIN-SUFFIX,ixigua.com
+DOMAIN-SUFFIX,ixiguavideo.com
+DOMAIN-SUFFIX,pstatp.com
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,toutiao.com
+DOMAIN-SUFFIX,toutiaoimg.cn
+DOMAIN-SUFFIX,toutiaoimg.com
+DOMAIN-SUFFIX,toutiaostatic.com
+DOMAIN-SUFFIX,toutiaovod.com
+
+# Kuaishou mainland service; Kwai international domains are intentionally excluded
+DOMAIN-SUFFIX,gifshow.com
+DOMAIN-SUFFIX,ksapisrv.com
+DOMAIN-SUFFIX,kspkg.com
+DOMAIN-SUFFIX,ksurl.cn
+DOMAIN-SUFFIX,kuaishou.cn
+DOMAIN-SUFFIX,kuaishou.com
+DOMAIN-SUFFIX,kuaishouapp.cn
+DOMAIN-SUFFIX,kuaishouapp.com
+DOMAIN-SUFFIX,kuaishouapp.net
+DOMAIN-SUFFIX,kuaishouapps.com
+DOMAIN-SUFFIX,kuaishougroup.com
+DOMAIN-SUFFIX,kuaishoupay.com
+DOMAIN-SUFFIX,kuaishouzt.cn
+DOMAIN-SUFFIX,kuaishouzt.com
+DOMAIN-SUFFIX,kwimgs.com
+
+# AcFun
+DOMAIN-SUFFIX,acfun.cn
+DOMAIN-SUFFIX,acfun.com
+DOMAIN-SUFFIX,acfun.tv
+DOMAIN-SUFFIX,aixifan.com
+
+# CCTV, CNTV and Yangshipin
+DOMAIN-SUFFIX,cctv.cn
+DOMAIN-SUFFIX,cctv.com
+DOMAIN-SUFFIX,cctvpic.com
+DOMAIN-SUFFIX,cntv.cn
+DOMAIN-SUFFIX,cntv.com.cn
+DOMAIN-SUFFIX,ipanda.cn
+DOMAIN-SUFFIX,ipanda.com
+DOMAIN-SUFFIX,ipanda.net
+DOMAIN-SUFFIX,livechina.cn
+DOMAIN-SUFFIX,livechina.com
+DOMAIN-SUFFIX,tvcc.cn
+DOMAIN-SUFFIX,tvcc.com.cn
+DOMAIN-SUFFIX,yangshipin.cn
+DOMAIN-SUFFIX,yangshipin.com
+
+# Migu Video
+DOMAIN-SUFFIX,cmvideo.cn
+DOMAIN-SUFFIX,migu.cn
+DOMAIN-SUFFIX,miguvideo.com
+
+# LeTV and PPTV/PPLive
+DOMAIN-SUFFIX,le.com
+DOMAIN-SUFFIX,letv.com
+DOMAIN-SUFFIX,letvlive.com
+DOMAIN-SUFFIX,pplive.cn
+DOMAIN-SUFFIX,pplive.com
+DOMAIN-SUFFIX,pptv.com
+
+# NetEase Cloud Music
+DOMAIN-SUFFIX,api.iplay.163.com
+DOMAIN-SUFFIX,mam.netease.com
+DOMAIN-SUFFIX,music.126.com
+DOMAIN-SUFFIX,music.126.net
+DOMAIN-SUFFIX,music.163.com
+
+# QQ Music and Tencent Music
+DOMAIN-SUFFIX,music.qq.com
+DOMAIN-SUFFIX,music.tc.qq.com
+DOMAIN-SUFFIX,qqmusic.qq.com
+DOMAIN-SUFFIX,tencentmusic.com
+DOMAIN-SUFFIX,y.qq.com
+
+# Kugou, Kuwo, Migu Music and Qianqian Music
+DOMAIN-SUFFIX,kgimg.com
+DOMAIN-SUFFIX,kugou.com
+DOMAIN-SUFFIX,kugou.net
+DOMAIN-SUFFIX,kuwo.cn
+DOMAIN-SUFFIX,kuwo.com
+DOMAIN-SUFFIX,migumusic.com
+DOMAIN-SUFFIX,qianqian.com
+
+# Audio and podcast platforms
+DOMAIN-SUFFIX,lizhi.fm
+DOMAIN-SUFFIX,qingting.fm
+DOMAIN-SUFFIX,qtfm.cn
+DOMAIN-SUFFIX,ximalaya.com
+DOMAIN-SUFFIX,xmcdn.com
+
+# Mainland live-streaming platforms
+DOMAIN-SUFFIX,bytefcdnrd.com
+DOMAIN-SUFFIX,douyu.com
+DOMAIN-SUFFIX,douyu.tv
+DOMAIN-SUFFIX,douyuba.cn
+DOMAIN-SUFFIX,douyucdn.cn
+DOMAIN-SUFFIX,douyucdn2.cn
+DOMAIN-SUFFIX,douyupcdn.cn
+DOMAIN-SUFFIX,douyuscdn.com
+DOMAIN-SUFFIX,douyutv.com
+DOMAIN-SUFFIX,huya.com
+DOMAIN-SUFFIX,yy.com

@@ -1,0 +1,33 @@
+# NAME: Speedtest
+# AUTHOR: Codex
+# UPDATED: 2026-06-14
+# FORMAT: Surge Ruleset
+# SOURCES: SukkaW/Surge, Ookla, Cloudflare, LibreSpeed, blackmatrix7/ios_rule_script, QuixoticHeart/rule-set
+# NOTE: Public speed-test platforms and stable test backends.
+# NOTE: Volatile per-ISP nodes are covered by specific hostname keywords where practical.
+
+# Stable test backends hosted on shared infrastructure
+DOMAIN,mensura.cdn-apple.com
+DOMAIN,open.cachefly.net
+DOMAIN,wifiman-stability-test.ubncloud.com
+DOMAIN,wifiman.ubncloud.com
+
+# Speed-test platforms and measurement networks
+DOMAIN-SUFFIX,fast.com
+DOMAIN-SUFFIX,librespeed.org
+DOMAIN-SUFFIX,measurement-lab.org
+DOMAIN-SUFFIX,measurementlab.net
+DOMAIN-SUFFIX,nperf.net
+DOMAIN-SUFFIX,pingtest.net
+DOMAIN-SUFFIX,speed.cloudflare.com
+DOMAIN-SUFFIX,speed.googlefiber.net
+DOMAIN-SUFFIX,speedcheck.org
+DOMAIN-SUFFIX,speedof.me
+DOMAIN-SUFFIX,speedsmart.net
+DOMAIN-SUFFIX,testmy.net
+DOMAIN-SUFFIX,wifiman.com
+DOMAIN-SUFFIX,wifiman.me
+
+# Dynamic test node hostnames using explicit service names
+DOMAIN-KEYWORD,ookla
+DOMAIN-KEYWORD,speedtest

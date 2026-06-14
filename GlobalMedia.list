@@ -1,0 +1,310 @@
+# NAME: GlobalMedia
+# AUTHOR: Codex
+# UPDATED: 2026-06-14
+# FORMAT: Surge Ruleset
+# SOURCES: Official service sites, SukkaW/Surge, blackmatrix7/ios_rule_script, Rabbit-Spec/Surge
+# NOTE: International video, television, anime, music, audio and live-streaming services.
+# NOTE: Mainland-only services, generic social networks, shared cloud ranges, volatile IPs and client fallbacks are excluded.
+
+# Service-specific hosts on shared provider domain trees
+DOMAIN,aod.itunes.apple.com
+DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
+DOMAIN,ani.gamer.com.tw
+DOMAIN,apm-misaka.biliapi.net
+DOMAIN,atv-ext.amazon.com
+DOMAIN,atv-ps.amazon.com
+DOMAIN,chzzk.naver.com
+DOMAIN,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
+DOMAIN,e13252.dscg.akamaiedge.net
+DOMAIN,hamivideo.cdn.hinet.net
+DOMAIN,h-netflix.online-metrix.net
+DOMAIN,lf16-effectcdn.byteeffecttos-g.com
+DOMAIN,music.apple.com
+DOMAIN,p-bstarstatic.akamaized.net
+DOMAIN,play-edge.itunes.apple.com
+DOMAIN,tv.apple.com
+DOMAIN,tv.dmm.com
+DOMAIN,tv.naver.com
+DOMAIN,upos-bstar-mirrorakam.akamaized.net
+DOMAIN,upos-bstar1-mirrorakam.akamaized.net
+DOMAIN,uts-api.itunes.apple.com
+DOMAIN,video.google.com
+
+# Netflix
+DOMAIN-SUFFIX,netflix.ca
+DOMAIN-SUFFIX,netflix.com
+DOMAIN-SUFFIX,netflix.com.au
+DOMAIN-SUFFIX,netflix.com.edgesuite.net
+DOMAIN-SUFFIX,netflix.net
+DOMAIN-SUFFIX,nflxext.com
+DOMAIN-SUFFIX,nflximg.com
+DOMAIN-SUFFIX,nflximg.net
+DOMAIN-SUFFIX,nflxsearch.net
+DOMAIN-SUFFIX,nflxso.net
+DOMAIN-SUFFIX,nflxvideo.net
+
+# YouTube and YouTube Music
+DOMAIN-SUFFIX,ggpht.cn
+DOMAIN-SUFFIX,ggpht.com
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,youtu.be
+DOMAIN-SUFFIX,yt.be
+DOMAIN-SUFFIX,ytimg.com
+
+# Disney+, Hulu and ESPN
+DOMAIN-SUFFIX,bamgrid.com
+DOMAIN-SUFFIX,disney-plus.net
+DOMAIN-SUFFIX,disneyplus.com
+DOMAIN-SUFFIX,disneystreaming.com
+DOMAIN-SUFFIX,dssott.com
+DOMAIN-SUFFIX,espn.com
+DOMAIN-SUFFIX,espn.net
+DOMAIN-SUFFIX,espncdn.com
+DOMAIN-SUFFIX,espnplus.com
+DOMAIN-SUFFIX,hulu.com
+DOMAIN-SUFFIX,hulu.jp
+DOMAIN-SUFFIX,huluim.com
+
+# Max, HBO, Discovery and Eurosport
+DOMAIN-SUFFIX,discovery.com
+DOMAIN-SUFFIX,discoveryplus.com
+DOMAIN-SUFFIX,dplay.com
+DOMAIN-SUFFIX,eurosport.com
+DOMAIN-SUFFIX,hbo.com
+DOMAIN-SUFFIX,hbogo.com
+DOMAIN-SUFFIX,hbogoasia.com
+DOMAIN-SUFFIX,hbomax.com
+DOMAIN-SUFFIX,hbomaxcdn.com
+DOMAIN-SUFFIX,max.com
+DOMAIN-SUFFIX,maxgo.com
+
+# Prime Video, MGM+ and Freevee
+DOMAIN-SUFFIX,aiv-cdn.net
+DOMAIN-SUFFIX,aiv-delivery.net
+DOMAIN-SUFFIX,amazonvideo.com
+DOMAIN-SUFFIX,freevee.com
+DOMAIN-SUFFIX,mgmplus.com
+DOMAIN-SUFFIX,primevideo.com
+
+# Paramount+, Peacock, SkyShowtime and Starz
+DOMAIN-SUFFIX,cbs.com
+DOMAIN-SUFFIX,cbsi.com
+DOMAIN-SUFFIX,cbsivideo.com
+DOMAIN-SUFFIX,paramount.com
+DOMAIN-SUFFIX,paramountplus.com
+DOMAIN-SUFFIX,peacock.com
+DOMAIN-SUFFIX,peacocktv.com
+DOMAIN-SUFFIX,skyshowtime.com
+DOMAIN-SUFFIX,starz.com
+
+# Additional North American streaming television
+DOMAIN-SUFFIX,curiositystream.com
+DOMAIN-SUFFIX,cwtv.com
+DOMAIN-SUFFIX,fox.com
+DOMAIN-SUFFIX,foxnation.com
+DOMAIN-SUFFIX,foxsports.com
+DOMAIN-SUFFIX,fubo.tv
+DOMAIN-SUFFIX,fubotv.com
+DOMAIN-SUFFIX,nbc.com
+DOMAIN-SUFFIX,nbcsports.com
+DOMAIN-SUFFIX,nebula.app
+DOMAIN-SUFFIX,pbs.org
+DOMAIN-SUFFIX,sho.com
+DOMAIN-SUFFIX,showtime.com
+DOMAIN-SUFFIX,sling.com
+DOMAIN-SUFFIX,syfy.com
+DOMAIN-SUFFIX,thecwvideo.com
+DOMAIN-SUFFIX,usanetwork.com
+DOMAIN-SUFFIX,watchnebula.com
+
+# Apple TV+ service hosts and media assets
+DOMAIN-SUFFIX,applevideo.com
+
+# Sports streaming
+DOMAIN-SUFFIX,dazn-api.com
+DOMAIN-SUFFIX,dazn.com
+DOMAIN-SUFFIX,dazndn.com
+DOMAIN-SUFFIX,dzncdn.com
+DOMAIN-SUFFIX,f1tv.formula1.com
+DOMAIN-SUFFIX,mlb.com
+DOMAIN-SUFFIX,mlbstatic.com
+DOMAIN-SUFFIX,nba.com
+DOMAIN-SUFFIX,nba.net
+DOMAIN-SUFFIX,nfl.com
+DOMAIN-SUFFIX,nhl.com
+
+# United Kingdom and Europe
+DOMAIN-SUFFIX,bbc.co.uk
+DOMAIN-SUFFIX,bbci.co.uk
+DOMAIN-SUFFIX,bbc.net.uk
+DOMAIN-SUFFIX,britbox.com
+DOMAIN-SUFFIX,britbox.co.uk
+DOMAIN-SUFFIX,c4assets.com
+DOMAIN-SUFFIX,channel4.com
+DOMAIN-SUFFIX,channel5.com
+DOMAIN-SUFFIX,itv.com
+DOMAIN-SUFFIX,itvstatic.com
+DOMAIN-SUFFIX,joyn.de
+DOMAIN-SUFFIX,molotov.tv
+DOMAIN-SUFFIX,my5.tv
+DOMAIN-SUFFIX,nowtv.com
+DOMAIN-SUFFIX,rtlplus.com
+
+# Japan
+DOMAIN-SUFFIX,abema.io
+DOMAIN-SUFFIX,abema.tv
+DOMAIN-SUFFIX,abema-tv.com
+DOMAIN-SUFFIX,hjholdings.jp
+DOMAIN-SUFFIX,lemino.docomo.ne.jp
+DOMAIN-SUFFIX,nicovideo.jp
+DOMAIN-SUFFIX,nimg.jp
+DOMAIN-SUFFIX,tver.jp
+DOMAIN-SUFFIX,u-next.jp
+DOMAIN-SUFFIX,unext.jp
+DOMAIN-SUFFIX,wowow.co.jp
+
+# South Korea
+DOMAIN-SUFFIX,afreecatv.com
+DOMAIN-SUFFIX,coupangplay.com
+DOMAIN-SUFFIX,sooplive.co.kr
+DOMAIN-SUFFIX,tving.com
+DOMAIN-SUFFIX,watcha.com
+DOMAIN-SUFFIX,wavve.com
+
+# Hong Kong, Taiwan and Southeast Asia
+DOMAIN-SUFFIX,catchplay.com
+DOMAIN-SUFFIX,friday.tw
+DOMAIN-SUFFIX,kktv.me
+DOMAIN-SUFFIX,kktv.com.tw
+DOMAIN-SUFFIX,litv.tv
+DOMAIN-SUFFIX,linetv.tw
+DOMAIN-SUFFIX,mytvsuper.com
+DOMAIN-SUFFIX,myvideo.net.tw
+DOMAIN-SUFFIX,nowe.com
+DOMAIN-SUFFIX,rthk.hk
+DOMAIN-SUFFIX,rthk.org.hk
+DOMAIN-SUFFIX,tvb.com
+DOMAIN-SUFFIX,tvbanywhere.com
+DOMAIN-SUFFIX,viu.com
+DOMAIN-SUFFIX,viu.tv
+
+# India and broader Asia
+DOMAIN-SUFFIX,hotstar.com
+DOMAIN-SUFFIX,iflix.com
+DOMAIN-SUFFIX,jiohotstar.com
+DOMAIN-SUFFIX,zee5.com
+DOMAIN-SUFFIX,zee5.in
+DOMAIN-SUFFIX,zee5.tv
+
+# iQIYI international; the iqiyi.com parent is intentionally excluded
+DOMAIN-SUFFIX,intl.iqiyi.com
+DOMAIN-SUFFIX,inter.iqiyi.com
+DOMAIN-SUFFIX,intl-rcd.iqiyi.com
+DOMAIN-SUFFIX,intl-subscription.iqiyi.com
+DOMAIN-SUFFIX,iq.com
+
+# Bilibili international; mainland bilibili.com is intentionally excluded
+DOMAIN-SUFFIX,bilibili.tv
+DOMAIN-SUFFIX,biliintl.co
+DOMAIN-SUFFIX,biliintl.com
+DOMAIN-SUFFIX,bstarstatic.com
+
+# WeTV, Viki and Viu international services
+DOMAIN-SUFFIX,viki.com
+DOMAIN-SUFFIX,viki.io
+DOMAIN-SUFFIX,vikiplatform.com
+DOMAIN-SUFFIX,we-tv.com
+DOMAIN-SUFFIX,wetv.vip
+DOMAIN-SUFFIX,wetvinfo.com
+
+# Anime
+DOMAIN-SUFFIX,aniplus-asia.com
+DOMAIN-SUFFIX,crunchyroll.com
+DOMAIN-SUFFIX,crunchyrollsvc.com
+DOMAIN-SUFFIX,hidive.com
+
+# TikTok international
+DOMAIN-SUFFIX,byteintlapi.com
+DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,ibytedtos.com
+DOMAIN-SUFFIX,ibyteimg.com
+DOMAIN-SUFFIX,ipstatp.com
+DOMAIN-SUFFIX,isnssdk.com
+DOMAIN-SUFFIX,muscdn.com
+DOMAIN-SUFFIX,musical.ly
+DOMAIN-SUFFIX,sgpstatp.com
+DOMAIN-SUFFIX,tik-tokapi.com
+DOMAIN-SUFFIX,tiktok.com
+DOMAIN-SUFFIX,tiktok.us
+DOMAIN-SUFFIX,tiktokapis.com
+DOMAIN-SUFFIX,tiktokcdn-us.com
+DOMAIN-SUFFIX,tiktokcdn.com
+DOMAIN-SUFFIX,tiktokd.net
+DOMAIN-SUFFIX,tiktokd.org
+DOMAIN-SUFFIX,tiktokv.com
+DOMAIN-SUFFIX,tiktokv.us
+DOMAIN-SUFFIX,tiktokw.com
+
+# Kwai international; mainland Kuaishou domains are intentionally excluded
+DOMAIN-SUFFIX,kwai-group.com
+DOMAIN-SUFFIX,kwai.com
+DOMAIN-SUFFIX,kwai.net
+DOMAIN-SUFFIX,kwaicdn.com
+
+# Video and live-streaming platforms
+DOMAIN-SUFFIX,dailymotion.com
+DOMAIN-SUFFIX,dmcdn.net
+DOMAIN-SUFFIX,kick.com
+DOMAIN-SUFFIX,kickcdn.com
+DOMAIN-SUFFIX,live-video.net
+DOMAIN-SUFFIX,rumble.com
+DOMAIN-SUFFIX,twitch.tv
+DOMAIN-SUFFIX,twitchcdn.net
+DOMAIN-SUFFIX,twitchsvc.net
+DOMAIN-SUFFIX,ttvnw.net
+DOMAIN-SUFFIX,vimeo.com
+DOMAIN-SUFFIX,vimeocdn.com
+
+# Plex and internet television
+DOMAIN-SUFFIX,pluto.tv
+DOMAIN-SUFFIX,plex.tv
+DOMAIN-SUFFIX,plexapp.com
+DOMAIN-SUFFIX,plexapp.com.cn
+DOMAIN-SUFFIX,roku.com
+DOMAIN-SUFFIX,tubitv.com
+
+# Spotify
+DOMAIN-SUFFIX,pscdn.co
+DOMAIN-SUFFIX,scdn.co
+DOMAIN-SUFFIX,spotify.com
+DOMAIN-SUFFIX,spotifycdn.com
+DOMAIN-SUFFIX,spotifycdn.net
+
+# International music and audio
+DOMAIN-SUFFIX,applemusic.com
+DOMAIN-SUFFIX,amazonmusic.com
+DOMAIN-SUFFIX,bandcamp.com
+DOMAIN-SUFFIX,deezer.com
+DOMAIN-SUFFIX,dzcdn.net
+DOMAIN-SUFFIX,himalaya.com
+DOMAIN-SUFFIX,joox.com
+DOMAIN-SUFFIX,kkbox.com
+DOMAIN-SUFFIX,kkbox.com.tw
+DOMAIN-SUFFIX,mixcloud.com
+DOMAIN-SUFFIX,overcast.fm
+DOMAIN-SUFFIX,pandora.com
+DOMAIN-SUFFIX,qobuz.com
+DOMAIN-SUFFIX,sndcdn.com
+DOMAIN-SUFFIX,soundcloud.com
+DOMAIN-SUFFIX,tidal.com
+DOMAIN-SUFFIX,tidalhifi.com
+DOMAIN-SUFFIX,tunein.com
+DOMAIN-SUFFIX,wimpmusic.com
+
+# Service-specific dynamic hostname families
+DOMAIN-KEYWORD,-tiktokcdn-com
+DOMAIN-KEYWORD,apiproxy-device-prod-nlb-
+DOMAIN-KEYWORD,dualstack.apiproxy-
+DOMAIN-KEYWORD,dualstack.ichnaea-web-
+DOMAIN-KEYWORD,netflixdnstest
+DOMAIN-KEYWORD,youtube
