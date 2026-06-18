@@ -3,7 +3,7 @@
 # REPO: https://github.com/linnux-x/surge
 # UPDATED: 2026-06-19 06:14:16 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 383
+# TOTAL: 382
 
 # ======= Current Project Baseline ========
 DOMAIN,apple-relay.apple.com
@@ -27,7 +27,6 @@ DOMAIN,notebooklm.googleapis.com
 DOMAIN,robinfrontend-pa.googleapis.com
 DOMAIN,vertexai.googleapis.com
 DOMAIN,webchannel-alkalimakersuite-pa.clients6.google.com
-DOMAIN,api.github.com
 DOMAIN,copilot-proxy.githubusercontent.com
 DOMAIN,copilot-workspace.githubnext.com
 DOMAIN,copilotprodattachments.blob.core.windows.net
