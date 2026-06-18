@@ -1,0 +1,48 @@
+name: Sync DNS Mapping Module
+
+on:
+  schedule:
+    # 04:00 Asia/Shanghai every day
+    - cron: "0 20 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-dns-mapping-module
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.repository == 'linnux-x/surge'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Download DNS Mapping Module
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p Module
+          curl --fail --location --retry 3 --retry-delay 5 \
+            --output Module/dns_mapping.sgmodule \
+            https://ruleset.skk.moe/Modules/sukka_local_dns_mapping.sgmodule
+
+      - name: Commit Changes
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [ -z "$(git status --porcelain -- Module/dns_mapping.sgmodule)" ]; then
+            echo "No DNS mapping module changes."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Module/dns_mapping.sgmodule
+          git commit -m "Sync DNS mapping module"
+          git push
