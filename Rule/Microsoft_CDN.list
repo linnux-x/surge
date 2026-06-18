@@ -1,14 +1,11 @@
-# NAME: Microsoft China CDN
-# AUTHOR: Codex
-# UPDATED: 2026-06-14
+# NAME: Microsoft_CDN
+# AUTHOR: linnux-x
+# REPO: https://github.com/linnux-x/surge
+# UPDATED: 2026-06-18 19:36:08 +0800
 # FORMAT: Surge Ruleset
-# SOURCES: Microsoft Learn, 21Vianet Azure China, DustinWin/domain-list-custom, SukkaW/Surge, blackmatrix7/ios_rule_script
-# NOTE: Microsoft domains with Mainland China CDN delivery or China-operated service endpoints.
-# NOTE: Includes Microsoft 365 and Azure China services operated by 21Vianet.
-# NOTE: Azure China platform suffixes can also match third-party tenants hosted in that cloud.
-# NOTE: Put Microsoft_CDN.list before Microsoft.list when Mainland China traffic should use DIRECT.
+# TOTAL: 242
 
-# China-operated and global endpoints required by Microsoft 365 in China
+# ======= Current Project Baseline ========
 DOMAIN,activation.sls.microsoft.com
 DOMAIN,bj1.api.bing.com
 DOMAIN,bg.v4.a.dl.ws.microsoft.com
@@ -41,8 +38,6 @@ DOMAIN,th.bing.com
 DOMAIN,wscont1.apps.microsoft.com
 DOMAIN,wscont2.apps.microsoft.com
 DOMAIN,www.microsoft.com
-
-# Mainland China CDN and China-specific Microsoft service domains
 DOMAIN-SUFFIX,21vbc.com
 DOMAIN-SUFFIX,21vbluecloud.com
 DOMAIN-SUFFIX,21vbluecloud.net
@@ -211,3 +206,47 @@ DOMAIN-SUFFIX,windowslive.cn
 DOMAIN-SUFFIX,winmp.cn
 DOMAIN-SUFFIX,wns.windows.com
 DOMAIN-SUFFIX,xboxlive.cn
+DOMAIN,res-h3.public.cdn.office.net
+DOMAIN,statics.teams.cdn.office.net
+DOMAIN,res-2.cdn.office.net
+DOMAIN,res-1.cdn.office.net
+DOMAIN,res.cdn.office.net
+DOMAIN-SUFFIX,storecorefulfillment.download.prss.microsoft.com
+DOMAIN-SUFFIX,mpnbenefitsrtluat.download.prss.microsoft.com
+DOMAIN-SUFFIX,azurestackhubuat.download.prss.microsoft.com
+DOMAIN-SUFFIX,azuremigratetest.download.prss.microsoft.com
+DOMAIN-SUFFIX,mpnbenefitsrtl.download.prss.microsoft.com
+DOMAIN-SUFFIX,collaborateppe.download.prss.microsoft.com
+DOMAIN-SUFFIX,dreamsparkuat.download.prss.microsoft.com
+DOMAIN-SUFFIX,azurestackhub.download.prss.microsoft.com
+DOMAIN-SUFFIX,officemktuat.download.prss.microsoft.com
+DOMAIN-SUFFIX,itacademyuat.download.prss.microsoft.com
+DOMAIN-SUFFIX,azuremigrate.download.prss.microsoft.com
+DOMAIN-SUFFIX,mpnbenefits.download.prss.microsoft.com
+DOMAIN-SUFFIX,collaborate.download.prss.microsoft.com
+DOMAIN-SUFFIX,msdprod-ad.download.prss.microsoft.com
+DOMAIN-SUFFIX,dreamspark.download.prss.microsoft.com
+DOMAIN-SUFFIX,osrelease.download.prss.microsoft.com
+DOMAIN-SUFFIX,officemkt.download.prss.microsoft.com
+DOMAIN-SUFFIX,oemsocuat.download.prss.microsoft.com
+DOMAIN-SUFFIX,msproduct.download.prss.microsoft.com
+DOMAIN-SUFFIX,itacademy.download.prss.microsoft.com
+DOMAIN-SUFFIX,vlportal.download.prss.microsoft.com
+DOMAIN-SUFFIX,software.download.prss.microsoft.com
+DOMAIN-SUFFIX,cbdstest.download.prss.microsoft.com
+DOMAIN-SUFFIX,surface.download.prss.microsoft.com
+DOMAIN-SUFFIX,windbg.download.prss.microsoft.com
+DOMAIN-SUFFIX,vscode.download.prss.microsoft.com
+DOMAIN-SUFFIX,oemsoc.download.prss.microsoft.com
+DOMAIN-SUFFIX,lexuat.download.prss.microsoft.com
+DOMAIN-SUFFIX,volic.download.prss.microsoft.com
+DOMAIN-SUFFIX,myvs.download.prss.microsoft.com
+DOMAIN-SUFFIX,msdn.download.prss.microsoft.com
+DOMAIN-SUFFIX,rsm.download.prss.microsoft.com
+DOMAIN-SUFFIX,mbs.download.prss.microsoft.com
+DOMAIN-SUFFIX,lex.download.prss.microsoft.com
+DOMAIN-SUFFIX,vz.download.prss.microsoft.com
+URL-REGEX,^http://www\.microsoft\.com/pki/
+URL-REGEX,^http://www\.microsoft\.com/pkiops/
+
+# ======= SukkaW Microsoft CDN ========

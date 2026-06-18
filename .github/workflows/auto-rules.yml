@@ -1,0 +1,358 @@
+# linnux-x Surge upstream sync workflow
+# Adapted from Rabbit-Spec/Surge .github/workflows/auto-rules.yml
+
+name: Auto-Surge-Rules
+
+on:
+  schedule:
+    # 04:00 Asia/Shanghai every day
+    - cron: "0 20 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Build rules without committing changes"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auto-surge-rules
+  cancel-in-progress: false
+
+jobs:
+  update-rules:
+    if: github.repository == 'linnux-x/surge'
+    runs-on: ubuntu-latest
+
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      RULE_DIR: Rule
+      MANUAL_DIR: Rule/Manual
+      REPO_URL: https://github.com/linnux-x/surge
+      AUTHOR_NAME: linnux-x
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Download, Merge and Filter Rules
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          mkdir -p "$MANUAL_DIR"
+          UPDATE_TIME=$(TZ="Asia/Shanghai" date +"%Y-%m-%d %H:%M:%S +0800")
+
+          clean_source() {
+            awk '
+              {
+                sub(/\r$/, "")
+                sub(/[[:space:]]+$/, "")
+              }
+              /^[[:space:]]*#/ { next }
+              /^[[:space:]]*$/ { next }
+              tolower($0) ~ /7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset\.skk\.moe/ { next }
+              { print }
+            '
+          }
+
+          convert_domainset() {
+            awk '
+              {
+                sub(/\r$/, "")
+                sub(/[[:space:]]+$/, "")
+              }
+              /^[[:space:]]*$/ { next }
+              tolower($0) ~ /7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset\.skk\.moe/ { next }
+              /^\./ {
+                sub(/^\./, "")
+                print "DOMAIN-SUFFIX," tolower($0)
+                next
+              }
+              /^[A-Za-z0-9_.-]+\.[A-Za-z0-9.-]+$/ {
+                print "DOMAIN," tolower($0)
+                next
+              }
+              { print }
+            '
+          }
+
+          filter_candidates() {
+            local exclude_file=$1
+            if [ -f "$exclude_file" ] && [ -s "$exclude_file" ]; then
+              grep -vFf "$exclude_file" || true
+            else
+              cat
+            fi
+          }
+
+          append_manual_rules() {
+            local target_name=$1
+            local temp_body=$2
+            local filename_no_ext="${target_name%.*}"
+            local manual_file="$MANUAL_DIR/${filename_no_ext}.txt"
+
+            if [ -f "$manual_file" ]; then
+              echo "# ======= Manual Rules ========" >> "$temp_body"
+              sed 's/\r$//' "$manual_file" >> "$temp_body"
+              echo "" >> "$temp_body"
+            fi
+          }
+
+          append_local_baseline() {
+            local target_name=$1
+            local temp_body=$2
+            local exclude_file=$3
+            local local_file="$RULE_DIR/$target_name"
+
+            if [ -f "$local_file" ]; then
+              echo "# ======= Current Project Baseline ========" >> "$temp_body"
+              clean_source < "$local_file" | filter_candidates "$exclude_file" >> "$temp_body"
+              echo "" >> "$temp_body"
+            fi
+          }
+
+          append_upstream_source() {
+            local spec=$1
+            local temp_body=$2
+            local exclude_file=$3
+            local source_name="${spec%%|*}"
+            local source_rest="${spec#*|}"
+            local source_url="${source_rest%%|*}"
+            local source_format=""
+
+            if [ "$source_rest" != "$source_url" ]; then
+              source_format="${source_rest#*|}"
+            fi
+
+            echo "# ======= ${source_name} ========" >> "$temp_body"
+            if [ "$source_format" = "domainset" ]; then
+              curl -fsSL "$source_url" | clean_source | convert_domainset | filter_candidates "$exclude_file" >> "$temp_body"
+            else
+              curl -fsSL "$source_url" | clean_source | filter_candidates "$exclude_file" >> "$temp_body"
+            fi
+            echo "" >> "$temp_body"
+          }
+
+          apply_project_guardrails() {
+            local target_name=$1
+            local file=$2
+            local tmp="${file}.guard"
+
+            cp "$file" "$tmp"
+
+            case "$target_name" in
+              Microsoft.list)
+                grep -viE 'github|ghcr\.io' "$tmp" > "${tmp}.next" || true
+                mv "${tmp}.next" "$tmp"
+                ;;
+              Netflix.list|GlobalMedia.list|Global.list)
+                grep -viE '(^|,)([^,]*\.)?fast\.com(,|$)' "$tmp" > "${tmp}.next" || true
+                mv "${tmp}.next" "$tmp"
+                ;;
+              Google.list)
+                grep -viE 'youtube|ytimg\.com|googlevideo\.com|youtubei\.googleapis\.com' "$tmp" > "${tmp}.next" || true
+                mv "${tmp}.next" "$tmp"
+                ;;
+              China_IP.list)
+                sed -E 's/,(no-resolve|NO-RESOLVE)//g' "$tmp" > "${tmp}.next"
+                mv "${tmp}.next" "$tmp"
+                ;;
+            esac
+
+            mv "$tmp" "$file"
+          }
+
+          dedupe_preserve_order() {
+            local file=$1
+            sed -i 's/\r//g' "$file"
+            awk '/^#|^[[:space:]]*$/ { print; next } !seen[tolower($0)]++' "$file" > "${file}.tmp"
+            mv "${file}.tmp" "$file"
+          }
+
+          validate_rules() {
+            local file=$1
+            local target_name=$2
+            local invalid_lines
+            local policy_lines
+
+            invalid_lines=$(
+              awk '
+                /^[[:space:]]*#/ || /^[[:space:]]*$/ { next }
+                $0 !~ /^(DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|DOMAIN-WILDCARD|IP-CIDR|IP-CIDR6|IP-ASN|USER-AGENT|PROCESS-NAME|URL-REGEX|AND|OR|NOT),/ {
+                  print
+                  if (++n == 20) exit
+                }
+              ' "$file"
+            )
+
+            if [ -n "$invalid_lines" ]; then
+              echo "Invalid Surge rule lines in $target_name:"
+              echo "$invalid_lines"
+              exit 1
+            fi
+
+            policy_lines=$(
+              awk -F, '
+                /^[[:space:]]*#/ || /^[[:space:]]*$/ { next }
+                $1 ~ /^(DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|DOMAIN-WILDCARD|IP-CIDR|IP-CIDR6|IP-ASN|USER-AGENT|PROCESS-NAME)$/ && NF >= 3 {
+                  option = tolower($3)
+                  if (option != "no-resolve" && option != "extended-matching") {
+                    print
+                    if (++n == 20) exit
+                  }
+                }
+              ' "$file"
+            )
+
+            if [ -n "$policy_lines" ]; then
+              echo "Possible policy names found in $target_name:"
+              echo "$policy_lines"
+              exit 1
+            fi
+          }
+
+          process_rule() {
+            local target_name=$1
+            local display_name=$2
+            shift 2
+
+            local target_path="$RULE_DIR/$target_name"
+            local filename_no_ext="${target_name%.*}"
+            local exclude_file="$MANUAL_DIR/${filename_no_ext}.exclude.txt"
+            local temp_body
+            local rule_count
+
+            temp_body=$(mktemp)
+
+            append_manual_rules "$target_name" "$temp_body"
+            append_local_baseline "$target_name" "$temp_body" "$exclude_file"
+
+            for source_spec in "$@"; do
+              append_upstream_source "$source_spec" "$temp_body" "$exclude_file"
+            done
+
+            apply_project_guardrails "$target_name" "$temp_body"
+            dedupe_preserve_order "$temp_body"
+            validate_rules "$temp_body" "$target_name"
+
+            rule_count=$(awk '!/^#/ && !/^[[:space:]]*$/ { n++ } END { print n + 0 }' "$temp_body")
+
+            {
+              echo "# NAME: $display_name"
+              echo "# AUTHOR: $AUTHOR_NAME"
+              echo "# REPO: $REPO_URL"
+              echo "# UPDATED: $UPDATE_TIME"
+              echo "# FORMAT: Surge Ruleset"
+              echo "# TOTAL: $rule_count"
+              echo ""
+              cat "$temp_body"
+            } > "$target_path"
+
+            rm "$temp_body"
+          }
+
+          BM7="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge"
+          SUKKA="https://raw.githubusercontent.com/SukkaW/Surge/master/Source"
+          RABBIT="https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules"
+          QUIXOTIC="https://raw.githubusercontent.com/QuixoticHeart/rule-set/refs/heads/ruleset/surge"
+
+          process_rule "AI.list" "AI" \
+            "SukkaW AI|$SUKKA/non_ip/ai.conf" \
+            "SukkaW Apple Intelligence|$SUKKA/non_ip/apple_intelligence.conf" \
+            "Rabbit-Spec AIGC|$RABBIT/AIGC.list"
+
+          process_rule "Apple.list" "Apple" \
+            "blackmatrix7 Apple|$BM7/Apple/Apple_All_No_Resolve.list"
+
+          process_rule "Apple_CN.list" "Apple_CN" \
+            "SukkaW Apple CN|https://ruleset.skk.moe/List/non_ip/apple_cn.conf" \
+            "SukkaW Apple CDN|https://ruleset.skk.moe/List/domainset/apple_cdn.conf|domainset"
+
+          process_rule "CDN.list" "CDN" \
+            "SukkaW CDN|$SUKKA/non_ip/cdn.conf"
+
+          process_rule "China.list" "China" \
+            "SukkaW Domestic|$SUKKA/non_ip/domestic.conf" \
+            "blackmatrix7 ChinaMaxNoIP Domain|$BM7/ChinaMaxNoIP/ChinaMaxNoIP_Domain.list|domainset" \
+            "Rabbit-Spec China|$RABBIT/China.list"
+
+          process_rule "China_IP.list" "China_IP" \
+            "Loyalsoldier China CIDR|https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/cncidr.txt" \
+            "blackmatrix7 China IPs|$BM7/ChinaIPs/ChinaIPs.list" \
+            "Rabbit-Spec China CIDR|$RABBIT/ChinaCIDR.list"
+
+          process_rule "ChinaMedia.list" "ChinaMedia" \
+            "blackmatrix7 ChinaMedia|$BM7/ChinaMedia/ChinaMedia.list"
+
+          process_rule "Disney.list" "Disney" \
+            "blackmatrix7 Disney|$BM7/Disney/Disney.list"
+
+          process_rule "Game.list" "Game" \
+            "blackmatrix7 Game|$BM7/Game/Game.list"
+
+          process_rule "Global.list" "Global" \
+            "blackmatrix7 Global|$BM7/Global/Global_All_No_Resolve.list"
+
+          process_rule "GlobalMedia.list" "GlobalMedia" \
+            "blackmatrix7 GlobalMedia|$BM7/GlobalMedia/GlobalMedia_All_No_Resolve.list"
+
+          process_rule "Google.list" "Google" \
+            "blackmatrix7 Google|$BM7/Google/Google.list"
+
+          process_rule "Microsoft.list" "Microsoft" \
+            "blackmatrix7 Microsoft|$BM7/Microsoft/Microsoft.list"
+
+          process_rule "Microsoft_CDN.list" "Microsoft_CDN" \
+            "SukkaW Microsoft CDN|https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf"
+
+          process_rule "Netflix.list" "Netflix" \
+            "blackmatrix7 Netflix|$BM7/Netflix/Netflix.list"
+
+          process_rule "PayPal.list" "PayPal" \
+            "blackmatrix7 PayPal|$BM7/PayPal/PayPal.list"
+
+          process_rule "SocialMedia.list" "SocialMedia" \
+            "QuixoticHeart SocialMedia|$QUIXOTIC/socialmedia.list" \
+            "QuixoticHeart Forum|$QUIXOTIC/forum.list" \
+            "blackmatrix7 Facebook|$BM7/Facebook/Facebook.list" \
+            "blackmatrix7 Instagram|$BM7/Instagram/Instagram.list" \
+            "blackmatrix7 Twitter|$BM7/Twitter/Twitter.list"
+
+          process_rule "Speedtest.list" "Speedtest" \
+            "SukkaW Speedtest|$SUKKA/domainset/speedtest.conf|domainset"
+
+          process_rule "Telegram.list" "Telegram" \
+            "blackmatrix7 Telegram|$BM7/Telegram/Telegram.list" \
+            "SukkaW Telegram IP|https://ruleset.skk.moe/List/ip/telegram.conf"
+
+          process_rule "TikTok.list" "TikTok" \
+            "blackmatrix7 TikTok|$BM7/TikTok/TikTok.list"
+
+          process_rule "WeChat.list" "WeChat" \
+            "blackmatrix7 WeChat|$BM7/WeChat/WeChat.list"
+
+          process_rule "YouTube.list" "YouTube" \
+            "blackmatrix7 YouTube|$BM7/YouTube/YouTube.list"
+
+      - name: Commit and Push Changes
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != 'true' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add Rule/
+
+          if ! git diff --staged --quiet; then
+            COMMIT_TIME=$(TZ="Asia/Shanghai" date +"%Y-%m-%d %H:%M:%S +0800")
+            git commit -m "$COMMIT_TIME Update rules"
+            git push
+          fi

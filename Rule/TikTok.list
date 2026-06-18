@@ -1,15 +1,12 @@
 # NAME: TikTok
-# AUTHOR: Codex
-# UPDATED: 2026-06-14
+# AUTHOR: linnux-x
+# REPO: https://github.com/linnux-x/surge
+# UPDATED: 2026-06-18 19:36:08 +0800
 # FORMAT: Surge Ruleset
-# SOURCES: TikTok for Developers, SukkaW/Surge, blackmatrix7/ios_rule_script, Rabbit-Spec/Surge
-# NOTE: TikTok international app, web, account/API, video, image, effect and live-media traffic.
-# NOTE: Other ByteDance products, generic telemetry, shared cloud ranges and volatile IPs are intentionally excluded.
+# TOTAL: 51
 
-# TikTok-specific host on a shared effect CDN domain
+# ======= Current Project Baseline ========
 DOMAIN,lf16-effectcdn.byteeffecttos-g.com
-
-# International control plane and media delivery
 DOMAIN-SUFFIX,byteintlapi.com
 DOMAIN-SUFFIX,byteoversea.com
 DOMAIN-SUFFIX,ibytedtos.com
@@ -44,9 +41,21 @@ DOMAIN-SUFFIX,ttcdn-us.com
 DOMAIN-SUFFIX,ttlivecdn.com
 DOMAIN-SUFFIX,ttoverseaus.net
 DOMAIN-SUFFIX,ttwstatic.com
-
-# Dynamic TikTok Akamai host family, such as p16-tiktokcdn-com.akamaized.net
 DOMAIN-KEYWORD,-tiktokcdn-com
-
-# HTTP/HTTPS client fallback
 USER-AGENT,TikTok*
+DOMAIN,lf16-pkgcdn.pitaya-clientai.com
+DOMAIN,p16-tiktokcdn-com.akamaized.net
+DOMAIN,trae-api-sg.mchost.guru
+DOMAIN-SUFFIX,bytedapm.com
+DOMAIN-SUFFIX,bytegecko-i18n.com
+DOMAIN-SUFFIX,capcut.com
+DOMAIN-SUFFIX,marscode.com
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,tiktokmusic.app
+DOMAIN-SUFFIX,trae.ai
+DOMAIN-SUFFIX,ttwebview.com
+DOMAIN-KEYWORD,musical.ly
+DOMAIN-KEYWORD,tiktok
+PROCESS-NAME,com.zhiliaoapp.musically
+
+# ======= blackmatrix7 TikTok ========

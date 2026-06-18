@@ -1,17 +1,12 @@
 # NAME: Microsoft
-# AUTHOR: Codex
-# UPDATED: 2026-06-14
+# AUTHOR: linnux-x
+# REPO: https://github.com/linnux-x/surge
+# UPDATED: 2026-06-18 19:36:08 +0800
 # FORMAT: Surge Ruleset
-# SOURCES: Microsoft Learn, v2fly/domain-list-community, SukkaW/Surge, blackmatrix7/ios_rule_script, Rabbit-Spec/Surge
-# NOTE: Broad Microsoft-owned and Microsoft-service domain coverage.
-# NOTE: Includes Microsoft cloud, productivity, gaming, developer, and major subsidiary domains.
-# NOTE: Shared Akamai roots and domains no longer owned by Microsoft are excluded.
-# NOTE: Put Microsoft_CDN.list and product-specific rules before this broad ruleset.
+# TOTAL: 698
 
-# Microsoft-specific endpoints on shared providers
+# ======= Current Project Baseline ========
 DOMAIN,vsmarketplacebadge.apphb.com
-
-# Microsoft, products, cloud platforms, studios, and subsidiaries
 DOMAIN-SUFFIX,1drv.com
 DOMAIN-SUFFIX,1drv.ms
 DOMAIN-SUFFIX,21vbc.com
@@ -677,3 +672,37 @@ DOMAIN-SUFFIX,xbx.lv
 DOMAIN-SUFFIX,yammer.com
 DOMAIN-SUFFIX,yammerusercontent.com
 DOMAIN-SUFFIX,zenimax.com
+DOMAIN-SUFFIX,akadns.net
+DOMAIN-SUFFIX,b.akamaiedge.net
+DOMAIN-SUFFIX,cegid-cloud.cn
+DOMAIN-SUFFIX,edgesuite.net
+DOMAIN-SUFFIX,fabric.io
+DOMAIN-SUFFIX,g.akamaiedge.net
+DOMAIN-SUFFIX,gamepass.com
+DOMAIN-SUFFIX,helpshift.com
+DOMAIN-SUFFIX,here.com
+DOMAIN-SUFFIX,here.net
+DOMAIN-SUFFIX,heremaps.cn
+DOMAIN-SUFFIX,public-trust.com
+DOMAIN-SUFFIX,unity3dcloud.cn
+DOMAIN-SUFFIX,uservoice.com
+DOMAIN-SUFFIX,xbox.co
+DOMAIN-SUFFIX,xbox.com
+DOMAIN-SUFFIX,xbox.eu
+DOMAIN-SUFFIX,xbox.org
+DOMAIN-SUFFIX,xboxgamepass.com
+DOMAIN-SUFFIX,xboxgamestudios.com
+DOMAIN-SUFFIX,xboxlive.com
+DOMAIN-SUFFIX,xboxplayanywhere.com
+DOMAIN-SUFFIX,xboxservices.com
+DOMAIN-KEYWORD,microsoft
+DOMAIN-KEYWORD,1drv
+DOMAIN-KEYWORD,onedrive
+DOMAIN-KEYWORD,skydrive
+USER-AGENT,Microsoft*
+USER-AGENT,OneDrive*
+USER-AGENT,OneDriveiOSApp*
+PROCESS-NAME,OneDrive
+PROCESS-NAME,OneDriveUpdater
+
+# ======= blackmatrix7 Microsoft ========

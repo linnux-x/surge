@@ -1,19 +1,18 @@
 # NAME: Speedtest
-# AUTHOR: Codex
-# UPDATED: 2026-06-14
+# AUTHOR: linnux-x
+# REPO: https://github.com/linnux-x/surge
+# UPDATED: 2026-06-18 19:36:08 +0800
 # FORMAT: Surge Ruleset
-# SOURCES: SukkaW/Surge, Ookla, Cloudflare, LibreSpeed, blackmatrix7/ios_rule_script, QuixoticHeart/rule-set
-# NOTE: Public speed-test platforms and stable test backends.
-# NOTE: Volatile per-ISP nodes are covered by specific hostname keywords where practical.
+# TOTAL: 106
 
-# Stable test backends hosted on shared infrastructure
+# ======= Manual Rules ========
+DOMAIN-SUFFIX,fast.com
+
+# ======= Current Project Baseline ========
 DOMAIN,mensura.cdn-apple.com
 DOMAIN,open.cachefly.net
 DOMAIN,wifiman-stability-test.ubncloud.com
 DOMAIN,wifiman.ubncloud.com
-
-# Speed-test platforms and measurement networks
-DOMAIN-SUFFIX,fast.com
 DOMAIN-SUFFIX,cdnst.net
 DOMAIN-SUFFIX,cellmaps.com
 DOMAIN-SUFFIX,librespeed.org
@@ -30,7 +29,90 @@ DOMAIN-SUFFIX,testmy.net
 DOMAIN-SUFFIX,webtest.net
 DOMAIN-SUFFIX,wifiman.com
 DOMAIN-SUFFIX,wifiman.me
-
-# Dynamic test node hostnames using explicit service names
 DOMAIN-KEYWORD,ookla
 DOMAIN-KEYWORD,speedtest
+DOMAIN-SUFFIX,speedtest.net
+DOMAIN-SUFFIX,speedtestcustom.com
+DOMAIN-SUFFIX,ooklaserver.net
+DOMAIN-SUFFIX,speed.misaka.one
+DOMAIN-SUFFIX,speedtest.rt.ru
+DOMAIN-SUFFIX,speedtest.aptg.com.tw
+DOMAIN-SUFFIX,speedtest.gslnetworks.com
+DOMAIN-SUFFIX,speedtest.jsinfo.net
+DOMAIN-SUFFIX,speedtest.i3d.net
+DOMAIN-SUFFIX,speedtest.telus.com
+DOMAIN-SUFFIX,speedtest.telstra.net
+DOMAIN-SUFFIX,speedtest.clouvider.net
+DOMAIN-SUFFIX,speedtest.idv.tw
+DOMAIN-SUFFIX,speedtest.frontier.com
+DOMAIN-SUFFIX,speedtest.orange.fr
+DOMAIN-SUFFIX,speedtest.centurylink.net
+DOMAIN-SUFFIX,srvr.bell.ca
+DOMAIN-SUFFIX,speedtest.contabo.net
+DOMAIN,speedtest.hk.chinamobile.com
+DOMAIN,speedtestbb.hk.chinamobile.com
+DOMAIN-SUFFIX,hizinitestet.com
+DOMAIN-SUFFIX,linknetspeedtest.net.br
+DOMAIN,speedtest.rit.edu
+DOMAIN,speedtest.ropa.de
+DOMAIN,speedtest.sits.su
+DOMAIN,speedtest.tigo.cr
+DOMAIN-SUFFIX,speedtest.pni.tw
+DOMAIN-SUFFIX,speed.pfm.gg
+DOMAIN-SUFFIX,speedtest.faelix.net
+DOMAIN-SUFFIX,speedtest.labixe.net
+DOMAIN-SUFFIX,speedtest.warian.net
+DOMAIN-SUFFIX,speedtest.starhub.com
+DOMAIN-SUFFIX,speedtest.gibir.net.tr
+DOMAIN-SUFFIX,speedtest.ozarksgo.net
+DOMAIN-SUFFIX,speedtest.exetel.com.au
+DOMAIN-SUFFIX,speedtest.sbcglobal.net
+DOMAIN-SUFFIX,speedtest.leaptel.com.au
+DOMAIN-SUFFIX,speedtest.windstream.net
+DOMAIN-SUFFIX,speedtest.vodafone.com.au
+DOMAIN-SUFFIX,speedtest.rascom.ru
+DOMAIN-SUFFIX,speedtest.dchost.com
+DOMAIN-SUFFIX,speedtest.highnet.com
+DOMAIN-SUFFIX,speedtest.seattle.wa.limewave.net
+DOMAIN-SUFFIX,speedtest.optitel.com.au
+DOMAIN-SUFFIX,speednet.net.tr
+DOMAIN-SUFFIX,speedtest.angolacables.co.ao
+DOMAIN-SUFFIX,ookla-speedtest.fsr.com
+DOMAIN-SUFFIX,speedtest.comnet.com.tr
+DOMAIN-SUFFIX,speedtest.gslnetworks.com.au
+DOMAIN-SUFFIX,test.gslnetworks.com.au
+DOMAIN-SUFFIX,speedtestunonet.com.br
+DOMAIN-SUFFIX,speedtest.alagas.net
+DOMAIN,speedtest.surfshark.com
+DOMAIN-SUFFIX,speedtest.aarnet.net.au
+DOMAIN-SUFFIX,ookla.rcp.net
+DOMAIN-SUFFIX,ookla-speedtests.e2ro.com
+DOMAIN-SUFFIX,speedtest.com.sg
+DOMAIN-SUFFIX,ookla.ddnsgeek.com
+DOMAIN-SUFFIX,speedtest.cmcnetworks.net
+DOMAIN-SUFFIX,speedtest.moack.co.kr
+DOMAIN,speedtest.mtnetworks.mn
+DOMAIN-SUFFIX,speedtest.waicore.com
+DOMAIN-SUFFIX,speedtest.love
+DOMAIN-SUFFIX,speedtest.6667890.xyz
+DOMAIN-SUFFIX,speedtest.kansuiun.com
+DOMAIN-SUFFIX,speedtest.tjokas.com
+DOMAIN-SUFFIX,speedtest.timeweb.ru
+DOMAIN-SUFFIX,speedtest.vianet.ca
+DOMAIN-SUFFIX,speedtest.vipnetconexao.com.br
+DOMAIN-SUFFIX,speedtest.royalehosting.net
+DOMAIN-SUFFIX,speedtest.pavlovmedia.net
+DOMAIN-SUFFIX,speedtest.serverside.com
+DOMAIN-SUFFIX,speedtest.airlinkdc.com
+DOMAIN-SUFFIX,speedtest.soraxus.com
+DOMAIN-SUFFIX,speedtest.singnet.com.sg
+DOMAIN-SUFFIX,wifiman.ubncloud.com
+DOMAIN-SUFFIX,wifiman-stability-test.ubncloud.com
+DOMAIN,speedtest.macpaw.com
+DOMAIN-SUFFIX,netspeedtestmaster.com
+DOMAIN-SUFFIX,backend.librespeed.org
+DOMAIN-SUFFIX,speedtest.linode.com
+DOMAIN-SUFFIX,mlab-oti.measurement-lab.org
+DOMAIN-SUFFIX,speed.hinet.net
+
+# ======= SukkaW Speedtest ========

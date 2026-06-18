@@ -1,21 +1,17 @@
 # NAME: AI
-# AUTHOR: Codex
-# UPDATED: 2026-06-14
+# AUTHOR: linnux-x
+# REPO: https://github.com/linnux-x/surge
+# UPDATED: 2026-06-18 19:36:08 +0800
 # FORMAT: Surge Ruleset
-# SOURCES: Official service sites, v2fly/domain-list-community, DustinWin/domain-list-custom, SukkaW/Surge, Rabbit-Spec/Surge, blackmatrix7/ios_rule_script, QuixoticHeart/rule-set
-# NOTE: International AI services, including Apple Intelligence, assistants, model platforms, coding agents, research, productivity and generative media.
-# NOTE: Mainland China AI products, generic analytics and identity providers, shared cloud ranges and unverified single-host IP rules are intentionally excluded.
-# NOTE: Product-root domains are included where the AI application cannot be separated from the vendor website by hostname.
+# TOTAL: 383
 
-# Apple Intelligence
+# ======= Current Project Baseline ========
 DOMAIN,apple-relay.apple.com
 DOMAIN,apple-relay.cloudflare.com
 DOMAIN,apple-relay.fastly-edge.com
 DOMAIN,cp4.cloudflare.com
 DOMAIN,gspe1-ssl.ls.apple.com
 DOMAIN,guzzoni.apple.com
-
-# Google AI
 DOMAIN,ai.google.dev
 DOMAIN,aida.googleapis.com
 DOMAIN,aiplatform.googleapis.com
@@ -31,8 +27,6 @@ DOMAIN,notebooklm.googleapis.com
 DOMAIN,robinfrontend-pa.googleapis.com
 DOMAIN,vertexai.googleapis.com
 DOMAIN,webchannel-alkalimakersuite-pa.clients6.google.com
-
-# Microsoft and GitHub Copilot
 DOMAIN,api.github.com
 DOMAIN,copilot-proxy.githubusercontent.com
 DOMAIN,copilot-workspace.githubnext.com
@@ -41,14 +35,10 @@ DOMAIN,gateway.bingviz.microsoft.net
 DOMAIN,gateway.bingviz.microsoftapp.net
 DOMAIN,services.bingapis.com
 DOMAIN,sydney.bing.com
-
-# OpenAI dedicated infrastructure
 DOMAIN,openai-api.arkoselabs.com
 DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
 DOMAIN,openaicomproductionae4b.blob.core.windows.net
 DOMAIN,production-openaicom-storage.azureedge.net
-
-# Other dedicated AI endpoints
 DOMAIN,api.together.xyz
 DOMAIN,build.nvidia.com
 DOMAIN,coderabbit.gallery.vsassets.io
@@ -60,8 +50,6 @@ DOMAIN,imagine.meta.com
 DOMAIN,ppl-ai-file-upload.s3.amazonaws.com
 DOMAIN,pplx-res.cloudinary.com
 DOMAIN,servd-anthropic-website.b-cdn.net
-
-# OpenAI
 DOMAIN-SUFFIX,ai.com
 DOMAIN-SUFFIX,cdn.openaimerge.com
 DOMAIN-SUFFIX,chat.com
@@ -78,8 +66,6 @@ DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,openaicom.imgix.net
 DOMAIN-SUFFIX,prodregistryv2.org
 DOMAIN-SUFFIX,sora.com
-
-# Anthropic Claude
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,clau.de
 DOMAIN-SUFFIX,claude.ai
@@ -87,8 +73,6 @@ DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,claudemcpclient.com
 DOMAIN-SUFFIX,claudemcpcontent.com
 DOMAIN-SUFFIX,claudeusercontent.com
-
-# Google Gemini, DeepMind, NotebookLM and Labs
 DOMAIN-SUFFIX,ai.studio
 DOMAIN-SUFFIX,aicode.googleapis.com
 DOMAIN-SUFFIX,aistudio.google.com
@@ -116,19 +100,13 @@ DOMAIN-SUFFIX,opal.google
 DOMAIN-SUFFIX,opal.google.com
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,stitch.withgoogle.com
-
-# Apple Intelligence support
 DOMAIN-SUFFIX,smoot.apple.com
-
-# Microsoft, GitHub Copilot and Azure AI
 DOMAIN-SUFFIX,agentclientprotocol.com
 DOMAIN-SUFFIX,ai.azure.com
 DOMAIN-SUFFIX,copilot.cloud.microsoft
 DOMAIN-SUFFIX,copilot.microsoft.com
 DOMAIN-SUFFIX,githubcopilot.com
 DOMAIN-SUFFIX,openai.azure.com
-
-# AI assistants and search
 DOMAIN-SUFFIX,andisearch.com
 DOMAIN-SUFFIX,anythingllm.com
 DOMAIN-SUFFIX,arena.ai
@@ -174,8 +152,6 @@ DOMAIN-SUFFIX,you.com
 DOMAIN-SUFFIX,youmind.ai
 DOMAIN-SUFFIX,youmind.com
 DOMAIN-SUFFIX,youmind.site
-
-# Model providers and AI infrastructure
 DOMAIN-SUFFIX,ai21.com
 DOMAIN-SUFFIX,anyscale.com
 DOMAIN-SUFFIX,assemblyai.com
@@ -222,8 +198,6 @@ DOMAIN-SUFFIX,voyageai.com
 DOMAIN-SUFFIX,wandb.ai
 DOMAIN-SUFFIX,watsonx.ai
 DOMAIN-SUFFIX,weaviate.io
-
-# Coding AI and agents
 DOMAIN-SUFFIX,aider.chat
 DOMAIN-SUFFIX,augmentcode.com
 DOMAIN-SUFFIX,blackbox.ai
@@ -267,8 +241,6 @@ DOMAIN-SUFFIX,v0.dev
 DOMAIN-SUFFIX,windsurf.build
 DOMAIN-SUFFIX,windsurf.com
 DOMAIN-SUFFIX,zed.dev
-
-# Image, video, audio and creative AI
 DOMAIN-SUFFIX,bfl.ai
 DOMAIN-SUFFIX,blackforestlabs.ai
 DOMAIN-SUFFIX,boomy.com
@@ -305,8 +277,6 @@ DOMAIN-SUFFIX,suno.ai
 DOMAIN-SUFFIX,suno.com
 DOMAIN-SUFFIX,synthesia.io
 DOMAIN-SUFFIX,udio.com
-
-# Research, meetings and productivity AI
 DOMAIN-SUFFIX,consensus.app
 DOMAIN-SUFFIX,deepl.com
 DOMAIN-SUFFIX,elicit.com
@@ -327,18 +297,101 @@ DOMAIN-SUFFIX,tldv.io
 DOMAIN-SUFFIX,wordtune.com
 DOMAIN-SUFFIX,writer.com
 DOMAIN-SUFFIX,writesonic.com
-
-# Voice agents
 DOMAIN-SUFFIX,bland.ai
 DOMAIN-SUFFIX,cartesia.ai
 DOMAIN-SUFFIX,retellai.com
 DOMAIN-SUFFIX,vapi.ai
-
-# Local and open AI tooling
 DOMAIN-SUFFIX,comfy.org
 DOMAIN-SUFFIX,comfyci.org
 DOMAIN-SUFFIX,comfyregistry.org
 DOMAIN-SUFFIX,ollama.com
-
-# Stable service-specific endpoint families
 DOMAIN-KEYWORD,bedrock-runtime
+DOMAIN-KEYWORD,openai
+URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+
+DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com
+DOMAIN,jules.google.com
+DOMAIN,antigravity.google
+DOMAIN,antigravity-unleash.goog
+DOMAIN,api.jetbrains.ai
+DOMAIN,openrouter.ai
+DOMAIN,aistudio.google.com
+DOMAIN,api-iam.intercom.io
+DOMAIN,api.msn.com
+DOMAIN,api.statsig.com
+DOMAIN,assets.msn.com
+DOMAIN,bard.google.com
+DOMAIN,browser-intake-datadoghq.com
+DOMAIN,cdn.usefathom.com
+DOMAIN,chat.openai.com.cdn.cloudflare.net
+DOMAIN,copilot.microsoft.com
+DOMAIN,gemini.google.com
+DOMAIN,generativelanguage.googleapis.com
+DOMAIN,in.appcenter.ms
+DOMAIN,location.microsoft.com
+DOMAIN,makersuite.google.com
+DOMAIN,o33249.ingest.sentry.io
+DOMAIN,odc.officeapps.live.com
+DOMAIN,openaiapi-site.azureedge.net
+DOMAIN,r.bing.com
+DOMAIN,self.events.data.microsoft.com
+DOMAIN,static.cloudflareinsights.com
+DOMAIN,www.bing.com
+DOMAIN-SUFFIX,algolia.net
+DOMAIN-SUFFIX,android.chat.openai.com
+DOMAIN-SUFFIX,api.microsoftapp.net
+DOMAIN-SUFFIX,api.statsig.com
+DOMAIN-SUFFIX,apis.google.com
+DOMAIN-SUFFIX,app.launchdarkly.com
+DOMAIN-SUFFIX,apps.mzstatic.com
+DOMAIN-SUFFIX,auth.openai.com
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,auth0.openai.com
+DOMAIN-SUFFIX,bing-shopping.microsoft-falcon.io
+DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,cdn.workos.com
+DOMAIN-SUFFIX,challenges.cloudflare.com
+DOMAIN-SUFFIX,chat.openai.com
+DOMAIN-SUFFIX,client-api.arkoselabs.com
+DOMAIN-SUFFIX,clientstream.launchdarkly.com
+DOMAIN-SUFFIX,ct.sendgrid.net
+DOMAIN-SUFFIX,desktop.chat.openai.com
+DOMAIN-SUFFIX,edgeservices.bing.com
+DOMAIN-SUFFIX,events.launchdarkly.com
+DOMAIN-SUFFIX,events.statsigapi.net
+DOMAIN-SUFFIX,forwarder.workos.com
+DOMAIN-SUFFIX,host.livekit.cloud
+DOMAIN-SUFFIX,identrust.com
+DOMAIN-SUFFIX,images.workoscdn.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,ios.chat.openai.com
+DOMAIN-SUFFIX,js.intercomcdn.com
+DOMAIN-SUFFIX,js.stripe.com
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,livekit.cloud
+DOMAIN-SUFFIX,o207216.ingest.sentry.io
+DOMAIN-SUFFIX,o33249.ingest.sentry.io
+DOMAIN-SUFFIX,observeit.net
+DOMAIN-SUFFIX,rum.browser-intake-datadoghq.com
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,setup.auth.openai.com
+DOMAIN-SUFFIX,setup.workos.com
+DOMAIN-SUFFIX,statsig.com
+DOMAIN-SUFFIX,statsigapi.net
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,tcr9i.chat.openai.com
+DOMAIN-SUFFIX,turn.livekit.cloud
+DOMAIN-SUFFIX,workos.com
+DOMAIN-SUFFIX,workos.imgix.net
+IP-ASN,14061,no-resolve
+IP-ASN,20473,no-resolve
+IP-CIDR,129.146.3.78/32,no-resolve
+IP-CIDR,24.199.123.28/32,no-resolve
+IP-CIDR,64.23.132.171/32,no-resolve
+
+# ======= SukkaW AI ========
+
+# ======= SukkaW Apple Intelligence ========
+
+# ======= Rabbit-Spec AIGC ========

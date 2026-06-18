@@ -1,13 +1,11 @@
 # NAME: CDN
-# AUTHOR: Codex
-# UPDATED: 2026-06-14
+# AUTHOR: linnux-x
+# REPO: https://github.com/linnux-x/surge
+# UPDATED: 2026-06-18 19:36:08 +0800
 # FORMAT: Surge Ruleset
-# SOURCES: SukkaW/Surge, official CDN and vendor documentation
-# NOTE: Public static assets, package resources, images, fonts and vendor-owned content delivery.
-# NOTE: Shared cloud hosting, arbitrary tenant platforms, APIs, telemetry, OCSP, NTP and geo-sensitive streaming delivery are excluded.
-# NOTE: Put Apple_CN.list and Microsoft_CDN.list before CDN.list; put CDN.list before Global.list and China.list.
+# TOTAL: 546
 
-# Open-source package and web-library hosts
+# ======= Current Project Baseline ========
 DOMAIN,ajax.googleapis.com
 DOMAIN,ajax.microsoft.com
 DOMAIN,cdn.babylonjs.com
@@ -33,8 +31,6 @@ DOMAIN,plugins.dprint.dev
 DOMAIN,static.npmjs.com
 DOMAIN,static-production.npmjs.com
 DOMAIN,twemoji.maxcdn.com
-
-# Project, documentation and code-hosting assets
 DOMAIN,assets.github.dev
 DOMAIN,cdn.googlesource.com
 DOMAIN,cn.download.nvidia.com
@@ -46,8 +42,6 @@ DOMAIN,playgroundcdn.typescriptlang.org
 DOMAIN,screenshots.debian.net
 DOMAIN,typescript.azureedge.net
 DOMAIN,vsmarketplacebadge.apphb.com
-
-# WordPress, avatar and badge delivery
 DOMAIN,cdn.libravatar.org
 DOMAIN,fonts-api.wp.com
 DOMAIN,fonts.wp.com
@@ -59,8 +53,6 @@ DOMAIN,ps.w.org
 DOMAIN,s0.wp.com
 DOMAIN,s.w.org
 DOMAIN,seccdn.libravatar.org
-
-# Social and communication static assets
 DOMAIN,assets.twitch.tv
 DOMAIN,cdn.bsky.social
 DOMAIN,connect.facebook.net
@@ -79,14 +71,10 @@ DOMAIN,static.twitchcdn.net
 DOMAIN,static.whatsapp.net
 DOMAIN,video.bsky.app
 DOMAIN,web-cdn.bsky.app
-
-# Google static content and image proxies
 DOMAIN,docs.googleusercontent.com
 DOMAIN,drive.googleusercontent.com
 DOMAIN,img.youtube.com
 DOMAIN,mail.googleusercontent.com
-
-# Apple static delivery
 DOMAIN,events-delivery.apple.com
 DOMAIN,events-live.apple.com
 DOMAIN,icons.axm-usercontent-apple.com
@@ -94,8 +82,6 @@ DOMAIN,news-assets.apple.com
 DOMAIN,pba.apple.com
 DOMAIN,static.ess.apple.com
 DOMAIN,statici.icloud.com
-
-# Microsoft static delivery on shared provider trees
 DOMAIN,alcdn.msauth.net
 DOMAIN,assets.msn.com
 DOMAIN,assets.onestore.ms
@@ -124,13 +110,9 @@ DOMAIN,store-images.microsoft.com
 DOMAIN,store-images.s-microsoft.com
 DOMAIN,support.content.office.net
 DOMAIN,wcpstatic.microsoft.com
-
-# AI website assets and generated-content delivery
 DOMAIN,pplx-res.cloudinary.com
 DOMAIN,production-openaicom-storage.azureedge.net
 DOMAIN,servd-anthropic-website.b-cdn.net
-
-# Game clients, patches and downloadable assets
 DOMAIN,blizzard.gcdn.cloudn.co.kr
 DOMAIN,blzddist1-a.akamaihd.net
 DOMAIN,blzddist2-a.akamaihd.net
@@ -150,8 +132,6 @@ DOMAIN,steam.ru.qtlglb.com
 DOMAIN,steampipe.akamaized.net
 DOMAIN,steampipe-kr.akamaized.net
 DOMAIN,steampipe-partner.akamaized.net
-
-# Adobe fonts and static assets
 DOMAIN,a5.behance.net
 DOMAIN,assets.fonts.adobe.com
 DOMAIN,cdn.myportfolio.com
@@ -159,8 +139,6 @@ DOMAIN,mir-s3-cdn-cf.behance.net
 DOMAIN,static-assets.photoshop.adobe.com
 DOMAIN,use.typekit.com
 DOMAIN,wwwimages2.adobe.com
-
-# Image transformation and delivery hosts
 DOMAIN,api.dicebear.com
 DOMAIN,i.giphy.com
 DOMAIN,i.ibb.co
@@ -179,8 +157,6 @@ DOMAIN,media3.giphy.com
 DOMAIN,media4.giphy.com
 DOMAIN,res.cloudinary.com
 DOMAIN,s.imgur.com
-
-# Commerce, publishing and support assets
 DOMAIN,assets.squarespace.com
 DOMAIN,cdn.shopify.com
 DOMAIN,design-assets.hubspot.com
@@ -189,8 +165,6 @@ DOMAIN,static1.squarespace.com
 DOMAIN,static3.squarespace.com
 DOMAIN,web-assets.zendesk.com
 DOMAIN,web-assets.zendesk.co.jp
-
-# Generic video-player and image assets without service geo routing
 DOMAIN,cdn.jwplayer.com
 DOMAIN,content.jwplatform.com
 DOMAIN,embed-cloudfront.wistia.com
@@ -199,8 +173,6 @@ DOMAIN,embedwistia-a.akamaihd.net
 DOMAIN,fast.wistia.com
 DOMAIN,fast.wistia.net
 DOMAIN,player.vimeo.com
-
-# Open-source and package CDNs
 DOMAIN-SUFFIX,ant.design
 DOMAIN-SUFFIX,aspnetcdn.com
 DOMAIN-SUFFIX,bootstrapcdn.com
@@ -243,8 +215,6 @@ DOMAIN-SUFFIX,unpkg.com
 DOMAIN-SUFFIX,vuejs.org
 DOMAIN-SUFFIX,zencdn.net
 DOMAIN-SUFFIX,ziglang.org
-
-# Code-hosting and project assets
 DOMAIN-SUFFIX,bitbucket.io
 DOMAIN-SUFFIX,bytebucket.org
 DOMAIN-SUFFIX,codeberg.page
@@ -266,16 +236,12 @@ DOMAIN-SUFFIX,vsassets.io
 DOMAIN-SUFFIX,vscode-cdn.net
 DOMAIN-SUFFIX,vscode-unpkg.net
 DOMAIN-SUFFIX,vsmarketplacebadges.dev
-
-# WordPress and avatar delivery
 DOMAIN-SUFFIX,cravatar.eu
 DOMAIN-SUFFIX,files.wordpress.com
 DOMAIN-SUFFIX,gravatar.com
 DOMAIN-SUFFIX,minotar.net
 DOMAIN-SUFFIX,pressablecdn.com
 DOMAIN-SUFFIX,unavatar.io
-
-# Social and communication assets
 DOMAIN-SUFFIX,cdn.bsky.app
 DOMAIN-SUFFIX,4cdn.org
 DOMAIN-SUFFIX,4pcdn.org
@@ -304,15 +270,11 @@ DOMAIN-SUFFIX,vk-cdn.net
 DOMAIN-SUFFIX,vkusercdn.ru
 DOMAIN-SUFFIX,xda-cdn.com
 DOMAIN-SUFFIX,xdaimages.com
-
-# Google-owned static asset trees
 DOMAIN-SUFFIX,blogblog.com
 DOMAIN-SUFFIX,bp.blogspot.com
 DOMAIN-SUFFIX,ggpht.com
 DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,ytimg.com
-
-# Apple-owned content delivery
 DOMAIN-SUFFIX,aaplimg.com
 DOMAIN-SUFFIX,cdn-apple.com
 DOMAIN-SUFFIX,cdn-apple-mapkit.com
@@ -325,8 +287,6 @@ DOMAIN-SUFFIX,itunes.com.edgekey.net
 DOMAIN-SUFFIX,ls.apple.com.edgesuite.net
 DOMAIN-SUFFIX,store.apple.com.edgekey.net
 DOMAIN-SUFFIX,www.apple.com.edgekey.net
-
-# Microsoft-owned static assets
 DOMAIN-SUFFIX,assets-yammer.com
 DOMAIN-SUFFIX,azurecomcdn.net
 DOMAIN-SUFFIX,edgestorewebcdn.azureedge.net
@@ -345,8 +305,6 @@ DOMAIN-SUFFIX,skypeassets.com
 DOMAIN-SUFFIX,static.microsoft
 DOMAIN-SUFFIX,sway-cdn.com
 DOMAIN-SUFFIX,yammerusercontent.com
-
-# AI static resources and user content
 DOMAIN-SUFFIX,ciciaicdn.com
 DOMAIN-SUFFIX,cdn.openaimerge.com
 DOMAIN-SUFFIX,claudeusercontent.com
@@ -358,8 +316,6 @@ DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,poecdn.net
-
-# Game distribution and client assets
 DOMAIN-SUFFIX,blizzcon-a.akamaihd.net
 DOMAIN-SUFFIX,blzmedia-a.akamaihd.net
 DOMAIN-SUFFIX,blznav.akamaized.net
@@ -387,14 +343,10 @@ DOMAIN-SUFFIX,steamusercontent.com
 DOMAIN-SUFFIX,steamusercontent-a.akamaihd.net
 DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net
 DOMAIN-SUFFIX,steamvideo-a.akamaihd.net
-
-# Amazon retail and AWS documentation assets
 DOMAIN-SUFFIX,awsstatic.com
 DOMAIN-SUFFIX,images-amazon.com
 DOMAIN-SUFFIX,media-amazon.com
 DOMAIN-SUFFIX,ssl-images-amazon.com
-
-# Adobe, font and design assets
 DOMAIN-SUFFIX,adobeccstatic.com
 DOMAIN-SUFFIX,staticimgly.com
 DOMAIN-SUFFIX,typekit.net
@@ -403,8 +355,6 @@ DOMAIN-SUFFIX,framerstatic.com
 DOMAIN-SUFFIX,fontawesome.com
 DOMAIN-SUFFIX,fonts.com
 DOMAIN-SUFFIX,fonts.net
-
-# Image and media delivery networks
 DOMAIN-SUFFIX,9cache.com
 DOMAIN-SUFFIX,adguardcdn.com
 DOMAIN-SUFFIX,airtableusercontent.com
@@ -442,8 +392,6 @@ DOMAIN-SUFFIX,slack-imgs.com
 DOMAIN-SUFFIX,walmartimages.com
 DOMAIN-SUFFIX,wixmp.com
 DOMAIN-SUFFIX,wmfusercontent.org
-
-# Commerce and hosted-site static assets
 DOMAIN-SUFFIX,1passwordusercontent.ca
 DOMAIN-SUFFIX,1passwordusercontent.com
 DOMAIN-SUFFIX,1passwordusercontent.eu
@@ -476,8 +424,6 @@ DOMAIN-SUFFIX,wixstatic.com
 DOMAIN-SUFFIX,zohocdn.com
 DOMAIN-SUFFIX,zohostatic.com
 DOMAIN-SUFFIX,zohowebstatic.com
-
-# Generic video and player delivery
 DOMAIN-SUFFIX,cloudflarestream.com
 DOMAIN-SUFFIX,iframe.ly
 DOMAIN-SUFFIX,jwpcdn.com
@@ -486,8 +432,6 @@ DOMAIN-SUFFIX,sentry-cdn.com
 DOMAIN-SUFFIX,thecontentserver.com
 DOMAIN-SUFFIX,videodelivery.net
 DOMAIN-SUFFIX,vimeocdn.com
-
-# Other stable vendor asset domains
 DOMAIN-SUFFIX,cdn.ampproject.org
 DOMAIN-SUFFIX,firefoxusercontent.com
 DOMAIN-SUFFIX,hsappstatic.net
@@ -524,3 +468,89 @@ DOMAIN-SUFFIX,vox-cdn.com
 DOMAIN-SUFFIX,wikia.nocookie.net
 DOMAIN-SUFFIX,yimg.com
 DOMAIN-SUFFIX,yimg.jp
+DOMAIN-KEYWORD,-files.gitbook.io
+DOMAIN-KEYWORD,vod-adaptive.akamaized.net
+DOMAIN-KEYWORD,web-assets.zendesk
+DOMAIN-KEYWORD,-res.cloudinary.com
+DOMAIN-KEYWORD,dsn.algolia.net
+DOMAIN-WILDCARD,cdn.*.office.net
+DOMAIN-WILDCARD,cdn.*.microsoft.com
+DOMAIN-WILDCARD,cdn-*.microsoft.com
+DOMAIN-WILDCARD,appcenter-filemanagement-*.cloudapp.net
+DOMAIN-WILDCARD,proxy-*.dailymotion.com
+DOMAIN-WILDCARD,static?.tgstat.ru
+DOMAIN-WILDCARD,static??.tgstat.ru
+DOMAIN-WILDCARD,ocsp.*.amazontrust.com
+DOMAIN-WILDCARD,s3.*.wasabisys.com
+DOMAIN-WILDCARD,object-storage-*.vexxhost.net
+DOMAIN-WILDCARD,i?.nhentai.net
+DOMAIN-WILDCARD,t?.nhentai.net
+DOMAIN-KEYWORD,-thumbs.pornhost.com
+DOMAIN-WILDCARD,cdn?-dl.pornhost.com
+DOMAIN,cdn-msp.18comic.vip
+DOMAIN,cdn-msp.jmcomic.me
+DOMAIN,cdn-msp.jmcomic-zzz.one
+DOMAIN,cdn-msp.18comic.org
+DOMAIN-WILDCARD,cdn-msp?.18comic.vip
+DOMAIN-WILDCARD,cdn-msp?.jmcomic.me
+DOMAIN-WILDCARD,cdn-msp?.jmcomic-zzz.one
+DOMAIN-WILDCARD,cdn-msp?.18comic.org
+DOMAIN-KEYWORD,-cdn.eporner.com
+DOMAIN-WILDCARD,file?.mikuclub.fun
+DOMAIN-WILDCARD,cdn?.mikuclub.fun
+DOMAIN-WILDCARD,assets*.freshdesk.com
+DOMAIN-WILDCARD,cdns.*.gigya.com
+DOMAIN-WILDCARD,sdk.*.braze.eu
+DOMAIN-KEYWORD,cdn.adultempire.com
+DOMAIN-WILDCARD,img?.porngo.com
+DOMAIN-WILDCARD,img??.porngo.com
+DOMAIN-WILDCARD,th-*.pornone.com
+DOMAIN-WILDCARD,s???.pornone.com
+DOMAIN-WILDCARD,*-intake-*-datadoghq.com
+DOMAIN-WILDCARD,*-intake.*.datadoghq.com
+DOMAIN-WILDCARD,video-thumbnail2.fc2.com
+DOMAIN-WILDCARD,video?-thumbnail?.fc2.com
+DOMAIN-WILDCARD,video-thumbnail?.liaoningmovie.net
+DOMAIN-WILDCARD,video?-thumbnail?.liaoningmovie.net
+DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
+DOMAIN-WILDCARD,blog-imgs-??.2nt.com
+DOMAIN-WILDCARD,blog-imgs-??.fc2.com
+DOMAIN-WILDCARD,rr?---??.ouo.si
+DOMAIN-WILDCARD,s3-*.figma.com
+DOMAIN-WILDCARD,*.kuaikan-cdn?.com
+DOMAIN-WILDCARD,*.fsvod?.com
+DOMAIN-WILDCARD,image*.cloudokyo.cloud
+DOMAIN-WILDCARD,video*.cloudokyo.cloud
+DOMAIN-WILDCARD,v.rn???.xyz
+DOMAIN-WILDCARD,s?.maxstream.org
+DOMAIN-WILDCARD,s??.maxstream.org
+DOMAIN-WILDCARD,stream?.kissjav.com
+DOMAIN-WILDCARD,stream??.kissjav.com
+DOMAIN-WILDCARD,chunk-*.mux.com
+DOMAIN-WILDCARD,*.skyearth?.xyz
+DOMAIN-KEYWORD,static.trustpilot.com
+DOMAIN-KEYWORD,scripts.trustpilot.com
+DOMAIN-KEYWORD,images.trustpilot.com
+DOMAIN-KEYWORD,cdn.trustpilot.net
+DOMAIN-KEYWORD,assets.trustpilot.net
+DOMAIN-KEYWORD,images.trustpilot.net
+DOMAIN-WILDCARD,*.img.*.sendibm?.com
+DOMAIN-WILDCARD,cdn?.18girlssex.com
+DOMAIN-KEYWORD,-assets.worldsex.com
+DOMAIN-KEYWORD,-thumbs.worldsex.com
+DOMAIN-KEYWORD,99avcdn
+DOMAIN-KEYWORD,-images.disco-api.com
+DOMAIN-WILDCARD,uploads-*.insided.com
+DOMAIN-KEYWORD,vdownload.hanime1
+DOMAIN-KEYWORD,fonts.hanime1
+DOMAIN-WILDCARD,s*.hanime1
+DOMAIN-WILDCARD,img-*.now.com
+DOMAIN-WILDCARD,assets.*.imaga.co
+DOMAIN-KEYWORD,static.grammarly.com
+DOMAIN-WILDCARD,cdn*.pigav.com
+DOMAIN-WILDCARD,fastly-*.allmovie.com
+DOMAIN-WILDCARD,cdn*.porn87.com
+DOMAIN-WILDCARD,cdn*.pornhost.com
+DOMAIN-WILDCARD,cdn*.boysfood.com
+
+# ======= SukkaW CDN ========
