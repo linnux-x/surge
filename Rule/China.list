@@ -1,7 +1,7 @@
 # NAME: China
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-18 19:36:08 +0800
+# UPDATED: 2026-06-19 06:14:16 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 112944
 
@@ -4152,10 +4152,6 @@ DOMAIN-SUFFIX,worldbank.org
 DOMAIN-SUFFIX,xbox.com
 DOMAIN-SUFFIX,xboxlive.com
 DOMAIN-KEYWORD,microsoft
-
-# ======= SukkaW Domestic ========
-
-# ======= blackmatrix7 ChinaMaxNoIP Domain ========
 DOMAIN-SUFFIX,0.zone
 DOMAIN-SUFFIX,00.net
 DOMAIN-SUFFIX,000.link
@@ -112955,4 +112951,9 @@ DOMAIN,zuikzy.win7i.com
 DOMAIN,zzlive.zzc-media.com
 DOMAIN,zzq12345.gearhostpreview.com
 
+# ======= SukkaW Domestic ========
+
+# ======= blackmatrix7 ChinaMaxNoIP Domain ========
+
 # ======= Rabbit-Spec China ========
+

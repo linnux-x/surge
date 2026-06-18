@@ -1,7 +1,7 @@
 # NAME: SocialMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-18 19:36:08 +0800
+# UPDATED: 2026-06-19 06:14:16 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 1050
 
@@ -1066,3 +1066,4 @@ IP-ASN,32934,no-resolve
 # ======= blackmatrix7 Instagram ========
 
 # ======= blackmatrix7 Twitter ========
+

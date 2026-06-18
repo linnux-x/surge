@@ -1,7 +1,7 @@
 # NAME: Netflix
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-18 19:36:08 +0800
+# UPDATED: 2026-06-19 06:14:16 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 1161
 
@@ -1169,3 +1169,4 @@ IP-CIDR6,2a03:5640::/32,no-resolve
 PROCESS-NAME,com.netflix.mediaclient
 
 # ======= blackmatrix7 Netflix ========
+

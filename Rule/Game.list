@@ -1,7 +1,7 @@
 # NAME: Game
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-18 19:36:08 +0800
+# UPDATED: 2026-06-19 06:14:16 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 666
 
@@ -674,3 +674,4 @@ IP-CIDR,210.71.148.11/32,no-resolve
 IP-CIDR,211.115.104.1/32,no-resolve
 
 # ======= blackmatrix7 Game ========
+

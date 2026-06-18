@@ -1,7 +1,7 @@
 # NAME: YouTube
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-18 19:36:08 +0800
+# UPDATED: 2026-06-19 06:14:16 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 193
 
@@ -201,3 +201,4 @@ USER-AGENT,YouTubeMusic*
 USER-AGENT,com.google.ios.youtubemusic*
 
 # ======= blackmatrix7 YouTube ========
+
