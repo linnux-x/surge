@@ -31,6 +31,7 @@ jobs:
             --output Module/DNS-Mapping.sgmodule \
             https://ruleset.skk.moe/Modules/sukka_local_dns_mapping.sgmodule
           sed -i '1s|^#!name=.*|#!name=DNS-Mapping|' Module/DNS-Mapping.sgmodule
+          sed -i '2s|^#!desc=.*|#!desc=本地 DNS 映射，优化国内常用服务与局域网域名解析|' Module/DNS-Mapping.sgmodule
 
       - name: Commit Changes
         shell: bash
