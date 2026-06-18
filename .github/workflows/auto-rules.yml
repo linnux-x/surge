@@ -83,6 +83,25 @@ jobs:
             '
           }
 
+          convert_cidr() {
+            awk '
+              {
+                sub(/\r$/, "")
+                sub(/[[:space:]]+$/, "")
+              }
+              /^[[:space:]]*$/ { next }
+              /^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+\/[0-9]+$/ {
+                print "IP-CIDR," $0
+                next
+              }
+              /^[0-9A-Fa-f:]+\/[0-9]+$/ {
+                print "IP-CIDR6," tolower($0)
+                next
+              }
+              { print }
+            '
+          }
+
           filter_candidates() {
             local exclude_file=$1
             if [ -f "$exclude_file" ] && [ -s "$exclude_file" ]; then
@@ -134,6 +153,8 @@ jobs:
             echo "# ======= ${source_name} ========" >> "$temp_body"
             if [ "$source_format" = "domainset" ]; then
               curl -fsSL "$source_url" | clean_source | convert_domainset | filter_candidates "$exclude_file" >> "$temp_body"
+            elif [ "$source_format" = "cidr" ]; then
+              curl -fsSL "$source_url" | clean_source | convert_cidr | filter_candidates "$exclude_file" >> "$temp_body"
             else
               curl -fsSL "$source_url" | clean_source | filter_candidates "$exclude_file" >> "$temp_body"
             fi
@@ -160,11 +181,32 @@ jobs:
                 grep -viE 'youtube|ytimg\.com|googlevideo\.com|youtubei\.googleapis\.com' "$tmp" > "${tmp}.next" || true
                 mv "${tmp}.next" "$tmp"
                 ;;
+              China.list)
+                grep -viE '^(IP-CIDR|IP-CIDR6|IP-ASN),' "$tmp" > "${tmp}.next" || true
+                mv "${tmp}.next" "$tmp"
+                ;;
               China_IP.list)
                 sed -E 's/,(no-resolve|NO-RESOLVE)//g' "$tmp" > "${tmp}.next"
                 mv "${tmp}.next" "$tmp"
                 ;;
             esac
+
+            grep -viE '^DOMAIN-KEYWORD,[0-9]+(\.[0-9]+){1,3}\.?$' "$tmp" > "${tmp}.next" || true
+            mv "${tmp}.next" "$tmp"
+
+            if [ "$target_name" != "China_IP.list" ]; then
+              awk '
+                BEGIN { IGNORECASE = 1 }
+                /^(IP-CIDR|IP-CIDR6|IP-ASN),/ {
+                  if (tolower($0) !~ /,no-resolve(,|$)/) {
+                    print $0 ",no-resolve"
+                    next
+                  }
+                }
+                { print }
+              ' "$tmp" > "${tmp}.next"
+              mv "${tmp}.next" "$tmp"
+            fi
 
             mv "$tmp" "$file"
           }
@@ -214,6 +256,45 @@ jobs:
             if [ -n "$policy_lines" ]; then
               echo "Possible policy names found in $target_name:"
               echo "$policy_lines"
+              exit 1
+            fi
+
+            project_policy_lines=$(
+              awk -v target="$target_name" '
+                /^[[:space:]]*#/ || /^[[:space:]]*$/ { next }
+                {
+                  low = tolower($0)
+                  if (low ~ /^domain-keyword,[0-9]+[.][0-9]+[.][0-9]+[.]?/) {
+                    print "Numeric DOMAIN-KEYWORD fragment: " $0
+                    if (++n == 20) exit
+                  }
+                  if (target == "China.list" && low ~ /^(ip-cidr|ip-cidr6|ip-asn),/) {
+                    print "IP rule in China.list: " $0
+                    if (++n == 20) exit
+                  }
+                  if (target == "China_IP.list" && low ~ /^(ip-cidr|ip-cidr6|ip-asn),/ && low ~ /,no-resolve(,|$)/) {
+                    print "no-resolve in China_IP.list: " $0
+                    if (++n == 20) exit
+                  }
+                  if (target != "China_IP.list" && low ~ /^(ip-cidr|ip-cidr6|ip-asn),/ && low !~ /,no-resolve(,|$)/) {
+                    print "Missing no-resolve: " $0
+                    if (++n == 20) exit
+                  }
+                  if (target == "Microsoft.list" && low ~ /(github|ghcr[.]io)/) {
+                    print "GitHub family rule in Microsoft.list: " $0
+                    if (++n == 20) exit
+                  }
+                  if (target != "Speedtest.list" && low ~ /(^|,)([^,]*[.])?fast[.]com(,|$)/) {
+                    print "fast.com outside Speedtest.list: " $0
+                    if (++n == 20) exit
+                  }
+                }
+              ' "$file"
+            )
+
+            if [ -n "$project_policy_lines" ]; then
+              echo "Project policy violations found in $target_name:"
+              echo "$project_policy_lines"
               exit 1
             fi
           }
@@ -330,6 +411,7 @@ jobs:
 
           process_rule "Telegram.list" "Telegram" \
             "blackmatrix7 Telegram|$BM7/Telegram/Telegram.list" \
+            "Telegram Official CIDR|https://core.telegram.org/resources/cidr.txt|cidr" \
             "SukkaW Telegram IP|https://ruleset.skk.moe/List/ip/telegram.conf"
 
           process_rule "TikTok.list" "TikTok" \

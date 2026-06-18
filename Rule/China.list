@@ -3,7 +3,7 @@
 # REPO: https://github.com/linnux-x/surge
 # UPDATED: 2026-06-18 19:36:08 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 112965
+# TOTAL: 112944
 
 # ======= Current Project Baseline ========
 DOMAIN,cdn.angruo.com
@@ -4152,27 +4152,6 @@ DOMAIN-SUFFIX,worldbank.org
 DOMAIN-SUFFIX,xbox.com
 DOMAIN-SUFFIX,xboxlive.com
 DOMAIN-KEYWORD,microsoft
-IP-CIDR,1.255.62.0/24,no-resolve
-IP-CIDR,101.32.104.0/21,no-resolve
-IP-CIDR,101.32.118.0/23,no-resolve
-IP-CIDR,101.32.96.0/20,no-resolve
-IP-CIDR,119.28.28.28/32,no-resolve
-IP-CIDR,120.195.181.180/32,no-resolve
-IP-CIDR,129.226.0.0/16,no-resolve
-IP-CIDR,182.254.116.0/24,no-resolve
-IP-CIDR,183.128.0.0/11,no-resolve
-IP-CIDR,183.131.48.0/20,no-resolve
-IP-CIDR,185.188.32.0/22,no-resolve
-IP-CIDR,185.188.32.0/24,no-resolve
-IP-CIDR,185.188.33.0/24,no-resolve
-IP-CIDR,185.188.34.0/24,no-resolve
-IP-CIDR,185.188.35.0/24,no-resolve
-IP-CIDR,203.205.238.0/23,no-resolve
-IP-CIDR,203.205.254.0/23,no-resolve
-IP-CIDR6,2a0b:b580::/48,no-resolve
-IP-CIDR6,2a0b:b581::/48,no-resolve
-IP-CIDR6,2a0b:b582::/48,no-resolve
-IP-CIDR6,2a0b:b583::/48,no-resolve
 
 # ======= SukkaW Domestic ========
 
