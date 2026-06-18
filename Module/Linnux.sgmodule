@@ -1,0 +1,28 @@
+#!name=Linnux
+#!desc=合并 Telegram bad IPs 修正、Google 中国重定向与扫描全能王 pro
+#!category=⚙️ ▸ Function
+
+[General]
+use-local-host-item-for-proxy = true
+
+[Host]
+# Telegram bad IPs fix
+91.108.56.100 = 91.108.56.147,91.108.56.135,91.108.56.130
+91.108.56.101 = 91.108.56.147,91.108.56.135,91.108.56.130
+91.108.56.104 = 91.108.56.147,91.108.56.135,91.108.56.130
+91.108.56.107 = 91.108.56.147,91.108.56.135,91.108.56.130
+91.108.56.120 = 91.108.56.147,91.108.56.135,91.108.56.130
+91.108.56.125 = 91.108.56.147,91.108.56.135,91.108.56.130
+91.108.56.126 = 91.108.56.147,91.108.56.135,91.108.56.130
+91.108.56.128 = 91.108.56.147,91.108.56.135,91.108.56.130
+91.108.56.156 = 91.108.56.147,91.108.56.135,91.108.56.130
+
+[URL Rewrite]
+^https?://(www.)?(g|google)\.cn https://www.google.com 307
+
+[Script]
+# > 扫描全能王 pro
+扫描全能王=type=http-response,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js
+
+[MITM]
+hostname = %APPEND% g.cn,www.g.cn,google.cn,www.google.cn,ap*.intsig.net
