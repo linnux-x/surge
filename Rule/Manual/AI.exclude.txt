@@ -1,1 +1,9 @@
 api.github.com
+api.msn.com
+assets.msn.com
+location.microsoft.com
+odc.officeapps.live.com
+r.bing.com
+self.events.data.microsoft.com
+www.bing.com
+api.microsoftapp.net

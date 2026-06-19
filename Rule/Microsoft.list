@@ -3,7 +3,7 @@
 # REPO: https://github.com/linnux-x/surge
 # UPDATED: 2026-06-19 06:14:16 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 698
+# TOTAL: 654
 
 # ======= Current Project Baseline ========
 DOMAIN,vsmarketplacebadge.apphb.com
@@ -20,8 +20,6 @@ DOMAIN-SUFFIX,aadrm.cn
 DOMAIN-SUFFIX,aadrm.com
 DOMAIN-SUFFIX,acompli.com
 DOMAIN-SUFFIX,acompli.net
-DOMAIN-SUFFIX,activision.com
-DOMAIN-SUFFIX,activisionblizzard.com
 DOMAIN-SUFFIX,adaptivecards.io
 DOMAIN-SUFFIX,aggresmart.com
 DOMAIN-SUFFIX,aicscience.com
@@ -104,10 +102,6 @@ DOMAIN-SUFFIX,azurewebsites.net
 DOMAIN-SUFFIX,b2clogin.cn
 DOMAIN-SUFFIX,b3itech.cn
 DOMAIN-SUFFIX,bbing.com
-DOMAIN-SUFFIX,beth.games
-DOMAIN-SUFFIX,bethesda.net
-DOMAIN-SUFFIX,bethesdagamestudios.com
-DOMAIN-SUFFIX,bethsoft.com
 DOMAIN-SUFFIX,bibg.com
 DOMAIN-SUFFIX,biing.com
 DOMAIN-SUFFIX,binads.com
@@ -150,8 +144,6 @@ DOMAIN-SUFFIX,botframework.com
 DOMAIN-SUFFIX,brazilpartneruniversity.com
 DOMAIN-SUFFIX,breakdown.me
 DOMAIN-SUFFIX,c-msedge.net
-DOMAIN-SUFFIX,callersbane.com
-DOMAIN-SUFFIX,callofduty.com
 DOMAIN-SUFFIX,centralvalidation.com
 DOMAIN-SUFFIX,ch9.ms
 DOMAIN-SUFFIX,charticulator.com
@@ -175,18 +167,15 @@ DOMAIN-SUFFIX,cs11.wpc.v0cdn.net
 DOMAIN-SUFFIX,cs9.wac.phicdn.net
 DOMAIN-SUFFIX,devopsassessment.net
 DOMAIN-SUFFIX,devopsms.com
-DOMAIN-SUFFIX,diablo.com
 DOMAIN-SUFFIX,dictate.ms
 DOMAIN-SUFFIX,discoverbing.com
 DOMAIN-SUFFIX,docs.com
-DOMAIN-SUFFIX,doom.com
 DOMAIN-SUFFIX,dot.net
 DOMAIN-SUFFIX,dwh5.com
 DOMAIN-SUFFIX,dynamics.cn
 DOMAIN-SUFFIX,dynamics.com
 DOMAIN-SUFFIX,e-msedge.net
 DOMAIN-SUFFIX,efproject.net
-DOMAIN-SUFFIX,elderscrolls.com
 DOMAIN-SUFFIX,engkoo.com
 DOMAIN-SUFFIX,evoke-windowsservices-tas.msedge
 DOMAIN-SUFFIX,exp-tas.com
@@ -196,9 +185,6 @@ DOMAIN-SUFFIX,femalefounderscomp.com
 DOMAIN-SUFFIX,flipwithsurface.com
 DOMAIN-SUFFIX,fluidpreview.com
 DOMAIN-SUFFIX,footprintdns.com
-DOMAIN-SUFFIX,forzamotorsport.net
-DOMAIN-SUFFIX,forzaracingchampionship.com
-DOMAIN-SUFFIX,forzarc.com
 DOMAIN-SUFFIX,gamesstack.com
 DOMAIN-SUFFIX,gameuxmasterguide.com
 DOMAIN-SUFFIX,gears5.com
@@ -239,7 +225,6 @@ DOMAIN-SUFFIX,joinms.com.cn
 DOMAIN-SUFFIX,joinmva.com
 DOMAIN-SUFFIX,jwt.ms
 DOMAIN-SUFFIX,kidgrid.tv
-DOMAIN-SUFFIX,king.com
 DOMAIN-SUFFIX,kumo.com
 DOMAIN-SUFFIX,l-msedge.net
 DOMAIN-SUFFIX,latampartneruniversity.com
@@ -402,12 +387,9 @@ DOMAIN-SUFFIX,microsofttranslator-int.cn
 DOMAIN-SUFFIX,microsofttranslator.com
 DOMAIN-SUFFIX,microsoftusercontent.com
 DOMAIN-SUFFIX,microsoftuwp.com
-DOMAIN-SUFFIX,minecraft.net
-DOMAIN-SUFFIX,minecraftshop.com
 DOMAIN-SUFFIX,mmais.com.cn
 DOMAIN-SUFFIX,mmdnn.com
 DOMAIN-SUFFIX,mncmsidlab1.cn
-DOMAIN-SUFFIX,mojang.com
 DOMAIN-SUFFIX,momentumms.com
 DOMAIN-SUFFIX,mono-project.com
 DOMAIN-SUFFIX,morphcharts.com
@@ -441,7 +423,6 @@ DOMAIN-SUFFIX,msftidentity.com
 DOMAIN-SUFFIX,msftncsi.com
 DOMAIN-SUFFIX,msftnet.org
 DOMAIN-SUFFIX,msgamesresearch.com
-DOMAIN-SUFFIX,msgamestudios.com
 DOMAIN-SUFFIX,msidentity.cn
 DOMAIN-SUFFIX,msidentity.com
 DOMAIN-SUFFIX,msidlabpbmc.cn
@@ -523,7 +504,6 @@ DOMAIN-SUFFIX,onmschina.cn
 DOMAIN-SUFFIX,opentranslatorstothings.org
 DOMAIN-SUFFIX,opticsforthecloud.net
 DOMAIN-SUFFIX,optimizely.com
-DOMAIN-SUFFIX,orithegame.com
 DOMAIN-SUFFIX,osdinfra.net
 DOMAIN-SUFFIX,outingsapp.com
 DOMAIN-SUFFIX,outlook.cn
@@ -556,7 +536,6 @@ DOMAIN-SUFFIX,pxt.io
 DOMAIN-SUFFIX,reactorms.com.cn
 DOMAIN-SUFFIX,renlifang.com
 DOMAIN-SUFFIX,renovacionoffice.com
-DOMAIN-SUFFIX,renovacionxboxlive.com
 DOMAIN-SUFFIX,s-microsoft.com
 DOMAIN-SUFFIX,s-dc-msedge.net
 DOMAIN-SUFFIX,s-msedge.net
@@ -584,7 +563,6 @@ DOMAIN-SUFFIX,spo-msedge.net
 DOMAIN-SUFFIX,sprinklesapp.com
 DOMAIN-SUFFIX,sqlserveronlinux.com
 DOMAIN-SUFFIX,staffhub.ms
-DOMAIN-SUFFIX,starcraft.com
 DOMAIN-SUFFIX,start.com
 DOMAIN-SUFFIX,statics-marketingsites-eas-ms-com.akamaized.net
 DOMAIN-SUFFIX,statics-marketingsites-eus-ms-com.akamaized.net
@@ -601,7 +579,6 @@ DOMAIN-SUFFIX,sysinternals.com
 DOMAIN-SUFFIX,tailwindtraders.com
 DOMAIN-SUFFIX,t-msedge.net
 DOMAIN-SUFFIX,techhub.ms
-DOMAIN-SUFFIX,tellmewhygame.com
 DOMAIN-SUFFIX,tenor.com
 DOMAIN-SUFFIX,tfsallin.net
 DOMAIN-SUFFIX,timelinestoryteller.com
@@ -658,16 +635,6 @@ DOMAIN-SUFFIX,wlxrs.com
 DOMAIN-SUFFIX,working-bing-int.com
 DOMAIN-SUFFIX,wunderlist.com
 DOMAIN-SUFFIX,xamarin.com
-DOMAIN-SUFFIX,xbox360.co
-DOMAIN-SUFFIX,xbox360.com
-DOMAIN-SUFFIX,xbox360.eu
-DOMAIN-SUFFIX,xbox360.org
-DOMAIN-SUFFIX,xboxab.com
-DOMAIN-SUFFIX,xboxlive.cn
-DOMAIN-SUFFIX,xboxone.co
-DOMAIN-SUFFIX,xboxone.com
-DOMAIN-SUFFIX,xboxone.eu
-DOMAIN-SUFFIX,xboxstudios.com
 DOMAIN-SUFFIX,xbx.lv
 DOMAIN-SUFFIX,yammer.com
 DOMAIN-SUFFIX,yammerusercontent.com
@@ -678,23 +645,12 @@ DOMAIN-SUFFIX,cegid-cloud.cn
 DOMAIN-SUFFIX,edgesuite.net
 DOMAIN-SUFFIX,fabric.io
 DOMAIN-SUFFIX,g.akamaiedge.net
-DOMAIN-SUFFIX,gamepass.com
-DOMAIN-SUFFIX,helpshift.com
 DOMAIN-SUFFIX,here.com
 DOMAIN-SUFFIX,here.net
 DOMAIN-SUFFIX,heremaps.cn
 DOMAIN-SUFFIX,public-trust.com
 DOMAIN-SUFFIX,unity3dcloud.cn
 DOMAIN-SUFFIX,uservoice.com
-DOMAIN-SUFFIX,xbox.co
-DOMAIN-SUFFIX,xbox.com
-DOMAIN-SUFFIX,xbox.eu
-DOMAIN-SUFFIX,xbox.org
-DOMAIN-SUFFIX,xboxgamepass.com
-DOMAIN-SUFFIX,xboxgamestudios.com
-DOMAIN-SUFFIX,xboxlive.com
-DOMAIN-SUFFIX,xboxplayanywhere.com
-DOMAIN-SUFFIX,xboxservices.com
 DOMAIN-KEYWORD,microsoft
 DOMAIN-KEYWORD,1drv
 DOMAIN-KEYWORD,onedrive

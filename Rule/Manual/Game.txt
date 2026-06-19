@@ -1,0 +1,7 @@
+DOMAIN-SUFFIX,activision.com
+DOMAIN-SUFFIX,activisionblizzard.com
+DOMAIN-SUFFIX,callofduty.com
+DOMAIN-SUFFIX,diablo.com
+DOMAIN-SUFFIX,doom.com
+DOMAIN-SUFFIX,elderscrolls.com
+DOMAIN-SUFFIX,king.com

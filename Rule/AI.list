@@ -3,7 +3,7 @@
 # REPO: https://github.com/linnux-x/surge
 # UPDATED: 2026-06-19 06:14:16 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 382
+# TOTAL: 374
 
 # ======= Current Project Baseline ========
 DOMAIN,apple-relay.apple.com
@@ -315,9 +315,7 @@ DOMAIN,api.jetbrains.ai
 DOMAIN,openrouter.ai
 DOMAIN,aistudio.google.com
 DOMAIN,api-iam.intercom.io
-DOMAIN,api.msn.com
 DOMAIN,api.statsig.com
-DOMAIN,assets.msn.com
 DOMAIN,bard.google.com
 DOMAIN,browser-intake-datadoghq.com
 DOMAIN,cdn.usefathom.com
@@ -326,18 +324,12 @@ DOMAIN,copilot.microsoft.com
 DOMAIN,gemini.google.com
 DOMAIN,generativelanguage.googleapis.com
 DOMAIN,in.appcenter.ms
-DOMAIN,location.microsoft.com
 DOMAIN,makersuite.google.com
 DOMAIN,o33249.ingest.sentry.io
-DOMAIN,odc.officeapps.live.com
 DOMAIN,openaiapi-site.azureedge.net
-DOMAIN,r.bing.com
-DOMAIN,self.events.data.microsoft.com
 DOMAIN,static.cloudflareinsights.com
-DOMAIN,www.bing.com
 DOMAIN-SUFFIX,algolia.net
 DOMAIN-SUFFIX,android.chat.openai.com
-DOMAIN-SUFFIX,api.microsoftapp.net
 DOMAIN-SUFFIX,api.statsig.com
 DOMAIN-SUFFIX,apis.google.com
 DOMAIN-SUFFIX,app.launchdarkly.com
