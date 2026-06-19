@@ -271,7 +271,7 @@ jobs:
             invalid_lines=$(
               awk '
                 /^[[:space:]]*#/ || /^[[:space:]]*$/ { next }
-                $0 !~ /^(DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|DOMAIN-WILDCARD|IP-CIDR|IP-CIDR6|IP-ASN|USER-AGENT|PROCESS-NAME|URL-REGEX|AND|OR|NOT),/ {
+                $0 !~ /^(DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|IP-CIDR|IP-CIDR6|IP-ASN|USER-AGENT|PROCESS-NAME|URL-REGEX|AND|OR|NOT),/ {
                   print
                   if (++n == 20) exit
                 }
@@ -287,7 +287,7 @@ jobs:
             policy_lines=$(
               awk -F, '
                 /^[[:space:]]*#/ || /^[[:space:]]*$/ { next }
-                $1 ~ /^(DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|DOMAIN-WILDCARD|IP-CIDR|IP-CIDR6|IP-ASN|USER-AGENT|PROCESS-NAME)$/ && NF >= 3 {
+                $1 ~ /^(DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|IP-CIDR|IP-CIDR6|IP-ASN|USER-AGENT|PROCESS-NAME)$/ && NF >= 3 {
                   option = tolower($3)
                   if (option != "no-resolve" && option != "extended-matching") {
                     print
@@ -330,6 +330,14 @@ jobs:
                   }
                   if (target != "Speedtest.list" && low ~ /(^|,)([^,]*[.])?fast[.]com(,|$)/) {
                     print "fast.com outside Speedtest.list: " $0
+                    if (++n == 20) exit
+                  }
+                  if (target != "CDN.list" && low ~ /^domain-suffix,(akadns[.]net|akamaiedge[.]net|akamaihd[.]net|akamaized[.]net|azureedge[.]net|b-cdn[.]net|cdn77[.]org|cloudfront[.]net|edgekey[.]net|edgesuite[.]net|fastly[.]net)$/) {
+                    print "Shared CDN parent outside CDN.list: " $0
+                    if (++n == 20) exit
+                  }
+                  if (target == "China.list" && low ~ /^(domain,rthklive2-lh[.]akamaihd[.]net|domain-suffix,(bilibili[.]tv|biliintl[.]co|biliintl[.]com|himalaya[.]com|iflix[.]com|iq[.]com|joox[.]com|kwai-group[.]com|kwai[.]com|kwai[.]net|kwaicdn[.]com|nba[.]com|snssdk[.]com|tiktokd[.]net|tiktokd[.]org|wetv[.]vip|wetvinfo[.]com)|user-agent,(himalaya[*]|tiktok[*]))$/) {
+                    print "Non-China media/social fallback in China.list: " $0
                     if (++n == 20) exit
                   }
                 }

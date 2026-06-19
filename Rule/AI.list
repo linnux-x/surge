@@ -5,6 +5,9 @@
 # FORMAT: Surge Ruleset
 # TOTAL: 374
 
+# ======= Manual Rules ========
+DOMAIN,trae-api-sg.mchost.guru
+
 # ======= Current Project Baseline ========
 DOMAIN,apple-relay.apple.com
 DOMAIN,apple-relay.cloudflare.com
@@ -338,7 +341,6 @@ DOMAIN-SUFFIX,auth.openai.com
 DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,auth0.openai.com
 DOMAIN-SUFFIX,bing-shopping.microsoft-falcon.io
-DOMAIN-SUFFIX,byteoversea.com
 DOMAIN-SUFFIX,cdn.workos.com
 DOMAIN-SUFFIX,challenges.cloudflare.com
 DOMAIN-SUFFIX,chat.openai.com
@@ -386,4 +388,3 @@ IP-CIDR,64.23.132.171/32,no-resolve
 # ======= SukkaW Apple Intelligence ========
 
 # ======= Rabbit-Spec AIGC ========
-

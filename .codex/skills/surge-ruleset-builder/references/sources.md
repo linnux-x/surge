@@ -5,6 +5,8 @@
 - LLM index: https://nssurge.com/llms.txt
 - Manual LLM index: https://manual.nssurge.com/llms.txt
 - Ruleset manual: https://manual.nssurge.com/rule/ruleset.html
+- Domain-based rules: https://manual.nssurge.com/rule/domain-based.html
+- IP-based rules: https://manual.nssurge.com/rule/ip-based.html
 - Knowledge Base LLM index: https://kb.nssurge.com/llms.txt
 - Beta release log: https://nssurge.com/mac/latest/appcast-signed-beta.xml
 

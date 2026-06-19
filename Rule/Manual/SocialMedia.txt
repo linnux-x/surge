@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,kwai-group.com
+DOMAIN-SUFFIX,kwai.com
+DOMAIN-SUFFIX,kwai.net
+DOMAIN-SUFFIX,kwaicdn.com

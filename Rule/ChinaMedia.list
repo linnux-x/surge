@@ -3,7 +3,7 @@
 # REPO: https://github.com/linnux-x/surge
 # UPDATED: 2026-06-19 06:14:16 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 513
+# TOTAL: 491
 
 # ======= Current Project Baseline ========
 DOMAIN,iqiyi.com
@@ -64,7 +64,6 @@ DOMAIN-SUFFIX,qy.com
 DOMAIN-SUFFIX,qy.net
 DOMAIN-SUFFIX,qqvideo.gtimg.com
 DOMAIN-SUFFIX,v.qq.com
-DOMAIN-SUFFIX,v.smtcdns.com
 DOMAIN-SUFFIX,video.qq.com
 DOMAIN-SUFFIX,cibntv.net
 DOMAIN-SUFFIX,kumiao.com
@@ -97,7 +96,6 @@ DOMAIN-SUFFIX,ixgvideo.com
 DOMAIN-SUFFIX,ixigua.com
 DOMAIN-SUFFIX,ixiguavideo.com
 DOMAIN-SUFFIX,pstatp.com
-DOMAIN-SUFFIX,snssdk.com
 DOMAIN-SUFFIX,toutiao.com
 DOMAIN-SUFFIX,toutiaoimg.cn
 DOMAIN-SUFFIX,toutiaoimg.com
@@ -253,7 +251,6 @@ DOMAIN-SUFFIX,biliapi.net
 DOMAIN-SUFFIX,bilibili.cc
 DOMAIN-SUFFIX,bilibili.co
 DOMAIN-SUFFIX,bilibili.net
-DOMAIN-SUFFIX,bilibili.tv
 DOMAIN-SUFFIX,bilibiligame.cn
 DOMAIN-SUFFIX,bilibiligame.co
 DOMAIN-SUFFIX,bilibiligame.net
@@ -262,8 +259,6 @@ DOMAIN-SUFFIX,bilibilipay.com
 DOMAIN-SUFFIX,biligame.cn
 DOMAIN-SUFFIX,biligame.co
 DOMAIN-SUFFIX,biligo.com
-DOMAIN-SUFFIX,biliintl.co
-DOMAIN-SUFFIX,biliintl.com
 DOMAIN-SUFFIX,biliplus.com
 DOMAIN-SUFFIX,corari.com
 DOMAIN-SUFFIX,dreamcast.hk
@@ -345,7 +340,6 @@ DOMAIN-SUFFIX,gamenow.club
 DOMAIN-SUFFIX,gitv.tv
 DOMAIN-SUFFIX,i.qq.com
 DOMAIN-SUFFIX,ibkstore.com
-DOMAIN-SUFFIX,iq.com
 DOMAIN-SUFFIX,iqiyi.com
 DOMAIN-SUFFIX,iqiyi.demo.uwp
 DOMAIN-SUFFIX,itc.cn
@@ -395,17 +389,12 @@ DOMAIN-SUFFIX,zmz2019.com
 DOMAIN-SUFFIX,zmzapi.com
 DOMAIN-SUFFIX,zmzapi.net
 DOMAIN-SUFFIX,zmzfile.com
-DOMAIN-KEYWORD,bilibili
-DOMAIN-KEYWORD,qiyi
 IP-CIDR,101.224.0.0/13,no-resolve
 IP-CIDR,101.71.154.241/32,no-resolve
 IP-CIDR,103.126.92.132/31,no-resolve
 IP-CIDR,103.44.56.0/22,no-resolve
-IP-CIDR,103.5.34.153/32,no-resolve
-IP-CIDR,104.109.129.153/32,no-resolve
 IP-CIDR,106.11.0.0/16,no-resolve
 IP-CIDR,106.75.74.76/32,no-resolve
-IP-CIDR,110.238.107.47/32,no-resolve
 IP-CIDR,111.206.25.147/32,no-resolve
 IP-CIDR,112.13.119.17/32,no-resolve
 IP-CIDR,112.13.122.1/32,no-resolve
@@ -426,20 +415,9 @@ IP-CIDR,150.116.92.250/32,no-resolve
 IP-CIDR,164.52.76.18/32,no-resolve
 IP-CIDR,193.112.159.225/32,no-resolve
 IP-CIDR,203.107.1.0/24,no-resolve
-IP-CIDR,203.211.4.169/32,no-resolve
-IP-CIDR,203.211.4.193/32,no-resolve
-IP-CIDR,203.74.95.131/32,no-resolve
-IP-CIDR,203.74.95.139/32,no-resolve
-IP-CIDR,203.74.95.153/32,no-resolve
-IP-CIDR,210.201.32.11/32,no-resolve
-IP-CIDR,210.201.32.8/32,no-resolve
-IP-CIDR,210.71.227.200/32,no-resolve
-IP-CIDR,210.71.227.202/32,no-resolve
 IP-CIDR,223.252.199.66/31,no-resolve
 IP-CIDR,23.211.15.99/32,no-resolve
 IP-CIDR,23.40.241.251/32,no-resolve
-IP-CIDR,23.40.242.10/32,no-resolve
-IP-CIDR,23.53.32.88/32,no-resolve
 IP-CIDR,39.105.63.80/32,no-resolve
 IP-CIDR,45.254.48.1/32,no-resolve
 IP-CIDR,45.43.32.234/32,no-resolve
@@ -521,4 +499,3 @@ PROCESS-NAME,tv.danmaku.bili
 PROCESS-NAME,tv.danmaku.bilibilihd
 
 # ======= blackmatrix7 ChinaMedia ========
-

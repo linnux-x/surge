@@ -3,7 +3,7 @@
 # REPO: https://github.com/linnux-x/surge
 # UPDATED: 2026-06-19 06:14:16 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 2434
+# TOTAL: 2365
 
 # ======= Current Project Baseline ========
 DOMAIN,aod.itunes.apple.com
@@ -29,7 +29,6 @@ DOMAIN,hbolb.onwardsmg.com
 DOMAIN,hbounify-prod.evergent.com
 DOMAIN,hls-amt.itunes.apple.com
 DOMAIN,hls.itunes.apple.com
-DOMAIN,lf16-effectcdn.byteeffecttos-g.com
 DOMAIN,music.apple.com
 DOMAIN,np-edge.itunes.apple.com
 DOMAIN,p-bstarstatic.akamaized.net
@@ -54,11 +53,9 @@ DOMAIN-SUFFIX,nflxsearch.net
 DOMAIN-SUFFIX,nflxso.net
 DOMAIN-SUFFIX,nflxvideo.net
 DOMAIN-SUFFIX,ggpht.cn
-DOMAIN-SUFFIX,ggpht.com
 DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,youtu.be
 DOMAIN-SUFFIX,yt.be
-DOMAIN-SUFFIX,ytimg.com
 DOMAIN-SUFFIX,bamgrid.com
 DOMAIN-SUFFIX,disney-plus.net
 DOMAIN-SUFFIX,disneyplus.com
@@ -67,7 +64,6 @@ DOMAIN-SUFFIX,dssott.com
 DOMAIN-SUFFIX,edgedatg.com
 DOMAIN-SUFFIX,espn.com
 DOMAIN-SUFFIX,espn.net
-DOMAIN-SUFFIX,espncdn.com
 DOMAIN-SUFFIX,espnplus.com
 DOMAIN-SUFFIX,hulu.com
 DOMAIN-SUFFIX,hulu.jp
@@ -149,7 +145,6 @@ DOMAIN-SUFFIX,c4assets.com
 DOMAIN-SUFFIX,channel4.com
 DOMAIN-SUFFIX,channel5.com
 DOMAIN-SUFFIX,itv.com
-DOMAIN-SUFFIX,itvstatic.com
 DOMAIN-SUFFIX,joyn.de
 DOMAIN-SUFFIX,molotov.tv
 DOMAIN-SUFFIX,my5.tv
@@ -221,30 +216,6 @@ DOMAIN-SUFFIX,aniplus-asia.com
 DOMAIN-SUFFIX,crunchyroll.com
 DOMAIN-SUFFIX,crunchyrollsvc.com
 DOMAIN-SUFFIX,hidive.com
-DOMAIN-SUFFIX,byteintlapi.com
-DOMAIN-SUFFIX,byteoversea.com
-DOMAIN-SUFFIX,ibytedtos.com
-DOMAIN-SUFFIX,ibyteimg.com
-DOMAIN-SUFFIX,ipstatp.com
-DOMAIN-SUFFIX,isnssdk.com
-DOMAIN-SUFFIX,muscdn.com
-DOMAIN-SUFFIX,musical.ly
-DOMAIN-SUFFIX,sgpstatp.com
-DOMAIN-SUFFIX,tik-tokapi.com
-DOMAIN-SUFFIX,tiktok.com
-DOMAIN-SUFFIX,tiktok.us
-DOMAIN-SUFFIX,tiktokapis.com
-DOMAIN-SUFFIX,tiktokcdn-us.com
-DOMAIN-SUFFIX,tiktokcdn.com
-DOMAIN-SUFFIX,tiktokd.net
-DOMAIN-SUFFIX,tiktokd.org
-DOMAIN-SUFFIX,tiktokv.com
-DOMAIN-SUFFIX,tiktokv.us
-DOMAIN-SUFFIX,tiktokw.com
-DOMAIN-SUFFIX,kwai-group.com
-DOMAIN-SUFFIX,kwai.com
-DOMAIN-SUFFIX,kwai.net
-DOMAIN-SUFFIX,kwaicdn.com
 DOMAIN-SUFFIX,dailymotion.com
 DOMAIN-SUFFIX,dmcdn.net
 DOMAIN-SUFFIX,ext-twitch.tv
@@ -259,7 +230,6 @@ DOMAIN-SUFFIX,twitchcdn.net
 DOMAIN-SUFFIX,twitchsvc.net
 DOMAIN-SUFFIX,ttvnw.net
 DOMAIN-SUFFIX,vimeo.com
-DOMAIN-SUFFIX,vimeocdn.com
 DOMAIN-SUFFIX,vimeoondemand.com
 DOMAIN-SUFFIX,vhx.tv
 DOMAIN-SUFFIX,moviesanywhere.com
@@ -301,29 +271,22 @@ DOMAIN-SUFFIX,indazn.com
 DOMAIN-SUFFIX,indaznlab.com
 DOMAIN-SUFFIX,pplusstatic.com
 DOMAIN-SUFFIX,watchespn.com
-DOMAIN-KEYWORD,-tiktokcdn-com
 DOMAIN-KEYWORD,apiproxy-device-prod-nlb-
 DOMAIN-KEYWORD,dualstack.apiproxy-
 DOMAIN-KEYWORD,dualstack.ichnaea-web-
 DOMAIN-KEYWORD,netflixdnstest
 DOMAIN-KEYWORD,youtube
-DOMAIN,ai.google.dev
-DOMAIN,aistudio.google.com
 DOMAIN,api.githubcopilot.com
 DOMAIN,api.groq.com
 DOMAIN,api.okzy.tv
-DOMAIN,api.together.xyz
 DOMAIN,apple.comscoreresearch.com
 DOMAIN,bcbolt446c5271-a.akamaihd.net
 DOMAIN,console.groq.com
-DOMAIN,copilot-proxy.githubusercontent.com
 DOMAIN,cs428.wpc.edgecastcdn.net
 DOMAIN,dashasiafox.akamaized.netflix
 DOMAIN,daznfeeds.com.edgekey.net
 DOMAIN,dca-lm-livedazn.secure.footprint.net
 DOMAIN,edge.cwtv-vod-ext.top.comcast.net
-DOMAIN,generativelanguage.googleapis.com
-DOMAIN,gspe1-ssl.ls.apple.com
 DOMAIN,h-dazn.online-metrix.net
 DOMAIN,hamifans.emome.net
 DOMAIN,hulu.com.c.footprint.net
@@ -338,7 +301,6 @@ DOMAIN,notebooklm.google.com
 DOMAIN,ocvideo.apple.com
 DOMAIN,rpg.pic-imges.com
 DOMAIN,rthklive2-lh.akamaihd.net
-DOMAIN,sydney.bing.com
 DOMAIN-SUFFIX,112263.com
 DOMAIN-SUFFIX,20thcenturystudios.com.au
 DOMAIN-SUFFIX,20thcenturystudios.com.br
@@ -354,8 +316,6 @@ DOMAIN-SUFFIX,adx.promo
 DOMAIN-SUFFIX,afewmomentswith.com
 DOMAIN-SUFFIX,afp.com
 DOMAIN-SUFFIX,afpforum.com
-DOMAIN-SUFFIX,ai.azure.com
-DOMAIN-SUFFIX,akamaized.net
 DOMAIN-SUFFIX,amazon.jobs
 DOMAIN-SUFFIX,amazonaws.co.uk
 DOMAIN-SUFFIX,amazonprimevideos.com
@@ -377,7 +337,6 @@ DOMAIN-SUFFIX,amerikayidzayn.com
 DOMAIN-SUFFIX,amerikiskhma.com
 DOMAIN-SUFFIX,amlg.io
 DOMAIN-SUFFIX,anidom.com
-DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,api.tv.colnv.com
 DOMAIN-SUFFIX,apple.news
 DOMAIN-SUFFIX,assetshuluimcom-a.akamaihd.net
@@ -397,7 +356,6 @@ DOMAIN-SUFFIX,babble.com
 DOMAIN-SUFFIX,babyzone.com
 DOMAIN-SUFFIX,bam.nr-data.net
 DOMAIN-SUFFIX,bam.nr-date.net
-DOMAIN-SUFFIX,bard.google.com
 DOMAIN-SUFFIX,bbc.co
 DOMAIN-SUFFIX,bbc.in
 DOMAIN-SUFFIX,bbcchinese.com
@@ -414,7 +372,6 @@ DOMAIN-SUFFIX,bigbigchannel.com.hk
 DOMAIN-SUFFIX,bigbigshop.com
 DOMAIN-SUFFIX,biggggg.com
 DOMAIN-SUFFIX,bitmovin.com
-DOMAIN-SUFFIX,bootstrapcdn.com
 DOMAIN-SUFFIX,bowenpress.com
 DOMAIN-SUFFIX,boxun.com
 DOMAIN-SUFFIX,bravotv.com
@@ -445,13 +402,8 @@ DOMAIN-SUFFIX,cbssvideo.com
 DOMAIN-SUFFIX,cbstelevisioncity.com
 DOMAIN-SUFFIX,cdn.optimizely.com
 DOMAIN-SUFFIX,cf-images.ap-southeast-1.prod.boltdns.net
-DOMAIN-SUFFIX,challenges.cloudflare.com
 DOMAIN-SUFFIX,chocotv.com.tw
 DOMAIN-SUFFIX,cinemax.com
-DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,claude.com
-DOMAIN-SUFFIX,claudeusercontent.com
-DOMAIN-SUFFIX,cloudfront.net
 DOMAIN-SUFFIX,cnbc.com
 DOMAIN-SUFFIX,cnbcfm.com
 DOMAIN-SUFFIX,cnn.com
@@ -467,13 +419,9 @@ DOMAIN-SUFFIX,content.jwplatform.com
 DOMAIN-SUFFIX,control.kochava.com
 DOMAIN-SUFFIX,conviva.com
 DOMAIN-SUFFIX,cookielaw.org
-DOMAIN-SUFFIX,copilot.cloud.microsoft
-DOMAIN-SUFFIX,copilot.microsoft.com
 DOMAIN-SUFFIX,coronavirusnow.com
 DOMAIN-SUFFIX,cstatic.net
 DOMAIN-SUFFIX,curbed.com
-DOMAIN-SUFFIX,cursor.com
-DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cwseed.com
 DOMAIN-SUFFIX,d9.flashtalking.com
 DOMAIN-SUFFIX,dai.ly
@@ -796,7 +744,6 @@ DOMAIN-SUFFIX,fwmrm.net
 DOMAIN-SUFFIX,fxn.ws
 DOMAIN-SUFFIX,fxnetwork.com
 DOMAIN-SUFFIX,fxnetworks.com
-DOMAIN-SUFFIX,gemini.google.com
 DOMAIN-SUFFIX,geraldoatlarge.com
 DOMAIN-SUFFIX,getblueshift.com
 DOMAIN-SUFFIX,glasamerike.net
@@ -806,7 +753,6 @@ DOMAIN-SUFFIX,golos-ameriki.ru
 DOMAIN-SUFFIX,golosameriki.com
 DOMAIN-SUFFIX,gooddaychicago.com
 DOMAIN-SUFFIX,gorin.jp
-DOMAIN-SUFFIX,grazie.ai
 DOMAIN-SUFFIX,grazie.aws.intellij.net
 DOMAIN-SUFFIX,haiwaikan.com
 DOMAIN-SUFFIX,happyon.jp
@@ -891,15 +837,12 @@ DOMAIN-SUFFIX,japronx.com
 DOMAIN-SUFFIX,japronx.net
 DOMAIN-SUFFIX,japronx.tv
 DOMAIN-SUFFIX,japronx.vip
-DOMAIN-SUFFIX,jetbrains.ai
 DOMAIN-SUFFIX,joeswall.com
 DOMAIN-SUFFIX,joinmaidez.com
 DOMAIN-SUFFIX,js-agent.newrelic.com
-DOMAIN-SUFFIX,jwpcdn.com
 DOMAIN-SUFFIX,jwplayer.com
 DOMAIN-SUFFIX,kakao.co.kr
 DOMAIN-SUFFIX,kakao.com
-DOMAIN-SUFFIX,kakaocdn.net
 DOMAIN-SUFFIX,kakaocorp.com
 DOMAIN-SUFFIX,kalhlspd-a.akamaihd.net
 DOMAIN-SUFFIX,kfs.io
@@ -911,14 +854,11 @@ DOMAIN-SUFFIX,kktix.com
 DOMAIN-SUFFIX,kmplayer.com
 DOMAIN-SUFFIX,kobuz.fr
 DOMAIN-SUFFIX,ktvu.com
-DOMAIN-SUFFIX,line-cdn.net
-DOMAIN-SUFFIX,line-scdn.net
 DOMAIN-SUFFIX,litix.io
 DOMAIN-SUFFIX,llnwd.net
 DOMAIN-SUFFIX,logx.optimizely.com
 DOMAIN-SUFFIX,londonreal.tv
 DOMAIN-SUFFIX,m-content-viki.s.llnwi.net
-DOMAIN-SUFFIX,makersuite.google.com
 DOMAIN-SUFFIX,manifest.prod.boltdns.net
 DOMAIN-SUFFIX,marvel.com
 DOMAIN-SUFFIX,marvel10thanniversary.com
@@ -930,12 +870,9 @@ DOMAIN-SUFFIX,marvelspotlightplays.com
 DOMAIN-SUFFIX,marvelsuperheroseptember.com
 DOMAIN-SUFFIX,marvelsuperwar.com
 DOMAIN-SUFFIX,maskedsingerfox.com
-DOMAIN-SUFFIX,media-amazon.com
 DOMAIN-SUFFIX,meridian.net
-DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,mewatch.sg
 DOMAIN-SUFFIX,mickey.tv
-DOMAIN-SUFFIX,mistral.ai
 DOMAIN-SUFFIX,mobile-collector.newrelic.com
 DOMAIN-SUFFIX,moov.hk
 DOMAIN-SUFFIX,msnbc.com
@@ -1048,7 +985,6 @@ DOMAIN-SUFFIX,pandora.tv
 DOMAIN-SUFFIX,paradisehotelquizfox.com
 DOMAIN-SUFFIX,pashtovoa.com
 DOMAIN-SUFFIX,payhulu.com
-DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,persagg.com
 DOMAIN-SUFFIX,phncdn.com
 DOMAIN-SUFFIX,phprcdn.com
@@ -1104,7 +1040,6 @@ DOMAIN-SUFFIX,realmilwaukeenow.com
 DOMAIN-SUFFIX,recode.net
 DOMAIN-SUFFIX,registerhulu.com
 DOMAIN-SUFFIX,rprimelab.com
-DOMAIN-SUFFIX,s-nbcnews.com
 DOMAIN-SUFFIX,s.yimg.jp
 DOMAIN-SUFFIX,sbnation.com
 DOMAIN-SUFFIX,screens-lab.jp
@@ -1117,7 +1052,6 @@ DOMAIN-SUFFIX,sky.com
 DOMAIN-SUFFIX,skygo.co.nz
 DOMAIN-SUFFIX,skyking.com.tw
 DOMAIN-SUFFIX,smartmediarep.com
-DOMAIN-SUFFIX,snssdk.com
 DOMAIN-SUFFIX,soccermatchpass.com
 DOMAIN-SUFFIX,socdm.com
 DOMAIN-SUFFIX,sorcerersarena.com
@@ -1224,7 +1158,6 @@ DOMAIN-SUFFIX,voatiengviet.com
 DOMAIN-SUFFIX,voatour.com
 DOMAIN-SUFFIX,voazimbabwe.com
 DOMAIN-SUFFIX,vod360.net
-DOMAIN-SUFFIX,vox-cdn.com
 DOMAIN-SUFFIX,vox.com
 DOMAIN-SUFFIX,voxcreative.com
 DOMAIN-SUFFIX,voxfieldguide.com
@@ -1238,7 +1171,6 @@ DOMAIN-SUFFIX,wofl.tv
 DOMAIN-SUFFIX,woflthenewsstation.com
 DOMAIN-SUFFIX,wogx.com
 DOMAIN-SUFFIX,wwwhuluplus.com
-DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,yb.uncn.jp
 DOMAIN-SUFFIX,youboranqs01.com
 DOMAIN-SUFFIX,z5.app
@@ -2417,7 +2349,6 @@ USER-AGENT,TIDAL*
 USER-AGENT,TIDAL*dia
 USER-AGENT,TVer-Release*
 USER-AGENT,TaiwanGood*
-USER-AGENT,TikTok*
 USER-AGENT,Viu*
 USER-AGENT,ViuTV*
 USER-AGENT,WeMusic*
@@ -2442,4 +2373,3 @@ PROCESS-NAME,com.viu.phone
 PROCESS-NAME,com.vuclip.viu
 
 # ======= blackmatrix7 GlobalMedia ========
-

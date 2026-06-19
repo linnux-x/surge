@@ -1,0 +1,12 @@
+DOMAIN,release-assets.githubusercontent.com
+DOMAIN-SUFFIX,akadns.net
+DOMAIN-SUFFIX,akamaiedge.net
+DOMAIN-SUFFIX,akamaihd.net
+DOMAIN-SUFFIX,akamaized.net
+DOMAIN-SUFFIX,azureedge.net
+DOMAIN-SUFFIX,b-cdn.net
+DOMAIN-SUFFIX,cdn77.org
+DOMAIN-SUFFIX,cloudfront.net
+DOMAIN-SUFFIX,edgekey.net
+DOMAIN-SUFFIX,edgesuite.net
+DOMAIN-SUFFIX,fastly.net

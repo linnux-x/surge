@@ -7,3 +7,4 @@ r.bing.com
 self.events.data.microsoft.com
 www.bing.com
 api.microsoftapp.net
+DOMAIN-SUFFIX,byteoversea.com

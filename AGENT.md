@@ -10,7 +10,8 @@
 ## Project Preferences
 
 - Store rulesets in `Rule/`.
-- Keep all GitHub family domains out of `Microsoft.list`. Route GitHub service, static-resource, and Copilot traffic through `Global.list`, `CDN.list`, and `AI.list` respectively.
+- Keep all GitHub family domains out of `Microsoft.list`. Route GitHub service and broad content-hosting domains through `Global.list`, Copilot through `AI.list`, and only explicit download-asset hosts such as `release-assets.githubusercontent.com` through `CDN.list`.
+- Do not put broad GitHub parent suffixes such as `githubusercontent.com`, `githubassets.com`, or `github.io` in `CDN.list`; they would steal ordinary GitHub content before `Global.list`.
 - Keep `fast.com` only in `Speedtest.list`; exclude it from `Netflix.list`, `GlobalMedia.list`, and `Global.list`.
 - Omit `no-resolve` from `China_IP.list` so unmatched domains can be resolved locally before Mainland IP classification. Proxy domain rules must precede `China_IP.list`.
 - Load focused service rules before broad provider and country rules. In particular, place YouTube before Google, WeChat before China, CDN before Global when CDN routing differs, and China before China_IP.
@@ -18,6 +19,11 @@
 - Treat reference workflows as mechanics, not policy. When adapting Rabbit-Spec, SukkaW, blackmatrix7, or other automation, explicitly remap sources and guardrails to this repository instead of inheriting the reference repository's final rule semantics.
 - Because the automation preserves the current project baseline, guardrails must run after baseline and upstream merge. Do not let baseline preservation keep stale IP rules, personal DIRECT preferences, GitHub-in-Microsoft rules, `fast.com` outside Speedtest, or dotted IP fragments encoded as `DOMAIN-KEYWORD`.
 - Strip upstream inline trailing comments before validation, because rules such as `DOMAIN-SUFFIX,example.com # note` make the comment part of the hostname in a Surge external ruleset.
+- Do not allow `DOMAIN-WILDCARD` in generated `.list` files unless current official Surge documentation explicitly confirms support. Prefer documented `DOMAIN`, `DOMAIN-SUFFIX`, and `DOMAIN-KEYWORD` forms.
+- Keep shared CDN parent suffixes such as Akamai, CloudFront, AzureEdge, Fastly, Bunny, and CDN77 out of service, media, provider, and China direct rulesets. Route broad shared CDN parents through `CDN.list` when a CDN policy is intended, and de-duplicate them from `Global.list`.
+- Remove exact overlap between peer rulesets that have different policies, such as `Microsoft.list` versus `Microsoft_CDN.list`, `Global.list` versus `CDN.list`, and `GlobalMedia.list` versus `CDN.list`. Keep only intentional first-match parent-child overlap.
+- Keep `China.list` as a Mainland/direct domain fallback, not a catch-all for Chinese-owned overseas products. Remove overseas media, short-video, social-video, and foreign sports/media domains such as international iQIYI/Bilibili/WeTV/JOOX/Kwai/NBA/TikTok-related entries from `China.list` unless the user explicitly requests a direct fallback exception.
+- Leave `rmonitor.qq.com` under the broad `qq.com` China direct fallback; do not classify it as WeChat unless the user explicitly changes that policy.
 - Current automated source choices include blackmatrix7 `ChinaMaxNoIP_Domain.list` for the expanded `China.list` domain inventory, SukkaW `Source/domainset/speedtest.conf` plus manual `fast.com` for `Speedtest.list`, SukkaW Apple/Microsoft CDN outputs for regional CDN rules, Telegram's official `resources/cidr.txt` for Telegram CIDR coverage, and blackmatrix7 Disney/PayPal for those service rules.
 - Do not reintroduce these entries from an upstream list during synchronization without explicit user approval.
 
@@ -59,7 +65,7 @@ Before finishing:
 8. Test repository-level first-match behavior with representative hosts from regional direct, CDN, Global, China, and IP fallback categories. Judge negative samples by the first matching configured `RULE-SET`, not by whether a later broad ruleset would also match.
 9. Compare rule counts and rule types with major upstreams, explaining differences by ownership and false-positive risk.
 10. Report the saved path, final rule count, major additions, removals, and deliberate exclusions.
-11. Confirm that `Microsoft.list` has no GitHub family rules, `fast.com` appears only in `Speedtest.list`, `China.list` contains no IP rules, `China_IP.list` contains no `no-resolve` option, all other IP rules include `no-resolve`, no dotted IP fragment is stored as `DOMAIN-KEYWORD`, and no IP rule is a redundant subnet of another IP rule in the same file.
+11. Confirm that `Microsoft.list` has no GitHub family rules, broad GitHub content suffixes hit `Global.list`, `release-assets.githubusercontent.com` is the only intended GitHub CDN exception, `fast.com` appears only in `Speedtest.list`, `China.list` contains no IP rules, `China_IP.list` contains no `no-resolve` option, all other IP rules include `no-resolve`, no dotted IP fragment is stored as `DOMAIN-KEYWORD`, and no IP rule is a redundant subnet of another IP rule in the same file.
 12. When the automation workflow changes, run a full local regeneration when possible, confirm every configured upstream URL is reachable, compare the generated file set with the workflow rule inventory, and make project guardrail violations fail validation before committing.
 
 ## Skill Maintenance

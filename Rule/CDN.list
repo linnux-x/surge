@@ -3,7 +3,21 @@
 # REPO: https://github.com/linnux-x/surge
 # UPDATED: 2026-06-19 06:14:16 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 546
+# TOTAL: 496
+
+# ======= Manual Rules ========
+DOMAIN,release-assets.githubusercontent.com
+DOMAIN-SUFFIX,akadns.net
+DOMAIN-SUFFIX,akamaiedge.net
+DOMAIN-SUFFIX,akamaihd.net
+DOMAIN-SUFFIX,akamaized.net
+DOMAIN-SUFFIX,azureedge.net
+DOMAIN-SUFFIX,b-cdn.net
+DOMAIN-SUFFIX,cdn77.org
+DOMAIN-SUFFIX,cloudfront.net
+DOMAIN-SUFFIX,edgekey.net
+DOMAIN-SUFFIX,edgesuite.net
+DOMAIN-SUFFIX,fastly.net
 
 # ======= Current Project Baseline ========
 DOMAIN,ajax.googleapis.com
@@ -221,9 +235,6 @@ DOMAIN-SUFFIX,codeberg.page
 DOMAIN-SUFFIX,docker.io
 DOMAIN-SUFFIX,dockerstatic.com
 DOMAIN-SUFFIX,eclipsecontent.org
-DOMAIN-SUFFIX,githubassets.com
-DOMAIN-SUFFIX,github.io
-DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,gitlab-static.net
 DOMAIN-SUFFIX,gitlab.io
 DOMAIN-SUFFIX,open-vsx.org
@@ -473,85 +484,25 @@ DOMAIN-KEYWORD,vod-adaptive.akamaized.net
 DOMAIN-KEYWORD,web-assets.zendesk
 DOMAIN-KEYWORD,-res.cloudinary.com
 DOMAIN-KEYWORD,dsn.algolia.net
-DOMAIN-WILDCARD,cdn.*.office.net
-DOMAIN-WILDCARD,cdn.*.microsoft.com
-DOMAIN-WILDCARD,cdn-*.microsoft.com
-DOMAIN-WILDCARD,appcenter-filemanagement-*.cloudapp.net
-DOMAIN-WILDCARD,proxy-*.dailymotion.com
-DOMAIN-WILDCARD,static?.tgstat.ru
-DOMAIN-WILDCARD,static??.tgstat.ru
-DOMAIN-WILDCARD,ocsp.*.amazontrust.com
-DOMAIN-WILDCARD,s3.*.wasabisys.com
-DOMAIN-WILDCARD,object-storage-*.vexxhost.net
-DOMAIN-WILDCARD,i?.nhentai.net
-DOMAIN-WILDCARD,t?.nhentai.net
 DOMAIN-KEYWORD,-thumbs.pornhost.com
-DOMAIN-WILDCARD,cdn?-dl.pornhost.com
 DOMAIN,cdn-msp.18comic.vip
 DOMAIN,cdn-msp.jmcomic.me
 DOMAIN,cdn-msp.jmcomic-zzz.one
 DOMAIN,cdn-msp.18comic.org
-DOMAIN-WILDCARD,cdn-msp?.18comic.vip
-DOMAIN-WILDCARD,cdn-msp?.jmcomic.me
-DOMAIN-WILDCARD,cdn-msp?.jmcomic-zzz.one
-DOMAIN-WILDCARD,cdn-msp?.18comic.org
 DOMAIN-KEYWORD,-cdn.eporner.com
-DOMAIN-WILDCARD,file?.mikuclub.fun
-DOMAIN-WILDCARD,cdn?.mikuclub.fun
-DOMAIN-WILDCARD,assets*.freshdesk.com
-DOMAIN-WILDCARD,cdns.*.gigya.com
-DOMAIN-WILDCARD,sdk.*.braze.eu
 DOMAIN-KEYWORD,cdn.adultempire.com
-DOMAIN-WILDCARD,img?.porngo.com
-DOMAIN-WILDCARD,img??.porngo.com
-DOMAIN-WILDCARD,th-*.pornone.com
-DOMAIN-WILDCARD,s???.pornone.com
-DOMAIN-WILDCARD,*-intake-*-datadoghq.com
-DOMAIN-WILDCARD,*-intake.*.datadoghq.com
-DOMAIN-WILDCARD,video-thumbnail2.fc2.com
-DOMAIN-WILDCARD,video?-thumbnail?.fc2.com
-DOMAIN-WILDCARD,video-thumbnail?.liaoningmovie.net
-DOMAIN-WILDCARD,video?-thumbnail?.liaoningmovie.net
-DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
-DOMAIN-WILDCARD,blog-imgs-??.2nt.com
-DOMAIN-WILDCARD,blog-imgs-??.fc2.com
-DOMAIN-WILDCARD,rr?---??.ouo.si
-DOMAIN-WILDCARD,s3-*.figma.com
-DOMAIN-WILDCARD,*.kuaikan-cdn?.com
-DOMAIN-WILDCARD,*.fsvod?.com
-DOMAIN-WILDCARD,image*.cloudokyo.cloud
-DOMAIN-WILDCARD,video*.cloudokyo.cloud
-DOMAIN-WILDCARD,v.rn???.xyz
-DOMAIN-WILDCARD,s?.maxstream.org
-DOMAIN-WILDCARD,s??.maxstream.org
-DOMAIN-WILDCARD,stream?.kissjav.com
-DOMAIN-WILDCARD,stream??.kissjav.com
-DOMAIN-WILDCARD,chunk-*.mux.com
-DOMAIN-WILDCARD,*.skyearth?.xyz
 DOMAIN-KEYWORD,static.trustpilot.com
 DOMAIN-KEYWORD,scripts.trustpilot.com
 DOMAIN-KEYWORD,images.trustpilot.com
 DOMAIN-KEYWORD,cdn.trustpilot.net
 DOMAIN-KEYWORD,assets.trustpilot.net
 DOMAIN-KEYWORD,images.trustpilot.net
-DOMAIN-WILDCARD,*.img.*.sendibm?.com
-DOMAIN-WILDCARD,cdn?.18girlssex.com
 DOMAIN-KEYWORD,-assets.worldsex.com
 DOMAIN-KEYWORD,-thumbs.worldsex.com
 DOMAIN-KEYWORD,99avcdn
 DOMAIN-KEYWORD,-images.disco-api.com
-DOMAIN-WILDCARD,uploads-*.insided.com
 DOMAIN-KEYWORD,vdownload.hanime1
 DOMAIN-KEYWORD,fonts.hanime1
-DOMAIN-WILDCARD,s*.hanime1
-DOMAIN-WILDCARD,img-*.now.com
-DOMAIN-WILDCARD,assets.*.imaga.co
 DOMAIN-KEYWORD,static.grammarly.com
-DOMAIN-WILDCARD,cdn*.pigav.com
-DOMAIN-WILDCARD,fastly-*.allmovie.com
-DOMAIN-WILDCARD,cdn*.porn87.com
-DOMAIN-WILDCARD,cdn*.pornhost.com
-DOMAIN-WILDCARD,cdn*.boysfood.com
 
 # ======= SukkaW CDN ========
-

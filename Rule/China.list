@@ -3,7 +3,7 @@
 # REPO: https://github.com/linnux-x/surge
 # UPDATED: 2026-06-19 06:14:16 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 112944
+# TOTAL: 112923
 
 # ======= Current Project Baseline ========
 DOMAIN,cdn.angruo.com
@@ -2143,7 +2143,6 @@ DOMAIN-SUFFIX,kuqin.com
 DOMAIN-SUFFIX,kuwo.com
 DOMAIN-SUFFIX,kuyiso.com
 DOMAIN-SUFFIX,kuyunbo.club
-DOMAIN-SUFFIX,kwaicdn.com
 DOMAIN-SUFFIX,kwaizt.com
 DOMAIN-SUFFIX,kwimgs.com
 DOMAIN-SUFFIX,la-north-2.myhuaweicloud.com
@@ -2914,7 +2913,6 @@ DOMAIN-SUFFIX,snapdrop.net
 DOMAIN-SUFFIX,snimay.com
 DOMAIN-SUFFIX,snodehome.com
 DOMAIN-SUFFIX,snowballsecurities.com
-DOMAIN-SUFFIX,snssdk.com
 DOMAIN-SUFFIX,snwx.com
 DOMAIN-SUFFIX,so.com
 DOMAIN-SUFFIX,sobot.com
@@ -4023,7 +4021,6 @@ USER-AGENT,*bili*
 USER-AGENT,Bilibili*
 USER-AGENT,bili*
 USER-AGENT,bili-inter*
-USER-AGENT,TikTok*
 USER-AGENT,%E4%B8%AD%E5%9B%BD%E5%B7%A5%E5%95%86%E9%93%B6%E8%A1%8C*
 USER-AGENT,%E4%BA%AC%E4%B8%9C%E5%88%B0%E5%AE%B6*
 USER-AGENT,%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1*
@@ -4066,7 +4063,6 @@ USER-AGENT,QQMusic*
 USER-AGENT,QYPlayer*
 USER-AGENT,Youku*
 USER-AGENT,iQiYi*
-USER-AGENT,Himalaya*
 USER-AGENT,MGTV*
 USER-AGENT,TencentMidasConnect*
 USER-AGENT,%E5%92%AA%E5%92%95%E8%A7%86%E9%A2%91
@@ -4111,17 +4107,13 @@ DOMAIN,www.libvideo.com
 DOMAIN,www.yxssp.com
 DOMAIN-SUFFIX,aaplimg.com
 DOMAIN-SUFFIX,adimages.sina.com.hk
-DOMAIN-SUFFIX,akadns.net
 DOMAIN-SUFFIX,beatsbydre.com
-DOMAIN-SUFFIX,bilibili.tv
-DOMAIN-SUFFIX,biliintl.com
 DOMAIN-SUFFIX,click.qianqian.com
 DOMAIN-SUFFIX,garmin.com
 DOMAIN-SUFFIX,hotmail.com
 DOMAIN-SUFFIX,images-amazon.com
 DOMAIN-SUFFIX,in.th
 DOMAIN-SUFFIX,infoq.com
-DOMAIN-SUFFIX,iq.com
 DOMAIN-SUFFIX,java.com
 DOMAIN-SUFFIX,jhu.edu
 DOMAIN-SUFFIX,me.com
@@ -4141,8 +4133,6 @@ DOMAIN-SUFFIX,s-microsoft.com
 DOMAIN-SUFFIX,sharepoint.com
 DOMAIN-SUFFIX,sony.com
 DOMAIN-SUFFIX,sonyentertainmentnetwork.com
-DOMAIN-SUFFIX,tiktokd.net
-DOMAIN-SUFFIX,tiktokd.org
 DOMAIN-SUFFIX,visualstudio.com
 DOMAIN-SUFFIX,weather.com
 DOMAIN-SUFFIX,windows.com
@@ -19308,7 +19298,6 @@ DOMAIN-SUFFIX,bilezu.com
 DOMAIN-SUFFIX,bilfinance.com
 DOMAIN-SUFFIX,bilibil.com
 DOMAIN-SUFFIX,biligx.com
-DOMAIN-SUFFIX,biliintl.co
 DOMAIN-SUFFIX,bilimanga.net
 DOMAIN-SUFFIX,bilinl.com
 DOMAIN-SUFFIX,bilinovel.com
@@ -48332,7 +48321,6 @@ DOMAIN-SUFFIX,hiluluke.com
 DOMAIN-SUFFIX,hima.auto
 DOMAIN-SUFFIX,himado.com
 DOMAIN-SUFFIX,himaker.com
-DOMAIN-SUFFIX,himalaya.com
 DOMAIN-SUFFIX,himalaya.cool
 DOMAIN-SUFFIX,himanufacture.com
 DOMAIN-SUFFIX,himarking.com
@@ -53038,7 +53026,6 @@ DOMAIN-SUFFIX,ifjing.com
 DOMAIN-SUFFIX,ifjqq.com
 DOMAIN-SUFFIX,ifkeji.com
 DOMAIN-SUFFIX,ifkz256x3p.com
-DOMAIN-SUFFIX,iflix.com
 DOMAIN-SUFFIX,iflowercity.com
 DOMAIN-SUFFIX,iflyadx.com
 DOMAIN-SUFFIX,iflyaiedu.com
@@ -57715,7 +57702,6 @@ DOMAIN-SUFFIX,joomla.work
 DOMAIN-SUFFIX,joomobx.com
 DOMAIN-SUFFIX,joooz.com
 DOMAIN-SUFFIX,joowhee.com
-DOMAIN-SUFFIX,joox.com
 DOMAIN-SUFFIX,jooxemail.com
 DOMAIN-SUFFIX,jooyacn.com
 DOMAIN-SUFFIX,jooyoo.net
@@ -61550,10 +61536,7 @@ DOMAIN-SUFFIX,kvov.com
 DOMAIN-SUFFIX,kvps85.com
 DOMAIN-SUFFIX,kvrmicit.com
 DOMAIN-SUFFIX,kw007.com
-DOMAIN-SUFFIX,kwai-group.com
 DOMAIN-SUFFIX,kwai-pro.com
-DOMAIN-SUFFIX,kwai.com
-DOMAIN-SUFFIX,kwai.net
 DOMAIN-SUFFIX,kwai.xyz
 DOMAIN-SUFFIX,kwai666.com
 DOMAIN-SUFFIX,kwaiadapp.com
@@ -70069,7 +70052,6 @@ DOMAIN-SUFFIX,nb-jiale.com
 DOMAIN-SUFFIX,nb-medicalsystem.com
 DOMAIN-SUFFIX,nb160.com
 DOMAIN-SUFFIX,nb591.com
-DOMAIN-SUFFIX,nba.com
 DOMAIN-SUFFIX,nba98k.com
 DOMAIN-SUFFIX,nbabm.com
 DOMAIN-SUFFIX,nbahero.com
@@ -96463,8 +96445,6 @@ DOMAIN-SUFFIX,wetrial.com
 DOMAIN-SUFFIX,wetruetech.com
 DOMAIN-SUFFIX,wetry.shop
 DOMAIN-SUFFIX,wetuc.com
-DOMAIN-SUFFIX,wetv.vip
-DOMAIN-SUFFIX,wetvinfo.com
 DOMAIN-SUFFIX,weuschool.com
 DOMAIN-SUFFIX,wevul.com
 DOMAIN-SUFFIX,wewillpro.com
@@ -112867,7 +112847,6 @@ DOMAIN,rfcmedia.streamguys1.com
 DOMAIN,rfimonde-lh.akamaihd.net
 DOMAIN,rmtv24hweblive-lh.akamaihd.net
 DOMAIN,rthklive1-lh.akamaihd.net
-DOMAIN,rthklive2-lh.akamaihd.net
 DOMAIN,rtvcdn.com.au
 DOMAIN,scene7-cdn.dell.com
 DOMAIN,sdn-global-live-streaming-packager-cache-3qsdn.akamaized.net
@@ -112956,4 +112935,3 @@ DOMAIN,zzq12345.gearhostpreview.com
 # ======= blackmatrix7 ChinaMaxNoIP Domain ========
 
 # ======= Rabbit-Spec China ========
-

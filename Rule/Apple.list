@@ -3,7 +3,7 @@
 # REPO: https://github.com/linnux-x/surge
 # UPDATED: 2026-06-19 06:14:16 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1619
+# TOTAL: 1618
 
 # ======= Current Project Baseline ========
 DOMAIN,apple-events.akamaized.net
@@ -1572,7 +1572,6 @@ DOMAIN-KEYWORD,icloud.com.akadns.net
 DOMAIN-KEYWORD,smp-device
 DOMAIN-KEYWORD,testflight
 DOMAIN,lookup-api.apple.com.edgekey.net
-DOMAIN-SUFFIX,akadns.net
 DOMAIN-SUFFIX,crashlytics.com
 DOMAIN-SUFFIX,digicert.com
 DOMAIN-KEYWORD,buy.itunes.apple.com
@@ -1627,4 +1626,3 @@ PROCESS-NAME,LookupViewService
 PROCESS-NAME,TV
 
 # ======= blackmatrix7 Apple ========
-

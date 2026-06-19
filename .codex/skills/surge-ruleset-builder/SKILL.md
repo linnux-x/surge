@@ -12,7 +12,8 @@ Create compact, complete, auditable Surge external rulesets. Prefer verified ser
 Apply these repository-specific choices before generic ownership or upstream conventions:
 
 - Store generated rulesets in `Rule/` unless the user requests another path.
-- Keep GitHub separate from Microsoft. Exclude GitHub, GitHub Pages, GitHub assets, GitHub user content, and GitHub Copilot domains from `Microsoft.list`; route them through `Global.list`, `CDN.list`, or `AI.list` according to function.
+- Keep GitHub separate from Microsoft. Exclude GitHub, GitHub Pages, GitHub assets, GitHub user content, and GitHub Copilot domains from `Microsoft.list`; route broad GitHub service/content suffixes through `Global.list`, Copilot through `AI.list`, and only explicit download-asset hosts such as `release-assets.githubusercontent.com` through `CDN.list`.
+- Do not put broad GitHub parent suffixes such as `githubusercontent.com`, `githubassets.com`, or `github.io` in `CDN.list`; they catch ordinary GitHub content before `Global.list`.
 - Treat `fast.com` as a speed-test service. Keep it only in `Speedtest.list`, not in `Netflix.list`, `GlobalMedia.list`, or `Global.list`.
 - Omit `no-resolve` from `China_IP.list` so unmatched domains can be resolved locally and classified by their Mainland IP address. Put proxy domain rules before `China_IP.list`, and put `China_IP.list` before the final fallback.
 - Use first-match order deliberately when broad provider or country rules overlap focused services: service-specific rules such as YouTube, Telegram, WeChat, Netflix, Speedtest, and AI should precede provider/category rules such as Google, Microsoft, GlobalMedia, CDN, Global, China, and China_IP.
@@ -20,6 +21,10 @@ Apply these repository-specific choices before generic ownership or upstream con
 - Treat borrowed workflows as automation mechanics only. Do not assume a reference repository's source choices, local manual preferences, or final rule semantics match this project; map every generated file to the user's selected upstreams and guardrails explicitly.
 - When preserving the current project baseline during automation, run guardrails after merging baseline and upstream data, then validate those guardrails before writing output. Baseline preservation must not keep stale IP rules, personal DIRECT preferences, or malformed pseudo-domain rules alive.
 - Strip upstream inline trailing comments during source cleaning. In Surge external rulesets, a line such as `DOMAIN-SUFFIX,example.com # note` is not a comment-bearing rule; the note becomes part of the hostname and should fail validation.
+- Do not accept undocumented wildcard rule types such as `DOMAIN-WILDCARD` in generated `.list` files unless current official Surge documentation explicitly confirms support. Convert to documented exact or suffix rules only when the wildcard can be narrowed safely; otherwise exclude it.
+- Route broad shared CDN parent suffixes through `CDN.list` when the repository has a CDN policy, not through service, media, provider, China direct, or broad Global rulesets. Examples include Akamai, CloudFront, AzureEdge, Fastly, Bunny, and CDN77 parent domains.
+- Remove exact overlap between peer rulesets that assign different policies, such as `Microsoft.list` versus `Microsoft_CDN.list`, `Global.list` versus `CDN.list`, and `GlobalMedia.list` versus `CDN.list`. Preserve only intentional parent-child first-match overlap.
+- Keep `China.list` as a Mainland/direct domain fallback, not a catch-all for Chinese-owned overseas products. Remove overseas media, short-video, social-video, and foreign sports/media domains from China rules unless the user explicitly requests a direct fallback exception. Judge actual routing by configured first match, but do not use first-match order to justify retaining clearly non-China entries in `China.list`.
 - Prefer the user's selected automated sources unless they become unavailable or inaccurate: blackmatrix7 `ChinaMaxNoIP_Domain.list` for the expanded `China.list` domain inventory, SukkaW `Source/domainset/speedtest.conf` plus a manual `DOMAIN-SUFFIX,fast.com` for `Speedtest.list`, SukkaW Apple/Microsoft CDN outputs for regional CDN rules, Telegram's official `resources/cidr.txt` for Telegram CIDR coverage, and blackmatrix7 Disney/PayPal for those service rules.
 - Preserve these choices when importing or synchronizing upstream rules. Report an upstream conflict instead of silently restoring a removed rule.
 
@@ -48,6 +53,7 @@ Apply these repository-specific choices before generic ownership or upstream con
 - Name files consistently: capitalize the first filename segment, preserve established service capitalization, and write segments after `_` in uppercase, such as `Apple_CN.list` and `China_IP.list`. Correct obvious spelling drift and update all textual references after a rename.
 - Use ASCII comments beginning with `#`. Keep headers short and include the update date and source repositories.
 - Prefer `DOMAIN` for a single host, `DOMAIN-SUFFIX` for an owned domain tree, and `DOMAIN-KEYWORD` only for stable dynamic naming patterns.
+- Do not treat upstream wildcard-looking host patterns as Surge rules. If a source uses glob syntax, either replace it with a verified safe suffix or exact host inventory, or exclude it and document why.
 - Treat a product website as ownership evidence, not automatic proof that every vendor domain is a runtime dependency. Prefer official endpoint documentation, client source, reproducible traffic, or agreement between independent current sources for supporting hosts.
 - Add `no-resolve` to `IP-CIDR` and `IP-CIDR6` unless IP matching must resolve domain requests. This repository intentionally omits it from `China_IP.list` for local DNS-based Mainland classification. With `no-resolve`, Surge skips that IP rule when the request target is still a domain.
 - Include `USER-AGENT` or `PROCESS-NAME` only as documented client fallbacks. `USER-AGENT` applies only to HTTP/HTTPS requests, while `PROCESS-NAME` is Mac-only and ignored by Surge iOS; neither is primary cross-platform coverage.
@@ -70,6 +76,7 @@ Apply these repository-specific choices before generic ownership or upstream con
 - Remove an exact domain when an included `DOMAIN-SUFFIX` already covers it, unless ordering or exceptional behavior makes the exact rule meaningful.
 - When a child product must be excluded from a provider-wide ruleset, do not retain a parent suffix or keyword that still matches the child. Surge external rulesets cannot express negative child-domain exceptions; use explicit service hosts, or clearly document a first-match load-order dependency when broad coverage is more important than strict separation.
 - Distinguish ownership from geography. A Chinese company can operate overseas subdomains, and a foreign company can operate verified Mainland delivery endpoints. Keep the broad owner suffix only when useful, place verified geographic exceptions in an earlier ruleset, and test the intended first match.
+- For China direct rules, classify by Mainland routing intent rather than company origin. International services from Chinese-owned brands, Hong Kong/Taiwan/global media, TikTok/ByteDance overseas domains, Kwai overseas domains, and global sports/media domains belong in their focused or global category, not `China.list`.
 - Treat cross-file overlap as a routing decision, not automatically as duplication. Remove accidental overlap between peer categories such as `CDN` and `Global`; retain justified parent-child overlap when a narrower earlier rule intentionally overrides a broad later category. Document the required load order in both files.
 - Keep diagnostic products in their functional category. For example, a speed-test hostname associated with a streaming vendor belongs in the speed-test ruleset when the policy is based on function rather than corporate ownership.
 - Treat a wider network prefix as a replacement only after verifying ownership and route origin; never widen CIDRs by visual inference alone.
@@ -89,12 +96,13 @@ Before finishing, verify:
 - No `IP-CIDR` or `IP-CIDR6` rule is a redundant subnet of a broader CIDR in the same policy file.
 - `China.list` is domain-only, `China_IP.list` carries Mainland IPv4/IPv6 fallback without `no-resolve`, and all other real `IP-CIDR`, `IP-CIDR6`, and `IP-ASN` rules carry `no-resolve`.
 - No IP address fragment is encoded as `DOMAIN-KEYWORD`, including dotted prefixes such as `DOMAIN-KEYWORD,101.226.129.`.
-- `Microsoft.list` contains no GitHub family rules, and `fast.com` exists only in `Speedtest.list`.
+- `Microsoft.list` contains no GitHub family rules, broad GitHub content suffixes hit `Global.list`, `release-assets.githubusercontent.com` is the only intended GitHub CDN exception, and `fast.com` exists only in `Speedtest.list`.
 - Domain entries are lowercase and do not include URL schemes or paths.
 - Broad shared-provider entries have a written justification or are removed.
 - Representative positive samples for every product class match the final ruleset.
 - Explicit exclusions and sibling-product negative samples do not match the final ruleset.
 - Cross-file overlap is intentional and documented when related project rulesets can match the same hostname.
+- Peer rulesets with different policies have no exact overlap unless a documented first-match exception requires it. Dedicated CDN/resource rules should not remain duplicated in their parent provider or broad category file.
 - Peer-category semantic overlap is checked in both directions: exact-in-suffix, suffix-in-suffix, and child exceptions beneath broad parents. The documented first-match order is tested with representative hosts.
 - Explicit negative samples are evaluated through the configured profile order. A domain that appears in a later broad fallback ruleset is not a routing error if an earlier focused ruleset intentionally catches it first.
 - Current canonical network sources are compared against local CIDRs for both missing and stale prefixes; the final networks remain losslessly collapsed.
