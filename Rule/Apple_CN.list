@@ -3,7 +3,15 @@
 # REPO: https://github.com/linnux-x/surge
 # UPDATED: 2026-06-19 06:14:16 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 181
+# TOTAL: 187
+
+# ======= Manual Rules ========
+DOMAIN-SUFFIX,appldnld.apple.com.edgesuite.net
+DOMAIN-SUFFIX,apple.com.cdn20.com
+DOMAIN-SUFFIX,apple.com.mwcloudcdn.com
+DOMAIN-SUFFIX,gsp4-cn.ls.apple.com.edgekey.net
+DOMAIN-SUFFIX,ls.apple.com.edgesuite.net
+DOMAIN-SUFFIX,www.apple.com.edgekey.net
 
 # ======= Current Project Baseline ========
 DOMAIN,api.smoot.apple.cn

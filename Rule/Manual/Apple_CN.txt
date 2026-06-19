@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,appldnld.apple.com.edgesuite.net
+DOMAIN-SUFFIX,apple.com.cdn20.com
+DOMAIN-SUFFIX,apple.com.mwcloudcdn.com
+DOMAIN-SUFFIX,gsp4-cn.ls.apple.com.edgekey.net
+DOMAIN-SUFFIX,ls.apple.com.edgesuite.net
+DOMAIN-SUFFIX,www.apple.com.edgekey.net
