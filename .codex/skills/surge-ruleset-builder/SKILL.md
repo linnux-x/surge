@@ -19,6 +19,7 @@ Apply these repository-specific choices before generic ownership or upstream con
 - Keep automated publish workflows aligned with local policy. The publish repository workflow should preserve the current project baseline, prepend `Rule/Manual/*.txt`, apply `Rule/Manual/*.exclude.txt`, convert explicit domainset sources, and enforce repository guardrails before writing generated `.list` files.
 - Treat borrowed workflows as automation mechanics only. Do not assume a reference repository's source choices, local manual preferences, or final rule semantics match this project; map every generated file to the user's selected upstreams and guardrails explicitly.
 - When preserving the current project baseline during automation, run guardrails after merging baseline and upstream data, then validate those guardrails before writing output. Baseline preservation must not keep stale IP rules, personal DIRECT preferences, or malformed pseudo-domain rules alive.
+- Strip upstream inline trailing comments during source cleaning. In Surge external rulesets, a line such as `DOMAIN-SUFFIX,example.com # note` is not a comment-bearing rule; the note becomes part of the hostname and should fail validation.
 - Prefer the user's selected automated sources unless they become unavailable or inaccurate: blackmatrix7 `ChinaMaxNoIP_Domain.list` for the expanded `China.list` domain inventory, SukkaW `Source/domainset/speedtest.conf` plus a manual `DOMAIN-SUFFIX,fast.com` for `Speedtest.list`, SukkaW Apple/Microsoft CDN outputs for regional CDN rules, Telegram's official `resources/cidr.txt` for Telegram CIDR coverage, and blackmatrix7 Disney/PayPal for those service rules.
 - Preserve these choices when importing or synchronizing upstream rules. Report an upstream conflict instead of silently restoring a removed rule.
 
@@ -31,11 +32,11 @@ Apply these repository-specific choices before generic ownership or upstream con
 5. Search the web for recent official domain, ASN, network, API endpoint, or client information. Prefer official service documentation, RIR/BGP data, and repository source files.
 6. Define the ruleset's intended product surface before selecting candidates, such as consumer playback versus corporate, investor, studio, or engineering sites. For requests using words such as "all" or "every", turn the scope into an explicit product-category inventory and state that coverage is current and evidence-based rather than permanently exhaustive.
 7. Measure large upstream lists by rule type and ownership. Treat generated cloud-provider ranges as candidates for verification, not evidence that every address belongs in the final ruleset.
-8. Build a normalized candidate set, then remove duplicates, covered entries, stale entries, unrelated product surfaces, and high-risk shared infrastructure. Compare sibling rulesets in the project when products share a provider or infrastructure.
+8. Build a normalized candidate set, then remove duplicates, covered entries, stale entries, unrelated product surfaces, and high-risk shared infrastructure. Treat a CIDR subnet covered by a broader CIDR in the same policy file as redundant and remove it. Compare sibling rulesets in the project when products share a provider or infrastructure.
 9. For category or repository-wide work, assign each rule to an ownership layer such as dedicated service, regional direct, CDN, broad global, or IP fallback. Define the intended first-match order before resolving cross-file overlap.
 10. Save the result as `<Service>.list` in the user's requested project directory. In this repository, default to `Rule/` when no path is given.
 11. When changing automation, update the workflow source inventory and generated files together. Re-run local generation when practical, confirm all external URLs are reachable, and verify the workflow's `process_rule` inventory matches the repository's `.list` files. Also verify the workflow has project-policy checks, not only cleanup filters.
-12. Validate the file and report the path, rule count, important inclusions, and deliberate exclusions. For a final repository audit, validate every `.list`, re-fetch time-sensitive canonical sources, and test representative first-match behavior across related files.
+12. Validate the file and report the path, rule count, important inclusions, and deliberate exclusions. For a final repository audit, validate every `.list`, re-fetch time-sensitive canonical sources, and test representative first-match behavior across related files. Treat a later broad-match hit as harmless when an earlier focused rule is the actual configured first match.
 13. Run the continuous-improvement review below. Update the skill only when the task produced durable, verified knowledge.
 
 ## Construction Rules
@@ -85,6 +86,7 @@ Before finishing, verify:
 - No rule contains a policy name.
 - There are no exact duplicate rules.
 - CIDRs are syntactically valid and follow the ruleset's resolution policy: `no-resolve` by default, except `China_IP.list` in this repository.
+- No `IP-CIDR` or `IP-CIDR6` rule is a redundant subnet of a broader CIDR in the same policy file.
 - `China.list` is domain-only, `China_IP.list` carries Mainland IPv4/IPv6 fallback without `no-resolve`, and all other real `IP-CIDR`, `IP-CIDR6`, and `IP-ASN` rules carry `no-resolve`.
 - No IP address fragment is encoded as `DOMAIN-KEYWORD`, including dotted prefixes such as `DOMAIN-KEYWORD,101.226.129.`.
 - `Microsoft.list` contains no GitHub family rules, and `fast.com` exists only in `Speedtest.list`.
@@ -94,6 +96,7 @@ Before finishing, verify:
 - Explicit exclusions and sibling-product negative samples do not match the final ruleset.
 - Cross-file overlap is intentional and documented when related project rulesets can match the same hostname.
 - Peer-category semantic overlap is checked in both directions: exact-in-suffix, suffix-in-suffix, and child exceptions beneath broad parents. The documented first-match order is tested with representative hosts.
+- Explicit negative samples are evaluated through the configured profile order. A domain that appears in a later broad fallback ruleset is not a routing error if an earlier focused ruleset intentionally catches it first.
 - Current canonical network sources are compared against local CIDRs for both missing and stale prefixes; the final networks remain losslessly collapsed.
 - Filenames and internal references follow the project naming convention, and renamed files leave no stale references.
 - The final rule count matches the reported count.

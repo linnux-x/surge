@@ -3,7 +3,7 @@
 # REPO: https://github.com/linnux-x/surge
 # UPDATED: 2026-06-19 06:14:16 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1050
+# TOTAL: 1048
 
 # ======= Current Project Baseline ========
 DOMAIN,discord-attachments-uploads-prd.storage.googleapis.com
@@ -1053,8 +1053,6 @@ DOMAIN-SUFFIX,sis001.com
 DOMAIN-SUFFIX,soyjak.party
 DOMAIN-SUFFIX,soyjak.st
 DOMAIN-SUFFIX,xwbo.com
-IP-CIDR,119.235.224.0/24,no-resolve
-IP-CIDR,119.235.232.0/24,no-resolve
 IP-ASN,32934,no-resolve
 
 # ======= QuixoticHeart SocialMedia ========

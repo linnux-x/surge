@@ -54,6 +54,7 @@ jobs:
               {
                 sub(/\r$/, "")
                 sub(/[[:space:]]+$/, "")
+                sub(/[[:space:]]+#.*$/, "")
               }
               /^[[:space:]]*#/ { next }
               /^[[:space:]]*$/ { next }
@@ -67,6 +68,7 @@ jobs:
               {
                 sub(/\r$/, "")
                 sub(/[[:space:]]+$/, "")
+                sub(/[[:space:]]+#.*$/, "")
               }
               /^[[:space:]]*$/ { next }
               tolower($0) ~ /7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset\.skk\.moe/ { next }
@@ -88,6 +90,7 @@ jobs:
               {
                 sub(/\r$/, "")
                 sub(/[[:space:]]+$/, "")
+                sub(/[[:space:]]+#.*$/, "")
               }
               /^[[:space:]]*$/ { next }
               /^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+\/[0-9]+$/ {
@@ -218,6 +221,47 @@ jobs:
             mv "${file}.tmp" "$file"
           }
 
+          prune_redundant_cidr() {
+            local file=$1
+            python3 - "$file" <<'PY'
+          import ipaddress
+          import sys
+          from pathlib import Path
+
+          path = Path(sys.argv[1])
+          lines = path.read_text(encoding="utf-8").splitlines()
+          cidrs = []
+          all_nets = set()
+
+          for index, line in enumerate(lines):
+              stripped = line.strip()
+              if not stripped or stripped.startswith("#"):
+                  continue
+              parts = [part.strip() for part in stripped.split(",")]
+              if len(parts) < 2 or parts[0].upper() not in {"IP-CIDR", "IP-CIDR6"}:
+                  continue
+              try:
+                  network = ipaddress.ip_network(parts[1], strict=False)
+              except ValueError:
+                  continue
+              cidrs.append((index, network))
+              all_nets.add(network)
+
+          remove = set()
+          for index, network in cidrs:
+              for prefix in range(network.prefixlen):
+                  if network.supernet(new_prefix=prefix) in all_nets:
+                      remove.add(index)
+                      break
+
+          if remove:
+              path.write_text(
+                  "\n".join(line for index, line in enumerate(lines) if index not in remove) + "\n",
+                  encoding="utf-8",
+              )
+          PY
+          }
+
           validate_rules() {
             local file=$1
             local target_name=$2
@@ -321,6 +365,7 @@ jobs:
 
             apply_project_guardrails "$target_name" "$temp_body"
             dedupe_preserve_order "$temp_body"
+            prune_redundant_cidr "$temp_body"
             validate_rules "$temp_body" "$target_name"
 
             rule_count=$(awk '!/^#/ && !/^[[:space:]]*$/ { n++ } END { print n + 0 }' "$temp_body")

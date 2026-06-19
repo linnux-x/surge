@@ -87,6 +87,8 @@ SukkaW's CDN category is designed for a broad secondary policy and includes stat
 
 For direct-routing rules, distinguish current routes announced inside Mainland China from registry or GeoIP country allocations. Compare both classes, but do not blindly union them: an allocation-oriented list can retain unannounced, transferred, anycast, or overseas-operated prefixes. Also inspect repository-specific manual sections separately; they may contain personal DIRECT preferences such as foreign vendors or overseas cloud single-host IPs rather than geographic China evidence.
 
+When a China IP candidate appears in only one synchronized upstream, cross-check it against gaoyifan `china46.txt` or equivalent current route-origin evidence before accepting it. This is especially important for prefixes originated by small CN ASNs, global transit providers, or foreign-looking IPv4/IPv6 allocations. After merging sources, prune CIDR subnets already covered by broader CIDRs in the same policy file; the broader rule is equivalent for routing and keeps the generated set smaller.
+
 ## Research Priority
 
 1. Official Surge syntax documentation.

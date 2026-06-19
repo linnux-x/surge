@@ -17,6 +17,7 @@
 - Maintain the publish repository workflow in `surge-publish/.github/workflows/auto-rules.yml` when rule sources change. It should regenerate files in `Rule/`, preserve `Rule/Manual/*.txt`, apply `Rule/Manual/*.exclude.txt`, convert supported domainset sources, and enforce repository-specific guardrails.
 - Treat reference workflows as mechanics, not policy. When adapting Rabbit-Spec, SukkaW, blackmatrix7, or other automation, explicitly remap sources and guardrails to this repository instead of inheriting the reference repository's final rule semantics.
 - Because the automation preserves the current project baseline, guardrails must run after baseline and upstream merge. Do not let baseline preservation keep stale IP rules, personal DIRECT preferences, GitHub-in-Microsoft rules, `fast.com` outside Speedtest, or dotted IP fragments encoded as `DOMAIN-KEYWORD`.
+- Strip upstream inline trailing comments before validation, because rules such as `DOMAIN-SUFFIX,example.com # note` make the comment part of the hostname in a Surge external ruleset.
 - Current automated source choices include blackmatrix7 `ChinaMaxNoIP_Domain.list` for the expanded `China.list` domain inventory, SukkaW `Source/domainset/speedtest.conf` plus manual `fast.com` for `Speedtest.list`, SukkaW Apple/Microsoft CDN outputs for regional CDN rules, Telegram's official `resources/cidr.txt` for Telegram CIDR coverage, and blackmatrix7 Disney/PayPal for those service rules.
 - Do not reintroduce these entries from an upstream list during synchronization without explicit user approval.
 
@@ -53,12 +54,12 @@ Before finishing:
 3. Test representative positive domains for every product class.
 4. Test explicit exclusions and sibling-product domains as negative samples.
 5. Audit overlaps with related `.list` files and document intentional shared infrastructure.
-6. Check semantic overlap in both directions, including exact domains beneath suffixes and narrower suffixes beneath broader parents. Remove peer-category overlap such as CDN versus Global; keep only intentional first-match exceptions with a documented load order.
+6. Check semantic overlap in both directions, including exact domains beneath suffixes, narrower suffixes beneath broader parents, and CIDR prefixes covered by broader prefixes in the same policy file. Remove peer-category overlap such as CDN versus Global; keep only intentional first-match exceptions with a documented load order.
 7. For geographic IP sets, compare against the current canonical route source for both additions and withdrawals, verify lossless CIDR collapse, and keep allocation-oriented or overseas-announced operator ranges separate from Mainland route-origin coverage.
-8. Test repository-level first-match behavior with representative hosts from regional direct, CDN, Global, China, and IP fallback categories.
+8. Test repository-level first-match behavior with representative hosts from regional direct, CDN, Global, China, and IP fallback categories. Judge negative samples by the first matching configured `RULE-SET`, not by whether a later broad ruleset would also match.
 9. Compare rule counts and rule types with major upstreams, explaining differences by ownership and false-positive risk.
 10. Report the saved path, final rule count, major additions, removals, and deliberate exclusions.
-11. Confirm that `Microsoft.list` has no GitHub family rules, `fast.com` appears only in `Speedtest.list`, `China.list` contains no IP rules, `China_IP.list` contains no `no-resolve` option, all other IP rules include `no-resolve`, and no dotted IP fragment is stored as `DOMAIN-KEYWORD`.
+11. Confirm that `Microsoft.list` has no GitHub family rules, `fast.com` appears only in `Speedtest.list`, `China.list` contains no IP rules, `China_IP.list` contains no `no-resolve` option, all other IP rules include `no-resolve`, no dotted IP fragment is stored as `DOMAIN-KEYWORD`, and no IP rule is a redundant subnet of another IP rule in the same file.
 12. When the automation workflow changes, run a full local regeneration when possible, confirm every configured upstream URL is reachable, compare the generated file set with the workflow rule inventory, and make project guardrail violations fail validation before committing.
 
 ## Skill Maintenance
