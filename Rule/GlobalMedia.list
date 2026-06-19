@@ -1,9 +1,9 @@
 # NAME: GlobalMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-19 06:14:16 +0800
+# UPDATED: 2026-06-20 05:12:48 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 2365
+# TOTAL: 2366
 
 # ======= Current Project Baseline ========
 DOMAIN,aod.itunes.apple.com
@@ -2373,3 +2373,5 @@ PROCESS-NAME,com.viu.phone
 PROCESS-NAME,com.vuclip.viu
 
 # ======= blackmatrix7 GlobalMedia ========
+USER-AGENT,TikTok*
+

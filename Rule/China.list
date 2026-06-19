@@ -1,9 +1,9 @@
 # NAME: China
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-19 06:14:16 +0800
+# UPDATED: 2026-06-20 05:12:48 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 112923
+# TOTAL: 112937
 
 # ======= Current Project Baseline ========
 DOMAIN,cdn.angruo.com
@@ -112933,5 +112933,20 @@ DOMAIN,zzq12345.gearhostpreview.com
 # ======= SukkaW Domestic ========
 
 # ======= blackmatrix7 ChinaMaxNoIP Domain ========
+DOMAIN-SUFFIX,1haitun.com
+DOMAIN-SUFFIX,core-flow.org
+DOMAIN-SUFFIX,dotreamexpo.com
+DOMAIN-SUFFIX,efindtravel.com
+DOMAIN-SUFFIX,galaxy-adx.com
+DOMAIN-SUFFIX,gzshik.com
+DOMAIN-SUFFIX,lingxingxinli.com
+DOMAIN-SUFFIX,moe233.org
+DOMAIN-SUFFIX,ruiying.online
+DOMAIN-SUFFIX,typstify.com
+DOMAIN-SUFFIX,ucdns22.com
+DOMAIN-SUFFIX,xiaoheiribao.com
+DOMAIN-SUFFIX,xyingsoft.com
+DOMAIN-SUFFIX,zujingpai.com
 
 # ======= Rabbit-Spec China ========
+
