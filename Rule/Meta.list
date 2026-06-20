@@ -1,0 +1,8 @@
+# NAME: Linnux 的「Meta」规则
+# AUTHOR: Linnux
+# REPO: https://github.com/linnux-x/surge
+# UPDATED: 2026.06.21 05:19:00
+# TOTAL: 1
+
+# ======= 上游同步规则 ========
+404: Not Found

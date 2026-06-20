@@ -1,49 +1,20 @@
-# NAME: Netflix
-# AUTHOR: linnux-x
+# NAME: Linnux 的「Netflix」规则
+# AUTHOR: Linnux
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-20 05:12:48 +0800
-# FORMAT: Surge Ruleset
+# UPDATED: 2026.06.21 05:19:00
 # TOTAL: 1157
 
-# ======= Current Project Baseline ========
+# ======= 上游同步规则 ========
 DOMAIN,e13252.dscg.akamaiedge.net
 DOMAIN,h-netflix.online-metrix.net
+DOMAIN,netflix.com.edgesuite.net
+DOMAIN-SUFFIX,cookielaw.org
+DOMAIN-SUFFIX,flxvpn.net
 DOMAIN-SUFFIX,netflix.ca
 DOMAIN-SUFFIX,netflix.com
 DOMAIN-SUFFIX,netflix.com.au
 DOMAIN-SUFFIX,netflix.com.edgesuite.net
 DOMAIN-SUFFIX,netflix.net
-DOMAIN-SUFFIX,nflxext.com
-DOMAIN-SUFFIX,nflximg.com
-DOMAIN-SUFFIX,nflximg.net
-DOMAIN-SUFFIX,nflxsearch.net
-DOMAIN-SUFFIX,nflxso.net
-DOMAIN-SUFFIX,nflxvideo.net
-DOMAIN-KEYWORD,apiproxy-device-prod-nlb-
-DOMAIN-KEYWORD,dualstack.apiproxy-
-DOMAIN-KEYWORD,dualstack.ichnaea-web-
-DOMAIN-KEYWORD,netflixdnstest
-IP-CIDR,23.246.0.0/18,no-resolve
-IP-CIDR,37.77.184.0/21,no-resolve
-IP-CIDR,45.57.0.0/17,no-resolve
-IP-CIDR,64.120.128.0/17,no-resolve
-IP-CIDR,66.197.128.0/17,no-resolve
-IP-CIDR,69.53.224.0/19,no-resolve
-IP-CIDR,108.175.32.0/20,no-resolve
-IP-CIDR,185.2.220.0/22,no-resolve
-IP-CIDR,185.9.188.0/22,no-resolve
-IP-CIDR,192.173.64.0/18,no-resolve
-IP-CIDR,198.38.96.0/19,no-resolve
-IP-CIDR,198.45.48.0/20,no-resolve
-IP-CIDR,207.45.72.0/22,no-resolve
-IP-CIDR,208.75.76.0/22,no-resolve
-IP-CIDR6,2607:fb10::/32,no-resolve
-IP-CIDR6,2620:10c:7000::/44,no-resolve
-IP-CIDR6,2a00:86c0::/32,no-resolve
-USER-AGENT,Argo*
-DOMAIN,netflix.com.edgesuite.net
-DOMAIN-SUFFIX,cookielaw.org
-DOMAIN-SUFFIX,flxvpn.net
 DOMAIN-SUFFIX,netflixdnstest0.com
 DOMAIN-SUFFIX,netflixdnstest1.com
 DOMAIN-SUFFIX,netflixdnstest10.com
@@ -58,8 +29,18 @@ DOMAIN-SUFFIX,netflixdnstest9.com
 DOMAIN-SUFFIX,netflixinvestor.com
 DOMAIN-SUFFIX,netflixstudios.com
 DOMAIN-SUFFIX,netflixtechblog.com
+DOMAIN-SUFFIX,nflxext.com
+DOMAIN-SUFFIX,nflximg.com
+DOMAIN-SUFFIX,nflximg.net
+DOMAIN-SUFFIX,nflxsearch.net
+DOMAIN-SUFFIX,nflxso.net
+DOMAIN-SUFFIX,nflxvideo.net
 DOMAIN-SUFFIX,onetrust.com
 DOMAIN-SUFFIX,us-west-2.amazonaws.com
+DOMAIN-KEYWORD,apiproxy-device-prod-nlb-
+DOMAIN-KEYWORD,dualstack.apiproxy-
+DOMAIN-KEYWORD,dualstack.ichnaea-web-
+DOMAIN-KEYWORD,netflixdnstest
 IP-CIDR,103.87.204.0/22,no-resolve
 IP-CIDR,107.23.255.0/26,no-resolve
 IP-CIDR,108.128.160.0/23,no-resolve
@@ -73,6 +54,7 @@ IP-CIDR,108.137.114.0/28,no-resolve
 IP-CIDR,108.137.114.64/26,no-resolve
 IP-CIDR,108.137.25.0/24,no-resolve
 IP-CIDR,108.137.26.0/24,no-resolve
+IP-CIDR,108.175.32.0/20,no-resolve
 IP-CIDR,13.112.191.184/29,no-resolve
 IP-CIDR,13.113.196.64/26,no-resolve
 IP-CIDR,13.113.203.0/24,no-resolve
@@ -543,6 +525,11 @@ IP-CIDR,18.60.78.192/27,no-resolve
 IP-CIDR,18.60.78.240/28,no-resolve
 IP-CIDR,18.61.189.0/24,no-resolve
 IP-CIDR,18.61.26.0/24,no-resolve
+IP-CIDR,185.2.220.0/22,no-resolve
+IP-CIDR,185.9.188.0/22,no-resolve
+IP-CIDR,192.173.64.0/18,no-resolve
+IP-CIDR,198.38.96.0/19,no-resolve
+IP-CIDR,198.45.48.0/20,no-resolve
 IP-CIDR,203.116.0.0/16,no-resolve
 IP-CIDR,203.198.0.0/20,no-resolve
 IP-CIDR,203.198.80.0/21,no-resolve
@@ -550,10 +537,13 @@ IP-CIDR,203.75.84.0/24,no-resolve
 IP-CIDR,203.83.220.0/22,no-resolve
 IP-CIDR,204.246.166.0/24,no-resolve
 IP-CIDR,205.251.218.0/24,no-resolve
+IP-CIDR,207.45.72.0/22,no-resolve
+IP-CIDR,208.75.76.0/22,no-resolve
 IP-CIDR,210.0.153.0/24,no-resolve
 IP-CIDR,218.102.32.0/19,no-resolve
 IP-CIDR,219.76.0.0/17,no-resolve
 IP-CIDR,23.23.189.144/28,no-resolve
+IP-CIDR,23.246.0.0/18,no-resolve
 IP-CIDR,23.78.0.0/16,no-resolve
 IP-CIDR,3.0.5.224/27,no-resolve
 IP-CIDR,3.0.5.32/29,no-resolve
@@ -959,6 +949,7 @@ IP-CIDR,35.93.124.0/22,no-resolve
 IP-CIDR,35.94.128.244/31,no-resolve
 IP-CIDR,35.94.128.248/30,no-resolve
 IP-CIDR,35.94.72.0/22,no-resolve
+IP-CIDR,37.77.184.0/21,no-resolve
 IP-CIDR,38.72.126.0/24,no-resolve
 IP-CIDR,40.176.101.64/28,no-resolve
 IP-CIDR,40.176.65.0/24,no-resolve
@@ -1023,6 +1014,7 @@ IP-CIDR,44.242.178.0/23,no-resolve
 IP-CIDR,44.242.180.0/24,no-resolve
 IP-CIDR,44.242.181.0/27,no-resolve
 IP-CIDR,44.242.181.32/28,no-resolve
+IP-CIDR,45.57.0.0/17,no-resolve
 IP-CIDR,47.128.82.100/31,no-resolve
 IP-CIDR,47.129.23.128/30,no-resolve
 IP-CIDR,51.112.11.64/27,no-resolve
@@ -1130,6 +1122,7 @@ IP-CIDR,54.86.0.0/16,no-resolve
 IP-CIDR,57.181.142.164/31,no-resolve
 IP-CIDR,57.181.142.168/30,no-resolve
 IP-CIDR,57.181.142.182/31,no-resolve
+IP-CIDR,64.120.128.0/17,no-resolve
 IP-CIDR,65.0.192.176/28,no-resolve
 IP-CIDR,65.0.192.224/27,no-resolve
 IP-CIDR,65.0.234.0/26,no-resolve
@@ -1141,6 +1134,8 @@ IP-CIDR,65.1.156.0/22,no-resolve
 IP-CIDR,65.1.170.0/23,no-resolve
 IP-CIDR,65.1.172.0/22,no-resolve
 IP-CIDR,66.133.87.0/24,no-resolve
+IP-CIDR,66.197.128.0/17,no-resolve
+IP-CIDR,69.53.224.0/19,no-resolve
 IP-CIDR,70.232.86.124/31,no-resolve
 IP-CIDR,70.232.86.126/32,no-resolve
 IP-CIDR,76.223.104.0/24,no-resolve
@@ -1161,8 +1156,9 @@ IP-CIDR,99.79.20.192/26,no-resolve
 IP-CIDR,99.80.34.48/28,no-resolve
 IP-CIDR,99.80.34.64/26,no-resolve
 IP-CIDR,99.80.88.0/25,no-resolve
+IP-CIDR6,2607:fb10::/32,no-resolve
+IP-CIDR6,2620:10c:7000::/44,no-resolve
+IP-CIDR6,2a00:86c0::/32,no-resolve
 IP-CIDR6,2a03:5640::/32,no-resolve
+USER-AGENT,Argo*
 PROCESS-NAME,com.netflix.mediaclient
-
-# ======= blackmatrix7 Netflix ========
-

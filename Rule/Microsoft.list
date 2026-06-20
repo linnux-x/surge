@@ -1,13 +1,11 @@
-# NAME: Microsoft
-# AUTHOR: linnux-x
+# NAME: Linnux 的「Microsoft」规则
+# AUTHOR: Linnux
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-20 05:12:48 +0800
-# FORMAT: Surge Ruleset
-# TOTAL: 508
+# UPDATED: 2026.06.21 05:19:00
+# TOTAL: 489
 
-# ======= Current Project Baseline ========
+# ======= 上游同步规则 ========
 DOMAIN,vsmarketplacebadge.apphb.com
-DOMAIN-SUFFIX,1drv.com
 DOMAIN-SUFFIX,1drv.ms
 DOMAIN-SUFFIX,a-msedge.net
 DOMAIN-SUFFIX,a1158.g.akamai.net
@@ -83,7 +81,6 @@ DOMAIN-SUFFIX,bingagencyawards.com
 DOMAIN-SUFFIX,bingapis.com
 DOMAIN-SUFFIX,bingapistatistics.com
 DOMAIN-SUFFIX,binginternal.com
-DOMAIN-SUFFIX,bingparachute.com
 DOMAIN-SUFFIX,bingit.net
 DOMAIN-SUFFIX,bingiton.com
 DOMAIN-SUFFIX,bingj.com
@@ -104,10 +101,10 @@ DOMAIN-SUFFIX,botframework.com
 DOMAIN-SUFFIX,brazilpartneruniversity.com
 DOMAIN-SUFFIX,breakdown.me
 DOMAIN-SUFFIX,c-msedge.net
+DOMAIN-SUFFIX,cegid-cloud.cn
 DOMAIN-SUFFIX,centralvalidation.com
 DOMAIN-SUFFIX,ch9.ms
 DOMAIN-SUFFIX,charticulator.com
-DOMAIN-SUFFIX,clarity.ms
 DOMAIN-SUFFIX,cloudapp.net
 DOMAIN-SUFFIX,cloudappsecurity.com
 DOMAIN-SUFFIX,codethemicrobit.com
@@ -134,6 +131,7 @@ DOMAIN-SUFFIX,efproject.net
 DOMAIN-SUFFIX,evoke-windowsservices-tas.msedge
 DOMAIN-SUFFIX,exp-tas.com
 DOMAIN-SUFFIX,explorebing.com
+DOMAIN-SUFFIX,fabric.io
 DOMAIN-SUFFIX,fasttrackreadysupport.com
 DOMAIN-SUFFIX,femalefounderscomp.com
 DOMAIN-SUFFIX,flipwithsurface.com
@@ -150,7 +148,9 @@ DOMAIN-SUFFIX,gigjam.com
 DOMAIN-SUFFIX,gotcosmos.com
 DOMAIN-SUFFIX,graphengine.io
 DOMAIN-SUFFIX,groupme.com
-DOMAIN-SUFFIX,hearthstone.com
+DOMAIN-SUFFIX,here.com
+DOMAIN-SUFFIX,here.net
+DOMAIN-SUFFIX,heremaps.cn
 DOMAIN-SUFFIX,hockeyapp.net
 DOMAIN-SUFFIX,hololens.com
 DOMAIN-SUFFIX,hotmail
@@ -176,13 +176,11 @@ DOMAIN-SUFFIX,joinmva.com
 DOMAIN-SUFFIX,jwt.ms
 DOMAIN-SUFFIX,kidgrid.tv
 DOMAIN-SUFFIX,kumo.com
-DOMAIN-SUFFIX,l-msedge.net
 DOMAIN-SUFFIX,latampartneruniversity.com
 DOMAIN-SUFFIX,live.com
 DOMAIN-SUFFIX,live.com.au
 DOMAIN-SUFFIX,live.eu
 DOMAIN-SUFFIX,live.net
-DOMAIN-SUFFIX,livefilestore.com
 DOMAIN-SUFFIX,livetileedge.dsx.mp.microsoft.com.edgekey.net
 DOMAIN-SUFFIX,livingyourambition.com
 DOMAIN-SUFFIX,localytics.com
@@ -293,7 +291,6 @@ DOMAIN-SUFFIX,microsoftonline-p.net
 DOMAIN-SUFFIX,microsoftonline.com
 DOMAIN-SUFFIX,microsoftpartnercommunity.com
 DOMAIN-SUFFIX,microsoftpartnersolutions.com
-DOMAIN-SUFFIX,microsoftpersonalcontent.com
 DOMAIN-SUFFIX,microsoftreactor.info
 DOMAIN-SUFFIX,microsoftreactor.net
 DOMAIN-SUFFIX,microsoftreactor.org
@@ -333,7 +330,6 @@ DOMAIN-SUFFIX,msftauth.net
 DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-SUFFIX,msfteducation.ca
 DOMAIN-SUFFIX,msftidentity.com
-DOMAIN-SUFFIX,msftncsi.com
 DOMAIN-SUFFIX,msftnet.org
 DOMAIN-SUFFIX,msgamesresearch.com
 DOMAIN-SUFFIX,msidentity.com
@@ -353,7 +349,6 @@ DOMAIN-SUFFIX,mspairlift.com
 DOMAIN-SUFFIX,msropendata.com
 DOMAIN-SUFFIX,mstea.ms
 DOMAIN-SUFFIX,msturing.org
-DOMAIN-SUFFIX,mshome.net
 DOMAIN-SUFFIX,msudalosti.com
 DOMAIN-SUFFIX,msunlimitedcloudsummit.com
 DOMAIN-SUFFIX,msvevent.com
@@ -362,11 +357,6 @@ DOMAIN-SUFFIX,msxiaoice.com
 DOMAIN-SUFFIX,myhomemsn.com
 DOMAIN-SUFFIX,mymicrosoft.com
 DOMAIN-SUFFIX,nextechafrica.net
-DOMAIN-SUFFIX,nelreports.net
-DOMAIN-SUFFIX,npmjs.com
-DOMAIN-SUFFIX,npmjs.org
-DOMAIN-SUFFIX,nuance.com
-DOMAIN-SUFFIX,nuancecommunications.com
 DOMAIN-SUFFIX,nuget.org
 DOMAIN-SUFFIX,nugettest.org
 DOMAIN-SUFFIX,nxta.org
@@ -385,7 +375,6 @@ DOMAIN-SUFFIX,omniroot.com
 DOMAIN-SUFFIX,onecollector.cloudapp.aria
 DOMAIN-SUFFIX,onedrive.co
 DOMAIN-SUFFIX,onedrive.co.uk
-DOMAIN-SUFFIX,onedrive.com
 DOMAIN-SUFFIX,onedrive.eu
 DOMAIN-SUFFIX,onedrive.net
 DOMAIN-SUFFIX,onedrive.org
@@ -400,24 +389,22 @@ DOMAIN-SUFFIX,outingsapp.com
 DOMAIN-SUFFIX,outlook.com
 DOMAIN-SUFFIX,outlookgroups.ms
 DOMAIN-SUFFIX,outlookmobile.com
-DOMAIN-SUFFIX,overwatch.com
 DOMAIN-SUFFIX,ovi.com.cn
 DOMAIN-SUFFIX,passport.net
 DOMAIN-SUFFIX,phonefactor.net
 DOMAIN-SUFFIX,pixapp.net
 DOMAIN-SUFFIX,playfabcn.com
 DOMAIN-SUFFIX,poshtestgallery.com
-DOMAIN-SUFFIX,powerapps.com
 DOMAIN-SUFFIX,powerautomate.com
 DOMAIN-SUFFIX,powerbi.com
 DOMAIN-SUFFIX,powershellgallery.com
 DOMAIN-SUFFIX,projectmurphy.net
 DOMAIN-SUFFIX,projectsangam.com
+DOMAIN-SUFFIX,public-trust.com
 DOMAIN-SUFFIX,pwabuilder.com
 DOMAIN-SUFFIX,pxt.io
 DOMAIN-SUFFIX,renlifang.com
 DOMAIN-SUFFIX,renovacionoffice.com
-DOMAIN-SUFFIX,s-dc-msedge.net
 DOMAIN-SUFFIX,s-msedge.net
 DOMAIN-SUFFIX,s-msft.com
 DOMAIN-SUFFIX,s-msn.com
@@ -425,16 +412,11 @@ DOMAIN-SUFFIX,sankie.net
 DOMAIN-SUFFIX,sclive.net
 DOMAIN-SUFFIX,serverlesslibrary.net
 DOMAIN-SUFFIX,sfx.ms
-DOMAIN-SUFFIX,sharepoint.com
-DOMAIN-SUFFIX,sharepointonline.com
 DOMAIN-SUFFIX,signalr.net
 DOMAIN-SUFFIX,skype
 DOMAIN-SUFFIX,skype.com
 DOMAIN-SUFFIX,skype.net
 DOMAIN-SUFFIX,skypeforbusiness.com
-DOMAIN-SUFFIX,slideshare.net
-DOMAIN-SUFFIX,spoprod-a.akamaihd.net
-DOMAIN-SUFFIX,spo-msedge.net
 DOMAIN-SUFFIX,sprinklesapp.com
 DOMAIN-SUFFIX,sqlserveronlinux.com
 DOMAIN-SUFFIX,staffhub.ms
@@ -446,15 +428,16 @@ DOMAIN-SUFFIX,sway-extensions.com
 DOMAIN-SUFFIX,sway.com
 DOMAIN-SUFFIX,sysinternals.com
 DOMAIN-SUFFIX,tailwindtraders.com
-DOMAIN-SUFFIX,t-msedge.net
 DOMAIN-SUFFIX,techhub.ms
 DOMAIN-SUFFIX,tfsallin.net
 DOMAIN-SUFFIX,timelinestoryteller.com
 DOMAIN-SUFFIX,trafficmanager.net
 DOMAIN-SUFFIX,translatetheweb.com
 DOMAIN-SUFFIX,tryfunctions.com
+DOMAIN-SUFFIX,unity3dcloud.cn
 DOMAIN-SUFFIX,unlocklimitlesslearning.com
 DOMAIN-SUFFIX,userpxt.io
+DOMAIN-SUFFIX,uservoice.com
 DOMAIN-SUFFIX,uwpcommunitytoolkit.com
 DOMAIN-SUFFIX,vfsforgit.com
 DOMAIN-SUFFIX,vfsforgit.org
@@ -471,7 +454,6 @@ DOMAIN-SUFFIX,visualstudio.net
 DOMAIN-SUFFIX,vsallin.net
 DOMAIN-SUFFIX,vscode-webview.net
 DOMAIN-SUFFIX,vscode.dev
-DOMAIN-SUFFIX,warcraft.com
 DOMAIN-SUFFIX,wbd.ms
 DOMAIN-SUFFIX,what-fan.net
 DOMAIN-SUFFIX,windows
@@ -496,15 +478,13 @@ DOMAIN-SUFFIX,wunderlist.com
 DOMAIN-SUFFIX,xamarin.com
 DOMAIN-SUFFIX,xbx.lv
 DOMAIN-SUFFIX,yammer.com
-DOMAIN-SUFFIX,zenimax.com
-DOMAIN-SUFFIX,cegid-cloud.cn
-DOMAIN-SUFFIX,fabric.io
-DOMAIN-SUFFIX,here.com
-DOMAIN-SUFFIX,here.net
-DOMAIN-SUFFIX,heremaps.cn
-DOMAIN-SUFFIX,public-trust.com
-DOMAIN-SUFFIX,unity3dcloud.cn
-DOMAIN-SUFFIX,uservoice.com
+DOMAIN-SUFFIX,1drv.com
+DOMAIN-SUFFIX,livefilestore.com
+DOMAIN-SUFFIX,microsoftpersonalcontent.com
+DOMAIN-SUFFIX,onedrive.com
+DOMAIN-SUFFIX,sharepoint.com
+DOMAIN-SUFFIX,sharepointonline.com
+DOMAIN-SUFFIX,spoprod-a.akamaihd.net
 DOMAIN-KEYWORD,microsoft
 DOMAIN-KEYWORD,1drv
 DOMAIN-KEYWORD,onedrive
@@ -514,6 +494,3 @@ USER-AGENT,OneDrive*
 USER-AGENT,OneDriveiOSApp*
 PROCESS-NAME,OneDrive
 PROCESS-NAME,OneDriveUpdater
-
-# ======= blackmatrix7 Microsoft ========
-

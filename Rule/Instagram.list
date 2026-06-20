@@ -1,0 +1,11 @@
+# NAME: Linnux 的「Instagram」规则
+# AUTHOR: Linnux
+# REPO: https://github.com/linnux-x/surge
+# UPDATED: 2026.06.21 05:19:00
+# TOTAL: 4
+
+# ======= 上游同步规则 ========
+DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,instagr.am
+DOMAIN-SUFFIX,instagram.com
+DOMAIN-KEYWORD,instagram
