@@ -1,10 +1,11 @@
-# NAME: Linnux 的「Disney」规则
-# AUTHOR: Linnux
+# NAME: Disney
+# AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026.06.21 05:19:00
+# UPDATED: 2026-06-21 05:21:10 +0800
+# FORMAT: Surge Ruleset
 # TOTAL: 175
 
-# ======= 上游同步规则 ========
+# ======= Current Project Baseline ========
 DOMAIN-SUFFIX,20thcenturystudios.com.au
 DOMAIN-SUFFIX,20thcenturystudios.com.br
 DOMAIN-SUFFIX,20thcenturystudios.jp
@@ -180,3 +181,6 @@ DOMAIN-SUFFIX,watchespn.com
 USER-AGENT,Disney+*
 PROCESS-NAME,com.disney.datg.videoplatforms.android.abc
 PROCESS-NAME,com.disney.disneyplus
+
+# ======= blackmatrix7 Disney ========
+

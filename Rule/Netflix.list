@@ -1,10 +1,11 @@
-# NAME: Linnux 的「Netflix」规则
-# AUTHOR: Linnux
+# NAME: Netflix
+# AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026.06.21 05:19:00
+# UPDATED: 2026-06-21 05:21:10 +0800
+# FORMAT: Surge Ruleset
 # TOTAL: 1157
 
-# ======= 上游同步规则 ========
+# ======= Current Project Baseline ========
 DOMAIN,e13252.dscg.akamaiedge.net
 DOMAIN,h-netflix.online-metrix.net
 DOMAIN,netflix.com.edgesuite.net
@@ -1162,3 +1163,6 @@ IP-CIDR6,2a00:86c0::/32,no-resolve
 IP-CIDR6,2a03:5640::/32,no-resolve
 USER-AGENT,Argo*
 PROCESS-NAME,com.netflix.mediaclient
+
+# ======= blackmatrix7 Netflix ========
+

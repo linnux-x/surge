@@ -1,7 +1,7 @@
 # NAME: Apple_CN
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-20 05:12:48 +0800
+# UPDATED: 2026-06-21 05:21:10 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 188
 
@@ -195,9 +195,9 @@ DOMAIN-SUFFIX,osxapps.itunes.g.aaplimg.com
 DOMAIN-SUFFIX,iosapps.itunes.g.aaplimg.com
 DOMAIN-SUFFIX,swcdn.g.aaplimg.com
 DOMAIN-SUFFIX,static.gc.apple.com
+DOMAIN-SUFFIX,mensura.cdn-apple.com
 
 # ======= SukkaW Apple CN ========
 
 # ======= SukkaW Apple CDN ========
-DOMAIN-SUFFIX,mensura.cdn-apple.com
 

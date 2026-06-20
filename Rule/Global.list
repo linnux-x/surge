@@ -1,7 +1,7 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-20 05:12:48 +0800
+# UPDATED: 2026-06-21 05:21:10 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 36874
 
@@ -36863,8 +36863,6 @@ USER-AGENT,battleroyale*
 USER-AGENT,com.apple.trustd*
 USER-AGENT,hearthstone*
 PROCESS-NAME,LookupViewService
-
-# ======= blackmatrix7 Global ========
 DOMAIN-SUFFIX,appconsent.io
 DOMAIN-SUFFIX,axept.io
 DOMAIN-SUFFIX,cdn-cookieyes.com
@@ -36882,4 +36880,6 @@ DOMAIN-SUFFIX,wsimg.com
 DOMAIN-SUFFIX,accountboy.com
 DOMAIN-SUFFIX,moomoo.com
 DOMAIN-SUFFIX,xn--vuqv2cf7wzyig79c.com
+
+# ======= blackmatrix7 Global ========
 

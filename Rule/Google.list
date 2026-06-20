@@ -1,10 +1,11 @@
-# NAME: Linnux 的「Google」规则
-# AUTHOR: Linnux
+# NAME: Google
+# AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026.06.21 05:19:00
+# UPDATED: 2026-06-21 05:21:10 +0800
+# FORMAT: Surge Ruleset
 # TOTAL: 703
 
-# ======= 上游同步规则 ========
+# ======= Current Project Baseline ========
 DOMAIN,voice.telephony.goog
 DOMAIN-SUFFIX,0emm.com
 DOMAIN-SUFFIX,1e100.net
@@ -708,3 +709,6 @@ PROCESS-NAME,com.google.android.gms
 PROCESS-NAME,com.google.android.gsf
 PROCESS-NAME,com.google.android.play.games
 PROCESS-NAME,BackupandSync
+
+# ======= blackmatrix7 Google ========
+

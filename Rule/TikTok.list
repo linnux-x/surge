@@ -1,10 +1,11 @@
-# NAME: Linnux 的「TikTok」规则
-# AUTHOR: Linnux
+# NAME: TikTok
+# AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026.06.21 05:19:00
+# UPDATED: 2026-06-21 05:21:10 +0800
+# FORMAT: Surge Ruleset
 # TOTAL: 30
 
-# ======= 上游同步规则 ========
+# ======= Current Project Baseline ========
 DOMAIN,lf16-effectcdn.byteeffecttos-g.com
 DOMAIN,lf16-pkgcdn.pitaya-clientai.com
 DOMAIN,p16-tiktokcdn-com.akamaized.net
@@ -35,3 +36,6 @@ DOMAIN-KEYWORD,musical.ly
 DOMAIN-KEYWORD,tiktok
 USER-AGENT,TikTok*
 PROCESS-NAME,com.zhiliaoapp.musically
+
+# ======= blackmatrix7 TikTok ========
+
