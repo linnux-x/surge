@@ -1,4 +1,4 @@
-DOMAIN-SUFFIX,kwai-group.com
-DOMAIN-SUFFIX,kwai.com
-DOMAIN-SUFFIX,kwai.net
-DOMAIN-SUFFIX,kwaicdn.com
+# Overseas hosting / VPS forums and communities
+DOMAIN-SUFFIX,hostloc.com
+DOMAIN-SUFFIX,lowendtalk.com
+DOMAIN-SUFFIX,lowendspirit.com

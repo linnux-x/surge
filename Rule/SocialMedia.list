@@ -1,15 +1,15 @@
 # NAME: SocialMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-21 19:40:15 +0800
+# UPDATED: 2026-06-21 19:51:44 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 927
+# TOTAL: 926
 
 # ======= Manual Rules ========
-DOMAIN-SUFFIX,kwai-group.com
-DOMAIN-SUFFIX,kwai.com
-DOMAIN-SUFFIX,kwai.net
-DOMAIN-SUFFIX,kwaicdn.com
+# Overseas hosting / VPS forums and communities
+DOMAIN-SUFFIX,hostloc.com
+DOMAIN-SUFFIX,lowendtalk.com
+DOMAIN-SUFFIX,lowendspirit.com
 
 # ======= QuixoticHeart SocialMedia ========
 DOMAIN,api.iturrit.com

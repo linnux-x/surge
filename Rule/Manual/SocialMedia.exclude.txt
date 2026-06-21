@@ -6,6 +6,12 @@ DOMAIN-SUFFIX,linetv.tw
 # China-local LinkedIn endpoint should remain direct via China.list
 DOMAIN-SUFFIX,linkedin.cn
 
+# Domestic / China-origin social platforms are not kept in SocialMedia
+DOMAIN-SUFFIX,kwai-group.com
+DOMAIN-SUFFIX,kwai.com
+DOMAIN-SUFFIX,kwai.net
+DOMAIN-SUFFIX,kwaicdn.com
+
 # Telegram is handled by dedicated Telegram.list earlier in Conf/LINNUX.conf
 DOMAIN,api.imem.app
 DOMAIN,api.swiftgram.app
