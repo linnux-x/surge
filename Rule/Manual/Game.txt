@@ -5,3 +5,4 @@ DOMAIN-SUFFIX,diablo.com
 DOMAIN-SUFFIX,doom.com
 DOMAIN-SUFFIX,elderscrolls.com
 DOMAIN-SUFFIX,king.com
+DOMAIN-SUFFIX,xbx.lv

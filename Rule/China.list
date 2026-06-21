@@ -1,9 +1,39 @@
 # NAME: China
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-21 14:28:26 +0800
+# UPDATED: 2026-06-21 15:22:29 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 112725
+# TOTAL: 112748
+
+# ======= Manual Rules ========
+DOMAIN-SUFFIX,battlenet.com.cn
+DOMAIN-SUFFIX,blizzard.cn
+DOMAIN-SUFFIX,blizzardgames.cn
+DOMAIN-SUFFIX,blzstatic.cn
+DOMAIN-SUFFIX,bnet.163.com
+DOMAIN-SUFFIX,blz.nosdn.127.net
+DOMAIN-SUFFIX,di.res.netease.com
+DOMAIN-SUFFIX,diablo3.nosdn.127.net
+DOMAIN-SUFFIX,hearthstone.nosdn.127.net
+DOMAIN-SUFFIX,heroes.nos.netease.com
+DOMAIN-SUFFIX,overwatch.nosdn.127.net
+DOMAIN-SUFFIX,sc2.nosdn.127.net
+DOMAIN-SUFFIX,wow.nosdn.127.net
+DOMAIN-SUFFIX,csgo.wmsj.cn
+DOMAIN-SUFFIX,dota2.wmsj.cn
+DOMAIN-SUFFIX,dl.steam.clngaa.com
+DOMAIN-SUFFIX,dl.steam.ksyna.com
+DOMAIN-SUFFIX,st.dl.bscstorage.net
+DOMAIN-SUFFIX,st.dl.eccdnx.com
+DOMAIN-SUFFIX,st.dl.pinyuncloud.com
+DOMAIN-SUFFIX,steamcontent.tnkjmec.com
+DOMAIN-SUFFIX,steampowered.com.8686c.com
+DOMAIN-SUFFIX,steamstatic.com.8686c.com
+DOMAIN-SUFFIX,wmsjsteam.com
+DOMAIN-SUFFIX,steamchina.com
+DOMAIN-SUFFIX,steamserver.net
+DOMAIN-SUFFIX,steamcontent.com
+DOMAIN-SUFFIX,xboxlive.cn
 
 # ======= SukkaW Domestic ========
 USER-AGENT,%E4%BC%98%E9%85%B7*
@@ -60,7 +90,6 @@ DOMAIN-SUFFIX,lenovomm.com
 DOMAIN-SUFFIX,lenovo.com.cn
 DOMAIN-SUFFIX,battle.net
 DOMAIN-SUFFIX,blizzard.com
-DOMAIN-SUFFIX,blzstatic.cn
 DOMAIN-SUFFIX,cctv.cn
 DOMAIN-SUFFIX,cctv.com
 DOMAIN-SUFFIX,cctvpic.com
@@ -247,7 +276,6 @@ DOMAIN-SUFFIX,pphimalayanrt.com
 DOMAIN-SUFFIX,baishancdnx.cn
 DOMAIN,media.cdn.queniuqe.com
 DOMAIN-SUFFIX,ubionline.com.cn
-DOMAIN-SUFFIX,battlenet.com.cn
 DOMAIN-SUFFIX,dl.delivery.mp.microsoft.com
 DOMAIN-SUFFIX,sharepoint.cn
 DOMAIN-SUFFIX,assets.msn.cn
@@ -256,11 +284,8 @@ DOMAIN-SUFFIX,officewebapps.cn
 DOMAIN,assets1.xboxlive.cn
 DOMAIN,assets2.xboxlive.cn
 DOMAIN-SUFFIX,wmsj.cn
-DOMAIN-SUFFIX,wmsjsteam.com
 DOMAIN,lv.queniujq.cn
-DOMAIN-SUFFIX,steamchina.com
 DOMAIN-SUFFIX,cm.steampowered.com
-DOMAIN-SUFFIX,steamserver.net
 DOMAIN-SUFFIX,zhihu.com
 DOMAIN-SUFFIX,zhimg.com
 DOMAIN-SUFFIX,115.com
