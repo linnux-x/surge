@@ -1,9 +1,9 @@
 # NAME: China
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-21 09:35:04 +0800
+# UPDATED: 2026-06-21 14:28:26 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 112766
+# TOTAL: 112725
 
 # ======= SukkaW Domestic ========
 USER-AGENT,%E4%BC%98%E9%85%B7*
@@ -18457,8 +18457,6 @@ DOMAIN-SUFFIX,bytefae.com
 DOMAIN-SUFFIX,bytefast.net
 DOMAIN-SUFFIX,bytefcdn.com
 DOMAIN-SUFFIX,bytefcdnrd.com
-DOMAIN-SUFFIX,bytegecko.com
-DOMAIN-SUFFIX,bytegeckoext.com
 DOMAIN-SUFFIX,bytegle.site
 DOMAIN-SUFFIX,bytegle.tech
 DOMAIN-SUFFIX,bytegoofy.com
@@ -18470,7 +18468,6 @@ DOMAIN-SUFFIX,byteics.net
 DOMAIN-SUFFIX,byteimg.com
 DOMAIN-SUFFIX,byteimgc.com
 DOMAIN-SUFFIX,byteinspire.com
-DOMAIN-SUFFIX,byteintl.net
 DOMAIN-SUFFIX,byteisland.com
 DOMAIN-SUFFIX,bytelb.net
 DOMAIN-SUFFIX,bytelb000.net
@@ -27398,7 +27395,6 @@ DOMAIN-SUFFIX,d475a937d0e92b96.com
 DOMAIN-SUFFIX,d48c3443110281.beer
 DOMAIN-SUFFIX,d4cd5439c1009.beer
 DOMAIN-SUFFIX,d4ctech.com
-DOMAIN-SUFFIX,d4z1onkegyrs5.cloudfront.net
 DOMAIN-SUFFIX,d54a00143de85b64.com
 DOMAIN-SUFFIX,d56c84cfb4a786f7.com
 DOMAIN-SUFFIX,d58.net
@@ -50344,7 +50340,6 @@ DOMAIN-SUFFIX,ibuick.com
 DOMAIN-SUFFIX,ibuscloud.net
 DOMAIN-SUFFIX,ibuychem.com
 DOMAIN-SUFFIX,ibw.cc
-DOMAIN-SUFFIX,ibytedapm.com
 DOMAIN-SUFFIX,ic-bro.com
 DOMAIN-SUFFIX,ic-captain.com
 DOMAIN-SUFFIX,ic-itssc.org
@@ -72138,7 +72133,6 @@ DOMAIN-SUFFIX,ozsmartbuy.com
 DOMAIN-SUFFIX,ozzair.org
 DOMAIN-SUFFIX,ozzyad.com
 DOMAIN-SUFFIX,p-an.com
-DOMAIN-SUFFIX,p-bstarstatic.akamaized.net
 DOMAIN-SUFFIX,p-dragon.com
 DOMAIN-SUFFIX,p-e-china.com
 DOMAIN-SUFFIX,p-er.com
@@ -89567,8 +89561,6 @@ DOMAIN-SUFFIX,tijox.net
 DOMAIN-SUFFIX,tijox.org
 DOMAIN-SUFFIX,tik2019.com
 DOMAIN-SUFFIX,tikersport.com
-DOMAIN-SUFFIX,tiktoknewaccount.com
-DOMAIN-SUFFIX,tiktokrow-cdn.com
 DOMAIN-SUFFIX,tikv.org
 DOMAIN-SUFFIX,tileywy.com
 DOMAIN-SUFFIX,tillcn.com
@@ -90124,7 +90116,6 @@ DOMAIN-SUFFIX,tobetopone.com
 DOMAIN-SUFFIX,tobnews.com
 DOMAIN-SUFFIX,tobo1688.com
 DOMAIN-SUFFIX,tobosu.com
-DOMAIN-SUFFIX,tobsnssdk.com
 DOMAIN-SUFFIX,tochinajob.com
 DOMAIN-SUFFIX,tocomtech.com
 DOMAIN-SUFFIX,tocosc.com
@@ -92556,9 +92547,6 @@ DOMAIN-SUFFIX,uplookedu.com
 DOMAIN-SUFFIX,uplooking.com
 DOMAIN-SUFFIX,upluck.cc
 DOMAIN-SUFFIX,upnono.com
-DOMAIN-SUFFIX,upos-bstar-mirrorakam.akamaized.net
-DOMAIN-SUFFIX,upos-bstar1-mirrorakam.akamaized.net
-DOMAIN-SUFFIX,upos-hz-mirrorakam.akamaized.net
 DOMAIN-SUFFIX,upowerchain.com
 DOMAIN-SUFFIX,uppershop.hk
 DOMAIN-SUFFIX,upppt.com
@@ -112229,25 +112217,18 @@ DOMAIN,59ec5453559f0.streamlock.net
 DOMAIN,5c3639aa99149.streamlock.net
 DOMAIN,6.mms.vlog.xuite.net
 DOMAIN,a.xttv.top
-DOMAIN,abclive2-lh.akamaihd.net
 DOMAIN,activate.activation-v2.kaspersky.com
 DOMAIN,activation-v2.kaspersky.com
 DOMAIN,admob-cn.com
 DOMAIN,afcs.dell.com
-DOMAIN,aka-amd-njpwworld-hls-enlive.akamaized.net
 DOMAIN,alibaba.cdn.steampipe.steamcontent.com
 DOMAIN,aljazeera-eng-hd-live.hls.adaptive.level3.net
-DOMAIN,amdlive-ch01.ctnd.com.edgesuite.net
-DOMAIN,amdlive-ch03-ctnd-com.akamaized.net
-DOMAIN,amdlive-ch03.ctnd.com.edgesuite.net
-DOMAIN,amdlive.ctnd.com.edgesuite.net
 DOMAIN,analytics.strava.com
 DOMAIN,antvlive.ab5c6921.cdnviet.com
 DOMAIN,app-analytics-services.com
 DOMAIN,app-measurement-cn.com
 DOMAIN,app-measurement.com
 DOMAIN,apps5.oingo.com
-DOMAIN,as-hls-ww-live.akamaized.net
 DOMAIN,astro1.rastream.com
 DOMAIN,bbstv.clouducs.com
 DOMAIN,beacons.gcp.gvt2.com
@@ -112256,14 +112237,11 @@ DOMAIN,beacons2.gvt2.com
 DOMAIN,beacons3.gvt2.com
 DOMAIN,bg.v4.a.dl.ws.microsoft.com
 DOMAIN,bg4.v4.a.dl.ws.microsoft.com
-DOMAIN,blzddist1-a.akamaihd.net
 DOMAIN,build.microsoft.com
 DOMAIN,c.admob.com
 DOMAIN,c.pki.goog
 DOMAIN,cast.news98.com.tw
 DOMAIN,cast.uforadio.com.tw
-DOMAIN,cbsnewshd-lh.akamaihd.net
-DOMAIN,cdn-videos.akamaized.net
 DOMAIN,cdn.ampproject.org
 DOMAIN,cdn.angruo.com
 DOMAIN,cdn.globalsigncdn.com.cdn.cloudflare.net
@@ -112295,7 +112273,6 @@ DOMAIN,edge.music-choice-play-chaina1.top.comcast.net
 DOMAIN,emoi-cncdn.bing.com
 DOMAIN,end-api.shallow.ink
 DOMAIN,end.shallow.ink
-DOMAIN,f24hls-i.akamaihd.net
 DOMAIN,fash1043.cloudycdn.services
 DOMAIN,fcs.dell.com
 DOMAIN,file.hhtv.cc
@@ -112314,7 +112291,6 @@ DOMAIN,gayotv.net
 DOMAIN,gbxgateway-dev.dell.com
 DOMAIN,gbxgateway.dell.com
 DOMAIN,gog-cdn-fastly.gog.com
-DOMAIN,gog-cdn.akamaized.net
 DOMAIN,gogalaxy.gog-statics.com
 DOMAIN,gonglchuangl.net
 DOMAIN,gongyichuangyi.net
@@ -112322,7 +112298,6 @@ DOMAIN,gpb-hls.streamguys1.com
 DOMAIN,gstatic-cn.com
 DOMAIN,gtm.oasisfeng.com
 DOMAIN,hb2stream1.baoxinwen.com
-DOMAIN,hindiabp-lh.akamaihd.net
 DOMAIN,hls-1.wamu.org
 DOMAIN,hls-video01.cdnvideo.ru
 DOMAIN,hls.cdn.ua
@@ -112402,15 +112377,11 @@ DOMAIN,movie.mcas.jp
 DOMAIN,n18.rcs.revma.com
 DOMAIN,necgokr2-724.acs.wecandeo.com
 DOMAIN,nettvpro.live
-DOMAIN,nhkw-zh-hlscomp.akamaized.net
-DOMAIN,nhkwlive-xjp.akamaized.net
 DOMAIN,nis.stream.publicradio.org
-DOMAIN,nprnat-i.akamaihd.net
 DOMAIN,ntservicepack.microsoft.com
 DOMAIN,o.pki.goog
 DOMAIN,ocsp.pki.goog
 DOMAIN,origin-a.akamaihd.ne
-DOMAIN,origin-a.akamaihd.net
 DOMAIN,ott-live.olympicchannel.com
 DOMAIN,play.jinnantv.top
 DOMAIN,play.scrstv.com
@@ -112432,12 +112403,8 @@ DOMAIN,redirector.snap.gvt1.com
 DOMAIN,redirector.xn--ngstr-lra8j.com
 DOMAIN,refresh-bkg.activation-v2.kaspersky.com
 DOMAIN,rfcmedia.streamguys1.com
-DOMAIN,rfimonde-lh.akamaihd.net
-DOMAIN,rmtv24hweblive-lh.akamaihd.net
-DOMAIN,rthklive1-lh.akamaihd.net
 DOMAIN,rtvcdn.com.au
 DOMAIN,scene7-cdn.dell.com
-DOMAIN,sdn-global-live-streaming-packager-cache-3qsdn.akamaized.net
 DOMAIN,seb.sason.top
 DOMAIN,service.urchin.com
 DOMAIN,slive.ytn.co.kr
@@ -112450,7 +112417,6 @@ DOMAIN,staging-controlbe.floonet.goog
 DOMAIN,staging-databe.floonet.goog
 DOMAIN,staging.databe.floonet.goog
 DOMAIN,static-login.gog-statics.com
-DOMAIN,steamcommunity-a.akamaihd.net
 DOMAIN,stream.baoxinwen.com
 DOMAIN,stream.dybtv.com
 DOMAIN,stream.gsjqtv.com
@@ -112470,13 +112436,11 @@ DOMAIN,stream0.tv41.ru
 DOMAIN,stream01.dqtv123.com
 DOMAIN,stream1.shopch.jp
 DOMAIN,stream2.cprnetwork.org
-DOMAIN,streamipcf.akamaized.net
 DOMAIN,supportassist.dell.com
 DOMAIN,surface.downloads.prss.microsoft.com
 DOMAIN,time.xtracloud.net
 DOMAIN,tl.gscm.tv
 DOMAIN,tp.louisvuitton.com
-DOMAIN,trtcanlitv-lh.akamaihd.net
 DOMAIN,tv.cnbeijing.xyz
 DOMAIN,tv.drs.hhtv.cc
 DOMAIN,tv.jrsncn.com
@@ -112486,11 +112450,8 @@ DOMAIN,update.crashlytics.com
 DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com
 DOMAIN,v1.one-tv.com
 DOMAIN,vip888.kuyun99.com
-DOMAIN,voa-lh.akamaihd.net
 DOMAIN,vss.cbnmtv.com
 DOMAIN,w3.wifijiangyin.com
-DOMAIN,wcnc-lh.akamaihd.net
-DOMAIN,weather-lh.akamaihd.net
 DOMAIN,wosu.streamguys1.com
 DOMAIN,wowza-stream.wbur.org
 DOMAIN,wowza.montevideo.com.uy
@@ -112591,7 +112552,6 @@ DOMAIN-SUFFIX,bjcathay.com
 DOMAIN-SUFFIX,bobo.com
 DOMAIN-SUFFIX,bootcdn.net
 DOMAIN-SUFFIX,bootcss.com
-DOMAIN-SUFFIX,bytedapm.com
 DOMAIN-SUFFIX,click.qianqian.com
 DOMAIN-SUFFIX,cn
 DOMAIN-SUFFIX,cn-east-2.myhuaweicloud.com
@@ -112610,7 +112570,6 @@ DOMAIN-SUFFIX,cn-south-4.myhuaweicloud.com
 DOMAIN-SUFFIX,cn-southwest-2.myhuaweicloud.com
 DOMAIN-SUFFIX,cnzz.com
 DOMAIN-SUFFIX,csbew.com
-DOMAIN-SUFFIX,ctobsnssdk.com
 DOMAIN-SUFFIX,develenv.com
 DOMAIN-SUFFIX,dig.bdurl.net
 DOMAIN-SUFFIX,dl-vip.pcfaster.baidu.co.th
