@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-21 15:34:49 +0800
+# UPDATED: 2026-06-21 20:04:53 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 29385
+# TOTAL: 29384
 
 # ======= blackmatrix7 Global ========
 DOMAIN,1password.drift.click
@@ -25569,7 +25569,6 @@ DOMAIN-SUFFIX,hopedialogue.org
 DOMAIN-SUFFIX,hopto.org
 DOMAIN-SUFFIX,hornygamer.com
 DOMAIN-SUFFIX,hornytrip.com
-DOMAIN-SUFFIX,hostloc.com
 DOMAIN-SUFFIX,hotair.com
 DOMAIN-SUFFIX,hotav.tv
 DOMAIN-SUFFIX,hotbak.net

@@ -1,9 +1,13 @@
 # NAME: Google
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-21 09:49:33 +0800
+# UPDATED: 2026-06-21 20:04:53 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 700
+# TOTAL: 699
+
+# ======= Manual Rules ========
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-SUFFIX,gvt2.com
 
 # ======= blackmatrix7 Google ========
 DOMAIN,voice.telephony.goog
@@ -693,11 +697,8 @@ DOMAIN-KEYWORD,blogspot
 DOMAIN-KEYWORD,gmail
 DOMAIN-KEYWORD,google
 DOMAIN-KEYWORD,recaptcha
-IP-CIDR,172.110.32.0/21,no-resolve
 IP-CIDR,173.194.0.0/16,no-resolve
-IP-CIDR,216.73.80.0/20,no-resolve
 IP-CIDR,74.125.0.0/16,no-resolve
-IP-CIDR6,2620:120:e000::/40,no-resolve
 USER-AGENT,%E4%BA%91%E7%AB%AF%E7%A1%AC%E7%9B%98*
 USER-AGENT,*com.google.Drive*
 USER-AGENT,Google.Drive*

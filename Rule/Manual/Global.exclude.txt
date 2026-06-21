@@ -145,6 +145,7 @@ DOMAIN-SUFFIX,shopifycdn.com
 DOMAIN-SUFFIX,silverchair-cdn.com
 DOMAIN-SUFFIX,simgbb.com
 DOMAIN-SUFFIX,skypeassets.com
+DOMAIN-SUFFIX,nicegram.app
 DOMAIN-SUFFIX,slack-edge.com
 DOMAIN-SUFFIX,slack-imgs.com
 DOMAIN-SUFFIX,slidesharecdn.com
