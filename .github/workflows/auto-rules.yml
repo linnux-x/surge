@@ -394,7 +394,7 @@ jobs:
 
             for rule_file in \
               WeChat.list Speedtest.list AI.list Apple_CN.list Apple.list \
-              Microsoft_CDN.list Microsoft.list Telegram.list Game.list \
+              Microsoft_CDN.list Microsoft.list Telegram.list Download.list Game.list \
               YouTube.list TikTok.list SocialMedia.list PayPal.list \
               Google.list Netflix.list Disney.list ChinaMedia.list \
               GlobalMedia.list CDN.list; do
@@ -449,6 +449,10 @@ jobs:
 
           process_rule "CDN.list" "CDN" \
             "SukkaW CDN|$SUKKA/non_ip/cdn.conf"
+
+          process_rule "Download.list" "Download" \
+            "SukkaW Download|$SUKKA/domainset/download.conf|domainset" \
+            "SukkaW Game Download|$SUKKA/domainset/game-download.conf|domainset"
 
           process_rule "China.list" "China" \
             "SukkaW Domestic|$SUKKA/non_ip/domestic.conf" \

@@ -29,6 +29,7 @@
 | `China_IP.list` | Loyalsoldier、blackmatrix7、Rabbit-Spec | 中国大陆 IP 回退规则；本仓库特意不加 `no-resolve` |
 | `ChinaMedia.list` | blackmatrix7 | 中国媒体服务 |
 | `Disney.list` | blackmatrix7 | Disney+ |
+| `Download.list` | SukkaW | 通用下载、软件更新、包管理、对象存储与游戏客户端下载 CDN |
 | `Game.list` | blackmatrix7 | 游戏平台与游戏服务 |
 | `Global.list` | blackmatrix7 | 通用海外/代理域名规则 |
 | `GlobalMedia.list` | blackmatrix7 | 国际流媒体服务 |
@@ -56,19 +57,20 @@
 4. Apple
 5. Microsoft
 6. Telegram
-7. Game
-8. YouTube
-9. TikTok
-10. SocialMedia
-11. PayPal
-12. Google
-13. Streaming Media
-14. CDN
-15. Global
-16. China
-17. LAN
-18. China IP
-19. FINAL
+7. Download
+8. Game
+9. YouTube
+10. TikTok
+11. SocialMedia
+12. PayPal
+13. Google
+14. Streaming Media
+15. CDN
+16. Global
+17. China
+18. LAN
+19. China IP
+20. FINAL
 
 ## 自动更新
 

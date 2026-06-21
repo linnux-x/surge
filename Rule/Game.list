@@ -1,9 +1,9 @@
 # NAME: Game
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-21 15:22:29 +0800
+# UPDATED: 2026-06-21 15:34:49 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 572
+# TOTAL: 557
 
 # ======= Manual Rules ========
 DOMAIN-SUFFIX,activision.com
@@ -27,8 +27,6 @@ DOMAIN-SUFFIX,blizzard.nefficient.co.kr
 DOMAIN-SUFFIX,blizzardgearstore.com
 DOMAIN-SUFFIX,blizzcon-a.akamaihd.net
 DOMAIN-SUFFIX,blz-contentstack.com
-DOMAIN-SUFFIX,blzddist1-a.akamaihd.net
-DOMAIN-SUFFIX,blzddistkr1-a.akamaihd.net
 DOMAIN-SUFFIX,blzmedia-a.akamaihd.net
 DOMAIN-SUFFIX,blznav.akamaized.net
 DOMAIN-SUFFIX,bnetcmsus-a.akamaihd.net
@@ -71,7 +69,6 @@ DOMAIN-SUFFIX,camelotherald.com
 DOMAIN-SUFFIX,camelotherald.net
 DOMAIN-SUFFIX,capitalgames.com
 DOMAIN-SUFFIX,chillingo.com
-DOMAIN-SUFFIX,cloudsync-prod.s3.amazonaws.com
 DOMAIN-SUFFIX,cncrivals.com
 DOMAIN-SUFFIX,commandandconquer.com
 DOMAIN-SUFFIX,conquerwithcharacter.com
@@ -161,7 +158,6 @@ DOMAIN-SUFFIX,needforspeedtherun.com
 DOMAIN-SUFFIX,needforspeedtimeattack.com
 DOMAIN-SUFFIX,needforspeedundergroundeast.com
 DOMAIN-SUFFIX,nfsworld.com
-DOMAIN-SUFFIX,origin-a.akamaihd.net
 DOMAIN-SUFFIX,origin.com
 DOMAIN-SUFFIX,origin.tv
 DOMAIN-SUFFIX,plantsvszombies2.com
@@ -444,12 +440,10 @@ DOMAIN-SUFFIX,ruinedking.com
 DOMAIN-SUFFIX,supremacy.com
 DOMAIN-SUFFIX,supremacy.net
 DOMAIN-SUFFIX,ulol.com
-DOMAIN-SUFFIX,gamedownloads-rockstargames-com.akamaized.net
 DOMAIN-SUFFIX,media-rockstargames-com.akamaized.net
 DOMAIN-SUFFIX,rockstargames.com
 DOMAIN-SUFFIX,rsg.sc
 DOMAIN-SUFFIX,videos-rockstargames-com.akamaized.net
-DOMAIN-SUFFIX,edge.steam-dns.top.comcast.net
 DOMAIN-SUFFIX,f3b7q2p3.ssl.hwcdn.net
 DOMAIN-SUFFIX,fanatical.com
 DOMAIN-SUFFIX,humblebundle.com
@@ -457,14 +451,10 @@ DOMAIN-SUFFIX,playartifact.com
 DOMAIN-SUFFIX,s.team
 DOMAIN-SUFFIX,steam-api.com
 DOMAIN-SUFFIX,steam-chat.com
-DOMAIN-SUFFIX,steam.apac.qtlglb.com
 DOMAIN-SUFFIX,steam.cdn.on.net
 DOMAIN-SUFFIX,steam.cdn.orcon.net.nz
 DOMAIN-SUFFIX,steam.cdn.slingshot.co.nz
 DOMAIN-SUFFIX,steam.cdn.webra.ru
-DOMAIN-SUFFIX,steam.eca.qtlglb.com
-DOMAIN-SUFFIX,steam.naeu.qtlglb.com
-DOMAIN-SUFFIX,steam.ru.qtlglb.com
 DOMAIN-SUFFIX,steam.tv
 DOMAIN-SUFFIX,steambroadcast.akamaized.net
 DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
@@ -473,9 +463,6 @@ DOMAIN-SUFFIX,steamcommunity.com
 DOMAIN-SUFFIX,steamdeck.com
 DOMAIN-SUFFIX,steamgames.com
 DOMAIN-SUFFIX,steammobile.akamaized.net
-DOMAIN-SUFFIX,steampipe-kr.akamaized.net
-DOMAIN-SUFFIX,steampipe-partner.akamaized.net
-DOMAIN-SUFFIX,steampipe.akamaized.net
 DOMAIN-SUFFIX,steampowered.com
 DOMAIN-SUFFIX,steamstat.us
 DOMAIN-SUFFIX,steamstatic.com
@@ -490,8 +477,6 @@ DOMAIN-SUFFIX,steamusercontent.com
 DOMAIN-SUFFIX,brawlstars.com
 DOMAIN-SUFFIX,brawlstarsgame.com
 DOMAIN-SUFFIX,ubi.com
-DOMAIN-SUFFIX,ubisoft-orbit-savegames.s3.amazonaws.com
-DOMAIN-SUFFIX,ubisoft-uplay-savegames.s3.amazonaws.com
 DOMAIN-SUFFIX,ubisoft.com
 DOMAIN-SUFFIX,uplay.com
 DOMAIN-SUFFIX,beth.games
