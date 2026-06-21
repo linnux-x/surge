@@ -1,27 +1,16 @@
 # NAME: CDN
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-21 09:35:04 +0800
+# UPDATED: 2026-06-21 11:02:14 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 37
+# TOTAL: 25
 
 # ======= Manual Rules ========
+# GitHub release assets intentionally use CDN policy; broader GitHub hosts stay in Global/list-specific rules.
 DOMAIN,release-assets.githubusercontent.com
-DOMAIN-SUFFIX,akadns.net
-DOMAIN-SUFFIX,akamaiedge.net
-DOMAIN-SUFFIX,akamaihd.net
-DOMAIN-SUFFIX,akamaized.net
-DOMAIN-SUFFIX,azureedge.net
-DOMAIN-SUFFIX,b-cdn.net
-DOMAIN-SUFFIX,cdn77.org
-DOMAIN-SUFFIX,cloudfront.net
-DOMAIN-SUFFIX,edgekey.net
-DOMAIN-SUFFIX,edgesuite.net
-DOMAIN-SUFFIX,fastly.net
 
 # ======= SukkaW CDN ========
 DOMAIN-KEYWORD,-files.gitbook.io
-DOMAIN-KEYWORD,vod-adaptive.akamaized.net
 DOMAIN-KEYWORD,web-assets.zendesk
 DOMAIN-KEYWORD,-res.cloudinary.com
 DOMAIN-KEYWORD,dsn.algolia.net

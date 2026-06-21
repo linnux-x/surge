@@ -1,3 +1,28 @@
+# Broad shared CDN parents are too wide for CDN.list; keep service-specific CDN hosts in focused rulesets.
+DOMAIN-SUFFIX,akadns.net
+akadns.net
+DOMAIN-SUFFIX,akamaiedge.net
+akamaiedge.net
+DOMAIN-SUFFIX,akamaihd.net
+akamaihd.net
+DOMAIN-SUFFIX,akamaized.net
+akamaized.net
+DOMAIN-SUFFIX,azureedge.net
+azureedge.net
+DOMAIN-SUFFIX,b-cdn.net
+b-cdn.net
+DOMAIN-SUFFIX,cdn77.org
+cdn77.org
+DOMAIN-SUFFIX,cloudfront.net
+cloudfront.net
+DOMAIN-SUFFIX,edgekey.net
+edgekey.net
+DOMAIN-SUFFIX,edgesuite.net
+edgesuite.net
+DOMAIN-SUFFIX,fastly.net
+fastly.net
+
+# Broad GitHub hosts are intentionally excluded; only release-assets.githubusercontent.com is Manual-included.
 DOMAIN-WILDCARD,*-intake-*-datadoghq.com
 DOMAIN-WILDCARD,*-intake.*.datadoghq.com
 DOMAIN-WILDCARD,*.fsvod?.com
