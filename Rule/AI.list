@@ -1,11 +1,62 @@
 # NAME: AI
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-21 09:35:04 +0800
+# UPDATED: 2026-06-21 09:49:33 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 127
+# TOTAL: 140
 
 # ======= Manual Rules ========
+# Anthropic / Claude
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,clau.de
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,claudemcpclient.com
+DOMAIN-SUFFIX,claudemcpcontent.com
+DOMAIN,anthropic.auth0.com
+DOMAIN,anthropic.com.cdn.cloudflare.net
+DOMAIN,servd-anthropic-website.b-cdn.net
+
+# Google AI / Gemini / AI Studio / NotebookLM / Jules / Antigravity
+DOMAIN,ai.google.dev
+DOMAIN,aida.googleapis.com
+DOMAIN,aiplatform.googleapis.com
+DOMAIN,aistudio.google.com
+DOMAIN,aisandbox-pa.googleapis.com
+DOMAIN,alkalicore-pa.clients6.google.com
+DOMAIN,antigravity.google
+DOMAIN,antigravity-pa.googleapis.com
+DOMAIN,antigravity-unleash.goog
+DOMAIN,antigravity.googleapis.com
+DOMAIN,daily-cloudcode-pa.googleapis.com
+DOMAIN,gemini.google.com
+DOMAIN,generativelanguage.googleapis.com
+DOMAIN,jules.google.com
+DOMAIN,makersuite.google.com
+DOMAIN,notebooklm-pa.googleapis.com
+DOMAIN,notebooklm.google.com
+DOMAIN,notebooklm.googleapis.com
+DOMAIN,robinfrontend-pa.googleapis.com
+DOMAIN,vertexai.googleapis.com
+DOMAIN-SUFFIX,api.ai
+DOMAIN-SUFFIX,deepmind.com
+DOMAIN-SUFFIX,deepmind.google
+DOMAIN-SUFFIX,dialogflow.com
+DOMAIN-SUFFIX,g.ai
+DOMAIN-SUFFIX,gemini.google
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,geller-pa.googleapis.com
+DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
+DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,makersuite.google.com
+DOMAIN-SUFFIX,notebooklm.google
+DOMAIN-SUFFIX,notebooklm.google.com
+DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com
+URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+
+
+# Local coding assistant backend
 DOMAIN,trae-api-sg.mchost.guru
 
 # ======= SukkaW AI ========
@@ -17,35 +68,9 @@ DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,ai.com
 DOMAIN-KEYWORD,openai
 DOMAIN-SUFFIX,perplexity.ai
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,bard.google.com
-DOMAIN-SUFFIX,gemini.google
 DOMAIN-SUFFIX,gemini.google.com
-DOMAIN,aisandbox-pa.googleapis.com
-DOMAIN,robinfrontend-pa.googleapis.com
-URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+
-DOMAIN-SUFFIX,deepmind.com
-DOMAIN-SUFFIX,deepmind.google
 DOMAIN-SUFFIX,generativelanguage.googleapis.com
-DOMAIN-SUFFIX,geller-pa.googleapis.com
-DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
-DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
-DOMAIN,ai.google.dev
-DOMAIN-SUFFIX,g.ai
-DOMAIN-SUFFIX,aistudio.google.com
-DOMAIN-SUFFIX,makersuite.google.com
-DOMAIN,alkalicore-pa.clients6.google.com
-DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com
-DOMAIN-SUFFIX,generativeai.google
-DOMAIN-SUFFIX,notebooklm.google
-DOMAIN-SUFFIX,notebooklm.google.com
-DOMAIN,jules.google.com
-DOMAIN,aida.googleapis.com
-DOMAIN,antigravity.google
-DOMAIN,antigravity-unleash.goog
-DOMAIN,daily-cloudcode-pa.googleapis.com
 DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,meta.ai
 DOMAIN,gateway.ai.cloudflare.com
@@ -68,8 +93,6 @@ DOMAIN,gspe1-ssl.ls.apple.com
 
 # ======= Rabbit-Spec AIGC ========
 DOMAIN,anthropic-com.ghost.io
-DOMAIN,anthropic.auth0.com
-DOMAIN,anthropic.com.cdn.cloudflare.net
 DOMAIN,browser-intake-datadoghq.com
 DOMAIN,browser-intake-us5-datadoghq.com
 DOMAIN,cdn.usefathom.com
@@ -78,7 +101,6 @@ DOMAIN,openai-api.arkoselabs.com
 DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
 DOMAIN,openaicomproductionae4b.blob.core.windows.net
 DOMAIN,production-openaicom-storage.azureedge.net
-DOMAIN,servd-anthropic-website.b-cdn.net
 DOMAIN,static.cloudflareinsights.com
 DOMAIN-SUFFIX,algolia.net
 DOMAIN-SUFFIX,android.chat.openai.com
@@ -91,10 +113,6 @@ DOMAIN-SUFFIX,cdn.workos.com
 DOMAIN-SUFFIX,challenges.cloudflare.com
 DOMAIN-SUFFIX,chat.openai.com
 DOMAIN-SUFFIX,chatgpt.livekit.cloud
-DOMAIN-SUFFIX,clau.de
-DOMAIN-SUFFIX,claudemcpclient.com
-DOMAIN-SUFFIX,claudemcpcontent.com
-DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN-SUFFIX,client-api.arkoselabs.com
 DOMAIN-SUFFIX,clientstream.launchdarkly.com
 DOMAIN-SUFFIX,ct.sendgrid.net

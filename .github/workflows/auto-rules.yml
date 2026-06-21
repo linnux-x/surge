@@ -112,7 +112,7 @@ jobs:
           filter_candidates() {
             local exclude_file=$1
             if [ -f "$exclude_file" ] && [ -s "$exclude_file" ]; then
-              grep -vFf "$exclude_file" || true
+              grep -vFf <(sed 's/\r$//' "$exclude_file" | awk 'NF && $0 !~ /^[[:space:]]*#/') || true
             else
               cat
             fi
