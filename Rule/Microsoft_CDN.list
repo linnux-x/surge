@@ -1,9 +1,9 @@
 # NAME: Microsoft_CDN
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-21 09:35:04 +0800
+# UPDATED: 2026-06-22 05:18:26 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 80
+# TOTAL: 84
 
 # ======= Manual Rules ========
 DOMAIN-SUFFIX,aspnetcdn.com
@@ -36,10 +36,13 @@ DOMAIN-SUFFIX,yammerusercontent.com
 
 # ======= SukkaW Microsoft CDN ========
 DOMAIN,res-h3.public.cdn.office.net
-DOMAIN,statics.teams.cdn.office.net
+DOMAIN-SUFFIX,statics.teams.cdn.office.net
+DOMAIN-SUFFIX,shell.cdn.office.net
 DOMAIN,res-2.cdn.office.net
 DOMAIN,res-1.cdn.office.net
 DOMAIN,res.cdn.office.net
+DOMAIN-SUFFIX,f.c2r.ts.cdn.office.net
+DOMAIN-SUFFIX,b.c2r.ts.cdn.office.net
 DOMAIN-SUFFIX,download.windowsupdate.com
 DOMAIN-SUFFIX,ctldl.windowsupdate.com
 DOMAIN-SUFFIX,cn.windowssearch.com
@@ -48,6 +51,7 @@ DOMAIN-SUFFIX,storeedge.microsoft.com
 DOMAIN-SUFFIX,officecdn.microsoft.com
 DOMAIN-SUFFIX,developer.microsoft.com
 DOMAIN-SUFFIX,download.microsoft.com
+DOMAIN-SUFFIX,surface.downloads.prss.microsoft.com
 DOMAIN-SUFFIX,storecorefulfillment.download.prss.microsoft.com
 DOMAIN-SUFFIX,mpnbenefitsrtluat.download.prss.microsoft.com
 DOMAIN-SUFFIX,azurestackhubuat.download.prss.microsoft.com
