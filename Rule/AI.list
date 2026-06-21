@@ -1,9 +1,9 @@
 # NAME: AI
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-21 10:26:19 +0800
+# UPDATED: 2026-06-21 14:48:38 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 140
+# TOTAL: 142
 
 # ======= Manual Rules ========
 # Anthropic / Claude
@@ -58,6 +58,10 @@ URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+
 
 # Local coding assistant backend
 DOMAIN,trae-api-sg.mchost.guru
+
+# GitHub Copilot
+DOMAIN,api.githubcopilot.com
+DOMAIN-SUFFIX,githubcopilot.com
 
 # ======= SukkaW AI ========
 DOMAIN-SUFFIX,openai.com

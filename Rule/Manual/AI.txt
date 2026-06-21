@@ -50,3 +50,7 @@ URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+
 
 # Local coding assistant backend
 DOMAIN,trae-api-sg.mchost.guru
+
+# GitHub Copilot
+DOMAIN,api.githubcopilot.com
+DOMAIN-SUFFIX,githubcopilot.com

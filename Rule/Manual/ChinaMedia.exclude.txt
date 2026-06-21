@@ -20,3 +20,11 @@ IP-CIDR,23.40.242.10/32,no-resolve
 IP-CIDR,23.53.32.88/32,no-resolve
 DOMAIN-KEYWORD,bilibili
 DOMAIN-KEYWORD,qiyi
+
+# Bilibili international / B-Star belongs to GlobalMedia, not ChinaMedia DIRECT.
+DOMAIN-SUFFIX,p-bstarstatic.akamaized.net
+DOMAIN-SUFFIX,p.bstarstatic.com
+DOMAIN-SUFFIX,upos-bstar-mirrorakam.akamaized.net
+DOMAIN-SUFFIX,upos-bstar1-mirrorakam.akamaized.net
+DOMAIN-SUFFIX,upos-hz-mirrorakam.akamaized.net
+PROCESS-NAME,com.bilibili.comic.intl

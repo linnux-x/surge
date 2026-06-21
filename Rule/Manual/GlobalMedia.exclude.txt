@@ -65,7 +65,28 @@ DOMAIN-SUFFIX,tiktokv.com
 DOMAIN-SUFFIX,tiktokv.us
 DOMAIN-SUFFIX,tiktokw.com
 USER-AGENT,tiktok*
+TikTok
 DOMAIN-SUFFIX,kwai-group.com
 DOMAIN-SUFFIX,kwai.com
 DOMAIN-SUFFIX,kwai.net
 DOMAIN-SUFFIX,kwaicdn.com
+
+# AI / Copilot belongs to AI.list
+DOMAIN,api.githubcopilot.com
+DOMAIN-SUFFIX,githubcopilot.com
+DOMAIN,api.groq.com
+DOMAIN,console.groq.com
+DOMAIN,notebooklm.google.com
+DOMAIN-KEYWORD,anthropic
+DOMAIN-KEYWORD,claude
+# YouTube / Google video belongs to YouTube.list
+youtube
+googlevideo.com
+ggpht.com
+ggpht.cn
+gvt1.com
+gvt2.com
+video.google.com
+youtu.be
+# TikTok belongs to TikTok.list
+DOMAIN-KEYWORD,tiktokcdn
