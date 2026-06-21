@@ -1,9 +1,9 @@
 # NAME: SocialMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-21 09:35:04 +0800
+# UPDATED: 2026-06-21 19:40:15 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 954
+# TOTAL: 927
 
 # ======= Manual Rules ========
 DOMAIN-SUFFIX,kwai-group.com
@@ -12,9 +12,7 @@ DOMAIN-SUFFIX,kwai.net
 DOMAIN-SUFFIX,kwaicdn.com
 
 # ======= QuixoticHeart SocialMedia ========
-DOMAIN,api.imem.app
 DOMAIN,api.iturrit.com
-DOMAIN,api.swiftgram.app
 DOMAIN,e122475.dscg.akamaiedge.net
 DOMAIN,licdn.cn.cdn20.com
 DOMAIN,linkedin.sc.omtrdc.net
@@ -55,7 +53,6 @@ DOMAIN-SUFFIX,buyingfacebooklikes.com
 DOMAIN-SUFFIX,buyoculus.com
 DOMAIN-SUFFIX,careersatfb.com
 DOMAIN-SUFFIX,carstagram.com
-DOMAIN-SUFFIX,cdn-telegram.org
 DOMAIN-SUFFIX,cdn-vk.net
 DOMAIN-SUFFIX,cdn-vk.ru
 DOMAIN-SUFFIX,cdninstagram.com
@@ -64,10 +61,8 @@ DOMAIN-SUFFIX,chickstagram.com
 DOMAIN-SUFFIX,china-facebook.com
 DOMAIN-SUFFIX,click-url.com
 DOMAIN-SUFFIX,cms-twdigitalassets.com
-DOMAIN-SUFFIX,comments.app
 DOMAIN-SUFFIX,como-hackearfacebook.com
 DOMAIN-SUFFIX,componentkit.org
-DOMAIN-SUFFIX,contest.com
 DOMAIN-SUFFIX,crowdtangle.com
 DOMAIN-SUFFIX,dacebook.com
 DOMAIN-SUFFIX,dis.gd
@@ -446,8 +441,6 @@ DOMAIN-SUFFIX,gacebook.com
 DOMAIN-SUFFIX,gameroom.com
 DOMAIN-SUFFIX,gcld-line.com
 DOMAIN-SUFFIX,gfacecbook.com
-DOMAIN-SUFFIX,graph.org
-DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,groups.com
 DOMAIN-SUFFIX,gyutte.site
 DOMAIN-SUFFIX,hackerfacebook.com
@@ -529,7 +522,6 @@ DOMAIN-SUFFIX,klik.me
 DOMAIN-SUFFIX,l-0005.dc-msedge.net
 DOMAIN-SUFFIX,l-0005.l-msedge.net
 DOMAIN-SUFFIX,labo.wovs.tk
-DOMAIN-SUFFIX,legra.ph
 DOMAIN-SUFFIX,licdn.cn
 DOMAIN-SUFFIX,licdn.com
 DOMAIN-SUFFIX,lin.ee
@@ -559,7 +551,6 @@ DOMAIN-SUFFIX,maniakey.homes
 DOMAIN-SUFFIX,markzuckerberg.com
 DOMAIN-SUFFIX,mastodon.online
 DOMAIN-SUFFIX,mastodon.social
-DOMAIN-SUFFIX,mbrx.app
 DOMAIN-SUFFIX,mcrouter.net
 DOMAIN-SUFFIX,mcrouter.org
 DOMAIN-SUFFIX,messenger.com
@@ -602,7 +593,6 @@ DOMAIN-SUFFIX,nbabot.net
 DOMAIN-SUFFIX,newsfeed.com
 DOMAIN-SUFFIX,nextstop.com
 DOMAIN-SUFFIX,nhncorp.jp
-DOMAIN-SUFFIX,nicegram.app
 DOMAIN-SUFFIX,nijimiss.moe
 DOMAIN-SUFFIX,ocul.us
 DOMAIN-SUFFIX,oculus-china.com
@@ -649,7 +639,6 @@ DOMAIN-SUFFIX,periscope.tv
 DOMAIN-SUFFIX,powersunitedvr.com
 DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,pyrobot.org
-DOMAIN-SUFFIX,quiz.directory
 DOMAIN-SUFFIX,reachtheworldonfacebook.com
 DOMAIN-SUFFIX,react.com
 DOMAIN-SUFFIX,reactjs.com
@@ -669,25 +658,12 @@ DOMAIN-SUFFIX,signal.tube
 DOMAIN-SUFFIX,signalusers.org
 DOMAIN-SUFFIX,sportsfacebook.com
 DOMAIN-SUFFIX,sportstream.com
-DOMAIN-SUFFIX,stel.com
 DOMAIN-SUFFIX,submarin.online
 DOMAIN-SUFFIX,supportfacebook.com
 DOMAIN-SUFFIX,sushi.ski
 DOMAIN-SUFFIX,t.co
-DOMAIN-SUFFIX,t.me
-DOMAIN-SUFFIX,tdesktop.com
-DOMAIN-SUFFIX,telega.one
-DOMAIN-SUFFIX,telegra.ph
-DOMAIN-SUFFIX,telegram-cdn.org
-DOMAIN-SUFFIX,telegram.dog
-DOMAIN-SUFFIX,telegram.me
-DOMAIN-SUFFIX,telegram.org
-DOMAIN-SUFFIX,telegram.space
-DOMAIN-SUFFIX,telegramdownload.com
-DOMAIN-SUFFIX,telesco.pe
 DOMAIN-SUFFIX,tellapart.com
 DOMAIN-SUFFIX,terragraph.com
-DOMAIN-SUFFIX,tg.dev
 DOMAIN-SUFFIX,tgstat.com
 DOMAIN-SUFFIX,thefacebook.com
 DOMAIN-SUFFIX,thefacebook.net
@@ -718,10 +694,8 @@ DOMAIN-SUFFIX,twtrdns.net
 DOMAIN-SUFFIX,twttr.com
 DOMAIN-SUFFIX,twttr.net
 DOMAIN-SUFFIX,twvid.com
-DOMAIN-SUFFIX,tx.me
 DOMAIN-SUFFIX,userapi.com
 DOMAIN-SUFFIX,userapi.ru
-DOMAIN-SUFFIX,usercontent.dev
 DOMAIN-SUFFIX,viewpointsfromfacebook.com
 DOMAIN-SUFFIX,vine.co
 DOMAIN-SUFFIX,vk-analytics.ru
@@ -922,7 +896,6 @@ DOMAIN-SUFFIX,pixnet.net
 DOMAIN-SUFFIX,pixnet.pro
 DOMAIN-SUFFIX,pixnet.tw
 DOMAIN-SUFFIX,pixplug.in
-DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,poecdn.net
 DOMAIN-SUFFIX,popo8.com
 DOMAIN-SUFFIX,ptt.cc
