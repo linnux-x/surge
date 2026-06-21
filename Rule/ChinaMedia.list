@@ -1,11 +1,11 @@
 # NAME: ChinaMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-21 05:21:10 +0800
+# UPDATED: 2026-06-21 09:35:04 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 421
 
-# ======= Current Project Baseline ========
+# ======= blackmatrix7 ChinaMedia ========
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc3s.ourdvsss.com
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc3z.ourdvsss.com
@@ -427,6 +427,4 @@ PROCESS-NAME,com.bilibili.comic
 PROCESS-NAME,com.bilibili.comic.intl
 PROCESS-NAME,tv.danmaku.bili
 PROCESS-NAME,tv.danmaku.bilibilihd
-
-# ======= blackmatrix7 ChinaMedia ========
 

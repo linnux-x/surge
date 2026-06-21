@@ -1,11 +1,11 @@
 # NAME: GlobalMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-21 05:21:10 +0800
+# UPDATED: 2026-06-21 09:35:04 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 2278
 
-# ======= Current Project Baseline ========
+# ======= blackmatrix7 GlobalMedia ========
 DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
 DOMAIN,api.githubcopilot.com
 DOMAIN,api.groq.com
@@ -2284,6 +2284,4 @@ URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/
 PROCESS-NAME,com.viu.pad
 PROCESS-NAME,com.viu.phone
 PROCESS-NAME,com.vuclip.viu
-
-# ======= blackmatrix7 GlobalMedia ========
 

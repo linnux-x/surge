@@ -1,37 +1,15 @@
 # NAME: Speedtest
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-21 05:21:10 +0800
+# UPDATED: 2026-06-21 09:35:04 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 107
+# TOTAL: 94
 
 # ======= Manual Rules ========
 DOMAIN-SUFFIX,fast.com
 DOMAIN-SUFFIX,nperf.com
 
-# ======= Current Project Baseline ========
-DOMAIN,mensura.cdn-apple.com
-DOMAIN,open.cachefly.net
-DOMAIN,wifiman-stability-test.ubncloud.com
-DOMAIN,wifiman.ubncloud.com
-DOMAIN-SUFFIX,cdnst.net
-DOMAIN-SUFFIX,cellmaps.com
-DOMAIN-SUFFIX,librespeed.org
-DOMAIN-SUFFIX,measurement-lab.org
-DOMAIN-SUFFIX,measurementlab.net
-DOMAIN-SUFFIX,nperf.net
-DOMAIN-SUFFIX,pingtest.net
-DOMAIN-SUFFIX,speed.cloudflare.com
-DOMAIN-SUFFIX,speed.googlefiber.net
-DOMAIN-SUFFIX,speedcheck.org
-DOMAIN-SUFFIX,speedof.me
-DOMAIN-SUFFIX,speedsmart.net
-DOMAIN-SUFFIX,testmy.net
-DOMAIN-SUFFIX,webtest.net
-DOMAIN-SUFFIX,wifiman.com
-DOMAIN-SUFFIX,wifiman.me
-DOMAIN-KEYWORD,ookla
-DOMAIN-KEYWORD,speedtest
+# ======= SukkaW Speedtest ========
 DOMAIN-SUFFIX,speedtest.net
 DOMAIN-SUFFIX,speedtestcustom.com
 DOMAIN-SUFFIX,ooklaserver.net
@@ -107,14 +85,21 @@ DOMAIN-SUFFIX,speedtest.serverside.com
 DOMAIN-SUFFIX,speedtest.airlinkdc.com
 DOMAIN-SUFFIX,speedtest.soraxus.com
 DOMAIN-SUFFIX,speedtest.singnet.com.sg
+DOMAIN-SUFFIX,speed.cloudflare.com
+DOMAIN-SUFFIX,wifiman.com
+DOMAIN-SUFFIX,wifiman.me
 DOMAIN-SUFFIX,wifiman.ubncloud.com
 DOMAIN-SUFFIX,wifiman-stability-test.ubncloud.com
 DOMAIN,speedtest.macpaw.com
 DOMAIN-SUFFIX,netspeedtestmaster.com
+DOMAIN-SUFFIX,measurement-lab.org
+DOMAIN-SUFFIX,measurementlab.net
+DOMAIN-SUFFIX,speed.googlefiber.net
 DOMAIN-SUFFIX,backend.librespeed.org
+DOMAIN,mensura.cdn-apple.com
+DOMAIN,open.cachefly.net
 DOMAIN-SUFFIX,speedtest.linode.com
 DOMAIN-SUFFIX,mlab-oti.measurement-lab.org
+DOMAIN-SUFFIX,nperf.net
 DOMAIN-SUFFIX,speed.hinet.net
-
-# ======= SukkaW Speedtest ========
 

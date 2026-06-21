@@ -1,16 +1,11 @@
-# Linnux 的「Surge」上游规则自动同步
-# 基于 Rabbit-Spec/Surge 工作流改编
-# 版本：1.0.0
-# 日期：2026.06.17
+# Deprecated legacy workflow retained for reference only.
+# Active workflow: .github/workflows/auto-rules.yml
+# Do not add schedule triggers here; this file targets stale rule inventories.
 
-name: Auto-Surge-Rules
+name: Deprecated-Auto-Surge-Rules
 
-# 触发器配置
+# Disabled by design: keep only manual dispatch so it cannot regenerate stale files.
 on:
-  schedule:
-    # 定时任务：北京时间每天 04:00 执行
-    - cron: '0 20 * * *'
-  # 允许手动触发
   workflow_dispatch:
 
 # 权限配置
