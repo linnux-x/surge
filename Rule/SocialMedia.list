@@ -1,9 +1,9 @@
 # NAME: SocialMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-21 19:51:44 +0800
+# UPDATED: 2026-06-21 19:55:37 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 926
+# TOTAL: 918
 
 # ======= Manual Rules ========
 # Overseas hosting / VPS forums and communities
@@ -785,7 +785,6 @@ IP-CIDR,125.6.149.0/24,no-resolve
 IP-CIDR,125.6.190.0/24,no-resolve
 IP-CIDR,129.134.0.0/17,no-resolve
 IP-CIDR,147.92.128.0/17,no-resolve
-IP-CIDR,149.154.160.0/20,no-resolve
 IP-CIDR,157.240.0.0/17,no-resolve
 IP-CIDR,158.85.224.160/27,no-resolve
 IP-CIDR,158.85.46.128/27,no-resolve
@@ -796,7 +795,6 @@ IP-CIDR,173.192.231.32/27,no-resolve
 IP-CIDR,173.252.64.0/18,no-resolve
 IP-CIDR,18.194.0.0/15,no-resolve
 IP-CIDR,184.173.128.0/17,no-resolve
-IP-CIDR,185.76.151.0/24,no-resolve
 IP-CIDR,192.133.76.0/22,no-resolve
 IP-CIDR,199.59.148.0/22,no-resolve
 IP-CIDR,199.96.56.0/21,no-resolve
@@ -821,16 +819,10 @@ IP-CIDR,54.235.23.242/32,no-resolve
 IP-CIDR,54.242.0.0/15,no-resolve
 IP-CIDR,54.93.124.31/32,no-resolve
 IP-CIDR,69.195.160.0/19,no-resolve
-IP-CIDR,91.105.192.0/23,no-resolve
 IP-CIDR,91.108.16.0/21,no-resolve
-IP-CIDR,91.108.4.0/22,no-resolve
-IP-CIDR,91.108.56.0/22,no-resolve
 IP-CIDR,91.108.8.0/21,no-resolve
 IP-CIDR,95.161.64.0/20,no-resolve
-IP-CIDR6,2001:67c:4e8::/48,no-resolve
 IP-CIDR6,2001:b28:f23c::/47,no-resolve
-IP-CIDR6,2001:b28:f23f::/48,no-resolve
-IP-CIDR6,2a0a:f280::/32,no-resolve
 
 # ======= QuixoticHeart Forum ========
 DOMAIN,bbs.boingboing.net
