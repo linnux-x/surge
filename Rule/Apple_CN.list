@@ -1,9 +1,9 @@
 # NAME: Apple_CN
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-21 09:35:04 +0800
+# UPDATED: 2026-06-21 10:55:57 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 172
+# TOTAL: 231
 
 # ======= Manual Rules ========
 DOMAIN-SUFFIX,appldnld.apple.com.edgesuite.net
@@ -13,6 +13,69 @@ DOMAIN-SUFFIX,gsp4-cn.ls.apple.com.edgekey.net
 DOMAIN-SUFFIX,ls.apple.com.edgesuite.net
 DOMAIN-SUFFIX,www.apple.com.edgekey.net
 
+# Apple China / .cn properties from Apple.list
+DOMAIN-SUFFIX,apple-appstore.cn
+DOMAIN-SUFFIX,apple-dns.cn
+DOMAIN-SUFFIX,apple-dns.com.cn
+DOMAIN-SUFFIX,apple-ibooks.cn
+DOMAIN-SUFFIX,apple-icloud.cn
+DOMAIN-SUFFIX,apple-itunes.cn
+DOMAIN-SUFFIX,apple-maps.cn
+DOMAIN-SUFFIX,apple-store.cn
+DOMAIN-SUFFIX,apple.cn
+DOMAIN-SUFFIX,apple.com.cn
+DOMAIN-SUFFIX,appleappstore.cn
+DOMAIN-SUFFIX,applecenter.cn
+DOMAIN-SUFFIX,applecenter.com.cn
+DOMAIN-SUFFIX,applecomputer.cn
+DOMAIN-SUFFIX,applecomputer.com.cn
+DOMAIN-SUFFIX,appledns.cn
+DOMAIN-SUFFIX,appledns.com.cn
+DOMAIN-SUFFIX,appleicloud.cn
+DOMAIN-SUFFIX,applepaycash.cn
+DOMAIN-SUFFIX,applepaycash.com.cn
+DOMAIN-SUFFIX,applepaysupplies.cn
+DOMAIN-SUFFIX,applepaysupplies.com.cn
+DOMAIN-SUFFIX,applesiri.cn
+DOMAIN-SUFFIX,applestore.cn
+DOMAIN-SUFFIX,applestore.com.cn
+DOMAIN-SUFFIX,appletv4.cn
+DOMAIN-SUFFIX,appletv4.com.cn
+DOMAIN-SUFFIX,appstoreapple.cn
+DOMAIN-SUFFIX,beats1.cn
+DOMAIN-SUFFIX,beats1.com.cn
+DOMAIN-SUFFIX,beats2.com.cn
+DOMAIN-SUFFIX,beats4.cn
+DOMAIN-SUFFIX,beatsbydre.com.cn
+DOMAIN-SUFFIX,beatsep.cn
+DOMAIN-SUFFIX,ecgapp.com.cn
+DOMAIN-SUFFIX,faceshift.cn
+DOMAIN-SUFFIX,homepod.cn
+DOMAIN-SUFFIX,icloud-apple.cn
+DOMAIN-SUFFIX,icloud-content.com.cn
+DOMAIN-SUFFIX,icloud.cn
+DOMAIN-SUFFIX,icloud.com.cn
+DOMAIN-SUFFIX,icloud.net.cn
+DOMAIN-SUFFIX,icloudapple.cn
+DOMAIN-SUFFIX,insidear.cn
+DOMAIN-SUFFIX,iphone-8.com.cn
+DOMAIN-SUFFIX,ipod.com.cn
+DOMAIN-SUFFIX,itunes-apple.cn
+DOMAIN-SUFFIX,itunesapple.cn
+DOMAIN-SUFFIX,itunesradio.cn
+DOMAIN-SUFFIX,itunesradio.com.cn
+DOMAIN-SUFFIX,livephotos.cn
+DOMAIN-SUFFIX,livephotos.com.cn
+DOMAIN-SUFFIX,macbookair.cn
+DOMAIN-SUFFIX,macbookair.com.cn
+DOMAIN-SUFFIX,researchkit.cn
+DOMAIN-SUFFIX,researchkit.com.cn
+DOMAIN-SUFFIX,swiftui.cn
+DOMAIN-SUFFIX,swiftui.com.cn
+DOMAIN-SUFFIX,xn--czrs0t4phtr3a.cn
+DOMAIN-SUFFIX,xn--fiqs8sxootzz.cn
+DOMAIN-SUFFIX,xn--ohq11k7pl25iyo8a.cn
+
 # ======= SukkaW Apple CN ========
 DOMAIN,gs-loc-cn.apple.com
 DOMAIN,appleintelligencefeedback.care.apple.com
@@ -21,8 +84,6 @@ DOMAIN-SUFFIX,cn-ssl.ls.apple.com
 DOMAIN-SUFFIX,cn.ls.apple.com
 DOMAIN-SUFFIX,cn.apple.com
 DOMAIN,api.smoot.apple.cn
-DOMAIN-SUFFIX,icloud.com.cn
-DOMAIN-SUFFIX,apple.com.cn
 
 # ======= SukkaW Apple CDN ========
 DOMAIN-SUFFIX,store.apple.com.edgekey.net
