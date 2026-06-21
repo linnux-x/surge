@@ -67,7 +67,7 @@ Before finishing:
 9. Compare rule counts and rule types with major upstreams, explaining differences by ownership and false-positive risk.
 10. Report the saved path, final rule count, major additions, removals, and deliberate exclusions.
 11. Confirm that `Microsoft.list` has no GitHub family rules, broad GitHub content suffixes hit `Global.list`, `release-assets.githubusercontent.com` is the only intended GitHub CDN exception, `fast.com` appears only in `Speedtest.list`, `China.list` contains no IP rules, `China_IP.list` contains no `no-resolve` option, all other IP rules include `no-resolve`, no dotted IP fragment is stored as `DOMAIN-KEYWORD`, and no IP rule is a redundant subnet of another IP rule in the same file.
-12. When the automation workflow changes, run a full local regeneration when possible, then run `python3 scripts/validate_surge_repo.py`. Confirm every configured upstream URL is reachable, compare the generated file set with the workflow rule inventory, make project guardrail violations fail validation before committing, and keep any retained legacy workflow uniquely named with no `schedule` trigger.
+12. When the automation workflow changes, run a full local regeneration when possible, then run `python3 scripts/validate_surge_repo.py`. Confirm every configured upstream URL is reachable, compare the generated file set with the workflow rule inventory, make project guardrail violations fail validation before committing, and delete obsolete legacy workflows instead of retaining them.
 
 ## Skill Maintenance
 

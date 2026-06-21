@@ -86,7 +86,7 @@
 gh workflow run auto-rules.yml
 ```
 
-> 旧版 `.github/workflows/auto-surge-rules.yml` 仅作为历史参考保留：已改名为 `Deprecated-Auto-Surge-Rules`，并移除定时触发，避免重新生成旧规则文件。
+> 旧版 `.github/workflows/auto-surge-rules.yml` 已删除，避免重新生成旧规则文件。当前只保留 `.github/workflows/auto-rules.yml` 作为规则同步 workflow。
 
 ## 手动规则
 
