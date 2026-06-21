@@ -54,3 +54,11 @@ DOMAIN,trae-api-sg.mchost.guru
 # GitHub Copilot
 DOMAIN,api.githubcopilot.com
 DOMAIN-SUFFIX,githubcopilot.com
+
+# Microsoft Copilot / Bing Chat
+DOMAIN,sydney.bing.com
+DOMAIN-SUFFIX,copilot.microsoft.com
+DOMAIN-SUFFIX,copilot.cloud.microsoft
+
+# Groq
+DOMAIN-SUFFIX,groq.com
