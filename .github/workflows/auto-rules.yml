@@ -382,6 +382,54 @@ jobs:
             rm "$temp_body"
           }
 
+          prune_global_first_match_overlaps() {
+            local target_path="$RULE_DIR/Global.list"
+            local overlap_rules
+            local temp_rules
+            local temp_output
+            local rule_count
+
+            overlap_rules=$(mktemp)
+            temp_output=$(mktemp)
+
+            for rule_file in \
+              WeChat.list Speedtest.list AI.list Apple_CN.list Apple.list \
+              Microsoft_CDN.list Microsoft.list Telegram.list Game.list \
+              YouTube.list TikTok.list SocialMedia.list PayPal.list \
+              Google.list Netflix.list Disney.list ChinaMedia.list \
+              GlobalMedia.list CDN.list; do
+              if [ -f "$RULE_DIR/$rule_file" ]; then
+                awk '!/^#/ && !/^[[:space:]]*$/ { print tolower($0) }' "$RULE_DIR/$rule_file" >> "$overlap_rules"
+              fi
+            done
+
+            temp_rules=$(mktemp)
+            awk '!seen[$0]++' "$overlap_rules" > "$temp_rules"
+            mv "$temp_rules" "$overlap_rules"
+
+            awk -v excludes="$overlap_rules" '
+              BEGIN {
+                while ((getline line < excludes) > 0) {
+                  drop[line] = 1
+                }
+              }
+              /^#/ || /^[[:space:]]*$/ { print; next }
+              !(tolower($0) in drop) { print }
+            ' "$target_path" > "$temp_output"
+
+            rule_count=$(awk '!/^#/ && !/^[[:space:]]*$/ { n++ } END { print n + 0 }' "$temp_output")
+            awk -v total="$rule_count" '{
+              if ($0 ~ /^# TOTAL:/) {
+                print "# TOTAL: " total
+              } else {
+                print
+              }
+            }' "$temp_output" > "$target_path"
+
+            rm "$overlap_rules" "$temp_output"
+            validate_rules "$target_path" "Global.list"
+          }
+
           BM7="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge"
           SUKKA="https://raw.githubusercontent.com/SukkaW/Surge/master/Source"
           RABBIT="https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules"
@@ -465,6 +513,8 @@ jobs:
 
           process_rule "YouTube.list" "YouTube" \
             "blackmatrix7 YouTube|$BM7/YouTube/YouTube.list"
+
+          prune_global_first_match_overlaps
 
       - name: Validate Repository Invariants
         shell: bash
