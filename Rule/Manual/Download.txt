@@ -1,0 +1,23 @@
+# Borrowed from SukkaW non_ip/direct downloader process rules
+PROCESS-NAME,aria2c
+PROCESS-NAME,fdm
+PROCESS-NAME,Folx
+PROCESS-NAME,NetTransport
+PROCESS-NAME,Thunder
+PROCESS-NAME,ThunderVIP
+PROCESS-NAME,Transmission
+PROCESS-NAME,transmission-daemon
+PROCESS-NAME,transmission-qt
+PROCESS-NAME,BitComet
+PROCESS-NAME,uTorrent
+PROCESS-NAME,qbittorrent*
+PROCESS-NAME,DownloadService
+PROCESS-NAME,qBittorrent
+PROCESS-NAME,qbittorrent-nox
+PROCESS-NAME,WebTorrent
+PROCESS-NAME,WebTorrent Helper
+PROCESS-NAME,amuled
+PROCESS-NAME,BaiduNetdisk_mac
+
+# Borrowed from SukkaW non_ip/download; DOMAIN-WILDCARD entries are intentionally not copied because this repo disallows unsupported DOMAIN-WILDCARD output.
+URL-REGEX,^http://(.+)\.gvt\d\.com/edgedl
