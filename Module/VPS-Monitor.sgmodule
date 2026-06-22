@@ -1,11 +1,9 @@
 #!name=VPS Monitor
-#!desc=实时查看 VPS 状态：内存 CPU 硬盘 流量 IP 信息（需在 VPS 运行 vps_monitor.py）
+#!desc=实时查看 VPS 状态：内存 CPU 硬盘 流量 IP
 #!category=📊 ▸ Monitor
-#!arguments=SERVER=server_address&TOKEN=access_token
-#!arguments-desc=[参数设置]\n\n⓵ SERVER: VPS 地址与端口\n   例: http://1.2.3.4:8765\n\n⓶ TOKEN: 访问令牌\n   与 VPS_MONITOR_TOKEN 一致\n\n获取: cat /etc/systemd/system/vps-monitor.service | grep VPS_MONITOR_TOKEN
 
 [Panel]
 VPS-Status = icon="server.rack",icon-color="#58A6FF",script-name=vps-panel,update-interval=30
 
 [Script]
-vps-panel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/linnux-x/surge/main/scripts/vps_monitor_panel.js,argument=server=%SERVER%&token=%TOKEN%
+vps-panel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/linnux-x/surge/main/scripts/vps_monitor_panel.js,argument=server=http://45.94.40.38:8765&token=FHR2uZWirs6O6L74XDHb4BaWdvSxPs3q
