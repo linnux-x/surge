@@ -1,1 +1,8 @@
-fast.com
+# cookielaw.org is OneTrust's shared cookie consent service used by thousands of sites — not Netflix-specific.
+DOMAIN-SUFFIX,cookielaw.org
+
+# onetrust.com is a shared privacy management platform used by thousands of sites — not Netflix-specific.
+DOMAIN-SUFFIX,onetrust.com
+
+# us-west-2.amazonaws.com covers the entire AWS us-west-2 region — far too broad for Netflix.
+DOMAIN-SUFFIX,us-west-2.amazonaws.com
