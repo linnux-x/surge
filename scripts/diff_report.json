@@ -1,27 +1,18 @@
 {
-  "generated_at": "2026-06-22T14:35:53.123320",
+  "generated_at": "2026-06-22T14:48:30.121339",
   "total_added": 0,
-  "total_removed": 2,
+  "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
     {
       "file": "AI.list",
-      "prev_total": 143,
+      "prev_total": 141,
       "curr_total": 141,
       "added_count": 0,
-      "removed_count": 2,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "2fcab5709f54",
-          "source": "Rabbit-Spec AIGC"
-        },
-        {
-          "id": "4a639ef268f4",
-          "source": "Rabbit-Spec AIGC"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
