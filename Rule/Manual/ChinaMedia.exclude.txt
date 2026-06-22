@@ -28,3 +28,7 @@ DOMAIN-SUFFIX,upos-bstar-mirrorakam.akamaized.net
 DOMAIN-SUFFIX,upos-bstar1-mirrorakam.akamaized.net
 DOMAIN-SUFFIX,upos-hz-mirrorakam.akamaized.net
 PROCESS-NAME,com.bilibili.comic.intl
+
+# WeChat endpoints belong to WeChat.list, which is evaluated before ChinaMedia.list
+DOMAIN,dldir1.qq.com
+DOMAIN,soup.v.qq.com

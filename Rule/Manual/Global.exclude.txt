@@ -195,3 +195,19 @@ DOMAIN-SUFFIX,ziglang.org
 DOMAIN-SUFFIX,zohocdn.com
 DOMAIN-SUFFIX,zohostatic.com
 DOMAIN-SUFFIX,zohowebstatic.com
+
+# Speedtest endpoints belong to Speedtest.list, which is evaluated before Global.list
+DOMAIN-SUFFIX,speedtest.rt.ru
+DOMAIN-SUFFIX,speedtest.idv.tw
+DOMAIN,speedtest.hk.chinamobile.com
+DOMAIN,speedtestbb.hk.chinamobile.com
+DOMAIN-SUFFIX,speedtest.vodafone.com.au
+DOMAIN,speedtest.surfshark.com
+DOMAIN-SUFFIX,speed.cloudflare.com
+DOMAIN-SUFFIX,wifiman.ubncloud.com
+DOMAIN-SUFFIX,wifiman-stability-test.ubncloud.com
+DOMAIN,open.cachefly.net
+DOMAIN-SUFFIX,speedtest.linode.com
+
+# Exact Speedtest host; keep in Speedtest.list rather than Global.
+DOMAIN-SUFFIX,speedtest.hk.chinamobile.com

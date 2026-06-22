@@ -90,3 +90,6 @@ video.google.com
 youtu.be
 # TikTok belongs to TikTok.list
 DOMAIN-KEYWORD,tiktokcdn
+
+# Speedtest endpoint belongs to Speedtest.list, which is evaluated before GlobalMedia.list
+DOMAIN-SUFFIX,speed.hinet.net

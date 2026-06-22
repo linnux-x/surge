@@ -1,0 +1,5 @@
+# Speedtest endpoint belongs to Speedtest.list, which is evaluated before Apple_CN.list
+DOMAIN,mensura.cdn-apple.com
+
+# Exact Speedtest host; keep in Speedtest.list rather than Apple_CN.
+DOMAIN-SUFFIX,mensura.cdn-apple.com
