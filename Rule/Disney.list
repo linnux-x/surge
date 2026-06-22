@@ -1,9 +1,9 @@
 # NAME: Disney
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-22 05:18:26 +0800
+# UPDATED: 2026-06-22 21:32:16 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 175
+# TOTAL: 166
 
 # ======= blackmatrix7 Disney ========
 DOMAIN-SUFFIX,20thcenturystudios.com.au
@@ -13,17 +13,11 @@ DOMAIN-SUFFIX,abc-studios.com
 DOMAIN-SUFFIX,abc.com
 DOMAIN-SUFFIX,abcnews.com
 DOMAIN-SUFFIX,abcnews.edgesuite.net
-DOMAIN-SUFFIX,adobedtm.com
 DOMAIN-SUFFIX,adventuresbydisney.com
 DOMAIN-SUFFIX,babble.com
 DOMAIN-SUFFIX,babyzone.com
-DOMAIN-SUFFIX,bam.nr-data.net
 DOMAIN-SUFFIX,bamgrid.com
 DOMAIN-SUFFIX,beautyandthebeastmusical.co.uk
-DOMAIN-SUFFIX,braze.com
-DOMAIN-SUFFIX,cdn.optimizely.com
-DOMAIN-SUFFIX,conviva.com
-DOMAIN-SUFFIX,d9.flashtalking.com
 DOMAIN-SUFFIX,dilcdn.com
 DOMAIN-SUFFIX,disney-asia.com
 DOMAIN-SUFFIX,disney-discount.com
@@ -134,15 +128,12 @@ DOMAIN-SUFFIX,espn.net
 DOMAIN-SUFFIX,espncdn.com
 DOMAIN-SUFFIX,espndotcom.tt.omtrdc.net
 DOMAIN-SUFFIX,espnqa.com
-DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com
 DOMAIN-SUFFIX,go-disneyworldgo.com
 DOMAIN-SUFFIX,go.com
 DOMAIN-SUFFIX,hotstar-cdn.net
 DOMAIN-SUFFIX,hotstar-labs.com
 DOMAIN-SUFFIX,hotstar.com
 DOMAIN-SUFFIX,hotstarext.com
-DOMAIN-SUFFIX,hsprepack.akamaized.net
-DOMAIN-SUFFIX,js-agent.newrelic.com
 DOMAIN-SUFFIX,marvel.com
 DOMAIN-SUFFIX,marvel10thanniversary.com
 DOMAIN-SUFFIX,marveldimensionofheroes.com

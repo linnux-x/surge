@@ -1,9 +1,9 @@
 # NAME: Download
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-22 05:18:26 +0800
+# UPDATED: 2026-06-22 21:32:16 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1686
+# TOTAL: 1684
 
 # ======= Manual Rules ========
 # Borrowed from SukkaW non_ip/direct downloader process rules
@@ -383,7 +383,6 @@ DOMAIN,dlcdnets.asus.com
 DOMAIN,download.cpuid.com
 DOMAIN,dl.ui.com
 DOMAIN-SUFFIX,artifacts.ui.com
-DOMAIN,desktop.wifiman.com
 DOMAIN,artifacts.electronjs.org
 DOMAIN,ghfast.top
 DOMAIN,ghgo.xyz
@@ -420,7 +419,6 @@ DOMAIN,download.cypress.io
 DOMAIN,cdn.cypress.io
 DOMAIN,packagecloud.io
 DOMAIN,assets-production.packagecloud.io
-DOMAIN,dl.wechat.com
 DOMAIN,updates.edovia.com
 DOMAIN,download.edovia.com
 DOMAIN,autoupdate.termius.com

@@ -1,9 +1,9 @@
 # NAME: ChinaMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-22 05:18:26 +0800
+# UPDATED: 2026-06-22 21:32:16 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 415
+# TOTAL: 414
 
 # ======= blackmatrix7 ChinaMedia ========
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com
@@ -60,7 +60,6 @@ DOMAIN,17caa75e77d31e1f5a7841e0b3374569.dlied1.cdntips.net
 DOMAIN,apd-pcdnvodstat.teg.tencent-cloud.net
 DOMAIN,api.iplay.163.com
 DOMAIN,aqqmusic.tc.qq.com
-DOMAIN,dldir1.qq.com
 DOMAIN,iacc.qq.com
 DOMAIN,ins-eeww7kom.ias.tencent-cloud.net
 DOMAIN,ios.video.mpush.qq.com

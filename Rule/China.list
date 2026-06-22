@@ -1,11 +1,12 @@
 # NAME: China
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-22 05:18:26 +0800
+# UPDATED: 2026-06-22 21:32:16 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 112668
+# TOTAL: 112664
 
 # ======= Manual Rules ========
+# China game download domains — route DIRECT via China policy
 DOMAIN-SUFFIX,battlenet.com.cn
 DOMAIN-SUFFIX,blizzard.cn
 DOMAIN-SUFFIX,blizzardgames.cn
@@ -34,6 +35,22 @@ DOMAIN-SUFFIX,steamchina.com
 DOMAIN-SUFFIX,steamserver.net
 DOMAIN-SUFFIX,steamcontent.com
 DOMAIN-SUFFIX,xboxlive.cn
+
+# PayPal China domestic services (安付通/贝宝) — excluded from PayPal proxy to China/DIRECT.
+DOMAIN-SUFFIX,anfutong.cn
+DOMAIN-SUFFIX,anfutong.com
+DOMAIN-SUFFIX,anfutong.com.cn
+DOMAIN-SUFFIX,beibao.cn
+DOMAIN-SUFFIX,beibao.com
+DOMAIN-SUFFIX,beibao.com.cn
+DOMAIN-SUFFIX,paypal.com.cn
+DOMAIN-SUFFIX,paypal.net.cn
+DOMAIN-SUFFIX,paypal.org.cn
+DOMAIN-SUFFIX,paypalcommunity.cn
+DOMAIN-SUFFIX,paypalhere.cn
+DOMAIN-SUFFIX,paypalhere.com.cn
+DOMAIN-SUFFIX,xn--bnq297cix3a.cn
+DOMAIN-SUFFIX,xoom.net.cn
 
 # ======= SukkaW Domestic ========
 USER-AGENT,%E4%BC%98%E9%85%B7*
@@ -310,14 +327,6 @@ DOMAIN-SUFFIX,webok.net
 DOMAIN-SUFFIX,eatuo.com
 DOMAIN-SUFFIX,ui.com.cn
 DOMAIN-SUFFIX,ubnt.com.cn
-DOMAIN,weixin.com
-DOMAIN,www.weixin.com
-DOMAIN,szilinkshort.weixin.com
-DOMAIN,szilinklong.weixin.com
-DOMAIN-SUFFIX,work.weixin.com
-DOMAIN,shortcloud.weixin.com
-DOMAIN,c.weixin.com
-DOMAIN,longcloud.weixin.com
 DOMAIN-SUFFIX,kfc.com.cn
 DOMAIN-SUFFIX,kfcapp.cn
 DOMAIN-SUFFIX,hwwt8.com
@@ -617,6 +626,10 @@ DOMAIN-SUFFIX,upaiyun.com
 DOMAIN-SUFFIX,upyun.com
 DOMAIN-SUFFIX,variflight.com
 DOMAIN-SUFFIX,veryzhun.com
+DOMAIN,viayoo.com
+DOMAIN,res.viayoo.com
+DOMAIN,app.viayoo.com
+DOMAIN,www.viayoo.com
 DOMAIN-SUFFIX,vip.com
 DOMAIN-SUFFIX,wallstreetcn.com
 DOMAIN-SUFFIX,weather.com.cn
@@ -52018,7 +52031,6 @@ DOMAIN-SUFFIX,ioszc.com
 DOMAIN-SUFFIX,ioszn.com
 DOMAIN-SUFFIX,iot-cas.com
 DOMAIN-SUFFIX,iot-dc.com
-DOMAIN-SUFFIX,iot-tencent.com
 DOMAIN-SUFFIX,iot.moe
 DOMAIN-SUFFIX,iot0.net
 DOMAIN-SUFFIX,iot1001.com
@@ -80570,7 +80582,6 @@ DOMAIN-SUFFIX,serverless-devs.com
 DOMAIN-SUFFIX,serverproof.net
 DOMAIN-SUFFIX,service86.com
 DOMAIN-SUFFIX,servicemesher.com
-DOMAIN-SUFFIX,servicewechat.com
 DOMAIN-SUFFIX,serviceweixin.com
 DOMAIN-SUFFIX,servilabmedical.com
 DOMAIN-SUFFIX,sesamestreetenglishchina.com
@@ -88779,7 +88790,6 @@ DOMAIN-SUFFIX,tenorforman.com
 DOMAIN-SUFFIX,tenorshare.com
 DOMAIN-SUFFIX,tenorshare.tw
 DOMAIN-SUFFIX,tenovatech.com
-DOMAIN-SUFFIX,tenpay.com
 DOMAIN-SUFFIX,tenqent.com
 DOMAIN-SUFFIX,tenrays.com
 DOMAIN-SUFFIX,tensafe.com
@@ -94940,7 +94950,6 @@ DOMAIN-SUFFIX,wecash.net
 DOMAIN-SUFFIX,wecasting.com
 DOMAIN-SUFFIX,wecenter.com
 DOMAIN-SUFFIX,weceshi.com
-DOMAIN-SUFFIX,wechat.com
 DOMAIN-SUFFIX,wechat.design
 DOMAIN-SUFFIX,wechat.me
 DOMAIN-SUFFIX,wechat.org
@@ -94951,14 +94960,9 @@ DOMAIN-SUFFIX,wechatauthdemo.com
 DOMAIN-SUFFIX,wechatdevelop.com
 DOMAIN-SUFFIX,wechatify.net
 DOMAIN-SUFFIX,wechatlegal.com
-DOMAIN-SUFFIX,wechatlegal.net
 DOMAIN-SUFFIX,wechatmessenger.com
 DOMAIN-SUFFIX,wechatmessenger.us
-DOMAIN-SUFFIX,wechatos.net
 DOMAIN-SUFFIX,wechatpay-global.com
-DOMAIN-SUFFIX,wechatpay.com
-DOMAIN-SUFFIX,wechatpay.com.hk
-DOMAIN-SUFFIX,wechatpay.com.my
 DOMAIN-SUFFIX,weclassroom.com
 DOMAIN-SUFFIX,wecloud.io
 DOMAIN-SUFFIX,wecloudx.com
@@ -95268,11 +95272,9 @@ DOMAIN-SUFFIX,weixiaotong.com
 DOMAIN-SUFFIX,weixiaov.club
 DOMAIN-SUFFIX,weiximusic.com
 DOMAIN-SUFFIX,weixin-001.com
-DOMAIN-SUFFIX,weixin.com
 DOMAIN-SUFFIX,weixin12315.com
 DOMAIN-SUFFIX,weixinbang.com
 DOMAIN-SUFFIX,weixinbiaoqing.com
-DOMAIN-SUFFIX,weixinbridge.com
 DOMAIN-SUFFIX,weixincall.com
 DOMAIN-SUFFIX,weixindadang.com
 DOMAIN-SUFFIX,weixindevelop.com
@@ -95292,7 +95294,6 @@ DOMAIN-SUFFIX,weixinqing.com
 DOMAIN-SUFFIX,weixinqz.com
 DOMAIN-SUFFIX,weixinrensheng.com
 DOMAIN-SUFFIX,weixinsir.com
-DOMAIN-SUFFIX,weixinsxy.com
 DOMAIN-SUFFIX,weixinyidu.com
 DOMAIN-SUFFIX,weixinyunduan.com
 DOMAIN-SUFFIX,weixistyle.com
@@ -112660,7 +112661,6 @@ USER-AGENT,AdBlock*
 USER-AGENT,Best%20Trace*
 USER-AGENT,MegaWerewolf*
 USER-AGENT,MicroMessenger%20Client
-USER-AGENT,MicroMessenger*
 USER-AGENT,MicroMessengerClient*
 USER-AGENT,Microsoft*
 USER-AGENT,Moke*
@@ -112669,7 +112669,6 @@ USER-AGENT,QQ*
 USER-AGENT,RemotePlay*
 USER-AGENT,TIM*
 USER-AGENT,TeamViewer*
-USER-AGENT,WeChat*
 USER-AGENT,WebTorrent*
 USER-AGENT,YYeTs*
 USER-AGENT,arrowio*

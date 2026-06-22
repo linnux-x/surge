@@ -1,15 +1,14 @@
 # NAME: Netflix
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-22 05:18:26 +0800
+# UPDATED: 2026-06-22 21:32:16 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1157
+# TOTAL: 1154
 
 # ======= blackmatrix7 Netflix ========
 DOMAIN,e13252.dscg.akamaiedge.net
 DOMAIN,h-netflix.online-metrix.net
 DOMAIN,netflix.com.edgesuite.net
-DOMAIN-SUFFIX,cookielaw.org
 DOMAIN-SUFFIX,flxvpn.net
 DOMAIN-SUFFIX,netflix.ca
 DOMAIN-SUFFIX,netflix.com
@@ -36,8 +35,6 @@ DOMAIN-SUFFIX,nflximg.net
 DOMAIN-SUFFIX,nflxsearch.net
 DOMAIN-SUFFIX,nflxso.net
 DOMAIN-SUFFIX,nflxvideo.net
-DOMAIN-SUFFIX,onetrust.com
-DOMAIN-SUFFIX,us-west-2.amazonaws.com
 DOMAIN-KEYWORD,apiproxy-device-prod-nlb-
 DOMAIN-KEYWORD,dualstack.apiproxy-
 DOMAIN-KEYWORD,dualstack.ichnaea-web-
