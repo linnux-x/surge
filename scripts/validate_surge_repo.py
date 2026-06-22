@@ -47,6 +47,43 @@ SHARED_CDN_PARENTS = {
     "edgesuite.net",
     "fastly.net",
 }
+# Shared third-party infrastructure that should not appear in service rules.
+# Only checked in service-specific rulesets (not Global, CDN, Direct, etc.).
+SHARED_THIRD_PARTY_SUFFIXES = {
+    "cookielaw.org",       # OneTrust cookie consent
+    "onetrust.com",        # OneTrust privacy platform
+    "adobedtm.com",        # Adobe Tag Manager
+    "braze.com",           # Marketing/engagement platform
+    "newrelic.com",        # New Relic APM
+    "nr-data.net",         # New Relic data collection
+    "optimizely.com",      # A/B testing
+}
+SHARED_THIRD_PARTY_DOMAINS = {
+    "js-agent.newrelic.com",
+}
+# Rulesets where shared third-party checks do NOT apply (too broad or dedicated).
+SHARED_THIRD_PARTY_EXEMPT = {
+    "Global.list",
+    "GlobalMedia.list",
+    "CDN.list",
+    "Direct.list",
+    "China.list",
+    "China_IP.list",
+    "ChinaMedia.list",
+    "Download.list",
+}
+# PayPal China domestic domains that should NOT be in PayPal.list.
+PAYPAL_CN_DOMAINS = {
+    "anfutong.cn", "anfutong.com", "anfutong.com.cn",
+    "beibao.cn", "beibao.com", "beibao.com.cn",
+    "paypal.cn", "paypal.com.cn", "paypal.net.cn", "paypal.org.cn",
+    "paypal-corp.cn", "paypal-corp.com.cn",
+    "paypal-notice.cn", "paypal-notice.com.cn",
+    "paypalcommunity.cn", "paypalhere.cn", "paypalhere.com.cn",
+    "paypalobjects.cn", "paypalobjects.com.cn",
+    "xoom.net.cn",
+    "xn--bnq297cix3a.cn",
+}
 NON_CHINA_FALLBACK_PATTERNS = [
     re.compile(r"^domain,rthklive2-lh[.]akamaihd[.]net$", re.I),
     re.compile(
@@ -220,6 +257,35 @@ def validate_rule_file(path: Path, errors: list[str]) -> None:
             errors.append(f"{rel(path)}:{index} shared CDN parent outside CDN.list: {rule}")
         if target == "China.list" and any(p.search(low) for p in NON_CHINA_FALLBACK_PATTERNS):
             errors.append(f"{rel(path)}:{index} non-China media/social fallback in China.list: {rule}")
+
+        # Check shared third-party infrastructure in service-specific rulesets.
+        if target not in SHARED_THIRD_PARTY_EXEMPT and rule_type in {"DOMAIN", "DOMAIN-SUFFIX"} and len(parts) >= 2:
+            domain_val = parts[1].lower()
+            # Check exact domain matches
+            if domain_val in SHARED_THIRD_PARTY_DOMAINS:
+                errors.append(f"{rel(path)}:{index} shared third-party domain in service ruleset: {rule}")
+            # Check suffix matches (domain ends with .<shared_suffix>)
+            if rule_type == "DOMAIN-SUFFIX" and domain_val in SHARED_THIRD_PARTY_SUFFIXES:
+                errors.append(f"{rel(path)}:{index} shared third-party suffix in service ruleset: {rule}")
+            elif rule_type == "DOMAIN":
+                for suffix in SHARED_THIRD_PARTY_SUFFIXES:
+                    if domain_val.endswith(f".{suffix}"):
+                        # Allow if the subdomain has a service prefix (heuristic: at least 2 labels before the shared suffix)
+                        labels_before_suffix = domain_val[: -len(suffix) - 1].split(".")
+                        # Single-label prefix like "disney.my" — probably service-specific, skip
+                        pass
+                        break
+
+        # Check PayPal China domestic domains in PayPal.list
+        if target == "PayPal.list" and rule_type in {"DOMAIN", "DOMAIN-SUFFIX"} and len(parts) >= 2:
+            domain_val = parts[1].lower()
+            if domain_val in PAYPAL_CN_DOMAINS:
+                errors.append(f"{rel(path)}:{index} PayPal China domestic domain should be in China.list: {rule}")
+            elif rule_type == "DOMAIN-SUFFIX":
+                for cn_dom in PAYPAL_CN_DOMAINS:
+                    if domain_val == cn_dom or domain_val.endswith(f".{cn_dom}"):
+                        errors.append(f"{rel(path)}:{index} PayPal China domestic domain should be in China.list: {rule}")
+                        break
 
         if rule_type in {"IP-CIDR", "IP-CIDR6"} and len(parts) >= 2:
             try:

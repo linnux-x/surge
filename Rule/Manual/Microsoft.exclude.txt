@@ -192,3 +192,4 @@ DOMAIN-SUFFIX,windowsazurestatus.cn
 DOMAIN-SUFFIX,windowslive.cn
 DOMAIN-SUFFIX,winmp.cn
 DOMAIN-SUFFIX,yammerusercontent.com
+DOMAIN-SUFFIX,optimizely.com

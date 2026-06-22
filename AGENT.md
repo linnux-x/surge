@@ -70,6 +70,25 @@ Before finishing:
 11. Confirm that `Microsoft.list` has no GitHub family rules, broad GitHub content suffixes hit `Global.list`, `release-assets.githubusercontent.com` is the only intended GitHub CDN exception, `fast.com` appears only in `Speedtest.list`, `China.list` contains no IP rules, `China_IP.list` contains no `no-resolve` option, all other IP rules include `no-resolve`, no dotted IP fragment is stored as `DOMAIN-KEYWORD`, and no IP rule is a redundant subnet of another IP rule in the same file.
 12. When the automation workflow changes, run a full local regeneration when possible, then run `python3 scripts/validate_surge_repo.py`. Confirm every configured upstream URL is reachable, compare the generated file set with the workflow rule inventory, make project guardrail violations fail validation before committing, and delete obsolete legacy workflows instead of retaining them.
 
+## Service vs Shared Infrastructure Classification
+
+Community rulesets often include non-service-proprietary shared infrastructure (CDNs, analytics platforms, login/payment gateways, consent services). Classify by **service ownership**, not corporate affiliation:
+
+| Category | Example | Treatment |
+|---|---|---|
+| China domestic services | 安付通/贝宝 (PayPal .cn domains) | Exclude from service rules → add to `China.txt` → DIRECT |
+| Shared analytics/telemetry | New Relic, Conviva, Flashtalking | Exclude with `DOMAIN-SUFFIX` unless service-prefixed subdomain |
+| Shared compliance/privacy | OneTrust (cookielaw.org, onetrust.com) | Exclude with `DOMAIN-SUFFIX` — used by thousands of sites |
+| Shared cloud platforms | `us-west-2.amazonaws.com` | Regional scope too broad — exclude with `DOMAIN-SUFFIX` |
+| Shared CDNs | Akamai, CloudFront, Fastly | Keep subdomains with service prefix (e.g., `disneyplus.com.edgesuite.net`) |
+| Dedicated service CDN | `cws.conviva.com`, `disney.my.sentry.io` | Service-prefixed — keep |
+
+**Key principles:**
+- **Prefix vs no prefix:** Subdomains with explicit service/brand prefixes are service-specific.
+- **Scope control:** Avoid matching entire regions, entire platforms, or entire CDN parent suffixes.
+- **Ownership judgment:** Third-party platforms (Adobe, New Relic, AWS) default to Global unless service-prefixed.
+- **Geographic归属:** China-domestic domains go to China (DIRECT), not overseas service rules.
+
 ## Skill Maintenance
 
 - After real ruleset work, update the skill only when a durable, reproducible lesson improves future tasks.
