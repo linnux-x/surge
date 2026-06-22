@@ -1,74 +1,77 @@
 // VPS Monitor Panel — Surge Panel Script
 // Fetches system stats from VPS monitor server and displays in Surge panel.
-//
-// Configuration: edit the API_BASE and TOKEN below, OR set module arguments:
-//   arg1 = server URL (e.g. http://1.2.3.4:8765)
-//   arg2 = access token
+// Uses callback pattern ($httpClient.get does not support await in Surge).
 
-const API_BASE = $argument ? $argument.server || "http://127.0.0.1:8765" : "http://127.0.0.1:8765";
-const TOKEN = $argument ? $argument.token || "changeme" : "changeme";
+var API_BASE = "http://127.0.0.1:8765";
+var TOKEN = "changeme";
 
-(async () => {
-  try {
-    const url = `${API_BASE}/status?token=${TOKEN}`;
-    const resp = await $httpClient.get(url);
-    if (resp.status !== 200) {
-      $done({
-        title: "VPS Monitor",
-        content: `❌ 连接失败 (${resp.status})\n请检查服务器和 Token`,
-        style: "error",
-      });
-      return;
-    }
+if (typeof $argument !== "undefined" && $argument) {
+  if ($argument.server) API_BASE = $argument.server;
+  if ($argument.token) TOKEN = $argument.token;
+}
 
-    const data = JSON.parse(resp.body);
+var url = API_BASE + "/status?token=" + TOKEN;
 
-    // ── Build progress bars ──────────────────────────────────
-    const memBar = bar(data.memory.percent, 10);
-    const cpuBar = bar(data.cpu.load_1m / data.cpu.cores * 100, 10);
-    const diskBar = bar(data.disk.percent, 10);
-
-    // ── Format lines ─────────────────────────────────────────
-    const memLine = `🧠 内存    ${memBar}  ${data.memory.used_mb}MB / ${data.memory.total_mb}MB (${data.memory.percent}%)`;
-    const cpuLine = `🖥  CPU     ${cpuBar}  负载 ${data.cpu.load_1m} / ${data.cpu.cores}核`;
-    const diskLine = `💾 硬盘    ${diskBar}  ${data.disk.used_gb}G / ${data.disk.total_gb}G (${data.disk.percent}%)`;
-    const netLine = `📡 流量    ⬆${data.network.tx_total_mb}MB ⬇${data.network.rx_total_mb}MB`;
-    const ipLine = `🌐 IP      ${data.ip.public_ip}`;
-    const locLine = `📍 位置    ${data.ip.location}`;
-    const ispLine = `🏢 ISP     ${data.ip.isp}`;
-    const uptimeLine = `⏱ 运行    ${data.uptime}`;
-
-    const content = [
-      memLine,
-      cpuLine,
-      diskLine,
-      netLine,
-      ipLine,
-      locLine,
-      ispLine,
-      uptimeLine,
-    ].join("\n");
-
+$httpClient.get(url, function(error, response, data) {
+  if (error) {
     $done({
-      title: `🖥 ${data.hostname}`,
+      title: "VPS Monitor",
+      content: "❌ 网络错误: " + error,
+      style: "error"
+    });
+    return;
+  }
+  
+  if (!response || response.status !== 200) {
+    var code = response ? response.status : "无响应";
+    $done({
+      title: "VPS Monitor",
+      content: "❌ 连接失败 (" + code + ")\n请检查 server 和 token",
+      style: "error"
+    });
+    return;
+  }
+  
+  try {
+    var info = JSON.parse(data);
+    
+    // Progress bars
+    var memBar   = bar(info.memory.percent, 10);
+    var cpuPct   = Math.min(Math.round(info.cpu.load_1m / info.cpu.cores * 100), 100);
+    var cpuBar   = bar(cpuPct, 10);
+    var diskBar  = bar(info.disk.percent, 10);
+    
+    var content =
+      "🧠 内存    " + memBar  + "  " + info.memory.used_mb + "MB / " + info.memory.total_mb + "MB (" + info.memory.percent + "%)" + "\n" +
+      "🖥  CPU     " + cpuBar  + "  负载 " + info.cpu.load_1m + " / " + info.cpu.cores + "核" + "\n" +
+      "💾 硬盘    " + diskBar + "  " + info.disk.used_gb + "G / " + info.disk.total_gb + "G (" + info.disk.percent + "%)" + "\n" +
+      "📡 流量    ⬆" + info.network.tx_total_mb + "MB ⬇" + info.network.rx_total_mb + "MB" + "\n" +
+      "🌐 IP      " + info.ip.public_ip + "\n" +
+      "📍 位置    " + info.ip.location + "\n" +
+      "🏢 ISP     " + info.ip.isp + "\n" +
+      "⏱ 运行    " + info.uptime;
+    
+    $done({
+      title: "🖥 " + info.hostname,
       content: content,
       icon: "server.rack",
-      "icon-color": "#58A6FF",
+      "icon-color": "#58A6FF"
     });
   } catch (e) {
     $done({
       title: "VPS Monitor",
-      content: `❌ 错误: ${e.message || e}`,
-      style: "error",
+      content: "❌ 解析错误: " + e.message,
+      style: "error"
     });
   }
-})();
+});
 
-// ── Helper: generate a text progress bar ──────────────────────
+// Helper: text progress bar
 function bar(percent, width) {
-  const filled = Math.round((Math.min(percent, 100) / 100) * width);
-  const empty = width - filled;
-  const fillChar = "█";
-  const emptyChar = "░";
-  return fillChar.repeat(filled) + emptyChar.repeat(empty);
+  var filled = Math.round((Math.min(percent, 100) / 100) * width);
+  var empty = width - filled;
+  var s = "";
+  for (var i = 0; i < filled; i++) s += "█";
+  for (var i = 0; i < empty; i++) s += "░";
+  return s;
 }
