@@ -119,6 +119,10 @@ def check_upstream_vs_generated(sources: dict[str, list[str]]) -> list[dict]:
             continue
 
         ratio = gen_count / upstream_total if upstream_total > 0 else 1.0
+        # Only flag when there's a single upstream source; multi-source rules
+        # naturally exceed any single source's count.
+        if len(urls) > 1:
+            continue
         # If generated is less than 20% of upstream, likely heavy excludes — informational
         if ratio < 0.2 and upstream_total > 50:
             findings.append({
@@ -173,6 +177,21 @@ def check_new_shared_infrastructure() -> list[dict]:
         "fastly.net", "b-cdn.net", "cdn77.org",
     }
 
+    # Service-OWNED infrastructure that legitimately belongs in their rulesets.
+    # These are NOT shared third-party — they're part of the service's own product family.
+    SERVICE_OWNED_SUFFIXES: dict[str, set[str]] = {
+        "Google.list": {
+            "doubleclick.net", "googleadservices.com", "googleapis.com",
+            "googlesyndication.com", "googletagmanager.com",
+        },
+        "Microsoft.list": {
+            "azure.com",
+        },
+        "SocialMedia.list": {
+            "facebook.net", "fbcdn.net",
+        },
+    }
+
     # Service-prefixed subdomains that are OK (e.g., disney.my.sentry.io)
     SERVICE_EXEMPT = {
         "Global.list", "GlobalMedia.list", "CDN.list", "Direct.list",
@@ -197,6 +216,9 @@ def check_new_shared_infrastructure() -> list[dict]:
             domain = parts[1].lower()
             
             if rule_type == "DOMAIN-SUFFIX" and domain in BROAD_SHARED_SUFFIXES:
+                # Skip if the suffix is service-owned for this target
+                if target in SERVICE_OWNED_SUFFIXES and domain in SERVICE_OWNED_SUFFIXES[target]:
+                    continue
                 findings.append({
                     "severity": "WARN",
                     "check": "shared_infrastructure",

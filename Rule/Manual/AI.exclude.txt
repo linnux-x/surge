@@ -8,3 +8,8 @@ self.events.data.microsoft.com
 www.bing.com
 api.microsoftapp.net
 DOMAIN-SUFFIX,byteoversea.com
+# segment.io is a customer data platform (CDP) — shared service used by thousands of sites, not AI-specific.
+DOMAIN-SUFFIX,segment.io
+# sentry.io is an error tracking platform — shared service used by thousands of sites.
+# (AI-prefixed subdomains like *.my.sentry.io are retained via upstream sources)
+DOMAIN-SUFFIX,sentry.io

@@ -57,6 +57,8 @@ SHARED_THIRD_PARTY_SUFFIXES = {
     "newrelic.com",        # New Relic APM
     "nr-data.net",         # New Relic data collection
     "optimizely.com",      # A/B testing
+    "segment.io",          # Customer data platform (CDP)
+    "sentry.io",           # Error tracking platform
 }
 SHARED_THIRD_PARTY_DOMAINS = {
     "js-agent.newrelic.com",
