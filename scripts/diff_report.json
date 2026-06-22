@@ -1,17 +1,130 @@
 {
-  "generated_at": "2026-06-22T14:48:30.121339",
-  "total_added": 0,
-  "total_removed": 0,
+  "generated_at": "2026-06-22T14:59:52.955071",
+  "total_added": 28,
+  "total_removed": 6,
   "total_source_changed": 0,
   "diffs": [
     {
       "file": "AI.list",
       "prev_total": 141,
-      "curr_total": 141,
-      "added_count": 0,
+      "curr_total": 169,
+      "added_count": 28,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "0a4269c42bbe",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "166f559da3b6",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "2cf758f67bca",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "2fd8b3258bd3",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "4c96ae31dbf1",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "51d65161803a",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "5221c160340f",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "54faa00968bf",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "612c69bfa93b",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "65bc7b6b053c",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "68bf1162c028",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "6cf089f4f159",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "758624e99bed",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "7aac3e14d3bb",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "97841db724f6",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "aabcd6b3013e",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "b0e805853577",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "bb5d4970bdae",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "bf308a44188b",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "ce9f29ed7edf",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "d68cabdb1f69",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "da68fa05a4f6",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "e01d3e41b76b",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "e79e5c01e761",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "e85d094f7888",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "efede8aee155",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "f829593e715c",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "fe0aaee956fd",
+          "source": "ConnersHua AI"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -117,12 +230,37 @@
     {
       "file": "Global.list",
       "prev_total": 29436,
-      "curr_total": 29436,
+      "curr_total": 29430,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 6,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "4c96ae31dbf1",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "5221c160340f",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "54faa00968bf",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "612c69bfa93b",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "6cf089f4f159",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "ce9f29ed7edf",
+          "source": "blackmatrix7 Global"
+        }
+      ],
       "source_changed_sample": []
     },
     {

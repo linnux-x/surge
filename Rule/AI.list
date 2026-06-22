@@ -1,9 +1,9 @@
 # NAME: AI
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-22 22:48:14 +0800
+# UPDATED: 2026-06-22 22:59:43 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 141
+# TOTAL: 169
 
 # ======= Manual Rules ========
 # Anthropic / Claude
@@ -164,4 +164,34 @@ IP-CIDR,160.79.104.0/21,no-resolve
 IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
 IP-CIDR6,2607:6BC0::/32,no-resolve
+
+# ======= ConnersHua AI ========
+DOMAIN-SUFFIX,smoot.apple.com
+DOMAIN-SUFFIX,gateway.icloud.com
+DOMAIN,guzzoni.apple.com
+DOMAIN-SUFFIX,apps.mzstatic.com
+DOMAIN-SUFFIX,livekit.cloud
+DOMAIN,api.statsig.com
+DOMAIN,api-iam.intercom.io
+DOMAIN,openaiapi-site.azureedge.net
+DOMAIN-KEYWORD,openaiapi
+DOMAIN-KEYWORD,openaicom
+DOMAIN-SUFFIX,openrouter.ai
+DOMAIN-SUFFIX,cursor-cdn.com
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,cursorapi.com
+DOMAIN-SUFFIX,zed.dev
+DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,bard.google.com
+DOMAIN-KEYWORD,notebooklm.google
+DOMAIN-KEYWORD,labs.google
+DOMAIN-SUFFIX,grazie.ai
+DOMAIN,imagine.meta.com
+DOMAIN,copilot.microsoft.com
+DOMAIN-SUFFIX,pplx.ai
+DOMAIN,pplx-res.cloudinary.com
+DOMAIN-SUFFIX,cici.com,extended-matching
+DOMAIN-SUFFIX,ciciai.com,extended-matching
+DOMAIN-SUFFIX,dola.com,extended-matching
 

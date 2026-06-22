@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-22 22:48:14 +0800
+# UPDATED: 2026-06-22 22:59:43 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 29436
+# TOTAL: 29430
 
 # ======= blackmatrix7 Global ========
 DOMAIN,1password.drift.click
@@ -5382,9 +5382,6 @@ DOMAIN-SUFFIX,currently.com
 DOMAIN-SUFFIX,currently.net
 DOMAIN-SUFFIX,currenttime.tv
 DOMAIN-SUFFIX,curseforge.com
-DOMAIN-SUFFIX,cursor.com
-DOMAIN-SUFFIX,cursor.sh
-DOMAIN-SUFFIX,cursorapi.com
 DOMAIN-SUFFIX,curve.fi
 DOMAIN-SUFFIX,curvybbwwives.com
 DOMAIN-SUFFIX,curvyerotic.com
@@ -8714,7 +8711,6 @@ DOMAIN-SUFFIX,grapheneos.social
 DOMAIN-SUFFIX,gravitytank.com
 DOMAIN-SUFFIX,gray.ac.uk
 DOMAIN-SUFFIX,graylab.ac.uk
-DOMAIN-SUFFIX,grazie.ai
 DOMAIN-SUFFIX,grcb.ac.uk
 DOMAIN-SUFFIX,gre.ac.uk
 DOMAIN-SUFFIX,greatapedictionary.ac.uk
@@ -15037,7 +15033,6 @@ DOMAIN-SUFFIX,openreality.com
 DOMAIN-SUFFIX,openrec.tv
 DOMAIN-SUFFIX,openresty.org
 DOMAIN-SUFFIX,openreview.net
-DOMAIN-SUFFIX,openrouter.ai
 DOMAIN-SUFFIX,opensciencelab.ac.uk
 DOMAIN-SUFFIX,opensciencelaboratory.ac.uk
 DOMAIN-SUFFIX,opensource.ac.uk
@@ -16124,7 +16119,6 @@ DOMAIN-SUFFIX,pparc.ac.uk
 DOMAIN-SUFFIX,ppb-mod.buzz
 DOMAIN-SUFFIX,ppe.lawyer
 DOMAIN-SUFFIX,pplah.com
-DOMAIN-SUFFIX,pplx.ai
 DOMAIN-SUFFIX,ppnnpp.com
 DOMAIN-SUFFIX,ppp91.cc
 DOMAIN-SUFFIX,ppre.ac.uk
