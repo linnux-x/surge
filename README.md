@@ -28,7 +28,7 @@
 
 | 规则文件 | 主要上游来源 | 说明 |
 |---------|-------------|------|
-| `AI.list` | SukkaW、Rabbit-Spec | AI 服务、模型 API、Apple Intelligence、AIGC 等 |
+| `AI.list` | SukkaW、Rabbit-Spec、ConnersHua | AI 服务、模型 API、Apple Intelligence、AIGC、Cursor、Zed、Groq、xAI、Doubao 等 |
 | `Apple.list` | blackmatrix7 | Apple 全系服务 |
 | `Apple_CN.list` | SukkaW | Apple 中国区与 Apple CDN 直连规则 |
 | `CDN.list` | SukkaW | CDN、静态资源、部分专用下载资源 |
@@ -216,6 +216,7 @@ python3 scripts/validate_surge_repo.py
 - [SukkaW/Surge](https://github.com/SukkaW/Surge)
 - [Rabbit-Spec/Surge](https://github.com/Rabbit-Spec/Surge)
 - [QuixoticHeart/rule-set](https://github.com/QuixoticHeart/rule-set)
+- [ConnersHua/RuleGo](https://github.com/ConnersHua/RuleGo)
 - [Telegram 官方 CIDR](https://core.telegram.org/resources/cidr.txt)
 
 工作流基于 [Rabbit-Spec/Surge](https://github.com/Rabbit-Spec/Surge) 的思路改编，并加入了本仓库自己的分类策略、校验规则和联网审查流水线。
