@@ -1,0 +1,21 @@
+#!name=VPS Monitor
+#!desc=实时查看 VPS 状态：内存 CPU 硬盘 流量 IP 信息（需在 VPS 运行 vps_monitor.py）
+#!desc=配置: 安装后修改 argument 中的 server 和 token 为你 VPS 的实际值
+#!category=📊 ▸ Monitor
+
+[Panel]
+# ───────────────────────────────────────────────────────────────
+# VPS 状态面板 — 每 30 秒自动刷新
+#
+# 前置步骤（在 VPS 上执行）：
+#   pip install vps-monitor   # 或直接运行 python3 scripts/vps_monitor.py
+#   export VPS_MONITOR_TOKEN=***   # 设置 Token
+#   nohup python3 -m vps_monitor &
+#
+# Surge 配置：
+#   把下面 server 和 token 改成你的实际值即可
+# ───────────────────────────────────────────────────────────────
+VPS-Status = title="🖥 VPS Status",icon="server.rack",icon-color="#58A6FF",script-name=vps-panel,update-interval=30,argument=server=http://YOUR_SERVER_IP:8765&token=YOUR_TOKEN
+
+[Script]
+vps-panel = script-path=https://raw.githubusercontent.com/linnux-x/surge/main/scripts/vps_monitor_panel.js,type=generic
