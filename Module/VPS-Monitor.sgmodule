@@ -1,9 +1,10 @@
 #!name=VPS Monitor
 #!desc=实时查看 VPS 状态：内存 CPU 硬盘 流量 IP
 #!category=📊 ▸ Monitor
+#!arguments=SERVER:server_address,TOKEN:access_token
 
 [Panel]
 VPS-Status = icon="server.rack",icon-color="#58A6FF",script-name=vps-panel,update-interval=30
 
 [Script]
-vps-panel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/linnux-x/surge/main/scripts/vps_monitor_panel.js,argument=server=http://45.94.40.38:8765&token=FHR2uZWirs6O6L74XDHb4BaWdvSxPs3q
+vps-panel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/linnux-x/surge/main/scripts/vps_monitor_panel.js,argument=server={{{SERVER}}}&token={{{TOKEN}}}
