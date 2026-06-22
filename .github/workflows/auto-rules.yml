@@ -520,6 +520,18 @@ jobs:
 
           prune_global_first_match_overlaps
 
+      - name: Generate Rule Manifests
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/manifest.py
+
+      - name: Generate Diff Report
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/diff_manifests.py
+
       - name: Validate Repository Invariants
         shell: bash
         run: |
@@ -540,7 +552,7 @@ jobs:
 
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add Rule/
+          git add Rule/ scripts/manifest.py scripts/diff_manifests.py scripts/diff_report.md scripts/diff_report.json
 
           if ! git diff --staged --quiet; then
             COMMIT_TIME=$(TZ="Asia/Shanghai" date +"%Y-%m-%d %H:%M:%S +0800")

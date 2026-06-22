@@ -145,6 +145,9 @@ def check_upstream_vs_generated(sources: dict[str, list[str]]) -> list[dict]:
 def check_new_shared_infrastructure() -> list[dict]:
     """Scan generated rules for newly appeared shared infrastructure patterns.
     
+    Uses manifest data when available to provide source attribution.
+    Falls back to scanning .list files directly.
+    
     Known shared infrastructure suffixes that should not appear in service rules:
     - Analytics/telemetry platforms
     - Consent/privacy platforms  
@@ -386,6 +389,19 @@ def main() -> int:
     print(f"  🔴 Errors:   {len(errors)}")
     print(f"  🟡 Warnings: {len(warns)}")
     print(f"  🔵 Info:     {len(infos)}")
+
+    # Manifest stats
+    manifest_dir = RULE_DIR / ".manifests"
+    manifest_files = list(manifest_dir.glob("*.manifest.json")) if manifest_dir.exists() else []
+    if manifest_files:
+        total_manifest_rules = 0
+        for mf in manifest_files:
+            try:
+                data = json.loads(mf.read_text(encoding="utf-8"))
+                total_manifest_rules += data.get("total_rules", 0)
+            except (json.JSONDecodeError, KeyError):
+                pass
+        print(f"  📋 Manifests: {len(manifest_files)} files, {total_manifest_rules} indexed rules")
     print()
 
     if errors:

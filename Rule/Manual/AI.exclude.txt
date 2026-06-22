@@ -13,3 +13,6 @@ DOMAIN-SUFFIX,segment.io
 # sentry.io is an error tracking platform — shared service used by thousands of sites.
 # (AI-prefixed subdomains like *.my.sentry.io are retained via upstream sources)
 DOMAIN-SUFFIX,sentry.io
+# Opaque ingest endpoints (e.g., o207216.ingest.sentry.io) are not service-prefixed
+# and belong to arbitrary Sentry customers — exclude them all.
+.ingest.sentry.io

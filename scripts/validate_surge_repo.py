@@ -269,6 +269,24 @@ def validate_rule_file(path: Path, errors: list[str]) -> None:
             # Check suffix matches (domain ends with .<shared_suffix>)
             if rule_type == "DOMAIN-SUFFIX" and domain_val in SHARED_THIRD_PARTY_SUFFIXES:
                 errors.append(f"{rel(path)}:{index} shared third-party suffix in service ruleset: {rule}")
+            # Also catch DOMAIN-SUFFIX of subdomains under shared suffixes
+            # (e.g., DOMAIN-SUFFIX,o207216.ingest.sentry.io)
+            elif rule_type == "DOMAIN-SUFFIX":
+                for suffix in SHARED_THIRD_PARTY_SUFFIXES:
+                    if domain_val.endswith(f".{suffix}"):
+                        # Allow if the subdomain has a clear service/brand prefix
+                        # (e.g., disney.my.sentry.io → "disney" is a brand prefix)
+                        sub = domain_val[: -(len(suffix) + 1)]
+                        first_label = sub.split(".")[0].lower()
+                        # Opaque IDs (pure digits, hex, short random) are NOT service prefixes
+                        is_opaque = (
+                            first_label.isdigit()
+                            or all(c in "0123456789abcdef" for c in first_label)
+                            or (len(first_label) <= 6 and any(c.isdigit() for c in first_label) and not first_label.isalpha())
+                        )
+                        if is_opaque:
+                            errors.append(f"{rel(path)}:{index} shared third-party subdomain in service ruleset: {rule}")
+                        break
             elif rule_type == "DOMAIN":
                 for suffix in SHARED_THIRD_PARTY_SUFFIXES:
                     if domain_val.endswith(f".{suffix}"):
