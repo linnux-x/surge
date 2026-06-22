@@ -30,17 +30,22 @@ def git_show_previous(manifest_path: Path) -> dict[str, str] | None:
             ["git", "show", f"HEAD:{rel}"],
             capture_output=True, text=True, timeout=10,
             cwd=str(ROOT),
+            check=False,
         )
-        if result.returncode == 0:
-            prev: dict[str, str] = {}
-            for line in result.stdout.splitlines():
-                parts = line.strip().split("\t", 1)
-                if len(parts) == 2:
-                    prev[parts[0]] = parts[1]
-            return prev
-    except (subprocess.TimeoutExpired, FileNotFoundError):
-        pass
-    return None
+        if result.returncode != 0:
+            # Manifest not in git yet (first run) — treat as no previous
+            return None
+        prev: dict[str, str] = {}
+        for line in result.stdout.splitlines():
+            parts = line.strip().split("\t", 1)
+            if len(parts) == 2:
+                prev[parts[0]] = parts[1]
+        return prev
+    except FileNotFoundError:
+        return None
+    except subprocess.TimeoutExpired:
+        print(f"Warning: git timeout for {rel}, treating as first run")
+        return None
 
 
 def load_current_manifest(manifest_path: Path) -> dict[str, str]:
