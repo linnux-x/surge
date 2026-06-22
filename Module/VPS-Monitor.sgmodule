@@ -3,11 +3,15 @@
 #!category=📊 ▸ Monitor
 #!arguments=SERVER:server_address,TOKEN:access_token
 
+[General]
+# 强制 VPS 直连，不走代理
+skip-proxy = %APPEND% 45.94.40.38
+
 [Panel]
 VPS-Status = icon="server.rack",icon-color="#58A6FF",script-name=vps-panel,update-interval=30
 
 [Rule]
-# VPS Monitor 端口直连，不走代理
+# 双重保障：端口级规则确保直连
 DEST-PORT,8765,DIRECT
 
 [Script]

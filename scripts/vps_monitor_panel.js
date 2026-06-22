@@ -1,6 +1,5 @@
 // VPS Monitor Panel — Surge Panel Script
-// Fetches system stats from VPS monitor server and displays in Surge panel.
-// Uses callback pattern ($httpClient.get does not support await in Surge).
+// Uses callback pattern for Surge $httpClient API.
 
 var API_BASE = "http://127.0.0.1:8765";
 var TOKEN = "changeme";
@@ -16,18 +15,20 @@ $httpClient.get(url, function(error, response, data) {
   if (error) {
     $done({
       title: "VPS Monitor",
-      content: "❌ 网络错误: " + error,
-      style: "error"
+      content: "❌ " + error,
+      icon: "server.rack",
+      "icon-color": "#FF453A"
     });
     return;
   }
   
   if (!response || response.status !== 200) {
-    var code = response ? response.status : "无响应";
+    var code = response ? response.status : "null";
     $done({
       title: "VPS Monitor",
-      content: "❌ 连接失败 (" + code + ")\n请检查 server 和 token",
-      style: "error"
+      content: "❌ HTTP " + code + "\nserver: " + API_BASE,
+      icon: "server.rack",
+      "icon-color": "#FF453A"
     });
     return;
   }
@@ -36,42 +37,39 @@ $httpClient.get(url, function(error, response, data) {
     var info = JSON.parse(data);
     
     // Progress bars
-    var memBar   = bar(info.memory.percent, 10);
-    var cpuPct   = Math.min(Math.round(info.cpu.load_1m / info.cpu.cores * 100), 100);
-    var cpuBar   = bar(cpuPct, 10);
-    var diskBar  = bar(info.disk.percent, 10);
+    function bar(pct, w) {
+      var f = Math.round((Math.min(pct, 100) / 100) * w);
+      var e = w - f;
+      var s = "";
+      for (var i = 0; i < f; i++) s += "█";
+      for (var i = 0; i < e; i++) s += "░";
+      return s;
+    }
     
-    var content =
-      "🧠 内存    " + memBar  + "  " + info.memory.used_mb + "MB / " + info.memory.total_mb + "MB (" + info.memory.percent + "%)" + "\n" +
-      "🖥  CPU     " + cpuBar  + "  负载 " + info.cpu.load_1m + " / " + info.cpu.cores + "核" + "\n" +
-      "💾 硬盘    " + diskBar + "  " + info.disk.used_gb + "G / " + info.disk.total_gb + "G (" + info.disk.percent + "%)" + "\n" +
-      "📡 流量    ⬆" + info.network.tx_total_mb + "MB ⬇" + info.network.rx_total_mb + "MB" + "\n" +
-      "🌐 IP      " + info.ip.public_ip + "\n" +
-      "📍 位置    " + info.ip.location + "\n" +
-      "🏢 ISP     " + info.ip.isp + "\n" +
-      "⏱ 运行    " + info.uptime;
+    var cpuPct = Math.min(Math.round(info.cpu.load_1m / info.cpu.cores * 100), 100);
+    
+    var c = "";
+    c += "🧠 内存    " + bar(info.memory.percent, 10) + "  " + info.memory.used_mb + "MB/" + info.memory.total_mb + "MB (" + info.memory.percent + "%)\n";
+    c += "🖥  CPU     " + bar(cpuPct, 10) + "  负载 " + info.cpu.load_1m + "/" + info.cpu.cores + "核\n";
+    c += "💾 硬盘    " + bar(info.disk.percent, 10) + "  " + info.disk.used_gb + "G/" + info.disk.total_gb + "G (" + info.disk.percent + "%)\n";
+    c += "📡 流量    ⬆" + info.network.tx_total_mb + "MB ⬇" + info.network.rx_total_mb + "MB\n";
+    c += "🌐 IP      " + info.ip.public_ip + "\n";
+    c += "📍 位置    " + info.ip.location + "\n";
+    c += "🏢 ISP     " + info.ip.isp + "\n";
+    c += "⏱ 运行    " + info.uptime;
     
     $done({
       title: "🖥 " + info.hostname,
-      content: content,
+      content: c,
       icon: "server.rack",
       "icon-color": "#58A6FF"
     });
   } catch (e) {
     $done({
       title: "VPS Monitor",
-      content: "❌ 解析错误: " + e.message,
-      style: "error"
+      content: "❌ 解析失败: " + e.message,
+      icon: "server.rack",
+      "icon-color": "#FF453A"
     });
   }
 });
-
-// Helper: text progress bar
-function bar(percent, width) {
-  var filled = Math.round((Math.min(percent, 100) / 100) * width);
-  var empty = width - filled;
-  var s = "";
-  for (var i = 0; i < filled; i++) s += "█";
-  for (var i = 0; i < empty; i++) s += "░";
-  return s;
-}
