@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-22T23:02:06.573874",
-  "total_added": 164428,
+  "generated_at": "2026-06-22T14:02:55.221423",
+  "total_added": 164426,
   "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
     {
       "file": "AI.list",
       "prev_total": 0,
-      "curr_total": 143,
-      "added_count": 143,
+      "curr_total": 141,
+      "added_count": 141,
       "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [
@@ -113,10 +113,6 @@
           "source": "SukkaW Apple Intelligence"
         },
         {
-          "id": "2fcab5709f54",
-          "source": "Rabbit-Spec AIGC"
-        },
-        {
           "id": "3126b3df2cb3",
           "source": "Rabbit-Spec AIGC"
         },
@@ -178,10 +174,6 @@
         },
         {
           "id": "487b75298d54",
-          "source": "Rabbit-Spec AIGC"
-        },
-        {
-          "id": "4a639ef268f4",
           "source": "Rabbit-Spec AIGC"
         },
         {
@@ -411,6 +403,14 @@
         {
           "id": "b1fd7266b0f8",
           "source": "Manual Rules"
+        },
+        {
+          "id": "b3f222fc947b",
+          "source": "Rabbit-Spec AIGC"
+        },
+        {
+          "id": "b5afdc25db21",
+          "source": "SukkaW AI"
         }
       ],
       "removed_sample": [],

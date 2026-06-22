@@ -1,12 +1,12 @@
 # Surge Rule Diff Report
-Generated: 2026-06-22T23:02:06.573874
+Generated: 2026-06-22T14:02:55.221423
 
 ## Summary
 
 | Metric | Count |
 |--------|-------|
 | Files changed | 23 |
-| Rules added | 164428 |
+| Rules added | 164426 |
 | Rules removed | 0 |
 | Source attribution changed | 0 |
 
@@ -14,7 +14,7 @@ Generated: 2026-06-22T23:02:06.573874
 
 | File | Prev | Curr | Added | Removed | Source Δ |
 |------|------|------|-------|---------|----------|
-| AI.list | 0 | 143 | +143 | -0 | ~0 |
+| AI.list | 0 | 141 | +141 | -0 | ~0 |
 | Apple.list | 0 | 1549 | +1549 | -0 | ~0 |
 | Apple_CN.list | 0 | 231 | +231 | -0 | ~0 |
 | CDN.list | 0 | 25 | +25 | -0 | ~0 |
@@ -40,7 +40,7 @@ Generated: 2026-06-22T23:02:06.573874
 
 ## AI.list
 
-**Added: 143** (showing first 100)
+**Added: 141** (showing first 100)
 ```
   + [Manual Rules] 0429516d2a34
   + [Manual Rules] 047cc5f8bd4d
@@ -67,7 +67,6 @@ Generated: 2026-06-22T23:02:06.573874
   + [SukkaW AI] 2ac4cc56f6fd
   + [Rabbit-Spec AIGC] 2d5f3d8ff292
   + [SukkaW Apple Intelligence] 2ebcc8481ab6
-  + [Rabbit-Spec AIGC] 2fcab5709f54
   + [Rabbit-Spec AIGC] 3126b3df2cb3
   + [Manual Rules] 32298f07fdaf
   + [SukkaW Apple Intelligence] 337c1afb34dc
@@ -84,7 +83,6 @@ Generated: 2026-06-22T23:02:06.573874
   + [Rabbit-Spec AIGC] 44dc5464ac50
   + [Manual Rules] 46ac15f42c69
   + [Rabbit-Spec AIGC] 487b75298d54
-  + [Rabbit-Spec AIGC] 4a639ef268f4
   + [Rabbit-Spec AIGC] 4b62465a2d32
   + [SukkaW AI] 4dad2df0bf10
   + [Rabbit-Spec AIGC] 4de2dc35a0b8
@@ -142,7 +140,9 @@ Generated: 2026-06-22T23:02:06.573874
   + [SukkaW AI] b0b47ea32317
   + [Rabbit-Spec AIGC] b1e6274c779e
   + [Manual Rules] b1fd7266b0f8
-  ... and 43 more
+  + [Rabbit-Spec AIGC] b3f222fc947b
+  + [SukkaW AI] b5afdc25db21
+  ... and 41 more
 ```
 
 ## Apple.list
