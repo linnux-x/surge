@@ -89,6 +89,26 @@ Community rulesets often include non-service-proprietary shared infrastructure (
 - **Ownership judgment:** Third-party platforms (Adobe, New Relic, AWS) default to Global unless service-prefixed.
 - **Geographic归属:** China-domestic domains go to China (DIRECT), not overseas service rules.
 
+## Online Audit Pipeline
+
+Every workflow run must pass online audit (`scripts/audit_rules.py`) before committing to GitHub:
+
+1. **Upstream reachability** — all configured source URLs must be accessible
+2. **Upstream vs generated comparison** — flag abnormal rule-count ratios
+3. **Shared infrastructure scan** — broader than `validate_surge_repo.py`; catches new analytics/telemetry/consent/ad-tech/cloud/CDN parent suffixes in service rules
+4. **Surge documentation check** — detect new rule types from the LLM index
+5. **Exclude coverage** — verify exclude patterns are effective
+
+Audit severity levels:
+- 🔴 **ERROR** — blocks commit (e.g., unreachable upstream)
+- 🟡 **WARN** — requires review (e.g., new shared infrastructure found)
+- 🔵 **INFO** — for awareness (e.g., upstream rule count difference)
+
+**Continuous evolution:**
+- WARN findings confirmed as needing exclusion → immediately add to `Rule/Manual/*.exclude.txt`
+- New shared infrastructure patterns → update both `scripts/audit_rules.py` (BROAD_SHARED_SUFFIXES) and `scripts/validate_surge_repo.py` (SHARED_THIRD_PARTY_SUFFIXES)
+- Lessons learned → update skill references and Hermes memory
+
 ## Skill Maintenance
 
 - After real ruleset work, update the skill only when a durable, reproducible lesson improves future tasks.

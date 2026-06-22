@@ -526,6 +526,12 @@ jobs:
           set -euo pipefail
           python3 scripts/validate_surge_repo.py
 
+      - name: Online Audit (Upstream & Shared Infrastructure)
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/audit_rules.py
+
       - name: Commit and Push Changes
         if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != 'true' }}
         shell: bash
