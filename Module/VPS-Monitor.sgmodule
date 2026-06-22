@@ -1,8 +1,8 @@
 #!name=VPS Monitor
 #!desc=实时查看 VPS 状态：内存 CPU 硬盘 流量 IP 信息（需在 VPS 运行 vps_monitor.py）
 #!category=📊 ▸ Monitor
-#!arguments=SERVER:http://YOUR_SERVER_IP:8765,TOKEN:YOUR_TOKEN
-#!arguments-desc=[参数设置]\n\n⓵ SERVER: VPS 地址与端口，如 http://1.2.3.4:8765\n\n⓶ TOKEN: 访问令牌，与服务器环境变量 VPS_MONITOR_TOKEN 一致\n\n获取方式：在 VPS 运行 cat /etc/systemd/system/vps-monitor.service | grep VPS_MONITOR_TOKEN
+#!arguments=SERVER:server_address,TOKEN:access_token
+#!arguments-desc=[参数设置]\n\n⓵ SERVER: VPS 地址与端口\n   例: http://1.2.3.4:8765\n\n⓶ TOKEN: 访问令牌\n   与 VPS_MONITOR_TOKEN 一致\n\n获取: cat /etc/systemd/system/vps-monitor.service | grep VPS_MONITOR_TOKEN
 #!system=mac,ios
 
 [Panel]
