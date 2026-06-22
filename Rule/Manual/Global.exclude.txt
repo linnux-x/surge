@@ -208,6 +208,3 @@ DOMAIN-SUFFIX,wifiman.ubncloud.com
 DOMAIN-SUFFIX,wifiman-stability-test.ubncloud.com
 DOMAIN,open.cachefly.net
 DOMAIN-SUFFIX,speedtest.linode.com
-
-# Exact Speedtest host; keep in Speedtest.list rather than Global.
-DOMAIN-SUFFIX,speedtest.hk.chinamobile.com
