@@ -20,8 +20,7 @@
 | `scripts/diff_report.json` | 差异报告（JSON） |
 | `scripts/validate_surge_repo.py` | 仓库不变量检查器 |
 | `scripts/audit_rules.py` | 联网审查脚本（上游可达、共享基础设施、Surge 文档等） |
-| `.github/workflows/auto-rules.yml` | 主要规则同步工作流 |
-| `.github/workflows/sync-dns-mapping.yml` | DNS Mapping 模块同步工作流 |
+| `.github/workflows/auto-rules.yml` | 规则同步 + DNS Mapping 模块同步 |
 | `AGENT.md` | 项目指令文档（用户偏好、分类策略、验证标准——所有 agent 必读） |
 | `.codex/skills/surge-ruleset-builder/` | Codex 规则维护 Skill 精简入口 |
 
@@ -111,10 +110,12 @@ gh workflow run auto-rules.yml
    ├─ Surge 文档更新检查
    └─ exclude 排除覆盖率
   ↓
-6. 提交到 GitHub（规则 + 清单 + 差异报告）
+6. 同步 DNS Mapping 模块
+  ↓
+7. 提交到 GitHub（规则 + 清单 + 差异报告 + 模块）
 ```
 
-> 流程中的 **Generate Rule Manifests** 和 **Online Audit** 步骤由本仓库新增，确保每次变更有据可查、可审计。
+> 流程中的 **Generate Rule Manifests**、**Online Audit** 和 **Sync DNS Mapping** 步骤由本仓库新增或合并，确保每次变更有据可查、可审计。
 
 ### 清单索引系统
 
