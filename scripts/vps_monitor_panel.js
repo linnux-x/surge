@@ -50,19 +50,23 @@ $httpClient.get(url, function(error, response, data) {
     var txGb = (info.network.tx_total_mb / 1024).toFixed(1);
     var rxGb = (info.network.rx_total_mb / 1024).toFixed(1);
 
-    // Pad label to 4 cells; right-align percentage to 5 chars for column alignment
-    function l(s) { while (s.length < 4) s += " "; return s; }
-    function r(s, w) { s = String(s); while (s.length < w) s = " " + s; return s; }
+    // Pad label to 6 visual cells so data after it starts at same column
+    function padLabel(s) {
+      var w = 0, a = s.split("");
+      for (var i = 0; i < a.length; i++) w += a[i].charCodeAt(0) > 127 ? 2 : 1;
+      while (w < 6) { s += " "; w++; }
+      return s;
+    }
 
     var c = "";
-    c += "🧠 " + l("内存") + r(info.memory.percent + "%", 5) + "  " + memUsedG + "G/" + memTotalG + "G\n";
-    c += "🖥 " + l("CPU") + r(cpuPct + "%", 5) + "  " + info.cpu.load_1m + "/" + info.cpu.cores + "核\n";
-    c += "💾 " + l("硬盘") + r(info.disk.percent + "%", 5) + "  " + info.disk.used_gb + "G/" + info.disk.total_gb + "G\n";
-    c += "📡 " + l("流量") + "⬆" + txGb + "G ⬇" + rxGb + "G\n";
-    c += "🌐 " + l("IP") + info.ip.public_ip + "\n";
-    c += "📍 " + l("位置") + info.ip.location + "\n";
-    c += "🏢 " + l("ISP") + info.ip.isp + "\n";
-    c += "⏱ " + l("运行") + info.uptime;
+    c += "🧠 " + padLabel("内存") + info.memory.percent + "% " + memUsedG + "G/" + memTotalG + "G\n";
+    c += "🖥 " + padLabel("CPU") + cpuPct + "% " + info.cpu.load_1m + "/" + info.cpu.cores + "核\n";
+    c += "💾 " + padLabel("硬盘") + info.disk.percent + "% " + info.disk.used_gb + "G/" + info.disk.total_gb + "G\n";
+    c += "📡 " + padLabel("流量") + "⬆" + txGb + "G ⬇" + rxGb + "G\n";
+    c += "🌐 " + padLabel("IP") + info.ip.public_ip + "\n";
+    c += "📍 " + padLabel("位置") + info.ip.location + "\n";
+    c += "🏢 " + padLabel("ISP") + info.ip.isp + "\n";
+    c += "⏱ " + padLabel("运行") + info.uptime;
     
     $done({
       title: "🖥 " + info.hostname,
