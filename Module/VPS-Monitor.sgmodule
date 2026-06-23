@@ -1,7 +1,7 @@
 #!name=VPS Monitor
 #!desc=实时查看 VPS 状态。长按编辑填写 IP 和 Token
 #!category=📊 ▸ Monitor
-#!arguments=SERVER=vps_ip&TOKEN=access_token
+#!arguments=SERVER:vps_ip,TOKEN:access_token
 
 [Panel]
 VPS-Status = icon="server.rack",icon-color="#58A6FF",script-name=vps-panel
