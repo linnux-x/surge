@@ -1,0 +1,230 @@
+{
+  "https://core.telegram.org/resources/cidr.txt": {
+    "content_length": "227",
+    "etag": "\"61573cab-e3\"",
+    "last_modified": "Fri, 01 Oct 2021 16:51:55 GMT",
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/AI.list": {
+    "content_length": "2295",
+    "etag": "\"a21ae020d6b6444bfb503528c25a2be46353157cf57cd55b7101b96aa93940b4\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/cncidr.txt": {
+    "content_length": "140981",
+    "etag": "\"8e441248c77a948f67c295124c1b94923815587555e8a50dcfee10d04176da8d\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/QuixoticHeart/rule-set/refs/heads/ruleset/surge/forum.list": {
+    "content_length": "2771",
+    "etag": "\"309c400fe6f9a3acfc8a463a04bd45e353f7dbe8543bd2ef22b68193273cda3e\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/QuixoticHeart/rule-set/refs/heads/ruleset/surge/socialmedia.list": {
+    "content_length": "25243",
+    "etag": "\"267df75d382ef5bb033820f3ca4cb9d143e66464748526eae500589b808cc8b5\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
+    "content_length": "4031",
+    "etag": "\"f8aba415efadfec9378ac982bde23d1fe946487f67796863007c7b5c68fb32dc\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
+    "content_length": "101025",
+    "etag": "\"ed2a344e19978266dc788dedfaa5dbba254eec4b1521139c0546f61b2c9d66b4\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/ChinaCIDR.list": {
+    "content_length": "141586",
+    "etag": "\"e2e93cffe6082f52733fb0679c78178410fade115f146761dbfb7806a5e2d800\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/SukkaW/Surge/master/Source/domainset/download.conf": {
+    "content_length": "34578",
+    "etag": "\"503fdfc5e41d38b97bda33c9698d00c6f2e81840e0c2fb95a81876afbea91434\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/SukkaW/Surge/master/Source/domainset/game-download.conf": {
+    "content_length": "2029",
+    "etag": "\"e57a5c2beb8780e55356cab3731fbd0b69d041a1f9e13c81faf642544734a679\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/SukkaW/Surge/master/Source/domainset/speedtest.conf": {
+    "content_length": "2493",
+    "etag": "\"f2e0e6a0f00dfa4c66e5e4d9d15606d0de859885425cda262be4d9db86d28b0a\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/SukkaW/Surge/master/Source/non_ip/ai.conf": {
+    "content_length": "3852",
+    "etag": "\"eff15baaab50fc5e7fe8c15651f970574bb75606c56d134eaa8da9c036ffae4a\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/SukkaW/Surge/master/Source/non_ip/apple_intelligence.conf": {
+    "content_length": "672",
+    "etag": "\"ec4b49c7d83cce2d08f6ea72a02812ce29cfde2cb94997239dea7618b878c032\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/SukkaW/Surge/master/Source/non_ip/cdn.conf": {
+    "content_length": "3775",
+    "etag": "\"8e53f934afd5cb16164ba829238d363f5871c5cfd46d18cfdd881467c8c924c4\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/SukkaW/Surge/master/Source/non_ip/domestic.conf": {
+    "content_length": "17019",
+    "etag": "\"c6bd64cb09eb8389665fce4b37b6208cf97fa919396697c4a8e2746b0ed497d3\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All_No_Resolve.list": {
+    "content_length": "51402",
+    "etag": "\"051d65cbf3dbff5585fc3397246b6567c9e1d17436e0218d346184a0fa93e597\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs.list": {
+    "content_length": "813143",
+    "etag": "\"16dd652da50ebdf5f304d8435ab36deb809a1c98765b3e3a2c229959e61672b3\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMaxNoIP/ChinaMaxNoIP_Domain.list": {
+    "content_length": "1536170",
+    "etag": "\"ed1a8e6934f6194b70ef8f64422f901a4e485fe87bdf15b5c78db8590b8f3316\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMedia/ChinaMedia.list": {
+    "content_length": "14354",
+    "etag": "\"82d51d635e86a768b2b1d15a690a71b09d18970019751af48031aa35cbcc7327\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Disney/Disney.list": {
+    "content_length": "5674",
+    "etag": "\"5d30386a54681aa988d5af9015f2d68274e4c5ced64f4fa836c3e4c3c0f3d3f4\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Facebook/Facebook.list": {
+    "content_length": "17399",
+    "etag": "\"c376a9f56a09c2269d1cbbed62b093ece4f2121a490f8a81c4b01495106bf6b2\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list": {
+    "content_length": "19223",
+    "etag": "\"f52a2818471ae99b6c4cea014b0404fddd841a411aedd0864052476af3207796\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_All_No_Resolve.list": {
+    "content_length": "1000719",
+    "etag": "\"774a486e6a411a414dd52947569f5ea0f18ee42edc4b20154db4fc65c1a205f7\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalMedia/GlobalMedia_All_No_Resolve.list": {
+    "content_length": "73351",
+    "etag": "\"0a9d29c0c82240c1a52075813eadfa507888e36127dce1ee4f24bd1107f3cf2a\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list": {
+    "content_length": "19985",
+    "etag": "\"4737c710c36ba918b009e9edb1051b0519a010b17cac4ce2981c6368cfc2a904\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Instagram/Instagram.list": {
+    "content_length": "287",
+    "etag": "\"c4b41a7c42259da40b14f22e72de9bb76d60841065639773a85be4f79b0abc82\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list": {
+    "content_length": "20605",
+    "etag": "\"ec5e8ad103876333f1329755c90e4a975785376d89ce658b14480a29a6121aef\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list": {
+    "content_length": "40424",
+    "etag": "\"8b851c62860c5ee22400f6d54a63f950a4172df8abc1f8878dae04818bc322cb\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list": {
+    "content_length": "7859",
+    "etag": "\"9fa4f655fc7cf78ab5cfbdf56cd8f04629c9b4d7c2734eadb86337ff64b70487\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list": {
+    "content_length": "1680",
+    "etag": "\"3599a86ca0f449af23b1765909e044def3713bc67ca68c3f70c754f4c901a80a\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TikTok/TikTok.list": {
+    "content_length": "1156",
+    "etag": "\"4703a9264227ac36f5fca9a3b5b21e5883cda52120f15ff18181286ae40caa96\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitter/Twitter.list": {
+    "content_length": "1116",
+    "etag": "\"350c408e9c9f10e75e1f28751997f5200ada7905b192a317c5b04b8846ff4762\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/WeChat/WeChat.list": {
+    "content_length": "10185",
+    "etag": "\"0b3be77ee8cdb97b03c13bd4adf9a08136f9b0e88132de3a364ffb5a2124af36\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list": {
+    "content_length": "5451",
+    "etag": "\"a4394b3a734db56247e5115776e90748ff94ee793fc1024e662412955ae3e013\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://ruleset.skk.moe/List/domainset/apple_cdn.conf": {
+    "content_length": null,
+    "etag": null,
+    "last_modified": null,
+    "source_available": false
+  },
+  "https://ruleset.skk.moe/List/ip/telegram.conf": {
+    "content_length": null,
+    "etag": "W/\"28bbf9e67893cbffe6d17b83ba12e924\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://ruleset.skk.moe/List/non_ip/apple_cn.conf": {
+    "content_length": "766",
+    "etag": "\"f55faa5fb4f679d50098f9efe92299d0\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf": {
+    "content_length": null,
+    "etag": null,
+    "last_modified": null,
+    "source_available": false
+  }
+}

@@ -5,8 +5,8 @@ name: Auto-Surge-Rules
 
 on:
   schedule:
-    # 04:00 Asia/Shanghai every day
-    - cron: "0 20 * * *"
+    # 06:00 JST (21:00 UTC) every day
+    - cron: "0 21 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -41,16 +41,44 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Check Upstream Updates
+        id: check_upstream
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Run check — exits 1 if changes found; both paths capture output
+          output=$(python3 scripts/check_upstream_updates.py 2>&1) || true
+          echo "$output"
+          # Parse the last JSON line as the summary
+          summary=$(echo "$output" | grep '^{' | tail -1)
+          changed=$(echo "$summary" | python3 -c "import json,sys; d=json.load(sys.stdin); print(json.dumps(d['rulesets']))" 2>/dev/null || echo "[]")
+          echo "changed_rulesets=$changed" >> "$GITHUB_OUTPUT"
+          count=$(echo "$summary" | python3 -c "import json,sys; d=json.load(sys.stdin); print(len(d['rulesets']))" 2>/dev/null || echo "0")
+          echo "changed_count=$count" >> "$GITHUB_OUTPUT"
+
       - name: Download, Merge and Filter Rules
+        id: generate
+        if: ${{ fromJson(steps.check_upstream.outputs.changed_count) > 0 }}
         shell: bash
         run: |
           set -euo pipefail
 
+          # Parse the list of changed rulesets
+          IFS=' ' read -ra CHANGED < <(echo '${{ steps.check_upstream.outputs.changed_rulesets }}' | python3 -c "import json,sys; [print(r) for r in json.load(sys.stdin)]")
+
+          should_process() {
+            local target="$1"
+            for c in "${CHANGED[@]}"; do
+              [ "$c" = "$target" ] && return 0
+            done
+            return 1
+          }
+
           mkdir -p "$MANUAL_DIR"
           UPDATE_TIME=$(TZ="Asia/Shanghai" date +"%Y-%m-%d %H:%M:%S +0800")
 
-          # SukkaW rulesets can include a marker/test domain that is not a real routing rule.
-          # Drop it globally before conversion, dedupe, validation, and output.
+          # ── Helper functions (unchanged from original) ──────────────────
+
           SUKKA_MARKER_RE='7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset[.]skk[.]moe'
 
           clean_source() {
@@ -306,6 +334,8 @@ jobs:
             fi
           }
 
+          # ── Process a single rule (unchanged) ──────────────────────────
+
           process_rule() {
             local target_name=$1
             local display_name=$2
@@ -345,6 +375,8 @@ jobs:
 
             rm "$temp_body"
           }
+
+          # ── Global overlap prune (unchanged) ───────────────────────────
 
           prune_global_first_match_overlaps() {
             local target_path="$RULE_DIR/Global.list"
@@ -394,117 +426,174 @@ jobs:
             validate_rules "$target_path" "Global.list"
           }
 
+          # ── Source URIs ────────────────────────────────────────────────
+
           BM7="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge"
           SUKKA="https://raw.githubusercontent.com/SukkaW/Surge/master/Source"
           RABBIT="https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules"
           QUIXOTIC="https://raw.githubusercontent.com/QuixoticHeart/rule-set/refs/heads/ruleset/surge"
           CHUA="https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra"
 
-          process_rule "AI.list" "AI" \
-            "SukkaW AI|$SUKKA/non_ip/ai.conf" \
-            "SukkaW Apple Intelligence|$SUKKA/non_ip/apple_intelligence.conf" \
-            "Rabbit-Spec AIGC|$RABBIT/AIGC.list" \
-            "ConnersHua AI|$CHUA/AI.list"
+          # ── Conditional rule generation ────────────────────────────────
 
-          process_rule "Apple.list" "Apple" \
-            "blackmatrix7 Apple|$BM7/Apple/Apple_All_No_Resolve.list"
+          if should_process "AI.list"; then
+            process_rule "AI.list" "AI" \
+              "SukkaW AI|$SUKKA/non_ip/ai.conf" \
+              "SukkaW Apple Intelligence|$SUKKA/non_ip/apple_intelligence.conf" \
+              "Rabbit-Spec AIGC|$RABBIT/AIGC.list" \
+              "ConnersHua AI|$CHUA/AI.list"
+          fi
 
-          process_rule "Apple_CN.list" "Apple_CN" \
-            "SukkaW Apple CN|https://ruleset.skk.moe/List/non_ip/apple_cn.conf" \
-            "SukkaW Apple CDN|https://ruleset.skk.moe/List/domainset/apple_cdn.conf|domainset"
+          if should_process "Apple.list"; then
+            process_rule "Apple.list" "Apple" \
+              "blackmatrix7 Apple|$BM7/Apple/Apple_All_No_Resolve.list"
+          fi
 
-          process_rule "CDN.list" "CDN" \
-            "SukkaW CDN|$SUKKA/non_ip/cdn.conf"
+          if should_process "Apple_CN.list"; then
+            process_rule "Apple_CN.list" "Apple_CN" \
+              "SukkaW Apple CN|https://ruleset.skk.moe/List/non_ip/apple_cn.conf" \
+              "SukkaW Apple CDN|https://ruleset.skk.moe/List/domainset/apple_cdn.conf|domainset"
+          fi
 
-          process_rule "Download.list" "Download" \
-            "SukkaW Download|$SUKKA/domainset/download.conf|domainset" \
-            "SukkaW Game Download|$SUKKA/domainset/game-download.conf|domainset"
+          if should_process "CDN.list"; then
+            process_rule "CDN.list" "CDN" \
+              "SukkaW CDN|$SUKKA/non_ip/cdn.conf"
+          fi
 
-          process_rule "China.list" "China" \
-            "SukkaW Domestic|$SUKKA/non_ip/domestic.conf" \
-            "blackmatrix7 ChinaMaxNoIP Domain|$BM7/ChinaMaxNoIP/ChinaMaxNoIP_Domain.list|domainset" \
-            "Rabbit-Spec China|$RABBIT/China.list"
+          if should_process "Download.list"; then
+            process_rule "Download.list" "Download" \
+              "SukkaW Download|$SUKKA/domainset/download.conf|domainset" \
+              "SukkaW Game Download|$SUKKA/domainset/game-download.conf|domainset"
+          fi
 
-          process_rule "China_IP.list" "China_IP" \
-            "Loyalsoldier China CIDR|https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/cncidr.txt" \
-            "blackmatrix7 China IPs|$BM7/ChinaIPs/ChinaIPs.list" \
-            "Rabbit-Spec China CIDR|$RABBIT/ChinaCIDR.list"
+          if should_process "China.list"; then
+            process_rule "China.list" "China" \
+              "SukkaW Domestic|$SUKKA/non_ip/domestic.conf" \
+              "blackmatrix7 ChinaMaxNoIP Domain|$BM7/ChinaMaxNoIP/ChinaMaxNoIP_Domain.list|domainset" \
+              "Rabbit-Spec China|$RABBIT/China.list"
+          fi
 
-          process_rule "ChinaMedia.list" "ChinaMedia" \
-            "blackmatrix7 ChinaMedia|$BM7/ChinaMedia/ChinaMedia.list"
+          if should_process "China_IP.list"; then
+            process_rule "China_IP.list" "China_IP" \
+              "Loyalsoldier China CIDR|https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/cncidr.txt" \
+              "blackmatrix7 China IPs|$BM7/ChinaIPs/ChinaIPs.list" \
+              "Rabbit-Spec China CIDR|$RABBIT/ChinaCIDR.list"
+          fi
 
-          process_rule "Disney.list" "Disney" \
-            "blackmatrix7 Disney|$BM7/Disney/Disney.list"
+          if should_process "ChinaMedia.list"; then
+            process_rule "ChinaMedia.list" "ChinaMedia" \
+              "blackmatrix7 ChinaMedia|$BM7/ChinaMedia/ChinaMedia.list"
+          fi
 
-          process_rule "Game.list" "Game" \
-            "blackmatrix7 Game|$BM7/Game/Game.list"
+          if should_process "Disney.list"; then
+            process_rule "Disney.list" "Disney" \
+              "blackmatrix7 Disney|$BM7/Disney/Disney.list"
+          fi
 
-          process_rule "Global.list" "Global" \
-            "blackmatrix7 Global|$BM7/Global/Global_All_No_Resolve.list"
+          if should_process "Game.list"; then
+            process_rule "Game.list" "Game" \
+              "blackmatrix7 Game|$BM7/Game/Game.list"
+          fi
 
-          process_rule "GlobalMedia.list" "GlobalMedia" \
-            "blackmatrix7 GlobalMedia|$BM7/GlobalMedia/GlobalMedia_All_No_Resolve.list"
+          if should_process "Global.list"; then
+            process_rule "Global.list" "Global" \
+              "blackmatrix7 Global|$BM7/Global/Global_All_No_Resolve.list"
+          fi
 
-          process_rule "Google.list" "Google" \
-            "blackmatrix7 Google|$BM7/Google/Google.list"
+          if should_process "GlobalMedia.list"; then
+            process_rule "GlobalMedia.list" "GlobalMedia" \
+              "blackmatrix7 GlobalMedia|$BM7/GlobalMedia/GlobalMedia_All_No_Resolve.list"
+          fi
 
-          process_rule "Microsoft.list" "Microsoft" \
-            "blackmatrix7 Microsoft|$BM7/Microsoft/Microsoft.list"
+          if should_process "Google.list"; then
+            process_rule "Google.list" "Google" \
+              "blackmatrix7 Google|$BM7/Google/Google.list"
+          fi
 
-          process_rule "Microsoft_CDN.list" "Microsoft_CDN" \
-            "SukkaW Microsoft CDN|https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf"
+          if should_process "Microsoft.list"; then
+            process_rule "Microsoft.list" "Microsoft" \
+              "blackmatrix7 Microsoft|$BM7/Microsoft/Microsoft.list"
+          fi
 
-          process_rule "Netflix.list" "Netflix" \
-            "blackmatrix7 Netflix|$BM7/Netflix/Netflix.list"
+          if should_process "Microsoft_CDN.list"; then
+            process_rule "Microsoft_CDN.list" "Microsoft_CDN" \
+              "SukkaW Microsoft CDN|https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf"
+          fi
 
-          process_rule "PayPal.list" "PayPal" \
-            "blackmatrix7 PayPal|$BM7/PayPal/PayPal.list"
+          if should_process "Netflix.list"; then
+            process_rule "Netflix.list" "Netflix" \
+              "blackmatrix7 Netflix|$BM7/Netflix/Netflix.list"
+          fi
 
-          process_rule "SocialMedia.list" "SocialMedia" \
-            "QuixoticHeart SocialMedia|$QUIXOTIC/socialmedia.list" \
-            "QuixoticHeart Forum|$QUIXOTIC/forum.list" \
-            "blackmatrix7 Facebook|$BM7/Facebook/Facebook.list" \
-            "blackmatrix7 Instagram|$BM7/Instagram/Instagram.list" \
-            "blackmatrix7 Twitter|$BM7/Twitter/Twitter.list"
+          if should_process "PayPal.list"; then
+            process_rule "PayPal.list" "PayPal" \
+              "blackmatrix7 PayPal|$BM7/PayPal/PayPal.list"
+          fi
 
-          process_rule "Speedtest.list" "Speedtest" \
-            "SukkaW Speedtest|$SUKKA/domainset/speedtest.conf|domainset"
+          if should_process "SocialMedia.list"; then
+            process_rule "SocialMedia.list" "SocialMedia" \
+              "QuixoticHeart SocialMedia|$QUIXOTIC/socialmedia.list" \
+              "QuixoticHeart Forum|$QUIXOTIC/forum.list" \
+              "blackmatrix7 Facebook|$BM7/Facebook/Facebook.list" \
+              "blackmatrix7 Instagram|$BM7/Instagram/Instagram.list" \
+              "blackmatrix7 Twitter|$BM7/Twitter/Twitter.list"
+          fi
 
-          process_rule "Telegram.list" "Telegram" \
-            "blackmatrix7 Telegram|$BM7/Telegram/Telegram.list" \
-            "Telegram Official CIDR|https://core.telegram.org/resources/cidr.txt|cidr" \
-            "SukkaW Telegram IP|https://ruleset.skk.moe/List/ip/telegram.conf"
+          if should_process "Speedtest.list"; then
+            process_rule "Speedtest.list" "Speedtest" \
+              "SukkaW Speedtest|$SUKKA/domainset/speedtest.conf|domainset"
+          fi
 
-          process_rule "TikTok.list" "TikTok" \
-            "blackmatrix7 TikTok|$BM7/TikTok/TikTok.list"
+          if should_process "Telegram.list"; then
+            process_rule "Telegram.list" "Telegram" \
+              "blackmatrix7 Telegram|$BM7/Telegram/Telegram.list" \
+              "Telegram Official CIDR|https://core.telegram.org/resources/cidr.txt|cidr" \
+              "SukkaW Telegram IP|https://ruleset.skk.moe/List/ip/telegram.conf"
+          fi
 
-          process_rule "WeChat.list" "WeChat" \
-            "blackmatrix7 WeChat|$BM7/WeChat/WeChat.list"
+          if should_process "TikTok.list"; then
+            process_rule "TikTok.list" "TikTok" \
+              "blackmatrix7 TikTok|$BM7/TikTok/TikTok.list"
+          fi
 
-          process_rule "YouTube.list" "YouTube" \
-            "blackmatrix7 YouTube|$BM7/YouTube/YouTube.list"
+          if should_process "WeChat.list"; then
+            process_rule "WeChat.list" "WeChat" \
+              "blackmatrix7 WeChat|$BM7/WeChat/WeChat.list"
+          fi
 
-          prune_global_first_match_overlaps
+          if should_process "YouTube.list"; then
+            process_rule "YouTube.list" "YouTube" \
+              "blackmatrix7 YouTube|$BM7/YouTube/YouTube.list"
+          fi
+
+          # ── Prune Global overlaps if anything changed ──────────────────
+          if [ ${#CHANGED[@]} -gt 0 ]; then
+            prune_global_first_match_overlaps
+          fi
 
       - name: Generate Rule Manifests
+        if: ${{ fromJson(steps.check_upstream.outputs.changed_count) > 0 }}
         shell: bash
         run: |
           set -euo pipefail
           python3 scripts/manifest.py
 
       - name: Generate Diff Report
+        if: ${{ fromJson(steps.check_upstream.outputs.changed_count) > 0 }}
         shell: bash
         run: |
           set -euo pipefail
           python3 scripts/diff_manifests.py
 
       - name: Validate Repository Invariants
+        if: ${{ fromJson(steps.check_upstream.outputs.changed_count) > 0 }}
         shell: bash
         run: |
           set -euo pipefail
           python3 scripts/validate_surge_repo.py
 
       - name: Online Audit (Upstream & Shared Infrastructure)
+        if: ${{ fromJson(steps.check_upstream.outputs.changed_count) > 0 }}
         shell: bash
         run: |
           set -euo pipefail
@@ -522,14 +611,14 @@ jobs:
           sed -i '2s|^#!desc=.*|#!desc=本地 DNS 映射，优化国内常用服务与局域网域名解析|' Module/DNS-Mapping.sgmodule
 
       - name: Commit and Push Changes
-        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != 'true' }}
+        if: ${{ fromJson(steps.check_upstream.outputs.changed_count) > 0 }}
         shell: bash
         run: |
           set -euo pipefail
 
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add Rule/ Rule/.manifests/ Module/ scripts/manifest.py scripts/diff_manifests.py scripts/diff_report.md scripts/diff_report.json
+          git add Rule/ Rule/.manifests/ Module/ scripts/manifest.py scripts/diff_manifests.py scripts/diff_report.md scripts/diff_report.json scripts/check_upstream_updates.py scripts/source_state.json
 
           if ! git diff --staged --quiet; then
             COMMIT_TIME=$(TZ="Asia/Shanghai" date +"%Y-%m-%d %H:%M:%S +0800")
