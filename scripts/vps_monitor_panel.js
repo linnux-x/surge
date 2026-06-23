@@ -1,9 +1,7 @@
 // VPS Monitor Panel — Surge Panel Script
 // Uses callback pattern for Surge $httpClient API.
+// Configure via module #!arguments: SERVER (IP only) and TOKEN.
 
-// No secrets hardcoded — configure via module #!arguments:
-// long-press module → edit SERVER (IP only, e.g. 45.94.40.38) and TOKEN.
-// Port 8765 is fixed in the script (avoids : conflict in #!arguments).
 var API_BASE = "http://127.0.0.1:8765";
 var TOKEN = "changeme";
 
@@ -26,28 +24,27 @@ $httpClient.get(url, function(error, response, data) {
     });
     return;
   }
-  
+
   if (!response || response.status !== 200) {
     var code = response ? response.status : "null";
     $done({
       title: "VPS Monitor",
-      content: "❌ HTTP " + code + "\nserver: " + API_BASE,
+      content: "❌ HTTP " + code + "\\nserver: " + API_BASE,
       icon: "server.rack",
       "icon-color": "#FF453A"
     });
     return;
   }
-  
+
   try {
     var info = JSON.parse(data);
-    
+
     var cpuPct = Math.min(Math.round(info.cpu.load_1m / info.cpu.cores * 100), 100);
     var memUsedG = (info.memory.used_mb / 1024).toFixed(1);
     var memTotalG = (info.memory.total_mb / 1024).toFixed(1);
     var txGb = (info.network.tx_total_mb / 1024).toFixed(1);
     var rxGb = (info.network.rx_total_mb / 1024).toFixed(1);
 
-    // Pad label to 6 visual cells so data after it starts at same column
     function padLabel(s) {
       var w = 0, a = s.split("");
       for (var i = 0; i < a.length; i++) w += a[i].charCodeAt(0) > 127 ? 2 : 1;
@@ -64,7 +61,7 @@ $httpClient.get(url, function(error, response, data) {
     c += "📍 " + padLabel("位置") + info.ip.location + "\n";
     c += "🏢 " + padLabel("ISP") + info.ip.isp + "\n";
     c += "⏱ " + padLabel("运行") + info.uptime;
-    
+
     $done({
       title: "🖥 " + info.hostname,
       content: c,
