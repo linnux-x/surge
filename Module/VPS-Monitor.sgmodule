@@ -1,7 +1,7 @@
 #!name=VPS Monitor
-#!desc=实时查看 VPS 状态：内存 CPU 硬盘 流量 IP。长按编辑填写 IP 和 Token
+#!desc=实时查看 VPS 状态：内存 CPU 硬盘 流量 IP。长按编辑填写 Token
 #!category=📊 ▸ Monitor
-#!arguments=SERVER:server_address,TOKEN:access_token
+#!arguments=TOKEN:access_token
 
 [Panel]
 VPS-Status = icon="server.rack",icon-color="#58A6FF",script-name=vps-panel
@@ -11,4 +11,4 @@ VPS-Status = icon="server.rack",icon-color="#58A6FF",script-name=vps-panel
 DEST-PORT,8765,DIRECT
 
 [Script]
-vps-panel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/linnux-x/surge/17da42b/scripts/vps_monitor_panel.js,argument=server={{{SERVER}}}&token={{{TOKEN}}}
+vps-panel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/linnux-x/surge/17da42b/scripts/vps_monitor_panel.js,argument=token={{{TOKEN}}}

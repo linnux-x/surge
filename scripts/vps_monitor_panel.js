@@ -1,14 +1,11 @@
 // VPS Monitor Panel — Surge Panel Script
 // Uses callback pattern for Surge $httpClient API.
-// Configure via module #!arguments: SERVER (IP only) and TOKEN.
+// IP is hardcoded (VPS address); TOKEN comes from module #!arguments.
 
-var API_BASE = "http://127.0.0.1:8765";
+var API_BASE = "http://45.94.40.38:8765";
 var TOKEN = "changeme";
 
 if (typeof $argument !== "undefined" && $argument) {
-  if ($argument.server) {
-    API_BASE = "http://" + $argument.server + ":8765";
-  }
   if ($argument.token) TOKEN = $argument.token;
 }
 
