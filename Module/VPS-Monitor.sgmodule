@@ -11,4 +11,4 @@ VPS-Status = icon="server.rack",icon-color="#58A6FF",script-name=vps-panel
 DEST-PORT,8765,DIRECT
 
 [Script]
-vps-panel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/linnux-x/surge/8110402/scripts/vps_monitor_panel.js,argument=token={{{TOKEN}}}
+vps-panel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/linnux-x/surge/6f710d5/scripts/vps_monitor_panel.js,argument=token={{{TOKEN}}}
