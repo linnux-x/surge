@@ -2,7 +2,7 @@
 // Uses callback pattern for Surge $httpClient API.
 // IP is hardcoded (VPS address); TOKEN comes from module #!arguments.
 
-var API_BASE = "http://45.94.40.38:8765";
+var API_BASE = "http://riven.linnux.cc:8765";
 var TOKEN = "changeme";
 
 if (typeof $argument !== "undefined" && $argument) {
