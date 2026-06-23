@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-23T20:07:12.527137",
-  "total_added": 21,
-  "total_removed": 68,
+  "generated_at": "2026-06-23T22:07:51.812917",
+  "total_added": 0,
+  "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -17,18 +17,13 @@
     },
     {
       "file": "Apple.list",
-      "prev_total": 1549,
+      "prev_total": 1548,
       "curr_total": 1548,
       "added_count": 0,
-      "removed_count": 1,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "a4082dfd38b1",
-          "source": "blackmatrix7 Apple"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -55,315 +50,13 @@
     },
     {
       "file": "China.list",
-      "prev_total": 112664,
+      "prev_total": 112611,
       "curr_total": 112611,
-      "added_count": 11,
-      "removed_count": 64,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "04cfed5d04aa",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "1aae3f5fc16d",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "260e85388363",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "5394da999e0c",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "5b97c461bc02",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "6358d7f06b8f",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "a4f3f3c9f347",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "c1539dd0515f",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "cd9dc6a2d50e",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "f5e6bb972aa3",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "f9ef12a34882",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "069c2d52bdc9",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "0a7ce45ca5a7",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "0c1dd6a92b33",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "15cf88540f25",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "182dae80575b",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "20dd0d67de72",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "22a0cec395fa",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "22d74accffde",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "27df5354eb84",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "28777417c657",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "2d09ff8c1bf0",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "309e66020d70",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "3207997344a8",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "36a8b7cf6056",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "3bd4f077a092",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "3c9b8eb7a4ca",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "42bb4d13f49d",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "432b985fc5f6",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "4653fe60fcda",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "55a60b2b99c8",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "592b96de76bd",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "604fdabe1194",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "607b9b9622bf",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "6083d7f74797",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "6f4bea642d9f",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "7068b2e526bf",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "70738ea3c60c",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "7a6c6c208f02",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "7cdfec1d3895",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "809bf73fdcfd",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "85fff1372e25",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "91a43700d489",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "940a885a6aa0",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "96f105c354d2",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "9a52bdfe451d",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "a0c0cfd21101",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "a3720a23eff8",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "a91121670962",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "a946b908eca7",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "acc0cc6bfc58",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "ad994e30bd58",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "b76ccaaf6d14",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "c3d2451f8882",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "c7cd11f592dd",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "cad79379a27d",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "ccaf321af0b8",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "cdaf3ee2cd96",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "ce56358c0a0f",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "cffb11c64e55",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "d0ee16c8586f",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "d8a39be4f93d",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "da7fcf7806b1",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "daae3e39a59a",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "de13dc9230de",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "e098dd932ece",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "e2f1d3cd8c3a",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "e45b73164951",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "eb72cce31de9",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "f4c2da27eeb0",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "f6a6dd8e8299",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "f9a3b5720075",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "fa91bc2bcd79",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "fda6acd44458",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        },
-        {
-          "id": "fef5110deaeb",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -379,43 +72,13 @@
     },
     {
       "file": "China_IP.list",
-      "prev_total": 11426,
+      "prev_total": 11431,
       "curr_total": 11431,
-      "added_count": 6,
-      "removed_count": 1,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "5a2151112e6d",
-          "source": "blackmatrix7 China IPs"
-        },
-        {
-          "id": "7afd957ba698",
-          "source": "blackmatrix7 China IPs"
-        },
-        {
-          "id": "a9a0a5b2c5b6",
-          "source": "blackmatrix7 China IPs"
-        },
-        {
-          "id": "bb52ec8766ce",
-          "source": "blackmatrix7 China IPs"
-        },
-        {
-          "id": "ceacd0d92ea8",
-          "source": "blackmatrix7 China IPs"
-        },
-        {
-          "id": "f78bcec0ccf3",
-          "source": "blackmatrix7 China IPs"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "4efacf093591",
-          "source": "blackmatrix7 China IPs"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -431,21 +94,12 @@
     },
     {
       "file": "Download.list",
-      "prev_total": 1684,
+      "prev_total": 1686,
       "curr_total": 1686,
-      "added_count": 2,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "418fced0daec",
-          "source": "SukkaW Download"
-        },
-        {
-          "id": "af2d32761982",
-          "source": "SukkaW Download"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -462,21 +116,12 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 29430,
+      "prev_total": 29432,
       "curr_total": 29432,
-      "added_count": 2,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "721b15bb1465",
-          "source": "blackmatrix7 Global"
-        },
-        {
-          "id": "b857683709e4",
-          "source": "blackmatrix7 Global"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -526,18 +171,13 @@
     },
     {
       "file": "Netflix.list",
-      "prev_total": 1154,
+      "prev_total": 1153,
       "curr_total": 1153,
       "added_count": 0,
-      "removed_count": 1,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "b7fdea40fb16",
-          "source": "blackmatrix7 Netflix"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -553,18 +193,13 @@
     },
     {
       "file": "SocialMedia.list",
-      "prev_total": 918,
+      "prev_total": 917,
       "curr_total": 917,
       "added_count": 0,
-      "removed_count": 1,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "761a7e8bb386",
-          "source": "QuixoticHeart SocialMedia"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {

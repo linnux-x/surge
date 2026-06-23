@@ -31,19 +31,19 @@
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
     "content_length": "4031",
-    "etag": "\"f8aba415efadfec9378ac982bde23d1fe946487f67796863007c7b5c68fb32dc\"",
+    "etag": "\"5d8b7c48c8826e7486cddff552aeb810971567a7a8b8605aebde70fdc4c182df\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
     "content_length": "101025",
-    "etag": "\"ed2a344e19978266dc788dedfaa5dbba254eec4b1521139c0546f61b2c9d66b4\"",
+    "etag": "\"6017458a3066d3ebdfe4982d00bf165a3030cf69201013fe340faaa828c038a4\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/ChinaCIDR.list": {
     "content_length": "141586",
-    "etag": "\"e2e93cffe6082f52733fb0679c78178410fade115f146761dbfb7806a5e2d800\"",
+    "etag": "\"c3c1c6ead49e94650a1dff7d0d1a9f7e74c02a93bc3dc2ec06ce2488946b2bfd\"",
     "last_modified": null,
     "source_available": true
   },
@@ -205,26 +205,26 @@
   },
   "https://ruleset.skk.moe/List/domainset/apple_cdn.conf": {
     "content_length": null,
-    "etag": "W/\"52148a92dbafde04b7732d8b3eea9697\"",
+    "etag": null,
     "last_modified": null,
-    "source_available": true
+    "source_available": false
   },
   "https://ruleset.skk.moe/List/ip/telegram.conf": {
     "content_length": null,
-    "etag": "W/\"28bbf9e67893cbffe6d17b83ba12e924\"",
+    "etag": null,
     "last_modified": null,
-    "source_available": true
+    "source_available": false
   },
   "https://ruleset.skk.moe/List/non_ip/apple_cn.conf": {
     "content_length": null,
-    "etag": "W/\"f55faa5fb4f679d50098f9efe92299d0\"",
+    "etag": null,
     "last_modified": null,
-    "source_available": true
+    "source_available": false
   },
   "https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf": {
     "content_length": null,
-    "etag": "W/\"d32473c036f091bbc193a97e9c5e01e8\"",
+    "etag": null,
     "last_modified": null,
-    "source_available": true
+    "source_available": false
   }
 }
