@@ -1,17 +1,14 @@
 #!name=VPS Monitor
-#!desc=实时查看 VPS 状态：内存 CPU 硬盘 流量 IP
+#!desc=实时查看 VPS 状态。长按编辑 SERVER 填入 VPS IP
 #!category=📊 ▸ Monitor
-
-[General]
-# 强制 VPS 直连，不走代理
-skip-proxy = %APPEND% 45.94.40.38
+#!arguments=SERVER:server_address
 
 [Panel]
 VPS-Status = icon="server.rack",icon-color="#58A6FF",script-name=vps-panel
 
 [Rule]
-# 双重保障：端口级规则确保直连
+# 端口级规则确保 VPS Monitor 直连
 DEST-PORT,8765,DIRECT
 
 [Script]
-vps-panel = type=generic,timeout=10,script-path=http://45.94.40.38:8765/panel.js
+vps-panel = type=generic,timeout=10,script-path=http://{{{SERVER}}}:8765/panel.js
