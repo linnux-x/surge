@@ -1,9 +1,9 @@
 # NAME: Download
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-23 06:06:09 +0800
+# UPDATED: 2026-06-24 04:07:03 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1684
+# TOTAL: 1686
 
 # ======= Manual Rules ========
 # Borrowed from SukkaW non_ip/direct downloader process rules
@@ -81,6 +81,7 @@ DOMAIN-SUFFIX,file.core.windows.net
 DOMAIN,s3.teckids.org
 DOMAIN,cas-bridge.xethub.hf.co
 DOMAIN-SUFFIX,cdn.hf.co
+DOMAIN-SUFFIX,t3.storageapi.dev
 DOMAIN,registry.npmjs.org
 DOMAIN,npm.im
 DOMAIN,replicate.npmjs.com
@@ -268,6 +269,7 @@ DOMAIN,download.jetbrains.com
 DOMAIN,download-cdn.jetbrains.com
 DOMAIN,downloads.marketplace.jetbrains.com
 DOMAIN,download.visualstudio.microsoft.com
+DOMAIN,builds.dotnet.microsoft.com
 DOMAIN-SUFFIX,software-download.microsoft.com
 DOMAIN,officecdn-microsoft-com.akamaized.net
 DOMAIN,officecdnmac.microsoft.com

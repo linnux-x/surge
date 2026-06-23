@@ -1,7 +1,7 @@
 # NAME: GlobalMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-23 06:06:09 +0800
+# UPDATED: 2026-06-24 04:07:03 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 2095
 
@@ -2097,8 +2097,8 @@ USER-AGENT,com.kktv.ios.kktv*
 USER-AGENT,discovery+*
 USER-AGENT,encoreTVB*
 USER-AGENT,mytv*
-USER-AGENT,*YouTubeMusic*
 USER-AGENT,YouTube*
+USER-AGENT,*YouTubeMusic*
 USER-AGENT,YouTubeMusic*
 URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/
 PROCESS-NAME,com.viu.pad

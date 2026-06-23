@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-23 06:06:09 +0800
+# UPDATED: 2026-06-24 04:07:03 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 29430
+# TOTAL: 29432
 
 # ======= blackmatrix7 Global ========
 DOMAIN,1password.drift.click
@@ -8551,6 +8551,8 @@ DOMAIN-SUFFIX,gofile.me
 DOMAIN-SUFFIX,gofit.ac.uk
 DOMAIN-SUFFIX,gofucker.com
 DOMAIN-SUFFIX,gofuckmenow.com
+DOMAIN-SUFFIX,gog-services.com
+DOMAIN-SUFFIX,gogalaxy.com
 DOMAIN-SUFFIX,gogeo.ac.uk
 DOMAIN-SUFFIX,gogettaxi.org
 DOMAIN-SUFFIX,gogo-load.com
