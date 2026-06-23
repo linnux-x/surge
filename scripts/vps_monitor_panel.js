@@ -1,10 +1,11 @@
 // VPS Monitor Panel — Surge Panel Script
 // Uses callback pattern for Surge $httpClient API.
 
-// Default: connect to VPS at public IP. Override via #!arguments SERVER + TOKEN.
+// No secrets hardcoded — configure via module #!arguments:
+// long-press module → edit SERVER (e.g. 45.94.40.38:8765) and TOKEN.
 // SERVER can be "host:port" (auto-prepends http://) or full "http://host:port".
-var API_BASE = "http://45.94.40.38:8765";
-var TOKEN = "FHR2uZWirs6O6L74XDHb4BaWdvSxPs3q";
+var API_BASE = "http://127.0.0.1:8765";
+var TOKEN = "changeme";
 
 if (typeof $argument !== "undefined" && $argument) {
   if ($argument.server) {
