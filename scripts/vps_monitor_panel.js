@@ -26,7 +26,7 @@ $httpClient.get(url, function(error, response, data) {
     var code = response ? response.status : "null";
     $done({
       title: "VPS Monitor",
-      content: "❌ HTTP " + code + "\\nserver: " + API_BASE,
+      content: "❌ HTTP " + code + "\\nserver: " + API_BASE + "\\ntoken: " + TOKEN,
       icon: "server.rack",
       "icon-color": "#FF453A"
     });
