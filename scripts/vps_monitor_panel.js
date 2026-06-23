@@ -44,31 +44,25 @@ $httpClient.get(url, function(error, response, data) {
   try {
     var info = JSON.parse(data);
     
-    // Progress bars
-    function bar(pct, w) {
-      var f = Math.round((Math.min(pct, 100) / 100) * w);
-      var e = w - f;
-      var s = "";
-      for (var i = 0; i < f; i++) s += "█";
-      for (var i = 0; i < e; i++) s += "░";
-      return s;
-    }
-    
     var cpuPct = Math.min(Math.round(info.cpu.load_1m / info.cpu.cores * 100), 100);
     var memUsedG = (info.memory.used_mb / 1024).toFixed(1);
     var memTotalG = (info.memory.total_mb / 1024).toFixed(1);
     var txGb = (info.network.tx_total_mb / 1024).toFixed(1);
     var rxGb = (info.network.rx_total_mb / 1024).toFixed(1);
-    
+
+    // Pad labels to 4 visual cells for vertical alignment
+    // Narrow emojis (🖥 💾) get 2 spaces after; wide emojis get 1 space
+    function l(s) { while (s.length < 4) s += " "; return s; }
+
     var c = "";
-    c += "🧠 " + bar(info.memory.percent, 6) + "  " + info.memory.percent + "%  " + memUsedG + "G/" + memTotalG + "G\n";
-    c += "🖥 " + bar(cpuPct, 6) + "  " + cpuPct + "%  负载 " + info.cpu.load_1m + "/" + info.cpu.cores + "核\n";
-    c += "💾 " + bar(info.disk.percent, 6) + "  " + info.disk.percent + "%  " + info.disk.used_gb + "G/" + info.disk.total_gb + "G\n";
-    c += "📡 ⬆" + txGb + "G ⬇" + rxGb + "G\n";
-    c += "🌐 " + info.ip.public_ip + "\n";
-    c += "📍 " + info.ip.location + "\n";
-    c += "🏢 " + info.ip.isp + "\n";
-    c += "⏱ " + info.uptime;
+    c += "🧠 " + l("内存") + info.memory.percent + "%  " + memUsedG + "G/" + memTotalG + "G\n";
+    c += "🖥  " + l("CPU") + cpuPct + "%  " + info.cpu.load_1m + "/" + info.cpu.cores + "核\n";
+    c += "💾  " + l("硬盘") + info.disk.percent + "%  " + info.disk.used_gb + "G/" + info.disk.total_gb + "G\n";
+    c += "📡 " + l("流量") + "⬆" + txGb + "G ⬇" + rxGb + "G\n";
+    c += "🌐 " + l("IP") + info.ip.public_ip + "\n";
+    c += "📍 " + l("位置") + info.ip.location + "\n";
+    c += "🏢 " + l("ISP") + info.ip.isp + "\n";
+    c += "⏱ " + l("运行") + info.uptime;
     
     $done({
       title: "🖥 " + info.hostname,
