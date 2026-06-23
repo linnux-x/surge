@@ -55,16 +55,20 @@ $httpClient.get(url, function(error, response, data) {
     }
     
     var cpuPct = Math.min(Math.round(info.cpu.load_1m / info.cpu.cores * 100), 100);
+    var memUsedG = (info.memory.used_mb / 1024).toFixed(1);
+    var memTotalG = (info.memory.total_mb / 1024).toFixed(1);
+    var txGb = (info.network.tx_total_mb / 1024).toFixed(1);
+    var rxGb = (info.network.rx_total_mb / 1024).toFixed(1);
     
     var c = "";
-    c += "🧠 内存    " + bar(info.memory.percent, 10) + "  " + info.memory.used_mb + "MB/" + info.memory.total_mb + "MB (" + info.memory.percent + "%)\n";
-    c += "🖥  CPU     " + bar(cpuPct, 10) + "  负载 " + info.cpu.load_1m + "/" + info.cpu.cores + "核\n";
-    c += "💾 硬盘    " + bar(info.disk.percent, 10) + "  " + info.disk.used_gb + "G/" + info.disk.total_gb + "G (" + info.disk.percent + "%)\n";
-    c += "📡 流量    ⬆" + info.network.tx_total_mb + "MB ⬇" + info.network.rx_total_mb + "MB\n";
-    c += "🌐 IP      " + info.ip.public_ip + "\n";
-    c += "📍 位置    " + info.ip.location + "\n";
-    c += "🏢 ISP     " + info.ip.isp + "\n";
-    c += "⏱ 运行    " + info.uptime;
+    c += "🧠 " + bar(info.memory.percent, 6) + "  " + info.memory.percent + "%  " + memUsedG + "G/" + memTotalG + "G\n";
+    c += "🖥 " + bar(cpuPct, 6) + "  " + cpuPct + "%  负载 " + info.cpu.load_1m + "/" + info.cpu.cores + "核\n";
+    c += "💾 " + bar(info.disk.percent, 6) + "  " + info.disk.percent + "%  " + info.disk.used_gb + "G/" + info.disk.total_gb + "G\n";
+    c += "📡 ⬆" + txGb + "G ⬇" + rxGb + "G\n";
+    c += "🌐 " + info.ip.public_ip + "\n";
+    c += "📍 " + info.ip.location + "\n";
+    c += "🏢 " + info.ip.isp + "\n";
+    c += "⏱ " + info.uptime;
     
     $done({
       title: "🖥 " + info.hostname,
