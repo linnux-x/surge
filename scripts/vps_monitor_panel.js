@@ -1,41 +1,29 @@
 // VPS Monitor Panel — Surge Panel Script
 // Uses callback pattern for Surge $httpClient API.
-// IP is hardcoded (VPS address); TOKEN comes from module #!arguments.
+// SERVER and TOKEN come from module #!arguments via %SERVER% / %TOKEN% substitution.
 
-var API_BASE = "http://riven.linnux.cc:8765";
-var TOKEN = "changeme";
-
+var API_BASE="http://127.0.0.1:8765";
+var TOKEN="chan...
 if (typeof $argument !== "undefined" && $argument) {
-  if ($argument.token) TOKEN = $argument.token;
+  if ($argument.server) {
+    API_BASE = "http://" + $argument.server + ":8765";
+  }
+  if ($argument.token) TOKEN=$argum...
 }
-
 var url = API_BASE + "/status?token=" + TOKEN;
 
 $httpClient.get(url, function(error, response, data) {
   if (error) {
-    $done({
-      title: "VPS Monitor",
-      content: "❌ " + error,
-      icon: "server.rack",
-      "icon-color": "#FF453A"
-    });
+    $done({ title: "VPS Monitor", content: "❌ " + error, icon: "server.rack", "icon-color": "#FF453A" });
     return;
   }
-
   if (!response || response.status !== 200) {
     var code = response ? response.status : "null";
-    $done({
-      title: "VPS Monitor",
-      content: "❌ HTTP " + code + "\\nserver: " + API_BASE + "\\ntoken: " + TOKEN,
-      icon: "server.rack",
-      "icon-color": "#FF453A"
-    });
+    $done({ title: "VPS Monitor", content: "❌ HTTP " + code + "\\nserver: " + API_BASE, icon: "server.rack", "icon-color": "#FF453A" });
     return;
   }
-
   try {
     var info = JSON.parse(data);
-
     var cpuPct = Math.min(Math.round(info.cpu.load_1m / info.cpu.cores * 100), 100);
     var memUsedG = (info.memory.used_mb / 1024).toFixed(1);
     var memTotalG = (info.memory.total_mb / 1024).toFixed(1);
@@ -59,18 +47,8 @@ $httpClient.get(url, function(error, response, data) {
     c += "🏢 " + padLabel("ISP") + info.ip.isp + "\n";
     c += "⏱ " + padLabel("运行") + info.uptime;
 
-    $done({
-      title: "🖥 " + info.hostname,
-      content: c,
-      icon: "server.rack",
-      "icon-color": "#58A6FF"
-    });
+    $done({ title: "🖥 " + info.hostname, content: c, icon: "server.rack", "icon-color": "#58A6FF" });
   } catch (e) {
-    $done({
-      title: "VPS Monitor",
-      content: "❌ 解析失败: " + e.message,
-      icon: "server.rack",
-      "icon-color": "#FF453A"
-    });
+    $done({ title: "VPS Monitor", content: "❌ 解析失败: " + e.message, icon: "server.rack", "icon-color": "#FF453A" });
   }
 });
