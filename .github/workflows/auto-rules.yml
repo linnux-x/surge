@@ -69,6 +69,10 @@ jobs:
 
           should_process() {
             local target="$1"
+            # Always process all rulesets on manual dispatch
+            if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
+              return 0
+            fi
             for c in "${CHANGED[@]}"; do
               [ "$c" = "$target" ] && return 0
             done
@@ -568,7 +572,7 @@ jobs:
           fi
 
           # ── Prune Global overlaps if anything changed ──────────────────
-          if [ ${#CHANGED[@]} -gt 0 ]; then
+          if [ ${#CHANGED[@]} -gt 0 ] || [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
             prune_global_first_match_overlaps
           fi
 
