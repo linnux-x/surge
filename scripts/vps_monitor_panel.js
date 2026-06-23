@@ -56,8 +56,8 @@ $httpClient.get(url, function(error, response, data) {
 
     var c = "";
     c += "🧠 " + l("内存") + r(info.memory.percent + "%", 5) + "  " + memUsedG + "G/" + memTotalG + "G\n";
-    c += "🖥  " + l("CPU") + r(cpuPct + "%", 5) + "  " + info.cpu.load_1m + "/" + info.cpu.cores + "核\n";
-    c += "💾  " + l("硬盘") + r(info.disk.percent + "%", 5) + "  " + info.disk.used_gb + "G/" + info.disk.total_gb + "G\n";
+    c += "🖥 " + l("CPU") + r(cpuPct + "%", 5) + "  " + info.cpu.load_1m + "/" + info.cpu.cores + "核\n";
+    c += "💾 " + l("硬盘") + r(info.disk.percent + "%", 5) + "  " + info.disk.used_gb + "G/" + info.disk.total_gb + "G\n";
     c += "📡 " + l("流量") + "⬆" + txGb + "G ⬇" + rxGb + "G\n";
     c += "🌐 " + l("IP") + info.ip.public_ip + "\n";
     c += "📍 " + l("位置") + info.ip.location + "\n";
