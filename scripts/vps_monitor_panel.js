@@ -2,18 +2,14 @@
 // Uses callback pattern for Surge $httpClient API.
 
 // No secrets hardcoded — configure via module #!arguments:
-// long-press module → edit SERVER (e.g. 45.94.40.38:8765) and TOKEN.
-// SERVER can be "host:port" (auto-prepends http://) or full "http://host:port".
+// long-press module → edit SERVER (IP only, e.g. 45.94.40.38) and TOKEN.
+// Port 8765 is fixed in the script (avoids : conflict in #!arguments).
 var API_BASE = "http://127.0.0.1:8765";
 var TOKEN = "changeme";
 
 if (typeof $argument !== "undefined" && $argument) {
   if ($argument.server) {
-    API_BASE = $argument.server;
-    // Prepend http:// if missing (bare host:port from #!arguments)
-    if (API_BASE.indexOf("http://") !== 0 && API_BASE.indexOf("https://") !== 0) {
-      API_BASE = "http://" + API_BASE;
-    }
+    API_BASE = "http://" + $argument.server + ":8765";
   }
   if ($argument.token) TOKEN = $argument.token;
 }
