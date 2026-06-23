@@ -64,7 +64,8 @@ jobs:
           set -euo pipefail
 
           # Parse the list of changed rulesets
-          IFS=' ' read -ra CHANGED < <(echo '${{ steps.check_upstream.outputs.changed_rulesets }}' | python3 -c "import json,sys; [print(r) for r in json.load(sys.stdin)]")
+          CHANGED=()
+          IFS=' ' read -ra CHANGED < <(echo '${{ steps.check_upstream.outputs.changed_rulesets }}' | python3 -c "import json,sys; [print(r) for r in json.load(sys.stdin)]") || true
 
           should_process() {
             local target="$1"
