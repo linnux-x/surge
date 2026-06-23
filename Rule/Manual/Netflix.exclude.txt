@@ -4,5 +4,8 @@ DOMAIN-SUFFIX,cookielaw.org
 # onetrust.com is a shared privacy management platform used by thousands of sites — not Netflix-specific.
 DOMAIN-SUFFIX,onetrust.com
 
+# Opaque Akamai CDN edge nodes (e.g. e13252.dscg.akamaiedge.net) are shared infra
+akamaiedge.net
+
 # us-west-2.amazonaws.com covers the entire AWS us-west-2 region — far too broad for Netflix.
 DOMAIN-SUFFIX,us-west-2.amazonaws.com

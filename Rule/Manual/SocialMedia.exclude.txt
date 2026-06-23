@@ -3,6 +3,9 @@ DOMAIN-SUFFIX,line-cdn.net
 DOMAIN-SUFFIX,line-scdn.net
 DOMAIN-SUFFIX,linetv.tw
 
+# Opaque Akamai CDN edge nodes (e.g. e122475.dscg.akamaiedge.net) are shared infra
+akamaiedge.net
+
 # China-local LinkedIn endpoint should remain direct via China.list
 DOMAIN-SUFFIX,linkedin.cn
 

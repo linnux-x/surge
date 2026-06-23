@@ -2,6 +2,9 @@
 DOMAIN-SUFFIX,akadns.net
 akadns.net
 
+# Opaque Akamai CDN edge nodes (e.g. e16991.b.akamaiedge.net) are shared infra
+akamaiedge.net
+
 # Apple China/CDN edges belong to Apple_CN.list
 DOMAIN-SUFFIX,appldnld.apple.com.edgesuite.net
 DOMAIN-SUFFIX,apple.com.cdn20.com

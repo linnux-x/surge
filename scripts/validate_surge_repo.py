@@ -307,6 +307,37 @@ def validate_rule_file(path: Path, errors: list[str]) -> None:
                         errors.append(f"{rel(path)}:{index} PayPal China domestic domain should be in China.list: {rule}")
                         break
 
+        # Check opaque DOMAIN entries under shared CDN parents outside CDN.list.
+        # Only DOMAIN-SUFFIX was caught above; DOMAIN entries like
+        # DOMAIN,e16991.b.akamaiedge.net also need checking.
+        if (
+            target != "CDN.list"
+            and rule_type == "DOMAIN"
+            and target not in SHARED_THIRD_PARTY_EXEMPT
+            and len(parts) >= 2
+        ):
+            domain_val = parts[1].lower()
+            for parent in SHARED_CDN_PARENTS:
+                if domain_val.endswith(f".{parent}") or domain_val == parent:
+                    sub = domain_val[: -len(parent) - 1] if domain_val.endswith(f".{parent}") else ""
+                    first_label = sub.split(".")[0].lower() if sub else ""
+                    # Opaque prefix: all-digit, all-hex, or short alphanumeric (≤6 chars)
+                    is_opaque = (
+                        first_label.isdigit()
+                        or all(c in "0123456789abcdef" for c in first_label)
+                        or (
+                            len(first_label) <= 6
+                            and any(c.isdigit() for c in first_label)
+                            and not first_label.isalpha()
+                        )
+                    )
+                    if is_opaque:
+                        errors.append(
+                            f"{rel(path)}:{index} opaque CDN edge node under "
+                            f"shared parent ({parent}): {rule}"
+                        )
+                    break
+
         if rule_type in {"IP-CIDR", "IP-CIDR6"} and len(parts) >= 2:
             try:
                 network = ipaddress.ip_network(parts[1], strict=False)
