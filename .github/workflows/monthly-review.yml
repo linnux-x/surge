@@ -1,0 +1,72 @@
+name: Monthly Review
+
+on:
+  schedule:
+    # Last day of month at 22:00 UTC = 1st of next month at 06:00 Beijing
+    # Runs daily on days 28-31, exits early unless tomorrow is the 1st
+    - cron: "0 22 28-31 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  monthly-review:
+    if: github.repository == 'linnux-x/surge'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check if last day of month
+        shell: bash
+        run: |
+          if [ "$(date -d tomorrow +%d)" != "01" ]; then
+            echo "Not the last day of month — skipping monthly review."
+            exit 0
+          fi
+          echo "Last day of month — running full review."
+
+      - name: Full Rule Validation
+        shell: bash
+        run: python3 scripts/validate_surge_repo.py
+
+      - name: Online Audit (All Checks)
+        shell: bash
+        run: python3 scripts/audit_rules.py
+
+      - name: Manifest Integrity Check
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/manifest.py
+          python3 scripts/diff_manifests.py
+
+      - name: Upstream Health Report
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "# Monthly Upstream Health Report" > monthly-review.md
+          echo "## Generated: $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S +0800')" >> monthly-review.md
+          echo "" >> monthly-review.md
+          echo "### Source Status" >> monthly-review.md
+          python3 scripts/check_upstream_updates.py >> monthly-review.md 2>&1 || true
+          echo "" >> monthly-review.md
+          echo "### Rule Counts" >> monthly-review.md
+          for f in Rule/*.list; do
+            count=$(awk '!/^#/ && !/^[[:space:]]*$/ {n++} END {print n+0}' "$f")
+            echo "- $(basename "$f"): $count rules" >> monthly-review.md
+          done
+
+      - name: Commit Monthly Report
+        shell: bash
+        run: |
+          if [ -f monthly-review.md ]; then
+            git config --local user.email "github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+            git add monthly-review.md Rule/.manifests/ scripts/diff_report.md scripts/diff_report.json scripts/source_state.json
+            if ! git diff --staged --quiet; then
+              git commit -m "Monthly review: $(TZ='Asia/Shanghai' date +'%Y-%m')"
+              git push
+            fi
+          fi
