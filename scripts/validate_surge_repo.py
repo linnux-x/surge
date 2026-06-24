@@ -105,8 +105,10 @@ def check_readme_inventory(errors: list[str]) -> None:
         errors.append("README.md is missing")
         return
     text = README.read_text(encoding="utf-8", errors="replace")
+    # Match backtick-wrapped filenames
     listed = set(re.findall(r"`([A-Za-z0-9_]+\.list)`", text))
-    # README also mentions glob patterns; only compare actual file names from the rule table.
+    # Also match rule table rows: | emoji filename.list |
+    listed |= set(re.findall(r"^\|\s*[^\s|]+\s+([A-Za-z0-9_]+\.list)\s+\|", text, re.M))
     rule_files = {p.name for p in RULE_DIR.glob("*.list")}
     stale = sorted(listed - rule_files)
     missing = sorted(rule_files - listed)
