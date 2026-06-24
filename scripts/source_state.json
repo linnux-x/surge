@@ -48,8 +48,8 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaW/Surge/master/Source/domainset/download.conf": {
-    "content_length": "34637",
-    "etag": "\"2c66f63113101edbe17cb1a65fd4ab209909148cd271a8bb0a4662f31e81b5bd\"",
+    "content_length": "34712",
+    "etag": "\"c8ee2b17a73edd90b543a42f541755594e9b59272b48b45ce3bb45cad1b5ac8e\"",
     "last_modified": null,
     "source_available": true
   },
@@ -205,9 +205,9 @@
   },
   "https://ruleset.skk.moe/List/domainset/apple_cdn.conf": {
     "content_length": null,
-    "etag": "W/\"52148a92dbafde04b7732d8b3eea9697\"",
+    "etag": null,
     "last_modified": null,
-    "source_available": true
+    "source_available": false
   },
   "https://ruleset.skk.moe/List/ip/telegram.conf": {
     "content_length": null,

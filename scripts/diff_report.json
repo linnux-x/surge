@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-24T05:24:02.311131",
-  "total_added": 1,
+  "generated_at": "2026-06-24T14:37:51.732424",
+  "total_added": 0,
   "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
@@ -138,17 +138,12 @@
     },
     {
       "file": "Google.list",
-      "prev_total": 699,
+      "prev_total": 700,
       "curr_total": 700,
-      "added_count": 1,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "02abf0162a50",
-          "source": "Manual Rules"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
