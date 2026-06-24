@@ -1,109 +1,158 @@
-# Linnux Surge 自用规则仓库
+# Linnux Surge 自用规则仓库 — 全自动、可审计的 Surge 分流规则
 
-这是一个面向 Surge 的自用规则仓库，用于在 iPhone、MacBook 等设备上进行代理分流、区域直连、媒体服务、AI 服务、CDN 与中国大陆 IP/域名分类。
+> **一句总结：** 多上游源每日同步、自动清洗校验、清单追踪变更、联网审计质量 — 让你只需关心策略，不用操心底层规则。
 
-仓库通过 GitHub Actions 定时同步多个上游规则源，合并本地手动规则，并应用仓库专属的规则清洗与校验策略。生成时不保留当前 `Rule/*.list` 作为 baseline，避免上游已删除或历史遗留规则长期滞留。
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Python](https://img.shields.io/badge/Python-3.10+-green.svg?logo=python&logoColor=white)](https://www.python.org/) [![Surge](https://img.shields.io/badge/Surge-Rule%20Set-orange.svg)](https://manual.nssurge.com/)
 
-## 目录结构
+---
+
+## 📌 项目速览
+
+| | |
+|---|---|
+| 🎯 **目标用户** | Surge 用户（iPhone / MacBook），需要精细化代理分流与规则管理 |
+| 💡 **核心价值** | 多上游源自动聚合 → 清洗校验 → 清单追踪 → 联网审计，全链路自动化 |
+| 📜 **许可证** | MIT |
+| 🔄 **更新频率** | 每日北京时间 04:00 自动同步 |
+| 🧪 **质量保障** | 每次更新须通过 5 项联网审查 + 15+ 项不变量校验 |
+
+```bash
+# 快速使用：在 Surge 配置中加载规则
+RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/AI.list,PROXY
+RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,DIRECT
+```
+
+---
+
+## ❓ 为什么需要这个仓库？
+
+手动维护 Surge 规则面临多种痛点：
+
+| 痛点 | 解决方式 |
+|------|----------|
+| 🔄 上游规则频繁更新 | GitHub Actions **每日自动同步** 6+ 上游源 |
+| 🧹 规则污染 / 残留 | 每次重新生成，不保留旧文件作为 baseline |
+| 📊 变更不可追溯 | **清单索引系统**：每条规则有 12 字符稳定哈希 + 来源标注 |
+| ⚠️ 共享基础设施混入 | 自动检测并排除 cookielaw / sentry / newrelic 等第三方平台 |
+| 🧪 质量无保障 | **联网审查流水线**：5 项检查（可达性 / 比例 / 共享设施 / Surge 文档 / exclude 覆盖） |
+| ✏️ 手动规则管理 | `Rule/Manual/` 支持追加 + 排除，优先级最高 |
+
+---
+
+## ✅ 核心特性
+
+| 特性 | 说明 |
+|------|------|
+| 🤖 **全自动同步** | 检查 38 个上游源的 Last-Modified / ETag，只同步有变更的规则集，无变化跳过提交 |
+| 🧪 **自动校验** | 15+ 不变量检查：规则类型合法性、无策略名渗入、无重复、domain-only 约束、no-resolve 策略等 |
+| 📋 **清单索引** | 每条规则拥有 12 字符稳定内容哈希 ID + 上游来源标注，支持跨版本追踪 |
+| 📊 **增量差异报告** | 每次变更生成 manifest diff（markdown + JSON），明确增减来源 |
+| 🔍 **联网审查** | 5 项审计检查，ERROR 阻断提交、WARN 需确认、INFO 仅记录 |
+| 🧹 **自动清洗** | 排除共享 CDN / 遥测 / 分析平台，检测不透明子域名 |
+| ✏️ **手动规则** | `Rule/Manual/*.txt` 追加 + `*.exclude.txt` 排除，优先级高于上游 |
+
+---
+
+## 📁 目录结构
 
 | 路径 | 说明 |
 |------|------|
 | `Conf/LINNUX.conf` | 主 Surge 配置示例，包含策略组和 `RULE-SET` 加载顺序 |
-| `Rule/*.list` | Surge 外部规则集文件（自动生成，勿手改） |
+| `Rule/*.list` | Surge 外部规则集文件（自动生成，**勿手动修改**） |
 | `Rule/Manual/*.txt` | 手动追加规则，优先级最高 |
-| `Rule/Manual/*.exclude.txt` | 排除规则，匹配到的上游行不会写入最终 ||
+| `Rule/Manual/*.exclude.txt` | 排除规则，匹配到的上游行不写入最终文件 |
 | `Rule/.manifests/*.manifest` | 规则清单索引（每行：稳定哈希ID + 来源标注） |
 | `Module/*.sgmodule` | Surge 模块文件 |
 | `scripts/manifest.py` | 规则清单生成器（基于内容哈希的稳定ID + 来源追踪） |
 | `scripts/diff_manifests.py` | 清单差异对比器（本次 vs git HEAD 的增减变化） |
-| `scripts/diff_report.md` | 差异报告（markdown） |
-| `scripts/diff_report.json` | 差异报告（JSON） |
-| `scripts/validate_surge_repo.py` | 仓库不变量检查器 |
-| `scripts/audit_rules.py` | 联网审查脚本（上游可达、共享基础设施、Surge 文档等） |
-| `.github/workflows/auto-rules.yml` | 规则同步 + DNS Mapping 模块同步 |
-| `AGENT.md` | 项目指令文档（用户偏好、分类策略、验证标准——所有 agent 必读） |
-| `.codex/skills/surge-ruleset-builder/` | Codex 规则维护 Skill 精简入口 |
+| `scripts/validate_surge_repo.py` | 仓库不变量检查器（15+ 检查项） |
+| `scripts/audit_rules.py` | 联网审查脚本（5 项审计检查） |
+| `.github/workflows/auto-rules.yml` | 规则同步 + DNS Mapping 模块同步流水线 |
+| `AGENT.md` | 项目指令文档（用户偏好、分类策略、验证标准 — **所有 agent 必读**） |
 
-## 规则列表
+---
+
+## 📋 规则列表
 
 | 规则文件 | 主要上游来源 | 说明 |
 |---------|-------------|------|
-| `AI.list` | SukkaW、Rabbit-Spec、ConnersHua | AI 服务、模型 API、Apple Intelligence、AIGC、Cursor、Zed、Groq、xAI、Doubao 等 |
-| `Apple.list` | blackmatrix7 | Apple 全系服务 |
-| `Apple_CN.list` | SukkaW | Apple 中国区与 Apple CDN 直连规则 |
-| `CDN.list` | SukkaW | CDN、静态资源、部分专用下载资源 |
-| `China.list` | SukkaW、blackmatrix7、Rabbit-Spec | 中国大陆直连域名规则；保持 domain-only |
-| `China_IP.list` | Loyalsoldier、blackmatrix7、Rabbit-Spec | 中国大陆 IP 回退规则；特意不加 `no-resolve` |
-| `ChinaMedia.list` | blackmatrix7 | 中国媒体服务 |
-| `Disney.list` | blackmatrix7 | Disney+ |
-| `Download.list` | SukkaW | 通用下载、软件更新、包管理、对象存储与游戏客户端下载 CDN |
-| `Game.list` | blackmatrix7 | 游戏平台与游戏服务 |
-| `Global.list` | blackmatrix7 | 通用海外/代理域名规则 |
-| `GlobalMedia.list` | blackmatrix7 | 国际流媒体服务 |
-| `Google.list` | blackmatrix7 | Google 服务，不包含 YouTube 专属规则 |
-| `Microsoft.list` | blackmatrix7 | Microsoft 服务；不包含 GitHub 家族规则 |
-| `Microsoft_CDN.list` | SukkaW | Microsoft CDN / 下载资源直连规则 |
-| `Netflix.list` | blackmatrix7 | Netflix |
-| `PayPal.list` | blackmatrix7 | PayPal |
-| `SocialMedia.list` | QuixoticHeart、blackmatrix7 | 社交媒体聚合规则 |
-| `Speedtest.list` | SukkaW、手动规则 | 测速服务；`fast.com` 仅保留在此文件 |
-| `Telegram.list` | blackmatrix7、Telegram 官方 | Telegram 域名、CIDR、ASN 与客户端 fallback |
-| `TikTok.list` | blackmatrix7 | TikTok |
-| `WeChat.list` | blackmatrix7 | 微信相关服务 |
-| `YouTube.list` | blackmatrix7 | YouTube 与 YouTube Music |
+| 📱 `AI.list` | SukkaW、Rabbit-Spec、ConnersHua | AI 服务、模型 API、Apple Intelligence、Cursor、Zed、Groq、xAI、Doubao |
+| 🍎 `Apple.list` | blackmatrix7 | Apple 全系服务 |
+| 🇨🇳 `Apple_CN.list` | SukkaW | Apple 中国区与 Apple CDN 直连规则 |
+| 📦 `CDN.list` | SukkaW | CDN、静态资源、部分专用下载资源 |
+| 🏠 `China.list` | SukkaW、blackmatrix7、Rabbit-Spec | 中国大陆直连域名规则；**保持 domain-only** |
+| 🌐 `China_IP.list` | Loyalsoldier、blackmatrix7、Rabbit-Spec | 中国大陆 IP 回退规则；**不加 `no-resolve`** |
+| 📺 `ChinaMedia.list` | blackmatrix7 | 中国媒体服务 |
+| 🏰 `Disney.list` | blackmatrix7 | Disney+ |
+| ⬇️ `Download.list` | SukkaW | 通用下载、软件更新、包管理、对象存储与游戏客户端下载 CDN |
+| 🎮 `Game.list` | blackmatrix7 | 游戏平台与游戏服务 |
+| 🌍 `Global.list` | blackmatrix7 | 通用海外/代理域名规则 |
+| 🎬 `GlobalMedia.list` | blackmatrix7 | 国际流媒体服务 |
+| 🔍 `Google.list` | blackmatrix7 | Google 服务；**不包含** YouTube 专属规则 |
+| 🪟 `Microsoft.list` | blackmatrix7 | Microsoft 服务；**不包含** GitHub 家族规则 |
+| 📥 `Microsoft_CDN.list` | SukkaW | Microsoft CDN / 下载资源直连规则 |
+| 🎥 `Netflix.list` | blackmatrix7 | Netflix |
+| 💰 `PayPal.list` | blackmatrix7 | PayPal |
+| 💬 `SocialMedia.list` | QuixoticHeart、blackmatrix7 | 社交媒体聚合规则（排除国内平台） |
+| ⚡ `Speedtest.list` | SukkaW、手动规则 | 测速服务；`fast.com` **仅保留在此文件** |
+| ✈️ `Telegram.list` | blackmatrix7、Telegram 官方 | Telegram 域名、CIDR、ASN 与客户端 fallback |
+| 🎵 `TikTok.list` | blackmatrix7 | TikTok |
+| 💚 `WeChat.list` | blackmatrix7 | 微信相关服务 |
+| ▶️ `YouTube.list` | blackmatrix7 | YouTube 与 YouTube Music |
 
-## 主配置加载顺序
+---
 
-`Conf/LINNUX.conf` 中的规则顺序遵循 Surge first-match 逻辑，重点服务规则放在宽泛规则之前。
+## 🔄 主配置加载顺序
 
-1. WeChat（微信直连优先）
-2. Speedtest（测速不走代理）
-3. AI（AI 服务专用路由）
-4. Apple（Apple 原生服务）
-5. Microsoft（Microsoft/Office 服务）
-6. Telegram（Telegram 协议规避混淆）
-7. Download（下载 CDN 直连）
-8. Game（游戏平台直连/代理）
-9. YouTube（YouTube 流媒体路由）
-10. TikTok（TikTok 路由）
-11. SocialMedia（社交媒体）
-12. PayPal（支付服务）
-13. Google（Google 服务）
-14. Streaming Media（Netflix、Disney+、国际/中国媒体）
-15. CDN（共享 CDN 后台回退）
-16. Global（通用代理回退）
-17. China（中国大陆直连域名）
-18. LAN（局域网直连）
-19. China IP（中国大陆 IP 回退）
-20. FINAL（最终代理）
+`Conf/LINNUX.conf` 中的规则遵循 Surge **first-match** 逻辑，重点服务规则放在宽泛规则之前：
 
-## 自动更新
+1. 💚 **WeChat** → 微信直连优先
+2. ⚡ **Speedtest** → 测速不走代理
+3. 📱 **AI** → AI 服务专用路由
+4. 🍎 **Apple** → Apple 原生服务
+5. 🪟 **Microsoft** → Microsoft / Office 服务
+6. ✈️ **Telegram** → 协议规避混淆
+7. ⬇️ **Download** → 下载 CDN 直连
+8. 🎮 **Game** → 游戏平台直连/代理
+9. ▶️ **YouTube** → 流媒体路由
+10. 🎵 **TikTok** → TikTok 路由
+11. 💬 **SocialMedia** → 社交媒体
+12. 💰 **PayPal** → 支付服务
+13. 🔍 **Google** → Google 服务
+14. 🎬 **Streaming Media** → Netflix / Disney+ / 国际&中国媒体
+15. 📦 **CDN** → 共享 CDN 后台回退
+16. 🌍 **Global** → 通用代理回退
+17. 🏠 **China** → 中国大陆直连域名
+18. 🏢 **LAN** → 局域网直连
+19. 🌐 **China IP** → 中国大陆 IP 回退
+20. 🔚 **FINAL** → 最终代理
+
+---
+
+## 🤖 自动化流水线
 
 ### 触发方式
 
-- **定时触发**：每天北京时间 04:00 自动同步
-- **手动触发**：GitHub Actions 页面或 GitHub CLI
+| 方式 | 说明 |
+|------|------|
+| ⏰ **定时触发** | 每天北京时间 04:00 自动同步 |
+| 🖐 **手动触发** | GitHub Actions 页面点击 Run workflow |
+| ⌨️ **CLI 触发** | `gh workflow run auto-rules.yml` |
 
-```bash
-gh workflow run auto-rules.yml
-```
-
-### 完整流水线
-
-每次 workflow 运行执行以下步骤：
+### 完整流程
 
 ```
 触发 workflow
   ↓
-1. 拉取上游源 → 合并手动规则 → 应用排除 → 清洗校验
+1. 增量上游检查 → 拉取变更源 → 合并手动规则 → 应用排除 → 清洗校验
   ↓
-2. 生成紧凑清单（稳定内容哈希ID + 来源标注） ← scripts/manifest.py
+2. 生成紧凑清单（稳定内容哈希ID + 来源标注）          ← scripts/manifest.py
   ↓
-3. 对比 git HEAD 生成增量差异报告             ← scripts/diff_manifests.py
+3. 对比 git HEAD 生成增量差异报告                       ← scripts/diff_manifests.py
   ↓
-4. 验证仓库不变量                              ← scripts/validate_surge_repo.py
+4. 验证仓库不变量（15+ 检查项）                         ← scripts/validate_surge_repo.py
   ↓
-5. 联网审查（5 项检查）                       ← scripts/audit_rules.py
+5. 联网审查（5 项审计检查）                            ← scripts/audit_rules.py
    ├─ 上游可达性
    ├─ 规则数比例对比
    ├─ 共享第三方基础设施扫描
@@ -115,108 +164,136 @@ gh workflow run auto-rules.yml
 7. 提交到 GitHub（规则 + 清单 + 差异报告 + 模块）
 ```
 
-> 流程中的 **Generate Rule Manifests**、**Online Audit** 和 **Sync DNS Mapping** 步骤由本仓库新增或合并，确保每次变更有据可查、可审计。
+> 流程中的 **增量上游检查**、**Generate Rule Manifests**、**Online Audit** 和 **Sync DNS Mapping** 步骤由本仓库新增，确保每次变更有据可查、可审计。
 
 ### 清单索引系统
 
-每条规则在 `Rule/.manifests/*.manifest` 中有一个 12 字符的稳定内容哈希 ID，并标注其上游来源（如 `blackmatrix7 Apple`、`SukkaW CDN`、`Manual Rules`）。
+每条规则在 `Rule/.manifests/*.manifest` 中拥有一个 **12 字符的稳定内容哈希 ID**，并标注其上游来源。
 
 数据格式（每行一个规则）：
-
 ```
-<12字符哈希ID>\t<来源名称>
+<12字符哈希ID>	<来源名称>
 ```
 
-好处：
-- 跨版本追踪每条规则的**增减变化**
-- 识别规则在来源间的**归属转移**
-- 生成增量差异报告（`scripts/diff_report.md`）
-- 上游规则变动可量化审计
+| 好处 | 说明 |
+|------|------|
+| 🔄 **跨版本追踪** | 每条规则的增减变化可精确追踪 |
+| 🔗 **归属转移** | 识别规则在来源间的迁移（如从 China 移入 Global） |
+| 📊 **增量报告** | 自动生成 `diff_report.md` + `diff_report.json` |
+| 📈 **量化审计** | 上游规则变动数量、方向有据可查 |
 
-## 手动规则
+---
 
-在 `Rule/Manual/` 目录下可放置自定义规则文件：
+## 🛡️ 校验 & 审计
 
-- `<名称>.txt`：手动追加规则，放在对应规则文件顶部，优先级最高。
-- `<名称>.exclude.txt`：排除规则。每行一行 Surge 规则或子串，上游匹配到的规则行不会写入最终文件。
-
-### exclude 匹配机制
-
-exclude 使用 `grep -vFf`（固定字符串匹配），**不是**正则匹配。这意味着：
-
-- `DOMAIN-SUFFIX,sentry.io` 只匹配**完全相同的行**
-- `DOMAIN-SUFFIX,o207216.ingest.sentry.io` **不会被** `DOMAIN-SUFFIX,sentry.io` 匹配到（字符串不同）
-- 如需匹配子域名变体，使用子串模式如 `.ingest.sentry.io`，或逐一列举
-
-> 长期需要保留/排除的规则必须放入对应的 `.txt` / `.exclude.txt`。不要依赖旧生成文件作为隐式 baseline。
-
-## 规则校验
+### 规则校验
 
 提交前运行：
-
 ```bash
 python3 scripts/validate_surge_repo.py
 ```
 
-检查项：
+| 检查项 | 级别 |
+|--------|:--:|
+| Surge 规则类型合法性 | 🔴 |
+| 无策略名渗入规则文件 | 🔴 |
+| 无重复规则 | 🟡 |
+| `# TOTAL` 头与实际计数一致 | 🔴 |
+| `China.list` domain-only | 🔴 |
+| `China_IP.list` 无 `no-resolve` | 🔴 |
+| 其他 IP 规则带 `no-resolve` | 🟡 |
+| `Microsoft.list` 无 GitHub 家族 | 🔴 |
+| `fast.com` 仅出现在 `Speedtest.list` | 🔴 |
+| README、workflow 与 `.list` 文件一致性 | 🟡 |
+| 无旧 baseline 区块和 SukkaW marker 域名 | 🟡 |
+| **共享第三方基础设施**检测 | 🟡 |
+| **PayPal CN 域名**检测（.cn 不在 PayPal.list） | 🟡 |
+| **不透明子域名**检测（纯数字/十六进制前缀如 `o207216.ingest.sentry.io`） | 🟡 |
 
-- Surge 规则类型合法性
-- 无策略名渗入
-- 无重复规则
-- `# TOTAL` 头与实际计数一致
-- `China.list` domain-only
-- `China_IP.list` 无 `no-resolve`
-- 其他 IP 规则带 `no-resolve`
-- `Microsoft.list` 无 GitHub 家族
-- `fast.com` 仅出现在 `Speedtest.list`
-- README、workflow 与 `.list` 文件一致性
-- 无旧 baseline 区块和 SukkaW marker 域名
-- **共享第三方基础设施**检测（cookielaw、onetrust、adobedtm、braze、newrelic、segment、sentry、optimizely 等出现在服务规则中时告警）← 新增
-- **PayPal CN 域名**检测（.cn 域名不应在 PayPal.list 中）← 新增
-- **不透明子域名**检测（纯数字/十六进制前缀的子域名如 `o207216.ingest.sentry.io` 标记为可疑共享基础设施）← 新增
+### 联网审查
 
-## 联网审查
-
-每次 workflow 生成规则后、提交 GitHub 前，执行 `scripts/audit_rules.py` 进行检查：
+每次 workflow 生成规则后、提交 GitHub 前执行 `scripts/audit_rules.py`：
 
 | 检查项 | 说明 |
 |--------|------|
-| 上游可达性 | 所有配置的 URL 可正常访问 |
-| 规则数对比 | 生成 vs 上游比例异常时告警（多源合并文件豁免） |
-| 共享基础设施 | 已知共享平台出现在服务规则中时告警 |
-| Surge 文档 | 检查是否有新的 Surge 规则类型发布 |
-| exclude 覆盖率 | 所有在用的 exclude 文件仍有效 |
+| 🔗 **上游可达性** | 所有配置的 URL 可正常访问 |
+| 📊 **规则数对比** | 生成 vs 上游比例异常时告警（多源合并文件豁免） |
+| 🏗️ **共享基础设施** | 已知共享平台出现在服务规则中时告警 |
+| 📖 **Surge 文档** | 检查是否有新的 Surge 规则类型发布 |
+| 🧹 **exclude 覆盖率** | 所有在用的 exclude 文件仍有效 |
 
-审计结果中：
-- **ERROR** → workflow 失败，必须修复
-- **WARN** → workflow 继续，但需人工确认
-- **INFO** → 仅供参考，无需处理
+> 🔴 **ERROR** → workflow 失败，必须修复  
+> 🟡 **WARN** → workflow 继续，但需人工确认  
+> 🔵 **INFO** → 仅供参考，无需处理
 
-## 关键策略
+---
 
-- **GitHub** 不归入 `Microsoft.list`。GitHub 普通服务走 `Global.list`，Copilot 走 `AI.list`，仅明确下载资源域名如 `release-assets.githubusercontent.com` 进入 `CDN.list`。
-- **`fast.com`** 只放在 `Speedtest.list`。
-- **`China.list`** 只保存中国大陆直连域名，不放 IP 规则。
-- **`China_IP.list`** 不加 `no-resolve`，以便未命中域名解析后做中国大陆 IP 分类。
-- 其他 IP 规则默认加 `no-resolve`。
-- 生成规则时不保留当前 `Rule/*.list` 作为 baseline；长期规则必须进入 `Rule/Manual/*.txt` / `exclude.txt`。
-- **共享第三方基础设施**（CDN / 遥测 / 分析 / 隐私合规 / 共享云）不作为服务专属规则合并。
-- 服务专属子域名（如 `disney.my.sentry.io`、`netflix.demdex.net`）可保留；**不透明**子域名（如 `o207216.ingest.sentry.io`）应排除。
+## 🔑 关键策略
 
-## 规则维护要求
+| 策略 | 说明 |
+|------|------|
+| 🐙 **GitHub** | 不归入 `Microsoft.list`。普通服务走 `Global.list`，Copilot 走 `AI.list`，仅下载资源域名（如 `release-assets.githubusercontent.com`）进 `CDN.list` |
+| ⚡ **fast.com** | 只放在 `Speedtest.list`，不重复出现在其他文件 |
+| 🏠 **China.list** | 只保存中国大陆直连**域名**，不放 IP 规则 |
+| 🌐 **China_IP.list** | 不加 `no-resolve`，以便未命中域名解析后做 IP 分类 |
+| 🔒 **IP 规则** | 其他 IP 规则默认加 `no-resolve` |
+| 🔄 **无 baseline** | 生成规则时不保留当前 `Rule/*.list`；长期规则必须进入 `Rule/Manual/` |
+| 🏗️ **共享基础设施** | CDN / 遥测 / 分析 / 隐私合规 / 共享云**不作为**服务专属规则合并 |
+| 🔍 **子域名策略** | 服务专属子域名（如 `disney.my.sentry.io`）可保留；**不透明**子域名（如 `o207216.ingest.sentry.io`）应排除 |
+
+---
+
+## 🚀 快速上手
+
+### 新手三步骤
+
+1. **复制配置模板** → 将 `Conf/LINNUX.conf` 内容合并到自己的 Surge 配置
+2. **添加规则集引用** → 在 `[Rule]` 段按加载顺序引用 `Rule/*.list`
+3. **启用自动更新** → Fork 仓库，GitHub Actions 自动生效
+
+### 手动更新
+
+```bash
+# Fork 后手动触发同步
+gh workflow run auto-rules.yml --repo linnux-x/surge
+```
+
+### 自定义规则
+
+在 `Rule/Manual/` 目录下放置：
+- `<名称>.txt` → 手动追加规则，放在对应规则文件顶部，优先级最高
+- `<名称>.exclude.txt` → 排除规则，使用 `grep -vFf`（固定字符串匹配，非正则）
+
+> ⚠️ **注意**：长期需要保留/排除的规则必须放入 `Rule/Manual/` 对应文件。不要依赖旧生成文件作为隐式 baseline。
+
+---
+
+## 📝 规则维护要求
 
 修改规则或同步逻辑前，请优先阅读 `AGENT.md`。该文件包含完整的用户偏好、分类策略、验证标准和工作流程。
 
-## 致谢
+> 📖 项目完整维护约定详见 `AGENT.md` — 所有 agent 和贡献者必读。
+
+---
+
+## 🙏 致谢
 
 上游规则与参考来源：
 
-- [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script)
-- [Loyalsoldier/surge-rules](https://github.com/Loyalsoldier/surge-rules)
-- [SukkaW/Surge](https://github.com/SukkaW/Surge)
-- [Rabbit-Spec/Surge](https://github.com/Rabbit-Spec/Surge)
-- [QuixoticHeart/rule-set](https://github.com/QuixoticHeart/rule-set)
-- [ConnersHua/RuleGo](https://github.com/ConnersHua/RuleGo)
-- [Telegram 官方 CIDR](https://core.telegram.org/resources/cidr.txt)
+| 来源 | 链接 |
+|------|------|
+| blackmatrix7 | [ios_rule_script](https://github.com/blackmatrix7/ios_rule_script) |
+| Loyalsoldier | [surge-rules](https://github.com/Loyalsoldier/surge-rules) |
+| SukkaW | [Surge](https://github.com/SukkaW/Surge) |
+| Rabbit-Spec | [Surge](https://github.com/Rabbit-Spec/Surge) |
+| QuixoticHeart | [rule-set](https://github.com/QuixoticHeart/rule-set) |
+| ConnersHua | [RuleGo](https://github.com/ConnersHua/RuleGo) |
+| Telegram | [官方 CIDR](https://core.telegram.org/resources/cidr.txt) |
 
-工作流基于 [Rabbit-Spec/Surge](https://github.com/Rabbit-Spec/Surge) 的思路改编，并加入了本仓库自己的分类策略、校验规则和联网审查流水线。
+> 工作流基于 [Rabbit-Spec/Surge](https://github.com/Rabbit-Spec/Surge) 的思路改编，并加入了本仓库自己的分类策略、校验规则和联网审查流水线。
+
+---
+
+<p align="center">
+  <sub>Made with ❤️ for Surge users | MIT License</sub>
+</p>
