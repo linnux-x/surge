@@ -302,7 +302,7 @@ gh workflow run auto-rules.yml --repo linnux-x/surge
 | QuixoticHeart | [rule-set](https://github.com/QuixoticHeart/rule-set) |
 | ConnersHua | [RuleGo](https://github.com/ConnersHua/RuleGo) |
 
-> 工作流基于 [Rabbit-Spec/Surge](https://github.com/Rabbit-Spec/Surge) 的思路改编，并加入了本仓库自己的分类策略、校验规则和联网审查流水线。
+> 工作流借鉴 [Rabbit-Spec/Surge](https://github.com/Rabbit-Spec/Surge) 的思路，并加入了本仓库自己的分类策略、校验规则和联网审查流水线。
 
 ---
 
