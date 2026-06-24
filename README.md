@@ -228,14 +228,14 @@ python3 scripts/validate_surge_repo.py
 
 | 策略 | 说明 |
 |------|------|
-| 🐙 **GitHub** | 不归入 `Microsoft.list`。普通服务走 `Global.list`，Copilot 走 `AI.list`，仅下载资源域名（如 `release-assets.githubusercontent.com`）进 `CDN.list` |
-| ⚡ **fast.com** | 只放在 `Speedtest.list`，不重复出现在其他文件 |
-| 🏠 **China.list** | 只保存中国大陆直连**域名**，不放 IP 规则 |
-| 🌐 **China_IP.list** | 不加 `no-resolve`，以便未命中域名解析后做 IP 分类 |
-| 🔒 **IP 规则** | 其他 IP 规则默认加 `no-resolve` |
-| 🔄 **无 baseline** | 生成规则时不保留当前 `Rule/*.list`；长期规则必须进入 `Rule/Manual/` |
-| 🏗️ **共享基础设施** | CDN / 遥测 / 分析 / 隐私合规 / 共享云**不作为**服务专属规则合并 |
-| 🔍 **子域名策略** | 服务专属子域名（如 `disney.my.sentry.io`）可保留；**不透明**子域名（如 `o207216.ingest.sentry.io`）应排除 |
+| 🐙 **GitHub** | 不归入 Microsoft。普通服务走 Global，Copilot 走 AI，下载资源走 CDN |
+| ⚡ **fast.com** | 仅 Speedtest.list，其他地方不重复 |
+| 🏠 **China.list** | 仅中国大陆直连域名，不放 IP |
+| 🌐 **China_IP.list** | 不加 no-resolve，用于 IP 分类回落 |
+| 🔒 **IP 规则** | 其他 IP 默认加 no-resolve |
+| 🔄 **无 baseline** | 不保留旧 Rule/*.list；长期规则进 Rule/Manual/ |
+| 🏗️ **共享基础设施** | CDN / 遥测 / 分析等共享平台不作为服务规则合并 |
+| 🔍 **子域名策略** | 服务专属子域名可保留，不透明子域名应排除 |
 
 ---
 
