@@ -299,7 +299,6 @@ gh workflow run auto-rules.yml --repo linnux-x/surge
 | blackmatrix7 | [ios_rule_script](https://github.com/blackmatrix7/ios_rule_script) |
 | Loyalsoldier | [surge-rules](https://github.com/Loyalsoldier/surge-rules) |
 | SukkaW | [Surge](https://github.com/SukkaW/Surge) |
-| Rabbit-Spec | [Surge](https://github.com/Rabbit-Spec/Surge) |
 | QuixoticHeart | [rule-set](https://github.com/QuixoticHeart/rule-set) |
 | ConnersHua | [RuleGo](https://github.com/ConnersHua/RuleGo) |
 
