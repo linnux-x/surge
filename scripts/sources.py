@@ -78,6 +78,7 @@ _SOURCES: list[tuple[str, str, str, str | None]] = [
     # PayPal.list
     ("blackmatrix7 PayPal", f"{BM7}/PayPal/PayPal.list", "PayPal.list", None),
     # SocialMedia.list
+    ("blackmatrix7 Discord", f"{BM7}/Discord/Discord.list", "SocialMedia.list", None),
     ("blackmatrix7 Facebook", f"{BM7}/Facebook/Facebook.list", "SocialMedia.list", None),
     ("blackmatrix7 Instagram", f"{BM7}/Instagram/Instagram.list", "SocialMedia.list", None),
     ("blackmatrix7 Twitter", f"{BM7}/Twitter/Twitter.list", "SocialMedia.list", None),

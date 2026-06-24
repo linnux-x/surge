@@ -1,15 +1,80 @@
 # NAME: SocialMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-24 23:29:20 +0800
+# UPDATED: 2026-06-24 23:34:47 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 606
+# TOTAL: 654
 
 # ======= Manual Rules ========
 # Overseas hosting / VPS forums and communities
 DOMAIN-SUFFIX,hostloc.com
 DOMAIN-SUFFIX,lowendtalk.com
 DOMAIN-SUFFIX,lowendspirit.com
+# WhatsApp (Meta, no blackmatrix7 Surge list)
+DOMAIN-KEYWORD,whatsapp
+
+# LINE
+DOMAIN-SUFFIX,line.me
+DOMAIN-SUFFIX,line.naver.jp
+
+# Signal
+DOMAIN-SUFFIX,signal.org
+DOMAIN-SUFFIX,signal.art
+
+# VKontakte (Russian social)
+DOMAIN-SUFFIX,vk.com
+DOMAIN-SUFFIX,mvk.com
+
+# Bluesky
+DOMAIN-SUFFIX,bsky.app
+DOMAIN-SUFFIX,bsky.social
+
+# Dcard (Taiwan social)
+DOMAIN-SUFFIX,dcard.tw
+
+# Quora
+DOMAIN-SUFFIX,quora.com
+DOMAIN-SUFFIX,quoracdn.net
+
+# International forums
+DOMAIN-SUFFIX,2ch.net
+DOMAIN-SUFFIX,4chan.org
+DOMAIN-SUFFIX,4channel.org
+DOMAIN-SUFFIX,5ch.net
+DOMAIN-SUFFIX,avsforum.com
+DOMAIN-SUFFIX,broadbandreports.com
+DOMAIN-SUFFIX,mobile01.com
+
+# ======= blackmatrix7 Discord ========
+DOMAIN-SUFFIX,airhorn.solutions
+DOMAIN-SUFFIX,airhornbot.com
+DOMAIN-SUFFIX,bigbeans.solutions
+DOMAIN-SUFFIX,dis.gd
+DOMAIN-SUFFIX,discord-activities.com
+DOMAIN-SUFFIX,discord-attachments-uploads-prd.storage.googleapis.com
+DOMAIN-SUFFIX,discord.co
+DOMAIN-SUFFIX,discord.com
+DOMAIN-SUFFIX,discord.design
+DOMAIN-SUFFIX,discord.dev
+DOMAIN-SUFFIX,discord.gg
+DOMAIN-SUFFIX,discord.gift
+DOMAIN-SUFFIX,discord.gifts
+DOMAIN-SUFFIX,discord.media
+DOMAIN-SUFFIX,discord.new
+DOMAIN-SUFFIX,discord.store
+DOMAIN-SUFFIX,discord.tools
+DOMAIN-SUFFIX,discordactivities.com
+DOMAIN-SUFFIX,discordapp.com
+DOMAIN-SUFFIX,discordapp.io
+DOMAIN-SUFFIX,discordapp.net
+DOMAIN-SUFFIX,discordapp.page.link
+DOMAIN-SUFFIX,discordcdn.com
+DOMAIN-SUFFIX,discordmerch.com
+DOMAIN-SUFFIX,discordpartygames.com
+DOMAIN-SUFFIX,discordsays.com
+DOMAIN-SUFFIX,discordstatus.com
+DOMAIN-SUFFIX,hammerandchisel.ssl.zendesk.com
+DOMAIN-SUFFIX,watchanimeattheoffice.com
 
 # ======= blackmatrix7 Facebook ========
 DOMAIN-SUFFIX,aboutfacebook.com
