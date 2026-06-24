@@ -1,9 +1,9 @@
 # NAME: SocialMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-24 23:34:47 +0800
+# UPDATED: 2026-06-24 23:37:10 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 654
+# TOTAL: 667
 
 # ======= Manual Rules ========
 # Overseas hosting / VPS forums and communities
@@ -44,6 +44,31 @@ DOMAIN-SUFFIX,5ch.net
 DOMAIN-SUFFIX,avsforum.com
 DOMAIN-SUFFIX,broadbandreports.com
 DOMAIN-SUFFIX,mobile01.com
+
+# Overseas hosting/VPS forums
+DOMAIN-SUFFIX,webhostingtalk.com
+DOMAIN-SUFFIX,vpsboard.com
+DOMAIN-SUFFIX,hostingdiscussion.com
+
+# NodeSeek (hosting/VPS community)
+DOMAIN-SUFFIX,nodeseek.com
+
+# V2EX
+DOMAIN-SUFFIX,v2ex.com
+
+# Overseas tech/gadget forums
+DOMAIN-SUFFIX,anandtech.com
+DOMAIN-SUFFIX,tomshardware.com
+DOMAIN-SUFFIX,techpowerup.com
+DOMAIN-SUFFIX,overclock.net
+DOMAIN-SUFFIX,arstechnica.com
+
+# Hacker News
+DOMAIN-SUFFIX,ycombinator.com
+
+# Gaming forums
+DOMAIN-SUFFIX,resetera.com
+DOMAIN-SUFFIX,neogaf.com
 
 # ======= blackmatrix7 Discord ========
 DOMAIN-SUFFIX,airhorn.solutions
