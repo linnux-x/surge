@@ -59,10 +59,14 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 | `Rule/Manual/*.txt` / `*.exclude.txt` | 手动追加（最高优先级）与排除规则 |
 | `Rule/.manifests/*.manifest` | 规则清单索引（每行：稳定哈希ID + 来源标注） |
 | `Module/*.sgmodule` | Surge 模块文件 |
-| `scripts/manifest.py` | 规则清单生成器（基于内容哈希的稳定ID + 来源追踪） |
-| `scripts/diff_manifests.py` | 清单差异对比器（本次 vs git HEAD 的增减变化） |
-| `scripts/validate_surge_repo.py` | 仓库不变量检查器（15+ 检查项） |
-| `scripts/audit_rules.py` | 联网审查脚本（5 项审计检查） |
+| `scripts/sources.py` | 上游源配置（单一定义，所有脚本引用） |
+| `scripts/check_upstream_updates.py` | 并行 HEAD 检查上游变更（8 线程） |
+| `scripts/generate_rules.py` | 规则生成引擎（下载、合并、清洗、校验） |
+| `scripts/manifest.py` | 规则清单生成器（稳定哈希ID + 来源追踪） |
+| `scripts/diff_manifests.py` | 清单差异对比（本次 vs git HEAD） |
+| `scripts/validate_surge_repo.py` | 不变量检查（15+ 项） |
+| `scripts/audit_rules.py` | 联网审查（5 项审计） |
+| `scripts/prune_cidr.py` | CIDR 去重裁剪 |
 | `.github/workflows/auto-rules.yml` | 规则同步 + DNS Mapping 模块同步流水线 |
 | `AGENT.md` | 项目指令文档（用户偏好、分类策略、验证标准 — **所有 agent 必读**） |
 
