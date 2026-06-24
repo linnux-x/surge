@@ -1,0 +1,27 @@
+# adobedtm.com is Adobe Tag Manager — shared service, not Disney-specific.
+DOMAIN-SUFFIX,adobedtm.com
+
+# bam.nr-data.net is New Relic data collection — shared service, not Disney-specific.
+DOMAIN-SUFFIX,bam.nr-data.net
+
+# braze.com is a marketing/engagement platform — shared service, not Disney-specific.
+DOMAIN-SUFFIX,braze.com
+
+# cdn.optimizely.com is Optimizely A/B testing CDN — shared service, not Disney-specific.
+DOMAIN-SUFFIX,cdn.optimizely.com
+
+# conviva.com is video analytics — shared service, not Disney-specific.
+# (cws.conviva.com with Disney prefix is kept in Disney.list)
+DOMAIN-SUFFIX,conviva.com
+
+# d9.flashtalking.com is Flashtalking ad tracking — shared service, not Disney-specific.
+DOMAIN-SUFFIX,d9.flashtalking.com
+
+# js-agent.newrelic.com is New Relic JS agent — shared service, not Disney-specific.
+DOMAIN-SUFFIX,js-agent.newrelic.com
+
+# execute-api.us-east-1.amazonaws.com is AWS API Gateway — shared, not Disney-specific.
+DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com
+
+# hsprepack.akamaized.net is Akamai CDN — shared, not Disney-specific.
+DOMAIN-SUFFIX,hsprepack.akamaized.net

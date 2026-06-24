@@ -17,6 +17,7 @@ Thumbs.db
 *.orig
 audit_report.json
 
-# Private
-Rule/Manual/
+# Private (personal rules only — exclude files are shared infrastructure)
+Rule/Manual/*
+!Rule/Manual/*.exclude.txt
 .codex/
