@@ -8,13 +8,11 @@
 
 ## 📌 项目速览
 
-| | |
-|---|---|
-| 🎯 **目标用户** | Surge 用户（iPhone / MacBook），需要精细化代理分流与规则管理 |
-| 💡 **核心价值** | 多上游源自动聚合 → 清洗校验 → 清单追踪 → 联网审计，全链路自动化 |
-| 📜 **许可证** | MIT |
-| 🔄 **更新频率** | 每日北京时间 04:00 自动同步 |
-| 🧪 **质量保障** | 每次更新须通过 5 项联网审查 + 15+ 项不变量校验 |
+- 🎯 **目标用户**：Surge 用户（iPhone / MacBook），需要精细化代理分流与规则管理
+- 💡 **核心价值**：多上游源自动聚合 → 清洗校验 → 清单追踪 → 联网审计，全链路自动化
+- 📜 **许可证**：MIT
+- 🔄 **更新频率**：每日北京时间 04:00 自动同步
+- 🧪 **质量保障**：每次更新须通过 5 项联网审查 + 15+ 项不变量校验
 
 ```bash
 # 快速使用：在 Surge 配置中加载规则
@@ -49,7 +47,6 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 | 📊 **增量差异报告** | 每次变更生成 manifest diff（markdown + JSON），明确增减来源 |
 | 🔍 **联网审查** | 5 项审计检查，ERROR 阻断提交、WARN 需确认、INFO 仅记录 |
 | 🧹 **自动清洗** | 排除共享 CDN / 遥测 / 分析平台，检测不透明子域名 |
-| ✏️ **手动规则** | `Rule/Manual/*.txt` 追加 + `*.exclude.txt` 排除，优先级高于上游 |
 
 ---
 
@@ -59,8 +56,7 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 |------|------|
 | `Conf/LINNUX.conf` | 主 Surge 配置示例，包含策略组和 `RULE-SET` 加载顺序 |
 | `Rule/*.list` | Surge 外部规则集文件（自动生成，**勿手动修改**） |
-| `Rule/Manual/*.txt` | 手动追加规则，优先级最高 |
-| `Rule/Manual/*.exclude.txt` | 排除规则，匹配到的上游行不写入最终文件 |
+| `Rule/Manual/*.txt` / `*.exclude.txt` | 手动追加（最高优先级）与排除规则 |
 | `Rule/.manifests/*.manifest` | 规则清单索引（每行：稳定哈希ID + 来源标注） |
 | `Module/*.sgmodule` | Surge 模块文件 |
 | `scripts/manifest.py` | 规则清单生成器（基于内容哈希的稳定ID + 来源追踪） |
@@ -119,7 +115,7 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 11. 💬 **SocialMedia** → 社交媒体
 12. 💰 **PayPal** → 支付服务
 13. 🔍 **Google** → Google 服务
-14. 🎬 **Streaming Media** → Netflix / Disney+ / 国际&中国媒体
+14. 🎬 **GlobalMedia + ChinaMedia** → 国际与中国媒体服务
 15. 📦 **CDN** → 共享 CDN 后台回退
 16. 🌍 **Global** → 通用代理回退
 17. 🏠 **China** → 中国大陆直连域名
@@ -288,7 +284,6 @@ gh workflow run auto-rules.yml --repo linnux-x/surge
 | Rabbit-Spec | [Surge](https://github.com/Rabbit-Spec/Surge) |
 | QuixoticHeart | [rule-set](https://github.com/QuixoticHeart/rule-set) |
 | ConnersHua | [RuleGo](https://github.com/ConnersHua/RuleGo) |
-| Telegram | [官方 CIDR](https://core.telegram.org/resources/cidr.txt) |
 
 > 工作流基于 [Rabbit-Spec/Surge](https://github.com/Rabbit-Spec/Surge) 的思路改编，并加入了本仓库自己的分类策略、校验规则和联网审查流水线。
 
