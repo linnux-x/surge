@@ -35,8 +35,10 @@ def rel(path: Path) -> str:
 
 
 def extract_process_rule_targets(workflow_text: str) -> set[str]:
-    # Main workflow uses: process_rule "AI.list" "AI" ...
-    return set(re.findall(r'^\s*process_rule\s+"([^"]+\.list)"', workflow_text, flags=re.M))
+    # After bash→Python refactor, ruleset inventory comes from sources.py
+    # (the single source of truth), not from process_rule calls in the YAML.
+    from sources import ALL_RULESETS
+    return ALL_RULESETS.copy()
 
 
 def extract_workflow_name(text: str) -> str | None:

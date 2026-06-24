@@ -113,6 +113,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add Rule/ Rule/.manifests/ Module/ README.md \
             scripts/sources.py scripts/generate_rules.py scripts/rule_validator.py \
+            scripts/validate_surge_repo.py \
             scripts/manifest.py scripts/diff_manifests.py \
             scripts/diff_report.md scripts/diff_report.json \
             scripts/check_upstream_updates.py scripts/source_state.json
