@@ -68,7 +68,6 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 | `scripts/audit_rules.py` | 联网审查（5 项审计） |
 | `scripts/prune_cidr.py` | CIDR 去重裁剪 |
 | `.github/workflows/auto-rules.yml` | 规则同步 + DNS Mapping 模块同步流水线 |
-| `AGENT.md` | 项目指令文档（用户偏好、分类策略、验证标准 — **所有 agent 必读**） |
 
 ---
 
