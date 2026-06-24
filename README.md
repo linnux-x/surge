@@ -92,7 +92,7 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 | 🪟 Microsoft_CDN.list | SukkaW | MS CDN 直连 |
 | 🎥 Netflix.list | blackmatrix7 | Netflix |
 | 💰 PayPal.list | blackmatrix7 | PayPal |
-| 💬 SocialMedia.list | QuixoticHeart · blackmatrix7 | 社交媒体聚合（海外平台） |
+| 💬 SocialMedia.list | blackmatrix7 | 社交媒体聚合（海外平台） |
 | ⚡ Speedtest.list | SukkaW · 手动 | 测速 · fast.com 仅此文件 |
 | ✈️ Telegram.list | blackmatrix7 · Telegram 官方 | 域名、CIDR、ASN |
 | 🎵 TikTok.list | blackmatrix7 | TikTok |
@@ -299,7 +299,6 @@ gh workflow run auto-rules.yml --repo linnux-x/surge
 | blackmatrix7 | [ios_rule_script](https://github.com/blackmatrix7/ios_rule_script) |
 | Loyalsoldier | [surge-rules](https://github.com/Loyalsoldier/surge-rules) |
 | SukkaW | [Surge](https://github.com/SukkaW/Surge) |
-| QuixoticHeart | [rule-set](https://github.com/QuixoticHeart/rule-set) |
 | ConnersHua | [RuleGo](https://github.com/ConnersHua/RuleGo) |
 
 > 工作流借鉴 [Rabbit-Spec/Surge](https://github.com/Rabbit-Spec/Surge) 的思路，并加入了本仓库自己的分类策略、校验规则和联网审查流水线。

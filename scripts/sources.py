@@ -21,14 +21,12 @@ BASE_URIS = {
     "BM7": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge",
     "SUKKA": "https://raw.githubusercontent.com/SukkaW/Surge/master/Source",
     "RABBIT": "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules",
-    "QUIXOTIC": "https://raw.githubusercontent.com/QuixoticHeart/rule-set/refs/heads/ruleset/surge",
     "CHUA": "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra",
 }
 
 BM7 = BASE_URIS["BM7"]
 SUKKA = BASE_URIS["SUKKA"]
 RABBIT = BASE_URIS["RABBIT"]
-QUIXOTIC = BASE_URIS["QUIXOTIC"]
 CHUA = BASE_URIS["CHUA"]
 
 # ── Canonical source list ─────────────────────────────────────────────────
@@ -80,8 +78,6 @@ _SOURCES: list[tuple[str, str, str, str | None]] = [
     # PayPal.list
     ("blackmatrix7 PayPal", f"{BM7}/PayPal/PayPal.list", "PayPal.list", None),
     # SocialMedia.list
-    ("QuixoticHeart SocialMedia", f"{QUIXOTIC}/socialmedia.list", "SocialMedia.list", None),
-    ("QuixoticHeart Forum", f"{QUIXOTIC}/forum.list", "SocialMedia.list", None),
     ("blackmatrix7 Facebook", f"{BM7}/Facebook/Facebook.list", "SocialMedia.list", None),
     ("blackmatrix7 Instagram", f"{BM7}/Instagram/Instagram.list", "SocialMedia.list", None),
     ("blackmatrix7 Twitter", f"{BM7}/Twitter/Twitter.list", "SocialMedia.list", None),

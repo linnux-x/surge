@@ -17,18 +17,6 @@
     "last_modified": null,
     "source_available": true
   },
-  "https://raw.githubusercontent.com/QuixoticHeart/rule-set/refs/heads/ruleset/surge/forum.list": {
-    "content_length": "2771",
-    "etag": "\"309c400fe6f9a3acfc8a463a04bd45e353f7dbe8543bd2ef22b68193273cda3e\"",
-    "last_modified": null,
-    "source_available": true
-  },
-  "https://raw.githubusercontent.com/QuixoticHeart/rule-set/refs/heads/ruleset/surge/socialmedia.list": {
-    "content_length": "25243",
-    "etag": "\"267df75d382ef5bb033820f3ca4cb9d143e66464748526eae500589b808cc8b5\"",
-    "last_modified": null,
-    "source_available": true
-  },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
     "content_length": "4031",
     "etag": "\"5d8b7c48c8826e7486cddff552aeb810971567a7a8b8605aebde70fdc4c182df\"",
