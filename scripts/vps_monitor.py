@@ -54,9 +54,9 @@ $httpClient.get(url, function(error, response, data) {
     }
 
     var c = "";
-    c += "🧠 " + padLabel("内存") + info.memory.percent + "% " + memUsedG + "G/" + memTotalG + "G\\n";
-    c += "🖥 " + padLabel("CPU") + cpuPct + "% " + info.cpu.load_1m + "/" + info.cpu.cores + "核\\n";
-    c += "💾 " + padLabel("硬盘") + info.disk.percent + "% " + info.disk.used_gb + "G/" + info.disk.total_gb + "G\\n";
+    c += "🧠 " + padLabel("内存") + info.memory.percent + "%  " + memUsedG + "G/" + memTotalG + "G\\n";
+    c += "🖥 " + padLabel("CPU") + cpuPct + "%  " + info.cpu.load_1m + "/" + info.cpu.cores + "核\\n";
+    c += "💾 " + padLabel("硬盘") + info.disk.percent + "%  " + info.disk.used_gb + "G/" + info.disk.total_gb + "G\\n";
     c += "📡 " + padLabel("流量") + "⬆" + txGb + "G ⬇" + rxGb + "G\\n";
     c += "🌐 " + padLabel("IP") + info.ip.public_ip + "\\n";
     c += "📍 " + padLabel("位置") + info.ip.location + "\\n";

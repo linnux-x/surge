@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-06-24T05:08:02.836654",
+  "total_findings": 4,
+  "errors": 0,
+  "warnings": 2,
+  "info": 2,
+  "findings": [
+    {
+      "severity": "WARN",
+      "check": "upstream_vs_generated",
+      "target": "China_IP.list",
+      "message": "Generated 11431 vs upstream 5761 (198%) — generated exceeds upstream significantly"
+    },
+    {
+      "severity": "WARN",
+      "check": "upstream_vs_generated",
+      "target": "Microsoft_CDN.list",
+      "message": "Generated 84 vs upstream 58 (145%) — generated exceeds upstream significantly"
+    },
+    {
+      "severity": "INFO",
+      "check": "shared_infrastructure",
+      "target": "AI.list",
+      "rule": "DOMAIN,aida.googleapis.com",
+      "message": "Potential shared infrastructure domain: aida.googleapis.com (subdomain labels: ['aida'])"
+    },
+    {
+      "severity": "INFO",
+      "check": "shared_infrastructure",
+      "target": "Netflix.list",
+      "rule": "DOMAIN,netflix.com.edgesuite.net",
+      "message": "Potential shared infrastructure domain: netflix.com.edgesuite.net (subdomain labels: ['netflix', 'com'])"
+    }
+  ]
+}
