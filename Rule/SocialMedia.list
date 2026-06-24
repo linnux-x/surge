@@ -1,9 +1,9 @@
 # NAME: SocialMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-24 22:42:37 +0800
+# UPDATED: 2026-06-24 22:53:16 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 918
+# TOTAL: 917
 
 # ======= Manual Rules ========
 # Overseas hosting / VPS forums and communities
@@ -13,7 +13,6 @@ DOMAIN-SUFFIX,lowendspirit.com
 
 # ======= QuixoticHeart SocialMedia ========
 DOMAIN,api.iturrit.com
-DOMAIN,e122475.dscg.akamaiedge.net
 DOMAIN,licdn.cn.cdn20.com
 DOMAIN,linkedin.sc.omtrdc.net
 DOMAIN-SUFFIX,9ineverse.com
