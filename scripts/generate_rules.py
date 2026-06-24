@@ -14,108 +14,16 @@ import os
 import re
 import subprocess
 import sys
-import tempfile
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+# Ensure scripts/ is on the path so 'import sources' works
+_scripts_dir = Path(__file__).resolve().parent
+if str(_scripts_dir) not in sys.path:
+    sys.path.insert(0, str(_scripts_dir))
 
-# ── Source URIs ──────────────────────────────────────────────────────────
-
-BM7 = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge"
-SUKKA = "https://raw.githubusercontent.com/SukkaW/Surge/master/Source"
-RABBIT = "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules"
-QUIXOTIC = "https://raw.githubusercontent.com/QuixoticHeart/rule-set/refs/heads/ruleset/surge"
-CHUA = "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra"
-
-# ── Rule specs: target_filename → display_name, [(source_label, url, format?)] ──
-
-RULE_SPECS = {
-    "AI.list": ("AI", [
-        ("SukkaW AI", f"{SUKKA}/non_ip/ai.conf", None),
-        ("SukkaW Apple Intelligence", f"{SUKKA}/non_ip/apple_intelligence.conf", None),
-        ("Rabbit-Spec AIGC", f"{RABBIT}/AIGC.list", None),
-        ("ConnersHua AI", f"{CHUA}/AI.list", None),
-    ]),
-    "Apple.list": ("Apple", [
-        ("blackmatrix7 Apple", f"{BM7}/Apple/Apple_All_No_Resolve.list", None),
-    ]),
-    "Apple_CN.list": ("Apple_CN", [
-        ("SukkaW Apple CN", "https://ruleset.skk.moe/List/non_ip/apple_cn.conf", None),
-        ("SukkaW Apple CDN", "https://ruleset.skk.moe/List/domainset/apple_cdn.conf", "domainset"),
-    ]),
-    "CDN.list": ("CDN", [
-        ("SukkaW CDN", f"{SUKKA}/non_ip/cdn.conf", None),
-    ]),
-    "Download.list": ("Download", [
-        ("SukkaW Download", f"{SUKKA}/domainset/download.conf", "domainset"),
-        ("SukkaW Game Download", f"{SUKKA}/domainset/game-download.conf", "domainset"),
-    ]),
-    "China.list": ("China", [
-        ("SukkaW Domestic", f"{SUKKA}/non_ip/domestic.conf", None),
-        ("blackmatrix7 ChinaMaxNoIP Domain", f"{BM7}/ChinaMaxNoIP/ChinaMaxNoIP_Domain.list", "domainset"),
-        ("Rabbit-Spec China", f"{RABBIT}/China.list", None),
-    ]),
-    "China_IP.list": ("China_IP", [
-        ("Loyalsoldier China CIDR", "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/cncidr.txt", None),
-        ("blackmatrix7 China IPs", f"{BM7}/ChinaIPs/ChinaIPs.list", None),
-        ("Rabbit-Spec China CIDR", f"{RABBIT}/ChinaCIDR.list", None),
-    ]),
-    "ChinaMedia.list": ("ChinaMedia", [
-        ("blackmatrix7 ChinaMedia", f"{BM7}/ChinaMedia/ChinaMedia.list", None),
-    ]),
-    "Disney.list": ("Disney", [
-        ("blackmatrix7 Disney", f"{BM7}/Disney/Disney.list", None),
-    ]),
-    "Game.list": ("Game", [
-        ("blackmatrix7 Game", f"{BM7}/Game/Game.list", None),
-    ]),
-    "Global.list": ("Global", [
-        ("blackmatrix7 Global", f"{BM7}/Global/Global_All_No_Resolve.list", None),
-    ]),
-    "GlobalMedia.list": ("GlobalMedia", [
-        ("blackmatrix7 GlobalMedia", f"{BM7}/GlobalMedia/GlobalMedia_All_No_Resolve.list", None),
-    ]),
-    "Google.list": ("Google", [
-        ("blackmatrix7 Google", f"{BM7}/Google/Google.list", None),
-    ]),
-    "Microsoft.list": ("Microsoft", [
-        ("blackmatrix7 Microsoft", f"{BM7}/Microsoft/Microsoft.list", None),
-    ]),
-    "Microsoft_CDN.list": ("Microsoft_CDN", [
-        ("SukkaW Microsoft CDN", "https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf", None),
-    ]),
-    "Netflix.list": ("Netflix", [
-        ("blackmatrix7 Netflix", f"{BM7}/Netflix/Netflix.list", None),
-    ]),
-    "PayPal.list": ("PayPal", [
-        ("blackmatrix7 PayPal", f"{BM7}/PayPal/PayPal.list", None),
-    ]),
-    "SocialMedia.list": ("SocialMedia", [
-        ("QuixoticHeart SocialMedia", f"{QUIXOTIC}/socialmedia.list", None),
-        ("QuixoticHeart Forum", f"{QUIXOTIC}/forum.list", None),
-        ("blackmatrix7 Facebook", f"{BM7}/Facebook/Facebook.list", None),
-        ("blackmatrix7 Instagram", f"{BM7}/Instagram/Instagram.list", None),
-        ("blackmatrix7 Twitter", f"{BM7}/Twitter/Twitter.list", None),
-    ]),
-    "Speedtest.list": ("Speedtest", [
-        ("SukkaW Speedtest", f"{SUKKA}/domainset/speedtest.conf", "domainset"),
-    ]),
-    "Telegram.list": ("Telegram", [
-        ("blackmatrix7 Telegram", f"{BM7}/Telegram/Telegram.list", None),
-        ("Telegram Official CIDR", "https://core.telegram.org/resources/cidr.txt", "cidr"),
-        ("SukkaW Telegram IP", "https://ruleset.skk.moe/List/ip/telegram.conf", None),
-    ]),
-    "TikTok.list": ("TikTok", [
-        ("blackmatrix7 TikTok", f"{BM7}/TikTok/TikTok.list", None),
-    ]),
-    "WeChat.list": ("WeChat", [
-        ("blackmatrix7 WeChat", f"{BM7}/WeChat/WeChat.list", None),
-    ]),
-    "YouTube.list": ("YouTube", [
-        ("blackmatrix7 YouTube", f"{BM7}/YouTube/YouTube.list", None),
-    ]),
-}
+from sources import RULE_SPECS
 
 # ── Constants ─────────────────────────────────────────────────────────────
 
