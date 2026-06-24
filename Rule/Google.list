@@ -1,13 +1,16 @@
 # NAME: Google
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-24 04:07:03 +0800
+# UPDATED: 2026-06-24 13:23:53 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 699
+# TOTAL: 700
 
 # ======= Manual Rules ========
 DOMAIN-SUFFIX,gvt1.com
 DOMAIN-SUFFIX,gvt2.com
+
+# GEOIP match for all Google ASN IP ranges (catches unknown Google IPs not covered by domain rules)
+GEOIP,GOOGLE
 
 # ======= blackmatrix7 Google ========
 DOMAIN,voice.telephony.goog
