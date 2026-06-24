@@ -1,9 +1,9 @@
 # NAME: AI
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-24 22:55:05 +0800
+# UPDATED: 2026-06-24 22:55:26 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 174
+# TOTAL: 173
 
 # ======= Manual Rules ========
 # Anthropic / Claude
@@ -175,7 +175,6 @@ DOMAIN-SUFFIX,apps.mzstatic.com
 DOMAIN-SUFFIX,livekit.cloud
 DOMAIN,api.statsig.com
 DOMAIN,api-iam.intercom.io
-DOMAIN,o33249.ingest.sentry.io
 DOMAIN,openaiapi-site.azureedge.net
 DOMAIN-KEYWORD,openaiapi
 DOMAIN-KEYWORD,openaicom
