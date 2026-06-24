@@ -6,11 +6,20 @@ both locally and inside GitHub Actions without dependency setup.
 """
 from __future__ import annotations
 
-import ipaddress
 import re
 import sys
-from collections import Counter, defaultdict
+from collections import defaultdict
 from pathlib import Path
+
+# Ensure scripts/ is on the path
+_scripts_dir = str(Path(__file__).resolve().parent)
+if _scripts_dir not in sys.path:
+    sys.path.insert(0, _scripts_dir)
+
+from rule_validator import (
+    validate_rule_file, parse_total_header, non_comment_rules,
+    ALLOWED_TYPES, OPTION_TOKENS, SUKKAW_MARKER,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 RULE_DIR = ROOT / "Rule"
@@ -18,97 +27,11 @@ WORKFLOW_DIR = ROOT / ".github" / "workflows"
 MAIN_WORKFLOW = WORKFLOW_DIR / "auto-rules.yml"
 README = ROOT / "README.md"
 
-ALLOWED_TYPES = {
-    "DOMAIN",
-    "DOMAIN-SUFFIX",
-    "DOMAIN-KEYWORD",
-    "IP-CIDR",
-    "IP-CIDR6",
-    "IP-ASN",
-    "GEOIP",
-    "USER-AGENT",
-    "PROCESS-NAME",
-    "URL-REGEX",
-    "AND",
-    "OR",
-    "NOT",
-}
-OPTION_TOKENS = {"no-resolve", "extended-matching"}
-SUKKAW_MARKER = "7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe"
-SHARED_CDN_PARENTS = {
-    "akadns.net",
-    "akamaiedge.net",
-    "akamaihd.net",
-    "akamaized.net",
-    "azureedge.net",
-    "b-cdn.net",
-    "cdn77.org",
-    "cloudfront.net",
-    "edgekey.net",
-    "edgesuite.net",
-    "fastly.net",
-}
-# Shared third-party infrastructure that should not appear in service rules.
-# Only checked in service-specific rulesets (not Global, CDN, Direct, etc.).
-SHARED_THIRD_PARTY_SUFFIXES = {
-    "cookielaw.org",       # OneTrust cookie consent
-    "onetrust.com",        # OneTrust privacy platform
-    "adobedtm.com",        # Adobe Tag Manager
-    "braze.com",           # Marketing/engagement platform
-    "newrelic.com",        # New Relic APM
-    "nr-data.net",         # New Relic data collection
-    "optimizely.com",      # A/B testing
-    "segment.io",          # Customer data platform (CDP)
-    "sentry.io",           # Error tracking platform
-}
-SHARED_THIRD_PARTY_DOMAINS = {
-    "js-agent.newrelic.com",
-}
-# Rulesets where shared third-party checks do NOT apply (too broad or dedicated).
-SHARED_THIRD_PARTY_EXEMPT = {
-    "Global.list",
-    "GlobalMedia.list",
-    "CDN.list",
-    "Direct.list",
-    "China.list",
-    "China_IP.list",
-    "ChinaMedia.list",
-    "Download.list",
-}
-# PayPal China domestic domains that should NOT be in PayPal.list.
-PAYPAL_CN_DOMAINS = {
-    "anfutong.cn", "anfutong.com", "anfutong.com.cn",
-    "beibao.cn", "beibao.com", "beibao.com.cn",
-    "paypal.cn", "paypal.com.cn", "paypal.net.cn", "paypal.org.cn",
-    "paypal-corp.cn", "paypal-corp.com.cn",
-    "paypal-notice.cn", "paypal-notice.com.cn",
-    "paypalcommunity.cn", "paypalhere.cn", "paypalhere.com.cn",
-    "paypalobjects.cn", "paypalobjects.com.cn",
-    "xoom.net.cn",
-    "xn--bnq297cix3a.cn",
-}
-NON_CHINA_FALLBACK_PATTERNS = [
-    re.compile(r"^domain,rthklive2-lh[.]akamaihd[.]net$", re.I),
-    re.compile(
-        r"^domain-suffix,(bilibili[.]tv|biliintl[.]co|biliintl[.]com|himalaya[.]com|iflix[.]com|iq[.]com|joox[.]com|kwai-group[.]com|kwai[.]com|kwai[.]net|kwaicdn[.]com|nba[.]com|snssdk[.]com|tiktokd[.]net|tiktokd[.]org|wetv[.]vip|wetvinfo[.]com)$",
-        re.I,
-    ),
-    re.compile(r"^user-agent,(himalaya[*]|tiktok[*])$", re.I),
-]
+# Import shared validator — constants and functions come from rule_validator now
 
 
 def rel(path: Path) -> str:
     return str(path.relative_to(ROOT))
-
-
-def non_comment_rules(path: Path) -> list[str]:
-    lines: list[str] = []
-    for raw in path.read_text(encoding="utf-8", errors="replace").splitlines():
-        s = raw.strip()
-        if not s or s.startswith("#"):
-            continue
-        lines.append(s)
-    return lines
 
 
 def extract_process_rule_targets(workflow_text: str) -> set[str]:
@@ -191,176 +114,16 @@ def check_readme_inventory(errors: list[str]) -> None:
         errors.append("README omits rule files: " + ", ".join(missing))
 
 
-def parse_total_header(path: Path) -> int | None:
-    for raw in path.read_text(encoding="utf-8", errors="replace").splitlines()[:20]:
-        m = re.match(r"#\s*TOTAL:\s*(\d+)\s*$", raw)
-        if m:
-            return int(m.group(1))
-    return None
-
-
-def validate_rule_file(path: Path, errors: list[str]) -> None:
-    raw_text = path.read_text(encoding="utf-8", errors="replace")
-    if "Current Project Baseline" in raw_text:
-        errors.append(f"{rel(path)} contains obsolete Current Project Baseline section")
-
-    rules = non_comment_rules(path)
-    target = path.name
-
-    total = parse_total_header(path)
-    if total is not None and total != len(rules):
-        errors.append(f"{rel(path)} TOTAL header {total} != actual {len(rules)}")
-
-    counts = Counter(r.lower() for r in rules)
-    duplicates = [rule for rule, count in counts.items() if count > 1]
-    if duplicates:
-        errors.append(f"{rel(path)} has duplicate rules, first examples: {duplicates[:5]}")
-
-    networks: list[tuple[int, ipaddress._BaseNetwork]] = []
-    all_networks: set[ipaddress._BaseNetwork] = set()
-
-    for index, rule in enumerate(rules, start=1):
-        parts = [p.strip() for p in rule.split(",")]
-        rule_type = parts[0].upper()
-        low = rule.lower()
-
-        if rule_type not in ALLOWED_TYPES:
-            errors.append(f"{rel(path)}:{index} unsupported rule type: {rule}")
-            continue
-
-        if SUKKAW_MARKER in low:
-            errors.append(f"{rel(path)}:{index} SukkaW marker/test domain leaked into output: {rule}")
-
-        if rule_type in {"DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD"} and len(parts) >= 2:
-            value = parts[1]
-            if value != value.lower():
-                errors.append(f"{rel(path)}:{index} domain value is not lowercase: {rule}")
-            if "://" in value or "/" in value:
-                errors.append(f"{rel(path)}:{index} domain contains URL scheme/path: {rule}")
-
-        if rule_type in {"DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD", "IP-CIDR", "IP-CIDR6", "IP-ASN", "USER-AGENT", "PROCESS-NAME"}:
-            if len(parts) >= 3 and parts[2].lower() not in OPTION_TOKENS:
-                errors.append(f"{rel(path)}:{index} possible policy name in external ruleset: {rule}")
-
-        if rule_type == "DOMAIN-KEYWORD" and len(parts) >= 2 and re.match(r"^[0-9]+([.][0-9]+){1,3}[.]?$", parts[1]):
-            errors.append(f"{rel(path)}:{index} numeric DOMAIN-KEYWORD fragment: {rule}")
-
-        if target == "China.list" and rule_type in {"IP-CIDR", "IP-CIDR6", "IP-ASN"}:
-            errors.append(f"{rel(path)}:{index} IP rule in China.list: {rule}")
-        if target == "China_IP.list" and rule_type in {"IP-CIDR", "IP-CIDR6", "IP-ASN"} and ",no-resolve" in low:
-            errors.append(f"{rel(path)}:{index} no-resolve in China_IP.list: {rule}")
-        if target != "China_IP.list" and rule_type in {"IP-CIDR", "IP-CIDR6", "IP-ASN"} and ",no-resolve" not in low:
-            errors.append(f"{rel(path)}:{index} missing no-resolve: {rule}")
-
-        if target == "Microsoft.list" and re.search(r"github|ghcr[.]io", low):
-            errors.append(f"{rel(path)}:{index} GitHub family rule in Microsoft.list: {rule}")
-        if target != "Speedtest.list" and re.search(r"(^|,)([^,]*[.])?fast[.]com(,|$)", low):
-            errors.append(f"{rel(path)}:{index} fast.com outside Speedtest.list: {rule}")
-        if target != "CDN.list" and rule_type == "DOMAIN-SUFFIX" and len(parts) >= 2 and parts[1].lower() in SHARED_CDN_PARENTS:
-            errors.append(f"{rel(path)}:{index} shared CDN parent outside CDN.list: {rule}")
-        if target == "China.list" and any(p.search(low) for p in NON_CHINA_FALLBACK_PATTERNS):
-            errors.append(f"{rel(path)}:{index} non-China media/social fallback in China.list: {rule}")
-
-        # Check shared third-party infrastructure in service-specific rulesets.
-        if target not in SHARED_THIRD_PARTY_EXEMPT and rule_type in {"DOMAIN", "DOMAIN-SUFFIX"} and len(parts) >= 2:
-            domain_val = parts[1].lower()
-            # Check exact domain matches
-            if domain_val in SHARED_THIRD_PARTY_DOMAINS:
-                errors.append(f"{rel(path)}:{index} shared third-party domain in service ruleset: {rule}")
-            # Check suffix matches (domain ends with .<shared_suffix>)
-            if rule_type == "DOMAIN-SUFFIX" and domain_val in SHARED_THIRD_PARTY_SUFFIXES:
-                errors.append(f"{rel(path)}:{index} shared third-party suffix in service ruleset: {rule}")
-            # Also catch DOMAIN-SUFFIX of subdomains under shared suffixes
-            # (e.g., DOMAIN-SUFFIX,o207216.ingest.sentry.io)
-            elif rule_type == "DOMAIN-SUFFIX":
-                for suffix in SHARED_THIRD_PARTY_SUFFIXES:
-                    if domain_val.endswith(f".{suffix}"):
-                        # Allow if the subdomain has a clear service/brand prefix
-                        # (e.g., disney.my.sentry.io → "disney" is a brand prefix)
-                        sub = domain_val[: -(len(suffix) + 1)]
-                        first_label = sub.split(".")[0].lower()
-                        # Opaque IDs (pure digits, hex, short random) are NOT service prefixes
-                        is_opaque = (
-                            first_label.isdigit()
-                            or all(c in "0123456789abcdef" for c in first_label)
-                            or (len(first_label) <= 6 and any(c.isdigit() for c in first_label) and not first_label.isalpha())
-                        )
-                        if is_opaque:
-                            errors.append(f"{rel(path)}:{index} shared third-party subdomain in service ruleset: {rule}")
-                        break
-            elif rule_type == "DOMAIN":
-                for suffix in SHARED_THIRD_PARTY_SUFFIXES:
-                    if domain_val.endswith(f".{suffix}"):
-                        # Allow if the subdomain has a service prefix (heuristic: at least 2 labels before the shared suffix)
-                        labels_before_suffix = domain_val[: -len(suffix) - 1].split(".")
-                        # Single-label prefix like "disney.my" — probably service-specific, skip
-                        pass
-                        break
-
-        # Check PayPal China domestic domains in PayPal.list
-        if target == "PayPal.list" and rule_type in {"DOMAIN", "DOMAIN-SUFFIX"} and len(parts) >= 2:
-            domain_val = parts[1].lower()
-            if domain_val in PAYPAL_CN_DOMAINS:
-                errors.append(f"{rel(path)}:{index} PayPal China domestic domain should be in China.list: {rule}")
-            elif rule_type == "DOMAIN-SUFFIX":
-                for cn_dom in PAYPAL_CN_DOMAINS:
-                    if domain_val == cn_dom or domain_val.endswith(f".{cn_dom}"):
-                        errors.append(f"{rel(path)}:{index} PayPal China domestic domain should be in China.list: {rule}")
-                        break
-
-        # Check opaque DOMAIN entries under shared CDN parents outside CDN.list.
-        # Only DOMAIN-SUFFIX was caught above; DOMAIN entries like
-        # DOMAIN,e16991.b.akamaiedge.net also need checking.
-        if (
-            target != "CDN.list"
-            and rule_type == "DOMAIN"
-            and target not in SHARED_THIRD_PARTY_EXEMPT
-            and len(parts) >= 2
-        ):
-            domain_val = parts[1].lower()
-            for parent in SHARED_CDN_PARENTS:
-                if domain_val.endswith(f".{parent}") or domain_val == parent:
-                    sub = domain_val[: -len(parent) - 1] if domain_val.endswith(f".{parent}") else ""
-                    first_label = sub.split(".")[0].lower() if sub else ""
-                    # Opaque prefix: all-digit, all-hex, or short alphanumeric (≤6 chars)
-                    is_opaque = (
-                        first_label.isdigit()
-                        or all(c in "0123456789abcdef" for c in first_label)
-                        or (
-                            len(first_label) <= 6
-                            and any(c.isdigit() for c in first_label)
-                            and not first_label.isalpha()
-                        )
-                    )
-                    if is_opaque:
-                        errors.append(
-                            f"{rel(path)}:{index} opaque CDN edge node under "
-                            f"shared parent ({parent}): {rule}"
-                        )
-                    break
-
-        if rule_type in {"IP-CIDR", "IP-CIDR6"} and len(parts) >= 2:
-            try:
-                network = ipaddress.ip_network(parts[1], strict=False)
-            except ValueError as exc:
-                errors.append(f"{rel(path)}:{index} invalid CIDR {parts[1]!r}: {exc}")
-            else:
-                networks.append((index, network))
-                all_networks.add(network)
-
-    for index, network in networks:
-        for prefix in range(network.prefixlen):
-            try:
-                if network.supernet(new_prefix=prefix) in all_networks:
-                    errors.append(f"{rel(path)}:{index} redundant CIDR covered by broader prefix: {network}")
-                    break
-            except ValueError:
-                pass
-
-
 def check_rule_files(errors: list[str]) -> None:
     for path in sorted(RULE_DIR.glob("*.list")):
-        validate_rule_file(path, errors)
+        rules = [l for l in path.read_text(encoding="utf-8", errors="replace").splitlines()
+                 if l.strip() and not l.strip().startswith("#")]
+        total = parse_total_header(path)
+        if total is not None and total != len(rules):
+            errors.append(f"{rel(path)} TOTAL header {total} ≠ actual {len(rules)}")
+        errs = validate_rule_file(rules, path.name)
+        for e in errs:
+            errors.append(f"{rel(path)} {e}")
 
 
 def main() -> int:

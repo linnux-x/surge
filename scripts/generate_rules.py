@@ -24,6 +24,7 @@ if str(_scripts_dir) not in sys.path:
     sys.path.insert(0, str(_scripts_dir))
 
 from sources import RULE_SPECS
+from rule_validator import validate_rule_file
 
 # ── Constants ─────────────────────────────────────────────────────────────
 
@@ -159,108 +160,6 @@ def prune_redundant_cidr(filepath: Path):
     subprocess.run([sys.executable, "scripts/prune_cidr.py", str(filepath)], check=True)
 
 
-def validate_rules(filepath: Path, target_name: str):
-    """Validate Surge rule syntax and project policies."""
-    lines = Path(filepath).read_text(encoding="utf-8").splitlines()
-
-    # Check valid rule types
-    rule_re = re.compile(
-        r"^(DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|IP-CIDR|IP-CIDR6|IP-ASN|"
-        r"GEOIP|USER-AGENT|PROCESS-NAME|URL-REGEX|AND|OR|NOT),"
-    )
-    invalid = [l for l in lines if l.strip() and not l.startswith("#")
-               and not rule_re.match(l)]
-    if invalid:
-        print(f"Invalid Surge rule lines in {target_name}:")
-        for l in invalid[:20]:
-            print(f"  {l}")
-        sys.exit(1)
-
-    # Check for policy names
-    policy_re = re.compile(
-        r"^(DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|IP-CIDR|IP-CIDR6|IP-ASN|"
-        r"USER-AGENT|PROCESS-NAME),",
-        re.IGNORECASE
-    )
-    for line in lines:
-        if line.startswith("#") or not line.strip():
-            continue
-        if policy_re.match(line):
-            parts = line.split(",")
-            if len(parts) >= 3:
-                opt = parts[2].lower()
-                if opt not in ("no-resolve", "extended-matching"):
-                    print(f"Possible policy name found in {target_name}: {line}")
-                    sys.exit(1)
-
-    # Project-specific policy checks
-    _validate_project_policies(lines, target_name)
-
-
-def _validate_project_policies(lines: list[str], target_name: str):
-    """Check project-specific invariants."""
-    for line in lines:
-        if line.startswith("#") or not line.strip():
-            continue
-        low = line.lower()
-
-        # Numeric DOMAIN-KEYWORD
-        if re.match(r"^domain-keyword,\d+\.\d+\.\d+\.?", low):
-            print(f"Numeric DOMAIN-KEYWORD fragment: {line}")
-            sys.exit(1)
-
-        # China.list: no IP rules
-        if target_name == "China.list" and re.match(r"^(ip-cidr|ip-cidr6|ip-asn),", low):
-            print(f"IP rule in China.list: {line}")
-            sys.exit(1)
-
-        # China_IP.list: no no-resolve
-        if (target_name == "China_IP.list" and
-                re.match(r"^(ip-cidr|ip-cidr6|ip-asn),", low) and
-                re.search(r",no-resolve($|,)", low)):
-            print(f"no-resolve in China_IP.list: {line}")
-            sys.exit(1)
-
-        # Other IP rules: must have no-resolve
-        if (target_name != "China_IP.list" and
-                re.match(r"^(ip-cidr|ip-cidr6|ip-asn),", low) and
-                not re.search(r",no-resolve($|,)", low)):
-            print(f"Missing no-resolve: {line}")
-            sys.exit(1)
-
-        # Microsoft.list: no GitHub
-        if target_name == "Microsoft.list" and re.search(r"github|ghcr\.io", low):
-            print(f"GitHub family rule in Microsoft.list: {line}")
-            sys.exit(1)
-
-        # fast.com only in Speedtest
-        if (target_name != "Speedtest.list" and
-                re.search(r"(^|,)([^,]*\.)?fast\.com(,|$)", low)):
-            print(f"fast.com outside Speedtest.list: {line}")
-            sys.exit(1)
-
-        # Shared CDN parents outside CDN.list
-        cdn_parents = r"^domain-suffix,(akadns\.net|akamaiedge\.net|akamaihd\.net|akamaized\.net|azureedge\.net|b-cdn\.net|cdn77\.org|cloudfront\.net|edgekey\.net|edgesuite\.net|fastly\.net)$"
-        if target_name != "CDN.list" and re.match(cdn_parents, low):
-            print(f"Shared CDN parent outside CDN.list: {line}")
-            sys.exit(1)
-
-        # Non-China media/social in China.list
-        if target_name == "China.list":
-            non_china_re = re.compile(
-                r"^(domain,rthklive2-lh\.akamaihd\.net|"
-                r"domain-suffix,(bilibili\.tv|biliintl\.co|biliintl\.com|"
-                r"himalaya\.com|iflix\.com|iq\.com|joox\.com|kwai-group\.com|"
-                r"kwai\.com|kwai\.net|kwaicdn\.com|nba\.com|snssdk\.com|"
-                r"tiktokd\.net|tiktokd\.org|wetv\.vip|wetvinfo\.com)|"
-                r"user-agent,(himalaya[*]|tiktok[*]))$",
-                re.IGNORECASE
-            )
-            if non_china_re.match(low):
-                print(f"Non-China media/social fallback in China.list: {line}")
-                sys.exit(1)
-
-
 # ── Processing ──────────────────────────────────────────────────────────────
 
 def fetch_source(url: str) -> list[str]:
@@ -309,18 +208,28 @@ def process_rule(target_name: str, display_name: str, sources: list[tuple[str, s
     lines = apply_project_guardrails(target_name, lines)
     lines = dedupe_preserve_order(lines)
 
-    # Write temp file for CIDR pruning
+    # Write to file for CIDR pruning (needs physical file)
     target_path.parent.mkdir(parents=True, exist_ok=True)
     target_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
     prune_redundant_cidr(target_path)
 
-    validate_rules(target_path, target_name)
+    # Validate with shared validator (same checks as validate_surge_repo.py)
+    rules = [l for l in Path(target_path).read_text(encoding="utf-8").splitlines()
+             if l.strip() and not l.strip().startswith("#")]
+    errors = validate_rule_file(rules, target_name)
+    if errors:
+        print(f"VALIDATION FAILED for {target_name}:")
+        for e in errors:
+            print(f"  - {e}")
+        sys.exit(1)
 
-    # Count and write final header
-    final_lines = Path(target_path).read_text(encoding="utf-8").splitlines()
-    rule_count = sum(1 for l in final_lines if not l.startswith("#") and l.strip())
+    # Write final file with header
+    rule_count = len(rules)
 
     update_time = datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d %H:%M:%S +0800")
+
+    # Re-read the CIDR-pruned file to get all lines (including source markers)
+    pruned_lines = target_path.read_text(encoding="utf-8").splitlines()
 
     with open(target_path, "w", encoding="utf-8") as f:
         f.write(f"# NAME: {display_name}\n")
@@ -330,7 +239,7 @@ def process_rule(target_name: str, display_name: str, sources: list[tuple[str, s
         f.write(f"# FORMAT: Surge Ruleset\n")
         f.write(f"# TOTAL: {rule_count}\n")
         f.write("\n")
-        f.writelines(line + "\n" for line in final_lines)
+        f.writelines(line + "\n" for line in pruned_lines)
 
 
 def prune_global_first_match_overlaps():
@@ -375,7 +284,15 @@ def prune_global_first_match_overlaps():
             result.append(line)
 
     target_path.write_text("\n".join(result) + "\n", encoding="utf-8")
-    validate_rules(target_path, "Global.list")
+
+    # Validate after pruning
+    rules = [l for l in result if not l.startswith("#") and l.strip()]
+    errors = validate_rule_file(rules, "Global.list")
+    if errors:
+        print("VALIDATION FAILED for Global.list after pruning:")
+        for e in errors:
+            print(f"  - {e}")
+        sys.exit(1)
 
 
 # ── Main ────────────────────────────────────────────────────────────────────
