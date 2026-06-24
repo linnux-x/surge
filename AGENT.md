@@ -2,8 +2,7 @@
 
 ## User Context
 
-- The user travels globally, especially across mainland China, Hong Kong, Japan, and the United States.
-- The primary devices are iPhone and MacBook, with Surge used for proxy routing and traffic classification.
+- Rules should work across multiple regions without assuming region-locked fallback behaviors.
 - Rules must remain useful across regions without assuming that every platform supports the same fallback types.
 - The user's repository-specific classification choices override generic corporate ownership groupings.
 
@@ -107,13 +106,12 @@ Audit severity levels:
 **Continuous evolution:**
 - WARN findings confirmed as needing exclusion → immediately add to `Rule/Manual/*.exclude.txt`
 - New shared infrastructure patterns → update both `scripts/audit_rules.py` (BROAD_SHARED_SUFFIXES) and `scripts/validate_surge_repo.py` (SHARED_THIRD_PARTY_SUFFIXES)
-- Lessons learned → update skill references and Hermes memory
+- Lessons learned → update maintenance documentation
 
 ## Skill Maintenance
 
 - After real ruleset work, update the skill only when a durable, reproducible lesson improves future tasks.
 - Keep workflow instructions in `SKILL.md`, detailed sources in `references/sources.md`, and reusable findings in `references/Learned Patterns.md`.
-- Check `agents/openai.yaml` after skill changes and run the official skill validator when its dependencies are available.
 - Never weaken source traceability or false-positive protections merely to increase the rule count.
 
 ## Completion Standard
