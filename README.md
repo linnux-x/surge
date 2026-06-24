@@ -76,12 +76,12 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 
 | 规则文件 | 上游来源 | 说明 |
 |---------|---------|------|
-| 📱 AI.list | SukkaW · Rabbit-Spec · ConnersHua | AI 服务、模型 API、Cursor、Zed、Groq、xAI、Doubao 等 |
+| 📱 AI.list | SukkaW · ConnersHua | AI 服务、模型 API、Cursor、Zed、Groq、xAI、Doubao 等 |
 | 🍎 Apple.list | blackmatrix7 | Apple 全系服务 |
 | 🍎 Apple_CN.list | SukkaW | Apple 中国区 CDN 直连 |
 | 📦 CDN.list | SukkaW | CDN、静态资源、下载资源 |
-| 🏠 China.list | SukkaW · blackmatrix7 · Rabbit-Spec | 中国大陆直连域名（domain-only） |
-| 🌐 China_IP.list | Loyalsoldier · blackmatrix7 · Rabbit-Spec | 中国大陆 IP 回退（不加 no-resolve） |
+| 🏠 China.list | SukkaW · blackmatrix7 | 中国大陆直连域名（domain-only） |
+| 🌐 China_IP.list | Loyalsoldier · blackmatrix7 | 中国大陆 IP 回退（不加 no-resolve） |
 | 📺 ChinaMedia.list | blackmatrix7 | 中国媒体服务 |
 | 🏰 Disney.list | blackmatrix7 | Disney+ |
 | ⬇️ Download.list | SukkaW | 下载、软件更新、包管理、游戏 CDN |
