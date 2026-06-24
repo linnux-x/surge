@@ -1,9 +1,9 @@
 # NAME: AI
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-24 13:23:53 +0800
+# UPDATED: 2026-06-24 22:42:29 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 169
+# TOTAL: 175
 
 # ======= Manual Rules ========
 # Anthropic / Claude
@@ -90,6 +90,7 @@ DOMAIN-SUFFIX,dify.ai
 DOMAIN-SUFFIX,clipdrop.co
 DOMAIN-SUFFIX,jasper.ai
 DOMAIN-SUFFIX,openart.ai
+DOMAIN,api.github.com
 DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,x.ai
 DOMAIN,api.jetbrains.ai
@@ -142,6 +143,8 @@ DOMAIN-SUFFIX,ios.chat.openai.com
 DOMAIN-SUFFIX,js.intercomcdn.com
 DOMAIN-SUFFIX,js.stripe.com
 DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,o207216.ingest.sentry.io
+DOMAIN-SUFFIX,o33249.ingest.sentry.io
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,observeit.net
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
@@ -173,6 +176,7 @@ DOMAIN-SUFFIX,apps.mzstatic.com
 DOMAIN-SUFFIX,livekit.cloud
 DOMAIN,api.statsig.com
 DOMAIN,api-iam.intercom.io
+DOMAIN,o33249.ingest.sentry.io
 DOMAIN,openaiapi-site.azureedge.net
 DOMAIN-KEYWORD,openaiapi
 DOMAIN-KEYWORD,openaicom
@@ -189,9 +193,11 @@ DOMAIN-KEYWORD,labs.google
 DOMAIN-SUFFIX,grazie.ai
 DOMAIN,imagine.meta.com
 DOMAIN,copilot.microsoft.com
+DOMAIN,www.bing.com
 DOMAIN-SUFFIX,pplx.ai
 DOMAIN,pplx-res.cloudinary.com
 DOMAIN-SUFFIX,cici.com,extended-matching
 DOMAIN-SUFFIX,ciciai.com,extended-matching
 DOMAIN-SUFFIX,dola.com,extended-matching
+DOMAIN-SUFFIX,byteoversea.com,extended-matching
 

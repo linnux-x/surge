@@ -1,9 +1,9 @@
 # NAME: China
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-24 13:23:53 +0800
+# UPDATED: 2026-06-24 22:42:31 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 112611
+# TOTAL: 112613
 
 # ======= Manual Rules ========
 # China game download domains — route DIRECT via China policy
@@ -94932,6 +94932,8 @@ DOMAIN-SUFFIX,wechatlegal.com
 DOMAIN-SUFFIX,wechatmessenger.com
 DOMAIN-SUFFIX,wechatmessenger.us
 DOMAIN-SUFFIX,wechatpay-global.com
+DOMAIN-SUFFIX,wechatpay.com.hk
+DOMAIN-SUFFIX,wechatpay.com.my
 DOMAIN-SUFFIX,weclassroom.com
 DOMAIN-SUFFIX,wecloud.io
 DOMAIN-SUFFIX,wecloudx.com

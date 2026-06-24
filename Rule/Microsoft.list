@@ -1,9 +1,9 @@
 # NAME: Microsoft
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-24 13:23:53 +0800
+# UPDATED: 2026-06-24 22:42:35 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 487
+# TOTAL: 526
 
 # ======= blackmatrix7 Microsoft ========
 DOMAIN,vsmarketplacebadge.apphb.com
@@ -66,6 +66,10 @@ DOMAIN-SUFFIX,azuresmartspaces.net
 DOMAIN-SUFFIX,azurestackvalidation.com
 DOMAIN-SUFFIX,azurewebsites.net
 DOMAIN-SUFFIX,bbing.com
+DOMAIN-SUFFIX,beth.games
+DOMAIN-SUFFIX,bethesda.net
+DOMAIN-SUFFIX,bethesdagamestudios.com
+DOMAIN-SUFFIX,bethsoft.com
 DOMAIN-SUFFIX,bibg.com
 DOMAIN-SUFFIX,biing.com
 DOMAIN-SUFFIX,binads.com
@@ -102,6 +106,7 @@ DOMAIN-SUFFIX,botframework.com
 DOMAIN-SUFFIX,brazilpartneruniversity.com
 DOMAIN-SUFFIX,breakdown.me
 DOMAIN-SUFFIX,c-msedge.net
+DOMAIN-SUFFIX,callersbane.com
 DOMAIN-SUFFIX,cegid-cloud.cn
 DOMAIN-SUFFIX,centralvalidation.com
 DOMAIN-SUFFIX,ch9.ms
@@ -124,11 +129,13 @@ DOMAIN-SUFFIX,devopsms.com
 DOMAIN-SUFFIX,dictate.ms
 DOMAIN-SUFFIX,discoverbing.com
 DOMAIN-SUFFIX,docs.com
+DOMAIN-SUFFIX,doom.com
 DOMAIN-SUFFIX,dot.net
 DOMAIN-SUFFIX,dwh5.com
 DOMAIN-SUFFIX,dynamics.com
 DOMAIN-SUFFIX,e-msedge.net
 DOMAIN-SUFFIX,efproject.net
+DOMAIN-SUFFIX,elderscrolls.com
 DOMAIN-SUFFIX,evoke-windowsservices-tas.msedge
 DOMAIN-SUFFIX,exp-tas.com
 DOMAIN-SUFFIX,explorebing.com
@@ -138,6 +145,10 @@ DOMAIN-SUFFIX,femalefounderscomp.com
 DOMAIN-SUFFIX,flipwithsurface.com
 DOMAIN-SUFFIX,fluidpreview.com
 DOMAIN-SUFFIX,footprintdns.com
+DOMAIN-SUFFIX,forzamotorsport.net
+DOMAIN-SUFFIX,forzaracingchampionship.com
+DOMAIN-SUFFIX,forzarc.com
+DOMAIN-SUFFIX,gamepass.com
 DOMAIN-SUFFIX,gamesstack.com
 DOMAIN-SUFFIX,gameuxmasterguide.com
 DOMAIN-SUFFIX,gears5.com
@@ -149,6 +160,7 @@ DOMAIN-SUFFIX,gigjam.com
 DOMAIN-SUFFIX,gotcosmos.com
 DOMAIN-SUFFIX,graphengine.io
 DOMAIN-SUFFIX,groupme.com
+DOMAIN-SUFFIX,helpshift.com
 DOMAIN-SUFFIX,here.com
 DOMAIN-SUFFIX,here.net
 DOMAIN-SUFFIX,heremaps.cn
@@ -309,7 +321,10 @@ DOMAIN-SUFFIX,microsoftteams.com
 DOMAIN-SUFFIX,microsofttradein.com
 DOMAIN-SUFFIX,microsofttranslator.com
 DOMAIN-SUFFIX,microsoftuwp.com
+DOMAIN-SUFFIX,minecraft.net
+DOMAIN-SUFFIX,minecraftshop.com
 DOMAIN-SUFFIX,mmdnn.com
+DOMAIN-SUFFIX,mojang.com
 DOMAIN-SUFFIX,momentumms.com
 DOMAIN-SUFFIX,mono-project.com
 DOMAIN-SUFFIX,morphcharts.com
@@ -333,6 +348,7 @@ DOMAIN-SUFFIX,msfteducation.ca
 DOMAIN-SUFFIX,msftidentity.com
 DOMAIN-SUFFIX,msftnet.org
 DOMAIN-SUFFIX,msgamesresearch.com
+DOMAIN-SUFFIX,msgamestudios.com
 DOMAIN-SUFFIX,msidentity.com
 DOMAIN-SUFFIX,msignitechina.com
 DOMAIN-SUFFIX,msinnovationchallenge.com
@@ -384,6 +400,7 @@ DOMAIN-SUFFIX,onestore.ms
 DOMAIN-SUFFIX,onmicrosoft.com
 DOMAIN-SUFFIX,opentranslatorstothings.org
 DOMAIN-SUFFIX,opticsforthecloud.net
+DOMAIN-SUFFIX,orithegame.com
 DOMAIN-SUFFIX,osdinfra.net
 DOMAIN-SUFFIX,outingsapp.com
 DOMAIN-SUFFIX,outlook.com
@@ -405,6 +422,7 @@ DOMAIN-SUFFIX,pwabuilder.com
 DOMAIN-SUFFIX,pxt.io
 DOMAIN-SUFFIX,renlifang.com
 DOMAIN-SUFFIX,renovacionoffice.com
+DOMAIN-SUFFIX,renovacionxboxlive.com
 DOMAIN-SUFFIX,s-msedge.net
 DOMAIN-SUFFIX,s-msft.com
 DOMAIN-SUFFIX,s-msn.com
@@ -429,6 +447,7 @@ DOMAIN-SUFFIX,sway.com
 DOMAIN-SUFFIX,sysinternals.com
 DOMAIN-SUFFIX,tailwindtraders.com
 DOMAIN-SUFFIX,techhub.ms
+DOMAIN-SUFFIX,tellmewhygame.com
 DOMAIN-SUFFIX,tfsallin.net
 DOMAIN-SUFFIX,timelinestoryteller.com
 DOMAIN-SUFFIX,trafficmanager.net
@@ -476,6 +495,26 @@ DOMAIN-SUFFIX,wlxrs.com
 DOMAIN-SUFFIX,working-bing-int.com
 DOMAIN-SUFFIX,wunderlist.com
 DOMAIN-SUFFIX,xamarin.com
+DOMAIN-SUFFIX,xbox.co
+DOMAIN-SUFFIX,xbox.com
+DOMAIN-SUFFIX,xbox.eu
+DOMAIN-SUFFIX,xbox.org
+DOMAIN-SUFFIX,xbox360.co
+DOMAIN-SUFFIX,xbox360.com
+DOMAIN-SUFFIX,xbox360.eu
+DOMAIN-SUFFIX,xbox360.org
+DOMAIN-SUFFIX,xboxab.com
+DOMAIN-SUFFIX,xboxgamepass.com
+DOMAIN-SUFFIX,xboxgamestudios.com
+DOMAIN-SUFFIX,xboxlive.cn
+DOMAIN-SUFFIX,xboxlive.com
+DOMAIN-SUFFIX,xboxone.co
+DOMAIN-SUFFIX,xboxone.com
+DOMAIN-SUFFIX,xboxone.eu
+DOMAIN-SUFFIX,xboxplayanywhere.com
+DOMAIN-SUFFIX,xboxservices.com
+DOMAIN-SUFFIX,xboxstudios.com
+DOMAIN-SUFFIX,xbx.lv
 DOMAIN-SUFFIX,yammer.com
 DOMAIN-SUFFIX,1drv.com
 DOMAIN-SUFFIX,livefilestore.com

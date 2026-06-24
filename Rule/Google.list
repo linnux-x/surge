@@ -1,9 +1,9 @@
 # NAME: Google
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-24 13:23:53 +0800
+# UPDATED: 2026-06-24 22:42:35 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 700
+# TOTAL: 703
 
 # ======= Manual Rules ========
 DOMAIN-SUFFIX,gvt1.com
@@ -42,6 +42,7 @@ DOMAIN-SUFFIX,android.com
 DOMAIN-SUFFIX,androidify.com
 DOMAIN-SUFFIX,androidtv.com
 DOMAIN-SUFFIX,angulardart.org
+DOMAIN-SUFFIX,api.ai
 DOMAIN-SUFFIX,apigee.com
 DOMAIN-SUFFIX,app-analytics-services.com
 DOMAIN-SUFFIX,app-measurement-cn.com
@@ -198,10 +199,12 @@ DOMAIN-SUFFIX,data-vocabulary.org
 DOMAIN-SUFFIX,dataliberation.org
 DOMAIN-SUFFIX,debug.com
 DOMAIN-SUFFIX,debugproject.com
+DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,deja.com
 DOMAIN-SUFFIX,deps.dev
 DOMAIN-SUFFIX,deps.info
 DOMAIN-SUFFIX,devsitetest.how
+DOMAIN-SUFFIX,dialogflow.com
 DOMAIN-SUFFIX,digisfera.com
 DOMAIN-SUFFIX,digitalassetlinks.org
 DOMAIN-SUFFIX,digitalattackmap.com

@@ -1,9 +1,9 @@
 # NAME: Download
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-24 13:23:53 +0800
+# UPDATED: 2026-06-24 22:42:30 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1686
+# TOTAL: 1689
 
 # ======= Manual Rules ========
 # Borrowed from SukkaW non_ip/direct downloader process rules
@@ -143,6 +143,7 @@ DOMAIN,registry.terraform.io
 DOMAIN,packages.sury.org
 DOMAIN,deb.sury.org
 DOMAIN-SUFFIX,pkg.dev
+DOMAIN,packages.codeberg.org
 DOMAIN,dl-cdn.alpinelinux.org
 DOMAIN,downloads.openwrt.org
 DOMAIN,playwright.azureedge.net
@@ -1571,6 +1572,8 @@ DOMAIN,fdroid.tetaneutral.net
 DOMAIN,mirror.level66.network
 DOMAIN-SUFFIX,mirror.pkgbuild.com
 DOMAIN,mirror.archlinux.tw
+DOMAIN,apt.izzysoft.de
+DOMAIN,store.nethunter.com
 DOMAIN,ciscobinary.openh264.org
 DOMAIN,update.greasyfork.org
 DOMAIN,update.sleazyfork.org

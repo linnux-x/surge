@@ -1,11 +1,12 @@
 # NAME: Netflix
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-24 13:23:53 +0800
+# UPDATED: 2026-06-24 22:42:36 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1153
+# TOTAL: 1154
 
 # ======= blackmatrix7 Netflix ========
+DOMAIN,e13252.dscg.akamaiedge.net
 DOMAIN,h-netflix.online-metrix.net
 DOMAIN,netflix.com.edgesuite.net
 DOMAIN-SUFFIX,flxvpn.net

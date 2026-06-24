@@ -1,28 +1,70 @@
 {
-  "generated_at": "2026-06-24T14:37:51.732424",
-  "total_added": 0,
-  "total_removed": 0,
+  "generated_at": "2026-06-24T23:42:43.419630",
+  "total_added": 244,
+  "total_removed": 1,
   "total_source_changed": 0,
   "diffs": [
     {
       "file": "AI.list",
       "prev_total": 169,
-      "curr_total": 169,
-      "added_count": 0,
+      "curr_total": 175,
+      "added_count": 6,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "17cdc008dbc0",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "2fcab5709f54",
+          "source": "Rabbit-Spec AIGC"
+        },
+        {
+          "id": "4a639ef268f4",
+          "source": "Rabbit-Spec AIGC"
+        },
+        {
+          "id": "5761b933cd74",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "bc8746db01e6",
+          "source": "ConnersHua AI"
+        },
+        {
+          "id": "c5571ff6a4f5",
+          "source": "SukkaW AI"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "Apple.list",
       "prev_total": 1548,
-      "curr_total": 1548,
-      "added_count": 0,
+      "curr_total": 1552,
+      "added_count": 4,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "0b4990cfa516",
+          "source": "blackmatrix7 Apple"
+        },
+        {
+          "id": "7cfec1555fbf",
+          "source": "blackmatrix7 Apple"
+        },
+        {
+          "id": "a4082dfd38b1",
+          "source": "blackmatrix7 Apple"
+        },
+        {
+          "id": "ceef4d756cd0",
+          "source": "blackmatrix7 Apple"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -40,22 +82,36 @@
     {
       "file": "CDN.list",
       "prev_total": 25,
-      "curr_total": 25,
-      "added_count": 0,
+      "curr_total": 26,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "3f6236a0d7bc",
+          "source": "SukkaW CDN"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "China.list",
       "prev_total": 112611,
-      "curr_total": 112611,
-      "added_count": 0,
+      "curr_total": 112613,
+      "added_count": 2,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "00ef2aa66514",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "b87071f30646",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -95,11 +151,24 @@
     {
       "file": "Download.list",
       "prev_total": 1686,
-      "curr_total": 1686,
-      "added_count": 0,
+      "curr_total": 1689,
+      "added_count": 3,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "1084aca09257",
+          "source": "SukkaW Download"
+        },
+        {
+          "id": "8c50e02f1c8e",
+          "source": "SukkaW Download"
+        },
+        {
+          "id": "a80e2045bf29",
+          "source": "SukkaW Download"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -118,43 +187,624 @@
       "file": "Global.list",
       "prev_total": 29432,
       "curr_total": 29432,
-      "added_count": 0,
-      "removed_count": 0,
+      "added_count": 1,
+      "removed_count": 1,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "9cd43bf26741",
+          "source": "blackmatrix7 Global"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "8701edd46b0f",
+          "source": "blackmatrix7 Global"
+        }
+      ],
       "source_changed_sample": []
     },
     {
       "file": "GlobalMedia.list",
       "prev_total": 2095,
-      "curr_total": 2095,
-      "added_count": 0,
+      "curr_total": 2278,
+      "added_count": 183,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "009b33b885d1",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "01e6fe3add42",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "03ea6883010e",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "05b5c11d63e9",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "06aa13af213d",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "08784a2c5d12",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "0baf017114c9",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "0bbf28816841",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "0d9f4a7d25bc",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "0e5270cc211a",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "0ea30ad463bf",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "1102a13c3190",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "1211f490d267",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "1263509c7c0d",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "12c52d1b2fbc",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "130541fe339e",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "13f23fbb5b80",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "188341cbf6f3",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "18bccf2e2dda",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "19087d499bb0",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "19d71e0d46bc",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "1a2442d8c4ac",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "1a75391d8fcf",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "1acbd919549f",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "1c574e107f0a",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "1fc839a4b1ee",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "2040f4be991e",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "215f8b6d6410",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "2165438dc716",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "25963f9f3307",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "26c039556130",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "2ce8d0b97014",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "2ef8d5d1fc40",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "305d28a6d7d2",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "30ed20bef202",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "30ff465a05a9",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "31af1b59c07d",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "31ce3f683b79",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "329fc4eae591",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "333c3413896c",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "33ad1db7021e",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "33ebe7bb1b0c",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "34773d352403",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "34d76331de00",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "36c77cdc1552",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "38be2583b164",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "3925e38b5903",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "39a72d1db258",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "3f49fdc7d878",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "3f71c89ca96c",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "400a5f4500d0",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "406b106e0dd1",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "417a62123e40",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "433ed87c29a1",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "448c67136338",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "4614e2585a8a",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "4685a4dfa888",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "47cb170c1362",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "49b84049f24b",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "49f237cd8cbc",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "4b031d8dfda5",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "4b0435411340",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "4c0d8a7e6d34",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "4c6c5e9d139b",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "4ed79c5bd362",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "508e4ae5ee61",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "51ea1f1250d3",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "56ed6c501adf",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "58710014b1e2",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "5bde2b90f6f4",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "5c54fb43c526",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "5cab8802957a",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "5ce70f8e8466",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "63641960dc63",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "641eea6e4fe2",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "65abe6ff532a",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "65f4151fc855",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "6803c1677246",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "696537c04c72",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "6979a819aca9",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "6a6483b2e1cf",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "6b3bc1aeee7e",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "6d1a6a65008c",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "713687d66809",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "718aef223388",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "72ceb88327ed",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "753f2c3039fe",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "76a1f0f1e357",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "7759c348f6af",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "7777f8732f25",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "77975410557c",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "799b03598c46",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "79d7d8e0f430",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "7ad67d909058",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "7b2432bc5019",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "7c16da50928c",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "7d2bc4adf259",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "7d8a336c352a",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "8021d8bb4e88",
+          "source": "blackmatrix7 GlobalMedia"
+        },
+        {
+          "id": "80a6a71089db",
+          "source": "blackmatrix7 GlobalMedia"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "Google.list",
       "prev_total": 700,
-      "curr_total": 700,
-      "added_count": 0,
+      "curr_total": 703,
+      "added_count": 3,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "1dbeb15d7a34",
+          "source": "blackmatrix7 Google"
+        },
+        {
+          "id": "67a0812c4e74",
+          "source": "blackmatrix7 Google"
+        },
+        {
+          "id": "95632f44db15",
+          "source": "blackmatrix7 Google"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "Microsoft.list",
       "prev_total": 487,
-      "curr_total": 487,
-      "added_count": 0,
+      "curr_total": 526,
+      "added_count": 39,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "0617f6dd57be",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "0859ea00dbd5",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "0a959499384e",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "127c071123ba",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "16ccf3554a3f",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "24f5b65de060",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "2d577aa9de12",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "2f3e5f25789a",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "35a63a3379d5",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "3e727fa1c0f2",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "470c090bbf19",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "4d958be07128",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "55bb82183fd0",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "59ed0b40d3ac",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "5b9a966f0135",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "64cb9274d544",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "6775cf4e0450",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "7073056ca41a",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "739ce028757a",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "7936fa1901f3",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "7f20c5a9cfa4",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "866f65244b88",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "8df7d0842ff8",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "9157caa7d53d",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "93a1e41d5bf7",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "981ccfcbcf65",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "9cbdfbf627b7",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "a1d822994ed8",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "a3acf1dd3622",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "af437c96e637",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "bc1574cec70c",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "bcbb46b3c2ed",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "d29b2893b1af",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "ddcb45918450",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "df2feb01983f",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "e9db19ec13b9",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "efdf2ffe8424",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "f88c2949c9ba",
+          "source": "blackmatrix7 Microsoft"
+        },
+        {
+          "id": "fc0e76e48ef1",
+          "source": "blackmatrix7 Microsoft"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -172,11 +822,16 @@
     {
       "file": "Netflix.list",
       "prev_total": 1153,
-      "curr_total": 1153,
-      "added_count": 0,
+      "curr_total": 1154,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "b7fdea40fb16",
+          "source": "blackmatrix7 Netflix"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -194,11 +849,16 @@
     {
       "file": "SocialMedia.list",
       "prev_total": 917,
-      "curr_total": 917,
-      "added_count": 0,
+      "curr_total": 918,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "761a7e8bb386",
+          "source": "QuixoticHeart SocialMedia"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
