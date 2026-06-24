@@ -25,6 +25,7 @@ ALLOWED_TYPES = {
     "IP-CIDR",
     "IP-CIDR6",
     "IP-ASN",
+    "GEOIP",
     "USER-AGENT",
     "PROCESS-NAME",
     "URL-REGEX",
