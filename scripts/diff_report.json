@@ -1,119 +1,804 @@
 {
-  "generated_at": "2026-06-24T23:42:43.419630",
-  "total_added": 244,
-  "total_removed": 1,
-  "total_source_changed": 0,
+  "generated_at": "2026-06-24T20:06:27.720045",
+  "total_added": 263,
+  "total_removed": 482,
+  "total_source_changed": 676,
   "diffs": [
     {
       "file": "AI.list",
-      "prev_total": 169,
-      "curr_total": 175,
-      "added_count": 6,
-      "removed_count": 0,
-      "source_changed_count": 0,
-      "added_sample": [
+      "prev_total": 175,
+      "curr_total": 157,
+      "added_count": 0,
+      "removed_count": 18,
+      "source_changed_count": 38,
+      "added_sample": [],
+      "removed_sample": [
+        {
+          "id": "0ac073d1c418",
+          "source": "Manual Rules"
+        },
         {
           "id": "17cdc008dbc0",
           "source": "ConnersHua AI"
+        },
+        {
+          "id": "1a5d210c8a8f",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "1dbeb15d7a34",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "2abac546c15e",
+          "source": "Manual Rules"
         },
         {
           "id": "2fcab5709f54",
           "source": "Rabbit-Spec AIGC"
         },
         {
+          "id": "32298f07fdaf",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "44c8012d2674",
+          "source": "Manual Rules"
+        },
+        {
           "id": "4a639ef268f4",
           "source": "Rabbit-Spec AIGC"
         },
         {
-          "id": "5761b933cd74",
-          "source": "ConnersHua AI"
+          "id": "67a0812c4e74",
+          "source": "Manual Rules"
         },
         {
-          "id": "bc8746db01e6",
-          "source": "ConnersHua AI"
+          "id": "752e692f0b1d",
+          "source": "Manual Rules"
         },
         {
-          "id": "c5571ff6a4f5",
-          "source": "SukkaW AI"
+          "id": "88dfd3b0acf8",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "9701ae6d858c",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "9e28756d29d8",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "bba44621dbde",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "bfc5d43e8d7b",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "c5275a4a69a0",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "ce097a31ab45",
+          "source": "Manual Rules"
         }
       ],
-      "removed_sample": [],
-      "source_changed_sample": []
+      "source_changed_sample": [
+        {
+          "id": "6b50aa7bb66b",
+          "old_source": "Manual Rules",
+          "new_source": "Rabbit-Spec AIGC"
+        },
+        {
+          "id": "09906a68bf35",
+          "old_source": "Manual Rules",
+          "new_source": "Rabbit-Spec AIGC"
+        },
+        {
+          "id": "900978d268e7",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "781fe12bcec6",
+          "old_source": "Manual Rules",
+          "new_source": "ConnersHua AI"
+        },
+        {
+          "id": "46ac15f42c69",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "b1fd7266b0f8",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "da97cad3b7e3",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "2099cb25dd84",
+          "old_source": "Manual Rules",
+          "new_source": "Rabbit-Spec AIGC"
+        },
+        {
+          "id": "b6ec6b0aa2e6",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "047cc5f8bd4d",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "f6dda0aed498",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "69a58ce3d8db",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "bb520987915f",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "95632f44db15",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "5ebb6d72f9f2",
+          "old_source": "Manual Rules",
+          "new_source": "Rabbit-Spec AIGC"
+        },
+        {
+          "id": "fbd8c01342b9",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "8315082adf4a",
+          "old_source": "Manual Rules",
+          "new_source": "Rabbit-Spec AIGC"
+        },
+        {
+          "id": "11c25ec231e8",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "e784b47351e1",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "107f612efba1",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "93ec0a74a9cb",
+          "old_source": "Manual Rules",
+          "new_source": "Rabbit-Spec AIGC"
+        },
+        {
+          "id": "d236ee2ff9b5",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "c8fe30444894",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "3e42093c1938",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "619d261c2c90",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "cb737d117642",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "98593c22f427",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "a94e449f8f4e",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "3767ca234c2e",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "173336c8a0b1",
+          "old_source": "Manual Rules",
+          "new_source": "ConnersHua AI"
+        },
+        {
+          "id": "5b43519b006d",
+          "old_source": "Manual Rules",
+          "new_source": "ConnersHua AI"
+        },
+        {
+          "id": "0429516d2a34",
+          "old_source": "Manual Rules",
+          "new_source": "ConnersHua AI"
+        },
+        {
+          "id": "d18a58118cc8",
+          "old_source": "Manual Rules",
+          "new_source": "Rabbit-Spec AIGC"
+        },
+        {
+          "id": "d2b4d957442c",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "28b3f338dfb1",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "92877d8c8efd",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "f1164ee3b6ff",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        },
+        {
+          "id": "809c732dc67b",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW AI"
+        }
+      ]
     },
     {
       "file": "Apple.list",
-      "prev_total": 1548,
-      "curr_total": 1552,
-      "added_count": 4,
-      "removed_count": 0,
+      "prev_total": 1552,
+      "curr_total": 1546,
+      "added_count": 0,
+      "removed_count": 6,
       "source_changed_count": 0,
-      "added_sample": [
+      "added_sample": [],
+      "removed_sample": [
         {
-          "id": "0b4990cfa516",
-          "source": "blackmatrix7 Apple"
+          "id": "0d5c27e6148e",
+          "source": "Manual Rules"
         },
         {
-          "id": "7cfec1555fbf",
-          "source": "blackmatrix7 Apple"
+          "id": "44457ef634ce",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "658e11e0300f",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "91c1dc144d83",
+          "source": "Manual Rules"
         },
         {
           "id": "a4082dfd38b1",
           "source": "blackmatrix7 Apple"
         },
         {
-          "id": "ceef4d756cd0",
-          "source": "blackmatrix7 Apple"
+          "id": "a54c02c2df09",
+          "source": "Manual Rules"
         }
       ],
-      "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "Apple_CN.list",
       "prev_total": 231,
-      "curr_total": 231,
+      "curr_total": 166,
       "added_count": 0,
-      "removed_count": 0,
-      "source_changed_count": 0,
+      "removed_count": 65,
+      "source_changed_count": 2,
       "added_sample": [],
-      "removed_sample": [],
-      "source_changed_sample": []
+      "removed_sample": [
+        {
+          "id": "05366c9b03f2",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "06a0a0e668d5",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "09f264a91576",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "0a58fe0ab045",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "0d8a9f7d2758",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "1083f895534d",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "1194b409605c",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "11d78674c8cb",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "14734d2c1ca3",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "1c5b85d39e1d",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "213d814cd14a",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "2253a61631f1",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "2ba4f87f1c4e",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "2d1de186eccd",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "2ee4f999e35b",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "3024bc5b5087",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "33a7da8c368b",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "36340b190c16",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "372ecd624604",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "3887e22dbc40",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "3cfd7944294d",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "3db560795582",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "43142cca796e",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "435e2f234adf",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "4872192c0a32",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "4a77235d0d0f",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "4ae315362adc",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "5048fe01a942",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "540099d1d221",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "582ae4308153",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "5d20a5585557",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "5ef9251e1081",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "6a9b98e2cad6",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "6ca500c0c18f",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "6e729be1642c",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "6f80f5eaa898",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "731dce204cd9",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "769c5eb2875a",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "7d6987bc76da",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "7e0c0b718a80",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "80dc3fa1bcc3",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "81bbb0aeea10",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "8308065fd3e4",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "871dfbff24bd",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "8934bfa73d59",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "8c500c894736",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "980a293d4ac4",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "a0b0477eeecc",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "a4691cb11e1c",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "acd9a9e3cde4",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "bc17351a2beb",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "c0eb8570e6e0",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "c26edb5deef6",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "d63d04ae8099",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "d6fff4b622ba",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "dad1d5876dd3",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "db4f9c884e2b",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "e07fc3d3929f",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "e311b8a855cd",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "e886287bb970",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "f2f4f54265bb",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "f99b341e60a7",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "fbb40a794e9e",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "fd18f397e300",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "ff0a27fef55a",
+          "source": "Manual Rules"
+        }
+      ],
+      "source_changed_sample": [
+        {
+          "id": "b35a736c0b48",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW Apple CN"
+        },
+        {
+          "id": "9d8c6d058b08",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW Apple CN"
+        }
+      ]
     },
     {
       "file": "CDN.list",
-      "prev_total": 25,
-      "curr_total": 26,
-      "added_count": 1,
-      "removed_count": 0,
+      "prev_total": 26,
+      "curr_total": 25,
+      "added_count": 0,
+      "removed_count": 1,
       "source_changed_count": 0,
-      "added_sample": [
+      "added_sample": [],
+      "removed_sample": [
         {
-          "id": "3f6236a0d7bc",
-          "source": "SukkaW CDN"
+          "id": "685f55c1f4f5",
+          "source": "Manual Rules"
         }
       ],
-      "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "China.list",
-      "prev_total": 112611,
-      "curr_total": 112613,
-      "added_count": 2,
-      "removed_count": 0,
-      "source_changed_count": 0,
-      "added_sample": [
+      "prev_total": 112613,
+      "curr_total": 112576,
+      "added_count": 0,
+      "removed_count": 37,
+      "source_changed_count": 5,
+      "added_sample": [],
+      "removed_sample": [
         {
-          "id": "00ef2aa66514",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+          "id": "01ad27c8a689",
+          "source": "Manual Rules"
         },
         {
-          "id": "b87071f30646",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+          "id": "07e3a48db7e7",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "0ba27ecb6c7f",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "12a4a7de68e3",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "1425e4f5b9e1",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "17730cc28d93",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "237cf7c6a88e",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "24f5b65de060",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "27e4a30640ad",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "296bbad54385",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "301053938a7d",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "374d6669518d",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "3c29272ccccf",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "3dab2086eb1c",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "4cf86824fc0e",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "5d9406e49e89",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "628e67079edd",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "64111722672f",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "645ab8f37f1b",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "67381c4973b1",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "68d25090d494",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "72fe7175eaf0",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "7a88492568c1",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "926924e31ba8",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "959544495d73",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "965cbe8138ba",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "bef1502ef171",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "c0c26faaf575",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "c10278cee389",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "c137b1cda156",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "c45cd60e3dab",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "d6847d557a10",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "dfada6a8c7df",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "eb2b9efc3f4a",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "f32ea29281c2",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "f63ece95e664",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "ffa769bfe1e5",
+          "source": "Manual Rules"
         }
       ],
-      "removed_sample": [],
-      "source_changed_sample": []
+      "source_changed_sample": [
+        {
+          "id": "8914d81b4dd6",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW Domestic"
+        },
+        {
+          "id": "14aad2385da5",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW Domestic"
+        },
+        {
+          "id": "ca79165b3e00",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW Domestic"
+        },
+        {
+          "id": "ac912fef9a7b",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW Domestic"
+        },
+        {
+          "id": "743effbfd44d",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW Domestic"
+        }
+      ]
     },
     {
       "file": "ChinaMedia.list",
@@ -150,689 +835,759 @@
     },
     {
       "file": "Download.list",
-      "prev_total": 1686,
-      "curr_total": 1689,
-      "added_count": 3,
-      "removed_count": 0,
+      "prev_total": 1689,
+      "curr_total": 1669,
+      "added_count": 0,
+      "removed_count": 20,
       "source_changed_count": 0,
-      "added_sample": [
+      "added_sample": [],
+      "removed_sample": [
         {
-          "id": "1084aca09257",
-          "source": "SukkaW Download"
+          "id": "0a3540c64661",
+          "source": "Manual Rules"
         },
         {
-          "id": "8c50e02f1c8e",
-          "source": "SukkaW Download"
+          "id": "0d9ec9c0a022",
+          "source": "Manual Rules"
         },
         {
-          "id": "a80e2045bf29",
-          "source": "SukkaW Download"
+          "id": "48f7d672131d",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "4ef9673f88bb",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "521dc4f1fe66",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "66c4779e3049",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "845016eb88b5",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "9148ca32607d",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "a0ab0e7dcde9",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "afb23b943a89",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "b204346e4e3a",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "b68ec029ad16",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "b6ceda7bc95f",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "bd7ab610b008",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "c27c3c6e28d1",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "cf6e44f5b5d6",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "f2aacca36b7d",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "fbeb9cf30e0e",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "fce34a1a3e7b",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "fdc5fbcedadb",
+          "source": "Manual Rules"
         }
       ],
-      "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "Game.list",
       "prev_total": 557,
-      "curr_total": 557,
+      "curr_total": 550,
       "added_count": 0,
-      "removed_count": 0,
-      "source_changed_count": 0,
+      "removed_count": 7,
+      "source_changed_count": 1,
       "added_sample": [],
-      "removed_sample": [],
-      "source_changed_sample": []
+      "removed_sample": [
+        {
+          "id": "071fbc1cce90",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "12af5712f78e",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "46c21b6a2512",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "7073056ca41a",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "bc1574cec70c",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "d5b252e96c6f",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "f80462fcf0a5",
+          "source": "Manual Rules"
+        }
+      ],
+      "source_changed_sample": [
+        {
+          "id": "0859ea00dbd5",
+          "old_source": "Manual Rules",
+          "new_source": "blackmatrix7 Game"
+        }
+      ]
     },
     {
       "file": "Global.list",
       "prev_total": 29432,
-      "curr_total": 29432,
-      "added_count": 1,
-      "removed_count": 1,
+      "curr_total": 29693,
+      "added_count": 261,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [
         {
-          "id": "9cd43bf26741",
+          "id": "005b8af4cfbf",
           "source": "blackmatrix7 Global"
-        }
-      ],
-      "removed_sample": [
+        },
         {
-          "id": "8701edd46b0f",
+          "id": "014bc57f675d",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "04f87941d1b0",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "050496246857",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "066228c34c6f",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "07b47b1deb7c",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "084aefc205a0",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "0a1499789014",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "0a6b21836d33",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "0d5c27e6148e",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "0f1ddc5755d3",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "0f49018b44f7",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "0fc82e9277f2",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "11e109551792",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "1218aab18ef8",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "1265ebd4af3d",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "13817fe95ca1",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "1430008cb31b",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "1594d346a428",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "15df7b0beacc",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "1612d34c7e1f",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "186203da55e5",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "1888be55b561",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "18d7737261e4",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "197a7d16cc3f",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "19a2832d72f3",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "19ab0b8995b2",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "1a384d0037bd",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "1b43260d356e",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "1cb4a2b5281f",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "1efd9e697d24",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "1fc1d35f3e6b",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "21208d4b8ee2",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "2298354ee2b9",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "254191704091",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "25f1857de296",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "26aed135c8cc",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "2752d9d9c65a",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "284e5c3732fa",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "29b9392b0544",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "2b38602ad32b",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "2b4db2e53a73",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "2eb00f76ddac",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "3198c0ab4c51",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "3409b93d1707",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "3539d92002c7",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "37e0ad87dabd",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "3a04afee70d2",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "3a5225b3c21a",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "3aae9135a73c",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "3dd417811b9a",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "3e5b671f851e",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "3f6a16353950",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "3fdba181c350",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "401f91fcd107",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "40a9612f216b",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "40e5000f67f3",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "4125cff8b99a",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "413f9f7e0640",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "4165771fc43b",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "43d304c9ac4f",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "44457ef634ce",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "45e895b3da32",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "46d0fff67688",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "487042ed95d8",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "4c12c97fdf8f",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "4cd4b1b23987",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "4de2172e0fd0",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "50221b56f6bf",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "52559ba1c72a",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "52624f979983",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "529a1a814b8f",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "52d4ec62e4ee",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "54772e83e899",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "551d80dc0188",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "55f134220889",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "560efb1e6568",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "565caa8bf8f5",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "582fa95697b7",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "5d36c0b3bd4e",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "5f15e4164995",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "624d8063a6df",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "63769400ffc2",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "64ba5c2286c2",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "658e11e0300f",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "660cc72c88ef",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "6687e486f45f",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "66b965bad27e",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "68c16aa89e3e",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "68df0978d150",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "698a298b0308",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "6ad6356d4a87",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "6c3d04668a6f",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "6d2c7f390539",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "6da83fa334bb",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "6e4137861e97",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "705a88d406be",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "7062ab6cd718",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "73850083f38f",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "745e0ee69143",
           "source": "blackmatrix7 Global"
         }
       ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "GlobalMedia.list",
-      "prev_total": 2095,
-      "curr_total": 2278,
-      "added_count": 183,
-      "removed_count": 0,
+      "prev_total": 2278,
+      "curr_total": 2272,
+      "added_count": 0,
+      "removed_count": 6,
       "source_changed_count": 0,
-      "added_sample": [
+      "added_sample": [],
+      "removed_sample": [
         {
-          "id": "009b33b885d1",
-          "source": "blackmatrix7 GlobalMedia"
+          "id": "0594a12e04e5",
+          "source": "Manual Rules"
         },
         {
-          "id": "01e6fe3add42",
-          "source": "blackmatrix7 GlobalMedia"
+          "id": "2bf044c9fdc5",
+          "source": "Manual Rules"
         },
         {
-          "id": "03ea6883010e",
-          "source": "blackmatrix7 GlobalMedia"
+          "id": "304214848685",
+          "source": "Manual Rules"
         },
         {
-          "id": "05b5c11d63e9",
-          "source": "blackmatrix7 GlobalMedia"
+          "id": "49d30644de4a",
+          "source": "Manual Rules"
         },
         {
-          "id": "06aa13af213d",
-          "source": "blackmatrix7 GlobalMedia"
+          "id": "62cd37e8cd31",
+          "source": "Manual Rules"
         },
         {
-          "id": "08784a2c5d12",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "0baf017114c9",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "0bbf28816841",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "0d9f4a7d25bc",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "0e5270cc211a",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "0ea30ad463bf",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "1102a13c3190",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "1211f490d267",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "1263509c7c0d",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "12c52d1b2fbc",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "130541fe339e",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "13f23fbb5b80",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "188341cbf6f3",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "18bccf2e2dda",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "19087d499bb0",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "19d71e0d46bc",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "1a2442d8c4ac",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "1a75391d8fcf",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "1acbd919549f",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "1c574e107f0a",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "1fc839a4b1ee",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "2040f4be991e",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "215f8b6d6410",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "2165438dc716",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "25963f9f3307",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "26c039556130",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "2ce8d0b97014",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "2ef8d5d1fc40",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "305d28a6d7d2",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "30ed20bef202",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "30ff465a05a9",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "31af1b59c07d",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "31ce3f683b79",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "329fc4eae591",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "333c3413896c",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "33ad1db7021e",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "33ebe7bb1b0c",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "34773d352403",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "34d76331de00",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "36c77cdc1552",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "38be2583b164",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "3925e38b5903",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "39a72d1db258",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "3f49fdc7d878",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "3f71c89ca96c",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "400a5f4500d0",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "406b106e0dd1",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "417a62123e40",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "433ed87c29a1",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "448c67136338",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "4614e2585a8a",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "4685a4dfa888",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "47cb170c1362",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "49b84049f24b",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "49f237cd8cbc",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "4b031d8dfda5",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "4b0435411340",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "4c0d8a7e6d34",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "4c6c5e9d139b",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "4ed79c5bd362",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "508e4ae5ee61",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "51ea1f1250d3",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "56ed6c501adf",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "58710014b1e2",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "5bde2b90f6f4",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "5c54fb43c526",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "5cab8802957a",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "5ce70f8e8466",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "63641960dc63",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "641eea6e4fe2",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "65abe6ff532a",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "65f4151fc855",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "6803c1677246",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "696537c04c72",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "6979a819aca9",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "6a6483b2e1cf",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "6b3bc1aeee7e",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "6d1a6a65008c",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "713687d66809",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "718aef223388",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "72ceb88327ed",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "753f2c3039fe",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "76a1f0f1e357",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "7759c348f6af",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "7777f8732f25",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "77975410557c",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "799b03598c46",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "79d7d8e0f430",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "7ad67d909058",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "7b2432bc5019",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "7c16da50928c",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "7d2bc4adf259",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "7d8a336c352a",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "8021d8bb4e88",
-          "source": "blackmatrix7 GlobalMedia"
-        },
-        {
-          "id": "80a6a71089db",
-          "source": "blackmatrix7 GlobalMedia"
+          "id": "b21fa1a4dc84",
+          "source": "Manual Rules"
         }
       ],
-      "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "Google.list",
-      "prev_total": 700,
-      "curr_total": 703,
-      "added_count": 3,
-      "removed_count": 0,
+      "prev_total": 703,
+      "curr_total": 700,
+      "added_count": 0,
+      "removed_count": 3,
       "source_changed_count": 0,
-      "added_sample": [
+      "added_sample": [],
+      "removed_sample": [
         {
-          "id": "1dbeb15d7a34",
-          "source": "blackmatrix7 Google"
+          "id": "02abf0162a50",
+          "source": "Manual Rules"
         },
         {
-          "id": "67a0812c4e74",
-          "source": "blackmatrix7 Google"
+          "id": "12c52d1b2fbc",
+          "source": "Manual Rules"
         },
         {
-          "id": "95632f44db15",
-          "source": "blackmatrix7 Google"
+          "id": "96f22dc6e127",
+          "source": "Manual Rules"
         }
       ],
-      "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "Microsoft.list",
-      "prev_total": 487,
+      "prev_total": 526,
       "curr_total": 526,
-      "added_count": 39,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "0617f6dd57be",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "0859ea00dbd5",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "0a959499384e",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "127c071123ba",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "16ccf3554a3f",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "24f5b65de060",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "2d577aa9de12",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "2f3e5f25789a",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "35a63a3379d5",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "3e727fa1c0f2",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "470c090bbf19",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "4d958be07128",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "55bb82183fd0",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "59ed0b40d3ac",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "5b9a966f0135",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "64cb9274d544",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "6775cf4e0450",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "7073056ca41a",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "739ce028757a",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "7936fa1901f3",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "7f20c5a9cfa4",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "866f65244b88",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "8df7d0842ff8",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "9157caa7d53d",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "93a1e41d5bf7",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "981ccfcbcf65",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "9cbdfbf627b7",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "a1d822994ed8",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "a3acf1dd3622",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "af437c96e637",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "bc1574cec70c",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "bcbb46b3c2ed",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "d29b2893b1af",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "ddcb45918450",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "df2feb01983f",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "e9db19ec13b9",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "efdf2ffe8424",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "f88c2949c9ba",
-          "source": "blackmatrix7 Microsoft"
-        },
-        {
-          "id": "fc0e76e48ef1",
-          "source": "blackmatrix7 Microsoft"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "Microsoft_CDN.list",
       "prev_total": 84,
-      "curr_total": 84,
+      "curr_total": 57,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 27,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "04af34c05273",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "1888be55b561",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "19019df6b78f",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "192fb4d9ccfe",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "1c4609a764c5",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "1da97466a475",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "1efd9e697d24",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "2bdbab01473a",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "3b1ee37e8679",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "427c7bc09b6d",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "4a5c3499b727",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "542ad6b73197",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "5f32dd845dbd",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "753a8e8a7c7d",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "8d78624d28b0",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "95456a8b49f2",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "9a69ed59473b",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "9e218783ca82",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "ad788a845b8d",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "b246388dbb51",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "b4ef9bbed780",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "bdfc2200c17c",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "ce730a9f8006",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "d1b691fbb0e2",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "d1fdc79c4951",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "d8c5d996ba4b",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "f5b3b2915010",
+          "source": "Manual Rules"
+        }
+      ],
       "source_changed_sample": []
     },
     {
       "file": "Netflix.list",
-      "prev_total": 1153,
-      "curr_total": 1154,
-      "added_count": 1,
-      "removed_count": 0,
+      "prev_total": 1154,
+      "curr_total": 1153,
+      "added_count": 0,
+      "removed_count": 1,
       "source_changed_count": 0,
-      "added_sample": [
+      "added_sample": [],
+      "removed_sample": [
         {
           "id": "b7fdea40fb16",
           "source": "blackmatrix7 Netflix"
         }
       ],
-      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -848,30 +1603,697 @@
     },
     {
       "file": "SocialMedia.list",
-      "prev_total": 917,
-      "curr_total": 918,
-      "added_count": 1,
-      "removed_count": 0,
-      "source_changed_count": 0,
+      "prev_total": 918,
+      "curr_total": 632,
+      "added_count": 2,
+      "removed_count": 288,
+      "source_changed_count": 629,
       "added_sample": [
         {
-          "id": "761a7e8bb386",
-          "source": "QuixoticHeart SocialMedia"
+          "id": "3d4f0594d339",
+          "source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "e883a9ca6bd5",
+          "source": "blackmatrix7 Facebook"
         }
       ],
-      "removed_sample": [],
-      "source_changed_sample": []
+      "removed_sample": [
+        {
+          "id": "005b8af4cfbf",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "014bc57f675d",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "04f87941d1b0",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "050496246857",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "066228c34c6f",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "07b47b1deb7c",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "084aefc205a0",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "0a1499789014",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "0a6b21836d33",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "0ba228e8f789",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "0ec73595b8ea",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "0f1ddc5755d3",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "0f49018b44f7",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "0fc82e9277f2",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "11e109551792",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "1218aab18ef8",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "1265ebd4af3d",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "13817fe95ca1",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "1430008cb31b",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "1594d346a428",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "15df7b0beacc",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "1612d34c7e1f",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "17a6b62585cf",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "186203da55e5",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "18d7737261e4",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "197a7d16cc3f",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "19a2832d72f3",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "19ab0b8995b2",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "1a384d0037bd",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "1b43260d356e",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "1cb4a2b5281f",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "1da156eb09e7",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "1e24270443db",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "1fc1d35f3e6b",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "21208d4b8ee2",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "2200b621d18e",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "2298354ee2b9",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "24944fb8f0e7",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "254191704091",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "25f1857de296",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "26aed135c8cc",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "2752d9d9c65a",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "284e5c3732fa",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "29b9392b0544",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "2a7be8156e12",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "2b38602ad32b",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "2b4db2e53a73",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "2eb00f76ddac",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "3198c0ab4c51",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "3409b93d1707",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "3539d92002c7",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "36a89d8771bf",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "37e0ad87dabd",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "3a04afee70d2",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "3a5225b3c21a",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "3aae9135a73c",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "3dd417811b9a",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "3e5b671f851e",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "3f6a16353950",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "3fdba181c350",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "401f91fcd107",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "4066acd5b9c1",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "40a9612f216b",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "40dad96c385f",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "40e5000f67f3",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "4125cff8b99a",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "413f9f7e0640",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "4165771fc43b",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "41c1cd7cd720",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "43d304c9ac4f",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "45e895b3da32",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "46d0fff67688",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "487042ed95d8",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "4ae0e20c1b1b",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "4c12c97fdf8f",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "4cd4b1b23987",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "4de2172e0fd0",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "4e010e406620",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "4e9fe3ed6960",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "50221b56f6bf",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "52559ba1c72a",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "52624f979983",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "529a1a814b8f",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "52d4ec62e4ee",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "54772e83e899",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "551d80dc0188",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "55f134220889",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "560efb1e6568",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "565caa8bf8f5",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "57734d224414",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "582fa95697b7",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "5d36c0b3bd4e",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "5f15e4164995",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "60e32f34b522",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "624d8063a6df",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "63769400ffc2",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "64ba5c2286c2",
+          "source": "QuixoticHeart Forum"
+        },
+        {
+          "id": "660cc72c88ef",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "6687e486f45f",
+          "source": "QuixoticHeart SocialMedia"
+        },
+        {
+          "id": "66b965bad27e",
+          "source": "QuixoticHeart Forum"
+        }
+      ],
+      "source_changed_sample": [
+        {
+          "id": "8e68b4003ce0",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "8a6f12f19401",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "284dc6184bc1",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "e25e360ae9c0",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "736bd0e7e58a",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "c80f1c46ec1e",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "f473b05583b1",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Twitter"
+        },
+        {
+          "id": "dc16c08efaa3",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "8b8e6b0667f0",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "4c50ab8bd9f9",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "dab65644ebca",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "a4e823eb5115",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "021d549578d3",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "10ce66442e2d",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "223b51f18411",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "6d1437163987",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "7ab625aa66a3",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "67d7e4adfc6f",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "e0cdad10d330",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "49daab51fa3b",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "5001642b4930",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Twitter"
+        },
+        {
+          "id": "f9b1280c0755",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "8542b6649dc6",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "67aba9ca6f47",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Twitter"
+        },
+        {
+          "id": "bfce6a9ee9a9",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "c6006c5d9cf9",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "998031585a09",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "2e873ff5c416",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "5798c82328f6",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "42e65893e0ca",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "5d8084cd82d2",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "2b1bace411e9",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "8f83d1b87bf5",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "73be520eb3ad",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "0a13ca69781e",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Discord"
+        },
+        {
+          "id": "6e5b1c7ac978",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Discord"
+        },
+        {
+          "id": "ab9f84d120ec",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "c0f88ef5ed77",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "f96314eb2a50",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "8010fcc1668f",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "c7d582070207",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "c010e12dc266",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Discord"
+        },
+        {
+          "id": "3384551f17d1",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "b1d482c77757",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "34026d96f361",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "8a1f125e9422",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "bf0e07004726",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Twitter"
+        },
+        {
+          "id": "4712676cea2b",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Twitter"
+        },
+        {
+          "id": "130cee032f43",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        },
+        {
+          "id": "30b24e3c5164",
+          "old_source": "QuixoticHeart SocialMedia",
+          "new_source": "blackmatrix7 Facebook"
+        }
+      ]
     },
     {
       "file": "Speedtest.list",
       "prev_total": 94,
-      "curr_total": 94,
+      "curr_total": 93,
       "added_count": 0,
-      "removed_count": 0,
-      "source_changed_count": 0,
+      "removed_count": 1,
+      "source_changed_count": 1,
       "added_sample": [],
-      "removed_sample": [],
-      "source_changed_sample": []
+      "removed_sample": [
+        {
+          "id": "d04008c775a7",
+          "source": "Manual Rules"
+        }
+      ],
+      "source_changed_sample": [
+        {
+          "id": "d646c37a3d0d",
+          "old_source": "Manual Rules",
+          "new_source": "SukkaW Speedtest"
+        }
+      ]
     },
     {
       "file": "Telegram.list",
@@ -898,12 +2320,21 @@
     {
       "file": "WeChat.list",
       "prev_total": 101,
-      "curr_total": 101,
+      "curr_total": 99,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 2,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "00ef2aa66514",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "b87071f30646",
+          "source": "Manual Rules"
+        }
+      ],
       "source_changed_sample": []
     },
     {

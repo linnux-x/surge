@@ -1,38 +1,9 @@
 # NAME: Microsoft_CDN
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-24 22:54:03 +0800
+# UPDATED: 2026-06-25 04:06:26 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 84
-
-# ======= Manual Rules ========
-DOMAIN-SUFFIX,aspnetcdn.com
-DOMAIN-SUFFIX,assets-yammer.com
-DOMAIN-SUFFIX,azurecomcdn.net
-DOMAIN-SUFFIX,img-prod-cms-rt-microsoft-com.akamaized.net
-DOMAIN-SUFFIX,img-s-msn-com.akamaized.net
-DOMAIN-SUFFIX,mcchcdn.com
-DOMAIN-SUFFIX,microsoftusercontent.com
-DOMAIN-SUFFIX,mschcdn.com
-DOMAIN-SUFFIX,msftauthimages.net
-DOMAIN-SUFFIX,msocdn.com
-DOMAIN-SUFFIX,mwf-service.akamaized.net
-DOMAIN-SUFFIX,officecdn-microsoft-com.akamaized.net
-DOMAIN-SUFFIX,powerappscdn.net
-DOMAIN-SUFFIX,prod-video-cms-rt-microsoft-com.akamaized.net
-DOMAIN-SUFFIX,sfbassets.com
-DOMAIN-SUFFIX,sfbassets.net
-DOMAIN-SUFFIX,skypeassets.com
-DOMAIN-SUFFIX,skypeassets.net
-DOMAIN-SUFFIX,statics-marketingsites-eas-ms-com.akamaized.net
-DOMAIN-SUFFIX,statics-marketingsites-eus-ms-com.akamaized.net
-DOMAIN-SUFFIX,statics-marketingsites-neu-ms-com.akamaized.net
-DOMAIN-SUFFIX,statics-marketingsites-wcus-ms-com.akamaized.net
-DOMAIN-SUFFIX,sway-cdn.com
-DOMAIN-SUFFIX,vsassets.io
-DOMAIN-SUFFIX,vscode-cdn.net
-DOMAIN-SUFFIX,vscode-unpkg.net
-DOMAIN-SUFFIX,yammerusercontent.com
+# TOTAL: 57
 
 # ======= SukkaW Microsoft CDN ========
 DOMAIN,res-h3.public.cdn.office.net

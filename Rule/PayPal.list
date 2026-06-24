@@ -1,11 +1,9 @@
 # NAME: PayPal
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-24 22:54:04 +0800
+# UPDATED: 2026-06-25 04:06:26 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 234
-
-# ======= Manual Rules ========
 
 # ======= blackmatrix7 PayPal ========
 DOMAIN-SUFFIX,account-paypal.info

@@ -101,6 +101,12 @@
     "last_modified": null,
     "source_available": true
   },
+  "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Discord/Discord.list": {
+    "content_length": "1076",
+    "etag": "\"b3a0679579b68ce7660a3f33ab4274ebc9d9a27740f26fed5c107a9b53cdec32\"",
+    "last_modified": null,
+    "source_available": true
+  },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Disney/Disney.list": {
     "content_length": "5674",
     "etag": "\"5d30386a54681aa988d5af9015f2d68274e4c5ced64f4fa836c3e4c3c0f3d3f4\"",
@@ -193,9 +199,9 @@
   },
   "https://ruleset.skk.moe/List/domainset/apple_cdn.conf": {
     "content_length": null,
-    "etag": "W/\"52148a92dbafde04b7732d8b3eea9697\"",
+    "etag": null,
     "last_modified": null,
-    "source_available": true
+    "source_available": false
   },
   "https://ruleset.skk.moe/List/ip/telegram.conf": {
     "content_length": null,
