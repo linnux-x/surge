@@ -86,7 +86,7 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 | 🎬 GlobalMedia.list | blackmatrix7 | 国际流媒体服务 |
 | 🔍 Google.list | blackmatrix7 | Google 服务（不含 YouTube） |
 | 🪟 Microsoft.list | blackmatrix7 | Microsoft 服务（不含 GitHub） |
-| 💿 Microsoft_CDN.list | SukkaW | Microsoft CDN 下载直连 |
+| 🪟 Microsoft_CDN.list | SukkaW | MS CDN 直连 |
 | 🎥 Netflix.list | blackmatrix7 | Netflix |
 | 💰 PayPal.list | blackmatrix7 | PayPal |
 | 💬 SocialMedia.list | QuixoticHeart · blackmatrix7 | 社交媒体聚合（海外平台） |
