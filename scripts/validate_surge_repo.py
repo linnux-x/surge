@@ -364,12 +364,19 @@ def check_rule_files(errors: list[str]) -> None:
 
 
 def main() -> int:
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--ci", action="store_true",
+                        help="CI mode: skip workflow-inventory and README-consistency checks")
+    args = parser.parse_args()
+
     errors: list[str] = []
     warnings: list[str] = []
 
-    check_workflow_inventory(errors)
+    if not args.ci:
+        check_workflow_inventory(errors)
+        check_readme_inventory(errors)
     check_workflow_names_and_deprecated_schedule(errors, warnings)
-    check_readme_inventory(errors)
     check_rule_files(errors)
 
     if warnings:
