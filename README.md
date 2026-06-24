@@ -78,19 +78,19 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 |---------|-------------|------|
 | 📱 `AI.list` | SukkaW、Rabbit-Spec、ConnersHua | AI 服务、模型 API、Apple Intelligence、Cursor、Zed、Groq、xAI、Doubao |
 | 🍎 `Apple.list` | blackmatrix7 | Apple 全系服务 |
-| 🇨🇳 `Apple_CN.list` | SukkaW | Apple 中国区与 Apple CDN 直连规则 |
-| 📦 `CDN.list` | SukkaW | CDN、静态资源、部分专用下载资源 |
-| 🏠 `China.list` | SukkaW、blackmatrix7、Rabbit-Spec | 中国大陆直连域名规则；**保持 domain-only** |
-| 🌐 `China_IP.list` | Loyalsoldier、blackmatrix7、Rabbit-Spec | 中国大陆 IP 回退规则；**不加 `no-resolve`** |
+| 🍎 `Apple_CN.list` | SukkaW | Apple 中国区 CDN 直连规则 |
+| 📦 `CDN.list` | SukkaW | CDN、静态资源、专用下载资源 |
+| 🏠 `China.list` | SukkaW、blackmatrix7、Rabbit-Spec | 中国大陆直连域名；**domain-only** |
+| 🌐 `China_IP.list` | Loyalsoldier、blackmatrix7、Rabbit-Spec | 中国大陆 IP 回退；**不加 `no-resolve`** |
 | 📺 `ChinaMedia.list` | blackmatrix7 | 中国媒体服务 |
 | 🏰 `Disney.list` | blackmatrix7 | Disney+ |
-| ⬇️ `Download.list` | SukkaW | 通用下载、软件更新、包管理、对象存储与游戏客户端下载 CDN |
-| 🎮 `Game.list` | blackmatrix7 | 游戏平台与游戏服务 |
-| 🌍 `Global.list` | blackmatrix7 | 通用海外/代理域名规则 |
+| ⬇️ `Download.list` | SukkaW | 下载、软件更新、包管理、游戏 CDN |
+| 🎮 `Game.list` | blackmatrix7 | 游戏平台与服务 |
+| 🌍 `Global.list` | blackmatrix7 | 通用海外/代理域名 |
 | 🎬 `GlobalMedia.list` | blackmatrix7 | 国际流媒体服务 |
-| 🔍 `Google.list` | blackmatrix7 | Google 服务；**不包含** YouTube 专属规则 |
-| 🪟 `Microsoft.list` | blackmatrix7 | Microsoft 服务；**不包含** GitHub 家族规则 |
-| 📥 `Microsoft_CDN.list` | SukkaW | Microsoft CDN / 下载资源直连规则 |
+| 🔍 `Google.list` | blackmatrix7 | Google 服务；**不含** YouTube |
+| 🪟 `Microsoft.list` | blackmatrix7 | Microsoft 服务；**不含** GitHub |
+| 💿 `Microsoft_CDN.list` | SukkaW | Microsoft CDN 下载直连 |
 | 🎥 `Netflix.list` | blackmatrix7 | Netflix |
 | 💰 `PayPal.list` | blackmatrix7 | PayPal |
 | 💬 `SocialMedia.list` | QuixoticHeart、blackmatrix7 | 社交媒体聚合规则（排除国内平台） |
