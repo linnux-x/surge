@@ -330,11 +330,7 @@ def process_rule(target_name: str, display_name: str, sources: list[tuple[str, s
         f.write(f"# FORMAT: Surge Ruleset\n")
         f.write(f"# TOTAL: {rule_count}\n")
         f.write("\n")
-        for line in final_lines:
-            if line.startswith("#") or not line.strip():
-                f.write(line + "\n")
-            else:
-                f.write(line + "\n")
+        f.writelines(line + "\n" for line in final_lines)
 
 
 def prune_global_first_match_overlaps():

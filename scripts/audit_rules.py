@@ -13,8 +13,8 @@ import re
 import ssl
 import sys
 import urllib.request
-from pathlib import Path
 from datetime import datetime
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 RULE_DIR = ROOT / "Rule"
@@ -43,23 +43,6 @@ def non_comment_rules(path: Path) -> list[str]:
             continue
         lines.append(s)
     return lines
-
-
-def extract_process_rule_sources(workflow_text: str) -> dict[str, list[str]]:
-    """Extract {target: [source_urls]} from process_rule calls."""
-    results: dict[str, list[str]] = {}
-    # Match each process_rule block
-    for m in re.finditer(
-        r'process_rule\s+"([^"]+)"\s+"[^"]*"\s*((?:\\?\n|[^\n])*?)(?=\n\s*process_rule|\n\s*prune_|\n\s*[A-Z_]+=|\Z)',
-        workflow_text,
-        re.MULTILINE,
-    ):
-        target = m.group(1)
-        body = m.group(2)
-        urls = re.findall(r'https?://[^\s"\\|]+', body)
-        if urls:
-            results[target] = urls
-    return results
 
 
 # ── Audit Checks ─────────────────────────────────────────────────────
@@ -337,14 +320,16 @@ def main() -> int:
 
     all_findings: list[dict] = []
 
-    # Load workflow to extract source URLs
-    workflow_path = ROOT / ".github" / "workflows" / "auto-rules.yml"
-    if not workflow_path.exists():
-        print("ERROR: workflow not found")
-        return 1
+    # Load source URLs from the single source of truth (scripts/sources.py)
+    _scripts_dir = str(ROOT / "scripts")
+    if _scripts_dir not in sys.path:
+        sys.path.insert(0, _scripts_dir)
+    from sources import RULE_SPECS
 
-    workflow_text = workflow_path.read_text(encoding="utf-8")
-    sources = extract_process_rule_sources(workflow_text)
+    # Build sources dict: {target: [url, ...]}
+    sources: dict[str, list[str]] = {}
+    for target, (_display_name, specs) in RULE_SPECS.items():
+        sources[target] = [url for _label, url, _fmt in specs]
     print(f"\n📁 Found {len(sources)} ruleset targets with upstream sources\n")
 
     # 1. Upstream reachability
