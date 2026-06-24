@@ -137,6 +137,7 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 | ⏰ **定时触发** | 每天北京时间 05:00 自动同步 |
 | 🖐 **手动触发** | GitHub Actions 页面点击 Run workflow |
 | ⌨️ **CLI 触发** | `gh workflow run auto-rules.yml` |
+| 📅 **月度审查** | 每月 1 日 06:00 全仓库深度审查 |
 
 ### 完整流程
 
