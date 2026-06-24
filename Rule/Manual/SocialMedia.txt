@@ -1,4 +1,0 @@
-# Overseas hosting / VPS forums and communities
-DOMAIN-SUFFIX,hostloc.com
-DOMAIN-SUFFIX,lowendtalk.com
-DOMAIN-SUFFIX,lowendspirit.com

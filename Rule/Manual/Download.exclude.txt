@@ -1,5 +1,0 @@
-# Speedtest endpoint belongs to Speedtest.list, which is evaluated before Download.list
-DOMAIN,desktop.wifiman.com
-
-# WeChat download endpoint belongs to WeChat.list, which is evaluated before Download.list
-DOMAIN,dl.wechat.com

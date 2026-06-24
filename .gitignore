@@ -16,3 +16,7 @@ Thumbs.db
 *~
 *.orig
 audit_report.json
+
+# Private
+Rule/Manual/
+.codex/

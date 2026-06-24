@@ -1,4 +1,0 @@
-interface:
-  display_name: "Surge Ruleset Builder"
-  short_description: "Research, optimize, and audit precise Surge rulesets"
-  default_prompt: "Use $surge-ruleset-builder to research, build, optimize, and validate a precise Surge ruleset."

@@ -1,12 +1,6 @@
 # AGENT.md
 
-## User Context
-
-- Rules should work across multiple regions without assuming region-locked fallback behaviors.
-- Rules must remain useful across regions without assuming that every platform supports the same fallback types.
-- The user's repository-specific classification choices override generic corporate ownership groupings.
-
-## Project Preferences
+## Routing Strategy
 
 - Store rulesets in `Rule/`.
 - Keep all GitHub family domains out of `Microsoft.list`. Route GitHub service and broad content-hosting domains through `Global.list`, Copilot through `AI.list`, and only explicit download-asset hosts such as `release-assets.githubusercontent.com` through `CDN.list`.
@@ -14,88 +8,61 @@
 - Keep `fast.com` only in `Speedtest.list`; exclude it from `Netflix.list`, `GlobalMedia.list`, and `Global.list`.
 - Omit `no-resolve` from `China_IP.list` so unmatched domains can be resolved locally before Mainland IP classification. Proxy domain rules must precede `China_IP.list`.
 - Load focused service rules before broad provider and country rules. In particular, place YouTube before Google, WeChat before China, Download before Game for download CDN hosts, CDN before Global when CDN routing differs, and China before China_IP.
-- Maintain `.github/workflows/auto-rules.yml` when rule sources change. It should regenerate files in `Rule/` from `Rule/Manual/*.txt` plus current upstream sources only, apply `Rule/Manual/*.exclude.txt`, convert supported domainset sources, filter known upstream marker/test domains, and enforce repository-specific guardrails.
-- Treat reference workflows as mechanics, not policy. When adapting Rabbit-Spec, SukkaW, blackmatrix7, or other automation, explicitly remap sources and guardrails to this repository instead of inheriting the reference repository's final rule semantics.
-- Do not preserve the current generated `Rule/*.list` files as an automation baseline. Existing generated files can contain stale upstream withdrawals; durable local intent belongs in `Rule/Manual/*.txt` or `Rule/Manual/*.exclude.txt`. Guardrails must run after manual and upstream merge, before writing output.
-- Always filter SukkaW's marker/test domain `7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe` during source cleaning so it never reaches generated rules.
-- Strip upstream inline trailing comments before validation, because rules such as `DOMAIN-SUFFIX,example.com # note` make the comment part of the hostname in a Surge external ruleset.
-- Do not allow `DOMAIN-WILDCARD` in generated `.list` files unless current official Surge documentation explicitly confirms support. Prefer documented `DOMAIN`, `DOMAIN-SUFFIX`, and `DOMAIN-KEYWORD` forms.
-- Keep shared CDN parent suffixes such as Akamai, CloudFront, AzureEdge, Fastly, Bunny, and CDN77 out of service, media, provider, and China direct rulesets. Route broad shared CDN parents through `CDN.list` when a CDN policy is intended, and de-duplicate them from `Global.list`.
-- Keep Mainland China game download/cache endpoints out of `Game.list` when they are usable directly in China. Put durable exclusions in `Rule/Manual/Game.exclude.txt` and direct entries in `Rule/Manual/China.txt`, including Steam China/CDN, Perfect World Steam, NetEase/Blizzard China CDN, and Xbox China download/service hosts.
+- Keep `China.list` as a Mainland/direct domain fallback, not a catch-all for Chinese-owned overseas products. Remove overseas media, short-video, social-video, and foreign sports/media domains such as international iQIYI/Bilibili/WeTV/JOOX/Kwai/NBA/TikTok-related entries from `China.list`.
+- Keep Mainland China game download/cache endpoints out of `Game.list` when they are usable directly in China. Put durable exclusions in `Rule/Manual/Game.exclude.txt` and direct entries in `Rule/Manual/China.txt`.
 - Remove exact overlap between peer rulesets that have different policies, such as `Microsoft.list` versus `Microsoft_CDN.list`, `Global.list` versus `CDN.list`, and `GlobalMedia.list` versus `CDN.list`. Keep only intentional first-match parent-child overlap.
-- Keep `China.list` as a Mainland/direct domain fallback, not a catch-all for Chinese-owned overseas products. Remove overseas media, short-video, social-video, and foreign sports/media domains such as international iQIYI/Bilibili/WeTV/JOOX/Kwai/NBA/TikTok-related entries from `China.list` unless the user explicitly requests a direct fallback exception.
-- Leave `rmonitor.qq.com` under the broad `qq.com` China direct fallback; do not classify it as WeChat unless the user explicitly changes that policy.
-- Current automated source choices include blackmatrix7 `ChinaMaxNoIP_Domain.list` for the expanded `China.list` domain inventory, SukkaW `Source/domainset/speedtest.conf` plus manual `fast.com` for `Speedtest.list`, SukkaW Apple/Microsoft CDN outputs for regional CDN rules, Telegram's official `resources/cidr.txt` for Telegram CIDR coverage, and blackmatrix7 Disney/PayPal for those service rules.
-- Do not reintroduce these entries from an upstream list during synchronization without explicit user approval.
+- Leave `rmonitor.qq.com` under the broad `qq.com` China direct fallback; do not classify it as WeChat.
 
-## Core Task
+## Rule Authoring
 
-Research, create, optimize, and validate reusable Surge external rulesets. Save each result as a `.list` file in this project unless the user specifies another path.
+1. Prefer current official documentation, official client source, service-owned domains, RIR/BGP data, and reproducible traffic evidence.
+2. Compare at least two maintained community sources. Treat community lists as candidate inventories rather than authority.
+3. Prefer `DOMAIN`, then safe `DOMAIN-SUFFIX`, and use `DOMAIN-KEYWORD` only for stable service-specific patterns. Never put a policy name in an external ruleset.
+4. Add `no-resolve` to IP rules unless resolution is intentionally required. `China_IP.list` is the project exception and must omit it for local DNS classification.
+5. Keep `China.list` domain-only. Put Mainland IPv4/IPv6 fallback only in `China_IP.list`.
+6. For provider families such as Google and YouTube, compare sibling project rulesets and test both intended matches and explicit exclusions.
+7. For third-party clients, separate proprietary client backends from the official service data plane.
+8. Exclude generic analytics, telemetry, consent, identity, payment, CDN, shared cloud ranges, and volatile single-host IP rules unless necessary and narrowly justified.
+9. Keep comments concise ASCII and save text files as UTF-8.
+10. Use consistent filenames: capitalize the first segment, preserve service branding, and uppercase every segment after `_`, for example `SocialMedia.list`, `Apple_CN.list`, and `China_IP.list`.
 
-## Required Workflow
+## Pipeline Rules
 
-1. Use `.codex/skills/surge-ruleset-builder/SKILL.md` for ruleset work and read its required references.
-2. Define the requested product, geography, client, and feature scope before collecting rules. Convert requests for "all" services into an explicit current category inventory; do not promise permanent exhaustiveness.
-3. Prefer current official documentation, official client source, service-owned domains, RIR/BGP data, and reproducible traffic evidence.
-4. Compare at least two maintained community sources. Treat community lists as candidate inventories rather than authority.
-5. Preserve justified local rules through `Rule/Manual/*.txt` or `Rule/Manual/*.exclude.txt`, then normalize and remove duplicates, covered entries, stale services, unrelated properties, and shared infrastructure with excessive false-positive risk.
-6. For provider families such as Google and YouTube, compare sibling project rulesets and test both intended matches and explicit exclusions. Do not use a broad parent suffix or keyword when a child product must be excluded.
-7. For third-party clients, separate proprietary client backends from the official service data plane. Include only verified client-owned API hosts or suffixes.
-8. Prefer `DOMAIN`, then safe `DOMAIN-SUFFIX`, and use `DOMAIN-KEYWORD` only for stable service-specific patterns. Never put a policy name in an external ruleset.
-9. Add `no-resolve` to IP rules unless resolution is intentionally required. `China_IP.list` is the project exception and must omit it for local DNS classification. Include IP ranges only after verifying boundaries, registration, and current route origin when practical.
-10. Keep `China.list` domain-only. Put Mainland IPv4/IPv6 fallback only in `China_IP.list`; do not move foreign vendor or overseas cloud single-host IPs into China IP merely because a community list labels them DIRECT.
-11. Allow documented Surge logical rules such as `AND`, `OR`, and `NOT` when upstream rulesets use them without policy names.
-12. Use `USER-AGENT` and `PROCESS-NAME` only as documented platform-specific fallbacks. Do not treat Android package names or Mac-only process rules as iOS coverage.
-13. Exclude generic analytics, telemetry, consent, identity, payment, CDN, shared cloud ranges, and volatile single-host IP rules unless they are necessary and narrowly justified.
-14. Keep comments in `.list` files concise ASCII and save text files as UTF-8.
-15. Classify broad repository rules by routing layer: dedicated regional rules first, then CDN, broad Global, China domains, China IPs, and fallback when that ordering matches the requested policy. Record a different order explicitly when needed.
-16. Distinguish geographic routing from corporate ownership. Preserve verified overseas child exceptions above broad Chinese provider suffixes, and keep verified Mainland endpoints of foreign vendors in focused regional rulesets.
-17. Use consistent filenames: capitalize the first segment, preserve service branding, and uppercase every segment after `_`, for example `SocialMedia.list`, `Apple_CN.list`, and `China_IP.list`. Update all references after renaming.
+- Maintain `.github/workflows/auto-rules.yml` when rule sources change.
+- Do not preserve the current generated `Rule/*.list` files as an automation baseline. Durable local intent belongs in `Rule/Manual/*.txt` or `Rule/Manual/*.exclude.txt`.
+- Always filter SukkaW's marker/test domain `7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe` during source cleaning.
+- Strip upstream inline trailing comments before validation — `DOMAIN-SUFFIX,example.com # note` makes the comment part of the hostname in a Surge external ruleset.
+- Do not allow `DOMAIN-WILDCARD` in generated `.list` files unless Surge docs explicitly confirm support.
+- Keep shared CDN parent suffixes (Akamai, CloudFront, AzureEdge, Fastly, Bunny, CDN77) out of service, media, provider, and China direct rulesets.
+- Treat reference workflows as mechanics, not policy. When adapting upstream automation, explicitly remap sources and guardrails to this repository.
 
-## Validation
+## Service vs Shared Infrastructure
 
-Before finishing:
-
-1. Verify every non-comment line uses a supported Surge rule type and contains no policy name.
-2. Check exact duplicates, parent-suffix coverage, suffix-to-suffix coverage, lowercase domains, URL fragments, and CIDR syntax.
-3. Test representative positive domains for every product class.
-4. Test explicit exclusions and sibling-product domains as negative samples.
-5. Audit overlaps with related `.list` files and document intentional shared infrastructure.
-6. Check semantic overlap in both directions, including exact domains beneath suffixes, narrower suffixes beneath broader parents, and CIDR prefixes covered by broader prefixes in the same policy file. Remove peer-category overlap such as CDN versus Global; keep only intentional first-match exceptions with a documented load order.
-7. For geographic IP sets, compare against the current canonical route source for both additions and withdrawals, verify lossless CIDR collapse, and keep allocation-oriented or overseas-announced operator ranges separate from Mainland route-origin coverage.
-8. Test repository-level first-match behavior with representative hosts from regional direct, CDN, Global, China, and IP fallback categories. Judge negative samples by the first matching configured `RULE-SET`, not by whether a later broad ruleset would also match.
-9. Compare rule counts and rule types with major upstreams, explaining differences by ownership and false-positive risk.
-10. Report the saved path, final rule count, major additions, removals, and deliberate exclusions.
-11. Confirm that `Microsoft.list` has no GitHub family rules, broad GitHub content suffixes hit `Global.list`, `release-assets.githubusercontent.com` is the only intended GitHub CDN exception, `fast.com` appears only in `Speedtest.list`, `China.list` contains no IP rules, `China_IP.list` contains no `no-resolve` option, all other IP rules include `no-resolve`, no dotted IP fragment is stored as `DOMAIN-KEYWORD`, and no IP rule is a redundant subnet of another IP rule in the same file.
-12. When the automation workflow changes, run a full local regeneration when possible, then run `python3 scripts/validate_surge_repo.py`. Confirm every configured upstream URL is reachable, compare the generated file set with the workflow rule inventory, make project guardrail violations fail validation before committing, and delete obsolete legacy workflows instead of retaining them.
-
-## Service vs Shared Infrastructure Classification
-
-Community rulesets often include non-service-proprietary shared infrastructure (CDNs, analytics platforms, login/payment gateways, consent services). Classify by **service ownership**, not corporate affiliation:
+Community rulesets often include non-service-proprietary shared infrastructure. Classify by **service ownership**, not corporate affiliation:
 
 | Category | Example | Treatment |
 |---|---|---|
-| China domestic services | 安付通/贝宝 (PayPal .cn domains) | Exclude from service rules → add to `China.txt` → DIRECT |
-| Shared analytics/telemetry | New Relic, Conviva, Flashtalking | Exclude with `DOMAIN-SUFFIX` unless service-prefixed subdomain |
-| Shared compliance/privacy | OneTrust (cookielaw.org, onetrust.com) | Exclude with `DOMAIN-SUFFIX` — used by thousands of sites |
-| Shared cloud platforms | `us-west-2.amazonaws.com` | Regional scope too broad — exclude with `DOMAIN-SUFFIX` |
-| Shared CDNs | Akamai, CloudFront, Fastly | Keep subdomains with service prefix (e.g., `disneyplus.com.edgesuite.net`) |
-| Dedicated service CDN | `cws.conviva.com`, `disney.my.sentry.io` | Service-prefixed — keep |
+| China domestic services | PayPal .cn domains | Exclude from service rules → `China.txt` → DIRECT |
+| Shared analytics/telemetry | New Relic, Conviva | Exclude unless service-prefixed subdomain |
+| Shared compliance/privacy | OneTrust (cookielaw.org) | Exclude — used by thousands of sites |
+| Shared cloud platforms | `us-west-2.amazonaws.com` | Regional scope too broad — exclude |
+| Shared CDNs | Akamai, CloudFront, Fastly | Keep only service-prefixed subdomains |
+| Dedicated service CDN | `disney.my.sentry.io` | Service-prefixed — keep |
 
 **Key principles:**
-- **Prefix vs no prefix:** Subdomains with explicit service/brand prefixes are service-specific.
-- **Scope control:** Avoid matching entire regions, entire platforms, or entire CDN parent suffixes.
-- **Ownership judgment:** Third-party platforms (Adobe, New Relic, AWS) default to Global unless service-prefixed.
-- **Geographic归属:** China-domestic domains go to China (DIRECT), not overseas service rules.
+- Subdomains with explicit service/brand prefixes are service-specific.
+- Avoid matching entire regions, platforms, or CDN parent suffixes.
+- Third-party platforms (Adobe, New Relic, AWS) default to Global unless service-prefixed.
+- China-domestic domains go to China (DIRECT), not overseas service rules.
 
 ## Online Audit Pipeline
 
-Every workflow run must pass online audit (`scripts/audit_rules.py`) before committing to GitHub:
+Every workflow run must pass `scripts/audit_rules.py` before committing:
 
 1. **Upstream reachability** — all configured source URLs must be accessible
 2. **Upstream vs generated comparison** — flag abnormal rule-count ratios
-3. **Shared infrastructure scan** — broader than `validate_surge_repo.py`; catches new analytics/telemetry/consent/ad-tech/cloud/CDN parent suffixes in service rules
-4. **Surge documentation check** — detect new rule types from the LLM index
+3. **Shared infrastructure scan** — broader than `validate_surge_repo.py`
+4. **Surge documentation check** — detect new rule types
 5. **Exclude coverage** — verify exclude patterns are effective
 
 Audit severity levels:
@@ -104,16 +71,16 @@ Audit severity levels:
 - 🔵 **INFO** — for awareness (e.g., upstream rule count difference)
 
 **Continuous evolution:**
-- WARN findings confirmed as needing exclusion → immediately add to `Rule/Manual/*.exclude.txt`
-- New shared infrastructure patterns → update both `scripts/audit_rules.py` (BROAD_SHARED_SUFFIXES) and `scripts/validate_surge_repo.py` (SHARED_THIRD_PARTY_SUFFIXES)
-- Lessons learned → update maintenance documentation
+- WARN findings confirmed as needing exclusion → add to `Rule/Manual/*.exclude.txt`
+- New shared infrastructure patterns → update both `audit_rules.py` and `validate_surge_repo.py`
 
-## Skill Maintenance
+## Validation Checklist
 
-- After real ruleset work, update the skill only when a durable, reproducible lesson improves future tasks.
-- Keep workflow instructions in `SKILL.md`, detailed sources in `references/sources.md`, and reusable findings in `references/Learned Patterns.md`.
-- Never weaken source traceability or false-positive protections merely to increase the rule count.
+Before finishing ruleset work:
 
-## Completion Standard
-
-A task is complete only after the ruleset is saved, syntax and overlap checks pass, positive and negative samples are tested, current canonical network sources have no unexplained local additions or withdrawals, filename references are consistent, source differences are explained, and skill-maintenance review is finished.
+1. Verify every non-comment line uses a supported Surge rule type and contains no policy name.
+2. Check exact duplicates, parent-suffix coverage, CIDR syntax, and lowercase domains.
+3. Test representative positive and negative domain samples.
+4. Audit overlaps with related `.list` files and document intentional shared infrastructure.
+5. Confirm: `Microsoft.list` no GitHub, `fast.com` only in `Speedtest.list`, `China.list` no IP rules, `China_IP.list` no `no-resolve`, all other IP rules have `no-resolve`.
+6. Run `python3 scripts/validate_surge_repo.py` before committing.

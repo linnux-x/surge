@@ -1,6 +1,0 @@
-# Broad Google download/update host families. Keep out of YouTube; Download exact rules still win earlier for known download endpoints.
-DOMAIN-SUFFIX,gvt1.com
-DOMAIN-SUFFIX,gvt2.com
-
-# GEOIP match for all Google ASN IP ranges (catches unknown Google IPs not covered by domain rules)
-GEOIP,GOOGLE

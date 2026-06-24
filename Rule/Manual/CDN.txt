@@ -1,2 +1,0 @@
-# GitHub release assets intentionally use CDN policy; broader GitHub hosts stay in Global/list-specific rules.
-DOMAIN,release-assets.githubusercontent.com

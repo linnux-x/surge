@@ -1,4 +1,0 @@
-# gvt1/gvt2 are broad Google download/update host families, not YouTube-only.
-# Specific YouTube delivery remains covered by googlevideo.com, ytimg.com, youtube*.googleapis.com, and YouTube domains.
-DOMAIN-SUFFIX,gvt1.com
-DOMAIN-SUFFIX,gvt2.com

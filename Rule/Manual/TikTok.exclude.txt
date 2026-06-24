@@ -1,3 +1,0 @@
-DOMAIN,trae-api-sg.mchost.guru
-DOMAIN-SUFFIX,marscode.com
-DOMAIN-SUFFIX,trae.ai
