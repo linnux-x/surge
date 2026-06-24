@@ -4,8 +4,7 @@
 Each .list file gets a .manifest sidecar in Rule/.manifests/ with one line
 per rule: <stable_id>\t<source_name>
 
-The .manifests/ directory is NOT committed to git — it's generated on-the-fly
-in the workflow. Only the diff report is committed.
+The .manifests/ directory is committed to git so diff_manifests.py can compare against HEAD.
 
 Uses only the Python standard library.
 """

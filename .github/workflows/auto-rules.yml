@@ -5,7 +5,7 @@ name: Auto-Surge-Rules
 
 on:
   schedule:
-    # 06:00 JST (21:00 UTC) every day
+    # 05:00 Beijing / 06:00 JST (21:00 UTC) every day
     - cron: "0 21 * * *"
   workflow_dispatch:
     inputs:
@@ -616,7 +616,7 @@ jobs:
           sed -i '2s|^#!desc=.*|#!desc=本地 DNS 映射，优化国内常用服务与局域网域名解析|' Module/DNS-Mapping.sgmodule
 
       - name: Commit and Push Changes
-        if: ${{ fromJson(steps.check_upstream.outputs.changed_count) > 0 || github.event_name == 'workflow_dispatch' }}
+        if: ${{ (fromJson(steps.check_upstream.outputs.changed_count) > 0 || github.event_name == 'workflow_dispatch') && inputs.dry_run != 'true' }}
         shell: bash
         run: |
           set -euo pipefail
@@ -630,3 +630,10 @@ jobs:
             git commit -m "$COMMIT_TIME Update rules"
             git push
           fi
+
+      - name: Dry Run Summary
+        if: ${{ inputs.dry_run == 'true' }}
+        shell: bash
+        run: |
+          echo "::notice::Dry run enabled. Changes were generated and validated, but will NOT be committed."
+          git status --short

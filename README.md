@@ -11,7 +11,7 @@
 - 🎯 **目标用户**：Surge 用户（iPhone / MacBook），需要精细化代理分流与规则管理
 - 💡 **核心价值**：多上游源自动聚合 → 清洗校验 → 清单追踪 → 联网审计，全链路自动化
 - 📜 **许可证**：MIT
-- 🔄 **更新频率**：每日北京时间 04:00 自动同步
+- 🔄 **更新频率**：每日北京时间 05:00 自动同步
 - 🧪 **质量保障**：每次更新须通过 5 项联网审查 + 15+ 项不变量校验
 
 ```bash
@@ -131,7 +131,7 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 
 | 方式 | 说明 |
 |------|------|
-| ⏰ **定时触发** | 每天北京时间 04:00 自动同步 |
+| ⏰ **定时触发** | 每天北京时间 05:00 自动同步 |
 | 🖐 **手动触发** | GitHub Actions 页面点击 Run workflow |
 | ⌨️ **CLI 触发** | `gh workflow run auto-rules.yml` |
 

@@ -392,7 +392,7 @@ def main() -> int:
 
     # Manifest stats
     manifest_dir = RULE_DIR / ".manifests"
-    manifest_files = list(manifest_dir.glob("*.manifest.json")) if manifest_dir.exists() else []
+    manifest_files = list(manifest_dir.glob("*.manifest")) if manifest_dir.exists() else []
     if manifest_files:
         total_manifest_rules = 0
         for mf in manifest_files:
