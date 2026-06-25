@@ -111,12 +111,14 @@ jobs:
 
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add Rule/ Rule/.manifests/ Module/ README.md \
+          git add Rule/ Rule/.manifests/ Module/ .gitignore README.md \
             scripts/sources.py scripts/generate_rules.py scripts/rule_validator.py \
             scripts/validate_surge_repo.py \
             scripts/manifest.py scripts/diff_manifests.py \
             scripts/diff_report.md scripts/diff_report.json \
-            scripts/check_upstream_updates.py scripts/source_state.json
+            scripts/check_upstream_updates.py scripts/source_state.json \
+            scripts/audit_rules.py scripts/prune_cidr.py scripts/README.md \
+            scripts/test_routing_order.py
 
           if ! git diff --staged --quiet; then
             COMMIT_TIME=$(TZ="Asia/Shanghai" date +"%Y-%m-%d %H:%M:%S +0800")

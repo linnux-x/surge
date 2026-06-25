@@ -1,0 +1,56 @@
+domain,expected_ruleset,note
+mp.weixin.qq.com,WeChat.list,微信公众号
+weixin.qq.com,WeChat.list,微信主站
+wx.qlogo.cn,WeChat.list,微信头像CDN
+open.weixin.qq.com,WeChat.list,微信开放平台
+speedtest.net,Speedtest.list,测速主站
+fast.com,Speedtest.list,fast.com仅在此文件
+chat.openai.com,AI.list,ChatGPT
+api.openai.com,AI.list,OpenAI API
+claude.ai,AI.list,Claude AI
+gemini.google.com,AI.list,Gemini（Google AI子域先行命中AI.list）
+copilot.microsoft.com,AI.list,Microsoft Copilot
+gs.apple.com,Apple.list,Apple GS认证（不在Apple_CN.list）
+itunes.apple.com,Apple_CN.list,iTunes CN CDN（优先Apple_CN直连）
+appleid.apple.com,Apple.list,Apple ID
+icloud.com,Apple.list,iCloud
+s.mzstatic.com,Apple_CN.list,App Store中国CDN
+store.steampowered.com,Game.list,Steam商店
+api.steampowered.com,Game.list,Steam API
+discord.com,SocialMedia.list,Discord（手动添加）
+twitter.com,SocialMedia.list,Twitter/X
+instagram.com,SocialMedia.list,Instagram
+reddit.com,Global.list,Reddit（上游中无此平台，走Global回退）
+t.me,Telegram.list,Telegram短链
+telegram.org,Telegram.list,Telegram官网
+googlevideo.com,YouTube.list,YouTube视频CDN
+youtube.com,YouTube.list,YouTube
+ytimg.com,YouTube.list,YouTube图片
+tiktok.com,TikTok.list,TikTok
+paypal.com,PayPal.list,PayPal
+paypalobjects.com,PayPal.list,PayPal资源
+google.com,Google.list,Google搜索
+googleapis.com,Google.list,Google API
+gstatic.com,Google.list,Google静态资源
+netflix.com,Netflix.list,Netflix
+nflxvideo.net,Netflix.list,Netflix视频
+disneyplus.com,Disney.list,Disney+
+bstarstatic.com,GlobalMedia.list,Disney+ CDN（上游归入GlobalMedia）
+bilibili.com,ChinaMedia.list,B站
+iqiyi.com,ChinaMedia.list,爱奇艺
+qq.com,China.list,腾讯直连
+baidu.com,China.list,百度直连
+aliyun.com,China.list,阿里云直连
+taobao.com,China.list,淘宝直连
+microsoft.com,Microsoft.list,Microsoft主站
+office.com,Microsoft.list,Office在线
+live.com,Microsoft.list,Microsoft Live
+officecdn.microsoft.com,Microsoft_CDN.list,MS CDN直连
+download.visualstudio.microsoft.com,Microsoft_CDN.list,VS下载（MS CDN先行命中）
+download.windowsupdate.com,Microsoft_CDN.list,Windows更新（MS CDN先行命中）
+spotify.com,GlobalMedia.list,Spotify
+hulu.com,GlobalMedia.list,Hulu
+akamaized.net,Global,共享CDN（已排除，FINAL→Global）
+cloudfront.net,Global,共享CDN（已排除，FINAL→Global）
+example.invalid,Global,不存在于任何规则集，FINAL→Global
+10.0.0.1,DIRECT,局域网IP（LAN规则直连）

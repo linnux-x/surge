@@ -2,7 +2,7 @@
 
 > **一句总结：** 多上游源每日同步、自动清洗校验、清单追踪变更、联网审计质量 — 让你只需关心策略，不用操心底层规则。
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Python](https://img.shields.io/badge/Python-3.10+-green.svg?logo=python&logoColor=white)](https://www.python.org/) [![Surge](https://img.shields.io/badge/Surge-Rule%20Set-orange.svg)](https://manual.nssurge.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Python](https://img.shields.io/badge/Python-3.10+-green.svg?logo=python&logoColor=white)](https://www.python.org/) [![Surge](https://img.shields.io/badge/Surge-Rule%20Set-orange.svg)](https://manual.nssurge.com/) [![No Dependencies](https://img.shields.io/badge/deps-stdlib%20only-brightgreen.svg)]()
 
 ---
 
@@ -13,6 +13,7 @@
 - 📜 **许可证**：MIT
 - 🔄 **更新频率**：每日北京时间 05:00 自动同步
 - 🧪 **质量保障**：每次更新须通过 5 项联网审查 + 15+ 项不变量校验
+- 📦 **零依赖**：所有脚本仅使用 Python 3.10+ 标准库，无需 pip install
 
 ```bash
 # 快速使用：在 Surge 配置中加载规则
@@ -67,7 +68,10 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 | `scripts/validate_surge_repo.py` | 不变量检查（15+ 项） |
 | `scripts/audit_rules.py` | 联网审查（5 项审计） |
 | `scripts/prune_cidr.py` | CIDR 去重裁剪 |
+| `scripts/test_routing_order.py` | 路由顺序模拟测试（55 用例） |
+| `tests/expected-routing.csv` | 路由测试预期（域名 → 期望规则集） |
 | `.github/workflows/auto-rules.yml` | 规则同步 + DNS Mapping 模块同步流水线 |
+| `CONTRIBUTING.md` | 贡献指南 |
 
 ---
 
@@ -191,6 +195,7 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 提交前运行：
 ```bash
 python3 scripts/validate_surge_repo.py
+python3 scripts/test_routing_order.py   # 路由顺序模拟测试
 ```
 
 | 检查项 | 级别 |
@@ -220,7 +225,7 @@ python3 scripts/validate_surge_repo.py
 | 📊 **规则数对比** | 生成 vs 上游比例异常时告警（多源合并文件豁免） |
 | 🏗️ **共享基础设施** | 已知共享平台出现在服务规则中时告警 |
 | 📖 **Surge 文档** | 检查是否有新的 Surge 规则类型发布 |
-| 🧹 **exclude 覆盖率** | 所有在用的 exclude 文件仍有效 |
+| 🧹 **exclude 覆盖率** | 读取并预留 exclude 覆盖检查逻辑；当前仅作为结构化审计入口 |
 
 > 🔴 **ERROR** → workflow 失败，必须修复  
 > 🟡 **WARN** → workflow 继续，但需人工确认  

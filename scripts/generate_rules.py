@@ -38,9 +38,9 @@ CURL_RETRY = ["--retry", "3", "--retry-delay", "5"]
 
 # ── Helpers ────────────────────────────────────────────────────────────────
 
-def should_process(target: str, changed_rulesets: list[str], is_manual: bool) -> bool:
+def should_process(target: str, changed_rulesets: list[str], force_all: bool) -> bool:
     """Determine if a ruleset should be processed this run."""
-    if is_manual:
+    if force_all:
         return True
     return target in changed_rulesets
 
@@ -92,7 +92,7 @@ def convert_cidr(lines: list[str]) -> list[str]:
 
 
 def filter_candidates(lines: list[str], exclude_file: Path | None) -> list[str]:
-    """Remove lines matching exclude file patterns (fixed-string match)."""
+    """Remove lines exactly matching entries in exclude file."""
     if not exclude_file or not exclude_file.is_file() or exclude_file.stat().st_size == 0:
         return lines
     patterns = set()
@@ -301,7 +301,7 @@ def main():
     RULE_DIR.mkdir(parents=True, exist_ok=True)
     MANUAL_DIR.mkdir(parents=True, exist_ok=True)
 
-    is_manual = os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch"
+    is_workflow_dispatch = os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch"
     changed_raw = os.environ.get("CHANGED_RULESETS", "[]")
     try:
         changed_rulesets: list[str] = json.loads(changed_raw)
@@ -310,7 +310,7 @@ def main():
 
     processed = False
     for target_name, (display_name, sources) in RULE_SPECS.items():
-        if should_process(target_name, changed_rulesets, is_manual):
+        if should_process(target_name, changed_rulesets, is_workflow_dispatch):
             print(f"Processing {target_name} ...")
             process_rule(target_name, display_name, sources)
             processed = True

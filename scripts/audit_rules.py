@@ -375,17 +375,17 @@ def main() -> int:
     print(f"  🟡 Warnings: {len(warns)}")
     print(f"  🔵 Info:     {len(infos)}")
 
-    # Manifest stats
+    # Manifest stats — .manifest files are tab-separated: <stable_id>\t<source_name>
     manifest_dir = RULE_DIR / ".manifests"
     manifest_files = list(manifest_dir.glob("*.manifest")) if manifest_dir.exists() else []
     if manifest_files:
         total_manifest_rules = 0
         for mf in manifest_files:
-            try:
-                data = json.loads(mf.read_text(encoding="utf-8"))
-                total_manifest_rules += data.get("total_rules", 0)
-            except (json.JSONDecodeError, KeyError):
-                pass
+            total_manifest_rules += sum(
+                1
+                for line in mf.read_text(encoding="utf-8", errors="replace").splitlines()
+                if line.strip()
+            )
         print(f"  📋 Manifests: {len(manifest_files)} files, {total_manifest_rules} indexed rules")
     print()
 

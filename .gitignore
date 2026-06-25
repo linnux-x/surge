@@ -20,4 +20,5 @@ audit_report.json
 # Private (personal rules only — exclude files are shared infrastructure)
 Rule/Manual/*
 !Rule/Manual/*.exclude.txt
+!Rule/Manual/README.md
 .codex/
