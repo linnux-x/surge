@@ -55,7 +55,7 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 
 | 路径 | 说明 |
 |------|------|
-| `Conf/LINNUX.conf` | 主 Surge 配置示例，包含策略组和 `RULE-SET` 加载顺序 |
+| `Conf/Linnux.conf` | 主 Surge 配置示例，包含策略组和 `RULE-SET` 加载顺序 |
 | `Rule/*.list` | Surge 外部规则集文件（自动生成，**勿手动修改**） |
 | `Rule/Manual/*.txt` / `*.exclude.txt` | 手动追加（最高优先级）与排除规则 |
 | `Rule/.manifests/*.manifest` | 规则清单索引（每行：稳定哈希ID + 来源标注） |
@@ -105,7 +105,7 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 
 ## 🔄 主配置加载顺序
 
-`Conf/LINNUX.conf` 中的规则遵循 Surge **first-match** 逻辑，重点服务规则放在宽泛规则之前：
+`Conf/Linnux.conf` 中的规则遵循 Surge **first-match** 逻辑，重点服务规则放在宽泛规则之前：
 
 1. 💚 **WeChat** → 微信直连优先
 2. ⚡ **Speedtest** → 测速不走代理
@@ -248,7 +248,7 @@ python3 scripts/test_routing_order.py   # 路由顺序模拟测试
 
 ### 新手三步骤
 
-1. **复制配置模板** → 将 `Conf/LINNUX.conf` 内容合并到自己的 Surge 配置
+1. **复制配置模板** → 将 `Conf/Linnux.conf` 内容合并到自己的 Surge 配置
 2. **添加规则集引用** → 在 `[Rule]` 段按加载顺序引用 `Rule/*.list`
 3. **启用自动更新** → Fork 仓库，GitHub Actions 自动生效
 

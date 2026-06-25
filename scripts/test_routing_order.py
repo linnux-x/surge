@@ -4,7 +4,7 @@
 Loads Rule/*.list files and tests/expected-routing.csv, then checks that
 each domain routes to the expected ruleset in Surge's first-match order.
 
-The routing order is read from Conf/LINNUX.conf (or a hardcoded fallback).
+The routing order is read from Conf/Linnux.conf (or a hardcoded fallback).
 Uses only the Python standard library.
 """
 from __future__ import annotations
@@ -16,12 +16,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 RULE_DIR = ROOT / "Rule"
-CONF_FILE = ROOT / "Conf" / "LINNUX.conf"
+CONF_FILE = ROOT / "Conf" / "Linnux.conf"
 TEST_CSV = ROOT / "tests" / "expected-routing.csv"
 
 # ── Routing order ──────────────────────────────────────────────────────
 
-# Fallback order (matches Conf/LINNUX.conf [Rule] section)
+# Fallback order (matches Conf/Linnux.conf [Rule] section)
 FALLBACK_ORDER: list[tuple[str, str]] = [
     ("WeChat.list", "WeChat.list"),
     ("Speedtest.list", "Speedtest.list"),
@@ -134,7 +134,7 @@ def match_domain(domain: str, rules: set[str]) -> bool:
 
 
 def load_routing_order() -> list[tuple[str, str]]:
-    """Parse routing order from LINNUX.conf, or return fallback."""
+    """Parse routing order from Linnux.conf, or return fallback."""
     if not CONF_FILE.exists():
         return FALLBACK_ORDER
 

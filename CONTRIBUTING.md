@@ -79,7 +79,7 @@ tests/
 2. Create `Rule/Manual/<RulesetName>.txt` if manual rules needed
 3. Create `Rule/Manual/<RulesetName>.exclude.txt` if any patterns need excluding
 4. Add a row to the README rule list table
-5. Add the ruleset to `Conf/LINNUX.conf` [Rule] section at the correct priority position
+5. Add the ruleset to `Conf/Linnux.conf` [Rule] section at the correct priority position
 6. Run `python3 scripts/validate_surge_repo.py` to verify
 
 ## Adding a New Validation Check

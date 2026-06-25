@@ -15,7 +15,7 @@ DOMAIN-SUFFIX,kwai.com
 DOMAIN-SUFFIX,kwai.net
 DOMAIN-SUFFIX,kwaicdn.com
 
-# Telegram is handled by dedicated Telegram.list earlier in Conf/LINNUX.conf
+# Telegram is handled by dedicated Telegram.list earlier in Conf/Linnux.conf
 DOMAIN,api.imem.app
 DOMAIN,api.swiftgram.app
 DOMAIN-SUFFIX,cdn-telegram.org
@@ -42,11 +42,11 @@ DOMAIN-SUFFIX,tg.dev
 DOMAIN-SUFFIX,tx.me
 DOMAIN-SUFFIX,usercontent.dev
 
-# AI chat/social products are handled by AI.list earlier in Conf/LINNUX.conf
+# AI chat/social products are handled by AI.list earlier in Conf/Linnux.conf
 DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,poe.com
 
-# Telegram IP ranges are handled by dedicated Telegram.list earlier in Conf/LINNUX.conf
+# Telegram IP ranges are handled by dedicated Telegram.list earlier in Conf/Linnux.conf
 IP-CIDR,149.154.160.0/20,no-resolve
 IP-CIDR,91.105.192.0/23,no-resolve
 IP-CIDR,91.108.4.0/22,no-resolve
