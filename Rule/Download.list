@@ -1,9 +1,9 @@
 # NAME: Download
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-25 04:06:21 +0800
+# UPDATED: 2026-06-26 04:00:46 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1669
+# TOTAL: 1672
 
 # ======= SukkaW Download ========
 DOMAIN-SUFFIX,cloud-object-storage.appdomain.cloud
@@ -347,6 +347,9 @@ DOMAIN,download.mikrotik.com
 DOMAIN,download.todesktop.com
 DOMAIN-SUFFIX,download.nvidia.com
 DOMAIN-SUFFIX,androidfilehost.com
+DOMAIN,dl.orangefox.download
+DOMAIN-SUFFIX,dl.twrp.me
+DOMAIN,eu.dl.twrp.me
 DOMAIN,file.chobit.cc
 DOMAIN,download.dlsite.com
 DOMAIN-SUFFIX,dl.dlsite.com

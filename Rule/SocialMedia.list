@@ -1,72 +1,9 @@
 # NAME: SocialMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-25 13:32:46 +0800
+# UPDATED: 2026-06-26 04:00:50 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 667
-
-# ======= Manual Rules ========
-# Overseas hosting / VPS forums and communities
-DOMAIN-SUFFIX,hostloc.com
-DOMAIN-SUFFIX,nodeseek.com
-# WhatsApp (Meta, no blackmatrix7 Surge list)
-DOMAIN-KEYWORD,whatsapp
-
-# LINE
-DOMAIN-SUFFIX,line.me
-DOMAIN-SUFFIX,line.naver.jp
-
-# Signal
-DOMAIN-SUFFIX,signal.org
-DOMAIN-SUFFIX,signal.art
-
-# VKontakte (Russian social)
-DOMAIN-SUFFIX,vk.com
-DOMAIN-SUFFIX,mvk.com
-
-# Bluesky
-DOMAIN-SUFFIX,bsky.app
-DOMAIN-SUFFIX,bsky.social
-
-# Dcard (Taiwan social)
-DOMAIN-SUFFIX,dcard.tw
-
-# Quora
-DOMAIN-SUFFIX,quora.com
-DOMAIN-SUFFIX,quoracdn.net
-
-# International forums
-DOMAIN-SUFFIX,2ch.net
-DOMAIN-SUFFIX,4chan.org
-DOMAIN-SUFFIX,4channel.org
-DOMAIN-SUFFIX,5ch.net
-DOMAIN-SUFFIX,avsforum.com
-DOMAIN-SUFFIX,broadbandreports.com
-DOMAIN-SUFFIX,mobile01.com
-
-# Overseas hosting/VPS forums
-DOMAIN-SUFFIX,lowendtalk.com
-DOMAIN-SUFFIX,lowendspirit.com
-DOMAIN-SUFFIX,webhostingtalk.com
-DOMAIN-SUFFIX,vpsboard.com
-DOMAIN-SUFFIX,hostingdiscussion.com
-
-# V2EX
-DOMAIN-SUFFIX,v2ex.com
-
-# Overseas tech/gadget forums
-DOMAIN-SUFFIX,anandtech.com
-DOMAIN-SUFFIX,tomshardware.com
-DOMAIN-SUFFIX,techpowerup.com
-DOMAIN-SUFFIX,overclock.net
-DOMAIN-SUFFIX,arstechnica.com
-
-# Hacker News
-DOMAIN-SUFFIX,ycombinator.com
-
-# Gaming forums
-DOMAIN-SUFFIX,resetera.com
-DOMAIN-SUFFIX,neogaf.com
+# TOTAL: 632
 
 # ======= blackmatrix7 Discord ========
 DOMAIN-SUFFIX,airhorn.solutions

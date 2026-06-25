@@ -36,8 +36,8 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaW/Surge/master/Source/domainset/download.conf": {
-    "content_length": "34712",
-    "etag": "\"c8ee2b17a73edd90b543a42f541755594e9b59272b48b45ce3bb45cad1b5ac8e\"",
+    "content_length": "34788",
+    "etag": "\"f55f86ce055771422ee56215fe2acaaaba7ac46bd006c637b6c946fa93324577\"",
     "last_modified": null,
     "source_available": true
   },
@@ -79,19 +79,19 @@
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All_No_Resolve.list": {
     "content_length": "51402",
-    "etag": "\"62c13b5a11508dfab23d2cf8c4038c40a9eca5af2ce1252c10d6ab4b7bc7852b\"",
+    "etag": "\"9423d846a1089dc55170c4f658f651bda96c1e6f74e77c94958c04252b795bd0\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs.list": {
-    "content_length": "813556",
-    "etag": "\"a473e3bb2773b5f76eafa31553d9a42bc0b822255df62f048e0aed8db9929802\"",
+    "content_length": "813763",
+    "etag": "\"78733ae76fb745e61a883e08ce1bbfbb099b467d3a398b1a323ccf9366d4111a\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMaxNoIP/ChinaMaxNoIP_Domain.list": {
-    "content_length": "1535352",
-    "etag": "\"4d1d4ecae0e46a64ed31a480a3cbf0d872f2af80ff50eb86b04a6fcae3b383fe\"",
+    "content_length": "1534601",
+    "etag": "\"676c85fe5324a7778e73162ee5ca7176dc1a7c05ab4a34bcd6e899c1a8f462d4\"",
     "last_modified": null,
     "source_available": true
   },
@@ -121,13 +121,13 @@
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list": {
     "content_length": "19223",
-    "etag": "\"cbf1928087e7846e7c44126ab1cd833df4e8e6127c5beec6d45f9d7b99ca0b46\"",
+    "etag": "\"72683debbaeedc53c1466fc069813c2fdcd7f9e678c417a64b3316f6f654c2fd\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_All_No_Resolve.list": {
-    "content_length": "1000777",
-    "etag": "\"e239f8be1f0732d74dc71211988dcf239494f49f7decedc9cc039411c11d7e56\"",
+    "content_length": "1001100",
+    "etag": "\"a235ea30eaa120a8060a3b1688f0a1a4410509fceb048ab5cdcb3a02688adc89\"",
     "last_modified": null,
     "source_available": true
   },
