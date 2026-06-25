@@ -10,6 +10,7 @@ dedup, CIDR pruning, validation, and Global overlap pruning.
 """
 
 import json
+import ipaddress
 import os
 import re
 import subprocess
@@ -156,8 +157,51 @@ def dedupe_preserve_order(lines: list[str]) -> list[str]:
 
 
 def prune_redundant_cidr(filepath: Path):
-    """Run prune_cidr.py on the file."""
-    subprocess.run([sys.executable, "scripts/prune_cidr.py", str(filepath)], check=True)
+    """Remove CIDR entries that are subnets of a broader CIDR in the same file.
+
+    Built into generate_rules.py (was scripts/prune_cidr.py).
+    Returns (before, after) counts; prints summary if pruning occurred.
+    """
+    lines = filepath.read_text(encoding="utf-8").splitlines()
+
+    cidrs: list[tuple[int, ipaddress.IPv4Network | ipaddress.IPv6Network]] = []
+    all_nets: set[ipaddress.IPv4Network | ipaddress.IPv6Network] = set()
+
+    for index, line in enumerate(lines):
+        stripped = line.strip()
+        if not stripped or stripped.startswith("#"):
+            continue
+        parts = [p.strip() for p in stripped.split(",")]
+        if len(parts) < 2 or parts[0].upper() not in {"IP-CIDR", "IP-CIDR6"}:
+            continue
+        try:
+            network = ipaddress.ip_network(parts[1], strict=False)
+        except ValueError:
+            continue
+        cidrs.append((index, network))
+        all_nets.add(network)
+
+    before = len(cidrs)
+    remove: set[int] = set()
+
+    for index, network in cidrs:
+        for prefix in range(network.prefixlen):
+            try:
+                if network.supernet(new_prefix=prefix) in all_nets:
+                    remove.add(index)
+                    break
+            except ipaddress.NetmaskValueError:
+                break
+
+    if remove:
+        filepath.write_text(
+            "\n".join(line for i, line in enumerate(lines) if i not in remove) + "\n",
+            encoding="utf-8",
+        )
+
+    after = before - len(remove)
+    if before != after:
+        print(f"  CIDR prune: {before} → {after} ({len(remove)} redundant)")
 
 
 # ── Processing ──────────────────────────────────────────────────────────────

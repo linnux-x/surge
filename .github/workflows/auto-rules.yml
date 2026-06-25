@@ -64,19 +64,13 @@ jobs:
           CHANGED_RULESETS: ${{ steps.check_upstream.outputs.changed_rulesets }}
         run: python3 scripts/generate_rules.py
 
-      - name: Generate Rule Manifests
+      - name: Generate Manifests & Diff
         if: ${{ fromJson(steps.check_upstream.outputs.changed_count) > 0 || github.event_name == 'workflow_dispatch' }}
         shell: bash
         run: |
           set -euo pipefail
           python3 scripts/manifest.py
-
-      - name: Generate Diff Report
-        if: ${{ fromJson(steps.check_upstream.outputs.changed_count) > 0 || github.event_name == 'workflow_dispatch' }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          python3 scripts/diff_manifests.py
+          python3 scripts/manifest.py --diff
 
       - name: Validate Repository Invariants
         if: ${{ fromJson(steps.check_upstream.outputs.changed_count) > 0 || github.event_name == 'workflow_dispatch' }}
@@ -114,10 +108,10 @@ jobs:
           git add Rule/ Rule/.manifests/ Module/ .gitignore README.md \
             scripts/sources.py scripts/generate_rules.py scripts/rule_validator.py \
             scripts/validate_surge_repo.py \
-            scripts/manifest.py scripts/diff_manifests.py \
+            scripts/manifest.py \
             scripts/diff_report.md scripts/diff_report.json \
             scripts/check_upstream_updates.py scripts/source_state.json \
-            scripts/audit_rules.py scripts/prune_cidr.py scripts/README.md \
+            scripts/audit_rules.py scripts/README.md \
             scripts/test_routing_order.py
 
           if ! git diff --staged --quiet; then

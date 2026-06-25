@@ -62,12 +62,10 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 | `Module/*.sgmodule` | Surge 模块文件 |
 | `scripts/sources.py` | 上游源配置（单一定义，所有脚本引用） |
 | `scripts/check_upstream_updates.py` | 并行 HEAD 检查上游变更（8 线程） |
-| `scripts/generate_rules.py` | 规则生成引擎（下载、合并、清洗、校验） |
-| `scripts/manifest.py` | 规则清单生成器（稳定哈希ID + 来源追踪） |
-| `scripts/diff_manifests.py` | 清单差异对比（本次 vs git HEAD） |
+| `scripts/generate_rules.py` | 规则生成引擎（下载、合并、清洗、校验、CIDR 裁剪） |
+| `scripts/manifest.py` | 规则清单生成 + 差异对比（manifest → diff_report） |
 | `scripts/validate_surge_repo.py` | 不变量检查（15+ 项） |
 | `scripts/audit_rules.py` | 联网审查（5 项审计） |
-| `scripts/prune_cidr.py` | CIDR 去重裁剪 |
 | `scripts/test_routing_order.py` | 路由顺序模拟测试（55 用例） |
 | `tests/expected-routing.csv` | 路由测试预期（域名 → 期望规则集） |
 | `.github/workflows/auto-rules.yml` | 规则同步 + DNS Mapping 模块同步流水线 |
@@ -148,27 +146,25 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 ```
 触发 workflow
   ↓
-1. 增量上游检查 → 拉取变更源 → 合并手动规则 → 应用排除 → 清洗校验
+1. 增量上游检查 → 拉取变更源 → 合并手动规则 → 应用排除 → 清洗校验（含 CIDR 裁剪）
   ↓
-2. 生成紧凑清单（稳定内容哈希ID + 来源标注）          ← scripts/manifest.py
+2. 生成紧凑清单 + 对比 git HEAD 生成增量差异报告           ← scripts/manifest.py
   ↓
-3. 对比 git HEAD 生成增量差异报告                       ← scripts/diff_manifests.py
+3. 验证仓库不变量（15+ 检查项）                              ← scripts/validate_surge_repo.py
   ↓
-4. 验证仓库不变量（15+ 检查项）                         ← scripts/validate_surge_repo.py
-  ↓
-5. 联网审查（5 项审计检查）                            ← scripts/audit_rules.py
+4. 联网审查（5 项审计检查）                                 ← scripts/audit_rules.py
    ├─ 上游可达性
    ├─ 规则数比例对比
    ├─ 共享第三方基础设施扫描
    ├─ Surge 文档更新检查
    └─ exclude 排除覆盖率
   ↓
-6. 同步 DNS Mapping 模块
+5. 同步 DNS Mapping 模块
   ↓
-7. 提交到 GitHub（规则 + 清单 + 差异报告 + 模块）
+6. 提交到 GitHub（规则 + 清单 + 差异报告 + 模块）
 ```
 
-> 流程中的 **增量上游检查**、**Generate Rule Manifests**、**Online Audit** 和 **Sync DNS Mapping** 步骤由本仓库新增，确保每次变更有据可查、可审计。
+> 流程中的 **增量上游检查**、**Manifest & Diff**、**Online Audit** 和 **Sync DNS Mapping** 步骤由本仓库新增，确保每次变更有据可查、可审计。
 
 ### 清单索引系统
 
