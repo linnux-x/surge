@@ -12,8 +12,8 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/cncidr.txt": {
-    "content_length": "140981",
-    "etag": "\"8e441248c77a948f67c295124c1b94923815587555e8a50dcfee10d04176da8d\"",
+    "content_length": "140029",
+    "etag": "\"afc6054b40383edbdc6d899abe265e768d43564662b8440c9db9877e01edd975\"",
     "last_modified": null,
     "source_available": true
   },
@@ -36,8 +36,8 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaW/Surge/master/Source/domainset/download.conf": {
-    "content_length": "34788",
-    "etag": "\"f55f86ce055771422ee56215fe2acaaaba7ac46bd006c637b6c946fa93324577\"",
+    "content_length": "34834",
+    "etag": "\"d090ea7efa3ab0d61de2a0f12a7af675fda1bb69235a4a6f6b9bdca5b974a6b8\"",
     "last_modified": null,
     "source_available": true
   },
@@ -217,8 +217,8 @@
   },
   "https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf": {
     "content_length": null,
-    "etag": null,
+    "etag": "W/\"d32473c036f091bbc193a97e9c5e01e8\"",
     "last_modified": null,
-    "source_available": false
+    "source_available": true
   }
 }
