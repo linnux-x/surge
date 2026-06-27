@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-26T22:04:00.578622",
-  "total_added": 0,
-  "total_removed": 0,
+  "generated_at": "2026-06-27T20:01:02.957377",
+  "total_added": 6,
+  "total_removed": 31,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -73,12 +73,158 @@
     {
       "file": "China_IP.list",
       "prev_total": 11452,
-      "curr_total": 11452,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 11426,
+      "added_count": 5,
+      "removed_count": 31,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "0706a785e381",
+          "source": "Loyalsoldier China CIDR"
+        },
+        {
+          "id": "3af8a2ddb170",
+          "source": "Loyalsoldier China CIDR"
+        },
+        {
+          "id": "95d5cc3875a8",
+          "source": "Loyalsoldier China CIDR"
+        },
+        {
+          "id": "9b6c6022ca4a",
+          "source": "Loyalsoldier China CIDR"
+        },
+        {
+          "id": "bf1485c9ee47",
+          "source": "Loyalsoldier China CIDR"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "0b8dc02358ce",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "0cb867a03a5e",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "0de00e1d5f8f",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "16578e38cded",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "1a80dcd4b3a8",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "235e2bd05d07",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "2c3eb62b0dd1",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "2e2128354e9f",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "3407201f046e",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "4d7f2e89e384",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "51575c812c23",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "53241a3dc4c6",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "55833b2db290",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "64e6d1dc4f32",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "6d1568787b98",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "6e0c02828ac7",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "70e42de13265",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "83ab0f1aa5de",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "85fa240a3c74",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "8f54c0733c14",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "aa7b932098ff",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "bcfc1887aa07",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "bf84eedca8c9",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "c2a747ab17c1",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "c7ff3b47a88b",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "d6107a3995b6",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "d69fb4bf16d7",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "e73302172525",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "e8306b6d34b4",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "ecff54395512",
+          "source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "f24ccb09ed36",
+          "source": "blackmatrix7 China IPs"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -117,11 +263,16 @@
     {
       "file": "Global.list",
       "prev_total": 29702,
-      "curr_total": 29702,
-      "added_count": 0,
+      "curr_total": 29703,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "9328f0809c3d",
+          "source": "blackmatrix7 Global"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },

@@ -79,13 +79,13 @@
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All_No_Resolve.list": {
     "content_length": "51402",
-    "etag": "\"9423d846a1089dc55170c4f658f651bda96c1e6f74e77c94958c04252b795bd0\"",
+    "etag": "\"c02e1bb3f96fc66ab951dab298e044ad77d5e73adaba9907a6c9d6d2c2842cd8\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs.list": {
-    "content_length": "813763",
-    "etag": "\"78733ae76fb745e61a883e08ce1bbfbb099b467d3a398b1a323ccf9366d4111a\"",
+    "content_length": "812322",
+    "etag": "\"4330de877ecdec38b5c45a2d2a2ffc805efcaca1519ee28ebeef09d34069f561\"",
     "last_modified": null,
     "source_available": true
   },
@@ -121,19 +121,19 @@
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list": {
     "content_length": "19223",
-    "etag": "\"72683debbaeedc53c1466fc069813c2fdcd7f9e678c417a64b3316f6f654c2fd\"",
+    "etag": "\"063d4a06096735d1fb33e4318532d66379b76a6c832ecd64d0ca6c5fb1866263\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_All_No_Resolve.list": {
-    "content_length": "1001100",
-    "etag": "\"a235ea30eaa120a8060a3b1688f0a1a4410509fceb048ab5cdcb3a02688adc89\"",
+    "content_length": "1001126",
+    "etag": "\"45ef9c05d98b49fef6f5d0a78f188f30570583deefd5fff9cf4711e3b0293aeb\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalMedia/GlobalMedia_All_No_Resolve.list": {
     "content_length": "73351",
-    "etag": "\"1a1a2be0bdc9779994a62f633dfe3c58aa9b3db4186091ff46d576dca640a37f\"",
+    "etag": "\"8014a17eb009ec1accee01e64ef06a41dd016bca082abec5a6f7f1e56d4152b1\"",
     "last_modified": null,
     "source_available": true
   },
