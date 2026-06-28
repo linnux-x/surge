@@ -48,8 +48,8 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaW/Surge/master/Source/domainset/speedtest.conf": {
-    "content_length": "2493",
-    "etag": "\"f2e0e6a0f00dfa4c66e5e4d9d15606d0de859885425cda262be4d9db86d28b0a\"",
+    "content_length": "3170",
+    "etag": "\"177a24856807a46b653b7e84f12547edaca49a27e9448b1ef92481325e816050\"",
     "last_modified": null,
     "source_available": true
   },
@@ -204,16 +204,16 @@
     "source_available": false
   },
   "https://ruleset.skk.moe/List/ip/telegram.conf": {
-    "content_length": null,
-    "etag": null,
+    "content_length": "1129",
+    "etag": "\"28bbf9e67893cbffe6d17b83ba12e924\"",
     "last_modified": null,
-    "source_available": false
+    "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/apple_cn.conf": {
-    "content_length": null,
-    "etag": null,
+    "content_length": "766",
+    "etag": "\"f55faa5fb4f679d50098f9efe92299d0\"",
     "last_modified": null,
-    "source_available": false
+    "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf": {
     "content_length": null,

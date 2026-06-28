@@ -1,9 +1,9 @@
 # NAME: Speedtest
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-28 04:01:01 +0800
+# UPDATED: 2026-06-29 04:00:53 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 93
+# TOTAL: 123
 
 # ======= SukkaW Speedtest ========
 DOMAIN-SUFFIX,speedtest.net
@@ -81,6 +81,36 @@ DOMAIN-SUFFIX,speedtest.serverside.com
 DOMAIN-SUFFIX,speedtest.airlinkdc.com
 DOMAIN-SUFFIX,speedtest.soraxus.com
 DOMAIN-SUFFIX,speedtest.singnet.com.sg
+DOMAIN-SUFFIX,ookla.bytel.fr
+DOMAIN-SUFFIX,speedtest.mire.sfr.net
+DOMAIN-SUFFIX,speedtest.mbs.cloud
+DOMAIN-SUFFIX,speedtest.shentel.net
+DOMAIN-SUFFIX,speedtest.brightspeed.com
+DOMAIN-SUFFIX,speedtest.fiberfirst.com
+DOMAIN-SUFFIX,speedtest.civitanet.com
+DOMAIN-SUFFIX,speedtest.fastwyre.com
+DOMAIN-SUFFIX,speedtest.bluespan.com
+DOMAIN-SUFFIX,speedtest.secv.com
+DOMAIN-SUFFIX,speedtest.rtc1.com
+DOMAIN-SUFFIX,speedtest.bug.pw
+DOMAIN-SUFFIX,speedtest.orange.pl
+DOMAIN-SUFFIX,speedtest.welcomeitalia.it
+DOMAIN-SUFFIX,speedtest.aruba.it
+DOMAIN-SUFFIX,speedtest.hybridmail.in
+DOMAIN-SUFFIX,speedtest.railtel.in
+DOMAIN-SUFFIX,speedtest.wobcom.de
+DOMAIN-SUFFIX,speedtest.komdsl.de
+DOMAIN-SUFFIX,speedtest.tng.de
+DOMAIN-SUFFIX,speed.tng.de
+DOMAIN-SUFFIX,speedtest.lshiy.net
+DOMAIN-SUFFIX,speedtest.gci.net
+DOMAIN-SUFFIX,speedtest.bluespanwireless.com
+DOMAIN-SUFFIX,speedtest.sukaininfoway.com
+DOMAIN-SUFFIX,speedtest.bhaukaalbaba.com
+DOMAIN-SUFFIX,speedtest.razorblue.com
+DOMAIN-SUFFIX,ookla.enventis.net
+DOMAIN-SUFFIX,ookla.surfinternet.com
+DOMAIN-SUFFIX,ookla.ham1.x-ion.de
 DOMAIN-SUFFIX,speed.cloudflare.com
 DOMAIN-SUFFIX,wifiman.com
 DOMAIN-SUFFIX,wifiman.me

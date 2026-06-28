@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T21:55:28.536490",
-  "total_added": 0,
+  "generated_at": "2026-06-28T20:00:54.439851",
+  "total_added": 30,
   "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
@@ -205,11 +205,132 @@
     {
       "file": "Speedtest.list",
       "prev_total": 93,
-      "curr_total": 93,
-      "added_count": 0,
+      "curr_total": 123,
+      "added_count": 30,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "19db227e8590",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "1fa098b639e8",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "23ab32f82ae3",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "2a274858a06d",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "2b24cb75e65e",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "2d3d5cfa97dd",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "30666a498322",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "34711abadceb",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "35bc3ade63b1",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "49a8f203f955",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "50169da84edb",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "54a170978f9c",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "5b7fad187be0",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "6ac008b7f440",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "6bd5e2d9a7b5",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "6bfde86bde1c",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "6d917a7f2a5a",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "7b5d4aced355",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "8dae5e694ff9",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "9dfa3ed70150",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "a29524e06a74",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "bb37425af5f0",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "bcd639dca9e4",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "c938f8f0397b",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "cb3619771cb1",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "d282b9f4d6d9",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "e0a9e611a659",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "ee27ca973eb6",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "f41673108ddc",
+          "source": "SukkaW Speedtest"
+        },
+        {
+          "id": "f486baa7f9f0",
+          "source": "SukkaW Speedtest"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
