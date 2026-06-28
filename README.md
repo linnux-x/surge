@@ -285,9 +285,9 @@ gh workflow run auto-rules.yml --repo linnux-x/surge
 
 ## 📝 规则维护要求
 
-修改规则或同步逻辑前，请优先阅读 `AGENT.md`。该文件包含完整的用户偏好、分类策略、验证标准和工作流程。
+修改规则或同步逻辑前，请参考 `CONTRIBUTING.md` 了解项目架构和开发约定。
 
-> 📖 项目完整维护约定详见 `AGENT.md` — 所有 agent 和贡献者必读。
+> 📖 完整的用户偏好和分类策略属于私有配置，不在本仓库中。
 
 ---
 

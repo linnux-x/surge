@@ -24,7 +24,7 @@ IP_CACHE_TTL = 3600  # refresh public IP/location every hour
 # ── Surge Panel JS Template ────────────────────────────────────
 # Dynamically served at /panel.js with real IP and token baked in.
 PANEL_JS_TEMPLATE = """// VPS Monitor Panel — Surge Panel Script (auto-generated)
-var API_BASE = "http://riven.linnux.cc:{PORT}";
+var API_BASE = "http://{VPS_HOST}:{PORT}";
 var TOKEN = "{TOKEN}";
 var url = API_BASE + "/status?token=" + TOKEN;
 
@@ -75,8 +75,10 @@ _ip_cache = {"data": None, "ts": 0}
 
 
 def _build_panel_js():
-    """Generate Surge panel JS with correct token baked in."""
+    """Generate Surge panel JS with correct host/port/token baked in."""
+    vps_host = os.environ.get("VPS_MONITOR_HOST", socket.gethostname())
     return (PANEL_JS_TEMPLATE
+            .replace("{VPS_HOST}", vps_host)
             .replace("{PORT}", str(PORT))
             .replace("{TOKEN}", ACCESS_TOKEN))
 

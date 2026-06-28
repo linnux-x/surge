@@ -1,0 +1,444 @@
+{
+  "_comment": "iOS Bundle ID → 应用名称 + 域名 + IP 映射表。格式: bundle_id: {name, domains[], ips[], is_system}",
+  "com.tencent.xin": {
+    "name": "微信",
+    "domains": ["a8.wximg.com", "api.weixin.qq.com", "dldir1v6.qq.com", "mmbiz.qpic.cn", "mp.weixin.qq.com", "weixin.qq.com", "wx.qq.com", "open.weixin.qq.com", "res.wx.qq.com", "wechat.com", "wechatapp.com"],
+    "ips": ["101.226.4.0/24", "101.226.4.0/16", "111.30.131.0/24", "223.252.199.0/24"],
+    "ips_v6": ["2408:8719:1000::/48", "2408:9719:1000::/48", "240e:978:10:1000::/48", "2409:8a20:300:1000::/48"],
+    "is_system": false
+  },
+  "com.tencent.qqmusic": {
+    "name": "QQ音乐",
+    "domains": ["music.qq.com", "y.qq.com", "qqmusic.qq.com", "u.y.qq.com", "c.y.qq.com"],
+    "ips": ["183.3.224.0/24"],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.tencent.ww": {
+    "name": "企业微信",
+    "domains": ["wework.qpic.cn", "wwcdn.weixin.qq.com", "work.weixin.qq.com", "open.work.weixin.qq.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.tencent.hunyuan.app.chat": {
+    "name": "腾讯元宝",
+    "domains": ["hunyuan.tencent.com", "yuanbao.tencent.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.bytedance.ies.ugc.aweme": {
+    "name": "抖音",
+    "domains": ["douyin.com", "snssdk.com", "bytedance.com", "bytedns.net", "toutiao.com", "ixigua.com", "byteimg.com", "bytecdn.cn"],
+    "ips": ["220.181.33.0/24"],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.ss.iphone.ugc.Aweme": {
+    "name": "抖音国际版",
+    "domains": ["tiktok.com", "tiktokv.com", "tiktokcdn.com", "tiktok.org", "musical.ly", "muscdn.com", "byteoversea.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.alicloud.AliyunDrive": {
+    "name": "阿里云盘",
+    "domains": ["aliyundrive.com", "aliyuncs.com", "alibaba.com", "alibabacloud.com"],
+    "ips": ["203.119.169.0/24"],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.alibaba.wireless": {
+    "name": "淘宝",
+    "domains": ["taobao.com", "tmall.com", "alicdn.com", "alikunlun.com", "mmstat.com", "tanx.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.alipay.iphoneclient": {
+    "name": "支付宝",
+    "domains": ["alipay.com", "alipayobjects.com", "alipay.cn", "antfin.com", "antgroup.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.meituan.imeituan": {
+    "name": "美团",
+    "domains": ["meituan.com", "meituan.net", "dianping.com", "meituan.io"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.xingin.discover": {
+    "name": "小红书",
+    "domains": ["xiaohongshu.com", "xhscdn.com", "xhslink.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.bilibili.app.in": {
+    "name": "哔哩哔哩",
+    "domains": ["bilibili.com", "bilivideo.com", "hdslb.com", "biliapi.com", "biliapi.net"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.baidu.BaiduApp": {
+    "name": "百度",
+    "domains": ["baidu.com", "bdimg.com", "bdstatic.com", "bcebos.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.baidu.searchbox": {
+    "name": "百度极速版",
+    "domains": ["baidu.com", "bdimg.com", "bdstatic.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.netease.mailmaster": {
+    "name": "网易邮箱大师",
+    "domains": ["163.com", "126.com", "yeah.net", "netease.com", "qiye.163.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.netease.cloudmusic": {
+    "name": "网易云音乐",
+    "domains": ["music.163.com", "music.126.net", "netease.com", "music.163.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.netease.yingxiao": {
+    "name": "网易",
+    "domains": ["163.com", "126.net", "127.net", "netease.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.kuaishou.nebula": {
+    "name": "快手",
+    "domains": ["kuaishou.com", "kuaishou.net", "yximgs.com", "ksapisrv.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.sankuai.meituan.takeout": {
+    "name": "美团外卖",
+    "domains": ["meituan.com", "meituan.net", "waimai.meituan.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.didi.didiOne": {
+    "name": "滴滴出行",
+    "domains": ["didiglobal.com", "didichuxing.com", "didistatic.com", "udache.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.jd.jdApp": {
+    "name": "京东",
+    "domains": ["jd.com", "360buyimg.com", "jdpay.com", "jcloud.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.xunmeng.pinduoduo": {
+    "name": "拼多多",
+    "domains": ["pinduoduo.com", "yangkeduo.com", "pddpic.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.xiaomi.mishops": {
+    "name": "小米商城",
+    "domains": ["mi.com", "xiaomi.com", "mi-img.com", "midou.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.xiaomi.mico": {
+    "name": "小米",
+    "domains": ["mi.com", "xiaomi.com", "mi-img.com", "xiaomiyoupin.com", "midou.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.huawei.genexcloud.speedtest": {
+    "name": "花瓣测速",
+    "domains": ["huawei.com", "huaweicloud.com", "hicloud.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.huawei.browser": {
+    "name": "华为浏览器",
+    "domains": ["huawei.com", "huaweicloud.com", "hicloud.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.microsoft.teams": {
+    "name": "Microsoft Teams",
+    "domains": ["teams.microsoft.com", "office.com", "office.net", "live.com", "microsoft.com", "msftncsi.com"],
+    "ips": ["52.112.0.0/16"],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.microsoft.Office.Outlook": {
+    "name": "Outlook",
+    "domains": ["outlook.com", "live.com", "office.com", "microsoft.com", "office365.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.google.Gmail": {
+    "name": "Gmail",
+    "domains": ["gmail.com", "google.com", "googleapis.com", "googleusercontent.com", "gstatic.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.google.ios.youtube": {
+    "name": "YouTube",
+    "domains": ["youtube.com", "youtu.be", "ytimg.com", "googlevideo.com", "ggpht.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.google.chrome.ios": {
+    "name": "Chrome",
+    "domains": ["google.com", "googleapis.com", "gstatic.com", "chrome.com", "chromium.org"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.zhihu.ios": {
+    "name": "知乎",
+    "domains": ["zhihu.com", "zhimg.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.sina.weibo": {
+    "name": "微博",
+    "domains": ["weibo.com", "weibo.cn", "sina.com.cn", "sinaimg.cn", "sinajs.cn"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.tencent.QQMusicHD": {
+    "name": "QQ音乐HD",
+    "domains": ["music.qq.com", "y.qq.com", "qqmusic.qq.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.tencent.qq.daily": {
+    "name": "QQ",
+    "domains": ["qq.com", "gtimg.com", "qlogo.cn", "qpic.cn", "qcloud.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.tencent.peng": {
+    "name": "腾讯视频",
+    "domains": ["qq.com", "v.qq.com", "video.qq.com", "gtimg.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.apple.mobilesafari": {
+    "name": "Safari",
+    "domains": ["apple.com", "icloud.com", "icloud-content.com"],
+    "ips": ["17.253.144.0/24"],
+    "ips_v6": ["2620:149:ae0::/48"],
+    "is_system": false
+  },
+  "com.apple.appstore": {
+    "name": "App Store",
+    "domains": ["apple.com", "itunes.apple.com", "apps.apple.com", "mzstatic.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.apple.mobilemail": {
+    "name": "Mail",
+    "domains": ["apple.com", "icloud.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.apple.Music": {
+    "name": "Apple Music",
+    "domains": ["apple.com", "itunes.apple.com", "mzstatic.com", "applemusic.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.apple.TV": {
+    "name": "Apple TV",
+    "domains": ["apple.com", "tv.apple.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.apple.springboard": {
+    "name": "系统桌面",
+    "domains": [],
+    "ips": ["17.0.0.0/8"],
+    "ips_v6": [],
+    "is_system": true
+  },
+  "com.apple.analyticsd": {
+    "name": "系统分析",
+    "domains": ["apple.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": true
+  },
+  "com.apple.locationd": {
+    "name": "系统定位",
+    "domains": ["apple.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": true
+  },
+  "com.apple.assistantd": {
+    "name": "Siri",
+    "domains": ["apple.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": true
+  },
+  "com.apple.WebKit.Networking": {
+    "name": "WebKit 网络",
+    "domains": [],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": true
+  },
+  "com.apple.cloudd": {
+    "name": "iCloud 同步",
+    "domains": ["icloud.com", "apple.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": true
+  },
+  "com.spotify.client": {
+    "name": "Spotify",
+    "domains": ["spotify.com", "scdn.co", "spotifycdn.com", "spotify.net"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.ubercab.UberClient": {
+    "name": "Uber",
+    "domains": ["uber.com", "uberinternal.com", "ubi.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.dropbox.Dropbox": {
+    "name": "Dropbox",
+    "domains": ["dropbox.com", "dropboxapi.com", "dropboxstatic.com", "dropboxusercontent.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.nianticlabs.pokemongo": {
+    "name": "Pokémon GO",
+    "domains": ["nianticlabs.com", "pokemongolive.com", "niantic.io"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.tencent.tencentmap": {
+    "name": "腾讯地图",
+    "domains": ["qq.com", "map.qq.com", "qqmap.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.autonavi.amap": {
+    "name": "高德地图",
+    "domains": ["amap.com", "autonavi.com", "alicdn.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.easy.abroad": {
+    "name": "易出行",
+    "domains": [],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.ifeng.news": {
+    "name": "凤凰新闻",
+    "domains": ["ifeng.com", "ifengimg.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.ctrip.ctrip": {
+    "name": "携程",
+    "domains": ["ctrip.com", "trip.com", "ctripcorp.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.qunar.iphoneclient": {
+    "name": "去哪儿",
+    "domains": ["qunar.com", "qunarzz.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.taobao.trip": {
+    "name": "飞猪",
+    "domains": ["fliggy.com", "alitrip.com", "taobao.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.lianjia.beike": {
+    "name": "贝壳找房",
+    "domains": ["ke.com", "lianjia.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.douban.radio": {
+    "name": "豆瓣",
+    "domains": ["douban.com", "doubanio.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.jianshu.haruki": {
+    "name": "简书",
+    "domains": ["jianshu.com", "jianshu.io"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "com.jiguang.im": {
+    "name": "极光IM",
+    "domains": ["jiguang.cn", "jpush.cn", "jcloud.com"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  },
+  "tv.danmaku.bili": {
+    "name": "哔哩哔哩",
+    "domains": ["bilibili.com", "bilivideo.com", "hdslb.com", "biliapi.com", "biliapi.net"],
+    "ips": [],
+    "ips_v6": [],
+    "is_system": false
+  }
+}

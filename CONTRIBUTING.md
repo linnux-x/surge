@@ -28,7 +28,6 @@ python3 scripts/validate_surge_repo.py
 | 📝 **Documentation** | README improvements, code comments, usage guides |
 | 🧪 **Tests** | Adding test cases to `tests/expected-routing.csv` |
 | 🛡️ **Validation** | New invariant checks in `scripts/rule_validator.py` |
-| 💡 **Features** | Pipeline improvements, new audit checks, tooling enhancements |
 
 ## Project Architecture
 
@@ -36,14 +35,14 @@ python3 scripts/validate_surge_repo.py
 scripts/
 ├── sources.py                 ← Single source of truth for upstream URLs
 ├── check_upstream_updates.py  ← Detects changed upstreams (parallel HEAD)
-├── generate_rules.py          ← Downloads, merges, cleans rules
+├── generate_rules.py          ← Downloads, merges, cleans, validates rules
 │   └── rule_validator.py      ← Shared validation engine
-├── manifest.py                ← Generates per-rule stable-hash manifests
-├── diff_manifests.py          ← Diffs manifests vs git HEAD
+├── manifest.py                ← Generates manifests + diffs against git HEAD
 ├── validate_surge_repo.py     ← Repository-level invariants
 ├── audit_rules.py             ← Post-generation online audits
-├── prune_cidr.py              ← CIDR deduplication
-└── test_routing_order.py      ← Routing simulation tests
+├── test_routing_order.py      ← Routing simulation tests
+├── ios_privacy_to_surge.py    ← iOS privacy report → Surge rules converter
+└── vps_monitor.py             ← Lightweight VPS metrics server for Surge Panel
 
 tests/
 └── expected-routing.csv       ← Domain → expected ruleset mappings

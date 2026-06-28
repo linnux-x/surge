@@ -40,7 +40,7 @@ jobs:
         run: |
           set -euo pipefail
           python3 scripts/manifest.py
-          python3 scripts/diff_manifests.py
+          python3 scripts/manifest.py --diff
 
       - name: Upstream Health Report
         shell: bash

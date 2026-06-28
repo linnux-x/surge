@@ -41,11 +41,23 @@ python3 scripts/audit_rules.py
 
 # Test routing order
 python3 scripts/test_routing_order.py
+
+# Generate Surge rules from iOS privacy report
+python3 scripts/ios_privacy_to_surge.py report.ndjson
+privacy2surge report.ndjson -o Rule/App.list
 ```
+
+## Utility scripts
+
+| Script | What it does |
+|--------|--------------|
+| `ios_privacy_to_surge.py` | Convert iOS privacy report (.ndjson) → Surge/Loon rules. Filters system traffic, merges subdomains, matches apps via iTunes API + built-in mapping |
+| `app_mapping.json` | Bundle ID → app name + domain/IP mapping (extensible) |
+| `vps_monitor.py` | Lightweight HTTP server exposing system metrics as JSON. Designed for Surge Panel. Use `VPS_MONITOR_HOST` and `VPS_MONITOR_TOKEN` env vars. |
 
 ## Design principles
 
-- **No pip install** — all scripts use Python standard library only
+- **No pip install** — all pipeline scripts use Python standard library only (`ios_privacy_to_surge.py` uses stdlib too; iTunes API calls are optional)
 - **Single source of truth** — upstream URLs in `sources.py`; validation rules in `rule_validator.py`
 - **Minimal files** — CIDR pruning built into `generate_rules.py`; manifest diff built into `manifest.py --diff`
 - **Import, not parse** — scripts import from `sources.py`, never parse YAML/JSON for source configuration
