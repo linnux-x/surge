@@ -19,19 +19,19 @@
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
     "content_length": "4031",
-    "etag": "\"92f48a737ff47dbaad1d47a4e7353ea1bf08f7f5e3e5eb7440b96f635aa6e60a\"",
+    "etag": "\"f7bd98dfd5bdcef50533c4ba2667e996d562eeb679891fb2dff7b9561bf4afac\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
     "content_length": "101025",
-    "etag": "\"fa47890281d21994c66c15abf1c2010a307a3dd611e4726c6213898d67e867cd\"",
+    "etag": "\"e8a665df1e6499ddae76010f4ce1242f2d968ff2b7e52c75637196460ae4cdb5\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/ChinaCIDR.list": {
     "content_length": "140634",
-    "etag": "\"07dde9410c20b80eb4c7e221247fc30f086bb7df0f4b74cb0869e817d46877fa\"",
+    "etag": "\"15988b0a4fba66dd66463c24c91061f227d85a0c44f44ec4c13d9dc8ec514937\"",
     "last_modified": null,
     "source_available": true
   },
@@ -204,16 +204,16 @@
     "source_available": false
   },
   "https://ruleset.skk.moe/List/ip/telegram.conf": {
-    "content_length": "1129",
-    "etag": "\"28bbf9e67893cbffe6d17b83ba12e924\"",
+    "content_length": null,
+    "etag": null,
     "last_modified": null,
-    "source_available": true
+    "source_available": false
   },
   "https://ruleset.skk.moe/List/non_ip/apple_cn.conf": {
-    "content_length": "766",
-    "etag": "\"f55faa5fb4f679d50098f9efe92299d0\"",
+    "content_length": null,
+    "etag": null,
     "last_modified": null,
-    "source_available": true
+    "source_available": false
   },
   "https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf": {
     "content_length": null,
