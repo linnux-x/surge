@@ -42,7 +42,7 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 
 | 特性 | 说明 |
 |------|------|
-| 🤖 **全自动同步** | 检查 38 个上游源的 Last-Modified / ETag，只同步有变更的规则集，无变化跳过提交 |
+| 🤖 **全自动同步** | 检查 37 个上游源的 Last-Modified / ETag，只同步有变更的规则集，无变化跳过提交 |
 | 🧪 **自动校验** | 15+ 不变量检查：规则类型合法性、无策略名渗入、无重复、domain-only 约束、no-resolve 策略等 |
 | 📋 **清单索引** | 每条规则拥有 12 字符稳定内容哈希 ID + 上游来源标注，支持跨版本追踪 |
 | 📊 **增量差异报告** | 每次变更生成 manifest diff（markdown + JSON），明确增减来源 |

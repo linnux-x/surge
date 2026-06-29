@@ -34,9 +34,8 @@ def rel(path: Path) -> str:
     return str(path.relative_to(ROOT))
 
 
-def extract_process_rule_targets(workflow_text: str) -> set[str]:
-    # After bash→Python refactor, ruleset inventory comes from sources.py
-    # (the single source of truth), not from process_rule calls in the YAML.
+def extract_process_rule_targets() -> set[str]:
+    """Return all expected ruleset filenames from the single source of truth."""
     from sources import ALL_RULESETS
     return ALL_RULESETS.copy()
 
@@ -69,7 +68,7 @@ def check_workflow_inventory(errors: list[str]) -> None:
         errors.append(f"Missing main workflow: {rel(MAIN_WORKFLOW)}")
         return
     rule_files = {p.name for p in RULE_DIR.glob("*.list")}
-    targets = extract_process_rule_targets(MAIN_WORKFLOW.read_text(encoding="utf-8"))
+    targets = extract_process_rule_targets()
     missing_in_workflow = sorted(rule_files - targets)
     missing_files = sorted(targets - rule_files)
     if missing_in_workflow:
@@ -158,7 +157,7 @@ def main() -> int:
 
     print("VALIDATION PASSED")
     print(f"Rule files: {len(list(RULE_DIR.glob('*.list')))}")
-    print(f"Main workflow targets: {len(extract_process_rule_targets(MAIN_WORKFLOW.read_text(encoding='utf-8')))}")
+    print(f"Main workflow targets: {len(extract_process_rule_targets())}")
     return 0
 
 

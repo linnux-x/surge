@@ -31,7 +31,6 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
       RULE_DIR: Rule
       MANUAL_DIR: Rule/Manual
       REPO_URL: https://github.com/linnux-x/surge
