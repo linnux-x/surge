@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-29T23:09:40.698373",
-  "total_added": 82,
+  "generated_at": "2026-06-29T20:00:23.886522",
+  "total_added": 53,
   "total_removed": 40,
-  "total_source_changed": 240,
+  "total_source_changed": 4,
   "diffs": [
     {
       "file": "AI.list",
@@ -50,12 +50,154 @@
     },
     {
       "file": "China.list",
-      "prev_total": 112523,
-      "curr_total": 112566,
-      "added_count": 82,
+      "prev_total": 112566,
+      "curr_total": 112562,
+      "added_count": 35,
       "removed_count": 39,
-      "source_changed_count": 240,
+      "source_changed_count": 4,
       "added_sample": [
+        {
+          "id": "037845633316",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "0df83195d1ab",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "11f24ff7cdca",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "1315633538b1",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "158d05c3e507",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "203afad6dc99",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "25d3f9a2983a",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "29e4b18a9505",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "374bfe62642e",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "39b74a8be97e",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "502eb95e9744",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "53a8eaa9156c",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "6b2de36d8129",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "6c27761bc2d0",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "7cc11633de42",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "82397610b71c",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "8a6310c021cf",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "8b6477becc32",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "8e841a573c8c",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "91210b0d0fd4",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "958798e85098",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "a3f183b9bbae",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "b1ddb0407ed3",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "b490c36d6e24",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "bfba8b5a2aad",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "c80859964280",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "cc3956471bcc",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "ce47f608eac8",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "cf68ea80b319",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "e3c837b692c0",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "e48cc064f69d",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "e7fb22e6037d",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "ec0855f3d893",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "f33a0aebc700",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        },
+        {
+          "id": "fb56ea17d394",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        }
+      ],
+      "removed_sample": [
         {
           "id": "01ad27c8a689",
           "source": "Manual Rules"
@@ -69,10 +211,6 @@
           "source": "Manual Rules"
         },
         {
-          "id": "100bc655efc2",
-          "source": "SukkaW Domestic"
-        },
-        {
           "id": "12a4a7de68e3",
           "source": "Manual Rules"
         },
@@ -81,40 +219,12 @@
           "source": "Manual Rules"
         },
         {
-          "id": "159b44e9f0aa",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "16cc277d84fa",
-          "source": "SukkaW Domestic"
-        },
-        {
           "id": "17730cc28d93",
           "source": "Manual Rules"
         },
         {
-          "id": "18062c5676bb",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "1a6f38dda773",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "1f3c75a70129",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "22901d154dc4",
-          "source": "SukkaW Domestic"
-        },
-        {
           "id": "237cf7c6a88e",
           "source": "Manual Rules"
-        },
-        {
-          "id": "2396c63fb39b",
-          "source": "SukkaW Domestic"
         },
         {
           "id": "24f5b65de060",
@@ -129,16 +239,8 @@
           "source": "Manual Rules"
         },
         {
-          "id": "2a0407accef4",
-          "source": "SukkaW Domestic"
-        },
-        {
           "id": "301053938a7d",
           "source": "Manual Rules"
-        },
-        {
-          "id": "3719202d0bd4",
-          "source": "SukkaW Domestic"
         },
         {
           "id": "374d6669518d",
@@ -149,56 +251,16 @@
           "source": "Manual Rules"
         },
         {
-          "id": "3cb27c1b3ebb",
-          "source": "SukkaW Domestic"
-        },
-        {
           "id": "3dab2086eb1c",
           "source": "Manual Rules"
-        },
-        {
-          "id": "3e20897b7037",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "49db13626e35",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "4bba20231d75",
-          "source": "SukkaW Domestic"
         },
         {
           "id": "4cf86824fc0e",
           "source": "Manual Rules"
         },
         {
-          "id": "4fd400c5aefa",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "51fd192a6c33",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "57a6ccb1c23e",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "5d6e4bd4f479",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "5d8836c4372e",
-          "source": "SukkaW Domestic"
-        },
-        {
           "id": "5d9406e49e89",
           "source": "Manual Rules"
-        },
-        {
-          "id": "62445e745303",
-          "source": "SukkaW Domestic"
         },
         {
           "id": "628e67079edd",
@@ -217,48 +279,24 @@
           "source": "Manual Rules"
         },
         {
-          "id": "68296be188e3",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "68c35110f3f0",
-          "source": "SukkaW Domestic"
-        },
-        {
           "id": "68d25090d494",
           "source": "Manual Rules"
-        },
-        {
-          "id": "6a5834f25379",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "6affc1cfc706",
-          "source": "SukkaW Domestic"
         },
         {
           "id": "72fe7175eaf0",
           "source": "Manual Rules"
         },
         {
-          "id": "7a86d54ad9e0",
-          "source": "SukkaW Domestic"
-        },
-        {
           "id": "7a88492568c1",
           "source": "Manual Rules"
         },
         {
-          "id": "8d15ebe356c9",
-          "source": "SukkaW Domestic"
+          "id": "87cd0dc712a6",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
         },
         {
-          "id": "8e5f1563a836",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "90d235a1a4da",
-          "source": "SukkaW Domestic"
+          "id": "8914d81b4dd6",
+          "source": "Manual Rules"
         },
         {
           "id": "926924e31ba8",
@@ -269,36 +307,8 @@
           "source": "Manual Rules"
         },
         {
-          "id": "964786a7afb4",
-          "source": "SukkaW Domestic"
-        },
-        {
           "id": "965cbe8138ba",
           "source": "Manual Rules"
-        },
-        {
-          "id": "9fb89ed13f40",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "a78e576065c9",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "a9f1cf9bd8f7",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "ad174688268f",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "b172209cb77b",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "bedbf9a40b11",
-          "source": "SukkaW Domestic"
         },
         {
           "id": "bef1502ef171",
@@ -321,48 +331,16 @@
           "source": "Manual Rules"
         },
         {
-          "id": "c9a6d3c659f8",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "cdc9d268abe4",
-          "source": "SukkaW Domestic"
-        },
-        {
           "id": "d6847d557a10",
           "source": "Manual Rules"
-        },
-        {
-          "id": "d705eb04fed4",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "d80df310b09a",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "df944e43aacb",
-          "source": "SukkaW Domestic"
         },
         {
           "id": "dfada6a8c7df",
           "source": "Manual Rules"
         },
         {
-          "id": "e45f65ab0cff",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "e6c1cfd2cc32",
-          "source": "SukkaW Domestic"
-        },
-        {
           "id": "eb2b9efc3f4a",
           "source": "Manual Rules"
-        },
-        {
-          "id": "f1d42620023f",
-          "source": "SukkaW Domestic"
         },
         {
           "id": "f32ea29281c2",
@@ -373,425 +351,29 @@
           "source": "Manual Rules"
         },
         {
-          "id": "f934ca26a89d",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "fa7a056619ec",
-          "source": "SukkaW Domestic"
-        },
-        {
           "id": "ffa769bfe1e5",
           "source": "Manual Rules"
         }
       ],
-      "removed_sample": [
-        {
-          "id": "01719ba9ba9d",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "02af1d4b748e",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "037be25c8f80",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "0b8e81d9c84c",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "1922735c7f33",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "1d85b19943b8",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "234f1875a4ed",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "237de8fdebdb",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "26b4bb114457",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "2c8fdd89699e",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "31fc1e78db68",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "397b7815aee9",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "516efbdbeecc",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "518821dfce1d",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "59ff13e316ad",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "5b6fa2bf7b3e",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "5fcdaa3fa90d",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "63f497d6da9d",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "6634b3aaa212",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "77ed5a08ff31",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "7c027328770f",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "7d57b7e43aa4",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "7df4acc92fb3",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "8b333feb1087",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "8fb4f8c839e5",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "933bd03efdd4",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "93e6b19bcf00",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "93f0c4bf6cd7",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "969c99e817a7",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "b0d4f5f6062b",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "bf039a20f19a",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "c12edc532dc8",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "c1364709d93b",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "c26007222a93",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "c4fda56acf59",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "c833cc7b6b30",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "d19e598582ac",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "db3992d73b9b",
-          "source": "SukkaW Domestic"
-        },
-        {
-          "id": "e6c9b63a03b4",
-          "source": "SukkaW Domestic"
-        }
-      ],
       "source_changed_sample": [
         {
-          "id": "7116846602d5",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "id": "14aad2385da5",
+          "old_source": "Manual Rules",
           "new_source": "SukkaW Domestic"
         },
         {
-          "id": "7d46345c3c4e",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "id": "ca79165b3e00",
+          "old_source": "Manual Rules",
           "new_source": "SukkaW Domestic"
         },
         {
-          "id": "367bc509ec15",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "id": "ac912fef9a7b",
+          "old_source": "Manual Rules",
           "new_source": "SukkaW Domestic"
         },
         {
-          "id": "aa60f24304f6",
-          "old_source": "Rabbit-Spec China",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "fa4e040d559e",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "817b172c9d21",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "d11dbe9c309e",
-          "old_source": "Rabbit-Spec China",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "0c77cf4814ba",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "82a325583146",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "30a6dbe8fa7c",
-          "old_source": "Rabbit-Spec China",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "5af14b7f38e8",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "0f817c14b1a6",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "23914a56b6fa",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "f9a54e13ba33",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "34e5e47503f5",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "06512113e855",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "74b0e90964ab",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "92b7764226a1",
-          "old_source": "Rabbit-Spec China",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "45dac2432d8f",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "bdf1593788fd",
-          "old_source": "Rabbit-Spec China",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "23d6e5bc4591",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "5793d883dc3c",
-          "old_source": "Rabbit-Spec China",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "6fa527587c22",
-          "old_source": "Rabbit-Spec China",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "f65ec2558247",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "f564d79b127b",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "b839c3a390ec",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "9ac8cc8fe7e7",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "86595503e328",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "14194e960702",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "edc81fdc8bdd",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "b0145afd3318",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "d2169c52a73f",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "3a71c8cf1b51",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "b471bf1f9dcc",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "512f1b4014cf",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "6aa7504497fd",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "098236654450",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "c6f33cfd6761",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "9eacb59b0161",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "369f7d58dc24",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "23f7933c1088",
-          "old_source": "Rabbit-Spec China",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "30620083b6f0",
-          "old_source": "Rabbit-Spec China",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "3e1e77692242",
-          "old_source": "Rabbit-Spec China",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "97a9a31fd0f6",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "c6b1f30988e4",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "1cf158fcf3cd",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "8fcb12a4aee8",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "9ffe843cca4b",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "244305e0d2b4",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        },
-        {
-          "id": "4158edbce68c",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "id": "743effbfd44d",
+          "old_source": "Manual Rules",
           "new_source": "SukkaW Domestic"
         }
       ]
@@ -810,12 +392,17 @@
     {
       "file": "China_IP.list",
       "prev_total": 11426,
-      "curr_total": 11426,
+      "curr_total": 11425,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 1,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "a90b30e4587f",
+          "source": "blackmatrix7 China IPs"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -832,11 +419,16 @@
     {
       "file": "Download.list",
       "prev_total": 1674,
-      "curr_total": 1674,
-      "added_count": 0,
+      "curr_total": 1675,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "352e665addc4",
+          "source": "SukkaW Download"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -854,28 +446,92 @@
     {
       "file": "Global.list",
       "prev_total": 29703,
-      "curr_total": 29703,
-      "added_count": 0,
+      "curr_total": 29720,
+      "added_count": 17,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "1bb7d1da8b13",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "1d7fd57b60a3",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "27c558dd5d69",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "316ad56e4e8d",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "39d25cb46138",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "3a0b7b1b7865",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "4793a1df26c1",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "985e2f707cb0",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "9e22133408a9",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "a0da1d4d580a",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "a6a18963b35e",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "b3c46ca09e33",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "baa22b5fd672",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "c27e4bb39687",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "c45e92883127",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "cc48d2a96b74",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "e4c8a401853f",
+          "source": "blackmatrix7 Global"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "GlobalMedia.list",
-      "prev_total": 2272,
+      "prev_total": 2271,
       "curr_total": 2271,
       "added_count": 0,
-      "removed_count": 1,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "a3fa2f7a0586",
-          "source": "blackmatrix7 GlobalMedia"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {

@@ -1,9 +1,9 @@
 # NAME: Download
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-29 04:00:45 +0800
+# UPDATED: 2026-06-30 04:00:17 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1674
+# TOTAL: 1675
 
 # ======= SukkaW Download ========
 DOMAIN-SUFFIX,cloud-object-storage.appdomain.cloud
@@ -1626,6 +1626,7 @@ DOMAIN,download.geofabrik.de
 DOMAIN,updates.vibeisland.app
 DOMAIN,assets.dataflare.app
 DOMAIN,updates.openlogi.org
+DOMAIN,data.caida.org
 
 # ======= SukkaW Game Download ========
 DOMAIN-SUFFIX,steamcontent.com
