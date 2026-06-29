@@ -71,12 +71,6 @@
     "last_modified": null,
     "source_available": true
   },
-  "https://raw.githubusercontent.com/SukkaW/Surge/master/Source/non_ip/domestic.conf": {
-    "content_length": "17064",
-    "etag": "\"3f2def2276437c3096dae544fabc77b0c93ca774e5f402b40d92e4b920a8c994\"",
-    "last_modified": null,
-    "source_available": true
-  },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All_No_Resolve.list": {
     "content_length": "51402",
     "etag": "\"c02e1bb3f96fc66ab951dab298e044ad77d5e73adaba9907a6c9d6d2c2842cd8\"",
@@ -198,27 +192,33 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/domainset/apple_cdn.conf": {
-    "content_length": null,
-    "etag": null,
+    "content_length": "4538",
+    "etag": "\"52148a92dbafde04b7732d8b3eea9697\"",
     "last_modified": null,
-    "source_available": false
+    "source_available": true
   },
   "https://ruleset.skk.moe/List/ip/telegram.conf": {
-    "content_length": null,
-    "etag": null,
+    "content_length": "1129",
+    "etag": "\"28bbf9e67893cbffe6d17b83ba12e924\"",
     "last_modified": null,
-    "source_available": false
+    "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/apple_cn.conf": {
-    "content_length": null,
-    "etag": null,
+    "content_length": "766",
+    "etag": "\"f55faa5fb4f679d50098f9efe92299d0\"",
     "last_modified": null,
-    "source_available": false
+    "source_available": true
+  },
+  "https://ruleset.skk.moe/List/non_ip/domestic.conf": {
+    "content_length": null,
+    "etag": "W/\"3debf20b0826c41037e549898701ef39\"",
+    "last_modified": null,
+    "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf": {
-    "content_length": null,
-    "etag": null,
+    "content_length": "3215",
+    "etag": "\"d32473c036f091bbc193a97e9c5e01e8\"",
     "last_modified": null,
-    "source_available": false
+    "source_available": true
   }
 }

@@ -34,6 +34,7 @@ STATE_FILE = ROOT / "scripts" / "source_state.json"
 # Conservative: GitHub allows ~60 req/min unauthenticated
 MAX_WORKERS = 8
 REQUEST_TIMEOUT = 20
+REQUEST_HEADERS = {"User-Agent": "surge-upstream-check/1.0"}
 
 
 def fetch_upstream_info(url: str) -> dict:
@@ -49,7 +50,7 @@ def fetch_upstream_info(url: str) -> dict:
     }
 
     # ── Try HEAD first ──
-    req = urllib.request.Request(url, method="HEAD")
+    req = urllib.request.Request(url, headers=REQUEST_HEADERS, method="HEAD")
     try:
         resp = urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT)
         result["last_modified"] = resp.headers.get("Last-Modified")
@@ -61,7 +62,7 @@ def fetch_upstream_info(url: str) -> dict:
         pass
 
     # ── Fallback: Range GET (bytes=0-0) ──
-    req = urllib.request.Request(url, method="GET")
+    req = urllib.request.Request(url, headers=REQUEST_HEADERS, method="GET")
     req.add_header("Range", "bytes=0-0")
     try:
         resp = urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT)
@@ -75,7 +76,8 @@ def fetch_upstream_info(url: str) -> dict:
 
     # ── Last resort: full GET ──
     try:
-        resp = urllib.request.urlopen(url, timeout=REQUEST_TIMEOUT)
+        req = urllib.request.Request(url, headers=REQUEST_HEADERS, method="GET")
+        resp = urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT)
         result["last_modified"] = resp.headers.get("Last-Modified")
         result["etag"] = resp.headers.get("ETag")
         result["content_length"] = str(len(resp.read()))

@@ -14,7 +14,7 @@ from collections import Counter
 from pathlib import Path
 
 ALLOWED_TYPES = {
-    "DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD",
+    "DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD", "DOMAIN-WILDCARD",
     "IP-CIDR", "IP-CIDR6", "IP-ASN",
     "GEOIP", "USER-AGENT", "PROCESS-NAME", "URL-REGEX",
     "AND", "OR", "NOT",
@@ -102,7 +102,7 @@ def validate_rule_file(lines: list[str], target_name: str) -> list[str]:
             errors.append(f"{target_name}:{index} SukkaW marker leaked: {rule}")
 
         # Domain checks
-        if rule_type in {"DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD"} and len(parts) >= 2:
+        if rule_type in {"DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD", "DOMAIN-WILDCARD"} and len(parts) >= 2:
             value = parts[1]
             if value != value.lower():
                 errors.append(f"{target_name}:{index} domain not lowercase: {rule}")
@@ -110,7 +110,7 @@ def validate_rule_file(lines: list[str], target_name: str) -> list[str]:
                 errors.append(f"{target_name}:{index} domain contains URL scheme/path: {rule}")
 
         # Policy name check
-        if rule_type in {"DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD",
+        if rule_type in {"DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD", "DOMAIN-WILDCARD",
                          "IP-CIDR", "IP-CIDR6", "IP-ASN",
                          "USER-AGENT", "PROCESS-NAME"}:
             if len(parts) >= 3 and parts[2].lower() not in OPTION_TOKENS:

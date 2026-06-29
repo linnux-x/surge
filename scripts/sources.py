@@ -50,7 +50,7 @@ _SOURCES: list[tuple[str, str, str, str | None]] = [
     ("SukkaW Download", f"{SUKKA}/domainset/download.conf", "Download.list", "domainset"),
     ("SukkaW Game Download", f"{SUKKA}/domainset/game-download.conf", "Download.list", "domainset"),
     # China.list
-    ("SukkaW Domestic", f"{SUKKA}/non_ip/domestic.conf", "China.list", None),
+    ("SukkaW Domestic", "https://ruleset.skk.moe/List/non_ip/domestic.conf", "China.list", None),
     ("blackmatrix7 ChinaMaxNoIP Domain", f"{BM7}/ChinaMaxNoIP/ChinaMaxNoIP_Domain.list", "China.list", "domainset"),
     ("Rabbit-Spec China", f"{RABBIT}/China.list", "China.list", None),
     # China_IP.list
