@@ -271,41 +271,55 @@ def check_surge_docs_updates() -> list[dict]:
 
 
 def check_exclude_coverage() -> list[dict]:
-    """Verify exclude files exist for all rulesets that need them
-    and that existing exclude patterns actually match something in upstream."""
+    """Verify exclude patterns are actually excluding rules from generated files.
+
+    Two checks per .exclude.txt:
+    1. If an exclude pattern IS found in the generated rules → WARN (exclude not working;
+       may be format mismatch between exclude entry and upstream rule, or rule came from
+       a different upstream source that doesn't go through excludes).
+    2. If an exclude pattern is NOT found → working as intended (either successfully
+       excluded the upstream entry, or the upstream no longer has that rule).
+    """
     findings: list[dict] = []
-    
+
     for list_path in sorted(RULE_DIR.glob("*.list")):
         target = list_path.name
         name_no_ext = target.rsplit(".", 1)[0]
         exclude_file = MANUAL_DIR / f"{name_no_ext}.exclude.txt"
-        
+
         if not exclude_file.exists() or not exclude_file.is_file():
-            continue  # No exclude file — nothing to check
-        
+            continue
+
         # Read exclude patterns
         excludes = []
         for line in exclude_file.read_text(encoding="utf-8", errors="replace").splitlines():
             s = line.strip()
             if not s or s.startswith("#"):
                 continue
-            excludes.append(s.lower())
-        
+            excludes.append(s)
+
         if not excludes:
             continue
-        
-        # Check each exclude pattern against the generated list
+
+        # Check each exclude pattern against the generated rules
         rules = non_comment_rules(list_path)
         rules_lower = [r.lower() for r in rules]
-        
-        unmatched_excludes = []
+
+        leaking_excludes = []
         for exc in excludes:
-            # Simple substring check for grep -vFf matching
-            matched = any(exc in r for r in rules_lower)
-            if not matched:
-                # This exclude didn't match any current rule — it may be stale
-                # or it may be working (preventing upstream entries from appearing)
-                pass  # Not a finding — exclude prevents upstream entries, working as intended
+            # filter_candidates uses exact-line matching: l not in patterns
+            matched = any(exc.lower() == r for r in rules_lower)
+            if matched:
+                leaking_excludes.append(exc)
+
+        if leaking_excludes:
+            for exc in leaking_excludes:
+                findings.append({
+                    "severity": "WARN",
+                    "check": "exclude_coverage",
+                    "target": target,
+                    "detail": f"排除条目在生成文件中仍存在（排除未生效）: {exc}",
+                })
 
     return findings
 

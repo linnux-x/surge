@@ -257,9 +257,9 @@ def process_rule(target_name: str, display_name: str, sources: list[tuple[str, s
     target_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
     prune_redundant_cidr(target_path)
 
-    # Validate with shared validator (same checks as validate_surge_repo.py)
-    rules = [l for l in Path(target_path).read_text(encoding="utf-8").splitlines()
-             if l.strip() and not l.strip().startswith("#")]
+    # Read back once: validate rules + get pruned lines for final write
+    pruned_lines = target_path.read_text(encoding="utf-8").splitlines()
+    rules = [l for l in pruned_lines if l.strip() and not l.strip().startswith("#")]
     errors = validate_rule_file(rules, target_name)
     if errors:
         print(f"VALIDATION FAILED for {target_name}:")
@@ -269,11 +269,7 @@ def process_rule(target_name: str, display_name: str, sources: list[tuple[str, s
 
     # Write final file with header
     rule_count = len(rules)
-
     update_time = datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d %H:%M:%S +0800")
-
-    # Re-read the CIDR-pruned file to get all lines (including source markers)
-    pruned_lines = target_path.read_text(encoding="utf-8").splitlines()
 
     with open(target_path, "w", encoding="utf-8") as f:
         f.write(f"# NAME: {display_name}\n")
