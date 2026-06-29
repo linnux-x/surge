@@ -64,7 +64,7 @@ DOMAIN-SUFFIX,tiktokd.org
 DOMAIN-SUFFIX,tiktokv.com
 DOMAIN-SUFFIX,tiktokv.us
 DOMAIN-SUFFIX,tiktokw.com
-USER-AGENT,tiktok*
+USER-AGENT,TikTok*
 TikTok
 DOMAIN-SUFFIX,kwai-group.com
 DOMAIN-SUFFIX,kwai.com

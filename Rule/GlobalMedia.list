@@ -3,7 +3,7 @@
 # REPO: https://github.com/linnux-x/surge
 # UPDATED: 2026-06-29 04:00:51 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 2272
+# TOTAL: 2271
 
 # ======= blackmatrix7 GlobalMedia ========
 DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
@@ -2255,7 +2255,6 @@ USER-AGENT,TIDAL*
 USER-AGENT,TIDAL*dia
 USER-AGENT,TVer-Release*
 USER-AGENT,TaiwanGood*
-USER-AGENT,TikTok*
 USER-AGENT,Viu*
 USER-AGENT,ViuTV*
 USER-AGENT,WeMusic*

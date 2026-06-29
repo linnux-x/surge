@@ -36,8 +36,8 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaW/Surge/master/Source/domainset/download.conf": {
-    "content_length": "34834",
-    "etag": "\"d090ea7efa3ab0d61de2a0f12a7af675fda1bb69235a4a6f6b9bdca5b974a6b8\"",
+    "content_length": "34849",
+    "etag": "\"37873a70a3d4b55c6b4b2d920285d4790fa96bd3e49a276dca8c2f602dbb32ba\"",
     "last_modified": null,
     "source_available": true
   },
@@ -72,8 +72,8 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaW/Surge/master/Source/non_ip/domestic.conf": {
-    "content_length": "17019",
-    "etag": "\"c6bd64cb09eb8389665fce4b37b6208cf97fa919396697c4a8e2746b0ed497d3\"",
+    "content_length": "17064",
+    "etag": "\"3f2def2276437c3096dae544fabc77b0c93ca774e5f402b40d92e4b920a8c994\"",
     "last_modified": null,
     "source_available": true
   },
