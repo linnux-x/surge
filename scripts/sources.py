@@ -20,6 +20,10 @@ from __future__ import annotations
 BASE_URIS = {
     "BM7": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge",
     "SUKKA": "https://raw.githubusercontent.com/SukkaW/Surge/master/Source",
+    # Rabbit-Spec is intentionally retained. It provides useful AIGC/China
+    # coverage and the repo workflow credits Rabbit-Spec design ideas. Do not
+    # remove it during source-pruning unless a manual full-generation audit
+    # finds a concrete replacement with equal or better coverage.
     "RABBIT": "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules",
     "CHUA": "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra",
 }

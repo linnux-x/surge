@@ -63,6 +63,31 @@ tests/
 5. **Commit:** Clear, concise commit messages
 6. **Open a PR:** Target `main` branch
 
+
+## Full Generation 发布前手动审计
+
+`workflow_dispatch` 会触发 full generation：即使上游没有检测到变化，也会重新生成所有规则集。为了避免一次性全量生成把上游异常、分类漂移或共享基础设施误提交到公开仓库，发布前必须先做一次手动审计。
+
+推荐流程：
+
+1. 在 GitHub Actions 手动运行 `Auto-Surge-Rules`，设置 `dry_run=true`。
+2. 审查 Actions 输出中的：
+   - `Generate Rules`
+   - `Generate Manifests & Diff`
+   - `Validate Repository Invariants`
+   - `Online Audit`
+3. 重点检查：
+   - `Rule/*.list` 是否出现异常大幅增删；
+   - `scripts/diff_report.md` 是否符合预期；
+   - Rabbit-Spec 来源是否仍保留并正常拉取；
+   - shared infrastructure 提示是否需要 exclude 或 service-owned 例外；
+   - `audit_rules.py` 是否无 error / warning。
+4. 手动审计通过后，再次运行 `workflow_dispatch`，设置：
+   - `dry_run=false`
+   - `manual_audit_confirmed=true`
+
+如果未确认 `manual_audit_confirmed=true`，full generation 不允许 commit / push。
+
 ## Pull Request Guidelines
 
 - **One concern per PR.** Bug fix, feature, and refactor in separate PRs.

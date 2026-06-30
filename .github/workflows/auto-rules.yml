@@ -17,6 +17,14 @@ on:
         options:
           - "false"
           - "true"
+      manual_audit_confirmed:
+        description: "For full generation publishing: confirm manual audit was completed before commit/push"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
 
 permissions:
   contents: write
@@ -95,6 +103,14 @@ jobs:
             https://ruleset.skk.moe/Modules/sukka_local_dns_mapping.sgmodule
           sed -i '1s|^#!name=.*|#!name=DNS-Mapping|' Module/DNS-Mapping.sgmodule
           sed -i '2s|^#!desc=.*|#!desc=本地 DNS 映射，优化国内常用服务与局域网域名解析|' Module/DNS-Mapping.sgmodule
+
+      - name: Manual Audit Gate for Full Generation Publishing
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run != 'true' && inputs.manual_audit_confirmed != 'true' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "::error::Full generation publish requires manual audit before commit/push. First run dry_run=true, review Rule/ + manifests + diff_report + audit output, then rerun with manual_audit_confirmed=true."
+          exit 1
 
       - name: Commit and Push Changes
         if: ${{ (fromJson(steps.check_upstream.outputs.changed_count) > 0 || github.event_name == 'workflow_dispatch') && inputs.dry_run != 'true' }}

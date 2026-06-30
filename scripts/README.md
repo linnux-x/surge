@@ -6,6 +6,15 @@
 
 ---
 
+
+## Full generation 发布前审计
+
+手动触发 GitHub Actions `workflow_dispatch` 时，会进行 full generation。正式发布前必须先运行一次 `dry_run=true`，人工审查生成结果、manifest diff 和在线审计输出。审计通过后，才允许使用 `manual_audit_confirmed=true` 发布。
+
+Rabbit-Spec 来源当前明确保留，用于补充 AIGC、China、ChinaCIDR 覆盖；不要在普通源清理中移除。
+
+---
+
 ## 流水线顺序
 
 | 步骤 | 脚本 | 作用 |
