@@ -110,6 +110,13 @@ def apply_project_guardrails(target_name: str, lines: list[str]) -> list[str]:
     """Apply repository-specific guardrails."""
     out = lines[:]
 
+    # Surge GEOIP is documented for ISO country codes only. Convert the common
+    # community shorthand for Google-owned IP ranges to Surge-native IP-ASN.
+    out = [
+        "IP-ASN,15169" if re.match(r"^GEOIP,GOOGLE$", l, re.IGNORECASE) else l
+        for l in out
+    ]
+
     if target_name == "Microsoft.list":
         out = [l for l in out if not re.search(r"github|ghcr\.io", l, re.IGNORECASE)]
     elif target_name in ("Netflix.list", "GlobalMedia.list", "Global.list"):

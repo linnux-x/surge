@@ -98,6 +98,9 @@ def validate_rule_file(lines: list[str], target_name: str) -> list[str]:
             errors.append(f"{target_name}:{index} unsupported rule type: {rule}")
             continue
 
+        if rule_type == "GEOIP" and (len(parts) < 2 or not re.fullmatch(r"[A-Z]{2}", parts[1])):
+            errors.append(f"{target_name}:{index} non-standard GEOIP code: {rule}")
+
         if SUKKAW_MARKER in low:
             errors.append(f"{target_name}:{index} SukkaW marker leaked: {rule}")
 

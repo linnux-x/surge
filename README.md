@@ -263,7 +263,7 @@ gh workflow run auto-rules.yml --repo linnux-x/surge
 
 在 `Rule/Manual/` 目录下放置：
 - `<名称>.txt` → 手动追加规则，放在对应规则文件顶部，优先级最高
-- `<名称>.exclude.txt` → 排除规则，使用 `grep -vFf`（固定字符串匹配，非正则）
+- `<名称>.exclude.txt` → 排除规则，按生成后规则整行精确匹配（大小写敏感，非正则；需与上游格式完全一致）
 
 > ⚠️ **注意**：长期需要保留/排除的规则必须放入 `Rule/Manual/` 对应文件。不要依赖旧生成文件作为隐式 baseline。
 
