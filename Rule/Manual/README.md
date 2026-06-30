@@ -1,4 +1,4 @@
-# Manual Rules｜手工规则目录
+# 手工规则目录
 
 > **本目录已加入 `.gitignore`**：个人手工规则不会提交到公开仓库。  
 > Fork 用户可以在这里添加自己的 include / exclude 规则。

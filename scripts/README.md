@@ -1,4 +1,4 @@
-# scripts｜Surge 规则流水线脚本
+# 脚本目录｜Surge 规则流水线
 
 本目录保存 `linnux-x/surge` 仓库的规则生成、校验、审计和辅助脚本。
 
