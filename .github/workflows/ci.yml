@@ -14,6 +14,6 @@ jobs:
     if: github.repository == 'linnux-x/surge'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Validate Rule Syntax & Project Policies
         run: python3 scripts/validate_surge_repo.py --ci
