@@ -36,8 +36,8 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaW/Surge/master/Source/domainset/download.conf": {
-    "content_length": "34877",
-    "etag": "\"24657858812963f9d401bcbc51f71c07caf916470ab3a0de15a6bdff3ad17768\"",
+    "content_length": "34951",
+    "etag": "\"0ac051875ae0c61eac4603d9f78cf865b5a57f794f634a7ee2605816f22a5728\"",
     "last_modified": null,
     "source_available": true
   },
@@ -192,8 +192,8 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/domainset/apple_cdn.conf": {
-    "content_length": "4538",
-    "etag": "\"6d80cc004813ccfcedab7f68cc8f320b\"",
+    "content_length": null,
+    "etag": "W/\"6d80cc004813ccfcedab7f68cc8f320b\"",
     "last_modified": null,
     "source_available": true
   },
@@ -204,20 +204,20 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/apple_cn.conf": {
-    "content_length": "766",
-    "etag": "\"592b2157dd38e36b3b328639b2c1349d\"",
+    "content_length": null,
+    "etag": "W/\"592b2157dd38e36b3b328639b2c1349d\"",
     "last_modified": null,
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/domestic.conf": {
-    "content_length": "22545",
-    "etag": "\"b33475de3949c7bdebe58e4e111b15ea\"",
+    "content_length": null,
+    "etag": "W/\"b33475de3949c7bdebe58e4e111b15ea\"",
     "last_modified": null,
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf": {
-    "content_length": "3215",
-    "etag": "\"da0fb856533fa44a8ef205c13c057992\"",
+    "content_length": null,
+    "etag": "W/\"da0fb856533fa44a8ef205c13c057992\"",
     "last_modified": null,
     "source_available": true
   }
