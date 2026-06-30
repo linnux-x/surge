@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-01T05:02:53.944489",
-  "total_added": 21,
+  "generated_at": "2026-06-30T22:10:04.496776",
+  "total_added": 0,
   "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
@@ -94,97 +94,12 @@
     },
     {
       "file": "Download.list",
-      "prev_total": 1675,
+      "prev_total": 1696,
       "curr_total": 1696,
-      "added_count": 21,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "0a3540c64661",
-          "source": "Manual Rules"
-        },
-        {
-          "id": "0d9ec9c0a022",
-          "source": "Manual Rules"
-        },
-        {
-          "id": "48f7d672131d",
-          "source": "Manual Rules"
-        },
-        {
-          "id": "4ef9673f88bb",
-          "source": "Manual Rules"
-        },
-        {
-          "id": "521dc4f1fe66",
-          "source": "Manual Rules"
-        },
-        {
-          "id": "66c4779e3049",
-          "source": "Manual Rules"
-        },
-        {
-          "id": "845016eb88b5",
-          "source": "Manual Rules"
-        },
-        {
-          "id": "9148ca32607d",
-          "source": "Manual Rules"
-        },
-        {
-          "id": "a0ab0e7dcde9",
-          "source": "Manual Rules"
-        },
-        {
-          "id": "afb23b943a89",
-          "source": "Manual Rules"
-        },
-        {
-          "id": "b204346e4e3a",
-          "source": "Manual Rules"
-        },
-        {
-          "id": "b68ec029ad16",
-          "source": "Manual Rules"
-        },
-        {
-          "id": "b6ceda7bc95f",
-          "source": "Manual Rules"
-        },
-        {
-          "id": "bd7ab610b008",
-          "source": "Manual Rules"
-        },
-        {
-          "id": "c27c3c6e28d1",
-          "source": "Manual Rules"
-        },
-        {
-          "id": "c7b528f8a916",
-          "source": "SukkaW Download"
-        },
-        {
-          "id": "cf6e44f5b5d6",
-          "source": "Manual Rules"
-        },
-        {
-          "id": "f2aacca36b7d",
-          "source": "Manual Rules"
-        },
-        {
-          "id": "fbeb9cf30e0e",
-          "source": "Manual Rules"
-        },
-        {
-          "id": "fce34a1a3e7b",
-          "source": "Manual Rules"
-        },
-        {
-          "id": "fdc5fbcedadb",
-          "source": "Manual Rules"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },

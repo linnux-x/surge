@@ -19,19 +19,19 @@
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
     "content_length": "4031",
-    "etag": "\"ff47ed7de7baa407f79018493a379bd1335e76ee123f7442a0d71b488cb343cf\"",
+    "etag": "\"39b17da65f90f6aec8ad4d61950cb715dd3014381a63b746a052a26c62415015\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
     "content_length": "101025",
-    "etag": "\"e7fbfafc2038de7f59ef2f12c348f832d2c40706b16657a68af5de637a589f08\"",
+    "etag": "\"e39c9e18f9de0d0b5fefcf39c1d4c3a1262c1503cacc471e740de05c7139b720\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/ChinaCIDR.list": {
     "content_length": "140634",
-    "etag": "\"d875e68867720901ea3bd39ccf5fb3b668d6d522d324109ac6ae73c2a6059ded\"",
+    "etag": "\"f1275d2a9dd936cea91b27971d5cf9da788c131a748a4b82186987c59b4ce0a2\"",
     "last_modified": null,
     "source_available": true
   },
@@ -193,7 +193,7 @@
   },
   "https://ruleset.skk.moe/List/domainset/apple_cdn.conf": {
     "content_length": "4538",
-    "etag": "\"52148a92dbafde04b7732d8b3eea9697\"",
+    "etag": "\"6d80cc004813ccfcedab7f68cc8f320b\"",
     "last_modified": null,
     "source_available": true
   },
@@ -205,19 +205,19 @@
   },
   "https://ruleset.skk.moe/List/non_ip/apple_cn.conf": {
     "content_length": "766",
-    "etag": "\"f55faa5fb4f679d50098f9efe92299d0\"",
+    "etag": "\"592b2157dd38e36b3b328639b2c1349d\"",
     "last_modified": null,
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/domestic.conf": {
-    "content_length": null,
-    "etag": "W/\"3debf20b0826c41037e549898701ef39\"",
+    "content_length": "22545",
+    "etag": "\"b33475de3949c7bdebe58e4e111b15ea\"",
     "last_modified": null,
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf": {
     "content_length": "3215",
-    "etag": "\"d32473c036f091bbc193a97e9c5e01e8\"",
+    "etag": "\"da0fb856533fa44a8ef205c13c057992\"",
     "last_modified": null,
     "source_available": true
   }
