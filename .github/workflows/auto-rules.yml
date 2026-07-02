@@ -49,7 +49,8 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v5
+        # actions/checkout@v5 pinned 2026-07-02
+        uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd
 
       - name: Check Upstream Updates
         id: check_upstream
@@ -227,7 +228,8 @@ jobs:
 
       - name: Upload Dry Run Manifest Fingerprint
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run == 'true' }}
-        uses: actions/upload-artifact@v4
+        # actions/upload-artifact@v4 pinned 2026-07-02
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: full-generation-manifest-fingerprint
           path: scripts/full_generation_manifest.sha256
