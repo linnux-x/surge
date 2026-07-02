@@ -28,6 +28,7 @@ on:
 
 permissions:
   contents: write
+  actions: read
 
 concurrency:
   group: auto-surge-rules
@@ -91,6 +92,75 @@ jobs:
           set -euo pipefail
           python3 scripts/audit_rules.py
 
+      - name: Compute Full Generation Manifest Fingerprint
+        if: ${{ github.event_name == 'workflow_dispatch' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from hashlib import sha256
+          from pathlib import Path
+
+          manifest_dir = Path("Rule/.manifests")
+          manifest_paths = sorted(manifest_dir.glob("*.manifest"))
+          if not manifest_paths:
+              raise SystemExit("No manifest files found for full-generation audit fingerprint")
+
+          digest = sha256()
+          for path in manifest_paths:
+              digest.update(path.as_posix().encode("utf-8") + b"\0")
+              digest.update(path.read_bytes())
+              digest.update(b"\0")
+
+          fingerprint = digest.hexdigest()
+          out = Path("scripts/full_generation_manifest.sha256")
+          out.write_text(fingerprint + "\n", encoding="utf-8")
+          print(f"manifest_fingerprint={fingerprint}")
+          PY
+
+      - name: Verify Reviewed Manifest Fingerprint
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run != 'true' && inputs.manual_audit_confirmed == 'true' }}
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          artifact_url=$(gh api \
+            "/repos/${GITHUB_REPOSITORY}/actions/artifacts?name=full-generation-manifest-fingerprint&per_page=20" \
+            --jq '.artifacts[] | select(.expired == false) | .archive_download_url' \
+            | head -n 1)
+
+          if [ -z "$artifact_url" ]; then
+            echo "::error::No dry-run manifest fingerprint artifact found. Run workflow_dispatch with dry_run=true and review that output first."
+            exit 1
+          fi
+
+          auth_header="Authorization: Bearer ${GH_TOKEN}"
+          curl --fail --location \
+            -H "$auth_header" \
+            -H "Accept: application/vnd.github+json" \
+            "$artifact_url" \
+            --output /tmp/full-generation-manifest-fingerprint.zip
+
+          python3 - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+
+          current = Path("scripts/full_generation_manifest.sha256").read_text(encoding="utf-8").strip()
+          with ZipFile("/tmp/full-generation-manifest-fingerprint.zip") as zf:
+              names = [n for n in zf.namelist() if n.endswith("full_generation_manifest.sha256")]
+              if not names:
+                  raise SystemExit("::error::Dry-run artifact does not contain full_generation_manifest.sha256")
+              reviewed = zf.read(names[0]).decode("utf-8").strip()
+
+          if current != reviewed:
+              raise SystemExit(
+                  "::error::Full generation manifest fingerprint differs from the reviewed dry-run artifact. "
+                  "Run dry_run=true again and re-review before publishing."
+              )
+          print(f"Manifest fingerprint matches reviewed dry-run artifact: {current}")
+          PY
+
       - name: Sync DNS Mapping Module
         shell: bash
         run: |
@@ -143,3 +213,12 @@ jobs:
         run: |
           echo "::notice::Dry run enabled. Changes were generated and validated, but will NOT be committed."
           git status --short
+
+      - name: Upload Dry Run Manifest Fingerprint
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run == 'true' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: full-generation-manifest-fingerprint
+          path: scripts/full_generation_manifest.sha256
+          if-no-files-found: error
+          retention-days: 14
