@@ -53,17 +53,13 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          # Run check — exits 1 if changes found; both paths capture output.
-          # Write candidate state to a temp file only; it is promoted to
-          # scripts/source_state.json after generation/validation/audit succeeds.
-          output=$(python3 scripts/check_upstream_updates.py --state-out scripts/source_state.next.json 2>&1) || true
-          echo "$output"
-          # Parse the last JSON line as the summary
-          summary=$(echo "$output" | grep '^{' | tail -1)
-          changed=$(echo "$summary" | python3 -c "import json,sys; d=json.load(sys.stdin); print(json.dumps(d['rulesets']))" 2>/dev/null || echo "[]")
-          echo "changed_rulesets=$changed" >> "$GITHUB_OUTPUT"
-          count=$(echo "$summary" | python3 -c "import json,sys; d=json.load(sys.stdin); print(len(d['rulesets']))" 2>/dev/null || echo "0")
-          echo "changed_count=$count" >> "$GITHUB_OUTPUT"
+          # Run check. Upstream changes are reported via GitHub outputs;
+          # non-zero exit means the checker itself failed and must fail CI.
+          # Candidate state is promoted to scripts/source_state.json only after
+          # generation/validation/audit succeeds.
+          python3 scripts/check_upstream_updates.py \
+            --state-out scripts/source_state.next.json \
+            --github-output "$GITHUB_OUTPUT"
 
       - name: Generate Rules
         id: generate

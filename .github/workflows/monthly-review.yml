@@ -57,7 +57,7 @@ jobs:
           echo "## Generated: $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S +0800')" >> monthly-review.md
           echo "" >> monthly-review.md
           echo "### Source Status" >> monthly-review.md
-          python3 scripts/check_upstream_updates.py >> monthly-review.md 2>&1 || true
+          python3 scripts/check_upstream_updates.py >> monthly-review.md 2>&1
           echo "" >> monthly-review.md
           echo "### Rule Counts" >> monthly-review.md
           for f in Rule/*.list; do

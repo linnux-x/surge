@@ -2,7 +2,8 @@
 """Check upstream rule sources for updates using parallel HTTP HEAD requests.
 
 Compares cached Last-Modified / ETag headers against current upstream.
-Outputs a JSON summary; exits 0 if nothing changed, 1 if changes detected.
+Outputs a JSON summary. Upstream changes are reported via JSON/GitHub outputs,
+not exit status; non-zero exits are reserved for script/configuration failures.
 
 Sources that don't support HEAD fall back to Range GET then full GET.
 When no timestamp info is available, marks source as "unknown" and
@@ -114,6 +115,22 @@ def save_state(state: dict, path: Path = STATE_FILE) -> None:
     path.write_text(json.dumps(pruned, indent=2, sort_keys=True) + "\n")
 
 
+def write_github_output(path: Path, summary: dict) -> None:
+    """Write check summary fields to a GitHub Actions output file."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", encoding="utf-8") as f:
+        f.write(f"changed={str(summary['changed']).lower()}\n")
+        f.write(f"changed_count={summary['changed_count']}\n")
+        f.write(
+            "changed_rulesets="
+            + json.dumps(summary["rulesets"], ensure_ascii=False)
+            + "\n"
+        )
+        f.write(
+            f"unknown_timestamp_sources={summary['unknown_timestamp_sources']}\n"
+        )
+
+
 def has_changed(current: dict, cached: dict) -> bool:
     """Compare current upstream info with cached state."""
     if not cached.get("source_available"):
@@ -220,6 +237,11 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         help="Write the newly observed state to this path instead of scripts/source_state.json.",
     )
+    parser.add_argument(
+        "--github-output",
+        type=Path,
+        help="Write changed_rulesets/changed_count directly to this GitHub Actions output file.",
+    )
     return parser.parse_args()
 
 
@@ -258,7 +280,10 @@ def main() -> None:
     print(file=sys.stderr)
     print(json.dumps(summary, ensure_ascii=False), file=sys.stdout)
 
-    sys.exit(1 if changed_rulesets else 0)
+    if args.github_output:
+        write_github_output(args.github_output, summary)
+
+    sys.exit(0)
 
 
 if __name__ == "__main__":
