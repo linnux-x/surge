@@ -69,6 +69,8 @@ jobs:
             count=$(awk '!/^#/ && !/^[[:space:]]*$/ {n++} END {print n+0}' "$f")
             echo "- $(basename "$f"): $count rules" >> "$report"
           done
+          echo "" >> "$report"
+          python3 scripts/cross_file_conflicts.py >> "$report"
 
       - name: Commit Monthly Report
         if: steps.month_gate.outputs.is_last_day == 'true' || github.event_name == 'workflow_dispatch'

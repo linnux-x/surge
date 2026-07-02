@@ -20,3 +20,16 @@ DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,o207216.ingest.sentry.io
 DOMAIN-SUFFIX,o33249.ingest.sentry.io
 DOMAIN,o33249.ingest.sentry.io
+# LiveKit is a shared realtime media platform. Keep specific AI endpoints from upstream,
+# but exclude the broad parent suffix.
+DOMAIN-SUFFIX,livekit.cloud
+# Statsig is shared feature-flag/event infrastructure. Keep known AI-specific
+# endpoints in Manual/AI.txt, but exclude broad parent suffixes.
+DOMAIN-SUFFIX,statsig.com
+DOMAIN-SUFFIX,statsigapi.net
+# Intercom is shared customer-support infrastructure, not AI-specific. Excluding
+# the parent suffix is required so api-iam.intercom.io cannot be captured by AI.
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,js.intercomcdn.com
+DOMAIN,api-iam.intercom.io

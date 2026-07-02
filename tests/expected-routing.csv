@@ -13,6 +13,11 @@ claudeusercontent.com,AI.list,Claude user content
 downloads.claude.ai,AI.list,Claude Code download
 modelcontextprotocol.io,AI.list,Claude MCP
 cdn.growthbook.io,AI.list,Claude feature flags
+api.statsig.com,AI.list,AI feature flags（specific Statsig endpoint retained）
+events.statsigapi.net,AI.list,AI event telemetry（specific Statsig endpoint retained）
+livekit.cloud,Global,LiveKit parent suffix is shared infrastructure and should not be AI
+chatgpt.livekit.cloud,AI.list,ChatGPT-specific LiveKit endpoint remains AI
+api-iam.intercom.io,Global,Intercom IAM is shared support infrastructure and should not be AI
 gemini.google.com,AI.list,Gemini（Google AI子域先行命中AI.list）
 copilot.microsoft.com,AI.list,Microsoft Copilot
 gs.apple.com,Apple.list,Apple GS认证（不在Apple_CN.list）

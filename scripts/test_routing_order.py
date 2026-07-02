@@ -169,6 +169,12 @@ def load_routing_order() -> list[tuple[str, str]]:
             order.append(("LAN", m_lan.group(1)))
             continue
 
+        # RULE-SET,WeChat,WeChat (inline ruleset mirrors Rule/WeChat.list)
+        m_inline_wechat = re.match(r"RULE-SET,WeChat,(\S+)(?:,|$)", line)
+        if m_inline_wechat:
+            order.append(("WeChat.list", m_inline_wechat.group(1)))
+            continue
+
         # FINAL,policy
         m_final = re.match(r"FINAL,(\S+)", line)
         if m_final:

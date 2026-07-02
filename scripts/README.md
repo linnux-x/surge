@@ -24,6 +24,7 @@ Rabbit-Spec 来源当前明确保留，用于补充 AIGC、China、ChinaCIDR 覆
 | 3 | `manifest.py` | 生成每个规则文件的 manifest：`<stable_id>	<source_name>`；`--diff` 用于生成差异报告 |
 | 4 | `validate_surge_repo.py` | 仓库级不变量检查，规则内容校验委托给 `rule_validator.py` |
 | 5 | `audit_rules.py` | 生成后联网审计：上游可达性、规则数量、共享基础设施、Surge 文档、exclude 覆盖等 |
+| 6 | `cross_file_conflicts.py` | 月报辅助：列出同一域名跨不同策略文件重复出现时的 first-match 实际生效关系 |
 
 ---
 
@@ -54,6 +55,9 @@ python3 scripts/validate_surge_repo.py
 
 # 5. 联网审计
 python3 scripts/audit_rules.py
+
+# 6. 查看跨文件策略冲突（月报同款输出）
+python3 scripts/cross_file_conflicts.py
 
 # 测试路由顺序
 python3 scripts/test_routing_order.py
