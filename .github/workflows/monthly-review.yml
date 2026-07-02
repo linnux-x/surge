@@ -72,7 +72,7 @@ jobs:
           if [ -f monthly-review.md ]; then
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
-            git add monthly-review.md Rule/.manifests/ scripts/diff_report.md scripts/diff_report.json scripts/source_state.json
+            git add monthly-review.md Rule/.manifests/ scripts/diff_report.md scripts/diff_report.json
             if ! git diff --staged --quiet; then
               git commit -m "Monthly review: $(TZ='Asia/Shanghai' date +'%Y-%m')"
               git push

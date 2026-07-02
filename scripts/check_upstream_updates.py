@@ -10,10 +10,13 @@ regenerates (conservative).
 
 All source URLs come from scripts/sources.py — the single source of truth.
 State file: scripts/source_state.json (committed to git).
+By default this command is read-only. Use --write-state or --state-out to
+persist the newly observed upstream state after downstream generation succeeds.
 """
 
 from __future__ import annotations
 
+import argparse
 import json
 import sys
 import urllib.error
@@ -98,12 +101,17 @@ def load_state() -> dict:
     return {}
 
 
-def save_state(state: dict) -> None:
-    """Persist state, pruning stale entries not in SOURCE_URL_MAP."""
+def prune_state(state: dict) -> dict:
+    """Return state with stale entries not in SOURCE_URL_MAP removed."""
     active_urls = set(SOURCE_URL_MAP.keys())
-    pruned = {url: info for url, info in state.items() if url in active_urls}
-    STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
-    STATE_FILE.write_text(json.dumps(pruned, indent=2, sort_keys=True) + "\n")
+    return {url: info for url, info in state.items() if url in active_urls}
+
+
+def save_state(state: dict, path: Path = STATE_FILE) -> None:
+    """Persist state to path, pruning stale entries not in SOURCE_URL_MAP."""
+    pruned = prune_state(state)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(pruned, indent=2, sort_keys=True) + "\n")
 
 
 def has_changed(current: dict, cached: dict) -> bool:
@@ -198,7 +206,29 @@ def check_all_sources_parallel(
     return changed_rulesets, new_state, changed_count, unknown_count
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Check upstream rule source updates without mutating state by default."
+    )
+    parser.add_argument(
+        "--write-state",
+        action="store_true",
+        help="Persist the newly observed state to scripts/source_state.json.",
+    )
+    parser.add_argument(
+        "--state-out",
+        type=Path,
+        help="Write the newly observed state to this path instead of scripts/source_state.json.",
+    )
+    return parser.parse_args()
+
+
 def main() -> None:
+    args = parse_args()
+    if args.write_state and args.state_out:
+        print("--write-state and --state-out are mutually exclusive", file=sys.stderr)
+        sys.exit(2)
+
     urls = list(SOURCE_URL_MAP.keys())
     if not urls:
         print("No sources configured.", file=sys.stderr)
@@ -209,8 +239,13 @@ def main() -> None:
     changed_rulesets, new_state, changed_count, unknown_count = \
         check_all_sources_parallel(urls, state)
 
-    # Persist updated state (with stale entry pruning)
-    save_state(new_state)
+    # Persist updated state only when explicitly requested. The default check
+    # path is read-only so review workflows cannot consume update state before
+    # rules are generated, validated, audited, and committed successfully.
+    if args.write_state:
+        save_state(new_state)
+    elif args.state_out:
+        save_state(new_state, args.state_out)
 
     # Build summary
     summary = {

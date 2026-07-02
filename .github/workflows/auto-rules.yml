@@ -53,8 +53,10 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          # Run check — exits 1 if changes found; both paths capture output
-          output=$(python3 scripts/check_upstream_updates.py 2>&1) || true
+          # Run check — exits 1 if changes found; both paths capture output.
+          # Write candidate state to a temp file only; it is promoted to
+          # scripts/source_state.json after generation/validation/audit succeeds.
+          output=$(python3 scripts/check_upstream_updates.py --state-out scripts/source_state.next.json 2>&1) || true
           echo "$output"
           # Parse the last JSON line as the summary
           summary=$(echo "$output" | grep '^{' | tail -1)
@@ -117,6 +119,10 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+
+          if [ -f scripts/source_state.next.json ]; then
+            mv scripts/source_state.next.json scripts/source_state.json
+          fi
 
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
