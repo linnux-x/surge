@@ -67,7 +67,6 @@ download.windowsupdate.com,Microsoft_CDN.list,Windows更新（MS CDN先行命中
 packages.microsoft.com,Download.list,Microsoft 包仓库下载
 update.microsoft.com,Download.list,Microsoft 更新下载
 mcr.microsoft.com,Download.list,Microsoft Container Registry
-cn.bing.com,DIRECT,中国必应走直连不被 Microsoft 代理组劫持
 minecraft.net,Game.list,Minecraft 游戏域名
 xboxlive.com,Game.list,Xbox Live 游戏域名
 spotify.com,GlobalMedia.list,Spotify
