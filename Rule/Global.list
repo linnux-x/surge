@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-07-02 22:59:29 +0800
+# UPDATED: 2026-07-03 06:30:00 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 29696
+# TOTAL: 29697
 
 # ======= blackmatrix7 Global ========
 DOMAIN,1password.drift.click
@@ -10620,6 +10620,7 @@ DOMAIN-SUFFIX,interactiveeducation.ac.uk
 DOMAIN-SUFFIX,interactivesex.xxx
 DOMAIN-SUFFIX,intercamcashpassport.com.mx
 DOMAIN-SUFFIX,intercom.com
+DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,interforest.org
 DOMAIN-SUFFIX,international-house-london.ac.uk
 DOMAIN-SUFFIX,international-union-crystallography.ac.uk

@@ -12,26 +12,26 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/cncidr.txt": {
-    "content_length": "140029",
-    "etag": "\"afc6054b40383edbdc6d899abe265e768d43564662b8440c9db9877e01edd975\"",
+    "content_length": "138957",
+    "etag": "\"4f3dc24ac768b02d4ed542fa7d5860f131ef8f15000c17c36ed18b2773b2bf7a\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
     "content_length": "4031",
-    "etag": "\"84255b821edde7a28723ff6bd6b2a6778fab086ac2d0f313bda3e6a5f0d0ed2d\"",
+    "etag": "\"3afbb387fb503a3bbcd9055398ca5c991b72918c78b3dcc264bfd723badb1ab2\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
     "content_length": "101025",
-    "etag": "\"33e97283da5b4814d911b2973fba0af7e90d2ff9f5fd73960043d4a73165b7bf\"",
+    "etag": "\"e5ebd01b96de227b85074f82ed80f463b346d7d70f4df511b60d02c0a93cd0a2\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/ChinaCIDR.list": {
-    "content_length": "140634",
-    "etag": "\"743b0f06d7e049f4df511b20bb61880fdd567c56bb11ab1d3b28bb27454e9807\"",
+    "content_length": "139562",
+    "etag": "\"fb457e3bb592036def43e20743ebd91a4cad00dfd9a8ade77438d47302ae4f09\"",
     "last_modified": null,
     "source_available": true
   },
@@ -192,8 +192,8 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/domainset/apple_cdn.conf": {
-    "content_length": "4538",
-    "etag": "\"6d80cc004813ccfcedab7f68cc8f320b\"",
+    "content_length": null,
+    "etag": "W/\"6d80cc004813ccfcedab7f68cc8f320b\"",
     "last_modified": null,
     "source_available": true
   },
@@ -210,14 +210,14 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/domestic.conf": {
-    "content_length": "22545",
-    "etag": "\"b33475de3949c7bdebe58e4e111b15ea\"",
+    "content_length": null,
+    "etag": "W/\"b33475de3949c7bdebe58e4e111b15ea\"",
     "last_modified": null,
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf": {
-    "content_length": "3215",
-    "etag": "\"da0fb856533fa44a8ef205c13c057992\"",
+    "content_length": null,
+    "etag": "W/\"da0fb856533fa44a8ef205c13c057992\"",
     "last_modified": null,
     "source_available": true
   }
