@@ -169,6 +169,12 @@ def load_routing_order() -> list[tuple[str, str]]:
             order.append(("LAN", m_lan.group(1)))
             continue
 
+        # DOMAIN,xxx,POLICY — inline rule in conf (e.g. cn.bing.com,DIRECT)
+        m_domain = re.match(r"(DOMAIN|DOMAIN-SUFFIX),([^,]+),(\S+)", line)
+        if m_domain:
+            order.append(("CONF-INLINE", m_domain.group(3), m_domain.group(1), m_domain.group(2)))
+            continue
+
         # RULE-SET,WeChat,WeChat (inline ruleset mirrors Rule/WeChat.list)
         m_inline_wechat = re.match(r"RULE-SET,WeChat,(\S+)(?:,|$)", line)
         if m_inline_wechat:
@@ -190,7 +196,20 @@ def simulate_routing(domain: str, routing_order: list[tuple[str, str]],
 
     Returns the matched ruleset name (or DIRECT/Global/policy name).
     """
-    for ruleset_name, policy in routing_order:
+    for entry in routing_order:
+        ruleset_name = entry[0]
+        policy = entry[1]
+
+        if ruleset_name == "CONF-INLINE":
+            # entry = ("CONF-INLINE", policy, rule_type, value)
+            rule_type = entry[2]
+            value = entry[3]
+            if rule_type == "DOMAIN" and domain == value.lower():
+                return f"CONF-INLINE→{policy}"
+            if rule_type == "DOMAIN-SUFFIX" and (domain == value.lower() or domain.endswith("." + value.lower())):
+                return f"CONF-INLINE→{policy}"
+            continue
+
         if ruleset_name == "LAN":
             # LAN matches RFC 1918 / loopback
             if re.match(r"^(10\.|172\.(1[6-9]|2\d|3[01])\.|192\.168\.|127\.)", domain):
