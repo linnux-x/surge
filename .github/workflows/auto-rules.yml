@@ -5,8 +5,8 @@ name: Auto-Surge-Rules
 
 on:
   schedule:
-    # 05:00 Beijing / 06:00 JST (21:00 UTC) every day
-    - cron: "0 21 * * *"
+    # 05:23 Beijing / 06:23 JST (21:23 UTC) every day; avoid top-of-hour queue spikes
+    - cron: "23 21 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -29,6 +29,7 @@ on:
 permissions:
   contents: write
   actions: read
+  issues: write
 
 concurrency:
   group: auto-surge-rules
@@ -38,6 +39,7 @@ jobs:
   update-rules:
     if: github.repository == 'linnux-x/surge'
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     env:
       RULE_DIR: Rule
@@ -135,12 +137,7 @@ jobs:
             exit 1
           fi
 
-          auth_header="Authorization: Bearer ${GH_TOKEN}"
-          curl --fail --location \
-            -H "$auth_header" \
-            -H "Accept: application/vnd.github+json" \
-            "$artifact_url" \
-            --output /tmp/full-generation-manifest-fingerprint.zip
+          gh api "$artifact_url" > /tmp/full-generation-manifest-fingerprint.zip
 
           python3 - <<'PY'
           from pathlib import Path
@@ -166,9 +163,28 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p Module
+          old_size=0
+          if [ -f Module/DNS-Mapping.sgmodule ]; then
+            old_size=$(wc -c < Module/DNS-Mapping.sgmodule)
+          fi
           curl --fail --location --retry 3 --retry-delay 5 \
             --output Module/DNS-Mapping.sgmodule \
             https://ruleset.skk.moe/Modules/sukka_local_dns_mapping.sgmodule
+          new_size=$(wc -c < Module/DNS-Mapping.sgmodule)
+          if [ "$new_size" -lt 500 ] || [ "$new_size" -gt 10000 ]; then
+            echo "::error::DNS mapping module size out of expected range: ${new_size} bytes"
+            exit 1
+          fi
+          if [ "$old_size" -gt 0 ]; then
+            lower=$(( old_size * 60 / 100 ))
+            upper=$(( old_size * 160 / 100 ))
+            if [ "$new_size" -lt "$lower" ] || [ "$new_size" -gt "$upper" ]; then
+              echo "::error::DNS mapping module size changed unexpectedly: ${old_size} -> ${new_size} bytes"
+              exit 1
+            fi
+          fi
+          grep -qx '\[Host\]' Module/DNS-Mapping.sgmodule
+          grep -q '^RULE-SET:https://ruleset\.skk\.moe/Modules/Rules/sukka_local_dns_mapping/' Module/DNS-Mapping.sgmodule
           sed -i '1s|^#!name=.*|#!name=DNS-Mapping|' Module/DNS-Mapping.sgmodule
           sed -i '2s|^#!desc=.*|#!desc=本地 DNS 映射，优化国内常用服务与局域网域名解析|' Module/DNS-Mapping.sgmodule
 
@@ -192,18 +208,13 @@ jobs:
 
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add Rule/ Rule/.manifests/ Module/ .gitignore README.md \
-            scripts/sources.py scripts/generate_rules.py scripts/rule_validator.py \
-            scripts/validate_surge_repo.py \
-            scripts/manifest.py \
-            scripts/diff_report.md scripts/diff_report.json \
-            scripts/check_upstream_updates.py scripts/source_state.json \
-            scripts/audit_rules.py scripts/README.md \
-            scripts/test_routing_order.py
+          git add Rule/ Module/ README.md \
+            scripts/diff_report.md scripts/diff_report.json scripts/source_state.json
 
           if ! git diff --staged --quiet; then
             COMMIT_TIME=$(TZ="Asia/Shanghai" date +"%Y-%m-%d %H:%M:%S +0800")
             git commit -m "$COMMIT_TIME Update rules"
+            git pull --rebase origin main
             git push
           fi
 
@@ -222,3 +233,19 @@ jobs:
           path: scripts/full_generation_manifest.sha256
           if-no-files-found: error
           retention-days: 14
+
+      - name: Open Issue on Scheduled Failure
+        if: ${{ failure() && github.event_name == 'schedule' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          title="Auto-Surge-Rules scheduled run failed"
+          if gh issue list --state open --search "$title in:title" --json number --jq '.[0].number' | grep -q .; then
+            echo "Existing open failure issue found; not creating a duplicate."
+            exit 0
+          fi
+          gh issue create \
+            --title "$title" \
+            --body "Scheduled Auto-Surge-Rules failed. Run: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"

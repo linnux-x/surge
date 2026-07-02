@@ -13,7 +13,10 @@ jobs:
   validate:
     if: github.repository == 'linnux-x/surge'
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v5
       - name: Validate Rule Syntax & Project Policies
         run: python3 scripts/validate_surge_repo.py --ci
+      - name: Test Routing Order
+        run: python3 scripts/test_routing_order.py

@@ -2,18 +2,20 @@ name: Monthly Review
 
 on:
   schedule:
-    # Last day of month at 22:00 UTC = 1st of next month at 06:00 Beijing
+    # Last day of month at 22:17 UTC = 1st of next month at 06:17 Beijing
     # Runs daily on days 28-31, exits early unless tomorrow is the 1st
-    - cron: "0 22 28-31 * *"
+    - cron: "17 22 28-31 * *"
   workflow_dispatch:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   monthly-review:
     if: github.repository == 'linnux-x/surge'
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - uses: actions/checkout@v5
@@ -53,28 +55,47 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          echo "# Monthly Upstream Health Report" > monthly-review.md
-          echo "## Generated: $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S +0800')" >> monthly-review.md
-          echo "" >> monthly-review.md
-          echo "### Source Status" >> monthly-review.md
-          python3 scripts/check_upstream_updates.py >> monthly-review.md 2>&1
-          echo "" >> monthly-review.md
-          echo "### Rule Counts" >> monthly-review.md
+          mkdir -p reports
+          report="reports/$(TZ='Asia/Shanghai' date +'%Y-%m').md"
+          echo "# Monthly Upstream Health Report" > "$report"
+          echo "## Generated: $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S +0800')" >> "$report"
+          echo "" >> "$report"
+          echo "### Source Status" >> "$report"
+          python3 scripts/check_upstream_updates.py >> "$report" 2>&1
+          echo "" >> "$report"
+          echo "### Rule Counts" >> "$report"
           for f in Rule/*.list; do
             count=$(awk '!/^#/ && !/^[[:space:]]*$/ {n++} END {print n+0}' "$f")
-            echo "- $(basename "$f"): $count rules" >> monthly-review.md
+            echo "- $(basename "$f"): $count rules" >> "$report"
           done
 
       - name: Commit Monthly Report
         if: steps.month_gate.outputs.is_last_day == 'true' || github.event_name == 'workflow_dispatch'
         shell: bash
         run: |
-          if [ -f monthly-review.md ]; then
+          if [ -d reports ]; then
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
-            git add monthly-review.md Rule/.manifests/ scripts/diff_report.md scripts/diff_report.json
+            git add reports/ Rule/ scripts/diff_report.md scripts/diff_report.json
             if ! git diff --staged --quiet; then
               git commit -m "Monthly review: $(TZ='Asia/Shanghai' date +'%Y-%m')"
+              git pull --rebase origin main
               git push
             fi
           fi
+
+      - name: Open Issue on Scheduled Failure
+        if: ${{ failure() && github.event_name == 'schedule' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          title="Monthly Review scheduled run failed"
+          if gh issue list --state open --search "$title in:title" --json number --jq '.[0].number' | grep -q .; then
+            echo "Existing open failure issue found; not creating a duplicate."
+            exit 0
+          fi
+          gh issue create \
+            --title "$title" \
+            --body "Scheduled Monthly Review failed. Run: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
