@@ -248,9 +248,23 @@ python3 scripts/test_routing_order.py   # 路由顺序模拟测试
 
 ### 新手三步骤
 
-1. **复制配置模板** → 将 `Conf/Linnux.conf` 内容合并到自己的 Surge 配置
-2. **添加规则集引用** → 在 `[Rule]` 段按加载顺序引用 `Rule/*.list`
-3. **启用自动更新** → Fork 仓库，GitHub Actions 自动生效
+1. **导入托管配置** → 使用 `Conf/Linnux.conf`，首行已包含 Surge `#!MANAGED-CONFIG`，默认每日检查更新
+2. **添加自己的订阅** → 将 `[Proxy Group]` 中 `✈️ 我的节点` 的 `policy-path=你的订阅地址` 改为自己的订阅地址
+3. **启用自动更新** → Fork 仓库，GitHub Actions 自动更新 `Rule/*.list` 与托管配置引用的规则集
+
+托管配置地址：
+
+```text
+https://raw.githubusercontent.com/linnux-x/surge/main/Conf/Linnux.conf
+```
+
+`Conf/Linnux.conf` 首行固定为：
+
+```text
+#!MANAGED-CONFIG https://raw.githubusercontent.com/linnux-x/surge/main/Conf/Linnux.conf interval=86400
+```
+
+`strict` 保持 Surge 默认值 `false`：远端更新失败时，客户端可以继续使用旧配置。
 
 ### 手动更新
 

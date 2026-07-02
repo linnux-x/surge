@@ -26,6 +26,12 @@ RULE_DIR = ROOT / "Rule"
 WORKFLOW_DIR = ROOT / ".github" / "workflows"
 MAIN_WORKFLOW = WORKFLOW_DIR / "auto-rules.yml"
 README = ROOT / "README.md"
+MAIN_CONF = ROOT / "Conf" / "Linnux.conf"
+MANAGED_CONFIG_HEADER = (
+    "#!MANAGED-CONFIG "
+    "https://raw.githubusercontent.com/linnux-x/surge/main/Conf/Linnux.conf "
+    "interval=86400"
+)
 
 # Import shared validator — constants and functions come from rule_validator now
 
@@ -129,6 +135,19 @@ def check_rule_files(errors: list[str]) -> None:
             errors.append(f"{rel(path)} {e}")
 
 
+def check_managed_config_header(errors: list[str]) -> None:
+    """Ensure the main Surge profile remains a managed profile after updates."""
+    if not MAIN_CONF.exists():
+        errors.append(f"Missing main Surge config: {rel(MAIN_CONF)}")
+        return
+    lines = MAIN_CONF.read_text(encoding="utf-8", errors="replace").splitlines()
+    first_line = lines[0].strip() if lines else ""
+    if first_line != MANAGED_CONFIG_HEADER:
+        errors.append(
+            f"{rel(MAIN_CONF)} first line must be: {MANAGED_CONFIG_HEADER}"
+        )
+
+
 def main() -> int:
     import argparse
     parser = argparse.ArgumentParser()
@@ -143,6 +162,7 @@ def main() -> int:
         check_workflow_inventory(errors)
         check_readme_inventory(errors)
     check_workflow_names_and_deprecated_schedule(errors, warnings)
+    check_managed_config_header(errors)
     check_rule_files(errors)
 
     if warnings:
