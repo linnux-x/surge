@@ -8,6 +8,8 @@ self.events.data.microsoft.com
 www.bing.com
 api.microsoftapp.net
 DOMAIN-SUFFIX,byteoversea.com
+# apps.mzstatic.com is App Store / Apps and Books CDN; keep it in Apple_CN/DIRECT, not AI.
+DOMAIN-SUFFIX,apps.mzstatic.com
 # segment.io is a customer data platform (CDP) — shared service used by thousands of sites, not AI-specific.
 DOMAIN-SUFFIX,segment.io
 # sentry.io is an error tracking platform — shared service used by thousands of sites.

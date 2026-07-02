@@ -196,6 +196,10 @@ DOMAIN-SUFFIX,zohocdn.com
 DOMAIN-SUFFIX,zohostatic.com
 DOMAIN-SUFFIX,zohowebstatic.com
 
+# Avoid overbroad adult-site keyword matching: concrete JAV sites remain in Global.list,
+# but DOMAIN-KEYWORD,jav hijacks normal Java / JavaScript domains from China.list.
+DOMAIN-KEYWORD,jav
+
 # Speedtest endpoints belong to Speedtest.list, which is evaluated before Global.list
 DOMAIN-SUFFIX,speedtest.rt.ru
 DOMAIN-SUFFIX,speedtest.idv.tw

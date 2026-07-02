@@ -3,7 +3,7 @@
 # REPO: https://github.com/linnux-x/surge
 # UPDATED: 2026-07-02 06:13:09 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 157
+# TOTAL: 158
 
 # ======= SukkaW AI ========
 DOMAIN-SUFFIX,openai.com
@@ -17,6 +17,8 @@ DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,modelcontextprotocol.io
+DOMAIN,cdn.growthbook.io
 DOMAIN-SUFFIX,bard.google.com
 DOMAIN-SUFFIX,gemini.google
 DOMAIN-SUFFIX,gemini.google.com
@@ -138,7 +140,6 @@ IP-CIDR6,2607:6BC0::/32,no-resolve
 DOMAIN-SUFFIX,smoot.apple.com
 DOMAIN-SUFFIX,gateway.icloud.com
 DOMAIN,guzzoni.apple.com
-DOMAIN-SUFFIX,apps.mzstatic.com
 DOMAIN-SUFFIX,livekit.cloud
 DOMAIN,api.statsig.com
 DOMAIN,api-iam.intercom.io

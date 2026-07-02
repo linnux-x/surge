@@ -3,7 +3,7 @@
 # REPO: https://github.com/linnux-x/surge
 # UPDATED: 2026-07-02 06:13:13 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 29721
+# TOTAL: 29720
 
 # ======= blackmatrix7 Global ========
 DOMAIN,1password.drift.click
@@ -29625,7 +29625,6 @@ DOMAIN-SUFFIX,zzcartoon.com
 DOMAIN-SUFFIX,zzcloud.me
 DOMAIN-SUFFIX,zzux.com
 DOMAIN-KEYWORD,amazon
-DOMAIN-KEYWORD,jav
 DOMAIN-KEYWORD,pinterest
 DOMAIN-KEYWORD,twimg
 DOMAIN-KEYWORD,wikileaks

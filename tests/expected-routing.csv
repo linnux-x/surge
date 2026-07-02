@@ -8,6 +8,11 @@ fast.com,Speedtest.list,fast.com仅在此文件
 chat.openai.com,AI.list,ChatGPT
 api.openai.com,AI.list,OpenAI API
 claude.ai,AI.list,Claude AI
+api.anthropic.com,AI.list,Claude API
+claudeusercontent.com,AI.list,Claude user content
+downloads.claude.ai,AI.list,Claude Code download
+modelcontextprotocol.io,AI.list,Claude MCP
+cdn.growthbook.io,AI.list,Claude feature flags
 gemini.google.com,AI.list,Gemini（Google AI子域先行命中AI.list）
 copilot.microsoft.com,AI.list,Microsoft Copilot
 gs.apple.com,Apple.list,Apple GS认证（不在Apple_CN.list）
@@ -15,6 +20,10 @@ itunes.apple.com,Apple_CN.list,iTunes CN CDN（优先Apple_CN直连）
 appleid.apple.com,Apple.list,Apple ID
 icloud.com,Apple.list,iCloud
 s.mzstatic.com,Apple_CN.list,App Store中国CDN
+apps.mzstatic.com,Apple_CN.list,App Store Apps and Books CDN
+java.com,China.list,Java 官网中国规则优先于 Global jav 泛关键词
+javascriptcn.com,China.list,中文 JavaScript 站点不应被 jav 泛关键词截获
+javbus.com,Global.list,JAV 站点仍由 Global 具体域名命中
 store.steampowered.com,Game.list,Steam商店
 api.steampowered.com,Game.list,Steam API
 discord.com,SocialMedia.list,Discord（手动添加）
@@ -48,6 +57,11 @@ live.com,Microsoft.list,Microsoft Live
 officecdn.microsoft.com,Microsoft_CDN.list,MS CDN直连
 download.visualstudio.microsoft.com,Microsoft_CDN.list,VS下载（MS CDN先行命中）
 download.windowsupdate.com,Microsoft_CDN.list,Windows更新（MS CDN先行命中）
+packages.microsoft.com,Download.list,Microsoft 包仓库下载
+update.microsoft.com,Download.list,Microsoft 更新下载
+mcr.microsoft.com,Download.list,Microsoft Container Registry
+minecraft.net,Game.list,Minecraft 游戏域名
+xboxlive.com,Game.list,Xbox Live 游戏域名
 spotify.com,GlobalMedia.list,Spotify
 hulu.com,GlobalMedia.list,Hulu
 akamaized.net,Global,共享CDN（已排除，FINAL→Global）
