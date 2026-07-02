@@ -111,7 +111,7 @@ jobs:
           exit 1
 
       - name: Commit and Push Changes
-        if: ${{ (fromJson(steps.check_upstream.outputs.changed_count) > 0 || github.event_name == 'workflow_dispatch') && inputs.dry_run != 'true' }}
+        if: ${{ inputs.dry_run != 'true' }}
         shell: bash
         run: |
           set -euo pipefail
