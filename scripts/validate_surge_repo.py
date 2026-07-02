@@ -17,7 +17,7 @@ if _scripts_dir not in sys.path:
     sys.path.insert(0, _scripts_dir)
 
 from rule_validator import (
-    validate_rule_file, parse_total_header, non_comment_rules,
+    validate_rule_file, warn_rule_file, parse_total_header, non_comment_rules,
     ALLOWED_TYPES, OPTION_TOKENS, SUKKAW_MARKER,
 )
 
@@ -123,7 +123,7 @@ def check_readme_inventory(errors: list[str]) -> None:
         errors.append("README omits rule files: " + ", ".join(missing))
 
 
-def check_rule_files(errors: list[str]) -> None:
+def check_rule_files(errors: list[str], warnings: list[str]) -> None:
     for path in sorted(RULE_DIR.glob("*.list")):
         rules = [l for l in path.read_text(encoding="utf-8", errors="replace").splitlines()
                  if l.strip() and not l.strip().startswith("#")]
@@ -133,6 +133,9 @@ def check_rule_files(errors: list[str]) -> None:
         errs = validate_rule_file(rules, path.name)
         for e in errs:
             errors.append(f"{rel(path)} {e}")
+        warns = warn_rule_file(rules, path.name)
+        for warning in warns:
+            warnings.append(f"{rel(path)} {warning}")
 
 
 def check_managed_config_header(errors: list[str]) -> None:
@@ -163,7 +166,7 @@ def main() -> int:
         check_readme_inventory(errors)
     check_workflow_names_and_deprecated_schedule(errors, warnings)
     check_managed_config_header(errors)
-    check_rule_files(errors)
+    check_rule_files(errors, warnings)
 
     if warnings:
         print("WARNINGS:")

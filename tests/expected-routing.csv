@@ -23,6 +23,8 @@ s.mzstatic.com,Apple_CN.list,App Store中国CDN
 apps.mzstatic.com,Apple_CN.list,App Store Apps and Books CDN
 java.com,China.list,Java 官网中国规则优先于 Global jav 泛关键词
 javascriptcn.com,China.list,中文 JavaScript 站点不应被 jav 泛关键词截获
+amazon.cn,China.list,Amazon 中国不应被 Global amazon 泛关键词截获
+amazonaws.com.cn,China.list,AWS 中国域名不应被 Global amazon 泛关键词截获
 javbus.com,Global.list,JAV 站点仍由 Global 具体域名命中
 store.steampowered.com,Game.list,Steam商店
 api.steampowered.com,Game.list,Steam API

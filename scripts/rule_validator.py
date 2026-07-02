@@ -21,6 +21,13 @@ ALLOWED_TYPES = {
 }
 OPTION_TOKENS = {"no-resolve", "extended-matching"}
 SUKKAW_MARKER = "7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe"
+DOMAIN_VALUE_RE = re.compile(r"^[a-z0-9](?:[a-z0-9.-]*[a-z0-9])?$")
+DOMAIN_WILDCARD_VALUE_RE = re.compile(r"^[a-z0-9*?](?:[a-z0-9.*?-]*[a-z0-9*?])?$")
+CONTROL_CHAR_RE = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
+RISKY_DOMAIN_KEYWORDS = {
+    "amazon", "apple", "google", "microsoft", "java",
+    "cdn", "cloud", "api",
+}
 
 SHARED_CDN_PARENTS = {
     "akadns.net", "akamaiedge.net", "akamaihd.net", "akamaized.net",
@@ -94,9 +101,24 @@ def validate_rule_file(lines: list[str], target_name: str) -> list[str]:
         rule_type = parts[0].upper()
         low = rule.lower()
 
+        if CONTROL_CHAR_RE.search(rule):
+            errors.append(f"{target_name}:{index} control character in rule: {rule!r}")
+        if "，" in rule:
+            errors.append(f"{target_name}:{index} full-width comma in rule: {rule}")
+        if any(part == "" for part in parts):
+            errors.append(f"{target_name}:{index} empty field: {rule}")
+
         if rule_type not in ALLOWED_TYPES:
             errors.append(f"{target_name}:{index} unsupported rule type: {rule}")
             continue
+
+        if rule_type not in {"AND", "OR", "NOT"} and len(parts) < 2:
+            errors.append(f"{target_name}:{index} missing value: {rule}")
+            continue
+
+        for option in parts[2:]:
+            if option.lower() not in OPTION_TOKENS:
+                errors.append(f"{target_name}:{index} invalid option or policy name: {rule}")
 
         if rule_type == "GEOIP" and (len(parts) < 2 or not re.fullmatch(r"[A-Z]{2}", parts[1])):
             errors.append(f"{target_name}:{index} non-standard GEOIP code: {rule}")
@@ -111,6 +133,18 @@ def validate_rule_file(lines: list[str], target_name: str) -> list[str]:
                 errors.append(f"{target_name}:{index} domain not lowercase: {rule}")
             if "://" in value or "/" in value:
                 errors.append(f"{target_name}:{index} domain contains URL scheme/path: {rule}")
+            if " " in value or "\t" in value:
+                errors.append(f"{target_name}:{index} domain contains whitespace: {rule}")
+            if rule_type in {"DOMAIN", "DOMAIN-SUFFIX"} and not DOMAIN_VALUE_RE.fullmatch(value):
+                errors.append(f"{target_name}:{index} invalid domain value: {rule}")
+            if rule_type == "DOMAIN-WILDCARD":
+                if not any(ch in value for ch in "*?"):
+                    errors.append(f"{target_name}:{index} DOMAIN-WILDCARD without wildcard: {rule}")
+                if not DOMAIN_WILDCARD_VALUE_RE.fullmatch(value):
+                    errors.append(f"{target_name}:{index} invalid DOMAIN-WILDCARD value: {rule}")
+
+        if rule_type == "IP-ASN" and len(parts) >= 2 and not re.fullmatch(r"\d+", parts[1]):
+            errors.append(f"{target_name}:{index} invalid IP-ASN: {rule}")
 
         # Policy name check
         if rule_type in {"DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD", "DOMAIN-WILDCARD",
@@ -224,6 +258,22 @@ def validate_rule_file(lines: list[str], target_name: str) -> list[str]:
                 pass
 
     return errors
+
+
+def warn_rule_file(lines: list[str], target_name: str) -> list[str]:
+    """Return non-fatal warnings for risky but Surge-valid rules."""
+    warnings: list[str] = []
+    for index, rule in enumerate(lines, start=1):
+        parts = [p.strip() for p in rule.split(",")]
+        if len(parts) < 2:
+            continue
+        if parts[0].upper() == "DOMAIN-KEYWORD":
+            keyword = parts[1].lower()
+            if keyword in RISKY_DOMAIN_KEYWORDS:
+                warnings.append(
+                    f"{target_name}:{index} risky DOMAIN-KEYWORD requires review: {rule}"
+                )
+    return warnings
 
 
 def parse_total_header(path: Path) -> int | None:

@@ -200,6 +200,10 @@ DOMAIN-SUFFIX,zohowebstatic.com
 # but DOMAIN-KEYWORD,jav hijacks normal Java / JavaScript domains from China.list.
 DOMAIN-KEYWORD,jav
 
+# Avoid overbroad Amazon keyword matching: amazon.cn and amazonaws.com.cn should
+# fall through to China.list instead of being captured by Global.list first.
+DOMAIN-KEYWORD,amazon
+
 # Speedtest endpoints belong to Speedtest.list, which is evaluated before Global.list
 DOMAIN-SUFFIX,speedtest.rt.ru
 DOMAIN-SUFFIX,speedtest.idv.tw
