@@ -36,6 +36,13 @@ MIHOMO_ONLY_OR_COMPAT_TYPES = {
     "USER-AGENT",
 }
 
+# Large domain-heavy sources additionally get a mihomo `behavior: domain` export
+# (<stem>_Domain.yaml, trie-matched) plus a small classical remainder
+# (<stem>_Extra.yaml) holding the non DOMAIN/DOMAIN-SUFFIX rules, so clients can
+# avoid linearly scanning huge classical payloads. The classical <stem>.yaml is
+# still generated unchanged for compatibility.
+DOMAIN_SPLIT_SOURCES = {"China"}
+
 HEADER_RE = re.compile(r"^#\s*(TOTAL|UPDATED|SOURCES|Generated|Source)", re.IGNORECASE)
 
 
@@ -66,6 +73,32 @@ def clash_path_for(source: Path) -> Path:
     return CLASH_DIR / f"{source.stem}.yaml"
 
 
+def domain_split_paths_for(source: Path) -> tuple[Path, Path]:
+    return (
+        CLASH_DIR / f"{source.stem}_Domain.yaml",
+        CLASH_DIR / f"{source.stem}_Extra.yaml",
+    )
+
+
+def split_domain_rules(rules: list[str]) -> tuple[list[str], list[str]]:
+    """Split rules into domain-behavior payload entries and the remainder."""
+    domains: list[str] = []
+    extras: list[str] = []
+    for rule in rules:
+        parts = [part.strip() for part in rule.split(",")]
+        if len(parts) >= 2 and parts[0] == "DOMAIN-SUFFIX":
+            domains.append(f"+.{parts[1]}")
+        elif len(parts) >= 2 and parts[0] == "DOMAIN":
+            domains.append(parts[1])
+        else:
+            extras.append(rule)
+    return domains, extras
+
+
+def non_total_comments(comments: list[str]) -> list[str]:
+    return [c for c in comments if not c.upper().lstrip("# ").startswith("TOTAL")]
+
+
 def render_clash_yaml(source: Path, comments: list[str], rules: list[str]) -> str:
     lines = [
         f"# Generated from {source.as_posix()}",
@@ -74,6 +107,32 @@ def render_clash_yaml(source: Path, comments: list[str], rules: list[str]) -> st
     lines.extend(comments)
     lines.append("payload:")
     lines.extend(f"  - {yaml_quote(rule)}" for rule in rules)
+    lines.append("")
+    return "\n".join(lines)
+
+
+def render_domain_yaml(source: Path, comments: list[str], domains: list[str]) -> str:
+    lines = [
+        f"# Generated from {source.as_posix()} (DOMAIN/DOMAIN-SUFFIX entries only)",
+        "# Format: Clash/mihomo rule-provider, behavior: domain",
+    ]
+    lines.extend(non_total_comments(comments))
+    lines.append(f"# TOTAL: {len(domains)}")
+    lines.append("payload:")
+    lines.extend(f"  - {yaml_quote(domain)}" for domain in domains)
+    lines.append("")
+    return "\n".join(lines)
+
+
+def render_extra_yaml(source: Path, comments: list[str], extras: list[str]) -> str:
+    lines = [
+        f"# Generated from {source.as_posix()} (rules not covered by the _Domain export)",
+        "# Format: Clash/mihomo rule-provider, behavior: classical",
+    ]
+    lines.extend(non_total_comments(comments))
+    lines.append(f"# TOTAL: {len(extras)}")
+    lines.append("payload:")
+    lines.extend(f"  - {yaml_quote(rule)}" for rule in extras)
     lines.append("")
     return "\n".join(lines)
 
@@ -92,6 +151,17 @@ def generate(check: bool = False) -> int:
     compat_counts: dict[str, int] = {}
 
     expected_files = {clash_path_for(source) for source in sources}
+    for source in sources:
+        if source.stem in DOMAIN_SPLIT_SOURCES:
+            expected_files.update(domain_split_paths_for(source))
+
+    def emit(out_path: Path, rendered: str) -> None:
+        if check:
+            existing = out_path.read_text(encoding="utf-8") if out_path.exists() else None
+            if existing != rendered:
+                errors.append(f"out of date: {out_path}")
+        else:
+            out_path.write_text(rendered, encoding="utf-8", newline="\n")
 
     for source in sources:
         comments, rules = parse_surge_file(source)
@@ -101,14 +171,13 @@ def generate(check: bool = False) -> int:
             if rule_type in MIHOMO_ONLY_OR_COMPAT_TYPES:
                 compat_counts[rule_type] = compat_counts.get(rule_type, 0) + 1
 
-        out_path = clash_path_for(source)
-        rendered = render_clash_yaml(source, comments, rules)
-        if check:
-            existing = out_path.read_text(encoding="utf-8") if out_path.exists() else None
-            if existing != rendered:
-                errors.append(f"out of date: {out_path}")
-        else:
-            out_path.write_text(rendered, encoding="utf-8", newline="\n")
+        emit(clash_path_for(source), render_clash_yaml(source, comments, rules))
+
+        if source.stem in DOMAIN_SPLIT_SOURCES:
+            domains, extras = split_domain_rules(rules)
+            domain_path, extra_path = domain_split_paths_for(source)
+            emit(domain_path, render_domain_yaml(source, comments, domains))
+            emit(extra_path, render_extra_yaml(source, comments, extras))
 
     # Remove stale Clash files when the Surge source was deleted/renamed.
     for stale in sorted(CLASH_DIR.glob("*.yaml")):
@@ -130,6 +199,20 @@ def generate(check: bool = False) -> int:
     return 0
 
 
+def count_payload_lines(out_path: Path, errors: list[str]) -> int:
+    payload_rules = 0
+    seen_payload = False
+    for raw in out_path.read_text(encoding="utf-8").splitlines():
+        if raw == "payload:":
+            seen_payload = True
+            continue
+        if raw.startswith("  - "):
+            payload_rules += 1
+    if not seen_payload:
+        errors.append(f"missing payload key: {out_path}")
+    return payload_rules
+
+
 def validate_payload_counts() -> int:
     """Validate generated YAML shape and source/payload line counts."""
     errors: list[str] = []
@@ -139,21 +222,25 @@ def validate_payload_counts() -> int:
             errors.append(f"missing output: {out_path}")
             continue
         _, source_rules = parse_surge_file(source)
-        payload_rules = []
-        seen_payload = False
-        for raw in out_path.read_text(encoding="utf-8").splitlines():
-            if raw == "payload:":
-                seen_payload = True
-                continue
-            if raw.startswith("  - "):
-                payload_rules.append(raw)
-        if not seen_payload:
-            errors.append(f"missing payload key: {out_path}")
-        if len(payload_rules) != len(source_rules):
+        payload_count = count_payload_lines(out_path, errors)
+        if payload_count != len(source_rules):
             errors.append(
                 f"payload count mismatch for {out_path}: "
-                f"{len(payload_rules)} != {len(source_rules)}"
+                f"{payload_count} != {len(source_rules)}"
             )
+        if source.stem in DOMAIN_SPLIT_SOURCES:
+            domain_path, extra_path = domain_split_paths_for(source)
+            if not domain_path.exists() or not extra_path.exists():
+                errors.append(f"missing domain split outputs for: {source}")
+                continue
+            split_total = count_payload_lines(domain_path, errors) + count_payload_lines(
+                extra_path, errors
+            )
+            if split_total != len(source_rules):
+                errors.append(
+                    f"domain split count mismatch for {source}: "
+                    f"{split_total} != {len(source_rules)}"
+                )
     if errors:
         for error in errors:
             print(error, file=sys.stderr)
