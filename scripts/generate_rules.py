@@ -26,6 +26,7 @@ if str(_scripts_dir) not in sys.path:
 
 from sources import RULE_SPECS
 from rule_validator import validate_rule_file
+from policy import FASTCOM_RE, GITHUB_RE, YOUTUBE_RE
 
 # ── Constants ─────────────────────────────────────────────────────────────
 
@@ -34,7 +35,13 @@ RULE_DIR = Path("Rule")
 MANUAL_DIR = RULE_DIR / "Manual"
 REPO_URL = os.environ.get("REPO_URL", "https://github.com/linnux-x/surge")
 AUTHOR_NAME = os.environ.get("AUTHOR_NAME", "linnux-x")
-CURL_RETRY = ["--retry", "3", "--retry-delay", "5"]
+# Retries cover transient failures; timeouts stop a stalled upstream from
+# hanging the whole workflow until the GitHub Actions 6h job limit.
+CURL_OPTS = [
+    "--retry", "3", "--retry-delay", "5",
+    "--connect-timeout", "10", "--max-time", "60",
+]
+FETCH_SUBPROCESS_TIMEOUT = 120  # hard backstop around the curl call itself
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────
@@ -118,12 +125,11 @@ def apply_project_guardrails(target_name: str, lines: list[str]) -> list[str]:
     ]
 
     if target_name == "Microsoft.list":
-        out = [l for l in out if not re.search(r"github|ghcr\.io", l, re.IGNORECASE)]
+        out = [l for l in out if not GITHUB_RE.search(l)]
     elif target_name in ("Netflix.list", "GlobalMedia.list", "Global.list"):
-        out = [l for l in out if not re.search(r"(^|,)([^,]*\.)?fast\.com(,|$)", l, re.IGNORECASE)]
+        out = [l for l in out if not FASTCOM_RE.search(l)]
     elif target_name == "Google.list":
-        out = [l for l in out if not re.search(
-            r"youtube|ytimg\.com|googlevideo\.com|youtubei\.googleapis\.com", l, re.IGNORECASE)]
+        out = [l for l in out if not YOUTUBE_RE.search(l)]
     elif target_name == "China.list":
         out = [l for l in out if not re.match(r"^(IP-CIDR|IP-CIDR6|IP-ASN),", l, re.IGNORECASE)]
     elif target_name == "China_IP.list":
@@ -216,8 +222,9 @@ def prune_redundant_cidr(filepath: Path):
 def fetch_source(url: str) -> list[str]:
     """Fetch a remote source and return lines."""
     result = subprocess.run(
-        ["curl", "-fsSL", *CURL_RETRY, url],
-        capture_output=True, text=True, check=True
+        ["curl", "-fsSL", *CURL_OPTS, url],
+        capture_output=True, text=True, check=True,
+        timeout=FETCH_SUBPROCESS_TIMEOUT,
     )
     return result.stdout.splitlines()
 

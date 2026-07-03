@@ -34,7 +34,9 @@ Rabbit-Spec 来源当前明确保留，用于补充 AIGC、China、ChinaCIDR 覆
 | 模块 | 作用 |
 |---|---|
 | `sources.py` | 所有上游 URL 和规则集规格的单一来源 |
-| `rule_validator.py` | `generate_rules.py` 和 `validate_surge_repo.py` 共用的规则校验逻辑 |
+| `policy.py` | 路由策略常量的单一来源：服务边界正则（GitHub / fast.com / YouTube）、共享基础设施域名清单（严格层阻断提交，宽泛层仅审计告警，宽泛层按超集构造，两层不会漂移） |
+| `rule_validator.py` | `generate_rules.py` 和 `validate_surge_repo.py` 共用的规则校验逻辑，策略常量取自 `policy.py` |
+| `http_util.py` | urllib 抓取的统一入口（超时 / UA 一致）；`generate_rules.py` 保留 curl 用于批量下载（带显式超时），`check_upstream_updates.py` 保留专用 HEAD 探测 |
 
 ---
 
@@ -86,6 +88,6 @@ privacy2surge report.ndjson -o Rule/App.list
 ## 设计原则
 
 - **不需要 pip install**：核心流水线脚本只依赖标准库。
-- **单一事实来源**：上游源集中在 `sources.py`，校验规则集中在 `rule_validator.py`。
+- **单一事实来源**：上游源集中在 `sources.py`，校验规则集中在 `rule_validator.py`，策略常量集中在 `policy.py`。
 - **减少散落文件**：CIDR 裁剪内置于 `generate_rules.py`，manifest diff 内置于 `manifest.py --diff`。
 - **导入模块，不解析配置**：脚本直接 import `sources.py`，不再解析 YAML / JSON 作为 source 配置。

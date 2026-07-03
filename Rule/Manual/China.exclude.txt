@@ -105,3 +105,15 @@ DOMAIN-SUFFIX,work.weixin.com
 DOMAIN,shortcloud.weixin.com
 DOMAIN,c.weixin.com
 DOMAIN,longcloud.weixin.com
+
+# 2026-07 audit: duplicated verbatim in Global.list, which is matched before
+# China.list in Conf/Linnux.conf — these entries could never fire (dead rules).
+# Ownership decision: keep current effective behaviour (proxy via Global).
+# To flip any domain to DIRECT instead, move it to Global.exclude.txt.
+DOMAIN-SUFFIX,1password.com
+DOMAIN-SUFFIX,agilebits.com
+DOMAIN-SUFFIX,asus.com
+DOMAIN-SUFFIX,avermedia.com
+DOMAIN-SUFFIX,futu5.com
+DOMAIN-SUFFIX,futunn.com
+DOMAIN-SUFFIX,immersivetranslate.com
