@@ -1,16 +1,15 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-07-03 06:30:00 +0800
+# UPDATED: 2026-07-04 04:01:26 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 29697
+# TOTAL: 29703
 
 # ======= blackmatrix7 Global ========
 DOMAIN,1password.drift.click
 DOMAIN,adobeereg.com
 DOMAIN,angle.com.tw
 DOMAIN,api-p.videomarket.jp
-DOMAIN,apple.com.akadns.net
 DOMAIN,asahishimbun.sc.omtrdc.net
 DOMAIN,az416426.vo.msecnd.net
 DOMAIN,az668014.vo.msecnd.net
@@ -26,8 +25,6 @@ DOMAIN,cdn.js7k.com
 DOMAIN,cisco.evergage.com
 DOMAIN,clubhouse.pubnubapi.com
 DOMAIN,community.oneplus.com
-DOMAIN,configuration-lb.ls-apple.com.akadns.net
-DOMAIN,courier-push-apple.com.akadns.net
 DOMAIN,crl.versign.net
 DOMAIN,databank.worldbank.org
 DOMAIN,datarouter.apps.netherrealm.com
@@ -75,7 +72,6 @@ DOMAIN,practivate.adobe.ipp
 DOMAIN,practivate.adobe.newoa
 DOMAIN,practivate.adobe.ntp
 DOMAIN,public-us-pingsx.api.clonoth.com
-DOMAIN,push-apple.com.akadns.net
 DOMAIN,qualcomm.sc.omtrdc.net
 DOMAIN,roovza-launches.appsflyersdk.com
 DOMAIN,roovza.inapps.appsflyersdk.com
@@ -115,7 +111,6 @@ DOMAIN,wetv.qq.com
 DOMAIN,widgets.stripst.com
 DOMAIN,wrds-www.wharton.upenn.edu
 DOMAIN,ws.audioscrobbler.com
-DOMAIN,www-cdn.icloud.com.akadns.net
 DOMAIN,yangzhi.app
 DOMAIN,zftksc.cdn-settings.appsflyersdk.com
 DOMAIN,zftksc.launches.appsflyersdk.com
@@ -3038,6 +3033,7 @@ DOMAIN-SUFFIX,blacksonblondes.com
 DOMAIN-SUFFIX,blackstonespoliceservice.com
 DOMAIN-SUFFIX,blacktowhite.net
 DOMAIN-SUFFIX,blake.ac.uk
+DOMAIN-SUFFIX,blanc.ru
 DOMAIN-SUFFIX,blaoshi.cc
 DOMAIN-SUFFIX,blast.io
 DOMAIN-SUFFIX,blc.ac.uk
@@ -3632,6 +3628,7 @@ DOMAIN-SUFFIX,bosta.ac.uk
 DOMAIN-SUFFIX,bostaa.ac.uk
 DOMAIN-SUFFIX,boston.ac.uk
 DOMAIN-SUFFIX,bostoncentre.ac.uk
+DOMAIN-SUFFIX,botim.me
 DOMAIN-SUFFIX,botmechanic.io
 DOMAIN-SUFFIX,botstop.com
 DOMAIN-SUFFIX,boulx.com
@@ -5107,6 +5104,7 @@ DOMAIN-SUFFIX,coomer.party
 DOMAIN-SUFFIX,coomer.st
 DOMAIN-SUFFIX,coomer.su
 DOMAIN-SUFFIX,copac.ac.uk
+DOMAIN-SUFFIX,copilot.com
 DOMAIN-SUFFIX,copim.ac.uk
 DOMAIN-SUFFIX,copior.ac.uk
 DOMAIN-SUFFIX,copro.pw
@@ -9538,6 +9536,9 @@ DOMAIN-SUFFIX,horizontal-llc.com
 DOMAIN-SUFFIX,horizontal-systems.com
 DOMAIN-SUFFIX,horizontalglue.com
 DOMAIN-SUFFIX,horizontalsystems.com
+DOMAIN-SUFFIX,hornet.com
+DOMAIN-SUFFIX,hornetapp.com
+DOMAIN-SUFFIX,hornetx.com
 DOMAIN-SUFFIX,horniman.ac.uk
 DOMAIN-SUFFIX,hornyasianmilfs.com
 DOMAIN-SUFFIX,hornybitches.org
@@ -12014,6 +12015,7 @@ DOMAIN-SUFFIX,listentoyoutube.com
 DOMAIN-SUFFIX,listerpostgraduate.ac.uk
 DOMAIN-SUFFIX,listinganalytics.net
 DOMAIN-SUFFIX,litbus-anime.com
+DOMAIN-SUFFIX,litecoin.org
 DOMAIN-SUFFIX,literatumonline.com
 DOMAIN-SUFFIX,literotica.com
 DOMAIN-SUFFIX,litt.ac.uk
@@ -14128,7 +14130,9 @@ DOMAIN-SUFFIX,netflav1.com
 DOMAIN-SUFFIX,netflav5.com
 DOMAIN-SUFFIX,netlab.ac.uk
 DOMAIN-SUFFIX,netlify.com
+DOMAIN-SUFFIX,netlifydns.com
 DOMAIN-SUFFIX,netlifystatus.com
+DOMAIN-SUFFIX,netlifyusercontent.com
 DOMAIN-SUFFIX,netlock.hu
 DOMAIN-SUFFIX,netname.com.br
 DOMAIN-SUFFIX,netpornsex.com
@@ -14696,6 +14700,7 @@ DOMAIN-SUFFIX,ntdvn.com
 DOMAIN-SUFFIX,ntec.ac.uk
 DOMAIN-SUFFIX,ntfs.ac.uk
 DOMAIN-SUFFIX,ntidagenham.ac.uk
+DOMAIN-SUFFIX,ntl.fyi
 DOMAIN-SUFFIX,ntnews.com.au
 DOMAIN-SUFFIX,ntp-os01.ocn.ad.jp
 DOMAIN-SUFFIX,ntp-tk01.ocn.ad.jp
@@ -29136,6 +29141,7 @@ DOMAIN-SUFFIX,webpass.net
 DOMAIN-SUFFIX,webrush.net
 DOMAIN-SUFFIX,webs-tv.net
 DOMAIN-SUFFIX,websdr.org
+DOMAIN-SUFFIX,webshare.io
 DOMAIN-SUFFIX,website.new
 DOMAIN-SUFFIX,websitepulse.com
 DOMAIN-SUFFIX,websnapr.com
