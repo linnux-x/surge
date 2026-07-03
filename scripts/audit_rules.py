@@ -10,11 +10,17 @@ from __future__ import annotations
 
 import json
 import re
-import ssl
 import sys
-import urllib.request
 from datetime import datetime
 from pathlib import Path
+
+# Ensure scripts/ is on the path so sibling module imports work
+_scripts_dir = str(Path(__file__).resolve().parent)
+if _scripts_dir not in sys.path:
+    sys.path.insert(0, _scripts_dir)
+
+from http_util import fetch_text
+from policy import BROAD_SHARED_SUFFIXES, SHARED_INFRA_EXEMPT_FILES
 
 ROOT = Path(__file__).resolve().parents[1]
 RULE_DIR = ROOT / "Rule"
@@ -23,16 +29,18 @@ AUDIT_LOG = ROOT / "scripts" / "audit_report.json"
 
 # ── Helpers ──────────────────────────────────────────────────────────
 
-def fetch_text(url: str, timeout: int = 30) -> str | None:
-    """Fetch URL content, return text or None on failure."""
-    ctx = ssl.create_default_context()
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "surge-audit/1.0"})
-        with urllib.request.urlopen(req, timeout=timeout, context=ctx) as resp:
-            return resp.read().decode("utf-8", errors="replace")
-    except Exception as exc:
-        print(f"  ⚠ FETCH FAILED: {url} → {exc}")
-        return None
+def fetch_all_sources(sources: dict[str, list[str]]) -> dict[str, str | None]:
+    """Fetch every unique upstream URL exactly once.
+
+    Both the reachability check and the rule-count comparison consume the
+    same content, so fetching once here halves the audit's HTTP traffic.
+    """
+    contents: dict[str, str | None] = {}
+    for _target, urls in sorted(sources.items()):
+        for url in urls:
+            if url not in contents:
+                contents[url] = fetch_text(url)
+    return contents
 
 
 def non_comment_rules(path: Path) -> list[str]:
@@ -47,12 +55,15 @@ def non_comment_rules(path: Path) -> list[str]:
 
 # ── Audit Checks ─────────────────────────────────────────────────────
 
-def check_upstream_reachability(sources: dict[str, list[str]]) -> list[dict]:
-    """Verify all upstream source URLs are reachable."""
+def check_upstream_reachability(
+    sources: dict[str, list[str]],
+    contents: dict[str, str | None],
+) -> list[dict]:
+    """Verify all upstream source URLs are reachable (using prefetched content)."""
     findings: list[dict] = []
     for target, urls in sorted(sources.items()):
         for url in urls:
-            content = fetch_text(url)
+            content = contents.get(url)
             if content is None:
                 findings.append({
                     "severity": "ERROR",
@@ -72,9 +83,12 @@ def check_upstream_reachability(sources: dict[str, list[str]]) -> list[dict]:
     return findings
 
 
-def check_upstream_vs_generated(sources: dict[str, list[str]]) -> list[dict]:
+def check_upstream_vs_generated(
+    sources: dict[str, list[str]],
+    contents: dict[str, str | None],
+) -> list[dict]:
     """Compare upstream rule counts with generated .list files.
-    
+
     Flags when upstream has significantly more rules than generated
     (suggests aggressive exclude or guardrail issue) or when upstream
     is much smaller (suggests upstream shrunk, possible stale rules).
@@ -88,7 +102,7 @@ def check_upstream_vs_generated(sources: dict[str, list[str]]) -> list[dict]:
 
         upstream_total = 0
         for url in urls:
-            content = fetch_text(url)
+            content = contents.get(url)
             if content:
                 for line in content.splitlines():
                     s = line.strip()
@@ -136,33 +150,9 @@ def check_new_shared_infrastructure() -> list[dict]:
     - Consent/privacy platforms  
     - Cloud platform parent domains (too broad)
     
-    This checks against a broader list than validate_surge_repo.py to catch
-    new patterns early.
+    This checks against a broader list (policy.BROAD_SHARED_SUFFIXES) than
+    the strict commit-blocking tier to catch new patterns early.
     """
-    BROAD_SHARED_SUFFIXES = {
-        # Consent/privacy
-        "cookielaw.org", "onetrust.com", "onetrust.io",
-        "trustarc.com", "quantcast.com", "evidon.com",
-        # Analytics/telemetry
-        "adobedtm.com", "braze.com", "newrelic.com", "nr-data.net",
-        "optimizely.com", "optimizely.org",
-        "branch.io", "appsflyer.com", "adjust.com",
-        "kochava.com", "sentry.io", "sentrycdn.com",
-        "mixpanel.com", "amplitude.com", "segment.io", "segment.com",
-        "hotjar.com", "fullstory.com", "clarity.ms",
-        # Marketing/ad tech
-        "flashtalking.com", "doubleclick.net", "googleadservices.com",
-        "googlesyndication.com", "googletagmanager.com",
-        "facebook.net", "fbcdn.net",
-        # Broad cloud
-        "amazonaws.com", "cloudfront.net", "azure.com",
-        "googleapis.com", "cloud.google.com",
-        # CDNs (parent-level)
-        "akamaized.net", "akamaiedge.net", "akamaihd.net",
-        "edgekey.net", "edgesuite.net", "azureedge.net",
-        "fastly.net", "b-cdn.net", "cdn77.org",
-    }
-
     # Service-OWNED infrastructure that legitimately belongs in their rulesets.
     # These are NOT shared third-party — they're part of the service's own product family.
     SERVICE_OWNED_SUFFIXES: dict[str, set[str]] = {
@@ -178,11 +168,8 @@ def check_new_shared_infrastructure() -> list[dict]:
         },
     }
 
-    # Service-prefixed subdomains that are OK (e.g., disney.my.sentry.io)
-    SERVICE_EXEMPT = {
-        "Global.list", "GlobalMedia.list", "CDN.list", "Direct.list",
-        "China.list", "China_IP.list", "ChinaMedia.list", "Download.list",
-    }
+    # Aggregate rulesets exempt from this scan (shared with rule_validator)
+    SERVICE_EXEMPT = SHARED_INFRA_EXEMPT_FILES
 
     findings: list[dict] = []
     for list_path in sorted(RULE_DIR.glob("*.list")):
@@ -346,15 +333,20 @@ def main() -> int:
         sources[target] = [url for _label, url, _fmt in specs]
     print(f"\n📁 Found {len(sources)} ruleset targets with upstream sources\n")
 
+    # 0. Prefetch every unique upstream URL once (shared by checks 1 and 2)
+    print("0️⃣  Prefetching upstream sources (single pass)...")
+    contents = fetch_all_sources(sources)
+    print(f"   → {len(contents)} unique URLs fetched\n")
+
     # 1. Upstream reachability
     print("1️⃣  Checking upstream source reachability...")
-    findings = check_upstream_reachability(sources)
+    findings = check_upstream_reachability(sources, contents)
     all_findings.extend(findings)
     print(f"   → {len(findings)} issues\n")
 
     # 2. Upstream vs generated comparison
     print("2️⃣  Comparing upstream vs generated rule counts...")
-    findings = check_upstream_vs_generated(sources)
+    findings = check_upstream_vs_generated(sources, contents)
     all_findings.extend(findings)
     print(f"   → {len(findings)} findings\n")
 

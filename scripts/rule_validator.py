@@ -10,8 +10,24 @@ from __future__ import annotations
 
 import ipaddress
 import re
+import sys
 from collections import Counter
 from pathlib import Path
+
+# Ensure scripts/ is on the path so 'import policy' works when this module
+# is imported from outside the scripts directory.
+_scripts_dir = str(Path(__file__).resolve().parent)
+if _scripts_dir not in sys.path:
+    sys.path.insert(0, _scripts_dir)
+
+from policy import (
+    FASTCOM_RE,
+    GITHUB_RE,
+    SHARED_CDN_PARENTS,
+    SHARED_INFRA_EXEMPT_FILES as SHARED_THIRD_PARTY_EXEMPT,
+    SHARED_THIRD_PARTY_DOMAINS,
+    SHARED_THIRD_PARTY_SUFFIXES,
+)
 
 ALLOWED_TYPES = {
     "DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD", "DOMAIN-WILDCARD",
@@ -27,24 +43,6 @@ CONTROL_CHAR_RE = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
 RISKY_DOMAIN_KEYWORDS = {
     "amazon", "apple", "google", "microsoft", "java",
     "cdn", "cloud", "api",
-}
-
-SHARED_CDN_PARENTS = {
-    "akadns.net", "akamaiedge.net", "akamaihd.net", "akamaized.net",
-    "azureedge.net", "b-cdn.net", "cdn77.org", "cloudfront.net",
-    "edgekey.net", "edgesuite.net", "fastly.net",
-}
-
-SHARED_THIRD_PARTY_SUFFIXES = {
-    "cookielaw.org", "onetrust.com", "adobedtm.com",
-    "braze.com", "newrelic.com", "nr-data.net",
-    "optimizely.com", "segment.io", "sentry.io",
-}
-SHARED_THIRD_PARTY_DOMAINS = {"js-agent.newrelic.com"}
-
-SHARED_THIRD_PARTY_EXEMPT = {
-    "Global.list", "GlobalMedia.list", "CDN.list", "Direct.list",
-    "China.list", "China_IP.list", "ChinaMedia.list", "Download.list",
 }
 
 PAYPAL_CN_DOMAINS = {
@@ -169,10 +167,9 @@ def validate_rule_file(lines: list[str], target_name: str) -> list[str]:
                 ",no-resolve" not in low:
             errors.append(f"{target_name}:{index} missing no-resolve: {rule}")
 
-        if target_name == "Microsoft.list" and re.search(r"github|ghcr[.]io", low):
+        if target_name == "Microsoft.list" and GITHUB_RE.search(low):
             errors.append(f"{target_name}:{index} GitHub in Microsoft.list: {rule}")
-        if target_name != "Speedtest.list" and \
-                re.search(r"(^|,)([^,]*[.])?fast[.]com(,|$)", low):
+        if target_name != "Speedtest.list" and FASTCOM_RE.search(low):
             errors.append(f"{target_name}:{index} fast.com outside Speedtest.list: {rule}")
         if target_name != "CDN.list" and rule_type == "DOMAIN-SUFFIX" and \
                 len(parts) >= 2 and parts[1].lower() in SHARED_CDN_PARENTS:

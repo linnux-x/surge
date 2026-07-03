@@ -248,6 +248,10 @@ python3 scripts/test_routing_order.py   # 路由顺序模拟测试
 
 ## 🚀 快速上手
 
+> **最低版本要求**：Surge iOS 5.8.1+ / Surge Mac 5.x 对应版本。配置使用了 `extended-matching`（5.8.0 引入）；5.8.1 起 RULE-SET 在资源更新时自动预处理并索引，大规则集（如 China.list 11 万条）匹配为毫秒级，与 DOMAIN-SET 无性能差异。
+>
+> **首次导入提示**：托管配置与全部规则集均从 `raw.githubusercontent.com` 拉取，请在代理可用的网络环境下完成首次导入；导入后 Surge 会缓存规则集，且托管配置为非 strict 模式，更新失败时继续使用旧配置。
+
 ### 新手三步骤
 
 1. **导入托管配置** → 使用 `Conf/Linnux.conf`，首行已包含 Surge `#!MANAGED-CONFIG`，默认每日检查更新
