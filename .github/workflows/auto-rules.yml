@@ -81,6 +81,11 @@ jobs:
           python3 scripts/manifest.py
           python3 scripts/manifest.py --diff
 
+      - name: Generate Clash Rule Providers
+        if: ${{ fromJson(steps.check_upstream.outputs.changed_count) > 0 || github.event_name == 'workflow_dispatch' }}
+        shell: bash
+        run: python3 scripts/generate_clash_rules.py --validate
+
       - name: Validate Repository Invariants
         if: ${{ fromJson(steps.check_upstream.outputs.changed_count) > 0 || github.event_name == 'workflow_dispatch' }}
         shell: bash
@@ -209,7 +214,7 @@ jobs:
 
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add Rule/ Module/ README.md \
+          git add Rule/ clash/ Module/ README.md \
             scripts/diff_report.md scripts/diff_report.json scripts/source_state.json
 
           if ! git diff --staged --quiet; then

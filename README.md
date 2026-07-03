@@ -57,12 +57,14 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 |------|------|
 | `Conf/Linnux.conf` | 主 Surge 配置示例，包含策略组和 `RULE-SET` 加载顺序 |
 | `Rule/*.list` | Surge 外部规则集文件（自动生成，**勿手动修改**） |
+| `clash/*.yaml` | Clash / mihomo rule-provider 文件（由 `Rule/*.list` 转换生成） |
 | `Rule/Manual/*.txt` / `*.exclude.txt` | 手动追加（最高优先级）与排除规则 |
 | `Rule/.manifests/*.manifest` | 规则清单索引（每行：稳定哈希ID + 来源标注） |
 | `Module/*.sgmodule` | Surge 模块文件 |
 | `scripts/sources.py` | 上游源配置（单一定义，所有脚本引用） |
 | `scripts/check_upstream_updates.py` | 并行 HEAD 检查上游变更（8 线程） |
 | `scripts/generate_rules.py` | 规则生成引擎（下载、合并、清洗、校验、CIDR 裁剪） |
+| `scripts/generate_clash_rules.py` | 将 Surge 规则转换为 Clash / mihomo `classical` rule-provider |
 | `scripts/manifest.py` | 规则清单生成 + 差异对比（manifest → diff_report） |
 | `scripts/validate_surge_repo.py` | 不变量检查（15+ 项） |
 | `scripts/audit_rules.py` | 联网审查（5 项审计） |

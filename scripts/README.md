@@ -22,9 +22,10 @@ Rabbit-Spec 来源当前明确保留，用于补充 AIGC、China、ChinaCIDR 覆
 | 1 | `check_upstream_updates.py` | 并行检查所有上游源是否变更，识别需要更新的规则集 |
 | 2 | `generate_rules.py` | 下载、合并、清洗、校验规则；应用手工规则、排除规则、护栏、CIDR 裁剪和 Global 重叠裁剪 |
 | 3 | `manifest.py` | 生成每个规则文件的 manifest：`<stable_id>	<source_name>`；`--diff` 用于生成差异报告 |
-| 4 | `validate_surge_repo.py` | 仓库级不变量检查，规则内容校验委托给 `rule_validator.py` |
-| 5 | `audit_rules.py` | 生成后联网审计：上游可达性、规则数量、共享基础设施、Surge 文档、exclude 覆盖等 |
-| 6 | `cross_file_conflicts.py` | 月报辅助：列出同一域名跨不同策略文件重复出现时的 first-match 实际生效关系 |
+| 4 | `generate_clash_rules.py` | 将 `Rule/*.list` 转换为 `clash/*.yaml`，供 Clash / mihomo rule-provider 使用 |
+| 5 | `validate_surge_repo.py` | 仓库级不变量检查，规则内容校验委托给 `rule_validator.py` |
+| 6 | `audit_rules.py` | 生成后联网审计：上游可达性、规则数量、共享基础设施、Surge 文档、exclude 覆盖等 |
+| 7 | `cross_file_conflicts.py` | 月报辅助：列出同一域名跨不同策略文件重复出现时的 first-match 实际生效关系 |
 
 ---
 
@@ -50,13 +51,16 @@ CHANGED_RULESETS='["AI.list"]' python3 scripts/generate_rules.py
 python3 scripts/manifest.py
 python3 scripts/manifest.py --diff
 
-# 4. 校验仓库
+# 4. 生成 Clash / mihomo rule-provider
+python3 scripts/generate_clash_rules.py --validate
+
+# 5. 校验仓库
 python3 scripts/validate_surge_repo.py
 
-# 5. 联网审计
+# 6. 联网审计
 python3 scripts/audit_rules.py
 
-# 6. 查看跨文件策略冲突（月报同款输出）
+# 7. 查看跨文件策略冲突（月报同款输出）
 python3 scripts/cross_file_conflicts.py
 
 # 测试路由顺序
