@@ -81,7 +81,6 @@ privacy2surge report.ndjson -o Rule/App.list
 |---|---|
 | `ios_privacy_to_surge.py` | 将 iOS 隐私报告 `.ndjson` 转换为 Surge / Loon 规则；过滤系统流量、合并子域名、通过 iTunes API 和内置映射识别 App |
 | `app_mapping.json` | Bundle ID 到 App 名称、域名、IP 的可扩展映射 |
-| `vps_monitor.py` | 轻量 HTTP 服务，暴露系统指标 JSON，供 Surge Panel 使用；通过 `VPS_MONITOR_HOST` 和 `VPS_MONITOR_TOKEN` 配置 |
 
 ---
 

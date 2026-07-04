@@ -41,8 +41,7 @@ scripts/
 ├── validate_surge_repo.py     ← Repository-level invariants
 ├── audit_rules.py             ← Post-generation online audits
 ├── test_routing_order.py      ← Routing simulation tests
-├── ios_privacy_to_surge.py    ← iOS privacy report → Surge rules converter
-└── vps_monitor.py             ← Lightweight VPS metrics server for Surge Panel
+└── ios_privacy_to_surge.py    ← iOS privacy report → Surge rules converter
 
 tests/
 └── expected-routing.csv       ← Domain → expected ruleset mappings
