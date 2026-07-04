@@ -191,8 +191,11 @@ jobs:
           fi
           grep -qx '\[Host\]' Module/DNS-Mapping.sgmodule
           grep -q '^RULE-SET:https://ruleset\.skk\.moe/Modules/Rules/sukka_local_dns_mapping/' Module/DNS-Mapping.sgmodule
-          sed -i '1s|^#!name=.*|#!name=DNS-Mapping|' Module/DNS-Mapping.sgmodule
-          sed -i '2s|^#!desc=.*|#!desc=本地 DNS 映射，优化国内常用服务与局域网域名解析|' Module/DNS-Mapping.sgmodule
+          # Match by pattern, not line number: robust if upstream reorders the
+          # header, and normalizing #!desc drops upstream's changing timestamp
+          # (avoids daily commit churn).
+          sed -i 's|^#!name=.*|#!name=DNS-Mapping|' Module/DNS-Mapping.sgmodule
+          sed -i 's|^#!desc=.*|#!desc=本地 DNS 映射，优化国内常用服务与局域网域名解析|' Module/DNS-Mapping.sgmodule
 
       - name: Manual Audit Gate for Full Generation Publishing
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run != 'true' && inputs.manual_audit_confirmed != 'true' }}
