@@ -1,6 +1,6 @@
 # Generated from Rule/China.list (rules not covered by the _Domain export)
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-05 04:01:08 +0800
+# UPDATED: 2026-07-05 06:14:12 +0800
 # TOTAL: 41
 payload:
   - 'DOMAIN-WILDCARD,*.qhimgs?.com'
