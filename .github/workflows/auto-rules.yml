@@ -39,7 +39,9 @@ jobs:
   update-rules:
     if: github.repository == 'linnux-x/surge'
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    # workflow_dispatch can trigger a full regeneration of all rulesets, which
+    # needs more headroom than an incremental daily run.
+    timeout-minutes: ${{ github.event_name == 'workflow_dispatch' && 20 || 10 }}
 
     env:
       RULE_DIR: Rule
@@ -65,16 +67,32 @@ jobs:
             --state-out scripts/source_state.next.json \
             --github-output "$GITHUB_OUTPUT"
 
+      - name: Compute Build Gate
+        id: gate
+        shell: bash
+        env:
+          CHANGED_COUNT: ${{ steps.check_upstream.outputs.changed_count }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+          # Single source of truth for "should we (re)generate this run?":
+          # any upstream changed, or a manual dispatch (which forces full regen).
+          if [ "${CHANGED_COUNT:-0}" -gt 0 ] || [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            echo "build=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "build=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Generate Rules
         id: generate
-        if: ${{ fromJson(steps.check_upstream.outputs.changed_count) > 0 || github.event_name == 'workflow_dispatch' }}
+        if: ${{ steps.gate.outputs.build == 'true' }}
         shell: bash
         env:
           CHANGED_RULESETS: ${{ steps.check_upstream.outputs.changed_rulesets }}
         run: python3 scripts/generate_rules.py
 
       - name: Generate Manifests & Diff
-        if: ${{ fromJson(steps.check_upstream.outputs.changed_count) > 0 || github.event_name == 'workflow_dispatch' }}
+        if: ${{ steps.gate.outputs.build == 'true' }}
         shell: bash
         run: |
           set -euo pipefail
@@ -82,19 +100,19 @@ jobs:
           python3 scripts/manifest.py --diff
 
       - name: Generate Clash Rule Providers
-        if: ${{ fromJson(steps.check_upstream.outputs.changed_count) > 0 || github.event_name == 'workflow_dispatch' }}
+        if: ${{ steps.gate.outputs.build == 'true' }}
         shell: bash
         run: python3 scripts/generate_clash_rules.py --validate
 
       - name: Validate Repository Invariants
-        if: ${{ fromJson(steps.check_upstream.outputs.changed_count) > 0 || github.event_name == 'workflow_dispatch' }}
+        if: ${{ steps.gate.outputs.build == 'true' }}
         shell: bash
         run: |
           set -euo pipefail
           python3 scripts/validate_surge_repo.py
 
       - name: Online Audit (Upstream & Shared Infrastructure)
-        if: ${{ fromJson(steps.check_upstream.outputs.changed_count) > 0 || github.event_name == 'workflow_dispatch' }}
+        if: ${{ steps.gate.outputs.build == 'true' }}
         shell: bash
         run: |
           set -euo pipefail
@@ -223,7 +241,10 @@ jobs:
           if ! git diff --staged --quiet; then
             COMMIT_TIME=$(TZ="Asia/Shanghai" date +"%Y-%m-%d %H:%M:%S +0800")
             git commit -m "$COMMIT_TIME Update rules"
-            git pull --rebase origin main
+            # --autostash guards against any stray unstaged changes blocking the
+            # rebase; a genuine content conflict still fails loudly (and opens an
+            # issue) since generated files are machine-owned and should not clash.
+            git pull --rebase --autostash origin main
             git push
           fi
 
