@@ -161,6 +161,12 @@
     "last_modified": null,
     "source_available": true
   },
+  "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Spotify/Spotify.list": {
+    "content_length": "1246",
+    "etag": "\"913894c2f26a2a2c3f72152190ab5a624bc5aa952e56fdcd6fec4fafd0a97b34\"",
+    "last_modified": null,
+    "source_available": true
+  },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list": {
     "content_length": "1680",
     "etag": "\"3599a86ca0f449af23b1765909e044def3713bc67ca68c3f70c754f4c901a80a\"",
@@ -210,8 +216,8 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/domestic.conf": {
-    "content_length": null,
-    "etag": "W/\"b33475de3949c7bdebe58e4e111b15ea\"",
+    "content_length": "22545",
+    "etag": "\"b33475de3949c7bdebe58e4e111b15ea\"",
     "last_modified": null,
     "source_available": true
   },
