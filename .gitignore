@@ -17,8 +17,11 @@ Thumbs.db
 *.orig
 audit_report.json
 
-# Private (personal rules only — exclude files are shared infrastructure)
+# Manual rules are version-controlled so the daily CI regeneration — which runs
+# without the local working tree — reproduces them instead of stripping them.
+# Both append (*.txt) and exclude (*.exclude.txt) files are tracked.
 Rule/Manual/*
+!Rule/Manual/*.txt
 !Rule/Manual/*.exclude.txt
 !Rule/Manual/README.md
 .codex/
