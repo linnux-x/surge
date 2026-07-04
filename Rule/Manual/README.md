@@ -1,7 +1,7 @@
 # 手工规则目录
 
-> **本目录已加入 `.gitignore`**：个人手工规则不会提交到公开仓库。  
-> Fork 用户可以在这里添加自己的 include / exclude 规则。
+> **本目录中的 `*.txt` 与 `*.exclude.txt` 会提交到公开仓库**，用于让本地、CI 和定时生成使用同一套手工 include / exclude 输入。
+> Fork 用户可以在这里添加自己的 include / exclude 规则；如果规则含私有域名、IP、token、订阅地址或个人基础设施信息，请不要提交到公开仓库。
 
 ---
 

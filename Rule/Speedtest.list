@@ -1,9 +1,13 @@
 # NAME: Speedtest
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-30 04:00:22 +0800
+# UPDATED: 2026-07-04 10:40:58 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 123
+# TOTAL: 124
+
+# ======= Manual Rules ========
+DOMAIN-SUFFIX,fast.com
+DOMAIN-SUFFIX,nperf.com
 
 # ======= SukkaW Speedtest ========
 DOMAIN-SUFFIX,speedtest.net
@@ -116,7 +120,6 @@ DOMAIN-SUFFIX,wifiman.com
 DOMAIN-SUFFIX,wifiman.me
 DOMAIN-SUFFIX,wifiman.ubncloud.com
 DOMAIN-SUFFIX,wifiman-stability-test.ubncloud.com
-DOMAIN-SUFFIX,fast.com
 DOMAIN,speedtest.macpaw.com
 DOMAIN-SUFFIX,netspeedtestmaster.com
 DOMAIN-SUFFIX,measurement-lab.org

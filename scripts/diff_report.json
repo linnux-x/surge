@@ -1,19 +1,279 @@
 {
-  "generated_at": "2026-07-04T10:11:29.782065",
-  "total_added": 31,
-  "total_removed": 1,
-  "total_source_changed": 0,
+  "generated_at": "2026-07-04T11:40:59.002486",
+  "total_added": 97,
+  "total_removed": 2,
+  "total_source_changed": 43,
   "diffs": [
     {
       "file": "AI.list",
       "prev_total": 149,
-      "curr_total": 149,
-      "added_count": 0,
+      "curr_total": 166,
+      "added_count": 17,
       "removed_count": 0,
-      "source_changed_count": 0,
-      "added_sample": [],
+      "source_changed_count": 38,
+      "added_sample": [
+        {
+          "id": "0ac073d1c418",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "1a5d210c8a8f",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "1dbeb15d7a34",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "2abac546c15e",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "32298f07fdaf",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "395b4d02e503",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "44c8012d2674",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "67a0812c4e74",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "752e692f0b1d",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "88dfd3b0acf8",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "9701ae6d858c",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "9e28756d29d8",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "b5c2d2041b5e",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "bba44621dbde",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "bfc5d43e8d7b",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "c5275a4a69a0",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "ce097a31ab45",
+          "source": "Manual Rules"
+        }
+      ],
       "removed_sample": [],
-      "source_changed_sample": []
+      "source_changed_sample": [
+        {
+          "id": "3e42093c1938",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "98593c22f427",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "5b43519b006d",
+          "old_source": "ConnersHua AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "173336c8a0b1",
+          "old_source": "ConnersHua AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "5ebb6d72f9f2",
+          "old_source": "Rabbit-Spec AIGC",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "a94e449f8f4e",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "46ac15f42c69",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "f6dda0aed498",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "fbd8c01342b9",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "c8fe30444894",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "bb520987915f",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "93ec0a74a9cb",
+          "old_source": "Rabbit-Spec AIGC",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "619d261c2c90",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "95632f44db15",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "e784b47351e1",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "6b50aa7bb66b",
+          "old_source": "Rabbit-Spec AIGC",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "107f612efba1",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "d2b4d957442c",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "047cc5f8bd4d",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "8315082adf4a",
+          "old_source": "Rabbit-Spec AIGC",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "3767ca234c2e",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "b6ec6b0aa2e6",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "2099cb25dd84",
+          "old_source": "Rabbit-Spec AIGC",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "809c732dc67b",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "b1fd7266b0f8",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "d236ee2ff9b5",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "09906a68bf35",
+          "old_source": "Rabbit-Spec AIGC",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "d18a58118cc8",
+          "old_source": "Rabbit-Spec AIGC",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "0429516d2a34",
+          "old_source": "ConnersHua AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "cb737d117642",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "92877d8c8efd",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "900978d268e7",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "f1164ee3b6ff",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "69a58ce3d8db",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "11c25ec231e8",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "781fe12bcec6",
+          "old_source": "ConnersHua AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "da97cad3b7e3",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "28b3f338dfb1",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        }
+      ]
     },
     {
       "file": "Apple.list",
@@ -40,24 +300,203 @@
     {
       "file": "CDN.list",
       "prev_total": 25,
-      "curr_total": 25,
-      "added_count": 0,
+      "curr_total": 26,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "685f55c1f4f5",
+          "source": "Manual Rules"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "China.list",
       "prev_total": 112397,
-      "curr_total": 112397,
-      "added_count": 0,
+      "curr_total": 112435,
+      "added_count": 38,
       "removed_count": 0,
-      "source_changed_count": 0,
-      "added_sample": [],
+      "source_changed_count": 4,
+      "added_sample": [
+        {
+          "id": "01ad27c8a689",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "07e3a48db7e7",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "0ba27ecb6c7f",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "12a4a7de68e3",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "1425e4f5b9e1",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "17730cc28d93",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "237cf7c6a88e",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "24f5b65de060",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "27e4a30640ad",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "296bbad54385",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "301053938a7d",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "374d6669518d",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "3c29272ccccf",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "3dab2086eb1c",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "4cf86824fc0e",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "5d9406e49e89",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "628e67079edd",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "64111722672f",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "645ab8f37f1b",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "67381c4973b1",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "68d25090d494",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "72fe7175eaf0",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "7a88492568c1",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "8914d81b4dd6",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "926924e31ba8",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "959544495d73",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "965cbe8138ba",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "bef1502ef171",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "c0c26faaf575",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "c10278cee389",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "c137b1cda156",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "c45cd60e3dab",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "d6847d557a10",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "dfada6a8c7df",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "eb2b9efc3f4a",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "f32ea29281c2",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "f63ece95e664",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "ffa769bfe1e5",
+          "source": "Manual Rules"
+        }
+      ],
       "removed_sample": [],
-      "source_changed_sample": []
+      "source_changed_sample": [
+        {
+          "id": "ca79165b3e00",
+          "old_source": "SukkaW Domestic",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "ac912fef9a7b",
+          "old_source": "SukkaW Domestic",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "743effbfd44d",
+          "old_source": "SukkaW Domestic",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "14aad2385da5",
+          "old_source": "SukkaW Domestic",
+          "new_source": "Manual Rules"
+        }
+      ]
     },
     {
       "file": "ChinaMedia.list",
@@ -95,11 +534,20 @@
     {
       "file": "Download.list",
       "prev_total": 1696,
-      "curr_total": 1696,
-      "added_count": 0,
+      "curr_total": 1698,
+      "added_count": 2,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "3d66b9010a6c",
+          "source": "SukkaW Download"
+        },
+        {
+          "id": "f5bd29b1b3e8",
+          "source": "SukkaW Download"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -116,15 +564,19 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 29703,
-      "curr_total": 29702,
+      "prev_total": 29702,
+      "curr_total": 29700,
       "added_count": 0,
-      "removed_count": 1,
+      "removed_count": 2,
       "source_changed_count": 0,
       "added_sample": [],
       "removed_sample": [
         {
-          "id": "5df985b20632",
+          "id": "1888be55b561",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "1efd9e697d24",
           "source": "blackmatrix7 Global"
         }
       ],
@@ -133,22 +585,60 @@
     {
       "file": "GlobalMedia.list",
       "prev_total": 2271,
-      "curr_total": 2271,
-      "added_count": 0,
+      "curr_total": 2277,
+      "added_count": 6,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "0594a12e04e5",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "2bf044c9fdc5",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "304214848685",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "49d30644de4a",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "62cd37e8cd31",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "b21fa1a4dc84",
+          "source": "Manual Rules"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "Google.list",
       "prev_total": 700,
-      "curr_total": 700,
-      "added_count": 0,
+      "curr_total": 703,
+      "added_count": 3,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "12c52d1b2fbc",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "96f22dc6e127",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "e748554de8c0",
+          "source": "Manual Rules"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -166,11 +656,120 @@
     {
       "file": "Microsoft_CDN.list",
       "prev_total": 57,
-      "curr_total": 57,
-      "added_count": 0,
+      "curr_total": 84,
+      "added_count": 27,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "04af34c05273",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "1888be55b561",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "19019df6b78f",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "192fb4d9ccfe",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "1c4609a764c5",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "1da97466a475",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "1efd9e697d24",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "2bdbab01473a",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "3b1ee37e8679",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "427c7bc09b6d",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "4a5c3499b727",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "542ad6b73197",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "5f32dd845dbd",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "753a8e8a7c7d",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "8d78624d28b0",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "95456a8b49f2",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "9a69ed59473b",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "9e218783ca82",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "ad788a845b8d",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "b246388dbb51",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "b4ef9bbed780",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "bdfc2200c17c",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "ce730a9f8006",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "d1b691fbb0e2",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "d1fdc79c4951",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "d8c5d996ba4b",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "f5b3b2915010",
+          "source": "Manual Rules"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -210,147 +809,33 @@
     {
       "file": "Speedtest.list",
       "prev_total": 123,
-      "curr_total": 123,
+      "curr_total": 124,
+      "added_count": 1,
+      "removed_count": 0,
+      "source_changed_count": 1,
+      "added_sample": [
+        {
+          "id": "d04008c775a7",
+          "source": "Manual Rules"
+        }
+      ],
+      "removed_sample": [],
+      "source_changed_sample": [
+        {
+          "id": "d646c37a3d0d",
+          "old_source": "SukkaW Speedtest",
+          "new_source": "Manual Rules"
+        }
+      ]
+    },
+    {
+      "file": "Spotify.list",
+      "prev_total": 31,
+      "curr_total": 31,
       "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
-      "source_changed_sample": []
-    },
-    {
-      "file": "Spotify.list",
-      "prev_total": 0,
-      "curr_total": 31,
-      "added_count": 31,
-      "removed_count": 0,
-      "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "00517d340558",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "0aee5ddb05f5",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "10d5aa2debc6",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "1400542b735e",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "17d2a742a855",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "1e9b73cff5d2",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "23844bf4dea8",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "2b452c510066",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "303b80357ba5",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "399517219208",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "4c1c5dab1e6b",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "4e1fdeb41ee0",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "5df985b20632",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "6763282d56fb",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "67f7c913a65e",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "6a2de9afdf7f",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "7edfb9efdf2f",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "8c19017d2809",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "9508b11f7005",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "95a0662f9e51",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "a4cf7f444838",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "aa57bea8ed75",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "b001e2e4d467",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "b11945289f30",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "c14226df3691",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "db4c9a0b8f7f",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "dc70adfe01c3",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "eb27ee712312",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "ebe09d07c69f",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "f36aacf81a22",
-          "source": "blackmatrix7 Spotify"
-        },
-        {
-          "id": "fc5b440758e2",
-          "source": "blackmatrix7 Spotify"
-        }
-      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -379,11 +864,20 @@
     {
       "file": "WeChat.list",
       "prev_total": 99,
-      "curr_total": 99,
-      "added_count": 0,
+      "curr_total": 101,
+      "added_count": 2,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "00ef2aa66514",
+          "source": "Manual Rules"
+        },
+        {
+          "id": "b87071f30646",
+          "source": "Manual Rules"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },

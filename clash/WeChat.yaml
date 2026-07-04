@@ -1,8 +1,10 @@
 # Generated from Rule/WeChat.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-06-30 04:00:23 +0800
-# TOTAL: 99
+# UPDATED: 2026-07-04 10:40:58 +0800
+# TOTAL: 101
 payload:
+  - 'DOMAIN-SUFFIX,wechatpay.com.hk'
+  - 'DOMAIN-SUFFIX,wechatpay.com.my'
   - 'DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net'
   - 'DOMAIN,dldir1.qq.com'
   - 'DOMAIN,slife.xy-asia.com'

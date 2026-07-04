@@ -1,8 +1,9 @@
 # Generated from Rule/CDN.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-06-30 04:00:17 +0800
-# TOTAL: 25
+# UPDATED: 2026-07-04 10:40:51 +0800
+# TOTAL: 26
 payload:
+  - 'DOMAIN,release-assets.githubusercontent.com'
   - 'DOMAIN-KEYWORD,-files.gitbook.io'
   - 'DOMAIN-KEYWORD,vod-adaptive.akamaized.net'
   - 'DOMAIN-KEYWORD,web-assets.zendesk'

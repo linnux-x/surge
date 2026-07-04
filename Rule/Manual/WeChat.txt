@@ -1,0 +1,3 @@
+# WeChat Pay regional domains excluded from China fallback by broader wechatpay.com literal filtering.
+DOMAIN-SUFFIX,wechatpay.com.hk
+DOMAIN-SUFFIX,wechatpay.com.my

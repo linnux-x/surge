@@ -1,7 +1,7 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
 # UPDATED: 2026-07-04 06:19:13 +0800
-# TOTAL: 29702
+# TOTAL: 29700
 payload:
   - 'DOMAIN,1password.drift.click'
   - 'DOMAIN,adobeereg.com'
@@ -18027,7 +18027,6 @@ payload:
   - 'DOMAIN-SUFFIX,sexytuber.com'
   - 'DOMAIN-SUFFIX,sexywetpussy.com'
   - 'DOMAIN-SUFFIX,sexzy4.com'
-  - 'DOMAIN-SUFFIX,sfbassets.net'
   - 'DOMAIN-SUFFIX,sfc.ac.uk'
   - 'DOMAIN-SUFFIX,sfefc.ac.uk'
   - 'DOMAIN-SUFFIX,sferum-dev.ru'
@@ -18352,7 +18351,6 @@ payload:
   - 'DOMAIN-SUFFIX,skyoceanrescue.com'
   - 'DOMAIN-SUFFIX,skyoceanrescue.de'
   - 'DOMAIN-SUFFIX,skyoceanrescue.it'
-  - 'DOMAIN-SUFFIX,skypeassets.net'
   - 'DOMAIN-SUFFIX,skyperfectjsat.space'
   - 'DOMAIN-SUFFIX,skyperfectv.co.jp'
   - 'DOMAIN-SUFFIX,skyporn.online'

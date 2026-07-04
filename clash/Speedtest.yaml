@@ -1,8 +1,10 @@
 # Generated from Rule/Speedtest.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-06-30 04:00:22 +0800
-# TOTAL: 123
+# UPDATED: 2026-07-04 10:40:58 +0800
+# TOTAL: 124
 payload:
+  - 'DOMAIN-SUFFIX,fast.com'
+  - 'DOMAIN-SUFFIX,nperf.com'
   - 'DOMAIN-SUFFIX,speedtest.net'
   - 'DOMAIN-SUFFIX,speedtestcustom.com'
   - 'DOMAIN-SUFFIX,ooklaserver.net'
@@ -113,7 +115,6 @@ payload:
   - 'DOMAIN-SUFFIX,wifiman.me'
   - 'DOMAIN-SUFFIX,wifiman.ubncloud.com'
   - 'DOMAIN-SUFFIX,wifiman-stability-test.ubncloud.com'
-  - 'DOMAIN-SUFFIX,fast.com'
   - 'DOMAIN,speedtest.macpaw.com'
   - 'DOMAIN-SUFFIX,netspeedtestmaster.com'
   - 'DOMAIN-SUFFIX,measurement-lab.org'
