@@ -88,6 +88,8 @@ _SOURCES: list[tuple[str, str, str, str | None]] = [
     ("blackmatrix7 Twitter", f"{BM7}/Twitter/Twitter.list", "SocialMedia.list", None),
     # Speedtest.list
     ("SukkaW Speedtest", f"{SUKKA}/domainset/speedtest.conf", "Speedtest.list", "domainset"),
+    # Spotify.list
+    ("blackmatrix7 Spotify", f"{BM7}/Spotify/Spotify.list", "Spotify.list", None),
     # Telegram.list
     ("blackmatrix7 Telegram", f"{BM7}/Telegram/Telegram.list", "Telegram.list", None),
     ("Telegram Official CIDR", "https://core.telegram.org/resources/cidr.txt", "Telegram.list", "cidr"),
@@ -125,7 +127,8 @@ OVERLAP_DEPENDENTS: set[str] = {
     "Apple.list", "Microsoft_CDN.list", "Microsoft.list",
     "Telegram.list", "Download.list", "Game.list", "YouTube.list",
     "TikTok.list", "SocialMedia.list", "PayPal.list", "Google.list",
-    "Netflix.list", "Disney.list", "ChinaMedia.list", "GlobalMedia.list",
+    "Netflix.list", "Disney.list", "ChinaMedia.list", "Spotify.list",
+    "GlobalMedia.list",
     "CDN.list",
 }
 

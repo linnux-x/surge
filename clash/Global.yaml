@@ -1,7 +1,7 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
 # UPDATED: 2026-07-04 06:19:13 +0800
-# TOTAL: 29703
+# TOTAL: 29702
 payload:
   - 'DOMAIN,1password.drift.click'
   - 'DOMAIN,adobeereg.com'
@@ -17,7 +17,6 @@ payload:
   - 'DOMAIN,cbsi.live.ott.irdeto.com'
   - 'DOMAIN,cbsplaylistserver.aws.syncbak.com'
   - 'DOMAIN,cbsservice.aws.syncbak.com'
-  - 'DOMAIN,cdn-spotify-experiments.conductrics.com'
   - 'DOMAIN,cdn.js7k.com'
   - 'DOMAIN,cisco.evergage.com'
   - 'DOMAIN,clubhouse.pubnubapi.com'

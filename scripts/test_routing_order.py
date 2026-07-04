@@ -41,6 +41,7 @@ FALLBACK_ORDER: list[tuple[str, str]] = [
     ("Netflix.list", "Netflix.list"),
     ("Disney.list", "Disney.list"),
     ("ChinaMedia.list", "ChinaMedia.list"),
+    ("Spotify.list", "Spotify.list"),
     ("GlobalMedia.list", "GlobalMedia.list"),
     ("CDN.list", "CDN.list"),
     ("Global.list", "Global.list"),

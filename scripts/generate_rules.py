@@ -307,7 +307,7 @@ def prune_global_first_match_overlaps():
         "Microsoft_CDN.list", "Microsoft.list", "Telegram.list", "Download.list",
         "Game.list", "YouTube.list", "TikTok.list", "SocialMedia.list",
         "PayPal.list", "Google.list", "Netflix.list", "Disney.list",
-        "ChinaMedia.list", "GlobalMedia.list", "CDN.list",
+        "ChinaMedia.list", "Spotify.list", "GlobalMedia.list", "CDN.list",
     ]
 
     # Collect all earlier rules

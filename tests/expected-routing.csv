@@ -69,7 +69,7 @@ update.microsoft.com,Download.list,Microsoft 更新下载
 mcr.microsoft.com,Download.list,Microsoft Container Registry
 minecraft.net,Game.list,Minecraft 游戏域名
 xboxlive.com,Game.list,Xbox Live 游戏域名
-spotify.com,GlobalMedia.list,Spotify
+spotify.com,Spotify.list,Spotify
 hulu.com,GlobalMedia.list,Hulu
 akamaized.net,Global,共享CDN（已排除，FINAL→Global）
 cloudfront.net,Global,共享CDN（已排除，FINAL→Global）

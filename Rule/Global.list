@@ -3,7 +3,7 @@
 # REPO: https://github.com/linnux-x/surge
 # UPDATED: 2026-07-04 06:19:13 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 29703
+# TOTAL: 29702
 
 # ======= blackmatrix7 Global ========
 DOMAIN,1password.drift.click
@@ -20,7 +20,6 @@ DOMAIN,bybit.ada.support
 DOMAIN,cbsi.live.ott.irdeto.com
 DOMAIN,cbsplaylistserver.aws.syncbak.com
 DOMAIN,cbsservice.aws.syncbak.com
-DOMAIN,cdn-spotify-experiments.conductrics.com
 DOMAIN,cdn.js7k.com
 DOMAIN,cisco.evergage.com
 DOMAIN,clubhouse.pubnubapi.com

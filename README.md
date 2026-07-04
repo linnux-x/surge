@@ -42,7 +42,7 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 
 | 特性 | 说明 |
 |------|------|
-| 🤖 **全自动同步** | 检查 37 个上游源的 Last-Modified / ETag，只同步有变更的规则集，无变化跳过提交 |
+| 🤖 **全自动同步** | 检查 38 个上游源的 Last-Modified / ETag，只同步有变更的规则集，无变化跳过提交 |
 | 🧪 **自动校验** | 15+ 不变量检查：规则类型合法性、无策略名渗入、无重复、domain-only 约束、no-resolve 策略等 |
 | 📋 **清单索引** | 每条规则拥有 12 字符稳定内容哈希 ID + 上游来源标注，支持跨版本追踪 |
 | 📊 **增量差异报告** | 每次变更生成 manifest diff（markdown + JSON），明确增减来源 |
@@ -98,6 +98,7 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 | 💰 PayPal.list | blackmatrix7 | PayPal |
 | 💬 SocialMedia.list | 4 源 | 社交媒体聚合（海外平台） |
 | ⚡ Speedtest.list | SukkaW · 手动 | 测速 · fast.com 仅此文件 |
+| 🎧 Spotify.list | blackmatrix7 | Spotify 音乐服务 |
 | ✈️ Telegram.list | 3 源 | 域名、CIDR、ASN |
 | 🎵 TikTok.list | blackmatrix7 | TikTok |
 | 💚 WeChat.list | blackmatrix7 | 微信相关服务 |
@@ -123,12 +124,13 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 12. 💰 **PayPal** → 支付服务
 13. 🔍 **Google** → Google 服务
 14. 🎬 **GlobalMedia + ChinaMedia** → 国际与中国媒体服务
-15. 📦 **CDN** → 共享 CDN 后台回退
-16. 🌍 **Global** → 通用代理回退
-17. 🏠 **China** → 中国大陆直连域名
-18. 🏢 **LAN** → 局域网直连
-19. 🌐 **China IP** → 中国大陆 IP 回退
-20. 🔚 **FINAL** → 最终代理
+15. 🎧 **Spotify** → 音乐流媒体
+16. 📦 **CDN** → 共享 CDN 后台回退
+17. 🌍 **Global** → 通用代理回退
+18. 🏠 **China** → 中国大陆直连域名
+19. 🏢 **LAN** → 局域网直连
+20. 🌐 **China IP** → 中国大陆 IP 回退
+21. 🔚 **FINAL** → 最终代理
 
 ---
 
