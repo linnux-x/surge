@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-04T22:14:15.475099",
-  "total_added": 0,
-  "total_removed": 0,
+  "generated_at": "2026-07-06T05:01:16.596668",
+  "total_added": 4,
+  "total_removed": 2,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -51,12 +51,17 @@
     {
       "file": "China.list",
       "prev_total": 112435,
-      "curr_total": 112435,
+      "curr_total": 112434,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 1,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "075a3cf3049a",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -117,12 +122,34 @@
     {
       "file": "Global.list",
       "prev_total": 29700,
-      "curr_total": 29700,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 29703,
+      "added_count": 4,
+      "removed_count": 1,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "3af24b86dd57",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "622faffd13ad",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "855339e05d7e",
+          "source": "blackmatrix7 Global"
+        },
+        {
+          "id": "96c9f6104d50",
+          "source": "blackmatrix7 Global"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "e23c29925313",
+          "source": "blackmatrix7 Global"
+        }
+      ],
       "source_changed_sample": []
     },
     {

@@ -1,7 +1,7 @@
 # Generated from Rule/China.list (DOMAIN/DOMAIN-SUFFIX entries only)
 # Format: Clash/mihomo rule-provider, behavior: domain
-# UPDATED: 2026-07-05 06:14:12 +0800
-# TOTAL: 112394
+# UPDATED: 2026-07-06 04:01:15 +0800
+# TOTAL: 112393
 payload:
   - '+.battlenet.com.cn'
   - '+.blizzard.cn'
@@ -32814,7 +32814,6 @@ payload:
   - '+.embryochina.com'
   - '+.embsky.com'
   - '+.emby.men'
-  - '+.emby.yun'
   - '+.embyvip.org'
   - '+.emcbj.com'
   - '+.emcdir.com'

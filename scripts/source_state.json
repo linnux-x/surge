@@ -73,7 +73,7 @@
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All_No_Resolve.list": {
     "content_length": "51402",
-    "etag": "\"71960a738bcabc1226784446d612b8f7d7e24dde0913437695b7da930f6300a6\"",
+    "etag": "\"9270f268f2a2fc8301889a24cc45d04e198814171f28560fd5a6bd93548e7e2e\"",
     "last_modified": null,
     "source_available": true
   },
@@ -84,8 +84,8 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMaxNoIP/ChinaMaxNoIP_Domain.list": {
-    "content_length": "1532884",
-    "etag": "\"a61ce644db05f2ba453872a092a74c375d5aed4cdba26ca3f0676c1372057bd8\"",
+    "content_length": "1532874",
+    "etag": "\"244b4c4debd4be99d8b21b2a6b6859b1da6d7c7b3a17368d05b97e9d1d60bea6\"",
     "last_modified": null,
     "source_available": true
   },
@@ -115,13 +115,13 @@
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list": {
     "content_length": "19223",
-    "etag": "\"25a51662cc9d395f22e67554580fa2ecdac3aa2841a4de63d1a0cce0392ef62d\"",
+    "etag": "\"94cc8a8e4d3da700815cda92b00add0b0b17cc3b50479a8cdd8781af6fe002b8\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_All_No_Resolve.list": {
-    "content_length": "1001999",
-    "etag": "\"7e795dd78f95458f2dc53ec9fe51a45367961b1064e76d5b3ad93945276f5b82\"",
+    "content_length": "1002086",
+    "etag": "\"18ac4b13633bec9327f53d1b463e11e6156917bc902bb852af33a763b4f900b6\"",
     "last_modified": null,
     "source_available": true
   },
@@ -216,8 +216,8 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/domestic.conf": {
-    "content_length": null,
-    "etag": "W/\"b33475de3949c7bdebe58e4e111b15ea\"",
+    "content_length": "22545",
+    "etag": "\"b33475de3949c7bdebe58e4e111b15ea\"",
     "last_modified": null,
     "source_available": true
   },
