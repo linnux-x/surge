@@ -50,7 +50,6 @@ payload:
   - 'DOMAIN-SUFFIX,notebooklm.google'
   - 'DOMAIN-SUFFIX,notebooklm.google.com'
   - 'DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com'
-  - 'URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+'
   - 'DOMAIN,trae-api-sg.mchost.guru'
   - 'DOMAIN,api.githubcopilot.com'
   - 'DOMAIN-SUFFIX,githubcopilot.com'

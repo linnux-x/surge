@@ -22,7 +22,6 @@ payload:
   - 'PROCESS-NAME,WebTorrent Helper'
   - 'PROCESS-NAME,amuled'
   - 'PROCESS-NAME,BaiduNetdisk_mac'
-  - 'URL-REGEX,^http://(.+)\.gvt\d\.com/edgedl'
   - 'DOMAIN-SUFFIX,cloud-object-storage.appdomain.cloud'
   - 'DOMAIN-SUFFIX,cloudflarestorage.com'
   - 'DOMAIN-SUFFIX,r2.dev'

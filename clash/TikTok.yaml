@@ -31,5 +31,4 @@ payload:
   - 'DOMAIN-SUFFIX,ttwebview.com'
   - 'DOMAIN-KEYWORD,musical.ly'
   - 'DOMAIN-KEYWORD,tiktok'
-  - 'USER-AGENT,TikTok*'
   - 'PROCESS-NAME,com.zhiliaoapp.musically'

@@ -85,5 +85,3 @@ payload:
   - 'DOMAIN-SUFFIX,azurestackhubuat.download.prss.microsoft.com'
   - 'DOMAIN-SUFFIX,mpnbenefitsrtluat.download.prss.microsoft.com'
   - 'DOMAIN-SUFFIX,storecorefulfillment.download.prss.microsoft.com'
-  - 'URL-REGEX,^http://www\.microsoft\.com/pki/'
-  - 'URL-REGEX,^http://www\.microsoft\.com/pkiops/'

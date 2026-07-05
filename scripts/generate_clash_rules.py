@@ -25,6 +25,16 @@ from pathlib import Path
 RULE_DIR = Path("Rule")
 CLASH_DIR = Path("clash")
 
+# Surge-only rule types that mihomo/Clash cannot evaluate at all. USER-AGENT
+# matches the HTTP User-Agent header and URL-REGEX matches full request URLs;
+# neither concept exists in Clash/mihomo, so such rules would be silently
+# ignored and only bloat the payload. We drop them from the generated Clash
+# providers while keeping them in the canonical Surge Rule/*.list.
+CLASH_UNSUPPORTED_TYPES = {
+    "URL-REGEX",
+    "USER-AGENT",
+}
+
 # Clash Premium supports the core types. mihomo supports a broader superset such
 # as DOMAIN-WILDCARD and IP-ASN. We preserve them rather than silently dropping
 # rules, and emit a summary so compatibility-sensitive users can audit them.
@@ -32,8 +42,6 @@ MIHOMO_ONLY_OR_COMPAT_TYPES = {
     "DOMAIN-WILDCARD",
     "IP-ASN",
     "PROCESS-NAME",
-    "URL-REGEX",
-    "USER-AGENT",
 }
 
 # Large domain-heavy sources additionally get a mihomo `behavior: domain` export
@@ -63,6 +71,9 @@ def parse_surge_file(path: Path) -> tuple[list[str], list[str]]:
         if line.startswith("#"):
             if HEADER_RE.match(line):
                 comments.append(line)
+            continue
+        rule_type = line.split(",", 1)[0].strip()
+        if rule_type in CLASH_UNSUPPORTED_TYPES:
             continue
         rules.append(line)
 
