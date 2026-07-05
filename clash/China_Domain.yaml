@@ -1,6 +1,6 @@
 # Generated from Rule/China.list (DOMAIN/DOMAIN-SUFFIX entries only)
 # Format: Clash/mihomo rule-provider, behavior: domain
-# UPDATED: 2026-07-06 04:01:15 +0800
+# UPDATED: 2026-07-06 06:16:04 +0800
 # TOTAL: 112393
 payload:
   - '+.battlenet.com.cn'

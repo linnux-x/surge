@@ -1,17 +1,22 @@
 {
-  "generated_at": "2026-07-06T05:01:16.596668",
-  "total_added": 4,
-  "total_removed": 2,
+  "generated_at": "2026-07-05T22:16:08.045135",
+  "total_added": 1,
+  "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
     {
       "file": "AI.list",
       "prev_total": 166,
-      "curr_total": 166,
-      "added_count": 0,
+      "curr_total": 167,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "c058d4c343da",
+          "source": "Rabbit-Spec AIGC"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -50,18 +55,13 @@
     },
     {
       "file": "China.list",
-      "prev_total": 112435,
+      "prev_total": 112434,
       "curr_total": 112434,
       "added_count": 0,
-      "removed_count": 1,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "075a3cf3049a",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -121,35 +121,13 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 29700,
+      "prev_total": 29703,
       "curr_total": 29703,
-      "added_count": 4,
-      "removed_count": 1,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "3af24b86dd57",
-          "source": "blackmatrix7 Global"
-        },
-        {
-          "id": "622faffd13ad",
-          "source": "blackmatrix7 Global"
-        },
-        {
-          "id": "855339e05d7e",
-          "source": "blackmatrix7 Global"
-        },
-        {
-          "id": "96c9f6104d50",
-          "source": "blackmatrix7 Global"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "e23c29925313",
-          "source": "blackmatrix7 Global"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {

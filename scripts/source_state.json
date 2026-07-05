@@ -18,20 +18,20 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
-    "content_length": "4031",
-    "etag": "\"e0b639ab037aaee3efa47354e3605ccdb763128c0429466748208fea0757e384\"",
+    "content_length": "4065",
+    "etag": "\"1e1d75e3383895e14b34548de7d9aa4b5d062b69e39109b87ff614c8053d1fd3\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
     "content_length": "101025",
-    "etag": "\"73e2d4feb0a32e17d8796bda08822883ed39592dbbe81a77f89beacf52a6faf8\"",
+    "etag": "\"28e9199d8e4ede64f7786e08d3d493901b88092b6d81306a42148ca821a9a5a9\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/ChinaCIDR.list": {
     "content_length": "139562",
-    "etag": "\"b04bafe212c9cd44ffece3c246d98c7cf1962142fb37da7cab1fa62fe501a15f\"",
+    "etag": "\"8e22dace41aab15122ab4cbb6edc23b4c45d7b84e7098496e41012098676ce17\"",
     "last_modified": null,
     "source_available": true
   },
@@ -198,8 +198,8 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/domainset/apple_cdn.conf": {
-    "content_length": null,
-    "etag": "W/\"6d80cc004813ccfcedab7f68cc8f320b\"",
+    "content_length": "4538",
+    "etag": "\"6d80cc004813ccfcedab7f68cc8f320b\"",
     "last_modified": null,
     "source_available": true
   },
@@ -210,8 +210,8 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/apple_cn.conf": {
-    "content_length": null,
-    "etag": "W/\"592b2157dd38e36b3b328639b2c1349d\"",
+    "content_length": "766",
+    "etag": "\"592b2157dd38e36b3b328639b2c1349d\"",
     "last_modified": null,
     "source_available": true
   },
@@ -222,8 +222,8 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf": {
-    "content_length": null,
-    "etag": "W/\"da0fb856533fa44a8ef205c13c057992\"",
+    "content_length": "3215",
+    "etag": "\"da0fb856533fa44a8ef205c13c057992\"",
     "last_modified": null,
     "source_available": true
   }
