@@ -1,7 +1,7 @@
 # Generated from Rule/Download.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-04 10:40:52 +0800
-# TOTAL: 1698
+# UPDATED: 2026-07-07 04:02:16 +0800
+# TOTAL: 1699
 payload:
   - 'PROCESS-NAME,aria2c'
   - 'PROCESS-NAME,fdm'
@@ -280,6 +280,7 @@ payload:
   - 'DOMAIN,packages.microsoft.com'
   - 'DOMAIN,cdn.powershellgallery.com'
   - 'DOMAIN,edgeupdates.microsoft.com'
+  - 'DOMAIN,desktop.figma.com'
   - 'DOMAIN,msdl.microsoft.com'
   - 'DOMAIN,download-core.sys.truenas.net'
   - 'DOMAIN,dl-portal.iina.io'

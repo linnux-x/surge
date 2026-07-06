@@ -1,5 +1,5 @@
 # Surge Rule Diff Report
-Generated: 2026-07-05T22:16:08.045135
+Generated: 2026-07-07T05:02:17.862456
 
 ## Summary
 
@@ -14,11 +14,11 @@ Generated: 2026-07-05T22:16:08.045135
 
 | File | Prev | Curr | Added | Removed | Source Δ |
 |------|------|------|-------|---------|----------|
-| AI.list | 166 | 167 | +1 | -0 | ~0 |
+| Download.list | 1698 | 1699 | +1 | -0 | ~0 |
 
-## AI.list
+## Download.list
 
 **Added: 1** (showing first 1)
 ```
-  + [Rabbit-Spec AIGC] c058d4c343da
+  + [SukkaW Download] fe9b69a0b33c
 ```

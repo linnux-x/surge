@@ -1,9 +1,9 @@
 # NAME: Download
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-07-04 10:40:52 +0800
+# UPDATED: 2026-07-07 04:02:16 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1698
+# TOTAL: 1699
 
 # ======= Manual Rules ========
 # Borrowed from SukkaW non_ip/direct downloader process rules
@@ -289,6 +289,7 @@ DOMAIN,ctldl.windowsupdate.com
 DOMAIN,packages.microsoft.com
 DOMAIN,cdn.powershellgallery.com
 DOMAIN,edgeupdates.microsoft.com
+DOMAIN,desktop.figma.com
 DOMAIN,msdl.microsoft.com
 DOMAIN,download-core.sys.truenas.net
 DOMAIN,dl-portal.iina.io
