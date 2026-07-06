@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-07T05:02:17.862456",
-  "total_added": 1,
+  "generated_at": "2026-07-06T22:40:33.810321",
+  "total_added": 0,
   "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
@@ -94,17 +94,12 @@
     },
     {
       "file": "Download.list",
-      "prev_total": 1698,
+      "prev_total": 1699,
       "curr_total": 1699,
-      "added_count": 1,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "fe9b69a0b33c",
-          "source": "SukkaW Download"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
