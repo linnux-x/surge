@@ -1,6 +1,6 @@
 # Generated from Rule/GlobalMedia.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-07 23:14:36 +0800
+# UPDATED: 2026-07-08 04:00:39 +0800
 # TOTAL: 2262
 payload:
   - 'DOMAIN-SUFFIX,p-bstarstatic.akamaized.net'
