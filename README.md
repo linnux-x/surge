@@ -11,7 +11,7 @@
 - 🎯 **目标用户**：Surge 用户（iPhone / MacBook），需要精细化代理分流与规则管理
 - 💡 **核心价值**：多上游源自动聚合 → 清洗校验 → 清单追踪 → 联网审计，全链路自动化
 - 📜 **许可证**：MIT
-- 🔄 **更新频率**：每日北京时间 05:00 自动同步
+- 🔄 **更新频率**：本地 agent 每日自动同步（约北京时间 04:00）
 - 🧪 **质量保障**：每次更新须通过 5 项联网审查 + 15+ 项不变量校验
 - 📦 **零依赖**：所有脚本仅使用 Python 3.10+ 标准库，无需 pip install
 
@@ -29,7 +29,7 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 
 | 痛点 | 解决方式 |
 |------|----------|
-| 🔄 上游规则频繁更新 | GitHub Actions **每日自动同步** 6+ 上游源 |
+| 🔄 上游规则频繁更新 | 本地 agent **每日自动同步** 6+ 上游源（跑同一套流水线脚本） |
 | 🧹 规则污染 / 残留 | 每次重新生成，不保留旧文件作为 baseline |
 | 📊 变更不可追溯 | **清单索引系统**：每条规则有 12 字符稳定哈希 + 来源标注 |
 | ⚠️ 共享基础设施混入 | 自动检测并排除 cookielaw / sentry / newrelic 等第三方平台 |
@@ -140,8 +140,8 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 
 | 方式 | 说明 |
 |------|------|
-| ⏰ **定时触发** | 每天北京时间 05:00 自动同步 |
-| 🖐 **手动触发** | GitHub Actions 页面点击 Run workflow |
+| 🤖 **每日同步** | 本地 agent 每日（约北京时间 04:00）运行同一套流水线脚本并推送 |
+| 🖐 **手动触发** | GitHub Actions 页面点击 Run workflow（全量重新生成 + 发布门禁） |
 | ⌨️ **CLI 触发** | `gh workflow run auto-rules.yml` |
 
 ### 完整流程
@@ -257,7 +257,7 @@ python3 scripts/test_routing_order.py   # 路由顺序模拟测试
 
 1. **导入托管配置** → 使用 `Conf/Linnux.conf`，首行已包含 Surge `#!MANAGED-CONFIG`，默认每日检查更新
 2. **添加自己的订阅** → 将 `[Proxy Group]` 中 `✈️ 我的节点` 的 `policy-path=你的订阅地址` 改为自己的订阅地址
-3. **启用自动更新** → Fork 仓库，GitHub Actions 自动更新 `Rule/*.list` 与托管配置引用的规则集
+3. **保持规则更新** → 本仓库规则每日由维护者的 agent 流水线自动更新，托管配置引用的 `Rule/*.list` 无需你做任何操作
 
 托管配置地址：
 
@@ -294,11 +294,12 @@ gh workflow run auto-rules.yml --repo linnux-x/surge
 
 **不适合：** 只需要几条静态规则的用户；使用非 Surge 客户端的用户（规则格式为 Surge 专用）。
 
-**Fork 后三步适配：**
+**Fork 后适配：**
 
 1. 修改 `.github/workflows/auto-rules.yml` 中的 `REPO_URL` 和 `AUTHOR_NAME` 环境变量为你的仓库
 2. 在仓库 Settings → Actions → General → Workflow permissions 中选择「Read and write permissions」
 3. 按需在 `Rule/Manual/` 中添加自己的追加和排除规则
+4. 本仓库的 workflow 仅手动触发（每日同步由维护者本地 agent 负责）；如需定时自动更新，在 `auto-rules.yml` 的 `on:` 中自行加回 `schedule` 触发器，例如 `cron: "23 21 * * *"`
 
 **保持同步上游：** `git remote add upstream https://github.com/linnux-x/surge.git` 后定期 `git fetch upstream && git merge upstream/main`
 
