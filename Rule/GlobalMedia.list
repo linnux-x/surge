@@ -1,9 +1,9 @@
 # NAME: GlobalMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-07-07 06:40:33 +0800
+# UPDATED: 2026-07-07 23:14:36 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 2277
+# TOTAL: 2262
 
 # ======= Manual Rules ========
 # Bilibili international / B-Star
@@ -135,7 +135,6 @@ DOMAIN-SUFFIX,bravotv.com
 DOMAIN-SUFFIX,braze.com
 DOMAIN-SUFFIX,bstarstatic.com
 DOMAIN-SUFFIX,bucketeer.jp
-DOMAIN-SUFFIX,byspotify.com
 DOMAIN-SUFFIX,c4assets.com
 DOMAIN-SUFFIX,cabletv.com.hk
 DOMAIN-SUFFIX,callhulu.com
@@ -937,16 +936,6 @@ DOMAIN-SUFFIX,speedfantasybid.com
 DOMAIN-SUFFIX,speedracegear.com
 DOMAIN-SUFFIX,speedxtra.com
 DOMAIN-SUFFIX,spoti.fi
-DOMAIN-SUFFIX,spotify-everywhere.com
-DOMAIN-SUFFIX,spotify.com
-DOMAIN-SUFFIX,spotify.design
-DOMAIN-SUFFIX,spotifycdn.com
-DOMAIN-SUFFIX,spotifycdn.net
-DOMAIN-SUFFIX,spotifycharts.com
-DOMAIN-SUFFIX,spotifycodes.com
-DOMAIN-SUFFIX,spotifyforbrands.com
-DOMAIN-SUFFIX,spotifyjobs.com
-DOMAIN-SUFFIX,spotifynewsroom.jp
 DOMAIN-SUFFIX,spotilocal.com
 DOMAIN-SUFFIX,star-brasil.com
 DOMAIN-SUFFIX,star-latam.com
@@ -973,7 +962,6 @@ DOMAIN-SUFFIX,thisispolaris.com
 DOMAIN-SUFFIX,tidal.com
 DOMAIN-SUFFIX,tidalhifi.com
 DOMAIN-SUFFIX,timestalks.com
-DOMAIN-SUFFIX,tospotify.com
 DOMAIN-SUFFIX,ttvnw.net
 DOMAIN-SUFFIX,tv.apple.com
 DOMAIN-SUFFIX,tvb.com
@@ -1284,7 +1272,6 @@ DOMAIN-KEYWORD,nivod
 DOMAIN-KEYWORD,nowtv100
 DOMAIN-KEYWORD,olevod
 DOMAIN-KEYWORD,rthklive
-DOMAIN-KEYWORD,spotify
 DOMAIN-KEYWORD,ttvnw
 DOMAIN-KEYWORD,tvbanywhere
 DOMAIN-KEYWORD,uk-live
@@ -2214,7 +2201,6 @@ IP-CIDR6,2620:10c:7000::/44,no-resolve
 IP-CIDR6,2620:120:e000::/40,no-resolve
 IP-CIDR6,2a00:86c0::/32,no-resolve
 IP-CIDR6,2a03:5640::/32,no-resolve
-USER-AGENT,*Spotify*
 USER-AGENT,AbemaTV*
 USER-AGENT,All4*
 USER-AGENT,Anime*
@@ -2259,7 +2245,6 @@ USER-AGENT,PeacockMobile*
 USER-AGENT,Prime%20Video*
 USER-AGENT,PrimeVideo*
 USER-AGENT,SoundCloud*
-USER-AGENT,Spotify*
 USER-AGENT,TIDAL*
 USER-AGENT,TIDAL*dia
 USER-AGENT,TVer-Release*

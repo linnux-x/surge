@@ -100,6 +100,15 @@ def check_upstream_vs_generated(
             continue
         gen_count = len(non_comment_rules(list_path))
 
+        # Manual append rules (Rule/Manual/<name>.txt) are merged into the
+        # generated file on top of upstream content. Subtract them before the
+        # ratio comparison, otherwise every file with manual additions
+        # permanently exceeds its upstream count and warns on every run.
+        manual_file = MANUAL_DIR / f"{target.rsplit('.', 1)[0]}.txt"
+        if manual_file.is_file():
+            manual_count = len(non_comment_rules(manual_file))
+            gen_count = max(gen_count - manual_count, 0)
+
         upstream_total = 0
         for url in urls:
             content = contents.get(url)
