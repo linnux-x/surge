@@ -3,10 +3,11 @@
 
 name: Auto-Surge-Rules
 
+# Daily sync is owned by the local agent pipeline, which runs the same
+# scripts and pushes directly (~04:00 Beijing). This workflow is kept for
+# manual runs and the dry-run/fingerprint publishing gate only — running
+# both on a schedule doubled the daily commits and repo churn.
 on:
-  schedule:
-    # 05:23 Beijing / 06:23 JST (21:23 UTC) every day; avoid top-of-hour queue spikes
-    - cron: "23 21 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -29,7 +30,6 @@ on:
 permissions:
   contents: write
   actions: read
-  issues: write
 
 concurrency:
   group: auto-surge-rules
@@ -39,9 +39,8 @@ jobs:
   update-rules:
     if: github.repository == 'linnux-x/surge'
     runs-on: ubuntu-latest
-    # workflow_dispatch can trigger a full regeneration of all rulesets, which
-    # needs more headroom than an incremental daily run.
-    timeout-minutes: ${{ github.event_name == 'workflow_dispatch' && 20 || 10 }}
+    # Manual dispatch triggers a full regeneration of all rulesets.
+    timeout-minutes: 20
 
     env:
       RULE_DIR: Rule
@@ -265,18 +264,3 @@ jobs:
           if-no-files-found: error
           retention-days: 14
 
-      - name: Open Issue on Scheduled Failure
-        if: ${{ failure() && github.event_name == 'schedule' }}
-        env:
-          GH_TOKEN: ${{ github.token }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          title="Auto-Surge-Rules scheduled run failed"
-          if gh issue list --state open --search "$title in:title" --json number --jq '.[0].number' | grep -q .; then
-            echo "Existing open failure issue found; not creating a duplicate."
-            exit 0
-          fi
-          gh issue create \
-            --title "$title" \
-            --body "Scheduled Auto-Surge-Rules failed. Run: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
