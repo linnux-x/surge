@@ -1,12 +1,18 @@
 #!/usr/bin/env python3
 """Report cross-file domain conflicts for Surge rulesets.
 
-Monthly review helper: find the same domain value appearing in multiple .list
+Manual review helper: find the same domain value appearing in multiple .list
 files whose policies differ in Conf/Linnux.conf first-match order.
+
+Usage:
+    cross_file_conflicts.py            → full per-domain report (up to 100)
+    cross_file_conflicts.py --summary  → compact winner/loser pair counts
+                                          (used as an informational CI step)
 """
 from __future__ import annotations
 
 import re
+import sys
 from collections import defaultdict
 from pathlib import Path
 
@@ -70,9 +76,8 @@ def load_domain_index() -> dict[str, list[tuple[str, str, str]]]:
     return index
 
 
-def main() -> int:
-    policy_order = load_policy_order()
-    domain_index = load_domain_index()
+def collect_conflicts(policy_order, domain_index):
+    """Return the sorted conflict list shared by both output modes."""
     conflicts: list[tuple[int, str, list[tuple[str, str, str, str]]]] = []
 
     for domain, entries in domain_index.items():
@@ -93,6 +98,39 @@ def main() -> int:
         conflicts.append((risk_bonus + min_order, domain, enriched))
 
     conflicts.sort(key=lambda item: (item[0], item[1]))
+    return conflicts
+
+
+def print_summary(policy_order, conflicts) -> None:
+    """Aggregate conflicts into winner→losers pair counts (full data set)."""
+    pair_counts: dict[tuple[str, tuple[str, ...]], int] = defaultdict(int)
+    for _rank, _domain, entries in conflicts:
+        ordered = sorted(entries, key=lambda item: policy_order.get(item[0], (9999, ""))[0])
+        winner = ordered[0][0]
+        losers = tuple(sorted({f for f, _p, _t, _r in ordered[1:] if f != winner}))
+        pair_counts[(winner, losers)] += 1
+
+    print("### Cross-file Policy Conflicts — Summary")
+    print()
+    print(f"Total conflicting domains: {len(conflicts)}")
+    print()
+    print("| count | effective (first match) | shadowed entries in |")
+    print("|---:|---|---|")
+    for (winner, losers), n in sorted(pair_counts.items(), key=lambda kv: -kv[1]):
+        print(f"| {n} | `{winner}` | {', '.join(f'`{l}`' for l in losers)} |")
+    print()
+    print("_Informational only — shadowed duplicates never match and are harmless;_")
+    print("_use the full report and Rule/Manual/*.exclude.txt to retire them._")
+
+
+def main() -> int:
+    policy_order = load_policy_order()
+    domain_index = load_domain_index()
+    conflicts = collect_conflicts(policy_order, domain_index)
+
+    if "--summary" in sys.argv:
+        print_summary(policy_order, conflicts)
+        return 0
 
     print("### Cross-file Policy Conflicts")
     print()

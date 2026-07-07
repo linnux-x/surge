@@ -93,3 +93,22 @@ DOMAIN-KEYWORD,tiktokcdn
 
 # Speedtest endpoint belongs to Speedtest.list, which is evaluated before GlobalMedia.list
 DOMAIN-SUFFIX,speed.hinet.net
+
+# Spotify belongs to Spotify.list, which is evaluated before GlobalMedia.list.
+# All entries below are covered there (the broader USER-AGENT,*Spotify* moved
+# to Rule/Manual/Spotify.txt), so these would be dead first-match duplicates.
+DOMAIN-SUFFIX,byspotify.com
+DOMAIN-SUFFIX,spotify-everywhere.com
+DOMAIN-SUFFIX,spotify.com
+DOMAIN-SUFFIX,spotify.design
+DOMAIN-SUFFIX,spotifycdn.com
+DOMAIN-SUFFIX,spotifycdn.net
+DOMAIN-SUFFIX,spotifycharts.com
+DOMAIN-SUFFIX,spotifycodes.com
+DOMAIN-SUFFIX,spotifyforbrands.com
+DOMAIN-SUFFIX,spotifyjobs.com
+DOMAIN-SUFFIX,spotifynewsroom.jp
+DOMAIN-SUFFIX,tospotify.com
+DOMAIN-KEYWORD,spotify
+USER-AGENT,*Spotify*
+USER-AGENT,Spotify*

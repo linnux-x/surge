@@ -1,0 +1,4 @@
+# Broader UA fallback than upstream's USER-AGENT,Spotify* — catches clients
+# whose UA embeds the name mid-string (e.g. com.spotify.*). Moved here from
+# GlobalMedia.list so all Spotify traffic resolves to the Spotify group.
+USER-AGENT,*Spotify*

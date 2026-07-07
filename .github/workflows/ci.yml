@@ -27,3 +27,5 @@ jobs:
         run: python3 scripts/generate_clash_rules.py --check --validate
       - name: Test Routing Order
         run: python3 scripts/test_routing_order.py
+      - name: Cross-file Conflict Summary (informational)
+        run: python3 scripts/cross_file_conflicts.py --summary
