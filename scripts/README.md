@@ -62,8 +62,9 @@ python3 scripts/validate_surge_repo.py
 # 6. 联网审计
 python3 scripts/audit_rules.py
 
-# 7. 查看跨文件策略冲突（月报同款输出）
+# 7. 查看跨文件策略冲突（--summary 为 CI 信息性输出同款）
 python3 scripts/cross_file_conflicts.py
+python3 scripts/cross_file_conflicts.py --summary
 
 # 测试路由顺序
 python3 scripts/test_routing_order.py

@@ -109,7 +109,8 @@ def generate_manifests() -> int:
 
 def git_show_previous(manifest_path: Path) -> dict[str, str] | None:
     """Load previous manifest from git HEAD as {id: source}."""
-    rel = manifest_path.relative_to(ROOT)
+    # as_posix(): git object paths always use forward slashes, even on Windows
+    rel = manifest_path.relative_to(ROOT).as_posix()
     try:
         result = subprocess.run(
             ["git", "show", f"HEAD:{rel}"],
@@ -142,6 +143,29 @@ def load_current_manifest(manifest_path: Path) -> dict[str, str]:
     return data
 
 
+def rule_text_map(list_text: str) -> dict[str, str]:
+    """Map stable_id → rule text, so diff samples are human-readable
+    (a bare 12-char hash cannot be reversed to the rule it stands for)."""
+    mapping: dict[str, str] = {}
+    for _source, rules in parse_source_sections(list_text):
+        for rule in rules:
+            mapping.setdefault(stable_id(rule), rule)
+    return mapping
+
+
+def git_show_text(rel_path: str) -> str | None:
+    """Return a file's content at git HEAD, or None if unavailable."""
+    try:
+        result = subprocess.run(
+            ["git", "show", f"HEAD:{rel_path}"],
+            capture_output=True, text=True, timeout=10,
+            cwd=str(ROOT), check=False,
+        )
+        return result.stdout if result.returncode == 0 else None
+    except (FileNotFoundError, subprocess.TimeoutExpired):
+        return None
+
+
 def diff_manifests() -> int:
     """Compare current manifests vs git HEAD and produce diff reports."""
     now = datetime.now().isoformat()
@@ -160,6 +184,14 @@ def diff_manifests() -> int:
 
         target_name = f"{mf.stem}.list"
 
+        # Resolve sample IDs to rule text (current file for additions,
+        # git HEAD for removals)
+        list_path = RULE_DIR / target_name
+        curr_rules = rule_text_map(
+            list_path.read_text(encoding="utf-8", errors="replace")
+        ) if list_path.exists() else {}
+        prev_rules = rule_text_map(git_show_text(f"Rule/{target_name}") or "")
+
         if prev is None:
             added_ids = set(curr.keys())
             removed_ids: set[str] = set()
@@ -176,11 +208,14 @@ def diff_manifests() -> int:
             ]
 
         added = sorted(
-            [{"id": sid, "source": curr[sid]} for sid in added_ids],
+            [{"id": sid, "source": curr[sid], "rule": curr_rules.get(sid, "")}
+             for sid in added_ids],
             key=lambda x: x["id"],
         )
         removed = sorted(
-            [{"id": sid, "source": prev[sid] if prev else ""} for sid in removed_ids],
+            [{"id": sid, "source": prev[sid] if prev else "",
+              "rule": prev_rules.get(sid, "")}
+             for sid in removed_ids],
             key=lambda x: x["id"],
         )
 
@@ -243,7 +278,7 @@ def diff_manifests() -> int:
             lines.append(f"**Added: {d['added_count']}** (showing first {min(d['added_count'], 100)})")
             lines.append("```")
             for r in d["added_sample"]:
-                lines.append(f"  + [{r['source']}] {r['id']}")
+                lines.append(f"  + [{r['source']}] {r['id']}  {r.get('rule', '')}".rstrip())
             if d["added_count"] > 100:
                 lines.append(f"  ... and {d['added_count'] - 100} more")
             lines.append("```")
@@ -252,7 +287,7 @@ def diff_manifests() -> int:
             lines.append(f"**Removed: {d['removed_count']}** (showing first {min(d['removed_count'], 100)})")
             lines.append("```")
             for r in d["removed_sample"]:
-                lines.append(f"  - [{r['source']}] {r['id']}")
+                lines.append(f"  - [{r['source']}] {r['id']}  {r.get('rule', '')}".rstrip())
             if d["removed_count"] > 100:
                 lines.append(f"  ... and {d['removed_count'] - 100} more")
             lines.append("```")

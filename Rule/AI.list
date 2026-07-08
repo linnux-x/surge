@@ -1,9 +1,9 @@
 # NAME: AI
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-07-07 06:40:28 +0800
+# UPDATED: 2026-07-08 18:04:17 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 167
+# TOTAL: 138
 
 # ======= Manual Rules ========
 # Anthropic / Claude
@@ -24,20 +24,14 @@ DOMAIN,servd-anthropic-website.b-cdn.net
 DOMAIN,ai.google.dev
 DOMAIN,aida.googleapis.com
 DOMAIN,aiplatform.googleapis.com
-DOMAIN,aistudio.google.com
 DOMAIN,aisandbox-pa.googleapis.com
-DOMAIN,alkalicore-pa.clients6.google.com
 DOMAIN,antigravity.google
 DOMAIN,antigravity-pa.googleapis.com
 DOMAIN,antigravity-unleash.goog
 DOMAIN,antigravity.googleapis.com
 DOMAIN,daily-cloudcode-pa.googleapis.com
-DOMAIN,gemini.google.com
-DOMAIN,generativelanguage.googleapis.com
 DOMAIN,jules.google.com
-DOMAIN,makersuite.google.com
 DOMAIN,notebooklm-pa.googleapis.com
-DOMAIN,notebooklm.google.com
 DOMAIN,notebooklm.googleapis.com
 DOMAIN,robinfrontend-pa.googleapis.com
 DOMAIN,vertexai.googleapis.com
@@ -62,7 +56,6 @@ URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+
 DOMAIN,trae-api-sg.mchost.guru
 
 # GitHub Copilot
-DOMAIN,api.githubcopilot.com
 DOMAIN-SUFFIX,githubcopilot.com
 
 # Microsoft Copilot / Bing Chat
@@ -96,7 +89,6 @@ DOMAIN,api.github.com
 DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,x.ai
 DOMAIN,api.jetbrains.ai
-DOMAIN,openrouter.ai
 
 # ======= SukkaW Apple Intelligence ========
 DOMAIN,apple-relay.fastly-edge.com
@@ -117,31 +109,18 @@ DOMAIN,openaicomproductionae4b.blob.core.windows.net
 DOMAIN,production-openaicom-storage.azureedge.net
 DOMAIN,static.cloudflareinsights.com
 DOMAIN-SUFFIX,algolia.net
-DOMAIN-SUFFIX,android.chat.openai.com
 DOMAIN-SUFFIX,api.statsig.com
-DOMAIN-SUFFIX,app.launchdarkly.com
-DOMAIN-SUFFIX,auth.openai.com
-DOMAIN-SUFFIX,auth0.com
-DOMAIN-SUFFIX,auth0.openai.com
-DOMAIN-SUFFIX,cdn.workos.com
 DOMAIN-SUFFIX,challenges.cloudflare.com
-DOMAIN-SUFFIX,chat.openai.com
 DOMAIN-SUFFIX,chatgpt.livekit.cloud
 DOMAIN-SUFFIX,client-api.arkoselabs.com
 DOMAIN-SUFFIX,clients6.google.com
-DOMAIN-SUFFIX,clientstream.launchdarkly.com
 DOMAIN-SUFFIX,ct.sendgrid.net
-DOMAIN-SUFFIX,desktop.chat.openai.com
-DOMAIN-SUFFIX,events.launchdarkly.com
 DOMAIN-SUFFIX,events.statsigapi.net
 DOMAIN-SUFFIX,featureassets.org
 DOMAIN-SUFFIX,featuregates.org
-DOMAIN-SUFFIX,forwarder.workos.com
 DOMAIN-SUFFIX,host.livekit.cloud
 DOMAIN-SUFFIX,identrust.com
 DOMAIN-SUFFIX,images.workoscdn.com
-DOMAIN-SUFFIX,ios.chat.openai.com
-DOMAIN-SUFFIX,js.stripe.com
 DOMAIN-SUFFIX,launchdarkly.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,observeit.net
@@ -149,10 +128,7 @@ DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,openaicom.imgix.net
 DOMAIN-SUFFIX,prodregistryv2.org
 DOMAIN-SUFFIX,rum.browser-intake-datadoghq.com
-DOMAIN-SUFFIX,setup.auth.openai.com
-DOMAIN-SUFFIX,setup.workos.com
 DOMAIN-SUFFIX,stripe.com
-DOMAIN-SUFFIX,tcr9i.chat.openai.com
 DOMAIN-SUFFIX,turn.livekit.cloud
 DOMAIN-SUFFIX,workos.com
 DOMAIN-SUFFIX,workos.imgix.net
@@ -168,8 +144,6 @@ IP-CIDR6,2607:6BC0::/32,no-resolve
 DOMAIN-SUFFIX,smoot.apple.com
 DOMAIN-SUFFIX,gateway.icloud.com
 DOMAIN,guzzoni.apple.com
-DOMAIN,api.statsig.com
-DOMAIN,openaiapi-site.azureedge.net
 DOMAIN-KEYWORD,openaiapi
 DOMAIN-KEYWORD,openaicom
 DOMAIN-SUFFIX,openrouter.ai
@@ -178,13 +152,10 @@ DOMAIN-SUFFIX,cursor.com
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cursorapi.com
 DOMAIN-SUFFIX,zed.dev
-DOMAIN,alkalimakersuite-pa.clients6.google.com
-DOMAIN,bard.google.com
 DOMAIN-KEYWORD,notebooklm.google
 DOMAIN-KEYWORD,labs.google
 DOMAIN-SUFFIX,grazie.ai
 DOMAIN,imagine.meta.com
-DOMAIN,copilot.microsoft.com
 DOMAIN,www.bing.com
 DOMAIN-SUFFIX,pplx.ai
 DOMAIN,pplx-res.cloudinary.com

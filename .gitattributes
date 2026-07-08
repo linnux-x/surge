@@ -1,0 +1,4 @@
+# Normalize all text files to LF in the repository regardless of each
+# contributor's core.autocrlf setting (the daily agent commits from Linux,
+# interactive maintenance may commit from Windows).
+* text=auto

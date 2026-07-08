@@ -39,8 +39,11 @@ SHARED_CDN_PARENTS = {
     "edgekey.net", "edgesuite.net", "fastly.net",
 }
 
-# Shared telemetry / consent platforms: never valid as service rules.
+# Shared telemetry / consent / identity platforms: never valid as whole-domain
+# service rules. Service-scoped subdomains (e.g. DOMAIN,anthropic.auth0.com)
+# remain allowed.
 SHARED_THIRD_PARTY_SUFFIXES = {
+    "auth0.com",
     "cookielaw.org", "onetrust.com", "adobedtm.com",
     "braze.com", "newrelic.com", "nr-data.net",
     "optimizely.com", "segment.io", "sentry.io",

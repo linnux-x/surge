@@ -175,15 +175,13 @@ def process_ndjson(
     suffix_threshold: int,
     use_itunes: bool,
     format_type: str,
-) -> tuple[dict, dict, dict]:
+) -> tuple[dict, dict]:
     """
     处理 NDJSON 文件，返回:
       app_rules: {app_name: {domains: set, ips: set, ips_v6: set}}
-      unknown_domains: {domain: set of bundle_ids}
       stats: 统计信息
     """
     app_raw = defaultdict(lambda: {"domains": set(), "ips": set(), "ips_v6": set()})
-    unknown_domains = defaultdict(set)
     itunes_cache = {}
     stats = {
         "total_lines": 0,
@@ -305,7 +303,7 @@ def process_ndjson(
     # 跨应用域名去重 + 冲突检测
     app_rules = deduplicate_cross_app(app_rules)
 
-    return app_rules, unknown_domains, stats
+    return app_rules, stats
 
 
 def is_domain_valid(domain: str) -> bool:
@@ -521,7 +519,7 @@ def main():
 
     # 处理
     print(f"📖 解析中: {args.input}", file=sys.stderr)
-    app_rules, unknown_domains, stats = process_ndjson(
+    app_rules, stats = process_ndjson(
         args.input, mapping, args.suffix_threshold, not args.no_itunes, args.format
     )
 
