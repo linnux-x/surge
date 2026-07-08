@@ -250,9 +250,10 @@ def main() -> int:
 
         # Normalize expected: "DIRECT" could be matched by China.list→DIRECT or LAN→DIRECT or China_IP.list→DIRECT
         if expected == "DIRECT":
-            # Any match that routes to DIRECT counts
+            # Any match that routes to DIRECT counts. Strip RULE-SET options
+            # (e.g. "DIRECT,extended-matching") before comparing.
             policy = actual.split("→")[1] if "→" in actual else actual
-            success = policy == "DIRECT"
+            success = policy.split(",")[0] == "DIRECT"
         elif expected == "Global":
             # Global.list→Global or FINAL→Global
             success = matched_ruleset in ("Global.list", "FINAL")

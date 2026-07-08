@@ -1,9 +1,9 @@
 # NAME: Google
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-07-04 10:40:56 +0800
+# UPDATED: 2026-07-08 18:41:53 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 703
+# TOTAL: 692
 
 # ======= Manual Rules ========
 DOMAIN-SUFFIX,gvt1.com
@@ -63,9 +63,6 @@ DOMAIN-SUFFIX,baselinestudy.com
 DOMAIN-SUFFIX,baselinestudy.org
 DOMAIN-SUFFIX,bazel.build
 DOMAIN-SUFFIX,bdn.dev
-DOMAIN-SUFFIX,beacons.gvt2.com
-DOMAIN-SUFFIX,beacons2.gvt2.com
-DOMAIN-SUFFIX,beacons3.gvt2.com
 DOMAIN-SUFFIX,beatthatquote.com
 DOMAIN-SUFFIX,blink.org
 DOMAIN-SUFFIX,blog.google
@@ -230,7 +227,6 @@ DOMAIN-SUFFIX,g.co
 DOMAIN-SUFFIX,g.dev
 DOMAIN-SUFFIX,g.page
 DOMAIN-SUFFIX,gateway.dev
-DOMAIN-SUFFIX,gcp.gvt2.com
 DOMAIN-SUFFIX,gcr.io
 DOMAIN-SUFFIX,gerritcodereview.com
 DOMAIN-SUFFIX,get.app
@@ -605,13 +601,7 @@ DOMAIN-SUFFIX,qpx.googleflights.net
 DOMAIN-SUFFIX,questvisual.com
 DOMAIN-SUFFIX,quickoffice.com
 DOMAIN-SUFFIX,quiksee.com
-DOMAIN-SUFFIX,recaptcha-cn.net
-DOMAIN-SUFFIX,recaptcha.net
 DOMAIN-SUFFIX,redhotlabs.com
-DOMAIN-SUFFIX,redirector.gcpcdn.gvt1.com
-DOMAIN-SUFFIX,redirector.gvt1.com
-DOMAIN-SUFFIX,redirector.offline-maps.gvt1.com
-DOMAIN-SUFFIX,redirector.snap.gvt1.com
 DOMAIN-SUFFIX,registry.google
 DOMAIN-SUFFIX,revolv.com
 DOMAIN-SUFFIX,ridepenguin.com
@@ -702,7 +692,6 @@ DOMAIN-KEYWORD,appspot
 DOMAIN-KEYWORD,blogspot
 DOMAIN-KEYWORD,gmail
 DOMAIN-KEYWORD,google
-DOMAIN-KEYWORD,recaptcha
 IP-CIDR,173.194.0.0/16,no-resolve
 IP-CIDR,74.125.0.0/16,no-resolve
 USER-AGENT,%E4%BA%91%E7%AB%AF%E7%A1%AC%E7%9B%98*

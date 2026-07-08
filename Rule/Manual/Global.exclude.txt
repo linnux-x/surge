@@ -216,3 +216,25 @@ DOMAIN-SUFFIX,wifiman.ubncloud.com
 DOMAIN-SUFFIX,wifiman-stability-test.ubncloud.com
 DOMAIN,open.cachefly.net
 DOMAIN-SUFFIX,speedtest.linode.com
+
+# 2026-07 rules audit: upstream junk from bm7 Global — GFWList conversion
+# markers, a typo, hosts under the retired .adobe TLD, and internal
+# pseudo-TLD names that never resolve publicly.
+DOMAIN-SUFFIX,gfwlist.start
+DOMAIN-SUFFIX,gfwlist.end
+DOMAIN-SUFFIX,googlescholar.comusa
+DOMAIN,practivate.adobe
+DOMAIN,practivate.adobe.ipp
+DOMAIN,practivate.adobe.newoa
+DOMAIN,practivate.adobe.ntp
+DOMAIN-SUFFIX,alfabank.oavdo.amc
+DOMAIN-SUFFIX,intelnet.component
+DOMAIN-SUFFIX,if.ttt
+DOMAIN-SUFFIX,v.roucdn
+# Second-layer hijackers of China-DIRECT domains (Global is matched before
+# China.list): the keyword captured paypal.com.cn etc., the suffixes captured
+# Google's China-reachable reCAPTCHA mirrors. Unenumerated paypal/recaptcha
+# hosts still reach the proxy via FINAL - Global, so nothing is lost.
+DOMAIN-KEYWORD,paypal
+DOMAIN-SUFFIX,recaptcha-cn.net
+DOMAIN-SUFFIX,recaptcha.net

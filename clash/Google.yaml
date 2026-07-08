@@ -1,7 +1,7 @@
 # Generated from Rule/Google.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-04 10:40:56 +0800
-# TOTAL: 703
+# UPDATED: 2026-07-08 18:41:53 +0800
+# TOTAL: 692
 payload:
   - 'DOMAIN-SUFFIX,gvt1.com'
   - 'DOMAIN-SUFFIX,gvt2.com'
@@ -56,9 +56,6 @@ payload:
   - 'DOMAIN-SUFFIX,baselinestudy.org'
   - 'DOMAIN-SUFFIX,bazel.build'
   - 'DOMAIN-SUFFIX,bdn.dev'
-  - 'DOMAIN-SUFFIX,beacons.gvt2.com'
-  - 'DOMAIN-SUFFIX,beacons2.gvt2.com'
-  - 'DOMAIN-SUFFIX,beacons3.gvt2.com'
   - 'DOMAIN-SUFFIX,beatthatquote.com'
   - 'DOMAIN-SUFFIX,blink.org'
   - 'DOMAIN-SUFFIX,blog.google'
@@ -223,7 +220,6 @@ payload:
   - 'DOMAIN-SUFFIX,g.dev'
   - 'DOMAIN-SUFFIX,g.page'
   - 'DOMAIN-SUFFIX,gateway.dev'
-  - 'DOMAIN-SUFFIX,gcp.gvt2.com'
   - 'DOMAIN-SUFFIX,gcr.io'
   - 'DOMAIN-SUFFIX,gerritcodereview.com'
   - 'DOMAIN-SUFFIX,get.app'
@@ -598,13 +594,7 @@ payload:
   - 'DOMAIN-SUFFIX,questvisual.com'
   - 'DOMAIN-SUFFIX,quickoffice.com'
   - 'DOMAIN-SUFFIX,quiksee.com'
-  - 'DOMAIN-SUFFIX,recaptcha-cn.net'
-  - 'DOMAIN-SUFFIX,recaptcha.net'
   - 'DOMAIN-SUFFIX,redhotlabs.com'
-  - 'DOMAIN-SUFFIX,redirector.gcpcdn.gvt1.com'
-  - 'DOMAIN-SUFFIX,redirector.gvt1.com'
-  - 'DOMAIN-SUFFIX,redirector.offline-maps.gvt1.com'
-  - 'DOMAIN-SUFFIX,redirector.snap.gvt1.com'
   - 'DOMAIN-SUFFIX,registry.google'
   - 'DOMAIN-SUFFIX,revolv.com'
   - 'DOMAIN-SUFFIX,ridepenguin.com'
@@ -695,7 +685,6 @@ payload:
   - 'DOMAIN-KEYWORD,blogspot'
   - 'DOMAIN-KEYWORD,gmail'
   - 'DOMAIN-KEYWORD,google'
-  - 'DOMAIN-KEYWORD,recaptcha'
   - 'IP-CIDR,173.194.0.0/16,no-resolve'
   - 'IP-CIDR,74.125.0.0/16,no-resolve'
   - 'PROCESS-NAME,com.android.vending'

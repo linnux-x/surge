@@ -1,7 +1,7 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-08 18:04:18 +0800
-# TOTAL: 24110
+# UPDATED: 2026-07-08 18:44:14 +0800
+# TOTAL: 24099
 payload:
   - 'DOMAIN,1password.drift.click'
   - 'DOMAIN,adobeereg.com'
@@ -62,10 +62,6 @@ payload:
   - 'DOMAIN,ntppool2.time.nl'
   - 'DOMAIN,nvidia.tt.omtrdc.net'
   - 'DOMAIN,ood.opsource.net'
-  - 'DOMAIN,practivate.adobe'
-  - 'DOMAIN,practivate.adobe.ipp'
-  - 'DOMAIN,practivate.adobe.newoa'
-  - 'DOMAIN,practivate.adobe.ntp'
   - 'DOMAIN,public-us-pingsx.api.clonoth.com'
   - 'DOMAIN,qualcomm.sc.omtrdc.net'
   - 'DOMAIN,roovza-launches.appsflyersdk.com'
@@ -1160,7 +1156,6 @@ payload:
   - 'DOMAIN-SUFFIX,alexa.com'
   - 'DOMAIN-SUFFIX,alexanderstreet.com'
   - 'DOMAIN-SUFFIX,alfa.me'
-  - 'DOMAIN-SUFFIX,alfabank.oavdo.amc'
   - 'DOMAIN-SUFFIX,alfabank.ru'
   - 'DOMAIN-SUFFIX,alfabank.st'
   - 'DOMAIN-SUFFIX,alfadirect.ru'
@@ -6640,7 +6635,6 @@ payload:
   - 'DOMAIN-SUFFIX,googleinsidesearch.com'
   - 'DOMAIN-SUFFIX,googlelabs.com'
   - 'DOMAIN-SUFFIX,googleplex.com'
-  - 'DOMAIN-SUFFIX,googlescholar.comusa'
   - 'DOMAIN-SUFFIX,googlesile.com'
   - 'DOMAIN-SUFFIX,googleweblight.com'
   - 'DOMAIN-SUFFIX,googlezip.net'
@@ -8172,7 +8166,6 @@ payload:
   - 'DOMAIN-SUFFIX,intellinuxgraphics.net'
   - 'DOMAIN-SUFFIX,intellinuxwireless.net'
   - 'DOMAIN-SUFFIX,intelnervana.com'
-  - 'DOMAIN-SUFFIX,intelnet.component'
   - 'DOMAIN-SUFFIX,intelplay.com'
   - 'DOMAIN-SUFFIX,intelquark.com'
   - 'DOMAIN-SUFFIX,intelrealsense.com'
@@ -19830,8 +19823,6 @@ payload:
   - 'DOMAIN-SUFFIX,gfw.report'
   - 'DOMAIN-SUFFIX,gfwatch.org'
   - 'DOMAIN-SUFFIX,gfwbao.com'
-  - 'DOMAIN-SUFFIX,gfwlist.end'
-  - 'DOMAIN-SUFFIX,gfwlist.start'
   - 'DOMAIN-SUFFIX,ggssl.com'
   - 'DOMAIN-SUFFIX,ghanely.me'
   - 'DOMAIN-SUFFIX,ghidra-sre.org'
@@ -20329,7 +20320,6 @@ payload:
   - 'DOMAIN-SUFFIX,ieasy5.com'
   - 'DOMAIN-SUFFIX,ied2k.net'
   - 'DOMAIN-SUFFIX,ienergy1.com'
-  - 'DOMAIN-SUFFIX,if.ttt'
   - 'DOMAIN-SUFFIX,ifanqiang.com'
   - 'DOMAIN-SUFFIX,ifcss.org'
   - 'DOMAIN-SUFFIX,ifjc.org'
@@ -23343,7 +23333,6 @@ payload:
   - 'DOMAIN-SUFFIX,uygur.org'
   - 'DOMAIN-SUFFIX,uymaarip.com'
   - 'DOMAIN-SUFFIX,v.gd'
-  - 'DOMAIN-SUFFIX,v.roucdn'
   - 'DOMAIN-SUFFIX,v2.help'
   - 'DOMAIN-SUFFIX,v2.hysteria.network'
   - 'DOMAIN-SUFFIX,v2ex.co'

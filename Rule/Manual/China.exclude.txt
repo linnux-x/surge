@@ -117,3 +117,12 @@ DOMAIN-SUFFIX,avermedia.com
 DOMAIN-SUFFIX,futu5.com
 DOMAIN-SUFFIX,futunn.com
 DOMAIN-SUFFIX,immersivetranslate.com
+
+# 2026-07 rules audit: .ms is Montserrat's ccTLD (used by e.g. Microsoft's
+# clarity.ms), not a Chinese domain — an upstream (Rabbit-Spec China) error
+# routed the entire TLD DIRECT.
+DOMAIN-SUFFIX,ms
+# Internal pseudo-TLD hosts that never resolve publicly (upstream junk).
+DOMAIN-SUFFIX,growth.ai.srv
+DOMAIN-SUFFIX,qsb.browser.miui.srv
+DOMAIN-SUFFIX,tj1-miui-bn-stage01.kscn

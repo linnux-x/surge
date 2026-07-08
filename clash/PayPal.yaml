@@ -1,7 +1,7 @@
 # Generated from Rule/PayPal.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-07 06:40:33 +0800
-# TOTAL: 234
+# UPDATED: 2026-07-08 18:41:54 +0800
+# TOTAL: 233
 payload:
   - 'DOMAIN-SUFFIX,account-paypal.info'
   - 'DOMAIN-SUFFIX,account-paypal.net'
@@ -235,4 +235,3 @@ payload:
   - 'DOMAIN-SUFFIX,xoom.io'
   - 'DOMAIN-SUFFIX,xoom.us'
   - 'DOMAIN-SUFFIX,xoomcom.com'
-  - 'DOMAIN-KEYWORD,paypal'

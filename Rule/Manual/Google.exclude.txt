@@ -44,3 +44,10 @@ IP-CIDR6,2620:120:e000::/40,no-resolve
 
 # Speedtest endpoints belong to Speedtest.list, which is evaluated before Google.list
 DOMAIN-SUFFIX,speed.googlefiber.net
+
+# 2026-07 rules audit: recaptcha.net / recaptcha-cn.net are Google's
+# China-reachable reCAPTCHA mirrors; China.list routes them DIRECT by design.
+# These entries captured them first and forced them through the proxy group.
+DOMAIN-KEYWORD,recaptcha
+DOMAIN-SUFFIX,recaptcha-cn.net
+DOMAIN-SUFFIX,recaptcha.net
