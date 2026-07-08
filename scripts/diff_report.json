@@ -1,18 +1,164 @@
 {
-  "generated_at": "2026-07-08T05:00:39.544501",
-  "total_added": 33,
-  "total_removed": 2,
-  "total_source_changed": 14,
+  "generated_at": "2026-07-08T18:05:20.365349",
+  "total_added": 1,
+  "total_removed": 5625,
+  "total_source_changed": 0,
   "diffs": [
     {
       "file": "AI.list",
       "prev_total": 167,
-      "curr_total": 167,
+      "curr_total": 138,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 29,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "0429516d2a34",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,gemini.google.com"
+        },
+        {
+          "id": "0ac073d1c418",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,api.githubcopilot.com"
+        },
+        {
+          "id": "15126b777e6b",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,setup.workos.com"
+        },
+        {
+          "id": "173336c8a0b1",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,aistudio.google.com"
+        },
+        {
+          "id": "1a5d210c8a8f",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,notebooklm.google.com"
+        },
+        {
+          "id": "2467f628f0f1",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,tcr9i.chat.openai.com"
+        },
+        {
+          "id": "28b3f338dfb1",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,alkalicore-pa.clients6.google.com"
+        },
+        {
+          "id": "2d5f3d8ff292",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,events.launchdarkly.com"
+        },
+        {
+          "id": "3126b3df2cb3",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,auth.openai.com"
+        },
+        {
+          "id": "5266d5655eb2",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,cdn.workos.com"
+        },
+        {
+          "id": "5a286fd6af18",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,auth0.com"
+        },
+        {
+          "id": "65bc7b6b053c",
+          "source": "ConnersHua AI",
+          "rule": "DOMAIN,api.statsig.com"
+        },
+        {
+          "id": "6ff4c34ec640",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,forwarder.workos.com"
+        },
+        {
+          "id": "78a2e4f38e25",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,clientstream.launchdarkly.com"
+        },
+        {
+          "id": "7a5fb89052e4",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,desktop.chat.openai.com"
+        },
+        {
+          "id": "7f52bc50fb10",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,setup.auth.openai.com"
+        },
+        {
+          "id": "84979e400577",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,app.launchdarkly.com"
+        },
+        {
+          "id": "944ec9b226fa",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,js.stripe.com"
+        },
+        {
+          "id": "af9792852848",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,ios.chat.openai.com"
+        },
+        {
+          "id": "b0b47ea32317",
+          "source": "SukkaW AI",
+          "rule": "DOMAIN,openrouter.ai"
+        },
+        {
+          "id": "b0e805853577",
+          "source": "ConnersHua AI",
+          "rule": "DOMAIN,bard.google.com"
+        },
+        {
+          "id": "bb5d4970bdae",
+          "source": "ConnersHua AI",
+          "rule": "DOMAIN,alkalimakersuite-pa.clients6.google.com"
+        },
+        {
+          "id": "bba44621dbde",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,generativelanguage.googleapis.com"
+        },
+        {
+          "id": "bc328f174d9a",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,android.chat.openai.com"
+        },
+        {
+          "id": "bfc5d43e8d7b",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,makersuite.google.com"
+        },
+        {
+          "id": "d3e26891f7f8",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,chat.openai.com"
+        },
+        {
+          "id": "e01d3e41b76b",
+          "source": "ConnersHua AI",
+          "rule": "DOMAIN,openaiapi-site.azureedge.net"
+        },
+        {
+          "id": "e6a709edb4ad",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,auth0.openai.com"
+        },
+        {
+          "id": "e79e5c01e761",
+          "source": "ConnersHua AI",
+          "rule": "DOMAIN,copilot.microsoft.com"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -60,6 +206,17 @@
       "source_changed_sample": []
     },
     {
+      "file": "China_IP.list",
+      "prev_total": 11434,
+      "curr_total": 11434,
+      "added_count": 0,
+      "removed_count": 0,
+      "source_changed_count": 0,
+      "added_sample": [],
+      "removed_sample": [],
+      "source_changed_sample": []
+    },
+    {
       "file": "ChinaMedia.list",
       "prev_total": 414,
       "curr_total": 414,
@@ -69,222 +226,6 @@
       "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
-    },
-    {
-      "file": "China_IP.list",
-      "prev_total": 11405,
-      "curr_total": 11434,
-      "added_count": 31,
-      "removed_count": 2,
-      "source_changed_count": 14,
-      "added_sample": [
-        {
-          "id": "0555710c3dc6",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "0ca56d06b721",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "141a15cf2567",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "170444d2dd94",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "18b938e005eb",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "2134172f45c6",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "35e8de89da61",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "377bd404450b",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "382988bfb404",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "3f324d464ab3",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "41e834d7e314",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "49e61e24d771",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "4ed09acbf6ef",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "51c3b5582a8c",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "5cd602ed46cd",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "60834f67a21e",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "6901b5602816",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "803f98886454",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "807d623ef3c1",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "8b72752a4841",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "90538aa62153",
-          "source": "blackmatrix7 China IPs"
-        },
-        {
-          "id": "912c156f4ceb",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "9bf220d70085",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "a55c8b73bcfa",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "a8b25e1027aa",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "b2c71fe21b40",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "b6a56606b608",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "b83a34367353",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "c9822e9b5541",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "d645cc9ada5a",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "fc511b459cbb",
-          "source": "Loyalsoldier China CIDR"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "a138136ca45d",
-          "source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "b8d5ed815977",
-          "source": "Loyalsoldier China CIDR"
-        }
-      ],
-      "source_changed_sample": [
-        {
-          "id": "b832d70770d5",
-          "old_source": "Loyalsoldier China CIDR",
-          "new_source": "Rabbit-Spec China CIDR"
-        },
-        {
-          "id": "b0c485598d9d",
-          "old_source": "blackmatrix7 China IPs",
-          "new_source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "251baa184efe",
-          "old_source": "blackmatrix7 China IPs",
-          "new_source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "cd084024daa8",
-          "old_source": "blackmatrix7 China IPs",
-          "new_source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "c756b5c1bc36",
-          "old_source": "blackmatrix7 China IPs",
-          "new_source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "a6d56d9efa88",
-          "old_source": "Loyalsoldier China CIDR",
-          "new_source": "Rabbit-Spec China CIDR"
-        },
-        {
-          "id": "bd5a07a2aeb0",
-          "old_source": "Loyalsoldier China CIDR",
-          "new_source": "Rabbit-Spec China CIDR"
-        },
-        {
-          "id": "bf723c2b04ad",
-          "old_source": "Loyalsoldier China CIDR",
-          "new_source": "blackmatrix7 China IPs"
-        },
-        {
-          "id": "31aae4e94843",
-          "old_source": "Loyalsoldier China CIDR",
-          "new_source": "Rabbit-Spec China CIDR"
-        },
-        {
-          "id": "a63fdaffe832",
-          "old_source": "Loyalsoldier China CIDR",
-          "new_source": "blackmatrix7 China IPs"
-        },
-        {
-          "id": "60dc5ce5cebb",
-          "old_source": "Loyalsoldier China CIDR",
-          "new_source": "Rabbit-Spec China CIDR"
-        },
-        {
-          "id": "61d69597f429",
-          "old_source": "Loyalsoldier China CIDR",
-          "new_source": "Rabbit-Spec China CIDR"
-        },
-        {
-          "id": "1ae0b981d075",
-          "old_source": "blackmatrix7 China IPs",
-          "new_source": "Loyalsoldier China CIDR"
-        },
-        {
-          "id": "649c95eb2811",
-          "old_source": "blackmatrix7 China IPs",
-          "new_source": "Loyalsoldier China CIDR"
-        }
-      ]
     },
     {
       "file": "Disney.list",
@@ -321,22 +262,520 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 29703,
-      "curr_total": 29705,
-      "added_count": 2,
-      "removed_count": 0,
+      "prev_total": 29705,
+      "curr_total": 24110,
+      "added_count": 1,
+      "removed_count": 5596,
       "source_changed_count": 0,
       "added_sample": [
         {
-          "id": "34be930793db",
-          "source": "blackmatrix7 Global"
-        },
-        {
-          "id": "511d92b02e0f",
-          "source": "blackmatrix7 Global"
+          "id": "5a286fd6af18",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,auth0.com"
         }
       ],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "0008d228fc83",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,thomashpc.ac.uk"
+        },
+        {
+          "id": "001458fb446b",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,southbank-university.ac.uk"
+        },
+        {
+          "id": "0031a5a5057d",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,oldbury.ac.uk"
+        },
+        {
+          "id": "004a37a5ff8b",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,qoru.ac.uk"
+        },
+        {
+          "id": "00528f630c2c",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,nlow.ac.uk"
+        },
+        {
+          "id": "00567eb17b17",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,sustainablelifestyles.ac.uk"
+        },
+        {
+          "id": "005e61527e4d",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,ucy.ac.uk"
+        },
+        {
+          "id": "0069427949d2",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,nerc-swindon.ac.uk"
+        },
+        {
+          "id": "006985420c25",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,ukds.ac.uk"
+        },
+        {
+          "id": "006d4c2fb8e7",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,aberdeen.ac.uk"
+        },
+        {
+          "id": "007d638ea4f3",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,xaverian.ac.uk"
+        },
+        {
+          "id": "0092ec7f717f",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,gold.ac.uk"
+        },
+        {
+          "id": "00a0de00afa2",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,cumbriahigherlearning.ac.uk"
+        },
+        {
+          "id": "00a453345723",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,doitpoms.ac.uk"
+        },
+        {
+          "id": "00ab55168e21",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,rnngroup.ac.uk"
+        },
+        {
+          "id": "00ab9b03c0d6",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,blackpoolsixth.ac.uk"
+        },
+        {
+          "id": "00ad718c50e2",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,wun.ac.uk"
+        },
+        {
+          "id": "00b0616b3866",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,njncscotlandscolleges.ac.uk"
+        },
+        {
+          "id": "00b3faebc2bf",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,eastonotley.ac.uk"
+        },
+        {
+          "id": "00cf034e4c7f",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,wvn.ac.uk"
+        },
+        {
+          "id": "00d1e9780375",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,ucf.ac.uk"
+        },
+        {
+          "id": "00e39f65522d",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,nnuf.ac.uk"
+        },
+        {
+          "id": "00eac342248f",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,emttp.ac.uk"
+        },
+        {
+          "id": "00f413f339ee",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,bristol-baptist.ac.uk"
+        },
+        {
+          "id": "00f4edf7dc3a",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,ioz.ac.uk"
+        },
+        {
+          "id": "010890d25cc5",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,nscg.ac.uk"
+        },
+        {
+          "id": "0114942a8970",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,hesin.ac.uk"
+        },
+        {
+          "id": "01263bf1b6fd",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,goodenough.ac.uk"
+        },
+        {
+          "id": "012c58bf7344",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,hcebusiness.ac.uk"
+        },
+        {
+          "id": "013d7010a283",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,prism.ac.uk"
+        },
+        {
+          "id": "01437ba823c4",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,eira.ac.uk"
+        },
+        {
+          "id": "014f33d5be49",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,huish.ac.uk"
+        },
+        {
+          "id": "015055a43f56",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,cetl4musicne.ac.uk"
+        },
+        {
+          "id": "015b377fde21",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,welshmediumhe.ac.uk"
+        },
+        {
+          "id": "015c375ba7f2",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,data.gov.tw"
+        },
+        {
+          "id": "01732b9a05b4",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,walesglobalcampus.ac.uk"
+        },
+        {
+          "id": "01734be2963e",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,enterprisebydesign.ac.uk"
+        },
+        {
+          "id": "0179c0989dba",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,london.ac.uk"
+        },
+        {
+          "id": "01812fd8e618",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,countytraining.ac.uk"
+        },
+        {
+          "id": "0181b0d05e78",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,sigma-cetl.ac.uk"
+        },
+        {
+          "id": "0185f3d0b422",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,agrifoodatp.ac.uk"
+        },
+        {
+          "id": "01a22c19e9f8",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,workingtogethernorthwest.ac.uk"
+        },
+        {
+          "id": "01aa24999db1",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,nfacstem.ac.uk"
+        },
+        {
+          "id": "01ab1939a961",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,energy2050.ac.uk"
+        },
+        {
+          "id": "01b92e29b2c5",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,science-museum-group.ac.uk"
+        },
+        {
+          "id": "01bb71b30b4f",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,cem1.ac.uk"
+        },
+        {
+          "id": "01bfdb4fd8f9",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,scrsj.ac.uk"
+        },
+        {
+          "id": "01c35801da2d",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,aimhigherwm-alps.ac.uk"
+        },
+        {
+          "id": "01c719b5964e",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,abrsm.ac.uk"
+        },
+        {
+          "id": "01cd0bf72dd8",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,rcpsglasg.ac.uk"
+        },
+        {
+          "id": "01d3e7e60f84",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,itrace.ac.uk"
+        },
+        {
+          "id": "01d86ec34be9",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,efc.ac.uk"
+        },
+        {
+          "id": "01e47fc2721b",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,focus.ac.uk"
+        },
+        {
+          "id": "01e5c0ac4b32",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,royal-institution.ac.uk"
+        },
+        {
+          "id": "01ee0197c9a0",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,fsb.ac.uk"
+        },
+        {
+          "id": "01f296980e83",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,hud.ac.uk"
+        },
+        {
+          "id": "01f705eb0caf",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,studyingeconomics.ac.uk"
+        },
+        {
+          "id": "02005bec8165",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,learninscotland.ac.uk"
+        },
+        {
+          "id": "021c124a1ce9",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,itol.ac.uk"
+        },
+        {
+          "id": "0229212eabfd",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,orchid.ac.uk"
+        },
+        {
+          "id": "0235e3d28e63",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,bestofu.ac.uk"
+        },
+        {
+          "id": "024c923171d0",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,lancs-cumbrianti.ac.uk"
+        },
+        {
+          "id": "0255607f207d",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,bbcslln.ac.uk"
+        },
+        {
+          "id": "025c3ceaf458",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,victoriacountyhistory.ac.uk"
+        },
+        {
+          "id": "0262bd30a81a",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,ukcasa.ac.uk"
+        },
+        {
+          "id": "026a835789be",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,wortech.ac.uk"
+        },
+        {
+          "id": "026befa86e9f",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,swdtp.ac.uk"
+        },
+        {
+          "id": "0276050c7b77",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,thebritishmuseum.ac.uk"
+        },
+        {
+          "id": "0278af32d2ab",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,combinedhonours.ac.uk"
+        },
+        {
+          "id": "027f10ab6bcf",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,worc.ac.uk"
+        },
+        {
+          "id": "02814bee9e31",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,ngc.ac.uk"
+        },
+        {
+          "id": "0286774af7fe",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,chest.ac.uk"
+        },
+        {
+          "id": "02b06fe62945",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,bristolroboticslaboratory.ac.uk"
+        },
+        {
+          "id": "02be277354d7",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,officeforstudents.ac.uk"
+        },
+        {
+          "id": "02da689aeac6",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,beyondtext.ac.uk"
+        },
+        {
+          "id": "02fbd01bb61f",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,frontiersofoncology.ac.uk"
+        },
+        {
+          "id": "03043e9ef35c",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,sussex.ac.uk"
+        },
+        {
+          "id": "030970e4bbdd",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,bopcris.ac.uk"
+        },
+        {
+          "id": "032da8dbf2ca",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,bufdg.ac.uk"
+        },
+        {
+          "id": "0334115fb351",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,sciencemuseum.ac.uk"
+        },
+        {
+          "id": "03373919010f",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,geoxwalk.ac.uk"
+        },
+        {
+          "id": "033b6297ef2c",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,nerc-loanhead.ac.uk"
+        },
+        {
+          "id": "033ffcee135c",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,janetcollaborate.ac.uk"
+        },
+        {
+          "id": "0343d9551bda",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,ccp14.ac.uk"
+        },
+        {
+          "id": "0346d97e28e9",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,eduroam.ac.uk"
+        },
+        {
+          "id": "0354eba1a1e9",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,wiserd.ac.uk"
+        },
+        {
+          "id": "0377dcc611da",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,hillcroft.ac.uk"
+        },
+        {
+          "id": "03860cbe1bad",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,highbury.ac.uk"
+        },
+        {
+          "id": "038815f984fa",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,lichfield.ac.uk"
+        },
+        {
+          "id": "038b225e47bf",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,lmu.ac.uk"
+        },
+        {
+          "id": "03b548926bfc",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,kmc.ac.uk"
+        },
+        {
+          "id": "03bf3904ea42",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,benc.ac.uk"
+        },
+        {
+          "id": "03c3dbfa72e4",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,adultlearningbcc.ac.uk"
+        },
+        {
+          "id": "03d48c1e9534",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,cvcp.ac.uk"
+        },
+        {
+          "id": "03e0ff3467c8",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,excellence.ac.uk"
+        },
+        {
+          "id": "03e4b39d4a58",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,ukerc.ac.uk"
+        },
+        {
+          "id": "03f892ad2ebc",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,labinacell.ac.uk"
+        },
+        {
+          "id": "041217164699",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,esds.ac.uk"
+        },
+        {
+          "id": "04198e443fa3",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,leeds-metropolitan.ac.uk"
+        },
+        {
+          "id": "041ce77aab9e",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,sccc.ac.uk"
+        }
+      ],
       "source_changed_sample": []
     },
     {

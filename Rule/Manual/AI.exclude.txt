@@ -33,3 +33,7 @@ DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,js.intercomcdn.com
 DOMAIN,api-iam.intercom.io
+# Auth0 (Okta) is a shared identity platform used by thousands of services —
+# the whole-domain suffix must not ride the AI policy group. Service-scoped
+# entries (DOMAIN,anthropic.auth0.com / DOMAIN-SUFFIX,auth0.openai.com) stay.
+DOMAIN-SUFFIX,auth0.com

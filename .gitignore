@@ -17,6 +17,10 @@ Thumbs.db
 *.orig
 audit_report.json
 
+# Pipeline artifacts produced by workflow_dispatch runs (uploaded as an
+# Actions artifact, never committed)
+scripts/full_generation_manifest.sha256
+
 # Manual rules are version-controlled so the daily CI regeneration — which runs
 # without the local working tree — reproduces them instead of stripping them.
 # Both append (*.txt) and exclude (*.exclude.txt) files are tracked.

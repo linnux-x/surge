@@ -156,6 +156,58 @@ def _add_no_resolve(lines: list[str]) -> list[str]:
     return out
 
 
+def prune_shadowed_domains(lines: list[str]) -> list[str]:
+    """Remove DOMAIN/DOMAIN-SUFFIX rules fully covered by a broader
+    DOMAIN-SUFFIX in the same file (behaviour-preserving, like CIDR pruning).
+
+    A child is pruned only when its per-rule options are a subset of the
+    covering parent's options, so options like extended-matching are never
+    weakened by the prune. Comments and section headers are preserved.
+    """
+    suffix_opts: dict[str, set[str]] = {}
+    for line in lines:
+        stripped = line.strip()
+        if not stripped or stripped.startswith("#"):
+            continue
+        parts = [p.strip() for p in stripped.split(",")]
+        if len(parts) >= 2 and parts[0].upper() == "DOMAIN-SUFFIX":
+            val = parts[1].lower()
+            opts = {o.lower() for o in parts[2:]}
+            # If the same suffix appears twice, keep the larger option set so
+            # pruning stays conservative.
+            if val not in suffix_opts or opts >= suffix_opts[val]:
+                suffix_opts[val] = opts
+
+    def covering_parent(value: str, include_self: bool) -> str | None:
+        if include_self and value in suffix_opts:
+            return value
+        segments = value.split(".")
+        for i in range(1, len(segments)):
+            parent = ".".join(segments[i:])
+            if parent in suffix_opts:
+                return parent
+        return None
+
+    out: list[str] = []
+    removed = 0
+    for line in lines:
+        stripped = line.strip()
+        if stripped and not stripped.startswith("#"):
+            parts = [p.strip() for p in stripped.split(",")]
+            if len(parts) >= 2 and parts[0].upper() in {"DOMAIN", "DOMAIN-SUFFIX"}:
+                val = parts[1].lower()
+                opts = {o.lower() for o in parts[2:]}
+                parent = covering_parent(val, include_self=(parts[0].upper() == "DOMAIN"))
+                if parent is not None and opts <= suffix_opts[parent]:
+                    removed += 1
+                    continue
+        out.append(line)
+
+    if removed:
+        print(f"  Suffix prune: removed {removed} entries covered by a broader DOMAIN-SUFFIX")
+    return out
+
+
 def dedupe_preserve_order(lines: list[str]) -> list[str]:
     """Remove duplicate non-comment lines, preserving first occurrence order."""
     seen = set()
@@ -262,9 +314,10 @@ def process_rule(target_name: str, display_name: str, sources: list[tuple[str, s
         lines.extend(filtered)
         lines.append("")
 
-    # Guardrails, dedup, CIDR prune
+    # Guardrails, dedup, suffix prune, CIDR prune
     lines = apply_project_guardrails(target_name, lines)
     lines = dedupe_preserve_order(lines)
+    lines = prune_shadowed_domains(lines)
 
     # Write to file for CIDR pruning (needs physical file)
     target_path.parent.mkdir(parents=True, exist_ok=True)

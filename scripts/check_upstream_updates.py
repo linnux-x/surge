@@ -198,8 +198,15 @@ def check_all_sources_parallel(
             url, current, is_changed, is_unknown = future.result()
             completed += 1
 
-            # Update state
-            new_state[url] = current
+            # Update state. On a transient outage keep the last known-good
+            # fingerprint: overwriting it with an "unavailable" record would
+            # make the next successful probe register as a spurious change
+            # and trigger a pointless regeneration.
+            cached = state.get(url, {})
+            if not current.get("source_available") and cached.get("source_available"):
+                new_state[url] = cached
+            else:
+                new_state[url] = current
 
             # Track unknowns
             if is_unknown:

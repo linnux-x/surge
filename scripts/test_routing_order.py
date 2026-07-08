@@ -62,35 +62,6 @@ def load_ruleset(path: Path) -> set[str]:
     return raw_rules
 
 
-def extract_domain(rule: str) -> str | None:
-    """Extract domain from a Surge rule line.
-
-    Supports: DOMAIN, DOMAIN-SUFFIX, DOMAIN-KEYWORD, DOMAIN-WILDCARD, IP-CIDR, IP-CIDR6
-    Returns the domain portion, or None for non-domain rules.
-    """
-    parts = [p.strip() for p in rule.split(",")]
-    if len(parts) < 2:
-        return None
-
-    rule_type = parts[0].upper()
-    value = parts[1].lower()
-
-    if rule_type == "DOMAIN":
-        return value
-    elif rule_type == "DOMAIN-SUFFIX":
-        return value
-    elif rule_type == "DOMAIN-KEYWORD":
-        return value
-    elif rule_type == "DOMAIN-WILDCARD":
-        return value
-    elif rule_type == "IP-CIDR":
-        return value  # e.g. "10.0.0.0/8"
-    elif rule_type == "IP-CIDR6":
-        return value
-    else:
-        return None
-
-
 def match_domain(domain: str, rules: set[str]) -> bool:
     """Check if a domain matches any rule in a ruleset.
 
@@ -109,25 +80,23 @@ def match_domain(domain: str, rules: set[str]) -> bool:
             continue
 
         rule_type = parts[0].upper()
+        # parts[1] is the bare value; per-rule options live in parts[2:]
         value = parts[1].lower()
 
-        # Strip options like no-resolve
-        value_clean = re.sub(r",no-resolve$", "", value)
-
         if rule_type == "DOMAIN":
-            if domain_lower == value_clean:
+            if domain_lower == value:
                 return True
         elif rule_type == "DOMAIN-SUFFIX":
-            if domain_lower == value_clean:
+            if domain_lower == value:
                 return True
-            if domain_lower.endswith("." + value_clean):
+            if domain_lower.endswith("." + value):
                 return True
         elif rule_type == "DOMAIN-KEYWORD":
-            if value_clean in domain_lower:
+            if value in domain_lower:
                 return True
         elif rule_type == "DOMAIN-WILDCARD":
-            # Simple wildcard: * → .* regex
-            pattern = "^" + re.escape(value_clean).replace(r"\*", ".*") + "$"
+            # Surge wildcards: * → any run of characters, ? → single character
+            pattern = "^" + re.escape(value).replace(r"\*", ".*").replace(r"\?", ".") + "$"
             if re.match(pattern, domain_lower):
                 return True
 

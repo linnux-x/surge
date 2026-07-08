@@ -21,8 +21,8 @@ use-local-host-item-for-proxy = true
 ^https?://(www.)?(g|google)\.cn https://www.google.com 307
 
 [Script]
-# > 扫描全能王 pro
-扫描全能王=type=http-response,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js
+# > 扫描全能王 pro（第三方脚本固定到 commit，防上游变更直接生效于 MITM 响应体）
+扫描全能王=type=http-response,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/7f8b309f8d943806b90c6ff25d8b8aa0c59b0c03/Surge/JS/CamScanner.js
 
 [MITM]
 hostname = %APPEND% g.cn,www.g.cn,google.cn,www.google.cn,ap*.intsig.net
