@@ -18,3 +18,9 @@ DOMAIN-SUFFIX,xoom.net.cn
 # venmo.s3.amazonaws.com is a specific S3 bucket, not a suffix to match subdomains under.
 # Kept as DOMAIN-SUFFIX in upstream but effectively only matches the exact host.
 # No action needed — DOMAIN-SUFFIX on a 4-label host is effectively exact-match.
+
+# 2026-07 rules audit: DOMAIN-KEYWORD,paypal silently defeated the PayPal-CN
+# policy — it captured paypal.com.cn / paypalhere.cn etc. (listed in
+# China.list for DIRECT) before China.list could match. The 160+ enumerated
+# PayPal domains provide the coverage instead.
+DOMAIN-KEYWORD,paypal

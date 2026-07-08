@@ -193,3 +193,7 @@ DOMAIN-SUFFIX,windowslive.cn
 DOMAIN-SUFFIX,winmp.cn
 DOMAIN-SUFFIX,yammerusercontent.com
 DOMAIN-SUFFIX,optimizely.com
+
+# 2026-07 rules audit: internal pseudo-TLD hosts that never resolve publicly.
+DOMAIN-SUFFIX,evoke-windowsservices-tas.msedge
+DOMAIN-SUFFIX,onecollector.cloudapp.aria

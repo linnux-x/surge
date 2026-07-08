@@ -1,7 +1,7 @@
 # Generated from Rule/Microsoft.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-02 23:35:19 +0800
-# TOTAL: 526
+# UPDATED: 2026-07-08 18:41:53 +0800
+# TOTAL: 524
 payload:
   - 'DOMAIN,vsmarketplacebadge.apphb.com'
   - 'DOMAIN-SUFFIX,1drv.ms'
@@ -133,7 +133,6 @@ payload:
   - 'DOMAIN-SUFFIX,e-msedge.net'
   - 'DOMAIN-SUFFIX,efproject.net'
   - 'DOMAIN-SUFFIX,elderscrolls.com'
-  - 'DOMAIN-SUFFIX,evoke-windowsservices-tas.msedge'
   - 'DOMAIN-SUFFIX,exp-tas.com'
   - 'DOMAIN-SUFFIX,explorebing.com'
   - 'DOMAIN-SUFFIX,fabric.io'
@@ -386,7 +385,6 @@ payload:
   - 'DOMAIN-SUFFIX,office365tw.com'
   - 'DOMAIN-SUFFIX,officeppe.net'
   - 'DOMAIN-SUFFIX,omniroot.com'
-  - 'DOMAIN-SUFFIX,onecollector.cloudapp.aria'
   - 'DOMAIN-SUFFIX,onedrive.co'
   - 'DOMAIN-SUFFIX,onedrive.co.uk'
   - 'DOMAIN-SUFFIX,onedrive.eu'

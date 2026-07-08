@@ -1,9 +1,9 @@
 # NAME: Microsoft
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-07-02 23:35:19 +0800
+# UPDATED: 2026-07-08 18:41:53 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 526
+# TOTAL: 524
 
 # ======= blackmatrix7 Microsoft ========
 DOMAIN,vsmarketplacebadge.apphb.com
@@ -136,7 +136,6 @@ DOMAIN-SUFFIX,dynamics.com
 DOMAIN-SUFFIX,e-msedge.net
 DOMAIN-SUFFIX,efproject.net
 DOMAIN-SUFFIX,elderscrolls.com
-DOMAIN-SUFFIX,evoke-windowsservices-tas.msedge
 DOMAIN-SUFFIX,exp-tas.com
 DOMAIN-SUFFIX,explorebing.com
 DOMAIN-SUFFIX,fabric.io
@@ -389,7 +388,6 @@ DOMAIN-SUFFIX,office365love.com
 DOMAIN-SUFFIX,office365tw.com
 DOMAIN-SUFFIX,officeppe.net
 DOMAIN-SUFFIX,omniroot.com
-DOMAIN-SUFFIX,onecollector.cloudapp.aria
 DOMAIN-SUFFIX,onedrive.co
 DOMAIN-SUFFIX,onedrive.co.uk
 DOMAIN-SUFFIX,onedrive.eu
