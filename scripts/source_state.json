@@ -19,19 +19,19 @@
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
     "content_length": "4065",
-    "etag": "\"ece45f86534cade283d7d221b03b8963c55d83a25b191b6d48dcb974b0db9212\"",
+    "etag": "\"dd11d9f3ded4bc92e09a3046af119d49cdd6700a00086436e6ab47ff91a21ece\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
     "content_length": "101025",
-    "etag": "\"a88a9501e7f5c801f5ce0d82b984eec0af33e835c619be7d0f113082a50a0054\"",
+    "etag": "\"c0b18637e8da4f89ff7306d32e1d0ba05dba61e8f8bf16e902cdefd066d5ad5d\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/ChinaCIDR.list": {
-    "content_length": "139562",
-    "etag": "\"b7ed1efadac0fd4ed71d72d60d7836a552c23d9edb440a53d0b720ab09086cdf\"",
+    "content_length": "141404",
+    "etag": "\"a2ee02e49cff6ef97f2d5988315fac83421dce7d03502de40b31f2b30586253a\"",
     "last_modified": null,
     "source_available": true
   },
@@ -126,7 +126,7 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalMedia/GlobalMedia_All_No_Resolve.list": {
-    "content_length": "73351",
+    "content_length": "1",
     "etag": "\"64888a2472d9379624341924f99e58f2a8328ad6c3774dc72597bb8b85c9f206\"",
     "last_modified": null,
     "source_available": true
@@ -180,13 +180,13 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitter/Twitter.list": {
-    "content_length": "1116",
+    "content_length": "1",
     "etag": "\"350c408e9c9f10e75e1f28751997f5200ada7905b192a317c5b04b8846ff4762\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/WeChat/WeChat.list": {
-    "content_length": "10185",
+    "content_length": "1",
     "etag": "\"0b3be77ee8cdb97b03c13bd4adf9a08136f9b0e88132de3a364ffb5a2124af36\"",
     "last_modified": null,
     "source_available": true

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-08T18:44:15.117871",
+  "generated_at": "2026-07-09T05:01:20.889841",
   "total_added": 0,
-  "total_removed": 302,
+  "total_removed": 6,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -50,520 +50,8 @@
     },
     {
       "file": "China.list",
-      "prev_total": 112434,
+      "prev_total": 112187,
       "curr_total": 112187,
-      "added_count": 0,
-      "removed_count": 247,
-      "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "01ab16124e98",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,sinajs.cn"
-        },
-        {
-          "id": "01ad27c8a689",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,steamcontent.tnkjmec.com"
-        },
-        {
-          "id": "01b4599a7f90",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,assets.msn.cn"
-        },
-        {
-          "id": "01db50f5eb11",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,cmbchina.cn"
-        },
-        {
-          "id": "0394e396500c",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,t3go.cn"
-        },
-        {
-          "id": "046f16d053b7",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,cmburl.cn"
-        },
-        {
-          "id": "047b5a0200b3",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN,www.yxssp.com"
-        },
-        {
-          "id": "06210e8bcd67",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,jiasu.bohe.com"
-        },
-        {
-          "id": "06c9c68c4259",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,wps.cn"
-        },
-        {
-          "id": "0758a96ab075",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,cntv.cn"
-        },
-        {
-          "id": "07e3a48db7e7",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,anfutong.com.cn"
-        },
-        {
-          "id": "0a2005aecc65",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,ebay.cn"
-        },
-        {
-          "id": "0ba27ecb6c7f",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,beibao.com.cn"
-        },
-        {
-          "id": "0c5557035aed",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,chinaunicom.cn"
-        },
-        {
-          "id": "0d1e31631ffc",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,dig.bdurl.net"
-        },
-        {
-          "id": "0e8d76f39541",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,dxy.cn"
-        },
-        {
-          "id": "1266300b9ce4",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,osgeo.cn"
-        },
-        {
-          "id": "12a4a7de68e3",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,diablo3.nosdn.127.net"
-        },
-        {
-          "id": "1425e4f5b9e1",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,xn--bnq297cix3a.cn"
-        },
-        {
-          "id": "1464780c4a0b",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,wmsj.cn"
-        },
-        {
-          "id": "159b44e9f0aa",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,tencentcs.cn"
-        },
-        {
-          "id": "16cc277d84fa",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,uc.cn"
-        },
-        {
-          "id": "17730cc28d93",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,csgo.wmsj.cn"
-        },
-        {
-          "id": "18062c5676bb",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,ac.cn"
-        },
-        {
-          "id": "1a6f38dda773",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,feishu.cn"
-        },
-        {
-          "id": "1b2dddec09a5",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,stats.ipinyou.com"
-        },
-        {
-          "id": "1c0e02c775ac",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,linkedin.cn"
-        },
-        {
-          "id": "1d405824da27",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,dl.eccdnx.com"
-        },
-        {
-          "id": "1f3c75a70129",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN,b23.tv"
-        },
-        {
-          "id": "21f25cf95056",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,digicert.cn"
-        },
-        {
-          "id": "22901d154dc4",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,bilibili.cn"
-        },
-        {
-          "id": "237cf7c6a88e",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,di.res.netease.com"
-        },
-        {
-          "id": "2396c63fb39b",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,baidu.cn"
-        },
-        {
-          "id": "24f5b65de060",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,xboxlive.cn"
-        },
-        {
-          "id": "25011947afb2",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,3.cn"
-        },
-        {
-          "id": "25837868888d",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,6.cn"
-        },
-        {
-          "id": "25877604ac8c",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,email.cn"
-        },
-        {
-          "id": "25c565e23fa9",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,dbankcdn.cn"
-        },
-        {
-          "id": "2759697358be",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,qsb.browser.miui.srv"
-        },
-        {
-          "id": "27d41073ded9",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,cn-northeast-1.myhuaweicloud.com"
-        },
-        {
-          "id": "27e4a30640ad",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,paypal.org.cn"
-        },
-        {
-          "id": "28560d95e3f0",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,sinaimg.cn"
-        },
-        {
-          "id": "28a8a03eb0fd",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,cls.cn"
-        },
-        {
-          "id": "296bbad54385",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,paypalhere.cn"
-        },
-        {
-          "id": "2a0407accef4",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN,acg.tv"
-        },
-        {
-          "id": "2a340830ea7f",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,na-mexico-1.myhuaweicloud.com"
-        },
-        {
-          "id": "2bc11e4ef3c9",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,9game.cn"
-        },
-        {
-          "id": "2f4c8a73027b",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,yzcdn.cn"
-        },
-        {
-          "id": "301053938a7d",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,dl.steam.clngaa.com"
-        },
-        {
-          "id": "307e962c2948",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,mcd.cn"
-        },
-        {
-          "id": "30c8b2ce9376",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,noxagile.duapp.com"
-        },
-        {
-          "id": "32c1ce963271",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,cn-south-2.myhuaweicloud.com"
-        },
-        {
-          "id": "336a56dca60e",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,migu.cn"
-        },
-        {
-          "id": "3719202d0bd4",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,bytecdn.cn"
-        },
-        {
-          "id": "374d6669518d",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,sc2.nosdn.127.net"
-        },
-        {
-          "id": "377200514b79",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN,www.libvideo.com"
-        },
-        {
-          "id": "3c10b4ea231f",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,cnnic.cn"
-        },
-        {
-          "id": "3c29272ccccf",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,steampowered.com.8686c.com"
-        },
-        {
-          "id": "3cb27c1b3ebb",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,cdn-go.cn"
-        },
-        {
-          "id": "3ced8778379b",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,wpscdn.cn"
-        },
-        {
-          "id": "3e20897b7037",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,uczzd.cn"
-        },
-        {
-          "id": "3fb280b05bd1",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,dl.bscstorage.net"
-        },
-        {
-          "id": "405e45342f17",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,elseviercdn.cn"
-        },
-        {
-          "id": "4468e19953ab",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,douyucdn2.cn"
-        },
-        {
-          "id": "4667901fe703",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,neixin.cn"
-        },
-        {
-          "id": "467b002b7b57",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,cnspeedtest.cn"
-        },
-        {
-          "id": "49cfd3b20000",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,mobileservice.cn"
-        },
-        {
-          "id": "49db13626e35",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,mybank.cn"
-        },
-        {
-          "id": "4a2bb4ef5606",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,livechina.cn"
-        },
-        {
-          "id": "4a584e9e5efa",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,huawei.cn"
-        },
-        {
-          "id": "4cf86824fc0e",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,paypal.com.cn"
-        },
-        {
-          "id": "4db27b6c62d9",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,com.cn"
-        },
-        {
-          "id": "4fd400c5aefa",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,alios.cn"
-        },
-        {
-          "id": "5085e2857406",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN,alibaba.cdn.steampipe.steamcontent.com"
-        },
-        {
-          "id": "509e059380be",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,tj1-miui-bn-stage01.kscn"
-        },
-        {
-          "id": "51fd192a6c33",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,quark.cn"
-        },
-        {
-          "id": "5311c188fb80",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,officewebapps.cn"
-        },
-        {
-          "id": "54389d9832f3",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,2144.cn"
-        },
-        {
-          "id": "5451ab446416",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN,www.viayoo.com"
-        },
-        {
-          "id": "54cdf1d9c3fa",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,51ctocdn.cn"
-        },
-        {
-          "id": "5642e0d581e0",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,meizu.cn"
-        },
-        {
-          "id": "57a6ccb1c23e",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,tencent-cloud.cn"
-        },
-        {
-          "id": "5816187c4178",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,acfun.cn"
-        },
-        {
-          "id": "5978fe502fae",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,huolala.cn"
-        },
-        {
-          "id": "5b8da9f6e8f5",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN,download.microsoft.com"
-        },
-        {
-          "id": "5d6e4bd4f479",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,rsproxy.cn"
-        },
-        {
-          "id": "5d8836c4372e",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,360.cn"
-        },
-        {
-          "id": "5d9406e49e89",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,st.dl.bscstorage.net"
-        },
-        {
-          "id": "600990ffcd04",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,qiyou.cn"
-        },
-        {
-          "id": "611c065d836b",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,cn-north-4.myhuaweicloud.com"
-        },
-        {
-          "id": "6160c59ccdb2",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,sa-brazil-1.myhuaweicloud.com"
-        },
-        {
-          "id": "62445e745303",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,xiaomi.cn"
-        },
-        {
-          "id": "63f2997c82df",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,click.qianqian.com"
-        },
-        {
-          "id": "64111722672f",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,wow.nosdn.127.net"
-        },
-        {
-          "id": "645ab8f37f1b",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,blz.nosdn.127.net"
-        },
-        {
-          "id": "67381c4973b1",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,dl.steam.ksyna.com"
-        },
-        {
-          "id": "6741c47ded54",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,66law.cn"
-        },
-        {
-          "id": "67ff383b5518",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,cmvideo.cn"
-        },
-        {
-          "id": "68296be188e3",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,robloxdev.cn"
-        },
-        {
-          "id": "68c35110f3f0",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,bilivideo.cn"
-        }
-      ],
-      "source_changed_sample": []
-    },
-    {
-      "file": "China_IP.list",
-      "prev_total": 11434,
-      "curr_total": 11434,
       "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
@@ -573,162 +61,53 @@
     },
     {
       "file": "ChinaMedia.list",
-      "prev_total": 414,
+      "prev_total": 384,
       "curr_total": 384,
       "added_count": 0,
-      "removed_count": 30,
+      "removed_count": 0,
+      "source_changed_count": 0,
+      "added_sample": [],
+      "removed_sample": [],
+      "source_changed_sample": []
+    },
+    {
+      "file": "China_IP.list",
+      "prev_total": 11434,
+      "curr_total": 11428,
+      "added_count": 0,
+      "removed_count": 6,
       "source_changed_count": 0,
       "added_sample": [],
       "removed_sample": [
         {
-          "id": "01476fc08201",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:58.217.232.79/128,no-resolve"
+          "id": "31aae4e94843",
+          "source": "Rabbit-Spec China CIDR",
+          "rule": "IP-CIDR,123.253.226.0/24"
         },
         {
-          "id": "0c580d9b18e3",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:198.18.6.81/128,no-resolve"
+          "id": "60dc5ce5cebb",
+          "source": "Rabbit-Spec China CIDR",
+          "rule": "IP-CIDR,151.244.240.0/24"
         },
         {
-          "id": "1223d6d9706c",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:117.87.144.24/128,no-resolve"
+          "id": "61d69597f429",
+          "source": "Rabbit-Spec China CIDR",
+          "rule": "IP-CIDR,16.5.43.0/24"
         },
         {
-          "id": "184953123386",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:115.236.128.112/128,no-resolve"
+          "id": "a6d56d9efa88",
+          "source": "Rabbit-Spec China CIDR",
+          "rule": "IP-CIDR,51.146.70.0/24"
         },
         {
-          "id": "1b410386855c",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:60.171.183.186/128,no-resolve"
+          "id": "b832d70770d5",
+          "source": "Rabbit-Spec China CIDR",
+          "rule": "IP-CIDR6,2001:df5:4740::/48"
         },
         {
-          "id": "1ea19f98843a",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:198.18.5.138/128,no-resolve"
-        },
-        {
-          "id": "2057cd34d597",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:60.171.183.161/128,no-resolve"
-        },
-        {
-          "id": "26bfeb660766",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "DOMAIN-SUFFIX,iqiyi.demo.uwp"
-        },
-        {
-          "id": "2e47833c9ada",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:183.161.144.230/128,no-resolve"
-        },
-        {
-          "id": "2e696ac5e11e",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:198.18.6.83/128,no-resolve"
-        },
-        {
-          "id": "38d70027a82e",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:60.171.183.98/128,no-resolve"
-        },
-        {
-          "id": "3c87acac035b",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:124.73.198.81/128,no-resolve"
-        },
-        {
-          "id": "46480d32c0d9",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:183.161.149.105/128,no-resolve"
-        },
-        {
-          "id": "47271ebd4d6a",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:58.217.232.117/128,no-resolve"
-        },
-        {
-          "id": "4845a9f03bb6",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:113.248.172.245/128,no-resolve"
-        },
-        {
-          "id": "4908bbfcb2fe",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:115.236.128.24/128,no-resolve"
-        },
-        {
-          "id": "580644b5208a",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:115.236.128.120/128,no-resolve"
-        },
-        {
-          "id": "6026dfd34422",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:124.73.200.142/128,no-resolve"
-        },
-        {
-          "id": "6474190f5ef4",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:183.161.144.133/128,no-resolve"
-        },
-        {
-          "id": "67dff879366d",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:115.236.128.80/128,no-resolve"
-        },
-        {
-          "id": "68ae041f599e",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:27.157.209.46/128,no-resolve"
-        },
-        {
-          "id": "6c5d1f43208d",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:175.6.84.30/128,no-resolve"
-        },
-        {
-          "id": "73cb125aede8",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:58.58.0.90/128,no-resolve"
-        },
-        {
-          "id": "a6140f7e9efd",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:114.235.96.186/128,no-resolve"
-        },
-        {
-          "id": "aac51c036453",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:223.240.191.238/128,no-resolve"
-        },
-        {
-          "id": "b8d9ebadb3d9",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:117.68.200.210/128,no-resolve"
-        },
-        {
-          "id": "e1e48c6d6dd8",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:121.56.126.255/128,no-resolve"
-        },
-        {
-          "id": "e4c335aaa5f0",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:117.64.75.196/128,no-resolve"
-        },
-        {
-          "id": "f5d94fabe315",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:58.217.232.68/128,no-resolve"
-        },
-        {
-          "id": "f6249170c019",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR6,::ffff:175.6.84.96/128,no-resolve"
+          "id": "bd5a07a2aeb0",
+          "source": "Rabbit-Spec China CIDR",
+          "rule": "IP-CIDR,16.5.34.0/24"
         }
       ],
       "source_changed_sample": []
@@ -768,69 +147,13 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24110,
+      "prev_total": 24099,
       "curr_total": 24099,
       "added_count": 0,
-      "removed_count": 11,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "1b3fab6f78d9",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,intelnet.component"
-        },
-        {
-          "id": "1d29567df9e1",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN,practivate.adobe.ntp"
-        },
-        {
-          "id": "3366b363b6f6",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,v.roucdn"
-        },
-        {
-          "id": "3a46e1195e9a",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,alfabank.oavdo.amc"
-        },
-        {
-          "id": "4c41682b1325",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN,practivate.adobe.newoa"
-        },
-        {
-          "id": "67b62f4e172e",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN,practivate.adobe"
-        },
-        {
-          "id": "a03317131478",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN,practivate.adobe.ipp"
-        },
-        {
-          "id": "b1c1782c1214",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,gfwlist.start"
-        },
-        {
-          "id": "cf24a7550fc1",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,googlescholar.comusa"
-        },
-        {
-          "id": "e2d3235fbb4f",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,gfwlist.end"
-        },
-        {
-          "id": "ec76807efdb2",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,if.ttt"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -846,91 +169,24 @@
     },
     {
       "file": "Google.list",
-      "prev_total": 703,
+      "prev_total": 692,
       "curr_total": 692,
       "added_count": 0,
-      "removed_count": 11,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "4c77de1ec6e9",
-          "source": "blackmatrix7 Google",
-          "rule": "DOMAIN-SUFFIX,recaptcha-cn.net"
-        },
-        {
-          "id": "5c5226ac54c0",
-          "source": "blackmatrix7 Google",
-          "rule": "DOMAIN-KEYWORD,recaptcha"
-        },
-        {
-          "id": "6fffdc3b006f",
-          "source": "blackmatrix7 Google",
-          "rule": "DOMAIN-SUFFIX,recaptcha.net"
-        },
-        {
-          "id": "9c8e75e60581",
-          "source": "blackmatrix7 Google",
-          "rule": "DOMAIN-SUFFIX,beacons.gvt2.com"
-        },
-        {
-          "id": "a0822f40ec5a",
-          "source": "blackmatrix7 Google",
-          "rule": "DOMAIN-SUFFIX,redirector.snap.gvt1.com"
-        },
-        {
-          "id": "a447e845bc8d",
-          "source": "blackmatrix7 Google",
-          "rule": "DOMAIN-SUFFIX,redirector.gcpcdn.gvt1.com"
-        },
-        {
-          "id": "b7ad63db92d2",
-          "source": "blackmatrix7 Google",
-          "rule": "DOMAIN-SUFFIX,redirector.gvt1.com"
-        },
-        {
-          "id": "c1cc147d7f27",
-          "source": "blackmatrix7 Google",
-          "rule": "DOMAIN-SUFFIX,redirector.offline-maps.gvt1.com"
-        },
-        {
-          "id": "d8450aa8b309",
-          "source": "blackmatrix7 Google",
-          "rule": "DOMAIN-SUFFIX,gcp.gvt2.com"
-        },
-        {
-          "id": "fbacdfecd603",
-          "source": "blackmatrix7 Google",
-          "rule": "DOMAIN-SUFFIX,beacons2.gvt2.com"
-        },
-        {
-          "id": "fc5325ade101",
-          "source": "blackmatrix7 Google",
-          "rule": "DOMAIN-SUFFIX,beacons3.gvt2.com"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "Microsoft.list",
-      "prev_total": 526,
+      "prev_total": 524,
       "curr_total": 524,
       "added_count": 0,
-      "removed_count": 2,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "0f4bab9ea77f",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-SUFFIX,onecollector.cloudapp.aria"
-        },
-        {
-          "id": "ce81a48b9968",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-SUFFIX,evoke-windowsservices-tas.msedge"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -957,19 +213,13 @@
     },
     {
       "file": "PayPal.list",
-      "prev_total": 234,
+      "prev_total": 233,
       "curr_total": 233,
       "added_count": 0,
-      "removed_count": 1,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "81073938773b",
-          "source": "blackmatrix7 PayPal",
-          "rule": "DOMAIN-KEYWORD,paypal"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
