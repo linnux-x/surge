@@ -1,7 +1,7 @@
 # Generated from Rule/AI.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-09 04:01:16 +0800
-# TOTAL: 138
+# UPDATED: 2026-07-11 04:01:05 +0800
+# TOTAL: 139
 payload:
   - 'DOMAIN-SUFFIX,anthropic.com'
   - 'DOMAIN-SUFFIX,claude.ai'
@@ -87,6 +87,7 @@ payload:
   - 'DOMAIN,openaicomproductionae4b.blob.core.windows.net'
   - 'DOMAIN,production-openaicom-storage.azureedge.net'
   - 'DOMAIN,static.cloudflareinsights.com'
+  - 'DOMAIN-SUFFIX,aicode.googleapis.com'
   - 'DOMAIN-SUFFIX,algolia.net'
   - 'DOMAIN-SUFFIX,api.statsig.com'
   - 'DOMAIN-SUFFIX,challenges.cloudflare.com'

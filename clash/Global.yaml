@@ -1,7 +1,7 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-09 04:01:20 +0800
-# TOTAL: 24099
+# UPDATED: 2026-07-11 04:01:09 +0800
+# TOTAL: 24105
 payload:
   - 'DOMAIN,1password.drift.click'
   - 'DOMAIN,adobeereg.com'
@@ -5944,6 +5944,8 @@ payload:
   - 'DOMAIN-SUFFIX,floppy-tits.com'
   - 'DOMAIN-SUFFIX,flowfront.com'
   - 'DOMAIN-SUFFIX,flowfront.net'
+  - 'DOMAIN-SUFFIX,flowwow-images.com'
+  - 'DOMAIN-SUFFIX,flowwow.com'
   - 'DOMAIN-SUFFIX,fluffychat.im'
   - 'DOMAIN-SUFFIX,fluidfxapp.com'
   - 'DOMAIN-SUFFIX,flyflv.com'
@@ -6149,6 +6151,8 @@ payload:
   - 'DOMAIN-SUFFIX,fundingrates.xyz'
   - 'DOMAIN-SUFFIX,fundsupermart.com'
   - 'DOMAIN-SUFFIX,funimation.com'
+  - 'DOMAIN-SUFFIX,funpay.com'
+  - 'DOMAIN-SUFFIX,funpay.ru'
   - 'DOMAIN-SUFFIX,funshemale.com'
   - 'DOMAIN-SUFFIX,fuqqt.com'
   - 'DOMAIN-SUFFIX,furaffinity.net'
@@ -13621,6 +13625,7 @@ payload:
   - 'DOMAIN-SUFFIX,sferum.ru'
   - 'DOMAIN-SUFFIX,sfmcompile.club'
   - 'DOMAIN-SUFFIX,sforce.com'
+  - 'DOMAIN-SUFFIX,sfunpay.com'
   - 'DOMAIN-SUFFIX,sg.weibo.com'
   - 'DOMAIN-SUFFIX,sg120.me'
   - 'DOMAIN-SUFFIX,sg1lib.org'
@@ -14927,6 +14932,7 @@ payload:
   - 'DOMAIN-SUFFIX,tilda.ru'
   - 'DOMAIN-SUFFIX,tilda.ws'
   - 'DOMAIN-SUFFIX,tildaapi.com'
+  - 'DOMAIN-SUFFIX,tildacdn.net'
   - 'DOMAIN-SUFFIX,time-messenger.ru'
   - 'DOMAIN-SUFFIX,time.gov'
   - 'DOMAIN-SUFFIX,time.nrc.ca'

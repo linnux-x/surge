@@ -1,7 +1,7 @@
 # Generated from Rule/China.list (DOMAIN/DOMAIN-SUFFIX entries only)
 # Format: Clash/mihomo rule-provider, behavior: domain
-# UPDATED: 2026-07-09 04:01:18 +0800
-# TOTAL: 112146
+# UPDATED: 2026-07-11 04:01:07 +0800
+# TOTAL: 112148
 payload:
   - '+.wmsjsteam.com'
   - '+.steamchina.com'
@@ -91189,6 +91189,7 @@ payload:
   - '+.twty.vip'
   - '+.twwtn.com'
   - '+.twyuxin.com'
+  - '+.twyxh.com'
   - '+.twyxi.com'
   - '+.twz1t32lzy.com'
   - '+.twzilla.com'
@@ -111272,6 +111273,7 @@ payload:
   - '+.zwzyzx.com'
   - '+.zx-tour.com'
   - '+.zx-xcx.com'
+  - '+.zx.com'
   - '+.zx0093.com'
   - '+.zx017.com'
   - '+.zx017.net'

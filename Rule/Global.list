@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-07-09 04:01:20 +0800
+# UPDATED: 2026-07-11 04:01:09 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24099
+# TOTAL: 24105
 
 # ======= blackmatrix7 Global ========
 DOMAIN,1password.drift.click
@@ -5947,6 +5947,8 @@ DOMAIN-SUFFIX,floorp.app
 DOMAIN-SUFFIX,floppy-tits.com
 DOMAIN-SUFFIX,flowfront.com
 DOMAIN-SUFFIX,flowfront.net
+DOMAIN-SUFFIX,flowwow-images.com
+DOMAIN-SUFFIX,flowwow.com
 DOMAIN-SUFFIX,fluffychat.im
 DOMAIN-SUFFIX,fluidfxapp.com
 DOMAIN-SUFFIX,flyflv.com
@@ -6152,6 +6154,8 @@ DOMAIN-SUFFIX,fundinginstitutional.com
 DOMAIN-SUFFIX,fundingrates.xyz
 DOMAIN-SUFFIX,fundsupermart.com
 DOMAIN-SUFFIX,funimation.com
+DOMAIN-SUFFIX,funpay.com
+DOMAIN-SUFFIX,funpay.ru
 DOMAIN-SUFFIX,funshemale.com
 DOMAIN-SUFFIX,fuqqt.com
 DOMAIN-SUFFIX,furaffinity.net
@@ -13624,6 +13628,7 @@ DOMAIN-SUFFIX,sferum-dev.ru
 DOMAIN-SUFFIX,sferum.ru
 DOMAIN-SUFFIX,sfmcompile.club
 DOMAIN-SUFFIX,sforce.com
+DOMAIN-SUFFIX,sfunpay.com
 DOMAIN-SUFFIX,sg.weibo.com
 DOMAIN-SUFFIX,sg120.me
 DOMAIN-SUFFIX,sg1lib.org
@@ -14930,6 +14935,7 @@ DOMAIN-SUFFIX,tilda.cc
 DOMAIN-SUFFIX,tilda.ru
 DOMAIN-SUFFIX,tilda.ws
 DOMAIN-SUFFIX,tildaapi.com
+DOMAIN-SUFFIX,tildacdn.net
 DOMAIN-SUFFIX,time-messenger.ru
 DOMAIN-SUFFIX,time.gov
 DOMAIN-SUFFIX,time.nrc.ca

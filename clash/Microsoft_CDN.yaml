@@ -1,7 +1,7 @@
 # Generated from Rule/Microsoft_CDN.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-08 04:00:39 +0800
-# TOTAL: 84
+# UPDATED: 2026-07-11 04:01:09 +0800
+# TOTAL: 83
 payload:
   - 'DOMAIN-SUFFIX,aspnetcdn.com'
   - 'DOMAIN-SUFFIX,assets-yammer.com'
@@ -46,14 +46,13 @@ payload:
   - 'DOMAIN-SUFFIX,download.windowsupdate.com'
   - 'DOMAIN-SUFFIX,dl.delivery.mp.microsoft.com'
   - 'DOMAIN,res-h3.public.cdn.office.net'
-  - 'DOMAIN-SUFFIX,statics.teams.cdn.office.net'
+  - 'DOMAIN,statics.teams.cdn.office.net'
   - 'DOMAIN-SUFFIX,vz.download.prss.microsoft.com'
   - 'DOMAIN-SUFFIX,lex.download.prss.microsoft.com'
   - 'DOMAIN-SUFFIX,mbs.download.prss.microsoft.com'
   - 'DOMAIN-SUFFIX,rsm.download.prss.microsoft.com'
   - 'DOMAIN-SUFFIX,msdn.download.prss.microsoft.com'
   - 'DOMAIN-SUFFIX,myvs.download.prss.microsoft.com'
-  - 'DOMAIN-SUFFIX,storeedgefd.dsx.mp.microsoft.com'
   - 'DOMAIN-SUFFIX,volic.download.prss.microsoft.com'
   - 'DOMAIN-SUFFIX,lexuat.download.prss.microsoft.com'
   - 'DOMAIN-SUFFIX,oemsoc.download.prss.microsoft.com'

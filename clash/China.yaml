@@ -1,7 +1,7 @@
 # Generated from Rule/China.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-09 04:01:18 +0800
-# TOTAL: 112187
+# UPDATED: 2026-07-11 04:01:07 +0800
+# TOTAL: 112190
 payload:
   - 'DOMAIN-SUFFIX,wmsjsteam.com'
   - 'DOMAIN-SUFFIX,steamchina.com'
@@ -91190,6 +91190,7 @@ payload:
   - 'DOMAIN-SUFFIX,twty.vip'
   - 'DOMAIN-SUFFIX,twwtn.com'
   - 'DOMAIN-SUFFIX,twyuxin.com'
+  - 'DOMAIN-SUFFIX,twyxh.com'
   - 'DOMAIN-SUFFIX,twyxi.com'
   - 'DOMAIN-SUFFIX,twz1t32lzy.com'
   - 'DOMAIN-SUFFIX,twzilla.com'
@@ -111273,6 +111274,7 @@ payload:
   - 'DOMAIN-SUFFIX,zwzyzx.com'
   - 'DOMAIN-SUFFIX,zx-tour.com'
   - 'DOMAIN-SUFFIX,zx-xcx.com'
+  - 'DOMAIN-SUFFIX,zx.com'
   - 'DOMAIN-SUFFIX,zx0093.com'
   - 'DOMAIN-SUFFIX,zx017.com'
   - 'DOMAIN-SUFFIX,zx017.net'
@@ -112004,6 +112006,7 @@ payload:
   - 'DOMAIN,zzlive.zzc-media.com'
   - 'DOMAIN,zzq12345.gearhostpreview.com'
   - 'DOMAIN-SUFFIX,1passwordusercontent.com'
+  - 'DOMAIN-KEYWORD,sleep.pokemon'
   - 'DOMAIN-SUFFIX,123juzi.net'
   - 'DOMAIN-SUFFIX,2345.com'
   - 'DOMAIN-SUFFIX,365dmp.com'

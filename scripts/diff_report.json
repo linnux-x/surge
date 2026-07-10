@@ -1,17 +1,23 @@
 {
-  "generated_at": "2026-07-09T05:01:20.889841",
-  "total_added": 0,
-  "total_removed": 6,
-  "total_source_changed": 0,
+  "generated_at": "2026-07-11T05:01:11.045513",
+  "total_added": 33,
+  "total_removed": 8,
+  "total_source_changed": 24,
   "diffs": [
     {
       "file": "AI.list",
       "prev_total": 138,
-      "curr_total": 138,
-      "added_count": 0,
+      "curr_total": 139,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "4f9b7a9bf580",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,aicode.googleapis.com"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -51,11 +57,27 @@
     {
       "file": "China.list",
       "prev_total": 112187,
-      "curr_total": 112187,
-      "added_count": 0,
+      "curr_total": 112190,
+      "added_count": 3,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "43bb94bb631d",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "rule": "DOMAIN-SUFFIX,zx.com"
+        },
+        {
+          "id": "6b332785cbec",
+          "source": "Rabbit-Spec China",
+          "rule": "DOMAIN-KEYWORD,sleep.pokemon"
+        },
+        {
+          "id": "81408f8fdbce",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "rule": "DOMAIN-SUFFIX,twyxh.com"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -72,45 +94,277 @@
     },
     {
       "file": "China_IP.list",
-      "prev_total": 11434,
-      "curr_total": 11428,
-      "added_count": 0,
+      "prev_total": 11428,
+      "curr_total": 11444,
+      "added_count": 22,
       "removed_count": 6,
-      "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [
+      "source_changed_count": 24,
+      "added_sample": [
         {
-          "id": "31aae4e94843",
-          "source": "Rabbit-Spec China CIDR",
-          "rule": "IP-CIDR,123.253.226.0/24"
+          "id": "0fd0ee531860",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2a0f:6284:4cc0::/43"
         },
         {
-          "id": "60dc5ce5cebb",
-          "source": "Rabbit-Spec China CIDR",
-          "rule": "IP-CIDR,151.244.240.0/24"
+          "id": "10548dcf6a08",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2a0f:6284:4c40::/43"
         },
         {
-          "id": "61d69597f429",
-          "source": "Rabbit-Spec China CIDR",
-          "rule": "IP-CIDR,16.5.43.0/24"
+          "id": "445ac4821895",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,44.30.164.0/24"
         },
         {
-          "id": "a6d56d9efa88",
-          "source": "Rabbit-Spec China CIDR",
-          "rule": "IP-CIDR,51.146.70.0/24"
+          "id": "4517c7447992",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2a06:9f81:4600::/42"
         },
         {
-          "id": "b832d70770d5",
-          "source": "Rabbit-Spec China CIDR",
-          "rule": "IP-CIDR6,2001:df5:4740::/48"
+          "id": "4ff5e77db84a",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2a14:7586:6500::/48"
         },
         {
-          "id": "bd5a07a2aeb0",
-          "source": "Rabbit-Spec China CIDR",
-          "rule": "IP-CIDR,16.5.34.0/24"
+          "id": "5124585b460f",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2a0f:6284:4c20::/44"
+        },
+        {
+          "id": "570b05465d58",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2a0f:1cc6:b210::/47"
+        },
+        {
+          "id": "586a51d4d47a",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,216.75.141.0/24"
+        },
+        {
+          "id": "7122733ade2a",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2a0e:aa07:e288::/46"
+        },
+        {
+          "id": "82ad764e5788",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2a0f:6284:4ca0::/44"
+        },
+        {
+          "id": "84d2a438d31d",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,200.102.179.0/24"
+        },
+        {
+          "id": "a5356e4e1807",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2a0f:6284:4c80::/43"
+        },
+        {
+          "id": "beca888da6cb",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2a14:67c3:30::/44"
+        },
+        {
+          "id": "c580b30f3dd4",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2a13:aac4:f000::/44"
+        },
+        {
+          "id": "c6ca909bbee7",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,189.75.180.0/24"
+        },
+        {
+          "id": "d2f421260b87",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2a06:9f81:4660::/44"
+        },
+        {
+          "id": "d9c0538a8f92",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2a0f:6284:4c30::/48"
+        },
+        {
+          "id": "da06aad6bd37",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2a0f:1cc6:b212::/48"
+        },
+        {
+          "id": "e251767d9e79",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2a06:9f81:4640::/43"
+        },
+        {
+          "id": "e6f10363842b",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2a0f:6284:4c00::/43"
+        },
+        {
+          "id": "f46bf97ad540",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,72.244.62.0/24"
+        },
+        {
+          "id": "f49e0740abf9",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2a0f:6284:4c60::/44"
         }
       ],
-      "source_changed_sample": []
+      "removed_sample": [
+        {
+          "id": "1c5022e9e384",
+          "source": "blackmatrix7 China IPs",
+          "rule": "IP-CIDR6,2a13:aac4:f009::/48"
+        },
+        {
+          "id": "4156e5116947",
+          "source": "blackmatrix7 China IPs",
+          "rule": "IP-CIDR6,2a13:aac4:f00a::/47"
+        },
+        {
+          "id": "807d623ef3c1",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2a0e:aa07:e28a::/48"
+        },
+        {
+          "id": "970b4a8697b4",
+          "source": "blackmatrix7 China IPs",
+          "rule": "IP-CIDR6,2a13:aac4:f000::/45"
+        },
+        {
+          "id": "c58e7f64814d",
+          "source": "blackmatrix7 China IPs",
+          "rule": "IP-CIDR6,2a13:aac4:f00c::/48"
+        },
+        {
+          "id": "c9822e9b5541",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2a0e:aa07:e288::/47"
+        }
+      ],
+      "source_changed_sample": [
+        {
+          "id": "1fe54f8b0361",
+          "old_source": "Loyalsoldier China CIDR",
+          "new_source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "260cd8bdce17",
+          "old_source": "Loyalsoldier China CIDR",
+          "new_source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "a181936defc2",
+          "old_source": "Loyalsoldier China CIDR",
+          "new_source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "51f1ab9b30cf",
+          "old_source": "Loyalsoldier China CIDR",
+          "new_source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "95e2f5a5da41",
+          "old_source": "Loyalsoldier China CIDR",
+          "new_source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "a538d9e7475d",
+          "old_source": "Loyalsoldier China CIDR",
+          "new_source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "e8306b6d34b4",
+          "old_source": "Loyalsoldier China CIDR",
+          "new_source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "7da0bc281438",
+          "old_source": "Loyalsoldier China CIDR",
+          "new_source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "cf1359620869",
+          "old_source": "Loyalsoldier China CIDR",
+          "new_source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "ee86a9b14b09",
+          "old_source": "Loyalsoldier China CIDR",
+          "new_source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "172ed5fc53f9",
+          "old_source": "Loyalsoldier China CIDR",
+          "new_source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "475ffd418052",
+          "old_source": "Loyalsoldier China CIDR",
+          "new_source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "5ffad8d39de9",
+          "old_source": "Loyalsoldier China CIDR",
+          "new_source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "b2c71fe21b40",
+          "old_source": "Loyalsoldier China CIDR",
+          "new_source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "5678db0017cc",
+          "old_source": "Loyalsoldier China CIDR",
+          "new_source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "90538aa62153",
+          "old_source": "blackmatrix7 China IPs",
+          "new_source": "Loyalsoldier China CIDR"
+        },
+        {
+          "id": "134c1a95eed8",
+          "old_source": "Loyalsoldier China CIDR",
+          "new_source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "3277d45b5692",
+          "old_source": "Loyalsoldier China CIDR",
+          "new_source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "16927a0ce817",
+          "old_source": "Loyalsoldier China CIDR",
+          "new_source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "a97fd095f5f9",
+          "old_source": "Loyalsoldier China CIDR",
+          "new_source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "a63fdaffe832",
+          "old_source": "blackmatrix7 China IPs",
+          "new_source": "Loyalsoldier China CIDR"
+        },
+        {
+          "id": "e9a6f5e29764",
+          "old_source": "Loyalsoldier China CIDR",
+          "new_source": "blackmatrix7 China IPs"
+        },
+        {
+          "id": "de1e716e741c",
+          "old_source": "blackmatrix7 China IPs",
+          "new_source": "Loyalsoldier China CIDR"
+        },
+        {
+          "id": "80b46e8940fc",
+          "old_source": "Loyalsoldier China CIDR",
+          "new_source": "blackmatrix7 China IPs"
+        }
+      ]
     },
     {
       "file": "Disney.list",
@@ -148,11 +402,42 @@
     {
       "file": "Global.list",
       "prev_total": 24099,
-      "curr_total": 24099,
-      "added_count": 0,
+      "curr_total": 24105,
+      "added_count": 6,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "028f36ba4e84",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,funpay.ru"
+        },
+        {
+          "id": "2e587452ce92",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,funpay.com"
+        },
+        {
+          "id": "632e34e23470",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,sfunpay.com"
+        },
+        {
+          "id": "ac46b5658776",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,tildacdn.net"
+        },
+        {
+          "id": "f5d1ee5d1971",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,flowwow.com"
+        },
+        {
+          "id": "f79261cd8675",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,flowwow-images.com"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -192,12 +477,29 @@
     {
       "file": "Microsoft_CDN.list",
       "prev_total": 84,
-      "curr_total": 84,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 83,
+      "added_count": 1,
+      "removed_count": 2,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "768ec1e63e2c",
+          "source": "SukkaW Microsoft CDN",
+          "rule": "DOMAIN,statics.teams.cdn.office.net"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "9cfc6a93e23d",
+          "source": "SukkaW Microsoft CDN",
+          "rule": "DOMAIN-SUFFIX,storeedgefd.dsx.mp.microsoft.com"
+        },
+        {
+          "id": "b9c9f91ee318",
+          "source": "SukkaW Microsoft CDN",
+          "rule": "DOMAIN-SUFFIX,statics.teams.cdn.office.net"
+        }
+      ],
       "source_changed_sample": []
     },
     {
