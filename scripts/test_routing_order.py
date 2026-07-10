@@ -198,6 +198,14 @@ def simulate_routing(domain: str, routing_order: list[tuple[str, str]],
 
 
 def main() -> int:
+    # The report prints ✅/❌; force UTF-8 so it doesn't crash under a
+    # non-UTF-8 default console encoding (e.g. GBK on Chinese Windows).
+    for stream in (sys.stdout, sys.stderr):
+        try:
+            stream.reconfigure(encoding="utf-8")
+        except (AttributeError, ValueError):
+            pass
+
     # Load routing order
     routing_order = load_routing_order()
     print(f"Loaded routing order: {len(routing_order)} steps")

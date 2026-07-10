@@ -208,6 +208,15 @@ jobs:
           fi
           grep -qx '\[Host\]' Module/DNS-Mapping.sgmodule
           grep -q '^RULE-SET:https://ruleset\.skk\.moe/Modules/Rules/sukka_local_dns_mapping/' Module/DNS-Mapping.sgmodule
+          # Section whitelist: the module must contain ONLY the [Host] section.
+          # Size + [Host] checks alone would still let a tampered upstream
+          # smuggle a [Script], [MITM], [URL Rewrite] or [Rule] section within
+          # the 10 KB budget. Refuse anything but [Host].
+          if grep -E '^\[' Module/DNS-Mapping.sgmodule | grep -qvxF '[Host]'; then
+            echo "::error::DNS mapping module contains a non-[Host] section — refusing to sync:"
+            grep -E '^\[' Module/DNS-Mapping.sgmodule | grep -vxF '[Host]' || true
+            exit 1
+          fi
           # Match by pattern, not line number: robust if upstream reorders the
           # header, and normalizing #!desc drops upstream's changing timestamp
           # (avoids daily commit churn).
