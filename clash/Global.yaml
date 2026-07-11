@@ -1,7 +1,7 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-11 04:01:09 +0800
-# TOTAL: 24105
+# UPDATED: 2026-07-12 04:01:15 +0800
+# TOTAL: 24106
 payload:
   - 'DOMAIN,1password.drift.click'
   - 'DOMAIN,adobeereg.com'
@@ -10178,6 +10178,7 @@ payload:
   - 'DOMAIN-SUFFIX,misskey.yukineko.me'
   - 'DOMAIN-SUFFIX,mistresskym.com'
   - 'DOMAIN-SUFFIX,mit.net'
+  - 'DOMAIN-SUFFIX,mitao.bar'
   - 'DOMAIN-SUFFIX,miteam.com'
   - 'DOMAIN-SUFFIX,mitnaka.com'
   - 'DOMAIN-SUFFIX,mitpressjournals.org'
