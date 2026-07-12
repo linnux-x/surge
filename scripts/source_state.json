@@ -19,19 +19,19 @@
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
     "content_length": "4101",
-    "etag": "\"233c443fd888f653a3d3764c54bb9d29b9eec30c33e0173576b6edc895b91b0b\"",
+    "etag": "\"ee2c32e6eea880b885bd55401146048bc75a06bfd759a1ea433fb527af5cd241\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
     "content_length": "101069",
-    "etag": "\"f6ab0dfc4f215f193929a5a82392b95bf7e2b7970663b3dc35d06180d930c84f\"",
+    "etag": "\"f250957109191699da5459d5357c7239a144960a7f71681b60e117379a58a2cd\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/ChinaCIDR.list": {
     "content_length": "140757",
-    "etag": "\"ae875653423d07e8ddc7b5e25aa0f47a3d72fd356060798e5b0009351b4c21d1\"",
+    "etag": "\"4cd01c11d6785a5d17ba95b4db4366f9de9cd7d1e0886a049afb2a12bfee91e1\"",
     "last_modified": null,
     "source_available": true
   },
@@ -216,8 +216,8 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/domestic.conf": {
-    "content_length": null,
-    "etag": "W/\"b33475de3949c7bdebe58e4e111b15ea\"",
+    "content_length": "22545",
+    "etag": "\"b33475de3949c7bdebe58e4e111b15ea\"",
     "last_modified": null,
     "source_available": true
   },
