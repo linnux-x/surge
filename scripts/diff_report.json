@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-13T05:01:20.391947",
-  "total_added": 0,
+  "generated_at": "2026-07-14T05:01:23.621443",
+  "total_added": 27,
   "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
@@ -51,11 +51,62 @@
     {
       "file": "China.list",
       "prev_total": 112130,
-      "curr_total": 112130,
-      "added_count": 0,
+      "curr_total": 112140,
+      "added_count": 10,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "2d5dfd75f869",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "rule": "DOMAIN-SUFFIX,adacpp.com"
+        },
+        {
+          "id": "2f7000cfacd6",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "rule": "DOMAIN-SUFFIX,leyuansu.com"
+        },
+        {
+          "id": "6bee156896ed",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "rule": "DOMAIN-SUFFIX,zmtqsh.com"
+        },
+        {
+          "id": "70b1d8bf6262",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "rule": "DOMAIN-SUFFIX,colorfulclouds.com"
+        },
+        {
+          "id": "9e0dd7734c35",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "rule": "DOMAIN-SUFFIX,xiaomengai.com"
+        },
+        {
+          "id": "9f1518cf20c8",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "rule": "DOMAIN-SUFFIX,duoyiwangluo.com"
+        },
+        {
+          "id": "b01b440e9fbb",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "rule": "DOMAIN-SUFFIX,shedunews.net"
+        },
+        {
+          "id": "ef603724ff5b",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "rule": "DOMAIN-SUFFIX,kling-ai.com"
+        },
+        {
+          "id": "f2498e1437d7",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "rule": "DOMAIN-SUFFIX,ygduoyi.com"
+        },
+        {
+          "id": "f3e3c9e0b5bc",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "rule": "DOMAIN-SUFFIX,gtgjtrip.com"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -117,11 +168,97 @@
     {
       "file": "Global.list",
       "prev_total": 24106,
-      "curr_total": 24106,
-      "added_count": 0,
+      "curr_total": 24123,
+      "added_count": 17,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "0896149fa34d",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,sentry.dev"
+        },
+        {
+          "id": "2ed838790cd9",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,happ.info"
+        },
+        {
+          "id": "303d6c53109b",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,getsentry.com"
+        },
+        {
+          "id": "3e78a645a77a",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,delets.online"
+        },
+        {
+          "id": "41eb8ed0e4fe",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,platov.co"
+        },
+        {
+          "id": "55af2e60a652",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,onemoment.cc"
+        },
+        {
+          "id": "73d55b4ddc0e",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,templatemonster.com"
+        },
+        {
+          "id": "74cf842c90f4",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,bestchange.net"
+        },
+        {
+          "id": "7eafd21ef904",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,ramon.cash"
+        },
+        {
+          "id": "943974e75de8",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,wbcontent.net"
+        },
+        {
+          "id": "9be979f3b334",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,bestchange.ru"
+        },
+        {
+          "id": "acc0d6bd5e93",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,bestchange.com"
+        },
+        {
+          "id": "b67aa0ea88ca",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,ramon.money"
+        },
+        {
+          "id": "b82d3288671e",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,happ.su"
+        },
+        {
+          "id": "d4c5647e685d",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,payget.pro"
+        },
+        {
+          "id": "d5f6ce3b2302",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,crocoblock.com"
+        },
+        {
+          "id": "f66d2976ad84",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,motocms.com"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
