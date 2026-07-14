@@ -1,7 +1,7 @@
 # Generated from Rule/China.list (DOMAIN/DOMAIN-SUFFIX entries only)
 # Format: Clash/mihomo rule-provider, behavior: domain
-# UPDATED: 2026-07-14 04:01:20 +0800
-# TOTAL: 112098
+# UPDATED: 2026-07-15 04:00:34 +0800
+# TOTAL: 112099
 payload:
   - '+.wmsjsteam.com'
   - '+.steamchina.com'
@@ -111955,6 +111955,7 @@ payload:
   - 'zzlive.zzc-media.com'
   - 'zzq12345.gearhostpreview.com'
   - '+.1passwordusercontent.com'
+  - '+.test-ipv6.com'
   - '+.123juzi.net'
   - '+.2345.com'
   - '+.365dmp.com'

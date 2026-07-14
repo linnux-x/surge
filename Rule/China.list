@@ -1,9 +1,9 @@
 # NAME: China
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-07-14 04:01:20 +0800
+# UPDATED: 2026-07-15 04:00:34 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 112140
+# TOTAL: 112141
 
 # ======= Manual Rules ========
 # China game download domains — route DIRECT via China policy
@@ -111972,6 +111972,7 @@ DOMAIN,zzq12345.gearhostpreview.com
 # ======= Rabbit-Spec China ========
 DOMAIN-SUFFIX,1passwordusercontent.com
 DOMAIN-KEYWORD,sleep.pokemon
+DOMAIN-SUFFIX,test-ipv6.com
 DOMAIN-SUFFIX,123juzi.net
 DOMAIN-SUFFIX,2345.com
 DOMAIN-SUFFIX,365dmp.com

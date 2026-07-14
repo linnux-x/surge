@@ -1,6 +1,6 @@
 # Generated from Rule/China_IP.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-14 04:01:22 +0800
+# UPDATED: 2026-07-15 04:00:36 +0800
 # TOTAL: 11431
 payload:
   - 'IP-CIDR,1.12.0.0/14'

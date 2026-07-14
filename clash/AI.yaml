@@ -1,6 +1,6 @@
 # Generated from Rule/AI.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-14 04:01:18 +0800
+# UPDATED: 2026-07-15 04:00:33 +0800
 # TOTAL: 139
 payload:
   - 'DOMAIN-SUFFIX,anthropic.com'

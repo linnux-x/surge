@@ -19,25 +19,25 @@
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
     "content_length": "4101",
-    "etag": "\"056c6675781338368a9146cc7c53bcfa2e620ecf699916fdd6532b2a61097846\"",
+    "etag": "\"df36e4144d02b6c69567cc111d25331df62c416d3f5fad06b1438df5793cff4a\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
-    "content_length": "101069",
-    "etag": "\"0e897c89e7b4aabf5891ca67cc5303b8b24755f664e0f96fb67b4b7a7df627ca\"",
+    "content_length": "101118",
+    "etag": "\"275d9f8d5bcdcdd14163ad5b1e68cae8abc721e3039fca1a7f547ddf17e86400\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/ChinaCIDR.list": {
     "content_length": "140757",
-    "etag": "\"583941bc57b2df6c7c7c5c76d65dc1ac777764318589d661701c1404adeecfa1\"",
+    "etag": "\"bbbf78d32a1636fcc226897e470e5079947155f1c1d321d3cccd6cb7824300db\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaW/Surge/master/Source/domainset/download.conf": {
-    "content_length": "34982",
-    "etag": "\"47b0f74a1cb0cbf79c35f21b9eeeb6fdd521b57bbdd0b96535b7dd1f18f28d3f\"",
+    "content_length": "35372",
+    "etag": "\"6f10e5477fd70b8fdc588255fb9a80c3d8222ec59d0ccddc7c87ef1577da297e\"",
     "last_modified": null,
     "source_available": true
   },

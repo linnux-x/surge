@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-14T05:01:23.621443",
-  "total_added": 27,
-  "total_removed": 0,
+  "generated_at": "2026-07-15T05:00:37.853272",
+  "total_added": 11,
+  "total_removed": 16,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -50,61 +50,16 @@
     },
     {
       "file": "China.list",
-      "prev_total": 112130,
-      "curr_total": 112140,
-      "added_count": 10,
+      "prev_total": 112140,
+      "curr_total": 112141,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [
         {
-          "id": "2d5dfd75f869",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,adacpp.com"
-        },
-        {
-          "id": "2f7000cfacd6",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,leyuansu.com"
-        },
-        {
-          "id": "6bee156896ed",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,zmtqsh.com"
-        },
-        {
-          "id": "70b1d8bf6262",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,colorfulclouds.com"
-        },
-        {
-          "id": "9e0dd7734c35",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,xiaomengai.com"
-        },
-        {
-          "id": "9f1518cf20c8",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,duoyiwangluo.com"
-        },
-        {
-          "id": "b01b440e9fbb",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,shedunews.net"
-        },
-        {
-          "id": "ef603724ff5b",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,kling-ai.com"
-        },
-        {
-          "id": "f2498e1437d7",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,ygduoyi.com"
-        },
-        {
-          "id": "f3e3c9e0b5bc",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,gtgjtrip.com"
+          "id": "4e0a13ac95c4",
+          "source": "Rabbit-Spec China",
+          "rule": "DOMAIN-SUFFIX,test-ipv6.com"
         }
       ],
       "removed_sample": [],
@@ -146,12 +101,144 @@
     {
       "file": "Download.list",
       "prev_total": 1699,
-      "curr_total": 1699,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 1693,
+      "added_count": 10,
+      "removed_count": 16,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "061361558827",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,cdn-fi-1.comaps.app"
+        },
+        {
+          "id": "342c567cc82b",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,comaps.firewall-gateway.de"
+        },
+        {
+          "id": "83c77f7403c8",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,comaps-it1.unfoxo.it"
+        },
+        {
+          "id": "845dd6845631",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,cdn-us-2.comaps.tech"
+        },
+        {
+          "id": "94d8e05e9d38",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,mapgen-fi-1.comaps.app"
+        },
+        {
+          "id": "9712d3dcbebb",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,s3-website.cloud.ru"
+        },
+        {
+          "id": "977de3e912fd",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,cdn-uk1.organicmaps.app"
+        },
+        {
+          "id": "b0589faae58f",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,comaps.openstreetmap.fr"
+        },
+        {
+          "id": "b2106d1656d3",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,cdn-nl1.organicmaps.app"
+        },
+        {
+          "id": "f884d41acbcc",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,cdn-us-1.comaps.app"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "01b0c60fb9a2",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,www.nic.funet.fi"
+        },
+        {
+          "id": "0b0b3ec8d71e",
+          "source": "SukkaW Game Download",
+          "rule": "DOMAIN,lancache.steamcontent.com"
+        },
+        {
+          "id": "0b58b00de4c5",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,cursor.blob.core.windows.net"
+        },
+        {
+          "id": "0e2421bb9d01",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,ports.ubuntu.moon127.net"
+        },
+        {
+          "id": "121006204cf0",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,www.artfiles.org"
+        },
+        {
+          "id": "1d6a3747dbfb",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,mirrors.nic.funet.fi"
+        },
+        {
+          "id": "2aa5c7eec9f2",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,mirror.amaze.com.au"
+        },
+        {
+          "id": "367eb14d6118",
+          "source": "SukkaW Game Download",
+          "rule": "DOMAIN-SUFFIX,cdn.wup.shop.nintendo.net"
+        },
+        {
+          "id": "3b9e72cdf264",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,rsync.ubuntu.nautile.nc"
+        },
+        {
+          "id": "5220c5df59ff",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,mirror.zzunipark.com"
+        },
+        {
+          "id": "5d6aab947923",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,mirror.linux.ro"
+        },
+        {
+          "id": "6cc27750ad4f",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,s3.us.archive.org"
+        },
+        {
+          "id": "93634517855f",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,artfiles.org"
+        },
+        {
+          "id": "9e729d8dff5e",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,mirrors.dotsrc.org"
+        },
+        {
+          "id": "ae6ebe1cbd46",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,mirror.clarkson.edu"
+        },
+        {
+          "id": "f1b38c604a61",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,eu.dl.twrp.me"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -167,98 +254,12 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24106,
+      "prev_total": 24123,
       "curr_total": 24123,
-      "added_count": 17,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "0896149fa34d",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,sentry.dev"
-        },
-        {
-          "id": "2ed838790cd9",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,happ.info"
-        },
-        {
-          "id": "303d6c53109b",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,getsentry.com"
-        },
-        {
-          "id": "3e78a645a77a",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,delets.online"
-        },
-        {
-          "id": "41eb8ed0e4fe",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,platov.co"
-        },
-        {
-          "id": "55af2e60a652",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,onemoment.cc"
-        },
-        {
-          "id": "73d55b4ddc0e",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,templatemonster.com"
-        },
-        {
-          "id": "74cf842c90f4",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,bestchange.net"
-        },
-        {
-          "id": "7eafd21ef904",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,ramon.cash"
-        },
-        {
-          "id": "943974e75de8",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,wbcontent.net"
-        },
-        {
-          "id": "9be979f3b334",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,bestchange.ru"
-        },
-        {
-          "id": "acc0d6bd5e93",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,bestchange.com"
-        },
-        {
-          "id": "b67aa0ea88ca",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,ramon.money"
-        },
-        {
-          "id": "b82d3288671e",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,happ.su"
-        },
-        {
-          "id": "d4c5647e685d",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,payget.pro"
-        },
-        {
-          "id": "d5f6ce3b2302",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,crocoblock.com"
-        },
-        {
-          "id": "f66d2976ad84",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,motocms.com"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
