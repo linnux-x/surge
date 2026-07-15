@@ -1,9 +1,9 @@
 # NAME: Download
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-07-15 04:00:33 +0800
+# UPDATED: 2026-07-16 04:01:06 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1693
+# TOTAL: 1685
 
 # ======= Manual Rules ========
 # Borrowed from SukkaW non_ip/direct downloader process rules
@@ -296,7 +296,6 @@ DOMAIN,dl-portal.iina.io
 DOMAIN,dl.iina.io
 DOMAIN,downloads.sourceforge.net
 DOMAIN-SUFFIX,dl.sourceforge.net
-DOMAIN,download.fosshub.com
 DOMAIN,stats.snipaste.com
 DOMAIN,dl.snipaste.com
 DOMAIN,updater.snipaste.com
@@ -465,7 +464,6 @@ DOMAIN,download.amelabs.net
 DOMAIN,cdn-builds.paw.cloud
 DOMAIN,cdnorg.d.miui.com
 DOMAIN,bn.d.miui.com
-DOMAIN,cdn-ota.azureedge.net
 DOMAIN,update.cyberduck.io
 DOMAIN,version.cyberduck.io
 DOMAIN,download.garmin.com
@@ -718,7 +716,6 @@ DOMAIN,ulises.hostalia.com
 DOMAIN,ftp.se.debian.org
 DOMAIN,debian.lth.se
 DOMAIN,ftp.acc.umu.se
-DOMAIN,ftp.ludd.ltu.se
 DOMAIN,ftpmirror1.infania.net
 DOMAIN,mirror.braindrainlan.nu
 DOMAIN,mirrors.glesys.net
@@ -846,7 +843,6 @@ DOMAIN,mirror.ca-tr.kamatera.com
 DOMAIN,mirror.digitaloceans.dev
 DOMAIN,mirror.esecuredata.com
 DOMAIN,mirror.rcg.sfu.ca
-DOMAIN,mirror.its.dal.ca
 DOMAIN,ubuntu-mirror.puq.apoapsis.cl
 DOMAIN,mirror.uchile.cl
 DOMAIN,elmirror.cl
@@ -892,7 +888,6 @@ DOMAIN,ftp.tu-ilmenau.de
 DOMAIN,ftp.uni-bayreuth.de
 DOMAIN,rsync.uni-bayreuth.de
 DOMAIN,ftp5.gwdg.de
-DOMAIN,mirror.battern.eu
 DOMAIN,mirror.daniel-jost.net
 DOMAIN,mirror.eu-fr.kamatera.com
 DOMAIN,mirror.kamp.de
@@ -941,7 +936,6 @@ DOMAIN,repo.ugm.ac.id
 DOMAIN,repo.usk.ac.id
 DOMAIN,suro.ubaya.ac.id
 DOMAIN-SUFFIX,mirrors.zagrio.net
-DOMAIN,mirror.kernel.ir
 DOMAIN,ubuntu.mobinhost.com
 DOMAIN,ir.ubuntu.sindad.cloud
 DOMAIN,mirror.arvancloud.ir
@@ -1165,7 +1159,6 @@ DOMAIN,mirrors.usinternet.com
 DOMAIN,ubuntu.cs.utah.edu
 DOMAIN-SUFFIX,mirror.shastacoe.net
 DOMAIN,mirrors.gigenet.com
-DOMAIN,lug.mines.edu
 DOMAIN,mirror.rustytel.net
 DOMAIN,mirrors.cmich.edu
 DOMAIN,mirrors.us.kernel.org
@@ -1233,7 +1226,7 @@ DOMAIN-SUFFIX,mirrors.cicku.me
 DOMAIN,mirror.xenyth.net
 DOMAIN,rsync-linuxsoft.cern.ch
 DOMAIN,mirror.karneval.cz
-DOMAIN,mirror1.hs-esslingen.de
+DOMAIN,mirror1.hcgen.de
 DOMAIN,mirror.imt-systems.com
 DOMAIN,fr2.rpmfind.net
 DOMAIN,mirror.in2p3.fr
@@ -1385,7 +1378,6 @@ DOMAIN,archlinux.nic.cz
 DOMAIN,debian.nic.cz
 DOMAIN,ubuntu.nic.cz
 DOMAIN,fedora.nic.cz
-DOMAIN,centos.nic.cz
 DOMAIN,opensuse.nic.cz
 DOMAIN,cran.nic.cz
 DOMAIN,ftp.mpi-inf.mpg.de
