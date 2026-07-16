@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-07-16 04:01:10 +0800
+# UPDATED: 2026-07-17 04:00:37 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24139
+# TOTAL: 24138
 
 # ======= blackmatrix7 Global ========
 DOMAIN,1password.drift.click
@@ -3617,7 +3617,6 @@ DOMAIN-SUFFIX,chargenowusa.com
 DOMAIN-SUFFIX,charlotte-anime.jp
 DOMAIN-SUFFIX,charmescorts.com
 DOMAIN-SUFFIX,chatango.com
-DOMAIN-SUFFIX,chatgpt.site
 DOMAIN-SUFFIX,chatgptvideo.xyz
 DOMAIN-SUFFIX,chatgptvideob.buzz
 DOMAIN-SUFFIX,chatsex.xxx

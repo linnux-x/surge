@@ -1,9 +1,9 @@
 # NAME: AI
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-07-16 04:01:05 +0800
+# UPDATED: 2026-07-17 04:00:33 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 139
+# TOTAL: 140
 
 # ======= Manual Rules ========
 # Anthropic / Claude
@@ -113,6 +113,7 @@ DOMAIN-SUFFIX,algolia.net
 DOMAIN-SUFFIX,api.statsig.com
 DOMAIN-SUFFIX,challenges.cloudflare.com
 DOMAIN-SUFFIX,chatgpt.livekit.cloud
+DOMAIN-SUFFIX,chatgpt.site
 DOMAIN-SUFFIX,client-api.arkoselabs.com
 DOMAIN-SUFFIX,clients6.google.com
 DOMAIN-SUFFIX,ct.sendgrid.net

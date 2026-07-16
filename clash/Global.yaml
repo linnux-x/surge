@@ -1,7 +1,7 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-16 04:01:10 +0800
-# TOTAL: 24139
+# UPDATED: 2026-07-17 04:00:37 +0800
+# TOTAL: 24138
 payload:
   - 'DOMAIN,1password.drift.click'
   - 'DOMAIN,adobeereg.com'
@@ -3614,7 +3614,6 @@ payload:
   - 'DOMAIN-SUFFIX,charlotte-anime.jp'
   - 'DOMAIN-SUFFIX,charmescorts.com'
   - 'DOMAIN-SUFFIX,chatango.com'
-  - 'DOMAIN-SUFFIX,chatgpt.site'
   - 'DOMAIN-SUFFIX,chatgptvideo.xyz'
   - 'DOMAIN-SUFFIX,chatgptvideob.buzz'
   - 'DOMAIN-SUFFIX,chatsex.xxx'
