@@ -1,7 +1,7 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-17 04:00:37 +0800
-# TOTAL: 24138
+# UPDATED: 2026-07-18 04:00:43 +0800
+# TOTAL: 24143
 payload:
   - 'DOMAIN,1password.drift.click'
   - 'DOMAIN,adobeereg.com'
@@ -2098,6 +2098,7 @@ payload:
   - 'DOMAIN-SUFFIX,azubu.tv'
   - 'DOMAIN-SUFFIX,azure-api.net'
   - 'DOMAIN-SUFFIX,azurecr.io'
+  - 'DOMAIN-SUFFIX,azureedge.us'
   - 'DOMAIN-SUFFIX,azurestaticapps.net'
   - 'DOMAIN-SUFFIX,b-eroland.net'
   - 'DOMAIN-SUFFIX,b-ok.africa'
@@ -3975,6 +3976,7 @@ payload:
   - 'DOMAIN-SUFFIX,coomer.party'
   - 'DOMAIN-SUFFIX,coomer.st'
   - 'DOMAIN-SUFFIX,coomer.su'
+  - 'DOMAIN-SUFFIX,copilot-stg.com'
   - 'DOMAIN-SUFFIX,copilot.com'
   - 'DOMAIN-SUFFIX,copro.pw'
   - 'DOMAIN-SUFFIX,copy-manga.com'
@@ -9847,6 +9849,7 @@ payload:
   - 'DOMAIN-SUFFIX,mgo.com'
   - 'DOMAIN-SUFFIX,mhcb.ru'
   - 'DOMAIN-SUFFIX,mhcbr.ru'
+  - 'DOMAIN-SUFFIX,mhgui.com'
   - 'DOMAIN-SUFFIX,mhhanman.xyz'
   - 'DOMAIN-SUFFIX,mhqwe.xyz'
   - 'DOMAIN-SUFFIX,mhradio.org'
@@ -10777,6 +10780,7 @@ payload:
   - 'DOMAIN-SUFFIX,netsurf-browser.org'
   - 'DOMAIN-SUFFIX,netvideogirls.com'
   - 'DOMAIN-SUFFIX,netvigator.com'
+  - 'DOMAIN-SUFFIX,netxh.blog'
   - 'DOMAIN-SUFFIX,netzerobuildings.com'
   - 'DOMAIN-SUFFIX,netzerobuildingstudio.com'
   - 'DOMAIN-SUFFIX,neuerporno.com'
@@ -14324,6 +14328,7 @@ payload:
   - 'DOMAIN-SUFFIX,starfieldtech.com'
   - 'DOMAIN-SUFFIX,stargazer-games.com'
   - 'DOMAIN-SUFFIX,stark-verlag.ch'
+  - 'DOMAIN-SUFFIX,starlink.com'
   - 'DOMAIN-SUFFIX,starship-ent.com'
   - 'DOMAIN-SUFFIX,starsze.icu'
   - 'DOMAIN-SUFFIX,start.ru'
