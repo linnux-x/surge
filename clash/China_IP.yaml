@@ -1,7 +1,7 @@
 # Generated from Rule/China_IP.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-18 04:00:42 +0800
-# TOTAL: 11507
+# UPDATED: 2026-07-19 04:00:53 +0800
+# TOTAL: 11497
 payload:
   - 'IP-CIDR,1.12.0.0/14'
   - 'IP-CIDR,1.24.0.0/13'
@@ -1947,6 +1947,8 @@ payload:
   - 'IP-CIDR6,2a0f:1cc5:40::/48'
   - 'IP-CIDR6,2a0f:1cc5:110::/44'
   - 'IP-CIDR6,2a0f:1cc5:130::/44'
+  - 'IP-CIDR6,2a0f:1cc5:140::/43'
+  - 'IP-CIDR6,2a0f:1cc5:160::/44'
   - 'IP-CIDR6,2a0f:1cc5:600::/47'
   - 'IP-CIDR6,2a0f:1cc5:603::/48'
   - 'IP-CIDR6,2a0f:1cc5:642::/48'
@@ -2042,6 +2044,7 @@ payload:
   - 'IP-CIDR6,2a14:67c1:b578::/48'
   - 'IP-CIDR6,2a14:67c1:b582::/48'
   - 'IP-CIDR6,2a14:67c1:b586::/47'
+  - 'IP-CIDR6,2a14:67c1:b589::/48'
   - 'IP-CIDR6,2a14:67c1:b590::/48'
   - 'IP-CIDR6,2a14:67c1:b5e0::/44'
   - 'IP-CIDR6,2a14:67c1:c300::/40'
@@ -11497,16 +11500,3 @@ payload:
   - 'IP-CIDR,129.227.71.143/32'
   - 'IP-CIDR,13.250.89.184/32'
   - 'IP-CIDR,154.18.212.240/32'
-  - 'IP-CIDR6,2400:e3e0:aa00::/40'
-  - 'IP-CIDR6,2400:e3e0:ab00::/41'
-  - 'IP-CIDR6,2400:e3e0:ab80::/42'
-  - 'IP-CIDR6,2400:e3e0:abc0::/43'
-  - 'IP-CIDR6,2400:e3e0:abe0::/44'
-  - 'IP-CIDR6,2400:e3e0:abf1::/48'
-  - 'IP-CIDR6,2400:e3e0:abf2::/47'
-  - 'IP-CIDR6,2400:e3e0:abf4::/46'
-  - 'IP-CIDR6,2400:e3e0:abf8::/45'
-  - 'IP-CIDR6,2a0f:1cc5:140::/42'
-  - 'IP-CIDR6,2a0f:7802:e100::/46'
-  - 'IP-CIDR6,2a14:67c1:b588::/47'
-  - 'IP-CIDR6,2a14:c380:21::/48'

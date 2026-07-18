@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-07-18 04:00:43 +0800
+# UPDATED: 2026-07-19 04:00:53 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24143
+# TOTAL: 24142
 
 # ======= blackmatrix7 Global ========
 DOMAIN,1password.drift.click
@@ -11996,7 +11996,6 @@ DOMAIN-SUFFIX,pojiefuli9113.xyz
 DOMAIN-SUFFIX,polyu.hk
 DOMAIN-SUFFIX,ponyanimalsex.com
 DOMAIN-SUFFIX,poofetish.com
-DOMAIN-SUFFIX,pool.ntp.org
 DOMAIN-SUFFIX,poop-pee.online
 DOMAIN-SUFFIX,poopee-puke.com
 DOMAIN-SUFFIX,poopeegirls.com

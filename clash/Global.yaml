@@ -1,7 +1,7 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-18 04:00:43 +0800
-# TOTAL: 24143
+# UPDATED: 2026-07-19 04:00:53 +0800
+# TOTAL: 24142
 payload:
   - 'DOMAIN,1password.drift.click'
   - 'DOMAIN,adobeereg.com'
@@ -11993,7 +11993,6 @@ payload:
   - 'DOMAIN-SUFFIX,polyu.hk'
   - 'DOMAIN-SUFFIX,ponyanimalsex.com'
   - 'DOMAIN-SUFFIX,poofetish.com'
-  - 'DOMAIN-SUFFIX,pool.ntp.org'
   - 'DOMAIN-SUFFIX,poop-pee.online'
   - 'DOMAIN-SUFFIX,poopee-puke.com'
   - 'DOMAIN-SUFFIX,poopeegirls.com'

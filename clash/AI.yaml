@@ -1,7 +1,7 @@
 # Generated from Rule/AI.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-18 04:00:38 +0800
-# TOTAL: 140
+# UPDATED: 2026-07-19 04:00:49 +0800
+# TOTAL: 143
 payload:
   - 'DOMAIN-SUFFIX,anthropic.com'
   - 'DOMAIN-SUFFIX,claude.ai'
@@ -89,6 +89,7 @@ payload:
   - 'DOMAIN,static.cloudflareinsights.com'
   - 'DOMAIN-SUFFIX,aicode.googleapis.com'
   - 'DOMAIN-SUFFIX,algolia.net'
+  - 'DOMAIN-SUFFIX,api.revenuecat.com'
   - 'DOMAIN-SUFFIX,api.statsig.com'
   - 'DOMAIN-SUFFIX,challenges.cloudflare.com'
   - 'DOMAIN-SUFFIX,chatgpt.livekit.cloud'
@@ -107,12 +108,14 @@ payload:
   - 'DOMAIN-SUFFIX,observeit.net'
   - 'DOMAIN-SUFFIX,openaiapi-site.azureedge.net'
   - 'DOMAIN-SUFFIX,openaicom.imgix.net'
+  - 'DOMAIN-SUFFIX,pool.ntp.org'
   - 'DOMAIN-SUFFIX,prodregistryv2.org'
   - 'DOMAIN-SUFFIX,rum.browser-intake-datadoghq.com'
   - 'DOMAIN-SUFFIX,stripe.com'
   - 'DOMAIN-SUFFIX,turn.livekit.cloud'
   - 'DOMAIN-SUFFIX,workos.com'
   - 'DOMAIN-SUFFIX,workos.imgix.net'
+  - 'IP-ASN,13335,no-resolve'
   - 'IP-ASN,20473,no-resolve'
   - 'IP-ASN,399358,no-resolve'
   - 'IP-CIDR,129.146.3.78/32,no-resolve'
