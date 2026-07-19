@@ -1,7 +1,7 @@
 # Generated from Rule/China.list (DOMAIN/DOMAIN-SUFFIX entries only)
 # Format: Clash/mihomo rule-provider, behavior: domain
-# UPDATED: 2026-07-19 04:00:51 +0800
-# TOTAL: 111906
+# UPDATED: 2026-07-20 04:00:54 +0800
+# TOTAL: 111907
 payload:
   - '+.wmsjsteam.com'
   - '+.steamchina.com'
@@ -67451,6 +67451,7 @@ payload:
   - '+.mychuguan.com'
   - '+.mychunyan.net'
   - '+.myckjr.com'
+  - '+.mycloudnas.com'
   - '+.mycloudstudy.com'
   - '+.myclub2.com'
   - '+.mycnc.org'

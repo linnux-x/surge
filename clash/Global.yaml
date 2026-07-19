@@ -1,7 +1,7 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-19 04:00:53 +0800
-# TOTAL: 24142
+# UPDATED: 2026-07-20 04:00:57 +0800
+# TOTAL: 24143
 payload:
   - 'DOMAIN,1password.drift.click'
   - 'DOMAIN,adobeereg.com'
@@ -199,7 +199,6 @@ payload:
   - 'DOMAIN-SUFFIX,18comic-god.xyz'
   - 'DOMAIN-SUFFIX,18comic.cc'
   - 'DOMAIN-SUFFIX,18comic.company'
-  - 'DOMAIN-SUFFIX,18comic.vip'
   - 'DOMAIN-SUFFIX,18commic.com'
   - 'DOMAIN-SUFFIX,18doujin.com'
   - 'DOMAIN-SUFFIX,18doujinshi.xyz'
@@ -12595,6 +12594,7 @@ payload:
   - 'DOMAIN-SUFFIX,qmttqg3k.me'
   - 'DOMAIN-SUFFIX,qmzdd.com'
   - 'DOMAIN-SUFFIX,qnap.com'
+  - 'DOMAIN-SUFFIX,qnapsupport.net'
   - 'DOMAIN-SUFFIX,qombol.com'
   - 'DOMAIN-SUFFIX,qoo-app.com'
   - 'DOMAIN-SUFFIX,qoo10.jp'
@@ -17806,6 +17806,7 @@ payload:
   - 'DOMAIN-SUFFIX,18board.com'
   - 'DOMAIN-SUFFIX,18board.info'
   - 'DOMAIN-SUFFIX,18comic.org'
+  - 'DOMAIN-SUFFIX,18comic.vip'
   - 'DOMAIN-SUFFIX,18mh.net'
   - 'DOMAIN-SUFFIX,18onlygirls.com'
   - 'DOMAIN-SUFFIX,18p2p.com'

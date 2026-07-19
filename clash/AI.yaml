@@ -1,7 +1,7 @@
 # Generated from Rule/AI.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-19 04:00:49 +0800
-# TOTAL: 143
+# UPDATED: 2026-07-20 04:00:52 +0800
+# TOTAL: 144
 payload:
   - 'DOMAIN-SUFFIX,anthropic.com'
   - 'DOMAIN-SUFFIX,claude.ai'
@@ -100,6 +100,7 @@ payload:
   - 'DOMAIN-SUFFIX,events.statsigapi.net'
   - 'DOMAIN-SUFFIX,featureassets.org'
   - 'DOMAIN-SUFFIX,featuregates.org'
+  - 'DOMAIN-SUFFIX,firebaseinstallations.googleapis.com'
   - 'DOMAIN-SUFFIX,host.livekit.cloud'
   - 'DOMAIN-SUFFIX,identrust.com'
   - 'DOMAIN-SUFFIX,images.workoscdn.com'
