@@ -1,23 +1,17 @@
 {
-  "generated_at": "2026-07-20T05:00:58.051603",
-  "total_added": 7,
-  "total_removed": 1,
+  "generated_at": "2026-07-21T05:00:57.058568",
+  "total_added": 0,
+  "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
     {
       "file": "AI.list",
-      "prev_total": 143,
+      "prev_total": 144,
       "curr_total": 144,
-      "added_count": 1,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "1938295683d5",
-          "source": "Rabbit-Spec AIGC",
-          "rule": "DOMAIN-SUFFIX,firebaseinstallations.googleapis.com"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -56,18 +50,12 @@
     },
     {
       "file": "China.list",
-      "prev_total": 111948,
+      "prev_total": 111949,
       "curr_total": 111949,
-      "added_count": 1,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "40e144be038b",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,mycloudnas.com"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -84,40 +72,13 @@
     },
     {
       "file": "China_IP.list",
-      "prev_total": 11497,
+      "prev_total": 11500,
       "curr_total": 11500,
-      "added_count": 4,
-      "removed_count": 1,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "12e06a24e3af",
-          "source": "blackmatrix7 China IPs",
-          "rule": "IP-CIDR,103.144.244.0/24"
-        },
-        {
-          "id": "4c164f649300",
-          "source": "blackmatrix7 China IPs",
-          "rule": "IP-CIDR,166.0.97.0/24"
-        },
-        {
-          "id": "9ae138b1d521",
-          "source": "blackmatrix7 China IPs",
-          "rule": "IP-CIDR,45.91.139.0/24"
-        },
-        {
-          "id": "a4d402db4ba3",
-          "source": "blackmatrix7 China IPs",
-          "rule": "IP-CIDR,166.0.100.0/24"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "30de483cf060",
-          "source": "blackmatrix7 China IPs",
-          "rule": "IP-CIDR,14.241.232.0/21"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -155,18 +116,12 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24142,
+      "prev_total": 24143,
       "curr_total": 24143,
-      "added_count": 1,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "b77ffb89d737",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,qnapsupport.net"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },

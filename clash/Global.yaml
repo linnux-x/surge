@@ -1,6 +1,6 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-20 04:00:57 +0800
+# UPDATED: 2026-07-21 04:00:56 +0800
 # TOTAL: 24143
 payload:
   - 'DOMAIN,1password.drift.click'
