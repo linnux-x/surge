@@ -1,7 +1,7 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-21 04:00:56 +0800
-# TOTAL: 24143
+# UPDATED: 2026-07-22 04:00:51 +0800
+# TOTAL: 24151
 payload:
   - 'DOMAIN,1password.drift.click'
   - 'DOMAIN,adobeereg.com'
@@ -2282,6 +2282,7 @@ payload:
   - 'DOMAIN-SUFFIX,berlincompanions.com'
   - 'DOMAIN-SUFFIX,berlintwitterwall.com'
   - 'DOMAIN-SUFFIX,best-sex-games.com'
+  - 'DOMAIN-SUFFIX,best2pay.net'
   - 'DOMAIN-SUFFIX,best3dhere.com'
   - 'DOMAIN-SUFFIX,best4bim.com'
   - 'DOMAIN-SUFFIX,bestamateurcumshots.com'
@@ -5605,6 +5606,8 @@ payload:
   - 'DOMAIN-SUFFIX,f-dro1d.org'
   - 'DOMAIN-SUFFIX,f-droid.com'
   - 'DOMAIN-SUFFIX,f-secure.com'
+  - 'DOMAIN-SUFFIX,f1.com'
+  - 'DOMAIN-SUFFIX,f1tv.com'
   - 'DOMAIN-SUFFIX,f5pf.com'
   - 'DOMAIN-SUFFIX,f6.dev'
   - 'DOMAIN-SUFFIX,f6.ru'
@@ -7586,6 +7589,7 @@ payload:
   - 'DOMAIN-SUFFIX,huohaore.net'
   - 'DOMAIN-SUFFIX,hussiepass.com'
   - 'DOMAIN-SUFFIX,hutao.cloud'
+  - 'DOMAIN-SUFFIX,hva.im'
   - 'DOMAIN-SUFFIX,hwcdn.net'
   - 'DOMAIN-SUFFIX,hwslabs.com'
   - 'DOMAIN-SUFFIX,hxc10.vip'
@@ -12766,7 +12770,9 @@ payload:
   - 'DOMAIN-SUFFIX,rbnainternational.com'
   - 'DOMAIN-SUFFIX,rbplc.com'
   - 'DOMAIN-SUFFIX,rbrandlibrary.com'
+  - 'DOMAIN-SUFFIX,rbsgate.com'
   - 'DOMAIN-SUFFIX,rbspeakup.com'
+  - 'DOMAIN-SUFFIX,rbsuat.com'
   - 'DOMAIN-SUFFIX,rbth.com'
   - 'DOMAIN-SUFFIX,rbx.com'
   - 'DOMAIN-SUFFIX,rbxcdn.com'
@@ -18819,6 +18825,7 @@ payload:
   - 'DOMAIN-SUFFIX,ck101.com'
   - 'DOMAIN-SUFFIX,cl.ly'
   - 'DOMAIN-SUFFIX,clarionproject.org'
+  - 'DOMAIN-SUFFIX,clashyun.com'
   - 'DOMAIN-SUFFIX,classicalguitarblog.net'
   - 'DOMAIN-SUFFIX,clb.org.hk'
   - 'DOMAIN-SUFFIX,cleansite.biz'
@@ -22679,6 +22686,7 @@ payload:
   - 'DOMAIN-SUFFIX,syncback.com'
   - 'DOMAIN-SUFFIX,syosetu.com'
   - 'DOMAIN-SUFFIX,sysresccd.org'
+  - 'DOMAIN-SUFFIX,sysub.com'
   - 'DOMAIN-SUFFIX,sytes.net'
   - 'DOMAIN-SUFFIX,syx86.com'
   - 'DOMAIN-SUFFIX,szbbs.net'
