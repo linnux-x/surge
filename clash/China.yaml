@@ -1,7 +1,7 @@
 # Generated from Rule/China.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-23 04:00:52 +0800
-# TOTAL: 112005
+# UPDATED: 2026-07-24 04:01:11 +0800
+# TOTAL: 112009
 payload:
   - 'DOMAIN-SUFFIX,wmsjsteam.com'
   - 'DOMAIN-SUFFIX,steamchina.com'
@@ -19696,6 +19696,7 @@ payload:
   - 'DOMAIN-SUFFIX,cd-zc.com'
   - 'DOMAIN-SUFFIX,cd00c44f211031.beer'
   - 'DOMAIN-SUFFIX,cd120.com'
+  - 'DOMAIN-SUFFIX,cd120.info'
   - 'DOMAIN-SUFFIX,cd12371.com'
   - 'DOMAIN-SUFFIX,cd1958.com'
   - 'DOMAIN-SUFFIX,cd20.net'
@@ -66555,6 +66556,7 @@ payload:
   - 'DOMAIN-SUFFIX,moe321.com'
   - 'DOMAIN-SUFFIX,moeclub.org'
   - 'DOMAIN-SUFFIX,moedot.net'
+  - 'DOMAIN-SUFFIX,moedu.com'
   - 'DOMAIN-SUFFIX,moeelf.com'
   - 'DOMAIN-SUFFIX,moefactory.com'
   - 'DOMAIN-SUFFIX,moefantasy.com'
@@ -90458,6 +90460,7 @@ payload:
   - 'DOMAIN-SUFFIX,tsingpost.com'
   - 'DOMAIN-SUFFIX,tsingshang.com'
   - 'DOMAIN-SUFFIX,tsingtek.com'
+  - 'DOMAIN-SUFFIX,tsingtengms.com'
   - 'DOMAIN-SUFFIX,tsingtoo.com'
   - 'DOMAIN-SUFFIX,tsingtuo.com'
   - 'DOMAIN-SUFFIX,tsingyangroup.com'
@@ -98024,6 +98027,7 @@ payload:
   - 'DOMAIN-SUFFIX,xcxymw.com'
   - 'DOMAIN-SUFFIX,xcxzww.com'
   - 'DOMAIN-SUFFIX,xcyg.net'
+  - 'DOMAIN-SUFFIX,xcz.im'
   - 'DOMAIN-SUFFIX,xczhmzb.com'
   - 'DOMAIN-SUFFIX,xczhsh.com'
   - 'DOMAIN-SUFFIX,xczim.com'
