@@ -1,6 +1,6 @@
 # Generated from Rule/Telegram.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-11 04:01:10 +0800
+# UPDATED: 2026-07-25 04:01:08 +0800
 # TOTAL: 49
 payload:
   - 'DOMAIN,api.imem.app'
