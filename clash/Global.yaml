@@ -1,7 +1,7 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-25 04:01:07 +0800
-# TOTAL: 24153
+# UPDATED: 2026-07-26 04:01:08 +0800
+# TOTAL: 24158
 payload:
   - 'DOMAIN,1password.drift.click'
   - 'DOMAIN,adobeereg.com'
@@ -4730,6 +4730,7 @@ payload:
   - 'DOMAIN-SUFFIX,dockerizer.com'
   - 'DOMAIN-SUFFIX,docleradn.com'
   - 'DOMAIN-SUFFIX,doclercdn.com'
+  - 'DOMAIN-SUFFIX,docs.rw'
   - 'DOMAIN-SUFFIX,doctor-videos.com'
   - 'DOMAIN-SUFFIX,documentforce.com'
   - 'DOMAIN-SUFFIX,dodgersexcartoons.com'
@@ -9287,6 +9288,7 @@ payload:
   - 'DOMAIN-SUFFIX,localizejs.com'
   - 'DOMAIN-SUFFIX,localizestatus.com'
   - 'DOMAIN-SUFFIX,localxlist.org'
+  - 'DOMAIN-SUFFIX,log.rw'
   - 'DOMAIN-SUFFIX,logi.com'
   - 'DOMAIN-SUFFIX,logicool.co.jp'
   - 'DOMAIN-SUFFIX,logicoolg.com'
@@ -15207,6 +15209,7 @@ payload:
   - 'DOMAIN-SUFFIX,truyenkk1.com'
   - 'DOMAIN-SUFFIX,truyentranh86.com'
   - 'DOMAIN-SUFFIX,truyenwk.com'
+  - 'DOMAIN-SUFFIX,try.rw'
   - 'DOMAIN-SUFFIX,tryalias.com'
   - 'DOMAIN-SUFFIX,tryboobs.com'
   - 'DOMAIN-SUFFIX,trycloudflare.com'
@@ -18802,6 +18805,7 @@ payload:
   - 'DOMAIN-SUFFIX,cienen.com'
   - 'DOMAIN-SUFFIX,cineastentreff.de'
   - 'DOMAIN-SUFFIX,cipfg.org'
+  - 'DOMAIN-SUFFIX,circle19.org'
   - 'DOMAIN-SUFFIX,circlethebayfortibet.org'
   - 'DOMAIN-SUFFIX,cirosantilli.com'
   - 'DOMAIN-SUFFIX,citizencn.com'
@@ -20690,6 +20694,7 @@ payload:
   - 'DOMAIN-SUFFIX,kanzhongguo.eu'
   - 'DOMAIN-SUFFIX,kaotic.com'
   - 'DOMAIN-SUFFIX,karayou.com'
+  - 'DOMAIN-SUFFIX,kards.com'
   - 'DOMAIN-SUFFIX,karkhung.com'
   - 'DOMAIN-SUFFIX,karmapa-teachings.org'
   - 'DOMAIN-SUFFIX,karmapa.org'

@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-07-25 04:01:07 +0800
+# UPDATED: 2026-07-26 04:01:08 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24153
+# TOTAL: 24158
 
 # ======= blackmatrix7 Global ========
 DOMAIN,1password.drift.click
@@ -4733,6 +4733,7 @@ DOMAIN-SUFFIX,doceapower.com
 DOMAIN-SUFFIX,dockerizer.com
 DOMAIN-SUFFIX,docleradn.com
 DOMAIN-SUFFIX,doclercdn.com
+DOMAIN-SUFFIX,docs.rw
 DOMAIN-SUFFIX,doctor-videos.com
 DOMAIN-SUFFIX,documentforce.com
 DOMAIN-SUFFIX,dodgersexcartoons.com
@@ -9290,6 +9291,7 @@ DOMAIN-SUFFIX,localbitcoinschain.com
 DOMAIN-SUFFIX,localizejs.com
 DOMAIN-SUFFIX,localizestatus.com
 DOMAIN-SUFFIX,localxlist.org
+DOMAIN-SUFFIX,log.rw
 DOMAIN-SUFFIX,logi.com
 DOMAIN-SUFFIX,logicool.co.jp
 DOMAIN-SUFFIX,logicoolg.com
@@ -15210,6 +15212,7 @@ DOMAIN-SUFFIX,truyenhentai.xyz
 DOMAIN-SUFFIX,truyenkk1.com
 DOMAIN-SUFFIX,truyentranh86.com
 DOMAIN-SUFFIX,truyenwk.com
+DOMAIN-SUFFIX,try.rw
 DOMAIN-SUFFIX,tryalias.com
 DOMAIN-SUFFIX,tryboobs.com
 DOMAIN-SUFFIX,trycloudflare.com
@@ -18805,6 +18808,7 @@ DOMAIN-SUFFIX,ciciai.com
 DOMAIN-SUFFIX,cienen.com
 DOMAIN-SUFFIX,cineastentreff.de
 DOMAIN-SUFFIX,cipfg.org
+DOMAIN-SUFFIX,circle19.org
 DOMAIN-SUFFIX,circlethebayfortibet.org
 DOMAIN-SUFFIX,cirosantilli.com
 DOMAIN-SUFFIX,citizencn.com
@@ -20693,6 +20697,7 @@ DOMAIN-SUFFIX,kanzhongguo.com
 DOMAIN-SUFFIX,kanzhongguo.eu
 DOMAIN-SUFFIX,kaotic.com
 DOMAIN-SUFFIX,karayou.com
+DOMAIN-SUFFIX,kards.com
 DOMAIN-SUFFIX,karkhung.com
 DOMAIN-SUFFIX,karmapa-teachings.org
 DOMAIN-SUFFIX,karmapa.org
