@@ -19,19 +19,19 @@
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
     "content_length": "4263",
-    "etag": "\"ed225d1584c331687ff26693f608d17b2b892f4e39c0fcf042cac8bc3c7736e6\"",
+    "etag": "\"6bb72e6c485dbf58c3a4c569d6023001865bd6a67c30d3e89d2bf74abfa36b96\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
     "content_length": "101118",
-    "etag": "\"70a4d029a452728090fb76fd6494d46bfcbf492c88675897a4504e8078ab30a1\"",
+    "etag": "\"b9c611f0c30ca78732deebf2f4707a1c0b6a2b07136004501465ca82b53f5daf\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/ChinaCIDR.list": {
     "content_length": "143006",
-    "etag": "\"a0911a136893c33d0117a08771160c21201b2bdf1f338f89f78d7eb786965c90\"",
+    "etag": "\"7a3b8810ac0bad109da9af89f4559cda35b2d909a76d343791586dd8bf5b223c\"",
     "last_modified": null,
     "source_available": true
   },
