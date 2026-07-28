@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-28T05:01:16.717874",
-  "total_added": 3,
+  "generated_at": "2026-07-29T05:01:17.517771",
+  "total_added": 0,
   "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
@@ -72,28 +72,12 @@
     },
     {
       "file": "China_IP.list",
-      "prev_total": 11486,
+      "prev_total": 11489,
       "curr_total": 11489,
-      "added_count": 3,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "4c164f649300",
-          "source": "blackmatrix7 China IPs",
-          "rule": "IP-CIDR,166.0.97.0/24"
-        },
-        {
-          "id": "9ae138b1d521",
-          "source": "blackmatrix7 China IPs",
-          "rule": "IP-CIDR,45.91.139.0/24"
-        },
-        {
-          "id": "ef94866e48ea",
-          "source": "blackmatrix7 China IPs",
-          "rule": "IP-CIDR,166.0.100.0/23"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
