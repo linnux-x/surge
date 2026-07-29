@@ -53,6 +53,8 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 
 ## 📁 目录结构
 
+> 文档职责：`README.md` 只做公开入口；公开/私有边界以 `SOURCE_OF_TRUTH.md` 为准；脚本细节以 `scripts/README.md` 为准；贡献流程以 `CONTRIBUTING.md` 为准；手工规则格式以 `Rule/Manual/README.md` 为准。
+
 | 路径 | 说明 |
 |------|------|
 | `Conf/Linnux.conf` | 主 Surge 配置示例，包含策略组和 `RULE-SET` 加载顺序 |
@@ -307,9 +309,12 @@ gh workflow run auto-rules.yml --repo linnux-x/surge
 
 ## 📝 规则维护要求
 
-修改规则或同步逻辑前，请参考 `CONTRIBUTING.md` 了解项目架构和开发约定。
+- 修改规则或同步逻辑前，先读 `CONTRIBUTING.md`。
+- 查看脚本流水线和单一事实来源，读 `scripts/README.md`。
+- 添加或排除手工规则，读 `Rule/Manual/README.md`。
+- 公开仓库与真实设备/私有配置的边界，以 `SOURCE_OF_TRUTH.md` 为准。
 
-> 📖 完整的用户偏好和分类策略属于私有配置，不在本仓库中。
+> 📖 完整的用户偏好、分类经验和设备配置属于私有配置，不在本仓库中。
 
 ---
 

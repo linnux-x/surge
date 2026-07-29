@@ -65,6 +65,8 @@ tests/
 
 ## Full Generation 发布前手动审计
 
+本节是 full generation 发布门禁的权威说明；`scripts/README.md` 只保留脚本入口和简短指针。
+
 `workflow_dispatch` 会触发 full generation：即使上游没有检测到变化，也会重新生成所有规则集。为了避免一次性全量生成把上游异常、分类漂移或共享基础设施误提交到公开仓库，发布前必须先做一次手动审计。
 
 推荐流程：

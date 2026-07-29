@@ -9,7 +9,7 @@
 
 ## Full generation 发布前审计
 
-手动触发 GitHub Actions `workflow_dispatch` 时，会进行 full generation。正式发布前必须先运行一次 `dry_run=true`，人工审查生成结果、manifest diff 和在线审计输出。审计通过后，才允许使用 `manual_audit_confirmed=true` 发布。
+手动触发 GitHub Actions `workflow_dispatch` 会进行 full generation。发布门禁的完整流程以 `CONTRIBUTING.md` 为准：先 `dry_run=true` 审查生成结果、manifest diff 和在线审计输出，审计通过后才允许 `manual_audit_confirmed=true` 发布。
 
 Rabbit-Spec 来源当前明确保留，用于补充 AIGC、China、ChinaCIDR 覆盖；不要在普通源清理中移除。
 
@@ -69,9 +69,9 @@ python3 scripts/cross_file_conflicts.py --summary
 # 测试路由顺序
 python3 scripts/test_routing_order.py
 
-# 从 iOS 隐私报告生成 Surge 规则
+# 从 iOS 隐私报告生成 Surge 规则（示例输出到 /tmp，避免误认为仓库固定规则文件）
 python3 scripts/ios_privacy_to_surge.py report.ndjson
-privacy2surge report.ndjson -o Rule/App.list
+privacy2surge report.ndjson -o /tmp/App.list
 ```
 
 ---
