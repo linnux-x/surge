@@ -63,14 +63,7 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 | `Rule/Manual/*.txt` / `*.exclude.txt` | 手动追加（最高优先级）与排除规则 |
 | `Rule/.manifests/*.manifest` | 规则清单索引（每行：稳定哈希ID + 来源标注） |
 | `Module/*.sgmodule` | Surge 模块文件 |
-| `scripts/sources.py` | 上游源配置（单一定义，所有脚本引用） |
-| `scripts/check_upstream_updates.py` | 并行 HEAD 检查上游变更（8 线程） |
-| `scripts/generate_rules.py` | 规则生成引擎（下载、合并、清洗、校验、CIDR 裁剪） |
-| `scripts/generate_clash_rules.py` | 将 Surge 规则转换为 Clash / mihomo `classical` rule-provider |
-| `scripts/manifest.py` | 规则清单生成 + 差异对比（manifest → diff_report） |
-| `scripts/validate_surge_repo.py` | 不变量检查（15+ 项） |
-| `scripts/audit_rules.py` | 联网审查（5 项审计） |
-| `scripts/test_routing_order.py` | 路由顺序模拟测试（55 用例） |
+| `scripts/` | 规则生成、校验、审计和 Clash 镜像脚本；脚本顺序见 `scripts/README.md` |
 | `tests/expected-routing.csv` | 路由测试预期（域名 → 期望规则集） |
 | `.github/workflows/auto-rules.yml` | 规则同步 + DNS Mapping 模块同步流水线 |
 | `CONTRIBUTING.md` | 贡献指南 |
@@ -148,85 +141,32 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 
 ### 完整流程
 
-```
-触发 workflow
-  ↓
-1. 增量上游检查 → 拉取变更源 → 合并手动规则 → 应用排除 → 清洗校验（含 CIDR 裁剪）
-  ↓
-2. 生成紧凑清单 + 对比 git HEAD 生成增量差异报告           ← scripts/manifest.py
-  ↓
-3. 验证仓库不变量（15+ 检查项）                              ← scripts/validate_surge_repo.py
-  ↓
-4. 联网审查（5 项审计检查）                                 ← scripts/audit_rules.py
-   ├─ 上游可达性
-   ├─ 规则数比例对比
-   ├─ 共享第三方基础设施扫描
-   ├─ Surge 文档更新检查
-   └─ exclude 排除覆盖率
-  ↓
-5. 同步 DNS Mapping 模块
-  ↓
-6. 提交到 GitHub（规则 + 清单 + 差异报告 + 模块）
+```text
+上游检查 → 规则生成 → manifest/diff → Clash 镜像 → 不变量校验 → 联网审计 → DNS Mapping → 提交
 ```
 
-> 流程中的 **增量上游检查**、**Manifest & Diff**、**Online Audit** 和 **Sync DNS Mapping** 步骤由本仓库新增，确保每次变更有据可查、可审计。
+脚本顺序和单一事实来源见 `scripts/README.md`；full generation 发布门禁见 `CONTRIBUTING.md`。
 
 ### 清单索引系统
 
-每条规则在 `Rule/.manifests/*.manifest` 中拥有一个 **12 字符的稳定内容哈希 ID**，并标注其上游来源。
-
-数据格式（每行一个规则）：
-```
-<12字符哈希ID>	<来源名称>
-```
-
-| 好处 | 说明 |
-|------|------|
-| 🔄 **跨版本追踪** | 每条规则的增减变化可精确追踪 |
-| 🔗 **归属转移** | 识别规则在来源间的迁移（如从 China 移入 Global） |
-| 📊 **增量报告** | 自动生成 `diff_report.md` + `diff_report.json` |
-| 📈 **量化审计** | 上游规则变动数量、方向有据可查 |
+每条规则在 `Rule/.manifests/*.manifest` 中拥有 **12 字符稳定内容哈希 ID + 来源标注**，用于跨版本追踪、归属迁移识别和 `diff_report.md` / `diff_report.json` 增量报告。
 
 ---
 
 ## 🛡️ 校验 & 审计
 
-### 规则校验
-
-提交前运行：
+提交前至少运行：
 ```bash
 python3 scripts/validate_surge_repo.py
 python3 scripts/test_routing_order.py   # 路由顺序模拟测试
 ```
 
-| 检查项 | 级别 |
-|--------|:--:|
-| Surge 规则类型合法性 | 🔴 |
-| 无策略名渗入规则文件 | 🔴 |
-| 无重复规则 | 🟡 |
-| `# TOTAL` 头与实际计数一致 | 🔴 |
-| `China.list` domain-only | 🔴 |
-| `China_IP.list` 无 `no-resolve` | 🔴 |
-| 其他 IP 规则带 `no-resolve` | 🟡 |
-| `Microsoft.list` 无 GitHub 家族 | 🔴 |
-| `fast.com` 仅出现在 `Speedtest.list` | 🔴 |
-| README、workflow 与 `.list` 文件一致性 | 🟡 |
-| 无旧 baseline 区块和 SukkaW marker 域名 | 🟡 |
-| **共享第三方基础设施**检测 | 🟡 |
-| **PayPal CN 域名**检测（.cn 不在 PayPal.list） | 🟡 |
-| **不透明子域名**检测（纯数字/十六进制前缀如 `o207216.ingest.sentry.io`） | 🟡 |
+生成规则后、提交 GitHub 前执行：
+```bash
+python3 scripts/audit_rules.py
+```
 
-### 联网审查
-
-每次 workflow 生成规则后、提交 GitHub 前执行 `scripts/audit_rules.py`：
-
-| 检查项 | 说明 |
-|--------|------|
-| 🔗 **上游可达性** | 所有配置的 URL 可正常访问 |
-| 📊 **规则数对比** | 生成 vs 上游比例异常时告警（多源合并文件豁免） |
-| 🏗️ **共享基础设施** | 已知共享平台出现在服务规则中时告警 |
-| 📖 **Surge 文档** | 检查是否有新的 Surge 规则类型发布 |
-| 🧹 **exclude 覆盖率** | 验证排除条目是否生效（若排除规则仍出现在生成文件中则 WARN） |
+校验覆盖规则类型、策略名渗入、`# TOTAL`、China/China_IP 约束、GitHub/Microsoft 边界、fast.com 唯一归属、共享基础设施、PayPal CN、不透明子域名、README/workflow/规则文件一致性等；联网审计覆盖上游可达性、规则数比例、共享基础设施、Surge 文档更新和 exclude 覆盖率。详细脚本职责见 `scripts/README.md`。
 
 > 🔴 **ERROR** → workflow 失败，必须修复  
 > 🟡 **WARN** → workflow 继续，但需人工确认  
