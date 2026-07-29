@@ -1,9 +1,9 @@
 # NAME: China
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-07-29 19:55:36 +0800
+# UPDATED: 2026-07-30 05:01:25 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 112009
+# TOTAL: 112010
 
 # ======= Manual Rules ========
 # China game download domains — route DIRECT via China policy
@@ -100387,6 +100387,7 @@ DOMAIN-SUFFIX,xmmtu.com
 DOMAIN-SUFFIX,xmmuye.com
 DOMAIN-SUFFIX,xmnjdwx.com
 DOMAIN-SUFFIX,xmocloud01.com
+DOMAIN-SUFFIX,xmoj.tech
 DOMAIN-SUFFIX,xmonecode.com
 DOMAIN-SUFFIX,xmos.tv
 DOMAIN-SUFFIX,xmov.ai

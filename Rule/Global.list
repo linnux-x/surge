@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-07-29 19:55:39 +0800
+# UPDATED: 2026-07-30 05:01:29 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24158
+# TOTAL: 24165
 
 # ======= blackmatrix7 Global ========
 DOMAIN,1password.drift.click
@@ -2602,6 +2602,7 @@ DOMAIN-SUFFIX,bluemix.com
 DOMAIN-SUFFIX,bluemix.net
 DOMAIN-SUFFIX,bluestacks.com
 DOMAIN-SUFFIX,bluffyporn.com
+DOMAIN-SUFFIX,blurams.app
 DOMAIN-SUFFIX,blurams.com
 DOMAIN-SUFFIX,blylq.buzz
 DOMAIN-SUFFIX,bm-bank.ru
@@ -3577,6 +3578,7 @@ DOMAIN-SUFFIX,celeron.net
 DOMAIN-SUFFIX,cell.com
 DOMAIN-SUFFIX,cencoastbmw.com
 DOMAIN-SUFFIX,cenkei.com
+DOMAIN-SUFFIX,ceno.app
 DOMAIN-SUFFIX,censorship.ai
 DOMAIN-SUFFIX,censorship.no
 DOMAIN-SUFFIX,centervillage.co.jp
@@ -6515,6 +6517,7 @@ DOMAIN-SUFFIX,githubhackathon.com
 DOMAIN-SUFFIX,githubnext.com
 DOMAIN-SUFFIX,githubpreview.dev
 DOMAIN-SUFFIX,githubstatus.com
+DOMAIN-SUFFIX,githubsupport.com
 DOMAIN-SUFFIX,githubuniverse.com
 DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,gitstar.com
@@ -8330,6 +8333,7 @@ DOMAIN-SUFFIX,itsoc.org
 DOMAIN-SUFFIX,itu.int
 DOMAIN-SUFFIX,ius.io
 DOMAIN-SUFFIX,ivi.ru
+DOMAIN-SUFFIX,ivicdn.tv
 DOMAIN-SUFFIX,ivintageporn.com
 DOMAIN-SUFFIX,iw8j.cc
 DOMAIN-SUFFIX,iwank.tv
@@ -8924,6 +8928,7 @@ DOMAIN-SUFFIX,kindleoasisnews.com
 DOMAIN-SUFFIX,kindleproject.com
 DOMAIN-SUFFIX,kindnudist.com
 DOMAIN-SUFFIX,kindteenporn.com
+DOMAIN-SUFFIX,kinescopecdn.net
 DOMAIN-SUFFIX,kingcomix.com
 DOMAIN-SUFFIX,kingextre.me
 DOMAIN-SUFFIX,kingf-av.buzz
@@ -13298,6 +13303,7 @@ DOMAIN-SUFFIX,sber.pro
 DOMAIN-SUFFIX,sber.ru
 DOMAIN-SUFFIX,sberauto.com
 DOMAIN-SUFFIX,sberbank-insurance.ru
+DOMAIN-SUFFIX,sberbank-tele.com
 DOMAIN-SUFFIX,sberbank.com
 DOMAIN-SUFFIX,sberbank.ru
 DOMAIN-SUFFIX,sberbankaktivno.ru
@@ -23103,6 +23109,7 @@ DOMAIN-SUFFIX,trustwallet.com
 DOMAIN-SUFFIX,truthontour.org
 DOMAIN-SUFFIX,truthsocial.com
 DOMAIN-SUFFIX,truveo.com
+DOMAIN-SUFFIX,tryai.dev
 DOMAIN-SUFFIX,tryheart.jp
 DOMAIN-SUFFIX,tsctv.net
 DOMAIN-SUFFIX,tsemtulku.com
