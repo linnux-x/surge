@@ -1,5 +1,20 @@
 # linnux-x/surge 全方位审计报告
 
+> [!IMPORTANT]
+> **这是 2026-07-03 的历史快照，不代表当前状态。** 下文所有"发现"按当时的时态书写，其中多数已修复。
+>
+> 复核于 2026-07-30（HEAD `5889bb4`，快照之后约 280 个提交）：
+>
+> | 条目 | 现状 |
+> |---|---|
+> | 3.1 下载无超时 | **已修复** — `generate_rules.py` 的 `CURL_OPTS` 已含 `--connect-timeout 10 --max-time 60`，外层另有 `FETCH_SUBPROCESS_TIMEOUT = 120` 兜底 |
+> | 3.2 上游抓取两遍 | **已修复** — `audit_rules.py` 改为 `fetch_all_sources()` 抓一次后复用 |
+> | 3.3 HTTP 三套实现 | **部分修复** — 已提取 `scripts/http_util.py`，但目前只有 `audit_rules.py` 引用；`generate_rules.py` 仍用 curl 子进程、`check_upstream_updates.py` 仍直接用 `urllib`（三者超时行为已各自补齐） |
+> | 3.4 策略常量分散 | **已修复** — 新增 `scripts/policy.py` 作为唯一源，5 个脚本引用；宽档审计集合改为由严格集合派生，无法再漂移 |
+> | git 历史膨胀（§ 结论部分） | **仍存在且已增长** — `.git` 约 35 MB / 284 提交 / 47 天。注意报告建议的"生成物移孤儿分支"方案有跨仓库破坏性，见 `SOURCE_OF_TRUTH.md` 的下游消费者表 |
+>
+> 另有事实性漂移：报告称 `.github/workflows/` 有 3 条 workflow、`Rule/*.list` 23 个，当前是 2 条、24 个。
+
 - **审计对象**：https://github.com/linnux-x/surge @ `1b13a57`（2026-07-03）
 - **审计范围**：`Conf/Linnux.conf`、`Rule/*.list`（23 个规则文件，约 16.4 万行）、`clash/*.yaml`、`Module/`（不含 VPS-Monitor，按要求排除）、`scripts/*.py`（11 个）、`.github/workflows/`（3 条）、`tests/`
 - **方法**：克隆到本地只读分析 + 规则文件逐类抽查 + 脚本逐个通读 + 对照 Surge 官方文档（manual.nssurge.com / kb.nssurge.com）核实每条配置建议
