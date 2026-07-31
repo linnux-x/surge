@@ -40,6 +40,20 @@ Rabbit-Spec 来源当前明确保留，用于补充 AIGC、China、ChinaCIDR 覆
 
 ---
 
+## 脚本产物的入库规则
+
+三个产物入库、一个不入库，规则不是随意的：
+
+| 文件 | 是否入库 | 原因 |
+|---|---|---|
+| `source_state.json` | ✅ | 上游 Last-Modified / ETag 基线。CI 靠它判断"哪些上游变了"，不入库则每次全量重下 |
+| `diff_report.md` / `diff_report.json` | ✅ | 变更审阅材料，`CONTRIBUTING.md` 要求提交前核对 `diff_report.md`；入库才能在 PR 和提交历史里直接看到规则增删 |
+| `audit_report.json` | ❌ | 联网审计的即时结果，随上游可达性和网络状况波动，入库只会制造无意义的 diff 噪声。已在 `.gitignore` 排除 |
+
+判断标准：**跨运行需要保持的状态、以及需要被人审阅的变更记录才入库；每次运行都会变且只反映当时环境的结果不入库。**
+
+---
+
 ## 本地使用
 
 ```bash
