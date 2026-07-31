@@ -230,20 +230,13 @@ gh workflow run auto-rules.yml --repo linnux-x/surge
 
 > ⚠️ **注意**：长期需要保留/排除的规则必须放入 `Rule/Manual/` 对应文件。不要依赖旧生成文件作为隐式 baseline。
 
-### 适合谁 / 如何 Fork
+### 适合谁
 
 **适合：** Surge 用户需要一个自动更新、有校验、有审计的规则仓库，不想手动维护上游变更。
 
 **不适合：** 只需要几条静态规则的用户；使用非 Surge 客户端的用户（规则格式为 Surge 专用）。
 
-**Fork 后适配：**
-
-1. 修改 `.github/workflows/auto-rules.yml` 中的 `REPO_URL` 和 `AUTHOR_NAME` 环境变量为你的仓库
-2. 在仓库 Settings → Actions → General → Workflow permissions 中选择「Read and write permissions」
-3. 按需在 `Rule/Manual/` 中添加自己的追加和排除规则
-4. 本仓库的 workflow 仅手动触发（每日同步由维护者本地 agent 负责）；如需在 Fork 中定时自动更新，需**两处**改动：① 在 `auto-rules.yml` 的 `on:` 中加回 `schedule` 触发器（例如 `cron: "23 21 * * *"`）；② 把两个 job 顶部的 `if: github.repository == 'linnux-x/surge'` 改成你的仓库或删除，否则 Actions 会直接跳过
-
-**保持同步上游：** `git remote add upstream https://github.com/linnux-x/surge.git` 后定期 `git fetch upstream && git merge upstream/main`
+想 Fork 本仓库自建规则源，见 [`CONTRIBUTING.md` 的 Fork 后适配](CONTRIBUTING.md#fork-后适配)。
 
 ---
 

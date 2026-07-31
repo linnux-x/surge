@@ -99,6 +99,15 @@ tests/
 - **Update `scripts/README.md`** if you add new scripts.
 - **If adding to `Rule/Manual/README.md`**, that file is tracked (not .gitignored) — personal rules go in `.txt` / `.exclude.txt`.
 
+## Fork 后适配
+
+1. 修改 `.github/workflows/auto-rules.yml` 中的 `REPO_URL` 和 `AUTHOR_NAME` 环境变量为你的仓库
+2. 在仓库 Settings → Actions → General → Workflow permissions 中选择「Read and write permissions」
+3. 按需在 `Rule/Manual/` 中添加自己的追加和排除规则
+4. 本仓库的 workflow 仅手动触发（每日同步由维护者本机的 Hermes agent 负责，见 `SOURCE_OF_TRUTH.md`）；如需在 Fork 中定时自动更新，需**两处**改动：① 在 `auto-rules.yml` 的 `on:` 中加回 `schedule` 触发器（例如 `cron: "23 21 * * *"`）；② 把两个 job 顶部的 `if: github.repository == 'linnux-x/surge'` 改成你的仓库或删除，否则 Actions 会直接跳过
+
+**保持同步上游：** `git remote add upstream https://github.com/linnux-x/surge.git` 后定期 `git fetch upstream && git merge upstream/main`
+
 ## Adding a New Upstream Source
 
 1. Add the URL to `scripts/sources.py` in `RULE_SPECS`
