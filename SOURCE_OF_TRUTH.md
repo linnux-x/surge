@@ -19,4 +19,4 @@
 | `Conf/Linnux.conf` | Surge 客户端 | 首行 `#!MANAGED-CONFIG`，`interval=86400` 自拉 |
 | `clash/*.yaml` | 私有仓库 `linnux-x/clash` 的 `Clash_Local.yaml` | 16+ 个 `rule-provider` 硬引用 `main/clash/*.yaml` |
 
-> `surge-audit-report.md` 曾建议将生成物迁到孤儿分支以控制 `.git` 体积。该方案会同时打断上表三类消费者（尤其 `clash` 私有仓库），执行前必须先改下游引用。
+> `audits/full-repo-audit-2026-07-03.md` 曾建议将生成物迁到孤儿分支以控制 `.git` 体积。该方案会同时打断上表三类消费者（尤其 `clash` 私有仓库），执行前必须先改下游引用。
