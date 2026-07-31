@@ -1,9 +1,9 @@
 # NAME: Apple_CN
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-07-08 04:00:36 +0800
+# UPDATED: 2026-08-01 05:06:16 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 231
+# TOTAL: 229
 
 # ======= Manual Rules ========
 DOMAIN-SUFFIX,appldnld.apple.com.edgesuite.net
@@ -79,9 +79,7 @@ DOMAIN-SUFFIX,xn--ohq11k7pl25iyo8a.cn
 # ======= SukkaW Apple CN ========
 DOMAIN-SUFFIX,cn.apple.com
 DOMAIN-SUFFIX,cn.ls.apple.com
-DOMAIN,api.smoot.apple.cn
 DOMAIN-SUFFIX,cn-ssl.ls.apple.com
-DOMAIN,gs-loc-cn.apple.com
 DOMAIN-SUFFIX,gspe19-cn-ssl.ls.apple.com
 DOMAIN,appleintelligencefeedback.care.apple.com
 

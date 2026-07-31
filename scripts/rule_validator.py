@@ -36,8 +36,8 @@ ALLOWED_TYPES = {
     "AND", "OR", "NOT",
 }
 OPTION_TOKENS = {"no-resolve", "extended-matching"}
-SUKKAW_MARKER = "7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe"
-DOMAIN_VALUE_RE = re.compile(r"^[a-z0-9](?:[a-z0-9.-]*[a-z0-9])?$")
+SUKKAW_MARKER = re.compile(r"(?:7h1[5s]_ru[1l]3[5s]3t_1[5s]_m[4a]d3_by_5ukk4w|skk\.moe/ruleset-watermark)", re.I)
+DOMAIN_VALUE_RE = re.compile(r"^[a-z0-9](?:[a-z0-9._-]*[a-z0-9])?$")
 DOMAIN_WILDCARD_VALUE_RE = re.compile(r"^[a-z0-9*?](?:[a-z0-9.*?-]*[a-z0-9*?])?$")
 CONTROL_CHAR_RE = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
 RISKY_DOMAIN_KEYWORDS = {
@@ -121,7 +121,7 @@ def validate_rule_file(lines: list[str], target_name: str) -> list[str]:
         if rule_type == "GEOIP" and (len(parts) < 2 or not re.fullmatch(r"[A-Z]{2}", parts[1])):
             errors.append(f"{target_name}:{index} non-standard GEOIP code: {rule}")
 
-        if SUKKAW_MARKER in low:
+        if SUKKAW_MARKER.search(low):
             errors.append(f"{target_name}:{index} SukkaW marker leaked: {rule}")
 
         # Domain checks

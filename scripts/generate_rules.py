@@ -17,6 +17,7 @@ import subprocess
 import sys
 from datetime import datetime
 from pathlib import Path
+from typing import Optional, Tuple
 from zoneinfo import ZoneInfo
 
 # Ensure scripts/ is on the path so 'import sources' works
@@ -99,7 +100,7 @@ def convert_cidr(lines: list[str]) -> list[str]:
     return out
 
 
-def filter_candidates(lines: list[str], exclude_file: Path | None) -> list[str]:
+def filter_candidates(lines: list[str], exclude_file: Optional[Path]) -> list[str]:
     """Remove lines exactly matching entries in exclude file."""
     if not exclude_file or not exclude_file.is_file() or exclude_file.stat().st_size == 0:
         return lines
@@ -116,6 +117,13 @@ def filter_candidates(lines: list[str], exclude_file: Path | None) -> list[str]:
 def apply_project_guardrails(target_name: str, lines: list[str]) -> list[str]:
     """Apply repository-specific guardrails."""
     out = lines[:]
+
+    # Filter SukkaW watermark domains before anything else
+    SUKKAW_WATERMARK_RE = re.compile(
+        r"(?:7h1[5s]_ru[1l]3[5s]3t_1[5s]_m[4a]d3_by_5ukk4w|skk\.moe/ruleset-watermark)",
+        re.IGNORECASE,
+    )
+    out = [l for l in out if not SUKKAW_WATERMARK_RE.search(l)]
 
     # Surge GEOIP is documented for ISO country codes only. Convert the common
     # community shorthand for Google-owned IP ranges to Surge-native IP-ASN.
@@ -178,7 +186,7 @@ def prune_shadowed_domains(lines: list[str]) -> list[str]:
             if val not in suffix_opts or opts >= suffix_opts[val]:
                 suffix_opts[val] = opts
 
-    def covering_parent(value: str, include_self: bool) -> str | None:
+    def covering_parent(value: str, include_self: bool) -> Optional[str]:
         if include_self and value in suffix_opts:
             return value
         segments = value.split(".")
@@ -281,7 +289,7 @@ def fetch_source(url: str) -> list[str]:
     return result.stdout.splitlines()
 
 
-def process_rule(target_name: str, display_name: str, sources: list[tuple[str, str, str | None]]):
+def process_rule(target_name: str, display_name: str, sources: list[Tuple[str, str, Optional[str]]]):
     """Generate a single ruleset file from its sources."""
     target_path = RULE_DIR / target_name
     filename_no_ext = target_name.rsplit(".", 1)[0]

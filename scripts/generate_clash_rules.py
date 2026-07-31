@@ -196,7 +196,7 @@ def generate(check: bool = False) -> int:
             if existing != rendered:
                 errors.append(f"out of date: {out_path}")
         else:
-            out_path.write_text(rendered, encoding="utf-8", newline="\n")
+            out_path.write_text(rendered, encoding="utf-8")
 
     for source in sources:
         comments, rules = parse_surge_file(source)
