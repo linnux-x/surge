@@ -1,40 +1,24 @@
 # Surge Rule Diff Report
-Generated: 2026-08-02T19:34:43.632801
+Generated: 2026-08-03T05:00:50.999541
 
 ## Summary
 
 | Metric | Count |
 |--------|-------|
-| Files changed | 3 |
-| Rules added | 0 |
-| Rules removed | 3 |
+| Files changed | 1 |
+| Rules added | 1 |
+| Rules removed | 0 |
 | Source attribution changed | 0 |
 
 ## Per-File Changes
 
 | File | Prev | Curr | Added | Removed | Source Δ |
 |------|------|------|-------|---------|----------|
-| China.list | 111809 | 111808 | +0 | -1 | ~0 |
-| Google.list | 692 | 691 | +0 | -1 | ~0 |
-| Microsoft.list | 524 | 523 | +0 | -1 | ~0 |
+| Global.list | 24187 | 24188 | +1 | -0 | ~0 |
 
-## China.list
+## Global.list
 
-**Removed: 1** (showing first 1)
+**Added: 1** (showing first 1)
 ```
-  - [Rabbit-Spec China] f1d6df004d0d  DOMAIN-KEYWORD,microsoft
-```
-
-## Google.list
-
-**Removed: 1** (showing first 1)
-```
-  - [blackmatrix7 Google] df0acf0c0be2  DOMAIN-KEYWORD,google
-```
-
-## Microsoft.list
-
-**Removed: 1** (showing first 1)
-```
-  - [blackmatrix7 Microsoft] f1d6df004d0d  DOMAIN-KEYWORD,microsoft
+  + [blackmatrix7 Global] df0acf0c0be2  DOMAIN-KEYWORD,google
 ```

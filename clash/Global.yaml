@@ -1,7 +1,7 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-08-02 05:00:50 +0800
-# TOTAL: 24187
+# UPDATED: 2026-08-03 05:00:50 +0800
+# TOTAL: 24188
 payload:
   - 'DOMAIN,1password.drift.click'
   - 'DOMAIN,adobeereg.com'
@@ -24100,6 +24100,7 @@ payload:
   - 'DOMAIN-KEYWORD,beetalk'
   - 'DOMAIN-KEYWORD,dlercloud'
   - 'DOMAIN-KEYWORD,dropbox'
+  - 'DOMAIN-KEYWORD,google'
   - 'DOMAIN-KEYWORD,porn'
   - 'DOMAIN-KEYWORD,sci-hub'
   - 'DOMAIN-KEYWORD,telegram'

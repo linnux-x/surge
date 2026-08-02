@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-02T19:34:43.632801",
-  "total_added": 0,
-  "total_removed": 3,
+  "generated_at": "2026-08-03T05:00:50.999541",
+  "total_added": 1,
+  "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -50,19 +50,13 @@
     },
     {
       "file": "China.list",
-      "prev_total": 111809,
+      "prev_total": 111808,
       "curr_total": 111808,
       "added_count": 0,
-      "removed_count": 1,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "f1d6df004d0d",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-KEYWORD,microsoft"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -123,11 +117,17 @@
     {
       "file": "Global.list",
       "prev_total": 24187,
-      "curr_total": 24187,
-      "added_count": 0,
+      "curr_total": 24188,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "df0acf0c0be2",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-KEYWORD,google"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -144,36 +144,24 @@
     },
     {
       "file": "Google.list",
-      "prev_total": 692,
+      "prev_total": 691,
       "curr_total": 691,
       "added_count": 0,
-      "removed_count": 1,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "df0acf0c0be2",
-          "source": "blackmatrix7 Google",
-          "rule": "DOMAIN-KEYWORD,google"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "Microsoft.list",
-      "prev_total": 524,
+      "prev_total": 523,
       "curr_total": 523,
       "added_count": 0,
-      "removed_count": 1,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "f1d6df004d0d",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-KEYWORD,microsoft"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {

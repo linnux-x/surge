@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-08-02 05:00:50 +0800
+# UPDATED: 2026-08-03 05:00:50 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24187
+# TOTAL: 24188
 
 # ======= blackmatrix7 Global ========
 DOMAIN,1password.drift.click
@@ -24103,6 +24103,7 @@ DOMAIN-KEYWORD,avtb
 DOMAIN-KEYWORD,beetalk
 DOMAIN-KEYWORD,dlercloud
 DOMAIN-KEYWORD,dropbox
+DOMAIN-KEYWORD,google
 DOMAIN-KEYWORD,porn
 DOMAIN-KEYWORD,sci-hub
 DOMAIN-KEYWORD,telegram
