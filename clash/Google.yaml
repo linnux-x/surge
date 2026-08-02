@@ -1,7 +1,7 @@
 # Generated from Rule/Google.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-08 18:41:53 +0800
-# TOTAL: 692
+# UPDATED: 2026-08-02 19:34:23 +0800
+# TOTAL: 691
 payload:
   - 'DOMAIN-SUFFIX,gvt1.com'
   - 'DOMAIN-SUFFIX,gvt2.com'
@@ -684,7 +684,6 @@ payload:
   - 'DOMAIN-KEYWORD,appspot'
   - 'DOMAIN-KEYWORD,blogspot'
   - 'DOMAIN-KEYWORD,gmail'
-  - 'DOMAIN-KEYWORD,google'
   - 'IP-CIDR,173.194.0.0/16,no-resolve'
   - 'IP-CIDR,74.125.0.0/16,no-resolve'
   - 'PROCESS-NAME,com.android.vending'

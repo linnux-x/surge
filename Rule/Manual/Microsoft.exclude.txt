@@ -197,3 +197,7 @@ DOMAIN-SUFFIX,optimizely.com
 # 2026-07 rules audit: internal pseudo-TLD hosts that never resolve publicly.
 DOMAIN-SUFFIX,evoke-windowsservices-tas.msedge
 DOMAIN-SUFFIX,onecollector.cloudapp.aria
+
+# Avoid capturing unrelated domains that merely contain "microsoft"; concrete
+# Microsoft service domains remain covered by explicit DOMAIN/DOMAIN-SUFFIX rules.
+DOMAIN-KEYWORD,microsoft

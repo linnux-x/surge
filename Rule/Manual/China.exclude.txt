@@ -126,3 +126,7 @@ DOMAIN-SUFFIX,ms
 DOMAIN-SUFFIX,growth.ai.srv
 DOMAIN-SUFFIX,qsb.browser.miui.srv
 DOMAIN-SUFFIX,tj1-miui-bn-stage01.kscn
+
+# Broad keyword is shadowed by the earlier Microsoft policy and can falsely
+# classify unrelated domains containing "microsoft" as China/DIRECT.
+DOMAIN-KEYWORD,microsoft

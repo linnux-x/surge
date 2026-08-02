@@ -1,7 +1,7 @@
 # Generated from Rule/China.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-08-02 05:00:47 +0800
-# TOTAL: 111809
+# UPDATED: 2026-08-02 19:34:23 +0800
+# TOTAL: 111808
 payload:
   - 'DOMAIN-SUFFIX,wmsjsteam.com'
   - 'DOMAIN-SUFFIX,steamchina.com'
@@ -111778,6 +111778,5 @@ payload:
   - 'DOMAIN-KEYWORD,aliyun'
   - 'DOMAIN-KEYWORD,baidu'
   - 'DOMAIN-KEYWORD,beplay'
-  - 'DOMAIN-KEYWORD,microsoft'
   - 'DOMAIN-KEYWORD,officecdn'
   - 'DOMAIN-KEYWORD,taobao'

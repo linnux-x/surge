@@ -51,3 +51,7 @@ DOMAIN-SUFFIX,speed.googlefiber.net
 DOMAIN-KEYWORD,recaptcha
 DOMAIN-SUFFIX,recaptcha-cn.net
 DOMAIN-SUFFIX,recaptcha.net
+
+# Avoid capturing unrelated domains that merely contain "google"; concrete
+# Google service domains remain covered by explicit DOMAIN/DOMAIN-SUFFIX rules.
+DOMAIN-KEYWORD,google
