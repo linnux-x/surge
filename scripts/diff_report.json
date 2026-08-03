@@ -1,48 +1,17 @@
 {
-  "generated_at": "2026-08-03T19:32:04.696325",
-  "total_added": 15,
-  "total_removed": 0,
+  "generated_at": "2026-08-03T19:40:26.632719",
+  "total_added": 0,
+  "total_removed": 2,
   "total_source_changed": 0,
   "diffs": [
     {
       "file": "AI.list",
-      "prev_total": 144,
+      "prev_total": 150,
       "curr_total": 150,
-      "added_count": 6,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "013e09c458de",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,tryfastgpt.ai"
-        },
-        {
-          "id": "5588bed98455",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,chatjimmy.ai"
-        },
-        {
-          "id": "560d4a120187",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,nousresearch.com"
-        },
-        {
-          "id": "8e1b3412875d",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,fastgpt.run"
-        },
-        {
-          "id": "ce05ba14b7ab",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,fastgpt.io"
-        },
-        {
-          "id": "df74cd1adc6c",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,artificialanalysis.ai"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -70,28 +39,12 @@
     },
     {
       "file": "CDN.list",
-      "prev_total": 26,
+      "prev_total": 29,
       "curr_total": 29,
-      "added_count": 3,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "39964a059a64",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,unpkg.com"
-        },
-        {
-          "id": "4e7037478fdd",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,esm.sh"
-        },
-        {
-          "id": "e5ab75a35c4b",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,jsdelivr.net"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -240,28 +193,12 @@
     },
     {
       "file": "SocialMedia.list",
-      "prev_total": 667,
+      "prev_total": 670,
       "curr_total": 670,
-      "added_count": 3,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "41c1cd7cd720",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,redditstatic.com"
-        },
-        {
-          "id": "7f8eed359e01",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,redditmedia.com"
-        },
-        {
-          "id": "bf724096d97a",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,snapkit.com"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -300,17 +237,13 @@
     },
     {
       "file": "TikTok.list",
-      "prev_total": 30,
-      "curr_total": 33,
-      "added_count": 3,
-      "removed_count": 0,
+      "prev_total": 33,
+      "curr_total": 31,
+      "added_count": 0,
+      "removed_count": 2,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "143e7c22f69f",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,bytegecko.com"
-        },
+      "added_sample": [],
+      "removed_sample": [
         {
           "id": "4a3bc200b3a2",
           "source": "Manual Rules",
@@ -322,7 +255,6 @@
           "rule": "DOMAIN-SUFFIX,ctobsnssdk.com"
         }
       ],
-      "removed_sample": [],
       "source_changed_sample": []
     },
     {

@@ -1,11 +1,9 @@
 # Generated from Rule/TikTok.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-08-03 19:32:00 +0800
-# TOTAL: 33
+# UPDATED: 2026-08-03 19:40:26 +0800
+# TOTAL: 31
 payload:
   - 'DOMAIN-SUFFIX,bytegecko.com'
-  - 'DOMAIN-SUFFIX,ctobsnssdk.com'
-  - 'DOMAIN-SUFFIX,ibytedapm.com'
   - 'DOMAIN,lf16-effectcdn.byteeffecttos-g.com'
   - 'DOMAIN,lf16-pkgcdn.pitaya-clientai.com'
   - 'DOMAIN,p16-tiktokcdn-com.akamaized.net'
