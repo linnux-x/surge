@@ -1,7 +1,7 @@
 # Generated from Rule/SocialMedia.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-07 06:40:33 +0800
-# TOTAL: 667
+# UPDATED: 2026-08-03 19:31:59 +0800
+# TOTAL: 670
 payload:
   - 'DOMAIN-SUFFIX,hostloc.com'
   - 'DOMAIN-SUFFIX,nodeseek.com'
@@ -38,6 +38,9 @@ payload:
   - 'DOMAIN-SUFFIX,ycombinator.com'
   - 'DOMAIN-SUFFIX,resetera.com'
   - 'DOMAIN-SUFFIX,neogaf.com'
+  - 'DOMAIN-SUFFIX,redditmedia.com'
+  - 'DOMAIN-SUFFIX,redditstatic.com'
+  - 'DOMAIN-SUFFIX,snapkit.com'
   - 'DOMAIN-SUFFIX,airhorn.solutions'
   - 'DOMAIN-SUFFIX,airhornbot.com'
   - 'DOMAIN-SUFFIX,bigbeans.solutions'

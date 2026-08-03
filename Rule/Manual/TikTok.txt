@@ -1,0 +1,4 @@
+# Overseas ByteDance / TikTok infrastructure
+DOMAIN-SUFFIX,bytegecko.com
+DOMAIN-SUFFIX,ctobsnssdk.com
+DOMAIN-SUFFIX,ibytedapm.com

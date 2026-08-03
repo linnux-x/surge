@@ -1,9 +1,9 @@
 # NAME: AI
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-08-03 05:00:46 +0800
+# UPDATED: 2026-08-03 19:31:58 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 144
+# TOTAL: 150
 
 # ======= Manual Rules ========
 # Anthropic / Claude
@@ -65,6 +65,14 @@ DOMAIN-SUFFIX,copilot.cloud.microsoft
 
 # Groq
 DOMAIN-SUFFIX,groq.com
+
+# AI research, benchmarking and agent platforms
+DOMAIN-SUFFIX,artificialanalysis.ai
+DOMAIN-SUFFIX,nousresearch.com
+DOMAIN-SUFFIX,fastgpt.io
+DOMAIN-SUFFIX,fastgpt.run
+DOMAIN-SUFFIX,tryfastgpt.ai
+DOMAIN-SUFFIX,chatjimmy.ai
 
 # ======= SukkaW AI ========
 DOMAIN-SUFFIX,openai.com

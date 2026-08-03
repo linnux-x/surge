@@ -1,9 +1,15 @@
 # NAME: TikTok
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-06-30 04:00:23 +0800
+# UPDATED: 2026-08-03 19:32:00 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 30
+# TOTAL: 33
+
+# ======= Manual Rules ========
+# Overseas ByteDance / TikTok infrastructure
+DOMAIN-SUFFIX,bytegecko.com
+DOMAIN-SUFFIX,ctobsnssdk.com
+DOMAIN-SUFFIX,ibytedapm.com
 
 # ======= blackmatrix7 TikTok ========
 DOMAIN,lf16-effectcdn.byteeffecttos-g.com

@@ -59,3 +59,10 @@ DOMAIN-SUFFIX,ycombinator.com
 # Gaming forums
 DOMAIN-SUFFIX,resetera.com
 DOMAIN-SUFFIX,neogaf.com
+
+# Reddit media and static assets
+DOMAIN-SUFFIX,redditmedia.com
+DOMAIN-SUFFIX,redditstatic.com
+
+# Snap developer services
+DOMAIN-SUFFIX,snapkit.com

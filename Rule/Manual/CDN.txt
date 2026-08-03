@@ -1,2 +1,7 @@
 # GitHub release assets intentionally use CDN policy; broader GitHub hosts stay in Global/list-specific rules.
 DOMAIN,release-assets.githubusercontent.com
+
+# Public package CDNs
+DOMAIN-SUFFIX,jsdelivr.net
+DOMAIN-SUFFIX,unpkg.com
+DOMAIN-SUFFIX,esm.sh

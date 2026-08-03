@@ -64,3 +64,11 @@ DOMAIN-SUFFIX,copilot.cloud.microsoft
 
 # Groq
 DOMAIN-SUFFIX,groq.com
+
+# AI research, benchmarking and agent platforms
+DOMAIN-SUFFIX,artificialanalysis.ai
+DOMAIN-SUFFIX,nousresearch.com
+DOMAIN-SUFFIX,fastgpt.io
+DOMAIN-SUFFIX,fastgpt.run
+DOMAIN-SUFFIX,tryfastgpt.ai
+DOMAIN-SUFFIX,chatjimmy.ai
