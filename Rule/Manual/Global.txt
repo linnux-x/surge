@@ -2,3 +2,10 @@
 DOMAIN-SUFFIX,boil.network
 DOMAIN-SUFFIX,neburst.com
 DOMAIN-SUFFIX,meowvps.com
+DOMAIN-SUFFIX,fdcservers.net
+DOMAIN-SUFFIX,vpszdm.com
+DOMAIN-SUFFIX,sa.net
+DOMAIN-SUFFIX,shlii.io
+DOMAIN-SUFFIX,vmiss.com
+DOMAIN-SUFFIX,ddps.jp
+DOMAIN-SUFFIX,legendvps.com

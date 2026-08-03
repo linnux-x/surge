@@ -238,3 +238,9 @@ DOMAIN-SUFFIX,v.roucdn
 DOMAIN-KEYWORD,paypal
 DOMAIN-SUFFIX,recaptcha-cn.net
 DOMAIN-SUFFIX,recaptcha.net
+
+# China push infrastructure and public services must fall through to China/DIRECT.
+DOMAIN-SUFFIX,gepush.com
+DOMAIN-SUFFIX,getui.net
+DOMAIN-SUFFIX,weixingshangye.com
+DOMAIN-SUFFIX,appinn.me

@@ -28,6 +28,12 @@ DOMAIN-SUFFIX,steamserver.net
 DOMAIN-SUFFIX,steamcontent.com
 DOMAIN-SUFFIX,xboxlive.cn
 
+# China push infrastructure and public services
+DOMAIN-SUFFIX,gepush.com
+DOMAIN-SUFFIX,getui.net
+DOMAIN-SUFFIX,weixingshangye.com
+DOMAIN-SUFFIX,appinn.me
+
 # PayPal China domestic services (安付通/贝宝) — excluded from PayPal proxy to China/DIRECT.
 DOMAIN-SUFFIX,anfutong.cn
 DOMAIN-SUFFIX,anfutong.com

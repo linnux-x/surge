@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-03T19:47:44.653384",
-  "total_added": 3,
+  "generated_at": "2026-08-03T20:06:49.746717",
+  "total_added": 11,
   "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
@@ -51,11 +51,32 @@
     {
       "file": "China.list",
       "prev_total": 111808,
-      "curr_total": 111808,
-      "added_count": 0,
+      "curr_total": 111812,
+      "added_count": 4,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "6f1af7e3906c",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,getui.net"
+        },
+        {
+          "id": "c95081702eb3",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,gepush.com"
+        },
+        {
+          "id": "cbc7d1ce69ac",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,weixingshangye.com"
+        },
+        {
+          "id": "f3248bec63f8",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,appinn.me"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -116,26 +137,46 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24188,
-      "curr_total": 24191,
-      "added_count": 3,
+      "prev_total": 24191,
+      "curr_total": 24198,
+      "added_count": 7,
       "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [
         {
-          "id": "55d7e9d1ea74",
+          "id": "1f6e5d740722",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,meowvps.com"
+          "rule": "DOMAIN-SUFFIX,sa.net"
         },
         {
-          "id": "69295f977cfb",
+          "id": "54bea85a523b",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,neburst.com"
+          "rule": "DOMAIN-SUFFIX,fdcservers.net"
         },
         {
-          "id": "e274f4d1b11d",
+          "id": "610a8225b951",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,boil.network"
+          "rule": "DOMAIN-SUFFIX,legendvps.com"
+        },
+        {
+          "id": "7287b1cbdd27",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,ddps.jp"
+        },
+        {
+          "id": "93244032a959",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,vpszdm.com"
+        },
+        {
+          "id": "ce3dabcd05ef",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,vmiss.com"
+        },
+        {
+          "id": "ed560fa84217",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,shlii.io"
         }
       ],
       "removed_sample": [],

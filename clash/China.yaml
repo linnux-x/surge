@@ -1,12 +1,16 @@
 # Generated from Rule/China.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-08-03 05:00:48 +0800
-# TOTAL: 111808
+# UPDATED: 2026-08-03 20:06:48 +0800
+# TOTAL: 111812
 payload:
   - 'DOMAIN-SUFFIX,wmsjsteam.com'
   - 'DOMAIN-SUFFIX,steamchina.com'
   - 'DOMAIN-SUFFIX,steamserver.net'
   - 'DOMAIN-SUFFIX,steamcontent.com'
+  - 'DOMAIN-SUFFIX,gepush.com'
+  - 'DOMAIN-SUFFIX,getui.net'
+  - 'DOMAIN-SUFFIX,weixingshangye.com'
+  - 'DOMAIN-SUFFIX,appinn.me'
   - 'DOMAIN-SUFFIX,anfutong.com'
   - 'DOMAIN-SUFFIX,beibao.com'
   - 'DOMAIN-SUFFIX,jd.hk'

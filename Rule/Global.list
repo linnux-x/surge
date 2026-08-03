@@ -1,15 +1,22 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-08-03 19:47:44 +0800
+# UPDATED: 2026-08-03 20:06:49 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24191
+# TOTAL: 24198
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
 DOMAIN-SUFFIX,boil.network
 DOMAIN-SUFFIX,neburst.com
 DOMAIN-SUFFIX,meowvps.com
+DOMAIN-SUFFIX,fdcservers.net
+DOMAIN-SUFFIX,vpszdm.com
+DOMAIN-SUFFIX,sa.net
+DOMAIN-SUFFIX,shlii.io
+DOMAIN-SUFFIX,vmiss.com
+DOMAIN-SUFFIX,ddps.jp
+DOMAIN-SUFFIX,legendvps.com
 
 # ======= blackmatrix7 Global ========
 DOMAIN,1password.drift.click

@@ -96,3 +96,14 @@ esm.sh,CDN.list,ESM公共包CDN
 boil.network,Global.list,家宽VPS厂商需代理访问
 neburst.com,Global.list,主机厂商需代理访问
 meowvps.com,Global.list,主机推荐网站需代理访问
+fdcservers.net,Global.list,FDC Servers主机厂商需代理访问
+vpszdm.com,Global.list,VPS推荐评测网站需代理访问
+sa.net,Global.list,海外VPS厂商需代理访问
+shlii.io,Global.list,NAT VPS厂商需代理访问
+vmiss.com,Global.list,海外云主机厂商需代理访问
+ddps.jp,Global.list,日本VPS及托管厂商需代理访问
+legendvps.com,Global.list,海外VPS厂商需代理访问
+gepush.com,China.list,个推推送基础设施直连
+getui.net,China.list,个推网络基础设施直连
+weixingshangye.com,China.list,中国备案商业网站直连
+appinn.me,China.list,小众软件官方论坛直连
