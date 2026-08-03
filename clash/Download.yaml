@@ -1,7 +1,7 @@
 # Generated from Rule/Download.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-26 04:01:07 +0800
-# TOTAL: 1686
+# UPDATED: 2026-08-04 05:00:34 +0800
+# TOTAL: 1688
 payload:
   - 'PROCESS-NAME,aria2c'
   - 'PROCESS-NAME,fdm'
@@ -136,6 +136,7 @@ payload:
   - 'DOMAIN,deb.sury.org'
   - 'DOMAIN-SUFFIX,pkg.dev'
   - 'DOMAIN,packages.codeberg.org'
+  - 'DOMAIN,node-registry.bit.cloud'
   - 'DOMAIN,dl-cdn.alpinelinux.org'
   - 'DOMAIN,downloads.openwrt.org'
   - 'DOMAIN,playwright.azureedge.net'
@@ -254,6 +255,7 @@ payload:
   - 'DOMAIN-SUFFIX,temp.sh'
   - 'DOMAIN-SUFFIX,archive.org'
   - 'DOMAIN,distcache.freebsd.org'
+  - 'DOMAIN,dl.pikpak.site'
   - 'DOMAIN,cache.agilebits.com'
   - 'DOMAIN,c.1password.com'
   - 'DOMAIN,downloads.1password.com'

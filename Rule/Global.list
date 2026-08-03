@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-08-03 20:06:49 +0800
+# UPDATED: 2026-08-04 05:00:38 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24198
+# TOTAL: 24207
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -689,6 +689,7 @@ DOMAIN-SUFFIX,acpica.com
 DOMAIN-SUFFIX,acrobat.com
 DOMAIN-SUFFIX,actalis.com
 DOMAIN-SUFFIX,actalis.it
+DOMAIN-SUFFIX,actifio.com
 DOMAIN-SUFFIX,activelearnprimary.co.uk
 DOMAIN-SUFFIX,activelearnprimary.com.au
 DOMAIN-SUFFIX,activematter.game
@@ -3608,7 +3609,6 @@ DOMAIN-SUFFIX,cepacol.ca
 DOMAIN-SUFFIX,cepacol.com
 DOMAIN-SUFFIX,ceramics-cadcam.com
 DOMAIN-SUFFIX,cerdas.com
-DOMAIN-SUFFIX,cerebras.ai
 DOMAIN-SUFFIX,cern.ch
 DOMAIN-SUFFIX,cert-gib.com
 DOMAIN-SUFFIX,cert-gib.ru
@@ -3698,7 +3698,6 @@ DOMAIN-SUFFIX,chocam.com
 DOMAIN-SUFFIX,chocolatey.org
 DOMAIN-SUFFIX,choicereviews.org
 DOMAIN-SUFFIX,christymarks.com
-DOMAIN-SUFFIX,cht.com.tw
 DOMAIN-SUFFIX,chtf.org.tw
 DOMAIN-SUFFIX,chuangb15.xyz
 DOMAIN-SUFFIX,chubbypornonly.com
@@ -8585,7 +8584,10 @@ DOMAIN-SUFFIX,jessicaturner.com
 DOMAIN-SUFFIX,jetbrains.ai
 DOMAIN-SUFFIX,jetbrains.cloud
 DOMAIN-SUFFIX,jetbrains.com
+DOMAIN-SUFFIX,jetbrains.dev
 DOMAIN-SUFFIX,jetbrains.net
+DOMAIN-SUFFIX,jetbrains.org
+DOMAIN-SUFFIX,jetbrains.ru
 DOMAIN-SUFFIX,jetbrains.space
 DOMAIN-SUFFIX,jetbrains.team
 DOMAIN-SUFFIX,jfengtime.com
@@ -9026,6 +9028,8 @@ DOMAIN-SUFFIX,korona.com
 DOMAIN-SUFFIX,koshelek.app
 DOMAIN-SUFFIX,koskade.com
 DOMAIN-SUFFIX,kostenlosepornoclips.com
+DOMAIN-SUFFIX,kotl.in
+DOMAIN-SUFFIX,kotlinconf.com
 DOMAIN-SUFFIX,kotlinlang.org
 DOMAIN-SUFFIX,koubaibu.jp
 DOMAIN-SUFFIX,koukoku.jp
@@ -9047,6 +9051,7 @@ DOMAIN-SUFFIX,ksd235qw.com
 DOMAIN-SUFFIX,ksescortclub.com
 DOMAIN-SUFFIX,ksyp10.com
 DOMAIN-SUFFIX,ktech.team
+DOMAIN-SUFFIX,ktor.io
 DOMAIN-SUFFIX,ku77.xyz
 DOMAIN-SUFFIX,kuaimao-app.com
 DOMAIN-SUFFIX,kuaipa.net
@@ -10436,6 +10441,7 @@ DOMAIN-SUFFIX,mozgcp.net
 DOMAIN-SUFFIX,mozilla-europe.org
 DOMAIN-SUFFIX,mozilla-hispano.org
 DOMAIN-SUFFIX,mozilla-mexico.org
+DOMAIN-SUFFIX,mozilla.ai
 DOMAIN-SUFFIX,mozilla.com
 DOMAIN-SUFFIX,mozilla.community
 DOMAIN-SUFFIX,mozilla.cz
@@ -10618,6 +10624,7 @@ DOMAIN-SUFFIX,myhpsupport.com
 DOMAIN-SUFFIX,myhtebook.com
 DOMAIN-SUFFIX,myhtebooks.com
 DOMAIN-SUFFIX,myhtlmebook.com
+DOMAIN-SUFFIX,myjetbrains.com
 DOMAIN-SUFFIX,myjkwd.com
 DOMAIN-SUFFIX,mylf.com
 DOMAIN-SUFFIX,mylittlenieces.com
@@ -11534,6 +11541,7 @@ DOMAIN-SUFFIX,openvino.ai
 DOMAIN-SUFFIX,openvinotoolkit.org
 DOMAIN-SUFFIX,openweather.co.uk
 DOMAIN-SUFFIX,openweathermap.org
+DOMAIN-SUFFIX,openxla.org
 DOMAIN-SUFFIX,opera-mini.net
 DOMAIN-SUFFIX,opinionjournal.com
 DOMAIN-SUFFIX,oppai-doga.info
@@ -14654,6 +14662,7 @@ DOMAIN-SUFFIX,takporn.com
 DOMAIN-SUFFIX,talantix.ru
 DOMAIN-SUFFIX,talentlens.com
 DOMAIN-SUFFIX,taleofthenight.com
+DOMAIN-SUFFIX,talkingkotlin.com
 DOMAIN-SUFFIX,talksport.com
 DOMAIN-SUFFIX,tamilsexvideos.cc
 DOMAIN-SUFFIX,tampabay.com
@@ -18719,6 +18728,7 @@ DOMAIN-SUFFIX,centauro.com.br
 DOMAIN-SUFFIX,centerforhumanreprod.com
 DOMAIN-SUFFIX,centralnation.com
 DOMAIN-SUFFIX,centurys.net
+DOMAIN-SUFFIX,cerebras.ai
 DOMAIN-SUFFIX,cex.io
 DOMAIN-SUFFIX,cfhks.org.hk
 DOMAIN-SUFFIX,cfos.de
@@ -18835,6 +18845,7 @@ DOMAIN-SUFFIX,christianstudy.com
 DOMAIN-SUFFIX,christiantimes.org.hk
 DOMAIN-SUFFIX,christusrex.org
 DOMAIN-SUFFIX,chrlawyers.hk
+DOMAIN-SUFFIX,cht.com.tw
 DOMAIN-SUFFIX,chuang-yen.org
 DOMAIN-SUFFIX,chubold.com
 DOMAIN-SUFFIX,chubun.com
@@ -21283,7 +21294,6 @@ DOMAIN-SUFFIX,mousebreaker.com
 DOMAIN-SUFFIX,movements.org
 DOMAIN-SUFFIX,moves-export.com
 DOMAIN-SUFFIX,moviefap.com
-DOMAIN-SUFFIX,mozilla.ai
 DOMAIN-SUFFIX,mozilla.org
 DOMAIN-SUFFIX,moztw.org
 DOMAIN-SUFFIX,mp3buscador.com
@@ -21577,6 +21587,7 @@ DOMAIN-SUFFIX,ntdtv.cz
 DOMAIN-SUFFIX,ntdtv.jp
 DOMAIN-SUFFIX,ntdtv.ru
 DOMAIN-SUFFIX,ntdtvla.com
+DOMAIN-SUFFIX,nthlink.com
 DOMAIN-SUFFIX,ntrfun.com
 DOMAIN-SUFFIX,ntu.edu.tw
 DOMAIN-SUFFIX,nu.nl
@@ -22089,7 +22100,6 @@ DOMAIN-SUFFIX,radio.co
 DOMAIN-SUFFIX,radio.garden
 DOMAIN-SUFFIX,radioaustralia.net.au
 DOMAIN-SUFFIX,radiohilight.net
-DOMAIN-SUFFIX,radiojar.com
 DOMAIN-SUFFIX,radioline.co
 DOMAIN-SUFFIX,radiotime.com
 DOMAIN-SUFFIX,radiovaticana.org
@@ -23802,7 +23812,6 @@ DOMAIN-SUFFIX,wuw.red
 DOMAIN-SUFFIX,wuyanblog.com
 DOMAIN-SUFFIX,wwe.com
 DOMAIN-SUFFIX,wwitv.com
-DOMAIN-SUFFIX,www.clashverge.dev
 DOMAIN-SUFFIX,www1.biz
 DOMAIN-SUFFIX,wwwhost.biz
 DOMAIN-SUFFIX,wxw.cat
