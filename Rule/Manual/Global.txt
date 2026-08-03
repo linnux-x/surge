@@ -1,0 +1,4 @@
+# VPS providers and hosting recommendations requiring proxy access
+DOMAIN-SUFFIX,boil.network
+DOMAIN-SUFFIX,neburst.com
+DOMAIN-SUFFIX,meowvps.com

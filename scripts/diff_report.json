@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-03T19:40:26.632719",
-  "total_added": 0,
-  "total_removed": 2,
+  "generated_at": "2026-08-03T19:47:44.653384",
+  "total_added": 3,
+  "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -117,11 +117,27 @@
     {
       "file": "Global.list",
       "prev_total": 24188,
-      "curr_total": 24188,
-      "added_count": 0,
+      "curr_total": 24191,
+      "added_count": 3,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "55d7e9d1ea74",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,meowvps.com"
+        },
+        {
+          "id": "69295f977cfb",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,neburst.com"
+        },
+        {
+          "id": "e274f4d1b11d",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,boil.network"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -237,24 +253,13 @@
     },
     {
       "file": "TikTok.list",
-      "prev_total": 33,
+      "prev_total": 31,
       "curr_total": 31,
       "added_count": 0,
-      "removed_count": 2,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "4a3bc200b3a2",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,ibytedapm.com"
-        },
-        {
-          "id": "a27841cdf06d",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,ctobsnssdk.com"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {

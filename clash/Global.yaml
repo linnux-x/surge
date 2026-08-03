@@ -1,8 +1,11 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-08-03 05:00:50 +0800
-# TOTAL: 24188
+# UPDATED: 2026-08-03 19:47:44 +0800
+# TOTAL: 24191
 payload:
+  - 'DOMAIN-SUFFIX,boil.network'
+  - 'DOMAIN-SUFFIX,neburst.com'
+  - 'DOMAIN-SUFFIX,meowvps.com'
   - 'DOMAIN,1password.drift.click'
   - 'DOMAIN,adobeereg.com'
   - 'DOMAIN,agb9r0ad.qllfkl.com'

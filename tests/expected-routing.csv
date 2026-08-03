@@ -93,3 +93,6 @@ snapkit.com,SocialMedia.list,Snap开发者服务
 jsdelivr.net,CDN.list,jsDelivr公共包CDN
 unpkg.com,CDN.list,UNPKG公共包CDN
 esm.sh,CDN.list,ESM公共包CDN
+boil.network,Global.list,家宽VPS厂商需代理访问
+neburst.com,Global.list,主机厂商需代理访问
+meowvps.com,Global.list,主机推荐网站需代理访问
