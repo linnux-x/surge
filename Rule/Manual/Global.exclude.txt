@@ -238,3 +238,6 @@ DOMAIN-SUFFIX,v.roucdn
 DOMAIN-KEYWORD,paypal
 DOMAIN-SUFFIX,recaptcha-cn.net
 DOMAIN-SUFFIX,recaptcha.net
+
+# LINUX DO is explicitly classified as China/DIRECT; Global appears earlier.
+DOMAIN-SUFFIX,linux.do

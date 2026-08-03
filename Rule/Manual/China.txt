@@ -43,3 +43,6 @@ DOMAIN-SUFFIX,paypalhere.cn
 DOMAIN-SUFFIX,paypalhere.com.cn
 DOMAIN-SUFFIX,xn--bnq297cix3a.cn
 DOMAIN-SUFFIX,xoom.net.cn
+
+# LINUX DO community — route DIRECT via China policy.
+DOMAIN-SUFFIX,linux.do

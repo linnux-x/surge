@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-08-03 05:00:50 +0800
+# UPDATED: 2026-08-03 17:11:57 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24188
+# TOTAL: 24187
 
 # ======= blackmatrix7 Global ========
 DOMAIN,1password.drift.click
@@ -20904,7 +20904,6 @@ DOMAIN-SUFFIX,linktr.ee
 DOMAIN-SUFFIX,linkuswell.com
 DOMAIN-SUFFIX,linode.com
 DOMAIN-SUFFIX,linpie.com
-DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,linux.org.hk
 DOMAIN-SUFFIX,linuxtoy.org
 DOMAIN-SUFFIX,lionsroar.com
