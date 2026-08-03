@@ -1,7 +1,7 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-08-03 17:11:57 +0800
-# TOTAL: 24187
+# UPDATED: 2026-08-03 05:00:50 +0800
+# TOTAL: 24188
 payload:
   - 'DOMAIN,1password.drift.click'
   - 'DOMAIN,adobeereg.com'
@@ -20901,6 +20901,7 @@ payload:
   - 'DOMAIN-SUFFIX,linkuswell.com'
   - 'DOMAIN-SUFFIX,linode.com'
   - 'DOMAIN-SUFFIX,linpie.com'
+  - 'DOMAIN-SUFFIX,linux.do'
   - 'DOMAIN-SUFFIX,linux.org.hk'
   - 'DOMAIN-SUFFIX,linuxtoy.org'
   - 'DOMAIN-SUFFIX,lionsroar.com'

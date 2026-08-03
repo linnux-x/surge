@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-03T17:11:58.209561",
+  "generated_at": "2026-08-03T05:00:50.999541",
   "total_added": 1,
-  "total_removed": 1,
+  "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -51,17 +51,11 @@
     {
       "file": "China.list",
       "prev_total": 111808,
-      "curr_total": 111809,
-      "added_count": 1,
+      "curr_total": 111808,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "401f91fcd107",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,linux.do"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -122,19 +116,19 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24188,
-      "curr_total": 24187,
-      "added_count": 0,
-      "removed_count": 1,
+      "prev_total": 24187,
+      "curr_total": 24188,
+      "added_count": 1,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [
+      "added_sample": [
         {
-          "id": "401f91fcd107",
+          "id": "df0acf0c0be2",
           "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,linux.do"
+          "rule": "DOMAIN-KEYWORD,google"
         }
       ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
