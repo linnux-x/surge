@@ -1,6 +1,6 @@
 # Generated from Rule/Disney.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-06-30 04:00:21 +0800
+# UPDATED: 2026-08-04 20:35:11 +0800
 # TOTAL: 166
 payload:
   - 'DOMAIN-SUFFIX,20thcenturystudios.com.au'

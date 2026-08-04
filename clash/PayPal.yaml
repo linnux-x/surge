@@ -1,6 +1,6 @@
 # Generated from Rule/PayPal.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-08 18:41:54 +0800
+# UPDATED: 2026-08-04 20:35:16 +0800
 # TOTAL: 233
 payload:
   - 'DOMAIN-SUFFIX,account-paypal.info'
