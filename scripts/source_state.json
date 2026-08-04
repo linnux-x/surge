@@ -19,19 +19,25 @@
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
     "content_length": "4255",
-    "etag": "\"fbf27e757284371113afdb40aca7a6330dec44537c71b6e6c7aa061f418ec91d\"",
+    "etag": "\"6ed28f6780811b42428af79704d7fd50e0b3f96bd12224bfc8b51c78298d44b0\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
     "content_length": "101146",
-    "etag": "\"cde4bd5203cb0a7bb124ea444c477e6294ac17db60109c9c0ab7584cf026a6a2\"",
+    "etag": "\"dabe9db1e5ae6f27b3d7f70aeecc2fe14911c2241417b36ae9484411b41a9eee\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/ChinaCIDR.list": {
     "content_length": "143419",
-    "etag": "\"131e051c7fd2d61e8ffab5e726fcf577683f6619e371360a091a6831bfa21f73\"",
+    "etag": "\"8c35d5625c0450fac9d6b556a4158f795c4cd93319aaf37bd51d69dd4898df35\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://raw.githubusercontent.com/RocM301/Apple-Rule/refs/heads/main/Apple-AI.list": {
+    "content_length": "676",
+    "etag": "\"a642f83826b1180ce3610162e464d82ce338d749e70866539e43ef245347f175\"",
     "last_modified": null,
     "source_available": true
   },
@@ -56,12 +62,6 @@
   "https://raw.githubusercontent.com/SukkaW/Surge/master/Source/non_ip/ai.conf": {
     "content_length": "3852",
     "etag": "\"eff15baaab50fc5e7fe8c15651f970574bb75606c56d134eaa8da9c036ffae4a\"",
-    "last_modified": null,
-    "source_available": true
-  },
-  "https://raw.githubusercontent.com/SukkaW/Surge/master/Source/non_ip/apple_intelligence.conf": {
-    "content_length": "672",
-    "etag": "\"ec4b49c7d83cce2d08f6ea72a02812ce29cfde2cb94997239dea7618b878c032\"",
     "last_modified": null,
     "source_available": true
   },
@@ -212,6 +212,12 @@
   "https://ruleset.skk.moe/List/non_ip/apple_cn.conf": {
     "content_length": null,
     "etag": "W/\"ebd50eeeeac58b1424535f2299ac929d\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://ruleset.skk.moe/List/non_ip/apple_intelligence.conf": {
+    "content_length": "630",
+    "etag": "\"bef678b00f12ab3f38e6a8c5262597dd\"",
     "last_modified": null,
     "source_available": true
   },
