@@ -1,7 +1,7 @@
 # Generated from Rule/AI.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-08-04 05:00:34 +0800
-# TOTAL: 150
+# UPDATED: 2026-08-04 20:35:02 +0800
+# TOTAL: 143
 payload:
   - 'DOMAIN-SUFFIX,anthropic.com'
   - 'DOMAIN-SUFFIX,claude.ai'
@@ -78,11 +78,6 @@ payload:
   - 'DOMAIN-SUFFIX,grok.com'
   - 'DOMAIN-SUFFIX,x.ai'
   - 'DOMAIN,api.jetbrains.ai'
-  - 'DOMAIN,apple-relay.fastly-edge.com'
-  - 'DOMAIN,apple-relay.cloudflare.com'
-  - 'DOMAIN,apple-relay.apple.com'
-  - 'DOMAIN,cp4.cloudflare.com'
-  - 'DOMAIN,gspe1-ssl.ls.apple.com'
   - 'DOMAIN,anthropic-com.ghost.io'
   - 'DOMAIN,browser-intake-datadoghq.com'
   - 'DOMAIN,browser-intake-us5-datadoghq.com'
@@ -130,9 +125,7 @@ payload:
   - 'IP-CIDR,24.199.123.28/32,no-resolve'
   - 'IP-CIDR,64.23.132.171/32,no-resolve'
   - 'IP-CIDR6,2607:6BC0::/32,no-resolve'
-  - 'DOMAIN-SUFFIX,smoot.apple.com'
-  - 'DOMAIN-SUFFIX,gateway.icloud.com'
-  - 'DOMAIN,guzzoni.apple.com'
+  - 'DOMAIN,cp4.cloudflare.com'
   - 'DOMAIN-KEYWORD,openaiapi'
   - 'DOMAIN-KEYWORD,openaicom'
   - 'DOMAIN-SUFFIX,openrouter.ai'

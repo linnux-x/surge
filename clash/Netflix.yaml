@@ -1,10 +1,9 @@
 # Generated from Rule/Netflix.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-06-30 04:00:22 +0800
-# TOTAL: 1153
+# UPDATED: 2026-08-04 20:35:15 +0800
+# TOTAL: 1152
 payload:
   - 'DOMAIN,h-netflix.online-metrix.net'
-  - 'DOMAIN,netflix.com.edgesuite.net'
   - 'DOMAIN-SUFFIX,flxvpn.net'
   - 'DOMAIN-SUFFIX,netflix.ca'
   - 'DOMAIN-SUFFIX,netflix.com'

@@ -86,6 +86,15 @@ fastgpt.io,AI.list,FastGPT AI Agent平台
 fastgpt.run,AI.list,FastGPT运行服务
 tryfastgpt.ai,AI.list,FastGPT国际服务
 chatjimmy.ai,AI.list,ChatJimmy AI服务
+guzzoni.apple.com,Apple_AI.list,Apple Intelligence Siri Search
+smoot.apple.com,Apple_AI.list,Apple Intelligence Siri
+apple-relay.apple.com,Apple_AI.list,Apple Private Relay
+gateway.icloud.com,Apple_AI.list,Apple iCloud Private Relay Gateway
+mask.icloud.com,Apple_AI.list,Apple iCloud Private Relay
+mask.apple-dns.net,Apple_AI.list,Apple Private Relay DNS
+ls.apple.com,Apple_AI.list,Apple Siri LinkScribe
+mask-h2.icloud.com,Apple_AI.list,Apple Private Relay H2
+cp4.cloudflare.com,Apple_AI.list,Apple Intelligence Cloudflare
 bytegecko.com,TikTok.list,海外ByteDance基础设施
 redditmedia.com,SocialMedia.list,Reddit媒体资源
 redditstatic.com,SocialMedia.list,Reddit静态资源

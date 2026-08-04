@@ -364,7 +364,7 @@ def prune_global_first_match_overlaps():
         return
 
     earlier_rulesets = [
-        "WeChat.list", "Speedtest.list", "AI.list", "Apple_CN.list", "Apple.list",
+        "WeChat.list", "Speedtest.list", "Apple_AI.list", "AI.list", "Apple_CN.list", "Apple.list",
         "Microsoft_CDN.list", "Microsoft.list", "Telegram.list", "Download.list",
         "Game.list", "YouTube.list", "TikTok.list", "SocialMedia.list",
         "PayPal.list", "Google.list", "Netflix.list", "Disney.list",

@@ -26,21 +26,25 @@ BASE_URIS = {
     # finds a concrete replacement with equal or better coverage.
     "RABBIT": "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules",
     "CHUA": "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra",
+    "ROC301": "https://raw.githubusercontent.com/RocM301/Apple-Rule/refs/heads/main",
 }
 
 BM7 = BASE_URIS["BM7"]
 SUKKA = BASE_URIS["SUKKA"]
 RABBIT = BASE_URIS["RABBIT"]
 CHUA = BASE_URIS["CHUA"]
+ROC301 = BASE_URIS["ROC301"]
 
 # ── Canonical source list ─────────────────────────────────────────────────
 # Each entry: (source_label, source_url, target_ruleset, format_or_None)
 # format: "domainset" | "cidr" | None (plain Surge ruleset)
 
 _SOURCES: list[tuple[str, str, str, str | None]] = [
+    # Apple_AI.list
+    ("RocM301 Apple-AI", f"{ROC301}/Apple-AI.list", "Apple_AI.list", None),
+    ("SukkaW Apple Intelligence", "https://ruleset.skk.moe/List/non_ip/apple_intelligence.conf", "Apple_AI.list", None),
     # AI.list
     ("SukkaW AI", f"{SUKKA}/non_ip/ai.conf", "AI.list", None),
-    ("SukkaW Apple Intelligence", f"{SUKKA}/non_ip/apple_intelligence.conf", "AI.list", None),
     ("Rabbit-Spec AIGC", f"{RABBIT}/AIGC.list", "AI.list", None),
     ("ConnersHua AI", f"{CHUA}/AI.list", "AI.list", None),
     # Apple.list
@@ -123,7 +127,7 @@ ALL_RULESETS: set[str] = set(RULE_SPECS.keys())
 
 # OVERLAP_DEPENDENTS: rulesets whose change triggers Global.list re-pruning
 OVERLAP_DEPENDENTS: set[str] = {
-    "WeChat.list", "Speedtest.list", "AI.list", "Apple_CN.list",
+    "WeChat.list", "Speedtest.list", "Apple_AI.list", "AI.list", "Apple_CN.list",
     "Apple.list", "Microsoft_CDN.list", "Microsoft.list",
     "Telegram.list", "Download.list", "Game.list", "YouTube.list",
     "TikTok.list", "SocialMedia.list", "PayPal.list", "Google.list",

@@ -1,9 +1,9 @@
 # NAME: AI
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-08-04 05:00:34 +0800
+# UPDATED: 2026-08-04 20:35:02 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 150
+# TOTAL: 143
 
 # ======= Manual Rules ========
 # Anthropic / Claude
@@ -98,13 +98,6 @@ DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,x.ai
 DOMAIN,api.jetbrains.ai
 
-# ======= SukkaW Apple Intelligence ========
-DOMAIN,apple-relay.fastly-edge.com
-DOMAIN,apple-relay.cloudflare.com
-DOMAIN,apple-relay.apple.com
-DOMAIN,cp4.cloudflare.com
-DOMAIN,gspe1-ssl.ls.apple.com
-
 # ======= Rabbit-Spec AIGC ========
 DOMAIN,anthropic-com.ghost.io
 DOMAIN,browser-intake-datadoghq.com
@@ -155,9 +148,7 @@ IP-CIDR,64.23.132.171/32,no-resolve
 IP-CIDR6,2607:6BC0::/32,no-resolve
 
 # ======= ConnersHua AI ========
-DOMAIN-SUFFIX,smoot.apple.com
-DOMAIN-SUFFIX,gateway.icloud.com
-DOMAIN,guzzoni.apple.com
+DOMAIN,cp4.cloudflare.com
 DOMAIN-KEYWORD,openaiapi
 DOMAIN-KEYWORD,openaicom
 DOMAIN-SUFFIX,openrouter.ai

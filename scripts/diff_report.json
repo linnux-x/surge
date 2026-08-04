@@ -1,19 +1,61 @@
 {
-  "generated_at": "2026-08-04T17:52:03.839933",
-  "total_added": 1,
-  "total_removed": 0,
-  "total_source_changed": 0,
+  "generated_at": "2026-08-04T20:36:03.516470",
+  "total_added": 15,
+  "total_removed": 9,
+  "total_source_changed": 1,
   "diffs": [
     {
       "file": "AI.list",
       "prev_total": 150,
-      "curr_total": 150,
+      "curr_total": 143,
       "added_count": 0,
-      "removed_count": 0,
-      "source_changed_count": 0,
+      "removed_count": 7,
+      "source_changed_count": 1,
       "added_sample": [],
-      "removed_sample": [],
-      "source_changed_sample": []
+      "removed_sample": [
+        {
+          "id": "166f559da3b6",
+          "source": "ConnersHua AI",
+          "rule": "DOMAIN,guzzoni.apple.com"
+        },
+        {
+          "id": "2ebcc8481ab6",
+          "source": "SukkaW Apple Intelligence",
+          "rule": "DOMAIN,apple-relay.cloudflare.com"
+        },
+        {
+          "id": "337c1afb34dc",
+          "source": "SukkaW Apple Intelligence",
+          "rule": "DOMAIN,gspe1-ssl.ls.apple.com"
+        },
+        {
+          "id": "68bf1162c028",
+          "source": "ConnersHua AI",
+          "rule": "DOMAIN-SUFFIX,smoot.apple.com"
+        },
+        {
+          "id": "a97fbc8f931a",
+          "source": "SukkaW Apple Intelligence",
+          "rule": "DOMAIN,apple-relay.fastly-edge.com"
+        },
+        {
+          "id": "e1bb003bb23f",
+          "source": "SukkaW Apple Intelligence",
+          "rule": "DOMAIN,apple-relay.apple.com"
+        },
+        {
+          "id": "efede8aee155",
+          "source": "ConnersHua AI",
+          "rule": "DOMAIN-SUFFIX,gateway.icloud.com"
+        }
+      ],
+      "source_changed_sample": [
+        {
+          "id": "6e9128c725fe",
+          "old_source": "SukkaW Apple Intelligence",
+          "new_source": "ConnersHua AI"
+        }
+      ]
     },
     {
       "file": "Apple.list",
@@ -23,6 +65,93 @@
       "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
+      "removed_sample": [],
+      "source_changed_sample": []
+    },
+    {
+      "file": "Apple_AI.list",
+      "prev_total": 0,
+      "curr_total": 15,
+      "added_count": 15,
+      "removed_count": 0,
+      "source_changed_count": 0,
+      "added_sample": [
+        {
+          "id": "166f559da3b6",
+          "source": "RocM301 Apple-AI",
+          "rule": "DOMAIN,guzzoni.apple.com"
+        },
+        {
+          "id": "21c16ccce25d",
+          "source": "RocM301 Apple-AI",
+          "rule": "DOMAIN-SUFFIX,mask.icloud.com"
+        },
+        {
+          "id": "23d8a46c106a",
+          "source": "RocM301 Apple-AI",
+          "rule": "DOMAIN-SUFFIX,apple-relay.fastly-edge.com"
+        },
+        {
+          "id": "263aa8687f2b",
+          "source": "RocM301 Apple-AI",
+          "rule": "DOMAIN-SUFFIX,ls.apple.com"
+        },
+        {
+          "id": "4183bc428f62",
+          "source": "RocM301 Apple-AI",
+          "rule": "DOMAIN-SUFFIX,apple-relay.apple.com"
+        },
+        {
+          "id": "447c143ab992",
+          "source": "RocM301 Apple-AI",
+          "rule": "DOMAIN,mask-t.apple-dns.net"
+        },
+        {
+          "id": "4af4df8e432e",
+          "source": "RocM301 Apple-AI",
+          "rule": "DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net"
+        },
+        {
+          "id": "68bf1162c028",
+          "source": "RocM301 Apple-AI",
+          "rule": "DOMAIN-SUFFIX,smoot.apple.com"
+        },
+        {
+          "id": "8a6b70b9c294",
+          "source": "RocM301 Apple-AI",
+          "rule": "DOMAIN-SUFFIX,mask-h2.icloud.com"
+        },
+        {
+          "id": "8e66b4d2e4c3",
+          "source": "RocM301 Apple-AI",
+          "rule": "DOMAIN,mask.apple-dns.net"
+        },
+        {
+          "id": "c52cde170c7a",
+          "source": "RocM301 Apple-AI",
+          "rule": "DOMAIN,mask-api.icloud.com"
+        },
+        {
+          "id": "e86b51bf363c",
+          "source": "RocM301 Apple-AI",
+          "rule": "DOMAIN-SUFFIX,apple-relay.cloudflare.com"
+        },
+        {
+          "id": "eb9c099dc8eb",
+          "source": "RocM301 Apple-AI",
+          "rule": "DOMAIN-SUFFIX,cp4.cloudflare.com"
+        },
+        {
+          "id": "efede8aee155",
+          "source": "RocM301 Apple-AI",
+          "rule": "DOMAIN-SUFFIX,gateway.icloud.com"
+        },
+        {
+          "id": "f7be4981ca92",
+          "source": "RocM301 Apple-AI",
+          "rule": "DOMAIN,mask-api.fe.apple-dns.net"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -116,18 +245,12 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24207,
+      "prev_total": 24208,
       "curr_total": 24208,
-      "added_count": 1,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "2956ef76b1ef",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,gomami.io"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -178,12 +301,18 @@
     {
       "file": "Netflix.list",
       "prev_total": 1153,
-      "curr_total": 1153,
+      "curr_total": 1152,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 1,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "411c441d8727",
+          "source": "blackmatrix7 Netflix",
+          "rule": "DOMAIN,netflix.com.edgesuite.net"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -211,12 +340,18 @@
     {
       "file": "Speedtest.list",
       "prev_total": 124,
-      "curr_total": 124,
+      "curr_total": 123,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 1,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "30e57aa79300",
+          "source": "SukkaW Speedtest",
+          "rule": "DOMAIN-SUFFIX,mlab-oti.measurement-lab.org"
+        }
+      ],
       "source_changed_sample": []
     },
     {

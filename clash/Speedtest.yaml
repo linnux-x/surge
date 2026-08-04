@@ -1,7 +1,7 @@
 # Generated from Rule/Speedtest.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-07-04 10:40:58 +0800
-# TOTAL: 124
+# UPDATED: 2026-08-04 20:35:18 +0800
+# TOTAL: 123
 payload:
   - 'DOMAIN-SUFFIX,fast.com'
   - 'DOMAIN-SUFFIX,nperf.com'
@@ -124,6 +124,5 @@ payload:
   - 'DOMAIN,mensura.cdn-apple.com'
   - 'DOMAIN,open.cachefly.net'
   - 'DOMAIN-SUFFIX,speedtest.linode.com'
-  - 'DOMAIN-SUFFIX,mlab-oti.measurement-lab.org'
   - 'DOMAIN-SUFFIX,nperf.net'
   - 'DOMAIN-SUFFIX,speed.hinet.net'

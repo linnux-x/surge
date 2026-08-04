@@ -37,3 +37,12 @@ DOMAIN,api-iam.intercom.io
 # the whole-domain suffix must not ride the AI policy group. Service-scoped
 # entries (DOMAIN,anthropic.auth0.com / DOMAIN-SUFFIX,auth0.openai.com) stay.
 DOMAIN-SUFFIX,auth0.com
+# Apple Intelligence domains: now routed by Apple_AI.list (RocM301 + SukkaW) instead of AI.
+# ConnersHua AI upstream still contains these; exclude them from AI.list.
+DOMAIN-SUFFIX,smoot.apple.com
+DOMAIN,apple-relay.apple.com
+DOMAIN,apple-relay.cloudflare.com
+DOMAIN,apple-relay.fastly-edge.com
+DOMAIN-SUFFIX,gateway.icloud.com
+DOMAIN,guzzoni.apple.com
+DOMAIN,gspe1-ssl.ls.apple.com

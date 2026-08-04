@@ -1,0 +1,5 @@
+# Apple Intelligence / Siri / Private Relay 等 Apple AI 相关域名
+# 上游来源：RocM301 Apple-AI + SukkaW Apple Intelligence
+# 策略：Apple_AI（默认 Proxy，支持地区选择）
+#
+# 注意：apps.mzstatic.com 已排除（保留在 Apple_CN/DIRECT）
