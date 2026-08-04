@@ -9,3 +9,4 @@ DOMAIN-SUFFIX,shlii.io
 DOMAIN-SUFFIX,vmiss.com
 DOMAIN-SUFFIX,ddps.jp
 DOMAIN-SUFFIX,legendvps.com
+DOMAIN-SUFFIX,gomami.io
