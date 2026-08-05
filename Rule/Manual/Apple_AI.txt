@@ -3,3 +3,6 @@
 # 策略：Apple_AI（默认 Proxy，支持地区选择）
 #
 # 注意：apps.mzstatic.com 已排除（保留在 Apple_CN/DIRECT）
+# 注意：DOMAIN-SUFFIX,ls.apple.com 已排除（避免劫持中国区节点）
+# 手动补录：上游未覆盖的全球 LinkScribe 节点
+DOMAIN-SUFFIX,gsp64-ssl.ls.apple.com

@@ -92,7 +92,7 @@ apple-relay.apple.com,Apple_AI.list,Apple Private Relay
 gateway.icloud.com,Apple_AI.list,Apple iCloud Private Relay Gateway
 mask.icloud.com,Apple_AI.list,Apple iCloud Private Relay
 mask.apple-dns.net,Apple_AI.list,Apple Private Relay DNS
-ls.apple.com,Apple_AI.list,Apple Siri LinkScribe
+ls.apple.com,Apple.list,Apple Siri LinkScribe裸域走Apple
 mask-h2.icloud.com,Apple_AI.list,Apple Private Relay H2
 cp4.cloudflare.com,Apple_AI.list,Apple Intelligence Cloudflare
 bytegecko.com,TikTok.list,海外ByteDance基础设施
@@ -117,3 +117,4 @@ gepush.com,China.list,个推推送基础设施直连
 getui.net,China.list,个推网络基础设施直连
 weixingshangye.com,China.list,中国备案商业网站直连
 appinn.me,China.list,小众软件官方论坛直连
+gsp64-ssl.ls.apple.com,Apple_AI.list,Apple Intelligence全球LinkScribe节点

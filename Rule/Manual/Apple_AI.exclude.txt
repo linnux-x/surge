@@ -2,3 +2,6 @@
 DOMAIN-SUFFIX,apps.mzstatic.com
 # SukkaW 测试金丝雀域名
 DOMAIN,7h15_ru1353t_1s_m4d3_by_5ukk4w.skk.moe
+# DOMAIN-SUFFIX,ls.apple.com 太宽泛，会劫持中国区 CDN 节点（gsp4-cn.ls.apple.com 等）。
+# 上游中的具体节点（gspe1-ssl.ls.apple.com）在排除宽泛后缀后会自动恢复。
+DOMAIN-SUFFIX,ls.apple.com

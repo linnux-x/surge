@@ -1,8 +1,9 @@
 # Generated from Rule/Apple_AI.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-08-05 07:48:57 +0800
-# TOTAL: 15
+# UPDATED: 2026-08-05 10:01:18 +0800
+# TOTAL: 16
 payload:
+  - 'DOMAIN-SUFFIX,gsp64-ssl.ls.apple.com'
   - 'DOMAIN,guzzoni.apple.com'
   - 'DOMAIN,mask-api.fe.apple-dns.net'
   - 'DOMAIN,mask-api.icloud.com'
@@ -14,7 +15,7 @@ payload:
   - 'DOMAIN-SUFFIX,apple-relay.fastly-edge.com'
   - 'DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net'
   - 'DOMAIN-SUFFIX,cp4.cloudflare.com'
+  - 'DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com'
   - 'DOMAIN-SUFFIX,gateway.icloud.com'
-  - 'DOMAIN-SUFFIX,ls.apple.com'
   - 'DOMAIN-SUFFIX,mask-h2.icloud.com'
   - 'DOMAIN-SUFFIX,mask.icloud.com'
