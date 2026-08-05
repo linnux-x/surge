@@ -1,9 +1,9 @@
 # NAME: Apple_AI
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-08-05 10:01:18 +0800
+# UPDATED: 2026-08-06 05:02:15 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 16
+# TOTAL: 17
 
 # ======= Manual Rules ========
 # Apple Intelligence / Siri / Private Relay 等 Apple AI 相关域名
@@ -33,4 +33,5 @@ DOMAIN-SUFFIX,mask-h2.icloud.com
 DOMAIN-SUFFIX,mask.icloud.com
 
 # ======= SukkaW Apple Intelligence ========
+DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 

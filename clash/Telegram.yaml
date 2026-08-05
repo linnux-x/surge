@@ -1,7 +1,7 @@
 # Generated from Rule/Telegram.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-08-04 20:35:20 +0800
-# TOTAL: 49
+# UPDATED: 2026-08-06 05:02:23 +0800
+# TOTAL: 50
 payload:
   - 'DOMAIN,api.imem.app'
   - 'DOMAIN,api.swiftgram.app'
@@ -52,3 +52,4 @@ payload:
   - 'IP-CIDR6,2001:b28:f23d::/48,no-resolve'
   - 'IP-CIDR6,2001:b28:f23c::/48,no-resolve'
   - 'IP-CIDR6,2a0a:f280::/32,no-resolve'
+  - 'DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe'

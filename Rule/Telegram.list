@@ -1,9 +1,9 @@
 # NAME: Telegram
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-08-04 20:35:20 +0800
+# UPDATED: 2026-08-06 05:02:23 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 49
+# TOTAL: 50
 
 # ======= blackmatrix7 Telegram ========
 DOMAIN,api.imem.app
@@ -59,4 +59,5 @@ IP-CIDR6,2001:b28:f23c::/48,no-resolve
 IP-CIDR6,2a0a:f280::/32,no-resolve
 
 # ======= SukkaW Telegram IP ========
+DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-05T10:01:19.054565",
-  "total_added": 0,
-  "total_removed": 0,
+  "generated_at": "2026-08-06T05:02:31.185361",
+  "total_added": 21,
+  "total_removed": 1,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -29,22 +29,50 @@
     {
       "file": "Apple_AI.list",
       "prev_total": 15,
-      "curr_total": 15,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 17,
+      "added_count": 3,
+      "removed_count": 1,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "c3b7ae332522",
+          "source": "RocM301 Apple-AI",
+          "rule": "DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com"
+        },
+        {
+          "id": "e1a1e6b72dfe",
+          "source": "SukkaW Apple Intelligence",
+          "rule": "DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe"
+        },
+        {
+          "id": "ec57b182d328",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,gsp64-ssl.ls.apple.com"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "263aa8687f2b",
+          "source": "RocM301 Apple-AI",
+          "rule": ""
+        }
+      ],
       "source_changed_sample": []
     },
     {
       "file": "Apple_CN.list",
       "prev_total": 229,
-      "curr_total": 229,
-      "added_count": 0,
+      "curr_total": 230,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "e1a1e6b72dfe",
+          "source": "SukkaW Apple CN",
+          "rule": "DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -62,11 +90,17 @@
     {
       "file": "China.list",
       "prev_total": 111436,
-      "curr_total": 111436,
-      "added_count": 0,
+      "curr_total": 111437,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "e1a1e6b72dfe",
+          "source": "SukkaW Domestic",
+          "rule": "DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -128,11 +162,82 @@
     {
       "file": "Global.list",
       "prev_total": 24208,
-      "curr_total": 24208,
-      "added_count": 0,
+      "curr_total": 24222,
+      "added_count": 14,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "12c889124300",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,deepwiki.com"
+        },
+        {
+          "id": "1f34cd4259f2",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,ozon.app"
+        },
+        {
+          "id": "251dbee41e4c",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,rym.fm"
+        },
+        {
+          "id": "43f74824b87c",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,glitchwave.com"
+        },
+        {
+          "id": "61b265b8c74b",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,sonemic.com"
+        },
+        {
+          "id": "6e2669362d43",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,fly.dev"
+        },
+        {
+          "id": "8a0861326d2b",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,deepwiki.org"
+        },
+        {
+          "id": "8e9075f5d533",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,sonematic.net"
+        },
+        {
+          "id": "92c9846b6186",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,ozon.market"
+        },
+        {
+          "id": "bea6f143637f",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,fly.io"
+        },
+        {
+          "id": "c19be0daa8d8",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,snmc.io"
+        },
+        {
+          "id": "d5ed6ec07ea3",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,ozon.global"
+        },
+        {
+          "id": "d99c57b7d7f0",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,flyio.net"
+        },
+        {
+          "id": "eb6b765f5a8a",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,rutube.sport"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -172,11 +277,17 @@
     {
       "file": "Microsoft_CDN.list",
       "prev_total": 81,
-      "curr_total": 81,
-      "added_count": 0,
+      "curr_total": 82,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "e1a1e6b72dfe",
+          "source": "SukkaW Microsoft CDN",
+          "rule": "DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -238,11 +349,17 @@
     {
       "file": "Telegram.list",
       "prev_total": 49,
-      "curr_total": 49,
-      "added_count": 0,
+      "curr_total": 50,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "e1a1e6b72dfe",
+          "source": "SukkaW Telegram IP",
+          "rule": "DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
