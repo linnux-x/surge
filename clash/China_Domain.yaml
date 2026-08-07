@@ -1,7 +1,7 @@
 # Generated from Rule/China.list (DOMAIN/DOMAIN-SUFFIX entries only)
 # Format: Clash/mihomo rule-provider, behavior: domain
-# UPDATED: 2026-08-07 05:01:59 +0800
-# TOTAL: 111396
+# UPDATED: 2026-08-08 05:01:34 +0800
+# TOTAL: 111399
 payload:
   - '+.wmsjsteam.com'
   - '+.steamchina.com'
@@ -63627,6 +63627,7 @@ payload:
   - '+.madajiefood.com'
   - '+.madaomall.com'
   - '+.madboxi.com'
+  - '+.made-in-china.com'
   - '+.madefuns.com'
   - '+.madeinchinastone.com'
   - '+.madewei.com'
@@ -65345,6 +65346,7 @@ payload:
   - '+.microxiang.com'
   - '+.microyan.com'
   - '+.microzuji.com'
+  - '+.micstatic.com'
   - '+.mictormedical.com'
   - '+.micu.hk'
   - '+.micun.com'
@@ -72923,6 +72925,7 @@ payload:
   - '+.powerchinayun.com'
   - '+.powerde.com'
   - '+.powereasy.net'
+  - '+.poweremarket.com'
   - '+.powerex1.com'
   - '+.powerflow-tech.com'
   - '+.powerfulchina.com'
