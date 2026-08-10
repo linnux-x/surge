@@ -1,7 +1,7 @@
 # Generated from Rule/China.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-08-08 05:01:34 +0800
-# TOTAL: 111440
+# UPDATED: 2026-08-10 23:05:32 +0800
+# TOTAL: 111441
 payload:
   - 'DOMAIN-SUFFIX,wmsjsteam.com'
   - 'DOMAIN-SUFFIX,steamchina.com'
@@ -550,6 +550,7 @@ payload:
   - 'DOMAIN-SUFFIX,bytedance.com'
   - 'DOMAIN-SUFFIX,bytegoofy.com'
   - 'DOMAIN-SUFFIX,caiyunapp.com'
+  - 'DOMAIN-SUFFIX,caiyuncdn.com'
   - 'DOMAIN-SUFFIX,camera360.com'
   - 'DOMAIN-SUFFIX,chaoxingv.com'
   - 'DOMAIN-SUFFIX,chazidian.com'
@@ -18733,7 +18734,6 @@ payload:
   - 'DOMAIN-SUFFIX,caiyuemedical.com'
   - 'DOMAIN-SUFFIX,caiyun.com'
   - 'DOMAIN-SUFFIX,caiyunai.com'
-  - 'DOMAIN-SUFFIX,caiyuncdn.com'
   - 'DOMAIN-SUFFIX,caiyunhub.com'
   - 'DOMAIN-SUFFIX,caiyunyi.com'
   - 'DOMAIN-SUFFIX,caizhaowang.com'
@@ -60959,6 +60959,7 @@ payload:
   - 'DOMAIN-SUFFIX,lifevc.com'
   - 'DOMAIN-SUFFIX,lifevccdn.com'
   - 'DOMAIN-SUFFIX,lifeweeker.com'
+  - 'DOMAIN-SUFFIX,lifexue.com'
   - 'DOMAIN-SUFFIX,lifeyk.com'
   - 'DOMAIN-SUFFIX,lifeyn.net'
   - 'DOMAIN-SUFFIX,lifezb.com'

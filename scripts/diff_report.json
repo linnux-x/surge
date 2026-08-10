@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-08T05:01:46.188845",
-  "total_added": 66,
-  "total_removed": 17,
-  "total_source_changed": 2,
+  "generated_at": "2026-08-10T23:05:39.933533",
+  "total_added": 10,
+  "total_removed": 7,
+  "total_source_changed": 1,
   "diffs": [
     {
       "file": "AI.list",
@@ -29,11 +29,17 @@
     {
       "file": "Apple_AI.list",
       "prev_total": 17,
-      "curr_total": 17,
-      "added_count": 0,
+      "curr_total": 18,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "a9765c10ff5e",
+          "source": "RocM301 Apple-AI",
+          "rule": "DOMAIN-KEYWORD,siri"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -51,40 +57,47 @@
     {
       "file": "CDN.list",
       "prev_total": 29,
-      "curr_total": 29,
-      "added_count": 0,
+      "curr_total": 31,
+      "added_count": 2,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "3ad31346eb51",
+          "source": "SukkaW CDN",
+          "rule": "DOMAIN-WILDCARD,cdn.*.dmm.co.jp"
+        },
+        {
+          "id": "840292ed5b7e",
+          "source": "SukkaW CDN",
+          "rule": "DOMAIN-KEYWORD,-assets.dmm.co.jp"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "China.list",
-      "prev_total": 111437,
-      "curr_total": 111440,
-      "added_count": 3,
+      "prev_total": 111440,
+      "curr_total": 111441,
+      "added_count": 1,
       "removed_count": 0,
-      "source_changed_count": 0,
+      "source_changed_count": 1,
       "added_sample": [
         {
-          "id": "04edf14e3d72",
+          "id": "8e212fff64ee",
           "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,micstatic.com"
-        },
-        {
-          "id": "0975914b4dfe",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,made-in-china.com"
-        },
-        {
-          "id": "93bf64741807",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,poweremarket.com"
+          "rule": "DOMAIN-SUFFIX,lifexue.com"
         }
       ],
       "removed_sample": [],
-      "source_changed_sample": []
+      "source_changed_sample": [
+        {
+          "id": "b0587cd1a358",
+          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "new_source": "SukkaW Domestic"
+        }
+      ]
     },
     {
       "file": "ChinaMedia.list",
@@ -99,252 +112,36 @@
     },
     {
       "file": "China_IP.list",
-      "prev_total": 11495,
-      "curr_total": 11506,
-      "added_count": 28,
-      "removed_count": 17,
-      "source_changed_count": 2,
+      "prev_total": 11506,
+      "curr_total": 11508,
+      "added_count": 3,
+      "removed_count": 1,
+      "source_changed_count": 0,
       "added_sample": [
         {
-          "id": "0374450f8de0",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR6,2a14:7dc0:512::/48"
+          "id": "3749d17bf657",
+          "source": "blackmatrix7 China IPs",
+          "rule": "IP-CIDR,166.1.232.0/24"
         },
         {
-          "id": "1018cb580e96",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR,212.189.57.0/24"
+          "id": "6883c0947707",
+          "source": "blackmatrix7 China IPs",
+          "rule": "IP-CIDR,166.1.218.0/24"
         },
         {
-          "id": "15131ad9269b",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR6,2a14:7dc0:515::/48"
-        },
-        {
-          "id": "1c2503d0de54",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR6,2a0a:d685:1fd::/48"
-        },
-        {
-          "id": "2dc83a0d0718",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR,82.29.98.0/24"
-        },
-        {
-          "id": "2fe98f7bfcc3",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR6,2a14:67c1:b531::/48"
-        },
-        {
-          "id": "3d222f57237d",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR,82.109.172.0/24"
-        },
-        {
-          "id": "44b4df605369",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR,154.208.67.0/24"
-        },
-        {
-          "id": "58dc9a4f722a",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR6,2a14:7586:6101::/48"
-        },
-        {
-          "id": "5d624eec72f1",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR,138.252.118.0/24"
-        },
-        {
-          "id": "5fabe37bcb0f",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR,87.76.149.0/24"
-        },
-        {
-          "id": "6c4fc10aa644",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR6,2a06:9f81:4620::/44"
-        },
-        {
-          "id": "70db5b2fbd2d",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR,154.94.60.0/24"
-        },
-        {
-          "id": "75c06cf03fee",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR,2.27.155.0/24"
-        },
-        {
-          "id": "78a56efce28c",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR,107.149.9.0/24"
-        },
-        {
-          "id": "80b46e8940fc",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR6,2a0f:1cc5:6a0::/47"
-        },
-        {
-          "id": "8388d6301546",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR6,2a14:67c1:b533::/48"
-        },
-        {
-          "id": "93e9de09071f",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR,168.222.18.0/24"
-        },
-        {
-          "id": "9408087d4cae",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR,157.254.130.0/24"
-        },
-        {
-          "id": "a138136ca45d",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR6,2a0f:1cc5:f09::/48"
-        },
-        {
-          "id": "aa5d17185027",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR,213.218.216.0/24"
-        },
-        {
-          "id": "acdcb3b36ea0",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR,79.176.227.0/24"
-        },
-        {
-          "id": "ad1df9faaa1e",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR6,2a14:7dc0:510::/47"
-        },
-        {
-          "id": "ad671e3a5b06",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR6,2a14:7dc0:51b::/48"
-        },
-        {
-          "id": "bfdb33d1c74f",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR,163.5.97.0/24"
-        },
-        {
-          "id": "ea8ddc44fed7",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR,178.83.133.0/24"
-        },
-        {
-          "id": "f0ed5ba46627",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR6,2a14:7dc0:516::/47"
-        },
-        {
-          "id": "f99705cdb340",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR,193.39.10.0/24"
+          "id": "bcf2575de367",
+          "source": "blackmatrix7 China IPs",
+          "rule": "IP-CIDR,166.1.139.0/24"
         }
       ],
       "removed_sample": [
         {
-          "id": "02b6bf99b4f0",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR,107.149.27.0/24"
-        },
-        {
-          "id": "16927a0ce817",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR6,2a14:7586:6100::/47"
-        },
-        {
-          "id": "1aef175440ee",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR,195.162.248.0/24"
-        },
-        {
-          "id": "395549457df8",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR6,2a0f:6284:4c00::/44"
-        },
-        {
-          "id": "4d21e4a6d94f",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR,82.163.16.0/24"
-        },
-        {
-          "id": "60ee77f765a7",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR6,2a06:9f81:4620::/43"
-        },
-        {
-          "id": "63d977e5e8d9",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR6,2a0f:6280:1430::/44"
-        },
-        {
-          "id": "6801cad2a342",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR,188.220.7.0/24"
-        },
-        {
-          "id": "7262890fbef3",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR6,2a12:cb41:200::/44"
-        },
-        {
-          "id": "7558479514f7",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR6,2a14:7583:f4fe::/48"
-        },
-        {
-          "id": "7db8a1e6c896",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR6,2a14:67c1:b530::/44"
-        },
-        {
-          "id": "852f2d88e69a",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR,143.109.55.0/24"
-        },
-        {
-          "id": "912c156f4ceb",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR6,2a0f:1cc5:f08::/47"
-        },
-        {
-          "id": "9ab7eb41236e",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR,85.239.154.0/24"
-        },
-        {
-          "id": "c9111a78c78b",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR,45.196.104.0/24"
-        },
-        {
-          "id": "ccf0171705fd",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR,82.139.229.0/24"
-        },
-        {
-          "id": "d37a058b0b26",
-          "source": "Loyalsoldier China CIDR",
-          "rule": "IP-CIDR6,2a0f:1cc5:6a0::/48"
+          "id": "eacf5978ca7b",
+          "source": "blackmatrix7 China IPs",
+          "rule": "IP-CIDR,136.0.34.0/24"
         }
       ],
-      "source_changed_sample": [
-        {
-          "id": "c1621f750560",
-          "old_source": "Loyalsoldier China CIDR",
-          "new_source": "blackmatrix7 China IPs"
-        },
-        {
-          "id": "6c04920ec2a0",
-          "old_source": "Loyalsoldier China CIDR",
-          "new_source": "blackmatrix7 China IPs"
-        }
-      ]
+      "source_changed_sample": []
     },
     {
       "file": "Disney.list",
@@ -360,12 +157,59 @@
     {
       "file": "Download.list",
       "prev_total": 1688,
-      "curr_total": 1688,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 1685,
+      "added_count": 3,
+      "removed_count": 6,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "b14484db25d5",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,s3.yandex.net"
+        },
+        {
+          "id": "da4bd1f5bd7c",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,download.fcitx-im.org"
+        },
+        {
+          "id": "f37733851efc",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,dl.pikpak.io"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "59dda76bf44a",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,mirror1.hcgen.de"
+        },
+        {
+          "id": "6883ff8f2214",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,edge.zerofs.link"
+        },
+        {
+          "id": "b54ce40390ca",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,mirrors.wikimedia.org"
+        },
+        {
+          "id": "c6452d37d723",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,mirror.hyperdedic.ru"
+        },
+        {
+          "id": "d7e51cb83152",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,ubuntu.syxpi.fr"
+        },
+        {
+          "id": "fa0b3ab4c66b",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,download.nus.edu.sg"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -381,188 +225,12 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24222,
+      "prev_total": 24257,
       "curr_total": 24257,
-      "added_count": 35,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "11f52509eaa0",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,wiresock.net"
-        },
-        {
-          "id": "1aac43cd384b",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,stash.ws"
-        },
-        {
-          "id": "1eafc4dfaef9",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,nsloon.com"
-        },
-        {
-          "id": "26bfd0b20046",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,lucasfilm.com"
-        },
-        {
-          "id": "3c91030646c4",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,onexray.com"
-        },
-        {
-          "id": "457a52441ad0",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,2ch.life"
-        },
-        {
-          "id": "478f897d940a",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,pixar.com"
-        },
-        {
-          "id": "4b6e9735a8ff",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,karing.app"
-        },
-        {
-          "id": "4d0fef5393d1",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,cloudflare.pay"
-        },
-        {
-          "id": "63c8c3e97830",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,2dust.link"
-        },
-        {
-          "id": "694b59072165",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,searchlightpictures.com"
-        },
-        {
-          "id": "69fab98c2e93",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,disneyanimation.com"
-        },
-        {
-          "id": "6c27ee2e5870",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,wgtunnel.com"
-        },
-        {
-          "id": "7f3e466c3499",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,stash.wiki"
-        },
-        {
-          "id": "8168ad607113",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,neigbuy.com"
-        },
-        {
-          "id": "8331dbe09c9c",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,20thcenturystudios.com"
-        },
-        {
-          "id": "8931887733ba",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,disneyaccount.com"
-        },
-        {
-          "id": "8f44ed0325b4",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,incy.cc"
-        },
-        {
-          "id": "95960bb80523",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,freeform.com"
-        },
-        {
-          "id": "9a8ee235908b",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,tokyodisneyresort.jp"
-        },
-        {
-          "id": "a28d8ef722af",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,2ch.org"
-        },
-        {
-          "id": "a5f06f200a40",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,bamtech.net"
-        },
-        {
-          "id": "a9a1c57162ad",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,clashmi.app"
-        },
-        {
-          "id": "adf5d564aa73",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,cloudflare.app"
-        },
-        {
-          "id": "b39919d1950e",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,detpress.com"
-        },
-        {
-          "id": "bd60ca44f144",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,hongkongdisneyland.com"
-        },
-        {
-          "id": "c8510c959a34",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,prizrak.app"
-        },
-        {
-          "id": "d176e4de703b",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,2ch.su"
-        },
-        {
-          "id": "d3ac95f66e23",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,waltdisneystudios.com"
-        },
-        {
-          "id": "d6a43c39c722",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,shadowlaunch.com"
-        },
-        {
-          "id": "e166748869bb",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,flowvy.io"
-        },
-        {
-          "id": "e2bd0e998a0a",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,clashverge.dev"
-        },
-        {
-          "id": "e768ba40ad0e",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,amnezia.org"
-        },
-        {
-          "id": "f8891b60e838",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,clashparty.org"
-        },
-        {
-          "id": "fd23d37fb67e",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,flclashx.app"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },

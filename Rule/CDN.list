@@ -1,9 +1,9 @@
 # NAME: CDN
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-08-04 20:35:04 +0800
+# UPDATED: 2026-08-10 23:05:30 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 29
+# TOTAL: 31
 
 # ======= Manual Rules ========
 # GitHub release assets intentionally use CDN policy; broader GitHub hosts stay in Global/list-specific rules.
@@ -27,6 +27,8 @@ DOMAIN,cdn-msp.jmcomic-zzz.one
 DOMAIN,cdn-msp.18comic.org
 DOMAIN-KEYWORD,-cdn.eporner.com
 DOMAIN-KEYWORD,cdn.adultempire.com
+DOMAIN-KEYWORD,-assets.dmm.co.jp
+DOMAIN-WILDCARD,cdn.*.dmm.co.jp
 DOMAIN-KEYWORD,static.trustpilot.com
 DOMAIN-KEYWORD,scripts.trustpilot.com
 DOMAIN-KEYWORD,images.trustpilot.com

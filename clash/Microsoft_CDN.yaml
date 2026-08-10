@@ -1,6 +1,6 @@
 # Generated from Rule/Microsoft_CDN.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-08-08 05:01:37 +0800
+# UPDATED: 2026-08-10 23:05:34 +0800
 # TOTAL: 82
 payload:
   - 'DOMAIN-SUFFIX,aspnetcdn.com'

@@ -1,9 +1,9 @@
 # NAME: Download
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-08-04 20:35:05 +0800
+# UPDATED: 2026-08-10 23:05:30 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1688
+# TOTAL: 1685
 
 # ======= Manual Rules ========
 # Borrowed from SukkaW non_ip/direct downloader process rules
@@ -40,6 +40,7 @@ DOMAIN-SUFFIX,s3.us-west-2.amazonaws.com
 DOMAIN-SUFFIX,s3-accelerate.amazonaws.com
 DOMAIN-SUFFIX,s3-global.amazonaws.com
 DOMAIN-SUFFIX,digitaloceanspaces.com
+DOMAIN-SUFFIX,s3.yandex.net
 DOMAIN-SUFFIX,vultrobjects.com
 DOMAIN-SUFFIX,linodeobjects.com
 DOMAIN-SUFFIX,cdn77-storage.com
@@ -265,6 +266,7 @@ DOMAIN-SUFFIX,temp.sh
 DOMAIN-SUFFIX,archive.org
 DOMAIN,distcache.freebsd.org
 DOMAIN,dl.pikpak.site
+DOMAIN,dl.pikpak.io
 DOMAIN,cache.agilebits.com
 DOMAIN,c.1password.com
 DOMAIN,downloads.1password.com
@@ -384,7 +386,6 @@ DOMAIN,download.dlsite.com
 DOMAIN-SUFFIX,dl.dlsite.com
 DOMAIN,downloads.xrite.com
 DOMAIN-SUFFIX,pixeldrain.com
-DOMAIN,edge.zerofs.link
 DOMAIN,builds.paranoidandroid.co
 DOMAIN,mirror.tejas101k.workers.dev
 DOMAIN,repo.powerdns.com
@@ -690,7 +691,6 @@ DOMAIN,ftp.ru.debian.org
 DOMAIN,ftp.psn.ru
 DOMAIN,mirror.corbina.net
 DOMAIN,mirror.docker.ru
-DOMAIN,mirror.hyperdedic.ru
 DOMAIN,mirror.kpfu.ru
 DOMAIN,mirror.mephi.ru
 DOMAIN,mirror.neftm.ru
@@ -782,7 +782,6 @@ DOMAIN,mirrors.iu13.net
 DOMAIN,mirrors.lug.mtu.edu
 DOMAIN,mirrors.ocf.berkeley.edu
 DOMAIN,mirrors.vcea.wsu.edu
-DOMAIN,mirrors.wikimedia.org
 DOMAIN,mirror.us.leaseweb.net
 DOMAIN,mirror.us.mirhosting.net
 DOMAIN,mirror.us.oneandone.net
@@ -877,7 +876,6 @@ DOMAIN,ubuntu.gjolly.dev
 DOMAIN,ubuntu.univ-reims.fr
 DOMAIN,mirror.its-tps.fr
 DOMAIN,mirrors.ircam.fr
-DOMAIN,ubuntu.syxpi.fr
 DOMAIN,ubuntu.univ-nantes.fr
 DOMAIN,www-ftp.lip6.fr
 DOMAIN,distrib-coffee.ipsl.jussieu.fr
@@ -1069,7 +1067,6 @@ DOMAIN,mirror.freedif.org
 DOMAIN,mirror.soonkeat.sg
 DOMAIN,mirror.aktkn.sg
 DOMAIN,mirror.mvizn.com
-DOMAIN,download.nus.edu.sg
 DOMAIN,sg-mirrors.vhost.vn
 DOMAIN,mirror.vnet.sk
 DOMAIN,ftp.energotel.sk
@@ -1229,7 +1226,6 @@ DOMAIN-SUFFIX,mirrors.cicku.me
 DOMAIN,mirror.xenyth.net
 DOMAIN,rsync-linuxsoft.cern.ch
 DOMAIN,mirror.karneval.cz
-DOMAIN,mirror1.hcgen.de
 DOMAIN,mirror.imt-systems.com
 DOMAIN,fr2.rpmfind.net
 DOMAIN,mirror.in2p3.fr
@@ -1647,6 +1643,7 @@ DOMAIN,updates.vibeisland.app
 DOMAIN,assets.dataflare.app
 DOMAIN,updates.openlogi.org
 DOMAIN,data.caida.org
+DOMAIN,download.fcitx-im.org
 
 # ======= SukkaW Game Download ========
 DOMAIN-SUFFIX,steamcontent.com
