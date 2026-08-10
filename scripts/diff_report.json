@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-10T23:05:39.933533",
-  "total_added": 10,
-  "total_removed": 7,
-  "total_source_changed": 1,
+  "generated_at": "2026-08-11T05:00:38.206720",
+  "total_added": 0,
+  "total_removed": 0,
+  "total_source_changed": 0,
   "diffs": [
     {
       "file": "AI.list",
@@ -28,18 +28,12 @@
     },
     {
       "file": "Apple_AI.list",
-      "prev_total": 17,
+      "prev_total": 18,
       "curr_total": 18,
-      "added_count": 1,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "a9765c10ff5e",
-          "source": "RocM301 Apple-AI",
-          "rule": "DOMAIN-KEYWORD,siri"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -56,48 +50,25 @@
     },
     {
       "file": "CDN.list",
-      "prev_total": 29,
+      "prev_total": 31,
       "curr_total": 31,
-      "added_count": 2,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "3ad31346eb51",
-          "source": "SukkaW CDN",
-          "rule": "DOMAIN-WILDCARD,cdn.*.dmm.co.jp"
-        },
-        {
-          "id": "840292ed5b7e",
-          "source": "SukkaW CDN",
-          "rule": "DOMAIN-KEYWORD,-assets.dmm.co.jp"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "China.list",
-      "prev_total": 111440,
+      "prev_total": 111441,
       "curr_total": 111441,
-      "added_count": 1,
+      "added_count": 0,
       "removed_count": 0,
-      "source_changed_count": 1,
-      "added_sample": [
-        {
-          "id": "8e212fff64ee",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,lifexue.com"
-        }
-      ],
+      "source_changed_count": 0,
+      "added_sample": [],
       "removed_sample": [],
-      "source_changed_sample": [
-        {
-          "id": "b0587cd1a358",
-          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "new_source": "SukkaW Domestic"
-        }
-      ]
+      "source_changed_sample": []
     },
     {
       "file": "ChinaMedia.list",
@@ -112,35 +83,13 @@
     },
     {
       "file": "China_IP.list",
-      "prev_total": 11506,
+      "prev_total": 11508,
       "curr_total": 11508,
-      "added_count": 3,
-      "removed_count": 1,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "3749d17bf657",
-          "source": "blackmatrix7 China IPs",
-          "rule": "IP-CIDR,166.1.232.0/24"
-        },
-        {
-          "id": "6883c0947707",
-          "source": "blackmatrix7 China IPs",
-          "rule": "IP-CIDR,166.1.218.0/24"
-        },
-        {
-          "id": "bcf2575de367",
-          "source": "blackmatrix7 China IPs",
-          "rule": "IP-CIDR,166.1.139.0/24"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "eacf5978ca7b",
-          "source": "blackmatrix7 China IPs",
-          "rule": "IP-CIDR,136.0.34.0/24"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -156,60 +105,13 @@
     },
     {
       "file": "Download.list",
-      "prev_total": 1688,
+      "prev_total": 1685,
       "curr_total": 1685,
-      "added_count": 3,
-      "removed_count": 6,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "b14484db25d5",
-          "source": "SukkaW Download",
-          "rule": "DOMAIN-SUFFIX,s3.yandex.net"
-        },
-        {
-          "id": "da4bd1f5bd7c",
-          "source": "SukkaW Download",
-          "rule": "DOMAIN,download.fcitx-im.org"
-        },
-        {
-          "id": "f37733851efc",
-          "source": "SukkaW Download",
-          "rule": "DOMAIN,dl.pikpak.io"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "59dda76bf44a",
-          "source": "SukkaW Download",
-          "rule": "DOMAIN,mirror1.hcgen.de"
-        },
-        {
-          "id": "6883ff8f2214",
-          "source": "SukkaW Download",
-          "rule": "DOMAIN,edge.zerofs.link"
-        },
-        {
-          "id": "b54ce40390ca",
-          "source": "SukkaW Download",
-          "rule": "DOMAIN,mirrors.wikimedia.org"
-        },
-        {
-          "id": "c6452d37d723",
-          "source": "SukkaW Download",
-          "rule": "DOMAIN,mirror.hyperdedic.ru"
-        },
-        {
-          "id": "d7e51cb83152",
-          "source": "SukkaW Download",
-          "rule": "DOMAIN,ubuntu.syxpi.fr"
-        },
-        {
-          "id": "fa0b3ab4c66b",
-          "source": "SukkaW Download",
-          "rule": "DOMAIN,download.nus.edu.sg"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
