@@ -151,6 +151,13 @@ def check_managed_config_header(errors: list[str]) -> None:
         )
 
 
+def check_override_manifest(errors: list[str]) -> None:
+    """Run the public Manual override contract in-process before publication."""
+    from validate_override_manifest import main as validate_overrides
+    if validate_overrides() != 0:
+        errors.append("Rule/Manual override manifest validation failed")
+
+
 def main() -> int:
     import argparse
     parser = argparse.ArgumentParser()
@@ -166,6 +173,7 @@ def main() -> int:
         check_readme_inventory(errors)
     check_workflow_names_and_deprecated_schedule(errors, warnings)
     check_managed_config_header(errors)
+    check_override_manifest(errors)
     check_rule_files(errors, warnings)
 
     if warnings:

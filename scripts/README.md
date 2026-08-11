@@ -22,10 +22,11 @@ Rabbit-Spec 来源当前明确保留，用于补充 AIGC、China、ChinaCIDR 覆
 | 1 | `check_upstream_updates.py` | 并行检查所有上游源是否变更，识别需要更新的规则集 |
 | 2 | `generate_rules.py` | 下载、合并、清洗、校验规则；应用手工规则、排除规则、护栏、CIDR 裁剪和 Global 重叠裁剪 |
 | 3 | `manifest.py` | 生成每个规则文件的 manifest：`<stable_id>	<source_name>`；`--diff` 用于生成差异报告 |
-| 4 | `generate_clash_rules.py` | 将 `Rule/*.list` 转换为 `clash/*.yaml`，供 Clash / mihomo rule-provider 使用 |
-| 5 | `validate_surge_repo.py` | 仓库级不变量检查，规则内容校验委托给 `rule_validator.py` |
-| 6 | `audit_rules.py` | 生成后联网审计：上游可达性、规则数量、共享基础设施、Surge 文档、exclude 覆盖等 |
-| 7 | `cross_file_conflicts.py` | 手动辅助（不再由自动任务调用）：列出同一域名跨不同策略文件重复出现时的 first-match 实际生效关系 |
+| 4 | `generate_receipt.py` | 汇总 manifest、diff、规则类型与公开 Manual 基线，生成确定性发布收据 |
+| 5 | `generate_clash_rules.py` | 将 `Rule/*.list` 转换为 `clash/*.yaml`，供 Clash / mihomo rule-provider 使用 |
+| 6 | `validate_surge_repo.py` | 仓库级不变量检查，含公开 Manual override manifest 合同 |
+| 7 | `audit_rules.py` | 生成后联网审计：上游可达性、规则数量、共享基础设施、Surge 文档、exclude 覆盖等 |
+| 8 | `cross_file_conflicts.py` | 手动辅助（不再由自动任务调用）：列出同一域名跨不同策略文件重复出现时的 first-match 实际生效关系 |
 
 ---
 
@@ -47,7 +48,7 @@ Rabbit-Spec 来源当前明确保留，用于补充 AIGC、China、ChinaCIDR 覆
 | 文件 | 是否入库 | 原因 |
 |---|---|---|
 | `source_state.json` | ✅ | 上游 Last-Modified / ETag 基线。CI 靠它判断"哪些上游变了"，不入库则每次全量重下 |
-| `diff_report.md` / `diff_report.json` | ✅ | 变更审阅材料，`CONTRIBUTING.md` 要求提交前核对 `diff_report.md`；入库才能在 PR 和提交历史里直接看到规则增删 |
+| `diff_report.*` / `generation_receipt.*` | ✅ | 变更审阅材料与确定性发布收据；入库才能复核规则增删、来源与类型摘要 |
 | `audit_report.json` | ❌ | 联网审计的即时结果，随上游可达性和网络状况波动，入库只会制造无意义的 diff 噪声。已在 `.gitignore` 排除 |
 
 判断标准：**跨运行需要保持的状态、以及需要被人审阅的变更记录才入库；每次运行都会变且只反映当时环境的结果不入库。**
@@ -66,6 +67,7 @@ CHANGED_RULESETS='["AI.list"]' python3 scripts/generate_rules.py
 # 3. 生成 manifest 和 diff 报告
 python3 scripts/manifest.py
 python3 scripts/manifest.py --diff
+python3 scripts/generate_receipt.py
 
 # 4. 生成 Clash / mihomo rule-provider
 python3 scripts/generate_clash_rules.py --validate

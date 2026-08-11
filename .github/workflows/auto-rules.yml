@@ -98,6 +98,11 @@ jobs:
           python3 scripts/manifest.py
           python3 scripts/manifest.py --diff
 
+      - name: Generate Rule Receipt
+        if: ${{ steps.gate.outputs.build == 'true' }}
+        shell: bash
+        run: python3 scripts/generate_receipt.py
+
       - name: Generate Clash Rule Providers
         if: ${{ steps.gate.outputs.build == 'true' }}
         shell: bash
@@ -244,7 +249,8 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add Rule/ clash/ Module/ README.md \
-            scripts/diff_report.md scripts/diff_report.json scripts/source_state.json
+            scripts/diff_report.md scripts/diff_report.json scripts/generation_receipt.md \
+            scripts/generation_receipt.json scripts/source_state.json
 
           if ! git diff --staged --quiet; then
             COMMIT_TIME=$(TZ="Asia/Shanghai" date +"%Y-%m-%d %H:%M:%S +0800")

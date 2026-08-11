@@ -28,4 +28,5 @@ Rule/Manual/*
 !Rule/Manual/*.txt
 !Rule/Manual/*.exclude.txt
 !Rule/Manual/README.md
+!Rule/Manual/override-manifest.json
 .codex/

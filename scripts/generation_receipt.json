@@ -1,0 +1,402 @@
+{
+  "schema_version": 1,
+  "baseline_commit_time": "2026-08-11T05:02:06+08:00",
+  "rule_files": [
+    {
+      "file": "AI.list",
+      "rules": 144,
+      "types": {
+        "DOMAIN": 38,
+        "DOMAIN-KEYWORD": 6,
+        "DOMAIN-SUFFIX": 91,
+        "IP-ASN": 3,
+        "IP-CIDR": 4,
+        "IP-CIDR6": 1,
+        "URL-REGEX": 1
+      },
+      "sha256": "c39338c3c874e4c31242af7aab5d3e23a283476e6f62b96c1147aa70f69af997"
+    },
+    {
+      "file": "Apple.list",
+      "rules": 1551,
+      "types": {
+        "DOMAIN": 13,
+        "DOMAIN-KEYWORD": 7,
+        "DOMAIN-SUFFIX": 1482,
+        "IP-CIDR": 10,
+        "IP-CIDR6": 3,
+        "PROCESS-NAME": 13,
+        "USER-AGENT": 23
+      },
+      "sha256": "a32835ee6a00d50a32866c533abe17a0bf26800db22d41287780a70777975caf"
+    },
+    {
+      "file": "Apple_AI.list",
+      "rules": 18,
+      "types": {
+        "DOMAIN": 6,
+        "DOMAIN-KEYWORD": 1,
+        "DOMAIN-SUFFIX": 11
+      },
+      "sha256": "17c039426bccd5ac93cd2520db9b8e3593a5c347d5d3b596820610657f3b8cc1"
+    },
+    {
+      "file": "Apple_CN.list",
+      "rules": 230,
+      "types": {
+        "DOMAIN": 2,
+        "DOMAIN-SUFFIX": 228
+      },
+      "sha256": "d423e0bc650888a01091a979c76ae8863f311dd6c01a118ebb2f84a305ac1f31"
+    },
+    {
+      "file": "CDN.list",
+      "rules": 31,
+      "types": {
+        "DOMAIN": 5,
+        "DOMAIN-KEYWORD": 22,
+        "DOMAIN-SUFFIX": 3,
+        "DOMAIN-WILDCARD": 1
+      },
+      "sha256": "b30e6c9659c5ad0873416ba968aad9ed1588d2fb3bb760c72ab98aae09cbafb7"
+    },
+    {
+      "file": "China.list",
+      "rules": 111441,
+      "types": {
+        "DOMAIN": 274,
+        "DOMAIN-KEYWORD": 9,
+        "DOMAIN-SUFFIX": 111126,
+        "DOMAIN-WILDCARD": 1,
+        "USER-AGENT": 31
+      },
+      "sha256": "049ec6fde8663aa497a5d6e3724c5c51be081c4ed30b1bb2c81ae80c3dc9bbea"
+    },
+    {
+      "file": "ChinaMedia.list",
+      "rules": 384,
+      "types": {
+        "DOMAIN": 66,
+        "DOMAIN-SUFFIX": 240,
+        "IP-CIDR": 41,
+        "PROCESS-NAME": 5,
+        "USER-AGENT": 32
+      },
+      "sha256": "48c9f24f5e0479816ffc31be9168992352679f5031449fff18d4e217da91c9b3"
+    },
+    {
+      "file": "China_IP.list",
+      "rules": 11508,
+      "types": {
+        "IP-CIDR": 7324,
+        "IP-CIDR6": 4184
+      },
+      "sha256": "07eb0bfad16ec19da382abc52f91799b818752de38e4058d9d11c431a9993f18"
+    },
+    {
+      "file": "Disney.list",
+      "rules": 166,
+      "types": {
+        "DOMAIN-SUFFIX": 163,
+        "PROCESS-NAME": 2,
+        "USER-AGENT": 1
+      },
+      "sha256": "91bad3d3f861e4290094657e3464e38163ce19e7b1008812b2de07820bcbe5de"
+    },
+    {
+      "file": "Download.list",
+      "rules": 1685,
+      "types": {
+        "DOMAIN": 1427,
+        "DOMAIN-SUFFIX": 238,
+        "PROCESS-NAME": 19,
+        "URL-REGEX": 1
+      },
+      "sha256": "3d2097c0b8a68bd949a6d2238422af08fc25fe2a84b2f4765e38f23d45e1f56c"
+    },
+    {
+      "file": "Game.list",
+      "rules": 557,
+      "types": {
+        "DOMAIN": 4,
+        "DOMAIN-KEYWORD": 4,
+        "DOMAIN-SUFFIX": 503,
+        "IP-CIDR": 46
+      },
+      "sha256": "166d2e5cf64027737e4ca2209a0972a1516be549a05d5cde524f8737e6b0d7af"
+    },
+    {
+      "file": "Global.list",
+      "rules": 24257,
+      "types": {
+        "DOMAIN": 111,
+        "DOMAIN-KEYWORD": 14,
+        "DOMAIN-SUFFIX": 24045,
+        "IP-CIDR": 80,
+        "IP-CIDR6": 1,
+        "USER-AGENT": 6
+      },
+      "sha256": "f984d2de47598fee764eaf787760631d769d0a217f71e4801d4ceb7f91d0988b"
+    },
+    {
+      "file": "GlobalMedia.list",
+      "rules": 2261,
+      "types": {
+        "DOMAIN": 26,
+        "DOMAIN-KEYWORD": 22,
+        "DOMAIN-SUFFIX": 1218,
+        "IP-CIDR": 918,
+        "IP-CIDR6": 6,
+        "PROCESS-NAME": 4,
+        "URL-REGEX": 1,
+        "USER-AGENT": 66
+      },
+      "sha256": "f07b268fa27218485ee67d6cce0ab5118b3ce2f866a8916b0c536f27d612e3b9"
+    },
+    {
+      "file": "Google.list",
+      "rules": 691,
+      "types": {
+        "DOMAIN": 1,
+        "DOMAIN-KEYWORD": 3,
+        "DOMAIN-SUFFIX": 676,
+        "IP-ASN": 1,
+        "IP-CIDR": 2,
+        "PROCESS-NAME": 5,
+        "USER-AGENT": 3
+      },
+      "sha256": "71518f324dc42ea72c0ae5215df9186ee225c893cd723f2d78d0c6f7310dc907"
+    },
+    {
+      "file": "Microsoft.list",
+      "rules": 523,
+      "types": {
+        "DOMAIN": 1,
+        "DOMAIN-KEYWORD": 3,
+        "DOMAIN-SUFFIX": 514,
+        "PROCESS-NAME": 2,
+        "USER-AGENT": 3
+      },
+      "sha256": "f1b1f5b2102b0f5daa80a662b2e3b8aa45176a337382bb091651227da401a3b4"
+    },
+    {
+      "file": "Microsoft_CDN.list",
+      "rules": 82,
+      "types": {
+        "DOMAIN": 6,
+        "DOMAIN-SUFFIX": 74,
+        "URL-REGEX": 2
+      },
+      "sha256": "25ae79636fc0973e3f276d62ad603af4efead0b70b377d9792ee9d34e656ce32"
+    },
+    {
+      "file": "Netflix.list",
+      "rules": 1152,
+      "types": {
+        "DOMAIN": 1,
+        "DOMAIN-KEYWORD": 4,
+        "DOMAIN-SUFFIX": 26,
+        "IP-CIDR": 1115,
+        "IP-CIDR6": 4,
+        "PROCESS-NAME": 1,
+        "USER-AGENT": 1
+      },
+      "sha256": "8cad0cc314a5d639772f637f60386b2a7aa3115df8044c4ad6d2ffb3451184e7"
+    },
+    {
+      "file": "PayPal.list",
+      "rules": 233,
+      "types": {
+        "DOMAIN-SUFFIX": 232,
+        "USER-AGENT": 1
+      },
+      "sha256": "27bfc7511e8fcf458d1661fb3b482bf2cc9372fb7e71d047b1de150ef28f276d"
+    },
+    {
+      "file": "SocialMedia.list",
+      "rules": 670,
+      "types": {
+        "DOMAIN-KEYWORD": 5,
+        "DOMAIN-SUFFIX": 635,
+        "IP-ASN": 1,
+        "IP-CIDR": 29
+      },
+      "sha256": "cf1e1570d9401a400a53f6670bddebcccabcab3313d8811c41bf9cc03658a53e"
+    },
+    {
+      "file": "Speedtest.list",
+      "rules": 123,
+      "types": {
+        "DOMAIN": 11,
+        "DOMAIN-SUFFIX": 112
+      },
+      "sha256": "d205189e5368bba28f1f49213f653c6fc4cbd5e67c947b3389ff4c1ad1c5a3a0"
+    },
+    {
+      "file": "Spotify.list",
+      "rules": 32,
+      "types": {
+        "DOMAIN": 6,
+        "DOMAIN-KEYWORD": 1,
+        "DOMAIN-SUFFIX": 20,
+        "IP-CIDR": 2,
+        "PROCESS-NAME": 1,
+        "USER-AGENT": 2
+      },
+      "sha256": "83fa335bf24c7ab0e061d3b449ee8add39195f4f9e5fef04d1d4ade9cca01539"
+    },
+    {
+      "file": "Telegram.list",
+      "rules": 50,
+      "types": {
+        "DOMAIN": 3,
+        "DOMAIN-KEYWORD": 1,
+        "DOMAIN-SUFFIX": 22,
+        "IP-ASN": 5,
+        "IP-CIDR": 9,
+        "IP-CIDR6": 5,
+        "PROCESS-NAME": 5
+      },
+      "sha256": "0e7b3d13140bbb932b911f9a3ef76da1fb0063efa6fb2011e46c4fc3f23ee096"
+    },
+    {
+      "file": "TikTok.list",
+      "rules": 31,
+      "types": {
+        "DOMAIN": 3,
+        "DOMAIN-KEYWORD": 2,
+        "DOMAIN-SUFFIX": 24,
+        "PROCESS-NAME": 1,
+        "USER-AGENT": 1
+      },
+      "sha256": "f5aa1a76e6b764e49ff91148a784ed2e7402d59d1b4aab44cf98486bdab35cd5"
+    },
+    {
+      "file": "WeChat.list",
+      "rules": 101,
+      "types": {
+        "DOMAIN": 7,
+        "DOMAIN-SUFFIX": 24,
+        "IP-ASN": 1,
+        "IP-CIDR": 3,
+        "IP-CIDR6": 64,
+        "USER-AGENT": 2
+      },
+      "sha256": "ef72dbf7720b117c0737585f8993351ca92906c3fe08ad46e2e978eaa40c1547"
+    },
+    {
+      "file": "YouTube.list",
+      "rules": 188,
+      "types": {
+        "DOMAIN-KEYWORD": 1,
+        "DOMAIN-SUFFIX": 177,
+        "IP-CIDR": 2,
+        "IP-CIDR6": 1,
+        "USER-AGENT": 7
+      },
+      "sha256": "d40045b867f1c0ffaade8da6354141d48f48eb5f8c81b739f5713ce2ba7c0a26"
+    }
+  ],
+  "total_rules": 158109,
+  "rule_types": {
+    "DOMAIN": 2011,
+    "DOMAIN-KEYWORD": 105,
+    "DOMAIN-SUFFIX": 141884,
+    "DOMAIN-WILDCARD": 2,
+    "IP-ASN": 11,
+    "IP-CIDR": 9585,
+    "IP-CIDR6": 4269,
+    "PROCESS-NAME": 58,
+    "URL-REGEX": 5,
+    "USER-AGENT": 179
+  },
+  "source_attribution": {
+    "ConnersHua AI": 20,
+    "Loyalsoldier China CIDR": 2121,
+    "Manual Rules": 259,
+    "Rabbit-Spec AIGC": 47,
+    "Rabbit-Spec China": 186,
+    "Rabbit-Spec China CIDR": 14,
+    "RocM301 Apple-AI": 16,
+    "SukkaW AI": 23,
+    "SukkaW Apple CDN": 157,
+    "SukkaW Apple CN": 6,
+    "SukkaW Apple Intelligence": 1,
+    "SukkaW CDN": 27,
+    "SukkaW Domestic": 693,
+    "SukkaW Download": 1613,
+    "SukkaW Game Download": 52,
+    "SukkaW Microsoft CDN": 55,
+    "SukkaW Speedtest": 121,
+    "SukkaW Telegram IP": 1,
+    "Telegram Official CIDR": 11,
+    "blackmatrix7 Apple": 1546,
+    "blackmatrix7 China IPs": 9373,
+    "blackmatrix7 ChinaMaxNoIP Domain": 110552,
+    "blackmatrix7 ChinaMedia": 384,
+    "blackmatrix7 Discord": 29,
+    "blackmatrix7 Disney": 166,
+    "blackmatrix7 Facebook": 570,
+    "blackmatrix7 Game": 549,
+    "blackmatrix7 Global": 24246,
+    "blackmatrix7 GlobalMedia": 2256,
+    "blackmatrix7 Google": 688,
+    "blackmatrix7 Instagram": 1,
+    "blackmatrix7 Microsoft": 523,
+    "blackmatrix7 Netflix": 1152,
+    "blackmatrix7 PayPal": 233,
+    "blackmatrix7 Spotify": 31,
+    "blackmatrix7 Telegram": 38,
+    "blackmatrix7 TikTok": 30,
+    "blackmatrix7 Twitter": 32,
+    "blackmatrix7 WeChat": 99,
+    "blackmatrix7 YouTube": 188
+  },
+  "manifest_files": 25,
+  "manifests_sha256": {
+    "AI.manifest": "4bb846c620630bad55bda4a74f78675cf72d2bad87a5fb8ecdda86c0efa16e6c",
+    "Apple.manifest": "e4b4567cbd3845f8ce2169d1fe656fe024bc2d44e9f6d58990cd9e30bb8ecc7f",
+    "Apple_AI.manifest": "55b4313eaff9c2ac77f26dfedef5e81183107a2e21c08472472fbbad06648e20",
+    "Apple_CN.manifest": "b5c80c113206e3c90cfbc6f4ec3007c4131531a8ed1e70f9ffeb392d8cd24630",
+    "CDN.manifest": "29cb88b9ed61d8eb7147d5ffa92f21712e0344741b1c3f2d7b8d56f1dba21180",
+    "China.manifest": "30f1653fe244542baaa90e27f97e174957968623c59ecd522f672da938567859",
+    "ChinaMedia.manifest": "8f86b924f2832027ab2d1f8643c4c51953994e84af6ebe3bad2aa553ad3d2616",
+    "China_IP.manifest": "fbc4b75939502325d8037ea302c7f76d6ba09df020637829e5364492a3893e19",
+    "Disney.manifest": "4952367b9bc1b50aaeacf8f01c8059c20e75aaf86be6c908d16a4f607a6b866f",
+    "Download.manifest": "662e002f44e411e9e22899ef262158ea363625ce7c96757a601e9d2afe61e7f5",
+    "Game.manifest": "cb0a6d239c6bbd110a149524d39503ee5c3993d67df6ffc1eb124477b1a2c144",
+    "Global.manifest": "715fd85ffb94214b378320a2e3a7be91f1feb471816fd020a181fdc0978fdccc",
+    "GlobalMedia.manifest": "5baa462b6ab86cca6aa579a12745dee77fab305c64c332e55340d9271b47587a",
+    "Google.manifest": "828708cfbfa7a8998fccfae8d8db3f32b417e9bf175f896667fde2feaee52ddf",
+    "Microsoft.manifest": "3a5d9095780fd24f9bb6e4f9a4c7db89b2613b674f613764d7254d4fb9ccae63",
+    "Microsoft_CDN.manifest": "a1e6337611b1178c0d7a9815b5715ccf703711011135ee6e85202c20ebd1d1a3",
+    "Netflix.manifest": "0ffcdd804cc4e56614ba69cc539061c6b5e65ef6ee2e62a01aee3e62902ab9c9",
+    "PayPal.manifest": "649b7162f902986f696a1b28e98b3d2b5e6cbda0a9c8e951c552098e68e1382b",
+    "SocialMedia.manifest": "e5b500cfbb1db392e8b379359458a69ece60c50003ee8ebb1cd7ae687ef11e78",
+    "Speedtest.manifest": "2a774bd78f0b59b1949ef5d51af9da98bce7832274bef88b81fe3cdd617a7d81",
+    "Spotify.manifest": "5f1f22f1d8f4081b725902910dc6754a6b1fa868dd8e97e527c39fcc7cf463b0",
+    "Telegram.manifest": "980982f6af25231500934a426a55f70575197672490cbe9684709b070d3d7a6b",
+    "TikTok.manifest": "f282938c9b48482e75d71b63a0486163f2fdbd12745480ac240e8463125fbfe4",
+    "WeChat.manifest": "2daaefc46757ae3bc6b07cf82f6e8b6493235b7b9c28708b8c7f8c54e151f7c3",
+    "YouTube.manifest": "1b9c3b78afbb311db391e8f2910b25b507296d158a339957a874d918a2869ca7"
+  },
+  "sources_sha256": "15d8d88d5a72782ef91dcd9b639fd217a5ac914edd11599628a78abfd0d3448f",
+  "override_manifest_sha256": "9e24b795a228abe439c49570918a0f80734fd863f6013ebdf18440fe7320d965",
+  "clash_compatibility": {
+    "payload_rules": 157925,
+    "dropped_surge_only_types": {
+      "URL-REGEX": 5,
+      "USER-AGENT": 179
+    },
+    "preserved_mihomo_extended_types": {
+      "DOMAIN-WILDCARD": 2,
+      "IP-ASN": 11,
+      "PROCESS-NAME": 58
+    }
+  },
+  "diff_summary": {
+    "total_added": 0,
+    "total_removed": 0,
+    "total_source_changed": 0
+  }
+}
