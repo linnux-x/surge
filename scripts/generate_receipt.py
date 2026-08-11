@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import hashlib
 import json
-import subprocess
 from collections import Counter
 from pathlib import Path
 
@@ -17,15 +16,6 @@ OUT_MD = ROOT / "scripts" / "generation_receipt.md"
 
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
-
-
-def baseline_commit_time() -> str:
-    """Use the parent commit so pre-commit and CI generation agree."""
-    result = subprocess.run(
-        ["git", "log", "-1", "--format=%cI", "HEAD^"], cwd=ROOT,
-        capture_output=True, text=True, check=False,
-    )
-    return result.stdout.strip() or "unknown"
 
 
 def active_rules(path: Path) -> list[str]:
@@ -73,7 +63,6 @@ def main() -> int:
     dropped = sum(unsupported.values())
     data = {
         "schema_version": 1,
-        "baseline_commit_time": baseline_commit_time(),
         "rule_files": files,
         "total_rules": total_rules,
         "rule_types": dict(sorted(rule_types.items())),
@@ -95,7 +84,6 @@ def main() -> int:
 
     lines = [
         "# Surge 规则生成收据", "",
-        f"- 基线提交时间：{data['baseline_commit_time']}",
         f"- 规则文件：{len(files)}", f"- 规则总数：{total_rules}",
         f"- manifest 文件：{len(manifests)}", "", "## 差异摘要", "",
         f"- 新增：{data['diff_summary']['total_added']}",
