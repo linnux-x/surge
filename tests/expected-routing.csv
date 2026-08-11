@@ -78,8 +78,13 @@ example.invalid,Global,不存在于任何规则集，FINAL→Global
 paypal.com.cn,China.list,PayPal中国域名直连（PayPal/Global keyword已排除，防止代理组劫持）
 recaptcha.net,China.list,reCAPTCHA中国可达镜像直连（Google/Global捕获已排除）
 clarity.ms,Global,.ms为蒙特塞拉特ccTLD（已从China.list排除，FINAL→Global）
-notgoogle.example.com,Global,无关域名不应被 Google 泛关键词截获
-notmicrosoft.example.com,Global,无关域名不应被 Microsoft/China 泛关键词截获
+notgoogle.example.com,FINAL,无关域名不应被 Google/Global 泛关键词截获，必须走 FINAL 路径
+notmicrosoft.example.com,FINAL,无关域名不应被 Microsoft/China 泛关键词截获，必须走 FINAL 路径
+models.dev,AI.list,真实流量中的开源 AI 模型规格数据库
+jina.ai,AI.list,真实流量中的 Jina 搜索 AI 服务
+swiftgram.app,Telegram.list,真实流量中的第三方 Telegram 客户端服务
+dns.google,Google.list,真实流量中的 Google Public DNS
+giphy.com,GlobalMedia.list,真实流量中的 GIPHY 动画媒体服务
 artificialanalysis.ai,AI.list,AI模型与API评测平台
 nousresearch.com,AI.list,开源AI研究机构
 fastgpt.io,AI.list,FastGPT AI Agent平台

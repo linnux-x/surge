@@ -36,10 +36,10 @@ RULE_DIR = Path("Rule")
 MANUAL_DIR = RULE_DIR / "Manual"
 REPO_URL = os.environ.get("REPO_URL", "https://github.com/linnux-x/surge")
 AUTHOR_NAME = os.environ.get("AUTHOR_NAME", "linnux-x")
-# Retries cover transient failures; timeouts stop a stalled upstream from
-# hanging the whole workflow until the GitHub Actions 6h job limit.
+# Retries cover transient failures, including TLS handshake resets observed during
+# full generation; timeouts stop a stalled upstream from hanging the workflow.
 CURL_OPTS = [
-    "--retry", "3", "--retry-delay", "5",
+    "--retry", "3", "--retry-delay", "5", "--retry-all-errors",
     "--connect-timeout", "10", "--max-time", "60",
 ]
 FETCH_SUBPROCESS_TIMEOUT = 120  # hard backstop around the curl call itself

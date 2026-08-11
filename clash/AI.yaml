@@ -1,7 +1,7 @@
 # Generated from Rule/AI.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-08-11 05:00:31 +0800
-# TOTAL: 144
+# UPDATED: 2026-08-11 18:26:35 +0800
+# TOTAL: 146
 payload:
   - 'DOMAIN-SUFFIX,anthropic.com'
   - 'DOMAIN-SUFFIX,claude.ai'
@@ -56,6 +56,8 @@ payload:
   - 'DOMAIN-SUFFIX,fastgpt.run'
   - 'DOMAIN-SUFFIX,tryfastgpt.ai'
   - 'DOMAIN-SUFFIX,chatjimmy.ai'
+  - 'DOMAIN-SUFFIX,models.dev'
+  - 'DOMAIN-SUFFIX,jina.ai'
   - 'DOMAIN-SUFFIX,openai.com'
   - 'DOMAIN-SUFFIX,oaistatic.com'
   - 'DOMAIN-SUFFIX,sora.com'

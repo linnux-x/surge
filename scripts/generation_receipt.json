@@ -3,17 +3,17 @@
   "rule_files": [
     {
       "file": "AI.list",
-      "rules": 144,
+      "rules": 146,
       "types": {
         "DOMAIN": 38,
         "DOMAIN-KEYWORD": 6,
-        "DOMAIN-SUFFIX": 91,
+        "DOMAIN-SUFFIX": 93,
         "IP-ASN": 3,
         "IP-CIDR": 4,
         "IP-CIDR6": 1,
         "URL-REGEX": 1
       },
-      "sha256": "c39338c3c874e4c31242af7aab5d3e23a283476e6f62b96c1147aa70f69af997"
+      "sha256": "7ada806ab9e9033dd87467979d87f5a9cfb2bad6692841c9d77f6c0c0ee4f53f"
     },
     {
       "file": "Apple.list",
@@ -126,37 +126,37 @@
     },
     {
       "file": "Global.list",
-      "rules": 24257,
+      "rules": 24256,
       "types": {
         "DOMAIN": 111,
-        "DOMAIN-KEYWORD": 14,
+        "DOMAIN-KEYWORD": 13,
         "DOMAIN-SUFFIX": 24045,
         "IP-CIDR": 80,
         "IP-CIDR6": 1,
         "USER-AGENT": 6
       },
-      "sha256": "f984d2de47598fee764eaf787760631d769d0a217f71e4801d4ceb7f91d0988b"
+      "sha256": "ace3211aebda1be3ec36e4309037c6c9b2d83f43aece4045d8c4d71c44a0e92a"
     },
     {
       "file": "GlobalMedia.list",
-      "rules": 2261,
+      "rules": 2262,
       "types": {
         "DOMAIN": 26,
         "DOMAIN-KEYWORD": 22,
-        "DOMAIN-SUFFIX": 1218,
+        "DOMAIN-SUFFIX": 1219,
         "IP-CIDR": 918,
         "IP-CIDR6": 6,
         "PROCESS-NAME": 4,
         "URL-REGEX": 1,
         "USER-AGENT": 66
       },
-      "sha256": "f07b268fa27218485ee67d6cce0ab5118b3ce2f866a8916b0c536f27d612e3b9"
+      "sha256": "01ad3ba0f733cded2c6fffcf10f155b3be47d42bdaa7964f337e9d159f9a8fb0"
     },
     {
       "file": "Google.list",
-      "rules": 691,
+      "rules": 692,
       "types": {
-        "DOMAIN": 1,
+        "DOMAIN": 2,
         "DOMAIN-KEYWORD": 3,
         "DOMAIN-SUFFIX": 676,
         "IP-ASN": 1,
@@ -164,7 +164,7 @@
         "PROCESS-NAME": 5,
         "USER-AGENT": 3
       },
-      "sha256": "71518f324dc42ea72c0ae5215df9186ee225c893cd723f2d78d0c6f7310dc907"
+      "sha256": "2287148daa3dabe20b66f9d318d594bfa6d8bf41717fef08ddd686e4513a51a6"
     },
     {
       "file": "Microsoft.list",
@@ -246,9 +246,9 @@
     },
     {
       "file": "Telegram.list",
-      "rules": 50,
+      "rules": 51,
       "types": {
-        "DOMAIN": 3,
+        "DOMAIN": 4,
         "DOMAIN-KEYWORD": 1,
         "DOMAIN-SUFFIX": 22,
         "IP-ASN": 5,
@@ -256,7 +256,7 @@
         "IP-CIDR6": 5,
         "PROCESS-NAME": 5
       },
-      "sha256": "0e7b3d13140bbb932b911f9a3ef76da1fb0063efa6fb2011e46c4fc3f23ee096"
+      "sha256": "972e096352ec95a97c4c7a46299773f1431b5056e340ade3e48f4a3bd38f7210"
     },
     {
       "file": "TikTok.list",
@@ -296,11 +296,11 @@
       "sha256": "d40045b867f1c0ffaade8da6354141d48f48eb5f8c81b739f5713ce2ba7c0a26"
     }
   ],
-  "total_rules": 158109,
+  "total_rules": 158113,
   "rule_types": {
-    "DOMAIN": 2011,
-    "DOMAIN-KEYWORD": 105,
-    "DOMAIN-SUFFIX": 141884,
+    "DOMAIN": 2013,
+    "DOMAIN-KEYWORD": 104,
+    "DOMAIN-SUFFIX": 141887,
     "DOMAIN-WILDCARD": 2,
     "IP-ASN": 11,
     "IP-CIDR": 9585,
@@ -312,7 +312,7 @@
   "source_attribution": {
     "ConnersHua AI": 20,
     "Loyalsoldier China CIDR": 2121,
-    "Manual Rules": 259,
+    "Manual Rules": 264,
     "Rabbit-Spec AIGC": 47,
     "Rabbit-Spec China": 186,
     "Rabbit-Spec China CIDR": 14,
@@ -337,7 +337,7 @@
     "blackmatrix7 Disney": 166,
     "blackmatrix7 Facebook": 570,
     "blackmatrix7 Game": 549,
-    "blackmatrix7 Global": 24246,
+    "blackmatrix7 Global": 24245,
     "blackmatrix7 GlobalMedia": 2256,
     "blackmatrix7 Google": 688,
     "blackmatrix7 Instagram": 1,
@@ -353,7 +353,7 @@
   },
   "manifest_files": 25,
   "manifests_sha256": {
-    "AI.manifest": "4bb846c620630bad55bda4a74f78675cf72d2bad87a5fb8ecdda86c0efa16e6c",
+    "AI.manifest": "7d5320350ce5b1b4d883fd9780c0932546409c6409907a30927e8800699888f0",
     "Apple.manifest": "e4b4567cbd3845f8ce2169d1fe656fe024bc2d44e9f6d58990cd9e30bb8ecc7f",
     "Apple_AI.manifest": "55b4313eaff9c2ac77f26dfedef5e81183107a2e21c08472472fbbad06648e20",
     "Apple_CN.manifest": "b5c80c113206e3c90cfbc6f4ec3007c4131531a8ed1e70f9ffeb392d8cd24630",
@@ -364,9 +364,9 @@
     "Disney.manifest": "4952367b9bc1b50aaeacf8f01c8059c20e75aaf86be6c908d16a4f607a6b866f",
     "Download.manifest": "662e002f44e411e9e22899ef262158ea363625ce7c96757a601e9d2afe61e7f5",
     "Game.manifest": "cb0a6d239c6bbd110a149524d39503ee5c3993d67df6ffc1eb124477b1a2c144",
-    "Global.manifest": "715fd85ffb94214b378320a2e3a7be91f1feb471816fd020a181fdc0978fdccc",
-    "GlobalMedia.manifest": "5baa462b6ab86cca6aa579a12745dee77fab305c64c332e55340d9271b47587a",
-    "Google.manifest": "828708cfbfa7a8998fccfae8d8db3f32b417e9bf175f896667fde2feaee52ddf",
+    "Global.manifest": "3ce4194ff9b789d5bb616d230c31e4bd28d5264ee8e58b383432480a787fea8d",
+    "GlobalMedia.manifest": "63ece0530dfb3e5a1bf1f319b601445a9171da2ae687e12a0a14e36e3927c0ce",
+    "Google.manifest": "c6bb79f368f501d21cb6c6b1bba96c97269dcc49b764fcd22378b6a17ae4651f",
     "Microsoft.manifest": "3a5d9095780fd24f9bb6e4f9a4c7db89b2613b674f613764d7254d4fb9ccae63",
     "Microsoft_CDN.manifest": "a1e6337611b1178c0d7a9815b5715ccf703711011135ee6e85202c20ebd1d1a3",
     "Netflix.manifest": "0ffcdd804cc4e56614ba69cc539061c6b5e65ef6ee2e62a01aee3e62902ab9c9",
@@ -374,15 +374,15 @@
     "SocialMedia.manifest": "e5b500cfbb1db392e8b379359458a69ece60c50003ee8ebb1cd7ae687ef11e78",
     "Speedtest.manifest": "2a774bd78f0b59b1949ef5d51af9da98bce7832274bef88b81fe3cdd617a7d81",
     "Spotify.manifest": "5f1f22f1d8f4081b725902910dc6754a6b1fa868dd8e97e527c39fcc7cf463b0",
-    "Telegram.manifest": "980982f6af25231500934a426a55f70575197672490cbe9684709b070d3d7a6b",
+    "Telegram.manifest": "26b73936b85436d3642e4ca1affd06da1d2f3389dde25cc98a2e7f8690af2d07",
     "TikTok.manifest": "f282938c9b48482e75d71b63a0486163f2fdbd12745480ac240e8463125fbfe4",
     "WeChat.manifest": "2daaefc46757ae3bc6b07cf82f6e8b6493235b7b9c28708b8c7f8c54e151f7c3",
     "YouTube.manifest": "1b9c3b78afbb311db391e8f2910b25b507296d158a339957a874d918a2869ca7"
   },
   "sources_sha256": "15d8d88d5a72782ef91dcd9b639fd217a5ac914edd11599628a78abfd0d3448f",
-  "override_manifest_sha256": "9e24b795a228abe439c49570918a0f80734fd863f6013ebdf18440fe7320d965",
+  "override_manifest_sha256": "b4e3153b1e68eb8df483c5d4d756a3a120074fa97ef442ff987591f70672685d",
   "clash_compatibility": {
-    "payload_rules": 157925,
+    "payload_rules": 157929,
     "dropped_surge_only_types": {
       "URL-REGEX": 5,
       "USER-AGENT": 179
@@ -394,8 +394,8 @@
     }
   },
   "diff_summary": {
-    "total_added": 0,
-    "total_removed": 0,
+    "total_added": 5,
+    "total_removed": 1,
     "total_source_changed": 0
   }
 }

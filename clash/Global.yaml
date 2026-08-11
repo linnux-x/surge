@@ -1,7 +1,7 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-08-11 05:00:37 +0800
-# TOTAL: 24257
+# UPDATED: 2026-08-11 18:12:23 +0800
+# TOTAL: 24256
 payload:
   - 'DOMAIN-SUFFIX,boil.network'
   - 'DOMAIN-SUFFIX,neburst.com'
@@ -24169,7 +24169,6 @@ payload:
   - 'DOMAIN-KEYWORD,beetalk'
   - 'DOMAIN-KEYWORD,dlercloud'
   - 'DOMAIN-KEYWORD,dropbox'
-  - 'DOMAIN-KEYWORD,google'
   - 'DOMAIN-KEYWORD,porn'
   - 'DOMAIN-KEYWORD,sci-hub'
   - 'DOMAIN-KEYWORD,telegram'

@@ -1,17 +1,28 @@
 {
-  "generated_at": "2026-08-11T17:57:56.763158",
-  "total_added": 0,
-  "total_removed": 0,
+  "generated_at": "2026-08-11T18:46:20.626608",
+  "total_added": 5,
+  "total_removed": 1,
   "total_source_changed": 0,
   "diffs": [
     {
       "file": "AI.list",
       "prev_total": 144,
-      "curr_total": 144,
-      "added_count": 0,
+      "curr_total": 146,
+      "added_count": 2,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "42a4f006ab45",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,jina.ai"
+        },
+        {
+          "id": "7e6e85c75aa3",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,models.dev"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -128,33 +139,51 @@
     {
       "file": "Global.list",
       "prev_total": 24257,
-      "curr_total": 24257,
+      "curr_total": 24256,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 1,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "df0acf0c0be2",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-KEYWORD,google"
+        }
+      ],
       "source_changed_sample": []
     },
     {
       "file": "GlobalMedia.list",
       "prev_total": 2261,
-      "curr_total": 2261,
-      "added_count": 0,
+      "curr_total": 2262,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "ce273c5ed413",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,giphy.com"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "Google.list",
       "prev_total": 691,
-      "curr_total": 691,
-      "added_count": 0,
+      "curr_total": 692,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "210188bcc8dd",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,dns.google"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -238,11 +267,17 @@
     {
       "file": "Telegram.list",
       "prev_total": 50,
-      "curr_total": 50,
-      "added_count": 0,
+      "curr_total": 51,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "413ff9567125",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,swiftgram.app"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },

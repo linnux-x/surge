@@ -1,9 +1,14 @@
 # NAME: Telegram
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-08-06 05:02:23 +0800
+# UPDATED: 2026-08-11 18:46:20 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 50
+# TOTAL: 51
+
+# ======= Manual Rules ========
+# Third-party Telegram client root host observed in real FINAL traffic
+# api.swiftgram.app is already supplied upstream.
+DOMAIN,swiftgram.app
 
 # ======= blackmatrix7 Telegram ========
 DOMAIN,api.imem.app

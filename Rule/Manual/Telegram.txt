@@ -1,0 +1,3 @@
+# Third-party Telegram client root host observed in real FINAL traffic
+# api.swiftgram.app is already supplied upstream.
+DOMAIN,swiftgram.app

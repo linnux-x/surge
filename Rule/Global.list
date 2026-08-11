@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-08-11 05:00:37 +0800
+# UPDATED: 2026-08-11 18:12:23 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24257
+# TOTAL: 24256
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -24175,7 +24175,6 @@ DOMAIN-KEYWORD,avtb
 DOMAIN-KEYWORD,beetalk
 DOMAIN-KEYWORD,dlercloud
 DOMAIN-KEYWORD,dropbox
-DOMAIN-KEYWORD,google
 DOMAIN-KEYWORD,porn
 DOMAIN-KEYWORD,sci-hub
 DOMAIN-KEYWORD,telegram

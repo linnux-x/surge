@@ -204,6 +204,10 @@ DOMAIN-KEYWORD,jav
 # fall through to China.list instead of being captured by Global.list first.
 DOMAIN-KEYWORD,amazon
 
+# Avoid overbroad Google keyword matching: concrete Google services are already
+# owned by earlier Google/AI/YouTube rules; unrelated names must reach FINAL.
+DOMAIN-KEYWORD,google
+
 # Speedtest endpoints belong to Speedtest.list, which is evaluated before Global.list
 DOMAIN-SUFFIX,speedtest.rt.ru
 DOMAIN-SUFFIX,speedtest.idv.tw

@@ -4,3 +4,6 @@ DOMAIN-SUFFIX,gvt2.com
 
 # GEOIP match for all Google ASN IP ranges (catches unknown Google IPs not covered by domain rules)
 GEOIP,GOOGLE
+
+# Google Public DNS observed in real FINAL traffic
+DOMAIN,dns.google

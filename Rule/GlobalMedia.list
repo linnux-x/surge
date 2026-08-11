@@ -1,9 +1,9 @@
 # NAME: GlobalMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-08-06 05:02:22 +0800
+# UPDATED: 2026-08-11 18:46:18 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 2261
+# TOTAL: 2262
 
 # ======= Manual Rules ========
 # Bilibili international / B-Star
@@ -12,6 +12,9 @@ DOMAIN-SUFFIX,upos-bstar-mirrorakam.akamaized.net
 DOMAIN-SUFFIX,upos-bstar1-mirrorakam.akamaized.net
 DOMAIN-SUFFIX,upos-hz-mirrorakam.akamaized.net
 PROCESS-NAME,com.bilibili.comic.intl
+
+# GIPHY animation media service observed in real FINAL traffic
+DOMAIN-SUFFIX,giphy.com
 
 # ======= blackmatrix7 GlobalMedia ========
 DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv

@@ -5,3 +5,6 @@ DOMAIN-SUFFIX,upos-bstar-mirrorakam.akamaized.net
 DOMAIN-SUFFIX,upos-bstar1-mirrorakam.akamaized.net
 DOMAIN-SUFFIX,upos-hz-mirrorakam.akamaized.net
 PROCESS-NAME,com.bilibili.comic.intl
+
+# GIPHY animation media service observed in real FINAL traffic
+DOMAIN-SUFFIX,giphy.com

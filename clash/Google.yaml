@@ -1,11 +1,12 @@
 # Generated from Rule/Google.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-08-04 20:35:14 +0800
-# TOTAL: 691
+# UPDATED: 2026-08-11 18:46:19 +0800
+# TOTAL: 692
 payload:
   - 'DOMAIN-SUFFIX,gvt1.com'
   - 'DOMAIN-SUFFIX,gvt2.com'
   - 'IP-ASN,15169,no-resolve'
+  - 'DOMAIN,dns.google'
   - 'DOMAIN,voice.telephony.goog'
   - 'DOMAIN-SUFFIX,0emm.com'
   - 'DOMAIN-SUFFIX,1e100.net'

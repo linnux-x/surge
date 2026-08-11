@@ -35,10 +35,109 @@
     "Speedtest.txt": {"action": "include", "reason": "历史测速补充", "destination": "Speedtest.list"},
     "Spotify.txt": {"action": "include", "reason": "历史音乐服务补充", "destination": "Spotify.list"},
     "Telegram.exclude.txt": {"action": "exclude", "reason": "历史通信服务归属去重", "destination": "后续专属规则或 fallback"},
+    "Telegram.txt": {"action": "include", "reason": "真实流量确认的 Telegram 客户端服务补充", "destination": "Telegram.list"},
     "TikTok.exclude.txt": {"action": "exclude", "reason": "历史短视频服务归属去重", "destination": "后续专属规则或 fallback"},
     "TikTok.txt": {"action": "include", "reason": "历史短视频服务补充", "destination": "TikTok.list"},
     "WeChat.txt": {"action": "include", "reason": "历史通信服务补充", "destination": "WeChat.list"},
     "YouTube.exclude.txt": {"action": "exclude", "reason": "历史视频服务归属去重", "destination": "后续专属规则或 fallback"}
   },
-  "entries": []
+  "entries": [
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN-SUFFIX,jina.ai",
+      "reason": "真实 FINAL 流量确认其为 Jina 搜索 AI、Embedding 与 Reranker 服务",
+      "destination": "AI.list",
+      "route_tests": [
+        "jina.ai"
+      ]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN-SUFFIX,models.dev",
+      "reason": "真实 FINAL 流量确认其为开源 AI 模型规格数据库",
+      "destination": "AI.list",
+      "route_tests": [
+        "models.dev"
+      ]
+    },
+    {
+      "source_file": "China.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,microsoft",
+      "reason": "禁止 China 关键词把无关域名或 Microsoft 专属流量宽泛直连",
+      "destination": "Microsoft_CDN、Download、Game、Microsoft 等更早专属规则，或 FINAL",
+      "route_tests": [
+        "notmicrosoft.example.com",
+        "packages.microsoft.com",
+        "microsoft.com"
+      ]
+    },
+    {
+      "source_file": "Global.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,amazon",
+      "reason": "禁止 Global 在 China.list 之前截获 Amazon 中国域名",
+      "destination": "amazon.cn 与 amazonaws.com.cn 进入 China.list；具体海外域名仍由专属规则或 fallback 处理",
+      "route_tests": [
+        "amazon.cn",
+        "amazonaws.com.cn"
+      ]
+    },
+    {
+      "source_file": "Global.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,google",
+      "reason": "禁止 Global 以字符串包含关系截获非 Google 域名",
+      "destination": "具体 Google 服务由更早 Google、AI、YouTube 规则命中；无关域名进入 FINAL",
+      "route_tests": [
+        "notgoogle.example.com",
+        "gemini.google.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.txt",
+      "rule": "DOMAIN-SUFFIX,giphy.com",
+      "reason": "两名独立审查者均确认真实 FINAL 流量属于 GIPHY 动画媒体服务",
+      "destination": "GlobalMedia.list",
+      "route_tests": [
+        "giphy.com"
+      ]
+    },
+    {
+      "source_file": "Google.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,google",
+      "reason": "禁止 Google 规则集以字符串包含关系截获非 Google 域名",
+      "destination": "具体 Google 服务由精确规则命中；无关域名继续到后续规则或 FINAL",
+      "route_tests": [
+        "notgoogle.example.com",
+        "gemini.google.com"
+      ]
+    },
+    {
+      "source_file": "Google.txt",
+      "rule": "DOMAIN,dns.google",
+      "reason": "真实流量确认其为 Google Public DNS；宽 Google 关键词移除后仍需精确归属",
+      "destination": "Google.list",
+      "route_tests": [
+        "dns.google"
+      ]
+    },
+    {
+      "source_file": "Microsoft.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,microsoft",
+      "reason": "禁止 Microsoft 规则集截获无关域名，并保留下载与游戏的更早 first-match 归属",
+      "destination": "Microsoft_CDN、Download、Game、Microsoft 的具体规则，或 FINAL",
+      "route_tests": [
+        "notmicrosoft.example.com",
+        "packages.microsoft.com",
+        "microsoft.com"
+      ]
+    },
+    {
+      "source_file": "Telegram.txt",
+      "rule": "DOMAIN,swiftgram.app",
+      "reason": "真实流量与第一方资料确认 Swiftgram 是 Telegram 客户端；仅补根 host，API 子域沿用上游规则",
+      "destination": "Telegram.list",
+      "route_tests": [
+        "swiftgram.app"
+      ]
+    }
+  ]
 }
