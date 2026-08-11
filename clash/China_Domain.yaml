@@ -1,7 +1,7 @@
 # Generated from Rule/China.list (DOMAIN/DOMAIN-SUFFIX entries only)
 # Format: Clash/mihomo rule-provider, behavior: domain
-# UPDATED: 2026-08-11 05:00:34 +0800
-# TOTAL: 111400
+# UPDATED: 2026-08-12 05:00:21 +0800
+# TOTAL: 111403
 payload:
   - '+.wmsjsteam.com'
   - '+.steamchina.com'
@@ -51435,6 +51435,8 @@ payload:
   - '+.iot688.com'
   - '+.iot889.com'
   - '+.iotachem.com'
+  - '+.iotaskyt.com'
+  - '+.iotaskyty.com'
   - '+.iotbay.com'
   - '+.iotfair.net'
   - '+.iotku.com'
@@ -87089,6 +87091,7 @@ payload:
   - '+.tbapp.com'
   - '+.tbbbk.com'
   - '+.tbcdn.com'
+  - '+.tbdesk.com'
   - '+.tbh5.com'
   - '+.tbhcc.com'
   - '+.tbhelper.com'
