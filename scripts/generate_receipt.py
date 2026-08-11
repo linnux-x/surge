@@ -19,9 +19,10 @@ def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def git_time() -> str:
+def baseline_commit_time() -> str:
+    """Use the parent commit so pre-commit and CI generation agree."""
     result = subprocess.run(
-        ["git", "log", "-1", "--format=%cI"], cwd=ROOT,
+        ["git", "log", "-1", "--format=%cI", "HEAD^"], cwd=ROOT,
         capture_output=True, text=True, check=False,
     )
     return result.stdout.strip() or "unknown"
@@ -72,7 +73,7 @@ def main() -> int:
     dropped = sum(unsupported.values())
     data = {
         "schema_version": 1,
-        "baseline_commit_time": git_time(),
+        "baseline_commit_time": baseline_commit_time(),
         "rule_files": files,
         "total_rules": total_rules,
         "rule_types": dict(sorted(rule_types.items())),
