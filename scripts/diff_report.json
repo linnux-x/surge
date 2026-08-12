@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-12T05:00:26.599732",
-  "total_added": 6,
+  "generated_at": "2026-08-13T05:00:38.468701",
+  "total_added": 0,
   "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
@@ -61,28 +61,12 @@
     },
     {
       "file": "China.list",
-      "prev_total": 111441,
+      "prev_total": 111444,
       "curr_total": 111444,
-      "added_count": 3,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "6fdca35baad4",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,iotaskyty.com"
-        },
-        {
-          "id": "af1a93551ad7",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,tbdesk.com"
-        },
-        {
-          "id": "eb1700861a3b",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,iotaskyt.com"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -143,28 +127,12 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24256,
+      "prev_total": 24259,
       "curr_total": 24259,
-      "added_count": 3,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "17594e1c7760",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,esim.redteago.com"
-        },
-        {
-          "id": "1b4763315a71",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,divdyn.com"
-        },
-        {
-          "id": "60f0da0c316b",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,aihub.top"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },

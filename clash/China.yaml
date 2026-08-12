@@ -1,6 +1,6 @@
 # Generated from Rule/China.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-08-12 05:00:21 +0800
+# UPDATED: 2026-08-13 05:00:35 +0800
 # TOTAL: 111444
 payload:
   - 'DOMAIN-SUFFIX,wmsjsteam.com'
