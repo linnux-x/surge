@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-13T05:00:38.468701",
-  "total_added": 0,
-  "total_removed": 0,
+  "generated_at": "2026-08-14T05:00:42.815853",
+  "total_added": 45,
+  "total_removed": 2,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -62,12 +62,59 @@
     {
       "file": "China.list",
       "prev_total": 111444,
-      "curr_total": 111444,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 111451,
+      "added_count": 8,
+      "removed_count": 1,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "1c32fb8113a2",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "rule": "DOMAIN-SUFFIX,jgtab.link"
+        },
+        {
+          "id": "26c1886669cc",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "rule": "DOMAIN-SUFFIX,xhsdzd.com"
+        },
+        {
+          "id": "46948314a191",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "rule": "DOMAIN-SUFFIX,juwinmedia.com"
+        },
+        {
+          "id": "5ce07de0316e",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "rule": "DOMAIN-SUFFIX,jkzlrs.com"
+        },
+        {
+          "id": "5cfd19b2c119",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "rule": "DOMAIN-SUFFIX,sxyygh.com"
+        },
+        {
+          "id": "d127995a384c",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "rule": "DOMAIN-SUFFIX,bkzhibo.com"
+        },
+        {
+          "id": "dc47a26356af",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "rule": "DOMAIN-SUFFIX,36linkr.com"
+        },
+        {
+          "id": "f09cfbc16ea2",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "rule": "DOMAIN-SUFFIX,1958xy.com"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "34647a42e0f3",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "rule": "DOMAIN-SUFFIX,bambulab.com"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -84,12 +131,29 @@
     {
       "file": "China_IP.list",
       "prev_total": 11508,
-      "curr_total": 11508,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 11509,
+      "added_count": 2,
+      "removed_count": 1,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "c6c8c8e4837e",
+          "source": "blackmatrix7 China IPs",
+          "rule": "IP-CIDR,107.148.6.0/24"
+        },
+        {
+          "id": "ced0f607dc87",
+          "source": "blackmatrix7 China IPs",
+          "rule": "IP-CIDR,14.238.116.0/24"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "3749d17bf657",
+          "source": "blackmatrix7 China IPs",
+          "rule": "IP-CIDR,166.1.232.0/24"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -128,11 +192,187 @@
     {
       "file": "Global.list",
       "prev_total": 24259,
-      "curr_total": 24259,
-      "added_count": 0,
+      "curr_total": 24294,
+      "added_count": 35,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "095adc2a6fd0",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,nix.store"
+        },
+        {
+          "id": "18f48f5f5eb9",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,tonyhawk.com"
+        },
+        {
+          "id": "18f573eb4417",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,nixcon2017.org"
+        },
+        {
+          "id": "19f409eee1be",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,demonware.net"
+        },
+        {
+          "id": "1c77da398acb",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,sekirothegame.com"
+        },
+        {
+          "id": "22c66788da49",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,spyrothedragon.com"
+        },
+        {
+          "id": "3be63eb957a9",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,ravensoftware.com"
+        },
+        {
+          "id": "43bfd17d3926",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,europeanwarzoneseries.com"
+        },
+        {
+          "id": "462902db08fa",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,nixlang.com"
+        },
+        {
+          "id": "571f4a11f7b7",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,nix-community.org"
+        },
+        {
+          "id": "631cf648afcb",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,nixpkgs.org"
+        },
+        {
+          "id": "6acb28ef7ad0",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,infinityward.com"
+        },
+        {
+          "id": "7d455757085e",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,nixcon.org"
+        },
+        {
+          "id": "928c0ff341cd",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,sledgehammergames.com"
+        },
+        {
+          "id": "95bbea73269c",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,activisionblizzardmedia.com"
+        },
+        {
+          "id": "9bdd51777f21",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,treyarch.com"
+        },
+        {
+          "id": "a4a5827da478",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,mynixos.com"
+        },
+        {
+          "id": "a8b7d6db53d3",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,builtwithnix.org"
+        },
+        {
+          "id": "aca53989d4b9",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,candycrush.com"
+        },
+        {
+          "id": "b6db1cf7f962",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,crashbandicoot.com"
+        },
+        {
+          "id": "b789a36c1486",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,solidstate.com"
+        },
+        {
+          "id": "ba3c47f60a3e",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,callofdutyendowment.org"
+        },
+        {
+          "id": "c693a0dd2c8c",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,nix.dev"
+        },
+        {
+          "id": "c8192f425de7",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,skylanders.com"
+        },
+        {
+          "id": "c95649ceda97",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,tonyhawkthegame.com"
+        },
+        {
+          "id": "caaceffaa500",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,callofdutyendowment.com"
+        },
+        {
+          "id": "d32ad6bb50cf",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,diablo4.com"
+        },
+        {
+          "id": "d5ea950d43e1",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,nixos.wiki"
+        },
+        {
+          "id": "d6cd7cc83157",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,callofdutymobile.com"
+        },
+        {
+          "id": "da519753a9d1",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,worldseriesofwarzone.com"
+        },
+        {
+          "id": "e14035b5ede9",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,yandex.it"
+        },
+        {
+          "id": "ef3947698e5d",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,callofdutyleague.com"
+        },
+        {
+          "id": "f3751db207f8",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,highmoonstudios.com"
+        },
+        {
+          "id": "f71f1244ed6e",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,sierragames.com"
+        },
+        {
+          "id": "f8671fa87e92",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,benefitsforeveryworld.com"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
