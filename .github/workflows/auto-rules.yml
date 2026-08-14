@@ -29,7 +29,8 @@ on:
 
 permissions:
   contents: write
-  actions: read
+  actions: write
+  pull-requests: write
 
 concurrency:
   group: auto-surge-rules
@@ -244,9 +245,11 @@ jobs:
           echo "::error::Full generation publish requires manual audit before commit/push. First run dry_run=true, review Rule/ + manifests + diff_report + audit output, then rerun with manual_audit_confirmed=true."
           exit 1
 
-      - name: Commit and Push Changes
+      - name: Publish Through Pull Request
         if: ${{ inputs.dry_run != 'true' }}
         shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
 
@@ -260,15 +263,50 @@ jobs:
             scripts/diff_report.md scripts/diff_report.json scripts/generation_receipt.md \
             scripts/generation_receipt.json scripts/source_state.json
 
-          if ! git diff --staged --quiet; then
-            COMMIT_TIME=$(TZ="Asia/Shanghai" date +"%Y-%m-%d %H:%M:%S +0800")
-            git commit -m "$COMMIT_TIME Update rules"
-            # --autostash guards against any stray unstaged changes blocking the
-            # rebase; a genuine content conflict still fails loudly (and opens an
-            # issue) since generated files are machine-owned and should not clash.
-            git pull --rebase --autostash origin main
-            git push
+          if git diff --staged --quiet; then
+            echo "No generated changes to publish."
+            exit 0
           fi
+
+          git fetch origin main
+          if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
+            echo "::error::main changed during generation; rerun dry-run and review the new snapshot."
+            exit 1
+          fi
+
+          branch="automation/full-generation-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          git switch -c "$branch"
+          COMMIT_TIME=$(TZ="Asia/Shanghai" date +"%Y-%m-%d %H:%M:%S +0800")
+          git commit -m "$COMMIT_TIME Update rules"
+          sha=$(git rev-parse HEAD)
+          git push --set-upstream origin "$branch"
+
+          pr_url=$(gh pr create \
+            --base main \
+            --head "$branch" \
+            --title "chore: publish audited Surge rules" \
+            --body "Full generation from workflow run ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}. Manifest fingerprint was reviewed before publishing. Exact head SHA: ${sha}.")
+
+          gh workflow run ci.yml --ref "$branch"
+          run_id=""
+          for _ in $(seq 1 30); do
+            run_id=$(gh run list \
+              --workflow ci.yml \
+              --commit "$sha" \
+              --event workflow_dispatch \
+              --limit 1 \
+              --json databaseId \
+              --jq '.[0].databaseId // empty')
+            [ -n "$run_id" ] && break
+            sleep 10
+          done
+          if [ -z "$run_id" ]; then
+            echo "::error::No exact-SHA CI run found for ${sha}."
+            exit 1
+          fi
+
+          gh run watch "$run_id" --exit-status
+          gh pr merge "$pr_url" --squash --delete-branch
 
       - name: Dry Run Summary
         if: ${{ inputs.dry_run == 'true' }}

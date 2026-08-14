@@ -13,6 +13,7 @@ cd surge
 python3 --version  # should be 3.10+
 
 # 3. Run the test suite
+python3 -m unittest discover -s tests -p 'test_*.py'
 python3 scripts/test_routing_order.py
 
 # 4. Run validation
@@ -87,7 +88,7 @@ tests/
    - `dry_run=false`
    - `manual_audit_confirmed=true`
 
-如果未确认 `manual_audit_confirmed=true`，full generation 不允许 commit / push。
+如果未确认 `manual_audit_confirmed=true`，full generation 不允许发布。确认后的运行也不会直接写入 `main`：它创建唯一自动化分支和 PR，显式触发 exact-SHA CI，只有 CI 全绿后才合并。
 
 ## Pull Request Guidelines
 
@@ -102,7 +103,7 @@ tests/
 ## Fork 后适配
 
 1. 修改 `.github/workflows/auto-rules.yml` 中的 `REPO_URL` 和 `AUTHOR_NAME` 环境变量为你的仓库
-2. 在仓库 Settings → Actions → General → Workflow permissions 中选择「Read and write permissions」
+2. 在仓库 Settings → Actions → General → Workflow permissions 中选择「Read and write permissions」，并允许 GitHub Actions 创建 Pull Request；否则 full generation 只能 dry-run
 3. 按需在 `Rule/Manual/` 中添加自己的追加和排除规则
 4. 本仓库的 workflow 仅手动触发（每日同步由维护者本机的 Hermes agent 负责，见 `SOURCE_OF_TRUTH.md`）；如需在 Fork 中定时自动更新，需**两处**改动：① 在 `auto-rules.yml` 的 `on:` 中加回 `schedule` 触发器（例如 `cron: "23 21 * * *"`）；② 把两个 job 顶部的 `if: github.repository == 'linnux-x/surge'` 改成你的仓库或删除，否则 Actions 会直接跳过
 

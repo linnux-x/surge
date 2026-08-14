@@ -1,0 +1,59 @@
+name: CI Failure Incident
+
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: ci-failure-incident-main
+  cancel-in-progress: false
+
+jobs:
+  reconcile:
+    if: github.event.workflow_run.head_branch == 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+      TITLE: "[automation] CI failure on main"
+      RUN_URL: ${{ github.event.workflow_run.html_url }}
+      HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+      CONCLUSION: ${{ github.event.workflow_run.conclusion }}
+    steps:
+      - name: Open, update, or close the incident
+        shell: bash
+        run: |
+          set -euo pipefail
+          issue_number=$(gh issue list \
+            --repo "$REPO" \
+            --state open \
+            --search "\"[automation] CI failure on main\" in:title" \
+            --limit 10 \
+            --json number,title \
+            --jq "map(select(.title == \"${TITLE}\"))[0].number // empty")
+
+          if [ "$CONCLUSION" != "success" ]; then
+            # Backticks are intentional Markdown literals, not shell substitutions.
+            # shellcheck disable=SC2016
+            body=$(printf 'CI on `main` did not succeed.\n\n- Finding code: `SURGE_CI_MAIN_FAILED`\n- Exact SHA: `%s`\n- Conclusion: `%s`\n- Run: %s\n' "$HEAD_SHA" "$CONCLUSION" "$RUN_URL")
+            if [ -z "$issue_number" ]; then
+              gh issue create --repo "$REPO" --title "$TITLE" --body "$body"
+            else
+              gh issue comment "$issue_number" --repo "$REPO" --body "$body"
+            fi
+            exit 0
+          fi
+
+          if [ -n "$issue_number" ]; then
+            # Backticks are intentional Markdown literals, not shell substitutions.
+            # shellcheck disable=SC2016
+            recovery=$(printf 'CI recovered.\n\n- Finding code: `SURGE_CI_MAIN_RECOVERED`\n- Exact SHA: `%s`\n- Run: %s\n' "$HEAD_SHA" "$RUN_URL")
+            gh issue comment "$issue_number" --repo "$REPO" --body "$recovery"
+            gh issue close "$issue_number" --repo "$REPO" --reason completed
+          fi
