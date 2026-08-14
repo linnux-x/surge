@@ -5,9 +5,10 @@
 - **规则源码与生成逻辑**：本仓库 `~/Desktop/github/surge`。
 - **公开分发**：GitHub 公开仓库 `linnux-x/surge` 的受跟踪规则、模块和 Raw URL。
 - **真实设备配置**：不在本仓库；物理正典位于 `~/Library/Application Support/LinnuxPrivateData/private-config/surge-devices`，桌面 `private-config` 为兼容入口。
-- **正确方向**：可信上游 → 下载/清洗/校验/测试 → commit/push → 设备通过公开规则 URL 获取。
+- **正确方向**：可信上游 → 下载/清洗/校验/测试 → 自动化分支/PR → exact-SHA CI → 合并 `main` → 设备通过公开规则 URL 获取。
 - **禁止内容**：真实代理凭据、MITM 材料、私钥、内网信息和设备完整配置。
-- **每日流水线归属**：由维护者的 Hermes agent 在本机执行（北京时间 05:00），跑本仓库同一套 `scripts/*.py` 并直接 push。调度在 Hermes 自身的任务系统内，不在 crontab / launchd / GitHub Actions；`auto-rules.yml` 只保留手动触发。因此 Hermes 未运行时当天不会同步，且从系统层看不到该计划任务。
+- **每日流水线归属**：由维护者的 Hermes agent 在本机执行（北京时间 05:00），跑本仓库同一套 `scripts/*.py`，把确定性产物推到唯一自动化分支并创建 PR；只有 exact head SHA 的 CI 全绿后才合并 `main`。调度在 Hermes 自身的任务系统内，不在 crontab / launchd / GitHub Actions；`auto-rules.yml` 只保留手动 full generation。Hermes 未运行时当天不会同步。
+- **发布故障闭环**：自动化 PR 的 CI 失败时保留分支和 PR，并以稳定 finding code 更新唯一故障 Issue；`main` CI 失败由 `ci-failure-issue.yml` 去重记录，恢复后追加证据并关闭。
 
 ## 下游消费者（Raw URL 是对外契约）
 
