@@ -11,7 +11,7 @@
 - 🎯 **目标用户**：Surge 用户（iPhone / MacBook），需要精细化代理分流与规则管理
 - 💡 **核心价值**：多上游源自动聚合 → 清洗校验 → 清单追踪 → 联网审计，全链路自动化
 - 📜 **许可证**：MIT
-- 🔄 **更新频率**：维护者本机的 Hermes agent 每日自动同步（约北京时间 05:02）
+- 🔄 **更新频率**：维护者本机的 Hermes agent 每日北京时间 05:00 自动同步
 - 🧪 **质量保障**：每次更新须通过 5 项联网审查 + 15+ 项不变量校验
 - 📦 **零依赖**：所有脚本仅使用 Python 3.10+ 标准库，无需 pip install
 
@@ -42,7 +42,7 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 
 | 特性 | 说明 |
 |------|------|
-| 🤖 **全自动同步** | 检查 38 个上游源的 Last-Modified / ETag，只同步有变更的规则集，无变化跳过提交 |
+| 🤖 **全自动同步** | 检查 39 个上游源的 Last-Modified / ETag，只同步有变更的规则集，无变化跳过提交 |
 | 🧪 **自动校验** | 15+ 不变量检查：规则类型合法性、无策略名渗入、无重复、domain-only 约束、no-resolve 策略等 |
 | 📋 **清单索引** | 每条规则拥有 12 字符稳定内容哈希 ID + 上游来源标注，支持跨版本追踪 |
 | 📊 **增量差异报告** | 每次变更生成 manifest diff（markdown + JSON），明确增减来源 |
@@ -74,8 +74,9 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 
 | 规则文件 | 上游来源 | 说明 |
 |---------|---------|------|
-| 📱 AI.list | 4 源 | AI 服务与模型 API |
+| 📱 AI.list | 3 源 · 手动 | AI 服务与模型 API |
 | 🍎 Apple.list | blackmatrix7 | Apple 全系服务 |
+| 🍎 Apple_AI.list | 2 源 · 手动 | Apple Intelligence、Siri 与 Private Relay |
 | 🍎 Apple_CN.list | 2 源 | Apple 中国区 CDN 直连 |
 | 📦 CDN.list | SukkaW | CDN、静态资源、下载资源 |
 | 🏠 China.list | 3 源 | 中国大陆直连域名（domain-only） |
@@ -106,26 +107,27 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 `Conf/Linnux.conf` 中的规则遵循 Surge **first-match** 逻辑，重点服务规则放在宽泛规则之前：
 
 1. 💚 **WeChat** → 微信直连优先
-2. ⚡ **Speedtest** → 测速不走代理
-3. 📱 **AI** → AI 服务专用路由
-4. 🍎 **Apple** → Apple 原生服务
-5. 🪟 **Microsoft** → Microsoft / Office 服务
-6. ✈️ **Telegram** → 协议规避混淆
-7. ⬇️ **Download** → 下载 CDN 直连
-8. 🎮 **Game** → 游戏平台直连/代理
-9. ▶️ **YouTube** → 流媒体路由
-10. 🎵 **TikTok** → TikTok 路由
-11. 💬 **SocialMedia** → 社交媒体
-12. 💰 **PayPal** → 支付服务
-13. 🔍 **Google** → Google 服务
-14. 🎬 **GlobalMedia + ChinaMedia** → 国际与中国媒体服务
-15. 🎧 **Spotify** → 音乐流媒体
-16. 📦 **CDN** → 共享 CDN 后台回退
-17. 🌍 **Global** → 通用代理回退
-18. 🏠 **China** → 中国大陆直连域名
-19. 🏢 **LAN** → 局域网直连
-20. 🌐 **China IP** → 中国大陆 IP 回退
-21. 🔚 **FINAL** → 最终代理
+2. ⚡ **Speedtest** → 测速流量独立处理
+3. 🍎 **Apple_AI** → Apple Intelligence、Siri 与 Private Relay 优先代理
+4. 📱 **AI** → 通用 AI 服务专用路由
+5. 🍎 **Apple_CN → Apple** → 中国区 CDN 先直连，再处理 Apple 通用服务
+6. 🪟 **Microsoft_CDN** → Windows、Office 与 Visual Studio CDN 直连
+7. ⬇️ **Download** → 下载与软件更新先于宽泛 Microsoft 规则
+8. 🎮 **Game** → Xbox、Minecraft 等游戏流量先于宽泛 Microsoft 规则
+9. 🪟 **Microsoft** → Microsoft / Office 通用服务
+10. ✈️ **Telegram** → Telegram 专用路由
+11. ▶️ **YouTube** → 先于 Google 通用规则
+12. 🎵 **TikTok** → TikTok 路由
+13. 💬 **SocialMedia** → 社交媒体
+14. 💰 **PayPal** → 支付服务
+15. 🔍 **Google** → Google 通用服务
+16. 🎬 **Netflix → Disney → ChinaMedia → Spotify → GlobalMedia** → 专用媒体优先于宽泛媒体
+17. 📦 **CDN** → 共享 CDN 后台回退
+18. 🌍 **Global** → 通用代理回退
+19. 🏠 **China** → 中国大陆直连域名
+20. 🏢 **LAN** → 局域网直连
+21. 🌐 **China IP** → 中国大陆 IP 回退
+22. 🔚 **FINAL** → 最终代理
 
 ---
 
@@ -135,14 +137,14 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 
 | 方式 | 说明 |
 |------|------|
-| 🤖 **每日同步** | 维护者本机的 Hermes agent 每日（约北京时间 05:02）运行同一套流水线脚本并推送；调度在 Hermes 内部，不是 Actions 计划任务，详见 `SOURCE_OF_TRUTH.md` |
+| 🤖 **每日同步** | 维护者本机的 Hermes agent 每日北京时间 05:00 运行同一套流水线脚本并推送；调度在 Hermes 内部，不是 Actions 计划任务，详见 `SOURCE_OF_TRUTH.md` |
 | 🖐 **手动触发** | GitHub Actions 页面点击 Run workflow（全量重新生成 + 发布门禁） |
 | ⌨️ **CLI 触发** | `gh workflow run auto-rules.yml` |
 
 ### 完整流程
 
 ```text
-上游检查 → 规则生成 → manifest/diff → Clash 镜像 → 不变量校验 → 联网审计 → DNS Mapping → 提交
+上游检查 → 规则生成 → manifest/diff → generation receipt → Clash 镜像 → 不变量/路由校验 → 联网审计 → DNS Mapping → 提交 → exact-SHA CI
 ```
 
 脚本顺序和单一事实来源见 `scripts/README.md`；full generation 发布门禁见 `CONTRIBUTING.md`。

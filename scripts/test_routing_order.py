@@ -23,31 +23,33 @@ TEST_CSV = ROOT / "tests" / "expected-routing.csv"
 
 # Fallback order (matches Conf/Linnux.conf [Rule] section)
 FALLBACK_ORDER: list[tuple[str, str]] = [
-    ("WeChat.list", "WeChat.list"),
-    ("Speedtest.list", "Speedtest.list"),
-    ("AI.list", "AI.list"),
+    ("WeChat.list", "WeChat"),
+    ("Speedtest.list", "Speedtest"),
+    ("Apple_AI.list", "Apple_AI"),
+    ("AI.list", "AI"),
     ("Apple_CN.list", "DIRECT"),
-    ("Apple.list", "Apple.list"),
+    ("Apple.list", "Apple"),
     ("Microsoft_CDN.list", "DIRECT"),
-    ("Microsoft.list", "Microsoft.list"),
-    ("Telegram.list", "Telegram.list"),
-    ("Download.list", "Download.list"),
-    ("Game.list", "Game.list"),
-    ("YouTube.list", "YouTube.list"),
-    ("TikTok.list", "TikTok.list"),
-    ("SocialMedia.list", "SocialMedia.list"),
-    ("PayPal.list", "PayPal.list"),
-    ("Google.list", "Google.list"),
-    ("Netflix.list", "Netflix.list"),
-    ("Disney.list", "Disney.list"),
-    ("ChinaMedia.list", "ChinaMedia.list"),
-    ("Spotify.list", "Spotify.list"),
-    ("GlobalMedia.list", "GlobalMedia.list"),
-    ("CDN.list", "CDN.list"),
-    ("Global.list", "Global.list"),
+    ("Download.list", "Download"),
+    ("Game.list", "Game"),
+    ("Microsoft.list", "Microsoft"),
+    ("Telegram.list", "Telegram"),
+    ("YouTube.list", "YouTube"),
+    ("TikTok.list", "TikTok"),
+    ("SocialMedia.list", "SocialMedia"),
+    ("PayPal.list", "PayPal"),
+    ("Google.list", "Google"),
+    ("Netflix.list", "Netflix"),
+    ("Disney.list", "Disney"),
+    ("ChinaMedia.list", "ChinaMedia"),
+    ("Spotify.list", "Spotify"),
+    ("GlobalMedia.list", "GlobalMedia"),
+    ("CDN.list", "CDN"),
+    ("Global.list", "Global"),
     ("China.list", "DIRECT"),
     ("LAN", "DIRECT"),
     ("China_IP.list", "DIRECT"),
+    ("FINAL", "Global"),
 ]
 
 
@@ -125,7 +127,7 @@ def load_routing_order() -> list[tuple[str, str]]:
 
         # RULE-SET,url,POLICY
         m = re.match(
-            r"RULE-SET,.*?/Rule/([A-Za-z0-9_]+\.list),(\S+)(?:,|$)", line
+            r"RULE-SET,.*?/Rule/([A-Za-z0-9_]+\.list),([^,]+)(?:,|$)", line
         )
         if m:
             ruleset_name = m.group(1)
@@ -134,25 +136,25 @@ def load_routing_order() -> list[tuple[str, str]]:
             continue
 
         # RULE-SET,LAN,DIRECT
-        m_lan = re.match(r"RULE-SET,LAN,(\S+)", line)
+        m_lan = re.match(r"RULE-SET,LAN,([^,]+)(?:,|$)", line)
         if m_lan:
             order.append(("LAN", m_lan.group(1)))
             continue
 
         # DOMAIN,xxx,POLICY — inline rule in conf (e.g. cn.bing.com,DIRECT)
-        m_domain = re.match(r"(DOMAIN|DOMAIN-SUFFIX),([^,]+),(\S+)", line)
+        m_domain = re.match(r"(DOMAIN|DOMAIN-SUFFIX),([^,]+),([^,]+)(?:,|$)", line)
         if m_domain:
             order.append(("CONF-INLINE", m_domain.group(3), m_domain.group(1), m_domain.group(2)))
             continue
 
         # RULE-SET,WeChat,WeChat (inline ruleset mirrors Rule/WeChat.list)
-        m_inline_wechat = re.match(r"RULE-SET,WeChat,(\S+)(?:,|$)", line)
+        m_inline_wechat = re.match(r"RULE-SET,WeChat,([^,]+)(?:,|$)", line)
         if m_inline_wechat:
             order.append(("WeChat.list", m_inline_wechat.group(1)))
             continue
 
         # FINAL,policy
-        m_final = re.match(r"FINAL,(\S+)", line)
+        m_final = re.match(r"FINAL,([^,]+)(?:,|$)", line)
         if m_final:
             order.append(("FINAL", m_final.group(1)))
             continue

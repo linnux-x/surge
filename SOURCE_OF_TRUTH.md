@@ -7,7 +7,7 @@
 - **真实设备配置**：不在本仓库；物理正典位于 `~/Library/Application Support/LinnuxPrivateData/private-config/surge-devices`，桌面 `private-config` 为兼容入口。
 - **正确方向**：可信上游 → 下载/清洗/校验/测试 → commit/push → 设备通过公开规则 URL 获取。
 - **禁止内容**：真实代理凭据、MITM 材料、私钥、内网信息和设备完整配置。
-- **每日流水线归属**：由维护者的 Hermes agent 在本机执行（约北京时间 05:02），跑本仓库同一套 `scripts/*.py` 并直接 push。调度在 Hermes 自身的任务系统内，不在 crontab / launchd / GitHub Actions；`auto-rules.yml` 只保留手动触发。因此 Hermes 未运行时当天不会同步，且从系统层看不到该计划任务。
+- **每日流水线归属**：由维护者的 Hermes agent 在本机执行（北京时间 05:00），跑本仓库同一套 `scripts/*.py` 并直接 push。调度在 Hermes 自身的任务系统内，不在 crontab / launchd / GitHub Actions；`auto-rules.yml` 只保留手动触发。因此 Hermes 未运行时当天不会同步，且从系统层看不到该计划任务。
 
 ## 下游消费者（Raw URL 是对外契约）
 

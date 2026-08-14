@@ -4,7 +4,7 @@
 name: Auto-Surge-Rules
 
 # Daily sync is owned by the local agent pipeline, which runs the same
-# scripts and pushes directly (~04:00 Beijing). This workflow is kept for
+# scripts and pushes directly (05:00 Beijing). This workflow is kept for
 # manual runs and the dry-run/fingerprint publishing gate only — running
 # both on a schedule doubled the daily commits and repo churn.
 on:
@@ -114,6 +114,14 @@ jobs:
         run: |
           set -euo pipefail
           python3 scripts/validate_surge_repo.py
+
+      - name: Test Routing Order and Fallback Contract
+        if: ${{ steps.gate.outputs.build == 'true' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m unittest discover -s tests -p 'test_*.py'
+          python3 scripts/test_routing_order.py
 
       - name: Online Audit (Upstream & Shared Infrastructure)
         if: ${{ steps.gate.outputs.build == 'true' }}
