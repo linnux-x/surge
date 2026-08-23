@@ -85,6 +85,7 @@ jina.ai,AI.list,真实流量中的 Jina 搜索 AI 服务
 swiftgram.app,Telegram.list,真实流量中的第三方 Telegram 客户端服务
 dns.google,Google.list,真实流量中的 Google Public DNS
 giphy.com,GlobalMedia.list,真实流量中的 GIPHY 动画媒体服务
+3.023168.xyz,GlobalMedia.list,持续真实 FINAL 观测中的大流量媒体服务
 artificialanalysis.ai,AI.list,AI模型与API评测平台
 nousresearch.com,AI.list,开源AI研究机构
 fastgpt.io,AI.list,FastGPT AI Agent平台

@@ -139,18 +139,18 @@
     },
     {
       "file": "GlobalMedia.list",
-      "rules": 2262,
+      "rules": 2263,
       "types": {
         "DOMAIN": 26,
         "DOMAIN-KEYWORD": 22,
-        "DOMAIN-SUFFIX": 1219,
+        "DOMAIN-SUFFIX": 1220,
         "IP-CIDR": 918,
         "IP-CIDR6": 6,
         "PROCESS-NAME": 4,
         "URL-REGEX": 1,
         "USER-AGENT": 66
       },
-      "sha256": "fba44ec734ced8770efe2225fee9d7c9fdbfe0fe0052a6892e0297b7fb566738"
+      "sha256": "e476be63a7c0fedd027dc5532497324e66c3d8ede90a88ed1e098487d07ce6aa"
     },
     {
       "file": "Google.list",
@@ -296,11 +296,11 @@
       "sha256": "d40045b867f1c0ffaade8da6354141d48f48eb5f8c81b739f5713ce2ba7c0a26"
     }
   ],
-  "total_rules": 158162,
+  "total_rules": 158163,
   "rule_types": {
     "DOMAIN": 2013,
     "DOMAIN-KEYWORD": 104,
-    "DOMAIN-SUFFIX": 141935,
+    "DOMAIN-SUFFIX": 141936,
     "DOMAIN-WILDCARD": 2,
     "IP-ASN": 11,
     "IP-CIDR": 9586,
@@ -312,7 +312,7 @@
   "source_attribution": {
     "ConnersHua AI": 20,
     "Loyalsoldier China CIDR": 2121,
-    "Manual Rules": 264,
+    "Manual Rules": 265,
     "Rabbit-Spec AIGC": 47,
     "Rabbit-Spec China": 186,
     "Rabbit-Spec China CIDR": 14,
@@ -365,7 +365,7 @@
     "Download.manifest": "662e002f44e411e9e22899ef262158ea363625ce7c96757a601e9d2afe61e7f5",
     "Game.manifest": "dbbc552d66a7cb01e6b0ba4cd47046f69e7c7ada8627ecd972d76f977b0f7940",
     "Global.manifest": "06c6b1b19aea8ff85a3586c7a7a9e516148e4da249e46141a4ab70aa8b80a223",
-    "GlobalMedia.manifest": "9bd1f282f33728ade989ccfdb4ef3b3c145ccb51d327656e06b8a4df6b5548fa",
+    "GlobalMedia.manifest": "465ef575f942b7274affcfa3e2ff2946b129f1680aaa2b7c3a7e03c4f5c1e7ea",
     "Google.manifest": "c6bb79f368f501d21cb6c6b1bba96c97269dcc49b764fcd22378b6a17ae4651f",
     "Microsoft.manifest": "3a5d9095780fd24f9bb6e4f9a4c7db89b2613b674f613764d7254d4fb9ccae63",
     "Microsoft_CDN.manifest": "a1e6337611b1178c0d7a9815b5715ccf703711011135ee6e85202c20ebd1d1a3",
@@ -380,9 +380,9 @@
     "YouTube.manifest": "1b9c3b78afbb311db391e8f2910b25b507296d158a339957a874d918a2869ca7"
   },
   "sources_sha256": "15d8d88d5a72782ef91dcd9b639fd217a5ac914edd11599628a78abfd0d3448f",
-  "override_manifest_sha256": "b4e3153b1e68eb8df483c5d4d756a3a120074fa97ef442ff987591f70672685d",
+  "override_manifest_sha256": "02eb6e61bddacc6a6f345a7c7812845959671b624ca40b73d6502efd956c3a1e",
   "clash_compatibility": {
-    "payload_rules": 157978,
+    "payload_rules": 157979,
     "dropped_surge_only_types": {
       "URL-REGEX": 5,
       "USER-AGENT": 179
@@ -394,7 +394,7 @@
     }
   },
   "diff_summary": {
-    "total_added": 0,
+    "total_added": 1,
     "total_removed": 0,
     "total_source_changed": 0
   }

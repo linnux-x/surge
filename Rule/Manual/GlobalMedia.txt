@@ -8,3 +8,6 @@ PROCESS-NAME,com.bilibili.comic.intl
 
 # GIPHY animation media service observed in real FINAL traffic
 DOMAIN-SUFFIX,giphy.com
+
+# Media service observed in sustained real FINAL traffic
+DOMAIN-SUFFIX,023168.xyz
