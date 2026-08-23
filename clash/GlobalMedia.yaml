@@ -1,7 +1,7 @@
 # Generated from Rule/GlobalMedia.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-08-12 05:00:26 +0800
-# TOTAL: 2262
+# UPDATED: 2026-08-23 21:40:02 +0800
+# TOTAL: 2263
 payload:
   - 'DOMAIN-SUFFIX,p-bstarstatic.akamaized.net'
   - 'DOMAIN-SUFFIX,upos-bstar-mirrorakam.akamaized.net'
@@ -9,6 +9,7 @@ payload:
   - 'DOMAIN-SUFFIX,upos-hz-mirrorakam.akamaized.net'
   - 'PROCESS-NAME,com.bilibili.comic.intl'
   - 'DOMAIN-SUFFIX,giphy.com'
+  - 'DOMAIN-SUFFIX,023168.xyz'
   - 'DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv'
   - 'DOMAIN,api.okzy.tv'
   - 'DOMAIN,apm-misaka.biliapi.net'

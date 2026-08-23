@@ -1,9 +1,9 @@
 # NAME: GlobalMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-08-12 05:00:26 +0800
+# UPDATED: 2026-08-23 21:40:02 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 2262
+# TOTAL: 2263
 
 # ======= Manual Rules ========
 # Bilibili international / B-Star
@@ -15,6 +15,9 @@ PROCESS-NAME,com.bilibili.comic.intl
 
 # GIPHY animation media service observed in real FINAL traffic
 DOMAIN-SUFFIX,giphy.com
+
+# Media service observed in sustained real FINAL traffic
+DOMAIN-SUFFIX,023168.xyz
 
 # ======= blackmatrix7 GlobalMedia ========
 DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
@@ -2262,12 +2265,12 @@ USER-AGENT,com.kktv.ios.kktv*
 USER-AGENT,discovery+*
 USER-AGENT,encoreTVB*
 USER-AGENT,mytv*
-USER-AGENT,*YouTubeMusic*
-USER-AGENT,*com.google.ios.youtubemusic*
 USER-AGENT,*youtube*
 USER-AGENT,YouTube*
-USER-AGENT,YouTubeMusic*
 USER-AGENT,com.google.ios.youtube*
+USER-AGENT,*YouTubeMusic*
+USER-AGENT,*com.google.ios.youtubemusic*
+USER-AGENT,YouTubeMusic*
 USER-AGENT,com.google.ios.youtubemusic*
 URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/
 PROCESS-NAME,com.viu.pad

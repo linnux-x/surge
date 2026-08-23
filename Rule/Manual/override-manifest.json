@@ -101,6 +101,15 @@
       ]
     },
     {
+      "source_file": "GlobalMedia.txt",
+      "rule": "DOMAIN-SUFFIX,023168.xyz",
+      "reason": "持续真实 FINAL 观测确认三个子域产生大流量媒体请求，归入全球流媒体策略",
+      "destination": "GlobalMedia.list",
+      "route_tests": [
+        "3.023168.xyz"
+      ]
+    },
+    {
       "source_file": "Google.exclude.txt",
       "rule": "DOMAIN-KEYWORD,google",
       "reason": "禁止 Google 规则集以字符串包含关系截获非 Google 域名",

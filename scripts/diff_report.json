@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-23T05:01:10.188253",
-  "total_added": 0,
+  "generated_at": "2026-08-23T21:42:42.984647",
+  "total_added": 1,
   "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
@@ -139,11 +139,17 @@
     {
       "file": "GlobalMedia.list",
       "prev_total": 2262,
-      "curr_total": 2262,
-      "added_count": 0,
+      "curr_total": 2263,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "9c9c9a2d6e36",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,023168.xyz"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
