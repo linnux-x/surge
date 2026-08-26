@@ -1,5 +1,5 @@
 # Surge Rule Diff Report
-Generated: 2026-08-25T05:00:39.023545
+Generated: 2026-08-27T05:00:24.179888
 
 ## Summary
 
