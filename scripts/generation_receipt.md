@@ -6,9 +6,9 @@
 
 ## 差异摘要
 
-- 新增：17088
-- 删除：1
-- 来源迁移：0
+- 新增：0
+- 删除：0
+- 来源迁移：17063
 
 ## Clash 兼容性
 
@@ -32,8 +32,8 @@
 ## 来源归属
 
 - ConnersHua AI: 20
-- Kelee Speedtest China Snapshot: 9
-- Kelee Speedtest International Snapshot: 17054
+- Kelee Speedtest China: 9
+- Kelee Speedtest International: 17054
 - Loyalsoldier China CIDR: 2121
 - Manual Rules: 265
 - Rabbit-Spec AIGC: 47

@@ -93,8 +93,8 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 | 🎥 Netflix.list | blackmatrix7 | Netflix |
 | 💰 PayPal.list | blackmatrix7 | PayPal |
 | 💬 SocialMedia.list | 4 源 | 社交媒体聚合（海外平台） |
-| ⚡ Speedtest_China.list | Kelee 已审查快照 | 中国大陆测速节点直连，优先于国际测速规则 |
-| ⚡ Speedtest.list | SukkaW · Kelee 已审查快照 · 手动 | 国际测速节点与测速服务 · fast.com 仅此文件 |
+| ⚡ Speedtest_China.list | Kelee 每日主上游 · 已审查快照兜底 | 中国大陆测速节点直连，优先于国际测速规则 |
+| ⚡ Speedtest.list | SukkaW · Kelee 每日主上游 · 已审查快照兜底 · 手动 | 国际测速节点与测速服务 · fast.com 仅此文件 |
 | 🎧 Spotify.list | blackmatrix7 | Spotify 音乐服务 |
 | ✈️ Telegram.list | 3 源 | 域名、CIDR、ASN |
 | 🎵 TikTok.list | blackmatrix7 | TikTok |
