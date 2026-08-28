@@ -88,6 +88,10 @@ python3 scripts/test_routing_order.py
 # 从 iOS 隐私报告生成 Surge 规则（示例输出到 /tmp，避免误认为仓库固定规则文件）
 python3 scripts/ios_privacy_to_surge.py report.ndjson
 privacy2surge report.ndjson -o /tmp/App.list
+
+# 审计当前 Download.list 命中的下载主机；报告仅供人工复核，不会写入规则
+python3 scripts/download_cn_candidates.py TrafficStatistics.csv \
+  --resolve -o /tmp/download-cn-candidates.json
 ```
 
 ---
@@ -97,6 +101,7 @@ privacy2surge report.ndjson -o /tmp/App.list
 | 脚本 | 作用 |
 |---|---|
 | `ios_privacy_to_surge.py` | 将 iOS 隐私报告 `.ndjson` 转换为 Surge / Loon 规则；过滤系统流量、合并子域名、通过 iTunes API 和内置映射识别 App |
+| `download_cn_candidates.py` | 审计 Surge TrafficStatistics CSV 中当前命中 Download.list 的主机；可选本地 DNS + China_IP 信号，仅输出待人工复核候选，绝不生成或写入 DIRECT 规则 |
 | `app_mapping.json` | Bundle ID 到 App 名称、域名、IP 的可扩展映射 |
 
 ---
