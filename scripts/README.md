@@ -101,7 +101,7 @@ python3 scripts/download_cn_candidates.py TrafficStatistics.csv \
 | 脚本 | 作用 |
 |---|---|
 | `ios_privacy_to_surge.py` | 将 iOS 隐私报告 `.ndjson` 转换为 Surge / Loon 规则；过滤系统流量、合并子域名、通过 iTunes API 和内置映射识别 App |
-| `download_cn_candidates.py` | 审计 Surge TrafficStatistics CSV 中当前命中 Download.list 的主机；可选本地 DNS + China_IP 信号，仅输出待人工复核候选，绝不生成或写入 DIRECT 规则 |
+| `download_cn_candidates.py` | 审计 Surge TrafficStatistics CSV 中当前命中 Download.list 的主机；可选本地 DNS + China_IP 信号，仅输出待人工复核候选，自动丢弃 Surge Fake-IP、LAN 与保留地址，绝不生成或写入 DIRECT 规则 |
 | `app_mapping.json` | Bundle ID 到 App 名称、域名、IP 的可扩展映射 |
 
 ---
