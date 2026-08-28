@@ -126,16 +126,16 @@
     },
     {
       "file": "Global.list",
-      "rules": 24294,
+      "rules": 24318,
       "types": {
         "DOMAIN": 111,
         "DOMAIN-KEYWORD": 13,
-        "DOMAIN-SUFFIX": 24083,
+        "DOMAIN-SUFFIX": 24107,
         "IP-CIDR": 80,
         "IP-CIDR6": 1,
         "USER-AGENT": 6
       },
-      "sha256": "3c30219e138f29399a001d74943e12c3792471e462daf32308c6d07bf3c737d8"
+      "sha256": "46e5f7e8fd0fdd14ae13fd21f82e8cbdaf27e992ef5d5cd68f3156663a3b179d"
     },
     {
       "file": "GlobalMedia.list",
@@ -224,12 +224,21 @@
     },
     {
       "file": "Speedtest.list",
-      "rules": 123,
+      "rules": 17177,
       "types": {
-        "DOMAIN": 11,
-        "DOMAIN-SUFFIX": 112
+        "DOMAIN": 17054,
+        "DOMAIN-SUFFIX": 114,
+        "IP-CIDR": 9
       },
-      "sha256": "d205189e5368bba28f1f49213f653c6fc4cbd5e67c947b3389ff4c1ad1c5a3a0"
+      "sha256": "fa5417217babdb5ff73782f5a3d8385ad990ab54a46cefa2ad005f89a4d7cb34"
+    },
+    {
+      "file": "Speedtest_China.list",
+      "rules": 9,
+      "types": {
+        "DOMAIN": 9
+      },
+      "sha256": "2fd0dc1148c00023eb5d8fef12460333e9fba8c0f86a5d8b7858ac621cf9162e"
     },
     {
       "file": "Spotify.list",
@@ -296,14 +305,14 @@
       "sha256": "d40045b867f1c0ffaade8da6354141d48f48eb5f8c81b739f5713ce2ba7c0a26"
     }
   ],
-  "total_rules": 158163,
+  "total_rules": 175250,
   "rule_types": {
-    "DOMAIN": 2013,
+    "DOMAIN": 19065,
     "DOMAIN-KEYWORD": 104,
-    "DOMAIN-SUFFIX": 141936,
+    "DOMAIN-SUFFIX": 141962,
     "DOMAIN-WILDCARD": 2,
     "IP-ASN": 11,
-    "IP-CIDR": 9586,
+    "IP-CIDR": 9595,
     "IP-CIDR6": 4269,
     "PROCESS-NAME": 58,
     "URL-REGEX": 5,
@@ -311,6 +320,8 @@
   },
   "source_attribution": {
     "ConnersHua AI": 20,
+    "Kelee Speedtest China Snapshot": 9,
+    "Kelee Speedtest International Snapshot": 17054,
     "Loyalsoldier China CIDR": 2121,
     "Manual Rules": 265,
     "Rabbit-Spec AIGC": 47,
@@ -337,7 +348,7 @@
     "blackmatrix7 Disney": 166,
     "blackmatrix7 Facebook": 570,
     "blackmatrix7 Game": 549,
-    "blackmatrix7 Global": 24283,
+    "blackmatrix7 Global": 24307,
     "blackmatrix7 GlobalMedia": 2256,
     "blackmatrix7 Google": 688,
     "blackmatrix7 Instagram": 1,
@@ -351,7 +362,7 @@
     "blackmatrix7 WeChat": 99,
     "blackmatrix7 YouTube": 188
   },
-  "manifest_files": 25,
+  "manifest_files": 26,
   "manifests_sha256": {
     "AI.manifest": "7d5320350ce5b1b4d883fd9780c0932546409c6409907a30927e8800699888f0",
     "Apple.manifest": "ad77535326ce158b48ecf3c708972350fd183d1c162e8d740eb34c1ea5913c02",
@@ -364,7 +375,7 @@
     "Disney.manifest": "4952367b9bc1b50aaeacf8f01c8059c20e75aaf86be6c908d16a4f607a6b866f",
     "Download.manifest": "662e002f44e411e9e22899ef262158ea363625ce7c96757a601e9d2afe61e7f5",
     "Game.manifest": "dbbc552d66a7cb01e6b0ba4cd47046f69e7c7ada8627ecd972d76f977b0f7940",
-    "Global.manifest": "06c6b1b19aea8ff85a3586c7a7a9e516148e4da249e46141a4ab70aa8b80a223",
+    "Global.manifest": "0a3a84b3f00412182bfa33c48cfd26946d2b90268fde649ccce6dcc2f850381d",
     "GlobalMedia.manifest": "465ef575f942b7274affcfa3e2ff2946b129f1680aaa2b7c3a7e03c4f5c1e7ea",
     "Google.manifest": "c6bb79f368f501d21cb6c6b1bba96c97269dcc49b764fcd22378b6a17ae4651f",
     "Microsoft.manifest": "3a5d9095780fd24f9bb6e4f9a4c7db89b2613b674f613764d7254d4fb9ccae63",
@@ -372,17 +383,18 @@
     "Netflix.manifest": "0ffcdd804cc4e56614ba69cc539061c6b5e65ef6ee2e62a01aee3e62902ab9c9",
     "PayPal.manifest": "649b7162f902986f696a1b28e98b3d2b5e6cbda0a9c8e951c552098e68e1382b",
     "SocialMedia.manifest": "e5b500cfbb1db392e8b379359458a69ece60c50003ee8ebb1cd7ae687ef11e78",
-    "Speedtest.manifest": "2a774bd78f0b59b1949ef5d51af9da98bce7832274bef88b81fe3cdd617a7d81",
+    "Speedtest.manifest": "80231e4d38e02369017f3b58f1354a053b57ecc094396b6c8f517b6068654b5c",
+    "Speedtest_China.manifest": "b576a19b00dc8217d9f001079c4ef45bbac912851a23a601006f1f440f0a8108",
     "Spotify.manifest": "5f1f22f1d8f4081b725902910dc6754a6b1fa868dd8e97e527c39fcc7cf463b0",
     "Telegram.manifest": "26b73936b85436d3642e4ca1affd06da1d2f3389dde25cc98a2e7f8690af2d07",
     "TikTok.manifest": "f282938c9b48482e75d71b63a0486163f2fdbd12745480ac240e8463125fbfe4",
     "WeChat.manifest": "2daaefc46757ae3bc6b07cf82f6e8b6493235b7b9c28708b8c7f8c54e151f7c3",
     "YouTube.manifest": "1b9c3b78afbb311db391e8f2910b25b507296d158a339957a874d918a2869ca7"
   },
-  "sources_sha256": "15d8d88d5a72782ef91dcd9b639fd217a5ac914edd11599628a78abfd0d3448f",
+  "sources_sha256": "ee2f91f4df1538a0ed9a3cd78e33a353c2e20bac29f561d6a97b6cc2603660c8",
   "override_manifest_sha256": "02eb6e61bddacc6a6f345a7c7812845959671b624ca40b73d6502efd956c3a1e",
   "clash_compatibility": {
-    "payload_rules": 157979,
+    "payload_rules": 175066,
     "dropped_surge_only_types": {
       "URL-REGEX": 5,
       "USER-AGENT": 179
@@ -394,8 +406,8 @@
     }
   },
   "diff_summary": {
-    "total_added": 0,
-    "total_removed": 0,
+    "total_added": 17088,
+    "total_removed": 1,
     "total_source_changed": 0
   }
 }

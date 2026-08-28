@@ -93,7 +93,8 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 | 🎥 Netflix.list | blackmatrix7 | Netflix |
 | 💰 PayPal.list | blackmatrix7 | PayPal |
 | 💬 SocialMedia.list | 4 源 | 社交媒体聚合（海外平台） |
-| ⚡ Speedtest.list | SukkaW · 手动 | 测速 · fast.com 仅此文件 |
+| ⚡ Speedtest_China.list | Kelee 已审查快照 | 中国大陆测速节点直连，优先于国际测速规则 |
+| ⚡ Speedtest.list | SukkaW · Kelee 已审查快照 · 手动 | 国际测速节点与测速服务 · fast.com 仅此文件 |
 | 🎧 Spotify.list | blackmatrix7 | Spotify 音乐服务 |
 | ✈️ Telegram.list | 3 源 | 域名、CIDR、ASN |
 | 🎵 TikTok.list | blackmatrix7 | TikTok |
@@ -107,7 +108,7 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 `Conf/Linnux.conf` 中的规则遵循 Surge **first-match** 逻辑，重点服务规则放在宽泛规则之前：
 
 1. 💚 **WeChat** → 微信直连优先
-2. ⚡ **Speedtest** → 测速流量独立处理
+2. ⚡ **Speedtest_China → Speedtest** → 中国大陆测速服务器直连；国际测速流量进入可选测速策略
 3. 🍎 **Apple_AI** → Apple Intelligence、Siri 与 Private Relay 优先代理
 4. 📱 **AI** → 通用 AI 服务专用路由
 5. 🍎 **Apple_CN → Apple** → 中国区 CDN 先直连，再处理 Apple 通用服务

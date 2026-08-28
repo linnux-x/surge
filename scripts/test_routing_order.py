@@ -24,6 +24,7 @@ TEST_CSV = ROOT / "tests" / "expected-routing.csv"
 # Fallback order (matches Conf/Linnux.conf [Rule] section)
 FALLBACK_ORDER: list[tuple[str, str]] = [
     ("WeChat.list", "WeChat"),
+    ("Speedtest_China.list", "DIRECT"),
     ("Speedtest.list", "Speedtest"),
     ("Apple_AI.list", "Apple_AI"),
     ("AI.list", "AI"),

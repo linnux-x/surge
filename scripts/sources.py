@@ -37,7 +37,7 @@ ROC301 = BASE_URIS["ROC301"]
 
 # ── Canonical source list ─────────────────────────────────────────────────
 # Each entry: (source_label, source_url, target_ruleset, format_or_None)
-# format: "domainset" | "cidr" | None (plain Surge ruleset)
+# format: "domainset" | "cidr" | "snapshot" | None (plain Surge ruleset)
 
 _SOURCES: list[tuple[str, str, str, str | None]] = [
     # Apple_AI.list
@@ -92,6 +92,12 @@ _SOURCES: list[tuple[str, str, str, str | None]] = [
     ("blackmatrix7 Twitter", f"{BM7}/Twitter/Twitter.list", "SocialMedia.list", None),
     # Speedtest.list
     ("SukkaW Speedtest", f"{SUKKA}/domainset/speedtest.conf", "Speedtest.list", "domainset"),
+    # The supplied Kelee endpoint returned Cloudflare 403 from the generation
+    # environment. These reviewed immutable copies preserve the exact observed
+    # Loon inputs without turning a transiently unavailable endpoint into a
+    # daily automation dependency. See Rule/SourceSnapshots/README.md.
+    ("Kelee Speedtest International Snapshot", "Rule/SourceSnapshots/SpeedtestInternational.lsr", "Speedtest.list", "snapshot"),
+    ("Kelee Speedtest China Snapshot", "Rule/SourceSnapshots/SpeedtestChina.lsr", "Speedtest_China.list", "snapshot"),
     # Spotify.list
     ("blackmatrix7 Spotify", f"{BM7}/Spotify/Spotify.list", "Spotify.list", None),
     # Telegram.list
@@ -111,7 +117,10 @@ _SOURCES: list[tuple[str, str, str, str | None]] = [
 # SOURCE_URL_MAP: url → [ruleset_name, ...]  (for check_upstream_updates.py)
 SOURCE_URL_MAP: dict[str, list[str]] = {}
 for _label, _url, _rs, _fmt in _SOURCES:
-    SOURCE_URL_MAP.setdefault(_url, []).append(_rs)
+    # Reviewed local snapshots are regenerated on every full build but are not
+    # network upstreams: probing them would create a false daily-change loop.
+    if _fmt != "snapshot":
+        SOURCE_URL_MAP.setdefault(_url, []).append(_rs)
 
 # RULE_SPECS: ruleset_name → (display_name, [(label, url, fmt), ...])
 # (for generate_rules.py)
@@ -127,7 +136,7 @@ ALL_RULESETS: set[str] = set(RULE_SPECS.keys())
 
 # OVERLAP_DEPENDENTS: rulesets whose change triggers Global.list re-pruning
 OVERLAP_DEPENDENTS: set[str] = {
-    "WeChat.list", "Speedtest.list", "Apple_AI.list", "AI.list", "Apple_CN.list",
+    "WeChat.list", "Speedtest_China.list", "Speedtest.list", "Apple_AI.list", "AI.list", "Apple_CN.list",
     "Apple.list", "Microsoft_CDN.list", "Microsoft.list",
     "Telegram.list", "Download.list", "Game.list", "YouTube.list",
     "TikTok.list", "SocialMedia.list", "PayPal.list", "Google.list",
