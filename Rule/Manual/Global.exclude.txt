@@ -208,6 +208,14 @@ DOMAIN-KEYWORD,amazon
 # owned by earlier Google/AI/YouTube rules; unrelated names must reach FINAL.
 DOMAIN-KEYWORD,google
 
+# PayPal 中国站归 China.list 直连；Global.list 位于 China.list 之前，
+# 必须排除完全相同的上游条目，避免 first-match 提前代理。
+DOMAIN-SUFFIX,anfutong.com
+DOMAIN-SUFFIX,beibao.com
+
+# 中国区游戏客户端 UA 由 China.list 直连，移除 Global 中的同值重复项。
+USER-AGENT,hearthstone*
+
 # Speedtest endpoints belong to Speedtest.list, which is evaluated before Global.list
 DOMAIN-SUFFIX,speedtest.rt.ru
 DOMAIN-SUFFIX,speedtest.idv.tw

@@ -3,7 +3,7 @@
 # REPO: https://github.com/linnux-x/surge
 # UPDATED: 2026-08-14 05:00:37 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 111451
+# TOTAL: 111450
 
 # ======= Manual Rules ========
 # China game download domains — route DIRECT via China policy
@@ -23,7 +23,6 @@ DOMAIN-SUFFIX,anfutong.com
 DOMAIN-SUFFIX,beibao.com
 
 # ======= SukkaW Domestic ========
-DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 DOMAIN-SUFFIX,jd.hk
 DOMAIN-SUFFIX,39.net
 DOMAIN-SUFFIX,56.com
@@ -111468,4 +111467,3 @@ USER-AGENT,eusoft_ting_en_iphone
 USER-AGENT,hearthstone*
 USER-AGENT,hide*
 USER-AGENT,ting_en
-

@@ -26,7 +26,7 @@ if str(_scripts_dir) not in sys.path:
     sys.path.insert(0, str(_scripts_dir))
 
 from sources import RULE_SPECS, SNAPSHOT_FALLBACKS
-from rule_validator import validate_rule_file
+from rule_validator import SUKKAW_MARKER, validate_rule_file
 from policy import FASTCOM_RE, GITHUB_RE, YOUTUBE_RE
 
 # ── Constants ─────────────────────────────────────────────────────────────
@@ -124,11 +124,7 @@ def apply_project_guardrails(target_name: str, lines: list[str]) -> list[str]:
     out = lines[:]
 
     # Filter SukkaW watermark domains before anything else
-    SUKKAW_WATERMARK_RE = re.compile(
-        r"(?:7h1[5s]_ru[1l]3[5s]3t_1[5s]_m[4a]d3_by_5ukk4w|skk\.moe/ruleset-watermark)",
-        re.IGNORECASE,
-    )
-    out = [l for l in out if not SUKKAW_WATERMARK_RE.search(l)]
+    out = [l for l in out if not SUKKAW_MARKER.search(l)]
 
     # Surge GEOIP is documented for ISO country codes only. Convert the common
     # community shorthand for Google-owned IP ranges to Surge-native IP-ASN.

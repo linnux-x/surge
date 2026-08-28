@@ -92,6 +92,24 @@
       ]
     },
     {
+      "source_file": "Global.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,anfutong.com",
+      "reason": "Global.list 位于 China.list 之前，移除重复项以保留 PayPal 中国站直连",
+      "destination": "China.list",
+      "route_tests": [
+        "anfutong.com"
+      ]
+    },
+    {
+      "source_file": "Global.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,beibao.com",
+      "reason": "Global.list 位于 China.list 之前，移除重复项以保留 PayPal 中国站直连",
+      "destination": "China.list",
+      "route_tests": [
+        "beibao.com"
+      ]
+    },
+    {
       "source_file": "GlobalMedia.txt",
       "rule": "DOMAIN-SUFFIX,giphy.com",
       "reason": "两名独立审查者均确认真实 FINAL 流量属于 GIPHY 动画媒体服务",
