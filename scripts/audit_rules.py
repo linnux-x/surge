@@ -25,12 +25,13 @@ from policy import BROAD_SHARED_SUFFIXES, SHARED_INFRA_EXEMPT_FILES
 ROOT = Path(__file__).resolve().parents[1]
 RULE_DIR = ROOT / "Rule"
 MANUAL_DIR = ROOT / "Rule" / "Manual"
+SNAPSHOT_DIR = ROOT / "Rule" / "SourceSnapshots"
 AUDIT_LOG = ROOT / "scripts" / "audit_report.json"
 
 # ── Helpers ──────────────────────────────────────────────────────────
 
 def fetch_all_sources(sources: dict[str, list[str]]) -> dict[str, str | None]:
-    """Fetch every unique upstream URL exactly once.
+    """Load every unique network source or reviewed local snapshot once.
 
     Both the reachability check and the rule-count comparison consume the
     same content, so fetching once here halves the audit's HTTP traffic.
@@ -39,7 +40,16 @@ def fetch_all_sources(sources: dict[str, list[str]]) -> dict[str, str | None]:
     for _target, urls in sorted(sources.items()):
         for url in urls:
             if url not in contents:
-                contents[url] = fetch_text(url)
+                relative = Path(url)
+                candidate = (ROOT / relative).resolve()
+                if not relative.is_absolute() and SNAPSHOT_DIR.resolve() in candidate.parents:
+                    try:
+                        contents[url] = candidate.read_text(encoding="utf-8")
+                    except OSError as exc:
+                        print(f"  ⚠ SNAPSHOT READ FAILED: {url} → {exc}")
+                        contents[url] = None
+                else:
+                    contents[url] = fetch_text(url)
     return contents
 
 

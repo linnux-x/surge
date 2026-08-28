@@ -30,7 +30,8 @@ class FallbackOrderTests(unittest.TestCase):
         module = load_routing_module()
         parsed = module.load_routing_order()
         self.assertEqual(("WeChat.list", "WeChat"), parsed[0])
-        self.assertEqual(("Apple_AI.list", "Apple_AI"), parsed[2])
+        self.assertEqual(("Speedtest_China.list", "DIRECT"), parsed[1])
+        self.assertEqual(("Apple_AI.list", "Apple_AI"), parsed[3])
 
 
 if __name__ == "__main__":

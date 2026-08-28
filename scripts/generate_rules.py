@@ -34,6 +34,7 @@ from policy import FASTCOM_RE, GITHUB_RE, YOUTUBE_RE
 SUKKA_MARKER = re.compile(r"7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset[.]skk[.]moe", re.IGNORECASE)
 RULE_DIR = Path("Rule")
 MANUAL_DIR = RULE_DIR / "Manual"
+SNAPSHOT_DIR = RULE_DIR / "SourceSnapshots"
 REPO_URL = os.environ.get("REPO_URL", "https://github.com/linnux-x/surge")
 AUTHOR_NAME = os.environ.get("AUTHOR_NAME", "linnux-x")
 # Retries cover transient failures, including TLS handshake resets observed during
@@ -65,7 +66,11 @@ def clean_source(lines: list[str]) -> list[str]:
             continue
         if SUKKA_MARKER.search(line):
             continue
-        out.append(line)
+        # Loon rules commonly include a space after the comma. Surge rule
+        # validators require compact comma-separated fields; normalize it at
+        # ingestion so the immutable source snapshot remains byte-for-byte
+        # auditable while generated output is valid Surge syntax.
+        out.append(re.sub(r",\s+", ",", line))
     return out
 
 
@@ -279,8 +284,15 @@ def prune_redundant_cidr(filepath: Path):
 
 # ── Processing ──────────────────────────────────────────────────────────────
 
-def fetch_source(url: str) -> list[str]:
-    """Fetch a remote source and return lines."""
+def fetch_source(url: str, source_format: Optional[str]) -> list[str]:
+    """Fetch a remote source or load a reviewed repository snapshot."""
+    if source_format == "snapshot":
+        snapshot_path = Path(url)
+        if snapshot_path.is_absolute() or SNAPSHOT_DIR not in snapshot_path.parents:
+            raise ValueError(f"Snapshot source must stay below {SNAPSHOT_DIR}: {url}")
+        if not snapshot_path.is_file():
+            raise FileNotFoundError(f"Missing reviewed source snapshot: {snapshot_path}")
+        return snapshot_path.read_text(encoding="utf-8").splitlines()
     result = subprocess.run(
         ["curl", "-fsSL", *CURL_OPTS, url],
         capture_output=True, text=True, check=True,
@@ -306,7 +318,7 @@ def process_rule(target_name: str, display_name: str, sources: list[Tuple[str, s
 
     # Upstream sources
     for source_name, source_url, source_format in sources:
-        raw = fetch_source(source_url)
+        raw = fetch_source(source_url, source_format)
         cleaned = clean_source(raw)
 
         if source_format == "domainset":
@@ -321,6 +333,11 @@ def process_rule(target_name: str, display_name: str, sources: list[Tuple[str, s
         lines.append(f"# ======= {source_name} ========")
         lines.extend(filtered)
         lines.append("")
+
+    # Generated files must not end in blank content lines: they add diff noise
+    # and violate the repository's whitespace gate.
+    while lines and not lines[-1].strip():
+        lines.pop()
 
     # Guardrails, dedup, suffix prune, CIDR prune
     lines = apply_project_guardrails(target_name, lines)
@@ -364,7 +381,7 @@ def prune_global_first_match_overlaps():
         return
 
     earlier_rulesets = [
-        "WeChat.list", "Speedtest.list", "Apple_AI.list", "AI.list", "Apple_CN.list", "Apple.list",
+        "WeChat.list", "Speedtest_China.list", "Speedtest.list", "Apple_AI.list", "AI.list", "Apple.list",
         "Microsoft_CDN.list", "Microsoft.list", "Telegram.list", "Download.list",
         "Game.list", "YouTube.list", "TikTok.list", "SocialMedia.list",
         "PayPal.list", "Google.list", "Netflix.list", "Disney.list",

@@ -5,6 +5,9 @@ wx.qlogo.cn,WeChat.list,微信头像CDN
 open.weixin.qq.com,WeChat.list,微信开放平台
 speedtest.net,Speedtest.list,测速主站
 fast.com,Speedtest.list,fast.com仅在此文件
+cesu-hz.zjtelecom.com.cn,Speedtest_China.list,可莉大陆测速节点强制直连
+speedtest.dukekunshan.edu.cn,Speedtest_China.list,中外规则重叠时大陆直连规则必须先行命中
+cpt-ter-speedtest1-vl145.atomic.ac,Speedtest.list,可莉国际测速节点走可选测速策略
 chat.openai.com,AI.list,ChatGPT
 api.openai.com,AI.list,OpenAI API
 claude.ai,AI.list,Claude AI
