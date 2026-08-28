@@ -21,6 +21,7 @@ if _scripts_dir not in sys.path:
 
 from http_util import fetch_text
 from policy import BROAD_SHARED_SUFFIXES, SHARED_INFRA_EXEMPT_FILES
+from sources import SNAPSHOT_FALLBACKS
 
 ROOT = Path(__file__).resolve().parents[1]
 RULE_DIR = ROOT / "Rule"
@@ -50,6 +51,15 @@ def fetch_all_sources(sources: dict[str, list[str]]) -> dict[str, str | None]:
                         contents[url] = None
                 else:
                     contents[url] = fetch_text(url)
+                    fallback = SNAPSHOT_FALLBACKS.get(url)
+                    if contents[url] is None and fallback:
+                        fallback_path = (ROOT / fallback).resolve()
+                        if SNAPSHOT_DIR.resolve() in fallback_path.parents:
+                            try:
+                                contents[url] = fallback_path.read_text(encoding="utf-8")
+                                print(f"  ⚠ PRIMARY UNAVAILABLE: {url} → using reviewed snapshot {fallback}")
+                            except OSError as exc:
+                                print(f"  ⚠ SNAPSHOT READ FAILED: {fallback} → {exc}")
     return contents
 
 

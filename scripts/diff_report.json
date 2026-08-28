@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-28T13:27:14.313959",
-  "total_added": 17088,
-  "total_removed": 1,
-  "total_source_changed": 0,
+  "generated_at": "2026-08-28T13:35:13.628354",
+  "total_added": 0,
+  "total_removed": 0,
+  "total_source_changed": 17063,
   "diffs": [
     {
       "file": "AI.list",
@@ -127,145 +127,13 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24294,
+      "prev_total": 24318,
       "curr_total": 24318,
-      "added_count": 25,
-      "removed_count": 1,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "069573cc7178",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,rutracker.wiki"
-        },
-        {
-          "id": "083f501208ca",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,h264.io"
-        },
-        {
-          "id": "0d32e0b5d06f",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,dreamgen.com"
-        },
-        {
-          "id": "0f77ea0e799e",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,oldmapsonline.org"
-        },
-        {
-          "id": "11ad11debb3e",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,yahooinc.com"
-        },
-        {
-          "id": "234dd16f6e7f",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,kiwix.org"
-        },
-        {
-          "id": "23caf9b250e9",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,sc-static.net"
-        },
-        {
-          "id": "26cb3ef8d2d6",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,sc-gw.com"
-        },
-        {
-          "id": "2e85f00be413",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,ouryahoo.com"
-        },
-        {
-          "id": "40dca01ce6de",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,novelai.net"
-        },
-        {
-          "id": "42076476fd8e",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,adguardaccount.net"
-        },
-        {
-          "id": "486ec3611a43",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,x86.fr"
-        },
-        {
-          "id": "4c889f38b894",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,nico.ms"
-        },
-        {
-          "id": "8165afae8adc",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,briarproject.org"
-        },
-        {
-          "id": "8f3a6912520d",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,fansly.com"
-        },
-        {
-          "id": "ab15b437afe8",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,notegpt.io"
-        },
-        {
-          "id": "bd82adfe4aa1",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,api.shuaiapi.com"
-        },
-        {
-          "id": "bf7d7d2466f3",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,nordcdn.com"
-        },
-        {
-          "id": "c434ffbbe22a",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,rsg.ms"
-        },
-        {
-          "id": "c450a230f470",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,5ch.io"
-        },
-        {
-          "id": "d13622480e44",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,historylines.net"
-        },
-        {
-          "id": "e16d6fe1d534",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,nicochannel.jp"
-        },
-        {
-          "id": "f3b2c7c16e0b",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,talkai.info"
-        },
-        {
-          "id": "fc3180d5fc6c",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,mceindex.com"
-        },
-        {
-          "id": "fd1852ca953f",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,amazonwebservices.com"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "5643600b1d09",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,hp-ww.com"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -347,572 +215,322 @@
     },
     {
       "file": "Speedtest.list",
-      "prev_total": 123,
+      "prev_total": 17177,
       "curr_total": 17177,
-      "added_count": 17054,
+      "added_count": 0,
       "removed_count": 0,
-      "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "0001177ae277",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.ansluten.net"
-        },
-        {
-          "id": "00019be86d6c",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speed.newparce.com.br"
-        },
-        {
-          "id": "0004284a964e",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.asminternet.mx"
-        },
-        {
-          "id": "0007d76fe8a6",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,sptdad.taiwanmobile.com"
-        },
-        {
-          "id": "0009d45cc71f",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest-gdrp.merit.edu"
-        },
-        {
-          "id": "000ae77ee252",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest-buin.bitred.cl"
-        },
-        {
-          "id": "000c5cb29a63",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.erieben.com"
-        },
-        {
-          "id": "00136a5719c9",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.hinalyi5.in"
-        },
-        {
-          "id": "00181d2c1cee",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,velocidade-crm.goxinternet.com.br"
-        },
-        {
-          "id": "001b57654ec1",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,mct-speed.twmbroadband.com"
-        },
-        {
-          "id": "001b67ec9b67",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.somosthunder.net"
-        },
-        {
-          "id": "001bfeefa8a8",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,teste.card.net.br"
-        },
-        {
-          "id": "002109fa686a",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.sousmartnet.com.br"
-        },
-        {
-          "id": "002357c65377",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,teste1.maisinternetprovedor.com.br"
-        },
-        {
-          "id": "002dc64955a8",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.myrepublic.com.sg"
-        },
-        {
-          "id": "00355755c29a",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,spt.ubrtelecom.com.br"
-        },
-        {
-          "id": "0036d6426ac5",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.zaptele.com.br"
-        },
-        {
-          "id": "003b5c8dda57",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest2.grupopyp.pe"
-        },
-        {
-          "id": "004c38d6773c",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,st-tucuman-tuc1.cablevisionfibertel.com.ar"
-        },
-        {
-          "id": "005fb0f128c9",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,201-94-151-5-nperf-pirque01.wilcomspa.cl"
-        },
-        {
-          "id": "00670c94333d",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest1-xdc.vygr.net"
-        },
-        {
-          "id": "0076a9da8a36",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest01.ams6.solcon.nl"
-        },
-        {
-          "id": "00817036041f",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest-christchurch.spark.co.nz"
-        },
-        {
-          "id": "0081b4ebe51d",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtestbestel.yiga.com.mx"
-        },
-        {
-          "id": "0084ebfaeb5d",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.slatnetworks.online"
-        },
-        {
-          "id": "0087d62b4d7d",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,ooklay2.skynet360.com"
-        },
-        {
-          "id": "0088799c277c",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,medidor-chs-tuxtla-1.uninet.net.mx"
-        },
-        {
-          "id": "0088faa285f8",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.connect3network.com.br"
-        },
-        {
-          "id": "008c3e270593",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.lmm.megared.net.mx"
-        },
-        {
-          "id": "008da2689a9e",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.redeselias.com"
-        },
-        {
-          "id": "008e1013983c",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,lumixtest.lumixfibra.com.br"
-        },
-        {
-          "id": "008efb6bbe63",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.utels.ua"
-        },
-        {
-          "id": "00965fce36f6",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.convergenze.it"
-        },
-        {
-          "id": "009f7e373209",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest01.amplia.tv"
-        },
-        {
-          "id": "00a008b5492d",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,atx.speedtest.nexstream.network"
-        },
-        {
-          "id": "00a13d975d14",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest9.digimobil.es"
-        },
-        {
-          "id": "00a25f6fdb78",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.gridned.com"
-        },
-        {
-          "id": "00a91ff7eb1d",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.bagusnet.net.id"
-        },
-        {
-          "id": "00afe7b60bdb",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.telcom.net.ua"
-        },
-        {
-          "id": "00b40ba7d405",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,velocidade.sejalivretelecom.com.br"
-        },
-        {
-          "id": "00b5fba268f9",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,velocimetro2.i3telecomunicacoes.com.br"
-        },
-        {
-          "id": "00c2c0d63eac",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest001.dnainfotel.com"
-        },
-        {
-          "id": "00c771ae7044",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speed.norma4.ks.ua"
-        },
-        {
-          "id": "00d3ae9bb39b",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.daancommunications.com"
-        },
-        {
-          "id": "00df0b7d53f2",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.flowbarbados.co"
-        },
-        {
-          "id": "00e4c23eaed4",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,cdo2-speedtest.globe.com.ph"
-        },
-        {
-          "id": "00e694ab4c15",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.telecom.mu"
-        },
-        {
-          "id": "00e6b5900c9b",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speed.getesa.gq"
-        },
-        {
-          "id": "00f2d0dd6105",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,stmilton.rogers.com"
-        },
-        {
-          "id": "00fa5c040664",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtestpr.prepanetworks.net"
-        },
-        {
-          "id": "00fb6540fbda",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.wifitelekom.com"
-        },
-        {
-          "id": "00ff3b1742fc",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.bcinfonet.com.br"
-        },
-        {
-          "id": "010455ce4630",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speed.exa.co.uk"
-        },
-        {
-          "id": "0104d01c18b9",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.sstelco.com"
-        },
-        {
-          "id": "010770237191",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,stscarborough.rogers.com"
-        },
-        {
-          "id": "010b844d6b15",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,spmarganec1.regiontv.com.ua"
-        },
-        {
-          "id": "010e1c9534fd",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.cloudinet.com.br"
-        },
-        {
-          "id": "0111602b9cee",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.atuatectelecom.com.br"
-        },
-        {
-          "id": "011700f1cd97",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,velocimentro-snt.lv.network"
-        },
-        {
-          "id": "01173d3adaff",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,ookla.skarnetchile.com"
-        },
-        {
-          "id": "01189317d2a8",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,server.nns.co.id"
-        },
-        {
-          "id": "011919e9b405",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest-sf.ddns.net"
-        },
-        {
-          "id": "011b4214a4d1",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,testvelocidad.ibersontel.com"
-        },
-        {
-          "id": "011cf7c42ff4",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.wightfibre.com"
-        },
-        {
-          "id": "011feb0f4e95",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,velocimetro.in9net.com.br"
-        },
-        {
-          "id": "01216591554b",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.aytosnet.com"
-        },
-        {
-          "id": "012689e61fff",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.alttelecom.net.br"
-        },
-        {
-          "id": "012b7f31586b",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,ststratford.rogers.com"
-        },
-        {
-          "id": "013184e130f3",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedhld.ddbroadband.co.in"
-        },
-        {
-          "id": "0145dc4b1137",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.arcade.ch"
-        },
-        {
-          "id": "0148865d384d",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtesthost.nextlink.co.id"
-        },
-        {
-          "id": "014d9080d76b",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.dataonlineperu.abrdns.com"
-        },
-        {
-          "id": "014dc8fcd5f0",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,kraspeedtest.infi.net.id"
-        },
-        {
-          "id": "01589d6a603d",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.teledata.de"
-        },
-        {
-          "id": "0158b37b2420",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,sp2.missouricom.co"
-        },
-        {
-          "id": "015d0dac9cfc",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.danar.net.pl"
-        },
-        {
-          "id": "015f763ac8d9",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,ookla-speedtest.hgconair.hgc.com.hk"
-        },
-        {
-          "id": "016bc46759e0",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,raslavice.mcom.sk"
-        },
-        {
-          "id": "016c7f494e33",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.truckeemeadowsinternet.com"
-        },
-        {
-          "id": "01790ad04da6",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,medidor.blufibra.com.br"
-        },
-        {
-          "id": "01795d9e086e",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.mvdsl.com"
-        },
-        {
-          "id": "017aaa36a3b9",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtestn.cbvision.net.ec"
-        },
-        {
-          "id": "017f5cbeb0ae",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.exa.net.id"
-        },
-        {
-          "id": "0180b6d15d2d",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest-coda.noc.gatech.edu"
-        },
-        {
-          "id": "0183ff03958a",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest-cbr.cdn.on.net"
-        },
-        {
-          "id": "018586611872",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.netsys.hn"
-        },
-        {
-          "id": "018c3501660e",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,srv01-speedtest.aonet.com.br"
-        },
-        {
-          "id": "018fa6f27a54",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest1.globalnet.zp.ua"
-        },
-        {
-          "id": "01942baa3975",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,host.viberfibra.com.br"
-        },
-        {
-          "id": "019637dd85a7",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,teste.proverlink.com.br"
-        },
-        {
-          "id": "019b72f2c0d6",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,ookla.agnetbandalarga.com.br"
-        },
-        {
-          "id": "019e41c8631a",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtestpa1.telecomitalia.it"
-        },
-        {
-          "id": "01a2a0749d29",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,test.mokadi.pl"
-        },
-        {
-          "id": "01a91faf9416",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,velocidade.r3internet.com.br"
-        },
-        {
-          "id": "01aacb1686f2",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest1.flowjamaica.com"
-        },
-        {
-          "id": "01ae2e2a2eee",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,velocidade.milsystem.com.br"
-        },
-        {
-          "id": "01b4a9dc979c",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,sp.barreiranet.com.br"
-        },
-        {
-          "id": "01b872b157e9",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.magnetinternet.com.br"
-        },
-        {
-          "id": "01b9fadd3568",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,abha-speedtest.saudi.net.sa"
-        },
-        {
-          "id": "01bc1a666e87",
-          "source": "Kelee Speedtest International Snapshot",
-          "rule": "DOMAIN,speedtest.16x.zp.ua"
-        }
-      ],
+      "source_changed_count": 17054,
+      "added_sample": [],
       "removed_sample": [],
-      "source_changed_sample": []
+      "source_changed_sample": [
+        {
+          "id": "0574229732c4",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "d0916e39a695",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "0a392173b6bf",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "87747d9c03ae",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "f5c012a16210",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "c1aabd3f52ed",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "bbf669357c8e",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "b741e45ccae5",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "f5d515717fc4",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "fcd2389049b6",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "424f96c0d813",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "a8b63b0508a7",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "1a8877cf854f",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "3f3cfe5a0e75",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "872a169166df",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "b065c09c00fa",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "89f2db6027e6",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "8a620a772763",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "dfe87528b92b",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "b7cf67a1b6ab",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "746c9f4a93bb",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "f21ba8edfd3b",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "cee1c0295ab2",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "607ddd225a18",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "c1afd49732a0",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "2951579a6926",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "608130a1433e",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "9229c2a9acf3",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "56532d2c2347",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "4b08a5dbf7a2",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "d77a5ca5876a",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "fad73ac210a1",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "c14370e7bcd3",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "9f55bff39759",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "5e0926418162",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "339be2a3eda3",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "3afb1f5eedee",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "bd048768e298",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "2c8087a17206",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "a16da365c83b",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "2681e87c75f4",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "a9f0a7e62942",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "eef037ee2883",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "34f1f4e67c4a",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "642a2ea68d19",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "547ed9236e7c",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "3f39fee8bc46",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "4e85b8895a7f",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "bae22cbf5704",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        },
+        {
+          "id": "5bfb198586fc",
+          "old_source": "Kelee Speedtest International Snapshot",
+          "new_source": "Kelee Speedtest International"
+        }
+      ]
     },
     {
       "file": "Speedtest_China.list",
-      "prev_total": 0,
+      "prev_total": 9,
       "curr_total": 9,
-      "added_count": 9,
+      "added_count": 0,
       "removed_count": 0,
-      "source_changed_count": 0,
-      "added_sample": [
+      "source_changed_count": 9,
+      "added_sample": [],
+      "removed_sample": [],
+      "source_changed_sample": [
         {
-          "id": "0e7c354d31d4",
-          "source": "Kelee Speedtest China Snapshot",
-          "rule": "DOMAIN,5gzhenjiang.speedtest.jsinfo.net"
+          "id": "d97d9f2fc729",
+          "old_source": "Kelee Speedtest China Snapshot",
+          "new_source": "Kelee Speedtest China"
         },
         {
           "id": "15551b763230",
-          "source": "Kelee Speedtest China Snapshot",
-          "rule": "DOMAIN,server-71313.prod.hosts.ooklaserver.net"
-        },
-        {
-          "id": "54afa3997540",
-          "source": "Kelee Speedtest China Snapshot",
-          "rule": "DOMAIN,speedtest.jsqiuying.com"
-        },
-        {
-          "id": "6022f9e86f62",
-          "source": "Kelee Speedtest China Snapshot",
-          "rule": "DOMAIN,speedtest.dukekunshan.edu.cn"
-        },
-        {
-          "id": "6e4871fde3dc",
-          "source": "Kelee Speedtest China Snapshot",
-          "rule": "DOMAIN,cesu-nb.zjtelecom.com.cn"
-        },
-        {
-          "id": "b9cdd91e91f9",
-          "source": "Kelee Speedtest China Snapshot",
-          "rule": "DOMAIN,4gsuzhou1.speedtest.jsinfo.net"
-        },
-        {
-          "id": "c88fc0690634",
-          "source": "Kelee Speedtest China Snapshot",
-          "rule": "DOMAIN,cesu-hz.zjtelecom.com.cn"
-        },
-        {
-          "id": "d97d9f2fc729",
-          "source": "Kelee Speedtest China Snapshot",
-          "rule": "DOMAIN,speedtest1.online.sh.cn"
+          "old_source": "Kelee Speedtest China Snapshot",
+          "new_source": "Kelee Speedtest China"
         },
         {
           "id": "f153e08b4850",
-          "source": "Kelee Speedtest China Snapshot",
-          "rule": "DOMAIN,mobile.shunicomtest.com"
+          "old_source": "Kelee Speedtest China Snapshot",
+          "new_source": "Kelee Speedtest China"
+        },
+        {
+          "id": "54afa3997540",
+          "old_source": "Kelee Speedtest China Snapshot",
+          "new_source": "Kelee Speedtest China"
+        },
+        {
+          "id": "b9cdd91e91f9",
+          "old_source": "Kelee Speedtest China Snapshot",
+          "new_source": "Kelee Speedtest China"
+        },
+        {
+          "id": "6e4871fde3dc",
+          "old_source": "Kelee Speedtest China Snapshot",
+          "new_source": "Kelee Speedtest China"
+        },
+        {
+          "id": "c88fc0690634",
+          "old_source": "Kelee Speedtest China Snapshot",
+          "new_source": "Kelee Speedtest China"
+        },
+        {
+          "id": "0e7c354d31d4",
+          "old_source": "Kelee Speedtest China Snapshot",
+          "new_source": "Kelee Speedtest China"
+        },
+        {
+          "id": "6022f9e86f62",
+          "old_source": "Kelee Speedtest China Snapshot",
+          "new_source": "Kelee Speedtest China"
         }
-      ],
-      "removed_sample": [],
-      "source_changed_sample": []
+      ]
     },
     {
       "file": "Spotify.list",

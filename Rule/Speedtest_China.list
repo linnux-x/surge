@@ -1,11 +1,11 @@
 # NAME: Speedtest_China
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-08-28 13:27:14 +0800
+# UPDATED: 2026-08-28 13:35:13 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 9
 
-# ======= Kelee Speedtest China Snapshot ========
+# ======= Kelee Speedtest China ========
 DOMAIN,cesu-hz.zjtelecom.com.cn
 DOMAIN,cesu-nb.zjtelecom.com.cn
 DOMAIN,speedtest.dukekunshan.edu.cn

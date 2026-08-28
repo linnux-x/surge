@@ -35,9 +35,18 @@ RABBIT = BASE_URIS["RABBIT"]
 CHUA = BASE_URIS["CHUA"]
 ROC301 = BASE_URIS["ROC301"]
 
+# User-directed primary upstreams.  The corresponding reviewed snapshots are
+# used only when Kelee is temporarily blocked by WAF/TLS/network failures.
+KELEE_SPEEDTEST_CHINA = "https://kelee.one/Tool/Loon/Lsr/SpeedtestChina.lsr"
+KELEE_SPEEDTEST_INTERNATIONAL = "https://kelee.one/Tool/Loon/Lsr/SpeedtestInternational.lsr"
+SNAPSHOT_FALLBACKS: dict[str, str] = {
+    KELEE_SPEEDTEST_CHINA: "Rule/SourceSnapshots/SpeedtestChina.lsr",
+    KELEE_SPEEDTEST_INTERNATIONAL: "Rule/SourceSnapshots/SpeedtestInternational.lsr",
+}
+
 # ── Canonical source list ─────────────────────────────────────────────────
 # Each entry: (source_label, source_url, target_ruleset, format_or_None)
-# format: "domainset" | "cidr" | "snapshot" | None (plain Surge ruleset)
+# format: "domainset" | "cidr" | "snapshot" | "loon-snapshot" | None
 
 _SOURCES: list[tuple[str, str, str, str | None]] = [
     # Apple_AI.list
@@ -92,12 +101,10 @@ _SOURCES: list[tuple[str, str, str, str | None]] = [
     ("blackmatrix7 Twitter", f"{BM7}/Twitter/Twitter.list", "SocialMedia.list", None),
     # Speedtest.list
     ("SukkaW Speedtest", f"{SUKKA}/domainset/speedtest.conf", "Speedtest.list", "domainset"),
-    # The supplied Kelee endpoint returned Cloudflare 403 from the generation
-    # environment. These reviewed immutable copies preserve the exact observed
-    # Loon inputs without turning a transiently unavailable endpoint into a
-    # daily automation dependency. See Rule/SourceSnapshots/README.md.
-    ("Kelee Speedtest International Snapshot", "Rule/SourceSnapshots/SpeedtestInternational.lsr", "Speedtest.list", "snapshot"),
-    ("Kelee Speedtest China Snapshot", "Rule/SourceSnapshots/SpeedtestChina.lsr", "Speedtest_China.list", "snapshot"),
+    # Kelee is a daily primary upstream.  A reviewed local snapshot is used
+    # only when the primary cannot be fetched; see SNAPSHOT_FALLBACKS.
+    ("Kelee Speedtest International", KELEE_SPEEDTEST_INTERNATIONAL, "Speedtest.list", "loon-snapshot"),
+    ("Kelee Speedtest China", KELEE_SPEEDTEST_CHINA, "Speedtest_China.list", "loon-snapshot"),
     # Spotify.list
     ("blackmatrix7 Spotify", f"{BM7}/Spotify/Spotify.list", "Spotify.list", None),
     # Telegram.list

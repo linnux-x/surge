@@ -1,7 +1,7 @@
 # NAME: Speedtest
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-08-28 13:27:14 +0800
+# UPDATED: 2026-08-28 13:34:57 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 17177
 
@@ -132,7 +132,7 @@ DOMAIN-SUFFIX,speedtest.linode.com
 DOMAIN-SUFFIX,nperf.net
 DOMAIN-SUFFIX,speed.hinet.net
 
-# ======= Kelee Speedtest International Snapshot ========
+# ======= Kelee Speedtest International ========
 DOMAIN,cpt-ter-speedtest1-vl145.atomic.ac
 DOMAIN,ooklaspeedtest1.andorratelecom.ad
 DOMAIN,auh.speedtest.du.ae

@@ -25,7 +25,7 @@ _scripts_dir = Path(__file__).resolve().parent
 if str(_scripts_dir) not in sys.path:
     sys.path.insert(0, str(_scripts_dir))
 
-from sources import RULE_SPECS
+from sources import RULE_SPECS, SNAPSHOT_FALLBACKS
 from rule_validator import validate_rule_file
 from policy import FASTCOM_RE, GITHUB_RE, YOUTUBE_RE
 
@@ -293,12 +293,24 @@ def fetch_source(url: str, source_format: Optional[str]) -> list[str]:
         if not snapshot_path.is_file():
             raise FileNotFoundError(f"Missing reviewed source snapshot: {snapshot_path}")
         return snapshot_path.read_text(encoding="utf-8").splitlines()
-    result = subprocess.run(
-        ["curl", "-fsSL", *CURL_OPTS, url],
-        capture_output=True, text=True, check=True,
-        timeout=FETCH_SUBPROCESS_TIMEOUT,
-    )
-    return result.stdout.splitlines()
+    try:
+        result = subprocess.run(
+            ["curl", "-fsSL", *CURL_OPTS, url],
+            capture_output=True, text=True, check=True,
+            timeout=FETCH_SUBPROCESS_TIMEOUT,
+        )
+        return result.stdout.splitlines()
+    except (subprocess.CalledProcessError, subprocess.TimeoutExpired) as exc:
+        fallback = SNAPSHOT_FALLBACKS.get(url) if source_format == "loon-snapshot" else None
+        if not fallback:
+            raise
+        snapshot_path = Path(fallback)
+        if snapshot_path.is_absolute() or SNAPSHOT_DIR not in snapshot_path.parents:
+            raise ValueError(f"Snapshot fallback must stay below {SNAPSHOT_DIR}: {fallback}") from exc
+        if not snapshot_path.is_file():
+            raise FileNotFoundError(f"Missing reviewed source snapshot fallback: {snapshot_path}") from exc
+        print(f"  ⚠ {url} unavailable; using reviewed snapshot {fallback}")
+        return snapshot_path.read_text(encoding="utf-8").splitlines()
 
 
 def process_rule(target_name: str, display_name: str, sources: list[Tuple[str, str, Optional[str]]]):
