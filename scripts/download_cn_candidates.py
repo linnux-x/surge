@@ -152,13 +152,31 @@ def load_china_networks(path: Path = CHINA_IP_RULES) -> list[ipaddress._BaseNetw
     return networks
 
 
+def global_ips(ips: Iterable[str]) -> list[str]:
+    """Keep only globally routable IPs; discard Fake-IP, LAN and reserved ranges.
+
+    Surge's local DNS may deliberately return a Fake-IP (for example 198.18.0.0/15)
+    while it resolves the real destination internally.  Such an address is not origin
+    evidence and must never be treated as a non-CN result.
+    """
+    valid: set[str] = set()
+    for raw in ips:
+        try:
+            address = ipaddress.ip_address(raw)
+        except ValueError:
+            continue
+        if address.is_global:
+            valid.add(str(address))
+    return sorted(valid)
+
+
 def resolve_host(host: str) -> list[str]:
-    """Resolve A/AAAA records using the local resolver; failures yield no signal."""
+    """Resolve public A/AAAA records using the local resolver; failures yield no signal."""
     try:
         answers = socket.getaddrinfo(host, None, type=socket.SOCK_STREAM)
     except socket.gaierror:
         return []
-    return sorted({str(answer[4][0]) for answer in answers})
+    return global_ips(str(answer[4][0]) for answer in answers)
 
 
 def cn_ip_signal(ips: Iterable[str], networks: list[ipaddress._BaseNetwork]) -> str:
@@ -217,7 +235,7 @@ def build_candidates(
         if not route.startswith("Download.list→"):
             continue
 
-        ips = resolver(row.host) if resolve else []
+        ips = global_ips(resolver(row.host)) if resolve else []
         signal = cn_ip_signal(ips, networks) if resolve else "NOT_RESOLVED"
         if has_blocked_parent(row.host):
             disposition = "REJECT_SHARED_INFRA"

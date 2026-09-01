@@ -90,6 +90,18 @@ class DownloadCandidateTests(unittest.TestCase):
         self.assertEqual(candidates[0].disposition, "REJECT_NON_CN_IP")
         self.assertIsNone(candidates[0].proposed_rule)
 
+    def test_fake_ip_is_not_treated_as_non_cn_evidence(self):
+        rows = [self.module.TrafficRow("cn-download.example", 1, 0, 50)]
+        candidate = self.module.build_candidates(
+            rows, FakeRouting, [], {}, self.networks, True,
+            resolver=lambda _host: ["198.18.24.238", "192.168.1.1"],
+        )[0]
+
+        self.assertEqual(candidate.resolved_ips, [])
+        self.assertEqual(candidate.cn_ip_signal, "UNRESOLVED")
+        self.assertEqual(candidate.disposition, "REVIEW_REQUIRED")
+        self.assertIn("DNS 无结果", candidate.reason)
+
     def test_rule_paths_and_list_outputs_are_refused(self):
         with self.assertRaises(ValueError):
             self.module.validate_output_path(ROOT / "Rule" / "Download_CN.list")
