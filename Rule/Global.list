@@ -3,7 +3,7 @@
 # REPO: https://github.com/linnux-x/surge
 # UPDATED: 2026-08-28 13:27:13 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24318
+# TOTAL: 24315
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -1525,7 +1525,6 @@ DOMAIN-SUFFIX,anexia-engine.com
 DOMAIN-SUFFIX,anexia-it.com
 DOMAIN-SUFFIX,anexia.at
 DOMAIN-SUFFIX,anexia.com
-DOMAIN-SUFFIX,anfutong.com
 DOMAIN-SUFFIX,angel-gto.com
 DOMAIN-SUFFIX,angelbeats.jp
 DOMAIN-SUFFIX,angelweb.jp
@@ -2297,7 +2296,6 @@ DOMAIN-SUFFIX,befuck.net
 DOMAIN-SUFFIX,beget.com
 DOMAIN-SUFFIX,beget.ru
 DOMAIN-SUFFIX,behindthescreenz.com
-DOMAIN-SUFFIX,beibao.com
 DOMAIN-SUFFIX,beijingnike.com
 DOMAIN-SUFFIX,beiyongzhan1.com
 DOMAIN-SUFFIX,bejav.net
@@ -24326,4 +24324,3 @@ USER-AGENT,Duolingo*
 USER-AGENT,Roam*
 USER-AGENT,WhatsApp*
 USER-AGENT,battleroyale*
-USER-AGENT,hearthstone*

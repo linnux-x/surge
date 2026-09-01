@@ -3,7 +3,7 @@
 # REPO: https://github.com/linnux-x/surge
 # UPDATED: 2026-08-10 23:05:34 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 82
+# TOTAL: 81
 
 # ======= Manual Rules ========
 DOMAIN-SUFFIX,aspnetcdn.com
@@ -35,7 +35,6 @@ DOMAIN-SUFFIX,vscode-unpkg.net
 DOMAIN-SUFFIX,yammerusercontent.com
 
 # ======= SukkaW Microsoft CDN ========
-DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 DOMAIN-SUFFIX,sdx.microsoft.com
 DOMAIN,res.cdn.office.net
 DOMAIN-SUFFIX,cn.windowssearch.com
@@ -90,4 +89,3 @@ DOMAIN-SUFFIX,mpnbenefitsrtluat.download.prss.microsoft.com
 DOMAIN-SUFFIX,storecorefulfillment.download.prss.microsoft.com
 URL-REGEX,^http://www\.microsoft\.com/pki/
 URL-REGEX,^http://www\.microsoft\.com/pkiops/
-

@@ -1,7 +1,7 @@
 # Surge 规则生成收据
 
 - 规则文件：26
-- 规则总数：175250
+- 规则总数：175241
 - manifest 文件：26
 
 ## 差异摘要
@@ -12,22 +12,22 @@
 
 ## Clash 兼容性
 
-- 生成 payload：175066
-- 跳过 Surge 专属规则：{'URL-REGEX': 5, 'USER-AGENT': 179}
+- 生成 payload：175058
+- 跳过 Surge 专属规则：{'URL-REGEX': 5, 'USER-AGENT': 178}
 - 保留 mihomo 扩展类型：{'DOMAIN-WILDCARD': 2, 'IP-ASN': 11, 'PROCESS-NAME': 58}
 
 ## 规则类型
 
-- DOMAIN: 19065
+- DOMAIN: 19059
 - DOMAIN-KEYWORD: 104
-- DOMAIN-SUFFIX: 141962
+- DOMAIN-SUFFIX: 141960
 - DOMAIN-WILDCARD: 2
 - IP-ASN: 11
 - IP-CIDR: 9595
 - IP-CIDR6: 4269
 - PROCESS-NAME: 58
 - URL-REGEX: 5
-- USER-AGENT: 179
+- USER-AGENT: 178
 
 ## 来源归属
 

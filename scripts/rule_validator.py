@@ -36,7 +36,11 @@ ALLOWED_TYPES = {
     "AND", "OR", "NOT",
 }
 OPTION_TOKENS = {"no-resolve", "extended-matching"}
-SUKKAW_MARKER = re.compile(r"(?:7h1[5s]_ru[1l]3[5s]3t_1[5s]_m[4a]d3_by_5ukk4w|skk\.moe/ruleset-watermark)", re.I)
+SUKKAW_MARKER = re.compile(
+    r"(?:7h1[5s][._-]ru[1l]3[5s]3t[._-]1[5s][._-]m[4a]d3[._-]by[._-]5ukk4w|"
+    r"skk\.moe/ruleset-watermark)",
+    re.I,
+)
 DOMAIN_VALUE_RE = re.compile(r"^[a-z0-9](?:[a-z0-9._-]*[a-z0-9])?$")
 DOMAIN_WILDCARD_VALUE_RE = re.compile(r"^[a-z0-9*?](?:[a-z0-9.*?-]*[a-z0-9*?])?$")
 CONTROL_CHAR_RE = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")

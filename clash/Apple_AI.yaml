@@ -1,7 +1,7 @@
 # Generated from Rule/Apple_AI.list
 # Format: Clash/mihomo rule-provider, behavior: classical
 # UPDATED: 2026-08-10 23:05:29 +0800
-# TOTAL: 18
+# TOTAL: 17
 payload:
   - 'DOMAIN-SUFFIX,gsp64-ssl.ls.apple.com'
   - 'DOMAIN,guzzoni.apple.com'
@@ -20,4 +20,3 @@ payload:
   - 'DOMAIN-SUFFIX,mask-h2.icloud.com'
   - 'DOMAIN-SUFFIX,mask.icloud.com'
   - 'DOMAIN-KEYWORD,siri'
-  - 'DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe'

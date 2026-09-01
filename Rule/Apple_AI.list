@@ -3,7 +3,7 @@
 # REPO: https://github.com/linnux-x/surge
 # UPDATED: 2026-08-10 23:05:29 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 18
+# TOTAL: 17
 
 # ======= Manual Rules ========
 # Apple Intelligence / Siri / Private Relay 等 Apple AI 相关域名
@@ -34,5 +34,3 @@ DOMAIN-SUFFIX,mask.icloud.com
 DOMAIN-KEYWORD,siri
 
 # ======= SukkaW Apple Intelligence ========
-DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
-
