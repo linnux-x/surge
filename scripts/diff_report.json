@@ -1,18 +1,24 @@
 {
-  "generated_at": "2026-08-28T13:35:13.628354",
+  "generated_at": "2026-09-02T05:01:05.531781",
   "total_added": 0,
-  "total_removed": 0,
-  "total_source_changed": 17063,
+  "total_removed": 9,
+  "total_source_changed": 0,
   "diffs": [
     {
       "file": "AI.list",
       "prev_total": 146,
-      "curr_total": 146,
+      "curr_total": 145,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 1,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "e1a1e6b72dfe",
+          "source": "Rabbit-Spec AIGC",
+          "rule": ""
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -29,23 +35,35 @@
     {
       "file": "Apple_AI.list",
       "prev_total": 18,
-      "curr_total": 18,
+      "curr_total": 17,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 1,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "e1a1e6b72dfe",
+          "source": "SukkaW Apple Intelligence",
+          "rule": ""
+        }
+      ],
       "source_changed_sample": []
     },
     {
       "file": "Apple_CN.list",
       "prev_total": 230,
-      "curr_total": 230,
+      "curr_total": 229,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 1,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "e1a1e6b72dfe",
+          "source": "SukkaW Apple CN",
+          "rule": ""
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -62,12 +80,18 @@
     {
       "file": "China.list",
       "prev_total": 111451,
-      "curr_total": 111451,
+      "curr_total": 111450,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 1,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "e1a1e6b72dfe",
+          "source": "SukkaW Domestic",
+          "rule": ""
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -128,12 +152,28 @@
     {
       "file": "Global.list",
       "prev_total": 24318,
-      "curr_total": 24318,
+      "curr_total": 24315,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 3,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "627c62ba8cca",
+          "source": "blackmatrix7 Global",
+          "rule": ""
+        },
+        {
+          "id": "628e67079edd",
+          "source": "blackmatrix7 Global",
+          "rule": ""
+        },
+        {
+          "id": "eb2b9efc3f4a",
+          "source": "blackmatrix7 Global",
+          "rule": ""
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -172,12 +212,18 @@
     {
       "file": "Microsoft_CDN.list",
       "prev_total": 82,
-      "curr_total": 82,
+      "curr_total": 81,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 1,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "e1a1e6b72dfe",
+          "source": "SukkaW Microsoft CDN",
+          "rule": ""
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -219,261 +265,10 @@
       "curr_total": 17177,
       "added_count": 0,
       "removed_count": 0,
-      "source_changed_count": 17054,
+      "source_changed_count": 0,
       "added_sample": [],
       "removed_sample": [],
-      "source_changed_sample": [
-        {
-          "id": "0574229732c4",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "d0916e39a695",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "0a392173b6bf",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "87747d9c03ae",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "f5c012a16210",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "c1aabd3f52ed",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "bbf669357c8e",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "b741e45ccae5",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "f5d515717fc4",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "fcd2389049b6",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "424f96c0d813",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "a8b63b0508a7",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "1a8877cf854f",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "3f3cfe5a0e75",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "872a169166df",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "b065c09c00fa",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "89f2db6027e6",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "8a620a772763",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "dfe87528b92b",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "b7cf67a1b6ab",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "746c9f4a93bb",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "f21ba8edfd3b",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "cee1c0295ab2",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "607ddd225a18",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "c1afd49732a0",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "2951579a6926",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "608130a1433e",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "9229c2a9acf3",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "56532d2c2347",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "4b08a5dbf7a2",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "d77a5ca5876a",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "fad73ac210a1",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "c14370e7bcd3",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "9f55bff39759",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "5e0926418162",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "339be2a3eda3",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "3afb1f5eedee",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "bd048768e298",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "2c8087a17206",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "a16da365c83b",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "2681e87c75f4",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "a9f0a7e62942",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "eef037ee2883",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "34f1f4e67c4a",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "642a2ea68d19",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "547ed9236e7c",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "3f39fee8bc46",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "4e85b8895a7f",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "bae22cbf5704",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        },
-        {
-          "id": "5bfb198586fc",
-          "old_source": "Kelee Speedtest International Snapshot",
-          "new_source": "Kelee Speedtest International"
-        }
-      ]
+      "source_changed_sample": []
     },
     {
       "file": "Speedtest_China.list",
@@ -481,56 +276,10 @@
       "curr_total": 9,
       "added_count": 0,
       "removed_count": 0,
-      "source_changed_count": 9,
+      "source_changed_count": 0,
       "added_sample": [],
       "removed_sample": [],
-      "source_changed_sample": [
-        {
-          "id": "d97d9f2fc729",
-          "old_source": "Kelee Speedtest China Snapshot",
-          "new_source": "Kelee Speedtest China"
-        },
-        {
-          "id": "15551b763230",
-          "old_source": "Kelee Speedtest China Snapshot",
-          "new_source": "Kelee Speedtest China"
-        },
-        {
-          "id": "f153e08b4850",
-          "old_source": "Kelee Speedtest China Snapshot",
-          "new_source": "Kelee Speedtest China"
-        },
-        {
-          "id": "54afa3997540",
-          "old_source": "Kelee Speedtest China Snapshot",
-          "new_source": "Kelee Speedtest China"
-        },
-        {
-          "id": "b9cdd91e91f9",
-          "old_source": "Kelee Speedtest China Snapshot",
-          "new_source": "Kelee Speedtest China"
-        },
-        {
-          "id": "6e4871fde3dc",
-          "old_source": "Kelee Speedtest China Snapshot",
-          "new_source": "Kelee Speedtest China"
-        },
-        {
-          "id": "c88fc0690634",
-          "old_source": "Kelee Speedtest China Snapshot",
-          "new_source": "Kelee Speedtest China"
-        },
-        {
-          "id": "0e7c354d31d4",
-          "old_source": "Kelee Speedtest China Snapshot",
-          "new_source": "Kelee Speedtest China"
-        },
-        {
-          "id": "6022f9e86f62",
-          "old_source": "Kelee Speedtest China Snapshot",
-          "new_source": "Kelee Speedtest China"
-        }
-      ]
+      "source_changed_sample": []
     },
     {
       "file": "Spotify.list",
@@ -546,12 +295,18 @@
     {
       "file": "Telegram.list",
       "prev_total": 51,
-      "curr_total": 51,
+      "curr_total": 50,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 1,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "e1a1e6b72dfe",
+          "source": "SukkaW Telegram IP",
+          "rule": ""
+        }
+      ],
       "source_changed_sample": []
     },
     {

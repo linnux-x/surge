@@ -7,8 +7,8 @@
 ## 差异摘要
 
 - 新增：0
-- 删除：0
-- 来源迁移：17063
+- 删除：9
+- 来源迁移：0
 
 ## Clash 兼容性
 
@@ -36,21 +36,19 @@
 - Kelee Speedtest International: 17054
 - Loyalsoldier China CIDR: 2121
 - Manual Rules: 265
-- Rabbit-Spec AIGC: 47
+- Rabbit-Spec AIGC: 46
 - Rabbit-Spec China: 186
 - Rabbit-Spec China CIDR: 14
 - RocM301 Apple-AI: 16
 - SukkaW AI: 23
 - SukkaW Apple CDN: 157
-- SukkaW Apple CN: 6
-- SukkaW Apple Intelligence: 1
+- SukkaW Apple CN: 5
 - SukkaW CDN: 27
-- SukkaW Domestic: 693
+- SukkaW Domestic: 692
 - SukkaW Download: 1613
 - SukkaW Game Download: 52
-- SukkaW Microsoft CDN: 55
+- SukkaW Microsoft CDN: 54
 - SukkaW Speedtest: 121
-- SukkaW Telegram IP: 1
 - Telegram Official CIDR: 11
 - blackmatrix7 Apple: 1546
 - blackmatrix7 China IPs: 9374
@@ -60,7 +58,7 @@
 - blackmatrix7 Disney: 166
 - blackmatrix7 Facebook: 570
 - blackmatrix7 Game: 549
-- blackmatrix7 Global: 24307
+- blackmatrix7 Global: 24304
 - blackmatrix7 GlobalMedia: 2256
 - blackmatrix7 Google: 688
 - blackmatrix7 Instagram: 1
