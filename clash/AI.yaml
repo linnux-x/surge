@@ -1,6 +1,6 @@
 # Generated from Rule/AI.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-08-14 05:00:35 +0800
+# UPDATED: 2026-09-03 05:00:39 +0800
 # TOTAL: 145
 payload:
   - 'DOMAIN-SUFFIX,anthropic.com'
@@ -81,6 +81,8 @@ payload:
   - 'DOMAIN-SUFFIX,grok.com'
   - 'DOMAIN-SUFFIX,x.ai'
   - 'DOMAIN,api.jetbrains.ai'
+  - 'DOMAIN-SUFFIX,cursor.com'
+  - 'DOMAIN-SUFFIX,cursor.sh'
   - 'DOMAIN,anthropic-com.ghost.io'
   - 'DOMAIN,browser-intake-datadoghq.com'
   - 'DOMAIN,browser-intake-us5-datadoghq.com'
@@ -132,8 +134,6 @@ payload:
   - 'DOMAIN-KEYWORD,openaicom'
   - 'DOMAIN-SUFFIX,openrouter.ai'
   - 'DOMAIN-SUFFIX,cursor-cdn.com'
-  - 'DOMAIN-SUFFIX,cursor.com'
-  - 'DOMAIN-SUFFIX,cursor.sh'
   - 'DOMAIN-SUFFIX,cursorapi.com'
   - 'DOMAIN-SUFFIX,zed.dev'
   - 'DOMAIN-KEYWORD,notebooklm.google'
