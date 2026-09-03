@@ -1,7 +1,7 @@
 # Generated from Rule/Download.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-08-10 23:05:30 +0800
-# TOTAL: 1685
+# UPDATED: 2026-09-04 05:00:38 +0800
+# TOTAL: 1687
 payload:
   - 'PROCESS-NAME,aria2c'
   - 'PROCESS-NAME,fdm'
@@ -1635,6 +1635,8 @@ payload:
   - 'DOMAIN,updates.openlogi.org'
   - 'DOMAIN,data.caida.org'
   - 'DOMAIN,download.fcitx-im.org'
+  - 'DOMAIN,cdn.dyn.com'
+  - 'DOMAIN,assets-tcpviewer.proxyman.com'
   - 'DOMAIN-SUFFIX,steamcontent.com'
   - 'DOMAIN-SUFFIX,content.steampowered.com'
   - 'DOMAIN,content-origin.steampowered.com'

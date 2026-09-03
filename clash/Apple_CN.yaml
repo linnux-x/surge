@@ -1,7 +1,7 @@
 # Generated from Rule/Apple_CN.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-08-07 05:01:58 +0800
-# TOTAL: 229
+# UPDATED: 2026-09-04 05:00:38 +0800
+# TOTAL: 230
 payload:
   - 'DOMAIN-SUFFIX,appldnld.apple.com.edgesuite.net'
   - 'DOMAIN-SUFFIX,apple.com.cdn20.com'
@@ -189,6 +189,7 @@ payload:
   - 'DOMAIN-SUFFIX,store.apple.com.edgekey.net'
   - 'DOMAIN-SUFFIX,swdist.apple.com.akadns.net'
   - 'DOMAIN-SUFFIX,download.developer.apple.com'
+  - 'DOMAIN-SUFFIX,gspe11-2-cn-ssl.ls.apple.com'
   - 'DOMAIN-SUFFIX,gspe19-2-cn-ssl.ls.apple.com'
   - 'DOMAIN-SUFFIX,iosapps.itunes.g.aaplimg.com'
   - 'DOMAIN-SUFFIX,osxapps.itunes.g.aaplimg.com'
