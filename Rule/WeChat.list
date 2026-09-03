@@ -1,7 +1,7 @@
 # NAME: WeChat
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-08-04 20:35:21 +0800
+# UPDATED: 2026-09-04 05:01:18 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 101
 
@@ -110,4 +110,3 @@ IP-CIDR6,240e:ff:f100::/44,no-resolve
 IP-ASN,132203,no-resolve
 USER-AGENT,MicroMessenger*
 USER-AGENT,WeChat*
-

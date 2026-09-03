@@ -1,7 +1,7 @@
 # NAME: SocialMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-08-04 20:35:17 +0800
+# UPDATED: 2026-09-04 05:00:44 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 670
 
@@ -714,4 +714,3 @@ IP-CIDR,199.96.56.0/21,no-resolve
 IP-CIDR,202.160.128.0/22,no-resolve
 IP-CIDR,209.237.192.0/19,no-resolve
 IP-CIDR,69.195.160.0/19,no-resolve
-

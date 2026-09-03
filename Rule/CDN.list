@@ -1,9 +1,9 @@
 # NAME: CDN
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-08-10 23:05:30 +0800
+# UPDATED: 2026-09-04 05:00:38 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 31
+# TOTAL: 29
 
 # ======= Manual Rules ========
 # GitHub release assets intentionally use CDN policy; broader GitHub hosts stay in Global/list-specific rules.
@@ -39,7 +39,4 @@ DOMAIN-KEYWORD,-assets.worldsex.com
 DOMAIN-KEYWORD,-thumbs.worldsex.com
 DOMAIN-KEYWORD,99avcdn
 DOMAIN-KEYWORD,-images.disco-api.com
-DOMAIN-KEYWORD,vdownload.hanime1
-DOMAIN-KEYWORD,fonts.hanime1
 DOMAIN-KEYWORD,static.grammarly.com
-

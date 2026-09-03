@@ -1,7 +1,7 @@
 # NAME: Spotify
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-08-04 20:35:18 +0800
+# UPDATED: 2026-09-04 05:01:16 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 32
 
@@ -43,4 +43,3 @@ IP-CIDR,104.154.127.126/32,no-resolve
 IP-CIDR,35.186.224.47/32,no-resolve
 USER-AGENT,Spotify*
 PROCESS-NAME,com.spotify.music
-
