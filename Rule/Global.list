@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-09-04 05:00:43 +0800
+# UPDATED: 2026-09-06 08:18:49 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24327
+# TOTAL: 24328
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -4138,7 +4138,6 @@ DOMAIN-SUFFIX,csifund.org
 DOMAIN-SUFFIX,csnjcbnxdnb.com
 DOMAIN-SUFFIX,csrankings.org
 DOMAIN-SUFFIX,ctan.org
-DOMAIN-SUFFIX,ctee.com.tw
 DOMAIN-SUFFIX,ctfassets.net
 DOMAIN-SUFFIX,ctotires.com
 DOMAIN-SUFFIX,ctv.com.tw
@@ -19132,6 +19131,7 @@ DOMAIN-SUFFIX,csuchen.de
 DOMAIN-SUFFIX,csw.org.uk
 DOMAIN-SUFFIX,ct.org.tw
 DOMAIN-SUFFIX,ctao.org
+DOMAIN-SUFFIX,ctee.com.tw
 DOMAIN-SUFFIX,ctfriend.net
 DOMAIN-SUFFIX,ctinets.com
 DOMAIN-SUFFIX,ctinews.com
@@ -21046,6 +21046,7 @@ DOMAIN-SUFFIX,linode.com
 DOMAIN-SUFFIX,linpie.com
 DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,linux.org.hk
+DOMAIN-SUFFIX,linux.sb
 DOMAIN-SUFFIX,linuxtoy.org
 DOMAIN-SUFFIX,lionsroar.com
 DOMAIN-SUFFIX,lipuman.com

@@ -1,191 +1,118 @@
 # Surge Rule Diff Report
-Generated: 2026-09-04T05:01:18.601462
+Generated: 2026-09-06T08:19:00.554845
 
 ## Summary
 
 | Metric | Count |
 |--------|-------|
-| Files changed | 5 |
-| Rules added | 32 |
-| Rules removed | 145 |
-| Source attribution changed | 0 |
+| Files changed | 3 |
+| Rules added | 40 |
+| Rules removed | 21 |
+| Source attribution changed | 8 |
 
 ## Per-File Changes
 
 | File | Prev | Curr | Added | Removed | Source Δ |
 |------|------|------|-------|---------|----------|
-| Apple_CN.list | 229 | 230 | +1 | -0 | ~0 |
-| CDN.list | 31 | 29 | +0 | -2 | ~0 |
-| China.list | 111213 | 111100 | +29 | -142 | ~0 |
-| Download.list | 1685 | 1687 | +2 | -0 | ~0 |
-| Microsoft_CDN.list | 81 | 80 | +0 | -1 | ~0 |
-
-## Apple_CN.list
-
-**Added: 1** (showing first 1)
-```
-  + [SukkaW Apple CDN] 6854f39d4d53  DOMAIN-SUFFIX,gspe11-2-cn-ssl.ls.apple.com
-```
-
-## CDN.list
-
-**Removed: 2** (showing first 2)
-```
-  - [SukkaW CDN] b87208ee0739  DOMAIN-KEYWORD,fonts.hanime1
-  - [SukkaW CDN] e04968ef2a45  DOMAIN-KEYWORD,vdownload.hanime1
-```
+| China.list | 111100 | 111120 | +29 | -9 | ~0 |
+| China_IP.list | 11500 | 11498 | +10 | -12 | ~8 |
+| Global.list | 24327 | 24328 | +1 | -0 | ~0 |
 
 ## China.list
 
 **Added: 29** (showing first 29)
 ```
-  + [blackmatrix7 ChinaMaxNoIP Domain] 00dc05b5a8e2  DOMAIN-SUFFIX,kyxinli.com
-  + [blackmatrix7 ChinaMaxNoIP Domain] 22af82fa4f76  DOMAIN-SUFFIX,qimyu.com
-  + [blackmatrix7 ChinaMaxNoIP Domain] 258261aa070a  DOMAIN-SUFFIX,ftj003.com
-  + [blackmatrix7 ChinaMaxNoIP Domain] 2b8fa683b6cb  DOMAIN-SUFFIX,bartender-cn.com
-  + [blackmatrix7 ChinaMaxNoIP Domain] 2cf83f6878a4  DOMAIN-SUFFIX,dadacart.com
-  + [blackmatrix7 ChinaMaxNoIP Domain] 3002f8c578d9  DOMAIN-SUFFIX,cloudflvare.com
-  + [blackmatrix7 ChinaMaxNoIP Domain] 325fcc7efe74  DOMAIN-SUFFIX,echartnow.com
-  + [blackmatrix7 ChinaMaxNoIP Domain] 3e6df89047a6  DOMAIN-SUFFIX,zxc123zxc123.xyz
-  + [blackmatrix7 ChinaMaxNoIP Domain] 4e655f91d5d5  DOMAIN-SUFFIX,ydkkej.com
-  + [blackmatrix7 ChinaMaxNoIP Domain] 6441879d8134  DOMAIN-SUFFIX,quhaotui.com
-  + [blackmatrix7 ChinaMaxNoIP Domain] 70a6e7c8bf4c  DOMAIN-SUFFIX,qflyinc.com
-  + [blackmatrix7 ChinaMaxNoIP Domain] 7e1cb137124f  DOMAIN-SUFFIX,wrilab.com
-  + [blackmatrix7 ChinaMaxNoIP Domain] 81a06dc5ca7b  DOMAIN-SUFFIX,huayin99.com
-  + [blackmatrix7 ChinaMaxNoIP Domain] 8c886e0c39aa  DOMAIN-SUFFIX,888fk.cc
-  + [blackmatrix7 ChinaMaxNoIP Domain] 98f2a01a2d23  DOMAIN-SUFFIX,969mak.com
-  + [blackmatrix7 ChinaMaxNoIP Domain] a1b7e3f81d15  DOMAIN-SUFFIX,suifengy.com
-  + [blackmatrix7 ChinaMaxNoIP Domain] a4da7d842e57  DOMAIN-SUFFIX,bhjh168.com
-  + [blackmatrix7 ChinaMaxNoIP Domain] c324db3befab  DOMAIN-SUFFIX,tgalileo.com
-  + [blackmatrix7 ChinaMaxNoIP Domain] c32e77b7b6e5  DOMAIN-SUFFIX,evhzzh.com
-  + [blackmatrix7 ChinaMaxNoIP Domain] c634e3562ca8  DOMAIN-SUFFIX,gdyfxx.com
-  + [blackmatrix7 ChinaMaxNoIP Domain] c87fd48c75a0  DOMAIN-SUFFIX,w0028.cc
-  + [blackmatrix7 ChinaMaxNoIP Domain] ce89de9404bd  DOMAIN-SUFFIX,jlmy.com
-  + [blackmatrix7 ChinaMaxNoIP Domain] d0075b9d6274  DOMAIN-SUFFIX,jwangzhong.com
-  + [blackmatrix7 ChinaMaxNoIP Domain] dd4ce930b17d  DOMAIN-SUFFIX,bsbsb.xyz
-  + [blackmatrix7 ChinaMaxNoIP Domain] df6356709b4e  DOMAIN-SUFFIX,bkd898.com
-  + [blackmatrix7 ChinaMaxNoIP Domain] e2555455a644  DOMAIN-SUFFIX,longcat.chat
-  + [blackmatrix7 ChinaMaxNoIP Domain] edb55894cec0  DOMAIN-SUFFIX,jdo2c.com
-  + [blackmatrix7 ChinaMaxNoIP Domain] f0890c890286  DOMAIN-SUFFIX,czsvip.com
-  + [blackmatrix7 ChinaMaxNoIP Domain] f24fb211c5c1  DOMAIN-SUFFIX,scqbyy.com
+  + [blackmatrix7 ChinaMaxNoIP Domain] 000f30c70c62  DOMAIN-SUFFIX,x-dao.io
+  + [blackmatrix7 ChinaMaxNoIP Domain] 0206bf03e4b8  DOMAIN-SUFFIX,137542.club
+  + [blackmatrix7 ChinaMaxNoIP Domain] 0ac0404402e4  DOMAIN-SUFFIX,tbtk.asia
+  + [blackmatrix7 ChinaMaxNoIP Domain] 141918fbffb3  DOMAIN-SUFFIX,redmid.com
+  + [blackmatrix7 ChinaMaxNoIP Domain] 172ba3def08e  DOMAIN-SUFFIX,tencentbuddy.com
+  + [blackmatrix7 ChinaMaxNoIP Domain] 19e2179eea8b  DOMAIN-SUFFIX,xingcheclub.com
+  + [blackmatrix7 ChinaMaxNoIP Domain] 25ad11e5b15f  DOMAIN-SUFFIX,bms28.xyz
+  + [blackmatrix7 ChinaMaxNoIP Domain] 28cc71fb1afa  DOMAIN-SUFFIX,alidnsv122.com
+  + [blackmatrix7 ChinaMaxNoIP Domain] 347205f203b5  DOMAIN-SUFFIX,kkmm.com
+  + [blackmatrix7 ChinaMaxNoIP Domain] 5198177c5d2c  DOMAIN-SUFFIX,power-z.com
+  + [blackmatrix7 ChinaMaxNoIP Domain] 52a4df490ef1  DOMAIN-SUFFIX,canhui.xyz
+  + [blackmatrix7 ChinaMaxNoIP Domain] 68ab5a072ea8  DOMAIN-SUFFIX,cuncc.cc
+  + [blackmatrix7 ChinaMaxNoIP Domain] 6d1d04c54af6  DOMAIN-SUFFIX,xcvpn.app
+  + [blackmatrix7 ChinaMaxNoIP Domain] 735b3b9ae5a6  DOMAIN-SUFFIX,1zidc.com
+  + [blackmatrix7 ChinaMaxNoIP Domain] 88accdc8d6a4  DOMAIN-SUFFIX,byfscl.xyz
+  + [blackmatrix7 ChinaMaxNoIP Domain] 88fe8cca5817  DOMAIN-SUFFIX,intonead.com
+  + [blackmatrix7 ChinaMaxNoIP Domain] 8d0778e83b6c  DOMAIN-SUFFIX,beimokj.com
+  + [blackmatrix7 ChinaMaxNoIP Domain] 8fa23255a2c8  DOMAIN-SUFFIX,zcpin.com
+  + [blackmatrix7 ChinaMaxNoIP Domain] 9e4c9c3c26ec  DOMAIN-SUFFIX,180k.com
+  + [blackmatrix7 ChinaMaxNoIP Domain] a5abd9a5d509  DOMAIN-SUFFIX,ataokeji.com
+  + [blackmatrix7 ChinaMaxNoIP Domain] aa493e12055a  DOMAIN-SUFFIX,distinctech.com
+  + [blackmatrix7 ChinaMaxNoIP Domain] ae083c11ecb7  DOMAIN-SUFFIX,vxni.ink
+  + [blackmatrix7 ChinaMaxNoIP Domain] bce48cf7dc53  DOMAIN-SUFFIX,yinkead.com
+  + [blackmatrix7 ChinaMaxNoIP Domain] c0355a18fd5d  DOMAIN-SUFFIX,09izf.com
+  + [blackmatrix7 ChinaMaxNoIP Domain] cb8909d40ca0  DOMAIN-SUFFIX,bkwsq.com
+  + [blackmatrix7 ChinaMaxNoIP Domain] ce6945ac77e6  DOMAIN-SUFFIX,zzimti.com
+  + [blackmatrix7 ChinaMaxNoIP Domain] d075a1fbb756  DOMAIN-SUFFIX,tsuiyuan.com
+  + [blackmatrix7 ChinaMaxNoIP Domain] e4f8c6f33194  DOMAIN-SUFFIX,508.im
+  + [blackmatrix7 ChinaMaxNoIP Domain] e7d463990f02  DOMAIN-SUFFIX,workbuddy.link
 ```
 
-**Removed: 142** (showing first 100)
+**Removed: 9** (showing first 9)
 ```
-  - [blackmatrix7 ChinaMaxNoIP Domain] 0169c35ae137  DOMAIN-SUFFIX,s1blseclvira.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 0325ec41d27c  DOMAIN-SUFFIX,51gowan.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 0787e1cdbbe6  DOMAIN-SUFFIX,yulins.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 0890934bdb1a  DOMAIN-SUFFIX,iwatch365.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 0d8b31d8a327  DOMAIN-SUFFIX,ccsfuchan.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 0db687e510b9  DOMAIN-SUFFIX,7fa973f8c7bdcddb.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 0e56a2826b7a  DOMAIN-SUFFIX,aai07260mu.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 0ebd4b1e0f3e  DOMAIN-SUFFIX,iquhuo.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 0f3fbd93f1d3  DOMAIN-SUFFIX,ebb6ea72919edea2.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 12f04df2b38f  DOMAIN-SUFFIX,zz2024.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 1376ad2161ca  DOMAIN-SUFFIX,51jinkang.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 1c01a6eaf208  DOMAIN-SUFFIX,c944748d38bcc258.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 1d876d09369f  DOMAIN-SUFFIX,0olut8.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 1e302197a8e1  DOMAIN-SUFFIX,890bf715220716f3.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 1e4dc22e3927  DOMAIN-SUFFIX,24dab50b3223e582.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 1f2cb9793768  DOMAIN-SUFFIX,2dffbc61dea7ca0a.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 20f75c0a7780  DOMAIN-SUFFIX,2026cname.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 24de2d0cc344  DOMAIN-SUFFIX,rcswo.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 2584b0f5e723  DOMAIN-SUFFIX,d8e8664c05df452c.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 27f4dd04f1cf  DOMAIN-SUFFIX,6d576388add270c5.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 2b175578da09  DOMAIN-SUFFIX,henri.ren
-  - [blackmatrix7 ChinaMaxNoIP Domain] 2d3071e94d0c  DOMAIN-SUFFIX,b19a352d2336941a.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 2d3dd7ba40fc  DOMAIN-SUFFIX,ab839c2562b8ae05.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 2de66a7ce915  DOMAIN-SUFFIX,tech2ipo.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 2fd09cc25b88  DOMAIN-SUFFIX,guangxipubeihuaheng.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 307bac587125  DOMAIN-SUFFIX,a42c6d113874e1f3.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 3149a71c6b17  DOMAIN-SUFFIX,e307586127f21050.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 360f75fbce1e  DOMAIN-SUFFIX,lyrics.run
-  - [blackmatrix7 ChinaMaxNoIP Domain] 36394beb3060  DOMAIN-SUFFIX,chenhui.org
-  - [blackmatrix7 ChinaMaxNoIP Domain] 3ab31cb70c27  DOMAIN-SUFFIX,fulltech.work
-  - [blackmatrix7 ChinaMaxNoIP Domain] 3b644e1af0eb  DOMAIN-SUFFIX,430d6eba715dabb4.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 3cfa9e698aba  DOMAIN-SUFFIX,92jzh.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 3d1b3c5a0226  DOMAIN-SUFFIX,kunlunce.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 3ee0c344aac4  DOMAIN-SUFFIX,01be6bfabbd3024a.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 4008e6fef4b5  DOMAIN-SUFFIX,sb1secapply4.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 40da5c957ebc  DOMAIN-SUFFIX,6b3cfa277bae3b4b.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 4226a4780ba5  DOMAIN-SUFFIX,f8167007e7bf667d.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 42279ecda17e  DOMAIN-SUFFIX,9c0c0433602d188a.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 42cdf66a5662  DOMAIN-SUFFIX,gdtcoin.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 47d520d2f535  DOMAIN-SUFFIX,qiluhr.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 48a4d42c2495  DOMAIN-SUFFIX,cnnbsa.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 48b523546a2c  DOMAIN-SUFFIX,czhjs.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 499caa9ae002  DOMAIN-SUFFIX,dalwiakieyne.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 4cdc0936fd4b  DOMAIN-SUFFIX,dalwiaresham.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 4dd66e3546b8  DOMAIN-SUFFIX,a0fca7a55be096ef.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 4e96720eee36  DOMAIN-SUFFIX,8243d76487f3a834.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 4f7f73feda03  DOMAIN-SUFFIX,0264032a252fcf53.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 525bc463e8d6  DOMAIN-SUFFIX,netinfi.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 54d579a9f8eb  DOMAIN-SUFFIX,ca91a5eb7ed4495e.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 595b47a58b94  DOMAIN-SUFFIX,nativosink.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 59de240f9f16  DOMAIN-SUFFIX,gxtianmiao.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 5b3fbf6cd8e3  DOMAIN-SUFFIX,juyutube.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 5b9af1274291  DOMAIN-SUFFIX,radiowar.org
-  - [blackmatrix7 ChinaMaxNoIP Domain] 5d2a97b9654e  DOMAIN-SUFFIX,xiangauto.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 5d3078ea6211  DOMAIN-SUFFIX,ec6056a95386f752.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 60181b32ad30  DOMAIN-SUFFIX,gaoyawang.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 60842601d3bb  DOMAIN-SUFFIX,mskoo.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 663a96ccf6d1  DOMAIN-SUFFIX,72d3bb672f4a6997.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 68dd4ad61c75  DOMAIN-SUFFIX,ma3office.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 6a20de4d5ffa  DOMAIN-SUFFIX,closertb.site
-  - [blackmatrix7 ChinaMaxNoIP Domain] 6b5f61154b56  DOMAIN-SUFFIX,anyskygame.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 6bcc34666b78  DOMAIN-SUFFIX,junshencm.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 6c5481507b97  DOMAIN-SUFFIX,americachineselife.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 6c9ac97ea2dc  DOMAIN-SUFFIX,imeyahair.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 6e0d141a40da  DOMAIN-SUFFIX,youkexueyuan.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 6e52c5b4981f  DOMAIN-SUFFIX,word666.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 70ce5ee52541  DOMAIN-SUFFIX,code-by.org
-  - [blackmatrix7 ChinaMaxNoIP Domain] 70dc05baf200  DOMAIN-SUFFIX,2c5bf25c11b8dc3e.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 726c413d281c  DOMAIN-SUFFIX,dachaoshan.org
-  - [blackmatrix7 ChinaMaxNoIP Domain] 74a38547e3d0  DOMAIN-SUFFIX,5185.cc
-  - [blackmatrix7 ChinaMaxNoIP Domain] 750dd1f3eecf  DOMAIN-SUFFIX,qaqa555.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 75e39382afed  DOMAIN-SUFFIX,d65fee3222cbaf80.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 77469da121cd  DOMAIN-SUFFIX,s1blsecgerto.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 7a35b5f37fd6  DOMAIN-SUFFIX,3774cd2332503d45.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 7bcd1eec4d95  DOMAIN-SUFFIX,aai07251mu.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 87506a7da5f4  DOMAIN-SUFFIX,8333dhz.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 8889ae2c80a7  DOMAIN-SUFFIX,ceniiat.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 8af757425823  DOMAIN-SUFFIX,pioneernews.cc
-  - [blackmatrix7 ChinaMaxNoIP Domain] 8cbc692fa15e  DOMAIN-SUFFIX,zbczce.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 8d40884ff784  DOMAIN-SUFFIX,68e5fc2c1344afb8.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 8e8eaaa21012  DOMAIN-SUFFIX,wanghaifeng.net
-  - [blackmatrix7 ChinaMaxNoIP Domain] 90acf826e5a7  DOMAIN-SUFFIX,jijijijin.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 97f7fbeade61  DOMAIN-SUFFIX,along96.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 98713940e086  DOMAIN-SUFFIX,lianshun.cc
-  - [blackmatrix7 ChinaMaxNoIP Domain] 98bc924fd6d7  DOMAIN-SUFFIX,669167d4fc316421.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 99c8af6e3b4a  DOMAIN-SUFFIX,abtpaper.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] 9b4d1f9e1f90  DOMAIN-SUFFIX,3d503a99384e0d4c.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] a094a4800744  DOMAIN-SUFFIX,objccn.io
-  - [blackmatrix7 ChinaMaxNoIP Domain] a21d6d2d5275  DOMAIN-SUFFIX,3feb063cbf96bd40.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] a58b964cf4a1  DOMAIN-SUFFIX,gxzhentao.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] a62112d22e23  DOMAIN-SUFFIX,mouratoriousi.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] a6c777f1e85f  DOMAIN-SUFFIX,xacyyxq.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] aa42dfa94a8a  DOMAIN-SUFFIX,shaaidata.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] ab33c8719ba3  DOMAIN-SUFFIX,dzvv.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] ac53357b876d  DOMAIN-SUFFIX,0616a9dbe68fac9c.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] ae0060eb4d60  DOMAIN-SUFFIX,orangesgame.com
-  - [blackmatrix7 ChinaMaxNoIP Domain] af560dce1a4f  DOMAIN-SUFFIX,tly.cloud
-  - [blackmatrix7 ChinaMaxNoIP Domain] b12c632cb6e2  DOMAIN-SUFFIX,ltesting.net
-  - [blackmatrix7 ChinaMaxNoIP Domain] b6e887b268cf  DOMAIN-SUFFIX,fjvs.org
-  - [blackmatrix7 ChinaMaxNoIP Domain] bcb8094c7613  DOMAIN-SUFFIX,gxwenyutech.com
-  ... and 42 more
+  - [blackmatrix7 ChinaMaxNoIP Domain] 39fd72012dc8  DOMAIN-SUFFIX,ckbv165.org
+  - [blackmatrix7 ChinaMaxNoIP Domain] 59dab877e172  DOMAIN-SUFFIX,057555.com
+  - [blackmatrix7 ChinaMaxNoIP Domain] 740bb0e1879b  DOMAIN-SUFFIX,maqingbo.com
+  - [blackmatrix7 ChinaMaxNoIP Domain] 95b2208dd841  DOMAIN-SUFFIX,lejiachao.com
+  - [blackmatrix7 ChinaMaxNoIP Domain] 9c05a6f3a3af  DOMAIN-SUFFIX,linux.sb
+  - [blackmatrix7 ChinaMaxNoIP Domain] b5426c30ff3d  DOMAIN-SUFFIX,laikanxing.com
+  - [blackmatrix7 ChinaMaxNoIP Domain] e97fb84b8ef0  DOMAIN-SUFFIX,greebox.com
+  - [blackmatrix7 ChinaMaxNoIP Domain] f34a99f59563  DOMAIN-SUFFIX,faq-whtasapp.com
+  - [blackmatrix7 ChinaMaxNoIP Domain] f4c6a39221d3  DOMAIN-SUFFIX,394394.com
 ```
 
-## Download.list
+## China_IP.list
 
-**Added: 2** (showing first 2)
+**Added: 10** (showing first 10)
 ```
-  + [SukkaW Download] b7adf4e6e59c  DOMAIN,cdn.dyn.com
-  + [SukkaW Download] bea3077b638f  DOMAIN,assets-tcpviewer.proxyman.com
+  + [Loyalsoldier China CIDR] 094dc62eaf48  IP-CIDR,202.55.31.0/24
+  + [Loyalsoldier China CIDR] 2150c2ca99a6  IP-CIDR,134.49.240.0/22
+  + [Loyalsoldier China CIDR] 22ea841ee651  IP-CIDR,163.52.76.0/23
+  + [Loyalsoldier China CIDR] 2fe043ccb232  IP-CIDR,185.192.56.0/22
+  + [Loyalsoldier China CIDR] 3e95d2a1856f  IP-CIDR,202.55.24.0/22
+  + [Loyalsoldier China CIDR] 5a0bd930d660  IP-CIDR6,2a0a:d681:f000::/36
+  + [Loyalsoldier China CIDR] 5d78e149c6e1  IP-CIDR6,2401:f860:80::/45
+  + [Loyalsoldier China CIDR] 8f4e53836ebc  IP-CIDR,185.2.48.0/24
+  + [Loyalsoldier China CIDR] c371e2e5381e  IP-CIDR,202.55.28.0/23
+  + [Loyalsoldier China CIDR] da5d01f9b646  IP-CIDR6,2402:72a0::/32
 ```
 
-## Microsoft_CDN.list
-
-**Removed: 1** (showing first 1)
+**Removed: 12** (showing first 12)
 ```
-  - [SukkaW Microsoft CDN] 132a9ff4fd2e  DOMAIN-SUFFIX,cn.windowssearch.com
+  - [Loyalsoldier China CIDR] 25bbdef36c31  IP-CIDR6,2401:f860:86::/47
+  - [Loyalsoldier China CIDR] 403b9b2d52ae  IP-CIDR,203.8.30.0/24
+  - [Loyalsoldier China CIDR] 43f1161595e6  IP-CIDR6,2a0a:d681:fd00::/40
+  - [Loyalsoldier China CIDR] 533149645279  IP-CIDR6,2a0a:d681:f000::/37
+  - [Loyalsoldier China CIDR] 6740232e589a  IP-CIDR,202.55.24.0/21
+  - [Loyalsoldier China CIDR] 6a1786996931  IP-CIDR,210.48.142.0/24
+  - [Loyalsoldier China CIDR] 885f6c68d5e5  IP-CIDR6,2401:f860:80::/46
+  - [Loyalsoldier China CIDR] 8c0bfe55e8d0  IP-CIDR6,2a0a:d681:f800::/39
+  - [Loyalsoldier China CIDR] 8fa5a68fb4d0  IP-CIDR6,2a0a:d681:fa00::/40
+  - [Loyalsoldier China CIDR] a53812a32ce5  IP-CIDR6,2401:f860:84::/48
+  - [Loyalsoldier China CIDR] c9b47428e971  IP-CIDR,210.48.140.0/23
+  - [Loyalsoldier China CIDR] ffd302132d98  IP-CIDR6,2804:1e48:9001::/48
+```
+
+**Source changed: 8**
+```
+  ~ ecfc26b5651a: [blackmatrix7 China IPs → Loyalsoldier China CIDR]
+  ~ 407dc9eb899d: [Loyalsoldier China CIDR → blackmatrix7 China IPs]
+  ~ 01321f114233: [Loyalsoldier China CIDR → blackmatrix7 China IPs]
+  ~ bcf9b690d3b5: [blackmatrix7 China IPs → Loyalsoldier China CIDR]
+  ~ fc95100d1f91: [blackmatrix7 China IPs → Loyalsoldier China CIDR]
+  ~ 74b68a3ab24c: [blackmatrix7 China IPs → Loyalsoldier China CIDR]
+  ~ 87a44ed3f06c: [Loyalsoldier China CIDR → blackmatrix7 China IPs]
+  ~ 084409d7aa8d: [blackmatrix7 China IPs → Loyalsoldier China CIDR]
+```
+
+## Global.list
+
+**Added: 1** (showing first 1)
+```
+  + [blackmatrix7 Global] 9c05a6f3a3af  DOMAIN-SUFFIX,linux.sb
 ```
