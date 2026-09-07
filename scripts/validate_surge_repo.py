@@ -175,6 +175,11 @@ def main() -> int:
     check_managed_config_header(errors)
     check_override_manifest(errors)
     check_rule_files(errors, warnings)
+    from validate_dns_module import validate_text as validate_dns_module
+    try:
+        validate_dns_module((ROOT / 'Module/DNS-Mapping.sgmodule').read_text(encoding='utf-8'))
+    except (OSError, ValueError) as exc:
+        errors.append(f'DNS mapping module: {exc}')
 
     if warnings:
         print("WARNINGS:")

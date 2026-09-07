@@ -11,7 +11,7 @@
 - 🎯 **目标用户**：Surge 用户（iPhone / MacBook），需要精细化代理分流与规则管理
 - 💡 **核心价值**：多上游源自动聚合 → 清洗校验 → 清单追踪 → 联网审计，全链路自动化
 - 📜 **许可证**：MIT
-- 🔄 **更新频率**：维护者本机的 Hermes agent 每日北京时间 05:00 自动同步
+- 🔄 **更新频率**：维护者本机的 Codex agent 每日北京时间 05:00 自动同步
 - 🧪 **质量保障**：每次更新须通过 5 项联网审查 + 15+ 项不变量校验
 - 📦 **零依赖**：所有脚本仅使用 Python 3.10+ 标准库，无需 pip install
 
@@ -138,7 +138,7 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 
 | 方式 | 说明 |
 |------|------|
-| 🤖 **每日同步** | 维护者本机的 Hermes agent 每日北京时间 05:00 运行同一套流水线脚本并推送；调度在 Hermes 内部，不是 Actions 计划任务，详见 `SOURCE_OF_TRUTH.md` |
+| 🤖 **每日同步** | 维护者本机的 Codex agent 每日北京时间 05:00 运行同一套流水线脚本并推送；调度在 Codex 本机定时任务内，不是 Actions 计划任务，详见 `SOURCE_OF_TRUTH.md` |
 | 🖐 **手动触发** | GitHub Actions 页面点击 Run workflow（全量重新生成 + 发布门禁） |
 | ⌨️ **CLI 触发** | `gh workflow run auto-rules.yml` |
 

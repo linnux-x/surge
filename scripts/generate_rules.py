@@ -15,6 +15,7 @@ import os
 import re
 import subprocess
 import sys
+import tempfile
 from datetime import datetime
 from pathlib import Path
 from typing import Optional, Tuple
@@ -233,13 +234,14 @@ def dedupe_preserve_order(lines: list[str]) -> list[str]:
 def prune_redundant_cidr(filepath: Path):
     """Remove CIDR entries that are subnets of a broader CIDR in the same file.
 
+    Only prune within identical option sets: no-resolve changes DNS behavior.
     Built into generate_rules.py (was scripts/prune_cidr.py).
     Returns (before, after) counts; prints summary if pruning occurred.
     """
     lines = filepath.read_text(encoding="utf-8").splitlines()
 
-    cidrs: list[tuple[int, ipaddress.IPv4Network | ipaddress.IPv6Network]] = []
-    all_nets: set[ipaddress.IPv4Network | ipaddress.IPv6Network] = set()
+    cidrs: list[tuple[int, ipaddress.IPv4Network | ipaddress.IPv6Network, tuple[str, ...]]] = []
+    all_nets: set[tuple] = set()
 
     for index, line in enumerate(lines):
         stripped = line.strip()
@@ -252,16 +254,17 @@ def prune_redundant_cidr(filepath: Path):
             network = ipaddress.ip_network(parts[1], strict=False)
         except ValueError:
             continue
-        cidrs.append((index, network))
-        all_nets.add(network)
+        options = tuple(sorted(p.lower() for p in parts[2:]))
+        cidrs.append((index, network, options))
+        all_nets.add((network, options))
 
     before = len(cidrs)
     remove: set[int] = set()
 
-    for index, network in cidrs:
+    for index, network, options in cidrs:
         for prefix in range(network.prefixlen):
             try:
-                if network.supernet(new_prefix=prefix) in all_nets:
+                if (network.supernet(new_prefix=prefix), options) in all_nets:
                     remove.add(index)
                     break
             except ipaddress.NetmaskValueError:
@@ -328,6 +331,8 @@ def process_rule(target_name: str, display_name: str, sources: list[Tuple[str, s
     for source_name, source_url, source_format in sources:
         raw = fetch_source(source_url, source_format)
         cleaned = clean_source(raw)
+        if not cleaned:
+            raise ValueError(f"Empty upstream after cleaning: {source_name} ({source_url})")
 
         if source_format == "domainset":
             converted = convert_domainset(cleaned)
@@ -352,34 +357,43 @@ def process_rule(target_name: str, display_name: str, sources: list[Tuple[str, s
     lines = dedupe_preserve_order(lines)
     lines = prune_shadowed_domains(lines)
 
-    # Write to file for CIDR pruning (needs physical file)
-    target_path.parent.mkdir(parents=True, exist_ok=True)
-    target_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-    prune_redundant_cidr(target_path)
+    # Stage beside the destination so a failed validation leaves the old file intact.
+    destination = target_path
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    with tempfile.NamedTemporaryFile(dir=destination.parent, prefix=".rules-", suffix=".tmp", delete=False) as staging:
+        target_path = Path(staging.name)
+    try:
+        # Write to file for CIDR pruning (needs physical file)
+        target_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        prune_redundant_cidr(target_path)
 
-    # Read back once: validate rules + get pruned lines for final write
-    pruned_lines = target_path.read_text(encoding="utf-8").splitlines()
-    rules = [l for l in pruned_lines if l.strip() and not l.strip().startswith("#")]
-    errors = validate_rule_file(rules, target_name)
-    if errors:
-        print(f"VALIDATION FAILED for {target_name}:")
-        for e in errors:
-            print(f"  - {e}")
-        sys.exit(1)
+        # Read back once: validate rules + get pruned lines for final write
+        pruned_lines = target_path.read_text(encoding="utf-8").splitlines()
+        rules = [l for l in pruned_lines if l.strip() and not l.strip().startswith("#")]
+        errors = validate_rule_file(rules, target_name)
+        if errors:
+            print(f"VALIDATION FAILED for {target_name}:")
+            for e in errors:
+                print(f"  - {e}")
+            sys.exit(1)
 
-    # Write final file with header
-    rule_count = len(rules)
-    update_time = datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d %H:%M:%S +0800")
+        # Write final file with header
+        rule_count = len(rules)
+        update_time = datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d %H:%M:%S +0800")
 
-    with open(target_path, "w", encoding="utf-8") as f:
-        f.write(f"# NAME: {display_name}\n")
-        f.write(f"# AUTHOR: {AUTHOR_NAME}\n")
-        f.write(f"# REPO: {REPO_URL}\n")
-        f.write(f"# UPDATED: {update_time}\n")
-        f.write(f"# FORMAT: Surge Ruleset\n")
-        f.write(f"# TOTAL: {rule_count}\n")
-        f.write("\n")
-        f.writelines(line + "\n" for line in pruned_lines)
+        with open(target_path, "w", encoding="utf-8") as f:
+            f.write(f"# NAME: {display_name}\n")
+            f.write(f"# AUTHOR: {AUTHOR_NAME}\n")
+            f.write(f"# REPO: {REPO_URL}\n")
+            f.write(f"# UPDATED: {update_time}\n")
+            f.write(f"# FORMAT: Surge Ruleset\n")
+            f.write(f"# TOTAL: {rule_count}\n")
+            f.write("\n")
+            f.writelines(line + "\n" for line in pruned_lines)
+        target_path.chmod(destination.stat().st_mode & 0o777 if destination.exists() else 0o644)
+        target_path.replace(destination)
+    finally:
+        target_path.unlink(missing_ok=True)
 
 
 def prune_global_first_match_overlaps():
