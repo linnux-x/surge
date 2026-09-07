@@ -30,3 +30,6 @@ Rule/Manual/*
 !Rule/Manual/README.md
 !Rule/Manual/override-manifest.json
 .codex/
+
+# Local agent runtime state is not public repository content.
+.hermes/

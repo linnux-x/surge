@@ -24,7 +24,6 @@ python3 scripts/test_routing_order.py
 | 文件 | 用途 |
 |---|---|
 | `expected-routing.csv` | 测试用例：域名 → 期望命中的规则集 |
-| `sample-request.txt` | 预留：批量测试用的 Surge 请求日志样例 |
 
 ---
 
