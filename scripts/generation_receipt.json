@@ -13,7 +13,7 @@
         "IP-CIDR6": 1,
         "URL-REGEX": 1
       },
-      "sha256": "0b67b6614cd72c772e892c3ef00e27dfa86ae39c3698021e4fe2dfd8d375a302"
+      "sha256": "53a4ddff2bbb34338af67cfbd07483582bf80e7fa766f7dcc0c3e2d2559fef7a"
     },
     {
       "file": "Apple.list",
@@ -324,11 +324,11 @@
     "Kelee Speedtest International": 17054,
     "Loyalsoldier China CIDR": 7473,
     "Manual Rules": 265,
-    "Rabbit-Spec AIGC": 48,
+    "Rabbit-Spec AIGC": 47,
     "Rabbit-Spec China": 186,
     "Rabbit-Spec China CIDR": 14,
     "RocM301 Apple-AI": 16,
-    "SukkaW AI": 23,
+    "SukkaW AI": 24,
     "SukkaW Apple CDN": 158,
     "SukkaW Apple CN": 5,
     "SukkaW CDN": 25,
@@ -362,7 +362,7 @@
   },
   "manifest_files": 26,
   "manifests_sha256": {
-    "AI.manifest": "ae9ce2202b6435b5dda4c1d339124576e3df36ac12a651d3d6ff3397d6d75913",
+    "AI.manifest": "2e4268705c09e412bb336faa88edcea9eb15ddf7be8057983b9252554fd7f4ff",
     "Apple.manifest": "0ca8aea1ecb09bf3cccd38aea7a092cf744a1260ec0e8cb44ce3c1146ab91c2a",
     "Apple_AI.manifest": "68eeb4b921ba19b719f5167d9d8b0a5163e53db274055e7fadea6b556750c488",
     "Apple_CN.manifest": "a156042ab2b674afe44c22e64f5353e3ace603117d8b12d8ac483521f94641da",
@@ -404,8 +404,8 @@
     }
   },
   "diff_summary": {
-    "total_added": 40,
-    "total_removed": 21,
-    "total_source_changed": 8
+    "total_added": 0,
+    "total_removed": 0,
+    "total_source_changed": 1
   }
 }
