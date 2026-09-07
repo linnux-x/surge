@@ -97,6 +97,26 @@ python3 scripts/download_cn_candidates.py TrafficStatistics.csv \
 
 ---
 
+## 上游入口与贡献审计
+
+保留现有主要作者；优先使用作者官方分发入口，但 `Source` 与 `List` 不保证等价。
+当前 SukkaW Download 主列表与 Speedtest 仍使用 Source，原因及量化结果见
+[`audits/upstream-sources-2026-09-07.md`](../audits/upstream-sources-2026-09-07.md)。
+新增、合并或删减补充源前，先保存内容哈希，比较同规则集内（含 Manual）的独有覆盖，
+再检查合并生成与 first-match 策略变化。零独有覆盖只是候选信号，不能单凭一次快照删除作者。
+
+```bash
+# 联网采样；--refresh 要求全新空目录，失败时仅使用 sources.py 已登记的 fallback。
+python3 scripts/audit_upstream_sources.py --refresh --cache /tmp/surge-source-cache --output /tmp/surge-source-audit
+# 同一快照离线复核；输出目录与缓存不要放入 Git。
+python3 scripts/audit_upstream_sources.py --cache /tmp/surge-source-cache --output /tmp/surge-source-recheck
+python3 scripts/replay_upstream_entrypoints.py --cache /tmp/surge-source-cache --output /tmp/surge-entrypoint-replay
+```
+
+指标只证明规则覆盖，不代表实际流量收益。CIDR 使用地址区间并集；域名采用精确和后缀包含，
+不推断 ASN、关键词和通配规则语义。入口回放只重新生成受影响规则集及 Global，其他文件沿用
+当前 checkout；不会联网或改写生产规则。正式发布仍须完成 full generation 审查。
+
 ## 工具脚本
 
 | 脚本 | 作用 |
