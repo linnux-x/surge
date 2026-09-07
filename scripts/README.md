@@ -26,7 +26,8 @@ Rabbit-Spec 来源当前明确保留，用于补充 AIGC、China、ChinaCIDR 覆
 | 5 | `generate_clash_rules.py` | 将 `Rule/*.list` 转换为 `clash/*.yaml`，供 Clash / mihomo rule-provider 使用 |
 | 6 | `validate_surge_repo.py` | 仓库级不变量检查，含公开 Manual override manifest 合同 |
 | 7 | `audit_rules.py` | 生成后联网审计：上游可达性、规则数量、共享基础设施、Surge 文档、exclude 覆盖等 |
-| 8 | `cross_file_conflicts.py` | 手动辅助（不再由自动任务调用）：列出同一域名跨不同策略文件重复出现时的 first-match 实际生效关系 |
+| 8 | `reviewed_release.py` | 在 dry-run 完成所有生成和 DNS 模块同步后保存完整发布快照；发布时按指定 run ID 恢复并验证 |
+| 9 | `cross_file_conflicts.py` | 手动辅助（不再由自动任务调用）：列出同一域名跨不同策略文件重复出现时的 first-match 实际生效关系 |
 
 ---
 
