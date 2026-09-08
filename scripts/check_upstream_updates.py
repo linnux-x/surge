@@ -144,7 +144,7 @@ def has_changed(current: dict, cached: dict) -> bool:
         # Was available, now unavailable = treat as unchanged (network blip)
         return False
 
-    # Compare timestamps in priority order: ETag > Last-Modified > Content-Length
+    # Compare timestamps in priority order: ETag > Last-Modified
     cur_etag = current.get("etag")
     cached_etag = cached.get("etag")
     if cur_etag and cached_etag:
@@ -155,12 +155,8 @@ def has_changed(current: dict, cached: dict) -> bool:
     if cur_lm and cached_lm:
         return cur_lm != cached_lm
 
-    cur_cl = current.get("content_length")
-    cached_cl = cached.get("content_length")
-    if cur_cl and cached_cl:
-        return cur_cl != cached_cl
-
-    # Can't compare anything meaningful — assume changed (conservative)
+    # Content-Length is not a version: equal-length replacements and Range
+    # responses can hide changes. Without comparable validators, regenerate.
     return True
 
 

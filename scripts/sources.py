@@ -19,7 +19,8 @@ from __future__ import annotations
 
 BASE_URIS = {
     "BM7": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge",
-    "SUKKA": "https://raw.githubusercontent.com/SukkaW/Surge/master/Source",
+    "SUKKA": "https://ruleset.skk.moe/List",
+    "SUKKA_SOURCE": "https://raw.githubusercontent.com/SukkaW/Surge/master/Source",
     # Rabbit-Spec is intentionally retained. It provides useful AIGC/China
     # coverage and the repo workflow credits Rabbit-Spec design ideas. Do not
     # remove it during source-pruning unless a manual full-generation audit
@@ -31,6 +32,7 @@ BASE_URIS = {
 
 BM7 = BASE_URIS["BM7"]
 SUKKA = BASE_URIS["SUKKA"]
+SUKKA_SOURCE = BASE_URIS["SUKKA_SOURCE"]
 RABBIT = BASE_URIS["RABBIT"]
 CHUA = BASE_URIS["CHUA"]
 ROC301 = BASE_URIS["ROC301"]
@@ -51,7 +53,7 @@ SNAPSHOT_FALLBACKS: dict[str, str] = {
 _SOURCES: list[tuple[str, str, str, str | None]] = [
     # Apple_AI.list
     ("RocM301 Apple-AI", f"{ROC301}/Apple-AI.list", "Apple_AI.list", None),
-    ("SukkaW Apple Intelligence", "https://ruleset.skk.moe/List/non_ip/apple_intelligence.conf", "Apple_AI.list", None),
+    ("SukkaW Apple Intelligence", f"{SUKKA}/non_ip/apple_intelligence.conf", "Apple_AI.list", None),
     # AI.list
     ("SukkaW AI", f"{SUKKA}/non_ip/ai.conf", "AI.list", None),
     ("Rabbit-Spec AIGC", f"{RABBIT}/AIGC.list", "AI.list", None),
@@ -59,15 +61,15 @@ _SOURCES: list[tuple[str, str, str, str | None]] = [
     # Apple.list
     ("blackmatrix7 Apple", f"{BM7}/Apple/Apple_All_No_Resolve.list", "Apple.list", None),
     # Apple_CN.list
-    ("SukkaW Apple CN", "https://ruleset.skk.moe/List/non_ip/apple_cn.conf", "Apple_CN.list", None),
-    ("SukkaW Apple CDN", "https://ruleset.skk.moe/List/domainset/apple_cdn.conf", "Apple_CN.list", "domainset"),
+    ("SukkaW Apple CN", f"{SUKKA}/non_ip/apple_cn.conf", "Apple_CN.list", None),
+    ("SukkaW Apple CDN", f"{SUKKA}/domainset/apple_cdn.conf", "Apple_CN.list", "domainset"),
     # CDN.list
     ("SukkaW CDN", f"{SUKKA}/non_ip/cdn.conf", "CDN.list", None),
-    # Download.list
-    ("SukkaW Download", f"{SUKKA}/domainset/download.conf", "Download.list", "domainset"),
+    # Download.list: keep the source fragment until expanded S3 coverage is reviewed.
+    ("SukkaW Download", f"{SUKKA_SOURCE}/domainset/download.conf", "Download.list", "domainset"),
     ("SukkaW Game Download", f"{SUKKA}/domainset/game-download.conf", "Download.list", "domainset"),
     # China.list
-    ("SukkaW Domestic", "https://ruleset.skk.moe/List/non_ip/domestic.conf", "China.list", None),
+    ("SukkaW Domestic", f"{SUKKA}/non_ip/domestic.conf", "China.list", None),
     ("blackmatrix7 ChinaMaxNoIP Domain", f"{BM7}/ChinaMaxNoIP/ChinaMaxNoIP_Domain.list", "China.list", "domainset"),
     ("Rabbit-Spec China", f"{RABBIT}/China.list", "China.list", None),
     # China_IP.list
@@ -89,7 +91,7 @@ _SOURCES: list[tuple[str, str, str, str | None]] = [
     # Microsoft.list
     ("blackmatrix7 Microsoft", f"{BM7}/Microsoft/Microsoft.list", "Microsoft.list", None),
     # Microsoft_CDN.list
-    ("SukkaW Microsoft CDN", "https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf", "Microsoft_CDN.list", None),
+    ("SukkaW Microsoft CDN", f"{SUKKA}/non_ip/microsoft_cdn.conf", "Microsoft_CDN.list", None),
     # Netflix.list
     ("blackmatrix7 Netflix", f"{BM7}/Netflix/Netflix.list", "Netflix.list", None),
     # PayPal.list
@@ -99,8 +101,8 @@ _SOURCES: list[tuple[str, str, str, str | None]] = [
     ("blackmatrix7 Facebook", f"{BM7}/Facebook/Facebook.list", "SocialMedia.list", None),
     ("blackmatrix7 Instagram", f"{BM7}/Instagram/Instagram.list", "SocialMedia.list", None),
     ("blackmatrix7 Twitter", f"{BM7}/Twitter/Twitter.list", "SocialMedia.list", None),
-    # Speedtest.list
-    ("SukkaW Speedtest", f"{SUKKA}/domainset/speedtest.conf", "Speedtest.list", "domainset"),
+    # Speedtest.list: keep the source fragment until added mainland endpoints are classified.
+    ("SukkaW Speedtest", f"{SUKKA_SOURCE}/domainset/speedtest.conf", "Speedtest.list", "domainset"),
     # Kelee is a daily primary upstream.  A reviewed local snapshot is used
     # only when the primary cannot be fetched; see SNAPSHOT_FALLBACKS.
     ("Kelee Speedtest International", KELEE_SPEEDTEST_INTERNATIONAL, "Speedtest.list", "loon-snapshot"),
@@ -110,7 +112,7 @@ _SOURCES: list[tuple[str, str, str, str | None]] = [
     # Telegram.list
     ("blackmatrix7 Telegram", f"{BM7}/Telegram/Telegram.list", "Telegram.list", None),
     ("Telegram Official CIDR", "https://core.telegram.org/resources/cidr.txt", "Telegram.list", "cidr"),
-    ("SukkaW Telegram IP", "https://ruleset.skk.moe/List/ip/telegram.conf", "Telegram.list", None),
+    ("SukkaW Telegram IP", f"{SUKKA}/ip/telegram.conf", "Telegram.list", None),
     # TikTok.list
     ("blackmatrix7 TikTok", f"{BM7}/TikTok/TikTok.list", "TikTok.list", None),
     # WeChat.list
@@ -158,3 +160,13 @@ if _missing:
     raise SystemExit(
         f"OVERLAP_DEPENDENTS references unknown rulesets: {sorted(_missing)}"
     )
+
+# Entry-point review scope. All authors remain in _SOURCES. These paths allow
+# the offline audit to compare source fragments with published build artifacts.
+SUKKA_ENTRYPOINT_PATHS = {
+    "SukkaW AI": "non_ip/ai.conf",
+    "SukkaW CDN": "non_ip/cdn.conf",
+    "SukkaW Download": "domainset/download.conf",
+    "SukkaW Game Download": "domainset/game-download.conf",
+    "SukkaW Speedtest": "domainset/speedtest.conf",
+}

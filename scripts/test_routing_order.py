@@ -10,6 +10,7 @@ Uses only the Python standard library.
 from __future__ import annotations
 
 import csv
+import ipaddress
 import re
 import sys
 from pathlib import Path
@@ -73,9 +74,13 @@ def match_domain(domain: str, rules: set[str]) -> bool:
     - DOMAIN-SUFFIX: domain equals or ends with .suffix
     - DOMAIN-KEYWORD: keyword appears anywhere in domain
     - DOMAIN-WILDCARD: wildcard match (basic * support)
-    - IP-CIDR/IP-CIDR6: exact match on CIDR (basic)
+    - IP-CIDR/IP-CIDR6: literal address membership (no DNS lookup)
     """
-    domain_lower = domain.lower()
+    domain_lower = domain.lower().rstrip(".")
+    try:
+        address = ipaddress.ip_address(domain_lower)
+    except ValueError:
+        address = None
 
     for rule in rules:
         parts = [p.strip() for p in rule.split(",")]
@@ -86,7 +91,10 @@ def match_domain(domain: str, rules: set[str]) -> bool:
         # parts[1] is the bare value; per-rule options live in parts[2:]
         value = parts[1].lower()
 
-        if rule_type == "DOMAIN":
+        if rule_type in ("IP-CIDR", "IP-CIDR6") and address is not None:
+            if address in ipaddress.ip_network(value, strict=False):
+                return True
+        elif rule_type == "DOMAIN":
             if domain_lower == value:
                 return True
         elif rule_type == "DOMAIN-SUFFIX":
@@ -169,6 +177,7 @@ def simulate_routing(domain: str, routing_order: list[tuple[str, str]],
 
     Returns the matched ruleset name (or DIRECT/Global/policy name).
     """
+    domain = domain.lower().rstrip(".")
     for entry in routing_order:
         ruleset_name = entry[0]
         policy = entry[1]
@@ -200,6 +209,18 @@ def simulate_routing(domain: str, routing_order: list[tuple[str, str]],
     return "FINAL→Global"  # unreachable fallback
 
 
+def matches_expected(actual: str, expected_ruleset: str, expected_policy: str) -> bool:
+    """Assert both rule ownership and policy; missing policy fails closed."""
+    matched, separator, policy = actual.partition("→")
+    if not separator or not expected_policy or policy != expected_policy:
+        return False
+    if expected_ruleset == "DIRECT":
+        return policy == "DIRECT"
+    if expected_ruleset == "Global":
+        return matched in ("Global.list", "FINAL")
+    return matched == expected_ruleset
+
+
 def main() -> int:
     # The report prints ✅/❌; force UTF-8 so it doesn't crash under a
     # non-UTF-8 default console encoding (e.g. GBK on Chinese Windows).
@@ -211,6 +232,7 @@ def main() -> int:
 
     # Load routing order
     routing_order = load_routing_order()
+    print("Coverage: domains and literal CIDR addresses; DNS, ASN, process and SNI/HTTP Host are not simulated.")
     print(f"Loaded routing order: {len(routing_order)} steps")
 
     # Load all .list files
@@ -238,7 +260,7 @@ def main() -> int:
 
     if not test_cases:
         print("No test cases found")
-        return 0
+        return 1
 
     # Simulate routing
     print(f"\n{'='*70}")
@@ -255,21 +277,9 @@ def main() -> int:
 
         actual = simulate_routing(domain, routing_order, rulesets)
 
-        # Normalize: we care about which ruleset matched (or DIRECT/Global)
-        # actual format: "AI.list→AI" or "DIRECT" etc.
-        matched_ruleset = actual.split("→")[0] if "→" in actual else actual
-
-        # Normalize expected: "DIRECT" could be matched by China.list→DIRECT or LAN→DIRECT or China_IP.list→DIRECT
-        if expected == "DIRECT":
-            # Any match that routes to DIRECT counts. Strip RULE-SET options
-            # (e.g. "DIRECT,extended-matching") before comparing.
-            policy = actual.split("→")[1] if "→" in actual else actual
-            success = policy.split(",")[0] == "DIRECT"
-        elif expected == "Global":
-            # Global.list→Global or FINAL→Global
-            success = matched_ruleset in ("Global.list", "FINAL")
-        else:
-            success = matched_ruleset == expected
+        expected_policy = tc.get("expected_policy", "").strip()
+        success = matches_expected(actual, expected, expected_policy)
+        expected = f"{expected}→{expected_policy}"
 
         status = "✅" if success else "❌"
         if success:

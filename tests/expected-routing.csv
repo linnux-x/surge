@@ -1,131 +1,131 @@
-domain,expected_ruleset,note
-mp.weixin.qq.com,WeChat.list,微信公众号
-weixin.qq.com,WeChat.list,微信主站
-wx.qlogo.cn,WeChat.list,微信头像CDN
-open.weixin.qq.com,WeChat.list,微信开放平台
-speedtest.net,Speedtest.list,测速主站
-fast.com,Speedtest.list,fast.com仅在此文件
-cesu-hz.zjtelecom.com.cn,Speedtest_China.list,可莉大陆测速节点强制直连
-speedtest.dukekunshan.edu.cn,Speedtest_China.list,中外规则重叠时大陆直连规则必须先行命中
-cpt-ter-speedtest1-vl145.atomic.ac,Speedtest.list,可莉国际测速节点走可选测速策略
-chat.openai.com,AI.list,ChatGPT
-api.openai.com,AI.list,OpenAI API
-claude.ai,AI.list,Claude AI
-api.anthropic.com,AI.list,Claude API
-claudeusercontent.com,AI.list,Claude user content
-downloads.claude.ai,AI.list,Claude Code download
-modelcontextprotocol.io,AI.list,Claude MCP
-cdn.growthbook.io,AI.list,Claude feature flags
-api.statsig.com,AI.list,AI feature flags（specific Statsig endpoint retained）
-events.statsigapi.net,AI.list,AI event telemetry（specific Statsig endpoint retained）
-livekit.cloud,Global,LiveKit parent suffix is shared infrastructure and should not be AI
-chatgpt.livekit.cloud,AI.list,ChatGPT-specific LiveKit endpoint remains AI
-api-iam.intercom.io,Global,Intercom IAM is shared support infrastructure and should not be AI
-gemini.google.com,AI.list,Gemini（Google AI子域先行命中AI.list）
-copilot.microsoft.com,AI.list,Microsoft Copilot
-gs.apple.com,Apple.list,Apple GS认证（不在Apple_CN.list）
-itunes.apple.com,Apple_CN.list,iTunes CN CDN（优先Apple_CN直连）
-appleid.apple.com,Apple.list,Apple ID
-icloud.com,Apple.list,iCloud
-s.mzstatic.com,Apple_CN.list,App Store中国CDN
-apps.mzstatic.com,Apple_CN.list,App Store Apps and Books CDN
-java.com,China.list,Java 官网中国规则优先于 Global jav 泛关键词
-javascriptcn.com,China.list,中文 JavaScript 站点不应被 jav 泛关键词截获
-amazon.cn,China.list,Amazon 中国不应被 Global amazon 泛关键词截获
-amazonaws.com.cn,China.list,AWS 中国域名不应被 Global amazon 泛关键词截获
-javbus.com,Global.list,JAV 站点仍由 Global 具体域名命中
-store.steampowered.com,Game.list,Steam商店
-api.steampowered.com,Game.list,Steam API
-discord.com,SocialMedia.list,Discord（手动添加）
-twitter.com,SocialMedia.list,Twitter/X
-instagram.com,SocialMedia.list,Instagram
-reddit.com,Global.list,Reddit（上游中无此平台，走Global回退）
-t.me,Telegram.list,Telegram短链
-telegram.org,Telegram.list,Telegram官网
-googlevideo.com,YouTube.list,YouTube视频CDN
-youtube.com,YouTube.list,YouTube
-ytimg.com,YouTube.list,YouTube图片
-tiktok.com,TikTok.list,TikTok
-paypal.com,PayPal.list,PayPal
-paypalobjects.com,PayPal.list,PayPal资源
-google.com,Google.list,Google搜索
-googleapis.com,Google.list,Google API
-gstatic.com,Google.list,Google静态资源
-netflix.com,Netflix.list,Netflix
-nflxvideo.net,Netflix.list,Netflix视频
-disneyplus.com,Disney.list,Disney+
-bstarstatic.com,GlobalMedia.list,Disney+ CDN（上游归入GlobalMedia）
-bilibili.com,ChinaMedia.list,B站
-iqiyi.com,ChinaMedia.list,爱奇艺
-qq.com,China.list,腾讯直连
-baidu.com,China.list,百度直连
-aliyun.com,China.list,阿里云直连
-taobao.com,China.list,淘宝直连
-microsoft.com,Microsoft.list,Microsoft主站
-office.com,Microsoft.list,Office在线
-live.com,Microsoft.list,Microsoft Live
-officecdn.microsoft.com,Microsoft_CDN.list,MS CDN直连
-download.visualstudio.microsoft.com,Microsoft_CDN.list,VS下载（MS CDN先行命中）
-download.windowsupdate.com,Microsoft_CDN.list,Windows更新（MS CDN先行命中）
-packages.microsoft.com,Download.list,Microsoft 包仓库下载
-update.microsoft.com,Download.list,Microsoft 更新下载
-mcr.microsoft.com,Download.list,Microsoft Container Registry
-minecraft.net,Game.list,Minecraft 游戏域名
-xboxlive.com,Game.list,Xbox Live 游戏域名
-spotify.com,Spotify.list,Spotify
-hulu.com,GlobalMedia.list,Hulu
-akamaized.net,Global,共享CDN（已排除，FINAL→Global）
-cloudfront.net,Global,共享CDN（已排除，FINAL→Global）
-example.invalid,Global,不存在于任何规则集，FINAL→Global
-10.0.0.1,DIRECT,局域网IP（LAN规则直连）
-paypal.com.cn,China.list,PayPal中国域名直连（PayPal/Global keyword已排除，防止代理组劫持）
-anfutong.com,China.list,安付通中国站不应被更早的Global重复规则截获
-beibao.com,China.list,贝宝中国站不应被更早的Global重复规则截获
-recaptcha.net,China.list,reCAPTCHA中国可达镜像直连（Google/Global捕获已排除）
-clarity.ms,Global,.ms为蒙特塞拉特ccTLD（已从China.list排除，FINAL→Global）
-notgoogle.example.com,FINAL,无关域名不应被 Google/Global 泛关键词截获，必须走 FINAL 路径
-notmicrosoft.example.com,FINAL,无关域名不应被 Microsoft/China 泛关键词截获，必须走 FINAL 路径
-models.dev,AI.list,真实流量中的开源 AI 模型规格数据库
-jina.ai,AI.list,真实流量中的 Jina 搜索 AI 服务
-swiftgram.app,Telegram.list,真实流量中的第三方 Telegram 客户端服务
-dns.google,Google.list,真实流量中的 Google Public DNS
-giphy.com,GlobalMedia.list,真实流量中的 GIPHY 动画媒体服务
-3.023168.xyz,GlobalMedia.list,持续真实 FINAL 观测中的大流量媒体服务
-artificialanalysis.ai,AI.list,AI模型与API评测平台
-nousresearch.com,AI.list,开源AI研究机构
-fastgpt.io,AI.list,FastGPT AI Agent平台
-fastgpt.run,AI.list,FastGPT运行服务
-tryfastgpt.ai,AI.list,FastGPT国际服务
-chatjimmy.ai,AI.list,ChatJimmy AI服务
-guzzoni.apple.com,Apple_AI.list,Apple Intelligence Siri Search
-smoot.apple.com,Apple_AI.list,Apple Intelligence Siri
-apple-relay.apple.com,Apple_AI.list,Apple Private Relay
-gateway.icloud.com,Apple_AI.list,Apple iCloud Private Relay Gateway
-mask.icloud.com,Apple_AI.list,Apple iCloud Private Relay
-mask.apple-dns.net,Apple_AI.list,Apple Private Relay DNS
-ls.apple.com,Apple.list,Apple Siri LinkScribe裸域走Apple
-mask-h2.icloud.com,Apple_AI.list,Apple Private Relay H2
-cp4.cloudflare.com,Apple_AI.list,Apple Intelligence Cloudflare
-bytegecko.com,TikTok.list,海外ByteDance基础设施
-redditmedia.com,SocialMedia.list,Reddit媒体资源
-redditstatic.com,SocialMedia.list,Reddit静态资源
-snapkit.com,SocialMedia.list,Snap开发者服务
-jsdelivr.net,CDN.list,jsDelivr公共包CDN
-unpkg.com,CDN.list,UNPKG公共包CDN
-esm.sh,CDN.list,ESM公共包CDN
-boil.network,Global.list,家宽VPS厂商需代理访问
-neburst.com,Global.list,主机厂商需代理访问
-meowvps.com,Global.list,主机推荐网站需代理访问
-fdcservers.net,Global.list,FDC Servers主机厂商需代理访问
-vpszdm.com,Global.list,VPS推荐评测网站需代理访问
-sa.net,Global.list,海外VPS厂商需代理访问
-shlii.io,Global.list,NAT VPS厂商需代理访问
-vmiss.com,Global.list,海外云主机厂商需代理访问
-ddps.jp,Global.list,日本VPS及托管厂商需代理访问
-legendvps.com,Global.list,海外VPS厂商需代理访问
-gomami.io,Global.list,gomami.io需代理
-gepush.com,China.list,个推推送基础设施直连
-getui.net,China.list,个推网络基础设施直连
-weixingshangye.com,China.list,中国备案商业网站直连
-appinn.me,China.list,小众软件官方论坛直连
-gsp64-ssl.ls.apple.com,Apple_AI.list,Apple Intelligence全球LinkScribe节点
+domain,expected_ruleset,expected_policy,note
+mp.weixin.qq.com,WeChat.list,WeChat,微信公众号
+weixin.qq.com,WeChat.list,WeChat,微信主站
+wx.qlogo.cn,WeChat.list,WeChat,微信头像CDN
+open.weixin.qq.com,WeChat.list,WeChat,微信开放平台
+speedtest.net,Speedtest.list,Speedtest,测速主站
+fast.com,Speedtest.list,Speedtest,fast.com仅在此文件
+cesu-hz.zjtelecom.com.cn,Speedtest_China.list,DIRECT,可莉大陆测速节点强制直连
+speedtest.dukekunshan.edu.cn,Speedtest_China.list,DIRECT,中外规则重叠时大陆直连规则必须先行命中
+cpt-ter-speedtest1-vl145.atomic.ac,Speedtest.list,Speedtest,可莉国际测速节点走可选测速策略
+chat.openai.com,AI.list,AI,ChatGPT
+api.openai.com,AI.list,AI,OpenAI API
+claude.ai,AI.list,AI,Claude AI
+api.anthropic.com,AI.list,AI,Claude API
+claudeusercontent.com,AI.list,AI,Claude user content
+downloads.claude.ai,AI.list,AI,Claude Code download
+modelcontextprotocol.io,AI.list,AI,Claude MCP
+cdn.growthbook.io,AI.list,AI,Claude feature flags
+api.statsig.com,AI.list,AI,AI feature flags（specific Statsig endpoint retained）
+events.statsigapi.net,AI.list,AI,AI event telemetry（specific Statsig endpoint retained）
+livekit.cloud,Global,Global,LiveKit parent suffix is shared infrastructure and should not be AI
+chatgpt.livekit.cloud,AI.list,AI,ChatGPT-specific LiveKit endpoint remains AI
+api-iam.intercom.io,Global,Global,Intercom IAM is shared support infrastructure and should not be AI
+gemini.google.com,AI.list,AI,Gemini（Google AI子域先行命中AI.list）
+copilot.microsoft.com,AI.list,AI,Microsoft Copilot
+gs.apple.com,Apple.list,Apple,Apple GS认证（不在Apple_CN.list）
+itunes.apple.com,Apple_CN.list,DIRECT,iTunes CN CDN（优先Apple_CN直连）
+appleid.apple.com,Apple.list,Apple,Apple ID
+icloud.com,Apple.list,Apple,iCloud
+s.mzstatic.com,Apple_CN.list,DIRECT,App Store中国CDN
+apps.mzstatic.com,Apple_CN.list,DIRECT,App Store Apps and Books CDN
+java.com,China.list,DIRECT,Java 官网中国规则优先于 Global jav 泛关键词
+javascriptcn.com,China.list,DIRECT,中文 JavaScript 站点不应被 jav 泛关键词截获
+amazon.cn,China.list,DIRECT,Amazon 中国不应被 Global amazon 泛关键词截获
+amazonaws.com.cn,China.list,DIRECT,AWS 中国域名不应被 Global amazon 泛关键词截获
+javbus.com,Global.list,Global,JAV 站点仍由 Global 具体域名命中
+store.steampowered.com,Game.list,Game,Steam商店
+api.steampowered.com,Game.list,Game,Steam API
+discord.com,SocialMedia.list,SocialMedia,Discord（手动添加）
+twitter.com,SocialMedia.list,SocialMedia,Twitter/X
+instagram.com,SocialMedia.list,SocialMedia,Instagram
+reddit.com,Global.list,Global,Reddit（上游中无此平台，走Global回退）
+t.me,Telegram.list,Telegram,Telegram短链
+telegram.org,Telegram.list,Telegram,Telegram官网
+googlevideo.com,YouTube.list,YouTube,YouTube视频CDN
+youtube.com,YouTube.list,YouTube,YouTube
+ytimg.com,YouTube.list,YouTube,YouTube图片
+tiktok.com,TikTok.list,TikTok,TikTok
+paypal.com,PayPal.list,PayPal,PayPal
+paypalobjects.com,PayPal.list,PayPal,PayPal资源
+google.com,Google.list,Google,Google搜索
+googleapis.com,Google.list,Google,Google API
+gstatic.com,Google.list,Google,Google静态资源
+netflix.com,Netflix.list,Netflix,Netflix
+nflxvideo.net,Netflix.list,Netflix,Netflix视频
+disneyplus.com,Disney.list,Disney,Disney+
+bstarstatic.com,GlobalMedia.list,GlobalMedia,Disney+ CDN（上游归入GlobalMedia）
+bilibili.com,ChinaMedia.list,ChinaMedia,B站
+iqiyi.com,ChinaMedia.list,ChinaMedia,爱奇艺
+qq.com,China.list,DIRECT,腾讯直连
+baidu.com,China.list,DIRECT,百度直连
+aliyun.com,China.list,DIRECT,阿里云直连
+taobao.com,China.list,DIRECT,淘宝直连
+microsoft.com,Microsoft.list,Microsoft,Microsoft主站
+office.com,Microsoft.list,Microsoft,Office在线
+live.com,Microsoft.list,Microsoft,Microsoft Live
+officecdn.microsoft.com,Microsoft_CDN.list,DIRECT,MS CDN直连
+download.visualstudio.microsoft.com,Microsoft_CDN.list,DIRECT,VS下载（MS CDN先行命中）
+download.windowsupdate.com,Microsoft_CDN.list,DIRECT,Windows更新（MS CDN先行命中）
+packages.microsoft.com,Download.list,Download,Microsoft 包仓库下载
+update.microsoft.com,Download.list,Download,Microsoft 更新下载
+mcr.microsoft.com,Download.list,Download,Microsoft Container Registry
+minecraft.net,Game.list,Game,Minecraft 游戏域名
+xboxlive.com,Game.list,Game,Xbox Live 游戏域名
+spotify.com,Spotify.list,Spotify,Spotify
+hulu.com,GlobalMedia.list,GlobalMedia,Hulu
+akamaized.net,Global,Global,共享CDN（已排除，FINAL→Global）
+cloudfront.net,Global,Global,共享CDN（已排除，FINAL→Global）
+example.invalid,Global,Global,不存在于任何规则集，FINAL→Global
+10.0.0.1,DIRECT,DIRECT,局域网IP（LAN规则直连）
+paypal.com.cn,China.list,DIRECT,PayPal中国域名直连（PayPal/Global keyword已排除，防止代理组劫持）
+anfutong.com,China.list,DIRECT,安付通中国站不应被更早的Global重复规则截获
+beibao.com,China.list,DIRECT,贝宝中国站不应被更早的Global重复规则截获
+recaptcha.net,China.list,DIRECT,reCAPTCHA中国可达镜像直连（Google/Global捕获已排除）
+clarity.ms,Global,Global,.ms为蒙特塞拉特ccTLD（已从China.list排除，FINAL→Global）
+notgoogle.example.com,FINAL,Global,无关域名不应被 Google/Global 泛关键词截获，必须走 FINAL 路径
+notmicrosoft.example.com,FINAL,Global,无关域名不应被 Microsoft/China 泛关键词截获，必须走 FINAL 路径
+models.dev,AI.list,AI,真实流量中的开源 AI 模型规格数据库
+jina.ai,AI.list,AI,真实流量中的 Jina 搜索 AI 服务
+swiftgram.app,Telegram.list,Telegram,真实流量中的第三方 Telegram 客户端服务
+dns.google,Google.list,Google,真实流量中的 Google Public DNS
+giphy.com,GlobalMedia.list,GlobalMedia,真实流量中的 GIPHY 动画媒体服务
+3.023168.xyz,GlobalMedia.list,GlobalMedia,持续真实 FINAL 观测中的大流量媒体服务
+artificialanalysis.ai,AI.list,AI,AI模型与API评测平台
+nousresearch.com,AI.list,AI,开源AI研究机构
+fastgpt.io,AI.list,AI,FastGPT AI Agent平台
+fastgpt.run,AI.list,AI,FastGPT运行服务
+tryfastgpt.ai,AI.list,AI,FastGPT国际服务
+chatjimmy.ai,AI.list,AI,ChatJimmy AI服务
+guzzoni.apple.com,Apple_AI.list,Apple_AI,Apple Intelligence Siri Search
+smoot.apple.com,Apple_AI.list,Apple_AI,Apple Intelligence Siri
+apple-relay.apple.com,Apple_AI.list,Apple_AI,Apple Private Relay
+gateway.icloud.com,Apple_AI.list,Apple_AI,Apple iCloud Private Relay Gateway
+mask.icloud.com,Apple_AI.list,Apple_AI,Apple iCloud Private Relay
+mask.apple-dns.net,Apple_AI.list,Apple_AI,Apple Private Relay DNS
+ls.apple.com,Apple.list,Apple,Apple Siri LinkScribe裸域走Apple
+mask-h2.icloud.com,Apple_AI.list,Apple_AI,Apple Private Relay H2
+cp4.cloudflare.com,Apple_AI.list,Apple_AI,Apple Intelligence Cloudflare
+bytegecko.com,TikTok.list,TikTok,海外ByteDance基础设施
+redditmedia.com,SocialMedia.list,SocialMedia,Reddit媒体资源
+redditstatic.com,SocialMedia.list,SocialMedia,Reddit静态资源
+snapkit.com,SocialMedia.list,SocialMedia,Snap开发者服务
+jsdelivr.net,CDN.list,CDN,jsDelivr公共包CDN
+unpkg.com,CDN.list,CDN,UNPKG公共包CDN
+esm.sh,CDN.list,CDN,ESM公共包CDN
+boil.network,Global.list,Global,家宽VPS厂商需代理访问
+neburst.com,Global.list,Global,主机厂商需代理访问
+meowvps.com,Global.list,Global,主机推荐网站需代理访问
+fdcservers.net,Global.list,Global,FDC Servers主机厂商需代理访问
+vpszdm.com,Global.list,Global,VPS推荐评测网站需代理访问
+sa.net,Global.list,Global,海外VPS厂商需代理访问
+shlii.io,Global.list,Global,NAT VPS厂商需代理访问
+vmiss.com,Global.list,Global,海外云主机厂商需代理访问
+ddps.jp,Global.list,Global,日本VPS及托管厂商需代理访问
+legendvps.com,Global.list,Global,海外VPS厂商需代理访问
+gomami.io,Global.list,Global,gomami.io需代理
+gepush.com,China.list,DIRECT,个推推送基础设施直连
+getui.net,China.list,DIRECT,个推网络基础设施直连
+weixingshangye.com,China.list,DIRECT,中国备案商业网站直连
+appinn.me,China.list,DIRECT,小众软件官方论坛直连
+gsp64-ssl.ls.apple.com,Apple_AI.list,Apple_AI,Apple Intelligence全球LinkScribe节点

@@ -42,7 +42,7 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 
 | 特性 | 说明 |
 |------|------|
-| 🤖 **全自动同步** | 检查 39 个上游源的 Last-Modified / ETag，只同步有变更的规则集，无变化跳过提交 |
+| 🤖 **全自动同步** | 检查 41 个上游源的 Last-Modified / ETag，只同步有变更的规则集，无变化跳过提交 |
 | 🧪 **自动校验** | 15+ 不变量检查：规则类型合法性、无策略名渗入、无重复、domain-only 约束、no-resolve 策略等 |
 | 📋 **清单索引** | 每条规则拥有 12 字符稳定内容哈希 ID + 上游来源标注，支持跨版本追踪 |
 | 📊 **增量差异报告** | 每次变更生成 manifest diff（markdown + JSON），明确增减来源 |
@@ -200,9 +200,11 @@ python3 scripts/audit_rules.py
 
 ### 新手三步骤
 
-1. **导入托管配置** → 使用 `Conf/Linnux.conf`，首行已包含 Surge `#!MANAGED-CONFIG`，默认每日检查更新
+1. **导入并复制为普通配置** → 导入 `Conf/Linnux.conf` 后，在 Surge 中创建副本，解除整份配置的托管更新，使用该副本
 2. **添加自己的订阅** → 将 `[Proxy Group]` 中 `✈️ 我的节点` 的 `policy-path=你的订阅地址` 改为自己的订阅地址
-3. **保持规则更新** → 本仓库规则每日由维护者的 agent 流水线自动更新，托管配置引用的 `Rule/*.list` 无需你做任何操作
+3. **保持规则更新** → 普通配置中的远程 `RULE-SET` 仍独立自动更新；整份配置和策略组不再跟随本仓库自动更新
+
+托管配置不能直接在本地编辑，见 [Surge 官方说明](https://manual.nssurge.com/profile/format.html)。需要跟随整份配置更新的高级用法，应分离本地订阅与远程规则章节，并按客户端版本核对 include 支持。
 
 托管配置地址：
 
