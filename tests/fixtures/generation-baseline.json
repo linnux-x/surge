@@ -1,0 +1,300 @@
+{
+  "baseline": "d84c77eec611384c6d4db376539a523079278d52",
+  "guardrail_input": [
+    "# source",
+    "DOMAIN, github.com",
+    "DOMAIN,fast.com",
+    "DOMAIN,www.youtube.com",
+    "GEOIP,GOOGLE",
+    "IP-CIDR,1.1.1.0/24",
+    "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+    "DOMAIN-KEYWORD,1.2.3",
+    "DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe",
+    "DOMAIN,keep.example # note"
+  ],
+  "guardrails": {
+    "Apple_AI.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,fast.com",
+      "DOMAIN,www.youtube.com",
+      "IP-ASN,15169,no-resolve",
+      "IP-CIDR,1.1.1.0/24,no-resolve",
+      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+      "DOMAIN,keep.example"
+    ],
+    "AI.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,fast.com",
+      "DOMAIN,www.youtube.com",
+      "IP-ASN,15169,no-resolve",
+      "IP-CIDR,1.1.1.0/24,no-resolve",
+      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+      "DOMAIN,keep.example"
+    ],
+    "Apple.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,fast.com",
+      "DOMAIN,www.youtube.com",
+      "IP-ASN,15169,no-resolve",
+      "IP-CIDR,1.1.1.0/24,no-resolve",
+      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+      "DOMAIN,keep.example"
+    ],
+    "Apple_CN.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,fast.com",
+      "DOMAIN,www.youtube.com",
+      "IP-ASN,15169,no-resolve",
+      "IP-CIDR,1.1.1.0/24,no-resolve",
+      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+      "DOMAIN,keep.example"
+    ],
+    "CDN.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,fast.com",
+      "DOMAIN,www.youtube.com",
+      "IP-ASN,15169,no-resolve",
+      "IP-CIDR,1.1.1.0/24,no-resolve",
+      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+      "DOMAIN,keep.example"
+    ],
+    "Download.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,fast.com",
+      "DOMAIN,www.youtube.com",
+      "IP-ASN,15169,no-resolve",
+      "IP-CIDR,1.1.1.0/24,no-resolve",
+      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+      "DOMAIN,keep.example"
+    ],
+    "China.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,fast.com",
+      "DOMAIN,www.youtube.com",
+      "DOMAIN,keep.example"
+    ],
+    "China_IP.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,fast.com",
+      "DOMAIN,www.youtube.com",
+      "IP-ASN,15169",
+      "IP-CIDR,1.1.1.0/24",
+      "IP-CIDR6,2606:4700::/32",
+      "DOMAIN,keep.example"
+    ],
+    "ChinaMedia.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,fast.com",
+      "DOMAIN,www.youtube.com",
+      "IP-ASN,15169,no-resolve",
+      "IP-CIDR,1.1.1.0/24,no-resolve",
+      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+      "DOMAIN,keep.example"
+    ],
+    "Disney.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,fast.com",
+      "DOMAIN,www.youtube.com",
+      "IP-ASN,15169,no-resolve",
+      "IP-CIDR,1.1.1.0/24,no-resolve",
+      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+      "DOMAIN,keep.example"
+    ],
+    "Game.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,fast.com",
+      "DOMAIN,www.youtube.com",
+      "IP-ASN,15169,no-resolve",
+      "IP-CIDR,1.1.1.0/24,no-resolve",
+      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+      "DOMAIN,keep.example"
+    ],
+    "Global.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,www.youtube.com",
+      "IP-ASN,15169,no-resolve",
+      "IP-CIDR,1.1.1.0/24,no-resolve",
+      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+      "DOMAIN,keep.example"
+    ],
+    "GlobalMedia.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,www.youtube.com",
+      "IP-ASN,15169,no-resolve",
+      "IP-CIDR,1.1.1.0/24,no-resolve",
+      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+      "DOMAIN,keep.example"
+    ],
+    "Google.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,fast.com",
+      "IP-ASN,15169,no-resolve",
+      "IP-CIDR,1.1.1.0/24,no-resolve",
+      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+      "DOMAIN,keep.example"
+    ],
+    "Microsoft.list": [
+      "DOMAIN,fast.com",
+      "DOMAIN,www.youtube.com",
+      "IP-ASN,15169,no-resolve",
+      "IP-CIDR,1.1.1.0/24,no-resolve",
+      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+      "DOMAIN,keep.example"
+    ],
+    "Microsoft_CDN.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,fast.com",
+      "DOMAIN,www.youtube.com",
+      "IP-ASN,15169,no-resolve",
+      "IP-CIDR,1.1.1.0/24,no-resolve",
+      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+      "DOMAIN,keep.example"
+    ],
+    "Netflix.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,www.youtube.com",
+      "IP-ASN,15169,no-resolve",
+      "IP-CIDR,1.1.1.0/24,no-resolve",
+      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+      "DOMAIN,keep.example"
+    ],
+    "PayPal.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,fast.com",
+      "DOMAIN,www.youtube.com",
+      "IP-ASN,15169,no-resolve",
+      "IP-CIDR,1.1.1.0/24,no-resolve",
+      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+      "DOMAIN,keep.example"
+    ],
+    "SocialMedia.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,fast.com",
+      "DOMAIN,www.youtube.com",
+      "IP-ASN,15169,no-resolve",
+      "IP-CIDR,1.1.1.0/24,no-resolve",
+      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+      "DOMAIN,keep.example"
+    ],
+    "Speedtest.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,fast.com",
+      "DOMAIN,www.youtube.com",
+      "IP-ASN,15169,no-resolve",
+      "IP-CIDR,1.1.1.0/24,no-resolve",
+      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+      "DOMAIN,keep.example"
+    ],
+    "Speedtest_China.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,fast.com",
+      "DOMAIN,www.youtube.com",
+      "IP-ASN,15169,no-resolve",
+      "IP-CIDR,1.1.1.0/24,no-resolve",
+      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+      "DOMAIN,keep.example"
+    ],
+    "Spotify.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,fast.com",
+      "DOMAIN,www.youtube.com",
+      "IP-ASN,15169,no-resolve",
+      "IP-CIDR,1.1.1.0/24,no-resolve",
+      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+      "DOMAIN,keep.example"
+    ],
+    "Telegram.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,fast.com",
+      "DOMAIN,www.youtube.com",
+      "IP-ASN,15169,no-resolve",
+      "IP-CIDR,1.1.1.0/24,no-resolve",
+      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+      "DOMAIN,keep.example"
+    ],
+    "TikTok.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,fast.com",
+      "DOMAIN,www.youtube.com",
+      "IP-ASN,15169,no-resolve",
+      "IP-CIDR,1.1.1.0/24,no-resolve",
+      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+      "DOMAIN,keep.example"
+    ],
+    "WeChat.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,fast.com",
+      "DOMAIN,www.youtube.com",
+      "IP-ASN,15169,no-resolve",
+      "IP-CIDR,1.1.1.0/24,no-resolve",
+      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+      "DOMAIN,keep.example"
+    ],
+    "YouTube.list": [
+      "DOMAIN,github.com",
+      "DOMAIN,fast.com",
+      "DOMAIN,www.youtube.com",
+      "IP-ASN,15169,no-resolve",
+      "IP-CIDR,1.1.1.0/24,no-resolve",
+      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
+      "DOMAIN,keep.example"
+    ]
+  },
+  "generation": [
+    {
+      "format": null,
+      "input": [
+        "# source",
+        "DOMAIN-SUFFIX,example.com",
+        "DOMAIN,a.example.com",
+        "DOMAIN, excluded.example",
+        "DOMAIN,manual.example"
+      ],
+      "output": "# NAME: Test\n# AUTHOR: linnux-x\n# REPO: https://github.com/linnux-x/surge\n# UPDATED: 2026-09-08 00:00:00 +0800\n# FORMAT: Surge Ruleset\n# TOTAL: 2\n\n# ======= Manual Rules ========\nDOMAIN,manual.example\n\n# ======= Fixture ========\nDOMAIN-SUFFIX,example.com\n"
+    },
+    {
+      "format": "domainset",
+      "input": [
+        "# source",
+        ".example.com",
+        "a.example.com",
+        "excluded.example",
+        "manual.example"
+      ],
+      "output": "# NAME: Test\n# AUTHOR: linnux-x\n# REPO: https://github.com/linnux-x/surge\n# UPDATED: 2026-09-08 00:00:00 +0800\n# FORMAT: Surge Ruleset\n# TOTAL: 2\n\n# ======= Manual Rules ========\nDOMAIN,manual.example\n\n# ======= Fixture ========\nDOMAIN-SUFFIX,example.com\n"
+    },
+    {
+      "format": "cidr",
+      "input": [
+        "# source",
+        "1.1.1.0/24",
+        "1.1.1.0/25",
+        "2606:4700::/32"
+      ],
+      "output": "# NAME: Test\n# AUTHOR: linnux-x\n# REPO: https://github.com/linnux-x/surge\n# UPDATED: 2026-09-08 00:00:00 +0800\n# FORMAT: Surge Ruleset\n# TOTAL: 3\n\n# ======= Manual Rules ========\nDOMAIN,manual.example\n\n# ======= Fixture ========\nIP-CIDR,1.1.1.0/24,no-resolve\nIP-CIDR6,2606:4700::/32,no-resolve\n"
+    },
+    {
+      "format": "speedtest-json-cn",
+      "input": [
+        "[{\"cc\": \"CN\", \"country\": \"China\", \"host\": \"cn.example.com:8080\"}, {\"cc\": \"US\", \"country\": \"United States\", \"host\": \"us.example.com:8080\"}]"
+      ],
+      "output": "# NAME: Test\n# AUTHOR: linnux-x\n# REPO: https://github.com/linnux-x/surge\n# UPDATED: 2026-09-08 00:00:00 +0800\n# FORMAT: Surge Ruleset\n# TOTAL: 2\n\n# ======= Manual Rules ========\nDOMAIN,manual.example\n\n# ======= Fixture ========\nDOMAIN,cn.example.com\n"
+    },
+    {
+      "format": "speedtest-json-international",
+      "input": [
+        "[{\"cc\": \"CN\", \"country\": \"China\", \"host\": \"cn.example.com:8080\"}, {\"cc\": \"US\", \"country\": \"United States\", \"host\": \"us.example.com:8080\"}]"
+      ],
+      "output": "# NAME: Test\n# AUTHOR: linnux-x\n# REPO: https://github.com/linnux-x/surge\n# UPDATED: 2026-09-08 00:00:00 +0800\n# FORMAT: Surge Ruleset\n# TOTAL: 2\n\n# ======= Manual Rules ========\nDOMAIN,manual.example\n\n# ======= Fixture ========\nDOMAIN,us.example.com\n"
+    },
+    {
+      "format": "speedtest-cn-csv",
+      "input": [
+        "host,country_code,province,active",
+        "cn.example.com:8080,CN,江苏,1",
+        "off.example.com,CN,上海,0"
+      ],
+      "output": "# NAME: Test\n# AUTHOR: linnux-x\n# REPO: https://github.com/linnux-x/surge\n# UPDATED: 2026-09-08 00:00:00 +0800\n# FORMAT: Surge Ruleset\n# TOTAL: 2\n\n# ======= Manual Rules ========\nDOMAIN,manual.example\n\n# ======= Fixture ========\nDOMAIN,cn.example.com\n"
+    }
+  ]
+}

@@ -53,43 +53,31 @@ def fetch_upstream_info(url: str) -> dict:
         "source_available": False,
     }
 
-    # ── Try HEAD first ──
-    req = urllib.request.Request(url, headers=REQUEST_HEADERS, method="HEAD")
-    try:
-        resp = urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT)
-        result["last_modified"] = resp.headers.get("Last-Modified")
-        result["etag"] = resp.headers.get("ETag")
-        result["content_length"] = resp.headers.get("Content-Length")
-        result["source_available"] = True
-        return result
-    except (urllib.error.URLError, OSError, ValueError):
-        pass
-
-    # ── Fallback: Range GET (bytes=0-0) ──
-    req = urllib.request.Request(url, headers=REQUEST_HEADERS, method="GET")
-    req.add_header("Range", "bytes=0-0")
-    try:
-        resp = urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT)
-        result["last_modified"] = resp.headers.get("Last-Modified")
-        result["etag"] = resp.headers.get("ETag")
-        result["content_length"] = resp.headers.get("Content-Length")
-        result["source_available"] = True
-        return result
-    except (urllib.error.URLError, OSError, ValueError):
-        pass
-
-    # ── Last resort: full GET ──
-    try:
-        req = urllib.request.Request(url, headers=REQUEST_HEADERS, method="GET")
-        resp = urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT)
-        result["last_modified"] = resp.headers.get("Last-Modified")
-        result["etag"] = resp.headers.get("ETag")
-        result["content_length"] = str(len(resp.read()))
-        result["source_available"] = True
-        return result
-    except (urllib.error.URLError, OSError, ValueError) as e:
-        print(f"  ⚠  Unreachable: {url} — {e}", file=sys.stderr)
-        return result
+    # Preserve the HEAD → Range GET → full GET fallback and header semantics.
+    # Close each response before returning; Range responses deliberately keep
+    # their Content-Length (it is diagnostic, never a version fingerprint).
+    for method, range_request, read_body in (
+        ("HEAD", False, False), ("GET", True, False), ("GET", False, True),
+    ):
+        req = urllib.request.Request(url, headers=REQUEST_HEADERS, method=method)
+        if range_request:
+            req.add_header("Range", "bytes=0-0")
+        try:
+            with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT) as resp:
+                result["last_modified"] = resp.headers.get("Last-Modified")
+                result["etag"] = resp.headers.get("ETag")
+                result["content_length"] = (
+                    str(len(resp.read())) if read_body else resp.headers.get("Content-Length")
+                )
+                result["source_available"] = True
+                return result
+        except (urllib.error.URLError, OSError, ValueError) as exc:
+            # HTTPError also owns a response body/socket.
+            if isinstance(exc, urllib.error.HTTPError):
+                exc.close()
+            if read_body:
+                print(f"  ⚠  Unreachable: {url} — {exc}", file=sys.stderr)
+    return result
 
 
 def load_state() -> dict:
