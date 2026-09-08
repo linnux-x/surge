@@ -95,8 +95,8 @@ def validate_rule_file(lines: list[str], target_name: str) -> list[str]:
     if duplicates:
         errors.append(f"{target_name}: {len(duplicates)} duplicate rules, examples: {duplicates[:5]}")
 
-    networks: list[tuple[int, ipaddress._BaseNetwork]] = []
-    all_networks: set[ipaddress._BaseNetwork] = set()
+    networks: list[tuple[int, ipaddress.IPv4Network | ipaddress.IPv6Network, tuple[str, ...]]] = []
+    all_networks: set[tuple[ipaddress.IPv4Network | ipaddress.IPv6Network, tuple[str, ...]]] = set()
 
     for index, rule in enumerate(lines, start=1):
         parts = [p.strip() for p in rule.split(",")]
@@ -245,14 +245,15 @@ def validate_rule_file(lines: list[str], target_name: str) -> list[str]:
             except ValueError as exc:
                 errors.append(f"{target_name}:{index} invalid CIDR {parts[1]!r}: {exc}")
             else:
-                networks.append((index, network))
-                all_networks.add(network)
+                options = tuple(sorted(p.lower() for p in parts[2:]))
+                networks.append((index, network, options))
+                all_networks.add((network, options))
 
     # ── CIDR redundancy ──
-    for index, network in networks:
+    for index, network, options in networks:
         for prefix in range(network.prefixlen):
             try:
-                if network.supernet(new_prefix=prefix) in all_networks:
+                if (network.supernet(new_prefix=prefix), options) in all_networks:
                     errors.append(f"{target_name}:{index} redundant CIDR: {network}")
                     break
             except ValueError:

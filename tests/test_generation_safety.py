@@ -43,3 +43,30 @@ class GenerationSafetyTests(unittest.TestCase):
 
     def test_invalid_rules_do_not_overwrite_valid_output(self):
         self.run_invalid_source(['NOT-A-RULE,example.test'], SystemExit)
+
+    def test_validator_preserves_option_distinction(self):
+        from rule_validator import validate_rule_file
+        rules = ['IP-CIDR,203.0.113.0/24,no-resolve', 'IP-CIDR,203.0.113.0/25']
+        self.assertFalse(any('redundant CIDR' in e for e in validate_rule_file(rules, 'Test.list')))
+        self.assertTrue(any('redundant CIDR' in e for e in validate_rule_file([rules[0], rules[1]+',no-resolve'], 'Test.list')))
+
+    def test_invalid_incremental_input_fails_before_generation(self):
+        import os
+        for value in ('[', 'null', '{}', '"AI.list"', '["missing.list"]', '[1]'):
+            with self.subTest(value=value), tempfile.TemporaryDirectory() as d:
+                root = Path(d)
+                with patch.object(generator, 'RULE_DIR', root), patch.object(generator, 'MANUAL_DIR', root/'Manual'), patch.object(generator, 'process_rule') as process, patch.dict(os.environ, {'CHANGED_RULESETS': value}):
+                    with self.assertRaises(ValueError):
+                        generator.main()
+                    process.assert_not_called()
+
+    def test_global_validation_failure_preserves_file(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            p = root/'Global.list'
+            content = '# TOTAL: 2\nDOMAIN,shared.example\nNOT-A-RULE,broken\n'
+            p.write_text(content)
+            (root/'AI.list').write_text('DOMAIN,shared.example\n')
+            with patch.object(generator, 'RULE_DIR', root), self.assertRaises(SystemExit):
+                generator.prune_global_first_match_overlaps()
+            self.assertEqual(p.read_text(), content)

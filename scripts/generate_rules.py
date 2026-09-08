@@ -437,9 +437,7 @@ def prune_global_first_match_overlaps():
         else:
             result.append(line)
 
-    target_path.write_text("\n".join(result) + "\n", encoding="utf-8")
-
-    # Validate after pruning
+    # Validate before writing the pruned Global file
     rules = [l for l in result if not l.startswith("#") and l.strip()]
     errors = validate_rule_file(rules, "Global.list")
     if errors:
@@ -447,6 +445,7 @@ def prune_global_first_match_overlaps():
         for e in errors:
             print(f"  - {e}")
         sys.exit(1)
+    target_path.write_text("\n".join(result) + "\n", encoding="utf-8")
 
 
 # ── Main ────────────────────────────────────────────────────────────────────
@@ -459,8 +458,12 @@ def main():
     changed_raw = os.environ.get("CHANGED_RULESETS", "[]")
     try:
         changed_rulesets: list[str] = json.loads(changed_raw)
-    except (json.JSONDecodeError, TypeError):
-        changed_rulesets = []
+    except (json.JSONDecodeError, TypeError) as exc:
+        raise ValueError("CHANGED_RULESETS must be a JSON array of known ruleset names") from exc
+    if not isinstance(changed_rulesets, list) or any(
+        not isinstance(name, str) or name not in RULE_SPECS for name in changed_rulesets
+    ):
+        raise ValueError("CHANGED_RULESETS must be a JSON array of known ruleset names")
 
     processed = False
     for target_name, (display_name, sources) in RULE_SPECS.items():
