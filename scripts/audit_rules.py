@@ -20,47 +20,20 @@ if _scripts_dir not in sys.path:
     sys.path.insert(0, _scripts_dir)
 
 from http_util import fetch_text
+from speedtest_sources import convert_speedtest
+from sources import RULE_SPECS
 from policy import BROAD_SHARED_SUFFIXES, SHARED_INFRA_EXEMPT_FILES
-from sources import SNAPSHOT_FALLBACKS
 
 ROOT = Path(__file__).resolve().parents[1]
 RULE_DIR = ROOT / "Rule"
 MANUAL_DIR = ROOT / "Rule" / "Manual"
-SNAPSHOT_DIR = ROOT / "Rule" / "SourceSnapshots"
 AUDIT_LOG = ROOT / "scripts" / "audit_report.json"
 
 # ── Helpers ──────────────────────────────────────────────────────────
 
 def fetch_all_sources(sources: dict[str, list[str]]) -> dict[str, str | None]:
-    """Load every unique network source or reviewed local snapshot once.
-
-    Both the reachability check and the rule-count comparison consume the
-    same content, so fetching once here halves the audit's HTTP traffic.
-    """
-    contents: dict[str, str | None] = {}
-    for _target, urls in sorted(sources.items()):
-        for url in urls:
-            if url not in contents:
-                relative = Path(url)
-                candidate = (ROOT / relative).resolve()
-                if not relative.is_absolute() and SNAPSHOT_DIR.resolve() in candidate.parents:
-                    try:
-                        contents[url] = candidate.read_text(encoding="utf-8")
-                    except OSError as exc:
-                        print(f"  ⚠ SNAPSHOT READ FAILED: {url} → {exc}")
-                        contents[url] = None
-                else:
-                    contents[url] = fetch_text(url)
-                    fallback = SNAPSHOT_FALLBACKS.get(url)
-                    if contents[url] is None and fallback:
-                        fallback_path = (ROOT / fallback).resolve()
-                        if SNAPSHOT_DIR.resolve() in fallback_path.parents:
-                            try:
-                                contents[url] = fallback_path.read_text(encoding="utf-8")
-                                print(f"  ⚠ PRIMARY UNAVAILABLE: {url} → using reviewed snapshot {fallback}")
-                            except OSError as exc:
-                                print(f"  ⚠ SNAPSHOT READ FAILED: {fallback} → {exc}")
-    return contents
+    """Fetch every unique source once for reachability and count checks."""
+    return {url: fetch_text(url) for url in sorted({u for urls in sources.values() for u in urls})}
 
 
 def non_comment_rules(path: Path) -> list[str]:
@@ -133,6 +106,10 @@ def check_upstream_vs_generated(
         for url in urls:
             content = contents.get(url)
             if content:
+                fmt = next((fmt for _, source_url, fmt in RULE_SPECS[target][1] if source_url == url), None)
+                if fmt and fmt.startswith("speedtest-"):
+                    upstream_total += len(convert_speedtest(content.splitlines(), fmt))
+                    continue
                 for line in content.splitlines():
                     s = line.strip()
                     if s and not s.startswith("#") and not s.startswith("."):
