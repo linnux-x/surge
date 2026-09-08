@@ -1,7 +1,7 @@
 # NAME: AI
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-09-06 08:18:45 +0800
+# UPDATED: 2026-09-08 05:02:59 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 145
 
@@ -102,10 +102,10 @@ DOMAIN,api.github.com
 DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,x.ai
 DOMAIN,api.jetbrains.ai
+DOMAIN-SUFFIX,cursor.sh
 
 # ======= Rabbit-Spec AIGC ========
 DOMAIN-SUFFIX,cursor.com
-DOMAIN-SUFFIX,cursor.sh
 DOMAIN,anthropic-com.ghost.io
 DOMAIN,browser-intake-datadoghq.com
 DOMAIN,browser-intake-us5-datadoghq.com

@@ -6,9 +6,9 @@
 
 ## 差异摘要
 
-- 新增：40
-- 删除：21
-- 来源迁移：8
+- 新增：0
+- 删除：0
+- 来源迁移：1
 
 ## Clash 兼容性
 
@@ -36,11 +36,11 @@
 - Kelee Speedtest International: 17054
 - Loyalsoldier China CIDR: 7473
 - Manual Rules: 265
-- Rabbit-Spec AIGC: 48
+- Rabbit-Spec AIGC: 47
 - Rabbit-Spec China: 186
 - Rabbit-Spec China CIDR: 14
 - RocM301 Apple-AI: 16
-- SukkaW AI: 23
+- SukkaW AI: 24
 - SukkaW Apple CDN: 158
 - SukkaW Apple CN: 5
 - SukkaW CDN: 25
