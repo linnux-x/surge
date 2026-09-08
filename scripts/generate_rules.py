@@ -17,6 +17,7 @@ import subprocess
 import sys
 import tempfile
 from datetime import datetime
+from functools import lru_cache
 from pathlib import Path
 from typing import Optional, Tuple
 from zoneinfo import ZoneInfo
@@ -26,7 +27,8 @@ _scripts_dir = Path(__file__).resolve().parent
 if str(_scripts_dir) not in sys.path:
     sys.path.insert(0, str(_scripts_dir))
 
-from sources import RULE_SPECS, SNAPSHOT_FALLBACKS
+from sources import RULE_SPECS
+from speedtest_sources import convert_speedtest
 from rule_validator import SUKKAW_MARKER, validate_rule_file
 from policy import FASTCOM_RE, GITHUB_RE, YOUTUBE_RE
 
@@ -35,7 +37,6 @@ from policy import FASTCOM_RE, GITHUB_RE, YOUTUBE_RE
 SUKKA_MARKER = re.compile(r"7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset[.]skk[.]moe", re.IGNORECASE)
 RULE_DIR = Path("Rule")
 MANUAL_DIR = RULE_DIR / "Manual"
-SNAPSHOT_DIR = RULE_DIR / "SourceSnapshots"
 REPO_URL = os.environ.get("REPO_URL", "https://github.com/linnux-x/surge")
 AUTHOR_NAME = os.environ.get("AUTHOR_NAME", "linnux-x")
 # Retries cover transient failures, including TLS handshake resets observed during
@@ -283,33 +284,19 @@ def prune_redundant_cidr(filepath: Path):
 
 # ── Processing ──────────────────────────────────────────────────────────────
 
+@lru_cache(maxsize=None)
+def fetch_remote_source(url: str) -> tuple[str, ...]:
+    """Fetch a remote source; failures must stop generation."""
+    result = subprocess.run(
+        ["curl", "-fsSL", *CURL_OPTS, url],
+        capture_output=True, text=True, check=True,
+        timeout=FETCH_SUBPROCESS_TIMEOUT,
+    )
+    return tuple(result.stdout.splitlines())
+
+
 def fetch_source(url: str, source_format: Optional[str]) -> list[str]:
-    """Fetch a remote source or load a reviewed repository snapshot."""
-    if source_format == "snapshot":
-        snapshot_path = Path(url)
-        if snapshot_path.is_absolute() or SNAPSHOT_DIR not in snapshot_path.parents:
-            raise ValueError(f"Snapshot source must stay below {SNAPSHOT_DIR}: {url}")
-        if not snapshot_path.is_file():
-            raise FileNotFoundError(f"Missing reviewed source snapshot: {snapshot_path}")
-        return snapshot_path.read_text(encoding="utf-8").splitlines()
-    try:
-        result = subprocess.run(
-            ["curl", "-fsSL", *CURL_OPTS, url],
-            capture_output=True, text=True, check=True,
-            timeout=FETCH_SUBPROCESS_TIMEOUT,
-        )
-        return result.stdout.splitlines()
-    except (subprocess.CalledProcessError, subprocess.TimeoutExpired) as exc:
-        fallback = SNAPSHOT_FALLBACKS.get(url) if source_format == "loon-snapshot" else None
-        if not fallback:
-            raise
-        snapshot_path = Path(fallback)
-        if snapshot_path.is_absolute() or SNAPSHOT_DIR not in snapshot_path.parents:
-            raise ValueError(f"Snapshot fallback must stay below {SNAPSHOT_DIR}: {fallback}") from exc
-        if not snapshot_path.is_file():
-            raise FileNotFoundError(f"Missing reviewed source snapshot fallback: {snapshot_path}") from exc
-        print(f"  ⚠ {url} unavailable; using reviewed snapshot {fallback}")
-        return snapshot_path.read_text(encoding="utf-8").splitlines()
+    return list(fetch_remote_source(url))
 
 
 def process_rule(target_name: str, display_name: str, sources: list[Tuple[str, str, Optional[str]]]):
@@ -330,7 +317,7 @@ def process_rule(target_name: str, display_name: str, sources: list[Tuple[str, s
     # Upstream sources
     for source_name, source_url, source_format in sources:
         raw = fetch_source(source_url, source_format)
-        cleaned = clean_source(raw)
+        cleaned = (convert_speedtest(raw, source_format) if source_format and source_format.startswith("speedtest-") else clean_source(raw))
         if not cleaned:
             raise ValueError(f"Empty upstream after cleaning: {source_name} ({source_url})")
 

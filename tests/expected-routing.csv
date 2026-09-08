@@ -5,9 +5,9 @@ wx.qlogo.cn,WeChat.list,WeChat,微信头像CDN
 open.weixin.qq.com,WeChat.list,WeChat,微信开放平台
 speedtest.net,Speedtest.list,Speedtest,测速主站
 fast.com,Speedtest.list,Speedtest,fast.com仅在此文件
-cesu-hz.zjtelecom.com.cn,Speedtest_China.list,DIRECT,可莉大陆测速节点强制直连
-speedtest.dukekunshan.edu.cn,Speedtest_China.list,DIRECT,中外规则重叠时大陆直连规则必须先行命中
-cpt-ter-speedtest1-vl145.atomic.ac,Speedtest.list,Speedtest,可莉国际测速节点走可选测速策略
+cesu-hz.zjtelecom.com.cn,Speedtest_China.list,DIRECT,spiritLHLS 大陆测速节点维持直连
+speedtest.dukekunshan.edu.cn,Speedtest_China.list,DIRECT,Sukka 官方地区数据明确为大陆节点
+cpt-ter-speedtest1-vl145.atomic.ac,FINAL,Global,移除 Kelee 独有节点后回落至 Global
 chat.openai.com,AI.list,AI,ChatGPT
 api.openai.com,AI.list,AI,OpenAI API
 claude.ai,AI.list,AI,Claude AI
@@ -129,3 +129,5 @@ getui.net,China.list,DIRECT,个推网络基础设施直连
 weixingshangye.com,China.list,DIRECT,中国备案商业网站直连
 appinn.me,China.list,DIRECT,小众软件官方论坛直连
 gsp64-ssl.ls.apple.com,Apple_AI.list,Apple_AI,Apple Intelligence全球LinkScribe节点
+colocity.speedtest.gslnetworks.com,Speedtest.list,Speedtest,Sukka 官方数据中的境外测速节点
+node-124-160-78-98.speedtest.cn,Speedtest_China.list,DIRECT,spiritLHLS 明确大陆省份的测速节点

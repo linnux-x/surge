@@ -37,18 +37,13 @@ RABBIT = BASE_URIS["RABBIT"]
 CHUA = BASE_URIS["CHUA"]
 ROC301 = BASE_URIS["ROC301"]
 
-# User-directed primary upstreams.  The corresponding reviewed snapshots are
-# used only when Kelee is temporarily blocked by WAF/TLS/network failures.
-KELEE_SPEEDTEST_CHINA = "https://kelee.one/Tool/Loon/Lsr/SpeedtestChina.lsr"
-KELEE_SPEEDTEST_INTERNATIONAL = "https://kelee.one/Tool/Loon/Lsr/SpeedtestInternational.lsr"
-SNAPSHOT_FALLBACKS: dict[str, str] = {
-    KELEE_SPEEDTEST_CHINA: "Rule/SourceSnapshots/SpeedtestChina.lsr",
-    KELEE_SPEEDTEST_INTERNATIONAL: "Rule/SourceSnapshots/SpeedtestInternational.lsr",
-}
+# Official Sukka build output; the same response supplies both geographic views.
+SPEEDTEST_SERVERS = "https://raw.githubusercontent.com/SukkaLab/speedtest-net-servers-dist/master/servers.json"
+SPEEDTEST_CN_CSV = "https://raw.githubusercontent.com/spiritLHLS/speedtest.cn-CN-ID/main/CN.csv"
 
 # ── Canonical source list ─────────────────────────────────────────────────
 # Each entry: (source_label, source_url, target_ruleset, format_or_None)
-# format: "domainset" | "cidr" | "snapshot" | "loon-snapshot" | None
+# format: "domainset" | "cidr" | "speedtest-json-cn" | "speedtest-json-international" | "speedtest-cn-csv" | None
 
 _SOURCES: list[tuple[str, str, str, str | None]] = [
     # Apple_AI.list
@@ -103,10 +98,9 @@ _SOURCES: list[tuple[str, str, str, str | None]] = [
     ("blackmatrix7 Twitter", f"{BM7}/Twitter/Twitter.list", "SocialMedia.list", None),
     # Speedtest.list: keep the source fragment until added mainland endpoints are classified.
     ("SukkaW Speedtest", f"{SUKKA_SOURCE}/domainset/speedtest.conf", "Speedtest.list", "domainset"),
-    # Kelee is a daily primary upstream.  A reviewed local snapshot is used
-    # only when the primary cannot be fetched; see SNAPSHOT_FALLBACKS.
-    ("Kelee Speedtest International", KELEE_SPEEDTEST_INTERNATIONAL, "Speedtest.list", "loon-snapshot"),
-    ("Kelee Speedtest China", KELEE_SPEEDTEST_CHINA, "Speedtest_China.list", "loon-snapshot"),
+    ("SukkaW Speedtest Servers International", SPEEDTEST_SERVERS, "Speedtest.list", "speedtest-json-international"),
+    ("SukkaW Speedtest Servers China", SPEEDTEST_SERVERS, "Speedtest_China.list", "speedtest-json-cn"),
+    ("spiritLHLS Speedtest.cn China", SPEEDTEST_CN_CSV, "Speedtest_China.list", "speedtest-cn-csv"),
     # Spotify.list
     ("blackmatrix7 Spotify", f"{BM7}/Spotify/Spotify.list", "Spotify.list", None),
     # Telegram.list
@@ -126,10 +120,7 @@ _SOURCES: list[tuple[str, str, str, str | None]] = [
 # SOURCE_URL_MAP: url → [ruleset_name, ...]  (for check_upstream_updates.py)
 SOURCE_URL_MAP: dict[str, list[str]] = {}
 for _label, _url, _rs, _fmt in _SOURCES:
-    # Reviewed local snapshots are regenerated on every full build but are not
-    # network upstreams: probing them would create a false daily-change loop.
-    if _fmt != "snapshot":
-        SOURCE_URL_MAP.setdefault(_url, []).append(_rs)
+    SOURCE_URL_MAP.setdefault(_url, []).append(_rs)
 
 # RULE_SPECS: ruleset_name → (display_name, [(label, url, fmt), ...])
 # (for generate_rules.py)
@@ -161,7 +152,7 @@ if _missing:
         f"OVERLAP_DEPENDENTS references unknown rulesets: {sorted(_missing)}"
     )
 
-# Entry-point review scope. All authors remain in _SOURCES. These paths allow
+# Entry-point review scope. These paths allow
 # the offline audit to compare source fragments with published build artifacts.
 SUKKA_ENTRYPOINT_PATHS = {
     "SukkaW AI": "non_ip/ai.conf",

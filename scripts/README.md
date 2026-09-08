@@ -106,7 +106,7 @@ python3 scripts/download_cn_candidates.py TrafficStatistics.csv \
 再检查合并生成与 first-match 策略变化。零独有覆盖只是候选信号，不能单凭一次快照删除作者。
 
 ```bash
-# 联网采样；--refresh 要求全新空目录，失败时仅使用 sources.py 已登记的 fallback。
+# 联网采样；--refresh 要求全新空目录，任一来源无法获取时阻断审计。
 python3 scripts/audit_upstream_sources.py --refresh --cache /tmp/surge-source-cache --output /tmp/surge-source-audit
 # 同一快照离线复核；输出目录与缓存不要放入 Git。
 python3 scripts/audit_upstream_sources.py --cache /tmp/surge-source-cache --output /tmp/surge-source-recheck
@@ -124,6 +124,7 @@ python3 scripts/replay_upstream_entrypoints.py --cache /tmp/surge-source-cache -
 | `ios_privacy_to_surge.py` | 将 iOS 隐私报告 `.ndjson` 转换为 Surge / Loon 规则；过滤系统流量、合并子域名、通过 iTunes API 和内置映射识别 App |
 | `download_cn_candidates.py` | 审计 Surge TrafficStatistics CSV 中当前命中 Download.list 的主机；可选本地 DNS + China_IP 信号，仅输出待人工复核候选，自动丢弃 Surge Fake-IP、LAN 与保留地址，绝不生成或写入 DIRECT 规则 |
 | `validate_dns_module.py` | 校验 DNS Mapping 仅含一个 Host 节和指定官方目录的规则引用；仓库校验与同步流程共用 |
+| `speedtest_sources.py` | 从 Sukka 官方国家字段及 spiritLHLS 省份字段生成测速主机规则，拒绝无效或空数据 |
 | `app_mapping.json` | Bundle ID 到 App 名称、域名、IP 的可扩展映射 |
 
 ---
@@ -134,3 +135,14 @@ python3 scripts/replay_upstream_entrypoints.py --cache /tmp/surge-source-cache -
 - **单一事实来源**：上游源集中在 `sources.py`，校验规则集中在 `rule_validator.py`，策略常量集中在 `policy.py`。
 - **减少散落文件**：CIDR 裁剪内置于 `generate_rules.py`，manifest diff 内置于 `manifest.py --diff`。
 - **导入模块，不解析配置**：脚本直接 import `sources.py`，不再解析 YAML / JSON 作为 source 配置。
+
+## 测速来源更新
+
+`Speedtest.list` 保留 Sukka 手工维护的服务域名，并补充其官方服务器 JSON 中的境外主机。
+`Speedtest_China.list` 使用同一 JSON 中 `cc=CN` 且 `country=China` 的主机，另由
+spiritLHLS 的 CN.csv 补充；CSV 只接受大陆省份白名单和 `active=1` 的记录。
+不会凭域名后缀猜测地区，不会把香港、澳门、台湾记录归入大陆直连。
+
+Sukka JSON 地址同时映射两份规则，其更新会触发两份规则及 Global 重建；同一次生成
+只拉取该 JSON 一次。HTTP 失败、格式错误或筛选为空均阻断替换，不再使用 Kelee 快照。
+Kelee 两个 URL 和专用快照已移除，原公开规则 URL、05:00 本机 Codex 调度及 Agent 审查保留。

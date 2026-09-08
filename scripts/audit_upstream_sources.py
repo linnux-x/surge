@@ -17,7 +17,8 @@ import json
 from pathlib import Path
 import subprocess
 
-from sources import RULE_SPECS, SNAPSHOT_FALLBACKS, SUKKA_ENTRYPOINT_PATHS, SUKKA, SUKKA_SOURCE
+from speedtest_sources import convert_speedtest
+from sources import RULE_SPECS, SUKKA_ENTRYPOINT_PATHS, SUKKA, SUKKA_SOURCE
 from generate_rules import clean_source, convert_domainset, convert_cidr, filter_candidates, apply_project_guardrails
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -46,10 +47,6 @@ def snapshot(url: str, cache: Path, refresh: bool) -> dict:
     if result.returncode == 0:
         content = result.stdout
         record['status'] = 'live'
-    elif url in SNAPSHOT_FALLBACKS:
-        fallback = ROOT / SNAPSHOT_FALLBACKS[url]
-        content = fallback.read_bytes()
-        record.update(status='snapshot_fallback', fallback=SNAPSHOT_FALLBACKS[url], fetch_exit=result.returncode)
     else:
         content = None
         record['fetch_exit'] = result.returncode
@@ -61,7 +58,7 @@ def snapshot(url: str, cache: Path, refresh: bool) -> dict:
 
 
 def normalize(target: str, fmt: str | None, content: str, manual: bool = False) -> set[str]:
-    lines = clean_source(content.splitlines())
+    lines = (convert_speedtest(content.splitlines(), fmt) if fmt and fmt.startswith("speedtest-") else clean_source(content.splitlines()))
     if fmt == 'domainset':
         lines = convert_domainset(lines)
     elif fmt == 'cidr':

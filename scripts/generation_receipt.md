@@ -1,29 +1,29 @@
 # Surge 规则生成收据
 
 - 规则文件：26
-- 规则总数：174913
+- 规则总数：159495
 - manifest 文件：26
 
 ## 差异摘要
 
-- 新增：0
-- 删除：0
-- 来源迁移：1
+- 新增：87
+- 删除：15505
+- 来源迁移：1558
 
 ## Clash 兼容性
 
-- 生成 payload：174730
+- 生成 payload：159312
 - 跳过 Surge 专属规则：{'URL-REGEX': 5, 'USER-AGENT': 178}
 - 保留 mihomo 扩展类型：{'DOMAIN-WILDCARD': 2, 'IP-ASN': 11, 'PROCESS-NAME': 58}
 
 ## 规则类型
 
-- DOMAIN: 19033
+- DOMAIN: 3619
 - DOMAIN-KEYWORD: 102
-- DOMAIN-SUFFIX: 141671
+- DOMAIN-SUFFIX: 141675
 - DOMAIN-WILDCARD: 2
 - IP-ASN: 11
-- IP-CIDR: 9570
+- IP-CIDR: 9562
 - IP-CIDR6: 4283
 - PROCESS-NAME: 58
 - URL-REGEX: 5
@@ -32,8 +32,6 @@
 ## 来源归属
 
 - ConnersHua AI: 18
-- Kelee Speedtest China: 9
-- Kelee Speedtest International: 17054
 - Loyalsoldier China CIDR: 7473
 - Manual Rules: 265
 - Rabbit-Spec AIGC: 47
@@ -49,6 +47,8 @@
 - SukkaW Game Download: 52
 - SukkaW Microsoft CDN: 53
 - SukkaW Speedtest: 121
+- SukkaW Speedtest Servers China: 2
+- SukkaW Speedtest Servers International: 1586
 - Telegram Official CIDR: 11
 - blackmatrix7 Apple: 1546
 - blackmatrix7 China IPs: 4011
@@ -58,7 +58,7 @@
 - blackmatrix7 Disney: 166
 - blackmatrix7 Facebook: 570
 - blackmatrix7 Game: 549
-- blackmatrix7 Global: 24317
+- blackmatrix7 Global: 24323
 - blackmatrix7 GlobalMedia: 2256
 - blackmatrix7 Google: 688
 - blackmatrix7 Instagram: 1
@@ -71,3 +71,4 @@
 - blackmatrix7 Twitter: 32
 - blackmatrix7 WeChat: 99
 - blackmatrix7 YouTube: 188
+- spiritLHLS Speedtest.cn China: 51
