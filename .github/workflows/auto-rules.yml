@@ -4,8 +4,8 @@
 name: Auto-Surge-Rules
 
 # Daily sync is owned by the local agent pipeline, which runs the same
-# scripts and pushes directly (05:00 Beijing). This workflow is kept for
-# manual runs and the dry-run/fingerprint publishing gate only — running
+# scripts and publishes through PRs (05:00 Beijing). This workflow is kept for
+# manual runs and the reviewed-artifact publishing gate only — running
 # both on a schedule doubled the daily commits and repo churn.
 on:
   workflow_dispatch:
@@ -26,6 +26,11 @@ on:
         options:
           - "false"
           - "true"
+      reviewed_run_id:
+        description: "Successful dry-run ID whose exact artifacts were reviewed"
+        required: false
+        default: ""
+        type: string
 
 permissions:
   contents: write
@@ -55,6 +60,7 @@ jobs:
         uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd
 
       - name: Check Upstream Updates
+        if: ${{ inputs.dry_run == 'true' }}
         id: check_upstream
         shell: bash
         run: |
@@ -67,32 +73,16 @@ jobs:
             --state-out scripts/source_state.next.json \
             --github-output "$GITHUB_OUTPUT"
 
-      - name: Compute Build Gate
-        id: gate
-        shell: bash
-        env:
-          CHANGED_COUNT: ${{ steps.check_upstream.outputs.changed_count }}
-          EVENT_NAME: ${{ github.event_name }}
-        run: |
-          set -euo pipefail
-          # Single source of truth for "should we (re)generate this run?":
-          # any upstream changed, or a manual dispatch (which forces full regen).
-          if [ "${CHANGED_COUNT:-0}" -gt 0 ] || [ "$EVENT_NAME" = "workflow_dispatch" ]; then
-            echo "build=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "build=false" >> "$GITHUB_OUTPUT"
-          fi
-
       - name: Generate Rules
         id: generate
-        if: ${{ steps.gate.outputs.build == 'true' }}
+        if: ${{ inputs.dry_run == 'true' }}
         shell: bash
         env:
           CHANGED_RULESETS: ${{ steps.check_upstream.outputs.changed_rulesets }}
         run: python3 scripts/generate_rules.py
 
       - name: Generate Manifests & Diff
-        if: ${{ steps.gate.outputs.build == 'true' }}
+        if: ${{ inputs.dry_run == 'true' }}
         shell: bash
         run: |
           set -euo pipefail
@@ -100,24 +90,24 @@ jobs:
           python3 scripts/manifest.py --diff
 
       - name: Generate Rule Receipt
-        if: ${{ steps.gate.outputs.build == 'true' }}
+        if: ${{ inputs.dry_run == 'true' }}
         shell: bash
         run: python3 scripts/generate_receipt.py
 
       - name: Generate Clash Rule Providers
-        if: ${{ steps.gate.outputs.build == 'true' }}
+        if: ${{ inputs.dry_run == 'true' }}
         shell: bash
         run: python3 scripts/generate_clash_rules.py --validate
 
       - name: Validate Repository Invariants
-        if: ${{ steps.gate.outputs.build == 'true' }}
+        if: ${{ inputs.dry_run == 'true' }}
         shell: bash
         run: |
           set -euo pipefail
           python3 scripts/validate_surge_repo.py
 
       - name: Test Routing Order and Fallback Contract
-        if: ${{ steps.gate.outputs.build == 'true' }}
+        if: ${{ inputs.dry_run == 'true' }}
         shell: bash
         run: |
           set -euo pipefail
@@ -125,77 +115,14 @@ jobs:
           python3 scripts/test_routing_order.py
 
       - name: Online Audit (Upstream & Shared Infrastructure)
-        if: ${{ steps.gate.outputs.build == 'true' }}
+        if: ${{ inputs.dry_run == 'true' }}
         shell: bash
         run: |
           set -euo pipefail
           python3 scripts/audit_rules.py
 
-      - name: Compute Full Generation Manifest Fingerprint
-        if: ${{ github.event_name == 'workflow_dispatch' }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          python3 - <<'PY'
-          from hashlib import sha256
-          from pathlib import Path
-
-          manifest_dir = Path("Rule/.manifests")
-          manifest_paths = sorted(manifest_dir.glob("*.manifest"))
-          if not manifest_paths:
-              raise SystemExit("No manifest files found for full-generation audit fingerprint")
-
-          digest = sha256()
-          for path in manifest_paths:
-              digest.update(path.as_posix().encode("utf-8") + b"\0")
-              digest.update(path.read_bytes())
-              digest.update(b"\0")
-
-          fingerprint = digest.hexdigest()
-          out = Path("scripts/full_generation_manifest.sha256")
-          out.write_text(fingerprint + "\n", encoding="utf-8")
-          print(f"manifest_fingerprint={fingerprint}")
-          PY
-
-      - name: Verify Reviewed Manifest Fingerprint
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run != 'true' && inputs.manual_audit_confirmed == 'true' }}
-        shell: bash
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          set -euo pipefail
-          artifact_url=$(gh api \
-            "/repos/${GITHUB_REPOSITORY}/actions/artifacts?name=full-generation-manifest-fingerprint&per_page=20" \
-            --jq '.artifacts[] | select(.expired == false) | .archive_download_url' \
-            | head -n 1)
-
-          if [ -z "$artifact_url" ]; then
-            echo "::error::No dry-run manifest fingerprint artifact found. Run workflow_dispatch with dry_run=true and review that output first."
-            exit 1
-          fi
-
-          gh api "$artifact_url" > /tmp/full-generation-manifest-fingerprint.zip
-
-          python3 - <<'PY'
-          from pathlib import Path
-          from zipfile import ZipFile
-
-          current = Path("scripts/full_generation_manifest.sha256").read_text(encoding="utf-8").strip()
-          with ZipFile("/tmp/full-generation-manifest-fingerprint.zip") as zf:
-              names = [n for n in zf.namelist() if n.endswith("full_generation_manifest.sha256")]
-              if not names:
-                  raise SystemExit("::error::Dry-run artifact does not contain full_generation_manifest.sha256")
-              reviewed = zf.read(names[0]).decode("utf-8").strip()
-
-          if current != reviewed:
-              raise SystemExit(
-                  "::error::Full generation manifest fingerprint differs from the reviewed dry-run artifact. "
-                  "Run dry_run=true again and re-review before publishing."
-              )
-          print(f"Manifest fingerprint matches reviewed dry-run artifact: {current}")
-          PY
-
       - name: Sync DNS Mapping Module
+        if: ${{ inputs.dry_run == 'true' }}
         shell: bash
         run: |
           set -euo pipefail
@@ -220,17 +147,7 @@ jobs:
               exit 1
             fi
           fi
-          grep -qx '\[Host\]' Module/DNS-Mapping.sgmodule
-          grep -q '^RULE-SET:https://ruleset\.skk\.moe/Modules/Rules/sukka_local_dns_mapping/' Module/DNS-Mapping.sgmodule
-          # Section whitelist: the module must contain ONLY the [Host] section.
-          # Size + [Host] checks alone would still let a tampered upstream
-          # smuggle a [Script], [MITM], [URL Rewrite] or [Rule] section within
-          # the 10 KB budget. Refuse anything but [Host].
-          if grep -E '^\[' Module/DNS-Mapping.sgmodule | grep -qvxF '[Host]'; then
-            echo "::error::DNS mapping module contains a non-[Host] section — refusing to sync:"
-            grep -E '^\[' Module/DNS-Mapping.sgmodule | grep -vxF '[Host]' || true
-            exit 1
-          fi
+          python3 scripts/validate_dns_module.py Module/DNS-Mapping.sgmodule
           # Match by pattern, not line number: robust if upstream reorders the
           # header, and normalizing #!desc drops upstream's changing timestamp
           # (avoids daily commit churn).
@@ -245,11 +162,41 @@ jobs:
           echo "::error::Full generation publish requires manual audit before commit/push. First run dry_run=true, review Rule/ + manifests + diff_report + audit output, then rerun with manual_audit_confirmed=true."
           exit 1
 
+      - name: Restore Exact Reviewed Release
+        if: ${{ inputs.dry_run != 'true' }}
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REVIEWED_RUN_ID: ${{ inputs.reviewed_run_id }}
+        run: |
+          set -euo pipefail
+          [[ "$REVIEWED_RUN_ID" =~ ^[0-9]+$ ]] || { echo "::error::A reviewed dry-run ID is required"; exit 1; }
+          gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${REVIEWED_RUN_ID}" > /tmp/reviewed-run.json
+          python3 - <<'PYCODE'
+          import json, subprocess
+          run = json.load(open("/tmp/reviewed-run.json"))
+          sha = subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip()
+          if not (run["conclusion"] == "success" and run["event"] == "workflow_dispatch"
+                  and run["path"] == ".github/workflows/auto-rules.yml"
+                  and run["head_branch"] == "main" and run["head_sha"] == sha):
+              raise SystemExit("Reviewed run must be a successful main dry run at the current base SHA")
+          PYCODE
+          artifact_url=$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${REVIEWED_RUN_ID}/artifacts" \
+            --jq '.artifacts[] | select(.name == "reviewed-release" and .expired == false) | .archive_download_url')
+          [ -n "$artifact_url" ] || { echo "::error::No reviewed release artifact found"; exit 1; }
+          gh api "$artifact_url" > /tmp/reviewed-release.zip
+          python3 scripts/reviewed_release.py restore /tmp/reviewed-release.zip --run-id "$REVIEWED_RUN_ID"
+          python3 scripts/validate_surge_repo.py --ci
+          python3 scripts/generate_clash_rules.py --check --validate
+          python3 -m unittest discover -s tests -p 'test_*.py'
+          python3 scripts/test_routing_order.py
+
       - name: Publish Through Pull Request
         if: ${{ inputs.dry_run != 'true' }}
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
+          REVIEWED_RUN_ID: ${{ inputs.reviewed_run_id }}
         run: |
           set -euo pipefail
 
@@ -285,7 +232,7 @@ jobs:
             --base main \
             --head "$branch" \
             --title "chore: publish audited Surge rules" \
-            --body "Full generation from workflow run ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}. Manifest fingerprint was reviewed before publishing. Exact head SHA: ${sha}.")
+            --body "Full generation from workflow run ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}. Exact artifacts from reviewed dry-run ${REVIEWED_RUN_ID} were restored before publishing. Exact head SHA: ${sha}.")
 
           gh workflow run ci.yml --ref "$branch"
           run_id=""
@@ -306,7 +253,7 @@ jobs:
           fi
 
           gh run watch "$run_id" --exit-status
-          gh pr merge "$pr_url" --squash --delete-branch
+          gh pr merge "$pr_url" --squash --delete-branch --match-head-commit "$sha"
 
       - name: Dry Run Summary
         if: ${{ inputs.dry_run == 'true' }}
@@ -315,13 +262,20 @@ jobs:
           echo "::notice::Dry run enabled. Changes were generated and validated, but will NOT be committed."
           git status --short
 
-      - name: Upload Dry Run Manifest Fingerprint
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run == 'true' }}
+      - name: Capture Reviewed Release
+        if: ${{ inputs.dry_run == 'true' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mv scripts/source_state.next.json scripts/source_state.json
+          python3 scripts/reviewed_release.py capture /tmp/reviewed-release.json
+
+      - name: Upload Reviewed Release
+        if: ${{ inputs.dry_run == 'true' }}
         # actions/upload-artifact@v4 pinned 2026-07-02
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: full-generation-manifest-fingerprint
-          path: scripts/full_generation_manifest.sha256
+          name: reviewed-release
+          path: /tmp/reviewed-release.json
           if-no-files-found: error
           retention-days: 14
-

@@ -68,7 +68,7 @@ tests/
 
 本节是 full generation 发布门禁的权威说明；`scripts/README.md` 只保留脚本入口和简短指针。
 
-`workflow_dispatch` 会触发 full generation：即使上游没有检测到变化，也会重新生成所有规则集。为了避免一次性全量生成把上游异常、分类漂移或共享基础设施误提交到公开仓库，发布前必须先做一次手动审计。
+`workflow_dispatch` 的 `dry_run=true` 会触发 full generation：即使上游没有检测到变化，也会重新生成所有规则集。发布运行直接恢复指定 dry-run 的完整产物，不再下载上游。为了避免一次性全量生成把上游异常、分类漂移或共享基础设施误提交到公开仓库，发布前必须先做一次手动审计。
 
 推荐流程：
 
@@ -87,6 +87,9 @@ tests/
 4. 手动审计通过后，再次运行 `workflow_dispatch`，设置：
    - `dry_run=false`
    - `manual_audit_confirmed=true`
+   - `reviewed_run_id=<刚才审阅的成功 dry-run ID>`
+
+审阅时下载 `reviewed-release` artifact，其中 JSON 的 `payload.files` 保存 Base64 编码的完整待发布文件（null 表示删除），包括 DNS Mapping 模块、规则、Clash 镜像、报告和上游状态；顶层 SHA-256 覆盖全部内容。以 run ID、仓库和基础提交绑定审阅结果。发布只接受当前 main 同一提交上成功运行的产物；main 已变化、产物过期或哈希不符时，需重新 dry-run 并审阅。
 
 如果未确认 `manual_audit_confirmed=true`，full generation 不允许发布。确认后的运行也不会直接写入 `main`：它创建唯一自动化分支和 PR，显式触发 exact-SHA CI，只有 CI 全绿后才合并。
 
@@ -105,7 +108,7 @@ tests/
 1. 修改 `.github/workflows/auto-rules.yml` 中的 `REPO_URL` 和 `AUTHOR_NAME` 环境变量为你的仓库
 2. 在仓库 Settings → Actions → General → Workflow permissions 中选择「Read and write permissions」，并允许 GitHub Actions 创建 Pull Request；否则 full generation 只能 dry-run
 3. 按需在 `Rule/Manual/` 中添加自己的追加和排除规则
-4. 本仓库的 workflow 仅手动触发（每日同步由维护者本机的 Hermes agent 负责，见 `SOURCE_OF_TRUTH.md`）；如需在 Fork 中定时自动更新，需**两处**改动：① 在 `auto-rules.yml` 的 `on:` 中加回 `schedule` 触发器（例如 `cron: "23 21 * * *"`）；② 把两个 job 顶部的 `if: github.repository == 'linnux-x/surge'` 改成你的仓库或删除，否则 Actions 会直接跳过
+4. 本仓库的 workflow 仅手动触发（每日同步由维护者本机的 Codex agent 负责，见 `SOURCE_OF_TRUTH.md`）；如需在 Fork 中定时自动更新，需**两处**改动：① 在 `auto-rules.yml` 的 `on:` 中加回 `schedule` 触发器（例如 `cron: "23 21 * * *"`）；② 把两个 job 顶部的 `if: github.repository == 'linnux-x/surge'` 改成你的仓库或删除，否则 Actions 会直接跳过
 
 **保持同步上游：** `git remote add upstream https://github.com/linnux-x/surge.git` 后定期 `git fetch upstream && git merge upstream/main`
 

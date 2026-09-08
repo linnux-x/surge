@@ -26,7 +26,8 @@ Rabbit-Spec 来源当前明确保留，用于补充 AIGC、China、ChinaCIDR 覆
 | 5 | `generate_clash_rules.py` | 将 `Rule/*.list` 转换为 `clash/*.yaml`，供 Clash / mihomo rule-provider 使用 |
 | 6 | `validate_surge_repo.py` | 仓库级不变量检查，含公开 Manual override manifest 合同 |
 | 7 | `audit_rules.py` | 生成后联网审计：上游可达性、规则数量、共享基础设施、Surge 文档、exclude 覆盖等 |
-| 8 | `cross_file_conflicts.py` | 手动辅助（不再由自动任务调用）：列出同一域名跨不同策略文件重复出现时的 first-match 实际生效关系 |
+| 8 | `reviewed_release.py` | 在 dry-run 完成所有生成和 DNS 模块同步后保存完整发布快照；发布时按指定 run ID 恢复并验证 |
+| 9 | `cross_file_conflicts.py` | 手动辅助（不再由自动任务调用）：列出同一域名跨不同策略文件重复出现时的 first-match 实际生效关系 |
 
 ---
 
@@ -96,12 +97,33 @@ python3 scripts/download_cn_candidates.py TrafficStatistics.csv \
 
 ---
 
+## 上游入口与贡献审计
+
+保留现有主要作者；优先使用作者官方分发入口，但 `Source` 与 `List` 不保证等价。
+当前 SukkaW Download 主列表与 Speedtest 仍使用 Source，原因及量化结果见
+[`audits/upstream-sources-2026-09-07.md`](../audits/upstream-sources-2026-09-07.md)。
+新增、合并或删减补充源前，先保存内容哈希，比较同规则集内（含 Manual）的独有覆盖，
+再检查合并生成与 first-match 策略变化。零独有覆盖只是候选信号，不能单凭一次快照删除作者。
+
+```bash
+# 联网采样；--refresh 要求全新空目录，失败时仅使用 sources.py 已登记的 fallback。
+python3 scripts/audit_upstream_sources.py --refresh --cache /tmp/surge-source-cache --output /tmp/surge-source-audit
+# 同一快照离线复核；输出目录与缓存不要放入 Git。
+python3 scripts/audit_upstream_sources.py --cache /tmp/surge-source-cache --output /tmp/surge-source-recheck
+python3 scripts/replay_upstream_entrypoints.py --cache /tmp/surge-source-cache --output /tmp/surge-entrypoint-replay
+```
+
+指标只证明规则覆盖，不代表实际流量收益。CIDR 使用地址区间并集；域名采用精确和后缀包含，
+不推断 ASN、关键词和通配规则语义。入口回放只重新生成受影响规则集及 Global，其他文件沿用
+当前 checkout；不会联网或改写生产规则。正式发布仍须完成 full generation 审查。
+
 ## 工具脚本
 
 | 脚本 | 作用 |
 |---|---|
 | `ios_privacy_to_surge.py` | 将 iOS 隐私报告 `.ndjson` 转换为 Surge / Loon 规则；过滤系统流量、合并子域名、通过 iTunes API 和内置映射识别 App |
 | `download_cn_candidates.py` | 审计 Surge TrafficStatistics CSV 中当前命中 Download.list 的主机；可选本地 DNS + China_IP 信号，仅输出待人工复核候选，自动丢弃 Surge Fake-IP、LAN 与保留地址，绝不生成或写入 DIRECT 规则 |
+| `validate_dns_module.py` | 校验 DNS Mapping 仅含一个 Host 节和指定官方目录的规则引用；仓库校验与同步流程共用 |
 | `app_mapping.json` | Bundle ID 到 App 名称、域名、IP 的可扩展映射 |
 
 ---
