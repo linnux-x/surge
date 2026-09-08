@@ -63,7 +63,7 @@ Rabbit-Spec 来源当前明确保留，用于补充 AIGC、China、ChinaCIDR 覆
 # 1. 检查哪些上游发生变化
 python3 scripts/check_upstream_updates.py
 
-# 2. 生成规则
+# 2. 生成规则（服务规则变化时，生成器也会自动补充 Global 依赖）
 CHANGED_RULESETS='["AI.list", "Global.list"]' python3 scripts/generate_rules.py
 
 # 3. 生成 manifest 和 diff 报告
