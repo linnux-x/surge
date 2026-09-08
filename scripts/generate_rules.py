@@ -26,7 +26,7 @@ _scripts_dir = Path(__file__).resolve().parent
 if str(_scripts_dir) not in sys.path:
     sys.path.insert(0, str(_scripts_dir))
 
-from sources import RULE_SPECS
+from sources import RULE_SPECS, OVERLAP_DEPENDENTS
 from rule_validator import validate_rule_file
 # Re-export existing helper names for callers importing from generate_rules.
 from source_transforms import (
@@ -335,6 +335,13 @@ def main():
         not isinstance(name, str) or name not in RULE_SPECS for name in changed_rulesets
     ):
         raise ValueError("CHANGED_RULESETS must be a JSON array of known ruleset names")
+
+    # Global is stored after overlap pruning. Re-pruning that old file cannot
+    # restore rules removed by a service update; regenerate from its sources.
+    # Resolve this here as well as in the upstream checker so direct CLI calls
+    # cannot accidentally omit the dependency.
+    if set(changed_rulesets) & OVERLAP_DEPENDENTS and "Global.list" not in changed_rulesets:
+        changed_rulesets = [*changed_rulesets, "Global.list"]
 
     processed = False
     for target_name, (display_name, sources) in RULE_SPECS.items():

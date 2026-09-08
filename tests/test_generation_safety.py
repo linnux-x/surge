@@ -70,3 +70,31 @@ class GenerationSafetyTests(unittest.TestCase):
             with patch.object(generator, 'RULE_DIR', root), self.assertRaises(SystemExit):
                 generator.prune_global_first_match_overlaps()
             self.assertEqual(p.read_text(), content)
+
+    def test_incremental_service_removal_restores_global_coverage(self):
+        import os
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            (root/'AI.list').write_text('DOMAIN,shared.example\n')
+            (root/'Global.list').write_text('# TOTAL: 1\nDOMAIN,global.example\n')
+            specs = {
+                'AI.list': ('AI', [('AI', 'https://example.test/ai', None)]),
+                'Global.list': ('Global', [('Global', 'https://example.test/global', None)]),
+            }
+            responses = {
+                'https://example.test/ai': ['DOMAIN,new-ai.example'],
+                'https://example.test/global': ['DOMAIN,shared.example', 'DOMAIN,global.example'],
+            }
+            with patch.object(generator, 'RULE_DIR', root), patch.object(generator, 'MANUAL_DIR', root/'Manual'), patch.object(generator, 'RULE_SPECS', specs), patch.object(generator, 'fetch_source', side_effect=lambda url, fmt: responses[url]), patch.dict(os.environ, {'CHANGED_RULESETS': '["AI.list"]', 'GITHUB_EVENT_NAME': ''}):
+                generator.main()
+            self.assertNotIn('DOMAIN,shared.example', (root/'AI.list').read_text())
+            self.assertIn('DOMAIN,shared.example', (root/'Global.list').read_text())
+
+    def test_empty_or_unrelated_incremental_selection_does_not_expand(self):
+        import os
+        for selection, expected in [('[]', []), ('["China.list"]', ['China.list'])]:
+            with self.subTest(selection=selection), tempfile.TemporaryDirectory() as d:
+                root = Path(d)
+                with patch.object(generator, 'RULE_DIR', root), patch.object(generator, 'MANUAL_DIR', root/'Manual'), patch.object(generator, 'process_rule') as process, patch.object(generator, 'prune_global_first_match_overlaps'), patch.dict(os.environ, {'CHANGED_RULESETS': selection, 'GITHUB_EVENT_NAME': ''}):
+                    generator.main()
+                self.assertEqual([call.args[0] for call in process.call_args_list], expected)
