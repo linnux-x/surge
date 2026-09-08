@@ -27,7 +27,7 @@ Rabbit-Spec 来源当前明确保留，用于补充 AIGC、China、ChinaCIDR 覆
 | 6 | `validate_surge_repo.py` | 仓库级不变量检查，含公开 Manual override manifest 合同 |
 | 7 | `audit_rules.py` | 生成后联网审计：上游可达性、规则数量、共享基础设施、Surge 文档、exclude 覆盖等 |
 | 8 | `reviewed_release.py` | 在 dry-run 完成所有生成和 DNS 模块同步后保存完整发布快照；发布时按指定 run ID 恢复并验证 |
-| 9 | `cross_file_conflicts.py` | 手动辅助（不再由自动任务调用）：列出同一域名跨不同策略文件重复出现时的 first-match 实际生效关系 |
+| 9 | `cross_file_conflicts.py` | 手动辅助及 CI 信息性检查：列出同一域名跨不同策略文件重复出现时的 first-match 实际生效关系 |
 
 ---
 
@@ -35,6 +35,7 @@ Rabbit-Spec 来源当前明确保留，用于补充 AIGC、China、ChinaCIDR 覆
 
 | 模块 | 作用 |
 |---|---|
+| `source_transforms.py` | 生成器与贡献审计共用的清洗、格式转换、排除与服务过滤；不下载或写入产物 |
 | `sources.py` | 所有上游 URL 和规则集规格的单一来源 |
 | `policy.py` | 路由策略常量的单一来源：服务边界正则（GitHub / fast.com / YouTube）、共享基础设施域名清单（严格层阻断提交，宽泛层仅审计告警，宽泛层按超集构造，两层不会漂移） |
 | `rule_validator.py` | `generate_rules.py` 和 `validate_surge_repo.py` 共用的规则校验逻辑，策略常量取自 `policy.py` |
@@ -63,7 +64,7 @@ Rabbit-Spec 来源当前明确保留，用于补充 AIGC、China、ChinaCIDR 覆
 python3 scripts/check_upstream_updates.py
 
 # 2. 生成规则
-CHANGED_RULESETS='["AI.list"]' python3 scripts/generate_rules.py
+CHANGED_RULESETS='["AI.list", "Global.list"]' python3 scripts/generate_rules.py
 
 # 3. 生成 manifest 和 diff 报告
 python3 scripts/manifest.py

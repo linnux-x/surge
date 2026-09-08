@@ -1,76 +1,55 @@
-# Surge 自用规则仓库 — 全自动、可审计的 Surge 分流规则
+# Surge 规则仓库
 
-> **一句总结：** 多上游源每日同步、自动清洗校验、清单追踪变更、联网审计质量 — 让你只需关心策略，不用操心底层规则。
+聚合上游规则，生成 Surge 规则集和 Clash / mihomo 镜像，通过来源索引、规则校验、联网审计和 CI 发布。
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Python](https://img.shields.io/badge/Python-3.10+-green.svg?logo=python&logoColor=white)](https://www.python.org/) [![Surge](https://img.shields.io/badge/Surge-Rule%20Set-orange.svg)](https://manual.nssurge.com/) [![No Dependencies](https://img.shields.io/badge/deps-stdlib%20only-brightgreen.svg)]()
+[![CI](https://github.com/linnux-x/surge/actions/workflows/ci.yml/badge.svg)](https://github.com/linnux-x/surge/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
----
+## 当前运行方式
 
-## 📌 项目速览
+- 26 个 Surge 规则集、41 个唯一上游 URL；具体来源由 [sources.py](scripts/sources.py) 统一定义。
+- 维护者本机 Codex 每日北京时间 **05:00** 执行更新，保留 Agent 审查。任务依赖本机与 Codex 可用，调度不在 GitHub Actions。
+- 更新经分支和 PR 发布，精确提交的 CI 通过后合并 `main`。GitHub Actions 提供手动全量生成和已审阅产物发布。
+- Python 脚本无需第三方 Python 包；本地完整流程需要 **Python 3.10+、curl、Git**，向 GitHub 发布还需已认证的 **GitHub CLI**。
+- 当前规则数、来源归属和 Clash 兼容性见 [生成收据](scripts/generation_receipt.md)，最新增删见 [差异报告](scripts/diff_report.md)。
 
-- 🎯 **目标用户**：Surge 用户（iPhone / MacBook），需要精细化代理分流与规则管理
-- 💡 **核心价值**：多上游源自动聚合 → 清洗校验 → 清单追踪 → 联网审计，全链路自动化
-- 📜 **许可证**：MIT
-- 🔄 **更新频率**：维护者本机的 Codex agent 每日北京时间 05:00 自动同步
-- 🧪 **质量保障**：每次更新须通过 5 项联网审查 + 15+ 项不变量校验
-- 📦 **零依赖**：所有脚本仅使用 Python 3.10+ 标准库，无需 pip install
+## 使用规则
 
-```bash
-# 快速使用：在 Surge 配置中加载规则
+在已有 Surge 配置的 `[Rule]` 段添加规则；`PROXY` 请替换为你已有的代理策略名：
+
+```ini
 RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/AI.list,PROXY
 RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,DIRECT
 ```
 
----
+规则按 first-match 顺序匹配。完整加载顺序以 [Conf/Linnux.conf](Conf/Linnux.conf) 为准：
+微信、测速、Apple AI、AI 等专用服务在前，Global、China、LAN、China IP 和 FINAL 在后。
+其中 `Speedtest_China` 先于 `Speedtest`，`Apple_CN` 先于 `Apple`，下载和游戏先于宽泛 Microsoft 规则。
 
-## ❓ 为什么需要这个仓库？
+### 使用完整配置示例
 
-手动维护 Surge 规则面临多种痛点：
+1. 导入下方地址，在 Surge 中复制为普通配置，解除整份配置的托管更新。
+2. 在副本的 `[Proxy Group]` 中，将 `✈️ 我的节点` 的 `policy-path=你的订阅地址` 改为自己的订阅。
+3. 远程 `RULE-SET` 继续独立更新；副本中的整份配置与策略组由你维护。
 
-| 痛点 | 解决方式 |
-|------|----------|
-| 🔄 上游规则频繁更新 | 本地 agent **每日自动同步** 6+ 上游源（跑同一套流水线脚本） |
-| 🧹 规则污染 / 残留 | 每次重新生成，不保留旧文件作为 baseline |
-| 📊 变更不可追溯 | **清单索引系统**：每条规则有 12 字符稳定哈希 + 来源标注 |
-| ⚠️ 共享基础设施混入 | 自动检测并排除 cookielaw / sentry / newrelic 等第三方平台 |
-| 🧪 质量无保障 | **联网审查流水线**：5 项检查（可达性 / 比例 / 共享设施 / Surge 文档 / exclude 覆盖） |
-| ✏️ 手动规则管理 | `Rule/Manual/` 支持追加 + 排除，优先级最高 |
+```text
+https://raw.githubusercontent.com/linnux-x/surge/main/Conf/Linnux.conf
+```
 
----
+托管配置不能直接本地编辑，见 [Surge 配置说明](https://manual.nssurge.com/profile/format.html)。
+示例使用 `extended-matching` 等功能，导入时应按客户端提示检查兼容性；本仓库的模拟测试不等于所有客户端版本的实机验证。
+首次导入需能访问 GitHub Raw。托管头使用 `interval=86400`，未开启 strict，更新失败时客户端可继续使用旧配置。
+真实订阅、节点凭据和设备配置不在本仓库，边界见 [SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md)。
 
-## ✅ 核心特性
+### Clash / mihomo
 
-| 特性 | 说明 |
-|------|------|
-| 🤖 **全自动同步** | 检查 41 个上游源的 Last-Modified / ETag，只同步有变更的规则集，无变化跳过提交 |
-| 🧪 **自动校验** | 15+ 不变量检查：规则类型合法性、无策略名渗入、无重复、domain-only 约束、no-resolve 策略等 |
-| 📋 **清单索引** | 每条规则拥有 12 字符稳定内容哈希 ID + 上游来源标注，支持跨版本追踪 |
-| 📊 **增量差异报告** | 每次变更生成 manifest diff（markdown + JSON），明确增减来源 |
-| 🔍 **联网审查** | 5 项审计检查，ERROR 阻断提交、WARN 需确认、INFO 仅记录 |
-| 🧹 **自动清洗** | 排除共享 CDN / 遥测 / 分析平台，检测不透明子域名 |
+使用 [clash/](clash/) 下的 YAML rule-provider，普通文件采用 `behavior: classical`。
+Surge 专属类型会按转换器规则排除；扩展规则类型及数量见生成收据，需按客户端支持情况使用。
+`China_Domain.yaml` 与 `China_Extra.yaml` 是配套拆分输出，前者用于 domain provider，后者承接剩余 classical 规则，二者需要配合使用。
 
----
+`Rule/*.list`、`clash/*.yaml` 和 `Conf/Linnux.conf` 的公开路径是下游契约，不随内部整理迁移。
 
-## 📁 目录结构
-
-> 文档职责：`README.md` 只做公开入口；公开/私有边界以 `SOURCE_OF_TRUTH.md` 为准；脚本细节以 `scripts/README.md` 为准；贡献流程以 `CONTRIBUTING.md` 为准；手工规则格式以 `Rule/Manual/README.md` 为准。
-
-| 路径 | 说明 |
-|------|------|
-| `Conf/Linnux.conf` | 主 Surge 配置示例，包含策略组和 `RULE-SET` 加载顺序 |
-| `Rule/*.list` | Surge 外部规则集文件（自动生成，**勿手动修改**） |
-| `clash/*.yaml` | Clash / mihomo rule-provider 文件（由 `Rule/*.list` 转换生成）；**有私有下游消费者，Raw URL 不可变更**，见 `SOURCE_OF_TRUTH.md` |
-| `Rule/Manual/*.txt` / `*.exclude.txt` | 手动追加（最高优先级）与排除规则 |
-| `Rule/.manifests/*.manifest` | 规则清单索引（每行：稳定哈希ID + 来源标注） |
-| `Module/*.sgmodule` | Surge 模块文件 |
-| `scripts/` | 规则生成、校验、审计和 Clash 镜像脚本；脚本顺序见 `scripts/README.md` |
-| `tests/expected-routing.csv` | 路由测试预期（域名 → 期望规则集） |
-| `.github/workflows/auto-rules.yml` | 规则同步 + DNS Mapping 模块同步流水线 |
-| `CONTRIBUTING.md` | 贡献指南 |
-
----
-
-## 📋 规则列表
+## 规则列表
 
 | 规则文件 | 上游来源 | 说明 |
 |---------|---------|------|
@@ -101,176 +80,92 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 | 💚 WeChat.list | blackmatrix7 | 微信相关服务 |
 | ▶️ YouTube.list | blackmatrix7 | YouTube 与 YouTube Music |
 
----
+## 测速来源与覆盖
 
-## 🔄 主配置加载顺序
+- `Speedtest.list`：Sukka 的服务域名列表、官方测速服务器数据中的境外主机，以及本地 fast.com / nperf.com 规则。
+- `Speedtest_China.list`：同一 Sukka 数据中 `cc=CN` 且 `country=China` 的主机，再由 spiritLHLS 的大陆省份 CSV 补充。
+- Sukka 官方 JSON 一次下载、分别生成两份列表；JSON 更新会触发两份规则和 Global 重建，CSV 更新会触发大陆规则和 Global 重建。
+- Kelee 两个入口与专用快照已移除。国际覆盖小于原快照，未覆盖的节点由后续规则匹配；不能把替代来源视为全球测速节点全集。
 
-`Conf/Linnux.conf` 中的规则遵循 Surge **first-match** 逻辑，重点服务规则放在宽泛规则之前：
+Sukka 数据有每日构建；spiritLHLS 仓库每日同步不代表 CSV 每日变化，其文件在本次接入审查时最近变更于 2026-06-03。
+来源与日期证据见 [测速替换审计](audits/speedtest-replacement-2026-09-08.md)。规则数量随更新变化，以生成收据为准。
+地区分类依赖上游标签，不凭域名后缀推测，也不将香港、澳门、台湾记录归入大陆直连。
 
-1. 💚 **WeChat** → 微信直连优先
-2. ⚡ **Speedtest_China → Speedtest** → 中国大陆测速主机优先直连；其余测速流量进入可选测速策略
-3. 🍎 **Apple_AI** → Apple Intelligence、Siri 与 Private Relay 优先代理
-4. 📱 **AI** → 通用 AI 服务专用路由
-5. 🍎 **Apple_CN → Apple** → 中国区 CDN 先直连，再处理 Apple 通用服务
-6. 🪟 **Microsoft_CDN** → Windows、Office 与 Visual Studio CDN 直连
-7. ⬇️ **Download** → 下载与软件更新先于宽泛 Microsoft 规则
-8. 🎮 **Game** → Xbox、Minecraft 等游戏流量先于宽泛 Microsoft 规则
-9. 🪟 **Microsoft** → Microsoft / Office 通用服务
-10. ✈️ **Telegram** → Telegram 专用路由
-11. ▶️ **YouTube** → 先于 Google 通用规则
-12. 🎵 **TikTok** → TikTok 路由
-13. 💬 **SocialMedia** → 社交媒体
-14. 💰 **PayPal** → 支付服务
-15. 🔍 **Google** → Google 通用服务
-16. 🎬 **Netflix → Disney → ChinaMedia → Spotify → GlobalMedia** → 专用媒体优先于宽泛媒体
-17. 📦 **CDN** → 共享 CDN 后台回退
-18. 🌍 **Global** → 通用代理回退
-19. 🏠 **China** → 中国大陆直连域名
-20. 🏢 **LAN** → 局域网直连
-21. 🌐 **China IP** → 中国大陆 IP 回退
-22. 🔚 **FINAL** → 最终代理
+## 更新与发布
 
----
-
-## 🤖 自动化流水线
-
-### 触发方式
-
-| 方式 | 说明 |
-|------|------|
-| 🤖 **每日同步** | 维护者本机的 Codex agent 每日北京时间 05:00 运行同一套流水线脚本并推送；调度在 Codex 本机定时任务内，不是 Actions 计划任务，详见 `SOURCE_OF_TRUTH.md` |
-| 🖐 **手动触发** | GitHub Actions 页面点击 Run workflow（全量重新生成 + 发布门禁） |
-| ⌨️ **CLI 触发** | `gh workflow run auto-rules.yml` |
-
-### 完整流程
+### 每日更新
 
 ```text
-上游检查 → 规则生成 → manifest/diff → generation receipt → Clash 镜像 → 不变量/路由校验 → 联网审计 → DNS Mapping → 提交 → exact-SHA CI
+上游检查 → 受影响规则重建 → manifest / diff / receipt → Clash 镜像
+→ 不变量与路由校验 → 联网审计 → Agent 审查 → PR → exact-SHA CI → 合并 main
 ```
 
-脚本顺序和单一事实来源见 `scripts/README.md`；full generation 发布门禁见 `CONTRIBUTING.md`。
+有可比较的 ETag / Last-Modified 时据此判断变化；缺少可比较指纹时保守重建。
+上游失败或格式异常不会使用空结果替换规则。长期追加与排除写在 `Rule/Manual/`，不把旧生成文件当作新增规则来源。
 
-### 清单索引系统
+### 手动全量审阅
 
-每条规则在 `Rule/.manifests/*.manifest` 中拥有 **12 字符稳定内容哈希 ID + 来源标注**，用于跨版本追踪、归属迁移识别和 `diff_report.md` / `diff_report.json` 增量报告。
+在 GitHub Actions 选择 `Auto-Surge-Rules`，设置 `dry_run=true`；或使用：
 
----
-
-## 🛡️ 校验 & 审计
-
-提交前至少运行：
 ```bash
-python3 scripts/validate_surge_repo.py
-python3 scripts/test_routing_order.py   # 路由顺序模拟测试
+gh workflow run auto-rules.yml --repo linnux-x/surge --ref main -f dry_run=true
 ```
 
-生成规则后、提交 GitHub 前执行：
+此运行生成全部规则、同步 DNS Mapping 模块，并上传完整 `reviewed-release` 快照，不提交规则。
+审查生成结果、manifest 差异和联网审计后，发布运行必须提供：
+
+- `dry_run=false`
+- `manual_audit_confirmed=true`
+- `reviewed_run_id`：刚审查过的成功 dry-run ID
+
+发布恢复该次审阅的确切文件，不再重新下载上游。仓库、运行 ID、基础提交和内容哈希必须匹配；
+主线已变化或产物失效时重新生成并审阅。完整操作见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+Fork 用户先按贡献指南修改仓库限制及自己的调度方式，不要直接对本仓库发起更新。
+
+## 本地验证
+
+```bash
+python3 -m unittest discover -s tests -p 'test_*.py'
+python3 scripts/test_routing_order.py
+python3 scripts/validate_surge_repo.py
+python3 scripts/generate_clash_rules.py --check --validate
+python3 scripts/generate_receipt.py
+git diff --exit-code -- scripts/generation_receipt.json scripts/generation_receipt.md
+```
+
+生成规则后、提交前还必须运行联网审计：
+
 ```bash
 python3 scripts/audit_rules.py
 ```
 
-校验覆盖规则类型、策略名渗入、`# TOTAL`、China/China_IP 约束、GitHub/Microsoft 边界、fast.com 唯一归属、共享基础设施、PayPal CN、不透明子域名、README/workflow/规则文件一致性等；联网审计覆盖上游可达性、规则数比例、共享基础设施、Surge 文档更新和 exclude 覆盖率。详细脚本职责见 `scripts/README.md`。
+ERROR 阻断流程，WARN 不直接改变脚本退出码但需要审阅，INFO 记录供复核。
+路由测试同时断言规则文件与目标策略；不模拟 DNS、ASN、进程或 SNI/HTTP Host，也不证明测速服务器在线。
 
-> 🔴 **ERROR** → workflow 失败，必须修复  
-> 🟡 **WARN** → workflow 继续，但需人工确认  
-> 🔵 **INFO** → 仅供参考，无需处理
+## 自定义与维护
 
----
+| 入口 | 职责 |
+|---|---|
+| [Rule/Manual/README.md](Rule/Manual/README.md) | 追加规则、整行精确匹配排除、公开 override 合同 |
+| [scripts/README.md](scripts/README.md) | 生成脚本、来源审计、测速格式转换和发布快照 |
+| [tests/README.md](tests/README.md) | 路由测试及预期策略 |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | PR、全量审阅与 Fork 适配 |
+| [SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md) | 公私边界与下游 URL 契约 |
+| [audits/](audits/) | 标注日期和基线的审计记录，历史记录不代表当前状态 |
 
-## 🔑 关键策略
+## 上游与致谢
 
-| 策略 | 说明 |
-|------|------|
-| 🐙 **GitHub** | 不归入 Microsoft。普通服务走 Global，Copilot 走 AI，下载资源走 CDN |
-| ⚡ **fast.com** | 仅 Speedtest.list，其他地方不重复 |
-| 🏠 **China.list** | 仅中国大陆直连域名，不放 IP |
-| 🌐 **China_IP.list** | 不加 no-resolve，用于 IP 分类回落 |
-| 🔒 **IP 规则** | 其他 IP 默认加 no-resolve |
-| 🔄 **无 baseline** | 不保留旧 Rule/*.list；长期规则进 Rule/Manual/ |
-| 🏗️ **共享基础设施** | CDN / 遥测 / 分析等共享平台不作为服务规则合并 |
-| 🔍 **子域名策略** | 服务专属子域名可保留，不透明子域名应排除 |
-
----
-
-## 🚀 快速上手
-
-> **最低版本要求**：Surge iOS 5.8.1+ / Surge Mac 5.x 对应版本。配置使用了 `extended-matching`（5.8.0 引入）；5.8.1 起 RULE-SET 在资源更新时自动预处理并索引，大规则集（如 China.list 11 万条）匹配为毫秒级，与 DOMAIN-SET 无性能差异。
->
-> **首次导入提示**：托管配置与全部规则集均从 `raw.githubusercontent.com` 拉取，请在代理可用的网络环境下完成首次导入；导入后 Surge 会缓存规则集，且托管配置为非 strict 模式，更新失败时继续使用旧配置。
-
-### 新手三步骤
-
-1. **导入并复制为普通配置** → 导入 `Conf/Linnux.conf` 后，在 Surge 中创建副本，解除整份配置的托管更新，使用该副本
-2. **添加自己的订阅** → 将 `[Proxy Group]` 中 `✈️ 我的节点` 的 `policy-path=你的订阅地址` 改为自己的订阅地址
-3. **保持规则更新** → 普通配置中的远程 `RULE-SET` 仍独立自动更新；整份配置和策略组不再跟随本仓库自动更新
-
-托管配置不能直接在本地编辑，见 [Surge 官方说明](https://manual.nssurge.com/profile/format.html)。需要跟随整份配置更新的高级用法，应分离本地订阅与远程规则章节，并按客户端版本核对 include 支持。
-
-托管配置地址：
-
-```text
-https://raw.githubusercontent.com/linnux-x/surge/main/Conf/Linnux.conf
-```
-
-`Conf/Linnux.conf` 首行固定为：
-
-```text
-#!MANAGED-CONFIG https://raw.githubusercontent.com/linnux-x/surge/main/Conf/Linnux.conf interval=86400
-```
-
-`strict` 保持 Surge 默认值 `false`：远端更新失败时，客户端可以继续使用旧配置。
-
-### 手动更新
-
-```bash
-# Fork 后手动触发同步
-gh workflow run auto-rules.yml --repo linnux-x/surge
-```
-
-### 自定义规则
-
-在 `Rule/Manual/` 目录下放置：
-- `<名称>.txt` → 手动追加规则，放在对应规则文件顶部，优先级最高
-- `<名称>.exclude.txt` → 排除规则，按生成后规则整行精确匹配（大小写敏感，非正则；需与上游格式完全一致）
-
-> ⚠️ **注意**：长期需要保留/排除的规则必须放入 `Rule/Manual/` 对应文件。不要依赖旧生成文件作为隐式 baseline。
-
-### 适合谁
-
-**适合：** Surge 用户需要一个自动更新、有校验、有审计的规则仓库，不想手动维护上游变更。
-
-**不适合：** 只需要几条静态规则的用户；使用非 Surge 客户端的用户（规则格式为 Surge 专用）。
-
-想 Fork 本仓库自建规则源，见 [`CONTRIBUTING.md` 的 Fork 后适配](CONTRIBUTING.md#fork-后适配)。
-
----
-
-## 📝 规则维护要求
-
-- 修改规则或同步逻辑前，先读 `CONTRIBUTING.md`。
-- 查看脚本流水线和单一事实来源，读 `scripts/README.md`。
-- 添加或排除手工规则，读 `Rule/Manual/README.md`。
-- 公开仓库与真实设备/私有配置的边界，以 `SOURCE_OF_TRUTH.md` 为准。
-
-> 📖 完整的用户偏好、分类经验和设备配置属于私有配置，不在本仓库中。
-
----
-
-## 🙏 致谢
-
-上游规则与参考来源：
-
-| 来源 | 链接 |
-|------|------|
+| 来源 | 项目 |
+|---|---|
 | blackmatrix7 | [ios_rule_script](https://github.com/blackmatrix7/ios_rule_script) |
 | Loyalsoldier | [surge-rules](https://github.com/Loyalsoldier/surge-rules) |
-| SukkaW | [Surge](https://github.com/SukkaW/Surge) |
+| SukkaW / SukkaLab | [Surge](https://github.com/SukkaW/Surge)、[测速服务器采集](https://github.com/SukkaW/speedtest-net-servers)、[官方数据分发](https://github.com/SukkaLab/speedtest-net-servers-dist) |
+| Rabbit-Spec | [Surge](https://github.com/Rabbit-Spec/Surge)，同时参考其工作流设计 |
 | ConnersHua | [RuleGo](https://github.com/ConnersHua/RuleGo) |
+| RocM301 | [Apple-Rule](https://github.com/RocM301/Apple-Rule) |
+| spiritLHLS | [speedtest.cn-CN-ID](https://github.com/spiritLHLS/speedtest.cn-CN-ID) |
+| Telegram | [官方 CIDR](https://core.telegram.org/resources/cidr.txt) |
 
-> 工作流借鉴 [Rabbit-Spec/Surge](https://github.com/Rabbit-Spec/Surge) 的思路，并加入了本仓库自己的分类策略、校验规则和联网审查流水线。
+本仓库代码许可证见 [LICENSE](LICENSE)；引用的上游内容仍应遵守各来源声明。
 
----
-
-<p align="center">
-  <sub>Made with ❤️ for Surge users | MIT License</sub>
-</p>
+架构、数据流、重构优先级和行为保持测试见 [架构说明](ARCHITECTURE.md)。

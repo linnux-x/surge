@@ -17,9 +17,8 @@ import json
 from pathlib import Path
 import subprocess
 
-from speedtest_sources import convert_speedtest
 from sources import RULE_SPECS, SUKKA_ENTRYPOINT_PATHS, SUKKA, SUKKA_SOURCE
-from generate_rules import clean_source, convert_domainset, convert_cidr, filter_candidates, apply_project_guardrails
+from source_transforms import convert_source, filter_candidates, apply_project_guardrails
 
 ROOT = Path(__file__).resolve().parents[1]
 LEGACY_SUKKA = SUKKA_SOURCE + '/'
@@ -58,11 +57,7 @@ def snapshot(url: str, cache: Path, refresh: bool) -> dict:
 
 
 def normalize(target: str, fmt: str | None, content: str, manual: bool = False) -> set[str]:
-    lines = (convert_speedtest(content.splitlines(), fmt) if fmt and fmt.startswith("speedtest-") else clean_source(content.splitlines()))
-    if fmt == 'domainset':
-        lines = convert_domainset(lines)
-    elif fmt == 'cidr':
-        lines = convert_cidr(lines)
+    lines = convert_source(content.splitlines(), fmt)
     if not manual:
         lines = filter_candidates(lines, ROOT / 'Rule/Manual' / (target[:-5] + '.exclude.txt'))
     lines = apply_project_guardrails(target, lines)

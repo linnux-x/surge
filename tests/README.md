@@ -9,6 +9,9 @@
 ## 运行测试
 
 ```bash
+# 全部单元与行为保持测试
+python3 -B -m unittest discover -s tests -p 'test_*.py'
+
 # 模拟 Surge first-match 路由逻辑，并与预期结果对比
 python3 scripts/test_routing_order.py
 
@@ -54,3 +57,7 @@ example.com,AI.list,AI,说明为什么应该命中 AI.list
 测试脚本会读取所有 `Rule/*.list` 文件，模拟 Surge 的 first-match 逻辑，并报告预期与实际路由不一致的条目。
 
 模拟覆盖域名、尾随点规范化与字面 IPv4/IPv6 CIDR 匹配。不执行 DNS 查询，也不模拟 ASN、进程或 SNI/HTTP Host；这些场景需要真实 Surge 验收。
+
+## 重构行为基线
+
+`test_source_transforms.py` 使用 `fixtures/generation-baseline.json` 中从 `d84c77e` 提前采集的结果，比较六种格式的完整文件字节和 26 个目标的过滤行为。`test_upstream_probe.py` 覆盖 HTTP 回退顺序、元数据与响应关闭。基线不能为了让测试通过而自动重录；有意改变行为时应单独审阅预期结果。

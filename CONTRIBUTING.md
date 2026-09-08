@@ -108,13 +108,13 @@ tests/
 1. 修改 `.github/workflows/auto-rules.yml` 中的 `REPO_URL` 和 `AUTHOR_NAME` 环境变量为你的仓库
 2. 在仓库 Settings → Actions → General → Workflow permissions 中选择「Read and write permissions」，并允许 GitHub Actions 创建 Pull Request；否则 full generation 只能 dry-run
 3. 按需在 `Rule/Manual/` 中添加自己的追加和排除规则
-4. 本仓库的 workflow 仅手动触发（每日同步由维护者本机的 Codex agent 负责，见 `SOURCE_OF_TRUTH.md`）；如需在 Fork 中定时自动更新，需**两处**改动：① 在 `auto-rules.yml` 的 `on:` 中加回 `schedule` 触发器（例如 `cron: "23 21 * * *"`）；② 把两个 job 顶部的 `if: github.repository == 'linnux-x/surge'` 改成你的仓库或删除，否则 Actions 会直接跳过
+4. 本仓库的 Actions 仅提供手动全量生成和已审阅产物发布。Fork 时修改 `auto-rules.yml`、`ci.yml` 中的仓库限制，并按需部署自己的本地调度；定时任务应执行同一套脚本、审阅和 PR/CI 流程。不要只添加 `schedule`：当前 Actions 发布路径依赖显式的 dry-run 审阅 ID，直接定时触发会被门禁拒绝。每日同步归属见 `SOURCE_OF_TRUTH.md`。
 
 **保持同步上游：** `git remote add upstream https://github.com/linnux-x/surge.git` 后定期 `git fetch upstream && git merge upstream/main`
 
 ## Adding a New Upstream Source
 
-1. Add the URL to `scripts/sources.py` in `RULE_SPECS`
+1. Add the source row to the canonical `_SOURCES` list in `scripts/sources.py`; `RULE_SPECS` and the update-check map are derived automatically
 2. Create `Rule/Manual/<RulesetName>.txt` if manual rules needed
 3. Create `Rule/Manual/<RulesetName>.exclude.txt` if any patterns need excluding
 4. Add a row to the README rule list table
