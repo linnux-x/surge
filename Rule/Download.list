@@ -1,7 +1,7 @@
 # NAME: Download
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-09-04 05:00:38 +0800
+# UPDATED: 2026-09-11 05:05:13 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 1687
 
@@ -1648,55 +1648,55 @@ DOMAIN,cdn.dyn.com
 DOMAIN,assets-tcpviewer.proxyman.com
 
 # ======= SukkaW Game Download ========
+DOMAIN-SUFFIX,cdn.ea.com
+DOMAIN-SUFFIX,cdn.ubi.com
+DOMAIN-SUFFIX,dyn.riotcdn.net
+DOMAIN-SUFFIX,cdn.blizzard.com
+DOMAIN-SUFFIX,cdn.nintendo.net
+DOMAIN-SUFFIX,epicgamescdn.com
 DOMAIN-SUFFIX,steamcontent.com
-DOMAIN-SUFFIX,content.steampowered.com
-DOMAIN,content-origin.steampowered.com
-DOMAIN,steam.apac.qtlglb.com
-DOMAIN,steam.eca.qtlglb.com
-DOMAIN,steam.naeu.qtlglb.com
+DOMAIN,dist.blizzard.com
+DOMAIN,download.xbox.com
+DOMAIN-SUFFIX,dl.playstation.net
+DOMAIN,xvcf1.xboxlive.com
+DOMAIN,xvcf2.xboxlive.com
+DOMAIN,cdn-patch.swtor.com
+DOMAIN,level3.blizzard.com
 DOMAIN,steam.ru.qtlglb.com
-DOMAIN,edge.steam-dns.top.comcast.net
-DOMAIN,steampipe.akamaized.net
-DOMAIN,steampipe-kr.akamaized.net
-DOMAIN,steampipe-partner.akamaized.net
+DOMAIN,assets1.xboxlive.com
+DOMAIN,assets2.xboxlive.com
+DOMAIN,steam.eca.qtlglb.com
+DOMAIN,origin-a.akamaihd.net
+DOMAIN,steam.apac.qtlglb.com
+DOMAIN,steam.naeu.qtlglb.com
+DOMAIN-SUFFIX,wup.shop.nintendo.net
+DOMAIN-SUFFIX,download.dm.origin.com
 DOMAIN-SUFFIX,download.epicgames.com
+DOMAIN,gog-cdn-fastly.gog.com
+DOMAIN-SUFFIX,wup.eshop.nintendo.net
 DOMAIN,download2.epicgames.com
 DOMAIN,download3.epicgames.com
 DOMAIN,download4.epicgames.com
-DOMAIN,epicgames-download1.akamaized.net
-DOMAIN,fastly-download.epicgames.com
-DOMAIN-SUFFIX,egdownload.fastly-edge.com
-DOMAIN-SUFFIX,epicgamescdn.com
-DOMAIN-SUFFIX,dl.playstation.net
-DOMAIN,dist.blizzard.com
+DOMAIN,packagespc.xboxlive.com
+DOMAIN,steampipe.akamaized.net
 DOMAIN,blzddist1-a.akamaihd.net
 DOMAIN,blzddist2-a.akamaihd.net
 DOMAIN,blzddist3-a.akamaihd.net
-DOMAIN,blzddistkr1-a.akamaihd.net
-DOMAIN,blizzard.gcdn.cloudn.co.kr
-DOMAIN-SUFFIX,cdn.blizzard.com
-DOMAIN,level3.blizzard.com
-DOMAIN,gog-cdn-fastly-cp77.gog.com
-DOMAIN,gog-cdn-fastly.gog.com
-DOMAIN,pf-cdn-content-prod.azureedge.net
-DOMAIN,xvcf1.xboxlive.com
-DOMAIN,xvcf2.xboxlive.com
-DOMAIN,packagespc.xboxlive.com
-DOMAIN,download.xbox.com
-DOMAIN,assets1.xboxlive.com
-DOMAIN,assets2.xboxlive.com
-DOMAIN-SUFFIX,cdn.ubi.com
-DOMAIN-SUFFIX,download.dm.origin.com
-DOMAIN,origin-a.akamaihd.net
-DOMAIN-SUFFIX,cdn.ea.com
-DOMAIN,dlgarenanow-a.akamaihd.net
-DOMAIN,cdn-patch.swtor.com
-DOMAIN-SUFFIX,dyn.riotcdn.net
 DOMAIN-SUFFIX,content.cdp.bethesda.net
-DOMAIN-SUFFIX,download.cdp.bethesda.net
+DOMAIN-SUFFIX,content.steampowered.com
 DOMAIN,static.hikarifield.co.jp
+DOMAIN-SUFFIX,download.cdp.bethesda.net
+DOMAIN,blizzard.gcdn.cloudn.co.kr
+DOMAIN,blzddistkr1-a.akamaihd.net
+DOMAIN,dlgarenanow-a.akamaihd.net
 DOMAIN,download.hikarifield.co.jp
+DOMAIN-SUFFIX,egdownload.fastly-edge.com
+DOMAIN,steampipe-kr.akamaized.net
+DOMAIN,gog-cdn-fastly-cp77.gog.com
+DOMAIN,fastly-download.epicgames.com
+DOMAIN,edge.steam-dns.top.comcast.net
+DOMAIN,content-origin.steampowered.com
+DOMAIN,steampipe-partner.akamaized.net
+DOMAIN,epicgames-download1.akamaized.net
+DOMAIN,pf-cdn-content-prod.azureedge.net
 DOMAIN,gamedownloads-rockstargames-com.akamaized.net
-DOMAIN-SUFFIX,wup.shop.nintendo.net
-DOMAIN-SUFFIX,wup.eshop.nintendo.net
-DOMAIN-SUFFIX,cdn.nintendo.net

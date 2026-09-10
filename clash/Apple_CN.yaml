@@ -1,6 +1,6 @@
 # Generated from Rule/Apple_CN.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-09-04 05:00:38 +0800
+# UPDATED: 2026-09-11 05:05:06 +0800
 # TOTAL: 230
 payload:
   - 'DOMAIN-SUFFIX,appldnld.apple.com.edgesuite.net'
