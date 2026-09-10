@@ -1,26 +1,25 @@
 # Generated from Rule/CDN.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-09-04 05:00:38 +0800
+# UPDATED: 2026-09-11 05:05:06 +0800
 # TOTAL: 29
 payload:
   - 'DOMAIN,release-assets.githubusercontent.com'
   - 'DOMAIN-SUFFIX,jsdelivr.net'
   - 'DOMAIN-SUFFIX,unpkg.com'
   - 'DOMAIN-SUFFIX,esm.sh'
+  - 'DOMAIN,cdn-msp.jmcomic.me'
+  - 'DOMAIN,cdn-msp.18comic.org'
+  - 'DOMAIN,cdn-msp.18comic.vip'
+  - 'DOMAIN,cdn-msp.jmcomic-zzz.one'
   - 'DOMAIN-KEYWORD,-files.gitbook.io'
   - 'DOMAIN-KEYWORD,vod-adaptive.akamaized.net'
   - 'DOMAIN-KEYWORD,web-assets.zendesk'
   - 'DOMAIN-KEYWORD,-res.cloudinary.com'
   - 'DOMAIN-KEYWORD,dsn.algolia.net'
   - 'DOMAIN-KEYWORD,-thumbs.pornhost.com'
-  - 'DOMAIN,cdn-msp.18comic.vip'
-  - 'DOMAIN,cdn-msp.jmcomic.me'
-  - 'DOMAIN,cdn-msp.jmcomic-zzz.one'
-  - 'DOMAIN,cdn-msp.18comic.org'
   - 'DOMAIN-KEYWORD,-cdn.eporner.com'
   - 'DOMAIN-KEYWORD,cdn.adultempire.com'
   - 'DOMAIN-KEYWORD,-assets.dmm.co.jp'
-  - 'DOMAIN-WILDCARD,cdn.*.dmm.co.jp'
   - 'DOMAIN-KEYWORD,static.trustpilot.com'
   - 'DOMAIN-KEYWORD,scripts.trustpilot.com'
   - 'DOMAIN-KEYWORD,images.trustpilot.com'
@@ -32,3 +31,4 @@ payload:
   - 'DOMAIN-KEYWORD,99avcdn'
   - 'DOMAIN-KEYWORD,-images.disco-api.com'
   - 'DOMAIN-KEYWORD,static.grammarly.com'
+  - 'DOMAIN-WILDCARD,cdn.*.dmm.co.jp'

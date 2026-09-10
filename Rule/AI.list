@@ -1,7 +1,7 @@
 # NAME: AI
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-09-08 05:02:59 +0800
+# UPDATED: 2026-09-11 05:05:03 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 145
 
@@ -79,30 +79,29 @@ DOMAIN-SUFFIX,models.dev
 DOMAIN-SUFFIX,jina.ai
 
 # ======= SukkaW AI ========
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,sora.com
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,chatgpt.site
-DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,ai.com
-DOMAIN-KEYWORD,openai
-DOMAIN-SUFFIX,perplexity.ai
-DOMAIN-SUFFIX,bard.google.com
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,generativelanguage.googleapis.com
-DOMAIN-SUFFIX,poe.com
-DOMAIN-SUFFIX,meta.ai
-DOMAIN,gateway.ai.cloudflare.com
 DOMAIN-SUFFIX,dify.ai
-DOMAIN-SUFFIX,clipdrop.co
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,poe.com
+DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,sora.com
+DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,jasper.ai
 DOMAIN-SUFFIX,openart.ai
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,clipdrop.co
+DOMAIN-SUFFIX,chatgpt.site
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,perplexity.ai
 DOMAIN,api.github.com
-DOMAIN-SUFFIX,grok.com
-DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,bard.google.com
 DOMAIN,api.jetbrains.ai
-DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN,gateway.ai.cloudflare.com
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
+DOMAIN-KEYWORD,openai
 
 # ======= Rabbit-Spec AIGC ========
 DOMAIN-SUFFIX,cursor.com
@@ -135,6 +134,7 @@ DOMAIN-SUFFIX,images.workoscdn.com
 DOMAIN-SUFFIX,launchdarkly.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,observeit.net
+DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,openaicom.imgix.net
 DOMAIN-SUFFIX,pool.ntp.org

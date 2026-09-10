@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-09-08 08:35:58 +0800
+# UPDATED: 2026-09-11 05:05:22 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24334
+# TOTAL: 24335
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -11189,6 +11189,7 @@ DOMAIN-SUFFIX,nodeget.com
 DOMAIN-SUFFIX,nodeimage.com
 DOMAIN-SUFFIX,nodequality.com
 DOMAIN-SUFFIX,nodereal.io
+DOMAIN-SUFFIX,nodeseek.org
 DOMAIN-SUFFIX,nodesnoop.com
 DOMAIN-SUFFIX,nodesource.com
 DOMAIN-SUFFIX,noisullifb.com
