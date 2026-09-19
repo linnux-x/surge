@@ -42,8 +42,8 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaLab/speedtest-net-servers-dist/master/servers.json": {
-    "content_length": "573807",
-    "etag": "\"1f299dd5945de405624cc19ffd4542a16a3eaee728915b3f09f12bb72c837abe\"",
+    "content_length": "573327",
+    "etag": "\"79026787ab5da6c0d9723e6f0115011ff851a1d871662b9270941345fd98f913\"",
     "last_modified": null,
     "source_available": true
   },
@@ -61,13 +61,13 @@
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All_No_Resolve.list": {
     "content_length": "51402",
-    "etag": "\"e4dce5ac73d612837932eeffa94e244874f72b11062b1a1baa92e3aa0a6f2c72\"",
+    "etag": "\"5fc7856e72c3f34a173fdf38bc7bea87b4d043233ca2cd33c2425d7eb306ea0e\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs.list": {
-    "content_length": "828869",
-    "etag": "\"dccd7be7aa60bfd9e67c2db67f94af7c596dbd8b4c7f0d50679325898a9c366a\"",
+    "content_length": "828832",
+    "etag": "\"aa1f9eb43f2fa53fe5c13cb0da96e62147c1a8f16598b9784d1918d8fbaa2623\"",
     "last_modified": null,
     "source_available": true
   },
@@ -103,7 +103,7 @@
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list": {
     "content_length": "19223",
-    "etag": "\"7dace1a167477896a74c2b7ab14aa1c99d931fa2f0b462c9e117f1d11f91ffb9\"",
+    "etag": "\"96a9a19855ff0c948e2242167e68988fd331e56d5c9868f3fe700434d7f4b48e\"",
     "last_modified": null,
     "source_available": true
   },
@@ -115,7 +115,7 @@
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalMedia/GlobalMedia_All_No_Resolve.list": {
     "content_length": "73351",
-    "etag": "\"f3621ee1646cf08e148084433944caf4db71caffc771a10c1f6903f5b954c573\"",
+    "etag": "\"3c1d2855f14dc0b4f7288ee345b23a16ab15a7c45128c7f9069b7d985b2f6621\"",
     "last_modified": null,
     "source_available": true
   },
@@ -234,8 +234,8 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/domestic.conf": {
-    "content_length": null,
-    "etag": "W/\"d674beda711c298325659c63deff78ea\"",
+    "content_length": "22661",
+    "etag": "\"d674beda711c298325659c63deff78ea\"",
     "last_modified": null,
     "source_available": true
   },
