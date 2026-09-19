@@ -1,9 +1,9 @@
 # NAME: Download
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-09-11 05:05:13 +0800
+# UPDATED: 2026-09-19 11:40:27 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1687
+# TOTAL: 1689
 
 # ======= Manual Rules ========
 # Borrowed from SukkaW non_ip/direct downloader process rules
@@ -183,6 +183,7 @@ DOMAIN,mirrors.rpmfusion.org
 DOMAIN,archive.raspberrypi.com
 DOMAIN,artifacts.nixos.org
 DOMAIN,fw.gl-inet.com
+DOMAIN,dl.gl-inet.com
 DOMAIN,dl.getaurora.dev
 DOMAIN,download.bazzite.gg
 DOMAIN,nobara-images.nobaraproject.org
@@ -221,6 +222,7 @@ DOMAIN,mirror.xtom.sg
 DOMAIN,mirrors.xtom.sg
 DOMAIN,mirror.cat.net
 DOMAIN,mirrors.cat.net
+DOMAIN,repo.xtom.com
 DOMAIN,dl.flathub.org
 DOMAIN,cdn.fwupd.org
 DOMAIN,filters.cdn.skk.moe

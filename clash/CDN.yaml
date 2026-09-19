@@ -1,6 +1,6 @@
 # Generated from Rule/CDN.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-09-11 05:05:06 +0800
+# UPDATED: 2026-09-19 11:40:26 +0800
 # TOTAL: 29
 payload:
   - 'DOMAIN,release-assets.githubusercontent.com'

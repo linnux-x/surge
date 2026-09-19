@@ -1,7 +1,7 @@
 # Generated from Rule/China.list (DOMAIN/DOMAIN-SUFFIX entries only)
 # Format: Clash/mihomo rule-provider, behavior: domain
-# UPDATED: 2026-09-11 05:05:16 +0800
-# TOTAL: 111097
+# UPDATED: 2026-09-19 11:40:29 +0800
+# TOTAL: 111096
 payload:
   - '+.wmsjsteam.com'
   - '+.steamchina.com'
@@ -626,6 +626,7 @@ payload:
   - '+.openinstall.io'
   - '+.oppomobile.com'
   - '+.qyerstatic.com'
+  - '+.rednotecdn.com'
   - '+.tianyancha.com'
   - '+.toutiaoimg.com'
   - '+.toutiaovod.com'
@@ -76348,7 +76349,6 @@ payload:
   - '+.rednetdns.com'
   - '+.rednote.com'
   - '+.rednote.life'
-  - '+.rednotecdn.com'
   - '+.redocn.com'
   - '+.redodopower.com'
   - '+.redoop.com'
@@ -83649,7 +83649,6 @@ payload:
   - '+.spsicloudport.com'
   - '+.spsisctgroup.com'
   - '+.spsisncl.com'
-  - '+.spst2.com'
   - '+.spsy.org'
   - '+.sptcc.com'
   - '+.sptccn.com'

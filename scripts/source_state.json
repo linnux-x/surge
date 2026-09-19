@@ -12,26 +12,26 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/cncidr.txt": {
-    "content_length": "233556",
-    "etag": "\"5d3fcd2c28c5bd53aaedd0ba4b40c64cb6883da6e9d19201e2c07acd881965d1\"",
+    "content_length": "236666",
+    "etag": "\"04e847d6157a8726e30e0706f572fcf5ae15b4f0d98531dc33c6992acf75e470\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
     "content_length": "4351",
-    "etag": "\"9f5320f7eaa3c3843168f53ebb62e7cf68474eb03a180d2e40850957e616f31a\"",
+    "etag": "\"9b9a42c0333194da59f0c0d9d74ab9f72338df14564c86a8ca2c58967896c66f\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
     "content_length": "101146",
-    "etag": "\"7dd72d851e3e8cc95063c9d26f5faa67dd6cb066aaedaefa4173d338671de9f5\"",
+    "etag": "\"bbd39f0b4de9a89e62c269fecf4f1122f8b85f0476e814b9600ca70f236a78ec\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/ChinaCIDR.list": {
-    "content_length": "234161",
-    "etag": "\"096cad855153d82d8a4082a9ac04f80fddb0d27c5a8ce7d309ae4573c41d3eed\"",
+    "content_length": "237271",
+    "etag": "\"ebe6b363b551032d3da645786f1df5e2cc287acbef061615e6c83ca0ec03d2eb\"",
     "last_modified": null,
     "source_available": true
   },
@@ -42,14 +42,14 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaLab/speedtest-net-servers-dist/master/servers.json": {
-    "content_length": "557863",
-    "etag": "\"96f4c04ad3a522f3d9240d94b2b5f4002d3659d1c6a58f374864d8f6557f57bb\"",
+    "content_length": "573807",
+    "etag": "\"1f299dd5945de405624cc19ffd4542a16a3eaee728915b3f09f12bb72c837abe\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaW/Surge/master/Source/domainset/download.conf": {
-    "content_length": "35265",
-    "etag": "\"16af6d2f169143aabdd7a56d587cf2a2cb5f5a6a8b7fab4711360ffdcae6509b\"",
+    "content_length": "35294",
+    "etag": "\"6dd92d27b848c9877124df53b6096f474b3046b04941623ebb0d02cf50a3177a\"",
     "last_modified": null,
     "source_available": true
   },
@@ -61,19 +61,19 @@
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All_No_Resolve.list": {
     "content_length": "51402",
-    "etag": "\"4232cbe08632e516ee31eccf1c44761498d6fb5133a65b80ca7639098494ce9a\"",
+    "etag": "\"e4dce5ac73d612837932eeffa94e244874f72b11062b1a1baa92e3aa0a6f2c72\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs.list": {
-    "content_length": "826476",
-    "etag": "\"ac4657b083ffa3459182cc6fdd8763a6f862b4e44ff0866c2b4c592f1a184d22\"",
+    "content_length": "828869",
+    "etag": "\"dccd7be7aa60bfd9e67c2db67f94af7c596dbd8b4c7f0d50679325898a9c366a\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMaxNoIP/ChinaMaxNoIP_Domain.list": {
-    "content_length": "1517389",
-    "etag": "\"9d8974da355b5a5e5a60626ec532584d734a3cd644a539f137426553a5027f46\"",
+    "content_length": "1517378",
+    "etag": "\"f972adde3c4f377d3517c032d88d75342783e23f459e56937c11634623e5a575\"",
     "last_modified": null,
     "source_available": true
   },
@@ -103,19 +103,19 @@
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list": {
     "content_length": "19223",
-    "etag": "\"a2e46374cc0cea7189ea66e0f7b0ee0a0401da1788ac1bf23577b7c231c26055\"",
+    "etag": "\"7dace1a167477896a74c2b7ab14aa1c99d931fa2f0b462c9e117f1d11f91ffb9\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_All_No_Resolve.list": {
-    "content_length": "1008726",
-    "etag": "\"013a160c16ed077e72255c89ef3088206d87f92a5810b1b4ce28984b47d30ff1\"",
+    "content_length": "1008839",
+    "etag": "\"a2cafdb2bcd27d15c558caa8eccb430afe37f3880140ebf5123e45884071b3fa\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalMedia/GlobalMedia_All_No_Resolve.list": {
     "content_length": "73351",
-    "etag": "\"18925d3cd77df31bdb10ddd28a6091cf0693aef535227d1028406441245c4e88\"",
+    "etag": "\"f3621ee1646cf08e148084433944caf4db71caffc771a10c1f6903f5b954c573\"",
     "last_modified": null,
     "source_available": true
   },
@@ -228,14 +228,14 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/cdn.conf": {
-    "content_length": null,
-    "etag": "W/\"2e87dc123644bd086dd326f61b8226ce\"",
+    "content_length": "3447",
+    "etag": "\"2e87dc123644bd086dd326f61b8226ce\"",
     "last_modified": null,
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/domestic.conf": {
     "content_length": null,
-    "etag": "W/\"c22f86b0ae07268e576baf6e8fdcd664\"",
+    "etag": "W/\"d674beda711c298325659c63deff78ea\"",
     "last_modified": null,
     "source_available": true
   },
