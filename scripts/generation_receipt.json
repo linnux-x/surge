@@ -224,12 +224,12 @@
     },
     {
       "file": "Speedtest.list",
-      "rules": 1722,
+      "rules": 1711,
       "types": {
-        "DOMAIN": 1610,
+        "DOMAIN": 1599,
         "DOMAIN-SUFFIX": 112
       },
-      "sha256": "100ba1b395989496eb0db0e902da556cf00e322f423283bdbcf09ae49f6cc334"
+      "sha256": "f54b24c7012b81fcd6a323e7ae02f384823b8650aeb735e0b0d4bc12b3d9351e"
     },
     {
       "file": "Speedtest_China.list",
@@ -305,9 +305,9 @@
       "sha256": "dc6dfde863bc0c0034fa3bae09c8a8b090ca385439e866e5ff89fa65eb177c69"
     }
   ],
-  "total_rules": 159542,
+  "total_rules": 159531,
   "rule_types": {
-    "DOMAIN": 3634,
+    "DOMAIN": 3623,
     "DOMAIN-KEYWORD": 102,
     "DOMAIN-SUFFIX": 141697,
     "DOMAIN-WILDCARD": 2,
@@ -336,7 +336,7 @@
     "SukkaW Microsoft CDN": 53,
     "SukkaW Speedtest": 121,
     "SukkaW Speedtest Servers China": 4,
-    "SukkaW Speedtest Servers International": 1599,
+    "SukkaW Speedtest Servers International": 1588,
     "Telegram Official CIDR": 11,
     "blackmatrix7 Apple": 1546,
     "blackmatrix7 China IPs": 3960,
@@ -382,7 +382,7 @@
     "Netflix.manifest": "0ffcdd804cc4e56614ba69cc539061c6b5e65ef6ee2e62a01aee3e62902ab9c9",
     "PayPal.manifest": "649b7162f902986f696a1b28e98b3d2b5e6cbda0a9c8e951c552098e68e1382b",
     "SocialMedia.manifest": "e5b500cfbb1db392e8b379359458a69ece60c50003ee8ebb1cd7ae687ef11e78",
-    "Speedtest.manifest": "343ec3a10a408ec73855b85019fd6c96b7a229fea3f09a34bfe8de0ab1a01752",
+    "Speedtest.manifest": "b6489ebf55d7bc71f1434b17e99b0226f9d154dbd8b8be0f80feb2134feb853e",
     "Speedtest_China.manifest": "8ccb8a8596b3d555d9b2f717e1615d0ad6ee663cea4c2f46be1d7609bc983579",
     "Spotify.manifest": "5f1f22f1d8f4081b725902910dc6754a6b1fa868dd8e97e527c39fcc7cf463b0",
     "Telegram.manifest": "8857fbff71898f2065ddc9f25e5c95b2ef64d908617a94295f6fa5747f54552b",
@@ -393,7 +393,7 @@
   "sources_sha256": "5a9f9c52c9dc75d1765d35fb083012c0e29add2fc70ff219349f5b745a46ff51",
   "override_manifest_sha256": "6cbb660e96253f9ac9de2ef948ac82128f2e40b8ccc1a32e2cb1437b4150dffb",
   "clash_compatibility": {
-    "payload_rules": 159359,
+    "payload_rules": 159348,
     "dropped_surge_only_types": {
       "URL-REGEX": 5,
       "USER-AGENT": 178
@@ -405,8 +405,8 @@
     }
   },
   "diff_summary": {
-    "total_added": 14,
-    "total_removed": 16,
+    "total_added": 192,
+    "total_removed": 203,
     "total_source_changed": 0
   }
 }
