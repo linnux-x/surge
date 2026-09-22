@@ -1,7 +1,7 @@
 # Generated from Rule/China.list (DOMAIN/DOMAIN-SUFFIX entries only)
 # Format: Clash/mihomo rule-provider, behavior: domain
-# UPDATED: 2026-09-20 05:02:49 +0800
-# TOTAL: 111096
+# UPDATED: 2026-09-23 05:02:08 +0800
+# TOTAL: 111105
 payload:
   - '+.wmsjsteam.com'
   - '+.steamchina.com'
@@ -194,6 +194,7 @@ payload:
   - '+.qiniu.com'
   - '+.qixin.com'
   - '+.qzone.com'
+  - '+.rnote.com'
   - '+.sifou.com'
   - '+.smzdm.com'
   - '+.sogou.com'
@@ -35002,6 +35003,7 @@ payload:
   - '+.fnos.net'
   - '+.fnrcw.com'
   - '+.fnrczp.com'
+  - '+.fnrrc.com'
   - '+.fnsbqvz.com'
   - '+.fnscore.com'
   - '+.fnwlzz.com'
@@ -38827,6 +38829,7 @@ payload:
   - '+.gongkongsaas.com'
   - '+.gonglf.com'
   - '+.gonglve.net'
+  - '+.gongniukaiguan.net'
   - '+.gongnou.com'
   - '+.gongpin.net'
   - '+.gongpingjia.com'
@@ -64200,6 +64203,7 @@ payload:
   - '+.mdbchina.com'
   - '+.mdbimg.com'
   - '+.mdclub.org'
+  - '+.mddclass.com'
   - '+.mdddg.com'
   - '+.mddj.com'
   - '+.mddlsa.com'
@@ -75212,6 +75216,7 @@ payload:
   - '+.qudao168.com'
   - '+.qudaowuyou.com'
   - '+.qudayun.com'
+  - '+.qudian.com'
   - '+.qudingshui.com'
   - '+.qudong.com'
   - '+.qudong51.net'
@@ -76876,7 +76881,6 @@ payload:
   - '+.rnhospital.com'
   - '+.rnhy.net'
   - '+.rnmachine.com'
-  - '+.rnote.com'
   - '+.ro50.com'
   - '+.ro8qwpaikd4kx.com'
   - '+.road-group.com'
@@ -90667,6 +90671,7 @@ payload:
   - '+.uboat100.com'
   - '+.uborn.net'
   - '+.uboxol.com'
+  - '+.uboxs.com'
   - '+.ubs001.com'
   - '+.ubssdic.com'
   - '+.ubtrobot.com'
@@ -92754,6 +92759,7 @@ payload:
   - '+.vx.com'
   - '+.vx56.com'
   - '+.vxe.com'
+  - '+.vxhcm.com'
   - '+.vxia.net'
   - '+.vxiaocheng.com'
   - '+.vxinyou.com'
@@ -103779,6 +103785,7 @@ payload:
   - '+.youbangyun.com'
   - '+.youbbs.org'
   - '+.youbian.com'
+  - '+.youbianku.com'
   - '+.youbibi.com'
   - '+.youbike.me'
   - '+.youbikecn.com'
@@ -107868,6 +107875,7 @@ payload:
   - '+.zhonglianhuashu.com'
   - '+.zhonglianhuaxin.com'
   - '+.zhonglianyx.com'
+  - '+.zhongliujie.com'
   - '+.zhongliusp.com'
   - '+.zhongliuyiyuan.com'
   - '+.zhonglue-consulting.com'
@@ -110071,6 +110079,7 @@ payload:
   - '+.zuixu.com'
   - '+.zuiyanke.com'
   - '+.zuiyou.com'
+  - '+.zuiyou.tv'
   - '+.zuiyouxi.com'
   - '+.zuizhifu.com'
   - '+.zuji360.com'
