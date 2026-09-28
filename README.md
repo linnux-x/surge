@@ -8,7 +8,7 @@
 ## 当前运行方式
 
 - 26 个 Surge 规则集、41 个唯一上游 URL；具体来源由 [sources.py](scripts/sources.py) 统一定义。
-- 维护者本机 Codex 每日北京时间 **05:00** 执行更新，保留 Agent 审查。任务依赖本机与 Codex 可用，调度不在 GitHub Actions。
+- 维护者本机 **Hermes** 每天北京时间 **05:00** 调度规则更新，保留 Agent 审查；旧 Codex 维护任务已暂停。实际频率与运行健康以调度配置和执行证据为准，归属见 [SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md)。
 - 更新经分支和 PR 发布，精确提交的 CI 通过后合并 `main`。GitHub Actions 提供手动全量生成和已审阅产物发布。
 - Python 脚本无需第三方 Python 包；本地完整流程需要 **Python 3.10+、curl、Git**，向 GitHub 发布还需已认证的 **GitHub CLI**。
 - 当前规则数、来源归属和 Clash 兼容性见 [生成收据](scripts/generation_receipt.md)，最新增删见 [差异报告](scripts/diff_report.md)。

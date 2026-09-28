@@ -15,6 +15,8 @@ Exported symbols:
 
 from __future__ import annotations
 
+from collections.abc import Iterable
+
 # ── Reusable base URIs ────────────────────────────────────────────────────
 
 BASE_URIS = {
@@ -134,16 +136,31 @@ for _label, _url, _rs, _fmt in _SOURCES:
 # ALL_RULESETS: set of all ruleset filenames
 ALL_RULESETS: set[str] = set(RULE_SPECS.keys())
 
-# OVERLAP_DEPENDENTS: rulesets whose change triggers Global.list re-pruning
-OVERLAP_DEPENDENTS: set[str] = {
-    "WeChat.list", "Speedtest_China.list", "Speedtest.list", "Apple_AI.list", "AI.list", "Apple_CN.list",
-    "Apple.list", "Microsoft_CDN.list", "Microsoft.list",
-    "Telegram.list", "Download.list", "Game.list", "YouTube.list",
-    "TikTok.list", "SocialMedia.list", "PayPal.list", "Google.list",
-    "Netflix.list", "Disney.list", "ChinaMedia.list", "Spotify.list",
-    "GlobalMedia.list",
-    "CDN.list",
-}
+# Exact-text overlap pruning is intentionally narrower than regeneration.
+# Apple_CN triggers a Global rebuild for historical compatibility, but must not
+# be added to the prune set without a separate routing-policy review.
+GLOBAL_OVERLAP_RULESETS: tuple[str, ...] = (
+    "WeChat.list", "Speedtest_China.list", "Speedtest.list", "Apple_AI.list", "AI.list", "Apple.list",
+    "Microsoft_CDN.list", "Microsoft.list", "Telegram.list", "Download.list",
+    "Game.list", "YouTube.list", "TikTok.list", "SocialMedia.list",
+    "PayPal.list", "Google.list", "Netflix.list", "Disney.list",
+    "ChinaMedia.list", "Spotify.list", "GlobalMedia.list", "CDN.list",
+)
+GLOBAL_REBUILD_ONLY_RULESETS: frozenset[str] = frozenset({"Apple_CN.list"})
+OVERLAP_DEPENDENTS: set[str] = set(GLOBAL_OVERLAP_RULESETS) | GLOBAL_REBUILD_ONLY_RULESETS
+
+
+def expand_ruleset_dependencies(rulesets: Iterable[str]) -> set[str]:
+    """Return a new selection including Global when a contributing file changes.
+
+    Does not validate names: the generator CLI validates input first, while the
+    checker constructs its selection exclusively from SOURCE_URL_MAP.
+    """
+    selected = set(rulesets)
+    if selected & OVERLAP_DEPENDENTS:
+        selected.add("Global.list")
+    return selected
+
 
 # Sanity check at import time: every overlap dependent must be a known ruleset
 _missing = OVERLAP_DEPENDENTS - ALL_RULESETS

@@ -1,0 +1,134 @@
+{
+  "base_sha": "716da36709816751da26abd22a400ea650956ba9",
+  "cases": [
+    {
+      "name": "ipv4",
+      "input": "# parent after child\nIP-CIDR,203.0.113.0/25,no-resolve\n\nIP-CIDR,203.0.113.0/24,no-resolve\n",
+      "output": "# parent after child\n\nIP-CIDR,203.0.113.0/24,no-resolve\n",
+      "stdout": "  CIDR prune: 2 → 1 (1 redundant)\n",
+      "errors": [
+        "Test.list:1 unsupported rule type: # parent after child",
+        "Test.list:3 empty field: ",
+        "Test.list:3 unsupported rule type: ",
+        "Test.list:2 redundant CIDR: 203.0.113.0/25"
+      ]
+    },
+    {
+      "name": "ipv6",
+      "input": "IP-CIDR6,2001:db8:1::/48,no-resolve\nIP-CIDR6,2001:db8::/32,no-resolve\n",
+      "output": "IP-CIDR6,2001:db8::/32,no-resolve\n",
+      "stdout": "  CIDR prune: 2 → 1 (1 redundant)\n",
+      "errors": [
+        "Test.list:1 redundant CIDR: 2001:db8:1::/48"
+      ]
+    },
+    {
+      "name": "options",
+      "input": "IP-CIDR,203.0.113.0/24,no-resolve\nIP-CIDR,203.0.113.0/25\nIP-CIDR,203.0.113.0/26,no-resolve,extended-matching\n",
+      "output": "IP-CIDR,203.0.113.0/24,no-resolve\nIP-CIDR,203.0.113.0/25\nIP-CIDR,203.0.113.0/26,no-resolve,extended-matching\n",
+      "stdout": "",
+      "errors": [
+        "Test.list:2 missing no-resolve: IP-CIDR,203.0.113.0/25"
+      ]
+    },
+    {
+      "name": "order_and_case",
+      "input": "ip-cidr,203.0.113.0/24,EXTENDED-MATCHING,NO-RESOLVE\nIP-CIDR,203.0.113.10/32,no-resolve,extended-matching\n",
+      "output": "ip-cidr,203.0.113.0/24,EXTENDED-MATCHING,NO-RESOLVE\n",
+      "stdout": "  CIDR prune: 2 → 1 (1 redundant)\n",
+      "errors": [
+        "Test.list:2 redundant CIDR: 203.0.113.10/32"
+      ]
+    },
+    {
+      "name": "duplicate_option",
+      "input": "IP-CIDR,203.0.113.0/24,no-resolve\nIP-CIDR,203.0.113.0/25,no-resolve,no-resolve\n",
+      "output": "IP-CIDR,203.0.113.0/24,no-resolve\nIP-CIDR,203.0.113.0/25,no-resolve,no-resolve\n",
+      "stdout": "",
+      "errors": []
+    },
+    {
+      "name": "equal_network",
+      "input": "IP-CIDR,203.0.113.1/24,no-resolve\nIP-CIDR,203.0.113.0/24,no-resolve\n",
+      "output": "IP-CIDR,203.0.113.1/24,no-resolve\nIP-CIDR,203.0.113.0/24,no-resolve\n",
+      "stdout": "",
+      "errors": []
+    },
+    {
+      "name": "roots",
+      "input": "IP-CIDR,0.0.0.0/0,no-resolve\nIP-CIDR,255.255.255.255/32,no-resolve\nIP-CIDR6,::/0,no-resolve\nIP-CIDR6,ffff::1/128,no-resolve\n",
+      "output": "IP-CIDR,0.0.0.0/0,no-resolve\nIP-CIDR6,::/0,no-resolve\n",
+      "stdout": "  CIDR prune: 4 → 2 (2 redundant)\n",
+      "errors": [
+        "Test.list:2 redundant CIDR: 255.255.255.255/32",
+        "Test.list:4 redundant CIDR: ffff::1/128"
+      ]
+    },
+    {
+      "name": "mixed_family",
+      "input": "IP-CIDR,0.0.0.0/0,no-resolve\nIP-CIDR6,::1/128,no-resolve\n",
+      "output": "IP-CIDR,0.0.0.0/0,no-resolve\nIP-CIDR6,::1/128,no-resolve\n",
+      "stdout": "",
+      "errors": []
+    },
+    {
+      "name": "invalid",
+      "input": "IP-CIDR,not-a-network,no-resolve\nIP-CIDR\nDOMAIN,example.test\nIP-CIDR6,2001:db8::/129,no-resolve\n",
+      "output": "IP-CIDR,not-a-network,no-resolve\nIP-CIDR\nDOMAIN,example.test\nIP-CIDR6,2001:db8::/129,no-resolve\n",
+      "stdout": "",
+      "errors": [
+        "Test.list:1 invalid CIDR 'not-a-network': 'not-a-network' does not appear to be an IPv4 or IPv6 network",
+        "Test.list:2 missing value: IP-CIDR",
+        "Test.list:4 invalid CIDR '2001:db8::/129': '2001:db8::/129' does not appear to be an IPv4 or IPv6 network"
+      ]
+    },
+    {
+      "name": "rule_type_mismatch",
+      "input": "IP-CIDR6,203.0.113.0/24,no-resolve\nIP-CIDR,203.0.113.0/25,no-resolve\n",
+      "output": "IP-CIDR6,203.0.113.0/24,no-resolve\n",
+      "stdout": "  CIDR prune: 2 → 1 (1 redundant)\n",
+      "errors": [
+        "Test.list:2 redundant CIDR: 203.0.113.0/25"
+      ]
+    },
+    {
+      "name": "empty",
+      "input": "\n",
+      "output": "\n",
+      "stdout": "",
+      "errors": []
+    },
+    {
+      "name": "no_final_newline",
+      "input": "DOMAIN,example.test",
+      "output": "DOMAIN,example.test",
+      "stdout": "",
+      "errors": []
+    }
+  ],
+  "overlap_dependents": [
+    "AI.list",
+    "Apple.list",
+    "Apple_AI.list",
+    "Apple_CN.list",
+    "CDN.list",
+    "ChinaMedia.list",
+    "Disney.list",
+    "Download.list",
+    "Game.list",
+    "GlobalMedia.list",
+    "Google.list",
+    "Microsoft.list",
+    "Microsoft_CDN.list",
+    "Netflix.list",
+    "PayPal.list",
+    "SocialMedia.list",
+    "Speedtest.list",
+    "Speedtest_China.list",
+    "Spotify.list",
+    "Telegram.list",
+    "TikTok.list",
+    "WeChat.list",
+    "YouTube.list"
+  ]
+}

@@ -30,7 +30,7 @@ _scripts_dir = Path(__file__).resolve().parent
 if str(_scripts_dir) not in sys.path:
     sys.path.insert(0, str(_scripts_dir))
 
-from sources import SOURCE_URL_MAP, OVERLAP_DEPENDENTS
+from sources import SOURCE_URL_MAP, OVERLAP_DEPENDENTS, expand_ruleset_dependencies
 
 ROOT = Path(__file__).resolve().parents[1]
 STATE_FILE = ROOT / "scripts" / "source_state.json"
@@ -208,10 +208,9 @@ def check_all_sources_parallel(
 
     # If any overlap-dependent ruleset changed, add Global.list for re-pruning
     if changed_rulesets & OVERLAP_DEPENDENTS:
-        changed_rulesets.add("Global.list")
         print("\n  → Global.list added (overlap prune required)", file=sys.stderr)
 
-    return changed_rulesets, new_state, changed_count, unknown_count
+    return expand_ruleset_dependencies(changed_rulesets), new_state, changed_count, unknown_count
 
 
 def parse_args() -> argparse.Namespace:

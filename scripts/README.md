@@ -36,7 +36,8 @@ Rabbit-Spec 来源当前明确保留，用于补充 AIGC、China、ChinaCIDR 覆
 | 模块 | 作用 |
 |---|---|
 | `source_transforms.py` | 生成器与贡献审计共用的清洗、格式转换、排除与服务过滤；不下载或写入产物 |
-| `sources.py` | 所有上游 URL 和规则集规格的单一来源 |
+| `sources.py` | 所有上游 URL、规则集规格及 Global 重建/裁剪依赖的单一来源 |
+| `cidr_rules.py` | 生成与校验共用的无 I/O CIDR 覆盖检测；保留地址族、选项和原始行 |
 | `policy.py` | 路由策略常量的单一来源：服务边界正则（GitHub / fast.com / YouTube）、共享基础设施域名清单（严格层阻断提交，宽泛层仅审计告警，宽泛层按超集构造，两层不会漂移） |
 | `rule_validator.py` | `generate_rules.py` 和 `validate_surge_repo.py` 共用的规则校验逻辑，策略常量取自 `policy.py` |
 | `http_util.py` | urllib 抓取的统一入口（超时 / UA 一致）；`generate_rules.py` 保留 curl 用于批量下载（带显式超时），`check_upstream_updates.py` 保留专用 HEAD 探测 |
@@ -134,7 +135,7 @@ python3 scripts/replay_upstream_entrypoints.py --cache /tmp/surge-source-cache -
 
 - **不需要 pip install**：核心流水线脚本只依赖标准库。
 - **单一事实来源**：上游源集中在 `sources.py`，校验规则集中在 `rule_validator.py`，策略常量集中在 `policy.py`。
-- **减少散落文件**：CIDR 裁剪内置于 `generate_rules.py`，manifest diff 内置于 `manifest.py --diff`。
+- **共享语义**：CIDR 覆盖检测集中在 `cidr_rules.py`，生成器保留文件兼容入口；manifest diff 内置于 `manifest.py --diff`。
 - **导入模块，不解析配置**：脚本直接 import `sources.py`，不再解析 YAML / JSON 作为 source 配置。
 
 ## 测速来源更新
@@ -146,4 +147,34 @@ spiritLHLS 的 CN.csv 补充；CSV 只接受大陆省份白名单和 `active=1` 
 
 Sukka JSON 地址同时映射两份规则，其更新会触发两份规则及 Global 重建；同一次生成
 只拉取该 JSON 一次。HTTP 失败、格式错误或筛选为空均阻断替换，不再使用 Kelee 快照。
-Kelee 两个 URL 和专用快照已移除，原公开规则 URL、05:00 本机 Codex 调度及 Agent 审查保留。
+Kelee 两个 URL 和专用快照已移除，公开规则 URL 与 Agent 审查保留；当前由 Hermes 调度，归属见 `SOURCE_OF_TRUTH.md`。
+
+
+## Hermes 前置检查与失败状态
+
+`automation_preflight.py` 是可移植的访问检查：读取仓库与可选契约脚本、
+核对 origin、干净工作区和旧调度器停用状态，并在状态目录验证原子替换。
+本地路径通过参数提供，不在公开仓库保存任务正文、私有路径或实际收据。
+
+```bash
+python3 -B scripts/automation_preflight.py \
+  --workspace /path/to/surge-checkout \
+  --state-dir /path/to/task-state \
+  --fallback-receipt /path/to/hermes-state/preflight.json
+```
+
+可选 `--disabled-scheduler-config` 检查旧 Codex 任务已 PAUSED，
+`--contract-script` 验证后续契约校验入口可读（此时不执行契约检查）。
+状态目录由任务安装时准备。Hermes 的 script 入口必须位于其允许的 scripts 目录；
+将此模块与调用 `run(Config(...))` 的本地路径适配器一起部署到可访问的位置。
+不能从已被系统权限阻断的工作区动态导入它，否则无法写备用失败证据。
+
+- 退出 0 / `status=ready` 只表示前置访问检查通过，不代表本轮规则维护成功。
+- 退出 2 表示前置失败，写 `status=failed` 收据；主路径不可写时保存到备用路径。
+- 绑定为 Hermes `script` 后，失败输出仍会进入 Agent；任务必须明确规定：任何
+  Script Error、HOLD 或业务失败都停止生成发布，最终第一行独占 `[CRON_FAILURE]`。
+  Hermes 据此记录 `error`。普通中文失败说明不会自动产生这一状态。
+- 前置检查不取代主任务独占锁、上游可达性门禁、Agent 审阅、exact-SHA CI 或最终收据。
+  健康检查必须同时核对最新任务结果与收据时间，不能只看一份旧的 `ok`。
+- macOS 后台权限应核对真实 LaunchAgent 入口：App 自身有权限不证明脚本宿主也有。
+  修复权限后，应通过原网关调度验证，而非用另一个终端成功代替。

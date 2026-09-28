@@ -20,6 +20,7 @@ _scripts_dir = str(Path(__file__).resolve().parent)
 if _scripts_dir not in sys.path:
     sys.path.insert(0, _scripts_dir)
 
+from cidr_rules import redundant_cidr_indices
 from policy import (
     FASTCOM_RE,
     GITHUB_RE,
@@ -96,7 +97,6 @@ def validate_rule_file(lines: list[str], target_name: str) -> list[str]:
         errors.append(f"{target_name}: {len(duplicates)} duplicate rules, examples: {duplicates[:5]}")
 
     networks: list[tuple[int, ipaddress.IPv4Network | ipaddress.IPv6Network, tuple[str, ...]]] = []
-    all_networks: set[tuple[ipaddress.IPv4Network | ipaddress.IPv6Network, tuple[str, ...]]] = set()
 
     for index, rule in enumerate(lines, start=1):
         parts = [p.strip() for p in rule.split(",")]
@@ -247,17 +247,12 @@ def validate_rule_file(lines: list[str], target_name: str) -> list[str]:
             else:
                 options = tuple(sorted(p.lower() for p in parts[2:]))
                 networks.append((index, network, options))
-                all_networks.add((network, options))
 
-    # ── CIDR redundancy ──
-    for index, network, options in networks:
-        for prefix in range(network.prefixlen):
-            try:
-                if (network.supernet(new_prefix=prefix), options) in all_networks:
-                    errors.append(f"{target_name}:{index} redundant CIDR: {network}")
-                    break
-            except ValueError:
-                pass
+    # Keep diagnostic order and line numbers independent of coverage indexing.
+    redundant = redundant_cidr_indices(networks)
+    for index, network, _ in networks:
+        if index in redundant:
+            errors.append(f"{target_name}:{index} redundant CIDR: {network}")
 
     return errors
 
