@@ -61,3 +61,23 @@ example.com,AI.list,AI,说明为什么应该命中 AI.list
 ## 重构行为基线
 
 `test_source_transforms.py` 使用 `fixtures/generation-baseline.json` 中从 `d84c77e` 提前采集的结果，比较六种格式的完整文件字节和 26 个目标的过滤行为。`test_upstream_probe.py` 覆盖 HTTP 回退顺序、元数据与响应关闭。基线不能为了让测试通过而自动重录；有意改变行为时应单独审阅预期结果。
+
+
+`test_cidr_contracts.py` 使用从 `716da36` 提前采集的 `fixtures/cidr-baseline.json`，
+验证 CIDR 文件字节、错误与日志，并用独立的两两网段包含判据验证索引算法。
+`test_ruleset_dependencies.py` 检查全部来源的增量依赖与 Global 裁剪范围，明确保留 Apple_CN 例外。
+
+当前规则语料的新旧全文件对照（不联网、不改写 Rule/）：
+
+```bash
+python3 -B tests/compare_pipeline_baseline.py
+```
+
+该脚本需要 Git 中存在基线 `716da36709816751da26abd22a400ea650956ba9`；浅克隆需先取得该提交。
+它从基线提取旧脚本，在独立进程中回放当前规则、Manual 及 Global 后处理，并比较完整内容和诊断。
+计时只是单次本地离线观测，不能推断网络生成或发布速度。
+
+
+`test_automation_preflight.py` 验证主收据不可写时的备用失败证据、0600 权限、
+就绪状态不能覆盖业务结果，并在临时真实 Git 仓库中检查 origin、dirty 阻断、
+旧调度器 ACTIVE 阻断与原子替换清理；不接触真实任务收据。

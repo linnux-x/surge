@@ -10,7 +10,6 @@ dedup, CIDR pruning, validation, and Global overlap pruning.
 """
 
 import json
-import ipaddress
 import os
 import subprocess
 import sys
@@ -26,7 +25,11 @@ _scripts_dir = Path(__file__).resolve().parent
 if str(_scripts_dir) not in sys.path:
     sys.path.insert(0, str(_scripts_dir))
 
-from sources import RULE_SPECS, OVERLAP_DEPENDENTS
+from sources import (
+    RULE_SPECS, OVERLAP_DEPENDENTS, GLOBAL_OVERLAP_RULESETS,
+    expand_ruleset_dependencies,
+)
+from cidr_rules import prune_cidr_lines
 from rule_validator import validate_rule_file
 # Re-export existing helper names for callers importing from generate_rules.
 from source_transforms import (
@@ -51,7 +54,7 @@ FETCH_SUBPROCESS_TIMEOUT = 120  # hard backstop around the curl call itself
 
 # ── Helpers ────────────────────────────────────────────────────────────────
 
-def should_process(target: str, changed_rulesets: list[str], force_all: bool) -> bool:
+def should_process(target: str, changed_rulesets: list[str] | set[str], force_all: bool) -> bool:
     """Determine if a ruleset should be processed this run."""
     if force_all:
         return True
@@ -128,49 +131,14 @@ def prune_redundant_cidr(filepath: Path):
 
     Only prune within identical option sets: no-resolve changes DNS behavior.
     Built into generate_rules.py (was scripts/prune_cidr.py).
-    Returns (before, after) counts; prints summary if pruning occurred.
+    Compatibility file wrapper; prints summary if pruning occurred.
     """
     lines = filepath.read_text(encoding="utf-8").splitlines()
 
-    cidrs: list[tuple[int, ipaddress.IPv4Network | ipaddress.IPv6Network, tuple[str, ...]]] = []
-    all_nets: set[tuple] = set()
-
-    for index, line in enumerate(lines):
-        stripped = line.strip()
-        if not stripped or stripped.startswith("#"):
-            continue
-        parts = [p.strip() for p in stripped.split(",")]
-        if len(parts) < 2 or parts[0].upper() not in {"IP-CIDR", "IP-CIDR6"}:
-            continue
-        try:
-            network = ipaddress.ip_network(parts[1], strict=False)
-        except ValueError:
-            continue
-        options = tuple(sorted(p.lower() for p in parts[2:]))
-        cidrs.append((index, network, options))
-        all_nets.add((network, options))
-
-    before = len(cidrs)
-    remove: set[int] = set()
-
-    for index, network, options in cidrs:
-        for prefix in range(network.prefixlen):
-            try:
-                if (network.supernet(new_prefix=prefix), options) in all_nets:
-                    remove.add(index)
-                    break
-            except ipaddress.NetmaskValueError:
-                break
-
-    if remove:
-        filepath.write_text(
-            "\n".join(line for i, line in enumerate(lines) if i not in remove) + "\n",
-            encoding="utf-8",
-        )
-
-    after = before - len(remove)
+    pruned, before, after = prune_cidr_lines(lines)
     if before != after:
-        print(f"  CIDR prune: {before} → {after} ({len(remove)} redundant)")
+        filepath.write_text("\n".join(pruned) + "\n", encoding="utf-8")
+        print(f"  CIDR prune: {before} → {after} ({before - after} redundant)")
 
 
 # ── Processing ──────────────────────────────────────────────────────────────
@@ -228,18 +196,18 @@ def process_rule(target_name: str, display_name: str, sources: list[Tuple[str, s
     lines = dedupe_preserve_order(lines)
     lines = prune_shadowed_domains(lines)
 
+    # Preserve the old write/read splitlines normalization, including empty
+    # content and Unicode line separators, without a temporary-file round trip.
+    pruned_lines, before, after = prune_cidr_lines(("\n".join(lines) + "\n").splitlines())
+    if before != after:
+        print(f"  CIDR prune: {before} → {after} ({before - after} redundant)")
+
     # Stage beside the destination so a failed validation leaves the old file intact.
     destination = target_path
     destination.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.NamedTemporaryFile(dir=destination.parent, prefix=".rules-", suffix=".tmp", delete=False) as staging:
         target_path = Path(staging.name)
     try:
-        # Write to file for CIDR pruning (needs physical file)
-        target_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-        prune_redundant_cidr(target_path)
-
-        # Read back once: validate rules + get pruned lines for final write
-        pruned_lines = target_path.read_text(encoding="utf-8").splitlines()
         rules = [l for l in pruned_lines if l.strip() and not l.strip().startswith("#")]
         errors = validate_rule_file(rules, target_name)
         if errors:
@@ -273,17 +241,9 @@ def prune_global_first_match_overlaps():
     if not target_path.exists():
         return
 
-    earlier_rulesets = [
-        "WeChat.list", "Speedtest_China.list", "Speedtest.list", "Apple_AI.list", "AI.list", "Apple.list",
-        "Microsoft_CDN.list", "Microsoft.list", "Telegram.list", "Download.list",
-        "Game.list", "YouTube.list", "TikTok.list", "SocialMedia.list",
-        "PayPal.list", "Google.list", "Netflix.list", "Disney.list",
-        "ChinaMedia.list", "Spotify.list", "GlobalMedia.list", "CDN.list",
-    ]
-
     # Collect all earlier rules
     overlap: set[str] = set()
-    for ruleset in earlier_rulesets:
+    for ruleset in GLOBAL_OVERLAP_RULESETS:
         path = RULE_DIR / ruleset
         if path.exists():
             for line in path.read_text(encoding="utf-8").splitlines():
@@ -340,12 +300,11 @@ def main():
     # restore rules removed by a service update; regenerate from its sources.
     # Resolve this here as well as in the upstream checker so direct CLI calls
     # cannot accidentally omit the dependency.
-    if set(changed_rulesets) & OVERLAP_DEPENDENTS and "Global.list" not in changed_rulesets:
-        changed_rulesets = [*changed_rulesets, "Global.list"]
+    selected_rulesets = expand_ruleset_dependencies(changed_rulesets)
 
     processed = False
     for target_name, (display_name, sources) in RULE_SPECS.items():
-        if should_process(target_name, changed_rulesets, is_workflow_dispatch):
+        if should_process(target_name, selected_rulesets, is_workflow_dispatch):
             print(f"Processing {target_name} ...")
             process_rule(target_name, display_name, sources)
             processed = True
