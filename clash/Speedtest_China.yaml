@@ -1,10 +1,9 @@
 # Generated from Rule/Speedtest_China.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-09-28 08:08:30 +0800
+# UPDATED: 2026-09-29 05:02:19 +0800
 # TOTAL: 53
 payload:
   - 'DOMAIN,speedtest.dukekunshan.edu.cn'
-  - 'DOMAIN,speedtest.jsqiuying.com'
   - 'DOMAIN,4gsuzhou1.speedtest.jsinfo.net'
   - 'DOMAIN,4gsuzhou1.speedtest.jsinfo.net.prod.hosts.ooklaserver.net'
   - 'DOMAIN,5g.shunicomtest.com'
@@ -44,6 +43,7 @@ payload:
   - 'DOMAIN,server-24447.prod.hosts.ooklaserver.net'
   - 'DOMAIN,speedtest.139play.com'
   - 'DOMAIN,speedtest.139play.com.prod.hosts.ooklaserver.net'
+  - 'DOMAIN,speedtest.jsqiuying.com'
   - 'DOMAIN,speedtest.jsqiuying.com.prod.hosts.ooklaserver.net'
   - 'DOMAIN,speedtest.wasu.cn'
   - 'DOMAIN,speedtest.wasu.cn.prod.hosts.ooklaserver.net'

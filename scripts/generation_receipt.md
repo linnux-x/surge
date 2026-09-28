@@ -1,24 +1,24 @@
 # Surge 规则生成收据
 
 - 规则文件：26
-- 规则总数：159710
+- 规则总数：159668
 - manifest 文件：26
 
 ## 差异摘要
 
-- 新增：668
-- 删除：502
-- 来源迁移：0
+- 新增：72
+- 删除：114
+- 来源迁移：1
 
 ## Clash 兼容性
 
-- 生成 payload：159527
+- 生成 payload：159485
 - 跳过 Surge 专属规则：{'URL-REGEX': 5, 'USER-AGENT': 178}
 - 保留 mihomo 扩展类型：{'DOMAIN-WILDCARD': 2, 'IP-ASN': 11, 'PROCESS-NAME': 58}
 
 ## 规则类型
 
-- DOMAIN: 3642
+- DOMAIN: 3600
 - DOMAIN-KEYWORD: 102
 - DOMAIN-SUFFIX: 141909
 - DOMAIN-WILDCARD: 2
@@ -47,8 +47,8 @@
 - SukkaW Game Download: 52
 - SukkaW Microsoft CDN: 53
 - SukkaW Speedtest: 121
-- SukkaW Speedtest Servers China: 2
-- SukkaW Speedtest Servers International: 1607
+- SukkaW Speedtest Servers China: 1
+- SukkaW Speedtest Servers International: 1565
 - Telegram Official CIDR: 11
 - blackmatrix7 Apple: 1546
 - blackmatrix7 China IPs: 4009
@@ -71,4 +71,4 @@
 - blackmatrix7 Twitter: 32
 - blackmatrix7 WeChat: 99
 - blackmatrix7 YouTube: 188
-- spiritLHLS Speedtest.cn China: 51
+- spiritLHLS Speedtest.cn China: 52
