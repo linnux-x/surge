@@ -19,19 +19,19 @@
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
     "content_length": "4351",
-    "etag": "\"328dab2b508a86ed8c6fbc2eea453ef11f6009d90552e37781eec9ab0bc64aec\"",
+    "etag": "\"9bac36093566f7b2a2538766b5075adf8fb4d466d54a9dba9ac37094c5627193\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
     "content_length": "101172",
-    "etag": "\"e370071de450ea7d4cc0e68a7edf2ea688b3c67f94284333b872b83368e38a01\"",
+    "etag": "\"14d3d42681a00d5ff3250462b46f5553b1475b4dec7d3e5741aec870312e28f2\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/ChinaCIDR.list": {
     "content_length": "234195",
-    "etag": "\"f8435309f9207768a733de3c3cceb061823fa1f8a74d0dd3aa39014c1845328a\"",
+    "etag": "\"aa221615baefcb995777900d12c22594d7adfd9dcc3e4946be4ed198750edca0\"",
     "last_modified": null,
     "source_available": true
   },
@@ -42,8 +42,8 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaLab/speedtest-net-servers-dist/master/servers.json": {
-    "content_length": "557105",
-    "etag": "\"c6e389e00dee281c2ff991eb42b83b3820fa1909b0d20d458647c6e702948fa8\"",
+    "content_length": "576416",
+    "etag": "\"943f82b5ce5dba2ef374382d9fdda0373493592a4229a63651586c72f407effe\"",
     "last_modified": null,
     "source_available": true
   },
@@ -216,8 +216,8 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/apple_cn.conf": {
-    "content_length": "826",
-    "etag": "\"2803a2f9967953f81d3ffec0ea8b619c\"",
+    "content_length": null,
+    "etag": "W/\"2803a2f9967953f81d3ffec0ea8b619c\"",
     "last_modified": null,
     "source_available": true
   },
