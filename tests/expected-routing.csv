@@ -131,3 +131,12 @@ appinn.me,China.list,DIRECT,小众软件官方论坛直连
 gsp64-ssl.ls.apple.com,Apple_AI.list,Apple_AI,Apple Intelligence全球LinkScribe节点
 colocity.speedtest.gslnetworks.com,Speedtest.list,Speedtest,Sukka 官方数据中的境外测速节点
 node-124-160-78-98.speedtest.cn,Speedtest_China.list,DIRECT,spiritLHLS 明确大陆省份的测速节点
+muse.ai,AI.list,AI,Meta Muse 个人 Agent 官方入口
+auth.muse.ai,AI.list,AI,Muse 认证入口
+api.muse.ai,AI.list,AI,Muse 官方客户端引用的 API 子域
+introducing.muse.ai,AI.list,AI,Muse 官方产品介绍
+security.muse.ai,AI.list,AI,Muse 官方安全说明入口
+metaaivm.com,AI.list,AI,Muse 专属 VM 域名范围
+00000000-0000-4000-8000-000000000001.metaaivm.com,AI.list,AI,合成 UUID 主机验证 Muse VM 后缀覆盖不代表实际用户实例
+agent.meta.ai,AI.list,AI,Muse 既有 Meta AI 入口保持 AI 归属
+auth.meta.com,SocialMedia.list,SocialMedia,Meta 共享认证保持既有归属

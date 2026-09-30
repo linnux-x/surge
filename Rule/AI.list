@@ -1,9 +1,9 @@
 # NAME: AI
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-09-30 05:02:17 +0800
+# UPDATED: 2026-09-30 11:44:38 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 145
+# TOTAL: 147
 
 # ======= Manual Rules ========
 # Anthropic / Claude
@@ -77,6 +77,12 @@ DOMAIN-SUFFIX,chatjimmy.ai
 # Real-traffic FINAL review: first-party AI services with policy-changing ownership
 DOMAIN-SUFFIX,models.dev
 DOMAIN-SUFFIX,jina.ai
+
+# Meta Muse: app/auth/API and dedicated Secure VM hosts
+# https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/
+# Public muse.ai client exports FEATHER_VM_HOST_SUFFIX = .metaaivm.com
+DOMAIN-SUFFIX,muse.ai
+DOMAIN-SUFFIX,metaaivm.com
 
 # ======= SukkaW AI ========
 DOMAIN-SUFFIX,x.ai

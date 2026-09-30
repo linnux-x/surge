@@ -3,17 +3,17 @@
   "rule_files": [
     {
       "file": "AI.list",
-      "rules": 145,
+      "rules": 147,
       "types": {
         "DOMAIN": 37,
         "DOMAIN-KEYWORD": 6,
-        "DOMAIN-SUFFIX": 93,
+        "DOMAIN-SUFFIX": 95,
         "IP-ASN": 3,
         "IP-CIDR": 4,
         "IP-CIDR6": 1,
         "URL-REGEX": 1
       },
-      "sha256": "d79228a2ed942c1e99db28170098d78aa0dca7f9fb77023d28432ca22dbfef5b"
+      "sha256": "098c615205f373ae471a25e47f82584eb047600a69fd925872ff5cd08faf8f00"
     },
     {
       "file": "Apple.list",
@@ -305,11 +305,11 @@
       "sha256": "dc6dfde863bc0c0034fa3bae09c8a8b090ca385439e866e5ff89fa65eb177c69"
     }
   ],
-  "total_rules": 159712,
+  "total_rules": 159714,
   "rule_types": {
     "DOMAIN": 3644,
     "DOMAIN-KEYWORD": 102,
-    "DOMAIN-SUFFIX": 141909,
+    "DOMAIN-SUFFIX": 141911,
     "DOMAIN-WILDCARD": 2,
     "IP-ASN": 11,
     "IP-CIDR": 9520,
@@ -321,7 +321,7 @@
   "source_attribution": {
     "ConnersHua AI": 18,
     "Loyalsoldier China CIDR": 7424,
-    "Manual Rules": 265,
+    "Manual Rules": 267,
     "Rabbit-Spec AIGC": 48,
     "Rabbit-Spec China": 187,
     "Rabbit-Spec China CIDR": 20,
@@ -363,7 +363,7 @@
   },
   "manifest_files": 26,
   "manifests_sha256": {
-    "AI.manifest": "e17524d3ba61c3924be6d34dd0b58ca4b7f6c2195b4a83ec72c3d5765886898f",
+    "AI.manifest": "3074ab4912cfba254d031675793bedeeac47730ac82631990602f4f9d11bac35",
     "Apple.manifest": "fd7731bc3283e0cedc7a3c44722bc55f9d727dc16bd00b669d6b6e49f557e5c5",
     "Apple_AI.manifest": "68eeb4b921ba19b719f5167d9d8b0a5163e53db274055e7fadea6b556750c488",
     "Apple_CN.manifest": "a156042ab2b674afe44c22e64f5353e3ace603117d8b12d8ac483521f94641da",
@@ -391,9 +391,9 @@
     "YouTube.manifest": "1b9c3b78afbb311db391e8f2910b25b507296d158a339957a874d918a2869ca7"
   },
   "sources_sha256": "cac9ce245067c00c15c1b5053a96c5750f1ebcf8d446c08d56ac38acb4bbe61a",
-  "override_manifest_sha256": "6cbb660e96253f9ac9de2ef948ac82128f2e40b8ccc1a32e2cb1437b4150dffb",
+  "override_manifest_sha256": "00625e9898906cd4f4ad305b4e0d029b8c403a23eadcefe59cec682062f5d11b",
   "clash_compatibility": {
-    "payload_rules": 159529,
+    "payload_rules": 159531,
     "dropped_surge_only_types": {
       "URL-REGEX": 5,
       "USER-AGENT": 178
@@ -405,8 +405,8 @@
     }
   },
   "diff_summary": {
-    "total_added": 117,
-    "total_removed": 73,
+    "total_added": 2,
+    "total_removed": 0,
     "total_source_changed": 0
   }
 }

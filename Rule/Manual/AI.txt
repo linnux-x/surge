@@ -76,3 +76,9 @@ DOMAIN-SUFFIX,chatjimmy.ai
 # Real-traffic FINAL review: first-party AI services with policy-changing ownership
 DOMAIN-SUFFIX,models.dev
 DOMAIN-SUFFIX,jina.ai
+
+# Meta Muse: app/auth/API and dedicated Secure VM hosts
+# https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/
+# Public muse.ai client exports FEATHER_VM_HOST_SUFFIX = .metaaivm.com
+DOMAIN-SUFFIX,muse.ai
+DOMAIN-SUFFIX,metaaivm.com
