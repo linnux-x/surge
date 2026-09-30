@@ -43,6 +43,125 @@
   },
   "entries": [
     {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,identrust.com",
+      "reason": "共享证书服务不应由 AI 代理组覆盖",
+      "destination": "Global.list → Global",
+      "route_tests": ["identrust.com"]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,launchdarkly.com",
+      "reason": "共享特性开关服务不应由 AI 代理组覆盖",
+      "destination": "FINAL → Global",
+      "route_tests": ["launchdarkly.com"]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,pool.ntp.org",
+      "reason": "共享 NTP 父后缀会遮蔽 cn.pool.ntp.org 的 China 直连规则",
+      "destination": "China.list → DIRECT 或 FINAL → Global",
+      "route_tests": ["pool.ntp.org", "cn.pool.ntp.org"]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,stripe.com",
+      "reason": "共享支付服务不应由 AI 代理组覆盖",
+      "destination": "Global.list → Global",
+      "route_tests": ["stripe.com"]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,workos.com",
+      "reason": "共享身份服务不应由 AI 代理组覆盖",
+      "destination": "FINAL → Global",
+      "route_tests": ["workos.com"]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "IP-ASN,13335,no-resolve",
+      "reason": "Cloudflare AS13335 承载公共 DNS 和其他非 AI 服务，不应整网命中 AI",
+      "destination": "按专属域名、IP 或 FINAL 规则处理",
+      "route_tests": ["1.1.1.1"]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "IP-ASN,20473,no-resolve",
+      "reason": "Vultr AS20473 是共享云主机网络，不应整网命中 AI",
+      "destination": "按专属域名、IP 或 FINAL 规则处理",
+      "route_tests": ["193.46.211.1"]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,app.launchdarkly.com",
+      "reason": "共享 LaunchDarkly 应用主机，不因上游 AI 收录而变为 AI 专属",
+      "destination": "FINAL → Global",
+      "route_tests": ["app.launchdarkly.com"]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,clientstream.launchdarkly.com",
+      "reason": "共享 LaunchDarkly 客户端流主机",
+      "destination": "FINAL → Global",
+      "route_tests": ["clientstream.launchdarkly.com"]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,events.launchdarkly.com",
+      "reason": "共享 LaunchDarkly 事件主机",
+      "destination": "FINAL → Global",
+      "route_tests": ["events.launchdarkly.com"]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,js.stripe.com",
+      "reason": "共享 Stripe 支付脚本主机",
+      "destination": "Global.list → Global",
+      "route_tests": ["js.stripe.com"]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,cdn.workos.com",
+      "reason": "共享 WorkOS 静态资源主机",
+      "destination": "FINAL → Global",
+      "route_tests": ["cdn.workos.com"]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,forwarder.workos.com",
+      "reason": "共享 WorkOS 转发主机",
+      "destination": "FINAL → Global",
+      "route_tests": ["forwarder.workos.com"]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,setup.workos.com",
+      "reason": "共享 WorkOS 设置主机",
+      "destination": "FINAL → Global",
+      "route_tests": ["setup.workos.com"]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,images.workoscdn.com",
+      "reason": "共享 WorkOS 图片主机",
+      "destination": "FINAL → Global",
+      "route_tests": ["images.workoscdn.com"]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,workos.imgix.net",
+      "reason": "共享 WorkOS 图片代理主机",
+      "destination": "FINAL → Global",
+      "route_tests": ["workos.imgix.net"]
+    },
+    {
+      "source_file": "Global.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,pool.ntp.org",
+      "reason": "Global 的 NTP 父后缀会在 China.list 之前截获 cn.pool.ntp.org",
+      "destination": "cn.pool.ntp.org → China.list / DIRECT；其他主机按后续规则处理",
+      "route_tests": ["pool.ntp.org", "cn.pool.ntp.org"]
+    },
+    {
       "source_file": "AI.txt",
       "rule": "DOMAIN-SUFFIX,muse.ai",
       "reason": "Meta 官方 Muse 入口及认证/API 子域；Surge 活跃规则求值命中 FINAL，补入 AI。来源：https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",

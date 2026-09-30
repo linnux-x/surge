@@ -1,29 +1,64 @@
 {
-  "generated_at": "2026-09-30T11:44:38.931690",
+  "generated_at": "2026-09-30T17:03:49.863943",
   "total_added": 2,
-  "total_removed": 0,
+  "total_removed": 9,
   "total_source_changed": 0,
   "diffs": [
     {
       "file": "AI.list",
-      "prev_total": 145,
-      "curr_total": 147,
-      "added_count": 2,
-      "removed_count": 0,
+      "prev_total": 147,
+      "curr_total": 138,
+      "added_count": 0,
+      "removed_count": 9,
       "source_changed_count": 0,
-      "added_sample": [
+      "added_sample": [],
+      "removed_sample": [
         {
-          "id": "0611fb6403de",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,metaaivm.com"
+          "id": "1a53c81c7e9e",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,launchdarkly.com"
         },
         {
-          "id": "6e069852158b",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,muse.ai"
+          "id": "3687396bec7f",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,workos.com"
+        },
+        {
+          "id": "43b6a70335a8",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,identrust.com"
+        },
+        {
+          "id": "a07ee758ab64",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,stripe.com"
+        },
+        {
+          "id": "af656b6ca087",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,pool.ntp.org"
+        },
+        {
+          "id": "b5ea3a4fb747",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "IP-ASN,13335,no-resolve"
+        },
+        {
+          "id": "bfb304a83522",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,workos.imgix.net"
+        },
+        {
+          "id": "dafaa3e475cc",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "IP-ASN,20473,no-resolve"
+        },
+        {
+          "id": "fa31a1a79dee",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,images.workoscdn.com"
         }
       ],
-      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -139,11 +174,22 @@
     {
       "file": "Global.list",
       "prev_total": 24350,
-      "curr_total": 24350,
-      "added_count": 0,
+      "curr_total": 24352,
+      "added_count": 2,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "43b6a70335a8",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,identrust.com"
+        },
+        {
+          "id": "a07ee758ab64",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,stripe.com"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },

@@ -1,13 +1,9 @@
 #!/usr/bin/env python3
-"""Report cross-file domain conflicts for Surge rulesets.
+"""Report domain rules fully shadowed by an earlier ruleset with another policy.
 
-Manual review helper: find the same domain value appearing in multiple .list
-files whose policies differ in Conf/Linnux.conf first-match order.
-
-Usage:
-    cross_file_conflicts.py            → full per-domain report (up to 100)
-    cross_file_conflicts.py --summary  → compact winner/loser pair counts
-                                          (used as an informational CI step)
+The report covers DOMAIN and DOMAIN-SUFFIX exact/parent relationships in
+Conf/Linnux.conf order. It does not claim to model keyword, wildcard, IP,
+process, or DNS matching; use test_routing_order.py for concrete hosts.
 """
 from __future__ import annotations
 
@@ -19,12 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 RULE_DIR = ROOT / "Rule"
 CONF_FILE = ROOT / "Conf" / "Linnux.conf"
-
-TRACKED_TYPES = {"DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-WILDCARD"}
-HIGH_RISK_FILES = {
-    "Global.list", "China.list", "Apple_CN.list", "AI.list",
-    "GlobalMedia.list", "ChinaMedia.list", "Download.list", "Microsoft.list",
-}
+TRACKED_TYPES = {"DOMAIN", "DOMAIN-SUFFIX"}
 
 
 def load_policy_order() -> dict[str, tuple[int, str]]:
@@ -44,10 +35,10 @@ def load_policy_order() -> dict[str, tuple[int, str]]:
             break
         if not in_rule or not line or line.startswith("#"):
             continue
-        match = re.match(r"RULE-SET,.*?/Rule/([A-Za-z0-9_]+[.]list),(\S+)(?:,|$)", line)
+        match = re.match(r"RULE-SET,.*?/Rule/([A-Za-z0-9_]+[.]list),([^,]+)(?:,|$)", line)
         if not match:
             # Inline WeChat mirrors Rule/WeChat.list.
-            match = re.match(r"RULE-SET,WeChat,(\S+)(?:,|$)", line)
+            match = re.match(r"RULE-SET,WeChat,([^,]+)(?:,|$)", line)
             if match:
                 mapping["WeChat.list"] = (order_index, match.group(1))
                 order_index += 1
@@ -66,91 +57,88 @@ def load_domain_index() -> dict[str, list[tuple[str, str, str]]]:
             if not rule or rule.startswith("#"):
                 continue
             parts = [part.strip() for part in rule.split(",")]
-            if len(parts) < 2:
+            if len(parts) < 2 or parts[0].upper() not in TRACKED_TYPES:
                 continue
-            rule_type = parts[0].upper()
-            if rule_type not in TRACKED_TYPES:
-                continue
-            value = parts[1].lower()
-            index[value].append((path.name, rule_type, rule))
+            index[parts[1].lower()].append((path.name, parts[0].upper(), rule))
     return index
 
 
+def covering_values(value: str) -> list[str]:
+    """Return the value and every domain-label parent, most specific first."""
+    parts = value.split(".")
+    return [".".join(parts[i:]) for i in range(len(parts))]
+
+
 def collect_conflicts(policy_order, domain_index):
-    """Return the sorted conflict list shared by both output modes."""
-    conflicts: list[tuple[int, str, list[tuple[str, str, str, str]]]] = []
+    """Find later rules whose entire domain match set has an earlier winner.
 
-    for domain, entries in domain_index.items():
-        files = {entry[0] for entry in entries}
-        if len(files) < 2:
-            continue
-        enriched = []
-        policies = set()
-        min_order = 10_000
+    A DOMAIN can be covered by an identical DOMAIN or a parent DOMAIN-SUFFIX.
+    A DOMAIN-SUFFIX needs an earlier identical/parent DOMAIN-SUFFIX; an exact
+    DOMAIN covers only the suffix apex and therefore cannot shadow it.
+    """
+    conflicts = []
+    for value, entries in domain_index.items():
         for filename, rule_type, rule in entries:
-            order, policy = policy_order.get(filename, (9999, "<not-in-conf>"))
-            min_order = min(min_order, order)
-            policies.add(policy)
-            enriched.append((filename, policy, rule_type, rule))
-        if len(policies) < 2:
-            continue
-        risk_bonus = 0 if files & HIGH_RISK_FILES else 1000
-        conflicts.append((risk_bonus + min_order, domain, enriched))
-
-    conflicts.sort(key=lambda item: (item[0], item[1]))
+            if filename not in policy_order:
+                continue
+            loser_order, loser_policy = policy_order[filename]
+            winner = None
+            for candidate_value in covering_values(value):
+                for earlier_file, earlier_type, earlier_rule in domain_index.get(candidate_value, ()):
+                    if earlier_file == filename or earlier_file not in policy_order:
+                        continue
+                    earlier_order, earlier_policy = policy_order[earlier_file]
+                    if earlier_order >= loser_order:
+                        continue
+                    if earlier_type != "DOMAIN-SUFFIX" and not (
+                        rule_type == "DOMAIN" and candidate_value == value
+                    ):
+                        continue
+                    if winner is None or earlier_order < winner[0]:
+                        winner = (earlier_order, earlier_file, earlier_policy, earlier_rule)
+            if winner is not None and winner[2] != loser_policy:
+                conflicts.append((winner[0], value, winner[1:], (filename, loser_policy, rule)))
+    conflicts.sort(key=lambda item: (item[0], item[1], item[3][0], item[3][2]))
     return conflicts
 
 
-def print_summary(policy_order, conflicts) -> None:
-    """Aggregate conflicts into winner→losers pair counts (full data set)."""
-    pair_counts: dict[tuple[str, tuple[str, ...]], int] = defaultdict(int)
-    for _rank, _domain, entries in conflicts:
-        ordered = sorted(entries, key=lambda item: policy_order.get(item[0], (9999, ""))[0])
-        winner = ordered[0][0]
-        losers = tuple(sorted({f for f, _p, _t, _r in ordered[1:] if f != winner}))
-        pair_counts[(winner, losers)] += 1
+def print_summary(conflicts) -> None:
+    pair_counts: dict[tuple[str, str, str, str], int] = defaultdict(int)
+    for _rank, _value, winner, loser in conflicts:
+        pair_counts[(winner[0], winner[1], loser[0], loser[1])] += 1
 
-    print("### Cross-file Policy Conflicts — Summary")
+    print("### Cross-file Policy Shadows — Summary")
     print()
-    print(f"Total conflicting domains: {len(conflicts)}")
+    print(f"Fully shadowed DOMAIN/DOMAIN-SUFFIX entries with a different policy: {len(conflicts)}")
     print()
-    print("| count | effective (first match) | shadowed entries in |")
+    print("| count | effective first match | shadowed entry |")
     print("|---:|---|---|")
-    for (winner, losers), n in sorted(pair_counts.items(), key=lambda kv: -kv[1]):
-        print(f"| {n} | `{winner}` | {', '.join(f'`{l}`' for l in losers)} |")
+    for (winner_file, winner_policy, loser_file, loser_policy), n in sorted(
+        pair_counts.items(), key=lambda item: (-item[1], item[0])
+    ):
+        print(f"| {n} | `{winner_file}` / `{winner_policy}` | `{loser_file}` / `{loser_policy}` |")
     print()
-    print("_Informational only — shadowed duplicates never match and are harmless;_")
-    print("_use the full report and Rule/Manual/*.exclude.txt to retire them._")
+    print("_Informational: review intent before excluding either rule. "
+          "Keyword, wildcard, IP, and inline matches are outside this report._")
 
 
 def main() -> int:
-    policy_order = load_policy_order()
-    domain_index = load_domain_index()
-    conflicts = collect_conflicts(policy_order, domain_index)
-
+    conflicts = collect_conflicts(load_policy_order(), load_domain_index())
     if "--summary" in sys.argv:
-        print_summary(policy_order, conflicts)
+        print_summary(conflicts)
         return 0
 
-    print("### Cross-file Policy Conflicts")
+    print("### Cross-file Policy Shadows")
     print()
-    if not conflicts:
-        print("No same-domain cross-file policy conflicts found.")
-        return 0
-
-    print(f"Found {len(conflicts)} same-domain entries that appear under multiple policies.")
-    print("Showing up to 100, sorted by first-match risk.")
+    print(f"Found {len(conflicts)} fully shadowed DOMAIN/DOMAIN-SUFFIX entries with a different policy.")
+    print("Showing up to 100 in first-match order.")
     print()
-
-    for _rank, domain, entries in conflicts[:100]:
-        entries.sort(key=lambda item: policy_order.get(item[0], (9999, ""))[0])
-        effective_file, effective_policy, _rule_type, _rule = entries[0]
-        print(f"- `{domain}` → effective `{effective_file}` / `{effective_policy}`")
-        for filename, policy, rule_type, rule in entries:
-            print(f"  - `{filename}` / `{policy}`: `{rule}`")
+    for _rank, value, winner, loser in conflicts[:100]:
+        print(f"- `{value}`: effective `{winner[0]}` / `{winner[1]}` via `{winner[2]}`")
+        print(f"  - shadowed `{loser[0]}` / `{loser[1]}`: `{loser[2]}`")
     if len(conflicts) > 100:
         print()
-        print(f"_Truncated: {len(conflicts) - 100} additional conflicts omitted._")
+        print(f"_Truncated: {len(conflicts) - 100} additional entries omitted._")
     return 0
 
 
