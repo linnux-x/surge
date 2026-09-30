@@ -1,9 +1,9 @@
 # NAME: Download
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-09-19 11:40:27 +0800
+# UPDATED: 2026-10-01 05:02:41 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1689
+# TOTAL: 1691
 
 # ======= Manual Rules ========
 # Borrowed from SukkaW non_ip/direct downloader process rules
@@ -1648,6 +1648,8 @@ DOMAIN,data.caida.org
 DOMAIN,download.fcitx-im.org
 DOMAIN,cdn.dyn.com
 DOMAIN,assets-tcpviewer.proxyman.com
+DOMAIN,download.manus.im
+DOMAIN,dl.heycue.io
 
 # ======= SukkaW Game Download ========
 DOMAIN-SUFFIX,cdn.ea.com
