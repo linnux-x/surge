@@ -44,6 +44,20 @@
   "entries": [
     {
       "source_file": "AI.txt",
+      "rule": "DOMAIN-SUFFIX,muse.ai",
+      "reason": "Meta 官方 Muse 入口及认证/API 子域；Surge 活跃规则求值命中 FINAL，补入 AI。来源：https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+      "destination": "AI.list",
+      "route_tests": ["muse.ai", "auth.muse.ai", "api.muse.ai", "introducing.muse.ai", "security.muse.ai"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN-SUFFIX,metaaivm.com",
+      "reason": "Muse 官方公开客户端定义 FEATHER_VM_HOST_SUFFIX 为 .metaaivm.com，用于专属 VM 主机；当前未被 AI 覆盖。来源：https://muse.ai/_next/static/chunks/2ql8nnti3ddjq.js",
+      "destination": "AI.list",
+      "route_tests": ["metaaivm.com", "00000000-0000-4000-8000-000000000001.metaaivm.com"]
+    },
+    {
+      "source_file": "AI.txt",
       "rule": "DOMAIN-SUFFIX,jina.ai",
       "reason": "真实 FINAL 流量确认其为 Jina 搜索 AI、Embedding 与 Reranker 服务",
       "destination": "AI.list",
