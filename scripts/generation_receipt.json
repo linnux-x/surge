@@ -3,17 +3,17 @@
   "rule_files": [
     {
       "file": "AI.list",
-      "rules": 147,
+      "rules": 138,
       "types": {
         "DOMAIN": 37,
         "DOMAIN-KEYWORD": 6,
-        "DOMAIN-SUFFIX": 95,
-        "IP-ASN": 3,
+        "DOMAIN-SUFFIX": 88,
+        "IP-ASN": 1,
         "IP-CIDR": 4,
         "IP-CIDR6": 1,
         "URL-REGEX": 1
       },
-      "sha256": "098c615205f373ae471a25e47f82584eb047600a69fd925872ff5cd08faf8f00"
+      "sha256": "2ce5c3fb57ad9d457833445ad2ed69a4bf32c87a4130e70a2f8fc000745cb3f8"
     },
     {
       "file": "Apple.list",
@@ -126,16 +126,16 @@
     },
     {
       "file": "Global.list",
-      "rules": 24350,
+      "rules": 24352,
       "types": {
         "DOMAIN": 111,
         "DOMAIN-KEYWORD": 13,
-        "DOMAIN-SUFFIX": 24137,
+        "DOMAIN-SUFFIX": 24139,
         "IP-CIDR": 83,
         "IP-CIDR6": 1,
         "USER-AGENT": 5
       },
-      "sha256": "a3050a843ced8e015e83efc64ab8d4538e90a7c68a18f6f77e95729a4fa98809"
+      "sha256": "2f741f03c7f5216edfe0146e856d3a8e0850db726749f3b7a3264532c3a7301b"
     },
     {
       "file": "GlobalMedia.list",
@@ -305,13 +305,13 @@
       "sha256": "dc6dfde863bc0c0034fa3bae09c8a8b090ca385439e866e5ff89fa65eb177c69"
     }
   ],
-  "total_rules": 159714,
+  "total_rules": 159707,
   "rule_types": {
     "DOMAIN": 3644,
     "DOMAIN-KEYWORD": 102,
-    "DOMAIN-SUFFIX": 141911,
+    "DOMAIN-SUFFIX": 141906,
     "DOMAIN-WILDCARD": 2,
-    "IP-ASN": 11,
+    "IP-ASN": 9,
     "IP-CIDR": 9520,
     "IP-CIDR6": 4283,
     "PROCESS-NAME": 58,
@@ -322,7 +322,7 @@
     "ConnersHua AI": 18,
     "Loyalsoldier China CIDR": 7424,
     "Manual Rules": 267,
-    "Rabbit-Spec AIGC": 48,
+    "Rabbit-Spec AIGC": 39,
     "Rabbit-Spec China": 187,
     "Rabbit-Spec China CIDR": 20,
     "RocM301 Apple-AI": 16,
@@ -346,7 +346,7 @@
     "blackmatrix7 Disney": 166,
     "blackmatrix7 Facebook": 570,
     "blackmatrix7 Game": 549,
-    "blackmatrix7 Global": 24339,
+    "blackmatrix7 Global": 24341,
     "blackmatrix7 GlobalMedia": 2256,
     "blackmatrix7 Google": 688,
     "blackmatrix7 Instagram": 1,
@@ -363,7 +363,7 @@
   },
   "manifest_files": 26,
   "manifests_sha256": {
-    "AI.manifest": "3074ab4912cfba254d031675793bedeeac47730ac82631990602f4f9d11bac35",
+    "AI.manifest": "c0f2e3a0664e8afa3c8ef9db0a9360a214d8959024ff300d62cfb664e886fc28",
     "Apple.manifest": "fd7731bc3283e0cedc7a3c44722bc55f9d727dc16bd00b669d6b6e49f557e5c5",
     "Apple_AI.manifest": "68eeb4b921ba19b719f5167d9d8b0a5163e53db274055e7fadea6b556750c488",
     "Apple_CN.manifest": "a156042ab2b674afe44c22e64f5353e3ace603117d8b12d8ac483521f94641da",
@@ -374,7 +374,7 @@
     "Disney.manifest": "4952367b9bc1b50aaeacf8f01c8059c20e75aaf86be6c908d16a4f607a6b866f",
     "Download.manifest": "712954ede2984510037f3cb21b17cbea61c3f41c42bb4ea8a26260ac61c95964",
     "Game.manifest": "8b18c0700c229bddd9c58f1f036fbe7ef33cb26bd960a9fe21699688b09f8236",
-    "Global.manifest": "41bfbc59bcfa4664d9d265b079f7af04f8b3c47e0e8cd437391c03195a2bed36",
+    "Global.manifest": "9645fa8c1dd4002b20c768189edba6031030f439535f638ac3afb4e224d10145",
     "GlobalMedia.manifest": "465ef575f942b7274affcfa3e2ff2946b129f1680aaa2b7c3a7e03c4f5c1e7ea",
     "Google.manifest": "c6bb79f368f501d21cb6c6b1bba96c97269dcc49b764fcd22378b6a17ae4651f",
     "Microsoft.manifest": "3a5d9095780fd24f9bb6e4f9a4c7db89b2613b674f613764d7254d4fb9ccae63",
@@ -391,16 +391,16 @@
     "YouTube.manifest": "1b9c3b78afbb311db391e8f2910b25b507296d158a339957a874d918a2869ca7"
   },
   "sources_sha256": "cac9ce245067c00c15c1b5053a96c5750f1ebcf8d446c08d56ac38acb4bbe61a",
-  "override_manifest_sha256": "00625e9898906cd4f4ad305b4e0d029b8c403a23eadcefe59cec682062f5d11b",
+  "override_manifest_sha256": "a1cdaa7a94051d74785474c964ed5b63e1a1a4d3e80fc93a6d66c90fa90a18cd",
   "clash_compatibility": {
-    "payload_rules": 159531,
+    "payload_rules": 159524,
     "dropped_surge_only_types": {
       "URL-REGEX": 5,
       "USER-AGENT": 178
     },
     "preserved_mihomo_extended_types": {
       "DOMAIN-WILDCARD": 2,
-      "IP-ASN": 11,
+      "IP-ASN": 9,
       "PROCESS-NAME": 58
     }
   },

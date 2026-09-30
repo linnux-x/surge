@@ -12,7 +12,7 @@ from unittest.mock import patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 import generate_rules as generator
 import audit_upstream_sources as audit
-from source_transforms import apply_project_guardrails, clean_source, convert_source
+from source_transforms import apply_project_guardrails, clean_source, convert_source, filter_candidates
 
 FIXTURE = json.loads((Path(__file__).parent / 'fixtures/generation-baseline.json').read_text())
 
@@ -24,6 +24,20 @@ class FixedTime:
 
 
 class SourceTransformTests(unittest.TestCase):
+    def test_ai_shared_network_exclusions_preserve_anthropic_asn(self):
+        exclude = Path(__file__).resolve().parents[1] / 'Rule/Manual/AI.exclude.txt'
+        upstream = [
+            'IP-ASN,13335,no-resolve',
+            'IP-ASN,20473,no-resolve',
+            'IP-ASN,399358,no-resolve',
+            'DOMAIN-SUFFIX,pool.ntp.org',
+            'DOMAIN-SUFFIX,chat.openai.com',
+        ]
+        self.assertEqual(
+            filter_candidates(upstream, exclude),
+            ['IP-ASN,399358,no-resolve', 'DOMAIN-SUFFIX,chat.openai.com'],
+        )
+
     def test_all_target_guardrails_match_pre_refactor_results(self):
         for target, expected in FIXTURE['guardrails'].items():
             with self.subTest(target=target):

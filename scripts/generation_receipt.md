@@ -1,7 +1,7 @@
 # Surge 规则生成收据
 
 - 规则文件：26
-- 规则总数：159714
+- 规则总数：159707
 - manifest 文件：26
 
 ## 差异摘要
@@ -12,17 +12,17 @@
 
 ## Clash 兼容性
 
-- 生成 payload：159531
+- 生成 payload：159524
 - 跳过 Surge 专属规则：{'URL-REGEX': 5, 'USER-AGENT': 178}
-- 保留 mihomo 扩展类型：{'DOMAIN-WILDCARD': 2, 'IP-ASN': 11, 'PROCESS-NAME': 58}
+- 保留 mihomo 扩展类型：{'DOMAIN-WILDCARD': 2, 'IP-ASN': 9, 'PROCESS-NAME': 58}
 
 ## 规则类型
 
 - DOMAIN: 3644
 - DOMAIN-KEYWORD: 102
-- DOMAIN-SUFFIX: 141911
+- DOMAIN-SUFFIX: 141906
 - DOMAIN-WILDCARD: 2
-- IP-ASN: 11
+- IP-ASN: 9
 - IP-CIDR: 9520
 - IP-CIDR6: 4283
 - PROCESS-NAME: 58
@@ -34,7 +34,7 @@
 - ConnersHua AI: 18
 - Loyalsoldier China CIDR: 7424
 - Manual Rules: 267
-- Rabbit-Spec AIGC: 48
+- Rabbit-Spec AIGC: 39
 - Rabbit-Spec China: 187
 - Rabbit-Spec China CIDR: 20
 - RocM301 Apple-AI: 16
@@ -58,7 +58,7 @@
 - blackmatrix7 Disney: 166
 - blackmatrix7 Facebook: 570
 - blackmatrix7 Game: 549
-- blackmatrix7 Global: 24339
+- blackmatrix7 Global: 24341
 - blackmatrix7 GlobalMedia: 2256
 - blackmatrix7 Google: 688
 - blackmatrix7 Instagram: 1

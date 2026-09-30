@@ -9,6 +9,23 @@ cesu-hz.zjtelecom.com.cn,Speedtest_China.list,DIRECT,spiritLHLS 大陆测速节�
 speedtest.dukekunshan.edu.cn,Speedtest_China.list,DIRECT,Sukka 官方地区数据明确为大陆节点
 cpt-ter-speedtest1-vl145.atomic.ac,FINAL,Global,移除 Kelee 独有节点后回落至 Global
 chat.openai.com,AI.list,AI,ChatGPT
+pool.ntp.org,FINAL,Global,共享 NTP 根域不属于 AI
+cn.pool.ntp.org,China.list,DIRECT,中国 NTP 子域不能被 AI 父后缀遮蔽
+stripe.com,Global.list,Global,共享支付服务不属于 AI
+js.stripe.com,Global.list,Global,共享支付脚本主机不属于 AI
+workos.com,FINAL,Global,共享身份服务不属于 AI
+cdn.workos.com,FINAL,Global,共享身份服务 CDN 不属于 AI
+forwarder.workos.com,FINAL,Global,共享身份服务转发主机不属于 AI
+setup.workos.com,FINAL,Global,共享身份服务设置主机不属于 AI
+images.workoscdn.com,FINAL,Global,共享身份服务图片主机不属于 AI
+workos.imgix.net,FINAL,Global,共享身份服务图片代理主机不属于 AI
+launchdarkly.com,FINAL,Global,共享特性开关服务不属于 AI
+app.launchdarkly.com,FINAL,Global,共享特性开关应用主机不属于 AI
+clientstream.launchdarkly.com,FINAL,Global,共享特性开关流主机不属于 AI
+events.launchdarkly.com,FINAL,Global,共享特性开关事件主机不属于 AI
+identrust.com,Global.list,Global,共享证书服务不属于 AI
+1.1.1.1,FINAL,Global,Cloudflare 公共 DNS 不属于 AI 且不得被 AS13335 截获
+193.46.211.1,FINAL,Global,Vultr 共享主机地址不属于 AI 且不得被 AS20473 截获
 api.openai.com,AI.list,AI,OpenAI API
 claude.ai,AI.list,AI,Claude AI
 api.anthropic.com,AI.list,AI,Claude API

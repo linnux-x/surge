@@ -10,6 +10,8 @@ DOMAIN-SUFFIX,cloudfront.net
 DOMAIN-SUFFIX,edgekey.net
 DOMAIN-SUFFIX,edgesuite.net
 DOMAIN-SUFFIX,fastly.net
+# A global NTP parent suffix must not preempt China.list's cn.pool.ntp.org DIRECT rule.
+DOMAIN-SUFFIX,pool.ntp.org
 DOMAIN,vsmarketplacebadge.apphb.com
 DOMAIN-SUFFIX,1passwordusercontent.ca
 DOMAIN-SUFFIX,1passwordusercontent.com

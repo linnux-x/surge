@@ -37,6 +37,25 @@ DOMAIN,api-iam.intercom.io
 # the whole-domain suffix must not ride the AI policy group. Service-scoped
 # entries (DOMAIN,anthropic.auth0.com / DOMAIN-SUFFIX,auth0.openai.com) stay.
 DOMAIN-SUFFIX,auth0.com
+# Shared identity, payment, telemetry, certificate, and time services are not AI-owned.
+# Exclude their generic child hosts too; a parent exclusion alone is exact-line only.
+DOMAIN-SUFFIX,identrust.com
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,app.launchdarkly.com
+DOMAIN-SUFFIX,clientstream.launchdarkly.com
+DOMAIN-SUFFIX,events.launchdarkly.com
+DOMAIN-SUFFIX,pool.ntp.org
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,js.stripe.com
+DOMAIN-SUFFIX,workos.com
+DOMAIN-SUFFIX,cdn.workos.com
+DOMAIN-SUFFIX,forwarder.workos.com
+DOMAIN-SUFFIX,setup.workos.com
+DOMAIN-SUFFIX,images.workoscdn.com
+DOMAIN-SUFFIX,workos.imgix.net
+# Cloudflare and Vultr host unrelated services. Anthropic's own AS399358 remains AI.
+IP-ASN,13335,no-resolve
+IP-ASN,20473,no-resolve
 # Apple Intelligence domains: now routed by Apple_AI.list (RocM301 + SukkaW) instead of AI.
 # ConnersHua AI upstream still contains these; exclude them from AI.list.
 DOMAIN-SUFFIX,smoot.apple.com
