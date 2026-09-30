@@ -1,6 +1,6 @@
 # Generated from Rule/China.list (DOMAIN/DOMAIN-SUFFIX entries only)
 # Format: Clash/mihomo rule-provider, behavior: domain
-# UPDATED: 2026-09-30 05:02:18 +0800
+# UPDATED: 2026-10-01 05:02:42 +0800
 # TOTAL: 111300
 payload:
   - '+.wmsjsteam.com'
@@ -693,6 +693,7 @@ payload:
   - '+.dl.pinyuncloud.com'
   - '+.heytapdownload.com'
   - '+.samsungcloudcn.com'
+  - 'time.xtracloud.net'
   - '+.alibabachengdun.com'
   - '+.anticheatexpert.com'
   - '+.cm.steampowered.com'
@@ -111119,7 +111120,6 @@ payload:
   - 'stream01.dqtv123.com'
   - 'stream1.shopch.jp'
   - 'stream2.cprnetwork.org'
-  - 'time.xtracloud.net'
   - 'tl.gscm.tv'
   - 'tv.cnbeijing.xyz'
   - 'tv.drs.hhtv.cc'

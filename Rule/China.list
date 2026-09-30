@@ -1,7 +1,7 @@
 # NAME: China
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-09-30 05:02:18 +0800
+# UPDATED: 2026-10-01 05:02:42 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 111341
 
@@ -703,6 +703,7 @@ DOMAIN-SUFFIX,chinanetcenter.com
 DOMAIN-SUFFIX,dl.pinyuncloud.com
 DOMAIN-SUFFIX,heytapdownload.com
 DOMAIN-SUFFIX,samsungcloudcn.com
+DOMAIN,time.xtracloud.net
 DOMAIN-SUFFIX,alibabachengdun.com
 DOMAIN-SUFFIX,anticheatexpert.com
 DOMAIN-SUFFIX,cm.steampowered.com
@@ -111135,7 +111136,6 @@ DOMAIN,stream0.tv41.ru
 DOMAIN,stream01.dqtv123.com
 DOMAIN,stream1.shopch.jp
 DOMAIN,stream2.cprnetwork.org
-DOMAIN,time.xtracloud.net
 DOMAIN,tl.gscm.tv
 DOMAIN,tv.cnbeijing.xyz
 DOMAIN,tv.drs.hhtv.cc

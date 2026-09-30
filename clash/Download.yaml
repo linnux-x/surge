@@ -1,7 +1,7 @@
 # Generated from Rule/Download.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-09-19 11:40:27 +0800
-# TOTAL: 1689
+# UPDATED: 2026-10-01 05:02:41 +0800
+# TOTAL: 1691
 payload:
   - 'PROCESS-NAME,aria2c'
   - 'PROCESS-NAME,fdm'
@@ -1639,6 +1639,8 @@ payload:
   - 'DOMAIN,download.fcitx-im.org'
   - 'DOMAIN,cdn.dyn.com'
   - 'DOMAIN,assets-tcpviewer.proxyman.com'
+  - 'DOMAIN,download.manus.im'
+  - 'DOMAIN,dl.heycue.io'
   - 'DOMAIN-SUFFIX,cdn.ea.com'
   - 'DOMAIN-SUFFIX,cdn.ubi.com'
   - 'DOMAIN-SUFFIX,dyn.riotcdn.net'
