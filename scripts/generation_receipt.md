@@ -1,24 +1,24 @@
 # Surge 规则生成收据
 
 - 规则文件：26
-- 规则总数：159686
+- 规则总数：159689
 - manifest 文件：26
 
 ## 差异摘要
 
-- 新增：142
-- 删除：163
-- 来源迁移：1
+- 新增：10
+- 删除：7
+- 来源迁移：0
 
 ## Clash 兼容性
 
-- 生成 payload：159503
+- 生成 payload：159506
 - 跳过 Surge 专属规则：{'URL-REGEX': 5, 'USER-AGENT': 178}
 - 保留 mihomo 扩展类型：{'DOMAIN-WILDCARD': 2, 'IP-ASN': 9, 'PROCESS-NAME': 58}
 
 ## 规则类型
 
-- DOMAIN: 3623
+- DOMAIN: 3626
 - DOMAIN-KEYWORD: 102
 - DOMAIN-SUFFIX: 141906
 - DOMAIN-WILDCARD: 2
@@ -33,12 +33,12 @@
 
 - ConnersHua AI: 18
 - Loyalsoldier China CIDR: 7424
-- Manual Rules: 267
-- Rabbit-Spec AIGC: 39
+- Manual Rules: 276
+- Rabbit-Spec AIGC: 34
 - Rabbit-Spec China: 187
 - Rabbit-Spec China CIDR: 20
 - RocM301 Apple-AI: 16
-- SukkaW AI: 23
+- SukkaW AI: 22
 - SukkaW Apple CDN: 158
 - SukkaW Apple CN: 5
 - SukkaW CDN: 25

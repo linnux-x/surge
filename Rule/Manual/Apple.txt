@@ -3,3 +3,7 @@ DOMAIN,configuration-lb.ls-apple.com.akadns.net
 DOMAIN,courier-push-apple.com.akadns.net
 DOMAIN,push-apple.com.akadns.net
 DOMAIN,www-cdn.icloud.com.akadns.net
+
+# Apple Mail CNAME family; do not include the shared akadns.net parent.
+# https://support.apple.com/en-us/102525; mail.me.com CNAME family verified through public DNS on 2026-10-01.
+DOMAIN-SUFFIX,mail.me.com.akadns.net

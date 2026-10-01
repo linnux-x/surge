@@ -298,6 +298,341 @@
       "route_tests": [
         "swiftgram.app"
       ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN,api.github.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "api.github.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,api.github.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "api.github.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN,api.msn.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Microsoft.list → Microsoft",
+      "route_tests": [
+        "api.msn.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,api.msn.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Microsoft.list → Microsoft",
+      "route_tests": [
+        "api.msn.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN,assets.msn.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Microsoft.list → Microsoft",
+      "route_tests": [
+        "assets.msn.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,assets.msn.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Microsoft.list → Microsoft",
+      "route_tests": [
+        "assets.msn.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN,location.microsoft.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Microsoft.list → Microsoft",
+      "route_tests": [
+        "location.microsoft.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,location.microsoft.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Microsoft.list → Microsoft",
+      "route_tests": [
+        "location.microsoft.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN,odc.officeapps.live.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Microsoft.list → Microsoft",
+      "route_tests": [
+        "odc.officeapps.live.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,odc.officeapps.live.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Microsoft.list → Microsoft",
+      "route_tests": [
+        "odc.officeapps.live.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN,r.bing.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Microsoft.list → Microsoft",
+      "route_tests": [
+        "r.bing.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,r.bing.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Microsoft.list → Microsoft",
+      "route_tests": [
+        "r.bing.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN,self.events.data.microsoft.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Microsoft.list → Microsoft",
+      "route_tests": [
+        "self.events.data.microsoft.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,self.events.data.microsoft.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Microsoft.list → Microsoft",
+      "route_tests": [
+        "self.events.data.microsoft.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN,www.bing.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Microsoft.list → Microsoft",
+      "route_tests": [
+        "www.bing.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,www.bing.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Microsoft.list → Microsoft",
+      "route_tests": [
+        "www.bing.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN,api.microsoftapp.net",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Microsoft.list → Microsoft",
+      "route_tests": [
+        "api.microsoftapp.net"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,api.microsoftapp.net",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Microsoft.list → Microsoft",
+      "route_tests": [
+        "api.microsoftapp.net"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN,static.cloudflareinsights.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "static.cloudflareinsights.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,static.cloudflareinsights.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "static.cloudflareinsights.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN,api.revenuecat.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "api.revenuecat.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,api.revenuecat.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "api.revenuecat.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN,challenges.cloudflare.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "challenges.cloudflare.com",
+        "hagen.challenges.cloudflare.com",
+        "gateway.ai.cloudflare.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,challenges.cloudflare.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "challenges.cloudflare.com",
+        "hagen.challenges.cloudflare.com",
+        "gateway.ai.cloudflare.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN,clients6.google.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Google.list → Google",
+      "route_tests": [
+        "clients6.google.com",
+        "ogads-pa.clients6.google.com",
+        "alkalimakersuite-pa.clients6.google.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,clients6.google.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Google.list → Google",
+      "route_tests": [
+        "clients6.google.com",
+        "ogads-pa.clients6.google.com",
+        "alkalimakersuite-pa.clients6.google.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN,firebaseinstallations.googleapis.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Google.list → Google",
+      "route_tests": [
+        "firebaseinstallations.googleapis.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,firebaseinstallations.googleapis.com",
+      "reason": "修正完整行排除格式；通用服务不能因上游 AI 收录而被 AI 策略截获",
+      "destination": "Google.list → Google",
+      "route_tests": [
+        "firebaseinstallations.googleapis.com"
+      ]
+    },
+    {
+      "source_file": "Apple.txt",
+      "rule": "DOMAIN-SUFFIX,mail.me.com.akadns.net",
+      "reason": "Apple Mail CNAME family; do not include the shared akadns.net parent.",
+      "destination": "Apple.list → Apple",
+      "route_tests": [
+        "p45-imap.mail.me.com.akadns.net"
+      ]
+    },
+    {
+      "source_file": "Download.txt",
+      "rule": "DOMAIN,cdn.playwright.dev",
+      "reason": "Playwright browser binaries (official registry source).",
+      "destination": "Download.list → Download",
+      "route_tests": [
+        "cdn.playwright.dev"
+      ]
+    },
+    {
+      "source_file": "Download.txt",
+      "rule": "DOMAIN,ffmpeg.martin-riedl.de",
+      "reason": "Martin Riedl static FFmpeg builds.",
+      "destination": "Download.list → Download",
+      "route_tests": [
+        "ffmpeg.martin-riedl.de"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "DOMAIN-SUFFIX,api.revenuecat.com",
+      "reason": "Shared RevenueCat subscription API; not AI-specific.",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "api.revenuecat.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "DOMAIN-SUFFIX,nodejs.org",
+      "reason": "Node.js 官网、文档与二进制共用服务域名；撤销遗留 Global 排除，恢复 Global 归属并保留原兜底策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "nodejs.org"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "DOMAIN,u.expo.dev",
+      "reason": "Expo EAS Update manifest service; not a general binary CDN.",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "u.expo.dev"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "DOMAIN-SUFFIX,snipaste.com",
+      "reason": "Snipaste website and redirects; dedicated download hosts match Download earlier.",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "redir.snipaste.com",
+        "dl.snipaste.com",
+        "download.snipaste.com"
+      ]
+    },
+    {
+      "source_file": "Download.txt",
+      "rule": "DOMAIN,dl.ubnt.com",
+      "reason": "Ubiquiti 第一方资料使用该专用下载主机；仅补精确 host，不扩大到 ubnt.com",
+      "destination": "Download.list → Download",
+      "route_tests": [
+        "dl.ubnt.com",
+        "ubnt.com"
+      ]
     }
   ]
 }

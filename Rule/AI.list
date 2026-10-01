@@ -1,9 +1,9 @@
 # NAME: AI
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-10-01 05:02:40 +0800
+# UPDATED: 2026-10-01 17:42:44 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 138
+# TOTAL: 133
 
 # ======= Manual Rules ========
 # Anthropic / Claude
@@ -25,6 +25,7 @@ DOMAIN,ai.google.dev
 DOMAIN,aida.googleapis.com
 DOMAIN,aiplatform.googleapis.com
 DOMAIN,aisandbox-pa.googleapis.com
+DOMAIN,alkalicore-pa.clients6.google.com
 DOMAIN,antigravity.google
 DOMAIN,antigravity-pa.googleapis.com
 DOMAIN,antigravity-unleash.goog
@@ -101,7 +102,6 @@ DOMAIN-SUFFIX,clipdrop.co
 DOMAIN-SUFFIX,chatgpt.site
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,perplexity.ai
-DOMAIN,api.github.com
 DOMAIN-SUFFIX,bard.google.com
 DOMAIN,api.jetbrains.ai
 DOMAIN-SUFFIX,gemini.google.com
@@ -120,20 +120,15 @@ DOMAIN,openai-api.arkoselabs.com
 DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
 DOMAIN,openaicomproductionae4b.blob.core.windows.net
 DOMAIN,production-openaicom-storage.azureedge.net
-DOMAIN,static.cloudflareinsights.com
 DOMAIN-SUFFIX,aicode.googleapis.com
 DOMAIN-SUFFIX,algolia.net
-DOMAIN-SUFFIX,api.revenuecat.com
 DOMAIN-SUFFIX,api.statsig.com
-DOMAIN-SUFFIX,challenges.cloudflare.com
 DOMAIN-SUFFIX,chatgpt.livekit.cloud
 DOMAIN-SUFFIX,client-api.arkoselabs.com
-DOMAIN-SUFFIX,clients6.google.com
 DOMAIN-SUFFIX,ct.sendgrid.net
 DOMAIN-SUFFIX,events.statsigapi.net
 DOMAIN-SUFFIX,featureassets.org
 DOMAIN-SUFFIX,featuregates.org
-DOMAIN-SUFFIX,firebaseinstallations.googleapis.com
 DOMAIN-SUFFIX,host.livekit.cloud
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,observeit.net
@@ -158,11 +153,11 @@ DOMAIN-SUFFIX,openrouter.ai
 DOMAIN-SUFFIX,cursor-cdn.com
 DOMAIN-SUFFIX,cursorapi.com
 DOMAIN-SUFFIX,zed.dev
+DOMAIN,alkalimakersuite-pa.clients6.google.com
 DOMAIN-KEYWORD,notebooklm.google
 DOMAIN-KEYWORD,labs.google
 DOMAIN-SUFFIX,grazie.ai
 DOMAIN,imagine.meta.com
-DOMAIN,www.bing.com
 DOMAIN-SUFFIX,pplx.ai
 DOMAIN,pplx-res.cloudinary.com
 DOMAIN-SUFFIX,cici.com,extended-matching

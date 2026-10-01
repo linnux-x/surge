@@ -157,3 +157,42 @@ metaaivm.com,AI.list,AI,Muse 专属 VM 域名范围
 00000000-0000-4000-8000-000000000001.metaaivm.com,AI.list,AI,合成 UUID 主机验证 Muse VM 后缀覆盖不代表实际用户实例
 agent.meta.ai,AI.list,AI,Muse 既有 Meta AI 入口保持 AI 归属
 auth.meta.com,SocialMedia.list,SocialMedia,Meta 共享认证保持既有归属
+api.github.com,Global.list,Global,通用接口不属于 AI；完整排除行恢复服务归属
+api.msn.com,Microsoft.list,Microsoft,通用接口不属于 AI；完整排除行恢复服务归属
+assets.msn.com,Microsoft.list,Microsoft,通用接口不属于 AI；完整排除行恢复服务归属
+location.microsoft.com,Microsoft.list,Microsoft,通用接口不属于 AI；完整排除行恢复服务归属
+odc.officeapps.live.com,Microsoft.list,Microsoft,通用接口不属于 AI；完整排除行恢复服务归属
+r.bing.com,Microsoft.list,Microsoft,通用接口不属于 AI；完整排除行恢复服务归属
+self.events.data.microsoft.com,Microsoft.list,Microsoft,通用接口不属于 AI；完整排除行恢复服务归属
+www.bing.com,Microsoft.list,Microsoft,通用接口不属于 AI；完整排除行恢复服务归属
+api.microsoftapp.net,Microsoft.list,Microsoft,通用接口不属于 AI；完整排除行恢复服务归属
+static.cloudflareinsights.com,Global.list,Global,共享基础设施不因 AI 客户端使用而归入 AI
+api.revenuecat.com,Global.list,Global,共享基础设施不因 AI 客户端使用而归入 AI
+challenges.cloudflare.com,Global.list,Global,共享基础设施不因 AI 客户端使用而归入 AI
+hagen.challenges.cloudflare.com,Global.list,Global,共享基础设施不因 AI 客户端使用而归入 AI
+clients6.google.com,Google.list,Google,Google 通用 API 应使用 Google 策略
+ogads-pa.clients6.google.com,Google.list,Google,Google 通用 API 应使用 Google 策略
+firebaseinstallations.googleapis.com,Google.list,Google,Google 通用 API 应使用 Google 策略
+cdn.playwright.dev,Download.list,Download,第一方资料确认的专用下载主机
+ffmpeg.martin-riedl.de,Download.list,Download,第一方资料确认的专用下载主机
+dl.snipaste.com,Download.list,Download,第一方资料确认的专用下载主机
+download.snipaste.com,Download.list,Download,第一方资料确认的专用下载主机
+p45-imap.mail.me.com.akadns.net,Apple.list,Apple,Apple Mail 官方 DNS 别名家族
+imap.mail.me.com.akadns.net,Apple.list,Apple,Apple Mail 官方 DNS 别名家族
+p71-smtp.mail.me.com.akadns.net,Apple.list,Apple,Apple Mail 官方 DNS 别名家族
+nodejs.org,Global.list,Global,归属明确的通用开发或工具服务；保留 Global 策略
+u.expo.dev,Global.list,Global,归属明确的通用开发或工具服务；保留 Global 策略
+redir.snipaste.com,Global.list,Global,归属明确的通用开发或工具服务；保留 Global 策略
+snipaste.com,Global.list,Global,归属明确的通用开发或工具服务；保留 Global 策略
+gateway.ai.cloudflare.com,AI.list,AI,共享服务排除不能影响已知 AI 专属接口
+alkalimakersuite-pa.clients6.google.com,AI.list,AI,共享服务排除不能影响已知 AI 专属接口
+playwright.dev,FINAL,Global,窄范围补充不能扩展到相邻或无关域名
+martin-riedl.de,FINAL,Global,窄范围补充不能扩展到相邻或无关域名
+unrelated.akadns.net,FINAL,Global,窄范围补充不能扩展到相邻或无关域名
+cdn.playwright.dev.example.com,FINAL,Global,窄范围补充不能扩展到相邻或无关域名
+notnodejs.org,FINAL,Global,窄范围补充不能扩展到相邻或无关域名
+unrelated.expo.dev,FINAL,Global,窄范围补充不能扩展到相邻或无关域名
+api.githubcopilot.com,AI.list,AI,GitHub API 移出 AI 后 Copilot 仍属于 AI
+chatgpt.com,AI.list,AI,ChatGPT 服务保持 AI
+dl.ubnt.com,Download.list,Download,Ubiquiti 专用下载主机归入 Download
+ubnt.com,Global.list,Global,下载主机补充不能扩大到整个 Ubiquiti 服务

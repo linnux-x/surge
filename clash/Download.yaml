@@ -1,7 +1,7 @@
 # Generated from Rule/Download.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-10-01 05:02:41 +0800
-# TOTAL: 1691
+# UPDATED: 2026-10-01 17:49:16 +0800
+# TOTAL: 1694
 payload:
   - 'PROCESS-NAME,aria2c'
   - 'PROCESS-NAME,fdm'
@@ -22,6 +22,9 @@ payload:
   - 'PROCESS-NAME,WebTorrent Helper'
   - 'PROCESS-NAME,amuled'
   - 'PROCESS-NAME,BaiduNetdisk_mac'
+  - 'DOMAIN,cdn.playwright.dev'
+  - 'DOMAIN,ffmpeg.martin-riedl.de'
+  - 'DOMAIN,dl.ubnt.com'
   - 'DOMAIN-SUFFIX,cloud-object-storage.appdomain.cloud'
   - 'DOMAIN-SUFFIX,cloudflarestorage.com'
   - 'DOMAIN-SUFFIX,r2.dev'

@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-10-01 05:02:43 +0800
+# UPDATED: 2026-10-01 17:49:17 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24352
+# TOTAL: 24356
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -18,6 +18,19 @@ DOMAIN-SUFFIX,vmiss.com
 DOMAIN-SUFFIX,ddps.jp
 DOMAIN-SUFFIX,legendvps.com
 DOMAIN-SUFFIX,gomami.io
+
+# Shared RevenueCat subscription API; not AI-specific.
+# https://www.revenuecat.com/docs/api-v1
+DOMAIN-SUFFIX,api.revenuecat.com
+# Node.js website and binaries share this service domain.
+# https://nodejs.org/en/download
+DOMAIN-SUFFIX,nodejs.org
+# Expo EAS Update manifest service; not a general binary CDN.
+# https://docs.expo.dev/eas-update/getting-started/
+DOMAIN,u.expo.dev
+# Snipaste website and redirects; dedicated download hosts match Download earlier.
+# https://www.snipaste.com/download.html
+DOMAIN-SUFFIX,snipaste.com
 
 # ======= blackmatrix7 Global ========
 DOMAIN,1password.drift.click

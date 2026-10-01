@@ -3,31 +3,31 @@
   "rule_files": [
     {
       "file": "AI.list",
-      "rules": 138,
+      "rules": 133,
       "types": {
-        "DOMAIN": 37,
+        "DOMAIN": 36,
         "DOMAIN-KEYWORD": 6,
-        "DOMAIN-SUFFIX": 88,
+        "DOMAIN-SUFFIX": 84,
         "IP-ASN": 1,
         "IP-CIDR": 4,
         "IP-CIDR6": 1,
         "URL-REGEX": 1
       },
-      "sha256": "8bb195826e948163e3b326dcd4db12bbea84a0bafdce7b543f39058fd09f7c4b"
+      "sha256": "455ddc64fa5127d4affa3d55b825d3f221e17b3f90a6c28c94aceeda971e425f"
     },
     {
       "file": "Apple.list",
-      "rules": 1551,
+      "rules": 1552,
       "types": {
         "DOMAIN": 13,
         "DOMAIN-KEYWORD": 7,
-        "DOMAIN-SUFFIX": 1482,
+        "DOMAIN-SUFFIX": 1483,
         "IP-CIDR": 10,
         "IP-CIDR6": 3,
         "PROCESS-NAME": 13,
         "USER-AGENT": 23
       },
-      "sha256": "cfca1b8376d844395586c772daaf99a04ed7d1c6ea2bf7472fc393dc2df74875"
+      "sha256": "8648180d1156e2c02e2c9de07bf060145b0bc1fcaa32eed590f912dcd7f2919e"
     },
     {
       "file": "Apple_AI.list",
@@ -104,14 +104,14 @@
     },
     {
       "file": "Download.list",
-      "rules": 1691,
+      "rules": 1694,
       "types": {
-        "DOMAIN": 1433,
+        "DOMAIN": 1436,
         "DOMAIN-SUFFIX": 238,
         "PROCESS-NAME": 19,
         "URL-REGEX": 1
       },
-      "sha256": "886b04ffa5fba821858ec7849a6b924456101aeeb888ce14f6dab7ec016e7cb7"
+      "sha256": "58acfd2f1afeb90c8e4758767481192174ed3522702325f1eb2cb82ada86ff31"
     },
     {
       "file": "Game.list",
@@ -126,16 +126,16 @@
     },
     {
       "file": "Global.list",
-      "rules": 24352,
+      "rules": 24356,
       "types": {
-        "DOMAIN": 111,
+        "DOMAIN": 112,
         "DOMAIN-KEYWORD": 13,
-        "DOMAIN-SUFFIX": 24139,
+        "DOMAIN-SUFFIX": 24142,
         "IP-CIDR": 83,
         "IP-CIDR6": 1,
         "USER-AGENT": 5
       },
-      "sha256": "577391af41cb0728b9d782e63dac765dbab13a7762e8e93e4932a1e49e5eed8e"
+      "sha256": "93480a4db146e356b13ec25b88cae303984d43121a58d831dc307af7a4fb6b67"
     },
     {
       "file": "GlobalMedia.list",
@@ -305,9 +305,9 @@
       "sha256": "dc6dfde863bc0c0034fa3bae09c8a8b090ca385439e866e5ff89fa65eb177c69"
     }
   ],
-  "total_rules": 159686,
+  "total_rules": 159689,
   "rule_types": {
-    "DOMAIN": 3623,
+    "DOMAIN": 3626,
     "DOMAIN-KEYWORD": 102,
     "DOMAIN-SUFFIX": 141906,
     "DOMAIN-WILDCARD": 2,
@@ -321,12 +321,12 @@
   "source_attribution": {
     "ConnersHua AI": 18,
     "Loyalsoldier China CIDR": 7424,
-    "Manual Rules": 267,
-    "Rabbit-Spec AIGC": 39,
+    "Manual Rules": 276,
+    "Rabbit-Spec AIGC": 34,
     "Rabbit-Spec China": 187,
     "Rabbit-Spec China CIDR": 20,
     "RocM301 Apple-AI": 16,
-    "SukkaW AI": 23,
+    "SukkaW AI": 22,
     "SukkaW Apple CDN": 158,
     "SukkaW Apple CN": 5,
     "SukkaW CDN": 25,
@@ -363,8 +363,8 @@
   },
   "manifest_files": 26,
   "manifests_sha256": {
-    "AI.manifest": "c0f2e3a0664e8afa3c8ef9db0a9360a214d8959024ff300d62cfb664e886fc28",
-    "Apple.manifest": "efc960c449e3bfeddeabd01a09c59bc94bcd6ffe06f370a2f7d1586526786e97",
+    "AI.manifest": "6ad5c3f1b1f1b5b490c2b72f663fb46cc3d71cc2900d54b19a4c83b07e333cb3",
+    "Apple.manifest": "e0f04a086e404fd3cc76f6780d1de0d663acfbba9e02fca5e9efbbee84006fdc",
     "Apple_AI.manifest": "68eeb4b921ba19b719f5167d9d8b0a5163e53db274055e7fadea6b556750c488",
     "Apple_CN.manifest": "a156042ab2b674afe44c22e64f5353e3ace603117d8b12d8ac483521f94641da",
     "CDN.manifest": "11b46d9fa0a7d7ded120e7d76f6fc954b1900355346ccc300a59e8e3a5eb20ff",
@@ -372,9 +372,9 @@
     "ChinaMedia.manifest": "8f86b924f2832027ab2d1f8643c4c51953994e84af6ebe3bad2aa553ad3d2616",
     "China_IP.manifest": "a34ff9b19320ab8fe4391796fdeae683a38ef5a611ff84a05c5a0df4075636be",
     "Disney.manifest": "4952367b9bc1b50aaeacf8f01c8059c20e75aaf86be6c908d16a4f607a6b866f",
-    "Download.manifest": "4412b752ba6d484594cc91719466bdb769609943a683fd0baba275fff39d4b8d",
+    "Download.manifest": "c62c5f23a9f68e4bc8255f6f0f5b340b60a998288c69bfd01243b903d6f9f31d",
     "Game.manifest": "d796c05f13f0c0c25c4ffe4d65c9fb2648fd9f0b6142d5f0e9d036ce18ee5d4a",
-    "Global.manifest": "9645fa8c1dd4002b20c768189edba6031030f439535f638ac3afb4e224d10145",
+    "Global.manifest": "2fd599654b0df92ff107f71d3f26a57b5158be2704e243d5e4f5865e28d8d3bb",
     "GlobalMedia.manifest": "465ef575f942b7274affcfa3e2ff2946b129f1680aaa2b7c3a7e03c4f5c1e7ea",
     "Google.manifest": "c6bb79f368f501d21cb6c6b1bba96c97269dcc49b764fcd22378b6a17ae4651f",
     "Microsoft.manifest": "3a5d9095780fd24f9bb6e4f9a4c7db89b2613b674f613764d7254d4fb9ccae63",
@@ -391,9 +391,9 @@
     "YouTube.manifest": "1b9c3b78afbb311db391e8f2910b25b507296d158a339957a874d918a2869ca7"
   },
   "sources_sha256": "cac9ce245067c00c15c1b5053a96c5750f1ebcf8d446c08d56ac38acb4bbe61a",
-  "override_manifest_sha256": "a1cdaa7a94051d74785474c964ed5b63e1a1a4d3e80fc93a6d66c90fa90a18cd",
+  "override_manifest_sha256": "f997dffebc8a6a0363d4f932898a3c69b0a29a5d634b5f915f430c9a68f4091a",
   "clash_compatibility": {
-    "payload_rules": 159503,
+    "payload_rules": 159506,
     "dropped_surge_only_types": {
       "URL-REGEX": 5,
       "USER-AGENT": 178
@@ -405,8 +405,8 @@
     }
   },
   "diff_summary": {
-    "total_added": 142,
-    "total_removed": 163,
-    "total_source_changed": 1
+    "total_added": 10,
+    "total_removed": 7,
+    "total_source_changed": 0
   }
 }
