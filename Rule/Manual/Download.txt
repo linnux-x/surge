@@ -21,3 +21,13 @@ PROCESS-NAME,BaiduNetdisk_mac
 
 # Borrowed from SukkaW non_ip/download; only the downloader URL-REGEX is copied in this manual layer.
 URL-REGEX,^http://(.+)\.gvt\d\.com/edgedl
+
+# Playwright browser binaries (official registry source).
+# https://github.com/microsoft/playwright/blob/main/packages/playwright-core/src/server/registry/index.ts
+DOMAIN,cdn.playwright.dev
+# Martin Riedl static FFmpeg builds.
+# https://ffmpeg.martin-riedl.de/
+DOMAIN,ffmpeg.martin-riedl.de
+# Ubiquiti firmware/software and datasheet downloads; not the whole ubnt.com service.
+# https://dl.ui.com/datasheets/unifi/UniFi_Switch_8_DS.pdf
+DOMAIN,dl.ubnt.com

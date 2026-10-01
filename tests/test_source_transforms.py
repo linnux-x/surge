@@ -24,6 +24,25 @@ class FixedTime:
 
 
 class SourceTransformTests(unittest.TestCase):
+    def test_ai_exclusions_use_complete_rules_for_both_upstream_formats(self):
+        exclude = Path(__file__).resolve().parents[1] / 'Rule/Manual/AI.exclude.txt'
+        shared_hosts = [
+            'api.github.com', 'api.msn.com', 'assets.msn.com',
+            'location.microsoft.com', 'odc.officeapps.live.com', 'r.bing.com',
+            'self.events.data.microsoft.com', 'www.bing.com', 'api.microsoftapp.net',
+            'static.cloudflareinsights.com', 'api.revenuecat.com',
+            'challenges.cloudflare.com', 'clients6.google.com',
+            'firebaseinstallations.googleapis.com',
+        ]
+        candidates = [f'{kind},{host}' for host in shared_hosts
+                      for kind in ('DOMAIN', 'DOMAIN-SUFFIX')]
+        ai_specific = [
+            'DOMAIN,copilot.microsoft.com', 'DOMAIN,api.openai.com',
+            'DOMAIN,gateway.ai.cloudflare.com',
+            'DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com',
+        ]
+        self.assertEqual(filter_candidates(candidates + ai_specific, exclude), ai_specific)
+
     def test_ai_shared_network_exclusions_preserve_anthropic_asn(self):
         exclude = Path(__file__).resolve().parents[1] / 'Rule/Manual/AI.exclude.txt'
         upstream = [

@@ -1,13 +1,14 @@
 # Generated from Rule/Apple.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-10-01 05:02:40 +0800
-# TOTAL: 1551
+# UPDATED: 2026-10-01 17:46:12 +0800
+# TOTAL: 1552
 payload:
   - 'DOMAIN,apple.com.akadns.net'
   - 'DOMAIN,configuration-lb.ls-apple.com.akadns.net'
   - 'DOMAIN,courier-push-apple.com.akadns.net'
   - 'DOMAIN,push-apple.com.akadns.net'
   - 'DOMAIN,www-cdn.icloud.com.akadns.net'
+  - 'DOMAIN-SUFFIX,mail.me.com.akadns.net'
   - 'DOMAIN,apple-events.akamaized.net'
   - 'DOMAIN,appleworldwidedeveloper.hb-api.omtrdc.net'
   - 'DOMAIN,appleworldwidedeveloper.sc.omtrdc.net'

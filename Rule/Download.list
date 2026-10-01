@@ -1,9 +1,9 @@
 # NAME: Download
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-10-01 05:02:41 +0800
+# UPDATED: 2026-10-01 17:49:16 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1691
+# TOTAL: 1694
 
 # ======= Manual Rules ========
 # Borrowed from SukkaW non_ip/direct downloader process rules
@@ -29,6 +29,16 @@ PROCESS-NAME,BaiduNetdisk_mac
 
 # Borrowed from SukkaW non_ip/download; only the downloader URL-REGEX is copied in this manual layer.
 URL-REGEX,^http://(.+)\.gvt\d\.com/edgedl
+
+# Playwright browser binaries (official registry source).
+# https://github.com/microsoft/playwright/blob/main/packages/playwright-core/src/server/registry/index.ts
+DOMAIN,cdn.playwright.dev
+# Martin Riedl static FFmpeg builds.
+# https://ffmpeg.martin-riedl.de/
+DOMAIN,ffmpeg.martin-riedl.de
+# Ubiquiti firmware/software and datasheet downloads; not the whole ubnt.com service.
+# https://dl.ui.com/datasheets/unifi/UniFi_Switch_8_DS.pdf
+DOMAIN,dl.ubnt.com
 
 # ======= SukkaW Download ========
 DOMAIN-SUFFIX,cloud-object-storage.appdomain.cloud

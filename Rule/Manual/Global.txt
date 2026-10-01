@@ -10,3 +10,16 @@ DOMAIN-SUFFIX,vmiss.com
 DOMAIN-SUFFIX,ddps.jp
 DOMAIN-SUFFIX,legendvps.com
 DOMAIN-SUFFIX,gomami.io
+
+# Shared RevenueCat subscription API; not AI-specific.
+# https://www.revenuecat.com/docs/api-v1
+DOMAIN-SUFFIX,api.revenuecat.com
+# Node.js website and binaries share this service domain.
+# https://nodejs.org/en/download
+DOMAIN-SUFFIX,nodejs.org
+# Expo EAS Update manifest service; not a general binary CDN.
+# https://docs.expo.dev/eas-update/getting-started/
+DOMAIN,u.expo.dev
+# Snipaste website and redirects; dedicated download hosts match Download earlier.
+# https://www.snipaste.com/download.html
+DOMAIN-SUFFIX,snipaste.com

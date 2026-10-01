@@ -112,7 +112,6 @@ DOMAIN-SUFFIX,msftauthimages.net
 DOMAIN-SUFFIX,newscdn.com.au
 DOMAIN-SUFFIX,nexoncdn.co.kr
 DOMAIN-SUFFIX,nikecdn.com
-DOMAIN-SUFFIX,nodejs.org
 DOMAIN-SUFFIX,notion-static.com
 DOMAIN-SUFFIX,notionusercontent.com
 DOMAIN-SUFFIX,oaistatic.com
