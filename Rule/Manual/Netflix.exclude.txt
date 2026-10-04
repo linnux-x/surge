@@ -5,7 +5,8 @@ DOMAIN-SUFFIX,cookielaw.org
 DOMAIN-SUFFIX,onetrust.com
 
 # Opaque Akamai CDN edge nodes (e.g. e13252.dscg.akamaiedge.net) are shared infra
-akamaiedge.net
+DOMAIN,akamaiedge.net
+DOMAIN-SUFFIX,akamaiedge.net
 
 # us-west-2.amazonaws.com covers the entire AWS us-west-2 region — far too broad for Netflix.
 DOMAIN-SUFFIX,us-west-2.amazonaws.com

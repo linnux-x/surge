@@ -39,7 +39,7 @@ class SourceTransformTests(unittest.TestCase):
         ai_specific = [
             'DOMAIN,copilot.microsoft.com', 'DOMAIN,api.openai.com',
             'DOMAIN,gateway.ai.cloudflare.com',
-            'DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com',
+            'DOMAIN,alkalimakersuite-pa.clients6.google.com',
         ]
         self.assertEqual(filter_candidates(candidates + ai_specific, exclude), ai_specific)
 

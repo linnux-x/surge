@@ -14,6 +14,7 @@ import os
 import subprocess
 import sys
 import tempfile
+import shutil
 from datetime import datetime
 from functools import lru_cache
 from pathlib import Path
@@ -31,6 +32,7 @@ from sources import (
 )
 from cidr_rules import prune_cidr_lines
 from rule_validator import validate_rule_file
+from file_batch import publish_files
 # Re-export existing helper names for callers importing from generate_rules.
 from source_transforms import (
     clean_source, convert_domainset, convert_cidr, filter_candidates,
@@ -282,6 +284,7 @@ def prune_global_first_match_overlaps():
 # ── Main ────────────────────────────────────────────────────────────────────
 
 def main():
+    global RULE_DIR
     RULE_DIR.mkdir(parents=True, exist_ok=True)
     MANUAL_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -302,17 +305,32 @@ def main():
     # cannot accidentally omit the dependency.
     selected_rulesets = expand_ruleset_dependencies(changed_rulesets)
 
-    processed = False
-    for target_name, (display_name, sources) in RULE_SPECS.items():
-        if should_process(target_name, selected_rulesets, is_workflow_dispatch):
-            print(f"Processing {target_name} ...")
-            process_rule(target_name, display_name, sources)
-            processed = True
-
-    # Prune Global overlaps if anything was processed
-    if processed:
-        print("Pruning Global.list first-match overlaps ...")
-        prune_global_first_match_overlaps()
+    destination = RULE_DIR
+    # Preserve unselected rules for Global overlap pruning. All generation and
+    # validation run off to the side; a later source failure cannot publish an
+    # earlier target. Manual input stays in its original read-only location.
+    with tempfile.TemporaryDirectory(prefix='.generate-', dir=destination.parent) as temporary:
+        staged = Path(temporary)
+        for path in destination.glob('*.list'):
+            shutil.copy2(path, staged / path.name)
+        processed = False
+        try:
+            RULE_DIR = staged
+            for target_name, (display_name, sources) in RULE_SPECS.items():
+                if should_process(target_name, selected_rulesets, is_workflow_dispatch):
+                    print(f"Processing {target_name} ...")
+                    process_rule(target_name, display_name, sources)
+                    processed = True
+            if processed:
+                print("Pruning Global.list first-match overlaps ...")
+                prune_global_first_match_overlaps()
+        finally:
+            RULE_DIR = destination
+        if processed:
+            publish_files(destination, {
+                destination / p.name: p.read_bytes() for p in staged.glob('*.list')
+                if not (destination / p.name).exists() or p.read_bytes() != (destination / p.name).read_bytes()
+            })
 
     print("Done.")
 

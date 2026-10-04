@@ -1,7 +1,7 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-10-04 05:02:43 +0800
-# TOTAL: 24362
+# UPDATED: 2026-10-04 21:58:15 +0800
+# TOTAL: 24363
 payload:
   - 'DOMAIN-SUFFIX,boil.network'
   - 'DOMAIN-SUFFIX,neburst.com'
@@ -18231,6 +18231,7 @@ payload:
   - 'DOMAIN-SUFFIX,amazon.co'
   - 'DOMAIN-SUFFIX,amazon.co.jp'
   - 'DOMAIN-SUFFIX,amazon.com'
+  - 'DOMAIN-SUFFIX,amazonaws.com'
   - 'DOMAIN-SUFFIX,america.gov'
   - 'DOMAIN-SUFFIX,american.edu'
   - 'DOMAIN-SUFFIX,americangreencard.com'

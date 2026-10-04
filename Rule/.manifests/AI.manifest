@@ -39,7 +39,7 @@ b1fd7266b0f8	Manual Rules
 c8fe30444894	Manual Rules
 92877d8c8efd	Manual Rules
 e784b47351e1	Manual Rules
-3e42093c1938	Manual Rules
+bb5d4970bdae	Manual Rules
 f1164ee3b6ff	Manual Rules
 2abac546c15e	Manual Rules
 5b43519b006d	Manual Rules
@@ -57,6 +57,7 @@ ce05ba14b7ab	Manual Rules
 42a4f006ab45	Manual Rules
 6e069852158b	Manual Rules
 0611fb6403de	Manual Rules
+271c0173f174	Manual Rules
 636d9d112c34	SukkaW AI
 2ac4cc56f6fd	SukkaW AI
 fb4ef2416c4c	SukkaW AI
@@ -78,19 +79,14 @@ c882ca09b881	SukkaW AI
 dbd23f45eb95	SukkaW AI
 dbc5d5f95763	SukkaW AI
 a77271de0882	SukkaW AI
-b5afdc25db21	SukkaW AI
 612c69bfa93b	Rabbit-Spec AIGC
 9d0ff2f30280	Rabbit-Spec AIGC
-14c7000710f6	Rabbit-Spec AIGC
-6eb10dad15dd	Rabbit-Spec AIGC
-4de2dc35a0b8	Rabbit-Spec AIGC
 405fda27adf6	Rabbit-Spec AIGC
 398b0f565c2f	Rabbit-Spec AIGC
 3d39439dd276	Rabbit-Spec AIGC
 19e47f4f08d2	Rabbit-Spec AIGC
 e5e966e9a030	Rabbit-Spec AIGC
 4f9b7a9bf580	Rabbit-Spec AIGC
-fe8ff5859ba9	Rabbit-Spec AIGC
 d10d35b4e7dc	Rabbit-Spec AIGC
 6aa9650591c8	Rabbit-Spec AIGC
 1fbfa047d8ad	Rabbit-Spec AIGC
@@ -105,7 +101,6 @@ df51702bd3a8	Rabbit-Spec AIGC
 487b75298d54	Rabbit-Spec AIGC
 ccc217387f19	Rabbit-Spec AIGC
 fc9bbc2a1f72	Rabbit-Spec AIGC
-b1e6274c779e	Rabbit-Spec AIGC
 aca2332538ad	Rabbit-Spec AIGC
 7da74b7ef7be	Rabbit-Spec AIGC
 e9456a7b7221	Rabbit-Spec AIGC
@@ -114,15 +109,10 @@ c78d14def5ea	Rabbit-Spec AIGC
 d34d969f3f0b	Rabbit-Spec AIGC
 5767d6cf048c	Rabbit-Spec AIGC
 6e9128c725fe	ConnersHua AI
-da68fa05a4f6	ConnersHua AI
-758624e99bed	ConnersHua AI
 6cf089f4f159	ConnersHua AI
 d68cabdb1f69	ConnersHua AI
 ce9f29ed7edf	ConnersHua AI
 97841db724f6	ConnersHua AI
-bb5d4970bdae	ConnersHua AI
-2cf758f67bca	ConnersHua AI
-0a4269c42bbe	ConnersHua AI
 4c96ae31dbf1	ConnersHua AI
 fe0aaee956fd	ConnersHua AI
 54faa00968bf	ConnersHua AI
@@ -130,4 +120,3 @@ fe0aaee956fd	ConnersHua AI
 51d65161803a	ConnersHua AI
 aabcd6b3013e	ConnersHua AI
 f829593e715c	ConnersHua AI
-5761b933cd74	ConnersHua AI

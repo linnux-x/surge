@@ -47,7 +47,7 @@ DOMAIN-SUFFIX,aistudio.google.com
 DOMAIN-SUFFIX,makersuite.google.com
 DOMAIN-SUFFIX,notebooklm.google
 DOMAIN-SUFFIX,notebooklm.google.com
-DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com
+DOMAIN,alkalimakersuite-pa.clients6.google.com
 URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+
 
 # Local coding assistant backend
@@ -82,3 +82,6 @@ DOMAIN-SUFFIX,jina.ai
 # Public muse.ai client exports FEATHER_VM_HOST_SUFFIX = .metaaivm.com
 DOMAIN-SUFFIX,muse.ai
 DOMAIN-SUFFIX,metaaivm.com
+
+# Bound Google Labs to its own domain and subdomains.
+DOMAIN-SUFFIX,labs.google

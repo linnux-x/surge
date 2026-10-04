@@ -10,6 +10,7 @@ import os
 from pathlib import Path, PurePosixPath
 import subprocess
 from zipfile import ZipFile
+from file_batch import publish_files
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLISH_PATHS = (
@@ -83,13 +84,7 @@ def restore(archive: Path, run_id: str) -> None:
         if any((ROOT / Path(*PurePosixPath(name).parts[:i])).is_symlink()
                for i in range(1, len(PurePosixPath(name).parts) + 1)):
             raise ValueError(f"Symlink release destination: {name}")
-    for name, data in files.items():
-        path = ROOT / name
-        if data is None:
-            path.unlink(missing_ok=True)
-        else:
-            path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_bytes(data)
+    publish_files(ROOT, {ROOT / name: data for name, data in files.items()})
     print(f"Restored reviewed release sha256={bundle['sha256']}")
 
 

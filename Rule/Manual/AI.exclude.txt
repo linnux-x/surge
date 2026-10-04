@@ -1,4 +1,4 @@
-# Complete rule lines: exclusions match upstream rules exactly.
+# Explicit rule types: domain identity excludes extended-matching variants too.
 DOMAIN,api.github.com
 DOMAIN-SUFFIX,api.github.com
 DOMAIN,api.msn.com
@@ -48,7 +48,7 @@ DOMAIN,api-iam.intercom.io
 # entries (DOMAIN,anthropic.auth0.com / DOMAIN-SUFFIX,auth0.openai.com) stay.
 DOMAIN-SUFFIX,auth0.com
 # Shared identity, payment, telemetry, certificate, and time services are not AI-owned.
-# Exclude their generic child hosts too; a parent exclusion alone is exact-line only.
+# Exclude their generic child hosts too; a parent exclusion alone does not remove child-host identities.
 DOMAIN-SUFFIX,identrust.com
 DOMAIN-SUFFIX,launchdarkly.com
 DOMAIN-SUFFIX,app.launchdarkly.com
@@ -88,3 +88,20 @@ DOMAIN,clients6.google.com
 DOMAIN-SUFFIX,clients6.google.com
 DOMAIN,firebaseinstallations.googleapis.com
 DOMAIN-SUFFIX,firebaseinstallations.googleapis.com
+
+# Generic search/telemetry endpoints are shared across unrelated customers.
+# https://support.algolia.com/hc/en-us/articles/4406975232401
+# https://docs.datadoghq.com/real_user_monitoring/guide/browser-sdk-upgrade/
+# https://usefathom.com/docs/script/script-advanced
+DOMAIN-SUFFIX,algolia.net
+DOMAIN,browser-intake-datadoghq.com
+DOMAIN,browser-intake-us5-datadoghq.com
+DOMAIN-SUFFIX,rum.browser-intake-datadoghq.com
+DOMAIN,cdn.usefathom.com
+# Bound AI services to domain labels; keep explicit first-party/CDN hosts.
+DOMAIN-KEYWORD,openai
+DOMAIN-KEYWORD,openaiapi
+DOMAIN-KEYWORD,openaicom
+DOMAIN-KEYWORD,notebooklm.google
+DOMAIN-KEYWORD,labs.google
+DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com

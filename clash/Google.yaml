@@ -1,7 +1,7 @@
 # Generated from Rule/Google.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-09-04 05:00:43 +0800
-# TOTAL: 692
+# UPDATED: 2026-10-04 21:58:15 +0800
+# TOTAL: 689
 payload:
   - 'DOMAIN-SUFFIX,gvt1.com'
   - 'DOMAIN-SUFFIX,gvt2.com'
@@ -36,7 +36,6 @@ payload:
   - 'DOMAIN-SUFFIX,androidify.com'
   - 'DOMAIN-SUFFIX,androidtv.com'
   - 'DOMAIN-SUFFIX,angulardart.org'
-  - 'DOMAIN-SUFFIX,api.ai'
   - 'DOMAIN-SUFFIX,apigee.com'
   - 'DOMAIN-SUFFIX,app-analytics-services.com'
   - 'DOMAIN-SUFFIX,app-measurement-cn.com'
@@ -190,12 +189,10 @@ payload:
   - 'DOMAIN-SUFFIX,dataliberation.org'
   - 'DOMAIN-SUFFIX,debug.com'
   - 'DOMAIN-SUFFIX,debugproject.com'
-  - 'DOMAIN-SUFFIX,deepmind.com'
   - 'DOMAIN-SUFFIX,deja.com'
   - 'DOMAIN-SUFFIX,deps.dev'
   - 'DOMAIN-SUFFIX,deps.info'
   - 'DOMAIN-SUFFIX,devsitetest.how'
-  - 'DOMAIN-SUFFIX,dialogflow.com'
   - 'DOMAIN-SUFFIX,digisfera.com'
   - 'DOMAIN-SUFFIX,digitalassetlinks.org'
   - 'DOMAIN-SUFFIX,digitalattackmap.com'

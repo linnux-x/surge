@@ -35,6 +35,8 @@ Rabbit-Spec 来源当前明确保留，用于补充 AIGC、China、ChinaCIDR 覆
 
 | 模块 | 作用 |
 |---|---|
+| `exclusions.py` | 显式类型排除合同；域名身份覆盖选项变体，其他规则保留整行语义 |
+| `file_batch.py` | 暂存完整批次；逐文件替换失败时回滚，回滚失败保留恢复目录 |
 | `source_transforms.py` | 生成器与贡献审计共用的清洗、格式转换、排除与服务过滤；不下载或写入产物 |
 | `sources.py` | 所有上游 URL、规则集规格及 Global 重建/裁剪依赖的单一来源 |
 | `cidr_rules.py` | 生成与校验共用的无 I/O CIDR 覆盖检测；保留地址族、选项和原始行 |
@@ -178,3 +180,19 @@ python3 -B scripts/automation_preflight.py \
   健康检查必须同时核对最新任务结果与收据时间，不能只看一份旧的 `ok`。
 - macOS 后台权限应核对真实 LaunchAgent 入口：App 自身有权限不证明脚本宿主也有。
   修复权限后，应通过原网关调度验证，而非用另一个终端成功代替。
+
+## 失败语义与批次发布
+
+上游探测 JSON 的 `status` 为 `unchanged`、`changed` 或 `failed`。任何源不可达时退出 1，
+`unavailable_sources`/`unavailable_urls` 报告失败；`unknown_timestamp_sources` 只统计可达但没有
+版本标记的源，此类源仍触发保守重建。失败不写 `--write-state` 或 `--state-out`，旧状态保留。
+调用方必须检查退出码，不能仅判断 `changed=false`。调度时间仍为每日北京时间 05:00。
+
+规则生成先在临时目录完成整个选中批次及 Global 裁剪，再发布；某个来源或校验失败时，所有
+旧规则保留。`reviewed_release.py restore` 采用相同批次写入工具，发布前暂存完整内容和旧文件。
+可捕获的写入/删除失败会回滚；回滚失败时抛出错误，并保留 `.publish-*/recovery.json` 和备份，
+不要继续发布或自动删除该恢复目录。
+
+多个文件的 rename 并非一个文件系统事务：并发读者仍可能短暂看到混合状态，断电或 SIGKILL
+也不保证自动回滚。运行必须保持隔离工作区和任务独占；对外发布边界仍是完整 Git 提交、PR 和
+精确提交 CI。规则生成不意味着后续 Clash、DNS Module、manifest 与收据已全部校验通过。

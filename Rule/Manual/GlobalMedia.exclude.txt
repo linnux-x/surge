@@ -1,5 +1,7 @@
-fast.com
-amazonaws.com
+DOMAIN,fast.com
+DOMAIN-SUFFIX,fast.com
+DOMAIN,amazonaws.com
+DOMAIN-SUFFIX,amazonaws.com
 DOMAIN,ai.google.dev
 DOMAIN,aistudio.google.com
 DOMAIN,api.together.xyz
@@ -65,7 +67,7 @@ DOMAIN-SUFFIX,tiktokv.com
 DOMAIN-SUFFIX,tiktokv.us
 DOMAIN-SUFFIX,tiktokw.com
 USER-AGENT,TikTok*
-TikTok
+DOMAIN-KEYWORD,tiktok
 DOMAIN-SUFFIX,kwai-group.com
 DOMAIN-SUFFIX,kwai.com
 DOMAIN-SUFFIX,kwai.net
@@ -80,14 +82,20 @@ DOMAIN,notebooklm.google.com
 DOMAIN-KEYWORD,anthropic
 DOMAIN-KEYWORD,claude
 # YouTube / Google video belongs to YouTube.list
-youtube
-googlevideo.com
-ggpht.com
-ggpht.cn
-gvt1.com
-gvt2.com
-video.google.com
-youtu.be
+DOMAIN-KEYWORD,youtube
+DOMAIN,googlevideo.com
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN,ggpht.com
+DOMAIN,ggpht.cn
+DOMAIN-SUFFIX,ggpht.cn
+DOMAIN,gvt1.com
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN,gvt2.com
+DOMAIN-SUFFIX,gvt2.com
+DOMAIN,video.google.com
+DOMAIN-SUFFIX,video.google.com
+DOMAIN,youtu.be
+DOMAIN-SUFFIX,youtu.be
 # TikTok belongs to TikTok.list
 DOMAIN-KEYWORD,tiktokcdn
 

@@ -98,3 +98,16 @@ class GenerationSafetyTests(unittest.TestCase):
                 with patch.object(generator, 'RULE_DIR', root), patch.object(generator, 'MANUAL_DIR', root/'Manual'), patch.object(generator, 'process_rule') as process, patch.object(generator, 'prune_global_first_match_overlaps'), patch.dict(os.environ, {'CHANGED_RULESETS': selection, 'GITHUB_EVENT_NAME': ''}):
                     generator.main()
                 self.assertEqual([call.args[0] for call in process.call_args_list], expected)
+
+    def test_late_source_failure_preserves_entire_batch(self):
+        import os
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            originals = {'AI.list': b'DOMAIN,old-ai.example\n', 'Global.list': b'DOMAIN,old-global.example\n'}
+            for name, data in originals.items(): (root/name).write_bytes(data)
+            specs = {'AI.list': ('AI', [('AI', 'https://example.test/ai', None)]),
+                     'Global.list': ('Global', [('Global', 'https://example.test/global', None)])}
+            with patch.object(generator, 'RULE_DIR', root), patch.object(generator, 'MANUAL_DIR', root/'Manual'), patch.object(generator, 'RULE_SPECS', specs), patch.object(generator, 'fetch_source', side_effect=[['DOMAIN,new-ai.example'], OSError('source unavailable')]), patch.dict(os.environ, {'CHANGED_RULESETS': '["AI.list"]', 'GITHUB_EVENT_NAME': ''}):
+                with self.assertRaises(OSError): generator.main()
+                self.assertEqual(generator.RULE_DIR, root)
+            for name, data in originals.items(): self.assertEqual((root/name).read_bytes(), data)

@@ -12,6 +12,7 @@ from typing import Optional
 
 from policy import FASTCOM_RE, GITHUB_RE, YOUTUBE_RE
 from rule_validator import SUKKAW_MARKER
+from exclusions import exclusion_key, read_exclusions
 from speedtest_sources import convert_speedtest
 
 SUKKA_MARKER = re.compile(r"7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset[.]skk[.]moe", re.IGNORECASE)
@@ -68,17 +69,13 @@ def convert_cidr(lines: list[str]) -> list[str]:
 
 
 def filter_candidates(lines: list[str], exclude_file: Optional[Path]) -> list[str]:
-    """Remove lines exactly matching entries in exclude file."""
+    """Remove explicitly typed exclusions, including domain option variants."""
     if not exclude_file or not exclude_file.is_file() or exclude_file.stat().st_size == 0:
         return lines
-    patterns = set()
-    for raw in exclude_file.read_text(encoding="utf-8").splitlines():
-        raw = raw.rstrip("\r").strip()
-        if raw and not raw.startswith("#"):
-            patterns.add(raw)
+    patterns = {exclusion_key(rule) for rule in read_exclusions(exclude_file)}
     if not patterns:
         return lines
-    return [l for l in lines if l not in patterns]
+    return [line for line in lines if exclusion_key(line) not in patterns]
 
 
 def apply_project_guardrails(target_name: str, lines: list[str]) -> list[str]:

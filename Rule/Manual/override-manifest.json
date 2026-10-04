@@ -633,6 +633,168 @@
         "dl.ubnt.com",
         "ubnt.com"
       ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "DOMAIN,amazonaws.com",
+      "reason": "AWS 通用云端点不能整体归入媒体；修正历史裸值排除。https://docs.aws.amazon.com/general/latest/gr/s3.html",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "s3.us-east-1.amazonaws.com",
+        "sts.amazonaws.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,amazonaws.com",
+      "reason": "AWS 通用云端点不能整体归入媒体；修正历史裸值排除。https://docs.aws.amazon.com/general/latest/gr/s3.html",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "s3.us-east-1.amazonaws.com",
+        "sts.amazonaws.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,byteoversea.com",
+      "reason": "排除同一域名的 extended-matching 变体，恢复后续 TikTok 归属",
+      "destination": "TikTok.list → TikTok",
+      "route_tests": [
+        "byteoversea.com",
+        "cdn.byteoversea.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,algolia.net",
+      "reason": "共享搜索或浏览器遥测端点；来源见 AI.exclude.txt 中的第一方资料",
+      "destination": "根域 FINAL → Global；*-dsn 子域 CDN.list → CDN",
+      "route_tests": [
+        "algolia.net",
+        "customer-dsn.algolia.net"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN,browser-intake-datadoghq.com",
+      "reason": "共享搜索或浏览器遥测端点；来源见 AI.exclude.txt 中的第一方资料",
+      "destination": "FINAL → Global",
+      "route_tests": [
+        "browser-intake-datadoghq.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN,browser-intake-us5-datadoghq.com",
+      "reason": "共享搜索或浏览器遥测端点；来源见 AI.exclude.txt 中的第一方资料",
+      "destination": "FINAL → Global",
+      "route_tests": [
+        "browser-intake-us5-datadoghq.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,rum.browser-intake-datadoghq.com",
+      "reason": "共享搜索或浏览器遥测端点；来源见 AI.exclude.txt 中的第一方资料",
+      "destination": "FINAL → Global",
+      "route_tests": [
+        "rum.browser-intake-datadoghq.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN,cdn.usefathom.com",
+      "reason": "共享搜索或浏览器遥测端点；来源见 AI.exclude.txt 中的第一方资料",
+      "destination": "FINAL → Global",
+      "route_tests": [
+        "cdn.usefathom.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,openai",
+      "reason": "收窄字符串匹配，保留明确的服务域名及已知 CDN 主机",
+      "destination": "无关域名 FINAL → Global；服务域名 AI.list → AI",
+      "route_tests": [
+        "notopenai.example.com",
+        "api.openai.com",
+        "alkalimakersuite-pa.clients6.google.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,openaiapi",
+      "reason": "收窄字符串匹配，保留明确的服务域名及已知 CDN 主机",
+      "destination": "无关域名 FINAL → Global；服务域名 AI.list → AI",
+      "route_tests": [
+        "openaiapi.example.com",
+        "api.openai.com",
+        "alkalimakersuite-pa.clients6.google.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,openaicom",
+      "reason": "收窄字符串匹配，保留明确的服务域名及已知 CDN 主机",
+      "destination": "无关域名 FINAL → Global；服务域名 AI.list → AI",
+      "route_tests": [
+        "openaicom.example.com",
+        "api.openai.com",
+        "alkalimakersuite-pa.clients6.google.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,notebooklm.google",
+      "reason": "收窄字符串匹配，保留明确的服务域名及已知 CDN 主机",
+      "destination": "无关域名 FINAL → Global；服务域名 AI.list → AI",
+      "route_tests": [
+        "notebooklm.google.example.com",
+        "api.openai.com",
+        "alkalimakersuite-pa.clients6.google.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,labs.google",
+      "reason": "收窄字符串匹配，保留明确的服务域名及已知 CDN 主机",
+      "destination": "无关域名 FINAL → Global；服务域名 AI.list → AI",
+      "route_tests": [
+        "labs.google.example.com",
+        "api.openai.com",
+        "alkalimakersuite-pa.clients6.google.com"
+      ]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com",
+      "reason": "收窄字符串匹配，保留明确的服务域名及已知 CDN 主机",
+      "destination": "无关域名 FINAL → Global；服务域名 AI.list → AI",
+      "route_tests": [
+        "alkalimakersuite-pa.clients6.google.com.example.com",
+        "api.openai.com",
+        "alkalimakersuite-pa.clients6.google.com"
+      ]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN-SUFFIX,labs.google",
+      "reason": "用域名边界替代 labs.google 子串规则",
+      "destination": "AI.list → AI",
+      "route_tests": [
+        "labs.google",
+        "labs.google.example.com"
+      ]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,alkalimakersuite-pa.clients6.google.com",
+      "reason": "用精确主机替代 Gemini API 的无边界关键词",
+      "destination": "AI.list → AI",
+      "route_tests": [
+        "alkalimakersuite-pa.clients6.google.com",
+        "alkalimakersuite-pa.clients6.google.com.example.com"
+      ]
     }
   ]
 }

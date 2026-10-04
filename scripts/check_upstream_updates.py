@@ -3,7 +3,7 @@
 
 Compares cached Last-Modified / ETag headers against current upstream.
 Outputs a JSON summary. Upstream changes are reported via JSON/GitHub outputs,
-not exit status; non-zero exits are reserved for script/configuration failures.
+not exit status; unreachable sources fail with exit 1 (configuration errors: 2).
 
 Sources that don't support HEAD fall back to Range GET then full GET.
 When no timestamp info is available, marks source as "unknown" and
@@ -31,6 +31,7 @@ if str(_scripts_dir) not in sys.path:
     sys.path.insert(0, str(_scripts_dir))
 
 from sources import SOURCE_URL_MAP, OVERLAP_DEPENDENTS, expand_ruleset_dependencies
+from file_batch import publish_files
 
 ROOT = Path(__file__).resolve().parents[1]
 STATE_FILE = ROOT / "scripts" / "source_state.json"
@@ -100,7 +101,7 @@ def save_state(state: dict, path: Path = STATE_FILE) -> None:
     """Persist state to path, pruning stale entries not in SOURCE_URL_MAP."""
     pruned = prune_state(state)
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(pruned, indent=2, sort_keys=True) + "\n")
+    publish_files(path.parent, {path: (json.dumps(pruned, indent=2, sort_keys=True) + "\n").encode()})
 
 
 def write_github_output(path: Path, summary: dict) -> None:
@@ -109,6 +110,8 @@ def write_github_output(path: Path, summary: dict) -> None:
     with path.open("a", encoding="utf-8") as f:
         f.write(f"changed={str(summary['changed']).lower()}\n")
         f.write(f"changed_count={summary['changed_count']}\n")
+        f.write(f"status={summary['status']}\n")
+        f.write(f"unavailable_sources={summary['unavailable_sources']}\n")
         f.write(
             "changed_rulesets="
             + json.dumps(summary["rulesets"], ensure_ascii=False)
@@ -129,7 +132,7 @@ def has_changed(current: dict, cached: dict) -> bool:
         return True
 
     if not current.get("source_available"):
-        # Was available, now unavailable = treat as unchanged (network blip)
+        # No comparable version. main() separately fails closed on availability.
         return False
 
     # Compare timestamps in priority order: ETag > Last-Modified
@@ -168,7 +171,7 @@ def check_all_sources_parallel(
         is_changed = has_changed(current, cached)
 
         has_ts = bool(current.get("last_modified") or current.get("etag"))
-        return url, current, is_changed, not has_ts
+        return url, current, is_changed, bool(current.get("source_available")) and not has_ts
 
     total = len(urls)
     completed = 0
@@ -182,22 +185,16 @@ def check_all_sources_parallel(
             url, current, is_changed, is_unknown = future.result()
             completed += 1
 
-            # Update state. On a transient outage keep the last known-good
-            # fingerprint: overwriting it with an "unavailable" record would
-            # make the next successful probe register as a spurious change
-            # and trigger a pointless regeneration.
-            cached = state.get(url, {})
-            if not current.get("source_available") and cached.get("source_available"):
-                new_state[url] = cached
-            else:
-                new_state[url] = current
+            # Describe this observation truthfully. main() refuses to persist
+            # any candidate on failure, retaining the last successful state.
+            new_state[url] = current
 
             # Track unknowns
             if is_unknown:
                 unknown_count += 1
 
             # Track changes
-            status = "CHANGED" if is_changed else "unchanged"
+            status = "UNAVAILABLE" if not current.get("source_available") else ("CHANGED" if is_changed else "unchanged")
             rulesets = SOURCE_URL_MAP.get(url, ["<unknown>"])
             print(f"  [{completed}/{total}] {status:>9s}  {url}",
                   file=sys.stderr)
@@ -244,23 +241,27 @@ def main() -> None:
     urls = list(SOURCE_URL_MAP.keys())
     if not urls:
         print("No sources configured.", file=sys.stderr)
-        sys.exit(0)
+        sys.exit(2)
 
     state = load_state()
 
     changed_rulesets, new_state, changed_count, unknown_count = \
         check_all_sources_parallel(urls, state)
 
+    unavailable = sorted(url for url, info in new_state.items() if not info.get("source_available"))
     # Persist updated state only when explicitly requested. The default check
     # path is read-only so review workflows cannot consume update state before
     # rules are generated, validated, audited, and committed successfully.
-    if args.write_state:
+    if args.write_state and not unavailable:
         save_state(new_state)
-    elif args.state_out:
+    elif args.state_out and not unavailable:
         save_state(new_state, args.state_out)
 
     # Build summary
     summary = {
+        "status": "failed" if unavailable else ("changed" if changed_rulesets else "unchanged"),
+        "unavailable_sources": len(unavailable),
+        "unavailable_urls": unavailable,
         "changed": bool(changed_rulesets),
         "changed_count": changed_count,
         "total_sources": len(urls),
@@ -273,7 +274,7 @@ def main() -> None:
     if args.github_output:
         write_github_output(args.github_output, summary)
 
-    sys.exit(0)
+    sys.exit(1 if unavailable else 0)
 
 
 if __name__ == "__main__":

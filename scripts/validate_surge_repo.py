@@ -174,6 +174,9 @@ def main() -> int:
     check_workflow_names_and_deprecated_schedule(errors, warnings)
     check_managed_config_header(errors)
     check_override_manifest(errors)
+    from audit_rules import check_exclude_coverage
+    for finding in check_exclude_coverage():
+        errors.append(f"{finding['target']}: {finding['detail']}")
     check_rule_files(errors, warnings)
     from validate_dns_module import validate_text as validate_dns_module
     try:
