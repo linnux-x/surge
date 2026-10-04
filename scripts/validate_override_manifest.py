@@ -5,6 +5,7 @@ import json
 import re
 import csv
 from pathlib import Path
+from exclusions import read_exclusions
 
 ROOT = Path(__file__).resolve().parents[1]
 MANUAL = ROOT / "Rule" / "Manual"
@@ -64,6 +65,11 @@ def main() -> int:
         elif missing := sorted({item.strip().lower() for item in route_tests} - test_domains):
             errors.append(f"entry route_tests absent from expected-routing.csv: {key[0]}: {missing}")
     for path in manual_files.values():
+        if path.name.endswith('.exclude.txt'):
+            try:
+                read_exclusions(path)
+            except ValueError as exc:
+                errors.append(str(exc))
         for rule in active_rules(path):
             if FORBIDDEN.search(rule):
                 errors.append(f"sensitive/public-boundary pattern in {path.name}")

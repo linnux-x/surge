@@ -146,7 +146,7 @@ ERROR 阻断流程，WARN 不直接改变脚本退出码但需要审阅，INFO �
 
 | 入口 | 职责 |
 |---|---|
-| [Rule/Manual/README.md](Rule/Manual/README.md) | 追加规则、整行精确匹配排除、公开 override 合同 |
+| [Rule/Manual/README.md](Rule/Manual/README.md) | 追加规则、显式类型排除、公开 override 合同 |
 | [scripts/README.md](scripts/README.md) | 生成脚本、来源审计、测速格式转换和发布快照 |
 | [tests/README.md](tests/README.md) | 路由测试及预期策略 |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | PR、全量审阅与 Fork 适配 |

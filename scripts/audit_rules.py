@@ -264,14 +264,10 @@ def check_surge_docs_updates() -> list[dict]:
 
 
 def check_exclude_coverage() -> list[dict]:
-    """Verify exclude patterns are actually excluding rules from generated files.
+    """Independently reject malformed exclusions and leaked rule identities.
 
-    Two checks per .exclude.txt:
-    1. If an exclude pattern IS found in the generated rules → WARN (exclude not working;
-       may be format mismatch between exclude entry and upstream rule, or rule came from
-       a different upstream source that doesn't go through excludes).
-    2. If an exclude pattern is NOT found → working as intended (either successfully
-       excluded the upstream entry, or the upstream no longer has that rule).
+    Explicit Manual includes override upstream exclusions. Domain options cannot
+    bypass exclusion; non-domain rules retain exact-line option semantics.
     """
     findings: list[dict] = []
 
@@ -294,21 +290,32 @@ def check_exclude_coverage() -> list[dict]:
         if not excludes:
             continue
 
-        # Check each exclude pattern against the generated rules
+        # Independent post-generation check: domain identity ignores options,
+        # other rule types retain their full-line semantics. Manual includes
+        # deliberately override upstream exclusions and are checked separately.
         rules = non_comment_rules(list_path)
-        rules_lower = [r.lower() for r in rules]
+        manual = MANUAL_DIR / f"{name_no_ext}.txt"
+        included = set(non_comment_rules(manual)) if manual.exists() else set()
+        rules = [rule for rule in rules if rule not in included]
 
         leaking_excludes = []
         for exc in excludes:
-            # filter_candidates uses exact-line matching: l not in patterns
-            matched = any(exc.lower() == r for r in rules_lower)
+            parts = exc.split(',')
+            if len(parts) < 2:
+                findings.append({'severity': 'ERROR', 'check': 'exclude_coverage',
+                                 'target': target, 'detail': f'排除条目缺少规则类型: {exc}'})
+                continue
+            if parts[0] in {'DOMAIN', 'DOMAIN-SUFFIX', 'DOMAIN-KEYWORD', 'DOMAIN-WILDCARD'}:
+                matched = any([p.lower() for p in r.split(',')[:2]] == [p.lower() for p in parts[:2]] for r in rules)
+            else:
+                matched = exc in rules
             if matched:
                 leaking_excludes.append(exc)
 
         if leaking_excludes:
             for exc in leaking_excludes:
                 findings.append({
-                    "severity": "WARN",
+                    "severity": "ERROR",
                     "check": "exclude_coverage",
                     "target": target,
                     "detail": f"排除条目在生成文件中仍存在（排除未生效）: {exc}",

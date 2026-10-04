@@ -81,3 +81,13 @@ python3 -B tests/compare_pipeline_baseline.py
 `test_automation_preflight.py` 验证主收据不可写时的备用失败证据、0600 权限、
 就绪状态不能覆盖业务结果，并在临时真实 Git 仓库中检查 origin、dirty 阻断、
 旧调度器 ACTIVE 阻断与原子替换清理；不接触真实任务收据。
+
+## 2026-10-04 审计修复回归
+
+`test_exclusions.py` 覆盖裸值拒绝、域名大小写/选项变体、规则类型边界、IP 选项保留及独立
+生成物检查。`test_file_batch.py` 注入暂存失败、晚期替换失败和回滚失败，检查新增、删除、
+原文件权限和恢复材料。`test_generation_safety.py` 验证第二个来源失败不会发布第一个结果；
+`test_upstream_probe.py` 验证不可达与无版本标记分开处理，失败不提升源状态。
+
+路由表保留原有 197 项，并扩展历史排除迁移、AWS、ByteOversea、共享遥测与关键词负例。
+合成的 `audit-child.*`、`*.example.com` 只用于规则求值，不代表实际访问记录。

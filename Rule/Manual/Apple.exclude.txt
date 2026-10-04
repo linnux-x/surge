@@ -1,9 +1,10 @@
 # Broad Apple Akamai parent is too wide for Apple.list; specific China/CDN hosts live in Apple_CN.list
 DOMAIN-SUFFIX,akadns.net
-akadns.net
+DOMAIN,akadns.net
 
 # Opaque Akamai CDN edge nodes (e.g. e16991.b.akamaiedge.net) are shared infra
-akamaiedge.net
+DOMAIN,akamaiedge.net
+DOMAIN-SUFFIX,akamaiedge.net
 
 # Apple China/CDN edges belong to Apple_CN.list
 DOMAIN-SUFFIX,appldnld.apple.com.edgesuite.net

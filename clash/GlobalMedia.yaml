@@ -1,7 +1,7 @@
 # Generated from Rule/GlobalMedia.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-10-04 05:02:43 +0800
-# TOTAL: 2263
+# UPDATED: 2026-10-04 21:58:15 +0800
+# TOTAL: 2255
 payload:
   - 'DOMAIN-SUFFIX,p-bstarstatic.akamaized.net'
   - 'DOMAIN-SUFFIX,upos-bstar-mirrorakam.akamaized.net'
@@ -58,7 +58,6 @@ payload:
   - 'DOMAIN-SUFFIX,aiv-delivery.net'
   - 'DOMAIN-SUFFIX,amazon.jobs'
   - 'DOMAIN-SUFFIX,amazonaws.co.uk'
-  - 'DOMAIN-SUFFIX,amazonaws.com'
   - 'DOMAIN-SUFFIX,amazonprimevideos.com'
   - 'DOMAIN-SUFFIX,amazontools.com'
   - 'DOMAIN-SUFFIX,amazontours.com'
@@ -1073,14 +1072,8 @@ payload:
   - 'DOMAIN-SUFFIX,zeeuk.com'
   - 'DOMAIN-SUFFIX,zeriamerikes.com'
   - 'DOMAIN-SUFFIX,zype.com'
-  - 'DOMAIN-SUFFIX,ggpht.cn'
-  - 'DOMAIN-SUFFIX,googlevideo.com'
-  - 'DOMAIN-SUFFIX,gvt1.com'
-  - 'DOMAIN-SUFFIX,gvt2.com'
-  - 'DOMAIN-SUFFIX,video.google.com'
   - 'DOMAIN-SUFFIX,wide-youtube.l.google.com'
   - 'DOMAIN-SUFFIX,withyoutube.com'
-  - 'DOMAIN-SUFFIX,youtu.be'
   - 'DOMAIN-SUFFIX,youtube'
   - 'DOMAIN-SUFFIX,youtube-nocookie.com'
   - 'DOMAIN-SUFFIX,youtube-ui.l.google.com'
@@ -1271,7 +1264,6 @@ payload:
   - 'DOMAIN-KEYWORD,tvbanywhere'
   - 'DOMAIN-KEYWORD,uk-live'
   - 'DOMAIN-KEYWORD,voddazn'
-  - 'DOMAIN-KEYWORD,youtube'
   - 'IP-CIDR,1.201.0.0/24,no-resolve'
   - 'IP-CIDR,1.37.35.6/32,no-resolve'
   - 'IP-CIDR,101.100.179.242/32,no-resolve'

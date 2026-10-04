@@ -11,7 +11,7 @@
 | 文件模式 | 用途 | 优先级 |
 |---|---|---|
 | `<RulesetName>.txt` | 手工追加规则，生成时放在对应规则集顶部 | 最高 |
-| `<RulesetName>.exclude.txt` | 从上游生成规则中移除的精确规则行 | 护栏前应用 |
+| `<RulesetName>.exclude.txt` | 按显式类型和值从上游移除规则 | 护栏前应用 |
 
 ---
 
@@ -36,11 +36,15 @@ IP-CIDR,10.0.0.0/8
 
 ### `<RulesetName>.exclude.txt`：手工 exclude
 
-> ⚠️ exclude 使用 **整行精确匹配**，不是子串匹配。  
-> 必须写出和上游来源中完全一致的完整规则行。
+exclude 必须写出明确的规则类型和值，裸域名和裸关键词会使生成及 CI 失败。
+
+- `DOMAIN`、`DOMAIN-SUFFIX`、`DOMAIN-KEYWORD`、`DOMAIN-WILDCARD` 按 **类型和值**（忽略大小写）排除，同一身份的 `extended-matching` 变体一并移除。
+- 其他类型仍按整行精确匹配；例如 `IP-ASN,13335,no-resolve` 不排除 `IP-ASN,13335`，不能抹掉 IP 选项的语义。
+- 排除不是子串匹配或父后缀覆盖：`DOMAIN-SUFFIX,example.com` 不排除 `DOMAIN,example.com` 或 `DOMAIN,api.example.com`；需要分别声明。
+- 手工 include 优先于上游 exclude，可显式保留服务专属端点。CI 独立扫描最终生成物，阻止排除规则以选项变体泄漏。
 
 ```text
-# 正确：精确匹配上游规则行
+# 按域名规则身份排除（也移除 extended-matching 变体）
 DOMAIN-SUFFIX,sentry.io
 
 # 也正确：同时匹配 DOMAIN 和 DOMAIN-SUFFIX 两种变体

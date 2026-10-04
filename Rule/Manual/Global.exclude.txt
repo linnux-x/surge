@@ -1,4 +1,5 @@
-fast.com
+DOMAIN,fast.com
+DOMAIN-SUFFIX,fast.com
 DOMAIN-SUFFIX,akadns.net
 DOMAIN-SUFFIX,akamaiedge.net
 DOMAIN-SUFFIX,akamaihd.net
