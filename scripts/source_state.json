@@ -19,19 +19,19 @@
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
     "content_length": "4351",
-    "etag": "\"0e6f2e65ee29917523ba30f3a4bfe4f1e3eed1fca0d581aa4d099819f13c9a32\"",
+    "etag": "\"ffdab9e6a9b08428394ee2084e40db3458a7e077b2b47ec2f9e6b4db79927c57\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
     "content_length": "101172",
-    "etag": "\"78a1b89d44c98ca8e6ceca5045d7359fdad54b5619b08508fbe6e549eeecef0f\"",
+    "etag": "\"8330201aac8a50c9e85788759a78c89e10d5699236bd3156979d67d8e3fdae98\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/ChinaCIDR.list": {
     "content_length": "235182",
-    "etag": "\"f95faa1395f015b795dee9c9cf65d2cad5158bef9a9210032fe627dc7eaa2987\"",
+    "etag": "\"9da4cda76d8cd626c764276e4be5bacfca25d21896a0d40543f0d23c3a4b9a27\"",
     "last_modified": null,
     "source_available": true
   },
@@ -42,8 +42,8 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaLab/speedtest-net-servers-dist/master/servers.json": {
-    "content_length": "562891",
-    "etag": "\"38871efc14547b70e9042c95547fbd1f17062506b1e5dc5ce4e6b09b071fb6c8\"",
+    "content_length": "573690",
+    "etag": "\"f519e3eb2d89c539b97ea10f633d198bdb064d21deeae995b75edef2d1f95075\"",
     "last_modified": null,
     "source_available": true
   },
@@ -192,8 +192,8 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/domainset/apple_cdn.conf": {
-    "content_length": null,
-    "etag": "W/\"8bb2e4bdf823edbb5fd20a7eccd8e482\"",
+    "content_length": "4628",
+    "etag": "\"8bb2e4bdf823edbb5fd20a7eccd8e482\"",
     "last_modified": null,
     "source_available": true
   },
@@ -210,8 +210,8 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/ai.conf": {
-    "content_length": null,
-    "etag": "W/\"5144ec049146578606c5b1cb3b7a2b60\"",
+    "content_length": "2032",
+    "etag": "\"5144ec049146578606c5b1cb3b7a2b60\"",
     "last_modified": null,
     "source_available": true
   },
