@@ -1,229 +1,237 @@
 # Surge Rule Diff Report
-Generated: 2026-10-06T05:02:33.355261
+Generated: 2026-10-07T09:42:50.225509
 
 ## Summary
 
 | Metric | Count |
 |--------|-------|
-| Files changed | 1 |
-| Rules added | 160 |
-| Rules removed | 135 |
+| Files changed | 2 |
+| Rules added | 159 |
+| Rules removed | 172 |
 | Source attribution changed | 0 |
 
 ## Per-File Changes
 
 | File | Prev | Curr | Added | Removed | Source Δ |
 |------|------|------|-------|---------|----------|
-| Speedtest.list | 1699 | 1724 | +160 | -135 | ~0 |
+| Global.list | 24363 | 24364 | +1 | -0 | ~0 |
+| Speedtest.list | 1724 | 1710 | +158 | -172 | ~0 |
+
+## Global.list
+
+**Added: 1** (showing first 1)
+```
+  + [blackmatrix7 Global] 6bbc485ba800  DOMAIN-SUFFIX,googleplaycensorship.com
+```
 
 ## Speedtest.list
 
-**Added: 160** (showing first 100)
+**Added: 158** (showing first 100)
 ```
-  + [SukkaW Speedtest Servers International] 012b7f31586b  DOMAIN,ststratford.rogers.com
-  + [SukkaW Speedtest Servers International] 02b7b422882f  DOMAIN,speedtest.sentco.net
-  + [SukkaW Speedtest Servers International] 04df25e28545  DOMAIN,speedtest.premieronline.net
-  + [SukkaW Speedtest Servers International] 0578ed72ddf9  DOMAIN,speedtest-1.keyubu.com
-  + [SukkaW Speedtest Servers International] 078081ad0b3d  DOMAIN,speedtest.rfnow.net
-  + [SukkaW Speedtest Servers International] 0a1ed9cd71bb  DOMAIN,speedtest.cadence.net.uk
-  + [SukkaW Speedtest Servers International] 0ab0cf8a6ab9  DOMAIN,speedtest.novateldigital.com
-  + [SukkaW Speedtest Servers International] 0bd6b487bcf7  DOMAIN,speedtest.inovewifi.com.br
-  + [SukkaW Speedtest Servers International] 0f9fc6befe00  DOMAIN,speed.idnet.net.br
-  + [SukkaW Speedtest Servers International] 1204ab7c7137  DOMAIN,40gspeedtest.mnsi.net
-  + [SukkaW Speedtest Servers International] 12ca2bed9dbb  DOMAIN,speedtest.atccomm.net
-  + [SukkaW Speedtest Servers International] 13dc2485ab95  DOMAIN,speedtest.heartofiowa.coop
-  + [SukkaW Speedtest Servers International] 14696c5e4444  DOMAIN,speedtest.cmltelephone.com
-  + [SukkaW Speedtest Servers International] 189c17014e83  DOMAIN,speedtest.amesiaaa.metronetinc.com
-  + [SukkaW Speedtest Servers International] 1cfb48abbf36  DOMAIN,speedtest.grm.net
-  + [SukkaW Speedtest Servers International] 1debbecee8c5  DOMAIN,speedtest.cstech.com
-  + [SukkaW Speedtest Servers International] 1df38b0ae240  DOMAIN,speedtest1.valleyfiber.ca
-  + [SukkaW Speedtest Servers International] 1e9ede2ea46b  DOMAIN,speedtest.westianet.com
-  + [SukkaW Speedtest Servers International] 29a310f8327b  DOMAIN,speedtest.brooketel.coop
-  + [SukkaW Speedtest Servers International] 2ab9b0da9911  DOMAIN,lcrs-speedtest-02.brightspeed.com
-  + [SukkaW Speedtest Servers International] 2ddb34614d29  DOMAIN,speedtest2.digimobil.es
-  + [SukkaW Speedtest Servers International] 304d2683e43f  DOMAIN,speedtest.skywaveconnect.com
-  + [SukkaW Speedtest Servers International] 3307fbfaba51  DOMAIN,st3.surajnetwork.com
-  + [SukkaW Speedtest Servers International] 34d320d8b02f  DOMAIN,speedtest.mdtc.net
-  + [SukkaW Speedtest Servers International] 358795b67fd5  DOMAIN,speedtest.mornington.ca
-  + [SukkaW Speedtest Servers International] 36366555a5b5  DOMAIN,ookla.mu.as6453.net
-  + [SukkaW Speedtest Servers International] 373316f1139e  DOMAIN,ookla.soc.atharva.co.id
-  + [SukkaW Speedtest Servers International] 37dae1757a6d  DOMAIN,stsaultstemariewireless.rogers.com
-  + [SukkaW Speedtest Servers International] 394dff5a7003  DOMAIN,stwindsorwireless.rogers.com
-  + [SukkaW Speedtest Servers International] 3a92209ad6ba  DOMAIN,speedtest-01.omnitel.biz
-  + [SukkaW Speedtest Servers International] 3a97abf4595c  DOMAIN,speedtest1.oma.nxlink.com
-  + [SukkaW Speedtest Servers International] 3b0dc040ff61  DOMAIN,speed.nutelecom.com
-  + [SukkaW Speedtest Servers International] 3ea882635f75  DOMAIN,speed.sdmnet.com.br
-  + [SukkaW Speedtest Servers International] 3ee34e80fced  DOMAIN,speedtest.dvnpiaaa.metronetinc.com
-  + [SukkaW Speedtest Servers International] 3f2a1255658c  DOMAIN,blfd-speed-01.gpcom.com
-  + [SukkaW Speedtest Servers International] 3f7075e220a1  DOMAIN,ksczks-speedtest-ookla-01.st.charter.com
-  + [SukkaW Speedtest Servers International] 3f8306542a0b  DOMAIN,stsudburywireless.rogers.com
-  + [SukkaW Speedtest Servers International] 41bc4d2333e5  DOMAIN,speedtest.cvalley.net
-  + [SukkaW Speedtest Servers International] 45ed5f3bd479  DOMAIN,speedtest.tcaexpress.net
-  + [SukkaW Speedtest Servers International] 48e2d32a2895  DOMAIN,speedtest.cascadecomm.com
-  + [SukkaW Speedtest Servers International] 4b2bec89b1bd  DOMAIN,speedtest.vacastelecom.net
-  + [SukkaW Speedtest Servers International] 4bbf2a0a0fa3  DOMAIN,speedtest.mysmbs.com
-  + [SukkaW Speedtest Servers International] 4bc2ef4606ca  DOMAIN,st-oma-1.binary.net
-  + [SukkaW Speedtest Servers International] 4c8fd6b2f3f6  DOMAIN,ookla-ks.mercuryfiber.com
-  + [SukkaW Speedtest Servers International] 4de50e12bd16  DOMAIN,speedtest.hay.net
-  + [SukkaW Speedtest Servers International] 4fa503514189  DOMAIN,speedtest.packetworks.net
-  + [SukkaW Speedtest Servers International] 507325cf0478  DOMAIN,speedtest.merlin.mb.ca
-  + [SukkaW Speedtest Servers International] 51219317246c  DOMAIN,speedtest.gmtel.net
-  + [SukkaW Speedtest Servers International] 5180d71261b9  DOMAIN,speedtest.pimcommcorp.com
-  + [SukkaW Speedtest Servers International] 52d0a6f0b307  DOMAIN,speedtest.45networks.ca
-  + [SukkaW Speedtest Servers International] 565ea387b1e5  DOMAIN,speedtest.cfu.net
-  + [SukkaW Speedtest Servers International] 58e6d169adef  DOMAIN,speedtest.esu5.org
-  + [SukkaW Speedtest Servers International] 59f0ec25e179  DOMAIN,blar-speed-01.gpcom.com
-  + [SukkaW Speedtest Servers International] 5c69bf15997f  DOMAIN,sp1.speedy.bb-swrag.de
-  + [SukkaW Speedtest Servers International] 5c6e09ea3600  DOMAIN,speedtest.stradacomm.com
-  + [SukkaW Speedtest Servers International] 5f3fcd920887  DOMAIN,speedtest.ncn.net
-  + [SukkaW Speedtest Servers International] 605cfb35f522  DOMAIN,speedtest.mci.as1003.net
-  + [SukkaW Speedtest Servers International] 67fb222e7169  DOMAIN,stbrampton.rogers.com
-  + [SukkaW Speedtest Servers International] 6b8a034fa920  DOMAIN,speedtest.wifi4all.it
-  + [SukkaW Speedtest Servers International] 6ff5941eb406  DOMAIN,exc-speedtest.unitedfiber.com
-  + [SukkaW Speedtest Servers International] 72bb8c1b570f  DOMAIN,speedtest5.windtre.it
-  + [SukkaW Speedtest Servers International] 75e802499b21  DOMAIN,stbrampton.netcrawler.ca
-  + [SukkaW Speedtest Servers International] 761a11540f93  DOMAIN,siouxcity1.cabospeed.com
-  + [SukkaW Speedtest Servers International] 7666539d8d51  DOMAIN,speedtest2.valleyfiber.ca
-  + [SukkaW Speedtest Servers International] 76c205f9d894  DOMAIN,speedtest.linknetbv.com
-  + [SukkaW Speedtest Servers International] 7935cf977efe  DOMAIN,speedtest.wwfn.ca
-  + [SukkaW Speedtest Servers International] 7a4042ca0d6f  DOMAIN,stbarriewireless.rogers.com
-  + [SukkaW Speedtest Servers International] 7a55e968bb85  DOMAIN,speedtest.unitedfiber.com
-  + [SukkaW Speedtest Servers International] 7ad78e8435d7  DOMAIN,speed.ddbroadband.co.in
-  + [SukkaW Speedtest Servers International] 7bdc14806a7c  DOMAIN,speedtest.wccta.com
-  + [SukkaW Speedtest Servers International] 7ea92d713139  DOMAIN,speedtest.rochmnaa.metronetinc.com
-  + [SukkaW Speedtest Servers International] 809ed12ed910  DOMAIN,speedtest.nemr.net
-  + [SukkaW Speedtest Servers International] 84b8446a854b  DOMAIN,speedtest10g.ics-llc.net
-  + [SukkaW Speedtest Servers International] 86f4178b9153  DOMAIN,speedtest.fibercomm.net
-  + [SukkaW Speedtest Servers International] 87a9233f0df1  DOMAIN,383-2speedtest.wightman.ca
-  + [SukkaW Speedtest Servers International] 8c67eca44a61  DOMAIN,velocidade.tecsattelecom.com.br
-  + [SukkaW Speedtest Servers International] 8c9d7c03fa30  DOMAIN,speedtest27.suddenlink.net
-  + [SukkaW Speedtest Servers International] 8cfc393702b7  DOMAIN,speedtest.kc2.everfastfiber.com
-  + [SukkaW Speedtest Servers International] 905125f73ee5  DOMAIN,speedtest.mvec.com
-  + [SukkaW Speedtest Servers International] 9052a64cc3fd  DOMAIN,speedtest25.wiatel.com
-  + [SukkaW Speedtest Servers International] 9073adefc65d  DOMAIN,speedtest.neitel.net
-  + [SukkaW Speedtest Servers International] 93617c692bd8  DOMAIN,ookla.mci-1.serverforge.org
-  + [SukkaW Speedtest Servers International] 9868c3f8fedf  DOMAIN,speedtest.s3rdv.com
-  + [SukkaW Speedtest Servers International] 991108b39981  DOMAIN,speedtest.mtctech.net
-  + [SukkaW Speedtest Servers International] 99246723a229  DOMAIN,speedtest-mci-01.pdx.net.uk
-  + [SukkaW Speedtest Servers International] 9ef50333ec52  DOMAIN,speedtestmoh1.airtelbroadband.in
-  + [SukkaW Speedtest Servers International] 9fc768aebccf  DOMAIN,speedtest.nexgencom.com
-  + [SukkaW Speedtest Servers International] a03e396de9e0  DOMAIN,mib-rst-sp1.mibroadband.com
-  + [SukkaW Speedtest Servers International] a0e06516e4c5  DOMAIN,speedtest2.rainbowtel.net
-  + [SukkaW Speedtest Servers International] a258e2019d32  DOMAIN,sp1.voyageurinternet.ca
-  + [SukkaW Speedtest Servers International] a31c0a6224a2  DOMAIN,storangeville.rogers.com
-  + [SukkaW Speedtest Servers International] a63f83296451  DOMAIN,speed.tritan-bb.net
-  + [SukkaW Speedtest Servers International] a64508c249b0  DOMAIN,lnk-speedtest.networknebraska.net
-  + [SukkaW Speedtest Servers International] a6619de300c2  DOMAIN,st2a.les.net
-  + [SukkaW Speedtest Servers International] a6687b2369f5  DOMAIN,stwaterloo.rogers.com
-  + [SukkaW Speedtest Servers International] a8249c53ba8a  DOMAIN,speedtest.thn.uk.syntura.io
-  + [SukkaW Speedtest Servers International] ab415fae2613  DOMAIN,speedtest.longlines.com
-  + [SukkaW Speedtest Servers International] accaab45f3ac  DOMAIN,speedtest-dsm.cowboyhosting.com
-  + [SukkaW Speedtest Servers International] accdf3f5dcf1  DOMAIN,stsarniawireless.rogers.com
-  + [SukkaW Speedtest Servers International] aecf28573fd6  DOMAIN,speedtest.heartlandtechnology.com
-  ... and 60 more
+  + [SukkaW Speedtest Servers International] 01795d9e086e  DOMAIN,speedtest.mvdsl.com
+  + [SukkaW Speedtest Servers International] 026e44155485  DOMAIN,stnanaimowireless.rogers.com
+  + [SukkaW Speedtest Servers International] 06233ead16e3  DOMAIN,speedtest.phoenix.xiber.net
+  + [SukkaW Speedtest Servers International] 0800ee424fae  DOMAIN,speedtest.frontlineinternetservices.com
+  + [SukkaW Speedtest Servers International] 082c5acfbfb8  DOMAIN,spd-sndgcajw.wyyerd.io
+  + [SukkaW Speedtest Servers International] 094cf4e8e364  DOMAIN,speedtest02.coppernet.net
+  + [SukkaW Speedtest Servers International] 0d0d03558cd2  DOMAIN,speed1.tij.attmex.mx
+  + [SukkaW Speedtest Servers International] 0d3dfe4cb10b  DOMAIN,speedtest.valleycom.com
+  + [SukkaW Speedtest Servers International] 0da9f0879dcc  DOMAIN,speedtestbirpara.meghbelabroadband.in
+  + [SukkaW Speedtest Servers International] 0dbbbe7da5ea  DOMAIN,speedtest.wnmc.com
+  + [SukkaW Speedtest Servers International] 0f0b324eafca  DOMAIN,speed.webseitenserver.com
+  + [SukkaW Speedtest Servers International] 120ef88aa2bc  DOMAIN,stsurreywireless.rogers.com
+  + [SukkaW Speedtest Servers International] 15c5e928553f  DOMAIN,spd1.m5hosting.com
+  + [SukkaW Speedtest Servers International] 179230a805a0  DOMAIN,speedtest.tularosa.net
+  + [SukkaW Speedtest Servers International] 18669947d48d  DOMAIN,speedtest.ed.shawcable.net
+  + [SukkaW Speedtest Servers International] 188233ec18b6  DOMAIN,laxir0008speedtestserver01.wiline.com
+  + [SukkaW Speedtest Servers International] 196d8e7f4c77  DOMAIN,lsv11-speedtest01.as15108.com
+  + [SukkaW Speedtest Servers International] 1aab8ac0b3c7  DOMAIN,speedtest-sd-da1.scalematrix.com
+  + [SukkaW Speedtest Servers International] 1c1d5c307d85  DOMAIN,nl.itdatatelecom.ro
+  + [SukkaW Speedtest Servers International] 204ec11570c5  DOMAIN,spt-noc.umal-nds.com
+  + [SukkaW Speedtest Servers International] 20b5384a3b6f  DOMAIN,stlethbridgewireless.rogers.com
+  + [SukkaW Speedtest Servers International] 2287e9ddefd2  DOMAIN,stcalgarywireless.rogers.com
+  + [SukkaW Speedtest Servers International] 22a64e3ce5a5  DOMAIN,speedtest.skybbservices.com
+  + [SukkaW Speedtest Servers International] 22ba33ffb1f2  DOMAIN,acrenettecnologia.brsserver.com.br
+  + [SukkaW Speedtest Servers International] 23ab4abca32e  DOMAIN,speedtest.phoenixnap.com
+  + [SukkaW Speedtest Servers International] 23b5aa93110d  DOMAIN,sp1.semfronteiras.net.br
+  + [SukkaW Speedtest Servers International] 246e115e5220  DOMAIN,srv1297868.hstgr.cloud
+  + [SukkaW Speedtest Servers International] 296c2479f156  DOMAIN,speedtest.3dprintingduo.ca
+  + [SukkaW Speedtest Servers International] 297f9b1bd0a2  DOMAIN,speedtest.server.battern.eu
+  + [SukkaW Speedtest Servers International] 2b2178711627  DOMAIN,speedtest.sinetonline.net
+  + [SukkaW Speedtest Servers International] 2b71ebccbca0  DOMAIN,speedtest.jackrabbitwireless.com
+  + [SukkaW Speedtest Servers International] 2bf6e39176af  DOMAIN,spd01-monr-ca.gigglefiber.com
+  + [SukkaW Speedtest Servers International] 2c906a0d677f  DOMAIN,kmlpbcnu-speedtest-01.telus.com
+  + [SukkaW Speedtest Servers International] 2ed4e4b680a5  DOMAIN,sptst1.ntua.net
+  + [SukkaW Speedtest Servers International] 2ff46c1e7e09  DOMAIN,speedtesttucson.arkdnacloud.com
+  + [SukkaW Speedtest Servers International] 31c231df84b9  DOMAIN,speedtest5.nmsurf.com
+  + [SukkaW Speedtest Servers International] 328d6a694672  DOMAIN,riospeedtest.rconnects.com
+  + [SukkaW Speedtest Servers International] 333696efac80  DOMAIN,speedtest.meghlink.com
+  + [SukkaW Speedtest Servers International] 33607daf687c  DOMAIN,santaclara-speedtest.utopiafiber.com
+  + [SukkaW Speedtest Servers International] 365fc1f3200d  DOMAIN,speedtest3.sasknet.sk.ca
+  + [SukkaW Speedtest Servers International] 36b21f97c505  DOMAIN,speedtest4.plateautel.net
+  + [SukkaW Speedtest Servers International] 385ceaa782b7  DOMAIN,speedtest.csfibernet.in
+  + [SukkaW Speedtest Servers International] 3e5e286668c0  DOMAIN,speedtest.symbiosbroadband.net
+  + [SukkaW Speedtest Servers International] 404a159ee121  DOMAIN,avspeedtest.apfutura.net
+  + [SukkaW Speedtest Servers International] 4442ff60c35a  DOMAIN,speedtest.ftmojave.net
+  + [SukkaW Speedtest Servers International] 451355c159de  DOMAIN,speedtest-az.bambroadband.com
+  + [SukkaW Speedtest Servers International] 457c7c64a7cb  DOMAIN,prescott1.cabospeed.com
+  + [SukkaW Speedtest Servers International] 45f4d00908d6  DOMAIN,speedtest-2.hynetwifi.it
+  + [SukkaW Speedtest Servers International] 4711a85a14ce  DOMAIN,speedtest.cdpalace.in
+  + [SukkaW Speedtest Servers International] 497d447ac483  DOMAIN,speedtest.gilarivertel.com
+  + [SukkaW Speedtest Servers International] 4c343b690433  DOMAIN,speedtest4.ezeefiber.net
+  + [SukkaW Speedtest Servers International] 4ff867dabe73  DOMAIN,speedtestslg.alliancebroadband.in
+  + [SukkaW Speedtest Servers International] 51ab10282432  DOMAIN,speedtest.infowest.com
+  + [SukkaW Speedtest Servers International] 5356e4886192  DOMAIN,speedtesthost.sasknet.sk.ca
+  + [SukkaW Speedtest Servers International] 53e6f989e749  DOMAIN,riorancho1.cabospeed.com
+  + [SukkaW Speedtest Servers International] 56784b2201f6  DOMAIN,spd-phnhazva.wyyerd.io
+  + [SukkaW Speedtest Servers International] 58514000804b  DOMAIN,slgrooklaspeed1.jioconnect.com
+  + [SukkaW Speedtest Servers International] 58d5ea3bc911  DOMAIN,speedtest.gv.shawcable.net
+  + [SukkaW Speedtest Servers International] 5ee6efe075b3  DOMAIN,speedtest.ngcbroadband.com
+  + [SukkaW Speedtest Servers International] 5fbb145eb5ba  DOMAIN,speedtest.kouten.barcelona
+  + [SukkaW Speedtest Servers International] 62a3774a6ad0  DOMAIN,velocimetro-rbo.virtua.com.br
+  + [SukkaW Speedtest Servers International] 646f766c0f34  DOMAIN,speedtest.unmbroadbandservice.com
+  + [SukkaW Speedtest Servers International] 658a714cbecd  DOMAIN,sp1.contilnet.net
+  + [SukkaW Speedtest Servers International] 67a9c4720203  DOMAIN,speedtest.skaybroadband.com
+  + [SukkaW Speedtest Servers International] 6992afbc4517  DOMAIN,phoenix1.cabospeed.com
+  + [SukkaW Speedtest Servers International] 69eb17adddcb  DOMAIN,sp1.socen.com
+  + [SukkaW Speedtest Servers International] 6b49fe0152c9  DOMAIN,spd49.claro.com.br
+  + [SukkaW Speedtest Servers International] 6be2d4ce5009  DOMAIN,lv-ookla.geolinks.com
+  + [SukkaW Speedtest Servers International] 7234c43482c2  DOMAIN,speedtest.ioflood.com
+  + [SukkaW Speedtest Servers International] 723b77b1998b  DOMAIN,speedtestalbq.vexusfiber.com
+  + [SukkaW Speedtest Servers International] 73e966caf50f  DOMAIN,spd-phnxaz19.wyyerd.io
+  + [SukkaW Speedtest Servers International] 7737d7921c63  DOMAIN,sp2.semfronteiras.net.br
+  + [SukkaW Speedtest Servers International] 7785c86daf50  DOMAIN,speedtest.sizatek.com
+  + [SukkaW Speedtest Servers International] 77de3e0d51c6  DOMAIN,test.beamtelecom.com.br
+  + [SukkaW Speedtest Servers International] 78bb50fdaca3  DOMAIN,velocimetro.govistabr.com.br
+  + [SukkaW Speedtest Servers International] 79fd2808f8ae  DOMAIN,speedtest-jgn.galaxynet.in
+  + [SukkaW Speedtest Servers International] 7a26c3838cf7  DOMAIN,speedtest.centralnetprovedor.net.br
+  + [SukkaW Speedtest Servers International] 7b2b5f1619fb  DOMAIN,karnal.sitibroadband.co.in
+  + [SukkaW Speedtest Servers International] 7dbab91ba126  DOMAIN,urbanonet.brsserver.com.br
+  + [SukkaW Speedtest Servers International] 7dca5c54a963  DOMAIN,sp2.janusnetworks.com
+  + [SukkaW Speedtest Servers International] 801ce09cf1ca  DOMAIN,sp3.basinbroadband.ca
+  + [SukkaW Speedtest Servers International] 802f6bb88d3d  DOMAIN,speedtestversatile.meghbelabroadband.in
+  + [SukkaW Speedtest Servers International] 80c21f51b1f6  DOMAIN,hv1.juce.ca
+  + [SukkaW Speedtest Servers International] 80cf33496fd0  DOMAIN,albuquerque-speedtest.sacredwindcommunications.com
+  + [SukkaW Speedtest Servers International] 85f05b1c6e98  DOMAIN,speedtest.sandiego.intrepidfiber.com
+  + [SukkaW Speedtest Servers International] 86b2648630aa  DOMAIN,speedtest.galaxynet.in
+  + [SukkaW Speedtest Servers International] 8772dc923cf5  DOMAIN,speed-mix.dispaisy.systems
+  + [SukkaW Speedtest Servers International] 8aa82b71346f  DOMAIN,phxme0001speedtestserver01.wiline.com
+  + [SukkaW Speedtest Servers International] 8b7395bbac45  DOMAIN,speedtest.itel.com
+  + [SukkaW Speedtest Servers International] 8ea05c1355ab  DOMAIN,speedtest.phx01.orion.cloud
+  + [SukkaW Speedtest Servers International] 948613aff3c2  DOMAIN,speedtest.slbcloud.fr
+  + [SukkaW Speedtest Servers International] 94fdcc0dc761  DOMAIN,speedtest2.stadtwerke-neustrelitz.de
+  + [SukkaW Speedtest Servers International] 97028d6652ce  DOMAIN,speedtest.isp.net
+  + [SukkaW Speedtest Servers International] 98c6fac34a5e  DOMAIN,speedtest.redbirdcommunications.ca
+  + [SukkaW Speedtest Servers International] 98f59894be21  DOMAIN,speedtestjmu.airtel.in
+  + [SukkaW Speedtest Servers International] 992aa80d00ff  DOMAIN,speed.malang.net.in
+  + [SukkaW Speedtest Servers International] 99d636115e4d  DOMAIN,speedtest.kdatacenter.com
+  + [SukkaW Speedtest Servers International] 9a296f486a45  DOMAIN,speedtest.pr.citywest.ca
+  + [SukkaW Speedtest Servers International] 9b18ba884456  DOMAIN,sp1.mnetconnect.in
+  + [SukkaW Speedtest Servers International] 9be14240b3cc  DOMAIN,stedmontonwireless.rogers.com
+  ... and 58 more
 ```
 
-**Removed: 135** (showing first 100)
+**Removed: 172** (showing first 100)
 ```
-  - [SukkaW Speedtest Servers International] 010770237191  DOMAIN,stscarborough.rogers.com
-  - [SukkaW Speedtest Servers International] 01d06b461e5c  DOMAIN,speedtest.readingsd.org
-  - [SukkaW Speedtest Servers International] 0811cb3546c0  DOMAIN,stwellandpelhamwireless.rogers.com
-  - [SukkaW Speedtest Servers International] 0df919f8f00e  DOMAIN,speedtest.nrflvaaa.metronetinc.com
-  - [SukkaW Speedtest Servers International] 0ef16a17f7b4  DOMAIN,stbowmanville.rogers.com
-  - [SukkaW Speedtest Servers International] 0f56643c702c  DOMAIN,stosat-crls-01.sys.comcast.net
-  - [SukkaW Speedtest Servers International] 1179f68f6982  DOMAIN,va-speed.magna5.com
-  - [SukkaW Speedtest Servers International] 1239ddbeead0  DOMAIN,speed13.gonetspeed.com
-  - [SukkaW Speedtest Servers International] 129fa7cf52e5  DOMAIN,speedtest-newjersey.ripplefiber.com
-  - [SukkaW Speedtest Servers International] 16744b51f48f  DOMAIN,speedtest-ash.vts.bf
-  - [SukkaW Speedtest Servers International] 181f2fd1cbb5  DOMAIN,speedtest.iad.fdcservers.net
-  - [SukkaW Speedtest Servers International] 19d98c644b57  DOMAIN,speedtest-iad.sectrify.com
-  - [SukkaW Speedtest Servers International] 1b53005476d3  DOMAIN,speedtest.nrbn.ca
-  - [SukkaW Speedtest Servers International] 1c1d5c307d85  DOMAIN,nl.itdatatelecom.ro
-  - [SukkaW Speedtest Servers International] 1dd706232871  DOMAIN,speed10.aitspl.in
-  - [SukkaW Speedtest Servers International] 1e3705ee2fe6  DOMAIN,speedtest.oceansls.com
-  - [SukkaW Speedtest Servers International] 204ec11570c5  DOMAIN,spt-noc.umal-nds.com
-  - [SukkaW Speedtest Servers International] 23d5bd5a13bc  DOMAIN,speedtest.gretna.myriverstreet.net
-  - [SukkaW Speedtest Servers International] 289a44e7222d  DOMAIN,speedtest.sea.aixxycode.id
-  - [SukkaW Speedtest Servers International] 30df7f1427c6  DOMAIN,speedtest.ette.biz
-  - [SukkaW Speedtest Servers International] 31b44124210f  DOMAIN,stosat-smil-01.sys.comcast.net
-  - [SukkaW Speedtest Servers International] 3263111286ae  DOMAIN,speedtest-zion.fireflyva.com
-  - [SukkaW Speedtest Servers International] 32c503790c60  DOMAIN,speedtest3.ptd.net
-  - [SukkaW Speedtest Servers International] 33041c0f7fd7  DOMAIN,stbowmanville.netcrawler.ca
-  - [SukkaW Speedtest Servers International] 3459aa77ed16  DOMAIN,speedtest.macapatelecom.net.br
-  - [SukkaW Speedtest Servers International] 369df213d503  DOMAIN,nycmetro-speedtest.reliablesite.net
-  - [SukkaW Speedtest Servers International] 3a8aec9cda98  DOMAIN,speedtest-zl-1.zoominternet.net
-  - [SukkaW Speedtest Servers International] 3d35921f1642  DOMAIN,clg-105-sptest.ncri.com
-  - [SukkaW Speedtest Servers International] 3e7bf0bd143d  DOMAIN,speedtest1.ewr.nj.us.planet.net
-  - [SukkaW Speedtest Servers International] 414c35bf776f  DOMAIN,speedtest.us.novoserve.com
-  - [SukkaW Speedtest Servers International] 42db00569c58  DOMAIN,speedtest.getwireless.net
-  - [SukkaW Speedtest Servers International] 44e1fd099c78  DOMAIN,speedtest.sc1.loopinternet.com
-  - [SukkaW Speedtest Servers International] 4502550a3a9c  DOMAIN,wpa-speed.magna5.com
-  - [SukkaW Speedtest Servers International] 4571f1abe520  DOMAIN,speedtestmacapa.webflash.net.br
-  - [SukkaW Speedtest Servers International] 45f4d00908d6  DOMAIN,speedtest-2.hynetwifi.it
-  - [SukkaW Speedtest Servers International] 473f9b45897a  DOMAIN,speedtest.winchesterwireless.com
-  - [SukkaW Speedtest Servers International] 49f2fe815df7  DOMAIN,speed.markham.telmax.ca
-  - [SukkaW Speedtest Servers International] 49ffc4a2950e  DOMAIN,stoshawa.netcrawler.ca
-  - [SukkaW Speedtest Servers International] 4f8818240273  DOMAIN,stosat-plfi-08p.sys.comcast.net
-  - [SukkaW Speedtest Servers International] 5193c8145d68  DOMAIN,crls-speedtest-02.brightspeed.com
-  - [SukkaW Speedtest Servers International] 52a89dbdad82  DOMAIN,speedtest.us-ny2.kamatera.com
-  - [SukkaW Speedtest Servers International] 52ea711702a9  DOMAIN,speedtestnorthpointe.arkdnacloud.com
-  - [SukkaW Speedtest Servers International] 5540cc8e3bac  DOMAIN,stetobicoke.rogers.com
-  - [SukkaW Speedtest Servers International] 5559912850cd  DOMAIN,speedtest.belmontcountygig.com
-  - [SukkaW Speedtest Servers International] 55c0cb8dcbb9  DOMAIN,speedtest2.pa.mycci.net
-  - [SukkaW Speedtest Servers International] 57cfe7333ea8  DOMAIN,fast.blackbearfiber.com
-  - [SukkaW Speedtest Servers International] 5893bd721aca  DOMAIN,stnorthyork.netcrawler.ca
-  - [SukkaW Speedtest Servers International] 5ab2e37aaffc  DOMAIN,speedtest31.suddenlink.net
-  - [SukkaW Speedtest Servers International] 60ac93c18792  DOMAIN,stscarborough.netcrawler.ca
-  - [SukkaW Speedtest Servers International] 615ab422b360  DOMAIN,btlr-speedtest-02.brightspeed.com
-  - [SukkaW Speedtest Servers International] 6240dc262b53  DOMAIN,speedtest1.whsdk12.net
-  - [SukkaW Speedtest Servers International] 625966c841d3  DOMAIN,speedtest1.ric1.va.hostedbackbone.net
-  - [SukkaW Speedtest Servers International] 626849c0a751  DOMAIN,st1.worldfibernet.com
-  - [SukkaW Speedtest Servers International] 6722a4f62ff8  DOMAIN,stbowmanvillewireless.rogers.com
-  - [SukkaW Speedtest Servers International] 67382fe7fa61  DOMAIN,stoshawa.rogers.com
-  - [SukkaW Speedtest Servers International] 6846a38f9372  DOMAIN,speedtest.asbn.va.wtsky.net
-  - [SukkaW Speedtest Servers International] 68c6eb173f83  DOMAIN,asbn-speedtest.northstate.net
-  - [SukkaW Speedtest Servers International] 698bcfb1bb21  DOMAIN,speedtest-preston-wv.prodigiwv.net
-  - [SukkaW Speedtest Servers International] 6aafcc1f0064  DOMAIN,speedtest.americatelecom.net.br
-  - [SukkaW Speedtest Servers International] 6b8f1c9f7c44  DOMAIN,stajax.rogers.com
-  - [SukkaW Speedtest Servers International] 6ef5f28df61c  DOMAIN,ookla.aeq.as6453.net
-  - [SukkaW Speedtest Servers International] 74a6d6e46908  DOMAIN,speedtest.wb1.loopinternet.com
-  - [SukkaW Speedtest Servers International] 7625db817368  DOMAIN,speedtest1.iad1-us.gozfly.net
-  - [SukkaW Speedtest Servers International] 77cb389996a6  DOMAIN,speedtest-bethlehem.greenlightnetworks.com
-  - [SukkaW Speedtest Servers International] 77e56dc99c59  DOMAIN,cltn-speedtest-02.brightspeed.com
-  - [SukkaW Speedtest Servers International] 7c4e62477d2e  DOMAIN,speedtest.zoominternet.net
-  - [SukkaW Speedtest Servers International] 7de305557319  DOMAIN,altoonaspeedtest.crowsnestbb.net
-  - [SukkaW Speedtest Servers International] 8141004af16b  DOMAIN,speedtest02.srv.prnynj.alticeusa.net
-  - [SukkaW Speedtest Servers International] 83e830bbc65c  DOMAIN,speedtest4.point-broadband.com
-  - [SukkaW Speedtest Servers International] 8487be6e6d95  DOMAIN,speedtest.mifflincountywireless.com
-  - [SukkaW Speedtest Servers International] 85b7f8f6df4c  DOMAIN,spd79.claro.com.br
-  - [SukkaW Speedtest Servers International] 8632dbc95ac0  DOMAIN,stnorthyorkwireless.rogers.com
-  - [SukkaW Speedtest Servers International] 8772dc923cf5  DOMAIN,speed-mix.dispaisy.systems
-  - [SukkaW Speedtest Servers International] 894527aa356c  DOMAIN,lsdspeed01.lsdops.net
-  - [SukkaW Speedtest Servers International] 8fd05fb4ff7e  DOMAIN,speedtest19.suddenlink.net
-  - [SukkaW Speedtest Servers International] 90617691e3af  DOMAIN,stwhitby.netcrawler.ca
-  - [SukkaW Speedtest Servers International] 910cf0769104  DOMAIN,speedtest-nwrk-nj.wtsky.net
-  - [SukkaW Speedtest Servers International] 9138c74c88d2  DOMAIN,vaspeedtest.rackdog.com
-  - [SukkaW Speedtest Servers International] 938f4673095b  DOMAIN,speedtest.cloudwifi.ca
-  - [SukkaW Speedtest Servers International] 948613aff3c2  DOMAIN,speedtest.slbcloud.fr
-  - [SukkaW Speedtest Servers International] 9660747a5a08  DOMAIN,speed01.gonetspeed.com
-  - [SukkaW Speedtest Servers International] 96e24c3aaac2  DOMAIN,stoshawawireless.rogers.com
-  - [SukkaW Speedtest Servers International] 995889b17f13  DOMAIN,lsdspeed02.lsdops.net
-  - [SukkaW Speedtest Servers International] 9b36e6ace41e  DOMAIN,phlph0001speedtestserver02.wiline.com
-  - [SukkaW Speedtest Servers International] 9c36ab36b132  DOMAIN,phl01.screenshot.download
-  - [SukkaW Speedtest Servers International] 9ee8a1734e62  DOMAIN,speedtest2.sistelfibra.es
-  - [SukkaW Speedtest Servers International] 9f094a91d810  DOMAIN,ookla.micrologicwv.com
-  - [SukkaW Speedtest Servers International] 9f6b30de3d0b  DOMAIN,speedtest-server-ash.starry.com
-  - [SukkaW Speedtest Servers International] a3af5d6b404f  DOMAIN,speedtest.jasmyrahnetworks.com
-  - [SukkaW Speedtest Servers International] a563c1add0ad  DOMAIN,speedtestsgc.csmtelecom.net.br
-  - [SukkaW Speedtest Servers International] b06e6a3b7c0f  DOMAIN,speedtest.philasd.org
-  - [SukkaW Speedtest Servers International] b0cc745d6216  DOMAIN,stosat-balt-01.sys.comcast.net
-  - [SukkaW Speedtest Servers International] b4f4faf0a782  DOMAIN,speedtest.fiberlync.net
-  - [SukkaW Speedtest Servers International] b577445ffd28  DOMAIN,ookla-mgw.wvnet.edu
-  - [SukkaW Speedtest Servers International] b7070e1bfc5d  DOMAIN,speedtest.internetsubway.com
-  - [SukkaW Speedtest Servers International] b73df15da330  DOMAIN,stetobicoke.netcrawler.ca
-  - [SukkaW Speedtest Servers International] b7ea0351589f  DOMAIN,speedtest.revolutionbroadband.net
-  - [SukkaW Speedtest Servers International] b7ff9d48bf4d  DOMAIN,ststcatharineswireless.rogers.com
-  - [SukkaW Speedtest Servers International] b8002d9cf7f6  DOMAIN,ookla1.talkiefiber.com
-  - [SukkaW Speedtest Servers International] b868fcdc5518  DOMAIN,ookla01.citynet.net
-  ... and 35 more
+  - [SukkaW Speedtest Servers International] 00f2d0dd6105  DOMAIN,stmilton.rogers.com
+  - [SukkaW Speedtest Servers International] 02b7b422882f  DOMAIN,speedtest.sentco.net
+  - [SukkaW Speedtest Servers International] 02d48045e4e3  DOMAIN,speed12.gonetspeed.com
+  - [SukkaW Speedtest Servers International] 030afc0d216e  DOMAIN,sthamiltonwireless.rogers.com
+  - [SukkaW Speedtest Servers International] 04035c8d3237  DOMAIN,speedtest.sonepat.softechinfosol.com
+  - [SukkaW Speedtest Servers International] 04df25e28545  DOMAIN,speedtest.premieronline.net
+  - [SukkaW Speedtest Servers International] 0556791063c8  DOMAIN,speedtest.agw2.as49436.net
+  - [SukkaW Speedtest Servers International] 09ea1f14ec9f  DOMAIN,ooklatins.redeconexaonet.com
+  - [SukkaW Speedtest Servers International] 0b00a0c18982  DOMAIN,speed.alliedcorporation.co.in
+  - [SukkaW Speedtest Servers International] 12ca2bed9dbb  DOMAIN,speedtest.atccomm.net
+  - [SukkaW Speedtest Servers International] 13dc2485ab95  DOMAIN,speedtest.heartofiowa.coop
+  - [SukkaW Speedtest Servers International] 13ec769f6db0  DOMAIN,speedtest.bakcom.in
+  - [SukkaW Speedtest Servers International] 14696c5e4444  DOMAIN,speedtest.cmltelephone.com
+  - [SukkaW Speedtest Servers International] 166d738a2294  DOMAIN,speedtest.toshamisp.com
+  - [SukkaW Speedtest Servers International] 1683191aa4e7  DOMAIN,stwoodstock.rogers.com
+  - [SukkaW Speedtest Servers International] 180017a0d2ce  DOMAIN,stmiltonwireless.rogers.com
+  - [SukkaW Speedtest Servers International] 189c17014e83  DOMAIN,speedtest.amesiaaa.metronetinc.com
+  - [SukkaW Speedtest Servers International] 1cfb48abbf36  DOMAIN,speedtest.grm.net
+  - [SukkaW Speedtest Servers International] 1debbecee8c5  DOMAIN,speedtest.cstech.com
+  - [SukkaW Speedtest Servers International] 1e9ede2ea46b  DOMAIN,speedtest.westianet.com
+  - [SukkaW Speedtest Servers International] 238c177c28d4  DOMAIN,speedtest.maisnetfibra.net.br
+  - [SukkaW Speedtest Servers International] 2893bfbf70c6  DOMAIN,speedtest.fibernetics.ca
+  - [SukkaW Speedtest Servers International] 29b41f696150  DOMAIN,speedtest.xxlnet.nl
+  - [SukkaW Speedtest Servers International] 2ab9b0da9911  DOMAIN,lcrs-speedtest-02.brightspeed.com
+  - [SukkaW Speedtest Servers International] 2c4e9bf40557  DOMAIN,velocity.softtelecom.net.br
+  - [SukkaW Speedtest Servers International] 2ddb34614d29  DOMAIN,speedtest2.digimobil.es
+  - [SukkaW Speedtest Servers International] 304d2683e43f  DOMAIN,speedtest.skywaveconnect.com
+  - [SukkaW Speedtest Servers International] 3307fbfaba51  DOMAIN,st3.surajnetwork.com
+  - [SukkaW Speedtest Servers International] 34d320d8b02f  DOMAIN,speedtest.mdtc.net
+  - [SukkaW Speedtest Servers International] 3556421114ed  DOMAIN,sthamilton.netcrawler.ca
+  - [SukkaW Speedtest Servers International] 36366555a5b5  DOMAIN,ookla.mu.as6453.net
+  - [SukkaW Speedtest Servers International] 373316f1139e  DOMAIN,ookla.soc.atharva.co.id
+  - [SukkaW Speedtest Servers International] 3a92209ad6ba  DOMAIN,speedtest-01.omnitel.biz
+  - [SukkaW Speedtest Servers International] 3a97abf4595c  DOMAIN,speedtest1.oma.nxlink.com
+  - [SukkaW Speedtest Servers International] 3b0dc040ff61  DOMAIN,speed.nutelecom.com
+  - [SukkaW Speedtest Servers International] 3ddb6b00187f  DOMAIN,stoakville.rogers.com
+  - [SukkaW Speedtest Servers International] 3ee34e80fced  DOMAIN,speedtest.dvnpiaaa.metronetinc.com
+  - [SukkaW Speedtest Servers International] 3f2a1255658c  DOMAIN,blfd-speed-01.gpcom.com
+  - [SukkaW Speedtest Servers International] 3f7075e220a1  DOMAIN,ksczks-speedtest-ookla-01.st.charter.com
+  - [SukkaW Speedtest Servers International] 3f8306542a0b  DOMAIN,stsudburywireless.rogers.com
+  - [SukkaW Speedtest Servers International] 41bc4d2333e5  DOMAIN,speedtest.cvalley.net
+  - [SukkaW Speedtest Servers International] 41d750ea2dcd  DOMAIN,speedtest.jvswifi.com.br
+  - [SukkaW Speedtest Servers International] 45ed5f3bd479  DOMAIN,speedtest.tcaexpress.net
+  - [SukkaW Speedtest Servers International] 48e2d32a2895  DOMAIN,speedtest.cascadecomm.com
+  - [SukkaW Speedtest Servers International] 499c1e741ef8  DOMAIN,asanet1.brsserver.com.br
+  - [SukkaW Speedtest Servers International] 4bbf2a0a0fa3  DOMAIN,speedtest.mysmbs.com
+  - [SukkaW Speedtest Servers International] 4bc2ef4606ca  DOMAIN,st-oma-1.binary.net
+  - [SukkaW Speedtest Servers International] 4bc5bacc9435  DOMAIN,sp2.fibreair.in
+  - [SukkaW Speedtest Servers International] 4c8fd6b2f3f6  DOMAIN,ookla-ks.mercuryfiber.com
+  - [SukkaW Speedtest Servers International] 4fa503514189  DOMAIN,speedtest.packetworks.net
+  - [SukkaW Speedtest Servers International] 50b8b3905b2f  DOMAIN,speedtest.absenterprises.co.in
+  - [SukkaW Speedtest Servers International] 51219317246c  DOMAIN,speedtest.gmtel.net
+  - [SukkaW Speedtest Servers International] 520fc7617d3b  DOMAIN,speed-oak.systemlifeline.com
+  - [SukkaW Speedtest Servers International] 565ea387b1e5  DOMAIN,speedtest.cfu.net
+  - [SukkaW Speedtest Servers International] 56ca52c088ca  DOMAIN,speedtest.cogeco.ca
+  - [SukkaW Speedtest Servers International] 58e6d169adef  DOMAIN,speedtest.esu5.org
+  - [SukkaW Speedtest Servers International] 59f0ec25e179  DOMAIN,blar-speed-01.gpcom.com
+  - [SukkaW Speedtest Servers International] 5a8191463e31  DOMAIN,stmississauga.netcrawler.ca
+  - [SukkaW Speedtest Servers International] 5c6e09ea3600  DOMAIN,speedtest.stradacomm.com
+  - [SukkaW Speedtest Servers International] 5d91b2e1e426  DOMAIN,stgeorgetownwireless.rogers.com
+  - [SukkaW Speedtest Servers International] 5f3fcd920887  DOMAIN,speedtest.ncn.net
+  - [SukkaW Speedtest Servers International] 605cfb35f522  DOMAIN,speedtest.mci.as1003.net
+  - [SukkaW Speedtest Servers International] 64a7282a2dd7  DOMAIN,speed.coe.ad.jp
+  - [SukkaW Speedtest Servers International] 67fb222e7169  DOMAIN,stbrampton.rogers.com
+  - [SukkaW Speedtest Servers International] 69cac5e64f73  DOMAIN,stbrantfordwireless.rogers.com
+  - [SukkaW Speedtest Servers International] 6f3628eaf259  DOMAIN,stkitchener.rogers.com
+  - [SukkaW Speedtest Servers International] 6ff5941eb406  DOMAIN,exc-speedtest.unitedfiber.com
+  - [SukkaW Speedtest Servers International] 75e802499b21  DOMAIN,stbrampton.netcrawler.ca
+  - [SukkaW Speedtest Servers International] 761a11540f93  DOMAIN,siouxcity1.cabospeed.com
+  - [SukkaW Speedtest Servers International] 7a4042ca0d6f  DOMAIN,stbarriewireless.rogers.com
+  - [SukkaW Speedtest Servers International] 7a55e968bb85  DOMAIN,speedtest.unitedfiber.com
+  - [SukkaW Speedtest Servers International] 7bdc14806a7c  DOMAIN,speedtest.wccta.com
+  - [SukkaW Speedtest Servers International] 7d5bedcb3b73  DOMAIN,speedtest.routinger.com.br
+  - [SukkaW Speedtest Servers International] 7ea92d713139  DOMAIN,speedtest.rochmnaa.metronetinc.com
+  - [SukkaW Speedtest Servers International] 7f8672568a56  DOMAIN,speed-miss.systemlifeline.com
+  - [SukkaW Speedtest Servers International] 809ed12ed910  DOMAIN,speedtest.nemr.net
+  - [SukkaW Speedtest Servers International] 84b8446a854b  DOMAIN,speedtest10g.ics-llc.net
+  - [SukkaW Speedtest Servers International] 857286bf9876  DOMAIN,fwnetwork.brsserver.com.br
+  - [SukkaW Speedtest Servers International] 86f4178b9153  DOMAIN,speedtest.fibercomm.net
+  - [SukkaW Speedtest Servers International] 87268ce3261b  DOMAIN,teste.routinger.com.br
+  - [SukkaW Speedtest Servers International] 8764399208a4  DOMAIN,speedtest.msnetworks.in
+  - [SukkaW Speedtest Servers International] 87a9233f0df1  DOMAIN,383-2speedtest.wightman.ca
+  - [SukkaW Speedtest Servers International] 890fa3aca5ec  DOMAIN,speedtest.orixinet.com.br
+  - [SukkaW Speedtest Servers International] 8c9d7c03fa30  DOMAIN,speedtest27.suddenlink.net
+  - [SukkaW Speedtest Servers International] 8cfc393702b7  DOMAIN,speedtest.kc2.everfastfiber.com
+  - [SukkaW Speedtest Servers International] 8e36c5eb6ca2  DOMAIN,speedtest2.micronet.in
+  - [SukkaW Speedtest Servers International] 8f062e512925  DOMAIN,speedtestsonipat.kkdbroadband.co.in
+  - [SukkaW Speedtest Servers International] 905125f73ee5  DOMAIN,speedtest.mvec.com
+  - [SukkaW Speedtest Servers International] 9052a64cc3fd  DOMAIN,speedtest25.wiatel.com
+  - [SukkaW Speedtest Servers International] 9073adefc65d  DOMAIN,speedtest.neitel.net
+  - [SukkaW Speedtest Servers International] 92e005ab26ce  DOMAIN,medidor.nortelecom.com.br
+  - [SukkaW Speedtest Servers International] 93617c692bd8  DOMAIN,ookla.mci-1.serverforge.org
+  - [SukkaW Speedtest Servers International] 96692f154a26  DOMAIN,veloteste.mrjomar.com.br
+  - [SukkaW Speedtest Servers International] 9868c3f8fedf  DOMAIN,speedtest.s3rdv.com
+  - [SukkaW Speedtest Servers International] 991108b39981  DOMAIN,speedtest.mtctech.net
+  - [SukkaW Speedtest Servers International] 99246723a229  DOMAIN,speedtest-mci-01.pdx.net.uk
+  - [SukkaW Speedtest Servers International] 9ef50333ec52  DOMAIN,speedtestmoh1.airtelbroadband.in
+  - [SukkaW Speedtest Servers International] 9fc768aebccf  DOMAIN,speedtest.nexgencom.com
+  - [SukkaW Speedtest Servers International] a03e396de9e0  DOMAIN,mib-rst-sp1.mibroadband.com
+  - [SukkaW Speedtest Servers International] a0e06516e4c5  DOMAIN,speedtest2.rainbowtel.net
+  ... and 72 more
 ```

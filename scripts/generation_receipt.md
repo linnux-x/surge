@@ -1,26 +1,26 @@
 # Surge 规则生成收据
 
 - 规则文件：26
-- 规则总数：159708
+- 规则总数：159695
 - manifest 文件：26
 
 ## 差异摘要
 
-- 新增：160
-- 删除：135
+- 新增：159
+- 删除：172
 - 来源迁移：0
 
 ## Clash 兼容性
 
-- 生成 payload：159525
+- 生成 payload：159512
 - 跳过 Surge 专属规则：{'URL-REGEX': 5, 'USER-AGENT': 178}
 - 保留 mihomo 扩展类型：{'DOMAIN-WILDCARD': 2, 'IP-ASN': 9, 'PROCESS-NAME': 58}
 
 ## 规则类型
 
-- DOMAIN: 3637
+- DOMAIN: 3623
 - DOMAIN-KEYWORD: 95
-- DOMAIN-SUFFIX: 141864
+- DOMAIN-SUFFIX: 141865
 - DOMAIN-WILDCARD: 2
 - IP-ASN: 9
 - IP-CIDR: 9523
@@ -48,7 +48,7 @@
 - SukkaW Microsoft CDN: 53
 - SukkaW Speedtest: 122
 - SukkaW Speedtest Servers China: 1
-- SukkaW Speedtest Servers International: 1600
+- SukkaW Speedtest Servers International: 1586
 - Telegram Official CIDR: 11
 - blackmatrix7 Apple: 1546
 - blackmatrix7 China IPs: 4031
@@ -58,7 +58,7 @@
 - blackmatrix7 Disney: 166
 - blackmatrix7 Facebook: 570
 - blackmatrix7 Game: 549
-- blackmatrix7 Global: 24348
+- blackmatrix7 Global: 24349
 - blackmatrix7 GlobalMedia: 2248
 - blackmatrix7 Google: 685
 - blackmatrix7 Instagram: 1

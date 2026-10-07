@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-10-04 21:58:15 +0800
+# UPDATED: 2026-10-07 09:42:25 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24363
+# TOTAL: 24364
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -6746,6 +6746,7 @@ DOMAIN-SUFFIX,googlehosted.com
 DOMAIN-SUFFIX,googleideas.com
 DOMAIN-SUFFIX,googleinsidesearch.com
 DOMAIN-SUFFIX,googlelabs.com
+DOMAIN-SUFFIX,googleplaycensorship.com
 DOMAIN-SUFFIX,googleplex.com
 DOMAIN-SUFFIX,googlesile.com
 DOMAIN-SUFFIX,googleweblight.com
