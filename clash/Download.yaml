@@ -1,7 +1,7 @@
 # Generated from Rule/Download.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-10-01 17:49:16 +0800
-# TOTAL: 1694
+# UPDATED: 2026-10-09 05:01:58 +0800
+# TOTAL: 1695
 payload:
   - 'PROCESS-NAME,aria2c'
   - 'PROCESS-NAME,fdm'
@@ -1631,6 +1631,7 @@ payload:
   - 'DOMAIN,download.technitium.com'
   - 'DOMAIN,dl.vibeisland.app'
   - 'DOMAIN,downloads.claude.ai'
+  - 'DOMAIN,releases.claude.com'
   - 'DOMAIN,persistent.oaistatic.com'
   - 'DOMAIN,planet.openstreetmap.org'
   - 'DOMAIN,download.bbbike.org'

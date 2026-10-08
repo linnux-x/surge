@@ -19,19 +19,19 @@
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
     "content_length": "4351",
-    "etag": "\"0e879556c815551cf176507364252511c883d00cabff5e3029c51a38e998474e\"",
+    "etag": "\"02e25e4c005a13bb352f32d5a2a6287c8b7b66de650c1b4680ff4434f431a9c3\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
     "content_length": "101172",
-    "etag": "\"22b11628b6afc0a7ff2667244c3cd839e26e53d664423242fbb9eccacedafd51\"",
+    "etag": "\"ec0993bb5f60c2b366aa4af719713fc56d2b69b9365087510ca29b072fb2da63\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/ChinaCIDR.list": {
     "content_length": "235182",
-    "etag": "\"958d0d9e05060f32fb35fab8202a2e4da01e681ed96bf9b42ae4b5dbfadc5be2\"",
+    "etag": "\"918ba18d792f501a63584aa375ca718724b533c0ee0c364bcf29c3a43709e290\"",
     "last_modified": null,
     "source_available": true
   },
@@ -42,14 +42,14 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaLab/speedtest-net-servers-dist/master/servers.json": {
-    "content_length": "553785",
-    "etag": "\"cf175a6d579ba92e55d4d6489b877a3b8ab2c4699ada8e8931f92113978cdbc3\"",
+    "content_length": "555177",
+    "etag": "\"740728b663230419a12090ffe1cc6e3d8ebfc96a9fadc1fd9dbec8289a2330dd\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaW/Surge/master/Source/domainset/download.conf": {
-    "content_length": "35325",
-    "etag": "\"052a45a164da9d7dfb91200a65a911991c2e8f7fe24acc05dec0fa445dd01fbc\"",
+    "content_length": "35345",
+    "etag": "\"32a6f77a0e3d91f1af839c9ad19a541a681fa5e288907343820dfa55116f1719\"",
     "last_modified": null,
     "source_available": true
   },
@@ -61,13 +61,13 @@
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All_No_Resolve.list": {
     "content_length": "51402",
-    "etag": "\"e6f0ff82404b123f587da30b97db472c243dcf309ce69ca63a3641bb8ea34ad0\"",
+    "etag": "\"6230d30d309c71eb668a8ededb1f46a6a26d523bb23db29df4fb85cc8d83bf1d\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs.list": {
-    "content_length": "692620",
-    "etag": "\"8b767df4b6a8a3a0d4dcd8d0ed7392740d82b5917b234cc5e0fd9d0e19f443b7\"",
+    "content_length": "692584",
+    "etag": "\"05ea53eb39f14a88cc42bd8395ab03b959f00d127b446429c368fb594bf41043\"",
     "last_modified": null,
     "source_available": true
   },
@@ -103,19 +103,19 @@
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list": {
     "content_length": "19223",
-    "etag": "\"595cc208b65f080249a966318e4553ac16d395877612d7181ed33426a6aa2dd1\"",
+    "etag": "\"3aa01ac8f26b59dcb7dac214c63bd74bc62ce17fe14a6deadd2860cb993e0d5a\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_All_No_Resolve.list": {
-    "content_length": "1009425",
-    "etag": "\"a9fdab47c5be50b0a14f941d4cb5ed36523f32e6124639569fc95be4c5bcfac6\"",
+    "content_length": "1010138",
+    "etag": "\"a3972cd4ce17c8cabf7c304e5978fca9269c8bd454d10125cf7ce5241fcc70f1\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalMedia/GlobalMedia_All_No_Resolve.list": {
     "content_length": "73351",
-    "etag": "\"c5c5c21eced2e0d9cd0895c5439e86a779c1fff1cb614d7486b2e3296d51fabe\"",
+    "etag": "\"a533fda64943780d1c9767158e8864ceeb89b6f250873629decf7ffa1cd071d2\"",
     "last_modified": null,
     "source_available": true
   },
@@ -228,8 +228,8 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/cdn.conf": {
-    "content_length": "3447",
-    "etag": "\"2e87dc123644bd086dd326f61b8226ce\"",
+    "content_length": null,
+    "etag": "W/\"7cc34629d4ee4865e9de5c8156f56b39\"",
     "last_modified": null,
     "source_available": true
   },
