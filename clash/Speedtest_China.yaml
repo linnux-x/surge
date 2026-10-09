@@ -1,6 +1,6 @@
 # Generated from Rule/Speedtest_China.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-10-09 05:02:03 +0800
+# UPDATED: 2026-10-10 05:02:08 +0800
 # TOTAL: 53
 payload:
   - 'DOMAIN,speedtest.dukekunshan.edu.cn'
