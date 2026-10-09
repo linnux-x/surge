@@ -6,32 +6,32 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/AI.list": {
-    "content_length": "2560",
+    "content_length": "1",
     "etag": "\"11ad29b5d2fbfc9b6ea9e32139911b56e2472f7b25fcf41c0611097ef43ce5b4\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/cncidr.txt": {
-    "content_length": "234375",
-    "etag": "\"92a40e0cae6e83157283994f32d3127e89abf9ddf56dd3482bddcc4412ca6cd0\"",
+    "content_length": "233480",
+    "etag": "\"56f95091f3be19bb008279aad9492f8fc680f38547b7589a593d7e200d4d4b7e\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
     "content_length": "4351",
-    "etag": "\"02e25e4c005a13bb352f32d5a2a6287c8b7b66de650c1b4680ff4434f431a9c3\"",
+    "etag": "\"2baf26d2c94409150ad98d40190ca55f361f59f412c69b62cb692c54e79c8849\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
     "content_length": "101172",
-    "etag": "\"ec0993bb5f60c2b366aa4af719713fc56d2b69b9365087510ca29b072fb2da63\"",
+    "etag": "\"9bcf9b806f92d0a390a44922dd3c341035f6efbdfea70e9a356212f37e3f83ba\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/ChinaCIDR.list": {
-    "content_length": "235182",
-    "etag": "\"918ba18d792f501a63584aa375ca718724b533c0ee0c364bcf29c3a43709e290\"",
+    "content_length": "234287",
+    "etag": "\"e444e27f18f32c81aa969bae2ffcce3a62da5c17357acd8b89de35627f7d4bc8\"",
     "last_modified": null,
     "source_available": true
   },
@@ -42,8 +42,8 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaLab/speedtest-net-servers-dist/master/servers.json": {
-    "content_length": "555177",
-    "etag": "\"740728b663230419a12090ffe1cc6e3d8ebfc96a9fadc1fd9dbec8289a2330dd\"",
+    "content_length": "569324",
+    "etag": "\"5946818b14fa48f2b92a251e829120dcc9b62162e382de6a2fe8f1bc0162c267\"",
     "last_modified": null,
     "source_available": true
   },
@@ -60,7 +60,7 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All_No_Resolve.list": {
-    "content_length": "51402",
+    "content_length": "1",
     "etag": "\"6230d30d309c71eb668a8ededb1f46a6a26d523bb23db29df4fb85cc8d83bf1d\"",
     "last_modified": null,
     "source_available": true
