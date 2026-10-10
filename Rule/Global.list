@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-10-10 05:02:06 +0800
+# UPDATED: 2026-10-11 05:02:30 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24391
+# TOTAL: 24394
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -9886,6 +9886,7 @@ DOMAIN-SUFFIX,meendo.com
 DOMAIN-SUFFIX,meetandfuck.games
 DOMAIN-SUFFIX,meetandfuckgames.com
 DOMAIN-SUFFIX,meetsmartbook.com
+DOMAIN-SUFFIX,megaad.nz
 DOMAIN-SUFFIX,megacamz.com
 DOMAIN-SUFFIX,megaeth.com
 DOMAIN-SUFFIX,megafilmporno.com
@@ -9896,10 +9897,12 @@ DOMAIN-SUFFIX,megahdporno.net
 DOMAIN-SUFFIX,megamarket.ru
 DOMAIN-SUFFIX,megamarket.tech
 DOMAIN-SUFFIX,megamon.co.kr
+DOMAIN-SUFFIX,megapay.nz
 DOMAIN-SUFFIX,megaphone.fm
 DOMAIN-SUFFIX,megapornfreehd.com
 DOMAIN-SUFFIX,megaporno.com.br
 DOMAIN-SUFFIX,megapornpics.com
+DOMAIN-SUFFIX,megas4.com
 DOMAIN-SUFFIX,megasrv.de
 DOMAIN-SUFFIX,megatitsminka.com
 DOMAIN-SUFFIX,megogo.net
@@ -12633,7 +12636,6 @@ DOMAIN-SUFFIX,proxlet.com
 DOMAIN-SUFFIX,proxyadult.org
 DOMAIN-SUFFIX,proxyrarbg.org
 DOMAIN-SUFFIX,prpops.com
-DOMAIN-SUFFIX,prts.plus
 DOMAIN-SUFFIX,prvbank.ru
 DOMAIN-SUFFIX,ps-exchange.com
 DOMAIN-SUFFIX,psb-ocenka.ru
@@ -15299,6 +15301,7 @@ DOMAIN-SUFFIX,trans500.com
 DOMAIN-SUFFIX,transangels.com
 DOMAIN-SUFFIX,transarmuito.com
 DOMAIN-SUFFIX,transcamslive.com
+DOMAIN-SUFFIX,transfer.it
 DOMAIN-SUFFIX,transferwise.com
 DOMAIN-SUFFIX,translatewiki.net
 DOMAIN-SUFFIX,translatewiki.org
