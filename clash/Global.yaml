@@ -1,7 +1,7 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-10-10 05:02:06 +0800
-# TOTAL: 24391
+# UPDATED: 2026-10-11 05:02:30 +0800
+# TOTAL: 24394
 payload:
   - 'DOMAIN-SUFFIX,boil.network'
   - 'DOMAIN-SUFFIX,neburst.com'
@@ -9871,6 +9871,7 @@ payload:
   - 'DOMAIN-SUFFIX,meetandfuck.games'
   - 'DOMAIN-SUFFIX,meetandfuckgames.com'
   - 'DOMAIN-SUFFIX,meetsmartbook.com'
+  - 'DOMAIN-SUFFIX,megaad.nz'
   - 'DOMAIN-SUFFIX,megacamz.com'
   - 'DOMAIN-SUFFIX,megaeth.com'
   - 'DOMAIN-SUFFIX,megafilmporno.com'
@@ -9881,10 +9882,12 @@ payload:
   - 'DOMAIN-SUFFIX,megamarket.ru'
   - 'DOMAIN-SUFFIX,megamarket.tech'
   - 'DOMAIN-SUFFIX,megamon.co.kr'
+  - 'DOMAIN-SUFFIX,megapay.nz'
   - 'DOMAIN-SUFFIX,megaphone.fm'
   - 'DOMAIN-SUFFIX,megapornfreehd.com'
   - 'DOMAIN-SUFFIX,megaporno.com.br'
   - 'DOMAIN-SUFFIX,megapornpics.com'
+  - 'DOMAIN-SUFFIX,megas4.com'
   - 'DOMAIN-SUFFIX,megasrv.de'
   - 'DOMAIN-SUFFIX,megatitsminka.com'
   - 'DOMAIN-SUFFIX,megogo.net'
@@ -12618,7 +12621,6 @@ payload:
   - 'DOMAIN-SUFFIX,proxyadult.org'
   - 'DOMAIN-SUFFIX,proxyrarbg.org'
   - 'DOMAIN-SUFFIX,prpops.com'
-  - 'DOMAIN-SUFFIX,prts.plus'
   - 'DOMAIN-SUFFIX,prvbank.ru'
   - 'DOMAIN-SUFFIX,ps-exchange.com'
   - 'DOMAIN-SUFFIX,psb-ocenka.ru'
@@ -15284,6 +15286,7 @@ payload:
   - 'DOMAIN-SUFFIX,transangels.com'
   - 'DOMAIN-SUFFIX,transarmuito.com'
   - 'DOMAIN-SUFFIX,transcamslive.com'
+  - 'DOMAIN-SUFFIX,transfer.it'
   - 'DOMAIN-SUFFIX,transferwise.com'
   - 'DOMAIN-SUFFIX,translatewiki.net'
   - 'DOMAIN-SUFFIX,translatewiki.org'

@@ -6,7 +6,7 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/AI.list": {
-    "content_length": "1",
+    "content_length": "2560",
     "etag": "\"11ad29b5d2fbfc9b6ea9e32139911b56e2472f7b25fcf41c0611097ef43ce5b4\"",
     "last_modified": null,
     "source_available": true
@@ -19,19 +19,19 @@
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
     "content_length": "4351",
-    "etag": "\"2baf26d2c94409150ad98d40190ca55f361f59f412c69b62cb692c54e79c8849\"",
+    "etag": "\"5804825324ca3feb20709e4632dcd736869fcd3ddbc1f1440d6363f28c46cfbd\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
     "content_length": "101172",
-    "etag": "\"9bcf9b806f92d0a390a44922dd3c341035f6efbdfea70e9a356212f37e3f83ba\"",
+    "etag": "\"694485f895fe662fb47fa4c7179ba6aed877db5717004ddbf2a1cf31435e2fee\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/ChinaCIDR.list": {
     "content_length": "234287",
-    "etag": "\"e444e27f18f32c81aa969bae2ffcce3a62da5c17357acd8b89de35627f7d4bc8\"",
+    "etag": "\"28b1401a3510f54c43fde58915d6fd35fc351fdeb33c69854d4083544734a53d\"",
     "last_modified": null,
     "source_available": true
   },
@@ -42,8 +42,8 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaLab/speedtest-net-servers-dist/master/servers.json": {
-    "content_length": "569324",
-    "etag": "\"5946818b14fa48f2b92a251e829120dcc9b62162e382de6a2fe8f1bc0162c267\"",
+    "content_length": "555792",
+    "etag": "\"e4d002b70471260a8e6e2a580b3673d9c497ed25304826a5287b13363829cebe\"",
     "last_modified": null,
     "source_available": true
   },
@@ -60,20 +60,20 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All_No_Resolve.list": {
-    "content_length": "1",
-    "etag": "\"6230d30d309c71eb668a8ededb1f46a6a26d523bb23db29df4fb85cc8d83bf1d\"",
+    "content_length": "51402",
+    "etag": "\"2dd7f83f61afcd9a0134da3cb180de646fdbda54d929db3f5d37d1b226be3edf\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs.list": {
-    "content_length": "692584",
-    "etag": "\"05ea53eb39f14a88cc42bd8395ab03b959f00d127b446429c368fb594bf41043\"",
+    "content_length": "691491",
+    "etag": "\"64c87d9f90fda14581583d134c782f0b1a1418537dc7fb3bddde622da7153f93\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMaxNoIP/ChinaMaxNoIP_Domain.list": {
-    "content_length": "1520179",
-    "etag": "\"a263fe8f09f9dbd47e38ac53e4656828fdfe9cad1714f836e712361984f7e2b5\"",
+    "content_length": "1525206",
+    "etag": "\"f3ef3db24cbd26deeae9ebafbb5ecea87dc40cdd1b70ac8f2d64aa9ec77546d3\"",
     "last_modified": null,
     "source_available": true
   },
@@ -103,19 +103,19 @@
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list": {
     "content_length": "19223",
-    "etag": "\"3aa01ac8f26b59dcb7dac214c63bd74bc62ce17fe14a6deadd2860cb993e0d5a\"",
+    "etag": "\"6284c5fb4387ba765c34ca3632482716431b3cb9ed553a794bc6aa5a36d88f31\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_All_No_Resolve.list": {
-    "content_length": "1010138",
-    "etag": "\"a3972cd4ce17c8cabf7c304e5978fca9269c8bd454d10125cf7ce5241fcc70f1\"",
+    "content_length": "1010214",
+    "etag": "\"8c65425dd61ec757fc9673ffbe290a248dcc5c5a8416142e49570628fb64782d\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalMedia/GlobalMedia_All_No_Resolve.list": {
     "content_length": "73351",
-    "etag": "\"a533fda64943780d1c9767158e8864ceeb89b6f250873629decf7ffa1cd071d2\"",
+    "etag": "\"f7a78cb73bd5285dea77e8d5d010d68ab2949748a202937b77440431fe41a054\"",
     "last_modified": null,
     "source_available": true
   },
