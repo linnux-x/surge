@@ -12,7 +12,7 @@
         "IP-CIDR6": 1,
         "URL-REGEX": 1
       },
-      "sha256": "37b6c38826df7ffca6545bcc48d53a40ffb0ddaf2c99aad1827f186d3e0de365"
+      "sha256": "0b0d599a1e047c7d04b5eda13d3315568a1703b63d4f72727ea917ecda7eebd7"
     },
     {
       "file": "Apple.list",
@@ -68,7 +68,7 @@
         "DOMAIN-WILDCARD": 1,
         "USER-AGENT": 31
       },
-      "sha256": "547fb3fd55356ea56dd1bb441a08de15cba26dfd76071aa036f6e785391de9e0"
+      "sha256": "b9c2fa9dd9fb9c5e9709dabfe984ab311d3273af341213f8df05e69313dca535"
     },
     {
       "file": "ChinaMedia.list",
@@ -89,7 +89,7 @@
         "IP-CIDR": 7256,
         "IP-CIDR6": 4256
       },
-      "sha256": "e2013d32f65e96c6ed9f5851648671f48d70ebf36850c2192d9535586bd52a42"
+      "sha256": "a795656dce7b502b705f4421e3194356f2590421af4104208a0b43f70a9c7fcd"
     },
     {
       "file": "Disney.list",
@@ -134,7 +134,7 @@
         "IP-CIDR6": 1,
         "USER-AGENT": 5
       },
-      "sha256": "eaa376261eeefd9c6f35428152ce063ba79fe203e5b6a308a61dc442fd8ae244"
+      "sha256": "34dc622b698446686d925258124a48461cce7cecc11338c32673bd645d92bf86"
     },
     {
       "file": "GlobalMedia.list",
@@ -223,12 +223,12 @@
     },
     {
       "file": "Speedtest.list",
-      "rules": 1686,
+      "rules": 1702,
       "types": {
-        "DOMAIN": 1573,
+        "DOMAIN": 1589,
         "DOMAIN-SUFFIX": 113
       },
-      "sha256": "173089c9084b388344fdbbdeaa92033f054e4be3e3671d69714707564ba112ae"
+      "sha256": "bef0dc4b2808a5cb02f9a907f54e3bca34614990c10c8ce1cad1fd6cd22089cf"
     },
     {
       "file": "Speedtest_China.list",
@@ -237,7 +237,7 @@
         "DOMAIN": 52,
         "IP-CIDR": 1
       },
-      "sha256": "53f992b3588e36e68e0adab522e0e3899c5363b07d3575df61173cc062758917"
+      "sha256": "e89d5f0dc1d7a376ebabf4dd4766430e9f81a49554cf38940a671d8fec6aa950"
     },
     {
       "file": "Spotify.list",
@@ -304,9 +304,9 @@
       "sha256": "dc6dfde863bc0c0034fa3bae09c8a8b090ca385439e866e5ff89fa65eb177c69"
     }
   ],
-  "total_rules": 160075,
+  "total_rules": 160091,
   "rule_types": {
-    "DOMAIN": 3600,
+    "DOMAIN": 3616,
     "DOMAIN-KEYWORD": 95,
     "DOMAIN-SUFFIX": 142265,
     "DOMAIN-WILDCARD": 3,
@@ -335,7 +335,7 @@
     "SukkaW Microsoft CDN": 53,
     "SukkaW Speedtest": 122,
     "SukkaW Speedtest Servers China": 1,
-    "SukkaW Speedtest Servers International": 1562,
+    "SukkaW Speedtest Servers International": 1578,
     "Telegram Official CIDR": 11,
     "blackmatrix7 Apple": 1546,
     "blackmatrix7 China IPs": 4021,
@@ -381,7 +381,7 @@
     "Netflix.manifest": "0ffcdd804cc4e56614ba69cc539061c6b5e65ef6ee2e62a01aee3e62902ab9c9",
     "PayPal.manifest": "649b7162f902986f696a1b28e98b3d2b5e6cbda0a9c8e951c552098e68e1382b",
     "SocialMedia.manifest": "e5b500cfbb1db392e8b379359458a69ece60c50003ee8ebb1cd7ae687ef11e78",
-    "Speedtest.manifest": "e1fa38a311f970335cab51afca3b5bf2ed91848e7babc548b8189a9f5bf6e1bd",
+    "Speedtest.manifest": "05b7cceb333b0c36e0fa76e29e0918a224282c44f17c52884fbee2eaed681633",
     "Speedtest_China.manifest": "1422ee65ce7dca6937f4119b9f3645a9f79e436faf96341f92e11e39ce894807",
     "Spotify.manifest": "5f1f22f1d8f4081b725902910dc6754a6b1fa868dd8e97e527c39fcc7cf463b0",
     "Telegram.manifest": "8857fbff71898f2065ddc9f25e5c95b2ef64d908617a94295f6fa5747f54552b",
@@ -392,7 +392,7 @@
   "sources_sha256": "cac9ce245067c00c15c1b5053a96c5750f1ebcf8d446c08d56ac38acb4bbe61a",
   "override_manifest_sha256": "c0e7407f9f38d3bffaceb71c6dfcde67d998f651409a0beb71c7518093534ae0",
   "clash_compatibility": {
-    "payload_rules": 159892,
+    "payload_rules": 159908,
     "dropped_surge_only_types": {
       "URL-REGEX": 5,
       "USER-AGENT": 178
@@ -404,8 +404,8 @@
     }
   },
   "diff_summary": {
-    "total_added": 528,
-    "total_removed": 182,
+    "total_added": 126,
+    "total_removed": 110,
     "total_source_changed": 0
   }
 }
