@@ -12,7 +12,7 @@
         "IP-CIDR6": 1,
         "URL-REGEX": 1
       },
-      "sha256": "0b0d599a1e047c7d04b5eda13d3315568a1703b63d4f72727ea917ecda7eebd7"
+      "sha256": "37b6c38826df7ffca6545bcc48d53a40ffb0ddaf2c99aad1827f186d3e0de365"
     },
     {
       "file": "Apple.list",
@@ -68,7 +68,7 @@
         "DOMAIN-WILDCARD": 1,
         "USER-AGENT": 31
       },
-      "sha256": "b9c2fa9dd9fb9c5e9709dabfe984ab311d3273af341213f8df05e69313dca535"
+      "sha256": "547fb3fd55356ea56dd1bb441a08de15cba26dfd76071aa036f6e785391de9e0"
     },
     {
       "file": "ChinaMedia.list",
@@ -89,7 +89,7 @@
         "IP-CIDR": 7256,
         "IP-CIDR6": 4256
       },
-      "sha256": "a795656dce7b502b705f4421e3194356f2590421af4104208a0b43f70a9c7fcd"
+      "sha256": "e2013d32f65e96c6ed9f5851648671f48d70ebf36850c2192d9535586bd52a42"
     },
     {
       "file": "Disney.list",
@@ -134,7 +134,7 @@
         "IP-CIDR6": 1,
         "USER-AGENT": 5
       },
-      "sha256": "34dc622b698446686d925258124a48461cce7cecc11338c32673bd645d92bf86"
+      "sha256": "eaa376261eeefd9c6f35428152ce063ba79fe203e5b6a308a61dc442fd8ae244"
     },
     {
       "file": "GlobalMedia.list",
@@ -237,7 +237,7 @@
         "DOMAIN": 52,
         "IP-CIDR": 1
       },
-      "sha256": "e89d5f0dc1d7a376ebabf4dd4766430e9f81a49554cf38940a671d8fec6aa950"
+      "sha256": "53f992b3588e36e68e0adab522e0e3899c5363b07d3575df61173cc062758917"
     },
     {
       "file": "Spotify.list",
