@@ -1,7 +1,7 @@
 # Generated from Rule/AI.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-10-10 05:02:01 +0800
-# TOTAL: 122
+# UPDATED: 2026-10-13 05:01:28 +0800
+# TOTAL: 125
 payload:
   - 'DOMAIN-SUFFIX,anthropic.com'
   - 'DOMAIN-SUFFIX,claude.ai'
@@ -81,7 +81,10 @@ payload:
   - 'DOMAIN-SUFFIX,bard.google.com'
   - 'DOMAIN,api.jetbrains.ai'
   - 'DOMAIN-SUFFIX,gemini.google.com'
+  - 'DOMAIN,server.codeium.com'
+  - 'DOMAIN,inference.codeium.com'
   - 'DOMAIN,gateway.ai.cloudflare.com'
+  - 'DOMAIN,server.self-serve.windsurf.com'
   - 'DOMAIN-SUFFIX,generativelanguage.googleapis.com'
   - 'DOMAIN-SUFFIX,cursor.com'
   - 'DOMAIN,anthropic-com.ghost.io'
