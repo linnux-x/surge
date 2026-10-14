@@ -57,6 +57,44 @@ class SourceTransformTests(unittest.TestCase):
             ['IP-ASN,399358,no-resolve', 'DOMAIN-SUFFIX,chat.openai.com'],
         )
 
+    def test_guardrails_strip_shared_parent_suffixes_from_service_rulesets(self):
+        lines = [
+            'DOMAIN,anthropic.auth0.com',
+            'DOMAIN-SUFFIX,auth0.com',
+            'DOMAIN-SUFFIX,segment.io',
+            'DOMAIN-SUFFIX,sentry.io',
+        ]
+        self.assertEqual(
+            apply_project_guardrails('AI.list', lines),
+            ['DOMAIN,anthropic.auth0.com'],
+        )
+        self.assertEqual(apply_project_guardrails('Global.list', lines), lines)
+
+    def test_process_rule_filters_shared_suffixes_before_strict_validation(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            manual = root / 'Manual'
+            manual.mkdir()
+            upstream = [
+                'DOMAIN,anthropic.auth0.com',
+                'DOMAIN-SUFFIX,auth0.com',
+                'DOMAIN-SUFFIX,segment.io',
+                'DOMAIN-SUFFIX,sentry.io',
+            ]
+            with (
+                patch.object(generator, 'RULE_DIR', root),
+                patch.object(generator, 'MANUAL_DIR', manual),
+                patch.object(generator, 'fetch_source', return_value=upstream),
+                patch.object(generator, 'datetime', FixedTime),
+                contextlib.redirect_stdout(io.StringIO()),
+            ):
+                generator.process_rule('AI.list', 'AI', [('Fixture', 'https://example.test/rules', None)])
+            rules = (root / 'AI.list').read_text().splitlines()
+            self.assertIn('DOMAIN,anthropic.auth0.com', rules)
+            self.assertNotIn('DOMAIN-SUFFIX,auth0.com', rules)
+            self.assertNotIn('DOMAIN-SUFFIX,segment.io', rules)
+            self.assertNotIn('DOMAIN-SUFFIX,sentry.io', rules)
+
     def test_all_target_guardrails_match_pre_refactor_results(self):
         for target, expected in FIXTURE['guardrails'].items():
             with self.subTest(target=target):

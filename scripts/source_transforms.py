@@ -10,7 +10,13 @@ import re
 from pathlib import Path
 from typing import Optional
 
-from policy import FASTCOM_RE, GITHUB_RE, YOUTUBE_RE
+from policy import (
+    FASTCOM_RE,
+    GITHUB_RE,
+    SHARED_INFRA_EXEMPT_FILES,
+    SHARED_THIRD_PARTY_SUFFIXES,
+    YOUTUBE_RE,
+)
 from rule_validator import SUKKAW_MARKER
 from exclusions import exclusion_key, read_exclusions
 from speedtest_sources import convert_speedtest
@@ -102,6 +108,19 @@ def apply_project_guardrails(target_name: str, lines: list[str]) -> list[str]:
         out = [l for l in out if not re.match(r"^(IP-CIDR|IP-CIDR6|IP-ASN),", l, re.IGNORECASE)]
     elif target_name == "China_IP.list":
         out = [re.sub(r",(no-resolve|NO-RESOLVE)", "", l, flags=re.IGNORECASE) for l in out]
+
+    # The strict validator rejects whole shared identity, telemetry, and consent
+    # suffixes in service-specific rulesets. Enforce the same invariant before
+    # validation so a source-format or exclusion-path regression cannot block
+    # an otherwise safe incremental generation run.
+    if target_name not in SHARED_INFRA_EXEMPT_FILES:
+        out = [
+            line for line in out
+            if not (
+                line.upper().startswith("DOMAIN-SUFFIX,")
+                and line.split(",", 2)[1].lower() in SHARED_THIRD_PARTY_SUFFIXES
+            )
+        ]
 
     # Remove numeric DOMAIN-KEYWORD fragments
     out = [l for l in out if not re.match(r"^DOMAIN-KEYWORD,\d+(\.\d+){1,3}\.?$", l, re.IGNORECASE)]
