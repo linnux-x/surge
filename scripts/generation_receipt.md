@@ -1,30 +1,30 @@
 # Surge 规则生成收据
 
 - 规则文件：26
-- 规则总数：160181
+- 规则总数：159389
 - manifest 文件：26
 
 ## 差异摘要
 
-- 新增：152
-- 删除：62
-- 来源迁移：0
+- 新增：138
+- 删除：930
+- 来源迁移：1
 
 ## Clash 兼容性
 
-- 生成 payload：159998
+- 生成 payload：159206
 - 跳过 Surge 专属规则：{'URL-REGEX': 5, 'USER-AGENT': 178}
-- 保留 mihomo 扩展类型：{'DOMAIN-WILDCARD': 3, 'IP-ASN': 9, 'PROCESS-NAME': 58}
+- 保留 mihomo 扩展类型：{'DOMAIN-WILDCARD': 3, 'IP-ASN': 8, 'PROCESS-NAME': 58}
 
 ## 规则类型
 
-- DOMAIN: 3618
+- DOMAIN: 3600
 - DOMAIN-KEYWORD: 95
-- DOMAIN-SUFFIX: 142351
+- DOMAIN-SUFFIX: 141580
 - DOMAIN-WILDCARD: 3
-- IP-ASN: 9
-- IP-CIDR: 9523
-- IP-CIDR6: 4341
+- IP-ASN: 8
+- IP-CIDR: 9522
+- IP-CIDR6: 4340
 - PROCESS-NAME: 58
 - URL-REGEX: 5
 - USER-AGENT: 178
@@ -34,7 +34,7 @@
 - ConnersHua AI: 12
 - Loyalsoldier China CIDR: 7471
 - Manual Rules: 277
-- Rabbit-Spec AIGC: 29
+- Rabbit-Spec AIGC: 27
 - Rabbit-Spec China: 187
 - Rabbit-Spec China CIDR: 20
 - RocM301 Apple-AI: 16
@@ -43,22 +43,22 @@
 - SukkaW Apple CN: 5
 - SukkaW CDN: 26
 - SukkaW Domestic: 695
-- SukkaW Download: 1620
+- SukkaW Download: 1621
 - SukkaW Game Download: 52
 - SukkaW Microsoft CDN: 53
 - SukkaW Speedtest: 122
 - SukkaW Speedtest Servers China: 1
-- SukkaW Speedtest Servers International: 1578
+- SukkaW Speedtest Servers International: 1559
 - Telegram Official CIDR: 11
 - blackmatrix7 Apple: 1546
 - blackmatrix7 China IPs: 4023
-- blackmatrix7 ChinaMaxNoIP Domain: 110819
+- blackmatrix7 ChinaMaxNoIP Domain: 110046
 - blackmatrix7 ChinaMedia: 384
 - blackmatrix7 Discord: 29
 - blackmatrix7 Disney: 166
 - blackmatrix7 Facebook: 570
 - blackmatrix7 Game: 549
-- blackmatrix7 Global: 24464
+- blackmatrix7 Global: 24465
 - blackmatrix7 GlobalMedia: 2248
 - blackmatrix7 Google: 685
 - blackmatrix7 Instagram: 1

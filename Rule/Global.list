@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-10-13 05:01:33 +0800
+# UPDATED: 2026-10-15 05:31:28 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24479
+# TOTAL: 24480
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -588,6 +588,7 @@ DOMAIN-SUFFIX,91se.fun
 DOMAIN-SUFFIX,91sesex.xyz
 DOMAIN-SUFFIX,91sew.xyz
 DOMAIN-SUFFIX,91sew40.buzz
+DOMAIN-SUFFIX,91short.com
 DOMAIN-SUFFIX,91vhome.com
 DOMAIN-SUFFIX,920share.com
 DOMAIN-SUFFIX,921bb.com

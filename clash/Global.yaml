@@ -1,7 +1,7 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-10-13 05:01:33 +0800
-# TOTAL: 24479
+# UPDATED: 2026-10-15 05:31:28 +0800
+# TOTAL: 24480
 payload:
   - 'DOMAIN-SUFFIX,boil.network'
   - 'DOMAIN-SUFFIX,neburst.com'
@@ -573,6 +573,7 @@ payload:
   - 'DOMAIN-SUFFIX,91sesex.xyz'
   - 'DOMAIN-SUFFIX,91sew.xyz'
   - 'DOMAIN-SUFFIX,91sew40.buzz'
+  - 'DOMAIN-SUFFIX,91short.com'
   - 'DOMAIN-SUFFIX,91vhome.com'
   - 'DOMAIN-SUFFIX,920share.com'
   - 'DOMAIN-SUFFIX,921bb.com'
