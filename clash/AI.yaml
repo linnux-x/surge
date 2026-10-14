@@ -1,7 +1,7 @@
 # Generated from Rule/AI.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-10-13 05:01:28 +0800
-# TOTAL: 125
+# UPDATED: 2026-10-15 05:31:25 +0800
+# TOTAL: 123
 payload:
   - 'DOMAIN-SUFFIX,anthropic.com'
   - 'DOMAIN-SUFFIX,claude.ai'
@@ -87,7 +87,6 @@ payload:
   - 'DOMAIN,server.self-serve.windsurf.com'
   - 'DOMAIN-SUFFIX,generativelanguage.googleapis.com'
   - 'DOMAIN-SUFFIX,cursor.com'
-  - 'DOMAIN,anthropic-com.ghost.io'
   - 'DOMAIN,chat.openai.com.cdn.cloudflare.net'
   - 'DOMAIN,openai-api.arkoselabs.com'
   - 'DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net'
@@ -95,27 +94,26 @@ payload:
   - 'DOMAIN,production-openaicom-storage.azureedge.net'
   - 'DOMAIN-SUFFIX,aicode.googleapis.com'
   - 'DOMAIN-SUFFIX,api.statsig.com'
+  - 'DOMAIN-SUFFIX,apis.google.com'
+  - 'DOMAIN-SUFFIX,apple-relay.fastly-edge.com'
   - 'DOMAIN-SUFFIX,chatgpt.livekit.cloud'
   - 'DOMAIN-SUFFIX,client-api.arkoselabs.com'
-  - 'DOMAIN-SUFFIX,ct.sendgrid.net'
+  - 'DOMAIN-SUFFIX,cp4.cloudflare.com'
   - 'DOMAIN-SUFFIX,events.statsigapi.net'
-  - 'DOMAIN-SUFFIX,featureassets.org'
   - 'DOMAIN-SUFFIX,featuregates.org'
+  - 'DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com'
+  - 'DOMAIN-SUFFIX,guzzoni.apple.com'
   - 'DOMAIN-SUFFIX,host.livekit.cloud'
   - 'DOMAIN-SUFFIX,oaiusercontent.com'
   - 'DOMAIN-SUFFIX,observeit.net'
   - 'DOMAIN-SUFFIX,openai.com'
   - 'DOMAIN-SUFFIX,openaiapi-site.azureedge.net'
   - 'DOMAIN-SUFFIX,openaicom.imgix.net'
-  - 'DOMAIN-SUFFIX,prodregistryv2.org'
   - 'DOMAIN-SUFFIX,turn.livekit.cloud'
-  - 'IP-ASN,399358,no-resolve'
   - 'IP-CIDR,129.146.3.78/32,no-resolve'
-  - 'IP-CIDR,160.79.104.0/21,no-resolve'
   - 'IP-CIDR,24.199.123.28/32,no-resolve'
   - 'IP-CIDR,64.23.132.171/32,no-resolve'
-  - 'IP-CIDR6,2607:6BC0::/32,no-resolve'
-  - 'DOMAIN,cp4.cloudflare.com'
+  - 'DOMAIN,anthropic-com.ghost.io'
   - 'DOMAIN-SUFFIX,openrouter.ai'
   - 'DOMAIN-SUFFIX,cursor-cdn.com'
   - 'DOMAIN-SUFFIX,cursorapi.com'
