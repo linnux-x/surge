@@ -11,3 +11,4 @@ DOMAIN-SUFFIX,giphy.com
 
 # Media service observed in sustained real FINAL traffic
 DOMAIN-SUFFIX,023168.xyz
+DOMAIN-KEYWORD,023168

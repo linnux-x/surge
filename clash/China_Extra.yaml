@@ -1,8 +1,9 @@
 # Generated from Rule/China.list (rules not covered by the _Domain export)
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-10-17 10:13:04 +0800
-# TOTAL: 10
+# UPDATED: 2026-10-17 10:24:57 +0800
+# TOTAL: 11
 payload:
+  - 'DOMAIN-KEYWORD,223789'
   - 'DOMAIN-WILDCARD,qhimgs?.com'
   - 'DOMAIN-KEYWORD,sleep.pokemon'
   - 'DOMAIN-KEYWORD,.tmall.com'
