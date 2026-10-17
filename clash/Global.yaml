@@ -1,7 +1,7 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-10-17 10:24:58 +0800
-# TOTAL: 24480
+# UPDATED: 2026-10-18 05:01:50 +0800
+# TOTAL: 24486
 payload:
   - 'DOMAIN-SUFFIX,boil.network'
   - 'DOMAIN-SUFFIX,neburst.com'
@@ -3248,6 +3248,7 @@ payload:
   - 'DOMAIN-SUFFIX,bs-awh.ne.jp'
   - 'DOMAIN-SUFFIX,bsappapi.cc'
   - 'DOMAIN-SUFFIX,bsappapi.com'
+  - 'DOMAIN-SUFFIX,bscdnweb.com'
   - 'DOMAIN-SUFFIX,bsersd.xyz'
   - 'DOMAIN-SUFFIX,bsi.ir'
   - 'DOMAIN-SUFFIX,bspb.ru'
@@ -13517,6 +13518,7 @@ payload:
   - 'DOMAIN-SUFFIX,scatvids.club'
   - 'DOMAIN-SUFFIX,scatville.com'
   - 'DOMAIN-SUFFIX,scb.ru'
+  - 'DOMAIN-SUFFIX,scea.com'
   - 'DOMAIN-SUFFIX,scenesource.me'
   - 'DOMAIN-SUFFIX,scharferporno.com'
   - 'DOMAIN-SUFFIX,schiffvitamins.com'
@@ -14270,6 +14272,7 @@ payload:
   - 'DOMAIN-SUFFIX,sony.com.pa'
   - 'DOMAIN-SUFFIX,sony.com.pe'
   - 'DOMAIN-SUFFIX,sony.com.ph'
+  - 'DOMAIN-SUFFIX,sony.com.py'
   - 'DOMAIN-SUFFIX,sony.com.sg'
   - 'DOMAIN-SUFFIX,sony.com.sv'
   - 'DOMAIN-SUFFIX,sony.com.tr'
@@ -14312,8 +14315,10 @@ payload:
   - 'DOMAIN-SUFFIX,sonydesign.com'
   - 'DOMAIN-SUFFIX,sonydna.com'
   - 'DOMAIN-SUFFIX,sonyglobalsolutions.jp'
+  - 'DOMAIN-SUFFIX,sonyinteractive.com'
   - 'DOMAIN-SUFFIX,sonykigyo.jp'
   - 'DOMAIN-SUFFIX,sonylatvija.com'
+  - 'DOMAIN-SUFFIX,sonymusic.com.hk'
   - 'DOMAIN-SUFFIX,sonynetwork.co.jp'
   - 'DOMAIN-SUFFIX,sonypcl.jp'
   - 'DOMAIN-SUFFIX,sonypictures.com'
@@ -18165,6 +18170,7 @@ payload:
   - 'DOMAIN-SUFFIX,7capture.com'
   - 'DOMAIN-SUFFIX,7cow.com'
   - 'DOMAIN-SUFFIX,7mmtv.tv'
+  - 'DOMAIN-SUFFIX,7x24hrs.com'
   - 'DOMAIN-SUFFIX,8-d.com'
   - 'DOMAIN-SUFFIX,85cc.net'
   - 'DOMAIN-SUFFIX,85cc.us'
