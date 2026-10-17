@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-10-17 10:24:58 +0800
+# UPDATED: 2026-10-18 05:01:50 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24480
+# TOTAL: 24486
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -3263,6 +3263,7 @@ DOMAIN-SUFFIX,bs-adreview.com
 DOMAIN-SUFFIX,bs-awh.ne.jp
 DOMAIN-SUFFIX,bsappapi.cc
 DOMAIN-SUFFIX,bsappapi.com
+DOMAIN-SUFFIX,bscdnweb.com
 DOMAIN-SUFFIX,bsersd.xyz
 DOMAIN-SUFFIX,bsi.ir
 DOMAIN-SUFFIX,bspb.ru
@@ -13532,6 +13533,7 @@ DOMAIN-SUFFIX,scatsite.com
 DOMAIN-SUFFIX,scatvids.club
 DOMAIN-SUFFIX,scatville.com
 DOMAIN-SUFFIX,scb.ru
+DOMAIN-SUFFIX,scea.com
 DOMAIN-SUFFIX,scenesource.me
 DOMAIN-SUFFIX,scharferporno.com
 DOMAIN-SUFFIX,schiffvitamins.com
@@ -14285,6 +14287,7 @@ DOMAIN-SUFFIX,sony.com.ni
 DOMAIN-SUFFIX,sony.com.pa
 DOMAIN-SUFFIX,sony.com.pe
 DOMAIN-SUFFIX,sony.com.ph
+DOMAIN-SUFFIX,sony.com.py
 DOMAIN-SUFFIX,sony.com.sg
 DOMAIN-SUFFIX,sony.com.sv
 DOMAIN-SUFFIX,sony.com.tr
@@ -14327,8 +14330,10 @@ DOMAIN-SUFFIX,sonyclassics.com
 DOMAIN-SUFFIX,sonydesign.com
 DOMAIN-SUFFIX,sonydna.com
 DOMAIN-SUFFIX,sonyglobalsolutions.jp
+DOMAIN-SUFFIX,sonyinteractive.com
 DOMAIN-SUFFIX,sonykigyo.jp
 DOMAIN-SUFFIX,sonylatvija.com
+DOMAIN-SUFFIX,sonymusic.com.hk
 DOMAIN-SUFFIX,sonynetwork.co.jp
 DOMAIN-SUFFIX,sonypcl.jp
 DOMAIN-SUFFIX,sonypictures.com
@@ -18180,6 +18185,7 @@ DOMAIN-SUFFIX,6parknews.com
 DOMAIN-SUFFIX,7capture.com
 DOMAIN-SUFFIX,7cow.com
 DOMAIN-SUFFIX,7mmtv.tv
+DOMAIN-SUFFIX,7x24hrs.com
 DOMAIN-SUFFIX,8-d.com
 DOMAIN-SUFFIX,85cc.net
 DOMAIN-SUFFIX,85cc.us
