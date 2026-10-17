@@ -58,15 +58,15 @@
     },
     {
       "file": "China.list",
-      "rules": 110650,
+      "rules": 110652,
       "types": {
         "DOMAIN": 246,
         "DOMAIN-KEYWORD": 9,
-        "DOMAIN-SUFFIX": 110363,
+        "DOMAIN-SUFFIX": 110365,
         "DOMAIN-WILDCARD": 1,
         "USER-AGENT": 31
       },
-      "sha256": "ef8e59fa4ff9281f07936f50a8f32d64dbeea4da79eb5b2a58cc3c89abb89949"
+      "sha256": "608bae934186b2682871c3e73cc8c138a66329041965d0cf2a0a1533153b4ed3"
     },
     {
       "file": "ChinaMedia.list",
@@ -302,11 +302,11 @@
       "sha256": "dc6dfde863bc0c0034fa3bae09c8a8b090ca385439e866e5ff89fa65eb177c69"
     }
   ],
-  "total_rules": 159103,
+  "total_rules": 159105,
   "rule_types": {
     "DOMAIN": 3602,
     "DOMAIN-KEYWORD": 95,
-    "DOMAIN-SUFFIX": 141294,
+    "DOMAIN-SUFFIX": 141296,
     "DOMAIN-WILDCARD": 3,
     "IP-ASN": 8,
     "IP-CIDR": 9520,
@@ -318,9 +318,9 @@
   "source_attribution": {
     "ConnersHua AI": 12,
     "Loyalsoldier China CIDR": 7471,
-    "Manual Rules": 277,
+    "Manual Rules": 278,
     "Rabbit-Spec AIGC": 27,
-    "Rabbit-Spec China": 186,
+    "Rabbit-Spec China": 187,
     "Rabbit-Spec China CIDR": 20,
     "RocM301 Apple-AI": 16,
     "SukkaW AI": 24,
@@ -365,7 +365,7 @@
     "Apple_AI.manifest": "68eeb4b921ba19b719f5167d9d8b0a5163e53db274055e7fadea6b556750c488",
     "Apple_CN.manifest": "a156042ab2b674afe44c22e64f5353e3ace603117d8b12d8ac483521f94641da",
     "CDN.manifest": "fb0dfab0e6ac4f27ed8a55aabacce40a85165d142e547fae1da94ebed4391574",
-    "China.manifest": "175e449e9773f61d0fd8de6c539c402c8c50411492836c632cec9cb72b07bb0f",
+    "China.manifest": "76f19eb4d2094bcb39e41eb3c2ff661a0f9dca9850b5a50de4d3bec6644e7bb0",
     "ChinaMedia.manifest": "8f86b924f2832027ab2d1f8643c4c51953994e84af6ebe3bad2aa553ad3d2616",
     "China_IP.manifest": "4e5181d7b349e63478f9fe32f1067398e90d651cad28b640a1968490b910ed01",
     "Disney.manifest": "4952367b9bc1b50aaeacf8f01c8059c20e75aaf86be6c908d16a4f607a6b866f",
@@ -390,7 +390,7 @@
   "sources_sha256": "cac9ce245067c00c15c1b5053a96c5750f1ebcf8d446c08d56ac38acb4bbe61a",
   "override_manifest_sha256": "c0e7407f9f38d3bffaceb71c6dfcde67d998f651409a0beb71c7518093534ae0",
   "clash_compatibility": {
-    "payload_rules": 158920,
+    "payload_rules": 158922,
     "dropped_surge_only_types": {
       "URL-REGEX": 5,
       "USER-AGENT": 178
@@ -402,8 +402,8 @@
     }
   },
   "diff_summary": {
-    "total_added": 38,
-    "total_removed": 324,
+    "total_added": 2,
+    "total_removed": 0,
     "total_source_changed": 0
   }
 }
