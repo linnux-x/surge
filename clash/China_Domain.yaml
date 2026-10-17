@@ -1,7 +1,7 @@
 # Generated from Rule/China.list (DOMAIN/DOMAIN-SUFFIX entries only)
 # Format: Clash/mihomo rule-provider, behavior: domain
-# UPDATED: 2026-10-16 05:01:11 +0800
-# TOTAL: 110609
+# UPDATED: 2026-10-17 10:13:04 +0800
+# TOTAL: 110611
 payload:
   - '+.wmsjsteam.com'
   - '+.steamchina.com'
@@ -11,6 +11,7 @@ payload:
   - '+.getui.net'
   - '+.weixingshangye.com'
   - '+.appinn.me'
+  - '+.po0.io'
   - '+.anfutong.com'
   - '+.beibao.com'
   - '+.jd.hk'
@@ -110463,6 +110464,7 @@ payload:
   - 'zuikzy.win7i.com'
   - 'zzlive.zzc-media.com'
   - 'zzq12345.gearhostpreview.com'
+  - '+.rtesvc.com'
   - '+.1passwordusercontent.com'
   - 'cdp.cloud.unity3d.com'
   - 'config.uca.cloud.unity3d.com'

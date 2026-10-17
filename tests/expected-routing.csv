@@ -145,6 +145,8 @@ gepush.com,China.list,DIRECT,个推推送基础设施直连
 getui.net,China.list,DIRECT,个推网络基础设施直连
 weixingshangye.com,China.list,DIRECT,中国备案商业网站直连
 appinn.me,China.list,DIRECT,小众软件官方论坛直连
+po0.io,China.list,DIRECT,用户确认的 po0 根域直连
+console.po0.io,China.list,DIRECT,用户确认的 po0 子域直连
 gsp64-ssl.ls.apple.com,Apple_AI.list,Apple_AI,Apple Intelligence全球LinkScribe节点
 colocity.speedtest.gslnetworks.com,Speedtest.list,Speedtest,Sukka 官方数据中的境外测速节点
 node-124-160-78-98.speedtest.cn,Speedtest_China.list,DIRECT,spiritLHLS 明确大陆省份的测速节点

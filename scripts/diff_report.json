@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-16T05:01:23.240928",
-  "total_added": 38,
-  "total_removed": 324,
+  "generated_at": "2026-10-17T10:13:04.827102",
+  "total_added": 2,
+  "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -61,625 +61,24 @@
     },
     {
       "file": "China.list",
-      "prev_total": 110938,
-      "curr_total": 110650,
-      "added_count": 22,
-      "removed_count": 310,
+      "prev_total": 110650,
+      "curr_total": 110652,
+      "added_count": 2,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [
         {
-          "id": "01412089c53e",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,editorjianyingk.com"
+          "id": "79f70986abe5",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,po0.io"
         },
         {
-          "id": "036aa1c1fb5b",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,hongguoduanju.com"
-        },
-        {
-          "id": "0ba575924d28",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,ulikeapi.com"
-        },
-        {
-          "id": "3a74d17c3c72",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,gamer520.fan"
-        },
-        {
-          "id": "466ce06994ae",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,vfxfu.com"
-        },
-        {
-          "id": "4b537b1e098a",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,4399houtai.com"
-        },
-        {
-          "id": "4ca63c1180c3",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,jmqux.com"
-        },
-        {
-          "id": "54746bdf8cfa",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,hey-creator.com"
-        },
-        {
-          "id": "6440dd7bcb1e",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,xingtupics.com"
-        },
-        {
-          "id": "6e9d04a614a4",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,lunprin.com"
-        },
-        {
-          "id": "7e88ce6c7186",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,gamer520.wiki"
-        },
-        {
-          "id": "84a7743a812e",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,hxkjtop.com"
-        },
-        {
-          "id": "8c8d8820298f",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,rlkrmx.com"
-        },
-        {
-          "id": "b2105d7206ee",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,blkcan.com"
-        },
-        {
-          "id": "c260beaae543",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,klinecharts.com"
-        },
-        {
-          "id": "c9a6a455ef69",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,frp-web.com"
-        },
-        {
-          "id": "e2353b0b2d2f",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,dpafmp641.vip"
-        },
-        {
-          "id": "e35d594e497a",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,51zjb.com"
-        },
-        {
-          "id": "ec60eb2d40e3",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,hey-can.com"
-        },
-        {
-          "id": "ed100ca88df5",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,vlabimg.com"
-        },
-        {
-          "id": "f23fc323f219",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,jianyingmicro.com"
-        },
-        {
-          "id": "fcd0d7efa090",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,i-amtr.com"
+          "id": "df3ebd71bd5c",
+          "source": "Rabbit-Spec China",
+          "rule": "DOMAIN-SUFFIX,rtesvc.com"
         }
       ],
-      "removed_sample": [
-        {
-          "id": "007e8ea3ead2",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,papuanewguineans.com"
-        },
-        {
-          "id": "01a633067039",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,muhoujiemi.com"
-        },
-        {
-          "id": "0315535ef3f0",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,stofund.org"
-        },
-        {
-          "id": "034ec9a8ee48",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,youmengcms.com"
-        },
-        {
-          "id": "03d9dcf6c544",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,dfxq.com"
-        },
-        {
-          "id": "07825454373d",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,1314h.com"
-        },
-        {
-          "id": "08dca718aee7",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,nbaxiaoshuo.com"
-        },
-        {
-          "id": "092b8c59d425",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,hunbohui.info"
-        },
-        {
-          "id": "0a8b143f15ab",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,zlzlzsl.com"
-        },
-        {
-          "id": "0aadcb613f0c",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,lpszstv.com"
-        },
-        {
-          "id": "0b621444e10f",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,som88.net"
-        },
-        {
-          "id": "0c313afdf77a",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,vqu.show"
-        },
-        {
-          "id": "0f11da01c6ea",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,ydguolan.com"
-        },
-        {
-          "id": "0f46858636ad",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,92e483231a9103f8.com"
-        },
-        {
-          "id": "10385bc2866a",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,1108cd985e95ad39.com"
-        },
-        {
-          "id": "1061c03a9fc1",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,maldiveszh.com"
-        },
-        {
-          "id": "10d3142bad50",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,hengxinjinshu.com"
-        },
-        {
-          "id": "135bf4716841",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,480e7c558d3d8aaa.com"
-        },
-        {
-          "id": "144d18651fb3",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,sj123.com"
-        },
-        {
-          "id": "156458a2dd97",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,secsib-kendal.com"
-        },
-        {
-          "id": "15c4ee81baf6",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,woshanit.com"
-        },
-        {
-          "id": "1615e5f1babf",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,fpaixfl.com"
-        },
-        {
-          "id": "177f66654bc4",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,mipangwang.com"
-        },
-        {
-          "id": "1891231ac905",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,qiaoshang.org"
-        },
-        {
-          "id": "19f0ede79daa",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,longjunjiayuan.com"
-        },
-        {
-          "id": "1b305131f98d",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,allwin368.com"
-        },
-        {
-          "id": "1d6d0b3b90f6",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,masiao.com"
-        },
-        {
-          "id": "1d7092d4ba4b",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,48670.vip"
-        },
-        {
-          "id": "1e7ff5491d69",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,rsttdsaaas.icu"
-        },
-        {
-          "id": "22090ac2b4c2",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,jjrau1656.com"
-        },
-        {
-          "id": "2224c4e0ace6",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,9damao.com"
-        },
-        {
-          "id": "223c6b2f0ce1",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,zoofon.com"
-        },
-        {
-          "id": "226a1593d941",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,mionexmailerc2.com"
-        },
-        {
-          "id": "229edb6be303",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,jingyanbus.com"
-        },
-        {
-          "id": "2354129dca3a",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,wknky1296.com"
-        },
-        {
-          "id": "235a70192c4a",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,oswdj.com"
-        },
-        {
-          "id": "2554de23d93a",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,28eb96ed4da91317.com"
-        },
-        {
-          "id": "2593414848ad",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,c6a0cbdfa0be06e6.com"
-        },
-        {
-          "id": "259e23d1e03e",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,x-cmd.com"
-        },
-        {
-          "id": "260338a048db",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,77670.org"
-        },
-        {
-          "id": "26764c0a1626",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,ycrcrs.com"
-        },
-        {
-          "id": "267ac1a8f4af",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,zbo0n.com"
-        },
-        {
-          "id": "26c01b170f57",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,5087.com"
-        },
-        {
-          "id": "2756b6ea9006",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,db5f9bf125415ac9.com"
-        },
-        {
-          "id": "2828dacd3df8",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,sinbam.com"
-        },
-        {
-          "id": "28ad17353bd1",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,bllsbz.com"
-        },
-        {
-          "id": "2a663ac7275b",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,success001.com"
-        },
-        {
-          "id": "2ad6e7595a15",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,feitaomall.com"
-        },
-        {
-          "id": "30942f41869c",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,szbattery.org"
-        },
-        {
-          "id": "3144c54d0915",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,89b12b5e3ff8085c.com"
-        },
-        {
-          "id": "32b541c5c938",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,gxaist.com"
-        },
-        {
-          "id": "332f8fe9e156",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,hdkylin.work"
-        },
-        {
-          "id": "3496f6410bda",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,biqg8.com"
-        },
-        {
-          "id": "360588ea0d1d",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,ppxclub.com"
-        },
-        {
-          "id": "375680c9bce5",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,moshua.net"
-        },
-        {
-          "id": "37a9fd97df13",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,ldngj.shop"
-        },
-        {
-          "id": "37f68169b5ed",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,51056.org"
-        },
-        {
-          "id": "386e0d19ee1e",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,youzipay.com"
-        },
-        {
-          "id": "3905209944fe",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,2d261b4e6e641e43.com"
-        },
-        {
-          "id": "3923a9925100",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,36838.org"
-        },
-        {
-          "id": "3afc65ae4128",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,jie.ge"
-        },
-        {
-          "id": "3c07d04e98e1",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,0d06e627dbe6654a.com"
-        },
-        {
-          "id": "3c136e65a398",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,fxw.la"
-        },
-        {
-          "id": "3cfbdcb3e030",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,xussb.com"
-        },
-        {
-          "id": "3e6df89047a6",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,zxc123zxc123.xyz"
-        },
-        {
-          "id": "3ea19d186271",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,qlnonwoven.com"
-        },
-        {
-          "id": "3ebbc8ce2a12",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,1q2q.com"
-        },
-        {
-          "id": "3ef62906b408",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,8886664ad2.shop"
-        },
-        {
-          "id": "416594612ad7",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,c9o8nlanfm.work"
-        },
-        {
-          "id": "416fdbc2ab28",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,ibm-dns.com"
-        },
-        {
-          "id": "418ced6ea7fc",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,sdlsgroup.com"
-        },
-        {
-          "id": "428c40912533",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,5184pass.com"
-        },
-        {
-          "id": "4299c5c59838",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,sysnfj.com"
-        },
-        {
-          "id": "440ee3a40ed8",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,mengxi.com"
-        },
-        {
-          "id": "471c18cb80d1",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,vitagou.hk"
-        },
-        {
-          "id": "47a6c9505ce1",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,bmw8033.com"
-        },
-        {
-          "id": "47b77e62ede5",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,huilog.com"
-        },
-        {
-          "id": "47c27128ee63",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,ningkekeji.com"
-        },
-        {
-          "id": "48cc242e668a",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,6hd0hoc.com"
-        },
-        {
-          "id": "49141373bb07",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,tangshan-marathon.com"
-        },
-        {
-          "id": "4ac9dfc11d7b",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,masterofmalteu.shop"
-        },
-        {
-          "id": "4b8c5e011b89",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,pcwenti.com"
-        },
-        {
-          "id": "4bd931641e65",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,70392.org"
-        },
-        {
-          "id": "4d124e0b226f",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,91827364592018.icu"
-        },
-        {
-          "id": "4d76f493b7a9",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,xaclcrm.com"
-        },
-        {
-          "id": "4dc1df4c9f57",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,gzjiehun.com"
-        },
-        {
-          "id": "4f2690fb7e2c",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,tcmwindow.com"
-        },
-        {
-          "id": "4fb9ec9b74ed",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,ihxlife.com"
-        },
-        {
-          "id": "519393c892c2",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,bkjia.com"
-        },
-        {
-          "id": "51a7df69ce6d",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,cnhalo.net"
-        },
-        {
-          "id": "525b7809413d",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,ninomiya.store"
-        },
-        {
-          "id": "5271fbc355b0",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,syzsgroup.com"
-        },
-        {
-          "id": "528973f96024",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,oupuzw.com"
-        },
-        {
-          "id": "538d076d533c",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,51ganjie.com"
-        },
-        {
-          "id": "540830d266e6",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,eaf341cc30c286cf.com"
-        },
-        {
-          "id": "54ca90ff1bb1",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,jianke.cc"
-        },
-        {
-          "id": "54f968649619",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,bowuzhi.fm"
-        },
-        {
-          "id": "5996455fca13",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,altamob.com"
-        },
-        {
-          "id": "59deb9655923",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,abcdd10006.icu"
-        },
-        {
-          "id": "59fe39289c25",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,3kmq.com"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -695,24 +94,13 @@
     },
     {
       "file": "China_IP.list",
-      "prev_total": 11514,
+      "prev_total": 11512,
       "curr_total": 11512,
       "added_count": 0,
-      "removed_count": 2,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "666d8a939468",
-          "source": "blackmatrix7 China IPs",
-          "rule": "IP-CIDR,108.186.72.0/24"
-        },
-        {
-          "id": "9270174ed532",
-          "source": "blackmatrix7 China IPs",
-          "rule": "IP-CIDR,104.251.176.0/22"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -794,19 +182,13 @@
     },
     {
       "file": "Microsoft_CDN.list",
-      "prev_total": 80,
+      "prev_total": 79,
       "curr_total": 79,
       "added_count": 0,
-      "removed_count": 1,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "e8e8d013656b",
-          "source": "SukkaW Microsoft CDN",
-          "rule": "DOMAIN-SUFFIX,download.microsoft.com"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -844,135 +226,13 @@
     },
     {
       "file": "Speedtest.list",
-      "prev_total": 1683,
+      "prev_total": 1685,
       "curr_total": 1685,
-      "added_count": 13,
-      "removed_count": 11,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "0578ed72ddf9",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-1.keyubu.com"
-        },
-        {
-          "id": "32c4df87be80",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed-syd.gigacomm.net.au"
-        },
-        {
-          "id": "41d750ea2dcd",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.jvswifi.com.br"
-        },
-        {
-          "id": "428b755a2d51",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.ufinet.co.cr"
-        },
-        {
-          "id": "43f75ae5aa25",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.telbo.net"
-        },
-        {
-          "id": "6a6f44221018",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,txg-speedtest.infinirc.com"
-        },
-        {
-          "id": "76abfa7b0ce2",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-mel.vic.au.hostuniversal.com.au"
-        },
-        {
-          "id": "9805c3888ee2",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.taifo.com.tw"
-        },
-        {
-          "id": "99d636115e4d",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.kdatacenter.com"
-        },
-        {
-          "id": "9ef50333ec52",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtestmoh1.airtelbroadband.in"
-        },
-        {
-          "id": "aa2d41e1a749",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.infortectelecom.net.br"
-        },
-        {
-          "id": "bd05dcc3449e",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.har.vodafoneidea.com"
-        },
-        {
-          "id": "f790bbddbc94",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed.cable-giant.com.tw"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "0a21ac426b0c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.octaplus.uk"
-        },
-        {
-          "id": "2a18c247ac08",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ookla.argsment.com"
-        },
-        {
-          "id": "3307fbfaba51",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,st3.surajnetwork.com"
-        },
-        {
-          "id": "42a36a3fbaf2",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed.megasyy.com"
-        },
-        {
-          "id": "51cd85bbddab",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.fra.plusnet.de"
-        },
-        {
-          "id": "58853cdc4bf0",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.thryve.com.au"
-        },
-        {
-          "id": "7531ccb1c00b",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,dehradun.blueskynetwork.in"
-        },
-        {
-          "id": "85b7f8f6df4c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,spd79.claro.com.br"
-        },
-        {
-          "id": "91dd7903cffa",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.conectaamazonia.com.br"
-        },
-        {
-          "id": "9cb624c22762",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.3jglobal.com"
-        },
-        {
-          "id": "9d56ad0a505c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.dme.fdcservers.net"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -1010,28 +270,12 @@
     },
     {
       "file": "TikTok.list",
-      "prev_total": 31,
+      "prev_total": 34,
       "curr_total": 34,
-      "added_count": 3,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "1f0d6e2494f9",
-          "source": "blackmatrix7 TikTok",
-          "rule": "DOMAIN-SUFFIX,capcutapi.com"
-        },
-        {
-          "id": "460498e1548e",
-          "source": "blackmatrix7 TikTok",
-          "rule": "DOMAIN-SUFFIX,capcutstatic.com"
-        },
-        {
-          "id": "db25b4026fee",
-          "source": "blackmatrix7 TikTok",
-          "rule": "DOMAIN-SUFFIX,capcutapi.us"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
