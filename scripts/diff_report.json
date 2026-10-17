@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-17T10:13:04.827102",
-  "total_added": 2,
+  "generated_at": "2026-10-17T10:24:58.708176",
+  "total_added": 3,
   "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
@@ -61,21 +61,21 @@
     },
     {
       "file": "China.list",
-      "prev_total": 110650,
-      "curr_total": 110652,
+      "prev_total": 110652,
+      "curr_total": 110654,
       "added_count": 2,
       "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [
         {
-          "id": "79f70986abe5",
+          "id": "914c64de3e00",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,po0.io"
+          "rule": "DOMAIN-KEYWORD,223789"
         },
         {
-          "id": "df3ebd71bd5c",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,rtesvc.com"
+          "id": "fdb4ceacb05d",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,emby.xiaov8.com"
         }
       ],
       "removed_sample": [],
@@ -150,11 +150,17 @@
     {
       "file": "GlobalMedia.list",
       "prev_total": 2255,
-      "curr_total": 2255,
-      "added_count": 0,
+      "curr_total": 2256,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "e3e69d38a1c3",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-KEYWORD,023168"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },

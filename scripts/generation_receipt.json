@@ -58,15 +58,15 @@
     },
     {
       "file": "China.list",
-      "rules": 110652,
+      "rules": 110654,
       "types": {
         "DOMAIN": 246,
-        "DOMAIN-KEYWORD": 9,
-        "DOMAIN-SUFFIX": 110365,
+        "DOMAIN-KEYWORD": 10,
+        "DOMAIN-SUFFIX": 110366,
         "DOMAIN-WILDCARD": 1,
         "USER-AGENT": 31
       },
-      "sha256": "608bae934186b2682871c3e73cc8c138a66329041965d0cf2a0a1533153b4ed3"
+      "sha256": "3aba6c4e8ad30379e6ceddbb9a69c39ede45ba924f15a2f6ecb95baf3a56a9b6"
     },
     {
       "file": "ChinaMedia.list",
@@ -132,14 +132,14 @@
         "IP-CIDR6": 1,
         "USER-AGENT": 5
       },
-      "sha256": "898f1fde710d6807686b16b2dcdbd06dbf2218ae31481afc0794a09d71684a2e"
+      "sha256": "bcd9668da33a6200ba1fbfe65e26aa81d5245fab0da22fd8e3ed01505d654c8e"
     },
     {
       "file": "GlobalMedia.list",
-      "rules": 2255,
+      "rules": 2256,
       "types": {
         "DOMAIN": 26,
-        "DOMAIN-KEYWORD": 21,
+        "DOMAIN-KEYWORD": 22,
         "DOMAIN-SUFFIX": 1213,
         "IP-CIDR": 918,
         "IP-CIDR6": 6,
@@ -147,7 +147,7 @@
         "URL-REGEX": 1,
         "USER-AGENT": 66
       },
-      "sha256": "acf71a1dfd5223f565aef5a4df3ba82add08c9a832f0efb132acfb9fe046d732"
+      "sha256": "ccd135e68688b133f05d8521151a6d0da0c18808d5c3d99babf3209127b0cfeb"
     },
     {
       "file": "Google.list",
@@ -302,11 +302,11 @@
       "sha256": "dc6dfde863bc0c0034fa3bae09c8a8b090ca385439e866e5ff89fa65eb177c69"
     }
   ],
-  "total_rules": 159105,
+  "total_rules": 159108,
   "rule_types": {
     "DOMAIN": 3602,
-    "DOMAIN-KEYWORD": 95,
-    "DOMAIN-SUFFIX": 141296,
+    "DOMAIN-KEYWORD": 97,
+    "DOMAIN-SUFFIX": 141297,
     "DOMAIN-WILDCARD": 3,
     "IP-ASN": 8,
     "IP-CIDR": 9520,
@@ -318,7 +318,7 @@
   "source_attribution": {
     "ConnersHua AI": 12,
     "Loyalsoldier China CIDR": 7471,
-    "Manual Rules": 278,
+    "Manual Rules": 281,
     "Rabbit-Spec AIGC": 27,
     "Rabbit-Spec China": 187,
     "Rabbit-Spec China CIDR": 20,
@@ -365,14 +365,14 @@
     "Apple_AI.manifest": "68eeb4b921ba19b719f5167d9d8b0a5163e53db274055e7fadea6b556750c488",
     "Apple_CN.manifest": "a156042ab2b674afe44c22e64f5353e3ace603117d8b12d8ac483521f94641da",
     "CDN.manifest": "fb0dfab0e6ac4f27ed8a55aabacce40a85165d142e547fae1da94ebed4391574",
-    "China.manifest": "76f19eb4d2094bcb39e41eb3c2ff661a0f9dca9850b5a50de4d3bec6644e7bb0",
+    "China.manifest": "c732c813b360a243283cc80e33c07f0df0af43d417ce845bdf4e2db7820886e7",
     "ChinaMedia.manifest": "8f86b924f2832027ab2d1f8643c4c51953994e84af6ebe3bad2aa553ad3d2616",
     "China_IP.manifest": "4e5181d7b349e63478f9fe32f1067398e90d651cad28b640a1968490b910ed01",
     "Disney.manifest": "4952367b9bc1b50aaeacf8f01c8059c20e75aaf86be6c908d16a4f607a6b866f",
     "Download.manifest": "c9f9326438b54e582fc59112817f6b81716a41a864ed8ad72313fa76daf98471",
     "Game.manifest": "5647f05eed7f814392e628883e94e4ede02775aade0a2bcc85976783564f5597",
     "Global.manifest": "73f9d21ac9fc27a9dd90335fddda7c5dbf2e46082c9bc1019ce829a4c25e582a",
-    "GlobalMedia.manifest": "6a9bee86da914fd815e89d46ecb9f78b53679616d597acaa122ac49da2ff5089",
+    "GlobalMedia.manifest": "88e3ae29a167a2e4e85c5e93116ea162679a26c651696c84fbc6883c24b27cee",
     "Google.manifest": "cd7048aa630a768015dc08bb580cea5c38ed764cc6246e912ab68e37815daa81",
     "Microsoft.manifest": "9b0451fc20f5198fb96a13d4fcba5fc0e75c5e212486b49c905fd9e7ad5b5044",
     "Microsoft_CDN.manifest": "d26571becc05f723d2f064459eb77b583222af156d1a2e6b81505191d900f07a",
@@ -390,7 +390,7 @@
   "sources_sha256": "cac9ce245067c00c15c1b5053a96c5750f1ebcf8d446c08d56ac38acb4bbe61a",
   "override_manifest_sha256": "c0e7407f9f38d3bffaceb71c6dfcde67d998f651409a0beb71c7518093534ae0",
   "clash_compatibility": {
-    "payload_rules": 158922,
+    "payload_rules": 158925,
     "dropped_surge_only_types": {
       "URL-REGEX": 5,
       "USER-AGENT": 178
@@ -402,7 +402,7 @@
     }
   },
   "diff_summary": {
-    "total_added": 2,
+    "total_added": 3,
     "total_removed": 0,
     "total_source_changed": 0
   }
