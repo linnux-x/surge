@@ -22,6 +22,7 @@ if _scripts_dir not in sys.path:
 
 from cidr_rules import redundant_cidr_indices
 from policy import (
+    CHINA_FALLBACK_EXCLUDE_PATTERNS,
     FASTCOM_RE,
     GITHUB_RE,
     SHARED_CDN_PARENTS,
@@ -60,20 +61,6 @@ PAYPAL_CN_DOMAINS = {
     "paypalobjects.cn", "paypalobjects.com.cn",
     "xoom.net.cn", "xn--bnq297cix3a.cn",
 }
-
-NON_CHINA_FALLBACK_PATTERNS = [
-    re.compile(r"^domain,rthklive2-lh[.]akamaihd[.]net$", re.I),
-    re.compile(
-        r"^domain-suffix,(bilibili[.]tv|biliintl[.]co|biliintl[.]com|"
-        r"himalaya[.]com|iflix[.]com|iq[.]com|joox[.]com|"
-        r"kwai-group[.]com|kwai[.]com|kwai[.]net|kwaicdn[.]com|"
-        r"nba[.]com|snssdk[.]com|tiktokd[.]net|tiktokd[.]org|"
-        r"wetv[.]vip|wetvinfo[.]com)$",
-        re.I,
-    ),
-    re.compile(r"^user-agent,(himalaya[*]|tiktok[*])$", re.I),
-]
-
 
 def validate_rule_file(lines: list[str], target_name: str) -> list[str]:
     """Validate a rule file's content against Surge syntax and project policies.
@@ -179,7 +166,7 @@ def validate_rule_file(lines: list[str], target_name: str) -> list[str]:
                 len(parts) >= 2 and parts[1].lower() in SHARED_CDN_PARENTS:
             errors.append(f"{target_name}:{index} shared CDN outside CDN.list: {rule}")
         if target_name == "China.list" and \
-                any(p.search(low) for p in NON_CHINA_FALLBACK_PATTERNS):
+                any(p.search(low) for p in CHINA_FALLBACK_EXCLUDE_PATTERNS):
             errors.append(f"{target_name}:{index} non-China media in China.list: {rule}")
 
         # ── Shared third-party infrastructure ──

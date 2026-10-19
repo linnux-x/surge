@@ -70,6 +70,20 @@ class SourceTransformTests(unittest.TestCase):
         )
         self.assertEqual(apply_project_guardrails('Global.list', lines), lines)
 
+    def test_china_guardrail_filters_known_overseas_media_and_shared_cdn(self):
+        lines = [
+            'DOMAIN-SUFFIX,snssdk.com',
+            'DOMAIN-SUFFIX,kwaicdn.com',
+            'DOMAIN,rthklive2-lh.akamaihd.net',
+            'DOMAIN-SUFFIX,akadns.net',
+            'DOMAIN-SUFFIX,stat-nba.com',
+            'DOMAIN-SUFFIX,tobsnssdk.com',
+        ]
+        self.assertEqual(
+            apply_project_guardrails('China.list', lines),
+            ['DOMAIN-SUFFIX,stat-nba.com', 'DOMAIN-SUFFIX,tobsnssdk.com'],
+        )
+
     def test_process_rule_filters_shared_suffixes_before_strict_validation(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

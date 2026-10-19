@@ -11,6 +11,7 @@ from pathlib import Path
 from typing import Optional
 
 from policy import (
+    CHINA_FALLBACK_EXCLUDE_PATTERNS,
     FASTCOM_RE,
     GITHUB_RE,
     SHARED_INFRA_EXEMPT_FILES,
@@ -106,6 +107,10 @@ def apply_project_guardrails(target_name: str, lines: list[str]) -> list[str]:
         out = [l for l in out if not YOUTUBE_RE.search(l)]
     elif target_name == "China.list":
         out = [l for l in out if not re.match(r"^(IP-CIDR|IP-CIDR6|IP-ASN),", l, re.IGNORECASE)]
+        out = [
+            line for line in out
+            if not any(pattern.search(line.lower()) for pattern in CHINA_FALLBACK_EXCLUDE_PATTERNS)
+        ]
     elif target_name == "China_IP.list":
         out = [re.sub(r",(no-resolve|NO-RESOLVE)", "", l, flags=re.IGNORECASE) for l in out]
 
