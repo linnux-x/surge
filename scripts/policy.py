@@ -30,6 +30,24 @@ YOUTUBE_RE = re.compile(
     re.IGNORECASE,
 )
 
+# China fallback must not absorb overseas media services or a shared CDN parent.
+# Keep these exact typed rules in the canonical policy so generation removes a
+# bad upstream entry before strict validation, rather than relying only on a
+# matching line in China.exclude.txt.
+CHINA_FALLBACK_EXCLUDE_PATTERNS = (
+    re.compile(r"^domain,rthklive2-lh[.]akamaihd[.]net$", re.I),
+    re.compile(
+        r"^domain-suffix,(bilibili[.]tv|biliintl[.]co|biliintl[.]com|"
+        r"himalaya[.]com|iflix[.]com|iq[.]com|joox[.]com|"
+        r"kwai-group[.]com|kwai[.]com|kwai[.]net|kwaicdn[.]com|"
+        r"nba[.]com|snssdk[.]com|tiktokd[.]net|tiktokd[.]org|"
+        r"wetv[.]vip|wetvinfo[.]com)$",
+        re.I,
+    ),
+    re.compile(r"^user-agent,(himalaya[*]|tiktok[*])$", re.I),
+    re.compile(r"^domain-suffix,akadns[.]net$", re.I),
+)
+
 # ── Shared infrastructure — strict tier (blocks commit via rule_validator) ──
 
 # Shared CDN parent domains: too broad to route per-service; CDN.list only.
