@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-10-20 05:01:34 +0800
+# UPDATED: 2026-10-21 05:01:15 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24486
+# TOTAL: 24501
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -1772,7 +1772,6 @@ DOMAIN-SUFFIX,asmhentai.com
 DOMAIN-SUFFIX,asminternational.org
 DOMAIN-SUFFIX,asmrbuluo.com
 DOMAIN-SUFFIX,asn-online.org
-DOMAIN-SUFFIX,asobostudio.com
 DOMAIN-SUFFIX,aspbjournals.org
 DOMAIN-SUFFIX,aspenpublishing.com
 DOMAIN-SUFFIX,asproex.com
@@ -2319,8 +2318,15 @@ DOMAIN-SUFFIX,beescrm.ru
 DOMAIN-SUFFIX,beforeigners.com
 DOMAIN-SUFFIX,befuck.com
 DOMAIN-SUFFIX,befuck.net
+DOMAIN-SUFFIX,beget.app
+DOMAIN-SUFFIX,beget.cloud
 DOMAIN-SUFFIX,beget.com
+DOMAIN-SUFFIX,beget.de
+DOMAIN-SUFFIX,beget.hosting
+DOMAIN-SUFFIX,beget.pro
 DOMAIN-SUFFIX,beget.ru
+DOMAIN-SUFFIX,beget.tech
+DOMAIN-SUFFIX,begetcdn.cloud
 DOMAIN-SUFFIX,behindthescreenz.com
 DOMAIN-SUFFIX,beijingnike.com
 DOMAIN-SUFFIX,beiyongzhan1.com
@@ -2340,6 +2346,7 @@ DOMAIN-SUFFIX,berkeley.edu
 DOMAIN-SUFFIX,berlincompanions.com
 DOMAIN-SUFFIX,berlintwitterwall.com
 DOMAIN-SUFFIX,beru.ru
+DOMAIN-SUFFIX,beserver.ru
 DOMAIN-SUFFIX,best-sex-games.com
 DOMAIN-SUFFIX,best2pay.net
 DOMAIN-SUFFIX,best3dhere.com
@@ -2432,6 +2439,7 @@ DOMAIN-SUFFIX,beyondcore.com
 DOMAIN-SUFFIX,bfa.ru
 DOMAIN-SUFFIX,bfads.net
 DOMAIN-SUFFIX,bffshd.com
+DOMAIN-SUFFIX,bget.ru
 DOMAIN-SUFFIX,bgicdn.com
 DOMAIN-SUFFIX,bgov.com
 DOMAIN-SUFFIX,bgr.in
@@ -4220,6 +4228,7 @@ DOMAIN-SUFFIX,currently.com
 DOMAIN-SUFFIX,currently.net
 DOMAIN-SUFFIX,currenttime.tv
 DOMAIN-SUFFIX,curseforge.com
+DOMAIN-SUFFIX,cursorvm.com
 DOMAIN-SUFFIX,curve.fi
 DOMAIN-SUFFIX,curvybbwwives.com
 DOMAIN-SUFFIX,curvyerotic.com
@@ -6065,7 +6074,6 @@ DOMAIN-SUFFIX,flexsig.com
 DOMAIN-SUFFIX,fli8.xyz
 DOMAIN-SUFFIX,flic.kr
 DOMAIN-SUFFIX,flickr.net
-DOMAIN-SUFFIX,flightsimulator.com
 DOMAIN-SUFFIX,flipfap.com
 DOMAIN-SUFFIX,flipshare.com
 DOMAIN-SUFFIX,flirt4free.com
@@ -11650,6 +11658,7 @@ DOMAIN-SUFFIX,onxxxvideo.com
 DOMAIN-SUFFIX,ootbstudio.co.kr
 DOMAIN-SUFFIX,op7979.com
 DOMAIN-SUFFIX,opac-project.eu
+DOMAIN-SUFFIX,openai.org
 DOMAIN-SUFFIX,openamt.com
 DOMAIN-SUFFIX,openapiplatform.com
 DOMAIN-SUFFIX,openapiservice.com
@@ -13540,6 +13549,7 @@ DOMAIN-SUFFIX,schiffvitamins.com
 DOMAIN-SUFFIX,scholarpedia.org
 DOMAIN-SUFFIX,schwab.com.sg
 DOMAIN-SUFFIX,schwabassetmanagement.com
+DOMAIN-SUFFIX,schwabcdn.com
 DOMAIN-SUFFIX,schwabplan.com
 DOMAIN-SUFFIX,sci-hub.it.nf
 DOMAIN-SUFFIX,sci-hub.mksa.top
@@ -14418,6 +14428,7 @@ DOMAIN-SUFFIX,spreadprivacy.com
 DOMAIN-SUFFIX,spring06.top
 DOMAIN-SUFFIX,spring13.top
 DOMAIN-SUFFIX,springernature.com
+DOMAIN-SUFFIX,sprut.io
 DOMAIN-SUFFIX,sptvbroadcast.com
 DOMAIN-SUFFIX,sputnikglobe.com
 DOMAIN-SUFFIX,sputnikimages.com
@@ -15209,6 +15220,8 @@ DOMAIN-SUFFIX,timerbank.ru
 DOMAIN-SUFFIX,timesmembership.com
 DOMAIN-SUFFIX,timeweb.cloud
 DOMAIN-SUFFIX,timeweb.com
+DOMAIN-SUFFIX,timeweb.tech
+DOMAIN-SUFFIX,timewebcloud.kz
 DOMAIN-SUFFIX,timi1.me
 DOMAIN-SUFFIX,timo0.com
 DOMAIN-SUFFIX,ting53.xyz
@@ -15599,6 +15612,7 @@ DOMAIN-SUFFIX,tyms2022.com
 DOMAIN-SUFFIX,typeisbeautiful.com
 DOMAIN-SUFFIX,typekit.com
 DOMAIN-SUFFIX,typenetwork.com
+DOMAIN-SUFFIX,typesafe.ai
 DOMAIN-SUFFIX,typesquare.com
 DOMAIN-SUFFIX,tyre-cadcam.com
 DOMAIN-SUFFIX,tyrecadcam.com
@@ -17138,6 +17152,7 @@ DOMAIN-SUFFIX,xn--8uq428d76d.tokyo
 DOMAIN-SUFFIX,xn--90ab.com
 DOMAIN-SUFFIX,xn--90ab2c.xn--p1ai
 DOMAIN-SUFFIX,xn--90absjljw3g.xn--p1ai
+DOMAIN-SUFFIX,xn--90aefb9d.xn--p1ai
 DOMAIN-SUFFIX,xn--90aifd0az.shop
 DOMAIN-SUFFIX,xn--90aifd0azb.xn--p1acf
 DOMAIN-SUFFIX,xn--av-o44ep1d.com
