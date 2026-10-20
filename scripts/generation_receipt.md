@@ -1,29 +1,29 @@
 # Surge 规则生成收据
 
 - 规则文件：26
-- 规则总数：159382
+- 规则总数：159327
 - manifest 文件：26
 
 ## 差异摘要
 
-- 新增：131
-- 删除：158
-- 来源迁移：0
+- 新增：141
+- 删除：196
+- 来源迁移：6
 
 ## Clash 兼容性
 
-- 生成 payload：159199
+- 生成 payload：159144
 - 跳过 Surge 专属规则：{'URL-REGEX': 5, 'USER-AGENT': 178}
 - 保留 mihomo 扩展类型：{'DOMAIN-WILDCARD': 3, 'IP-ASN': 8, 'PROCESS-NAME': 58}
 
 ## 规则类型
 
-- DOMAIN: 3627
+- DOMAIN: 3554
 - DOMAIN-KEYWORD: 97
-- DOMAIN-SUFFIX: 141215
+- DOMAIN-SUFFIX: 141230
 - DOMAIN-WILDCARD: 3
 - IP-ASN: 8
-- IP-CIDR: 9813
+- IP-CIDR: 9816
 - IP-CIDR6: 4378
 - PROCESS-NAME: 58
 - URL-REGEX: 5
@@ -42,23 +42,23 @@
 - SukkaW Apple CDN: 158
 - SukkaW Apple CN: 5
 - SukkaW CDN: 26
-- SukkaW Domestic: 695
-- SukkaW Download: 1621
+- SukkaW Domestic: 696
+- SukkaW Download: 1620
 - SukkaW Game Download: 52
 - SukkaW Microsoft CDN: 52
 - SukkaW Speedtest: 122
 - SukkaW Speedtest Servers China: 1
-- SukkaW Speedtest Servers International: 1584
+- SukkaW Speedtest Servers International: 1512
 - Telegram Official CIDR: 11
 - blackmatrix7 Apple: 1546
-- blackmatrix7 China IPs: 4008
-- blackmatrix7 ChinaMaxNoIP Domain: 109672
+- blackmatrix7 China IPs: 4011
+- blackmatrix7 ChinaMaxNoIP Domain: 109671
 - blackmatrix7 ChinaMedia: 384
 - blackmatrix7 Discord: 29
 - blackmatrix7 Disney: 166
 - blackmatrix7 Facebook: 570
 - blackmatrix7 Game: 549
-- blackmatrix7 Global: 24471
+- blackmatrix7 Global: 24486
 - blackmatrix7 GlobalMedia: 2248
 - blackmatrix7 Google: 685
 - blackmatrix7 Instagram: 1

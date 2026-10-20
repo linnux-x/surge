@@ -1,7 +1,7 @@
 # NAME: China
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-10-19 08:03:54 +0800
+# UPDATED: 2026-10-21 05:01:14 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 110567
 
@@ -146,6 +146,7 @@ DOMAIN-SUFFIX,8686c.com
 DOMAIN-SUFFIX,95516.com
 DOMAIN-SUFFIX,95588.com
 DOMAIN-SUFFIX,aicdn.com
+DOMAIN-SUFFIX,amemv.com
 DOMAIN-SUFFIX,awtmt.com
 DOMAIN-SUFFIX,baidu.com
 DOMAIN-SUFFIX,baike.com
@@ -11848,7 +11849,6 @@ DOMAIN-SUFFIX,amdotibet.com
 DOMAIN-SUFFIX,amec-inc.com
 DOMAIN-SUFFIX,amegroups.org
 DOMAIN-SUFFIX,ameisx.com
-DOMAIN-SUFFIX,amemv.com
 DOMAIN-SUFFIX,amemv.net
 DOMAIN-SUFFIX,ameow.xyz
 DOMAIN-SUFFIX,amethystum.com

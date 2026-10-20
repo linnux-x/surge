@@ -1,6 +1,6 @@
 # Generated from Rule/China.list (DOMAIN/DOMAIN-SUFFIX entries only)
 # Format: Clash/mihomo rule-provider, behavior: domain
-# UPDATED: 2026-10-19 08:03:54 +0800
+# UPDATED: 2026-10-21 05:01:14 +0800
 # TOTAL: 110525
 payload:
   - '+.wmsjsteam.com'
@@ -131,6 +131,7 @@ payload:
   - '+.95516.com'
   - '+.95588.com'
   - '+.aicdn.com'
+  - '+.amemv.com'
   - '+.awtmt.com'
   - '+.baidu.com'
   - '+.baike.com'
@@ -11827,7 +11828,6 @@ payload:
   - '+.amec-inc.com'
   - '+.amegroups.org'
   - '+.ameisx.com'
-  - '+.amemv.com'
   - '+.amemv.net'
   - '+.ameow.xyz'
   - '+.amethystum.com'
