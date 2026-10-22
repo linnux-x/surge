@@ -10,7 +10,7 @@
         "IP-CIDR": 3,
         "URL-REGEX": 1
       },
-      "sha256": "d4b28edb690674a991f4500796ff7568ec06e684203a4029c60a10d234761449"
+      "sha256": "57bb26314e8db36659e9143cd5aafcbba566e7eba357d23a4042359010bb34a4"
     },
     {
       "file": "Apple.list",
@@ -66,7 +66,7 @@
         "DOMAIN-WILDCARD": 1,
         "USER-AGENT": 31
       },
-      "sha256": "9d55053c1c401feaa9035a8e04d1a5772699ae260900c65c67196b6b5c64ba3d"
+      "sha256": "bca5074063530c3d9cb1d29cf1fa51c1725a996fe0924a735d56b13bb759f166"
     },
     {
       "file": "ChinaMedia.list",
@@ -87,7 +87,7 @@
         "IP-CIDR": 7552,
         "IP-CIDR6": 4294
       },
-      "sha256": "2908a7179b821b2ed81e22b4ae654aa29f7435efba01bad44cb8f72f600e0863"
+      "sha256": "509de6c7893985a71a05291dad2ffa878de40625c3c912198991802e9a45c484"
     },
     {
       "file": "Disney.list",
@@ -132,7 +132,7 @@
         "IP-CIDR6": 1,
         "USER-AGENT": 5
       },
-      "sha256": "cd30365eef77c404326b3de2723b75a676556ed1146b83ff8006f407493d9c4e"
+      "sha256": "3cb0a9ff50f9f3393efdb8e17059c85517617b5d61dda3d37ac642c9a41f0f8b"
     },
     {
       "file": "GlobalMedia.list",
@@ -221,12 +221,12 @@
     },
     {
       "file": "Speedtest.list",
-      "rules": 1636,
+      "rules": 1669,
       "types": {
-        "DOMAIN": 1523,
+        "DOMAIN": 1556,
         "DOMAIN-SUFFIX": 113
       },
-      "sha256": "bea3787078c5dfa0dea9cfa8f9e57b86006b88a4332e7acf78e65cba59733909"
+      "sha256": "c0bfc221282c220ded44e0a7635fb671ad58b634e81fba96fe03fa628f9fb48c"
     },
     {
       "file": "Speedtest_China.list",
@@ -235,7 +235,7 @@
         "DOMAIN": 52,
         "IP-CIDR": 1
       },
-      "sha256": "99273ff8ca980b6a67d26c41ba1de7c4219cb9a04476a3744a5760938f0204d7"
+      "sha256": "4d3b2bf46498f9fa9f20c8c09f2d15bb882d0421e97129a402ac214555264e78"
     },
     {
       "file": "Spotify.list",
@@ -262,7 +262,7 @@
         "IP-CIDR6": 5,
         "PROCESS-NAME": 5
       },
-      "sha256": "afc5adc4a5526a6026e356926ae1cda5f71b39962bf47b2fdadc0e9a7be79dad"
+      "sha256": "872ce1d59cca6c340bb524892037cfa82f000e51f52df69254e710182dab9602"
     },
     {
       "file": "TikTok.list",
@@ -302,9 +302,9 @@
       "sha256": "dc6dfde863bc0c0034fa3bae09c8a8b090ca385439e866e5ff89fa65eb177c69"
     }
   ],
-  "total_rules": 159327,
+  "total_rules": 159360,
   "rule_types": {
-    "DOMAIN": 3554,
+    "DOMAIN": 3587,
     "DOMAIN-KEYWORD": 97,
     "DOMAIN-SUFFIX": 141230,
     "DOMAIN-WILDCARD": 3,
@@ -333,7 +333,7 @@
     "SukkaW Microsoft CDN": 52,
     "SukkaW Speedtest": 122,
     "SukkaW Speedtest Servers China": 1,
-    "SukkaW Speedtest Servers International": 1512,
+    "SukkaW Speedtest Servers International": 1545,
     "Telegram Official CIDR": 11,
     "blackmatrix7 Apple": 1546,
     "blackmatrix7 China IPs": 4011,
@@ -379,7 +379,7 @@
     "Netflix.manifest": "0ffcdd804cc4e56614ba69cc539061c6b5e65ef6ee2e62a01aee3e62902ab9c9",
     "PayPal.manifest": "649b7162f902986f696a1b28e98b3d2b5e6cbda0a9c8e951c552098e68e1382b",
     "SocialMedia.manifest": "e5b500cfbb1db392e8b379359458a69ece60c50003ee8ebb1cd7ae687ef11e78",
-    "Speedtest.manifest": "aa2baba0ebd062321f249aa6d0bab32b27ea42bd31e4c2984c0056273b65a8c0",
+    "Speedtest.manifest": "d8bcf990cb0cddafe5451399f0610187adbf73836a2fb6dc74b59cc67d732463",
     "Speedtest_China.manifest": "1422ee65ce7dca6937f4119b9f3645a9f79e436faf96341f92e11e39ce894807",
     "Spotify.manifest": "5f1f22f1d8f4081b725902910dc6754a6b1fa868dd8e97e527c39fcc7cf463b0",
     "Telegram.manifest": "8857fbff71898f2065ddc9f25e5c95b2ef64d908617a94295f6fa5747f54552b",
@@ -390,7 +390,7 @@
   "sources_sha256": "cac9ce245067c00c15c1b5053a96c5750f1ebcf8d446c08d56ac38acb4bbe61a",
   "override_manifest_sha256": "c0e7407f9f38d3bffaceb71c6dfcde67d998f651409a0beb71c7518093534ae0",
   "clash_compatibility": {
-    "payload_rules": 159144,
+    "payload_rules": 159177,
     "dropped_surge_only_types": {
       "URL-REGEX": 5,
       "USER-AGENT": 178
@@ -402,8 +402,8 @@
     }
   },
   "diff_summary": {
-    "total_added": 141,
-    "total_removed": 196,
-    "total_source_changed": 6
+    "total_added": 94,
+    "total_removed": 61,
+    "total_source_changed": 0
   }
 }

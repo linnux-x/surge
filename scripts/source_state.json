@@ -1,8 +1,8 @@
 {
   "https://core.telegram.org/resources/cidr.txt": {
-    "content_length": "850",
-    "etag": "\"5d1cac2e-352\"",
-    "last_modified": "Wed, 03 Jul 2019 13:22:54 GMT",
+    "content_length": "227",
+    "etag": "\"61573cab-e3\"",
+    "last_modified": "Fri, 01 Oct 2021 16:51:55 GMT",
     "source_available": true
   },
   "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/AI.list": {
@@ -19,19 +19,19 @@
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
     "content_length": "3447",
-    "etag": "\"3adc1d295ce36b1b6857c6426a9b5291046bababd3bb15275afc41ee4344ee0d\"",
+    "etag": "\"3e04b74527df30f72339f2f95dafbdb4811290605f6161cf37ee2aca19c1211c\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
     "content_length": "101228",
-    "etag": "\"2ae106e5e3d37dd01ebdac914273f4b0ef827d538e11132e258b954c41b74a33\"",
+    "etag": "\"219f68c92043e5171805008de639f313704b6bcf176b1211f9901f5be9763619\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/ChinaCIDR.list": {
     "content_length": "243741",
-    "etag": "\"83eaebd631fbaba7c7562b17677109429eb69267e89a4cf74357006aad8f4d53\"",
+    "etag": "\"71a5f084128e7e2e678f4db56b907e77101705162641652bb6e66fe7408f4e3e\"",
     "last_modified": null,
     "source_available": true
   },
@@ -42,8 +42,8 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaLab/speedtest-net-servers-dist/master/servers.json": {
-    "content_length": "538521",
-    "etag": "\"7d5a02de2af1d4fb0aebaedc63ff1da241f8323721e0421b2de1c5cd3719ab75\"",
+    "content_length": "549817",
+    "etag": "\"0e54577ce3777b11d14a3d609d58231e4c97a75dbec410b4e56aff4542e8c5b2\"",
     "last_modified": null,
     "source_available": true
   },
