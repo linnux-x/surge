@@ -12,26 +12,26 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/cncidr.txt": {
-    "content_length": "242933",
-    "etag": "\"9bfcb73efa05f4aceda06e7acaa101594e211c4514b8d94a15f0aeb8b7a6474f\"",
+    "content_length": "242881",
+    "etag": "\"093a641db42d5e0436d30fdc114ef361e885a4143bc6fc36bd8e352b484b0f44\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
     "content_length": "3447",
-    "etag": "\"3e04b74527df30f72339f2f95dafbdb4811290605f6161cf37ee2aca19c1211c\"",
+    "etag": "\"db2494d6c41c91257f44c8a872aa085562715308bd1ed0b762d662fd4018933f\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
     "content_length": "101228",
-    "etag": "\"219f68c92043e5171805008de639f313704b6bcf176b1211f9901f5be9763619\"",
+    "etag": "\"16b87eab669508e907db677b4e060b92b4b9b4e29f406820cb03d390d339ce09\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/ChinaCIDR.list": {
-    "content_length": "243741",
-    "etag": "\"71a5f084128e7e2e678f4db56b907e77101705162641652bb6e66fe7408f4e3e\"",
+    "content_length": "243689",
+    "etag": "\"89590d5a1c70ab34b916719d06b007c341ef2932599f56caf9436498ceece193\"",
     "last_modified": null,
     "source_available": true
   },
@@ -42,8 +42,8 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaLab/speedtest-net-servers-dist/master/servers.json": {
-    "content_length": "549817",
-    "etag": "\"0e54577ce3777b11d14a3d609d58231e4c97a75dbec410b4e56aff4542e8c5b2\"",
+    "content_length": "571761",
+    "etag": "\"3ed8acd98609925330dbe9438798342a081ad65be0d71aabb5947285f56278bd\"",
     "last_modified": null,
     "source_available": true
   },
@@ -229,7 +229,7 @@
   },
   "https://ruleset.skk.moe/List/non_ip/cdn.conf": {
     "content_length": null,
-    "etag": "W/\"7cc34629d4ee4865e9de5c8156f56b39\"",
+    "etag": "W/\"e0548a37c0c264b482b4d06f9f925ba6\"",
     "last_modified": null,
     "source_available": true
   },

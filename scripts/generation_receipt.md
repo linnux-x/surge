@@ -1,29 +1,29 @@
 # Surge 规则生成收据
 
 - 规则文件：26
-- 规则总数：159360
+- 规则总数：159414
 - manifest 文件：26
 
 ## 差异摘要
 
-- 新增：94
-- 删除：61
-- 来源迁移：0
+- 新增：128
+- 删除：74
+- 来源迁移：6
 
 ## Clash 兼容性
 
-- 生成 payload：159177
+- 生成 payload：159231
 - 跳过 Surge 专属规则：{'URL-REGEX': 5, 'USER-AGENT': 178}
-- 保留 mihomo 扩展类型：{'DOMAIN-WILDCARD': 3, 'IP-ASN': 8, 'PROCESS-NAME': 58}
+- 保留 mihomo 扩展类型：{'DOMAIN-WILDCARD': 4, 'IP-ASN': 8, 'PROCESS-NAME': 58}
 
 ## 规则类型
 
-- DOMAIN: 3587
+- DOMAIN: 3639
 - DOMAIN-KEYWORD: 97
 - DOMAIN-SUFFIX: 141230
-- DOMAIN-WILDCARD: 3
+- DOMAIN-WILDCARD: 4
 - IP-ASN: 8
-- IP-CIDR: 9816
+- IP-CIDR: 9817
 - IP-CIDR6: 4378
 - PROCESS-NAME: 58
 - URL-REGEX: 5
@@ -32,7 +32,7 @@
 ## 来源归属
 
 - ConnersHua AI: 12
-- Loyalsoldier China CIDR: 7815
+- Loyalsoldier China CIDR: 7816
 - Manual Rules: 281
 - Rabbit-Spec AIGC: 27
 - Rabbit-Spec China: 187
@@ -41,14 +41,14 @@
 - SukkaW AI: 24
 - SukkaW Apple CDN: 158
 - SukkaW Apple CN: 5
-- SukkaW CDN: 26
+- SukkaW CDN: 27
 - SukkaW Domestic: 696
 - SukkaW Download: 1620
 - SukkaW Game Download: 52
 - SukkaW Microsoft CDN: 52
 - SukkaW Speedtest: 122
 - SukkaW Speedtest Servers China: 1
-- SukkaW Speedtest Servers International: 1545
+- SukkaW Speedtest Servers International: 1597
 - Telegram Official CIDR: 11
 - blackmatrix7 Apple: 1546
 - blackmatrix7 China IPs: 4011
