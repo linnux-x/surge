@@ -12,26 +12,26 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/cncidr.txt": {
-    "content_length": "242881",
-    "etag": "\"093a641db42d5e0436d30fdc114ef361e885a4143bc6fc36bd8e352b484b0f44\"",
+    "content_length": "242839",
+    "etag": "\"b4a7447eb01e627a53838694e432a5d77f561788377e53d78cba8ff17598b54e\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
     "content_length": "3447",
-    "etag": "\"db2494d6c41c91257f44c8a872aa085562715308bd1ed0b762d662fd4018933f\"",
+    "etag": "\"c74a385d37055521389a43469b911f2e21f1a6ff2ba25f4405240b07415efd20\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
     "content_length": "101228",
-    "etag": "\"16b87eab669508e907db677b4e060b92b4b9b4e29f406820cb03d390d339ce09\"",
+    "etag": "\"2fae7d7f910758c22334f2b9d202c26ac0cd056bd943205025501506248cbf6f\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/ChinaCIDR.list": {
-    "content_length": "243689",
-    "etag": "\"89590d5a1c70ab34b916719d06b007c341ef2932599f56caf9436498ceece193\"",
+    "content_length": "243647",
+    "etag": "\"c717d8f185f59924346523444fab24861369226bfdcf5fb19f85601bba4528e8\"",
     "last_modified": null,
     "source_available": true
   },
@@ -42,8 +42,8 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaLab/speedtest-net-servers-dist/master/servers.json": {
-    "content_length": "571761",
-    "etag": "\"3ed8acd98609925330dbe9438798342a081ad65be0d71aabb5947285f56278bd\"",
+    "content_length": "570735",
+    "etag": "\"5967ec189b143617d1f2e48ac9c7d8e1b31b2b79e119b692a174dd937238d23d\"",
     "last_modified": null,
     "source_available": true
   },
@@ -61,19 +61,19 @@
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All_No_Resolve.list": {
     "content_length": "51402",
-    "etag": "\"5deff9cb9d3816cd6611e3a022b3b5f71a750e4ecd2fa8ad9b8093e814415823\"",
+    "etag": "\"4f5cf45543282c0cafd0e2105e43551e2eadf467b1b46fe762087b00630d47c6\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs.list": {
-    "content_length": "704656",
-    "etag": "\"b3f588a7559d4d43806f90c6cc9356902eb02a5c2fc8bab8a1bb15f27a4e9d99\"",
+    "content_length": "704914",
+    "etag": "\"a485fd10a11078db80eb2e83158f89123587471f1d64d5e9ea761d3534454c26\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMaxNoIP/ChinaMaxNoIP_Domain.list": {
-    "content_length": "1508674",
-    "etag": "\"41c97f7000d8be6916b74acf5ef2bd6c7d9636c53bafaa1271e2c13d337d3076\"",
+    "content_length": "1508692",
+    "etag": "\"042d6c1522eabee93053c4e6b6796ad719710c4c716b73f822a75e561daa1e6b\"",
     "last_modified": null,
     "source_available": true
   },
@@ -102,14 +102,14 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list": {
-    "content_length": "19223",
-    "etag": "\"b41f054e1fc2b2fa954fbccb7b64c1dd0cee741f5d00f359eae15842811e5257\"",
+    "content_length": "19725",
+    "etag": "\"b65db7d225e05928986c3d5fc3a5dc6b8d002f7ee7f15bb32c98c0ceb5eeb5e6\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_All_No_Resolve.list": {
-    "content_length": "1012944",
-    "etag": "\"084053bb6c451550aa6e8c8856021a2f4cec00c40da6a2d6f80ecc3f6cccc1e2\"",
+    "content_length": "1014354",
+    "etag": "\"06b63f3160d72d2b5025b973e50d03b931d054416aa32be238c984839e731620\"",
     "last_modified": null,
     "source_available": true
   },

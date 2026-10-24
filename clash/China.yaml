@@ -1,7 +1,7 @@
 # Generated from Rule/China.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-10-23 05:02:24 +0800
-# TOTAL: 110567
+# UPDATED: 2026-10-25 05:01:29 +0800
+# TOTAL: 110569
 payload:
   - 'DOMAIN-SUFFIX,wmsjsteam.com'
   - 'DOMAIN-SUFFIX,steamchina.com'
@@ -85572,6 +85572,8 @@ payload:
   - 'DOMAIN-SUFFIX,szty56.com'
   - 'DOMAIN-SUFFIX,sztz.org'
   - 'DOMAIN-SUFFIX,sztzzs.com'
+  - 'DOMAIN-SUFFIX,szu.app'
+  - 'DOMAIN-SUFFIX,szu.moe'
   - 'DOMAIN-SUFFIX,szuavia.org'
   - 'DOMAIN-SUFFIX,szudad.com'
   - 'DOMAIN-SUFFIX,szunionlab.com'
