@@ -8,7 +8,7 @@
 
 这是一个以文件为接口的规则构建与分发流水线，没有常驻后端或数据库。
 核心脚本使用 Python 3.10+ 标准库，生成器通过 curl 下载，发布依赖 Git 和 GitHub CLI。
-26 个规则集共享 41 个上游 URL；`Rule/*.list`、`clash/*.yaml` 和公开配置路径是下游契约。
+26 个规则集共享 40 个上游 URL（2026-10-30 移除全覆盖的 SukkaW Telegram IP；下文验证记录保留当时的 41）；`Rule/*.list`、`clash/*.yaml` 和公开配置路径是下游契约。
 
 ```mermaid
 flowchart TD
