@@ -150,29 +150,29 @@
     },
     {
       "file": "Google.list",
-      "rules": 689,
+      "rules": 688,
       "types": {
         "DOMAIN": 2,
-        "DOMAIN-KEYWORD": 3,
+        "DOMAIN-KEYWORD": 2,
         "DOMAIN-SUFFIX": 673,
         "IP-ASN": 1,
         "IP-CIDR": 2,
         "PROCESS-NAME": 5,
         "USER-AGENT": 3
       },
-      "sha256": "9b7a86291af5465e9485275ed7af8b33500174f5398302cc414230639db363c7"
+      "sha256": "994379f4e912a53e676156d73ea52fff27e32c83b6a57712d79349582724905c"
     },
     {
       "file": "Microsoft.list",
-      "rules": 485,
+      "rules": 484,
       "types": {
         "DOMAIN": 1,
-        "DOMAIN-KEYWORD": 3,
+        "DOMAIN-KEYWORD": 2,
         "DOMAIN-SUFFIX": 476,
         "PROCESS-NAME": 2,
         "USER-AGENT": 3
       },
-      "sha256": "7ad27a00544f20664d5c982109a73547136a313ab31b40d747245b4856981903"
+      "sha256": "1d1537dcc63f894bf92a57a9eb7bc4c1f37184a394f4ddd11decccec09f2b635"
     },
     {
       "file": "Microsoft_CDN.list",
@@ -301,10 +301,10 @@
       "sha256": "dc6dfde863bc0c0034fa3bae09c8a8b090ca385439e866e5ff89fa65eb177c69"
     }
   ],
-  "total_rules": 159414,
+  "total_rules": 159412,
   "rule_types": {
     "DOMAIN": 3639,
-    "DOMAIN-KEYWORD": 96,
+    "DOMAIN-KEYWORD": 94,
     "DOMAIN-SUFFIX": 141231,
     "DOMAIN-WILDCARD": 4,
     "IP-ASN": 8,
@@ -344,9 +344,9 @@
     "blackmatrix7 Game": 549,
     "blackmatrix7 Global": 24486,
     "blackmatrix7 GlobalMedia": 2248,
-    "blackmatrix7 Google": 685,
+    "blackmatrix7 Google": 684,
     "blackmatrix7 Instagram": 1,
-    "blackmatrix7 Microsoft": 485,
+    "blackmatrix7 Microsoft": 484,
     "blackmatrix7 Netflix": 1152,
     "blackmatrix7 PayPal": 233,
     "blackmatrix7 Spotify": 31,
@@ -372,8 +372,8 @@
     "Game.manifest": "d796c05f13f0c0c25c4ffe4d65c9fb2648fd9f0b6142d5f0e9d036ce18ee5d4a",
     "Global.manifest": "0d212a3aa94618bec1b412fc07ab30697b1c7f2cd55b31f2485d5fa4125b9152",
     "GlobalMedia.manifest": "88e3ae29a167a2e4e85c5e93116ea162679a26c651696c84fbc6883c24b27cee",
-    "Google.manifest": "cd7048aa630a768015dc08bb580cea5c38ed764cc6246e912ab68e37815daa81",
-    "Microsoft.manifest": "9b0451fc20f5198fb96a13d4fcba5fc0e75c5e212486b49c905fd9e7ad5b5044",
+    "Google.manifest": "e07b20be6f457b843470e822e5532bca4da77b6e5ee4f14dca1a4b90b3d2ab90",
+    "Microsoft.manifest": "da7b6399ce98d3938a027e6ce54030a80db0eabf3106728ba00cecab050e6065",
     "Microsoft_CDN.manifest": "d26571becc05f723d2f064459eb77b583222af156d1a2e6b81505191d900f07a",
     "Netflix.manifest": "0ffcdd804cc4e56614ba69cc539061c6b5e65ef6ee2e62a01aee3e62902ab9c9",
     "PayPal.manifest": "649b7162f902986f696a1b28e98b3d2b5e6cbda0a9c8e951c552098e68e1382b",
@@ -387,9 +387,9 @@
     "YouTube.manifest": "1b9c3b78afbb311db391e8f2910b25b507296d158a339957a874d918a2869ca7"
   },
   "sources_sha256": "cac9ce245067c00c15c1b5053a96c5750f1ebcf8d446c08d56ac38acb4bbe61a",
-  "override_manifest_sha256": "b9a2a989ba169542284521969901979799c6003fc8d771c549e2fcd178b7e5f2",
+  "override_manifest_sha256": "6244fccdbe161ffd8e59036fb843b19064aa2386da0f32a77384e4ac3abd661d",
   "clash_compatibility": {
-    "payload_rules": 159231,
+    "payload_rules": 159229,
     "dropped_surge_only_types": {
       "URL-REGEX": 5,
       "USER-AGENT": 178
@@ -402,7 +402,7 @@
   },
   "diff_summary": {
     "total_added": 1,
-    "total_removed": 1,
+    "total_removed": 3,
     "total_source_changed": 0
   }
 }

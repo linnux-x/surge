@@ -1,25 +1,25 @@
 # Surge 规则生成收据
 
 - 规则文件：26
-- 规则总数：159414
+- 规则总数：159412
 - manifest 文件：26
 
 ## 差异摘要
 
 - 新增：1
-- 删除：1
+- 删除：3
 - 来源迁移：0
 
 ## Clash 兼容性
 
-- 生成 payload：159231
+- 生成 payload：159229
 - 跳过 Surge 专属规则：{'URL-REGEX': 5, 'USER-AGENT': 178}
 - 保留 mihomo 扩展类型：{'DOMAIN-WILDCARD': 4, 'IP-ASN': 8, 'PROCESS-NAME': 58}
 
 ## 规则类型
 
 - DOMAIN: 3639
-- DOMAIN-KEYWORD: 96
+- DOMAIN-KEYWORD: 94
 - DOMAIN-SUFFIX: 141231
 - DOMAIN-WILDCARD: 4
 - IP-ASN: 8
@@ -60,9 +60,9 @@
 - blackmatrix7 Game: 549
 - blackmatrix7 Global: 24486
 - blackmatrix7 GlobalMedia: 2248
-- blackmatrix7 Google: 685
+- blackmatrix7 Google: 684
 - blackmatrix7 Instagram: 1
-- blackmatrix7 Microsoft: 485
+- blackmatrix7 Microsoft: 484
 - blackmatrix7 Netflix: 1152
 - blackmatrix7 PayPal: 233
 - blackmatrix7 Spotify: 31

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-30T18:18:20.571759",
+  "generated_at": "2026-10-30T18:32:52.542049",
   "total_added": 1,
-  "total_removed": 1,
+  "total_removed": 3,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -162,23 +162,35 @@
     {
       "file": "Google.list",
       "prev_total": 689,
-      "curr_total": 689,
+      "curr_total": 688,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 1,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "6605f17895c0",
+          "source": "blackmatrix7 Google",
+          "rule": "DOMAIN-KEYWORD,gmail"
+        }
+      ],
       "source_changed_sample": []
     },
     {
       "file": "Microsoft.list",
       "prev_total": 485,
-      "curr_total": 485,
+      "curr_total": 484,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 1,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "7739d2756399",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-KEYWORD,1drv"
+        }
+      ],
       "source_changed_sample": []
     },
     {
