@@ -5,3 +5,7 @@ DOMAIN,7h15_ru1353t_1s_m4d3_by_5ukk4w.skk.moe
 # DOMAIN-SUFFIX,ls.apple.com 太宽泛，会劫持中国区 CDN 节点（gsp4-cn.ls.apple.com 等）。
 # 上游中的具体节点（gspe1-ssl.ls.apple.com）在排除宽泛后缀后会自动恢复。
 DOMAIN-SUFFIX,ls.apple.com
+# RocM301 的 DOMAIN-KEYWORD,siri 是子串匹配，会把 volcsirius.com（字节火山引擎）、
+# applesiri.cn（Apple 中国）等无关或应直连的域名劫持到 Apple_AI 代理组。
+# Apple 自有 Siri 端点改由 Apple_AI.txt 中的 DOMAIN-SUFFIX,siri.apple.com 精确保留。
+DOMAIN-KEYWORD,siri

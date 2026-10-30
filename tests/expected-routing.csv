@@ -318,3 +318,8 @@ openai.com,AI.list,AI,2026-10-04 审计修复正负样例；包含合成域名�
 openai-api.arkoselabs.com,AI.list,AI,2026-10-04 审计修复正负样例；包含合成域名边界测试
 openaicomproductionae4b.blob.core.windows.net,AI.list,AI,2026-10-04 审计修复正负样例；包含合成域名边界测试
 chat.openai.com.cdn.cloudflare.net,AI.list,AI,2026-10-04 审计修复正负样例；包含合成域名边界测试
+volcsirius.com,China.list,DIRECT,字节火山引擎（不得被 siri 关键词劫持到 Apple_AI）
+applesiri.cn,Apple_CN.list,DIRECT,Apple 中国 Siri 站点（Apple_CN 直连）
+legalsiri.com,China.list,DIRECT,含 siri 子串的国内域名
+seed.siri.apple.com,Apple_AI.list,Apple_AI,Apple Siri 端点
+probe.siri.apple.com,Apple_AI.list,Apple_AI,Apple Siri 探测端点

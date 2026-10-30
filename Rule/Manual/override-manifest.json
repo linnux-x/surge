@@ -795,6 +795,20 @@
         "alkalimakersuite-pa.clients6.google.com",
         "alkalimakersuite-pa.clients6.google.com.example.com"
       ]
+    },
+    {
+      "source_file": "Apple_AI.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,siri",
+      "reason": "子串关键词误匹配 volcsirius.com、applesiri.cn 等非 Apple AI 域名，使其绕过 China/Apple_CN 直连",
+      "destination": "Apple_CN.list → DIRECT、China.list → DIRECT 或后续专属规则",
+      "route_tests": ["volcsirius.com", "applesiri.cn", "legalsiri.com"]
+    },
+    {
+      "source_file": "Apple_AI.txt",
+      "rule": "DOMAIN-SUFFIX,siri.apple.com",
+      "reason": "排除 siri 关键词后保留 Apple 自有 Siri 端点的 Apple_AI 归属",
+      "destination": "Apple_AI.list → Apple_AI",
+      "route_tests": ["seed.siri.apple.com", "probe.siri.apple.com"]
     }
   ]
 }
