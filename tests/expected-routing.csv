@@ -318,3 +318,17 @@ openai.com,AI.list,AI,2026-10-04 审计修复正负样例；包含合成域名�
 openai-api.arkoselabs.com,AI.list,AI,2026-10-04 审计修复正负样例；包含合成域名边界测试
 openaicomproductionae4b.blob.core.windows.net,AI.list,AI,2026-10-04 审计修复正负样例；包含合成域名边界测试
 chat.openai.com.cdn.cloudflare.net,AI.list,AI,2026-10-04 审计修复正负样例；包含合成域名边界测试
+volcsirius.com,China.list,DIRECT,字节火山引擎（不得被 siri 关键词劫持到 Apple_AI）
+applesiri.cn,Apple_CN.list,DIRECT,Apple 中国 Siri 站点（Apple_CN 直连）
+legalsiri.com,China.list,DIRECT,含 siri 子串的国内域名
+seed.siri.apple.com,Apple_AI.list,Apple_AI,Apple Siri 端点
+probe.siri.apple.com,Apple_AI.list,Apple_AI,Apple Siri 探测端点
+suningmail.com,China.list,DIRECT,苏宁邮箱（不得被 gmail 关键词劫持到 Google）
+qingmail.com,China.list,DIRECT,含 gmail 子串的国内域名
+gmail.com,Google.list,Google,Gmail 精确后缀
+googlemail.com,Google.list,Google,Gmail 旧域名
+51drv.com,China.list,DIRECT,含 1drv 子串的国内域名
+1drv.ms,Microsoft.list,Microsoft,OneDrive 短链
+1drv.com,Microsoft.list,Microsoft,OneDrive 短链
+eqoavtbu.com,China.list,DIRECT,含 avtb 子串的国内域名（不得被 Global 关键词劫持）
+avtb2.com,FINAL,Global,avtb 关键词排除后由 FINAL 兜底，策略不变

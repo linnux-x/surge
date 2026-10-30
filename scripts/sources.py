@@ -108,7 +108,9 @@ _SOURCES: list[tuple[str, str, str, str | None]] = [
     # Telegram.list
     ("blackmatrix7 Telegram", f"{BM7}/Telegram/Telegram.list", "Telegram.list", None),
     ("Telegram Official CIDR", "https://core.telegram.org/resources/cidr.txt", "Telegram.list", "cidr"),
-    ("SukkaW Telegram IP", f"{SUKKA}/ip/telegram.conf", "Telegram.list", None),
+    # SukkaW ip/telegram.conf removed 2026-10-30: fully covered by the official
+    # CIDR since the 2026-09-07 audit; under fail-closed generation it only
+    # added a failure point.
     # TikTok.list
     ("blackmatrix7 TikTok", f"{BM7}/TikTok/TikTok.list", "TikTok.list", None),
     # WeChat.list

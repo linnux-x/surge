@@ -22,8 +22,11 @@ import re
 import sys
 from pathlib import Path
 
-RULE_DIR = Path("Rule")
-CLASH_DIR = Path("clash")
+# Anchored to the repository like generate_rules.py, so --check cannot pass
+# vacuously (or write clash/) when invoked from another directory.
+ROOT = Path(__file__).resolve().parents[1]
+RULE_DIR = ROOT / "Rule"
+CLASH_DIR = ROOT / "clash"
 
 # Surge-only rule types that mihomo/Clash cannot evaluate at all. USER-AGENT
 # matches the HTTP User-Agent header and URL-REGEX matches full request URLs;
@@ -134,9 +137,17 @@ def non_total_comments(comments: list[str]) -> list[str]:
     return [c for c in comments if not c.upper().lstrip("# ").startswith("TOTAL")]
 
 
+def _display(source: Path) -> str:
+    """Repo-relative path for headers, independent of the caller's cwd."""
+    try:
+        return source.resolve().relative_to(ROOT).as_posix()
+    except ValueError:
+        return source.as_posix()
+
+
 def render_clash_yaml(source: Path, comments: list[str], rules: list[str]) -> str:
     lines = [
-        f"# Generated from {source.as_posix()}",
+        f"# Generated from {_display(source)}",
         "# Format: Clash/mihomo rule-provider, behavior: classical",
     ]
     lines.extend(comments)
@@ -148,7 +159,7 @@ def render_clash_yaml(source: Path, comments: list[str], rules: list[str]) -> st
 
 def render_domain_yaml(source: Path, comments: list[str], domains: list[str]) -> str:
     lines = [
-        f"# Generated from {source.as_posix()} (DOMAIN/DOMAIN-SUFFIX entries only)",
+        f"# Generated from {_display(source)} (DOMAIN/DOMAIN-SUFFIX entries only)",
         "# Format: Clash/mihomo rule-provider, behavior: domain",
     ]
     lines.extend(non_total_comments(comments))
@@ -161,7 +172,7 @@ def render_domain_yaml(source: Path, comments: list[str], domains: list[str]) ->
 
 def render_extra_yaml(source: Path, comments: list[str], extras: list[str]) -> str:
     lines = [
-        f"# Generated from {source.as_posix()} (rules not covered by the _Domain export)",
+        f"# Generated from {_display(source)} (rules not covered by the _Domain export)",
         "# Format: Clash/mihomo rule-provider, behavior: classical",
     ]
     lines.extend(non_total_comments(comments))

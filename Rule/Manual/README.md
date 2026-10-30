@@ -43,6 +43,9 @@ exclude 必须写出明确的规则类型和值，裸域名和裸关键词会使
 - 排除不是子串匹配或父后缀覆盖：`DOMAIN-SUFFIX,example.com` 不排除 `DOMAIN,example.com` 或 `DOMAIN,api.example.com`；需要分别声明。
 - 手工 include 优先于上游 exclude，可显式保留服务专属端点。CI 独立扫描最终生成物，阻止排除规则以选项变体泄漏。
 
+- `DOMAIN-KEYWORD` 是子串匹配。风险关键词由 `scripts/policy.py` 的 `is_risky_domain_keyword()` 统一判定（品牌泛词，以及 ≤4 字符且未显式审阅的短词）；在 `*.txt` 中 include 这类关键词必须在 `override-manifest.json` 建立条目级记录，生成物中出现时 `validate_surge_repo.py` 给出 WARN。
+- 从 Global 之前的专属规则集排除某个关键词时，要同时检查 blackmatrix7 Global 上游是否也带有它：此前它可能只是因为与专属规则文本相同才被 Global 重叠裁剪，专属侧排除后会在 Global 中重新生效。需要时在 `Global.exclude.txt` 同步排除（例：`gmail`、`1drv`）。
+
 ```text
 # 按域名规则身份排除（也移除 extended-matching 变体）
 DOMAIN-SUFFIX,sentry.io

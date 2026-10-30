@@ -89,3 +89,6 @@ DOMAIN-SUFFIX,recaptcha.net
 # Avoid capturing unrelated domains that merely contain "google"; concrete
 # Google service domains remain covered by explicit DOMAIN/DOMAIN-SUFFIX rules.
 DOMAIN-KEYWORD,google
+# DOMAIN-KEYWORD,gmail 是子串匹配，会把 suningmail.com、qingmail.com 等国内邮箱
+# 送进 Google 代理组；gmail.com / googlemail.com 已由 DOMAIN-SUFFIX 精确覆盖。
+DOMAIN-KEYWORD,gmail

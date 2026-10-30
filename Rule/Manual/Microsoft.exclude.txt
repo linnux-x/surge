@@ -247,3 +247,6 @@ DOMAIN-SUFFIX,onecollector.cloudapp.aria
 # Avoid capturing unrelated domains that merely contain "microsoft"; concrete
 # Microsoft service domains remain covered by explicit DOMAIN/DOMAIN-SUFFIX rules.
 DOMAIN-KEYWORD,microsoft
+# DOMAIN-KEYWORD,1drv 只有 4 个字符，会误匹配 51drv.com 等国内域名；
+# 1drv.ms / 1drv.com 已由 DOMAIN-SUFFIX 精确覆盖。
+DOMAIN-KEYWORD,1drv

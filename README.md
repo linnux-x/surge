@@ -7,7 +7,7 @@
 
 ## 当前运行方式
 
-- 26 个 Surge 规则集、41 个唯一上游 URL；具体来源由 [sources.py](scripts/sources.py) 统一定义。
+- 26 个 Surge 规则集、40 个唯一上游 URL；具体来源由 [sources.py](scripts/sources.py) 统一定义。
 - 维护者本机 **Hermes** 每天北京时间 **05:00** 调度规则更新，保留 Agent 审查；旧 Codex 维护任务已暂停。实际频率与运行健康以调度配置和执行证据为准，归属见 [SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md)。
 - 更新经分支和 PR 发布，精确提交的 CI 通过后合并 `main`。GitHub Actions 提供手动全量生成和已审阅产物发布。
 - Python 脚本无需第三方 Python 包；本地完整流程需要 **Python 3.10+、curl、Git**，向 GitHub 发布还需已认证的 **GitHub CLI**。
@@ -75,7 +75,7 @@ Surge 专属类型会按转换器规则排除；扩展规则类型及数量见�
 | ⚡ Speedtest_China.list | Sukka 官方服务器数据 · spiritLHLS | 按明确大陆地区字段筛选测速主机并直连 |
 | ⚡ Speedtest.list | SukkaW · 官方服务器数据 · 手动 | 国际测速节点与测速服务 · fast.com 仅此文件 |
 | 🎧 Spotify.list | blackmatrix7 | Spotify 音乐服务 |
-| ✈️ Telegram.list | 3 源 | 域名、CIDR、ASN |
+| ✈️ Telegram.list | 2 源 | 域名、CIDR、ASN |
 | 🎵 TikTok.list | blackmatrix7 | TikTok |
 | 💚 WeChat.list | blackmatrix7 | 微信相关服务 |
 | ▶️ YouTube.list | blackmatrix7 | YouTube 与 YouTube Music |

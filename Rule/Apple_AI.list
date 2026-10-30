@@ -14,6 +14,8 @@
 # 注意：DOMAIN-SUFFIX,ls.apple.com 已排除（避免劫持中国区节点）
 # 手动补录：上游未覆盖的全球 LinkScribe 节点
 DOMAIN-SUFFIX,gsp64-ssl.ls.apple.com
+# 手动补录：替代已排除的 DOMAIN-KEYWORD,siri，只覆盖 Apple 自有 Siri 端点
+DOMAIN-SUFFIX,siri.apple.com
 
 # ======= RocM301 Apple-AI ========
 DOMAIN,guzzoni.apple.com
@@ -32,6 +34,5 @@ DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
 DOMAIN-SUFFIX,gateway.icloud.com
 DOMAIN-SUFFIX,mask-h2.icloud.com
 DOMAIN-SUFFIX,mask.icloud.com
-DOMAIN-KEYWORD,siri
 
 # ======= SukkaW Apple Intelligence ========

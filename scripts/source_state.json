@@ -203,12 +203,6 @@
     "last_modified": null,
     "source_available": true
   },
-  "https://ruleset.skk.moe/List/ip/telegram.conf": {
-    "content_length": null,
-    "etag": "W/\"c8e1d9aa0902d9e1af191015ad56992b\"",
-    "last_modified": null,
-    "source_available": true
-  },
   "https://ruleset.skk.moe/List/non_ip/ai.conf": {
     "content_length": null,
     "etag": "W/\"74842c60e6564d11c32e6648da06f480\"",

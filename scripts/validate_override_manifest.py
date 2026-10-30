@@ -6,13 +6,13 @@ import re
 import csv
 from pathlib import Path
 from exclusions import read_exclusions
+from policy import is_risky_domain_keyword
 
 ROOT = Path(__file__).resolve().parents[1]
 MANUAL = ROOT / "Rule" / "Manual"
 MANIFEST = MANUAL / "override-manifest.json"
 TEST_CSV = ROOT / "tests" / "expected-routing.csv"
 FORBIDDEN = re.compile(r"(?:\b(?:10|127)\.\d{1,3}\.|\b192\.168\.|\b172\.(?:1[6-9]|2\d|3[01])\.|token=|password=|secret=|ghp_|github_pat_|sk-|BEGIN (?:RSA|OPENSSH|PRIVATE)|https?://[^\s,]+:[^\s,@]+@)", re.I)
-RISKY_DOMAIN_KEYWORDS = {"amazon", "api", "apple", "cdn", "cloud", "google", "java", "microsoft"}
 
 
 def active_rules(path: Path) -> set[str]:
@@ -74,8 +74,11 @@ def main() -> int:
             if FORBIDDEN.search(rule):
                 errors.append(f"sensitive/public-boundary pattern in {path.name}")
             parts = [part.strip() for part in rule.split(",")]
-            if (len(parts) >= 2 and parts[0] == "DOMAIN-KEYWORD"
-                    and parts[1].lower() in RISKY_DOMAIN_KEYWORDS
+            # Only includes can widen matching; excluding a broad keyword
+            # narrows it and needs no extra approval.
+            if (not path.name.endswith(".exclude.txt")
+                    and len(parts) >= 2 and parts[0] == "DOMAIN-KEYWORD"
+                    and is_risky_domain_keyword(parts[1])
                     and (path.name, rule) not in declared):
                 errors.append(f"risky broad keyword requires entry-level approval: {path.name}: {rule}")
     if errors:

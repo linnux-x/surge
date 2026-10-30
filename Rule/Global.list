@@ -3,7 +3,7 @@
 # REPO: https://github.com/linnux-x/surge
 # UPDATED: 2026-10-23 05:02:25 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24501
+# TOTAL: 24500
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -24423,7 +24423,6 @@ DOMAIN-KEYWORD,wikileaks
 DOMAIN-KEYWORD,1e100
 DOMAIN-KEYWORD,abema
 DOMAIN-KEYWORD,appledaily
-DOMAIN-KEYWORD,avtb
 DOMAIN-KEYWORD,beetalk
 DOMAIN-KEYWORD,dlercloud
 DOMAIN-KEYWORD,dropbox
