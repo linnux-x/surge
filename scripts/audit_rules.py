@@ -226,6 +226,64 @@ def check_new_shared_infrastructure() -> list[dict]:
     return findings
 
 
+GFW_LIST_URL = "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/gfw.txt"
+
+
+def parse_domain_set(text: str) -> set[str]:
+    """Parse a Surge DOMAIN-SET body into bare lower-case suffixes."""
+    out: set[str] = set()
+    for line in text.splitlines():
+        line = line.strip()
+        if line and not line.startswith("#"):
+            out.add(line.lstrip(".").lower())
+    return out
+
+
+def china_direct_blocked_entries(blocked: set[str], china_rules: list[str],
+                                 route) -> list[tuple[str, str]]:
+    """China.list DOMAIN/DOMAIN-SUFFIX entries that a blocklist covers and
+    that still resolve to China.list under first-match order.
+
+    ``route(domain)`` returns the simulated ``"<ruleset>→<policy>"`` result.
+    Entries already caught by an earlier proxy rule are not reported.
+    """
+    leaks: list[tuple[str, str]] = []
+    for rule in china_rules:
+        parts = [part.strip() for part in rule.split(",")]
+        if len(parts) < 2 or parts[0].upper() not in {"DOMAIN", "DOMAIN-SUFFIX"}:
+            continue
+        domain = parts[1].lower()
+        labels = domain.split(".")
+        hit = next((".".join(labels[i:]) for i in range(len(labels) - 1)
+                    if ".".join(labels[i:]) in blocked), None)
+        if hit and route(domain).startswith("China.list"):
+            leaks.append((rule, hit))
+    return leaks
+
+
+def check_china_direct_vs_gfw() -> list[dict]:
+    """A blocked overseas domain must never fall through to China/DIRECT.
+
+    ChinaMaxNoIP is a broad crawled list; the GFW list is an independent
+    signal that an entry cannot work over a direct connection.
+    """
+    text = fetch_text(GFW_LIST_URL)
+    if text is None:
+        return [{"severity": "WARN", "check": "china_gfw",
+                 "message": "Cannot fetch GFW list — China direct leak check skipped"}]
+    import test_routing_order as routing
+    order = routing.load_routing_order()
+    rulesets = {path.name: routing.load_ruleset(path) for path in RULE_DIR.glob("*.list")}
+    leaks = china_direct_blocked_entries(
+        parse_domain_set(text), non_comment_rules(RULE_DIR / "China.list"),
+        lambda domain: routing.simulate_routing(domain, order, rulesets),
+    )
+    return [{"severity": "ERROR", "check": "china_gfw",
+             "message": f"China.list routes GFW-listed {hit} DIRECT via {rule}; "
+                        "exclude it in Rule/Manual/China.exclude.txt"}
+            for rule, hit in leaks]
+
+
 def check_surge_docs_updates() -> list[dict]:
     """Check Surge LLM index for any new rule types or documentation changes."""
     findings: list[dict] = []
@@ -378,6 +436,12 @@ def main() -> int:
     # 5. Exclude coverage
     print("5️⃣  Checking exclude pattern coverage...")
     findings = check_exclude_coverage()
+    all_findings.extend(findings)
+    print(f"   → {len(findings)} findings\n")
+
+    # 6. GFW-listed domains must not reach China/DIRECT
+    print("6️⃣  Checking China.list against the GFW list...")
+    findings = check_china_direct_vs_gfw()
     all_findings.extend(findings)
     print(f"   → {len(findings)} findings\n")
 
