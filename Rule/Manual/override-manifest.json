@@ -809,6 +809,34 @@
       "reason": "排除 siri 关键词后保留 Apple 自有 Siri 端点的 Apple_AI 归属",
       "destination": "Apple_AI.list → Apple_AI",
       "route_tests": ["seed.siri.apple.com", "probe.siri.apple.com"]
+    },
+    {
+      "source_file": "Google.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,gmail",
+      "reason": "子串关键词误匹配 suningmail.com、qingmail.com 等国内邮箱；Gmail 已有精确后缀覆盖",
+      "destination": "China.list → DIRECT；gmail.com 仍由 Google.list → Google 覆盖",
+      "route_tests": ["suningmail.com", "qingmail.com", "gmail.com", "googlemail.com"]
+    },
+    {
+      "source_file": "Microsoft.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,1drv",
+      "reason": "4 字符关键词误匹配 51drv.com；OneDrive 短链已有精确后缀覆盖",
+      "destination": "China.list → DIRECT；1drv.ms / 1drv.com 仍由 Microsoft.list → Microsoft 覆盖",
+      "route_tests": ["51drv.com", "1drv.ms", "1drv.com"]
+    },
+    {
+      "source_file": "Global.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,gmail",
+      "reason": "与 Google.exclude.txt 同步；否则 Google 侧排除后 Global 上游关键词不再被重叠裁剪，会重新劫持国内邮箱",
+      "destination": "China.list → DIRECT",
+      "route_tests": ["suningmail.com", "qingmail.com"]
+    },
+    {
+      "source_file": "Global.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,1drv",
+      "reason": "与 Microsoft.exclude.txt 同步；否则 Global 上游关键词会重新劫持 51drv.com",
+      "destination": "China.list → DIRECT",
+      "route_tests": ["51drv.com"]
     }
   ]
 }

@@ -258,3 +258,8 @@ DOMAIN-SUFFIX,gepush.com
 DOMAIN-SUFFIX,getui.net
 DOMAIN-SUFFIX,weixingshangye.com
 DOMAIN-SUFFIX,appinn.me
+# blackmatrix7 Global 同样带有这两个关键词；它们此前只因与 Google/Microsoft 的
+# 精确文本重叠被裁剪。上游专属列表排除后必须在 Global 同步排除，否则 Global
+# （位于 China 之前）会重新把 suningmail.com、51drv.com 等送进代理。
+DOMAIN-KEYWORD,gmail
+DOMAIN-KEYWORD,1drv

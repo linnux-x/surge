@@ -3,7 +3,7 @@
 # REPO: https://github.com/linnux-x/surge
 # UPDATED: 2026-10-04 21:58:15 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 485
+# TOTAL: 484
 
 # ======= blackmatrix7 Microsoft ========
 DOMAIN,vsmarketplacebadge.apphb.com
@@ -483,7 +483,6 @@ DOMAIN-SUFFIX,onedrive.com
 DOMAIN-SUFFIX,sharepoint.com
 DOMAIN-SUFFIX,sharepointonline.com
 DOMAIN-SUFFIX,spoprod-a.akamaihd.net
-DOMAIN-KEYWORD,1drv
 DOMAIN-KEYWORD,onedrive
 DOMAIN-KEYWORD,skydrive
 USER-AGENT,Microsoft*

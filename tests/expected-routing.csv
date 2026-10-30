@@ -323,3 +323,10 @@ applesiri.cn,Apple_CN.list,DIRECT,Apple 中国 Siri 站点（Apple_CN 直连）
 legalsiri.com,China.list,DIRECT,含 siri 子串的国内域名
 seed.siri.apple.com,Apple_AI.list,Apple_AI,Apple Siri 端点
 probe.siri.apple.com,Apple_AI.list,Apple_AI,Apple Siri 探测端点
+suningmail.com,China.list,DIRECT,苏宁邮箱（不得被 gmail 关键词劫持到 Google）
+qingmail.com,China.list,DIRECT,含 gmail 子串的国内域名
+gmail.com,Google.list,Google,Gmail 精确后缀
+googlemail.com,Google.list,Google,Gmail 旧域名
+51drv.com,China.list,DIRECT,含 1drv 子串的国内域名
+1drv.ms,Microsoft.list,Microsoft,OneDrive 短链
+1drv.com,Microsoft.list,Microsoft,OneDrive 短链

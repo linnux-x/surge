@@ -1,7 +1,7 @@
 # Generated from Rule/Microsoft.list
 # Format: Clash/mihomo rule-provider, behavior: classical
 # UPDATED: 2026-10-04 21:58:15 +0800
-# TOTAL: 485
+# TOTAL: 484
 payload:
   - 'DOMAIN,vsmarketplacebadge.apphb.com'
   - 'DOMAIN-SUFFIX,1drv.ms'
@@ -480,7 +480,6 @@ payload:
   - 'DOMAIN-SUFFIX,sharepoint.com'
   - 'DOMAIN-SUFFIX,sharepointonline.com'
   - 'DOMAIN-SUFFIX,spoprod-a.akamaihd.net'
-  - 'DOMAIN-KEYWORD,1drv'
   - 'DOMAIN-KEYWORD,onedrive'
   - 'DOMAIN-KEYWORD,skydrive'
   - 'PROCESS-NAME,OneDrive'
