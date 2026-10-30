@@ -1,7 +1,7 @@
 # Generated from Rule/Download.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-10-21 05:01:13 +0800
-# TOTAL: 1695
+# UPDATED: 2026-10-30 19:16:05 +0800
+# TOTAL: 1692
 payload:
   - 'PROCESS-NAME,aria2c'
   - 'PROCESS-NAME,fdm'
@@ -126,6 +126,7 @@ payload:
   - 'DOMAIN-SUFFIX,k8s.io'
   - 'DOMAIN,cr.yandex'
   - 'DOMAIN,mcr.microsoft.com'
+  - 'DOMAIN,registry.gitlab.com'
   - 'DOMAIN-SUFFIX,crates.io'
   - 'DOMAIN-SUFFIX,getcomposer.org'
   - 'DOMAIN,repo.nextdns.io'
@@ -457,7 +458,6 @@ payload:
   - 'DOMAIN,dl8.osmand.net'
   - 'DOMAIN,dl9.osmand.net'
   - 'DOMAIN,downloads.slack-edge.com'
-  - 'DOMAIN,www2.aomeisoftware.com'
   - 'DOMAIN,download.ameliorated.io'
   - 'DOMAIN,download.amelabs.net'
   - 'DOMAIN,cdn-builds.paw.cloud'
@@ -958,7 +958,6 @@ payload:
   - 'DOMAIN,mirror.hashy0917.net'
   - 'DOMAIN,mirror.lc'
   - 'DOMAIN,archive.g4t1.pro'
-  - 'DOMAIN,ftp.tsukuba.wide.ad.jp'
   - 'DOMAIN,linux.yz.yamagata-u.ac.jp'
   - 'DOMAIN,mirror.nishi.network'
   - 'DOMAIN,ubuntutym.u-toyama.ac.jp'
@@ -1058,7 +1057,6 @@ payload:
   - 'DOMAIN,mirror1.sox.rs'
   - 'DOMAIN,ossmirror.mycloud.services'
   - 'DOMAIN,kambing.uu.sg'
-  - 'DOMAIN,mirror.0x.sg'
   - 'DOMAIN,mirror.freedif.org'
   - 'DOMAIN,mirror.soonkeat.sg'
   - 'DOMAIN,mirror.aktkn.sg'
@@ -1130,7 +1128,6 @@ payload:
   - 'DOMAIN,mirror.bytemark.co.uk'
   - 'DOMAIN,mirror.eu-lo.kamatera.com'
   - 'DOMAIN,mirror.freethought-internet.co.uk'
-  - 'DOMAIN,mirror.marcusn.net'
   - 'DOMAIN,mirrors.gethosted.online'
   - 'DOMAIN,mirrors.melbourne.co.uk'
   - 'DOMAIN,mirror.enzu.com'
