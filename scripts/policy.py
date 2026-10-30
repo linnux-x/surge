@@ -48,6 +48,37 @@ CHINA_FALLBACK_EXCLUDE_PATTERNS = (
     re.compile(r"^domain-suffix,akadns[.]net$", re.I),
 )
 
+# ── Broad DOMAIN-KEYWORD review ────────────────────────────────────────────
+# DOMAIN-KEYWORD is a substring match. Single source for rule_validator.py
+# (WARN on generated files) and validate_override_manifest.py (Manual files
+# need an entry-level approval). Keywords that are brand-generic, or short
+# enough to occur inside unrelated hosts, must be reviewed before use:
+#   siri  → volcsirius.com, applesiri.cn   gmail → suningmail.com
+#   1drv  → 51drv.com
+RISKY_DOMAIN_KEYWORDS: frozenset[str] = frozenset({
+    "amazon", "apple", "google", "microsoft", "java",
+    "cdn", "cloud", "api",
+    "siri", "gmail", "1drv",
+})
+# Any keyword this short is treated as risky unless explicitly reviewed below.
+SHORT_DOMAIN_KEYWORD_MAX_LEN = 4
+# Short keywords already reviewed in their current file and kept on purpose.
+# Adding one here is a routing decision: record why next to it.
+REVIEWED_SHORT_DOMAIN_KEYWORDS: frozenset[str] = frozenset({
+    "porn",  # Global.list: adult-site coverage; collateral is limited to similar sites
+    "avtb",  # Global.list: adult-site mirror family with rotating domains
+})
+
+
+def is_risky_domain_keyword(keyword: str) -> bool:
+    """True when a DOMAIN-KEYWORD value needs routing review."""
+    keyword = keyword.strip().lower()
+    if keyword in RISKY_DOMAIN_KEYWORDS:
+        return True
+    return (len(keyword) <= SHORT_DOMAIN_KEYWORD_MAX_LEN
+            and keyword not in REVIEWED_SHORT_DOMAIN_KEYWORDS)
+
+
 # ── Shared infrastructure — strict tier (blocks commit via rule_validator) ──
 
 # Shared CDN parent domains: too broad to route per-service; CDN.list only.

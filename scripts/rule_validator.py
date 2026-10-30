@@ -29,6 +29,8 @@ from policy import (
     SHARED_INFRA_EXEMPT_FILES as SHARED_THIRD_PARTY_EXEMPT,
     SHARED_THIRD_PARTY_DOMAINS,
     SHARED_THIRD_PARTY_SUFFIXES,
+    RISKY_DOMAIN_KEYWORDS,  # re-exported for existing importers
+    is_risky_domain_keyword,
 )
 
 ALLOWED_TYPES = {
@@ -46,10 +48,6 @@ SUKKAW_MARKER = re.compile(
 DOMAIN_VALUE_RE = re.compile(r"^[a-z0-9](?:[a-z0-9._-]*[a-z0-9])?$")
 DOMAIN_WILDCARD_VALUE_RE = re.compile(r"^[a-z0-9*?](?:[a-z0-9.*?-]*[a-z0-9*?])?$")
 CONTROL_CHAR_RE = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
-RISKY_DOMAIN_KEYWORDS = {
-    "amazon", "apple", "google", "microsoft", "java",
-    "cdn", "cloud", "api",
-}
 
 PAYPAL_CN_DOMAINS = {
     "anfutong.cn", "anfutong.com", "anfutong.com.cn",
@@ -252,8 +250,7 @@ def warn_rule_file(lines: list[str], target_name: str) -> list[str]:
         if len(parts) < 2:
             continue
         if parts[0].upper() == "DOMAIN-KEYWORD":
-            keyword = parts[1].lower()
-            if keyword in RISKY_DOMAIN_KEYWORDS:
+            if is_risky_domain_keyword(parts[1]):
                 warnings.append(
                     f"{target_name}:{index} risky DOMAIN-KEYWORD requires review: {rule}"
                 )
