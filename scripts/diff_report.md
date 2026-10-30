@@ -1,13 +1,13 @@
 # Surge Rule Diff Report
-Generated: 2026-10-30T18:32:52.542049
+Generated: 2026-10-30T18:42:05.576226
 
 ## Summary
 
 | Metric | Count |
 |--------|-------|
-| Files changed | 3 |
+| Files changed | 4 |
 | Rules added | 1 |
-| Rules removed | 3 |
+| Rules removed | 4 |
 | Source attribution changed | 0 |
 
 ## Per-File Changes
@@ -15,6 +15,7 @@ Generated: 2026-10-30T18:32:52.542049
 | File | Prev | Curr | Added | Removed | Source Δ |
 |------|------|------|-------|---------|----------|
 | Apple_AI.list | 18 | 18 | +1 | -1 | ~0 |
+| Global.list | 24501 | 24500 | +0 | -1 | ~0 |
 | Google.list | 689 | 688 | +0 | -1 | ~0 |
 | Microsoft.list | 485 | 484 | +0 | -1 | ~0 |
 
@@ -28,6 +29,13 @@ Generated: 2026-10-30T18:32:52.542049
 **Removed: 1** (showing first 1)
 ```
   - [RocM301 Apple-AI] a9765c10ff5e  DOMAIN-KEYWORD,siri
+```
+
+## Global.list
+
+**Removed: 1** (showing first 1)
+```
+  - [blackmatrix7 Global] 0a88bc73bd40  DOMAIN-KEYWORD,avtb
 ```
 
 ## Google.list

@@ -122,16 +122,16 @@
     },
     {
       "file": "Global.list",
-      "rules": 24501,
+      "rules": 24500,
       "types": {
         "DOMAIN": 111,
-        "DOMAIN-KEYWORD": 13,
+        "DOMAIN-KEYWORD": 12,
         "DOMAIN-SUFFIX": 24288,
         "IP-CIDR": 83,
         "IP-CIDR6": 1,
         "USER-AGENT": 5
       },
-      "sha256": "3cb0a9ff50f9f3393efdb8e17059c85517617b5d61dda3d37ac642c9a41f0f8b"
+      "sha256": "a320ab909dfee9734caea104c3dfdf635af6b1ea1c05abd93e8a507fc40db04e"
     },
     {
       "file": "GlobalMedia.list",
@@ -261,7 +261,7 @@
         "IP-CIDR6": 5,
         "PROCESS-NAME": 5
       },
-      "sha256": "872ce1d59cca6c340bb524892037cfa82f000e51f52df69254e710182dab9602"
+      "sha256": "cf5a736e4664d92b2f44e0a315d0c6adcc51deb85c65a0c965a13d056cdef240"
     },
     {
       "file": "TikTok.list",
@@ -301,10 +301,10 @@
       "sha256": "dc6dfde863bc0c0034fa3bae09c8a8b090ca385439e866e5ff89fa65eb177c69"
     }
   ],
-  "total_rules": 159412,
+  "total_rules": 159411,
   "rule_types": {
     "DOMAIN": 3639,
-    "DOMAIN-KEYWORD": 94,
+    "DOMAIN-KEYWORD": 93,
     "DOMAIN-SUFFIX": 141231,
     "DOMAIN-WILDCARD": 4,
     "IP-ASN": 8,
@@ -342,7 +342,7 @@
     "blackmatrix7 Disney": 166,
     "blackmatrix7 Facebook": 570,
     "blackmatrix7 Game": 549,
-    "blackmatrix7 Global": 24486,
+    "blackmatrix7 Global": 24485,
     "blackmatrix7 GlobalMedia": 2248,
     "blackmatrix7 Google": 684,
     "blackmatrix7 Instagram": 1,
@@ -370,7 +370,7 @@
     "Disney.manifest": "4952367b9bc1b50aaeacf8f01c8059c20e75aaf86be6c908d16a4f607a6b866f",
     "Download.manifest": "1925645fb9be921d71c7e1570dc9d92b88837bbcf1b2894576b7725ee91cffa8",
     "Game.manifest": "d796c05f13f0c0c25c4ffe4d65c9fb2648fd9f0b6142d5f0e9d036ce18ee5d4a",
-    "Global.manifest": "0d212a3aa94618bec1b412fc07ab30697b1c7f2cd55b31f2485d5fa4125b9152",
+    "Global.manifest": "566310a34da3dec4abd98a470e0743a0ec5f6fcbcdb09ba602c9d6688e7d0a8a",
     "GlobalMedia.manifest": "88e3ae29a167a2e4e85c5e93116ea162679a26c651696c84fbc6883c24b27cee",
     "Google.manifest": "e07b20be6f457b843470e822e5532bca4da77b6e5ee4f14dca1a4b90b3d2ab90",
     "Microsoft.manifest": "da7b6399ce98d3938a027e6ce54030a80db0eabf3106728ba00cecab050e6065",
@@ -386,10 +386,10 @@
     "WeChat.manifest": "2daaefc46757ae3bc6b07cf82f6e8b6493235b7b9c28708b8c7f8c54e151f7c3",
     "YouTube.manifest": "1b9c3b78afbb311db391e8f2910b25b507296d158a339957a874d918a2869ca7"
   },
-  "sources_sha256": "cac9ce245067c00c15c1b5053a96c5750f1ebcf8d446c08d56ac38acb4bbe61a",
-  "override_manifest_sha256": "6244fccdbe161ffd8e59036fb843b19064aa2386da0f32a77384e4ac3abd661d",
+  "sources_sha256": "84f7c487f4f2f86359af749d7325b095e4dd7f83fa3cb4c044491d3be7899181",
+  "override_manifest_sha256": "b8513b44cc14e2931b861ac9b1d25b4d5aac0abebf89165e2357d4a6fdbcfe52",
   "clash_compatibility": {
-    "payload_rules": 159229,
+    "payload_rules": 159228,
     "dropped_surge_only_types": {
       "URL-REGEX": 5,
       "USER-AGENT": 178
@@ -402,7 +402,7 @@
   },
   "diff_summary": {
     "total_added": 1,
-    "total_removed": 3,
+    "total_removed": 4,
     "total_source_changed": 0
   }
 }

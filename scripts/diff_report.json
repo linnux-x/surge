@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-30T18:32:52.542049",
+  "generated_at": "2026-10-30T18:42:05.576226",
   "total_added": 1,
-  "total_removed": 3,
+  "total_removed": 4,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -140,12 +140,18 @@
     {
       "file": "Global.list",
       "prev_total": 24501,
-      "curr_total": 24501,
+      "curr_total": 24500,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 1,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "0a88bc73bd40",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-KEYWORD,avtb"
+        }
+      ],
       "source_changed_sample": []
     },
     {
