@@ -16,11 +16,11 @@ class KeywordPolicyTests(unittest.TestCase):
         self.assertFalse(hasattr(validate_override_manifest, "RISKY_DOMAIN_KEYWORDS"))
 
     def test_brand_generic_and_short_keywords_are_risky(self):
-        for keyword in ("apple", "Google", "siri", "gmail", "1drv", "qiyi", "x"):
+        for keyword in ("apple", "Google", "siri", "gmail", "1drv", "qiyi", "avtb", "x"):
             self.assertTrue(policy.is_risky_domain_keyword(keyword), keyword)
 
     def test_reviewed_short_and_specific_keywords_pass(self):
-        for keyword in ("porn", "avtb", "youtube", "telegram", "epicgames"):
+        for keyword in ("porn", "youtube", "telegram", "epicgames"):
             self.assertFalse(policy.is_risky_domain_keyword(keyword), keyword)
 
     def test_validator_warns_on_short_keyword(self):

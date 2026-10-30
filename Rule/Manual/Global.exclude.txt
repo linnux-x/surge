@@ -263,3 +263,6 @@ DOMAIN-SUFFIX,appinn.me
 # （位于 China 之前）会重新把 suningmail.com、51drv.com 等送进代理。
 DOMAIN-KEYWORD,gmail
 DOMAIN-KEYWORD,1drv
+# DOMAIN-KEYWORD,avtb 只有 4 个字符，会把国内域名 eqoavtbu.com 抢在 China 之前送进代理；
+# 该站点族的其他域名即使不再命中关键词，也会落到 FINAL → Global，策略不变。
+DOMAIN-KEYWORD,avtb

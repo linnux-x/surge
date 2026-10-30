@@ -837,6 +837,13 @@
       "reason": "与 Microsoft.exclude.txt 同步；否则 Global 上游关键词会重新劫持 51drv.com",
       "destination": "China.list → DIRECT",
       "route_tests": ["51drv.com"]
+    },
+    {
+      "source_file": "Global.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,avtb",
+      "reason": "4 字符关键词误匹配国内域名 eqoavtbu.com；被移除覆盖的域名仍由 FINAL → Global 兜底",
+      "destination": "China.list → DIRECT 或 FINAL → Global",
+      "route_tests": ["eqoavtbu.com", "avtb2.com"]
     }
   ]
 }

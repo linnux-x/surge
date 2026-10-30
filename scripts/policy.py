@@ -66,7 +66,6 @@ SHORT_DOMAIN_KEYWORD_MAX_LEN = 4
 # Adding one here is a routing decision: record why next to it.
 REVIEWED_SHORT_DOMAIN_KEYWORDS: frozenset[str] = frozenset({
     "porn",  # Global.list: adult-site coverage; collateral is limited to similar sites
-    "avtb",  # Global.list: adult-site mirror family with rotating domains
 })
 
 
