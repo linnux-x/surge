@@ -41,7 +41,11 @@ from source_transforms import (
 
 # ── Constants ─────────────────────────────────────────────────────────────
 
-RULE_DIR = Path("Rule")
+# Anchor to the repository, not the caller's cwd: running from another
+# directory used to create an empty Rule/ there and generate without the
+# Manual include/exclude inputs.
+ROOT = Path(__file__).resolve().parents[1]
+RULE_DIR = ROOT / "Rule"
 MANUAL_DIR = RULE_DIR / "Manual"
 REPO_URL = os.environ.get("REPO_URL", "https://github.com/linnux-x/surge")
 AUTHOR_NAME = os.environ.get("AUTHOR_NAME", "linnux-x")

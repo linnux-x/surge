@@ -6,9 +6,9 @@
 
 ## 差异摘要
 
-- 新增：128
-- 删除：74
-- 来源迁移：6
+- 新增：1
+- 删除：1
+- 来源迁移：0
 
 ## Clash 兼容性
 
@@ -19,8 +19,8 @@
 ## 规则类型
 
 - DOMAIN: 3639
-- DOMAIN-KEYWORD: 97
-- DOMAIN-SUFFIX: 141230
+- DOMAIN-KEYWORD: 96
+- DOMAIN-SUFFIX: 141231
 - DOMAIN-WILDCARD: 4
 - IP-ASN: 8
 - IP-CIDR: 9817
@@ -33,11 +33,11 @@
 
 - ConnersHua AI: 12
 - Loyalsoldier China CIDR: 7816
-- Manual Rules: 281
+- Manual Rules: 282
 - Rabbit-Spec AIGC: 27
 - Rabbit-Spec China: 187
 - Rabbit-Spec China CIDR: 20
-- RocM301 Apple-AI: 17
+- RocM301 Apple-AI: 16
 - SukkaW AI: 24
 - SukkaW Apple CDN: 158
 - SukkaW Apple CN: 5
