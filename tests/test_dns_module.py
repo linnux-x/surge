@@ -2,7 +2,7 @@ import sys
 import unittest
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
-from validate_dns_module import validate_text, RULESET_PREFIX, ROOT
+from validate_dns_module import normalize_text, validate_text, RULESET_PREFIX, ROOT
 
 
 class DNSModuleTests(unittest.TestCase):
@@ -20,6 +20,16 @@ class DNSModuleTests(unittest.TestCase):
         for url in ('https://example.test/rules.conf', RULESET_PREFIX + '../other.conf', RULESET_PREFIX + 'ok.conf?alternate=1'):
             with self.subTest(url=url), self.assertRaises(ValueError):
                 validate_text(base + 'RULE-SET:' + url + ' = server:system\n')
+
+    def test_current_module_is_canonical(self):
+        text = (ROOT / 'Module/DNS-Mapping.sgmodule').read_text(encoding='utf-8')
+        self.assertEqual(normalize_text(text), text)
+
+    def test_normalize_yields_single_trailing_newline(self):
+        body = '[Host]\nRULE-SET:' + RULESET_PREFIX + 'alibaba.conf = server:system'
+        for tail in ('', '\n', '\n\n', '\r\n'):
+            with self.subTest(tail=tail):
+                self.assertEqual(normalize_text(body + tail), body + '\n')
 
     def test_missing_or_malformed_host_section(self):
         for text in ('', '[Host]\n', 'x = y\n[Host]\n', '[Host]\nx =\n'):
