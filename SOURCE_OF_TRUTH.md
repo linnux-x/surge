@@ -16,7 +16,7 @@
 
 | 路径 | 消费方 | 说明 |
 |---|---|---|
-| `Rule/*.list` | 私有 `private-config/surge-devices/{ios,mac,tvos}.conf` | 真实设备配置直接引用 Raw URL |
+| `Rule/*.list` | 私有 `private-config/surge-devices/linnux.dconf`（`IOS.conf`、`MAC.conf`、`TV.conf` 共享的 detached 配置） | 共享规则段直接引用 Raw URL；契约校验器同时核对它与 `Conf/Linnux.conf` 的规则顺序 |
 | `Conf/Linnux.conf` | Surge 客户端 | 首行 `#!MANAGED-CONFIG`，`interval=86400` 自拉 |
 | `clash/*.yaml` | 私有仓库 `linnux-x/clash` 的 `Clash_Local.yaml` | 16+ 个 `rule-provider` 硬引用 `main/clash/*.yaml` |
 
