@@ -9,6 +9,15 @@ ROOT = Path(__file__).resolve().parents[1]
 RULESET_PREFIX = 'https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/'
 
 
+def normalize_text(text: str) -> str:
+    """Canonical byte form: exactly one trailing newline.
+
+    Upstream ships the module without a final newline, and BSD sed (local runs) adds one
+    while GNU sed (CI) does not, so unnormalized syncs flip the last byte on every run.
+    """
+    return text.rstrip('\r\n') + '\n'
+
+
 def validate_text(text: str) -> None:
     sections = 0
     rulesets = 0
@@ -37,8 +46,16 @@ def validate_text(text: str) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('path', nargs='?', type=Path, default=ROOT / 'Module/DNS-Mapping.sgmodule')
+    parser.add_argument('--normalize', action='store_true',
+                        help='rewrite the file in canonical form (single trailing newline) after validating it')
     args = parser.parse_args()
-    validate_text(args.path.read_text(encoding='utf-8'))
+    text = args.path.read_text(encoding='utf-8')
+    validate_text(text)
+    if args.normalize:
+        canonical = normalize_text(text)
+        if canonical != text:
+            args.path.write_text(canonical, encoding='utf-8')
+            print('DNS mapping module normalized to a single trailing newline')
     print('DNS mapping module contract passed')
 
 

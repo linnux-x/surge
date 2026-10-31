@@ -178,9 +178,14 @@ def main() -> int:
     for finding in check_exclude_coverage():
         errors.append(f"{finding['target']}: {finding['detail']}")
     check_rule_files(errors, warnings)
+    from validate_dns_module import normalize_text as normalize_dns_module
     from validate_dns_module import validate_text as validate_dns_module
     try:
-        validate_dns_module((ROOT / 'Module/DNS-Mapping.sgmodule').read_text(encoding='utf-8'))
+        dns_module = (ROOT / 'Module/DNS-Mapping.sgmodule').read_text(encoding='utf-8')
+        validate_dns_module(dns_module)
+        if dns_module != normalize_dns_module(dns_module):
+            errors.append('DNS mapping module: must end with exactly one newline; '
+                          'run python3 scripts/validate_dns_module.py --normalize')
     except (OSError, ValueError) as exc:
         errors.append(f'DNS mapping module: {exc}')
 
