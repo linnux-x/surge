@@ -938,6 +938,20 @@
       "reason": "Download 组默认 DIRECT，该主机直连实测仅数十 KB/s 或被重置，移出后交给代理规则承接",
       "destination": "Global.list → Global",
       "route_tests": ["fastly.docker.com"]
+    },
+    {
+      "source_file": "Download.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,pypi.org",
+      "reason": "Download 组默认 DIRECT，HA 虚拟机（经 Surge 网关）安装集成依赖时直连下载停在 0 B/s；移出后回到 Global.list",
+      "destination": "Global.list → Global",
+      "route_tests": ["pypi.org"]
+    },
+    {
+      "source_file": "Download.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,pythonhosted.org",
+      "reason": "Download 组默认 DIRECT，HA 虚拟机（经 Surge 网关）安装集成依赖时直连下载停在 0 B/s；移出后回到 Global.list",
+      "destination": "Global.list → Global",
+      "route_tests": ["files.pythonhosted.org"]
     }
   ]
 }

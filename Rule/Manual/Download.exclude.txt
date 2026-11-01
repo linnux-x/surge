@@ -16,3 +16,7 @@ DOMAIN-SUFFIX,ghcr.io
 DOMAIN,registry-1.docker.io
 DOMAIN-SUFFIX,cloudflare.docker.com
 DOMAIN-SUFFIX,fastly.docker.com
+
+# PyPI index and package files: direct downloads to the HA VM stalled at 0 B/s (2026-11-01), same reason as above.
+DOMAIN-SUFFIX,pypi.org
+DOMAIN-SUFFIX,pythonhosted.org

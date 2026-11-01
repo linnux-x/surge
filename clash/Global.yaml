@@ -1,7 +1,7 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-11-01 18:06:25 +0800
-# TOTAL: 24571
+# UPDATED: 2026-11-01 18:23:28 +0800
+# TOTAL: 24573
 payload:
   - 'DOMAIN-SUFFIX,boil.network'
   - 'DOMAIN-SUFFIX,neburst.com'
@@ -12804,6 +12804,7 @@ payload:
   - 'DOMAIN-SUFFIX,pyhapp.com'
   - 'DOMAIN-SUFFIX,pypa.io'
   - 'DOMAIN-SUFFIX,pypi.io'
+  - 'DOMAIN-SUFFIX,pypi.org'
   - 'DOMAIN-SUFFIX,python.org'
   - 'DOMAIN-SUFFIX,pyup.io'
   - 'DOMAIN-SUFFIX,pzforever.skin'
@@ -22383,6 +22384,7 @@ payload:
   - 'DOMAIN-SUFFIX,python.com'
   - 'DOMAIN-SUFFIX,python.com.tw'
   - 'DOMAIN-SUFFIX,pythonhackers.com'
+  - 'DOMAIN-SUFFIX,pythonhosted.org'
   - 'DOMAIN-SUFFIX,pythonic.life'
   - 'DOMAIN-SUFFIX,pytorch.org'
   - 'DOMAIN-SUFFIX,qanote.com'

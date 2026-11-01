@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-01 18:06:25 +0800
+# UPDATED: 2026-11-01 18:23:28 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24571
+# TOTAL: 24573
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -12822,6 +12822,7 @@ DOMAIN-SUFFIX,pycon.org
 DOMAIN-SUFFIX,pyhapp.com
 DOMAIN-SUFFIX,pypa.io
 DOMAIN-SUFFIX,pypi.io
+DOMAIN-SUFFIX,pypi.org
 DOMAIN-SUFFIX,python.org
 DOMAIN-SUFFIX,pyup.io
 DOMAIN-SUFFIX,pzforever.skin
@@ -22401,6 +22402,7 @@ DOMAIN-SUFFIX,pwned.com
 DOMAIN-SUFFIX,python.com
 DOMAIN-SUFFIX,python.com.tw
 DOMAIN-SUFFIX,pythonhackers.com
+DOMAIN-SUFFIX,pythonhosted.org
 DOMAIN-SUFFIX,pythonic.life
 DOMAIN-SUFFIX,pytorch.org
 DOMAIN-SUFFIX,qanote.com
