@@ -131,7 +131,7 @@
         "IP-CIDR6": 1,
         "USER-AGENT": 5
       },
-      "sha256": "d5936df11e33f2e417c542953bb652eed488126f6ad05e9db6c4ee85e5d776a0"
+      "sha256": "04d60fcaa7f378c87109a3b2efeb364a6f4d6e2ea3e49593929cf8209ee218ca"
     },
     {
       "file": "GlobalMedia.list",
@@ -161,6 +161,28 @@
         "USER-AGENT": 3
       },
       "sha256": "994379f4e912a53e676156d73ea52fff27e32c83b6a57712d79349582724905c"
+    },
+    {
+      "file": "HKMedia.list",
+      "rules": 34,
+      "types": {
+        "DOMAIN": 9,
+        "DOMAIN-KEYWORD": 2,
+        "DOMAIN-SUFFIX": 16,
+        "PROCESS-NAME": 5,
+        "USER-AGENT": 2
+      },
+      "sha256": "a3cc6b53786cf95400b9f46b0eb46acd8f75fda5a61acf6b8eaf033845dc9eab"
+    },
+    {
+      "file": "JPMedia.list",
+      "rules": 27,
+      "types": {
+        "DOMAIN": 1,
+        "DOMAIN-SUFFIX": 24,
+        "USER-AGENT": 2
+      },
+      "sha256": "317dd8f6d368d7de87d165ee04f9ce7eb1e7a509a9cd5bb392111bf4ce3ae27a"
     },
     {
       "file": "Microsoft.list",
@@ -250,29 +272,7 @@
       "sha256": "b0394e1e543079c18892b66e9f3b6b27562008c9276b1caf270fa18d99bb11cd"
     },
     {
-      "file": "Stream_HK.list",
-      "rules": 34,
-      "types": {
-        "DOMAIN": 9,
-        "DOMAIN-KEYWORD": 2,
-        "DOMAIN-SUFFIX": 16,
-        "PROCESS-NAME": 5,
-        "USER-AGENT": 2
-      },
-      "sha256": "9d7e6c4d947de013e8adf80caf13c6cb950227c17706d3e1fccb41799b7a9096"
-    },
-    {
-      "file": "Stream_JP.list",
-      "rules": 27,
-      "types": {
-        "DOMAIN": 1,
-        "DOMAIN-SUFFIX": 24,
-        "USER-AGENT": 2
-      },
-      "sha256": "9ac0cbd7b6561aefedc128001cd6781f7110551b866b2cf30db713e9a5a25a43"
-    },
-    {
-      "file": "Stream_TW.list",
+      "file": "TWMedia.list",
       "rules": 36,
       "types": {
         "DOMAIN": 13,
@@ -280,18 +280,7 @@
         "PROCESS-NAME": 1,
         "USER-AGENT": 4
       },
-      "sha256": "f2d11a498711771843e99d39d61c33c0fb45b6790b0d0cfd5a74ec7ecb3ce42b"
-    },
-    {
-      "file": "Stream_US.list",
-      "rules": 51,
-      "types": {
-        "DOMAIN": 13,
-        "DOMAIN-SUFFIX": 28,
-        "PROCESS-NAME": 1,
-        "USER-AGENT": 9
-      },
-      "sha256": "0d6ba370a7156879dfa90fd5bbe0b92196754369c59f7d1556ca10c65289b1ed"
+      "sha256": "4cf45c92e1ed172d8de97418869466dba1b62cfa42c53e2fb8515829aadd4a62"
     },
     {
       "file": "Telegram.list",
@@ -318,6 +307,17 @@
         "USER-AGENT": 1
       },
       "sha256": "12bc50bb7e7e3aa0a4e5c8c3cd5e039353ca3204b28aa7bcb5f7bbe2570efcb9"
+    },
+    {
+      "file": "USMedia.list",
+      "rules": 51,
+      "types": {
+        "DOMAIN": 13,
+        "DOMAIN-SUFFIX": 28,
+        "PROCESS-NAME": 1,
+        "USER-AGENT": 9
+      },
+      "sha256": "547b12b964f2c2a53f17f801afdd61f10dd452bf177c8ad17c815fa75635f4a4"
     },
     {
       "file": "WeChat.list",
@@ -422,6 +422,8 @@
     "Global.manifest": "48d98d2c9395df34f3d918185154e4062ebec1515954bcc47cbc51e0bd5f70e3",
     "GlobalMedia.manifest": "b6b4881352b859ddd645b16042e1696a827204b1c594fc73ab472abaf9d42f72",
     "Google.manifest": "e07b20be6f457b843470e822e5532bca4da77b6e5ee4f14dca1a4b90b3d2ab90",
+    "HKMedia.manifest": "0c18b7a9c04e06f1494645a758f778df16e8a87e55e74837c78069dc46b93f26",
+    "JPMedia.manifest": "52618d9af58e28b5d76ae50038b3e030a0712d0f714b0b049ee79d866560d82e",
     "Microsoft.manifest": "da7b6399ce98d3938a027e6ce54030a80db0eabf3106728ba00cecab050e6065",
     "Microsoft_CDN.manifest": "d26571becc05f723d2f064459eb77b583222af156d1a2e6b81505191d900f07a",
     "Netflix.manifest": "0ffcdd804cc4e56614ba69cc539061c6b5e65ef6ee2e62a01aee3e62902ab9c9",
@@ -430,17 +432,15 @@
     "Speedtest.manifest": "6fe90f82406b69b9166e38a8a92bd1e305ae5e55f9a4acdae32aeed03ec98291",
     "Speedtest_China.manifest": "1422ee65ce7dca6937f4119b9f3645a9f79e436faf96341f92e11e39ce894807",
     "Spotify.manifest": "5f1f22f1d8f4081b725902910dc6754a6b1fa868dd8e97e527c39fcc7cf463b0",
-    "Stream_HK.manifest": "0c18b7a9c04e06f1494645a758f778df16e8a87e55e74837c78069dc46b93f26",
-    "Stream_JP.manifest": "52618d9af58e28b5d76ae50038b3e030a0712d0f714b0b049ee79d866560d82e",
-    "Stream_TW.manifest": "d0a0a64013fa6d8fc70e860246a6d71bc3eb5a462619b1f2c5e20cfbc1f85902",
-    "Stream_US.manifest": "c2fc7e56e5de3308a6225dcdd509e5ed0ef4d1491ec38e0c8cf291d9dc315896",
+    "TWMedia.manifest": "d0a0a64013fa6d8fc70e860246a6d71bc3eb5a462619b1f2c5e20cfbc1f85902",
     "Telegram.manifest": "8857fbff71898f2065ddc9f25e5c95b2ef64d908617a94295f6fa5747f54552b",
     "TikTok.manifest": "5338088a0f07178484c5d206819bd91313c1fe9a5565d5f1cf9a9d6a5fb99d36",
+    "USMedia.manifest": "c2fc7e56e5de3308a6225dcdd509e5ed0ef4d1491ec38e0c8cf291d9dc315896",
     "WeChat.manifest": "2daaefc46757ae3bc6b07cf82f6e8b6493235b7b9c28708b8c7f8c54e151f7c3",
     "YouTube.manifest": "1b9c3b78afbb311db391e8f2910b25b507296d158a339957a874d918a2869ca7"
   },
-  "sources_sha256": "76c4be02e28f9eab4dcd5abd2abf91018f15708189fad297fc562abe03ff4d55",
-  "override_manifest_sha256": "a657cd108fdf6a743f99f775ee12ccb16ddfac259178ea075c02dab5682006e2",
+  "sources_sha256": "c738ac6f803c1ce8dd498dfa564b68aba95e1688593dbc0a21880069ec795fc5",
+  "override_manifest_sha256": "d0035cd557a931355629cf3c974ed513e4169cf4bd8a71675e32727db97f1530",
   "clash_compatibility": {
     "payload_rules": 159171,
     "dropped_surge_only_types": {
@@ -454,8 +454,8 @@
     }
   },
   "diff_summary": {
-    "total_added": 209,
-    "total_removed": 7,
+    "total_added": 148,
+    "total_removed": 0,
     "total_source_changed": 0
   }
 }

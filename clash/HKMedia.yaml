@@ -1,6 +1,6 @@
-# Generated from Rule/Stream_HK.list
+# Generated from Rule/HKMedia.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-11-01 16:31:31 +0800
+# UPDATED: 2026-11-01 16:54:11 +0800
 # TOTAL: 34
 payload:
   - 'DOMAIN-SUFFIX,viu.tv'

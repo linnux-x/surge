@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-01T16:33:38.460250",
-  "total_added": 209,
-  "total_removed": 7,
+  "generated_at": "2026-11-01T16:54:13.458685",
+  "total_added": 148,
+  "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -127,365 +127,23 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24569,
+      "prev_total": 24562,
       "curr_total": 24562,
       "added_count": 0,
-      "removed_count": 7,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "172a0c4b2726",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN,cbsi.live.ott.irdeto.com"
-        },
-        {
-          "id": "2f434ac89572",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,hbogoasia.tw"
-        },
-        {
-          "id": "304cbdebe719",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN,cbsservice.aws.syncbak.com"
-        },
-        {
-          "id": "4b6815c84297",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,hbogoasia.sg"
-        },
-        {
-          "id": "567541f24729",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,fanfox.net"
-        },
-        {
-          "id": "dbf22636fb7d",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,mangafox.me"
-        },
-        {
-          "id": "e730cabe1385",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN,cbsplaylistserver.aws.syncbak.com"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "GlobalMedia.list",
-      "prev_total": 2256,
+      "prev_total": 2317,
       "curr_total": 2317,
-      "added_count": 61,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "0aee5ddb05f5",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN-SUFFIX,spotify-com.akamaized.net"
-        },
-        {
-          "id": "0d48164135bb",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN-SUFFIX,dcblivedazn.akamaized.net"
-        },
-        {
-          "id": "164d6caaf9da",
-          "source": "SukkaW Stream",
-          "rule": "PROCESS-NAME,com.hktve.viutv"
-        },
-        {
-          "id": "1cc846b51d28",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,ds-linear-abematv.akamaized.net"
-        },
-        {
-          "id": "1dc5989dae14",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,d25xi40x97liuc.cloudfront.net"
-        },
-        {
-          "id": "26a0fffcfbd0",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,athome.fandango.com"
-        },
-        {
-          "id": "2f434ac89572",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN-SUFFIX,hbogoasia.tw"
-        },
-        {
-          "id": "2fbfe1234d46",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,prod-api.crackle.com"
-        },
-        {
-          "id": "2fd37b25e8ba",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN-SUFFIX,production-public.tubi.io"
-        },
-        {
-          "id": "3c422020c048",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com"
-        },
-        {
-          "id": "3f9e08b89c2c",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,www.tubi.tv"
-        },
-        {
-          "id": "41c5cf34eb4a",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,d151l6v8er5bdm.cloudfront.net"
-        },
-        {
-          "id": "420475a82747",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,www.tubitv.com"
-        },
-        {
-          "id": "4b6815c84297",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN-SUFFIX,hbogoasia.sg"
-        },
-        {
-          "id": "4b79d93a30ad",
-          "source": "SukkaW Stream",
-          "rule": "PROCESS-NAME,com.tencent.ibg.joox"
-        },
-        {
-          "id": "5031b22c33d4",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN-SUFFIX,psg.cdn.hgc.com.hk"
-        },
-        {
-          "id": "504432a71a96",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,tubitv.com"
-        },
-        {
-          "id": "5141897cabdd",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,cache.video.iqiyi.com"
-        },
-        {
-          "id": "567541f24729",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN-SUFFIX,fanfox.net"
-        },
-        {
-          "id": "59a5d84869ed",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN-KEYWORD,-spotify-com"
-        },
-        {
-          "id": "5d4631a4787f",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,d1v5ir2lpwr8os.cloudfront.net"
-        },
-        {
-          "id": "6038dc2fc443",
-          "source": "SukkaW Stream",
-          "rule": "USER-AGENT,Naver TV*"
-        },
-        {
-          "id": "60b97979f284",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN-SUFFIX,tvlicensing.co.uk"
-        },
-        {
-          "id": "683b705c9f90",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,play-edge.itunes.apple.com"
-        },
-        {
-          "id": "73da7282e7c5",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,d3196yreox78o9.cloudfront.net"
-        },
-        {
-          "id": "73fd24f517fb",
-          "source": "SukkaW Stream",
-          "rule": "USER-AGENT,Prime Video*"
-        },
-        {
-          "id": "74e63db43f57",
-          "source": "SukkaW Stream",
-          "rule": "PROCESS-NAME,com.hulu.plus"
-        },
-        {
-          "id": "758fe639efba",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,d3c7rimkq79yfu.cloudfront.net"
-        },
-        {
-          "id": "7766cbeee510",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,d2anahhhmp1ffz.cloudfront.net"
-        },
-        {
-          "id": "793a02b5a263",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,uts-api.itunes.apple.com"
-        },
-        {
-          "id": "7ddbccefbd67",
-          "source": "SukkaW Stream",
-          "rule": "PROCESS-NAME,tv.twitch.android.app"
-        },
-        {
-          "id": "8281d9b3c38a",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,dfp6rglgjqszk.cloudfront.net"
-        },
-        {
-          "id": "839b197a5047",
-          "source": "SukkaW Stream",
-          "rule": "PROCESS-NAME,com.amazon.avod.thirdpartyclient"
-        },
-        {
-          "id": "83f2d78aaf5c",
-          "source": "SukkaW Stream",
-          "rule": "PROCESS-NAME,com.netflix.mediaclient"
-        },
-        {
-          "id": "88fa6b57ecaf",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,d22qjgkvxw22r6.cloudfront.net"
-        },
-        {
-          "id": "890e1146f6d5",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,d1k2us671qcoau.cloudfront.net"
-        },
-        {
-          "id": "8d7a9c71c1a8",
-          "source": "SukkaW Stream",
-          "rule": "PROCESS-NAME,com.twgood.android"
-        },
-        {
-          "id": "931bec6c0567",
-          "source": "SukkaW Stream",
-          "rule": "USER-AGENT,FOX NOW*"
-        },
-        {
-          "id": "93aba43439e8",
-          "source": "SukkaW Stream",
-          "rule": "USER-AGENT,LINE TV*"
-        },
-        {
-          "id": "973e0f781f03",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN-SUFFIX,location-plus.nhk.jp"
-        },
-        {
-          "id": "99f59529614f",
-          "source": "SukkaW Stream",
-          "rule": "PROCESS-NAME,tv"
-        },
-        {
-          "id": "9d988c5bc9da",
-          "source": "SukkaW Stream",
-          "rule": "PROCESS-NAME,com.bstar.intl"
-        },
-        {
-          "id": "a2ece8de0e64",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,staticasiafox.akamaized.net"
-        },
-        {
-          "id": "a5936a80af05",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,hls.itunes.apple.com"
-        },
-        {
-          "id": "ac27cd7c615e",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,d349g9zuie06uo.cloudfront.net"
-        },
-        {
-          "id": "bb32538d424e",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,dashasiafox.akamaized.net"
-        },
-        {
-          "id": "bfc0af40323e",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,vudu.com"
-        },
-        {
-          "id": "c0d7c5770d88",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN-SUFFIX,dcalivedazn.akamaized.net"
-        },
-        {
-          "id": "c26a6a6b519d",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,np-edge.itunes.apple.com"
-        },
-        {
-          "id": "c7ea69824750",
-          "source": "SukkaW Stream",
-          "rule": "PROCESS-NAME,com.linecorp.linetv"
-        },
-        {
-          "id": "c8fb9516a5fe",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,d1xfray82862hr.cloudfront.net"
-        },
-        {
-          "id": "c909d2f2a4fb",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,d1sgwhnao7452x.cloudfront.net"
-        },
-        {
-          "id": "d551ef6cff01",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,dmqdd6hw24ucf.cloudfront.net"
-        },
-        {
-          "id": "d8106ae59631",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,d184dfn36gombl.cloudfront.net"
-        },
-        {
-          "id": "dacd42454087",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,bbc.mp-pxcdn.com"
-        },
-        {
-          "id": "dbf22636fb7d",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN-SUFFIX,mangafox.me"
-        },
-        {
-          "id": "f4c6de9f0eee",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,d27xxe7juh1us6.cloudfront.net"
-        },
-        {
-          "id": "f59249b2f580",
-          "source": "SukkaW Stream",
-          "rule": "PROCESS-NAME,music"
-        },
-        {
-          "id": "f815b22bf5cd",
-          "source": "SukkaW Stream",
-          "rule": "USER-AGENT,HBO NOW*"
-        },
-        {
-          "id": "f92fe3afc2e1",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,tubi.tv"
-        },
-        {
-          "id": "f9ef3e5a225c",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,hls-amt.itunes.apple.com"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -501,95 +159,7 @@
       "source_changed_sample": []
     },
     {
-      "file": "Microsoft.list",
-      "prev_total": 484,
-      "curr_total": 484,
-      "added_count": 0,
-      "removed_count": 0,
-      "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
-      "source_changed_sample": []
-    },
-    {
-      "file": "Microsoft_CDN.list",
-      "prev_total": 79,
-      "curr_total": 79,
-      "added_count": 0,
-      "removed_count": 0,
-      "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
-      "source_changed_sample": []
-    },
-    {
-      "file": "Netflix.list",
-      "prev_total": 1152,
-      "curr_total": 1152,
-      "added_count": 0,
-      "removed_count": 0,
-      "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
-      "source_changed_sample": []
-    },
-    {
-      "file": "PayPal.list",
-      "prev_total": 233,
-      "curr_total": 233,
-      "added_count": 0,
-      "removed_count": 0,
-      "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
-      "source_changed_sample": []
-    },
-    {
-      "file": "SocialMedia.list",
-      "prev_total": 670,
-      "curr_total": 670,
-      "added_count": 0,
-      "removed_count": 0,
-      "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
-      "source_changed_sample": []
-    },
-    {
-      "file": "Speedtest.list",
-      "prev_total": 1675,
-      "curr_total": 1675,
-      "added_count": 0,
-      "removed_count": 0,
-      "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
-      "source_changed_sample": []
-    },
-    {
-      "file": "Speedtest_China.list",
-      "prev_total": 53,
-      "curr_total": 53,
-      "added_count": 0,
-      "removed_count": 0,
-      "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
-      "source_changed_sample": []
-    },
-    {
-      "file": "Spotify.list",
-      "prev_total": 32,
-      "curr_total": 32,
-      "added_count": 0,
-      "removed_count": 0,
-      "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
-      "source_changed_sample": []
-    },
-    {
-      "file": "Stream_HK.list",
+      "file": "HKMedia.list",
       "prev_total": 0,
       "curr_total": 34,
       "added_count": 34,
@@ -771,7 +341,7 @@
       "source_changed_sample": []
     },
     {
-      "file": "Stream_JP.list",
+      "file": "JPMedia.list",
       "prev_total": 0,
       "curr_total": 27,
       "added_count": 27,
@@ -918,7 +488,95 @@
       "source_changed_sample": []
     },
     {
-      "file": "Stream_TW.list",
+      "file": "Microsoft.list",
+      "prev_total": 484,
+      "curr_total": 484,
+      "added_count": 0,
+      "removed_count": 0,
+      "source_changed_count": 0,
+      "added_sample": [],
+      "removed_sample": [],
+      "source_changed_sample": []
+    },
+    {
+      "file": "Microsoft_CDN.list",
+      "prev_total": 79,
+      "curr_total": 79,
+      "added_count": 0,
+      "removed_count": 0,
+      "source_changed_count": 0,
+      "added_sample": [],
+      "removed_sample": [],
+      "source_changed_sample": []
+    },
+    {
+      "file": "Netflix.list",
+      "prev_total": 1152,
+      "curr_total": 1152,
+      "added_count": 0,
+      "removed_count": 0,
+      "source_changed_count": 0,
+      "added_sample": [],
+      "removed_sample": [],
+      "source_changed_sample": []
+    },
+    {
+      "file": "PayPal.list",
+      "prev_total": 233,
+      "curr_total": 233,
+      "added_count": 0,
+      "removed_count": 0,
+      "source_changed_count": 0,
+      "added_sample": [],
+      "removed_sample": [],
+      "source_changed_sample": []
+    },
+    {
+      "file": "SocialMedia.list",
+      "prev_total": 670,
+      "curr_total": 670,
+      "added_count": 0,
+      "removed_count": 0,
+      "source_changed_count": 0,
+      "added_sample": [],
+      "removed_sample": [],
+      "source_changed_sample": []
+    },
+    {
+      "file": "Speedtest.list",
+      "prev_total": 1675,
+      "curr_total": 1675,
+      "added_count": 0,
+      "removed_count": 0,
+      "source_changed_count": 0,
+      "added_sample": [],
+      "removed_sample": [],
+      "source_changed_sample": []
+    },
+    {
+      "file": "Speedtest_China.list",
+      "prev_total": 53,
+      "curr_total": 53,
+      "added_count": 0,
+      "removed_count": 0,
+      "source_changed_count": 0,
+      "added_sample": [],
+      "removed_sample": [],
+      "source_changed_sample": []
+    },
+    {
+      "file": "Spotify.list",
+      "prev_total": 32,
+      "curr_total": 32,
+      "added_count": 0,
+      "removed_count": 0,
+      "source_changed_count": 0,
+      "added_sample": [],
+      "removed_sample": [],
+      "source_changed_sample": []
+    },
+    {
+      "file": "TWMedia.list",
       "prev_total": 0,
       "curr_total": 36,
       "added_count": 36,
@@ -1110,7 +768,29 @@
       "source_changed_sample": []
     },
     {
-      "file": "Stream_US.list",
+      "file": "Telegram.list",
+      "prev_total": 50,
+      "curr_total": 50,
+      "added_count": 0,
+      "removed_count": 0,
+      "source_changed_count": 0,
+      "added_sample": [],
+      "removed_sample": [],
+      "source_changed_sample": []
+    },
+    {
+      "file": "TikTok.list",
+      "prev_total": 34,
+      "curr_total": 34,
+      "added_count": 0,
+      "removed_count": 0,
+      "source_changed_count": 0,
+      "added_sample": [],
+      "removed_sample": [],
+      "source_changed_sample": []
+    },
+    {
+      "file": "USMedia.list",
       "prev_total": 0,
       "curr_total": 51,
       "added_count": 51,
@@ -1373,28 +1053,6 @@
           "rule": "DOMAIN,tubi.tv"
         }
       ],
-      "removed_sample": [],
-      "source_changed_sample": []
-    },
-    {
-      "file": "Telegram.list",
-      "prev_total": 50,
-      "curr_total": 50,
-      "added_count": 0,
-      "removed_count": 0,
-      "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
-      "source_changed_sample": []
-    },
-    {
-      "file": "TikTok.list",
-      "prev_total": 34,
-      "curr_total": 34,
-      "added_count": 0,
-      "removed_count": 0,
-      "source_changed_count": 0,
-      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
