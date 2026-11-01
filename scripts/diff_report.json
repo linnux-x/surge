@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-01T17:38:32.084841",
-  "total_added": 1,
-  "total_removed": 8,
+  "generated_at": "2026-11-01T18:06:33.708339",
+  "total_added": 8,
+  "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -105,54 +105,13 @@
     },
     {
       "file": "Download.list",
-      "prev_total": 1692,
+      "prev_total": 1684,
       "curr_total": 1684,
       "added_count": 0,
-      "removed_count": 8,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "1a0f3f32187f",
-          "source": "SukkaW Download",
-          "rule": "DOMAIN-SUFFIX,ghcr.io"
-        },
-        {
-          "id": "30f339d9d27b",
-          "source": "SukkaW Download",
-          "rule": "DOMAIN,objects.githubusercontent.com"
-        },
-        {
-          "id": "3383ee68b664",
-          "source": "SukkaW Download",
-          "rule": "DOMAIN,pkg-containers.githubusercontent.com"
-        },
-        {
-          "id": "685f55c1f4f5",
-          "source": "SukkaW Download",
-          "rule": "DOMAIN,release-assets.githubusercontent.com"
-        },
-        {
-          "id": "962dbf50c0ee",
-          "source": "SukkaW Download",
-          "rule": "DOMAIN-SUFFIX,cloudflare.docker.com"
-        },
-        {
-          "id": "b13e2bf1fa9a",
-          "source": "SukkaW Download",
-          "rule": "DOMAIN,codeload.github.com"
-        },
-        {
-          "id": "e05d9f841fb7",
-          "source": "SukkaW Download",
-          "rule": "DOMAIN-SUFFIX,fastly.docker.com"
-        },
-        {
-          "id": "f9efbe85a522",
-          "source": "SukkaW Download",
-          "rule": "DOMAIN,registry-1.docker.io"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -168,16 +127,51 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24562,
-      "curr_total": 24563,
-      "added_count": 1,
+      "prev_total": 24563,
+      "curr_total": 24571,
+      "added_count": 8,
       "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [
         {
-          "id": "1a0f3f32187f",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,ghcr.io"
+          "id": "03111ff019ff",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,leagueoflegendsportal.com"
+        },
+        {
+          "id": "13081026f292",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,trueachievements.com"
+        },
+        {
+          "id": "76a7c7db03a1",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,dotesports.com"
+        },
+        {
+          "id": "a71327543133",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,vpesports.com"
+        },
+        {
+          "id": "ae60b8c2a2f1",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,mobalytics.gg"
+        },
+        {
+          "id": "ba22aa176489",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,howlongtobeat.com"
+        },
+        {
+          "id": "e130981ae4fe",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,darkintaqt.com"
+        },
+        {
+          "id": "fc22fda1b1c6",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,mobafire.com"
         }
       ],
       "removed_sample": [],

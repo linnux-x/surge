@@ -122,16 +122,16 @@
     },
     {
       "file": "Global.list",
-      "rules": 24563,
+      "rules": 24571,
       "types": {
         "DOMAIN": 110,
         "DOMAIN-KEYWORD": 12,
-        "DOMAIN-SUFFIX": 24352,
+        "DOMAIN-SUFFIX": 24360,
         "IP-CIDR": 83,
         "IP-CIDR6": 1,
         "USER-AGENT": 5
       },
-      "sha256": "6cebcc3977383e8bc110a51a3634a784f02a2bae0a6499e98aaeccfe813259c2"
+      "sha256": "d278884ccb884409c9913a83317654441775426eb66006a2f78a2ed49f3ff0a1"
     },
     {
       "file": "GlobalMedia.list",
@@ -345,11 +345,11 @@
       "sha256": "dc6dfde863bc0c0034fa3bae09c8a8b090ca385439e866e5ff89fa65eb177c69"
     }
   ],
-  "total_rules": 159369,
+  "total_rules": 159377,
   "rule_types": {
     "DOMAIN": 3654,
     "DOMAIN-KEYWORD": 96,
-    "DOMAIN-SUFFIX": 141124,
+    "DOMAIN-SUFFIX": 141132,
     "DOMAIN-WILDCARD": 4,
     "IP-ASN": 8,
     "IP-CIDR": 9823,
@@ -361,7 +361,7 @@
   "source_attribution": {
     "ConnersHua AI": 12,
     "Loyalsoldier China CIDR": 7805,
-    "Manual Rules": 282,
+    "Manual Rules": 290,
     "Rabbit-Spec AIGC": 27,
     "Rabbit-Spec China": 187,
     "Rabbit-Spec China CIDR": 20,
@@ -419,7 +419,7 @@
     "Disney.manifest": "4952367b9bc1b50aaeacf8f01c8059c20e75aaf86be6c908d16a4f607a6b866f",
     "Download.manifest": "5d5cce36e138b8a49bf711f5dbb677505b717a77d08a1ae6b5d395813f63134d",
     "Game.manifest": "eea8247188853238e4a15c21b3574947a61fd4357bc5568cf3fdb05fad47dc18",
-    "Global.manifest": "ddf26888fe14a937c77047457411a5692c43c2967ca10f6afe3035e37987298c",
+    "Global.manifest": "94b00645a054089291b1056cd0f9012f5e14c768d8cdcc87424d98e526adaa08",
     "GlobalMedia.manifest": "b6b4881352b859ddd645b16042e1696a827204b1c594fc73ab472abaf9d42f72",
     "Google.manifest": "e07b20be6f457b843470e822e5532bca4da77b6e5ee4f14dca1a4b90b3d2ab90",
     "HKMedia.manifest": "0c18b7a9c04e06f1494645a758f778df16e8a87e55e74837c78069dc46b93f26",
@@ -442,7 +442,7 @@
   "sources_sha256": "c738ac6f803c1ce8dd498dfa564b68aba95e1688593dbc0a21880069ec795fc5",
   "override_manifest_sha256": "d4d4897933b827c92524e4411df20c982eb42ab6ca77ab2fc1b39798da7ceeba",
   "clash_compatibility": {
-    "payload_rules": 159164,
+    "payload_rules": 159172,
     "dropped_surge_only_types": {
       "URL-REGEX": 5,
       "USER-AGENT": 200
@@ -454,8 +454,8 @@
     }
   },
   "diff_summary": {
-    "total_added": 1,
-    "total_removed": 8,
+    "total_added": 8,
+    "total_removed": 0,
     "total_source_changed": 0
   }
 }

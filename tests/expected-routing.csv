@@ -365,3 +365,8 @@ pkg.ghcr.io,Global.list,Global,GHCR 子域名随后缀一并移出 Download
 registry-1.docker.io,FINAL,Global,Docker Hub 镜像仓库直连限速，移出 Download 后回落 Global
 production.cloudflare.docker.com,Global.list,Global,Docker Hub 镜像层 CDN 直连限速，移出 Download
 fastly.docker.com,Global.list,Global,Docker Hub 镜像层 CDN 直连限速，移出 Download
+cdn.mobalytics.gg,Global.list,Global,英雄联盟出装/数据站（此前落到 FINAL）
+www.mobafire.com,Global.list,Global,英雄联盟攻略站
+media.dotesports.com,Global.list,Global,电竞资讯站
+challenges.darkintaqt.com,Global.list,Global,英雄联盟挑战统计站
+howlongtobeat.com,Global.list,Global,游戏通关时长站
