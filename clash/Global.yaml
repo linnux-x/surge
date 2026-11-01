@@ -1,7 +1,7 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-11-01 17:37:56 +0800
-# TOTAL: 24563
+# UPDATED: 2026-11-01 18:06:25 +0800
+# TOTAL: 24571
 payload:
   - 'DOMAIN-SUFFIX,boil.network'
   - 'DOMAIN-SUFFIX,neburst.com'
@@ -18,6 +18,14 @@ payload:
   - 'DOMAIN-SUFFIX,nodejs.org'
   - 'DOMAIN,u.expo.dev'
   - 'DOMAIN-SUFFIX,snipaste.com'
+  - 'DOMAIN-SUFFIX,mobalytics.gg'
+  - 'DOMAIN-SUFFIX,mobafire.com'
+  - 'DOMAIN-SUFFIX,dotesports.com'
+  - 'DOMAIN-SUFFIX,vpesports.com'
+  - 'DOMAIN-SUFFIX,leagueoflegendsportal.com'
+  - 'DOMAIN-SUFFIX,darkintaqt.com'
+  - 'DOMAIN-SUFFIX,howlongtobeat.com'
+  - 'DOMAIN-SUFFIX,trueachievements.com'
   - 'DOMAIN,1password.drift.click'
   - 'DOMAIN,adobeereg.com'
   - 'DOMAIN,agb9r0ad.qllfkl.com'

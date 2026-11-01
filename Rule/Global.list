@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-01 17:37:56 +0800
+# UPDATED: 2026-11-01 18:06:25 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24563
+# TOTAL: 24571
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -31,6 +31,17 @@ DOMAIN,u.expo.dev
 # Snipaste website and redirects; dedicated download hosts match Download earlier.
 # https://www.snipaste.com/download.html
 DOMAIN-SUFFIX,snipaste.com
+# Overseas game community sites (builds, stats, esports news, completion trackers)
+# seen from the Windows desktop falling through to FINAL; same Global policy,
+# but matching here avoids the local DNS lookup triggered on the way to FINAL.
+DOMAIN-SUFFIX,mobalytics.gg
+DOMAIN-SUFFIX,mobafire.com
+DOMAIN-SUFFIX,dotesports.com
+DOMAIN-SUFFIX,vpesports.com
+DOMAIN-SUFFIX,leagueoflegendsportal.com
+DOMAIN-SUFFIX,darkintaqt.com
+DOMAIN-SUFFIX,howlongtobeat.com
+DOMAIN-SUFFIX,trueachievements.com
 
 # ======= blackmatrix7 Global ========
 DOMAIN,1password.drift.click
