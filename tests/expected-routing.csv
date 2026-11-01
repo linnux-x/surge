@@ -90,7 +90,7 @@ mcr.microsoft.com,Download.list,Download,Microsoft Container Registry
 minecraft.net,Game.list,Game,Minecraft 游戏域名
 xboxlive.com,Game.list,Game,Xbox Live 游戏域名
 spotify.com,Spotify.list,Spotify,Spotify
-hulu.com,GlobalMedia.list,GlobalMedia,Hulu
+hulu.com,Stream_US.list,🇺🇸 美国节点,Hulu 美国（地区流媒体先于 GlobalMedia）
 akamaized.net,Global,Global,共享CDN（已排除，FINAL→Global）
 cloudfront.net,Global,Global,共享CDN（已排除，FINAL→Global）
 example.invalid,Global,Global,不存在于任何规则集，FINAL→Global
@@ -332,3 +332,27 @@ googlemail.com,Google.list,Google,Gmail 旧域名
 1drv.com,Microsoft.list,Microsoft,OneDrive 短链
 eqoavtbu.com,China.list,DIRECT,含 avtb 子串的国内域名（不得被 Global 关键词劫持）
 avtb2.com,FINAL,Global,avtb 关键词排除后由 FINAL 兜底，策略不变
+viu.com,Stream_HK.list,🇭🇰 香港节点,Viu 根域
+www.viu.com,Stream_HK.list,🇭🇰 香港节点,Viu 子域
+viu.tv,Stream_HK.list,🇭🇰 香港节点,ViuTV
+mytvsuper.com,Stream_HK.list,🇭🇰 香港节点,myTV SUPER
+bilibili.tv,Stream_HK.list,🇭🇰 香港节点,Bilibili 国际版
+apm-misaka.biliapi.net,Stream_HK.list,🇭🇰 香港节点,Bilibili 国际版 API 先于 ChinaMedia 的 biliapi.net
+kktv.me,Stream_TW.list,🇨🇳 台湾节点,KKTV
+ani.gamer.com.tw,Stream_TW.list,🇨🇳 台湾节点,巴哈姆特动画疯
+linetv.tw,Stream_TW.list,🇨🇳 台湾节点,LINE TV
+www.4gtv.tv,Stream_TW.list,🇨🇳 台湾节点,四季线上 子域
+dmm.com,Stream_JP.list,🇯🇵 日本节点,DMM 根域
+www.dmm.co.jp,Stream_JP.list,🇯🇵 日本节点,DMM 子域
+abema.tv,Stream_JP.list,🇯🇵 日本节点,AbemaTV
+nicovideo.jp,Stream_JP.list,🇯🇵 日本节点,niconico
+hulu.jp,Stream_JP.list,🇯🇵 日本节点,Hulu 日本（Stream_JP 先于 Stream_US）
+tver.jp,Stream_JP.list,🇯🇵 日本节点,TVer
+www.hulu.com,Stream_US.list,🇺🇸 美国节点,Hulu 美国 子域
+paramountplus.com,Stream_US.list,🇺🇸 美国节点,Paramount+
+peacocktv.com,Stream_US.list,🇺🇸 美国节点,Peacock
+tubitv.com,Stream_US.list,🇺🇸 美国节点,Tubi
+players.brightcove.net,GlobalMedia.list,GlobalMedia,Brightcove 共享视频平台，不固定到单一地区
+manifest.prod.boltdns.net,GlobalMedia.list,GlobalMedia,Brightcove 共享视频清单，不固定到单一地区
+edge.api.brightcove.com,GlobalMedia.list,GlobalMedia,Brightcove 共享 API，不固定到单一地区
+www.youtube.com,YouTube.list,YouTube,全球通用流媒体不进入地区规则

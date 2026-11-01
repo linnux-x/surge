@@ -1,0 +1,3 @@
+# Brightcove 是多家媒体共用的视频平台，不应整体固定到香港节点；保持由 GlobalMedia 处理。
+DOMAIN,players.brightcove.net
+DOMAIN,manifest.prod.boltdns.net

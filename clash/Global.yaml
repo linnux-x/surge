@@ -1,7 +1,7 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-10-30 19:16:11 +0800
-# TOTAL: 24569
+# UPDATED: 2026-11-01 16:33:26 +0800
+# TOTAL: 24562
 payload:
   - 'DOMAIN-SUFFIX,boil.network'
   - 'DOMAIN-SUFFIX,neburst.com'
@@ -30,9 +30,6 @@ payload:
   - 'DOMAIN,beck-online.beck.de'
   - 'DOMAIN,blizzard.nefficient.co.kr'
   - 'DOMAIN,bybit.ada.support'
-  - 'DOMAIN,cbsi.live.ott.irdeto.com'
-  - 'DOMAIN,cbsplaylistserver.aws.syncbak.com'
-  - 'DOMAIN,cbsservice.aws.syncbak.com'
   - 'DOMAIN,cdn.js7k.com'
   - 'DOMAIN,cisco.evergage.com'
   - 'DOMAIN,clubhouse.pubnubapi.com'
@@ -5801,7 +5798,6 @@ payload:
   - 'DOMAIN-SUFFIX,fandango.com'
   - 'DOMAIN-SUFFIX,fanfiction.net'
   - 'DOMAIN-SUFFIX,fanfictionero.com'
-  - 'DOMAIN-SUFFIX,fanfox.net'
   - 'DOMAIN-SUFFIX,fangsung.com'
   - 'DOMAIN-SUFFIX,fanhaodian.com'
   - 'DOMAIN-SUFFIX,fanhowab.buzz'
@@ -7074,8 +7070,6 @@ payload:
   - 'DOMAIN-SUFFIX,hbogo.hu'
   - 'DOMAIN-SUFFIX,hbogo.sk'
   - 'DOMAIN-SUFFIX,hbogoasia.my'
-  - 'DOMAIN-SUFFIX,hbogoasia.sg'
-  - 'DOMAIN-SUFFIX,hbogoasia.tw'
   - 'DOMAIN-SUFFIX,hboinflight.com'
   - 'DOMAIN-SUFFIX,hbolacontent.net'
   - 'DOMAIN-SUFFIX,hbolaunchpad.com'
@@ -21363,7 +21357,6 @@ payload:
   - 'DOMAIN-SUFFIX,mandiant.com'
   - 'DOMAIN-SUFFIX,mangabz.com'
   - 'DOMAIN-SUFFIX,mangafox.com'
-  - 'DOMAIN-SUFFIX,mangafox.me'
   - 'DOMAIN-SUFFIX,mangaup.jp'
   - 'DOMAIN-SUFFIX,mangmang.run'
   - 'DOMAIN-SUFFIX,manhuabika.com'

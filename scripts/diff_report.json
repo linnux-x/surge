@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-01T05:02:58.622457",
-  "total_added": 104,
-  "total_removed": 123,
+  "generated_at": "2026-11-01T16:33:38.460250",
+  "total_added": 209,
+  "total_removed": 7,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -128,22 +128,364 @@
     {
       "file": "Global.list",
       "prev_total": 24569,
-      "curr_total": 24569,
+      "curr_total": 24562,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 7,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "172a0c4b2726",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN,cbsi.live.ott.irdeto.com"
+        },
+        {
+          "id": "2f434ac89572",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,hbogoasia.tw"
+        },
+        {
+          "id": "304cbdebe719",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN,cbsservice.aws.syncbak.com"
+        },
+        {
+          "id": "4b6815c84297",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,hbogoasia.sg"
+        },
+        {
+          "id": "567541f24729",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,fanfox.net"
+        },
+        {
+          "id": "dbf22636fb7d",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,mangafox.me"
+        },
+        {
+          "id": "e730cabe1385",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN,cbsplaylistserver.aws.syncbak.com"
+        }
+      ],
       "source_changed_sample": []
     },
     {
       "file": "GlobalMedia.list",
       "prev_total": 2256,
-      "curr_total": 2256,
-      "added_count": 0,
+      "curr_total": 2317,
+      "added_count": 61,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "0aee5ddb05f5",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN-SUFFIX,spotify-com.akamaized.net"
+        },
+        {
+          "id": "0d48164135bb",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN-SUFFIX,dcblivedazn.akamaized.net"
+        },
+        {
+          "id": "164d6caaf9da",
+          "source": "SukkaW Stream",
+          "rule": "PROCESS-NAME,com.hktve.viutv"
+        },
+        {
+          "id": "1cc846b51d28",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,ds-linear-abematv.akamaized.net"
+        },
+        {
+          "id": "1dc5989dae14",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,d25xi40x97liuc.cloudfront.net"
+        },
+        {
+          "id": "26a0fffcfbd0",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,athome.fandango.com"
+        },
+        {
+          "id": "2f434ac89572",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN-SUFFIX,hbogoasia.tw"
+        },
+        {
+          "id": "2fbfe1234d46",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,prod-api.crackle.com"
+        },
+        {
+          "id": "2fd37b25e8ba",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN-SUFFIX,production-public.tubi.io"
+        },
+        {
+          "id": "3c422020c048",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com"
+        },
+        {
+          "id": "3f9e08b89c2c",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,www.tubi.tv"
+        },
+        {
+          "id": "41c5cf34eb4a",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,d151l6v8er5bdm.cloudfront.net"
+        },
+        {
+          "id": "420475a82747",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,www.tubitv.com"
+        },
+        {
+          "id": "4b6815c84297",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN-SUFFIX,hbogoasia.sg"
+        },
+        {
+          "id": "4b79d93a30ad",
+          "source": "SukkaW Stream",
+          "rule": "PROCESS-NAME,com.tencent.ibg.joox"
+        },
+        {
+          "id": "5031b22c33d4",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN-SUFFIX,psg.cdn.hgc.com.hk"
+        },
+        {
+          "id": "504432a71a96",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,tubitv.com"
+        },
+        {
+          "id": "5141897cabdd",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,cache.video.iqiyi.com"
+        },
+        {
+          "id": "567541f24729",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN-SUFFIX,fanfox.net"
+        },
+        {
+          "id": "59a5d84869ed",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN-KEYWORD,-spotify-com"
+        },
+        {
+          "id": "5d4631a4787f",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,d1v5ir2lpwr8os.cloudfront.net"
+        },
+        {
+          "id": "6038dc2fc443",
+          "source": "SukkaW Stream",
+          "rule": "USER-AGENT,Naver TV*"
+        },
+        {
+          "id": "60b97979f284",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN-SUFFIX,tvlicensing.co.uk"
+        },
+        {
+          "id": "683b705c9f90",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,play-edge.itunes.apple.com"
+        },
+        {
+          "id": "73da7282e7c5",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,d3196yreox78o9.cloudfront.net"
+        },
+        {
+          "id": "73fd24f517fb",
+          "source": "SukkaW Stream",
+          "rule": "USER-AGENT,Prime Video*"
+        },
+        {
+          "id": "74e63db43f57",
+          "source": "SukkaW Stream",
+          "rule": "PROCESS-NAME,com.hulu.plus"
+        },
+        {
+          "id": "758fe639efba",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,d3c7rimkq79yfu.cloudfront.net"
+        },
+        {
+          "id": "7766cbeee510",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,d2anahhhmp1ffz.cloudfront.net"
+        },
+        {
+          "id": "793a02b5a263",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,uts-api.itunes.apple.com"
+        },
+        {
+          "id": "7ddbccefbd67",
+          "source": "SukkaW Stream",
+          "rule": "PROCESS-NAME,tv.twitch.android.app"
+        },
+        {
+          "id": "8281d9b3c38a",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,dfp6rglgjqszk.cloudfront.net"
+        },
+        {
+          "id": "839b197a5047",
+          "source": "SukkaW Stream",
+          "rule": "PROCESS-NAME,com.amazon.avod.thirdpartyclient"
+        },
+        {
+          "id": "83f2d78aaf5c",
+          "source": "SukkaW Stream",
+          "rule": "PROCESS-NAME,com.netflix.mediaclient"
+        },
+        {
+          "id": "88fa6b57ecaf",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,d22qjgkvxw22r6.cloudfront.net"
+        },
+        {
+          "id": "890e1146f6d5",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,d1k2us671qcoau.cloudfront.net"
+        },
+        {
+          "id": "8d7a9c71c1a8",
+          "source": "SukkaW Stream",
+          "rule": "PROCESS-NAME,com.twgood.android"
+        },
+        {
+          "id": "931bec6c0567",
+          "source": "SukkaW Stream",
+          "rule": "USER-AGENT,FOX NOW*"
+        },
+        {
+          "id": "93aba43439e8",
+          "source": "SukkaW Stream",
+          "rule": "USER-AGENT,LINE TV*"
+        },
+        {
+          "id": "973e0f781f03",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN-SUFFIX,location-plus.nhk.jp"
+        },
+        {
+          "id": "99f59529614f",
+          "source": "SukkaW Stream",
+          "rule": "PROCESS-NAME,tv"
+        },
+        {
+          "id": "9d988c5bc9da",
+          "source": "SukkaW Stream",
+          "rule": "PROCESS-NAME,com.bstar.intl"
+        },
+        {
+          "id": "a2ece8de0e64",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,staticasiafox.akamaized.net"
+        },
+        {
+          "id": "a5936a80af05",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,hls.itunes.apple.com"
+        },
+        {
+          "id": "ac27cd7c615e",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,d349g9zuie06uo.cloudfront.net"
+        },
+        {
+          "id": "bb32538d424e",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,dashasiafox.akamaized.net"
+        },
+        {
+          "id": "bfc0af40323e",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,vudu.com"
+        },
+        {
+          "id": "c0d7c5770d88",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN-SUFFIX,dcalivedazn.akamaized.net"
+        },
+        {
+          "id": "c26a6a6b519d",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,np-edge.itunes.apple.com"
+        },
+        {
+          "id": "c7ea69824750",
+          "source": "SukkaW Stream",
+          "rule": "PROCESS-NAME,com.linecorp.linetv"
+        },
+        {
+          "id": "c8fb9516a5fe",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,d1xfray82862hr.cloudfront.net"
+        },
+        {
+          "id": "c909d2f2a4fb",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,d1sgwhnao7452x.cloudfront.net"
+        },
+        {
+          "id": "d551ef6cff01",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,dmqdd6hw24ucf.cloudfront.net"
+        },
+        {
+          "id": "d8106ae59631",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,d184dfn36gombl.cloudfront.net"
+        },
+        {
+          "id": "dacd42454087",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,bbc.mp-pxcdn.com"
+        },
+        {
+          "id": "dbf22636fb7d",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN-SUFFIX,mangafox.me"
+        },
+        {
+          "id": "f4c6de9f0eee",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,d27xxe7juh1us6.cloudfront.net"
+        },
+        {
+          "id": "f59249b2f580",
+          "source": "SukkaW Stream",
+          "rule": "PROCESS-NAME,music"
+        },
+        {
+          "id": "f815b22bf5cd",
+          "source": "SukkaW Stream",
+          "rule": "USER-AGENT,HBO NOW*"
+        },
+        {
+          "id": "f92fe3afc2e1",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,tubi.tv"
+        },
+        {
+          "id": "f9ef3e5a225c",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN,hls-amt.itunes.apple.com"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -215,1015 +557,13 @@
     },
     {
       "file": "Speedtest.list",
-      "prev_total": 1694,
+      "prev_total": 1675,
       "curr_total": 1675,
-      "added_count": 104,
-      "removed_count": 123,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "0009d45cc71f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-gdrp.merit.edu"
-        },
-        {
-          "id": "012b7f31586b",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ststratford.rogers.com"
-        },
-        {
-          "id": "0556791063c8",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.agw2.as49436.net"
-        },
-        {
-          "id": "0561b044089c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ran-r450-speedtest.metrocomm.com"
-        },
-        {
-          "id": "0711f9d6046b",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,cbpuspeed.aspensmart.net"
-        },
-        {
-          "id": "0bd6b487bcf7",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.inovewifi.com.br"
-        },
-        {
-          "id": "0f0435a45fac",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.oa.net"
-        },
-        {
-          "id": "0f923e75457a",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ookla-in.mercuryfiber.com"
-        },
-        {
-          "id": "0f9fc6befe00",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed.idnet.net.br"
-        },
-        {
-          "id": "1204ab7c7137",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,40gspeedtest.mnsi.net"
-        },
-        {
-          "id": "1303e426ad0f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed-pd.dispaisy.systems"
-        },
-        {
-          "id": "134564537572",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.sycmilaa.metronetinc.com"
-        },
-        {
-          "id": "14c7e265c3d8",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.ibertic.es"
-        },
-        {
-          "id": "15ee8e1a505a",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.volo.net"
-        },
-        {
-          "id": "1753c7265a8d",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,st1.ligtel.com"
-        },
-        {
-          "id": "1debbecee8c5",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.cstech.com"
-        },
-        {
-          "id": "22e17aa36c22",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-wc.truestreamfiber.us"
-        },
-        {
-          "id": "27aa9cef1e30",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,bytp-speedtest-1.123.net"
-        },
-        {
-          "id": "29a310f8327b",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.brooketel.coop"
-        },
-        {
-          "id": "2a475faf88d3",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,spdtst-southbend.fourway.net"
-        },
-        {
-          "id": "2b911d71aa37",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.i3broadband.com"
-        },
-        {
-          "id": "30afe4b85368",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.chi.gigenet.com"
-        },
-        {
-          "id": "34ed756fe9e2",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest2.mfbroadband.com"
-        },
-        {
-          "id": "358795b67fd5",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.mornington.ca"
-        },
-        {
-          "id": "37dae1757a6d",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stsaultstemariewireless.rogers.com"
-        },
-        {
-          "id": "394dff5a7003",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stwindsorwireless.rogers.com"
-        },
-        {
-          "id": "3ea882635f75",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed.sdmnet.com.br"
-        },
-        {
-          "id": "3ee34e80fced",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.dvnpiaaa.metronetinc.com"
-        },
-        {
-          "id": "4243e89e8727",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.tcom.purdue.edu"
-        },
-        {
-          "id": "4491b544431a",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.as53597.net"
-        },
-        {
-          "id": "4a3866e24ddd",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,min-r450-speedtest.metrocomm.com"
-        },
-        {
-          "id": "4b114200a609",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.cirbn.net"
-        },
-        {
-          "id": "4b2bec89b1bd",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.vacastelecom.net"
-        },
-        {
-          "id": "4ca06efd9c0c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-srv-a.homeworks.org"
-        },
-        {
-          "id": "4de50e12bd16",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.hay.net"
-        },
-        {
-          "id": "4ef30d7df14c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.bltnilaa.metronetinc.com"
-        },
-        {
-          "id": "4fa503514189",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.packetworks.net"
-        },
-        {
-          "id": "51219317246c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.gmtel.net"
-        },
-        {
-          "id": "5423fa711e1c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,sul-r450-speedtest.metrocomm.com"
-        },
-        {
-          "id": "5c69bf15997f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,sp1.speedy.bb-swrag.de"
-        },
-        {
-          "id": "5c6e09ea3600",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.stradacomm.com"
-        },
-        {
-          "id": "5cb71d1b2142",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,pri-r450-speedtest.metrocomm.com"
-        },
-        {
-          "id": "5ea0d4b206fe",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest2.acentek.net"
-        },
-        {
-          "id": "616c6bffe17f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stkingcity.rogers.com"
-        },
-        {
-          "id": "631ceedda77e",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed.mei.net"
-        },
-        {
-          "id": "67fb222e7169",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stbrampton.rogers.com"
-        },
-        {
-          "id": "6ab9d9e27f4c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.connectjasper.com"
-        },
-        {
-          "id": "6aead9c0f08f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,testmyspeed.urbancom.net"
-        },
-        {
-          "id": "6ba54f697247",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,randomlake-speedtest1.as36001.net"
-        },
-        {
-          "id": "6bd3e7deffb5",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,st-kenosha.sumofiber.com"
-        },
-        {
-          "id": "7180f9019e99",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.springcom.com"
-        },
-        {
-          "id": "72bb8c1b570f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest5.windtre.it"
-        },
-        {
-          "id": "75a8bf7909bf",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,hl-speed.twmbroadband.com"
-        },
-        {
-          "id": "75e802499b21",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stbrampton.netcrawler.ca"
-        },
-        {
-          "id": "794da782a134",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ookla-mispeed.rackgenius.com"
-        },
-        {
-          "id": "7d204e853068",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.oswgilaa.metronetinc.com"
-        },
-        {
-          "id": "856a8514303c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.btc-bci.com"
-        },
-        {
-          "id": "87a9233f0df1",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,383-2speedtest.wightman.ca"
-        },
-        {
-          "id": "8b40d9ed9e30",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtestvlc.zafirotelecom.com"
-        },
-        {
-          "id": "8c67eca44a61",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,velocidade.tecsattelecom.com.br"
-        },
-        {
-          "id": "8c8abdf2d7dc",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed.weendeavor.com"
-        },
-        {
-          "id": "8d2554d731e3",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,st1.stratusnet.com"
-        },
-        {
-          "id": "945b9be2fb40",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,aldlmi-speedtest-ookla-01.st.charter.com"
-        },
-        {
-          "id": "96de22a6ddc7",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,st-rockford.sumofiber.com"
-        },
-        {
-          "id": "96e261bbbb9d",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed.tnahosting.net"
-        },
-        {
-          "id": "9868c3f8fedf",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.s3rdv.com"
-        },
-        {
-          "id": "99d636115e4d",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.kdatacenter.com"
-        },
-        {
-          "id": "a2002b5b2805",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.grr1-mi.incx.net"
-        },
-        {
-          "id": "a31c0a6224a2",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,storangeville.rogers.com"
-        },
-        {
-          "id": "a5a39e69aa44",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.mhtc.net"
-        },
-        {
-          "id": "a6687b2369f5",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stwaterloo.rogers.com"
-        },
-        {
-          "id": "a8249c53ba8a",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.thn.uk.syntura.io"
-        },
-        {
-          "id": "aa2d41e1a749",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.infortectelecom.net.br"
-        },
-        {
-          "id": "accdf3f5dcf1",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stsarniawireless.rogers.com"
-        },
-        {
-          "id": "ae22d7a42288",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.supranet.net"
-        },
-        {
-          "id": "b03528f13ca1",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.marshallfibernet.com"
-        },
-        {
-          "id": "b366228f3322",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ststratfordwireless.rogers.com"
-        },
-        {
-          "id": "b43cd8b37520",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest01.ehtel.ca"
-        },
-        {
-          "id": "b84a68df407f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.gosfieldtel.ca"
-        },
-        {
-          "id": "bdb150f52525",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest2.hurontel.on.ca"
-        },
-        {
-          "id": "be25db6f77aa",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,sl-04.wemacom.net"
-        },
-        {
-          "id": "c06caa39a296",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.lagrangeremcisp.net"
-        },
-        {
-          "id": "c48494526129",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest3.point-broadband.com"
-        },
-        {
-          "id": "c95a22664ae8",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.kraus.jbarbieri.net"
-        },
-        {
-          "id": "ce3540a348be",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.geneseo.com"
-        },
-        {
-          "id": "d43014812cdf",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.systemlifeline.com"
-        },
-        {
-          "id": "d46b7ceff48c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.host-unlimited.de"
-        },
-        {
-          "id": "d77254c621cc",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest3.myninestar.net"
-        },
-        {
-          "id": "d89ef3067d92",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,storangevillewireless.rogers.com"
-        },
-        {
-          "id": "da8f08a15e16",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.fbc-tele.com"
-        },
-        {
-          "id": "dbeb82c9b2d7",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,spdt.lanxus.com.br"
-        },
-        {
-          "id": "ddec00986612",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,testenew.eibroadband.com"
-        },
-        {
-          "id": "deb43d0aa205",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest020.telecomitalia.it"
-        },
-        {
-          "id": "e0397bf67e8f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.quadro.net"
-        },
-        {
-          "id": "e109d3047c01",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.connectsp.com"
-        },
-        {
-          "id": "e7f15789e6d0",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.taylor.edu"
-        },
-        {
-          "id": "e925041bd3d0",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ookla-speedtest.e-ports.eu"
-        },
-        {
-          "id": "e9f6969457f4",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.omegasul.com.br"
-        },
-        {
-          "id": "eacb466cdf37",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,kzspeedtest01.aunalytics.com"
-        },
-        {
-          "id": "ec01ae8210c3",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.zivlinaa.metronetinc.com"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "010770237191",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stscarborough.rogers.com"
-        },
-        {
-          "id": "01d06b461e5c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.readingsd.org"
-        },
-        {
-          "id": "0df919f8f00e",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.nrflvaaa.metronetinc.com"
-        },
-        {
-          "id": "0ef16a17f7b4",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stbowmanville.rogers.com"
-        },
-        {
-          "id": "0f56643c702c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stosat-crls-01.sys.comcast.net"
-        },
-        {
-          "id": "1179f68f6982",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,va-speed.magna5.com"
-        },
-        {
-          "id": "129fa7cf52e5",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-newjersey.ripplefiber.com"
-        },
-        {
-          "id": "16744b51f48f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-ash.vts.bf"
-        },
-        {
-          "id": "181f2fd1cbb5",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.iad.fdcservers.net"
-        },
-        {
-          "id": "19d98c644b57",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-iad.sectrify.com"
-        },
-        {
-          "id": "1b53005476d3",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.nrbn.ca"
-        },
-        {
-          "id": "1dd706232871",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed10.aitspl.in"
-        },
-        {
-          "id": "1e3705ee2fe6",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.oceansls.com"
-        },
-        {
-          "id": "218ed97989d5",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ookla.jgainterlinktelecom.com.br"
-        },
-        {
-          "id": "23d5bd5a13bc",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.gretna.myriverstreet.net"
-        },
-        {
-          "id": "30df7f1427c6",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.ette.biz"
-        },
-        {
-          "id": "31e8c732b3ed",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stlondon.netcrawler.ca"
-        },
-        {
-          "id": "32c503790c60",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest3.ptd.net"
-        },
-        {
-          "id": "33041c0f7fd7",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stbowmanville.netcrawler.ca"
-        },
-        {
-          "id": "3459aa77ed16",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.macapatelecom.net.br"
-        },
-        {
-          "id": "3556421114ed",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,sthamilton.netcrawler.ca"
-        },
-        {
-          "id": "369df213d503",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,nycmetro-speedtest.reliablesite.net"
-        },
-        {
-          "id": "3a8aec9cda98",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-zl-1.zoominternet.net"
-        },
-        {
-          "id": "3e7bf0bd143d",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest1.ewr.nj.us.planet.net"
-        },
-        {
-          "id": "414c35bf776f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.us.novoserve.com"
-        },
-        {
-          "id": "42db00569c58",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.getwireless.net"
-        },
-        {
-          "id": "44e1fd099c78",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.sc1.loopinternet.com"
-        },
-        {
-          "id": "4502550a3a9c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,wpa-speed.magna5.com"
-        },
-        {
-          "id": "4571f1abe520",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtestmacapa.webflash.net.br"
-        },
-        {
-          "id": "45f4d00908d6",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-2.hynetwifi.it"
-        },
-        {
-          "id": "473f9b45897a",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.winchesterwireless.com"
-        },
-        {
-          "id": "49f2fe815df7",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed.markham.telmax.ca"
-        },
-        {
-          "id": "49ffc4a2950e",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stoshawa.netcrawler.ca"
-        },
-        {
-          "id": "4f8818240273",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stosat-plfi-08p.sys.comcast.net"
-        },
-        {
-          "id": "5193c8145d68",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,crls-speedtest-02.brightspeed.com"
-        },
-        {
-          "id": "52a89dbdad82",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.us-ny2.kamatera.com"
-        },
-        {
-          "id": "52ea711702a9",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtestnorthpointe.arkdnacloud.com"
-        },
-        {
-          "id": "5559912850cd",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.belmontcountygig.com"
-        },
-        {
-          "id": "55c0cb8dcbb9",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest2.pa.mycci.net"
-        },
-        {
-          "id": "57cfe7333ea8",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,fast.blackbearfiber.com"
-        },
-        {
-          "id": "5893bd721aca",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stnorthyork.netcrawler.ca"
-        },
-        {
-          "id": "5ab2e37aaffc",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest31.suddenlink.net"
-        },
-        {
-          "id": "60ac93c18792",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stscarborough.netcrawler.ca"
-        },
-        {
-          "id": "615ab422b360",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,btlr-speedtest-02.brightspeed.com"
-        },
-        {
-          "id": "6240dc262b53",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest1.whsdk12.net"
-        },
-        {
-          "id": "625966c841d3",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest1.ric1.va.hostedbackbone.net"
-        },
-        {
-          "id": "6722a4f62ff8",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stbowmanvillewireless.rogers.com"
-        },
-        {
-          "id": "67382fe7fa61",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stoshawa.rogers.com"
-        },
-        {
-          "id": "6846a38f9372",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.asbn.va.wtsky.net"
-        },
-        {
-          "id": "68c6eb173f83",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,asbn-speedtest.northstate.net"
-        },
-        {
-          "id": "698bcfb1bb21",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-preston-wv.prodigiwv.net"
-        },
-        {
-          "id": "6aafcc1f0064",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.americatelecom.net.br"
-        },
-        {
-          "id": "6b8f1c9f7c44",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stajax.rogers.com"
-        },
-        {
-          "id": "6ef5f28df61c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ookla.aeq.as6453.net"
-        },
-        {
-          "id": "74a6d6e46908",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.wb1.loopinternet.com"
-        },
-        {
-          "id": "7625db817368",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest1.iad1-us.gozfly.net"
-        },
-        {
-          "id": "77cb389996a6",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-bethlehem.greenlightnetworks.com"
-        },
-        {
-          "id": "77e56dc99c59",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,cltn-speedtest-02.brightspeed.com"
-        },
-        {
-          "id": "7b2b5f1619fb",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,karnal.sitibroadband.co.in"
-        },
-        {
-          "id": "7c4e62477d2e",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.zoominternet.net"
-        },
-        {
-          "id": "7de305557319",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,altoonaspeedtest.crowsnestbb.net"
-        },
-        {
-          "id": "8141004af16b",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest02.srv.prnynj.alticeusa.net"
-        },
-        {
-          "id": "81b8486c1e76",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,qoeookla-rmnd-01.sys.comcast.net"
-        },
-        {
-          "id": "83e830bbc65c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest4.point-broadband.com"
-        },
-        {
-          "id": "8487be6e6d95",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.mifflincountywireless.com"
-        },
-        {
-          "id": "85b7f8f6df4c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,spd79.claro.com.br"
-        },
-        {
-          "id": "8632dbc95ac0",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stnorthyorkwireless.rogers.com"
-        },
-        {
-          "id": "894527aa356c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,lsdspeed01.lsdops.net"
-        },
-        {
-          "id": "8fd05fb4ff7e",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest19.suddenlink.net"
-        },
-        {
-          "id": "90617691e3af",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stwhitby.netcrawler.ca"
-        },
-        {
-          "id": "910cf0769104",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-nwrk-nj.wtsky.net"
-        },
-        {
-          "id": "9138c74c88d2",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,vaspeedtest.rackdog.com"
-        },
-        {
-          "id": "9660747a5a08",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed01.gonetspeed.com"
-        },
-        {
-          "id": "96e24c3aaac2",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stoshawawireless.rogers.com"
-        },
-        {
-          "id": "995889b17f13",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,lsdspeed02.lsdops.net"
-        },
-        {
-          "id": "9b36e6ace41e",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,phlph0001speedtestserver02.wiline.com"
-        },
-        {
-          "id": "9c36ab36b132",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,phl01.screenshot.download"
-        },
-        {
-          "id": "9ee8a1734e62",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest2.sistelfibra.es"
-        },
-        {
-          "id": "9f094a91d810",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ookla.micrologicwv.com"
-        },
-        {
-          "id": "9f6b30de3d0b",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-server-ash.starry.com"
-        },
-        {
-          "id": "b06e6a3b7c0f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.philasd.org"
-        },
-        {
-          "id": "b0cc745d6216",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stosat-balt-01.sys.comcast.net"
-        },
-        {
-          "id": "b4f4faf0a782",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.fiberlync.net"
-        },
-        {
-          "id": "b577445ffd28",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ookla-mgw.wvnet.edu"
-        },
-        {
-          "id": "b7070e1bfc5d",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.internetsubway.com"
-        },
-        {
-          "id": "b7ea0351589f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.revolutionbroadband.net"
-        },
-        {
-          "id": "b7ff9d48bf4d",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ststcatharineswireless.rogers.com"
-        },
-        {
-          "id": "b8002d9cf7f6",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ookla1.talkiefiber.com"
-        },
-        {
-          "id": "b868fcdc5518",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ookla01.citynet.net"
-        },
-        {
-          "id": "be5af7e0a364",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stpickering.netcrawler.ca"
-        },
-        {
-          "id": "bf6da99bd680",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ookla-speedtest.iu13.net"
-        },
-        {
-          "id": "bfb3f1c8eb1b",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-baltimore.greenlightnetworks.com"
-        },
-        {
-          "id": "c167fcb2baad",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.accessoninternet.com"
-        },
-        {
-          "id": "c43bf6e51a29",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.pinguimtelecom.net.br"
-        },
-        {
-          "id": "c83d7d2a9833",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stpickering.rogers.com"
-        },
-        {
-          "id": "c907554c7787",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,sp1.vaskywire.net"
-        },
-        {
-          "id": "cb103aa8b7a1",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest010.telecomitalia.it"
-        },
-        {
-          "id": "d0b8bc2f2c71",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-hv-1.zoominternet.net"
-        },
-        {
-          "id": "d178fd929dbd",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtestap.vtal.net.br"
-        },
-        {
-          "id": "d6701757514c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.image1tech.net"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -1245,6 +585,794 @@
       "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
+      "removed_sample": [],
+      "source_changed_sample": []
+    },
+    {
+      "file": "Stream_HK.list",
+      "prev_total": 0,
+      "curr_total": 34,
+      "added_count": 34,
+      "removed_count": 0,
+      "source_changed_count": 0,
+      "added_sample": [
+        {
+          "id": "05d3cb60026f",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN-SUFFIX,viu.com"
+        },
+        {
+          "id": "0773ddeb1396",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN,hbounify-prod.evergent.com"
+        },
+        {
+          "id": "08dabb8ccca7",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN-SUFFIX,viu.now.com"
+        },
+        {
+          "id": "164d6caaf9da",
+          "source": "SukkaW Stream HK",
+          "rule": "PROCESS-NAME,com.hktve.viutv"
+        },
+        {
+          "id": "2f434ac89572",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN-SUFFIX,hbogoasia.tw"
+        },
+        {
+          "id": "330b25e0b1ae",
+          "source": "SukkaW Stream HK",
+          "rule": "PROCESS-NAME,com.vuclip.viu"
+        },
+        {
+          "id": "3c422020c048",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com"
+        },
+        {
+          "id": "49603cb7b0f5",
+          "source": "SukkaW Stream HK",
+          "rule": "USER-AGENT,mytv*"
+        },
+        {
+          "id": "49a06a91a555",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN-KEYWORD,rthklive"
+        },
+        {
+          "id": "4af641450bb7",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN-SUFFIX,hboasia.com"
+        },
+        {
+          "id": "4b6815c84297",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN-SUFFIX,hbogoasia.sg"
+        },
+        {
+          "id": "5031b22c33d4",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN-SUFFIX,psg.cdn.hgc.com.hk"
+        },
+        {
+          "id": "540dc1deb7d1",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN,upos-bstar-mirrorakam.akamaized.net"
+        },
+        {
+          "id": "62fa4d62ca24",
+          "source": "SukkaW Stream HK",
+          "rule": "PROCESS-NAME,com.viu.pad"
+        },
+        {
+          "id": "7766cbeee510",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN,d2anahhhmp1ffz.cloudfront.net"
+        },
+        {
+          "id": "7a5293c5a7ce",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN-SUFFIX,tvb.com"
+        },
+        {
+          "id": "7e8af3829204",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN,apm-misaka.biliapi.net"
+        },
+        {
+          "id": "8281d9b3c38a",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN,dfp6rglgjqszk.cloudfront.net"
+        },
+        {
+          "id": "890e1146f6d5",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN,d1k2us671qcoau.cloudfront.net"
+        },
+        {
+          "id": "907992957486",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN,upos-bstar1-mirrorakam.akamaized.net"
+        },
+        {
+          "id": "90c518d72d69",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN-KEYWORD,nowtv100"
+        },
+        {
+          "id": "9d988c5bc9da",
+          "source": "SukkaW Stream HK",
+          "rule": "PROCESS-NAME,com.bstar.intl"
+        },
+        {
+          "id": "a418f196ad15",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN-SUFFIX,biliintl.com"
+        },
+        {
+          "id": "b097cf554dec",
+          "source": "SukkaW Stream HK",
+          "rule": "PROCESS-NAME,com.viu.phone"
+        },
+        {
+          "id": "b6c2c6b5f906",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN-SUFFIX,hbogoasia.id"
+        },
+        {
+          "id": "c2af59ea69c5",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN-SUFFIX,nowe.com"
+        },
+        {
+          "id": "d66ecc4059bf",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN-SUFFIX,hbogoasia.com"
+        },
+        {
+          "id": "d834ff40274d",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN,hbolb.onwardsmg.com"
+        },
+        {
+          "id": "df6d0b8ae84d",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN-SUFFIX,bilibili.tv"
+        },
+        {
+          "id": "e4b4239d74f3",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN-SUFFIX,hbogoasia.ph"
+        },
+        {
+          "id": "f33a7443c52e",
+          "source": "SukkaW Stream HK",
+          "rule": "USER-AGENT,Viu*"
+        },
+        {
+          "id": "f3831052cbdd",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN-SUFFIX,hbogoasia.hk"
+        },
+        {
+          "id": "f82c1d6fb3bb",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN-SUFFIX,viu.tv"
+        },
+        {
+          "id": "f8bbf682d42c",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN-SUFFIX,mytvsuper.com"
+        }
+      ],
+      "removed_sample": [],
+      "source_changed_sample": []
+    },
+    {
+      "file": "Stream_JP.list",
+      "prev_total": 0,
+      "curr_total": 27,
+      "added_count": 27,
+      "removed_count": 0,
+      "source_changed_count": 0,
+      "added_sample": [
+        {
+          "id": "04f86011b38a",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,socdm.com"
+        },
+        {
+          "id": "0d41cb40378f",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,dmc.nico"
+        },
+        {
+          "id": "13caa1100d7f",
+          "source": "SukkaW Stream JP",
+          "rule": "USER-AGENT,Niconico*"
+        },
+        {
+          "id": "1cc846b51d28",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN,ds-linear-abematv.akamaized.net"
+        },
+        {
+          "id": "1e7d39ed09aa",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,dmm-extension.com"
+        },
+        {
+          "id": "23539fc772bd",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,abema.io"
+        },
+        {
+          "id": "25ae0f59cda0",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,abema-tv.com"
+        },
+        {
+          "id": "3351aed88d2b",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,hayabusa.media"
+        },
+        {
+          "id": "434c2e7df2b5",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,abema.tv"
+        },
+        {
+          "id": "5c6356321742",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,hjholdings.jp"
+        },
+        {
+          "id": "5d0abc2b7f28",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,winticket.jp"
+        },
+        {
+          "id": "621d52db8fd7",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,happyon.jp"
+        },
+        {
+          "id": "6575d02885fc",
+          "source": "SukkaW Stream JP",
+          "rule": "USER-AGENT,AbemaTV*"
+        },
+        {
+          "id": "670673f2cc57",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,hayabusa.dev"
+        },
+        {
+          "id": "6cd2972f4358",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,amebaownd.com"
+        },
+        {
+          "id": "763cf4f2d14f",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,hulu.jp"
+        },
+        {
+          "id": "973e0f781f03",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,location-plus.nhk.jp"
+        },
+        {
+          "id": "991625adfc02",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,dmm.co.jp"
+        },
+        {
+          "id": "a5a7cb0036a7",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,amebame.com"
+        },
+        {
+          "id": "adaf147ff85d",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,amebaowndme.com"
+        },
+        {
+          "id": "b7e6a33888c1",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,hayabusa.io"
+        },
+        {
+          "id": "c320245b083c",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,dokusho-ojikan.jp"
+        },
+        {
+          "id": "d2e351b20519",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,dmm.com"
+        },
+        {
+          "id": "e81e0f4574e1",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,nicovideo.jp"
+        },
+        {
+          "id": "e83bdf87e768",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,tver.jp"
+        },
+        {
+          "id": "eaf7d709883e",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,ameblo.jp"
+        },
+        {
+          "id": "fd491b97deef",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,ameba.jp"
+        }
+      ],
+      "removed_sample": [],
+      "source_changed_sample": []
+    },
+    {
+      "file": "Stream_TW.list",
+      "prev_total": 0,
+      "curr_total": 36,
+      "added_count": 36,
+      "removed_count": 0,
+      "source_changed_count": 0,
+      "added_sample": [
+        {
+          "id": "0773ddeb1396",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN,hbounify-prod.evergent.com"
+        },
+        {
+          "id": "12a9abfd863e",
+          "source": "SukkaW Stream TW",
+          "rule": "USER-AGENT,Anime*"
+        },
+        {
+          "id": "288af4fca4a0",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN,gamer2-cds.cdn.hinet.net"
+        },
+        {
+          "id": "2f434ac89572",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN-SUFFIX,hbogoasia.tw"
+        },
+        {
+          "id": "3c422020c048",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com"
+        },
+        {
+          "id": "4aba55dd3640",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN-SUFFIX,api.gamer.com.tw"
+        },
+        {
+          "id": "4af641450bb7",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN-SUFFIX,hboasia.com"
+        },
+        {
+          "id": "4b6815c84297",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN-SUFFIX,hbogoasia.sg"
+        },
+        {
+          "id": "567541f24729",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN-SUFFIX,fanfox.net"
+        },
+        {
+          "id": "5c644c606d3e",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN-SUFFIX,4gtv.tv"
+        },
+        {
+          "id": "669fb6bc899b",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN-SUFFIX,kk.stream"
+        },
+        {
+          "id": "69cd64e126a2",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN-SUFFIX,bahamut.com.tw"
+        },
+        {
+          "id": "6a5d85fcce53",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN,gamer-cds.cdn.hinet.net"
+        },
+        {
+          "id": "6eb27c9b3690",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN-SUFFIX,linetv.tw"
+        },
+        {
+          "id": "758fe639efba",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN,d3c7rimkq79yfu.cloudfront.net"
+        },
+        {
+          "id": "7dac3869489d",
+          "source": "SukkaW Stream TW",
+          "rule": "USER-AGENT,KKTV*"
+        },
+        {
+          "id": "7db99e55a530",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN-SUFFIX,ani.gamer.com.tw"
+        },
+        {
+          "id": "7dd8d395d56b",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN,litvfreemobile-hichannel.cdn.hinet.net"
+        },
+        {
+          "id": "8803b4204269",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN,ntdfreepc-tgc.cdn.hinet.net"
+        },
+        {
+          "id": "93aba43439e8",
+          "source": "SukkaW Stream TW",
+          "rule": "USER-AGENT,LINE TV*"
+        },
+        {
+          "id": "992ca90d9e63",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN,ana.video.friday.tw"
+        },
+        {
+          "id": "a705ceb17979",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN,video.friday.tw"
+        },
+        {
+          "id": "b528f18fa1c2",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN-SUFFIX,viblast.com"
+        },
+        {
+          "id": "b6c2c6b5f906",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN-SUFFIX,hbogoasia.id"
+        },
+        {
+          "id": "c0c09a0f232b",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN-SUFFIX,kktv.me"
+        },
+        {
+          "id": "c7ea69824750",
+          "source": "SukkaW Stream TW",
+          "rule": "PROCESS-NAME,com.linecorp.linetv"
+        },
+        {
+          "id": "cde5ce3bd954",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN,cdi.ofiii.com"
+        },
+        {
+          "id": "d66ecc4059bf",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN-SUFFIX,hbogoasia.com"
+        },
+        {
+          "id": "d834ff40274d",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN,hbolb.onwardsmg.com"
+        },
+        {
+          "id": "d99c6907f7e3",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN,4gtvfreepcvod-cds.cdn.hinet.net"
+        },
+        {
+          "id": "dbf22636fb7d",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN-SUFFIX,mangafox.me"
+        },
+        {
+          "id": "e4b4239d74f3",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN-SUFFIX,hbogoasia.ph"
+        },
+        {
+          "id": "e74c5bd47088",
+          "source": "SukkaW Stream TW",
+          "rule": "USER-AGENT,com.kktv.ios.kktv*"
+        },
+        {
+          "id": "ee815ba6731d",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN,www.litv.tv"
+        },
+        {
+          "id": "f3831052cbdd",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN-SUFFIX,hbogoasia.hk"
+        },
+        {
+          "id": "fdb56ccb85b7",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN-SUFFIX,kktv.com.tw"
+        }
+      ],
+      "removed_sample": [],
+      "source_changed_sample": []
+    },
+    {
+      "file": "Stream_US.list",
+      "prev_total": 0,
+      "curr_total": 51,
+      "added_count": 51,
+      "removed_count": 0,
+      "source_changed_count": 0,
+      "added_sample": [
+        {
+          "id": "02aa3604bb50",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,uplynk.com"
+        },
+        {
+          "id": "0301f7c85350",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,pluto.tv"
+        },
+        {
+          "id": "0d37eb70a201",
+          "source": "SukkaW Stream US",
+          "rule": "USER-AGENT,discovery+*"
+        },
+        {
+          "id": "159489f4da82",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,huluim.com"
+        },
+        {
+          "id": "1600715fc4a4",
+          "source": "SukkaW Stream US",
+          "rule": "USER-AGENT,TVer-Release*"
+        },
+        {
+          "id": "167bddb0ac75",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,discoveryplus.com"
+        },
+        {
+          "id": "172a0c4b2726",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN,cbsi.live.ott.irdeto.com"
+        },
+        {
+          "id": "188ae1d8e37a",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,hulu.com"
+        },
+        {
+          "id": "224a6c5149dc",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,showtime.com"
+        },
+        {
+          "id": "26a0fffcfbd0",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN,athome.fandango.com"
+        },
+        {
+          "id": "274a2f9b631f",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,foxplus.com"
+        },
+        {
+          "id": "2d3123fea9e4",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,disco-api.com"
+        },
+        {
+          "id": "2fbfe1234d46",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN,prod-api.crackle.com"
+        },
+        {
+          "id": "2fd37b25e8ba",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,production-public.tubi.io"
+        },
+        {
+          "id": "304cbdebe719",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN,cbsservice.aws.syncbak.com"
+        },
+        {
+          "id": "3356f99bdd44",
+          "source": "SukkaW Stream US",
+          "rule": "USER-AGENT,FOXPlus*"
+        },
+        {
+          "id": "3455cc7294ae",
+          "source": "SukkaW Stream US",
+          "rule": "USER-AGENT,PeacockMobile*"
+        },
+        {
+          "id": "3f9e08b89c2c",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN,www.tubi.tv"
+        },
+        {
+          "id": "3fc9db249707",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,peacocktv.com"
+        },
+        {
+          "id": "420475a82747",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN,www.tubitv.com"
+        },
+        {
+          "id": "43f54f6db542",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,foxdcg.com"
+        },
+        {
+          "id": "449612a78182",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,sho.com"
+        },
+        {
+          "id": "44cdad037873",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,fox.com"
+        },
+        {
+          "id": "4a3a3ec81bac",
+          "source": "SukkaW Stream US",
+          "rule": "USER-AGENT,PPlus*"
+        },
+        {
+          "id": "4f21eeb1f55c",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,hulustream.com"
+        },
+        {
+          "id": "504432a71a96",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN,tubitv.com"
+        },
+        {
+          "id": "50c0d5de83fa",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,paramountplus.com"
+        },
+        {
+          "id": "5c6356321742",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,hjholdings.jp"
+        },
+        {
+          "id": "621d52db8fd7",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,happyon.jp"
+        },
+        {
+          "id": "74e63db43f57",
+          "source": "SukkaW Stream US",
+          "rule": "PROCESS-NAME,com.hulu.plus"
+        },
+        {
+          "id": "763cf4f2d14f",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,hulu.jp"
+        },
+        {
+          "id": "7c8534b1ff6c",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,discoveryplus.in"
+        },
+        {
+          "id": "886bbee134b6",
+          "source": "SukkaW Stream US",
+          "rule": "USER-AGENT,DPlus*"
+        },
+        {
+          "id": "931bec6c0567",
+          "source": "SukkaW Stream US",
+          "rule": "USER-AGENT,FOX NOW*"
+        },
+        {
+          "id": "9624d405f80b",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,hulu.tv"
+        },
+        {
+          "id": "96d3fb9721cc",
+          "source": "SukkaW Stream US",
+          "rule": "USER-AGENT,encoreTVB*"
+        },
+        {
+          "id": "984970283a09",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,cbsivideo.com"
+        },
+        {
+          "id": "9bee7f96bc13",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,cbsaavideo.com"
+        },
+        {
+          "id": "a2ece8de0e64",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN,staticasiafox.akamaized.net"
+        },
+        {
+          "id": "a400e62c76f7",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,hulu.us"
+        },
+        {
+          "id": "b7ccdfb48f48",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,cbsi.com"
+        },
+        {
+          "id": "bb32538d424e",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN,dashasiafox.akamaized.net"
+        },
+        {
+          "id": "bfc0af40323e",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN,vudu.com"
+        },
+        {
+          "id": "c31dce063d32",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,theplatform.com"
+        },
+        {
+          "id": "c407b044de11",
+          "source": "SukkaW Stream US",
+          "rule": "USER-AGENT,Hulu*"
+        },
+        {
+          "id": "d2bc539ad304",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,encoretvb.com"
+        },
+        {
+          "id": "dcbeaf20a46a",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,dnitv.com"
+        },
+        {
+          "id": "e730cabe1385",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN,cbsplaylistserver.aws.syncbak.com"
+        },
+        {
+          "id": "e842953d14a9",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN,bcbolt446c5271-a.akamaihd.net"
+        },
+        {
+          "id": "f8c50ecbd862",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,discoveryplus.co.uk"
+        },
+        {
+          "id": "f92fe3afc2e1",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN,tubi.tv"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
