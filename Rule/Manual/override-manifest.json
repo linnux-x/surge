@@ -882,6 +882,62 @@
       "reason": "Brightcove 是多家媒体共用的视频平台，不属于单一地区的流媒体",
       "destination": "GlobalMedia.list → GlobalMedia",
       "route_tests": ["edge.api.brightcove.com"]
+    },
+    {
+      "source_file": "Download.exclude.txt",
+      "rule": "DOMAIN,release-assets.githubusercontent.com",
+      "reason": "GitHub release 下载按仓库策略归 CDN；Download.list 排在 CDN.list 之前会抢先命中。Download 组默认 DIRECT，该主机直连实测仅数十 KB/s 或被重置，移出后交给代理规则承接",
+      "destination": "CDN.list → CDN",
+      "route_tests": ["release-assets.githubusercontent.com"]
+    },
+    {
+      "source_file": "Download.exclude.txt",
+      "rule": "DOMAIN,objects.githubusercontent.com",
+      "reason": "Download 组默认 DIRECT，该主机直连实测仅数十 KB/s 或被重置，移出后交给代理规则承接",
+      "destination": "Global.list → Global",
+      "route_tests": ["objects.githubusercontent.com"]
+    },
+    {
+      "source_file": "Download.exclude.txt",
+      "rule": "DOMAIN,pkg-containers.githubusercontent.com",
+      "reason": "Download 组默认 DIRECT，该主机直连实测仅数十 KB/s 或被重置，移出后交给代理规则承接",
+      "destination": "Global.list → Global",
+      "route_tests": ["pkg-containers.githubusercontent.com"]
+    },
+    {
+      "source_file": "Download.exclude.txt",
+      "rule": "DOMAIN,codeload.github.com",
+      "reason": "Download 组默认 DIRECT，该主机直连实测仅数十 KB/s 或被重置，移出后交给代理规则承接",
+      "destination": "Global.list → Global",
+      "route_tests": ["codeload.github.com"]
+    },
+    {
+      "source_file": "Download.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,ghcr.io",
+      "reason": "Download 组默认 DIRECT，该主机直连实测仅数十 KB/s 或被重置，移出后交给代理规则承接",
+      "destination": "Global.list → Global",
+      "route_tests": ["ghcr.io", "pkg.ghcr.io"]
+    },
+    {
+      "source_file": "Download.exclude.txt",
+      "rule": "DOMAIN,registry-1.docker.io",
+      "reason": "Download 组默认 DIRECT，该主机直连实测仅数十 KB/s 或被重置，移出后交给代理规则承接",
+      "destination": "FINAL → Global",
+      "route_tests": ["registry-1.docker.io"]
+    },
+    {
+      "source_file": "Download.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,cloudflare.docker.com",
+      "reason": "Download 组默认 DIRECT，该主机直连实测仅数十 KB/s 或被重置，移出后交给代理规则承接",
+      "destination": "Global.list → Global",
+      "route_tests": ["production.cloudflare.docker.com"]
+    },
+    {
+      "source_file": "Download.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,fastly.docker.com",
+      "reason": "Download 组默认 DIRECT，该主机直连实测仅数十 KB/s 或被重置，移出后交给代理规则承接",
+      "destination": "Global.list → Global",
+      "route_tests": ["fastly.docker.com"]
     }
   ]
 }

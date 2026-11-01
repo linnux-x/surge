@@ -3,3 +3,16 @@ DOMAIN,desktop.wifiman.com
 
 # WeChat download endpoint belongs to WeChat.list, which is evaluated before Download.list
 DOMAIN,dl.wechat.com
+
+# GitHub release/archive/container downloads are throttled on direct paths while the Download group defaults to DIRECT.
+# release-assets falls through to CDN.list (repo policy: release downloads → CDN); the rest fall through to Global.list or FINAL.
+DOMAIN,release-assets.githubusercontent.com
+DOMAIN,objects.githubusercontent.com
+DOMAIN,pkg-containers.githubusercontent.com
+DOMAIN,codeload.github.com
+DOMAIN-SUFFIX,ghcr.io
+
+# Docker Hub registry and blob CDNs, same reason; docker.com suffixes fall through to Global.list, registry-1 to FINAL.
+DOMAIN,registry-1.docker.io
+DOMAIN-SUFFIX,cloudflare.docker.com
+DOMAIN-SUFFIX,fastly.docker.com

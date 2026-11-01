@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-01T16:54:13.458685",
-  "total_added": 148,
-  "total_removed": 0,
+  "generated_at": "2026-11-01T17:38:32.084841",
+  "total_added": 1,
+  "total_removed": 8,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -106,12 +106,53 @@
     {
       "file": "Download.list",
       "prev_total": 1692,
-      "curr_total": 1692,
+      "curr_total": 1684,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 8,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "1a0f3f32187f",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,ghcr.io"
+        },
+        {
+          "id": "30f339d9d27b",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,objects.githubusercontent.com"
+        },
+        {
+          "id": "3383ee68b664",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,pkg-containers.githubusercontent.com"
+        },
+        {
+          "id": "685f55c1f4f5",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,release-assets.githubusercontent.com"
+        },
+        {
+          "id": "962dbf50c0ee",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,cloudflare.docker.com"
+        },
+        {
+          "id": "b13e2bf1fa9a",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,codeload.github.com"
+        },
+        {
+          "id": "e05d9f841fb7",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,fastly.docker.com"
+        },
+        {
+          "id": "f9efbe85a522",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,registry-1.docker.io"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -128,11 +169,17 @@
     {
       "file": "Global.list",
       "prev_total": 24562,
-      "curr_total": 24562,
-      "added_count": 0,
+      "curr_total": 24563,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "1a0f3f32187f",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,ghcr.io"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -160,330 +207,23 @@
     },
     {
       "file": "HKMedia.list",
-      "prev_total": 0,
+      "prev_total": 34,
       "curr_total": 34,
-      "added_count": 34,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "05d3cb60026f",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN-SUFFIX,viu.com"
-        },
-        {
-          "id": "0773ddeb1396",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN,hbounify-prod.evergent.com"
-        },
-        {
-          "id": "08dabb8ccca7",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN-SUFFIX,viu.now.com"
-        },
-        {
-          "id": "164d6caaf9da",
-          "source": "SukkaW Stream HK",
-          "rule": "PROCESS-NAME,com.hktve.viutv"
-        },
-        {
-          "id": "2f434ac89572",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN-SUFFIX,hbogoasia.tw"
-        },
-        {
-          "id": "330b25e0b1ae",
-          "source": "SukkaW Stream HK",
-          "rule": "PROCESS-NAME,com.vuclip.viu"
-        },
-        {
-          "id": "3c422020c048",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com"
-        },
-        {
-          "id": "49603cb7b0f5",
-          "source": "SukkaW Stream HK",
-          "rule": "USER-AGENT,mytv*"
-        },
-        {
-          "id": "49a06a91a555",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN-KEYWORD,rthklive"
-        },
-        {
-          "id": "4af641450bb7",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN-SUFFIX,hboasia.com"
-        },
-        {
-          "id": "4b6815c84297",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN-SUFFIX,hbogoasia.sg"
-        },
-        {
-          "id": "5031b22c33d4",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN-SUFFIX,psg.cdn.hgc.com.hk"
-        },
-        {
-          "id": "540dc1deb7d1",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN,upos-bstar-mirrorakam.akamaized.net"
-        },
-        {
-          "id": "62fa4d62ca24",
-          "source": "SukkaW Stream HK",
-          "rule": "PROCESS-NAME,com.viu.pad"
-        },
-        {
-          "id": "7766cbeee510",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN,d2anahhhmp1ffz.cloudfront.net"
-        },
-        {
-          "id": "7a5293c5a7ce",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN-SUFFIX,tvb.com"
-        },
-        {
-          "id": "7e8af3829204",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN,apm-misaka.biliapi.net"
-        },
-        {
-          "id": "8281d9b3c38a",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN,dfp6rglgjqszk.cloudfront.net"
-        },
-        {
-          "id": "890e1146f6d5",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN,d1k2us671qcoau.cloudfront.net"
-        },
-        {
-          "id": "907992957486",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN,upos-bstar1-mirrorakam.akamaized.net"
-        },
-        {
-          "id": "90c518d72d69",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN-KEYWORD,nowtv100"
-        },
-        {
-          "id": "9d988c5bc9da",
-          "source": "SukkaW Stream HK",
-          "rule": "PROCESS-NAME,com.bstar.intl"
-        },
-        {
-          "id": "a418f196ad15",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN-SUFFIX,biliintl.com"
-        },
-        {
-          "id": "b097cf554dec",
-          "source": "SukkaW Stream HK",
-          "rule": "PROCESS-NAME,com.viu.phone"
-        },
-        {
-          "id": "b6c2c6b5f906",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN-SUFFIX,hbogoasia.id"
-        },
-        {
-          "id": "c2af59ea69c5",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN-SUFFIX,nowe.com"
-        },
-        {
-          "id": "d66ecc4059bf",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN-SUFFIX,hbogoasia.com"
-        },
-        {
-          "id": "d834ff40274d",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN,hbolb.onwardsmg.com"
-        },
-        {
-          "id": "df6d0b8ae84d",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN-SUFFIX,bilibili.tv"
-        },
-        {
-          "id": "e4b4239d74f3",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN-SUFFIX,hbogoasia.ph"
-        },
-        {
-          "id": "f33a7443c52e",
-          "source": "SukkaW Stream HK",
-          "rule": "USER-AGENT,Viu*"
-        },
-        {
-          "id": "f3831052cbdd",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN-SUFFIX,hbogoasia.hk"
-        },
-        {
-          "id": "f82c1d6fb3bb",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN-SUFFIX,viu.tv"
-        },
-        {
-          "id": "f8bbf682d42c",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN-SUFFIX,mytvsuper.com"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "JPMedia.list",
-      "prev_total": 0,
+      "prev_total": 27,
       "curr_total": 27,
-      "added_count": 27,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "04f86011b38a",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,socdm.com"
-        },
-        {
-          "id": "0d41cb40378f",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,dmc.nico"
-        },
-        {
-          "id": "13caa1100d7f",
-          "source": "SukkaW Stream JP",
-          "rule": "USER-AGENT,Niconico*"
-        },
-        {
-          "id": "1cc846b51d28",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN,ds-linear-abematv.akamaized.net"
-        },
-        {
-          "id": "1e7d39ed09aa",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,dmm-extension.com"
-        },
-        {
-          "id": "23539fc772bd",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,abema.io"
-        },
-        {
-          "id": "25ae0f59cda0",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,abema-tv.com"
-        },
-        {
-          "id": "3351aed88d2b",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,hayabusa.media"
-        },
-        {
-          "id": "434c2e7df2b5",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,abema.tv"
-        },
-        {
-          "id": "5c6356321742",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,hjholdings.jp"
-        },
-        {
-          "id": "5d0abc2b7f28",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,winticket.jp"
-        },
-        {
-          "id": "621d52db8fd7",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,happyon.jp"
-        },
-        {
-          "id": "6575d02885fc",
-          "source": "SukkaW Stream JP",
-          "rule": "USER-AGENT,AbemaTV*"
-        },
-        {
-          "id": "670673f2cc57",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,hayabusa.dev"
-        },
-        {
-          "id": "6cd2972f4358",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,amebaownd.com"
-        },
-        {
-          "id": "763cf4f2d14f",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,hulu.jp"
-        },
-        {
-          "id": "973e0f781f03",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,location-plus.nhk.jp"
-        },
-        {
-          "id": "991625adfc02",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,dmm.co.jp"
-        },
-        {
-          "id": "a5a7cb0036a7",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,amebame.com"
-        },
-        {
-          "id": "adaf147ff85d",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,amebaowndme.com"
-        },
-        {
-          "id": "b7e6a33888c1",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,hayabusa.io"
-        },
-        {
-          "id": "c320245b083c",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,dokusho-ojikan.jp"
-        },
-        {
-          "id": "d2e351b20519",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,dmm.com"
-        },
-        {
-          "id": "e81e0f4574e1",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,nicovideo.jp"
-        },
-        {
-          "id": "e83bdf87e768",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,tver.jp"
-        },
-        {
-          "id": "eaf7d709883e",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,ameblo.jp"
-        },
-        {
-          "id": "fd491b97deef",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,ameba.jp"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -577,193 +317,12 @@
     },
     {
       "file": "TWMedia.list",
-      "prev_total": 0,
+      "prev_total": 36,
       "curr_total": 36,
-      "added_count": 36,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "0773ddeb1396",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN,hbounify-prod.evergent.com"
-        },
-        {
-          "id": "12a9abfd863e",
-          "source": "SukkaW Stream TW",
-          "rule": "USER-AGENT,Anime*"
-        },
-        {
-          "id": "288af4fca4a0",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN,gamer2-cds.cdn.hinet.net"
-        },
-        {
-          "id": "2f434ac89572",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,hbogoasia.tw"
-        },
-        {
-          "id": "3c422020c048",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com"
-        },
-        {
-          "id": "4aba55dd3640",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,api.gamer.com.tw"
-        },
-        {
-          "id": "4af641450bb7",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,hboasia.com"
-        },
-        {
-          "id": "4b6815c84297",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,hbogoasia.sg"
-        },
-        {
-          "id": "567541f24729",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,fanfox.net"
-        },
-        {
-          "id": "5c644c606d3e",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,4gtv.tv"
-        },
-        {
-          "id": "669fb6bc899b",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,kk.stream"
-        },
-        {
-          "id": "69cd64e126a2",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,bahamut.com.tw"
-        },
-        {
-          "id": "6a5d85fcce53",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN,gamer-cds.cdn.hinet.net"
-        },
-        {
-          "id": "6eb27c9b3690",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,linetv.tw"
-        },
-        {
-          "id": "758fe639efba",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN,d3c7rimkq79yfu.cloudfront.net"
-        },
-        {
-          "id": "7dac3869489d",
-          "source": "SukkaW Stream TW",
-          "rule": "USER-AGENT,KKTV*"
-        },
-        {
-          "id": "7db99e55a530",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,ani.gamer.com.tw"
-        },
-        {
-          "id": "7dd8d395d56b",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN,litvfreemobile-hichannel.cdn.hinet.net"
-        },
-        {
-          "id": "8803b4204269",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN,ntdfreepc-tgc.cdn.hinet.net"
-        },
-        {
-          "id": "93aba43439e8",
-          "source": "SukkaW Stream TW",
-          "rule": "USER-AGENT,LINE TV*"
-        },
-        {
-          "id": "992ca90d9e63",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN,ana.video.friday.tw"
-        },
-        {
-          "id": "a705ceb17979",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN,video.friday.tw"
-        },
-        {
-          "id": "b528f18fa1c2",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,viblast.com"
-        },
-        {
-          "id": "b6c2c6b5f906",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,hbogoasia.id"
-        },
-        {
-          "id": "c0c09a0f232b",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,kktv.me"
-        },
-        {
-          "id": "c7ea69824750",
-          "source": "SukkaW Stream TW",
-          "rule": "PROCESS-NAME,com.linecorp.linetv"
-        },
-        {
-          "id": "cde5ce3bd954",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN,cdi.ofiii.com"
-        },
-        {
-          "id": "d66ecc4059bf",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,hbogoasia.com"
-        },
-        {
-          "id": "d834ff40274d",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN,hbolb.onwardsmg.com"
-        },
-        {
-          "id": "d99c6907f7e3",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN,4gtvfreepcvod-cds.cdn.hinet.net"
-        },
-        {
-          "id": "dbf22636fb7d",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,mangafox.me"
-        },
-        {
-          "id": "e4b4239d74f3",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,hbogoasia.ph"
-        },
-        {
-          "id": "e74c5bd47088",
-          "source": "SukkaW Stream TW",
-          "rule": "USER-AGENT,com.kktv.ios.kktv*"
-        },
-        {
-          "id": "ee815ba6731d",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN,www.litv.tv"
-        },
-        {
-          "id": "f3831052cbdd",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,hbogoasia.hk"
-        },
-        {
-          "id": "fdb56ccb85b7",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,kktv.com.tw"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -791,268 +350,12 @@
     },
     {
       "file": "USMedia.list",
-      "prev_total": 0,
+      "prev_total": 51,
       "curr_total": 51,
-      "added_count": 51,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "02aa3604bb50",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,uplynk.com"
-        },
-        {
-          "id": "0301f7c85350",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,pluto.tv"
-        },
-        {
-          "id": "0d37eb70a201",
-          "source": "SukkaW Stream US",
-          "rule": "USER-AGENT,discovery+*"
-        },
-        {
-          "id": "159489f4da82",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,huluim.com"
-        },
-        {
-          "id": "1600715fc4a4",
-          "source": "SukkaW Stream US",
-          "rule": "USER-AGENT,TVer-Release*"
-        },
-        {
-          "id": "167bddb0ac75",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,discoveryplus.com"
-        },
-        {
-          "id": "172a0c4b2726",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN,cbsi.live.ott.irdeto.com"
-        },
-        {
-          "id": "188ae1d8e37a",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,hulu.com"
-        },
-        {
-          "id": "224a6c5149dc",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,showtime.com"
-        },
-        {
-          "id": "26a0fffcfbd0",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN,athome.fandango.com"
-        },
-        {
-          "id": "274a2f9b631f",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,foxplus.com"
-        },
-        {
-          "id": "2d3123fea9e4",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,disco-api.com"
-        },
-        {
-          "id": "2fbfe1234d46",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN,prod-api.crackle.com"
-        },
-        {
-          "id": "2fd37b25e8ba",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,production-public.tubi.io"
-        },
-        {
-          "id": "304cbdebe719",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN,cbsservice.aws.syncbak.com"
-        },
-        {
-          "id": "3356f99bdd44",
-          "source": "SukkaW Stream US",
-          "rule": "USER-AGENT,FOXPlus*"
-        },
-        {
-          "id": "3455cc7294ae",
-          "source": "SukkaW Stream US",
-          "rule": "USER-AGENT,PeacockMobile*"
-        },
-        {
-          "id": "3f9e08b89c2c",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN,www.tubi.tv"
-        },
-        {
-          "id": "3fc9db249707",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,peacocktv.com"
-        },
-        {
-          "id": "420475a82747",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN,www.tubitv.com"
-        },
-        {
-          "id": "43f54f6db542",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,foxdcg.com"
-        },
-        {
-          "id": "449612a78182",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,sho.com"
-        },
-        {
-          "id": "44cdad037873",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,fox.com"
-        },
-        {
-          "id": "4a3a3ec81bac",
-          "source": "SukkaW Stream US",
-          "rule": "USER-AGENT,PPlus*"
-        },
-        {
-          "id": "4f21eeb1f55c",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,hulustream.com"
-        },
-        {
-          "id": "504432a71a96",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN,tubitv.com"
-        },
-        {
-          "id": "50c0d5de83fa",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,paramountplus.com"
-        },
-        {
-          "id": "5c6356321742",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,hjholdings.jp"
-        },
-        {
-          "id": "621d52db8fd7",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,happyon.jp"
-        },
-        {
-          "id": "74e63db43f57",
-          "source": "SukkaW Stream US",
-          "rule": "PROCESS-NAME,com.hulu.plus"
-        },
-        {
-          "id": "763cf4f2d14f",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,hulu.jp"
-        },
-        {
-          "id": "7c8534b1ff6c",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,discoveryplus.in"
-        },
-        {
-          "id": "886bbee134b6",
-          "source": "SukkaW Stream US",
-          "rule": "USER-AGENT,DPlus*"
-        },
-        {
-          "id": "931bec6c0567",
-          "source": "SukkaW Stream US",
-          "rule": "USER-AGENT,FOX NOW*"
-        },
-        {
-          "id": "9624d405f80b",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,hulu.tv"
-        },
-        {
-          "id": "96d3fb9721cc",
-          "source": "SukkaW Stream US",
-          "rule": "USER-AGENT,encoreTVB*"
-        },
-        {
-          "id": "984970283a09",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,cbsivideo.com"
-        },
-        {
-          "id": "9bee7f96bc13",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,cbsaavideo.com"
-        },
-        {
-          "id": "a2ece8de0e64",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN,staticasiafox.akamaized.net"
-        },
-        {
-          "id": "a400e62c76f7",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,hulu.us"
-        },
-        {
-          "id": "b7ccdfb48f48",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,cbsi.com"
-        },
-        {
-          "id": "bb32538d424e",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN,dashasiafox.akamaized.net"
-        },
-        {
-          "id": "bfc0af40323e",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN,vudu.com"
-        },
-        {
-          "id": "c31dce063d32",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,theplatform.com"
-        },
-        {
-          "id": "c407b044de11",
-          "source": "SukkaW Stream US",
-          "rule": "USER-AGENT,Hulu*"
-        },
-        {
-          "id": "d2bc539ad304",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,encoretvb.com"
-        },
-        {
-          "id": "dcbeaf20a46a",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,dnitv.com"
-        },
-        {
-          "id": "e730cabe1385",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN,cbsplaylistserver.aws.syncbak.com"
-        },
-        {
-          "id": "e842953d14a9",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN,bcbolt446c5271-a.akamaihd.net"
-        },
-        {
-          "id": "f8c50ecbd862",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,discoveryplus.co.uk"
-        },
-        {
-          "id": "f92fe3afc2e1",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN,tubi.tv"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },

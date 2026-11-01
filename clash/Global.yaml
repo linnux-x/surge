@@ -1,7 +1,7 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-11-01 16:54:09 +0800
-# TOTAL: 24562
+# UPDATED: 2026-11-01 17:37:56 +0800
+# TOTAL: 24563
 payload:
   - 'DOMAIN-SUFFIX,boil.network'
   - 'DOMAIN-SUFFIX,neburst.com'
@@ -20225,6 +20225,7 @@ payload:
   - 'DOMAIN-SUFFIX,gfwbao.com'
   - 'DOMAIN-SUFFIX,ggssl.com'
   - 'DOMAIN-SUFFIX,ghanely.me'
+  - 'DOMAIN-SUFFIX,ghcr.io'
   - 'DOMAIN-SUFFIX,ghidra-sre.org'
   - 'DOMAIN-SUFFIX,ghostnoteapp.com'
   - 'DOMAIN-SUFFIX,ghostpath.com'

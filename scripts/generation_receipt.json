@@ -100,14 +100,14 @@
     },
     {
       "file": "Download.list",
-      "rules": 1692,
+      "rules": 1684,
       "types": {
-        "DOMAIN": 1434,
-        "DOMAIN-SUFFIX": 238,
+        "DOMAIN": 1429,
+        "DOMAIN-SUFFIX": 235,
         "PROCESS-NAME": 19,
         "URL-REGEX": 1
       },
-      "sha256": "909b16088043fca6f6c1aa1216f1b01b5e1beb1557b91c741da0db1b75819609"
+      "sha256": "944a9b09f0e2e6ea493975fbb452503046bee01f03913feacdb69ec951a21de6"
     },
     {
       "file": "Game.list",
@@ -122,16 +122,16 @@
     },
     {
       "file": "Global.list",
-      "rules": 24562,
+      "rules": 24563,
       "types": {
         "DOMAIN": 110,
         "DOMAIN-KEYWORD": 12,
-        "DOMAIN-SUFFIX": 24351,
+        "DOMAIN-SUFFIX": 24352,
         "IP-CIDR": 83,
         "IP-CIDR6": 1,
         "USER-AGENT": 5
       },
-      "sha256": "04d60fcaa7f378c87109a3b2efeb364a6f4d6e2ea3e49593929cf8209ee218ca"
+      "sha256": "6cebcc3977383e8bc110a51a3634a784f02a2bae0a6499e98aaeccfe813259c2"
     },
     {
       "file": "GlobalMedia.list",
@@ -345,11 +345,11 @@
       "sha256": "dc6dfde863bc0c0034fa3bae09c8a8b090ca385439e866e5ff89fa65eb177c69"
     }
   ],
-  "total_rules": 159376,
+  "total_rules": 159369,
   "rule_types": {
-    "DOMAIN": 3659,
+    "DOMAIN": 3654,
     "DOMAIN-KEYWORD": 96,
-    "DOMAIN-SUFFIX": 141126,
+    "DOMAIN-SUFFIX": 141124,
     "DOMAIN-WILDCARD": 4,
     "IP-ASN": 8,
     "IP-CIDR": 9823,
@@ -371,7 +371,7 @@
     "SukkaW Apple CN": 5,
     "SukkaW CDN": 27,
     "SukkaW Domestic": 696,
-    "SukkaW Download": 1617,
+    "SukkaW Download": 1609,
     "SukkaW Game Download": 52,
     "SukkaW Microsoft CDN": 52,
     "SukkaW Speedtest": 122,
@@ -391,7 +391,7 @@
     "blackmatrix7 Disney": 166,
     "blackmatrix7 Facebook": 570,
     "blackmatrix7 Game": 564,
-    "blackmatrix7 Global": 24547,
+    "blackmatrix7 Global": 24548,
     "blackmatrix7 GlobalMedia": 2248,
     "blackmatrix7 Google": 684,
     "blackmatrix7 Instagram": 1,
@@ -417,9 +417,9 @@
     "ChinaMedia.manifest": "8f86b924f2832027ab2d1f8643c4c51953994e84af6ebe3bad2aa553ad3d2616",
     "China_IP.manifest": "8c9e39ac02912ab3f578698947433df48a680cda9ed64981abdee2651b18c3a3",
     "Disney.manifest": "4952367b9bc1b50aaeacf8f01c8059c20e75aaf86be6c908d16a4f607a6b866f",
-    "Download.manifest": "4a8dcc9b64c4855490cc973d3c814de941fb1561cdac9cd5e925864534cfce28",
+    "Download.manifest": "5d5cce36e138b8a49bf711f5dbb677505b717a77d08a1ae6b5d395813f63134d",
     "Game.manifest": "eea8247188853238e4a15c21b3574947a61fd4357bc5568cf3fdb05fad47dc18",
-    "Global.manifest": "48d98d2c9395df34f3d918185154e4062ebec1515954bcc47cbc51e0bd5f70e3",
+    "Global.manifest": "ddf26888fe14a937c77047457411a5692c43c2967ca10f6afe3035e37987298c",
     "GlobalMedia.manifest": "b6b4881352b859ddd645b16042e1696a827204b1c594fc73ab472abaf9d42f72",
     "Google.manifest": "e07b20be6f457b843470e822e5532bca4da77b6e5ee4f14dca1a4b90b3d2ab90",
     "HKMedia.manifest": "0c18b7a9c04e06f1494645a758f778df16e8a87e55e74837c78069dc46b93f26",
@@ -440,9 +440,9 @@
     "YouTube.manifest": "1b9c3b78afbb311db391e8f2910b25b507296d158a339957a874d918a2869ca7"
   },
   "sources_sha256": "c738ac6f803c1ce8dd498dfa564b68aba95e1688593dbc0a21880069ec795fc5",
-  "override_manifest_sha256": "d0035cd557a931355629cf3c974ed513e4169cf4bd8a71675e32727db97f1530",
+  "override_manifest_sha256": "d4d4897933b827c92524e4411df20c982eb42ab6ca77ab2fc1b39798da7ceeba",
   "clash_compatibility": {
-    "payload_rules": 159171,
+    "payload_rules": 159164,
     "dropped_surge_only_types": {
       "URL-REGEX": 5,
       "USER-AGENT": 200
@@ -454,8 +454,8 @@
     }
   },
   "diff_summary": {
-    "total_added": 148,
-    "total_removed": 0,
+    "total_added": 1,
+    "total_removed": 8,
     "total_source_changed": 0
   }
 }

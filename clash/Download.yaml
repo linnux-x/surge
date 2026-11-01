@@ -1,7 +1,7 @@
 # Generated from Rule/Download.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-10-30 19:16:05 +0800
-# TOTAL: 1692
+# UPDATED: 2026-11-01 17:37:55 +0800
+# TOTAL: 1684
 payload:
   - 'PROCESS-NAME,aria2c'
   - 'PROCESS-NAME,fdm'
@@ -106,9 +106,6 @@ payload:
   - 'DOMAIN,gotest.tools'
   - 'DOMAIN,go.yaml.in'
   - 'DOMAIN,binaries.prisma.sh'
-  - 'DOMAIN,registry-1.docker.io'
-  - 'DOMAIN-SUFFIX,cloudflare.docker.com'
-  - 'DOMAIN-SUFFIX,fastly.docker.com'
   - 'DOMAIN-SUFFIX,mvnrepository.com'
   - 'DOMAIN,repo1.maven.org'
   - 'DOMAIN,repository.jboss.org'
@@ -399,11 +396,6 @@ payload:
   - 'DOMAIN,formulae.brew.sh'
   - 'DOMAIN,cdn.winget.microsoft.com'
   - 'DOMAIN,cdn.oneget.org'
-  - 'DOMAIN-SUFFIX,ghcr.io'
-  - 'DOMAIN,codeload.github.com'
-  - 'DOMAIN,objects.githubusercontent.com'
-  - 'DOMAIN,pkg-containers.githubusercontent.com'
-  - 'DOMAIN,release-assets.githubusercontent.com'
   - 'DOMAIN-SUFFIX,circle-artifacts.com'
   - 'DOMAIN,dl.circleci.com'
   - 'DOMAIN,releases.obsidian.md'

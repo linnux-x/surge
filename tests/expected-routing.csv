@@ -356,3 +356,12 @@ players.brightcove.net,GlobalMedia.list,GlobalMedia,Brightcove 共享视频平�
 manifest.prod.boltdns.net,GlobalMedia.list,GlobalMedia,Brightcove 共享视频清单，不固定到单一地区
 edge.api.brightcove.com,GlobalMedia.list,GlobalMedia,Brightcove 共享 API，不固定到单一地区
 www.youtube.com,YouTube.list,YouTube,全球通用流媒体不进入地区规则
+release-assets.githubusercontent.com,CDN.list,CDN,GitHub release 下载按仓库策略走 CDN，不被直连的 Download 抢先命中
+objects.githubusercontent.com,Global.list,Global,GitHub 对象下载直连限速，移出 Download
+pkg-containers.githubusercontent.com,Global.list,Global,GHCR 镜像层直连限速，移出 Download
+codeload.github.com,Global.list,Global,GitHub 源码归档直连限速，移出 Download
+ghcr.io,Global.list,Global,GHCR 镜像仓库直连限速，移出 Download
+pkg.ghcr.io,Global.list,Global,GHCR 子域名随后缀一并移出 Download
+registry-1.docker.io,FINAL,Global,Docker Hub 镜像仓库直连限速，移出 Download 后回落 Global
+production.cloudflare.docker.com,Global.list,Global,Docker Hub 镜像层 CDN 直连限速，移出 Download
+fastly.docker.com,Global.list,Global,Docker Hub 镜像层 CDN 直连限速，移出 Download
