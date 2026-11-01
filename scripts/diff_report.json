@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-01T18:06:33.708339",
-  "total_added": 8,
-  "total_removed": 0,
+  "generated_at": "2026-11-01T18:23:38.028074",
+  "total_added": 2,
+  "total_removed": 2,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -106,12 +106,23 @@
     {
       "file": "Download.list",
       "prev_total": 1684,
-      "curr_total": 1684,
+      "curr_total": 1682,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 2,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "8f88146e0a19",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,pythonhosted.org"
+        },
+        {
+          "id": "bb3bc4580c36",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,pypi.org"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -127,51 +138,21 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24563,
-      "curr_total": 24571,
-      "added_count": 8,
+      "prev_total": 24571,
+      "curr_total": 24573,
+      "added_count": 2,
       "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [
         {
-          "id": "03111ff019ff",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,leagueoflegendsportal.com"
+          "id": "8f88146e0a19",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,pythonhosted.org"
         },
         {
-          "id": "13081026f292",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,trueachievements.com"
-        },
-        {
-          "id": "76a7c7db03a1",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,dotesports.com"
-        },
-        {
-          "id": "a71327543133",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,vpesports.com"
-        },
-        {
-          "id": "ae60b8c2a2f1",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,mobalytics.gg"
-        },
-        {
-          "id": "ba22aa176489",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,howlongtobeat.com"
-        },
-        {
-          "id": "e130981ae4fe",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,darkintaqt.com"
-        },
-        {
-          "id": "fc22fda1b1c6",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,mobafire.com"
+          "id": "bb3bc4580c36",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,pypi.org"
         }
       ],
       "removed_sample": [],

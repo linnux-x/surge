@@ -1,7 +1,7 @@
 # Generated from Rule/Download.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-11-01 17:37:55 +0800
-# TOTAL: 1684
+# UPDATED: 2026-11-01 18:23:27 +0800
+# TOTAL: 1682
 payload:
   - 'PROCESS-NAME,aria2c'
   - 'PROCESS-NAME,fdm'
@@ -87,8 +87,6 @@ payload:
   - 'DOMAIN,rubygems.org'
   - 'DOMAIN,index.rubygems.org'
   - 'DOMAIN,static.rust-lang.org'
-  - 'DOMAIN-SUFFIX,pypi.org'
-  - 'DOMAIN-SUFFIX,pythonhosted.org'
   - 'DOMAIN-SUFFIX,repo.anaconda.com'
   - 'DOMAIN,npm.jsr.io'
   - 'DOMAIN,registry-cdn.wapm.io'

@@ -370,3 +370,5 @@ www.mobafire.com,Global.list,Global,英雄联盟攻略站
 media.dotesports.com,Global.list,Global,电竞资讯站
 challenges.darkintaqt.com,Global.list,Global,英雄联盟挑战统计站
 howlongtobeat.com,Global.list,Global,游戏通关时长站
+pypi.org,Global.list,Global,PyPI 索引移出 Download，HA 虚拟机直连下载停滞
+files.pythonhosted.org,Global.list,Global,PyPI 包文件移出 Download，HA 虚拟机直连下载停滞

@@ -6,8 +6,8 @@
 
 ## 差异摘要
 
-- 新增：8
-- 删除：0
+- 新增：2
+- 删除：2
 - 来源迁移：0
 
 ## Clash 兼容性
@@ -43,7 +43,7 @@
 - SukkaW Apple CN: 5
 - SukkaW CDN: 27
 - SukkaW Domestic: 696
-- SukkaW Download: 1609
+- SukkaW Download: 1607
 - SukkaW Game Download: 52
 - SukkaW Microsoft CDN: 52
 - SukkaW Speedtest: 122
@@ -63,7 +63,7 @@
 - blackmatrix7 Disney: 166
 - blackmatrix7 Facebook: 570
 - blackmatrix7 Game: 564
-- blackmatrix7 Global: 24548
+- blackmatrix7 Global: 24550
 - blackmatrix7 GlobalMedia: 2248
 - blackmatrix7 Google: 684
 - blackmatrix7 Instagram: 1
