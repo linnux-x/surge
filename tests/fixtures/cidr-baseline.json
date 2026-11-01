@@ -118,6 +118,8 @@
     "Game.list",
     "GlobalMedia.list",
     "Google.list",
+    "HKMedia.list",
+    "JPMedia.list",
     "Microsoft.list",
     "Microsoft_CDN.list",
     "Netflix.list",
@@ -126,12 +128,10 @@
     "Speedtest.list",
     "Speedtest_China.list",
     "Spotify.list",
-    "Stream_HK.list",
-    "Stream_JP.list",
-    "Stream_TW.list",
-    "Stream_US.list",
+    "TWMedia.list",
     "Telegram.list",
     "TikTok.list",
+    "USMedia.list",
     "WeChat.list",
     "YouTube.list"
   ]

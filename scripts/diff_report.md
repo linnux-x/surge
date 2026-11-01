@@ -1,107 +1,25 @@
 # Surge Rule Diff Report
-Generated: 2026-11-01T16:33:38.460250
+Generated: 2026-11-01T16:54:13.458685
 
 ## Summary
 
 | Metric | Count |
 |--------|-------|
-| Files changed | 6 |
-| Rules added | 209 |
-| Rules removed | 7 |
+| Files changed | 4 |
+| Rules added | 148 |
+| Rules removed | 0 |
 | Source attribution changed | 0 |
 
 ## Per-File Changes
 
 | File | Prev | Curr | Added | Removed | Source Δ |
 |------|------|------|-------|---------|----------|
-| Global.list | 24569 | 24562 | +0 | -7 | ~0 |
-| GlobalMedia.list | 2256 | 2317 | +61 | -0 | ~0 |
-| Stream_HK.list | 0 | 34 | +34 | -0 | ~0 |
-| Stream_JP.list | 0 | 27 | +27 | -0 | ~0 |
-| Stream_TW.list | 0 | 36 | +36 | -0 | ~0 |
-| Stream_US.list | 0 | 51 | +51 | -0 | ~0 |
+| HKMedia.list | 0 | 34 | +34 | -0 | ~0 |
+| JPMedia.list | 0 | 27 | +27 | -0 | ~0 |
+| TWMedia.list | 0 | 36 | +36 | -0 | ~0 |
+| USMedia.list | 0 | 51 | +51 | -0 | ~0 |
 
-## Global.list
-
-**Removed: 7** (showing first 7)
-```
-  - [blackmatrix7 Global] 172a0c4b2726  DOMAIN,cbsi.live.ott.irdeto.com
-  - [blackmatrix7 Global] 2f434ac89572  DOMAIN-SUFFIX,hbogoasia.tw
-  - [blackmatrix7 Global] 304cbdebe719  DOMAIN,cbsservice.aws.syncbak.com
-  - [blackmatrix7 Global] 4b6815c84297  DOMAIN-SUFFIX,hbogoasia.sg
-  - [blackmatrix7 Global] 567541f24729  DOMAIN-SUFFIX,fanfox.net
-  - [blackmatrix7 Global] dbf22636fb7d  DOMAIN-SUFFIX,mangafox.me
-  - [blackmatrix7 Global] e730cabe1385  DOMAIN,cbsplaylistserver.aws.syncbak.com
-```
-
-## GlobalMedia.list
-
-**Added: 61** (showing first 61)
-```
-  + [SukkaW Stream] 0aee5ddb05f5  DOMAIN-SUFFIX,spotify-com.akamaized.net
-  + [SukkaW Stream] 0d48164135bb  DOMAIN-SUFFIX,dcblivedazn.akamaized.net
-  + [SukkaW Stream] 164d6caaf9da  PROCESS-NAME,com.hktve.viutv
-  + [SukkaW Stream] 1cc846b51d28  DOMAIN,ds-linear-abematv.akamaized.net
-  + [SukkaW Stream] 1dc5989dae14  DOMAIN,d25xi40x97liuc.cloudfront.net
-  + [SukkaW Stream] 26a0fffcfbd0  DOMAIN,athome.fandango.com
-  + [SukkaW Stream] 2f434ac89572  DOMAIN-SUFFIX,hbogoasia.tw
-  + [SukkaW Stream] 2fbfe1234d46  DOMAIN,prod-api.crackle.com
-  + [SukkaW Stream] 2fd37b25e8ba  DOMAIN-SUFFIX,production-public.tubi.io
-  + [SukkaW Stream] 3c422020c048  DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
-  + [SukkaW Stream] 3f9e08b89c2c  DOMAIN,www.tubi.tv
-  + [SukkaW Stream] 41c5cf34eb4a  DOMAIN,d151l6v8er5bdm.cloudfront.net
-  + [SukkaW Stream] 420475a82747  DOMAIN,www.tubitv.com
-  + [SukkaW Stream] 4b6815c84297  DOMAIN-SUFFIX,hbogoasia.sg
-  + [SukkaW Stream] 4b79d93a30ad  PROCESS-NAME,com.tencent.ibg.joox
-  + [SukkaW Stream] 5031b22c33d4  DOMAIN-SUFFIX,psg.cdn.hgc.com.hk
-  + [SukkaW Stream] 504432a71a96  DOMAIN,tubitv.com
-  + [SukkaW Stream] 5141897cabdd  DOMAIN,cache.video.iqiyi.com
-  + [SukkaW Stream] 567541f24729  DOMAIN-SUFFIX,fanfox.net
-  + [SukkaW Stream] 59a5d84869ed  DOMAIN-KEYWORD,-spotify-com
-  + [SukkaW Stream] 5d4631a4787f  DOMAIN,d1v5ir2lpwr8os.cloudfront.net
-  + [SukkaW Stream] 6038dc2fc443  USER-AGENT,Naver TV*
-  + [SukkaW Stream] 60b97979f284  DOMAIN-SUFFIX,tvlicensing.co.uk
-  + [SukkaW Stream] 683b705c9f90  DOMAIN,play-edge.itunes.apple.com
-  + [SukkaW Stream] 73da7282e7c5  DOMAIN,d3196yreox78o9.cloudfront.net
-  + [SukkaW Stream] 73fd24f517fb  USER-AGENT,Prime Video*
-  + [SukkaW Stream] 74e63db43f57  PROCESS-NAME,com.hulu.plus
-  + [SukkaW Stream] 758fe639efba  DOMAIN,d3c7rimkq79yfu.cloudfront.net
-  + [SukkaW Stream] 7766cbeee510  DOMAIN,d2anahhhmp1ffz.cloudfront.net
-  + [SukkaW Stream] 793a02b5a263  DOMAIN,uts-api.itunes.apple.com
-  + [SukkaW Stream] 7ddbccefbd67  PROCESS-NAME,tv.twitch.android.app
-  + [SukkaW Stream] 8281d9b3c38a  DOMAIN,dfp6rglgjqszk.cloudfront.net
-  + [SukkaW Stream] 839b197a5047  PROCESS-NAME,com.amazon.avod.thirdpartyclient
-  + [SukkaW Stream] 83f2d78aaf5c  PROCESS-NAME,com.netflix.mediaclient
-  + [SukkaW Stream] 88fa6b57ecaf  DOMAIN,d22qjgkvxw22r6.cloudfront.net
-  + [SukkaW Stream] 890e1146f6d5  DOMAIN,d1k2us671qcoau.cloudfront.net
-  + [SukkaW Stream] 8d7a9c71c1a8  PROCESS-NAME,com.twgood.android
-  + [SukkaW Stream] 931bec6c0567  USER-AGENT,FOX NOW*
-  + [SukkaW Stream] 93aba43439e8  USER-AGENT,LINE TV*
-  + [SukkaW Stream] 973e0f781f03  DOMAIN-SUFFIX,location-plus.nhk.jp
-  + [SukkaW Stream] 99f59529614f  PROCESS-NAME,tv
-  + [SukkaW Stream] 9d988c5bc9da  PROCESS-NAME,com.bstar.intl
-  + [SukkaW Stream] a2ece8de0e64  DOMAIN,staticasiafox.akamaized.net
-  + [SukkaW Stream] a5936a80af05  DOMAIN,hls.itunes.apple.com
-  + [SukkaW Stream] ac27cd7c615e  DOMAIN,d349g9zuie06uo.cloudfront.net
-  + [SukkaW Stream] bb32538d424e  DOMAIN,dashasiafox.akamaized.net
-  + [SukkaW Stream] bfc0af40323e  DOMAIN,vudu.com
-  + [SukkaW Stream] c0d7c5770d88  DOMAIN-SUFFIX,dcalivedazn.akamaized.net
-  + [SukkaW Stream] c26a6a6b519d  DOMAIN,np-edge.itunes.apple.com
-  + [SukkaW Stream] c7ea69824750  PROCESS-NAME,com.linecorp.linetv
-  + [SukkaW Stream] c8fb9516a5fe  DOMAIN,d1xfray82862hr.cloudfront.net
-  + [SukkaW Stream] c909d2f2a4fb  DOMAIN,d1sgwhnao7452x.cloudfront.net
-  + [SukkaW Stream] d551ef6cff01  DOMAIN,dmqdd6hw24ucf.cloudfront.net
-  + [SukkaW Stream] d8106ae59631  DOMAIN,d184dfn36gombl.cloudfront.net
-  + [SukkaW Stream] dacd42454087  DOMAIN,bbc.mp-pxcdn.com
-  + [SukkaW Stream] dbf22636fb7d  DOMAIN-SUFFIX,mangafox.me
-  + [SukkaW Stream] f4c6de9f0eee  DOMAIN,d27xxe7juh1us6.cloudfront.net
-  + [SukkaW Stream] f59249b2f580  PROCESS-NAME,music
-  + [SukkaW Stream] f815b22bf5cd  USER-AGENT,HBO NOW*
-  + [SukkaW Stream] f92fe3afc2e1  DOMAIN,tubi.tv
-  + [SukkaW Stream] f9ef3e5a225c  DOMAIN,hls-amt.itunes.apple.com
-```
-
-## Stream_HK.list
+## HKMedia.list
 
 **Added: 34** (showing first 34)
 ```
@@ -141,7 +59,7 @@ Generated: 2026-11-01T16:33:38.460250
   + [SukkaW Stream HK] f8bbf682d42c  DOMAIN-SUFFIX,mytvsuper.com
 ```
 
-## Stream_JP.list
+## JPMedia.list
 
 **Added: 27** (showing first 27)
 ```
@@ -174,7 +92,7 @@ Generated: 2026-11-01T16:33:38.460250
   + [SukkaW Stream JP] fd491b97deef  DOMAIN-SUFFIX,ameba.jp
 ```
 
-## Stream_TW.list
+## TWMedia.list
 
 **Added: 36** (showing first 36)
 ```
@@ -216,7 +134,7 @@ Generated: 2026-11-01T16:33:38.460250
   + [SukkaW Stream TW] fdb56ccb85b7  DOMAIN-SUFFIX,kktv.com.tw
 ```
 
-## Stream_US.list
+## USMedia.list
 
 **Added: 51** (showing first 51)
 ```

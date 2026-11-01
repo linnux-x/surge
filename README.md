@@ -76,10 +76,10 @@ Surge 专属类型会按转换器规则排除；扩展规则类型及数量见�
 | ⚡ Speedtest_China.list | Sukka 官方服务器数据 · spiritLHLS | 按明确大陆地区字段筛选测速主机并直连 |
 | ⚡ Speedtest.list | SukkaW · 官方服务器数据 · 手动 | 国际测速节点与测速服务 · fast.com 仅此文件 |
 | 🎧 Spotify.list | blackmatrix7 | Spotify 音乐服务 |
-| 🇭🇰 Stream_HK.list | SukkaW | 香港地区限定流媒体（Viu、myTV SUPER 等） |
-| 🇨🇳 Stream_TW.list | SukkaW | 台湾地区限定流媒体（KKTV、动画疯等） |
-| 🇯🇵 Stream_JP.list | SukkaW | 日本地区限定流媒体（DMM、AbemaTV 等） |
-| 🇺🇸 Stream_US.list | SukkaW | 美国地区限定流媒体（Hulu、Paramount+ 等） |
+| 🇭🇰 HKMedia.list | SukkaW | 香港地区限定流媒体（Viu、myTV SUPER 等） |
+| 🇨🇳 TWMedia.list | SukkaW | 台湾地区限定流媒体（KKTV、动画疯等） |
+| 🇯🇵 JPMedia.list | SukkaW | 日本地区限定流媒体（DMM、AbemaTV 等） |
+| 🇺🇸 USMedia.list | SukkaW | 美国地区限定流媒体（Hulu、Paramount+ 等） |
 | ✈️ Telegram.list | 2 源 | 域名、CIDR、ASN |
 | 🎵 TikTok.list | blackmatrix7 | TikTok |
 | 💚 WeChat.list | blackmatrix7 | 微信相关服务 |

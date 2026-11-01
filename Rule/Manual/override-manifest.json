@@ -33,9 +33,9 @@
     "SocialMedia.exclude.txt": {"action": "exclude", "reason": "历史社交媒体归属去重", "destination": "后续专属规则或 fallback"},
     "SocialMedia.txt": {"action": "include", "reason": "历史社交媒体补充", "destination": "SocialMedia.list"},
     "Speedtest.txt": {"action": "include", "reason": "历史测速补充", "destination": "Speedtest.list"},
-    "Stream_HK.exclude.txt": {"action": "exclude", "reason": "Brightcove 共享视频平台不固定到香港节点", "destination": "GlobalMedia.list → GlobalMedia"},
-    "Stream_TW.exclude.txt": {"action": "exclude", "reason": "Brightcove 共享视频平台不固定到台湾节点", "destination": "GlobalMedia.list → GlobalMedia"},
-    "Stream_US.exclude.txt": {"action": "exclude", "reason": "Brightcove 共享视频平台不固定到美国节点", "destination": "GlobalMedia.list → GlobalMedia"},
+    "HKMedia.exclude.txt": {"action": "exclude", "reason": "Brightcove 共享视频平台不固定到香港节点", "destination": "GlobalMedia.list → GlobalMedia"},
+    "TWMedia.exclude.txt": {"action": "exclude", "reason": "Brightcove 共享视频平台不固定到台湾节点", "destination": "GlobalMedia.list → GlobalMedia"},
+    "USMedia.exclude.txt": {"action": "exclude", "reason": "Brightcove 共享视频平台不固定到美国节点", "destination": "GlobalMedia.list → GlobalMedia"},
     "Spotify.txt": {"action": "include", "reason": "历史音乐服务补充", "destination": "Spotify.list"},
     "Telegram.exclude.txt": {"action": "exclude", "reason": "历史通信服务归属去重", "destination": "后续专属规则或 fallback"},
     "Telegram.txt": {"action": "include", "reason": "真实流量确认的 Telegram 客户端服务补充", "destination": "Telegram.list"},
@@ -849,35 +849,35 @@
       "route_tests": ["eqoavtbu.com", "avtb2.com"]
     },
     {
-      "source_file": "Stream_HK.exclude.txt",
+      "source_file": "HKMedia.exclude.txt",
       "rule": "DOMAIN,players.brightcove.net",
       "reason": "Brightcove 是多家媒体共用的视频平台，不属于单一地区的流媒体",
       "destination": "GlobalMedia.list → GlobalMedia",
       "route_tests": ["players.brightcove.net"]
     },
     {
-      "source_file": "Stream_HK.exclude.txt",
+      "source_file": "HKMedia.exclude.txt",
       "rule": "DOMAIN,manifest.prod.boltdns.net",
       "reason": "Brightcove 是多家媒体共用的视频平台，不属于单一地区的流媒体",
       "destination": "GlobalMedia.list → GlobalMedia",
       "route_tests": ["manifest.prod.boltdns.net"]
     },
     {
-      "source_file": "Stream_TW.exclude.txt",
+      "source_file": "TWMedia.exclude.txt",
       "rule": "DOMAIN,players.brightcove.net",
       "reason": "Brightcove 是多家媒体共用的视频平台，不属于单一地区的流媒体",
       "destination": "GlobalMedia.list → GlobalMedia",
       "route_tests": ["players.brightcove.net"]
     },
     {
-      "source_file": "Stream_TW.exclude.txt",
+      "source_file": "TWMedia.exclude.txt",
       "rule": "DOMAIN,manifest.prod.boltdns.net",
       "reason": "Brightcove 是多家媒体共用的视频平台，不属于单一地区的流媒体",
       "destination": "GlobalMedia.list → GlobalMedia",
       "route_tests": ["manifest.prod.boltdns.net"]
     },
     {
-      "source_file": "Stream_US.exclude.txt",
+      "source_file": "USMedia.exclude.txt",
       "rule": "DOMAIN,edge.api.brightcove.com",
       "reason": "Brightcove 是多家媒体共用的视频平台，不属于单一地区的流媒体",
       "destination": "GlobalMedia.list → GlobalMedia",
