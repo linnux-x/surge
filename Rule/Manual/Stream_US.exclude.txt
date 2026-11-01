@@ -1,0 +1,2 @@
+# Brightcove 是多家媒体共用的视频平台，不应整体固定到美国节点；保持由 GlobalMedia 处理。
+DOMAIN,edge.api.brightcove.com

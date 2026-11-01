@@ -1,0 +1,59 @@
+# NAME: Stream_US
+# AUTHOR: linnux-x
+# REPO: https://github.com/linnux-x/surge
+# UPDATED: 2026-11-01 16:31:34 +0800
+# FORMAT: Surge Ruleset
+# TOTAL: 51
+
+# ======= SukkaW Stream US ========
+DOMAIN-SUFFIX,fox.com
+DOMAIN-SUFFIX,hulu.jp
+DOMAIN-SUFFIX,hulu.tv
+DOMAIN-SUFFIX,hulu.us
+DOMAIN-SUFFIX,sho.com
+DOMAIN,tubi.tv
+DOMAIN-SUFFIX,cbsi.com
+DOMAIN-SUFFIX,hulu.com
+DOMAIN-SUFFIX,pluto.tv
+DOMAIN,vudu.com
+DOMAIN-SUFFIX,dnitv.com
+DOMAIN-SUFFIX,foxdcg.com
+DOMAIN-SUFFIX,happyon.jp
+DOMAIN-SUFFIX,huluim.com
+DOMAIN,tubitv.com
+DOMAIN-SUFFIX,uplynk.com
+DOMAIN-SUFFIX,foxplus.com
+DOMAIN,www.tubi.tv
+DOMAIN-SUFFIX,showtime.com
+DOMAIN-SUFFIX,cbsivideo.com
+DOMAIN-SUFFIX,disco-api.com
+DOMAIN-SUFFIX,encoretvb.com
+DOMAIN-SUFFIX,hjholdings.jp
+DOMAIN-SUFFIX,peacocktv.com
+DOMAIN-SUFFIX,cbsaavideo.com
+DOMAIN-SUFFIX,hulustream.com
+DOMAIN,www.tubitv.com
+DOMAIN-SUFFIX,theplatform.com
+DOMAIN-SUFFIX,discoveryplus.in
+DOMAIN-SUFFIX,discoveryplus.com
+DOMAIN-SUFFIX,paramountplus.com
+DOMAIN,athome.fandango.com
+DOMAIN-SUFFIX,discoveryplus.co.uk
+DOMAIN,prod-api.crackle.com
+DOMAIN,cbsi.live.ott.irdeto.com
+DOMAIN,dashasiafox.akamaized.net
+DOMAIN-SUFFIX,production-public.tubi.io
+DOMAIN,cbsservice.aws.syncbak.com
+DOMAIN,staticasiafox.akamaized.net
+DOMAIN,bcbolt446c5271-a.akamaihd.net
+DOMAIN,cbsplaylistserver.aws.syncbak.com
+USER-AGENT,FOX NOW*
+USER-AGENT,FOXPlus*
+USER-AGENT,Hulu*
+USER-AGENT,encoreTVB*
+USER-AGENT,TVer-Release*
+USER-AGENT,DPlus*
+USER-AGENT,discovery+*
+USER-AGENT,PPlus*
+USER-AGENT,PeacockMobile*
+PROCESS-NAME,com.hulu.plus

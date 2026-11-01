@@ -7,7 +7,7 @@
 
 ## 当前运行方式
 
-- 26 个 Surge 规则集、40 个唯一上游 URL；具体来源由 [sources.py](scripts/sources.py) 统一定义。
+- 30 个 Surge 规则集、45 个唯一上游 URL；具体来源由 [sources.py](scripts/sources.py) 统一定义。
 - 维护者本机 **Hermes** 每天北京时间 **05:00** 调度规则更新，保留 Agent 审查；旧 Codex 维护任务已暂停。实际频率与运行健康以调度配置和执行证据为准，归属见 [SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md)。
 - 更新经分支和 PR 发布，精确提交的 CI 通过后合并 `main`。GitHub Actions 提供手动全量生成和已审阅产物发布。
 - Python 脚本无需第三方 Python 包；本地完整流程需要 **Python 3.10+、curl、Git**，向 GitHub 发布还需已认证的 **GitHub CLI**。
@@ -24,6 +24,7 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 
 规则按 first-match 顺序匹配。完整加载顺序以 [Conf/Linnux.conf](Conf/Linnux.conf) 为准：
 微信、测速、Apple AI、AI 等专用服务在前，Global、China、LAN、China IP 和 FINAL 在后。
+四份地区流媒体（港、台、日、美）先于 `ChinaMedia` 与 `GlobalMedia`，全球通用的流媒体仍归各自专属规则或 `GlobalMedia`；
 其中 `Speedtest_China` 先于 `Speedtest`，`Apple_CN` 先于 `Apple`，下载和游戏先于宽泛 Microsoft 规则。
 
 ### 使用完整配置示例
@@ -65,7 +66,7 @@ Surge 专属类型会按转换器规则排除；扩展规则类型及数量见�
 | ⬇️ Download.list | 2 源 | 下载、软件更新、游戏 CDN |
 | 🎮 Game.list | blackmatrix7 | 游戏平台与服务 |
 | 🌍 Global.list | blackmatrix7 | 通用海外/代理域名 |
-| 🎬 GlobalMedia.list | blackmatrix7 | 国际流媒体服务 |
+| 🎬 GlobalMedia.list | 2 源 | 全部流媒体兜底（含 Sukka 全量 stream） |
 | 🔍 Google.list | blackmatrix7 | Google 服务（不含 YouTube） |
 | 🪟 Microsoft.list | blackmatrix7 | Microsoft 服务（不含 GitHub） |
 | 🪟 Microsoft_CDN.list | SukkaW | MS CDN 直连 |
@@ -75,6 +76,10 @@ Surge 专属类型会按转换器规则排除；扩展规则类型及数量见�
 | ⚡ Speedtest_China.list | Sukka 官方服务器数据 · spiritLHLS | 按明确大陆地区字段筛选测速主机并直连 |
 | ⚡ Speedtest.list | SukkaW · 官方服务器数据 · 手动 | 国际测速节点与测速服务 · fast.com 仅此文件 |
 | 🎧 Spotify.list | blackmatrix7 | Spotify 音乐服务 |
+| 🇭🇰 Stream_HK.list | SukkaW | 香港地区限定流媒体（Viu、myTV SUPER 等） |
+| 🇨🇳 Stream_TW.list | SukkaW | 台湾地区限定流媒体（KKTV、动画疯等） |
+| 🇯🇵 Stream_JP.list | SukkaW | 日本地区限定流媒体（DMM、AbemaTV 等） |
+| 🇺🇸 Stream_US.list | SukkaW | 美国地区限定流媒体（Hulu、Paramount+ 等） |
 | ✈️ Telegram.list | 2 源 | 域名、CIDR、ASN |
 | 🎵 TikTok.list | blackmatrix7 | TikTok |
 | 💚 WeChat.list | blackmatrix7 | 微信相关服务 |

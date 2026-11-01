@@ -83,6 +83,9 @@ _SOURCES: list[tuple[str, str, str, str | None]] = [
     ("blackmatrix7 Global", f"{BM7}/Global/Global_All_No_Resolve.list", "Global.list", None),
     # GlobalMedia.list
     ("blackmatrix7 GlobalMedia", f"{BM7}/GlobalMedia/GlobalMedia_All_No_Resolve.list", "GlobalMedia.list", None),
+    # Sukka's all-region stream.conf makes GlobalMedia the superset of every
+    # streaming service; dedicated and regional rulesets match first.
+    ("SukkaW Stream", f"{SUKKA}/non_ip/stream.conf", "GlobalMedia.list", None),
     # Google.list
     ("blackmatrix7 Google", f"{BM7}/Google/Google.list", "Google.list", None),
     # Microsoft.list
@@ -103,6 +106,13 @@ _SOURCES: list[tuple[str, str, str, str | None]] = [
     ("SukkaW Speedtest Servers International", SPEEDTEST_SERVERS, "Speedtest.list", "speedtest-json-international"),
     ("SukkaW Speedtest Servers China", SPEEDTEST_SERVERS, "Speedtest_China.list", "speedtest-json-cn"),
     ("spiritLHLS Speedtest.cn China", SPEEDTEST_CN_CSV, "Speedtest_China.list", "speedtest-cn-csv"),
+    # Stream_HK/TW/JP/US.list: Sukka regional streaming. Services available
+    # worldwide (YouTube, Netflix, Disney+, Spotify...) exist only in Sukka's
+    # all-region stream.conf, so they stay in their dedicated rulesets.
+    ("SukkaW Stream HK", f"{SUKKA}/non_ip/stream_hk.conf", "Stream_HK.list", None),
+    ("SukkaW Stream TW", f"{SUKKA}/non_ip/stream_tw.conf", "Stream_TW.list", None),
+    ("SukkaW Stream JP", f"{SUKKA}/non_ip/stream_jp.conf", "Stream_JP.list", None),
+    ("SukkaW Stream US", f"{SUKKA}/non_ip/stream_us.conf", "Stream_US.list", None),
     # Spotify.list
     ("blackmatrix7 Spotify", f"{BM7}/Spotify/Spotify.list", "Spotify.list", None),
     # Telegram.list
@@ -146,6 +156,7 @@ GLOBAL_OVERLAP_RULESETS: tuple[str, ...] = (
     "Microsoft_CDN.list", "Microsoft.list", "Telegram.list", "Download.list",
     "Game.list", "YouTube.list", "TikTok.list", "SocialMedia.list",
     "PayPal.list", "Google.list", "Netflix.list", "Disney.list",
+    "Stream_HK.list", "Stream_TW.list", "Stream_JP.list", "Stream_US.list",
     "ChinaMedia.list", "Spotify.list", "GlobalMedia.list", "CDN.list",
 )
 GLOBAL_REBUILD_ONLY_RULESETS: frozenset[str] = frozenset({"Apple_CN.list"})
