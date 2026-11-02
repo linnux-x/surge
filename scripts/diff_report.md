@@ -1,12 +1,12 @@
 # Surge Rule Diff Report
-Generated: 2026-11-02T13:56:40.759143
+Generated: 2026-11-02T14:03:27.730608
 
 ## Summary
 
 | Metric | Count |
 |--------|-------|
-| Files changed | 3 |
-| Rules added | 356 |
+| Files changed | 2 |
+| Rules added | 354 |
 | Rules removed | 129 |
 | Source attribution changed | 0 |
 
@@ -15,7 +15,6 @@ Generated: 2026-11-02T13:56:40.759143
 | File | Prev | Curr | Added | Removed | Source Δ |
 |------|------|------|-------|---------|----------|
 | China.list | 110300 | 110478 | +242 | -64 | ~0 |
-| China_IP.list | 11842 | 11844 | +2 | -0 | ~0 |
 | Speedtest.list | 1675 | 1722 | +112 | -65 | ~0 |
 
 ## China.list
@@ -191,14 +190,6 @@ Generated: 2026-11-02T13:56:40.759143
   - [Rabbit-Spec China] f586699dffcb  USER-AGENT,TeamViewer*
   - [Rabbit-Spec China] f7961c186d41  USER-AGENT,%E4%B8%AD%E5%9B%BD%E5%B7%A5%E5%95%86%E9%93%B6%E8%A1%8C*
   - [Rabbit-Spec China] faf0f647b26a  DOMAIN-SUFFIX,alipayplus.com
-```
-
-## China_IP.list
-
-**Added: 2** (showing first 2)
-```
-  + [Rabbit-Spec China CIDR] 06213886ccaf  IP-CIDR,38.93.228.132/32
-  + [Rabbit-Spec China CIDR] d83dfe2f3b81  IP-CIDR,35.178.208.187/32
 ```
 
 ## Speedtest.list

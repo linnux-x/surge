@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-02T13:56:40.759143",
-  "total_added": 356,
+  "generated_at": "2026-11-02T14:03:27.730608",
+  "total_added": 354,
   "total_removed": 129,
   "total_source_changed": 0,
   "diffs": [
@@ -905,23 +905,12 @@
     },
     {
       "file": "China_IP.list",
-      "prev_total": 11842,
-      "curr_total": 11844,
-      "added_count": 2,
+      "prev_total": 10012,
+      "curr_total": 10012,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "06213886ccaf",
-          "source": "Rabbit-Spec China CIDR",
-          "rule": "IP-CIDR,38.93.228.132/32"
-        },
-        {
-          "id": "d83dfe2f3b81",
-          "source": "Rabbit-Spec China CIDR",
-          "rule": "IP-CIDR,35.178.208.187/32"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },

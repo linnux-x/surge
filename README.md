@@ -60,7 +60,7 @@ Surge 专属类型会按转换器规则排除；扩展规则类型及数量见�
 | 🍎 Apple_CN.list | 2 源 | Apple 中国区 CDN 直连 |
 | 📦 CDN.list | SukkaW | CDN、静态资源、下载资源 |
 | 🏠 China.list | 3 源 | 中国大陆直连域名（domain-only） |
-| 🌐 China_IP.list | 3 源 | 中国大陆 IP 回退（不加 no-resolve） |
+| 🌐 China_IP.list | 1 源 | 中国大陆 IP 回退（不加 no-resolve） |
 | 📺 ChinaMedia.list | blackmatrix7 | 中国媒体服务 |
 | 🏰 Disney.list | blackmatrix7 | Disney+ |
 | ⬇️ Download.list | 2 源 | 下载、软件更新、游戏 CDN |

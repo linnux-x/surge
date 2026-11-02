@@ -11,7 +11,7 @@
 
 手动触发 GitHub Actions `workflow_dispatch` 会进行 full generation。发布门禁的完整流程以 `CONTRIBUTING.md` 为准：先 `dry_run=true` 审查生成结果、manifest diff 和在线审计输出，审计通过后才允许 `manual_audit_confirmed=true` 发布。
 
-Rabbit-Spec 来源当前明确保留，用于补充 AIGC、China、ChinaCIDR 覆盖；不要在普通源清理中移除。其中 China.list 自 2026-11-01 起改为裸域名（domain-set）格式，`sources.py` 按 `domainset` 读取。
+Rabbit-Spec 来源当前明确保留，用于补充 AIGC、China 覆盖；不要在普通源清理中移除。其 ChinaCIDR 与 Loyalsoldier cncidr 完全相同，已于 2026-11-02 随 China_IP 单源化移除。其中 China.list 自 2026-11-01 起改为裸域名（domain-set）格式，`sources.py` 按 `domainset` 读取。
 
 ---
 
