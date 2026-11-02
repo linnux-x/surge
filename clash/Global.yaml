@@ -1,7 +1,7 @@
 # Generated from Rule/Global.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-11-01 18:23:28 +0800
-# TOTAL: 24573
+# UPDATED: 2026-11-02 13:35:50 +0800
+# TOTAL: 24570
 payload:
   - 'DOMAIN-SUFFIX,boil.network'
   - 'DOMAIN-SUFFIX,neburst.com'
@@ -26,6 +26,11 @@ payload:
   - 'DOMAIN-SUFFIX,darkintaqt.com'
   - 'DOMAIN-SUFFIX,howlongtobeat.com'
   - 'DOMAIN-SUFFIX,trueachievements.com'
+  - 'DOMAIN-SUFFIX,anandtech.com'
+  - 'DOMAIN-SUFFIX,tomshardware.com'
+  - 'DOMAIN-SUFFIX,techpowerup.com'
+  - 'DOMAIN-SUFFIX,overclock.net'
+  - 'DOMAIN-SUFFIX,arstechnica.com'
   - 'DOMAIN,1password.drift.click'
   - 'DOMAIN,adobeereg.com'
   - 'DOMAIN,agb9r0ad.qllfkl.com'
@@ -11300,7 +11305,6 @@ payload:
   - 'DOMAIN-SUFFIX,nodeimage.com'
   - 'DOMAIN-SUFFIX,nodequality.com'
   - 'DOMAIN-SUFFIX,nodereal.io'
-  - 'DOMAIN-SUFFIX,nodeseek.org'
   - 'DOMAIN-SUFFIX,nodesnoop.com'
   - 'DOMAIN-SUFFIX,nodesource.com'
   - 'DOMAIN-SUFFIX,noisullifb.com'
@@ -21236,7 +21240,6 @@ payload:
   - 'DOMAIN-SUFFIX,lingualeo.com'
   - 'DOMAIN-SUFFIX,lingvodics.com'
   - 'DOMAIN-SUFFIX,link-o-rama.com'
-  - 'DOMAIN-SUFFIX,linkedin.com'
   - 'DOMAIN-SUFFIX,linkideo.com'
   - 'DOMAIN-SUFFIX,linktr.ee'
   - 'DOMAIN-SUFFIX,linkuswell.com'
@@ -22208,7 +22211,6 @@ payload:
   - 'DOMAIN-SUFFIX,pinterest.cl'
   - 'DOMAIN-SUFFIX,pinterest.co.kr'
   - 'DOMAIN-SUFFIX,pinterest.co.uk'
-  - 'DOMAIN-SUFFIX,pinterest.com'
   - 'DOMAIN-SUFFIX,pinterest.com.au'
   - 'DOMAIN-SUFFIX,pinterest.com.mx'
   - 'DOMAIN-SUFFIX,pinterest.de'
@@ -22494,11 +22496,8 @@ payload:
   - 'DOMAIN-SUFFIX,redbubble.com'
   - 'DOMAIN-SUFFIX,redchinacn.net'
   - 'DOMAIN-SUFFIX,redchinacn.org'
-  - 'DOMAIN-SUFFIX,redd.it'
-  - 'DOMAIN-SUFFIX,reddit.com'
   - 'DOMAIN-SUFFIX,reddithelp.com'
   - 'DOMAIN-SUFFIX,redditlist.com'
-  - 'DOMAIN-SUFFIX,redditspace.com'
   - 'DOMAIN-SUFFIX,redhat.com'
   - 'DOMAIN-SUFFIX,redtube.com'
   - 'DOMAIN-SUFFIX,referer.us'
@@ -23278,8 +23277,6 @@ payload:
   - 'DOMAIN-SUFFIX,thomasbernhard.org'
   - 'DOMAIN-SUFFIX,thongdreams.com'
   - 'DOMAIN-SUFFIX,threadreaderapp.com'
-  - 'DOMAIN-SUFFIX,threads.com'
-  - 'DOMAIN-SUFFIX,threads.net'
   - 'DOMAIN-SUFFIX,threatchaos.com'
   - 'DOMAIN-SUFFIX,throughnightsfire.com'
   - 'DOMAIN-SUFFIX,thu.monster'
