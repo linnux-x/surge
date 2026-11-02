@@ -7,7 +7,7 @@
 - **真实设备配置**：不在本仓库；物理正典位于 `~/Library/Application Support/LinnuxPrivateData/private-config/surge-devices`，桌面 `private-config` 为兼容入口。
 - **正确方向**：可信上游 → 下载/清洗/校验/测试 → 自动化分支/PR → exact-SHA CI → 合并 `main` → 设备通过公开规则 URL 获取。
 - **禁止内容**：真实代理凭据、MITM 材料、私钥、内网信息和设备完整配置。
-- **规则同步流水线归属**：由维护者本机 Hermes 每天北京时间 05:00 调度并运行本仓库同一套 `scripts/*.py`，旧 Codex 规则维护任务已暂停。Hermes 在隔离工作区完成上游探测、生成、校验和 Agent 审阅，把确定性产物推到唯一自动化分支并创建 PR；只有 exact head SHA 的 CI 全绿后才合并 `main`。`auto-rules.yml` 只保留手动 full generation。调度配置应保持每天 05:00，与任务提示词一致；启用状态与模型正常返回不能证明维护成功，须核对本轮执行日志、收据时间、PR 和合并后 CI。
+- **规则同步流水线归属**：由维护者本机 Hermes 每天北京时间 05:00 调度，通过 `scripts/pipeline.py` 运行本仓库同一套脚本（CI 与 `auto-rules.yml` 使用同一入口）。Hermes 在隔离工作区完成上游探测、生成、校验和 Agent 审阅，把确定性产物推到唯一自动化分支并创建 PR；只有 exact head SHA 的 CI 全绿后才合并 `main`。`auto-rules.yml` 只保留手动 full generation。调度配置应保持每天 05:00，与任务提示词一致；启用状态与模型正常返回不能证明维护成功，须核对本轮执行日志、收据时间、PR 和合并后 CI。
 - **发布故障闭环**：自动化 PR 的 CI 失败时保留分支和 PR，并以稳定 finding code 更新唯一故障 Issue；`main` CI 失败由 `ci-failure-issue.yml` 去重记录，恢复后追加证据并关闭。
 
 ## 下游消费者（Raw URL 是对外契约）

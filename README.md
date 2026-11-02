@@ -7,8 +7,8 @@
 
 ## 当前运行方式
 
-- 30 个 Surge 规则集、45 个唯一上游 URL；具体来源由 [sources.py](scripts/sources.py) 统一定义。
-- 维护者本机 **Hermes** 每天北京时间 **05:00** 调度规则更新，保留 Agent 审查；旧 Codex 维护任务已暂停。实际频率与运行健康以调度配置和执行证据为准，归属见 [SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md)。
+- 30 个 Surge 规则集，上游来源由 [sources.py](scripts/sources.py) 统一定义；当前来源数量与归属见生成收据。
+- 维护者本机 **Hermes** 每天北京时间 **05:00** 调用 [`scripts/pipeline.py`](scripts/pipeline.py) 更新规则，并保留 Agent 审阅。实际频率与运行健康以调度配置和执行证据为准，归属见 [SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md)。
 - 更新经分支和 PR 发布，精确提交的 CI 通过后合并 `main`。GitHub Actions 提供手动全量生成和已审阅产物发布。
 - Python 脚本无需第三方 Python 包；本地完整流程需要 **Python 3.10+、curl、Git**，向 GitHub 发布还需已认证的 **GitHub CLI**。
 - 当前规则数、规则类型和来源归属见 [生成收据](scripts/generation_receipt.md)，最新增删见 [差异报告](scripts/diff_report.md)。
@@ -48,9 +48,9 @@ https://raw.githubusercontent.com/linnux-x/surge/main/Conf/Linnux.conf
 
 | 规则文件 | 上游来源 | 说明 |
 |---------|---------|------|
-| 📱 AI.list | 3 源 · 手动 | AI 服务与模型 API |
+| 📱 AI.list | 3 源 | AI 服务与模型 API |
 | 🍎 Apple.list | blackmatrix7 | Apple 全系服务 |
-| 🍎 Apple_AI.list | 2 源 · 手动 | Apple Intelligence、Siri 与 Private Relay |
+| 🍎 Apple_AI.list | 2 源 | Apple Intelligence、Siri 与 Private Relay |
 | 🍎 Apple_CN.list | 2 源 | Apple 中国区 CDN 直连 |
 | 📦 CDN.list | SukkaW | CDN、静态资源、下载资源 |
 | 🏠 China.list | 3 源 | 中国大陆直连域名（domain-only） |
@@ -68,7 +68,7 @@ https://raw.githubusercontent.com/linnux-x/surge/main/Conf/Linnux.conf
 | 💰 PayPal.list | blackmatrix7 | PayPal |
 | 💬 SocialMedia.list | 4 源 | 社交媒体聚合（海外平台） |
 | ⚡ Speedtest_China.list | Sukka 官方服务器数据 · spiritLHLS | 按明确大陆地区字段筛选测速主机并直连 |
-| ⚡ Speedtest.list | SukkaW · 官方服务器数据 · 手动 | 国际测速节点与测速服务 · fast.com 仅此文件 |
+| ⚡ Speedtest.list | SukkaW · 官方服务器数据 | 国际测速节点与测速服务 · fast.com 仅此文件 |
 | 🎧 Spotify.list | blackmatrix7 | Spotify 音乐服务 |
 | 🇭🇰 HKMedia.list | SukkaW | 香港地区限定流媒体（Viu、myTV SUPER 等） |
 | 🇨🇳 TWMedia.list | SukkaW | 台湾地区限定流媒体（KKTV、动画疯等） |
@@ -79,15 +79,16 @@ https://raw.githubusercontent.com/linnux-x/surge/main/Conf/Linnux.conf
 | 💚 WeChat.list | blackmatrix7 | 微信相关服务 |
 | ▶️ YouTube.list | blackmatrix7 | YouTube 与 YouTube Music |
 
+多数规则集另有 `Rule/Manual/<名称>.txt` 追加与 `<名称>.exclude.txt` 排除，Manual 优先于上游，见 [Rule/Manual/README.md](Rule/Manual/README.md)。
+
 ## 测速来源与覆盖
 
 - `Speedtest.list`：Sukka 的服务域名列表、官方测速服务器数据中的境外主机，以及本地 fast.com / nperf.com 规则。
 - `Speedtest_China.list`：同一 Sukka 数据中 `cc=CN` 且 `country=China` 的主机，再由 spiritLHLS 的大陆省份 CSV 补充。
 - Sukka 官方 JSON 一次下载、分别生成两份列表；JSON 更新会触发两份规则和 Global 重建，CSV 更新会触发大陆规则和 Global 重建。
-- Kelee 两个入口与专用快照已移除。国际覆盖小于原快照，未覆盖的节点由后续规则匹配；不能把替代来源视为全球测速节点全集。
+- 两份来源都不是全球测速节点全集；未覆盖的节点由后续规则匹配。
 
-Sukka 数据有每日构建；spiritLHLS 仓库每日同步不代表 CSV 每日变化，其文件在本次接入审查时最近变更于 2026-06-03。
-来源与日期证据见 [测速替换审计](audits/speedtest-replacement-2026-09-08.md)。规则数量随更新变化，以生成收据为准。
+规则数量随更新变化，以生成收据为准；来源选型依据见 [测速替换审计](audits/speedtest-replacement-2026-09-08.md)。
 地区分类依赖上游标签，不凭域名后缀推测，也不将香港、澳门、台湾记录归入大陆直连。
 
 ## 更新与发布
@@ -95,12 +96,15 @@ Sukka 数据有每日构建；spiritLHLS 仓库每日同步不代表 CSV 每日�
 ### 每日更新
 
 ```text
-上游检查 → 受影响规则重建 → manifest / diff / receipt
-→ 不变量与路由校验 → 联网审计 → Agent 审查 → PR → exact-SHA CI → 合并 main
+pipeline.py build --from-upstream   上游探测 → 受影响规则重建 → manifest / diff / 收据
+pipeline.py verify --online         不变量、收据、单元与路由测试、联网审计
+Agent 审阅 → pipeline.py promote-state → PR → exact-SHA CI → 合并 main
 ```
 
-有可比较的 ETag / Last-Modified 时据此判断变化；缺少可比较指纹时保守重建。
-上游失败或格式异常不会使用空结果替换规则。长期追加与排除写在 `Rule/Manual/`，不把旧生成文件当作新增规则来源。
+上游按 ETag / Last-Modified 判断变化；每日任务要求所有来源可达且都有可比较指纹，否则本轮不生成并记为失败。
+上游失败或格式异常不会用空结果替换规则；正文未变的规则集保持原字节，不产生只改时间戳的提交。
+每个规则集的上游输入固定在 `Rule/.sources/<名称>.json`。只改 `Rule/Manual/` 时用
+`python3 scripts/pipeline.py build --offline --rulesets <名称>.list` 按固定输入离线重建，不带入上游变化。
 
 ### 手动全量审阅
 
