@@ -26,8 +26,6 @@ jobs:
         run: python3 scripts/validate_surge_repo.py --ci
       - name: Validate Generation Receipt
         run: python3 scripts/generate_receipt.py && git diff --exit-code -- scripts/generation_receipt.json scripts/generation_receipt.md
-      - name: Validate Clash Rule Providers
-        run: python3 scripts/generate_clash_rules.py --check --validate
       - name: Test Routing Order
         run: |
           python3 -m unittest discover -s tests -p 'test_*.py'

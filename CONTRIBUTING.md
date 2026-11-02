@@ -89,7 +89,7 @@ tests/
    - `manual_audit_confirmed=true`
    - `reviewed_run_id=<刚才审阅的成功 dry-run ID>`
 
-审阅时下载 `reviewed-release` artifact，其中 JSON 的 `payload.files` 保存 Base64 编码的完整待发布文件（null 表示删除），包括 DNS Mapping 模块、规则、Clash 镜像、报告和上游状态；顶层 SHA-256 覆盖全部内容。以 run ID、仓库和基础提交绑定审阅结果。发布只接受当前 main 同一提交上成功运行的产物；main 已变化、产物过期或哈希不符时，需重新 dry-run 并审阅。
+审阅时下载 `reviewed-release` artifact，其中 JSON 的 `payload.files` 保存 Base64 编码的完整待发布文件（null 表示删除），包括 DNS Mapping 模块、规则、报告和上游状态；顶层 SHA-256 覆盖全部内容。以 run ID、仓库和基础提交绑定审阅结果。发布只接受当前 main 同一提交上成功运行的产物；main 已变化、产物过期或哈希不符时，需重新 dry-run 并审阅。
 
 如果未确认 `manual_audit_confirmed=true`，full generation 不允许发布。确认后的运行也不会直接写入 `main`：它创建唯一自动化分支和 PR，显式触发 exact-SHA CI，只有 CI 全绿后才合并。
 

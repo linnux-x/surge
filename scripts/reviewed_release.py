@@ -13,8 +13,9 @@ from zipfile import ZipFile
 from file_batch import publish_files
 
 ROOT = Path(__file__).resolve().parents[1]
+PUBLISH_DIRS = ("Rule", "Module")
 PUBLISH_PATHS = (
-    "Rule", "clash", "Module", "README.md", "scripts/diff_report.md",
+    *PUBLISH_DIRS, "README.md", "scripts/diff_report.md",
     "scripts/diff_report.json", "scripts/generation_receipt.md",
     "scripts/generation_receipt.json", "scripts/source_state.json",
 )
@@ -30,7 +31,7 @@ def allowed(name: str) -> bool:
     return (
         not path.is_absolute() and ".." not in path.parts
         and str(path) == name
-        and (name in PUBLISH_PATHS or any(name.startswith(p + "/") for p in PUBLISH_PATHS[:3]))
+        and (name in PUBLISH_PATHS or any(name.startswith(p + "/") for p in PUBLISH_DIRS))
     )
 
 

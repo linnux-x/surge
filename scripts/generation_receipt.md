@@ -10,12 +10,6 @@
 - 删除：129
 - 来源迁移：0
 
-## Clash 兼容性
-
-- 生成 payload：157597
-- 跳过 Surge 专属规则：{'URL-REGEX': 5, 'USER-AGENT': 172}
-- 保留 mihomo 扩展类型：{'DOMAIN-WILDCARD': 4, 'IP-ASN': 8, 'PROCESS-NAME': 76}
-
 ## 规则类型
 
 - DOMAIN: 3702

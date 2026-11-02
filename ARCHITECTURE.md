@@ -1,14 +1,14 @@
 # 架构、风险与行为保持重构
 
 审查日期：2026-09-27；修复验收：2026-09-28；基线：`716da36709816751da26abd22a400ea650956ba9`（PR #47）。
-范围：规则生成、增量探测、校验、来源记录、Clash 转换、发布门禁和测试。
+范围：规则生成、增量探测、校验、来源记录、发布门禁和测试（Clash 镜像已于 2026-11-02 移除，仅保留 Surge 规则）。
 外部调度由 Hermes 每天北京时间 05:00 负责；运行态检查单独保存于本地，不将私有路径或设备配置写进公开仓库。
 
 ## 架构与数据流
 
 这是一个以文件为接口的规则构建与分发流水线，没有常驻后端或数据库。
 核心脚本使用 Python 3.10+ 标准库，生成器通过 curl 下载，发布依赖 Git 和 GitHub CLI。
-30 个规则集共享 43 个上游 URL（2026-11-02 China_IP 改为 Loyalsoldier 单源；2026-11-01 新增 Sukka 港台日美四份地区流媒体与全量 stream；2026-10-30 移除全覆盖的 SukkaW Telegram IP；下文验证记录保留当时的数字）；`Rule/*.list`、`clash/*.yaml` 和公开配置路径是下游契约。
+30 个规则集共享 43 个上游 URL（2026-11-02 China_IP 改为 Loyalsoldier 单源；2026-11-01 新增 Sukka 港台日美四份地区流媒体与全量 stream；2026-10-30 移除全覆盖的 SukkaW Telegram IP；下文验证记录保留当时的数字）；`Rule/*.list` 和公开配置路径是下游契约。
 
 ```mermaid
 flowchart TD
@@ -21,14 +21,12 @@ flowchart TD
     C --> V[rule_validator.py 语法与策略校验]
     G --> R[Rule/*.list 与 Global 裁剪]
     R --> MF[manifest.py 来源索引与差异]
-    R --> CL[generate_clash_rules.py Clash 镜像]
     MF --> RC[generate_receipt.py 哈希收据]
     R --> V
     R --> RT[路由测试与联网审计]
     D[DNS Mapping 同步与校验] --> REVIEW[Agent 审阅]
     V --> REVIEW
     RT --> REVIEW
-    CL --> REVIEW
     RC --> REVIEW
     REVIEW --> PR[PR 与 exact head SHA CI]
     PR --> MAIN[main Raw URL 分发]
@@ -37,7 +35,7 @@ flowchart TD
 日常 Hermes 任务编排上述脚本，在验证与审阅成功后提升候选状态，再创建 PR。
 GitHub Actions 的 `auto-rules.yml` 只有手动入口：dry-run 生成完整快照，
 `reviewed_release.py` 按 repository、base SHA、run ID 和内容哈希恢复已审阅产物后发布。
-CI 检查语法、策略、收据、Clash、单元测试和路由结果；生产任务健康不能由 CI 或调度启用状态代替。
+CI 检查语法、策略、收据、单元测试和路由结果；生产任务健康不能由 CI 或调度启用状态代替。
 
 | 组件 | 职责与接口 |
 |---|---|
@@ -49,7 +47,6 @@ CI 检查语法、策略、收据、Clash、单元测试和路由结果；生产
 | `cidr_rules.py` | 无 I/O 的 CIDR 覆盖检测与行裁剪，生成与校验共用；按地址族和完整选项组合分组 |
 | `rule_validator.py` / `policy.py` | 共用语法校验和项目策略；保留错误顺序、行号及严格阻断语义 |
 | `manifest.py` / `generate_receipt.py` | 稳定 ID、最先保留来源、增删差异、内容哈希与兼容统计 |
-| `generate_clash_rules.py` | classical providers 和 China domain/extra 拆分；显式报告 Surge 专属类型与扩展兼容限制 |
 | `audit_rules.py` / `audit_upstream_sources.py` | 当前可达性、共享基础设施、数量检查与来源贡献；来源覆盖不能证明实际流量收益 |
 | `reviewed_release.py` | 审阅快照捕获与恢复；限定路径、拒绝符号链接、验证哈希与提交身份 |
 | 辅助脚本 | `ios_privacy_to_surge.py`、`download_cn_candidates.py`、入口回放和跨文件冲突分析，不属于日常主链路 |
@@ -73,7 +70,7 @@ CI 检查语法、策略、收据、Clash、单元测试和路由结果；生产
 | P2，已完成 | Global 依赖在探测器/生成器重复展开，实际裁剪另有一份名单 | 单一声明与展开函数；全部 41 个源、26 个规则集、配置先后顺序及 Apple_CN 例外均测试 |
 | P2，已完成 | README、脚本说明与事实来源仍称 Codex 调度 | 改为 Hermes 所有权；频率与当前运行健康以外部调度配置及带时间的执行证据为准 |
 | P2，已完成 | 风险 `DOMAIN-KEYWORD` 清单在 `rule_validator.py` 与 `validate_override_manifest.py` 各有一份，且未覆盖短子串；`siri`、`gmail`、`1drv` 曾把国内域名劫持到代理组 | 合并为 `policy.RISKY_DOMAIN_KEYWORDS` 与 `is_risky_domain_keyword()`，≤4 字符关键词默认视为风险，已审阅的短词显式列出；Manual 只对 include 要求条目级审批；`test_keyword_policy.py` 与新增路由用例覆盖 |
-| P2，部分完成 | 单文件替换不是整批事务；中途失败可能留下部分新 Rule、Global、manifest、Clash，`restore` 也逐文件写入 | **已完成**：`generate_rules.py` 在临时目录生成并校验全部 `Rule/*.list`（含 Global 裁剪），再经 `file_batch.publish_files` 整批发布，替换失败按备份回滚并保留恢复清单；`reviewed_release.py restore` 同样整批发布；`test_file_batch.py`、`test_generation_safety.py` 覆盖后序文件失败、Global 校验失败与回滚失败。**仍待处理**：manifest、Clash、收据由独立脚本依次写入，不在同一批次内 |
+| P2，部分完成 | 单文件替换不是整批事务；中途失败可能留下部分新 Rule、Global、manifest、Clash，`restore` 也逐文件写入 | **已完成**：`generate_rules.py` 在临时目录生成并校验全部 `Rule/*.list`（含 Global 裁剪），再经 `file_batch.publish_files` 整批发布，替换失败按备份回滚并保留恢复清单；`reviewed_release.py restore` 同样整批发布；`test_file_batch.py`、`test_generation_safety.py` 覆盖后序文件失败、Global 校验失败与回滚失败。**仍待处理**：manifest、收据由独立脚本依次写入，不在同一批次内 |
 | P2，部分完成 | 网络门禁和发布次序大量依赖外部 Agent 提示词；上游探测即使部分不可达也可返回 0，stdout 与候选状态是不同结构 | **已完成**：任一上游不可达时 `check_upstream_updates.py` 返回 1、`status=failed` 且拒绝写候选状态；`automation_preflight.py` 提供前置检查与备用失败收据。**仍待处理**：业务成功判据、候选提升与锁尚未封装成确定性运行器，发布次序仍由 Hermes 提示词编排 |
 | P3，部分完成 | 生成器用相对工作目录，其他脚本多根据 `__file__` 定位；库函数仍有 `sys.exit` 与日志副作用 | **已完成**：`generate_rules.py`、`generate_clash_rules.py` 改为按 `__file__` 定位仓库根目录，Clash 头部路径保持仓库相对；`test_generator_root.py` 从临时目录执行，验证不在调用方目录创建文件且 `--check` 结果不变。**仍待处理**：库函数中的 `sys.exit` 改为结果/异常对象 |
 | P3，待处理 | 多处各自解析注释/规则，路由模拟只覆盖部分客户端行为；语法白名单不能代表全部新版本 Surge 能力 | 按原文、顺序、选项建立共享解析接口；新增语法作为独立行为变化审阅，不能借重构放宽策略 |
@@ -84,6 +81,8 @@ CI 检查语法、策略、收据、Clash、单元测试和路由结果；生产
 各阶段独立验证，不改变上游作者、地域分类、策略归属或公开分发路径。
 
 ## 已完成的验证
+
+以下为 2026-09 那次重构的记录，其中 Clash 相关条目反映当时状态。
 
 - 改动前：57 项单元测试、132 项路由测试通过；改动后：69 项单元测试、132 项路由测试通过。
 - `fixtures/cidr-baseline.json` 在修改前从 `716da36` 采集 12 类输入的文件字节、日志、错误文本与依赖集合，不由新实现重录。
@@ -101,7 +100,6 @@ python3 -B tests/compare_pipeline_baseline.py
 python3 -B scripts/test_routing_order.py
 python3 -B scripts/validate_surge_repo.py
 python3 -B scripts/validate_surge_repo.py --ci
-python3 -B scripts/generate_clash_rules.py --check --validate
 python3 -B scripts/generate_receipt.py
 git diff --check
 python3 -B scripts/audit_rules.py
