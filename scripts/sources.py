@@ -68,7 +68,8 @@ _SOURCES: list[tuple[str, str, str, str | None]] = [
     # China.list
     ("SukkaW Domestic", f"{SUKKA}/non_ip/domestic.conf", "China.list", None),
     ("blackmatrix7 ChinaMaxNoIP Domain", f"{BM7}/ChinaMaxNoIP/ChinaMaxNoIP_Domain.list", "China.list", "domainset"),
-    ("Rabbit-Spec China", f"{RABBIT}/China.list", "China.list", None),
+    # Rabbit-Spec switched China.list to bare domain-set lines on 2026-11-01.
+    ("Rabbit-Spec China", f"{RABBIT}/China.list", "China.list", "domainset"),
     # China_IP.list
     ("Loyalsoldier China CIDR", "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/cncidr.txt", "China_IP.list", None),
     ("blackmatrix7 China IPs", f"{BM7}/ChinaIPs/ChinaIPs.list", "China_IP.list", None),
