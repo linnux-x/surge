@@ -1,0 +1,17 @@
+{
+  "ruleset": "Apple_CN.list",
+  "sources": [
+    {
+      "label": "SukkaW Apple CN",
+      "url": "https://ruleset.skk.moe/List/non_ip/apple_cn.conf",
+      "format": null,
+      "sha256": "8c7621815d0403a71575ad8bb9c56622d6311a746aed77ab8d8c4b9903174040"
+    },
+    {
+      "label": "SukkaW Apple CDN",
+      "url": "https://ruleset.skk.moe/List/domainset/apple_cdn.conf",
+      "format": "domainset",
+      "sha256": "5b2d507b59a0b6088da8b2d3cbe5032a4e55e3345ad0520b07c2d292adc5e25f"
+    }
+  ]
+}

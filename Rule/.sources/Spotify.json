@@ -1,0 +1,11 @@
+{
+  "ruleset": "Spotify.list",
+  "sources": [
+    {
+      "label": "blackmatrix7 Spotify",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Spotify/Spotify.list",
+      "format": null,
+      "sha256": "40909d36d6990194b8ac1e73af3f629192718b87ca003b41a2d1a7b3952c830c"
+    }
+  ]
+}

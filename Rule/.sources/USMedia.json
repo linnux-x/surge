@@ -1,0 +1,11 @@
+{
+  "ruleset": "USMedia.list",
+  "sources": [
+    {
+      "label": "SukkaW Stream US",
+      "url": "https://ruleset.skk.moe/List/non_ip/stream_us.conf",
+      "format": null,
+      "sha256": "43e94e1520edd6d1a2982ed036c409b29ae3f1f154f43426ead99149440f4111"
+    }
+  ]
+}

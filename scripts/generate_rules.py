@@ -12,6 +12,13 @@ A file whose regenerated content differs from the published one only in the
 `# UPDATED:` header is left untouched, so unchanged rulesets never produce a
 timestamp-only diff. `--check` performs the same generation without publishing
 and exits 1 when any ruleset would change.
+
+Every published ruleset is paired with `Rule/.sources/<name>.json`, which pins
+the converted upstream inputs by SHA-256; online runs keep the raw responses in
+a local cache (see source_cache.py). `--offline` rebuilds the selected rulesets
+from exactly those pinned inputs, so a Manual edit can be regenerated without
+pulling in upstream drift. `--rulesets` selects targets instead of the
+CHANGED_RULESETS environment variable.
 """
 
 import argparse
@@ -39,6 +46,7 @@ from sources import (
 from cidr_rules import prune_cidr_lines
 from rule_validator import validate_rule_file
 from file_batch import publish_files
+import source_cache
 # Re-export existing helper names for callers importing from generate_rules.
 from source_transforms import (
     clean_source, convert_domainset, convert_cidr, filter_candidates,
@@ -64,6 +72,9 @@ CURL_OPTS = [
 FETCH_SUBPROCESS_TIMEOUT = 120  # hard backstop around the curl call itself
 UPDATED_PREFIX = "# UPDATED:"
 HEADER_LINES = 6  # NAME, AUTHOR, REPO, UPDATED, FORMAT, TOTAL
+SNAPSHOT_DIR = ".sources"
+# Set by main(--offline): read pinned snapshots from the local cache, never the network.
+OFFLINE = False
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────
@@ -186,7 +197,39 @@ def fetch_remote_source(url: str) -> tuple[str, ...]:
 
 
 def fetch_source(url: str, source_format: Optional[str]) -> list[str]:
-    return list(fetch_remote_source(url))
+    raw = list(fetch_remote_source(url))
+    try:
+        source_cache.put(url, raw, source_cache.lines_sha256(convert_source(raw, source_format)))
+    except (OSError, ValueError) as exc:
+        # The cache only enables later offline runs; it must not fail generation.
+        print(f"  Warning: could not cache snapshot of {url}: {exc}")
+    return raw
+
+
+def snapshot_path(rule_dir: Path, target_name: str) -> Path:
+    return rule_dir / SNAPSHOT_DIR / f"{target_name.rsplit('.', 1)[0]}.json"
+
+
+def pinned_sources(target_name: str) -> dict[tuple[str, str, Optional[str]], str]:
+    """Return {(label, url, format): converted sha256} recorded for the published ruleset."""
+    path = snapshot_path(RULE_DIR, target_name)
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except OSError as exc:
+        raise source_cache.SnapshotMissing(
+            f"{target_name} has no {SNAPSHOT_DIR} record; run an online generation of it first") from exc
+    return {(s["label"], s["url"], s["format"]): s["sha256"] for s in data["sources"]}
+
+
+def load_source(target_name: str, pins: Optional[dict], source: Tuple[str, str, Optional[str]]) -> tuple[list[str], Optional[str]]:
+    """Fetch a source online, or return its pinned snapshot and expected hash offline."""
+    source_name, source_url, source_format = source
+    if pins is None:
+        return fetch_source(source_url, source_format), None
+    if source not in pins:
+        raise source_cache.SnapshotMissing(
+            f"{target_name}: source {source_name} is not pinned; run an online generation of it first")
+    return source_cache.get(source_url, pins[source]), pins[source]
 
 
 def process_rule(target_name: str, display_name: str, sources: list[Tuple[str, str, Optional[str]]]):
@@ -196,6 +239,8 @@ def process_rule(target_name: str, display_name: str, sources: list[Tuple[str, s
     exclude_file = MANUAL_DIR / f"{filename_no_ext}.exclude.txt"
 
     lines: list[str] = []
+    pins = pinned_sources(target_name) if OFFLINE else None
+    records: list[dict] = []
 
     # Manual rules first (highest priority)
     manual_file = MANUAL_DIR / f"{filename_no_ext}.txt"
@@ -206,10 +251,16 @@ def process_rule(target_name: str, display_name: str, sources: list[Tuple[str, s
 
     # Upstream sources
     for source_name, source_url, source_format in sources:
-        raw = fetch_source(source_url, source_format)
+        raw, expected = load_source(target_name, pins, (source_name, source_url, source_format))
         converted = convert_source(raw, source_format)
         if not converted:
             raise ValueError(f"Empty upstream after cleaning: {source_name} ({source_url})")
+        converted_sha = source_cache.lines_sha256(converted)
+        if expected is not None and converted_sha != expected:
+            print(f"  Note: {source_name} converts differently under the current code; "
+                  "its pin will follow the new conversion")
+        records.append({"label": source_name, "url": source_url, "format": source_format,
+                        "sha256": converted_sha})
 
         filtered = filter_candidates(converted, exclude_file)
 
@@ -264,6 +315,10 @@ def process_rule(target_name: str, display_name: str, sources: list[Tuple[str, s
         target_path.replace(destination)
     finally:
         target_path.unlink(missing_ok=True)
+    record = snapshot_path(destination.parent, target_name)
+    record.parent.mkdir(parents=True, exist_ok=True)
+    record.write_text(json.dumps({"ruleset": target_name, "sources": records}, indent=2) + "\n",
+                      encoding="utf-8")
 
 
 def prune_global_first_match_overlaps():
@@ -313,25 +368,35 @@ def prune_global_first_match_overlaps():
 # ── Main ────────────────────────────────────────────────────────────────────
 
 def main(argv: list[str] | None = None) -> int:
-    global RULE_DIR
+    global RULE_DIR, OFFLINE
     parser = argparse.ArgumentParser(description="Generate Surge rulesets from upstream sources.")
     parser.add_argument("--check", action="store_true",
                         help="generate without publishing; exit 1 if any ruleset would change")
+    parser.add_argument("--offline", action="store_true",
+                        help="rebuild from the snapshots pinned in Rule/.sources instead of the network")
+    parser.add_argument("--rulesets", nargs="+", metavar="NAME",
+                        help="rulesets to rebuild, e.g. SocialMedia.list (default: CHANGED_RULESETS)")
     args = parser.parse_args([] if argv is None else argv)
 
     RULE_DIR.mkdir(parents=True, exist_ok=True)
     MANUAL_DIR.mkdir(parents=True, exist_ok=True)
 
     is_workflow_dispatch = os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch"
-    changed_raw = os.environ.get("CHANGED_RULESETS", "[]")
-    try:
-        changed_rulesets: list[str] = json.loads(changed_raw)
-    except (json.JSONDecodeError, TypeError) as exc:
-        raise ValueError("CHANGED_RULESETS must be a JSON array of known ruleset names") from exc
-    if not isinstance(changed_rulesets, list) or any(
-        not isinstance(name, str) or name not in RULE_SPECS for name in changed_rulesets
-    ):
-        raise ValueError("CHANGED_RULESETS must be a JSON array of known ruleset names")
+    if args.rulesets is not None:
+        unknown = [name for name in args.rulesets if name not in RULE_SPECS]
+        if unknown:
+            raise ValueError(f"Unknown rulesets: {', '.join(unknown)}")
+        changed_rulesets: list[str] = args.rulesets
+    else:
+        changed_raw = os.environ.get("CHANGED_RULESETS", "[]")
+        try:
+            changed_rulesets = json.loads(changed_raw)
+        except (json.JSONDecodeError, TypeError) as exc:
+            raise ValueError("CHANGED_RULESETS must be a JSON array of known ruleset names") from exc
+        if not isinstance(changed_rulesets, list) or any(
+            not isinstance(name, str) or name not in RULE_SPECS for name in changed_rulesets
+        ):
+            raise ValueError("CHANGED_RULESETS must be a JSON array of known ruleset names")
 
     # Global is stored after overlap pruning. Re-pruning that old file cannot
     # restore rules removed by a service update; regenerate from its sources.
@@ -347,33 +412,51 @@ def main(argv: list[str] | None = None) -> int:
         staged = Path(temporary)
         for path in destination.glob('*.list'):
             shutil.copy2(path, staged / path.name)
-        processed = False
+        if (destination / SNAPSHOT_DIR).is_dir():
+            shutil.copytree(destination / SNAPSHOT_DIR, staged / SNAPSHOT_DIR)
+        processed: list[str] = []
         try:
             RULE_DIR = staged
+            OFFLINE = args.offline
             for target_name, (display_name, sources) in RULE_SPECS.items():
                 if should_process(target_name, selected_rulesets, is_workflow_dispatch):
                     print(f"Processing {target_name} ...")
                     process_rule(target_name, display_name, sources)
-                    processed = True
+                    processed.append(target_name)
             if processed:
                 print("Pruning Global.list first-match overlaps ...")
                 prune_global_first_match_overlaps()
         finally:
             RULE_DIR = destination
+            OFFLINE = False
         changed: dict[Path, bytes] = {}
-        if processed:
-            for p in sorted(staged.glob('*.list')):
-                current = destination / p.name
-                new = p.read_bytes()
-                if content_changed(current.read_bytes() if current.exists() else None, new):
-                    changed[current] = new
+        pins: dict[Path, bytes] = {}
+        backfills: list[str] = []
+        for p in sorted(staged.glob('*.list')) if processed else ():
+            current = destination / p.name
+            new = p.read_bytes()
+            record = snapshot_path(destination, p.name)
+            is_changed = content_changed(current.read_bytes() if current.exists() else None, new)
+            if is_changed:
+                changed[current] = new
+            if p.name not in processed:
+                # Only the Global post-pass touches unprocessed files; their pins stay as published.
+                continue
+            if is_changed:
+                pins[record] = snapshot_path(staged, p.name).read_bytes()
+            elif not record.exists():
+                # Backfill: the unchanged published file was reproduced from these inputs.
+                pins[record] = snapshot_path(staged, p.name).read_bytes()
+                backfills.append(record.name)
         if args.check:
             for path in changed:
                 print(f"Would change: {path.name}")
+            for name in backfills:
+                print(f"Would record snapshot: {name}")
             print(f"Check: {len(changed)} ruleset(s) would change.")
             return 1 if changed else 0
-        if changed:
-            publish_files(destination, changed)
+        if changed or pins:
+            publish_files(destination, {**changed, **pins})
 
     print("Done.")
     return 0

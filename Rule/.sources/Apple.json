@@ -1,0 +1,11 @@
+{
+  "ruleset": "Apple.list",
+  "sources": [
+    {
+      "label": "blackmatrix7 Apple",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All_No_Resolve.list",
+      "format": null,
+      "sha256": "59e8848ee6c21774a102fe78eafbbc7fee9d2108beb60725ee74d70a4fcc9eb2"
+    }
+  ]
+}

@@ -68,7 +68,7 @@ class GenerationTimestampTests(unittest.TestCase):
             self.assertEqual(self.run_main(root, ['DOMAIN,a.example'], 6, ['--check']), 0)
             self.assertEqual(self.run_main(root, ['DOMAIN,b.example'], 6, ['--check']), 1)
             self.assertEqual((root / 'AI.list').read_bytes(), published)
-            self.assertEqual(sorted(p.name for p in root.iterdir() if p.name != 'Manual'), ['AI.list'])
+            self.assertEqual(sorted(p.name for p in root.iterdir() if p.name not in ('Manual', '.sources')), ['AI.list'])
 
 
 if __name__ == '__main__':

@@ -1,0 +1,11 @@
+{
+  "ruleset": "Disney.list",
+  "sources": [
+    {
+      "label": "blackmatrix7 Disney",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Disney/Disney.list",
+      "format": null,
+      "sha256": "14943fb20d95939adae686c060f5bb9622a8bb1bb8abbf10c5e616dd0bbdf6aa"
+    }
+  ]
+}

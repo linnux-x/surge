@@ -35,6 +35,7 @@ Rabbit-Spec 来源当前明确保留，用于补充 AIGC、China 覆盖；不要
 | 模块 | 作用 |
 |---|---|
 | `exclusions.py` | 显式类型排除合同；域名身份覆盖选项变体，其他规则保留整行语义 |
+| `source_cache.py` | 仓库外的上游原始快照缓存（默认 `~/.cache/linnux-surge/sources`，可用 `SURGE_SOURCE_CACHE` 覆盖），按转换后内容哈希取回，供 `generate_rules.py --offline` 使用 |
 | `file_batch.py` | 暂存完整批次；逐文件替换失败时回滚，回滚失败保留恢复目录 |
 | `source_transforms.py` | 生成器与贡献审计共用的清洗、格式转换、排除与服务过滤；不下载或写入产物 |
 | `sources.py` | 所有上游 URL、规则集规格及 Global 重建/裁剪依赖的单一来源 |
@@ -47,12 +48,13 @@ Rabbit-Spec 来源当前明确保留，用于补充 AIGC、China 覆盖；不要
 
 ## 脚本产物的入库规则
 
-三个产物入库、一个不入库，规则不是随意的：
+四类产物入库、一个不入库，规则不是随意的：
 
 | 文件 | 是否入库 | 原因 |
 |---|---|---|
 | `source_state.json` | ✅ | 上游 Last-Modified / ETag 基线。CI 靠它判断"哪些上游变了"，不入库则每次全量重下 |
 | `diff_report.*` / `generation_receipt.*` | ✅ | 变更审阅材料与确定性发布收据；入库才能复核规则增删、来源与类型摘要 |
+| `Rule/.sources/*.json` | ✅ | 每个已发布规则集所用上游（转换后）的 SHA-256。`--offline` 据此从本地缓存取回完全相同的输入；只随规则文件内容变化而更新，或在缺失时回填 |
 | `audit_report.json` | ❌ | 联网审计的即时结果，随上游可达性和网络状况波动，入库只会制造无意义的 diff 噪声。已在 `.gitignore` 排除 |
 
 判断标准：**跨运行需要保持的状态、以及需要被人审阅的变更记录才入库；每次运行都会变且只反映当时环境的结果不入库。**
@@ -69,6 +71,10 @@ python3 scripts/check_upstream_updates.py
 CHANGED_RULESETS='["AI.list", "Global.list"]' python3 scripts/generate_rules.py
 # 正文未变的规则集保持原字节（不刷新 # UPDATED），不会产生只改时间戳的差异。
 # 加 --check 只生成不发布，有规则集会变化时退出码为 1。
+
+# 只改了 Rule/Manual 时：按已发布版本固定的上游快照离线重建，不带入上游漂移。
+# 需要本机缓存里有对应快照（任一联网生成都会写入）；缺失时报错，不会联网。
+python3 scripts/generate_rules.py --offline --rulesets SocialMedia.list
 
 # 3. 生成 manifest 和 diff 报告
 python3 scripts/manifest.py

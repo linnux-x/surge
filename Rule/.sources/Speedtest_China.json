@@ -1,0 +1,17 @@
+{
+  "ruleset": "Speedtest_China.list",
+  "sources": [
+    {
+      "label": "SukkaW Speedtest Servers China",
+      "url": "https://raw.githubusercontent.com/SukkaLab/speedtest-net-servers-dist/master/servers.json",
+      "format": "speedtest-json-cn",
+      "sha256": "2da079e182b1c8d8af5da7b424cb80f394b350cdffa4460506b929850058da08"
+    },
+    {
+      "label": "spiritLHLS Speedtest.cn China",
+      "url": "https://raw.githubusercontent.com/spiritLHLS/speedtest.cn-CN-ID/main/CN.csv",
+      "format": "speedtest-cn-csv",
+      "sha256": "4842db39f47ba6a7d286d0891717e1d9e775821d844214545973c041d446e31a"
+    }
+  ]
+}

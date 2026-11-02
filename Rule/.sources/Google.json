@@ -1,0 +1,11 @@
+{
+  "ruleset": "Google.list",
+  "sources": [
+    {
+      "label": "blackmatrix7 Google",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list",
+      "format": null,
+      "sha256": "11142b76e2b6ece8cb2bade513a9bb1f27773709f171aae3b1dca3ec710553a7"
+    }
+  ]
+}

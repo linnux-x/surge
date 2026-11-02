@@ -1,0 +1,29 @@
+{
+  "ruleset": "SocialMedia.list",
+  "sources": [
+    {
+      "label": "blackmatrix7 Discord",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Discord/Discord.list",
+      "format": null,
+      "sha256": "95f2046a7e62f2909a1c8a59f8bd6242929ba2f5af8a865f69884d1a53706add"
+    },
+    {
+      "label": "blackmatrix7 Facebook",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Facebook/Facebook.list",
+      "format": null,
+      "sha256": "8976a76b584b417bdbd4e0ae7a4059a958ce04e0bf38a3582560a69dc413ce03"
+    },
+    {
+      "label": "blackmatrix7 Instagram",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Instagram/Instagram.list",
+      "format": null,
+      "sha256": "ba701d17e6231c5e0616c5dd322cbbd6a03ca93c1f20e066c349528f47c84217"
+    },
+    {
+      "label": "blackmatrix7 Twitter",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitter/Twitter.list",
+      "format": null,
+      "sha256": "7a60cca0c2549fff361638cf2d2be260eed508966f3d734c8e28a0ea2a9a538e"
+    }
+  ]
+}

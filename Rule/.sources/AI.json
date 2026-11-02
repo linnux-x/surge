@@ -1,0 +1,23 @@
+{
+  "ruleset": "AI.list",
+  "sources": [
+    {
+      "label": "SukkaW AI",
+      "url": "https://ruleset.skk.moe/List/non_ip/ai.conf",
+      "format": null,
+      "sha256": "f308b16ac780f6a217c8c520774baa97801d554da8bbb0aac3ed5936e8cc4365"
+    },
+    {
+      "label": "Rabbit-Spec AIGC",
+      "url": "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list",
+      "format": null,
+      "sha256": "e9ff59bf7bb01da792e0e3913eeb615ed87b8a43b58c11cdeae59c8bfe34b5b3"
+    },
+    {
+      "label": "ConnersHua AI",
+      "url": "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/AI.list",
+      "format": null,
+      "sha256": "f77166a044ddb0d341ce92b3445214d7a804cfe3445b628c541e8421a703700a"
+    }
+  ]
+}

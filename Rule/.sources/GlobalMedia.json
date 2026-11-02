@@ -1,0 +1,17 @@
+{
+  "ruleset": "GlobalMedia.list",
+  "sources": [
+    {
+      "label": "blackmatrix7 GlobalMedia",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalMedia/GlobalMedia_All_No_Resolve.list",
+      "format": null,
+      "sha256": "d4bca0895468d053d0ed62ebee89c71129fbc1d61c7e0a80a455ae549b2cf9e7"
+    },
+    {
+      "label": "SukkaW Stream",
+      "url": "https://ruleset.skk.moe/List/non_ip/stream.conf",
+      "format": null,
+      "sha256": "dbd9fea53c2983a3c16b1a0a936a56535a9b4ca2607bc9d2c30b8f13fa172c35"
+    }
+  ]
+}

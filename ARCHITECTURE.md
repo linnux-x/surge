@@ -44,6 +44,7 @@ CI 检查语法、策略、收据、单元测试和路由结果；生产任务�
 | `check_upstream_updates.py` | 8 线程探测，HEAD → Range GET → full GET；stdout 输出 `rulesets` 等摘要，`--state-out` 单独写 URL 索引候选状态 |
 | `source_transforms.py` / `speedtest_sources.py` | 清洗、六种格式转换、精确排除和项目护栏；测速按来源国家/省份字段分类 |
 | `generate_rules.py` | Manual 优先、上游顺序合并、去重、域名/CIDR 裁剪、校验与单文件替换；最后裁剪 Global |
+| `source_cache.py` | 仓库外上游原始快照缓存；`Rule/.sources/*.json` 按转换后 SHA-256 固定每个规则集的输入，`--offline` 据此精确重建 |
 | `cidr_rules.py` | 无 I/O 的 CIDR 覆盖检测与行裁剪，生成与校验共用；按地址族和完整选项组合分组 |
 | `rule_validator.py` / `policy.py` | 共用语法校验和项目策略；保留错误顺序、行号及严格阻断语义 |
 | `manifest.py` / `generate_receipt.py` | 稳定 ID、最先保留来源、增删差异、内容哈希与兼容统计 |
@@ -54,6 +55,7 @@ CI 检查语法、策略、收据、单元测试和路由结果；生产任务�
 ## 行为契约
 
 - Manual 不受上游 exclude 文件过滤；exclude 精确匹配，去重保留最先出现的文本及来源。
+- `Rule/.sources/<name>.json` 只在规则文件内容变化时随之更新，缺失时回填；内容不变时不移动固定的快照。`--offline` 不访问网络，缺快照即失败；校验器要求记录与 `sources.py` 的来源一致（2026-11-02 起）。
 - 重新生成后若只有 `# UPDATED:` 头部不同，保留已发布文件原字节；`UPDATED` 表示正文最后一次变化的时间（2026-11-02 起）。
 - 生成顺序仍来自 `RULE_SPECS`，不依赖集合迭代顺序；空增量选择不生成规则。
 - 22 个规则集参与 Global 精确文本裁剪；`Apple_CN.list` 额外触发重建，但不参与裁剪。两者不可直接合并成同一语义。

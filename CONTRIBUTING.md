@@ -97,7 +97,7 @@ tests/
 
 - **One concern per PR.** Bug fix, feature, and refactor in separate PRs.
 - **Test your changes.** Add test cases if you're changing routing logic.
-- **Don't change `Rule/*.list` directly.** These are auto-generated. Edit `scripts/` or `Rule/Manual/` instead.
+- **Don't change `Rule/*.list` directly.** These are auto-generated. Edit `scripts/` or `Rule/Manual/` instead, then rebuild only the affected rulesets with `python3 scripts/generate_rules.py --offline --rulesets <Name>.list` so the PR carries no upstream drift.
 - **Don't commit private configuration.** Public/private boundaries are defined in `SOURCE_OF_TRUTH.md`; keep real device configs, credentials, subscriptions, MITM material, and private infrastructure out of this repo.
 - **Don't add third-party dependencies.** All scripts must use Python stdlib only.
 - **Update `scripts/README.md`** if you add new scripts.
