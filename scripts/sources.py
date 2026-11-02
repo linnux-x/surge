@@ -71,9 +71,11 @@ _SOURCES: list[tuple[str, str, str, str | None]] = [
     # Rabbit-Spec switched China.list to bare domain-set lines on 2026-11-01.
     ("Rabbit-Spec China", f"{RABBIT}/China.list", "China.list", "domainset"),
     # China_IP.list
+    # Single source since 2026-11-02: Rabbit-Spec ChinaCIDR was identical to it,
+    # and blackmatrix7 ChinaIPs only added ~13M addresses (mostly 43.0.0.0/10 and
+    # 8.x cloud ranges, including overseas regions) absent from both
+    # gaoyifan/china-operator-ip and misakaio/chnroutes2, which routed them DIRECT.
     ("Loyalsoldier China CIDR", "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/cncidr.txt", "China_IP.list", None),
-    ("blackmatrix7 China IPs", f"{BM7}/ChinaIPs/ChinaIPs.list", "China_IP.list", None),
-    ("Rabbit-Spec China CIDR", f"{RABBIT}/ChinaCIDR.list", "China_IP.list", None),
     # ChinaMedia.list
     ("blackmatrix7 ChinaMedia", f"{BM7}/ChinaMedia/ChinaMedia.list", "ChinaMedia.list", None),
     # Disney.list

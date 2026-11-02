@@ -29,12 +29,6 @@
     "last_modified": null,
     "source_available": true
   },
-  "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/ChinaCIDR.list": {
-    "content_length": "243712",
-    "etag": "\"449045fb090dbcae9904bb3914b4025700b9fdd579dc0e8c5505e94d333b595c\"",
-    "last_modified": null,
-    "source_available": true
-  },
   "https://raw.githubusercontent.com/RocM301/Apple-Rule/refs/heads/main/Apple-AI.list": {
     "content_length": "717",
     "etag": "\"6c4d73789bd4e635bd60c9b75780946382284dc4f0e6ab13ee61065cfa68f109\"",
@@ -62,12 +56,6 @@
   "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All_No_Resolve.list": {
     "content_length": "51378",
     "etag": "\"b84ca096982a5d7b066f5807d84ac1f4a280c0becc89f631a625d2f043d1c082\"",
-    "last_modified": null,
-    "source_available": true
-  },
-  "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs.list": {
-    "content_length": "704956",
-    "etag": "\"33196eaf6c8293f43e3f6e8513220e0b9aa9f99693071a74dbeb4c9a02b4d6b1\"",
     "last_modified": null,
     "source_available": true
   },
