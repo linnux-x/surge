@@ -12,12 +12,8 @@ cd surge
 # 2. No dependencies needed — Python 3.10+ stdlib only
 python3 --version  # should be 3.10+
 
-# 3. Run the test suite
-python3 -m unittest discover -s tests -p 'test_*.py'
-python3 scripts/test_routing_order.py
-
-# 4. Run validation
-python3 scripts/validate_surge_repo.py
+# 3. Run the same checks as CI (validation, receipt, unit and routing tests)
+python3 scripts/pipeline.py verify
 ```
 
 ## What You Can Contribute
@@ -34,11 +30,14 @@ python3 scripts/validate_surge_repo.py
 
 ```
 scripts/
+├── pipeline.py                ← Entry point: upstream / build / verify / promote-state
 ├── sources.py                 ← Single source of truth for upstream URLs
 ├── check_upstream_updates.py  ← Detects changed upstreams (parallel HEAD)
 ├── generate_rules.py          ← Downloads, merges, cleans, validates rules
-│   └── rule_validator.py      ← Shared validation engine
+│   ├── rule_validator.py      ← Shared validation engine
+│   └── source_cache.py        ← Local upstream snapshots for --offline rebuilds
 ├── manifest.py                ← Generates manifests + diffs against git HEAD
+├── generate_receipt.py        ← Deterministic generation receipt
 ├── validate_surge_repo.py     ← Repository-level invariants
 ├── audit_rules.py             ← Post-generation online audits
 ├── test_routing_order.py      ← Routing simulation tests
@@ -56,8 +55,7 @@ tests/
 2. **Make changes:** Edit the relevant scripts
 3. **Test locally:**
    ```bash
-   python3 scripts/test_routing_order.py
-   python3 scripts/validate_surge_repo.py
+   python3 scripts/pipeline.py verify
    ```
 4. **Format:** No formatter required — keep code readable and consistent with existing style
 5. **Commit:** Clear, concise commit messages
@@ -74,10 +72,8 @@ tests/
 
 1. 在 GitHub Actions 手动运行 `Auto-Surge-Rules`，设置 `dry_run=true`。
 2. 审查 Actions 输出中的：
-   - `Generate Rules`
-   - `Generate Manifests & Diff`
-   - `Validate Repository Invariants`
-   - `Online Audit`
+   - `Generate Rules and Derived Artifacts`（规则、manifest、diff 与收据）
+   - `Validate, Test and Audit`（含联网审计）
 3. 重点检查：
    - `Rule/*.list` 是否出现异常大幅增删；
    - `scripts/diff_report.md` 是否符合预期；
@@ -97,7 +93,7 @@ tests/
 
 - **One concern per PR.** Bug fix, feature, and refactor in separate PRs.
 - **Test your changes.** Add test cases if you're changing routing logic.
-- **Don't change `Rule/*.list` directly.** These are auto-generated. Edit `scripts/` or `Rule/Manual/` instead, then rebuild only the affected rulesets with `python3 scripts/generate_rules.py --offline --rulesets <Name>.list` so the PR carries no upstream drift.
+- **Don't change `Rule/*.list` directly.** These are auto-generated. Edit `scripts/` or `Rule/Manual/` instead, then rebuild only the affected rulesets with `python3 scripts/pipeline.py build --offline --rulesets <Name>.list` so the PR carries no upstream drift.
 - **Don't commit private configuration.** Public/private boundaries are defined in `SOURCE_OF_TRUTH.md`; keep real device configs, credentials, subscriptions, MITM material, and private infrastructure out of this repo.
 - **Don't add third-party dependencies.** All scripts must use Python stdlib only.
 - **Update `scripts/README.md`** if you add new scripts.

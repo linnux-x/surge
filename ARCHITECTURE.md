@@ -10,6 +10,8 @@
 核心脚本使用 Python 3.10+ 标准库，生成器通过 curl 下载，发布依赖 Git 和 GitHub CLI。
 30 个规则集共享 43 个上游 URL（2026-11-02 China_IP 改为 Loyalsoldier 单源；2026-11-01 新增 Sukka 港台日美四份地区流媒体与全量 stream；2026-10-30 移除全覆盖的 SukkaW Telegram IP；下文验证记录保留当时的数字）；`Rule/*.list` 和公开配置路径是下游契约。
 
+`pipeline.py` 按下图顺序编排探测、生成与派生产物，CI 与每日任务均通过它运行。
+
 ```mermaid
 flowchart TD
     S[sources.py 上游规格与依赖] --> U[check_upstream_updates.py 并发探测]
@@ -32,7 +34,7 @@ flowchart TD
     PR --> MAIN[main Raw URL 分发]
 ```
 
-日常 Hermes 任务编排上述脚本，在验证与审阅成功后提升候选状态，再创建 PR。
+日常 Hermes 任务调用 `pipeline.py build --from-upstream` 与 `verify --online`，审阅通过后用 `promote-state` 提升候选状态，再创建 PR；分支、PR 与合并仍由任务编排。
 GitHub Actions 的 `auto-rules.yml` 只有手动入口：dry-run 生成完整快照，
 `reviewed_release.py` 按 repository、base SHA、run ID 和内容哈希恢复已审阅产物后发布。
 CI 检查语法、策略、收据、单元测试和路由结果；生产任务健康不能由 CI 或调度启用状态代替。

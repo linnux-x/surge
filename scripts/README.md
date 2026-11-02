@@ -11,11 +11,13 @@
 
 手动触发 GitHub Actions `workflow_dispatch` 会进行 full generation。发布门禁的完整流程以 `CONTRIBUTING.md` 为准：先 `dry_run=true` 审查生成结果、manifest diff 和在线审计输出，审计通过后才允许 `manual_audit_confirmed=true` 发布。
 
-Rabbit-Spec 来源当前明确保留，用于补充 AIGC、China 覆盖；不要在普通源清理中移除。其 ChinaCIDR 与 Loyalsoldier cncidr 完全相同，已于 2026-11-02 随 China_IP 单源化移除。其中 China.list 自 2026-11-01 起改为裸域名（domain-set）格式，`sources.py` 按 `domainset` 读取。
+Rabbit-Spec 来源明确保留，用于补充 AIGC、China 覆盖；不要在普通源清理中移除。其 China.list 为裸域名（domain-set）格式，`sources.py` 按 `domainset` 读取。
 
 ---
 
 ## 流水线顺序
+
+`pipeline.py` 按下表顺序调用各脚本；日常不需要逐个手动运行。
 
 | 步骤 | 脚本 | 作用 |
 |---:|---|---|
@@ -87,15 +89,12 @@ python3 scripts/pipeline.py promote-state
 python3 scripts/check_upstream_updates.py
 
 # 2. 生成规则（服务规则变化时，生成器也会自动补充 Global 依赖）
-CHANGED_RULESETS='["AI.list", "Global.list"]' python3 scripts/generate_rules.py
-# 正文未变的规则集保持原字节（不刷新 # UPDATED），不会产生只改时间戳的差异。
-# 加 --check 只生成不发布，有规则集会变化时退出码为 1。
-
-# 只改了 Rule/Manual 时：按已发布版本固定的上游快照离线重建，不带入上游漂移。
-# 需要本机缓存里有对应快照（任一联网生成都会写入）；缺失时报错，不会联网。
+#    正文未变的规则集保持原字节；--check 只生成不发布，有变化时退出码为 1
+#    --offline 按 Rule/.sources 固定的快照离线重建（需本机缓存，缺失时报错，不会联网）
+python3 scripts/generate_rules.py --rulesets AI.list
 python3 scripts/generate_rules.py --offline --rulesets SocialMedia.list
 
-# 3. 生成 manifest 和 diff 报告
+# 3. 生成 manifest、diff 报告和收据（规则文件有变化时才需要）
 python3 scripts/manifest.py
 python3 scripts/manifest.py --diff
 python3 scripts/generate_receipt.py
@@ -106,7 +105,7 @@ python3 scripts/validate_surge_repo.py
 # 5. 联网审计
 python3 scripts/audit_rules.py
 
-# 7. 查看跨文件策略冲突（--summary 为 CI 信息性输出同款）
+# 6. 查看跨文件策略冲突（--summary 为 CI 信息性输出同款）
 python3 scripts/cross_file_conflicts.py
 python3 scripts/cross_file_conflicts.py --summary
 
@@ -171,8 +170,7 @@ spiritLHLS 的 CN.csv 补充；CSV 只接受大陆省份白名单和 `active=1` 
 不会凭域名后缀猜测地区，不会把香港、澳门、台湾记录归入大陆直连。
 
 Sukka JSON 地址同时映射两份规则，其更新会触发两份规则及 Global 重建；同一次生成
-只拉取该 JSON 一次。HTTP 失败、格式错误或筛选为空均阻断替换，不再使用 Kelee 快照。
-Kelee 两个 URL 和专用快照已移除，公开规则 URL 与 Agent 审查保留；当前由 Hermes 调度，归属见 `SOURCE_OF_TRUTH.md`。
+只拉取该 JSON 一次。HTTP 失败、格式错误或筛选为空均阻断替换。
 
 
 ## Hermes 前置检查与失败状态
@@ -188,7 +186,7 @@ python3 -B scripts/automation_preflight.py \
   --fallback-receipt /path/to/hermes-state/preflight.json
 ```
 
-可选 `--disabled-scheduler-config` 检查旧 Codex 任务已 PAUSED，
+可选 `--disabled-scheduler-config` 检查已停用的旧调度任务仍为 PAUSED，
 `--contract-script` 验证后续契约校验入口可读（此时不执行契约检查）。
 状态目录由任务安装时准备。Hermes 的 script 入口必须位于其允许的 scripts 目录；
 将此模块与调用 `run(Config(...))` 的本地路径适配器一起部署到可访问的位置。
@@ -208,8 +206,9 @@ python3 -B scripts/automation_preflight.py \
 
 上游探测 JSON 的 `status` 为 `unchanged`、`changed` 或 `failed`。任何源不可达时退出 1，
 `unavailable_sources`/`unavailable_urls` 报告失败；`unknown_timestamp_sources` 只统计可达但没有
-版本标记的源，此类源仍触发保守重建。失败不写 `--write-state` 或 `--state-out`，旧状态保留。
-调用方必须检查退出码，不能仅判断 `changed=false`。调度时间仍为每日北京时间 05:00。
+版本标记的源，探测器本身会对其保守重建，而 `pipeline.py --require-known-timestamps`（每日任务使用）
+直接判为失败。失败不写 `--write-state` 或 `--state-out`，旧状态保留。
+调用方必须检查退出码，不能仅判断 `changed=false`；`pipeline.py` 已统一处理这些判据。
 
 规则生成先在临时目录完成整个选中批次及 Global 裁剪，再发布；某个来源或校验失败时，所有
 旧规则保留。`reviewed_release.py restore` 采用相同批次写入工具，发布前暂存完整内容和旧文件。
