@@ -19,10 +19,8 @@ def sha256(path: Path) -> str:
 
 
 def active_rules(path: Path) -> list[str]:
-    return [
-        line.strip() for line in path.read_text(encoding="utf-8").splitlines()
-        if line.strip() and not line.lstrip().startswith("#")
-    ]
+    from rule_validator import non_comment_rules
+    return non_comment_rules(path.read_text(encoding="utf-8").splitlines())
 
 
 def source_attribution() -> Counter[str]:
