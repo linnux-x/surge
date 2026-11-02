@@ -45,6 +45,7 @@ CI 检查语法、策略、收据、单元测试和路由结果；生产任务�
 | `source_transforms.py` / `speedtest_sources.py` | 清洗、六种格式转换、精确排除和项目护栏；测速按来源国家/省份字段分类 |
 | `generate_rules.py` | Manual 优先、上游顺序合并、去重、域名/CIDR 裁剪、校验与单文件替换；最后裁剪 Global |
 | `source_cache.py` | 仓库外上游原始快照缓存；`Rule/.sources/*.json` 按转换后 SHA-256 固定每个规则集的输入，`--offline` 据此精确重建 |
+| `pipeline.py` | 确定性运行器：`upstream`（不可达即失败）、`build`（规则变化时才按序更新派生产物）、`verify`（与 CI 相同，收据检查只读）、`promote-state` |
 | `cidr_rules.py` | 无 I/O 的 CIDR 覆盖检测与行裁剪，生成与校验共用；按地址族和完整选项组合分组 |
 | `rule_validator.py` / `policy.py` | 共用语法校验和项目策略；保留错误顺序、行号及严格阻断语义 |
 | `manifest.py` / `generate_receipt.py` | 稳定 ID、最先保留来源、增删差异、内容哈希与兼容统计 |
@@ -73,7 +74,7 @@ CI 检查语法、策略、收据、单元测试和路由结果；生产任务�
 | P2，已完成 | README、脚本说明与事实来源仍称 Codex 调度 | 改为 Hermes 所有权；频率与当前运行健康以外部调度配置及带时间的执行证据为准 |
 | P2，已完成 | 风险 `DOMAIN-KEYWORD` 清单在 `rule_validator.py` 与 `validate_override_manifest.py` 各有一份，且未覆盖短子串；`siri`、`gmail`、`1drv` 曾把国内域名劫持到代理组 | 合并为 `policy.RISKY_DOMAIN_KEYWORDS` 与 `is_risky_domain_keyword()`，≤4 字符关键词默认视为风险，已审阅的短词显式列出；Manual 只对 include 要求条目级审批；`test_keyword_policy.py` 与新增路由用例覆盖 |
 | P2，部分完成 | 单文件替换不是整批事务；中途失败可能留下部分新 Rule、Global、manifest、Clash，`restore` 也逐文件写入 | **已完成**：`generate_rules.py` 在临时目录生成并校验全部 `Rule/*.list`（含 Global 裁剪），再经 `file_batch.publish_files` 整批发布，替换失败按备份回滚并保留恢复清单；`reviewed_release.py restore` 同样整批发布；`test_file_batch.py`、`test_generation_safety.py` 覆盖后序文件失败、Global 校验失败与回滚失败。**仍待处理**：manifest、收据由独立脚本依次写入，不在同一批次内 |
-| P2，部分完成 | 网络门禁和发布次序大量依赖外部 Agent 提示词；上游探测即使部分不可达也可返回 0，stdout 与候选状态是不同结构 | **已完成**：任一上游不可达时 `check_upstream_updates.py` 返回 1、`status=failed` 且拒绝写候选状态；`automation_preflight.py` 提供前置检查与备用失败收据。**仍待处理**：业务成功判据、候选提升与锁尚未封装成确定性运行器，发布次序仍由 Hermes 提示词编排 |
+| P2，部分完成 | 网络门禁和发布次序大量依赖外部 Agent 提示词；上游探测即使部分不可达也可返回 0，stdout 与候选状态是不同结构 | **已完成**：任一上游不可达时 `check_upstream_updates.py` 返回 1、`status=failed` 且拒绝写候选状态；`automation_preflight.py` 提供前置检查与备用失败收据。**已完成（2026-11-02）**：`pipeline.py` 封装上游门禁、生成→manifest→diff→收据的固定顺序、CI 检查与候选状态提升，CI 与 `auto-rules.yml` 改为调用它。**仍待处理**：锁、分支/PR/合并仍由 Hermes 编排 |
 | P3，部分完成 | 生成器用相对工作目录，其他脚本多根据 `__file__` 定位；库函数仍有 `sys.exit` 与日志副作用 | **已完成**：`generate_rules.py`、`generate_clash_rules.py` 改为按 `__file__` 定位仓库根目录，Clash 头部路径保持仓库相对；`test_generator_root.py` 从临时目录执行，验证不在调用方目录创建文件且 `--check` 结果不变。**已完成（2026-11-02）**：`generate_rules.py` 校验失败改抛 `RuleValidationError`，由 `main()` 返回退出码 1；`process_rule` / Global 裁剪显式接收目标目录与离线标志，不再在运行中替换模块全局 `RULE_DIR` |
 | P3，部分完成（生成器与收据已改用 `rule_validator.non_comment_rules`） | 多处各自解析注释/规则，路由模拟只覆盖部分客户端行为；语法白名单不能代表全部新版本 Surge 能力 | 按原文、顺序、选项建立共享解析接口；新增语法作为独立行为变化审阅，不能借重构放宽策略 |
 | P3，待测量 | 生成与在线审计分别下载，生成按源串行；跨阶段内容可能变动 | 先记录下载与 CPU 耗时，再考虑同运行的来源快照；不能用本地 CPU 改善推断端到端耗时 |

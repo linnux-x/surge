@@ -61,60 +61,25 @@ jobs:
 
       - name: Check Upstream Updates
         if: ${{ inputs.dry_run == 'true' }}
-        id: check_upstream
         shell: bash
         run: |
           set -euo pipefail
-          # Run check. Upstream changes are reported via GitHub outputs;
-          # non-zero exit means the checker itself failed and must fail CI.
-          # Candidate state is promoted to scripts/source_state.json only after
-          # generation/validation/audit succeeds.
-          python3 scripts/check_upstream_updates.py \
-            --state-out scripts/source_state.next.json \
-            --github-output "$GITHUB_OUTPUT"
+          # Fails when any source is unreachable. The candidate state is written to
+          # scripts/source_state.next.json and promoted only when the reviewed
+          # release is captured.
+          python3 scripts/pipeline.py upstream
 
-      - name: Generate Rules
-        id: generate
+      - name: Generate Rules and Derived Artifacts
         if: ${{ inputs.dry_run == 'true' }}
         shell: bash
-        env:
-          CHANGED_RULESETS: ${{ steps.check_upstream.outputs.changed_rulesets }}
-        run: python3 scripts/generate_rules.py
+        # Manual dispatch is a full generation; manifests, diff and receipt follow
+        # in a fixed order whenever a rule file changes.
+        run: python3 scripts/pipeline.py build --all
 
-      - name: Generate Manifests & Diff
+      - name: Validate, Test and Audit
         if: ${{ inputs.dry_run == 'true' }}
         shell: bash
-        run: |
-          set -euo pipefail
-          python3 scripts/manifest.py
-          python3 scripts/manifest.py --diff
-
-      - name: Generate Rule Receipt
-        if: ${{ inputs.dry_run == 'true' }}
-        shell: bash
-        run: python3 scripts/generate_receipt.py
-
-      - name: Validate Repository Invariants
-        if: ${{ inputs.dry_run == 'true' }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          python3 scripts/validate_surge_repo.py
-
-      - name: Test Routing Order and Fallback Contract
-        if: ${{ inputs.dry_run == 'true' }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          python3 -m unittest discover -s tests -p 'test_*.py'
-          python3 scripts/test_routing_order.py
-
-      - name: Online Audit (Upstream & Shared Infrastructure)
-        if: ${{ inputs.dry_run == 'true' }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          python3 scripts/audit_rules.py
+        run: python3 scripts/pipeline.py verify --online
 
       - name: Sync DNS Mapping Module
         if: ${{ inputs.dry_run == 'true' }}
@@ -184,9 +149,7 @@ jobs:
           [ -n "$artifact_url" ] || { echo "::error::No reviewed release artifact found"; exit 1; }
           gh api "$artifact_url" > /tmp/reviewed-release.zip
           python3 scripts/reviewed_release.py restore /tmp/reviewed-release.zip --run-id "$REVIEWED_RUN_ID"
-          python3 scripts/validate_surge_repo.py --ci
-          python3 -m unittest discover -s tests -p 'test_*.py'
-          python3 scripts/test_routing_order.py
+          python3 scripts/pipeline.py verify --ci
 
       - name: Publish Through Pull Request
         if: ${{ inputs.dry_run != 'true' }}
@@ -264,7 +227,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          mv scripts/source_state.next.json scripts/source_state.json
+          python3 scripts/pipeline.py promote-state
           python3 scripts/reviewed_release.py capture /tmp/reviewed-release.json
 
       - name: Upload Reviewed Release

@@ -35,6 +35,7 @@ Rabbit-Spec 来源当前明确保留，用于补充 AIGC、China 覆盖；不要
 | 模块 | 作用 |
 |---|---|
 | `exclusions.py` | 显式类型排除合同；域名身份覆盖选项变体，其他规则保留整行语义 |
+| `pipeline.py` | 确定性运行器：`upstream` / `build` / `verify` / `promote-state`，固定生成与派生产物的顺序、上游门禁和 CI 检查范围 |
 | `source_cache.py` | 仓库外的上游原始快照缓存（默认 `~/.cache/linnux-surge/sources`，可用 `SURGE_SOURCE_CACHE` 覆盖），按转换后内容哈希取回，供 `generate_rules.py --offline` 使用 |
 | `file_batch.py` | 暂存完整批次；逐文件替换失败时回滚，回滚失败保留恢复目录 |
 | `source_transforms.py` | 生成器与贡献审计共用的清洗、格式转换、排除与服务过滤；不下载或写入产物 |
@@ -62,6 +63,24 @@ Rabbit-Spec 来源当前明确保留，用于补充 AIGC、China 覆盖；不要
 ---
 
 ## 本地使用
+
+日常流程统一走 `pipeline.py`，它固定步骤顺序与成功判据；CI、`auto-rules.yml` 和每日任务调用的是同一组命令。每个子命令最后一行 stdout 是 JSON 摘要，失败时退出码为 1。
+
+```bash
+# 上游有变化的规则集：探测（任一来源不可达即失败）→ 生成 → 规则有变化时依次 manifest、diff、收据
+python3 scripts/pipeline.py build --from-upstream --require-known-timestamps
+
+# 只改了 Rule/Manual：按固定快照离线重建受影响的规则集
+python3 scripts/pipeline.py build --offline --rulesets SocialMedia.list
+
+# 与 CI 相同的检查（收据检查只读，不改工作区）；提交前加 --online 跑联网审计
+python3 scripts/pipeline.py verify --online
+
+# 全部通过后，采用候选上游状态
+python3 scripts/pipeline.py promote-state
+```
+
+下面是各脚本的单独用法，排查问题时使用：
 
 ```bash
 # 1. 检查哪些上游发生变化
