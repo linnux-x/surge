@@ -7,8 +7,14 @@ on workflow_dispatch (GITHUB_EVENT_NAME=workflow_dispatch).
 
 Supports: manual rules, exclude files, domainset/cidr conversion, guardrails,
 dedup, CIDR pruning, validation, and Global overlap pruning.
+
+A file whose regenerated content differs from the published one only in the
+`# UPDATED:` header is left untouched, so unchanged rulesets never produce a
+timestamp-only diff. `--check` performs the same generation without publishing
+and exits 1 when any ruleset would change.
 """
 
+import argparse
 import json
 import os
 import subprocess
@@ -56,6 +62,8 @@ CURL_OPTS = [
     "--connect-timeout", "10", "--max-time", "60",
 ]
 FETCH_SUBPROCESS_TIMEOUT = 120  # hard backstop around the curl call itself
+UPDATED_PREFIX = "# UPDATED:"
+HEADER_LINES = 6  # NAME, AUTHOR, REPO, UPDATED, FORMAT, TOTAL
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────
@@ -117,6 +125,23 @@ def prune_shadowed_domains(lines: list[str]) -> list[str]:
     if removed:
         print(f"  Suffix prune: removed {removed} entries covered by a broader DOMAIN-SUFFIX")
     return out
+
+
+def without_updated_header(content: bytes) -> list[bytes]:
+    """Return file lines with the generated `# UPDATED:` header line masked.
+
+    Only the fixed header block is considered, so a Manual comment that happens
+    to start with the same text still counts as content.
+    """
+    lines = content.split(b"\n")
+    prefix = UPDATED_PREFIX.encode()
+    return [b"" if i < HEADER_LINES and line.startswith(prefix) else line
+            for i, line in enumerate(lines)]
+
+
+def content_changed(old: bytes | None, new: bytes) -> bool:
+    """True when publishing `new` would change more than the UPDATED timestamp."""
+    return old is None or (old != new and without_updated_header(old) != without_updated_header(new))
 
 
 def dedupe_preserve_order(lines: list[str]) -> list[str]:
@@ -287,8 +312,13 @@ def prune_global_first_match_overlaps():
 
 # ── Main ────────────────────────────────────────────────────────────────────
 
-def main():
+def main(argv: list[str] | None = None) -> int:
     global RULE_DIR
+    parser = argparse.ArgumentParser(description="Generate Surge rulesets from upstream sources.")
+    parser.add_argument("--check", action="store_true",
+                        help="generate without publishing; exit 1 if any ruleset would change")
+    args = parser.parse_args([] if argv is None else argv)
+
     RULE_DIR.mkdir(parents=True, exist_ok=True)
     MANUAL_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -330,14 +360,24 @@ def main():
                 prune_global_first_match_overlaps()
         finally:
             RULE_DIR = destination
+        changed: dict[Path, bytes] = {}
         if processed:
-            publish_files(destination, {
-                destination / p.name: p.read_bytes() for p in staged.glob('*.list')
-                if not (destination / p.name).exists() or p.read_bytes() != (destination / p.name).read_bytes()
-            })
+            for p in sorted(staged.glob('*.list')):
+                current = destination / p.name
+                new = p.read_bytes()
+                if content_changed(current.read_bytes() if current.exists() else None, new):
+                    changed[current] = new
+        if args.check:
+            for path in changed:
+                print(f"Would change: {path.name}")
+            print(f"Check: {len(changed)} ruleset(s) would change.")
+            return 1 if changed else 0
+        if changed:
+            publish_files(destination, changed)
 
     print("Done.")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main(sys.argv[1:]))
