@@ -56,7 +56,7 @@ api.steampowered.com,Game.list,Game,Steam API
 discord.com,SocialMedia.list,SocialMedia,Discord（手动添加）
 twitter.com,SocialMedia.list,SocialMedia,Twitter/X
 instagram.com,SocialMedia.list,SocialMedia,Instagram
-reddit.com,Global.list,Global,Reddit（上游中无此平台，走Global回退）
+reddit.com,SocialMedia.list,SocialMedia,Reddit主站（与媒体资源同组）
 t.me,Telegram.list,Telegram,Telegram短链
 telegram.org,Telegram.list,Telegram,Telegram官网
 googlevideo.com,YouTube.list,YouTube,YouTube视频CDN
@@ -372,3 +372,9 @@ challenges.darkintaqt.com,Global.list,Global,英雄联盟挑战统计站
 howlongtobeat.com,Global.list,Global,游戏通关时长站
 pypi.org,Global.list,Global,PyPI 索引移出 Download，HA 虚拟机直连下载停滞
 files.pythonhosted.org,Global.list,Global,PyPI 包文件移出 Download，HA 虚拟机直连下载停滞
+i.redd.it,SocialMedia.list,SocialMedia,Reddit图片
+www.threads.net,SocialMedia.list,SocialMedia,Threads（与Instagram同组）
+media.licdn.com,SocialMedia.list,SocialMedia,LinkedIn资源（原落FINAL）
+i.pinimg.com,SocialMedia.list,SocialMedia,Pinterest图片（原落FINAL）
+stat.nodeseek.org,SocialMedia.list,SocialMedia,NodeSeek统计
+arstechnica.com,Global.list,Global,科技媒体（移出SocialMedia）

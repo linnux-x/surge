@@ -122,16 +122,16 @@
     },
     {
       "file": "Global.list",
-      "rules": 24573,
+      "rules": 24570,
       "types": {
         "DOMAIN": 110,
         "DOMAIN-KEYWORD": 12,
-        "DOMAIN-SUFFIX": 24362,
+        "DOMAIN-SUFFIX": 24359,
         "IP-CIDR": 83,
         "IP-CIDR6": 1,
         "USER-AGENT": 5
       },
-      "sha256": "2fa2a21eabd54dd2a2b6b349b8b843efe59c6c0268907e42962037db82e16bea"
+      "sha256": "55994b3cc525e11ce5c101248d569c7b5f7c0d7eafc27f5f04bf99f0065668b7"
     },
     {
       "file": "GlobalMedia.list",
@@ -231,14 +231,14 @@
     },
     {
       "file": "SocialMedia.list",
-      "rules": 670,
+      "rules": 675,
       "types": {
         "DOMAIN-KEYWORD": 5,
-        "DOMAIN-SUFFIX": 635,
+        "DOMAIN-SUFFIX": 640,
         "IP-ASN": 1,
         "IP-CIDR": 29
       },
-      "sha256": "8015a826d05ad6c41297ee62501419a720469e71761a67c30cf652ecac6ae1c9"
+      "sha256": "e9cdf93381feab8ff601bd78e9e107a9a633fff7e7160d91a0721c028a64e5ee"
     },
     {
       "file": "Speedtest.list",
@@ -345,11 +345,11 @@
       "sha256": "dc6dfde863bc0c0034fa3bae09c8a8b090ca385439e866e5ff89fa65eb177c69"
     }
   ],
-  "total_rules": 159377,
+  "total_rules": 159379,
   "rule_types": {
     "DOMAIN": 3654,
     "DOMAIN-KEYWORD": 96,
-    "DOMAIN-SUFFIX": 141132,
+    "DOMAIN-SUFFIX": 141134,
     "DOMAIN-WILDCARD": 4,
     "IP-ASN": 8,
     "IP-CIDR": 9823,
@@ -361,7 +361,7 @@
   "source_attribution": {
     "ConnersHua AI": 12,
     "Loyalsoldier China CIDR": 7805,
-    "Manual Rules": 290,
+    "Manual Rules": 300,
     "Rabbit-Spec AIGC": 27,
     "Rabbit-Spec China": 187,
     "Rabbit-Spec China CIDR": 20,
@@ -391,7 +391,7 @@
     "blackmatrix7 Disney": 166,
     "blackmatrix7 Facebook": 570,
     "blackmatrix7 Game": 564,
-    "blackmatrix7 Global": 24550,
+    "blackmatrix7 Global": 24542,
     "blackmatrix7 GlobalMedia": 2248,
     "blackmatrix7 Google": 684,
     "blackmatrix7 Instagram": 1,
@@ -419,7 +419,7 @@
     "Disney.manifest": "4952367b9bc1b50aaeacf8f01c8059c20e75aaf86be6c908d16a4f607a6b866f",
     "Download.manifest": "2288e0442779a9a32d8ede8e870efd8b5bbaeae70e9fe3e4132ea01f3f677c79",
     "Game.manifest": "eea8247188853238e4a15c21b3574947a61fd4357bc5568cf3fdb05fad47dc18",
-    "Global.manifest": "6837e99042f8e08d564418ec3aa9378e2e7454a3fd992f84763568947a33d60b",
+    "Global.manifest": "2c512f64b00c78fc1410bcbe498042659b2c24c7db0e8d7f5b2d127c00bc8969",
     "GlobalMedia.manifest": "b6b4881352b859ddd645b16042e1696a827204b1c594fc73ab472abaf9d42f72",
     "Google.manifest": "e07b20be6f457b843470e822e5532bca4da77b6e5ee4f14dca1a4b90b3d2ab90",
     "HKMedia.manifest": "0c18b7a9c04e06f1494645a758f778df16e8a87e55e74837c78069dc46b93f26",
@@ -428,7 +428,7 @@
     "Microsoft_CDN.manifest": "d26571becc05f723d2f064459eb77b583222af156d1a2e6b81505191d900f07a",
     "Netflix.manifest": "0ffcdd804cc4e56614ba69cc539061c6b5e65ef6ee2e62a01aee3e62902ab9c9",
     "PayPal.manifest": "649b7162f902986f696a1b28e98b3d2b5e6cbda0a9c8e951c552098e68e1382b",
-    "SocialMedia.manifest": "e5b500cfbb1db392e8b379359458a69ece60c50003ee8ebb1cd7ae687ef11e78",
+    "SocialMedia.manifest": "c24a95b378d5707682db1edfe03b1424b17e1f4db9e086a71dcbaeffc751f5ab",
     "Speedtest.manifest": "6fe90f82406b69b9166e38a8a92bd1e305ae5e55f9a4acdae32aeed03ec98291",
     "Speedtest_China.manifest": "1422ee65ce7dca6937f4119b9f3645a9f79e436faf96341f92e11e39ce894807",
     "Spotify.manifest": "5f1f22f1d8f4081b725902910dc6754a6b1fa868dd8e97e527c39fcc7cf463b0",
@@ -442,7 +442,7 @@
   "sources_sha256": "c738ac6f803c1ce8dd498dfa564b68aba95e1688593dbc0a21880069ec795fc5",
   "override_manifest_sha256": "3fda2e8a21dac7871b29a078e0842524c4cb06f123a79abf669ed650c31eb415",
   "clash_compatibility": {
-    "payload_rules": 159172,
+    "payload_rules": 159174,
     "dropped_surge_only_types": {
       "URL-REGEX": 5,
       "USER-AGENT": 200
@@ -454,8 +454,8 @@
     }
   },
   "diff_summary": {
-    "total_added": 2,
-    "total_removed": 2,
+    "total_added": 15,
+    "total_removed": 13,
     "total_source_changed": 0
   }
 }

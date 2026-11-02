@@ -1,14 +1,11 @@
 # NAME: SocialMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-09-04 05:00:44 +0800
+# UPDATED: 2026-11-02 13:35:50 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 670
+# TOTAL: 675
 
 # ======= Manual Rules ========
-# Overseas hosting / VPS forums and communities
-DOMAIN-SUFFIX,hostloc.com
-DOMAIN-SUFFIX,nodeseek.com
 # WhatsApp (Meta, no blackmatrix7 Surge list)
 DOMAIN-KEYWORD,whatsapp
 
@@ -44,7 +41,11 @@ DOMAIN-SUFFIX,avsforum.com
 DOMAIN-SUFFIX,broadbandreports.com
 DOMAIN-SUFFIX,mobile01.com
 
-# Overseas hosting/VPS forums
+# Overseas hosting/VPS forums and communities
+DOMAIN-SUFFIX,hostloc.com
+DOMAIN-SUFFIX,nodeseek.com
+# NodeSeek statistics host; without it the site splits across SocialMedia and Global
+DOMAIN-SUFFIX,nodeseek.org
 DOMAIN-SUFFIX,lowendtalk.com
 DOMAIN-SUFFIX,lowendspirit.com
 DOMAIN-SUFFIX,webhostingtalk.com
@@ -54,13 +55,6 @@ DOMAIN-SUFFIX,hostingdiscussion.com
 # V2EX
 DOMAIN-SUFFIX,v2ex.com
 
-# Overseas tech/gadget forums
-DOMAIN-SUFFIX,anandtech.com
-DOMAIN-SUFFIX,tomshardware.com
-DOMAIN-SUFFIX,techpowerup.com
-DOMAIN-SUFFIX,overclock.net
-DOMAIN-SUFFIX,arstechnica.com
-
 # Hacker News
 DOMAIN-SUFFIX,ycombinator.com
 
@@ -68,9 +62,24 @@ DOMAIN-SUFFIX,ycombinator.com
 DOMAIN-SUFFIX,resetera.com
 DOMAIN-SUFFIX,neogaf.com
 
-# Reddit media and static assets
+# Reddit: site, media and static assets stay in one policy group
+# (the upstream Global list carries reddit.com/redd.it/redditspace.com)
+DOMAIN-SUFFIX,reddit.com
+DOMAIN-SUFFIX,redd.it
+DOMAIN-SUFFIX,redditspace.com
 DOMAIN-SUFFIX,redditmedia.com
 DOMAIN-SUFFIX,redditstatic.com
+
+# Threads (Meta): keep with Instagram/Facebook
+DOMAIN-SUFFIX,threads.net
+DOMAIN-SUFFIX,threads.com
+
+# LinkedIn and Pinterest: their asset domains are excluded from Global as CDN-like
+# and otherwise fall through to FINAL
+DOMAIN-SUFFIX,linkedin.com
+DOMAIN-SUFFIX,licdn.com
+DOMAIN-SUFFIX,pinterest.com
+DOMAIN-SUFFIX,pinimg.com
 
 # Snap developer services
 DOMAIN-SUFFIX,snapkit.com

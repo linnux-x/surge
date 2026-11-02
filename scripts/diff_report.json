@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-01T18:23:38.028074",
-  "total_added": 2,
-  "total_removed": 2,
+  "generated_at": "2026-11-02T13:36:01.796172",
+  "total_added": 15,
+  "total_removed": 13,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -105,24 +105,13 @@
     },
     {
       "file": "Download.list",
-      "prev_total": 1684,
+      "prev_total": 1682,
       "curr_total": 1682,
       "added_count": 0,
-      "removed_count": 2,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "8f88146e0a19",
-          "source": "SukkaW Download",
-          "rule": "DOMAIN-SUFFIX,pythonhosted.org"
-        },
-        {
-          "id": "bb3bc4580c36",
-          "source": "SukkaW Download",
-          "rule": "DOMAIN-SUFFIX,pypi.org"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -138,24 +127,80 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24571,
-      "curr_total": 24573,
-      "added_count": 2,
-      "removed_count": 0,
+      "prev_total": 24573,
+      "curr_total": 24570,
+      "added_count": 5,
+      "removed_count": 8,
       "source_changed_count": 0,
       "added_sample": [
         {
-          "id": "8f88146e0a19",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,pythonhosted.org"
+          "id": "00a497bf066b",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,overclock.net"
         },
         {
-          "id": "bb3bc4580c36",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,pypi.org"
+          "id": "0cfce8018207",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,arstechnica.com"
+        },
+        {
+          "id": "691e2b878592",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,tomshardware.com"
+        },
+        {
+          "id": "70e4477e1348",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,techpowerup.com"
+        },
+        {
+          "id": "913949029f7a",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,anandtech.com"
         }
       ],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "197a7d16cc3f",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,redd.it"
+        },
+        {
+          "id": "2e26ead1681d",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,nodeseek.org"
+        },
+        {
+          "id": "3dd417811b9a",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,threads.com"
+        },
+        {
+          "id": "3e5b671f851e",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,redditspace.com"
+        },
+        {
+          "id": "4c12c97fdf8f",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,linkedin.com"
+        },
+        {
+          "id": "a6394709c0af",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,reddit.com"
+        },
+        {
+          "id": "b376fd69d7f9",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,threads.net"
+        },
+        {
+          "id": "f6b2e3c23e11",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,pinterest.com"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -249,12 +294,89 @@
     {
       "file": "SocialMedia.list",
       "prev_total": 670,
-      "curr_total": 670,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 675,
+      "added_count": 10,
+      "removed_count": 5,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "197a7d16cc3f",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,redd.it"
+        },
+        {
+          "id": "2e26ead1681d",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,nodeseek.org"
+        },
+        {
+          "id": "3dd417811b9a",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,threads.com"
+        },
+        {
+          "id": "3e5b671f851e",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,redditspace.com"
+        },
+        {
+          "id": "4c12c97fdf8f",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,linkedin.com"
+        },
+        {
+          "id": "8192fdbf6b89",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,pinimg.com"
+        },
+        {
+          "id": "9b3db2f2b097",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,licdn.com"
+        },
+        {
+          "id": "a6394709c0af",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,reddit.com"
+        },
+        {
+          "id": "b376fd69d7f9",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,threads.net"
+        },
+        {
+          "id": "f6b2e3c23e11",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,pinterest.com"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "00a497bf066b",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,overclock.net"
+        },
+        {
+          "id": "0cfce8018207",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,arstechnica.com"
+        },
+        {
+          "id": "691e2b878592",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,tomshardware.com"
+        },
+        {
+          "id": "70e4477e1348",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,techpowerup.com"
+        },
+        {
+          "id": "913949029f7a",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,anandtech.com"
+        }
+      ],
       "source_changed_sample": []
     },
     {

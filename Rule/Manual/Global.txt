@@ -34,3 +34,9 @@ DOMAIN-SUFFIX,leagueoflegendsportal.com
 DOMAIN-SUFFIX,darkintaqt.com
 DOMAIN-SUFFIX,howlongtobeat.com
 DOMAIN-SUFFIX,trueachievements.com
+# Overseas tech media and hardware forums (moved from SocialMedia: not social platforms)
+DOMAIN-SUFFIX,anandtech.com
+DOMAIN-SUFFIX,tomshardware.com
+DOMAIN-SUFFIX,techpowerup.com
+DOMAIN-SUFFIX,overclock.net
+DOMAIN-SUFFIX,arstechnica.com

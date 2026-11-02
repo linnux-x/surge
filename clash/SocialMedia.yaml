@@ -1,10 +1,8 @@
 # Generated from Rule/SocialMedia.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-09-04 05:00:44 +0800
-# TOTAL: 670
+# UPDATED: 2026-11-02 13:35:50 +0800
+# TOTAL: 675
 payload:
-  - 'DOMAIN-SUFFIX,hostloc.com'
-  - 'DOMAIN-SUFFIX,nodeseek.com'
   - 'DOMAIN-KEYWORD,whatsapp'
   - 'DOMAIN-SUFFIX,line.me'
   - 'DOMAIN-SUFFIX,line.naver.jp'
@@ -24,22 +22,29 @@ payload:
   - 'DOMAIN-SUFFIX,avsforum.com'
   - 'DOMAIN-SUFFIX,broadbandreports.com'
   - 'DOMAIN-SUFFIX,mobile01.com'
+  - 'DOMAIN-SUFFIX,hostloc.com'
+  - 'DOMAIN-SUFFIX,nodeseek.com'
+  - 'DOMAIN-SUFFIX,nodeseek.org'
   - 'DOMAIN-SUFFIX,lowendtalk.com'
   - 'DOMAIN-SUFFIX,lowendspirit.com'
   - 'DOMAIN-SUFFIX,webhostingtalk.com'
   - 'DOMAIN-SUFFIX,vpsboard.com'
   - 'DOMAIN-SUFFIX,hostingdiscussion.com'
   - 'DOMAIN-SUFFIX,v2ex.com'
-  - 'DOMAIN-SUFFIX,anandtech.com'
-  - 'DOMAIN-SUFFIX,tomshardware.com'
-  - 'DOMAIN-SUFFIX,techpowerup.com'
-  - 'DOMAIN-SUFFIX,overclock.net'
-  - 'DOMAIN-SUFFIX,arstechnica.com'
   - 'DOMAIN-SUFFIX,ycombinator.com'
   - 'DOMAIN-SUFFIX,resetera.com'
   - 'DOMAIN-SUFFIX,neogaf.com'
+  - 'DOMAIN-SUFFIX,reddit.com'
+  - 'DOMAIN-SUFFIX,redd.it'
+  - 'DOMAIN-SUFFIX,redditspace.com'
   - 'DOMAIN-SUFFIX,redditmedia.com'
   - 'DOMAIN-SUFFIX,redditstatic.com'
+  - 'DOMAIN-SUFFIX,threads.net'
+  - 'DOMAIN-SUFFIX,threads.com'
+  - 'DOMAIN-SUFFIX,linkedin.com'
+  - 'DOMAIN-SUFFIX,licdn.com'
+  - 'DOMAIN-SUFFIX,pinterest.com'
+  - 'DOMAIN-SUFFIX,pinimg.com'
   - 'DOMAIN-SUFFIX,snapkit.com'
   - 'DOMAIN-SUFFIX,airhorn.solutions'
   - 'DOMAIN-SUFFIX,airhornbot.com'
