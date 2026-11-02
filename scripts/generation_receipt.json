@@ -439,7 +439,7 @@
     "WeChat.manifest": "2daaefc46757ae3bc6b07cf82f6e8b6493235b7b9c28708b8c7f8c54e151f7c3",
     "YouTube.manifest": "1b9c3b78afbb311db391e8f2910b25b507296d158a339957a874d918a2869ca7"
   },
-  "sources_sha256": "c738ac6f803c1ce8dd498dfa564b68aba95e1688593dbc0a21880069ec795fc5",
+  "sources_sha256": "b2f4aba5d47d7d1563bc85e78b8fd88677cfd7b1967fda6a88dad93c8c5657e7",
   "override_manifest_sha256": "3fda2e8a21dac7871b29a078e0842524c4cb06f123a79abf669ed650c31eb415",
   "clash_compatibility": {
     "payload_rules": 159174,
