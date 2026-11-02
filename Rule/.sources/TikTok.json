@@ -1,0 +1,11 @@
+{
+  "ruleset": "TikTok.list",
+  "sources": [
+    {
+      "label": "blackmatrix7 TikTok",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TikTok/TikTok.list",
+      "format": null,
+      "sha256": "47ee70ba8fc09791f5e6c44074e8dce588d01adf407c7b1ccbf2f994783c8e29"
+    }
+  ]
+}

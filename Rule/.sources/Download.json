@@ -1,0 +1,17 @@
+{
+  "ruleset": "Download.list",
+  "sources": [
+    {
+      "label": "SukkaW Download",
+      "url": "https://raw.githubusercontent.com/SukkaW/Surge/master/Source/domainset/download.conf",
+      "format": "domainset",
+      "sha256": "788afd09bf3c33736331d7c9aa7bcf9603fd64623d68841f4beb208ac3cc450a"
+    },
+    {
+      "label": "SukkaW Game Download",
+      "url": "https://ruleset.skk.moe/List/domainset/game-download.conf",
+      "format": "domainset",
+      "sha256": "ee02fa322344588fafbcbfb68ee6d5046bcf8585fa88f8b045ab71ae0c562222"
+    }
+  ]
+}

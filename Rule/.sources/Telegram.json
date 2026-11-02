@@ -1,0 +1,17 @@
+{
+  "ruleset": "Telegram.list",
+  "sources": [
+    {
+      "label": "blackmatrix7 Telegram",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list",
+      "format": null,
+      "sha256": "2c5c5fa04e00cb9ca64885d2f6a3d5c771fd4734507a8f0577ecbcb4a49a1b11"
+    },
+    {
+      "label": "Telegram Official CIDR",
+      "url": "https://core.telegram.org/resources/cidr.txt",
+      "format": "cidr",
+      "sha256": "de988cb6c370fd51ec3b956b4ff693bc971f47458dfa30a51be3ec3595187281"
+    }
+  ]
+}

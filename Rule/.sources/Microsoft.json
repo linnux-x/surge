@@ -1,0 +1,11 @@
+{
+  "ruleset": "Microsoft.list",
+  "sources": [
+    {
+      "label": "blackmatrix7 Microsoft",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+      "format": null,
+      "sha256": "b5bb0459a559189e9fee892e3f156e6a1737a88f6fbe11420962428f8c39fbe7"
+    }
+  ]
+}

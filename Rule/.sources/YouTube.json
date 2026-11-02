@@ -1,0 +1,11 @@
+{
+  "ruleset": "YouTube.list",
+  "sources": [
+    {
+      "label": "blackmatrix7 YouTube",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list",
+      "format": null,
+      "sha256": "18b04f6e8cac247158d47d729cdf56bfc7e2541d0d2a334000726c9a5e59dadb"
+    }
+  ]
+}

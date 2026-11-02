@@ -17,7 +17,8 @@ import time
 from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
-BASE = '716da36709816751da26abd22a400ea650956ba9'
+# Clash removal (#98): the latest main whose source specifications match the current code.
+BASE = '134848598f2490ae587a9f40cd2ead1ce726bb23'
 
 
 class FixedTime:

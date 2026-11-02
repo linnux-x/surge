@@ -1,0 +1,17 @@
+{
+  "ruleset": "Apple_AI.list",
+  "sources": [
+    {
+      "label": "RocM301 Apple-AI",
+      "url": "https://raw.githubusercontent.com/RocM301/Apple-Rule/refs/heads/main/Apple-AI.list",
+      "format": null,
+      "sha256": "8c63953d2a70ef37d6fbae2c223c0051e3dda0f8b2ceb82e1203e3718b68b793"
+    },
+    {
+      "label": "SukkaW Apple Intelligence",
+      "url": "https://ruleset.skk.moe/List/non_ip/apple_intelligence.conf",
+      "format": null,
+      "sha256": "c7f39e03377212ffe569400ab628c25833a9de0350db3b0d343a959f876089d1"
+    }
+  ]
+}

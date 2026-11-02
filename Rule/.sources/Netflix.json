@@ -1,0 +1,11 @@
+{
+  "ruleset": "Netflix.list",
+  "sources": [
+    {
+      "label": "blackmatrix7 Netflix",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list",
+      "format": null,
+      "sha256": "9d979b7685715b0c0e58e0402a78dea74b0aab996a0f6f7c0832faa814aa5606"
+    }
+  ]
+}

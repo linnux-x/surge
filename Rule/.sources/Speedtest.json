@@ -1,0 +1,17 @@
+{
+  "ruleset": "Speedtest.list",
+  "sources": [
+    {
+      "label": "SukkaW Speedtest",
+      "url": "https://raw.githubusercontent.com/SukkaW/Surge/master/Source/domainset/speedtest.conf",
+      "format": "domainset",
+      "sha256": "7a2792dcd4512271a45ebec60e2851aaa02d3372d23e94550c40327be704127c"
+    },
+    {
+      "label": "SukkaW Speedtest Servers International",
+      "url": "https://raw.githubusercontent.com/SukkaLab/speedtest-net-servers-dist/master/servers.json",
+      "format": "speedtest-json-international",
+      "sha256": "f6c9b6624a6220257f5f282b67ec4702ea207251f4bd2f01299111d74e609fc4"
+    }
+  ]
+}

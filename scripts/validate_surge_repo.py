@@ -138,6 +138,31 @@ def check_rule_files(errors: list[str], warnings: list[str]) -> None:
             warnings.append(f"{rel(path)} {warning}")
 
 
+def check_source_snapshots(errors: list[str]) -> None:
+    """Snapshot records must describe a published ruleset and its current sources.
+
+    A record is optional (rulesets get one on their next generation), but a
+    stale one would make --offline rebuild from inputs the generator no longer uses.
+    """
+    import json
+    from sources import RULE_SPECS
+    for path in sorted((RULE_DIR / ".sources").glob("*")):
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+            target = data["ruleset"]
+            pinned = [(s["label"], s["url"], s["format"]) for s in data["sources"]]
+            hashes = [s["sha256"] for s in data["sources"]]
+        except (OSError, ValueError, KeyError, TypeError) as exc:
+            errors.append(f"{rel(path)} is not a valid snapshot record: {exc}")
+            continue
+        if path.suffix != ".json" or path.stem + ".list" != target or not (RULE_DIR / target).is_file():
+            errors.append(f"{rel(path)} does not match a published ruleset")
+        elif target not in RULE_SPECS or pinned != [tuple(s) for s in RULE_SPECS[target][1]]:
+            errors.append(f"{rel(path)} sources differ from scripts/sources.py; regenerate {target}")
+        elif not all(isinstance(h, str) and re.fullmatch(r"[0-9a-f]{64}", h) for h in hashes):
+            errors.append(f"{rel(path)} has a malformed sha256")
+
+
 def check_managed_config_header(errors: list[str]) -> None:
     """Ensure the main Surge profile remains a managed profile after updates."""
     if not MAIN_CONF.exists():
@@ -178,6 +203,7 @@ def main() -> int:
     for finding in check_exclude_coverage():
         errors.append(f"{finding['target']}: {finding['detail']}")
     check_rule_files(errors, warnings)
+    check_source_snapshots(errors)
     from validate_dns_module import normalize_text as normalize_dns_module
     from validate_dns_module import validate_text as validate_dns_module
     try:

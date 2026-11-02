@@ -1,0 +1,11 @@
+{
+  "ruleset": "PayPal.list",
+  "sources": [
+    {
+      "label": "blackmatrix7 PayPal",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list",
+      "format": null,
+      "sha256": "254d4e6d23ce926fc3c5ed1e92640a54505bd247212641d3b5016f706f9f3ea8"
+    }
+  ]
+}

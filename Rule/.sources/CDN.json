@@ -1,0 +1,11 @@
+{
+  "ruleset": "CDN.list",
+  "sources": [
+    {
+      "label": "SukkaW CDN",
+      "url": "https://ruleset.skk.moe/List/non_ip/cdn.conf",
+      "format": null,
+      "sha256": "009728ac2b2b489fd5dac73e1db85645780cdce57eb301cf57505b7826cd1085"
+    }
+  ]
+}

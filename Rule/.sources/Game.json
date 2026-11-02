@@ -1,0 +1,11 @@
+{
+  "ruleset": "Game.list",
+  "sources": [
+    {
+      "label": "blackmatrix7 Game",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list",
+      "format": null,
+      "sha256": "c9bfe268ac7af92add3ef314ab9785add0bb069020c28821969b7cd2b4bbd54f"
+    }
+  ]
+}

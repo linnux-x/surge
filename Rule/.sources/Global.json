@@ -1,0 +1,11 @@
+{
+  "ruleset": "Global.list",
+  "sources": [
+    {
+      "label": "blackmatrix7 Global",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_All_No_Resolve.list",
+      "format": null,
+      "sha256": "b74255231f8a4e914e2cf980a85c8379c33581b21eeeab822200ce65d07aef63"
+    }
+  ]
+}

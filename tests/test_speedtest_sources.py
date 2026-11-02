@@ -47,9 +47,11 @@ class SpeedtestSourceTests(unittest.TestCase):
         import subprocess
         from unittest.mock import patch
         import generate_rules as generator
+        import os, tempfile
         generator.fetch_remote_source.cache_clear()
         try:
-            with patch.object(generator.subprocess,'run',return_value=subprocess.CompletedProcess([],0,'[]')) as fetch:
+            with tempfile.TemporaryDirectory() as cache, patch.dict(os.environ, {'SURGE_SOURCE_CACHE': cache}), \
+                    patch.object(generator.subprocess,'run',return_value=subprocess.CompletedProcess([],0,'[]')) as fetch:
                 generator.fetch_source('https://example.test/servers.json','speedtest-json-cn')
                 generator.fetch_source('https://example.test/servers.json','speedtest-json-international')
                 self.assertEqual(fetch.call_count,1)

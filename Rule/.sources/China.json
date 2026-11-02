@@ -1,0 +1,23 @@
+{
+  "ruleset": "China.list",
+  "sources": [
+    {
+      "label": "SukkaW Domestic",
+      "url": "https://ruleset.skk.moe/List/non_ip/domestic.conf",
+      "format": null,
+      "sha256": "b90b4e8d07804955fefe5018a60e28dbd3972856115c1b284396e0d3f9a55c4c"
+    },
+    {
+      "label": "blackmatrix7 ChinaMaxNoIP Domain",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMaxNoIP/ChinaMaxNoIP_Domain.list",
+      "format": "domainset",
+      "sha256": "a122f8c2c2b83123cb191192dcaa7a93cc5a85fc3cc146a19412ff97fdeaa2f3"
+    },
+    {
+      "label": "Rabbit-Spec China",
+      "url": "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list",
+      "format": "domainset",
+      "sha256": "f0763563d8fd92274d86297be922ff97159c1432cd2f707b90c6a04b7afa5324"
+    }
+  ]
+}

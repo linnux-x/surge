@@ -1,0 +1,11 @@
+{
+  "ruleset": "WeChat.list",
+  "sources": [
+    {
+      "label": "blackmatrix7 WeChat",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/WeChat/WeChat.list",
+      "format": null,
+      "sha256": "762b4ba86d2e32a3b1109404e171095bef52b5b2969e86b0c3db58d43c9e7034"
+    }
+  ]
+}

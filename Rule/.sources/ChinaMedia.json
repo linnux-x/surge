@@ -1,0 +1,11 @@
+{
+  "ruleset": "ChinaMedia.list",
+  "sources": [
+    {
+      "label": "blackmatrix7 ChinaMedia",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMedia/ChinaMedia.list",
+      "format": null,
+      "sha256": "b74ae58abec764e4d8ab6fd8aa4dba8be4cfd6bf176bec644531ec22d2d7f563"
+    }
+  ]
+}
