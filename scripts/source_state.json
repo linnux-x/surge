@@ -19,19 +19,19 @@
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
     "content_length": "3447",
-    "etag": "\"c703ce83d6036d4d758f47f2b208004cc1d30234979687cb14f7b6e2c4fa9dc1\"",
+    "etag": "\"11da0f2d7e409c0049303db6e3afa272bea3e19078c432532f6673f18eef1f5d\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
-    "content_length": "101228",
-    "etag": "\"fde394a9f2ea6ae095c5986589dbdf99fa1e12ac9aea6b6f3f29df92603d701c\"",
+    "content_length": "87773",
+    "etag": "\"727e4108d61870323c8891eae7cadce41c70b18f4587bba1623d30b30211b3ad\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/ChinaCIDR.list": {
-    "content_length": "243712",
-    "etag": "\"449045fb090dbcae9904bb3914b4025700b9fdd579dc0e8c5505e94d333b595c\"",
+    "content_length": "243762",
+    "etag": "\"648a5173958ea4d31a708339db1be2a4c5a6958f0e06a552650f3ef075015a8d\"",
     "last_modified": null,
     "source_available": true
   },
@@ -42,8 +42,8 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaLab/speedtest-net-servers-dist/master/servers.json": {
-    "content_length": "550027",
-    "etag": "\"36e9db427f4d9e26814c0545267a50f3a7c7efe99c03be998c5222b4acf05edf\"",
+    "content_length": "570607",
+    "etag": "\"d0e8b6e908eb6d3ddd41ad08f98151b7b5d6d0e9468c39451164528c7b588d7e\"",
     "last_modified": null,
     "source_available": true
   },
@@ -192,8 +192,8 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/domainset/apple_cdn.conf": {
-    "content_length": null,
-    "etag": "W/\"8bb2e4bdf823edbb5fd20a7eccd8e482\"",
+    "content_length": "4628",
+    "etag": "\"8bb2e4bdf823edbb5fd20a7eccd8e482\"",
     "last_modified": null,
     "source_available": true
   },
@@ -210,8 +210,8 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/apple_cn.conf": {
-    "content_length": null,
-    "etag": "W/\"2803a2f9967953f81d3ffec0ea8b619c\"",
+    "content_length": "826",
+    "etag": "\"2803a2f9967953f81d3ffec0ea8b619c\"",
     "last_modified": null,
     "source_available": true
   },
@@ -236,6 +236,36 @@
   "https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf": {
     "content_length": null,
     "etag": "W/\"8b8443d87d10fadfd76dca457c1c880d\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://ruleset.skk.moe/List/non_ip/stream.conf": {
+    "content_length": null,
+    "etag": "W/\"9a2922b0fd583ef357efc8a4d76cd7a2\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://ruleset.skk.moe/List/non_ip/stream_hk.conf": {
+    "content_length": null,
+    "etag": "W/\"02394ede5c1c30b7b58141d3e23bde30\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://ruleset.skk.moe/List/non_ip/stream_jp.conf": {
+    "content_length": null,
+    "etag": "W/\"6121e3d4e8f04898df68b853d2653d8c\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://ruleset.skk.moe/List/non_ip/stream_tw.conf": {
+    "content_length": null,
+    "etag": "W/\"749b4bc38f7121f74461604d79b84ea1\"",
+    "last_modified": null,
+    "source_available": true
+  },
+  "https://ruleset.skk.moe/List/non_ip/stream_us.conf": {
+    "content_length": null,
+    "etag": "W/\"65232c6a73f3f65bdb26f920fc7e5172\"",
     "last_modified": null,
     "source_available": true
   }

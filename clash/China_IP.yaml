@@ -1,7 +1,7 @@
 # Generated from Rule/China_IP.list
 # Format: Clash/mihomo rule-provider, behavior: classical
-# UPDATED: 2026-10-30 19:16:10 +0800
-# TOTAL: 11842
+# UPDATED: 2026-11-02 13:56:35 +0800
+# TOTAL: 11844
 payload:
   - 'IP-CIDR,1.0.1.0/24'
   - 'IP-CIDR,1.0.2.0/23'
@@ -11829,6 +11829,8 @@ payload:
   - 'IP-CIDR,13.127.149.196/32'
   - 'IP-CIDR,13.250.89.184/32'
   - 'IP-CIDR,18.176.162.64/32'
+  - 'IP-CIDR,35.178.208.187/32'
+  - 'IP-CIDR,38.93.228.132/32'
   - 'IP-CIDR,38.93.228.135/32'
   - 'IP-CIDR,38.93.228.139/32'
   - 'IP-CIDR,50.17.126.121/32'

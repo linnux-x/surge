@@ -1,33 +1,33 @@
 # Surge 规则生成收据
 
 - 规则文件：30
-- 规则总数：159379
+- 规则总数：159606
 - manifest 文件：30
 
 ## 差异摘要
 
-- 新增：15
-- 删除：13
+- 新增：356
+- 删除：129
 - 来源迁移：0
 
 ## Clash 兼容性
 
-- 生成 payload：159174
-- 跳过 Surge 专属规则：{'URL-REGEX': 5, 'USER-AGENT': 200}
+- 生成 payload：159429
+- 跳过 Surge 专属规则：{'URL-REGEX': 5, 'USER-AGENT': 172}
 - 保留 mihomo 扩展类型：{'DOMAIN-WILDCARD': 4, 'IP-ASN': 8, 'PROCESS-NAME': 76}
 
 ## 规则类型
 
-- DOMAIN: 3654
-- DOMAIN-KEYWORD: 96
-- DOMAIN-SUFFIX: 141134
+- DOMAIN: 3702
+- DOMAIN-KEYWORD: 87
+- DOMAIN-SUFFIX: 141348
 - DOMAIN-WILDCARD: 4
 - IP-ASN: 8
-- IP-CIDR: 9823
+- IP-CIDR: 9825
 - IP-CIDR6: 4379
 - PROCESS-NAME: 76
 - URL-REGEX: 5
-- USER-AGENT: 200
+- USER-AGENT: 172
 
 ## 来源归属
 
@@ -35,8 +35,8 @@
 - Loyalsoldier China CIDR: 7805
 - Manual Rules: 300
 - Rabbit-Spec AIGC: 27
-- Rabbit-Spec China: 187
-- Rabbit-Spec China CIDR: 20
+- Rabbit-Spec China: 363
+- Rabbit-Spec China CIDR: 22
 - RocM301 Apple-AI: 16
 - SukkaW AI: 24
 - SukkaW Apple CDN: 158
@@ -48,7 +48,7 @@
 - SukkaW Microsoft CDN: 52
 - SukkaW Speedtest: 122
 - SukkaW Speedtest Servers China: 1
-- SukkaW Speedtest Servers International: 1551
+- SukkaW Speedtest Servers International: 1598
 - SukkaW Stream: 61
 - SukkaW Stream HK: 34
 - SukkaW Stream JP: 27
@@ -57,7 +57,7 @@
 - Telegram Official CIDR: 11
 - blackmatrix7 Apple: 1546
 - blackmatrix7 China IPs: 4017
-- blackmatrix7 ChinaMaxNoIP Domain: 109404
+- blackmatrix7 ChinaMaxNoIP Domain: 109406
 - blackmatrix7 ChinaMedia: 384
 - blackmatrix7 Discord: 29
 - blackmatrix7 Disney: 166
