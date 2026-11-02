@@ -439,18 +439,6 @@
   },
   "sources_sha256": "b0fb8eaea8cb2497e50559700040a2784c89138545f33e7b8439bc2531ccf757",
   "override_manifest_sha256": "3fda2e8a21dac7871b29a078e0842524c4cb06f123a79abf669ed650c31eb415",
-  "clash_compatibility": {
-    "payload_rules": 157597,
-    "dropped_surge_only_types": {
-      "URL-REGEX": 5,
-      "USER-AGENT": 172
-    },
-    "preserved_mihomo_extended_types": {
-      "DOMAIN-WILDCARD": 4,
-      "IP-ASN": 8,
-      "PROCESS-NAME": 76
-    }
-  },
   "diff_summary": {
     "total_added": 354,
     "total_removed": 129,

@@ -18,6 +18,5 @@
 |---|---|---|
 | `Rule/*.list` | 私有 `private-config/surge-devices/linnux.dconf`（`IOS.conf`、`MAC.conf`、`TV.conf` 共享的 detached 配置） | 共享规则段直接引用 Raw URL；契约校验器同时核对它与 `Conf/Linnux.conf` 的规则顺序 |
 | `Conf/Linnux.conf` | Surge 客户端 | 首行 `#!MANAGED-CONFIG`，`interval=86400` 自拉 |
-| `clash/*.yaml` | 私有仓库 `linnux-x/clash` 的 `Clash_Local.yaml` | 16+ 个 `rule-provider` 硬引用 `main/clash/*.yaml` |
 
-> 将生成物迁到孤儿分支会打断上表三类消费者（尤其 `clash` 私有仓库）。如需调整分发结构，必须先完成下游引用迁移。
+> 将生成物迁到孤儿分支会打断上表两类消费者。`clash/*.yaml` 镜像已于 2026-11-02 移除，原消费方私有仓库 `linnux-x/clash` 已归档。如需调整分发结构，必须先完成下游引用迁移。

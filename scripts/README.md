@@ -23,11 +23,10 @@ Rabbit-Spec 来源当前明确保留，用于补充 AIGC、China 覆盖；不要
 | 2 | `generate_rules.py` | 下载、合并、清洗、校验规则；应用手工规则、排除规则、护栏、CIDR 裁剪和 Global 重叠裁剪 |
 | 3 | `manifest.py` | 生成每个规则文件的 manifest：`<stable_id>	<source_name>`；`--diff` 用于生成差异报告 |
 | 4 | `generate_receipt.py` | 汇总 manifest、diff、规则类型与公开 Manual 基线，生成确定性发布收据 |
-| 5 | `generate_clash_rules.py` | 将 `Rule/*.list` 转换为 `clash/*.yaml`，供 Clash / mihomo rule-provider 使用 |
-| 6 | `validate_surge_repo.py` | 仓库级不变量检查，含公开 Manual override manifest 合同 |
-| 7 | `audit_rules.py` | 生成后联网审计：上游可达性、规则数量、共享基础设施、Surge 文档、exclude 覆盖等 |
-| 8 | `reviewed_release.py` | 在 dry-run 完成所有生成和 DNS 模块同步后保存完整发布快照；发布时按指定 run ID 恢复并验证 |
-| 9 | `cross_file_conflicts.py` | 手动辅助及 CI 信息性检查：列出同一域名跨不同策略文件重复出现时的 first-match 实际生效关系 |
+| 5 | `validate_surge_repo.py` | 仓库级不变量检查，含公开 Manual override manifest 合同 |
+| 6 | `audit_rules.py` | 生成后联网审计：上游可达性、规则数量、共享基础设施、Surge 文档、exclude 覆盖等 |
+| 7 | `reviewed_release.py` | 在 dry-run 完成所有生成和 DNS 模块同步后保存完整发布快照；发布时按指定 run ID 恢复并验证 |
+| 8 | `cross_file_conflicts.py` | 手动辅助及 CI 信息性检查：列出同一域名跨不同策略文件重复出现时的 first-match 实际生效关系 |
 
 ---
 
@@ -76,13 +75,10 @@ python3 scripts/manifest.py
 python3 scripts/manifest.py --diff
 python3 scripts/generate_receipt.py
 
-# 4. 生成 Clash / mihomo rule-provider
-python3 scripts/generate_clash_rules.py --validate
-
-# 5. 校验仓库
+# 4. 校验仓库
 python3 scripts/validate_surge_repo.py
 
-# 6. 联网审计
+# 5. 联网审计
 python3 scripts/audit_rules.py
 
 # 7. 查看跨文件策略冲突（--summary 为 CI 信息性输出同款）
@@ -197,4 +193,4 @@ python3 -B scripts/automation_preflight.py \
 
 多个文件的 rename 并非一个文件系统事务：并发读者仍可能短暂看到混合状态，断电或 SIGKILL
 也不保证自动回滚。运行必须保持隔离工作区和任务独占；对外发布边界仍是完整 Git 提交、PR 和
-精确提交 CI。规则生成不意味着后续 Clash、DNS Module、manifest 与收据已全部校验通过。
+精确提交 CI。规则生成不意味着后续 DNS Module、manifest 与收据已全部校验通过。

@@ -1,6 +1,6 @@
 # Surge 规则仓库
 
-聚合上游规则，生成 Surge 规则集和 Clash / mihomo 镜像，通过来源索引、规则校验、联网审计和 CI 发布。
+聚合上游规则，生成 Surge 规则集，通过来源索引、规则校验、联网审计和 CI 发布。
 
 [![CI](https://github.com/linnux-x/surge/actions/workflows/ci.yml/badge.svg)](https://github.com/linnux-x/surge/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -11,7 +11,7 @@
 - 维护者本机 **Hermes** 每天北京时间 **05:00** 调度规则更新，保留 Agent 审查；旧 Codex 维护任务已暂停。实际频率与运行健康以调度配置和执行证据为准，归属见 [SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md)。
 - 更新经分支和 PR 发布，精确提交的 CI 通过后合并 `main`。GitHub Actions 提供手动全量生成和已审阅产物发布。
 - Python 脚本无需第三方 Python 包；本地完整流程需要 **Python 3.10+、curl、Git**，向 GitHub 发布还需已认证的 **GitHub CLI**。
-- 当前规则数、来源归属和 Clash 兼容性见 [生成收据](scripts/generation_receipt.md)，最新增删见 [差异报告](scripts/diff_report.md)。
+- 当前规则数、规则类型和来源归属见 [生成收据](scripts/generation_receipt.md)，最新增删见 [差异报告](scripts/diff_report.md)。
 
 ## 使用规则
 
@@ -42,13 +42,7 @@ https://raw.githubusercontent.com/linnux-x/surge/main/Conf/Linnux.conf
 首次导入需能访问 GitHub Raw。托管头使用 `interval=86400`，未开启 strict，更新失败时客户端可继续使用旧配置。
 真实订阅、节点凭据和设备配置不在本仓库，边界见 [SOURCE_OF_TRUTH.md](SOURCE_OF_TRUTH.md)。
 
-### Clash / mihomo
-
-使用 [clash/](clash/) 下的 YAML rule-provider，普通文件采用 `behavior: classical`。
-Surge 专属类型会按转换器规则排除；扩展规则类型及数量见生成收据，需按客户端支持情况使用。
-`China_Domain.yaml` 与 `China_Extra.yaml` 是配套拆分输出，前者用于 domain provider，后者承接剩余 classical 规则，二者需要配合使用。
-
-`Rule/*.list`、`clash/*.yaml` 和 `Conf/Linnux.conf` 的公开路径是下游契约，不随内部整理迁移。
+`Rule/*.list` 和 `Conf/Linnux.conf` 的公开路径是下游契约，不随内部整理迁移。
 
 ## 规则列表
 
@@ -101,7 +95,7 @@ Sukka 数据有每日构建；spiritLHLS 仓库每日同步不代表 CSV 每日�
 ### 每日更新
 
 ```text
-上游检查 → 受影响规则重建 → manifest / diff / receipt → Clash 镜像
+上游检查 → 受影响规则重建 → manifest / diff / receipt
 → 不变量与路由校验 → 联网审计 → Agent 审查 → PR → exact-SHA CI → 合并 main
 ```
 
@@ -133,7 +127,6 @@ Fork 用户先按贡献指南修改仓库限制及自己的调度方式，不要
 python3 -m unittest discover -s tests -p 'test_*.py'
 python3 scripts/test_routing_order.py
 python3 scripts/validate_surge_repo.py
-python3 scripts/generate_clash_rules.py --check --validate
 python3 scripts/generate_receipt.py
 git diff --exit-code -- scripts/generation_receipt.json scripts/generation_receipt.md
 ```

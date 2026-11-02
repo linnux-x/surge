@@ -94,11 +94,6 @@ jobs:
         shell: bash
         run: python3 scripts/generate_receipt.py
 
-      - name: Generate Clash Rule Providers
-        if: ${{ inputs.dry_run == 'true' }}
-        shell: bash
-        run: python3 scripts/generate_clash_rules.py --validate
-
       - name: Validate Repository Invariants
         if: ${{ inputs.dry_run == 'true' }}
         shell: bash
@@ -190,7 +185,6 @@ jobs:
           gh api "$artifact_url" > /tmp/reviewed-release.zip
           python3 scripts/reviewed_release.py restore /tmp/reviewed-release.zip --run-id "$REVIEWED_RUN_ID"
           python3 scripts/validate_surge_repo.py --ci
-          python3 scripts/generate_clash_rules.py --check --validate
           python3 -m unittest discover -s tests -p 'test_*.py'
           python3 scripts/test_routing_order.py
 
@@ -209,7 +203,7 @@ jobs:
 
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add Rule/ clash/ Module/ README.md \
+          git add Rule/ Module/ README.md \
             scripts/diff_report.md scripts/diff_report.json scripts/generation_receipt.md \
             scripts/generation_receipt.json scripts/source_state.json
 

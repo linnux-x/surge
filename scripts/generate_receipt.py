@@ -36,20 +36,14 @@ def source_attribution() -> Counter[str]:
 
 
 def main() -> int:
-    from generate_clash_rules import CLASH_UNSUPPORTED_TYPES, MIHOMO_ONLY_OR_COMPAT_TYPES
-
     files: list[dict] = []
     rule_types: Counter[str] = Counter()
-    unsupported: Counter[str] = Counter()
-    compatibility: Counter[str] = Counter()
     total_rules = 0
     for path in sorted(RULE_DIR.glob("*.list")):
         rules = active_rules(path)
         types = Counter(rule.split(",", 1)[0] for rule in rules)
         rule_types.update(types)
         total_rules += len(rules)
-        unsupported.update({name: count for name, count in types.items() if name in CLASH_UNSUPPORTED_TYPES})
-        compatibility.update({name: count for name, count in types.items() if name in MIHOMO_ONLY_OR_COMPAT_TYPES})
         files.append({
             "file": path.name,
             "rules": len(rules),
@@ -60,7 +54,6 @@ def main() -> int:
     diff_path = ROOT / "scripts" / "diff_report.json"
     diff = json.loads(diff_path.read_text(encoding="utf-8")) if diff_path.exists() else {}
     manifests = sorted(MANIFEST_DIR.glob("*.manifest"))
-    dropped = sum(unsupported.values())
     data = {
         "schema_version": 1,
         "rule_files": files,
@@ -71,11 +64,6 @@ def main() -> int:
         "manifests_sha256": {path.name: sha256(path) for path in manifests},
         "sources_sha256": sha256(ROOT / "scripts" / "sources.py"),
         "override_manifest_sha256": sha256(RULE_DIR / "Manual" / "override-manifest.json"),
-        "clash_compatibility": {
-            "payload_rules": total_rules - dropped,
-            "dropped_surge_only_types": dict(sorted(unsupported.items())),
-            "preserved_mihomo_extended_types": dict(sorted(compatibility.items())),
-        },
         "diff_summary": {key: diff.get(key, 0) for key in (
             "total_added", "total_removed", "total_source_changed",
         )},
@@ -88,10 +76,7 @@ def main() -> int:
         f"- manifest 文件：{len(manifests)}", "", "## 差异摘要", "",
         f"- 新增：{data['diff_summary']['total_added']}",
         f"- 删除：{data['diff_summary']['total_removed']}",
-        f"- 来源迁移：{data['diff_summary']['total_source_changed']}", "", "## Clash 兼容性", "",
-        f"- 生成 payload：{total_rules - dropped}",
-        f"- 跳过 Surge 专属规则：{dict(sorted(unsupported.items()))}",
-        f"- 保留 mihomo 扩展类型：{dict(sorted(compatibility.items()))}", "", "## 规则类型", "",
+        f"- 来源迁移：{data['diff_summary']['total_source_changed']}", "", "## 规则类型", "",
     ]
     lines.extend(f"- {name}: {count}" for name, count in data["rule_types"].items())
     lines.extend(["", "## 来源归属", ""])
