@@ -44,7 +44,7 @@ from sources import (
     expand_ruleset_dependencies,
 )
 from cidr_rules import prune_cidr_lines
-from rule_validator import validate_rule_file
+from rule_validator import validate_rule_file, non_comment_rules
 from file_batch import publish_files
 import source_cache
 # Re-export existing helper names for callers importing from generate_rules.
@@ -73,8 +73,14 @@ FETCH_SUBPROCESS_TIMEOUT = 120  # hard backstop around the curl call itself
 UPDATED_PREFIX = "# UPDATED:"
 HEADER_LINES = 6  # NAME, AUTHOR, REPO, UPDATED, FORMAT, TOTAL
 SNAPSHOT_DIR = ".sources"
-# Set by main(--offline): read pinned snapshots from the local cache, never the network.
-OFFLINE = False
+
+
+class RuleValidationError(ValueError):
+    """Generated rules failed validation; nothing was written for that ruleset."""
+
+    def __init__(self, target_name: str, errors: list[str]):
+        self.errors = errors
+        super().__init__(f"VALIDATION FAILED for {target_name}:\n" + "\n".join(f"  - {e}" for e in errors))
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────
@@ -210,9 +216,9 @@ def snapshot_path(rule_dir: Path, target_name: str) -> Path:
     return rule_dir / SNAPSHOT_DIR / f"{target_name.rsplit('.', 1)[0]}.json"
 
 
-def pinned_sources(target_name: str) -> dict[tuple[str, str, Optional[str]], str]:
+def pinned_sources(target_name: str, rule_dir: Path) -> dict[tuple[str, str, Optional[str]], str]:
     """Return {(label, url, format): converted sha256} recorded for the published ruleset."""
-    path = snapshot_path(RULE_DIR, target_name)
+    path = snapshot_path(rule_dir, target_name)
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
     except OSError as exc:
@@ -232,14 +238,20 @@ def load_source(target_name: str, pins: Optional[dict], source: Tuple[str, str, 
     return source_cache.get(source_url, pins[source]), pins[source]
 
 
-def process_rule(target_name: str, display_name: str, sources: list[Tuple[str, str, Optional[str]]]):
-    """Generate a single ruleset file from its sources."""
-    target_path = RULE_DIR / target_name
+def process_rule(target_name: str, display_name: str, sources: list[Tuple[str, str, Optional[str]]],
+                 *, rule_dir: Optional[Path] = None, offline: bool = False):
+    """Generate a single ruleset file (and its snapshot record) into ``rule_dir``.
+
+    ``rule_dir`` defaults to the repository's Rule/; ``offline`` reads the pinned
+    snapshots instead of the network. Raises RuleValidationError without writing.
+    """
+    rule_dir = RULE_DIR if rule_dir is None else rule_dir
+    target_path = rule_dir / target_name
     filename_no_ext = target_name.rsplit(".", 1)[0]
     exclude_file = MANUAL_DIR / f"{filename_no_ext}.exclude.txt"
 
     lines: list[str] = []
-    pins = pinned_sources(target_name) if OFFLINE else None
+    pins = pinned_sources(target_name, rule_dir) if offline else None
     records: list[dict] = []
 
     # Manual rules first (highest priority)
@@ -290,13 +302,10 @@ def process_rule(target_name: str, display_name: str, sources: list[Tuple[str, s
     with tempfile.NamedTemporaryFile(dir=destination.parent, prefix=".rules-", suffix=".tmp", delete=False) as staging:
         target_path = Path(staging.name)
     try:
-        rules = [l for l in pruned_lines if l.strip() and not l.strip().startswith("#")]
+        rules = non_comment_rules(pruned_lines)
         errors = validate_rule_file(rules, target_name)
         if errors:
-            print(f"VALIDATION FAILED for {target_name}:")
-            for e in errors:
-                print(f"  - {e}")
-            sys.exit(1)
+            raise RuleValidationError(target_name, errors)
 
         # Write final file with header
         rule_count = len(rules)
@@ -321,16 +330,17 @@ def process_rule(target_name: str, display_name: str, sources: list[Tuple[str, s
                       encoding="utf-8")
 
 
-def prune_global_first_match_overlaps():
-    """Remove rules from Global.list that appear in earlier-matched rulesets."""
-    target_path = RULE_DIR / "Global.list"
+def prune_global_first_match_overlaps(rule_dir: Optional[Path] = None):
+    """Remove rules from Global.list that appear in earlier-matched rulesets in ``rule_dir``."""
+    rule_dir = RULE_DIR if rule_dir is None else rule_dir
+    target_path = rule_dir / "Global.list"
     if not target_path.exists():
         return
 
     # Collect all earlier rules
     overlap: set[str] = set()
     for ruleset in GLOBAL_OVERLAP_RULESETS:
-        path = RULE_DIR / ruleset
+        path = rule_dir / ruleset
         if path.exists():
             for line in path.read_text(encoding="utf-8").splitlines():
                 if not line.startswith("#") and line.strip():
@@ -358,17 +368,13 @@ def prune_global_first_match_overlaps():
     rules = [l for l in result if not l.startswith("#") and l.strip()]
     errors = validate_rule_file(rules, "Global.list")
     if errors:
-        print("VALIDATION FAILED for Global.list after pruning:")
-        for e in errors:
-            print(f"  - {e}")
-        sys.exit(1)
+        raise RuleValidationError("Global.list after pruning", errors)
     target_path.write_text("\n".join(result) + "\n", encoding="utf-8")
 
 
 # ── Main ────────────────────────────────────────────────────────────────────
 
 def main(argv: list[str] | None = None) -> int:
-    global RULE_DIR, OFFLINE
     parser = argparse.ArgumentParser(description="Generate Surge rulesets from upstream sources.")
     parser.add_argument("--check", action="store_true",
                         help="generate without publishing; exit 1 if any ruleset would change")
@@ -416,19 +422,18 @@ def main(argv: list[str] | None = None) -> int:
             shutil.copytree(destination / SNAPSHOT_DIR, staged / SNAPSHOT_DIR)
         processed: list[str] = []
         try:
-            RULE_DIR = staged
-            OFFLINE = args.offline
             for target_name, (display_name, sources) in RULE_SPECS.items():
                 if should_process(target_name, selected_rulesets, is_workflow_dispatch):
                     print(f"Processing {target_name} ...")
-                    process_rule(target_name, display_name, sources)
+                    process_rule(target_name, display_name, sources, rule_dir=staged, offline=args.offline)
                     processed.append(target_name)
             if processed:
                 print("Pruning Global.list first-match overlaps ...")
-                prune_global_first_match_overlaps()
-        finally:
-            RULE_DIR = destination
-            OFFLINE = False
+                prune_global_first_match_overlaps(staged)
+        except RuleValidationError as exc:
+            # Staged output is discarded with the temporary directory; published files are untouched.
+            print(exc)
+            return 1
         changed: dict[Path, bytes] = {}
         pins: dict[Path, bytes] = {}
         backfills: list[str] = []

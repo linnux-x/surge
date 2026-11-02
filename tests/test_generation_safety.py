@@ -42,7 +42,7 @@ class GenerationSafetyTests(unittest.TestCase):
         self.run_invalid_source(['# empty upstream'], ValueError)
 
     def test_invalid_rules_do_not_overwrite_valid_output(self):
-        self.run_invalid_source(['NOT-A-RULE,example.test'], SystemExit)
+        self.run_invalid_source(['NOT-A-RULE,example.test'], generator.RuleValidationError)
 
     def test_validator_preserves_option_distinction(self):
         from rule_validator import validate_rule_file
@@ -67,7 +67,7 @@ class GenerationSafetyTests(unittest.TestCase):
             content = '# TOTAL: 2\nDOMAIN,shared.example\nNOT-A-RULE,broken\n'
             p.write_text(content)
             (root/'AI.list').write_text('DOMAIN,shared.example\n')
-            with patch.object(generator, 'RULE_DIR', root), self.assertRaises(SystemExit):
+            with patch.object(generator, 'RULE_DIR', root), self.assertRaises(generator.RuleValidationError):
                 generator.prune_global_first_match_overlaps()
             self.assertEqual(p.read_text(), content)
 
