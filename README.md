@@ -124,17 +124,14 @@ Fork 用户先按贡献指南修改仓库限制及自己的调度方式，不要
 ## 本地验证
 
 ```bash
-python3 -m unittest discover -s tests -p 'test_*.py'
-python3 scripts/test_routing_order.py
-python3 scripts/validate_surge_repo.py
-python3 scripts/generate_receipt.py
-git diff --exit-code -- scripts/generation_receipt.json scripts/generation_receipt.md
+python3 scripts/pipeline.py verify
 ```
 
-生成规则后、提交前还必须运行联网审计：
+它依次运行仓库不变量校验、收据一致性（只读）、单元测试、路由测试和 `git diff --check`，与 CI 相同。
+生成规则后、提交前还必须加上联网审计：
 
 ```bash
-python3 scripts/audit_rules.py
+python3 scripts/pipeline.py verify --online
 ```
 
 ERROR 阻断流程，WARN 不直接改变脚本退出码但需要审阅，INFO 记录供复核。
