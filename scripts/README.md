@@ -68,6 +68,8 @@ python3 scripts/check_upstream_updates.py
 
 # 2. 生成规则（服务规则变化时，生成器也会自动补充 Global 依赖）
 CHANGED_RULESETS='["AI.list", "Global.list"]' python3 scripts/generate_rules.py
+# 正文未变的规则集保持原字节（不刷新 # UPDATED），不会产生只改时间戳的差异。
+# 加 --check 只生成不发布，有规则集会变化时退出码为 1。
 
 # 3. 生成 manifest 和 diff 报告
 python3 scripts/manifest.py
