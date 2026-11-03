@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-02T14:03:27.730608",
-  "total_added": 354,
-  "total_removed": 129,
+  "generated_at": "2026-11-04T05:02:35.614560",
+  "total_added": 209,
+  "total_removed": 578,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -61,835 +61,13 @@
     },
     {
       "file": "China.list",
-      "prev_total": 110300,
+      "prev_total": 110478,
       "curr_total": 110478,
-      "added_count": 242,
-      "removed_count": 64,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "0094e885666b",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,volctrack.com"
-        },
-        {
-          "id": "0319e4062265",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,hapipixia.com"
-        },
-        {
-          "id": "03cbe5d77ba1",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,pipixiaha.com"
-        },
-        {
-          "id": "055bf5276a96",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,dewu.co"
-        },
-        {
-          "id": "06fc8188e916",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,clawhubmirror.com"
-        },
-        {
-          "id": "08258a09c821",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,msn.com"
-        },
-        {
-          "id": "084e66a59657",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,iluckysf.net"
-        },
-        {
-          "id": "098833c95f24",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,easyliao.com"
-        },
-        {
-          "id": "09ac6ca6bfbc",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,dewu-inner.com"
-        },
-        {
-          "id": "0a3a473f5bc9",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,bytegqpo.net"
-        },
-        {
-          "id": "0c7597a98fab",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,sealsuite.net"
-        },
-        {
-          "id": "0c90df245e63",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,koowo.com"
-        },
-        {
-          "id": "0cb679be315b",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,edgemonix.top"
-        },
-        {
-          "id": "0ea10f20ab47",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,solarcloud.top"
-        },
-        {
-          "id": "0fa6bbc806b2",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,bvmlt.top"
-        },
-        {
-          "id": "0fed328fb3e1",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,awstme.top"
-        },
-        {
-          "id": "114a3dcc5409",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,dutils.com"
-        },
-        {
-          "id": "127851abf679",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,ro.com"
-        },
-        {
-          "id": "134e27aa0126",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,threep.top"
-        },
-        {
-          "id": "13c2a298840a",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,airchinalimited.com"
-        },
-        {
-          "id": "13c4f869f09c",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,saduck.top"
-        },
-        {
-          "id": "13fb0898db37",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,analytics.tiktok.com"
-        },
-        {
-          "id": "1547cfc91101",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,pglstatp-snssdk-toutiao.com"
-        },
-        {
-          "id": "156c4ff8ea9f",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,manhuaren.com"
-        },
-        {
-          "id": "17647a71b779",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,bplslb.com"
-        },
-        {
-          "id": "18a16884b1b6",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,anquan"
-        },
-        {
-          "id": "1b2dddec09a5",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,stats.ipinyou.com"
-        },
-        {
-          "id": "1cc4ad39b15d",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,mzyyzl.com"
-        },
-        {
-          "id": "1d536be33b06",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,tiapi.net"
-        },
-        {
-          "id": "1e807cbf6026",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,weibo"
-        },
-        {
-          "id": "1e87b45a29bf",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,qwapp.top"
-        },
-        {
-          "id": "1f3ac6adc1a4",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,httpdns.pro"
-        },
-        {
-          "id": "2423b1289cee",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,7moor-fs1.com"
-        },
-        {
-          "id": "26ecf11e25f6",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,getsays.com"
-        },
-        {
-          "id": "272079d3b639",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,oppocolor.com"
-        },
-        {
-          "id": "27e87e20826d",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,topwd.top"
-        },
-        {
-          "id": "27ee4253e1f9",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,bpigagtm.com"
-        },
-        {
-          "id": "288cef8f4843",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,pengyoudewu.com"
-        },
-        {
-          "id": "28a48029a92c",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,2345.cc"
-        },
-        {
-          "id": "2a3e4422138d",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,51yipei.com"
-        },
-        {
-          "id": "2a6a2c033ed3",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,xihuan"
-        },
-        {
-          "id": "2a9017955037",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,sohu"
-        },
-        {
-          "id": "2b6a8af24611",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,igetui.com"
-        },
-        {
-          "id": "2c0a27728dae",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,cydiabc.top"
-        },
-        {
-          "id": "2c6bde85d1fd",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,digicert.com"
-        },
-        {
-          "id": "2e938b8bfbe6",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,liyuans.com"
-        },
-        {
-          "id": "2ee33d724d25",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN,time.izatcloud.net"
-        },
-        {
-          "id": "2f3c811bfa7b",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,youdaoads.com"
-        },
-        {
-          "id": "309772d4ad29",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,zzzcaculator.top"
-        },
-        {
-          "id": "327254d44353",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,ztna-dingtalk.com"
-        },
-        {
-          "id": "345ae2e890a5",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,byteactivity13.com"
-        },
-        {
-          "id": "3549647d5491",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,yun"
-        },
-        {
-          "id": "3724c82c64ce",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,poizon-inner.com"
-        },
-        {
-          "id": "380a8c8bb6fc",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,bytexopen.com"
-        },
-        {
-          "id": "38c672211045",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,tianhw.top"
-        },
-        {
-          "id": "38f40c859260",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,sleep.pokemon"
-        },
-        {
-          "id": "39497ced3310",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,giftattoday.com"
-        },
-        {
-          "id": "3a46afdb089f",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,dw2.co"
-        },
-        {
-          "id": "3a4f5945e809",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,chdbits.co"
-        },
-        {
-          "id": "3a74ae5643ac",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,nbyzfeyy.com"
-        },
-        {
-          "id": "3c372b8a6d43",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,functiongraph.run"
-        },
-        {
-          "id": "3d1e1e341fb3",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,live.com"
-        },
-        {
-          "id": "3ddf03866e3f",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,jsj.top"
-        },
-        {
-          "id": "4238d4cb6685",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,share123.top"
-        },
-        {
-          "id": "43db87ca0136",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,mappcloud.com"
-        },
-        {
-          "id": "44327d344cfb",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,vrzwk.top"
-        },
-        {
-          "id": "4486741450cb",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,onenote.com"
-        },
-        {
-          "id": "45ea365bdd78",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,cfc108.com"
-        },
-        {
-          "id": "479dfbdf9219",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,coolab.top"
-        },
-        {
-          "id": "4938d5887845",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,jutongbao.top"
-        },
-        {
-          "id": "49f4b6c965e5",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,byteactivity14.com"
-        },
-        {
-          "id": "4a4564a78120",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,ixiguapi.com"
-        },
-        {
-          "id": "4c164adc966c",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,dewu-inc.com"
-        },
-        {
-          "id": "4c263508d9c4",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,eufycn.com"
-        },
-        {
-          "id": "4de6b7ea7d83",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,maoer.com"
-        },
-        {
-          "id": "4f0136b51310",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,chatwrite.net"
-        },
-        {
-          "id": "4fa23b5c7678",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,yto.top"
-        },
-        {
-          "id": "5248a4d39b41",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,lebo.top"
-        },
-        {
-          "id": "542a808e5b3f",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,byteplusapi-test.com"
-        },
-        {
-          "id": "54c579fb24ae",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,hnol.net"
-        },
-        {
-          "id": "555dea19bf85",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,tclai.top"
-        },
-        {
-          "id": "561b8bc6b526",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,citic"
-        },
-        {
-          "id": "57406febae77",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,bdcat.top"
-        },
-        {
-          "id": "57c03523bb57",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,talkingdata.com"
-        },
-        {
-          "id": "59c80826bef0",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,xiangrikuisite.com"
-        },
-        {
-          "id": "5a90ea44eba9",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,wxdw.top"
-        },
-        {
-          "id": "5baa8da6d410",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,codeloop.top"
-        },
-        {
-          "id": "5c048236a09e",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,vecdnlb.com"
-        },
-        {
-          "id": "5da255a6738f",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,kskwai.com"
-        },
-        {
-          "id": "5e58699a00ce",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,volcenginapi.com"
-        },
-        {
-          "id": "5e6e04278289",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,pglstatp-sdk-toutiao.com"
-        },
-        {
-          "id": "5fd7596f6911",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,zway.top"
-        },
-        {
-          "id": "602ee5a39897",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,lydass.net"
-        },
-        {
-          "id": "60c0f3af4fbe",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,trello.com"
-        },
-        {
-          "id": "61000e848d91",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,goka.top"
-        },
-        {
-          "id": "612ac26b4e98",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,hapiyixia.com"
-        },
-        {
-          "id": "61400ba985d4",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,kuailepipixia.com"
-        },
-        {
-          "id": "61b786a07cc1",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,linglong.space"
-        },
-        {
-          "id": "63eb0e4bd78d",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,cdut.top"
-        },
-        {
-          "id": "6479570defdf",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,icbc"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "01e90ff492fb",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,zhugeio.com"
-        },
-        {
-          "id": "07f4a6aedabd",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,MicroMessengerClient*"
-        },
-        {
-          "id": "0be43fec366a",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,rj.m.taobao.co"
-        },
-        {
-          "id": "0db44ca072cb",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,aliyuncdn.com"
-        },
-        {
-          "id": "0f88181491c8",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,arrowio*"
-        },
-        {
-          "id": "1951671ae7ba",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-KEYWORD,officecdn"
-        },
-        {
-          "id": "1c639d725b79",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-KEYWORD,taobao"
-        },
-        {
-          "id": "22d6d186f726",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,aliyun-inc.com"
-        },
-        {
-          "id": "2e466ba8e3a6",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,AdBlock*"
-        },
-        {
-          "id": "31e98e9fa6ea",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-KEYWORD,beplay"
-        },
-        {
-          "id": "32892bf11bb0",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,ipinyou.com"
-        },
-        {
-          "id": "3558378ccbee",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,zhugeapi.net"
-        },
-        {
-          "id": "3afe714f1d87",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,TIM*"
-        },
-        {
-          "id": "3c6d64324b29",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,NeteaseMusic*"
-        },
-        {
-          "id": "3db0cbc782ed",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,ditu.live.com"
-        },
-        {
-          "id": "40d279d32e9c",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,balls*"
-        },
-        {
-          "id": "4151f4bfeb2c",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,s-microsoft.com"
-        },
-        {
-          "id": "454b0760aaf2",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,adimages.sina.com.hk"
-        },
-        {
-          "id": "4ad7fcc47d93",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,YYeTs*"
-        },
-        {
-          "id": "4dee60852d53",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,cmb*"
-        },
-        {
-          "id": "4eafa3057107",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,MicroMessenger%20Client"
-        },
-        {
-          "id": "4f1eef5531d6",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,aliyun-iot-share.com"
-        },
-        {
-          "id": "53071fe1fe1c",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,alipaymo.com"
-        },
-        {
-          "id": "5357a06ead4a",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-KEYWORD,baidu"
-        },
-        {
-          "id": "551a26f6c2ff",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-KEYWORD,alipay"
-        },
-        {
-          "id": "5baf7a7375cc",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,Microsoft*"
-        },
-        {
-          "id": "60004ae4ae54",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*"
-        },
-        {
-          "id": "627c62ba8cca",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,hearthstone*"
-        },
-        {
-          "id": "62fcd1487879",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,ex.puata.info"
-        },
-        {
-          "id": "65638fc0b451",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,*Vainglory*"
-        },
-        {
-          "id": "671b40d2c76f",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,baidupan.com"
-        },
-        {
-          "id": "684d6de7072c",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,51.la"
-        },
-        {
-          "id": "69626120a7b0",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,dl-vip.pcfaster.baidu.co.th"
-        },
-        {
-          "id": "6b332785cbec",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-KEYWORD,sleep.pokemon"
-        },
-        {
-          "id": "72d22017ee2c",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,windowsupdate.com"
-        },
-        {
-          "id": "7386cb753e7a",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,hide*"
-        },
-        {
-          "id": "74d5396788c7",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,microsoftonline.com"
-        },
-        {
-          "id": "7c7ec9c8ed6c",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,mlt01.com"
-        },
-        {
-          "id": "7e17870d6a29",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,RemotePlay*"
-        },
-        {
-          "id": "8e9af863dfed",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,hz.tbusergw.taobao.net"
-        },
-        {
-          "id": "94931f76edd4",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1*"
-        },
-        {
-          "id": "95533461a2cd",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,alipaydns.com"
-        },
-        {
-          "id": "9bae89df36ea",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,cmblife*"
-        },
-        {
-          "id": "9d8342973578",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,ting_en"
-        },
-        {
-          "id": "9ebefb206fdf",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,alipay.hk"
-        },
-        {
-          "id": "a6073daa17f7",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-KEYWORD,alicdn"
-        },
-        {
-          "id": "a8f6344417ec",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,alipaylog.com"
-        },
-        {
-          "id": "b10f02060bc3",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,WebTorrent*"
-        },
-        {
-          "id": "b60951a53e10",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,sharepoint.com"
-        },
-        {
-          "id": "ba2a689da7a4",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,Best%20Trace*"
-        },
-        {
-          "id": "bb7153b8769d",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,eusoft_ting_en_iphone"
-        },
-        {
-          "id": "bcee0d550bc2",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,hz.pre.tbusergw.taobao.net"
-        },
-        {
-          "id": "ca3d8f6472ba",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,Moke*"
-        },
-        {
-          "id": "cb0ebdc47852",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-KEYWORD,aliyun"
-        },
-        {
-          "id": "cb1a60d0f9c2",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,%E5%8D%B3%E5%88%BB*"
-        },
-        {
-          "id": "cc69450913cd",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,MegaWerewolf*"
-        },
-        {
-          "id": "ce1f42077d41",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-KEYWORD,.tmall.com"
-        },
-        {
-          "id": "d67120089fd1",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,QQ*"
-        },
-        {
-          "id": "df7500e3fa98",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,%E4%BA%AC%E4%B8%9C%E5%88%B0%E5%AE%B6*"
-        },
-        {
-          "id": "e87ca6dec566",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,baidufree.com"
-        },
-        {
-          "id": "f1ef3395aa75",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,oascentral.sina.com.hk"
-        },
-        {
-          "id": "f586699dffcb",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,TeamViewer*"
-        },
-        {
-          "id": "f7961c186d41",
-          "source": "Rabbit-Spec China",
-          "rule": "USER-AGENT,%E4%B8%AD%E5%9B%BD%E5%B7%A5%E5%95%86%E9%93%B6%E8%A1%8C*"
-        },
-        {
-          "id": "faf0f647b26a",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,alipayplus.com"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -906,12 +84,864 @@
     {
       "file": "China_IP.list",
       "prev_total": 10012,
-      "curr_total": 10012,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 9662,
+      "added_count": 70,
+      "removed_count": 420,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "00229ba7ff7f",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2408:4000::/40"
+        },
+        {
+          "id": "00cf9fe18cf2",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,203.107.32.0/19"
+        },
+        {
+          "id": "02d6c52c3b18",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,140.210.64.0/18"
+        },
+        {
+          "id": "065bb3fcfbe4",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2408:4000:100::/47"
+        },
+        {
+          "id": "1172714f4bad",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,110.42.0.0/20"
+        },
+        {
+          "id": "16a7674231f5",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2408:4000:200::/39"
+        },
+        {
+          "id": "2150fa96c12d",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2408:4000:1000::/36"
+        },
+        {
+          "id": "292934061a62",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,110.42.24.0/21"
+        },
+        {
+          "id": "299a17200e6c",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,103.19.235.0/24"
+        },
+        {
+          "id": "2d26648bb2d6",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2408:4000:4000::/34"
+        },
+        {
+          "id": "305988ed5f55",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,103.74.124.0/24"
+        },
+        {
+          "id": "343222885d82",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,27.98.202.0/23"
+        },
+        {
+          "id": "36d4d23ba088",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2408:4000:400::/38"
+        },
+        {
+          "id": "382911332e23",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,140.210.32.0/19"
+        },
+        {
+          "id": "38ad7586d095",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,203.107.4.0/22"
+        },
+        {
+          "id": "3984f480afa4",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2408:4004::/30"
+        },
+        {
+          "id": "3a8289a53d4c",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,203.107.72.0/21"
+        },
+        {
+          "id": "3e901f7cf3b8",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,163.223.72.0/23"
+        },
+        {
+          "id": "40b8880f8cf0",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,203.107.8.0/21"
+        },
+        {
+          "id": "41859d985081",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,45.113.204.0/22"
+        },
+        {
+          "id": "45070fa9add2",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,203.107.70.0/23"
+        },
+        {
+          "id": "45ba304bac69",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,203.107.69.0/24"
+        },
+        {
+          "id": "46004a8bdb58",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2406:840:eb0a::/48"
+        },
+        {
+          "id": "4cb726ab9456",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,203.107.96.0/19"
+        },
+        {
+          "id": "5673ce7c2ef4",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2408:4000:103::/48"
+        },
+        {
+          "id": "56b34d0e62be",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,202.144.196.0/23"
+        },
+        {
+          "id": "59baacfabb93",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2408:4008::/29"
+        },
+        {
+          "id": "621c14fe9107",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,103.53.126.0/24"
+        },
+        {
+          "id": "629c0c855a51",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2408:4000:108::/45"
+        },
+        {
+          "id": "652864d06415",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,103.53.124.0/23"
+        },
+        {
+          "id": "654a3bfda6d2",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,110.40.0.0/15"
+        },
+        {
+          "id": "65f8a2370264",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,140.210.0.0/20"
+        },
+        {
+          "id": "6927fc09f6ff",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,140.210.16.0/23"
+        },
+        {
+          "id": "6db35373e75e",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,203.107.80.0/20"
+        },
+        {
+          "id": "6f57909299b6",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2408:4000:2000::/35"
+        },
+        {
+          "id": "6fba91932dc7",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2a0a:d685:502::/47"
+        },
+        {
+          "id": "71b0dc38a665",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2408:4000:104::/46"
+        },
+        {
+          "id": "72b3fa5dc160",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,45.113.202.0/24"
+        },
+        {
+          "id": "7c73a002ae8d",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2408:4001::/32"
+        },
+        {
+          "id": "8379639719e9",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,110.42.32.0/19"
+        },
+        {
+          "id": "851860037e47",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2402:8160::/32"
+        },
+        {
+          "id": "8b48be24a34c",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2a0a:d685:500::/48"
+        },
+        {
+          "id": "8d77ad5f55a0",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,110.42.16.0/24"
+        },
+        {
+          "id": "91005c049978",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,202.144.198.0/24"
+        },
+        {
+          "id": "9471d9e0d43f",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,110.42.64.0/18"
+        },
+        {
+          "id": "9917b2b55b99",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,110.42.20.0/22"
+        },
+        {
+          "id": "99c9da5cbe5c",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,203.107.16.0/20"
+        },
+        {
+          "id": "9ee332727c94",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2408:4000:8000::/33"
+        },
+        {
+          "id": "a11ce8c35f05",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,203.107.0.0/23"
+        },
+        {
+          "id": "a1b486bcc4eb",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,110.42.18.0/23"
+        },
+        {
+          "id": "a9c12b62e09d",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,223.122.29.0/24"
+        },
+        {
+          "id": "aaa18628d130",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,140.210.20.0/22"
+        },
+        {
+          "id": "adfb3b95ab3a",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,203.107.2.0/24"
+        },
+        {
+          "id": "af7c760e21ef",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2406:840:c00::/48"
+        },
+        {
+          "id": "b3dbe41a0569",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,103.81.184.0/23"
+        },
+        {
+          "id": "c00659a70998",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,140.210.18.0/24"
+        },
+        {
+          "id": "c2f3b47241fd",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2408:4000:110::/44"
+        },
+        {
+          "id": "c4f7d9d5bd2f",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2408:4000:800::/37"
+        },
+        {
+          "id": "c7cf7680afaa",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,110.43.0.0/16"
+        },
+        {
+          "id": "c8f531302a9e",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2a0a:d685:504::/48"
+        },
+        {
+          "id": "d398bdd7da3f",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,140.210.24.0/21"
+        },
+        {
+          "id": "d5b20dbed552",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,110.42.128.0/17"
+        },
+        {
+          "id": "d74a2af14df3",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2408:4000:120::/43"
+        },
+        {
+          "id": "da638880a116",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2408:4002::/31"
+        },
+        {
+          "id": "df83091e0362",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2408:4000:180::/41"
+        },
+        {
+          "id": "e1cbfb3273f2",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2408:4000:140::/42"
+        },
+        {
+          "id": "e1db4c44bae9",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,45.113.200.0/23"
+        },
+        {
+          "id": "e55a04398d21",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,206.109.71.0/24"
+        },
+        {
+          "id": "f4324bee3a63",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,140.210.128.0/17"
+        },
+        {
+          "id": "f6b4e28dca98",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2a0a:d685:506::/47"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "02035bd5d851",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,43.96.80.0/23"
+        },
+        {
+          "id": "021d872078f8",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,170.33.136.0/23"
+        },
+        {
+          "id": "023a65fa0295",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,198.11.128.0/20"
+        },
+        {
+          "id": "0371d7c0ed16",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.89.84.0/24"
+        },
+        {
+          "id": "03a4e9468281",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,8.212.0.0/18"
+        },
+        {
+          "id": "03bff4aedd02",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,8.220.176.0/20"
+        },
+        {
+          "id": "042c6d58af98",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.246.84.0/22"
+        },
+        {
+          "id": "04db2ac3c2ee",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,8.220.96.0/20"
+        },
+        {
+          "id": "05347ca60f60",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.77.96.0/20"
+        },
+        {
+          "id": "0540391c04a3",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.235.8.0/22"
+        },
+        {
+          "id": "05b2fd575278",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.80.0.0/14"
+        },
+        {
+          "id": "05f11067c460",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.246.122.0/23"
+        },
+        {
+          "id": "06116f5d3d9c",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,43.108.0.0/16"
+        },
+        {
+          "id": "0714d9a34244",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,139.95.16.0/22"
+        },
+        {
+          "id": "081d35289161",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,8.218.0.0/15"
+        },
+        {
+          "id": "08ccecb030d3",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,8.221.144.0/21"
+        },
+        {
+          "id": "0959c92f89e0",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,240b:4002:8000::/33"
+        },
+        {
+          "id": "097eca69d164",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,170.33.130.0/23"
+        },
+        {
+          "id": "0a0c736fbe8f",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,156.236.17.0/24"
+        },
+        {
+          "id": "0ae045dedca5",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.89.90.0/24"
+        },
+        {
+          "id": "0ae706b44a64",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,240b:400c::/30"
+        },
+        {
+          "id": "0b5b67ccaef2",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.237.128.0/18"
+        },
+        {
+          "id": "0b795a78bd32",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,43.96.103.0/24"
+        },
+        {
+          "id": "0cafff9471fc",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.87.32.0/19"
+        },
+        {
+          "id": "0d1f2138e52c",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,116.251.64.0/18"
+        },
+        {
+          "id": "0e107318debe",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,8.208.144.0/20"
+        },
+        {
+          "id": "0e52bb251e1f",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.57.128.0/18"
+        },
+        {
+          "id": "0eb698cba11f",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,43.96.126.0/24"
+        },
+        {
+          "id": "0eff9ebbabc2",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,14.1.112.0/22"
+        },
+        {
+          "id": "0f02ef47e587",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.89.96.0/20"
+        },
+        {
+          "id": "11038c6ff91e",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,149.129.16.0/21"
+        },
+        {
+          "id": "11c1fbc1543c",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,8.212.104.0/21"
+        },
+        {
+          "id": "1299029ba5c9",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.251.136.0/21"
+        },
+        {
+          "id": "13620af244de",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.246.72.0/21"
+        },
+        {
+          "id": "13ecd2212095",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,43.112.0.0/15"
+        },
+        {
+          "id": "14d43665240e",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,8.220.232.0/22"
+        },
+        {
+          "id": "15214cea6e12",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,43.96.92.0/22"
+        },
+        {
+          "id": "15680e99e598",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,8.211.232.0/21"
+        },
+        {
+          "id": "15b5de0749be",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,240b:4002:1100::/40"
+        },
+        {
+          "id": "15f3a542a769",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.237.0.0/17"
+        },
+        {
+          "id": "1686913eea3a",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.246.91.0/24"
+        },
+        {
+          "id": "18f56acd4438",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,139.95.64.0/23"
+        },
+        {
+          "id": "1a06a98216e2",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,139.95.96.0/22"
+        },
+        {
+          "id": "1ab7f7ffc509",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,170.33.192.0/23"
+        },
+        {
+          "id": "1afef130d660",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,139.95.128.0/17"
+        },
+        {
+          "id": "1b0d8baddb74",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,43.96.77.131/32"
+        },
+        {
+          "id": "1b65088bead1",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,8.222.0.0/15"
+        },
+        {
+          "id": "1b684a9faa15",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2404:2280:1000::/36"
+        },
+        {
+          "id": "1ca7f1ab8abf",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,8.209.36.0/22"
+        },
+        {
+          "id": "1cc63e17d4fc",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,139.95.40.0/23"
+        },
+        {
+          "id": "1d0b252ef665",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,43.97.0.0/17"
+        },
+        {
+          "id": "1d0e0fa94db9",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,240b:400b::/32"
+        },
+        {
+          "id": "1d9590f9a971",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,43.90.0.0/16"
+        },
+        {
+          "id": "1dac5c029933",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,43.96.8.0/22"
+        },
+        {
+          "id": "1e6bc3967f86",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,170.33.64.0/23"
+        },
+        {
+          "id": "1fb9320d9874",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,43.116.160.0/24"
+        },
+        {
+          "id": "2177e521e5dc",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.57.200.0/21"
+        },
+        {
+          "id": "21d28b383b2b",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,8.208.0.0/17"
+        },
+        {
+          "id": "2231de14ac16",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,8.211.0.0/17"
+        },
+        {
+          "id": "223cf2800b20",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,103.19.234.0/23"
+        },
+        {
+          "id": "2366dc149a49",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,5.181.224.0/23"
+        },
+        {
+          "id": "2476352a3b01",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.246.131.0/24"
+        },
+        {
+          "id": "2489f9568f8a",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.236.0.0/17"
+        },
+        {
+          "id": "24956b770edc",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.87.144.0/21"
+        },
+        {
+          "id": "24a4a07c7b77",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,8.214.164.0/22"
+        },
+        {
+          "id": "256a2b090cc3",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.77.24.0/22"
+        },
+        {
+          "id": "260ba2bc2f34",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2404:2280:2000::/35"
+        },
+        {
+          "id": "2635e32da172",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,8.208.160.0/19"
+        },
+        {
+          "id": "27025cd904a1",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,43.124.0.0/16"
+        },
+        {
+          "id": "272859d67e8e",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,43.96.122.0/24"
+        },
+        {
+          "id": "28f443d1e57b",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,43.92.0.0/15"
+        },
+        {
+          "id": "29043c807dc1",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.246.135.0/24"
+        },
+        {
+          "id": "2938af393a14",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,8.212.80.0/21"
+        },
+        {
+          "id": "299edd6b0ad2",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,43.96.64.0/21"
+        },
+        {
+          "id": "29fd14d72818",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,43.96.2.130/32"
+        },
+        {
+          "id": "2a24a8de60e6",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,8.221.0.0/17"
+        },
+        {
+          "id": "2a26903fbbb6",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.238.32.0/19"
+        },
+        {
+          "id": "2b19a4c5a359",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.251.224.0/19"
+        },
+        {
+          "id": "2c328b3f4eee",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.246.32.0/22"
+        },
+        {
+          "id": "2c83751a78ff",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,43.123.0.0/17"
+        },
+        {
+          "id": "2e5700b57a2e",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,43.96.4.0/22"
+        },
+        {
+          "id": "2eb6c0a1fddf",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,240b:4002:1080::/41"
+        },
+        {
+          "id": "30a216ae0450",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.251.132.0/22"
+        },
+        {
+          "id": "31323f9a79a5",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,156.245.1.0/24"
+        },
+        {
+          "id": "314fdd0641ec",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR6,2404:2280:4000::/36"
+        },
+        {
+          "id": "317aef7bde52",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,149.129.0.0/20"
+        },
+        {
+          "id": "318d0fbe3a0e",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,43.96.116.0/24"
+        },
+        {
+          "id": "31ba7a119d50",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.56.0.0/16"
+        },
+        {
+          "id": "322c1ac0c9bd",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.246.136.0/21"
+        },
+        {
+          "id": "326dc654a6f1",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,8.208.140.0/22"
+        },
+        {
+          "id": "32b92483689c",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,8.212.192.0/18"
+        },
+        {
+          "id": "33239b5b7080",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.236.192.0/20"
+        },
+        {
+          "id": "36734f7d2746",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.57.192.0/22"
+        },
+        {
+          "id": "382f692c1385",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,43.96.16.130/32"
+        },
+        {
+          "id": "3876a32b10cb",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.90.128.0/19"
+        },
+        {
+          "id": "39cf394b2a98",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,8.220.160.0/21"
+        },
+        {
+          "id": "3b38081bef28",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,147.139.240.0/21"
+        },
+        {
+          "id": "3b7ff0339420",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.237.192.0/19"
+        },
+        {
+          "id": "3bf412e9f733",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.238.16.0/21"
+        },
+        {
+          "id": "3bfba9fe5db8",
+          "source": "Loyalsoldier China CIDR",
+          "rule": "IP-CIDR,47.246.92.0/23"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -1059,12 +1089,519 @@
     },
     {
       "file": "Speedtest.list",
-      "prev_total": 1675,
-      "curr_total": 1722,
-      "added_count": 112,
-      "removed_count": 65,
+      "prev_total": 1722,
+      "curr_total": 1703,
+      "added_count": 139,
+      "removed_count": 158,
       "source_changed_count": 0,
       "added_sample": [
+        {
+          "id": "010770237191",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stscarborough.rogers.com"
+        },
+        {
+          "id": "01d06b461e5c",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.readingsd.org"
+        },
+        {
+          "id": "0811cb3546c0",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stwellandpelhamwireless.rogers.com"
+        },
+        {
+          "id": "0cc435ecaed2",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,teste.freedomnetwork.net.br"
+        },
+        {
+          "id": "0df919f8f00e",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.nrflvaaa.metronetinc.com"
+        },
+        {
+          "id": "0ef16a17f7b4",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stbowmanville.rogers.com"
+        },
+        {
+          "id": "0f56643c702c",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stosat-crls-01.sys.comcast.net"
+        },
+        {
+          "id": "1179f68f6982",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,va-speed.magna5.com"
+        },
+        {
+          "id": "129fa7cf52e5",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest-newjersey.ripplefiber.com"
+        },
+        {
+          "id": "16744b51f48f",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest-ash.vts.bf"
+        },
+        {
+          "id": "181f2fd1cbb5",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.iad.fdcservers.net"
+        },
+        {
+          "id": "19d98c644b57",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest-iad.sectrify.com"
+        },
+        {
+          "id": "1b11c45002fb",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest-rz.vsm.sh"
+        },
+        {
+          "id": "1b53005476d3",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.nrbn.ca"
+        },
+        {
+          "id": "1dd706232871",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speed10.aitspl.in"
+        },
+        {
+          "id": "1e3705ee2fe6",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.oceansls.com"
+        },
+        {
+          "id": "23d5bd5a13bc",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.gretna.myriverstreet.net"
+        },
+        {
+          "id": "30df7f1427c6",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.ette.biz"
+        },
+        {
+          "id": "32c503790c60",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest3.ptd.net"
+        },
+        {
+          "id": "33041c0f7fd7",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stbowmanville.netcrawler.ca"
+        },
+        {
+          "id": "3459aa77ed16",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.macapatelecom.net.br"
+        },
+        {
+          "id": "36366555a5b5",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,ookla.mu.as6453.net"
+        },
+        {
+          "id": "369df213d503",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,nycmetro-speedtest.reliablesite.net"
+        },
+        {
+          "id": "3a8aec9cda98",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest-zl-1.zoominternet.net"
+        },
+        {
+          "id": "3d35921f1642",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,clg-105-sptest.ncri.com"
+        },
+        {
+          "id": "3e7bf0bd143d",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest1.ewr.nj.us.planet.net"
+        },
+        {
+          "id": "3f834173887b",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.hnd.fdcservers.net"
+        },
+        {
+          "id": "414c35bf776f",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.us.novoserve.com"
+        },
+        {
+          "id": "42db00569c58",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.getwireless.net"
+        },
+        {
+          "id": "43f75ae5aa25",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.telbo.net"
+        },
+        {
+          "id": "44e1fd099c78",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.sc1.loopinternet.com"
+        },
+        {
+          "id": "4502550a3a9c",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,wpa-speed.magna5.com"
+        },
+        {
+          "id": "4571f1abe520",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtestmacapa.webflash.net.br"
+        },
+        {
+          "id": "473f9b45897a",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.winchesterwireless.com"
+        },
+        {
+          "id": "49f2fe815df7",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speed.markham.telmax.ca"
+        },
+        {
+          "id": "49ffc4a2950e",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stoshawa.netcrawler.ca"
+        },
+        {
+          "id": "4f8818240273",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stosat-plfi-08p.sys.comcast.net"
+        },
+        {
+          "id": "5186f86137c0",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,cns-speedtest.duckdns.org"
+        },
+        {
+          "id": "5193c8145d68",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,crls-speedtest-02.brightspeed.com"
+        },
+        {
+          "id": "52a89dbdad82",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.us-ny2.kamatera.com"
+        },
+        {
+          "id": "52ea711702a9",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtestnorthpointe.arkdnacloud.com"
+        },
+        {
+          "id": "5540cc8e3bac",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stetobicoke.rogers.com"
+        },
+        {
+          "id": "5559912850cd",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.belmontcountygig.com"
+        },
+        {
+          "id": "55c0cb8dcbb9",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest2.pa.mycci.net"
+        },
+        {
+          "id": "57cfe7333ea8",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,fast.blackbearfiber.com"
+        },
+        {
+          "id": "5893bd721aca",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stnorthyork.netcrawler.ca"
+        },
+        {
+          "id": "5ab2e37aaffc",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest31.suddenlink.net"
+        },
+        {
+          "id": "60ac93c18792",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stscarborough.netcrawler.ca"
+        },
+        {
+          "id": "615ab422b360",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,btlr-speedtest-02.brightspeed.com"
+        },
+        {
+          "id": "6240dc262b53",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest1.whsdk12.net"
+        },
+        {
+          "id": "625966c841d3",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest1.ric1.va.hostedbackbone.net"
+        },
+        {
+          "id": "6722a4f62ff8",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stbowmanvillewireless.rogers.com"
+        },
+        {
+          "id": "67382fe7fa61",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stoshawa.rogers.com"
+        },
+        {
+          "id": "68c6eb173f83",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,asbn-speedtest.northstate.net"
+        },
+        {
+          "id": "698bcfb1bb21",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest-preston-wv.prodigiwv.net"
+        },
+        {
+          "id": "6aafcc1f0064",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.americatelecom.net.br"
+        },
+        {
+          "id": "6b8f1c9f7c44",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stajax.rogers.com"
+        },
+        {
+          "id": "6dfa403b0c42",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.geniusnetwork.in"
+        },
+        {
+          "id": "6ef5f28df61c",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,ookla.aeq.as6453.net"
+        },
+        {
+          "id": "74a6d6e46908",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.wb1.loopinternet.com"
+        },
+        {
+          "id": "74a7bcdf6ba3",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speed.open.ad.jp"
+        },
+        {
+          "id": "7625db817368",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest1.iad1-us.gozfly.net"
+        },
+        {
+          "id": "77cb389996a6",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest-bethlehem.greenlightnetworks.com"
+        },
+        {
+          "id": "77e56dc99c59",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,cltn-speedtest-02.brightspeed.com"
+        },
+        {
+          "id": "7c4e62477d2e",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.zoominternet.net"
+        },
+        {
+          "id": "7de305557319",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,altoonaspeedtest.crowsnestbb.net"
+        },
+        {
+          "id": "8141004af16b",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest02.srv.prnynj.alticeusa.net"
+        },
+        {
+          "id": "81b8486c1e76",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,qoeookla-rmnd-01.sys.comcast.net"
+        },
+        {
+          "id": "83e830bbc65c",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest4.point-broadband.com"
+        },
+        {
+          "id": "8487be6e6d95",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.mifflincountywireless.com"
+        },
+        {
+          "id": "85b7f8f6df4c",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,spd79.claro.com.br"
+        },
+        {
+          "id": "8632dbc95ac0",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stnorthyorkwireless.rogers.com"
+        },
+        {
+          "id": "894527aa356c",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,lsdspeed01.lsdops.net"
+        },
+        {
+          "id": "8a039e9d08ba",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.interligpro.com.br"
+        },
+        {
+          "id": "8fd05fb4ff7e",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest19.suddenlink.net"
+        },
+        {
+          "id": "90617691e3af",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stwhitby.netcrawler.ca"
+        },
+        {
+          "id": "910cf0769104",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest-nwrk-nj.wtsky.net"
+        },
+        {
+          "id": "9138c74c88d2",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,vaspeedtest.rackdog.com"
+        },
+        {
+          "id": "948613aff3c2",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.slbcloud.fr"
+        },
+        {
+          "id": "96e24c3aaac2",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stoshawawireless.rogers.com"
+        },
+        {
+          "id": "995889b17f13",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,lsdspeed02.lsdops.net"
+        },
+        {
+          "id": "99d636115e4d",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.kdatacenter.com"
+        },
+        {
+          "id": "9a0066f1ffcb",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.vanberkelgroep.nl"
+        },
+        {
+          "id": "9b36e6ace41e",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,phlph0001speedtestserver02.wiline.com"
+        },
+        {
+          "id": "9c36ab36b132",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,phl01.screenshot.download"
+        },
+        {
+          "id": "9ee8a1734e62",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest2.sistelfibra.es"
+        },
+        {
+          "id": "9f094a91d810",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,ookla.micrologicwv.com"
+        },
+        {
+          "id": "9f6b30de3d0b",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest-server-ash.starry.com"
+        },
+        {
+          "id": "a8249c53ba8a",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.thn.uk.syntura.io"
+        },
+        {
+          "id": "b06e6a3b7c0f",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.philasd.org"
+        },
+        {
+          "id": "b0cc745d6216",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stosat-balt-01.sys.comcast.net"
+        },
+        {
+          "id": "b4f4faf0a782",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.fiberlync.net"
+        },
+        {
+          "id": "b577445ffd28",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,ookla-mgw.wvnet.edu"
+        },
+        {
+          "id": "b7070e1bfc5d",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.internetsubway.com"
+        },
+        {
+          "id": "b73df15da330",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stetobicoke.netcrawler.ca"
+        },
+        {
+          "id": "b7ea0351589f",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.revolutionbroadband.net"
+        },
+        {
+          "id": "b7ff9d48bf4d",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,ststcatharineswireless.rogers.com"
+        },
+        {
+          "id": "b8002d9cf7f6",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,ookla1.talkiefiber.com"
+        },
+        {
+          "id": "b868fcdc5518",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,ookla01.citynet.net"
+        },
+        {
+          "id": "be5af7e0a364",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stpickering.netcrawler.ca"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "012b7f31586b",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,ststratford.rogers.com"
+        },
         {
           "id": "02b7b422882f",
           "source": "SukkaW Speedtest Servers International",
@@ -1081,9 +1618,29 @@
           "rule": "DOMAIN,speedtest.rfnow.net"
         },
         {
+          "id": "09ea1f14ec9f",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,ooklatins.redeconexaonet.com"
+        },
+        {
+          "id": "0bd6b487bcf7",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.inovewifi.com.br"
+        },
+        {
+          "id": "0f9fc6befe00",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speed.idnet.net.br"
+        },
+        {
           "id": "115915794824",
           "source": "SukkaW Speedtest Servers International",
           "rule": "DOMAIN,speedtestmrd1.airtel.in"
+        },
+        {
+          "id": "1204ab7c7137",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,40gspeedtest.mnsi.net"
         },
         {
           "id": "12ca2bed9dbb",
@@ -1101,6 +1658,11 @@
           "rule": "DOMAIN,speedtest.cmltelephone.com"
         },
         {
+          "id": "14c7e265c3d8",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.ibertic.es"
+        },
+        {
           "id": "189c17014e83",
           "source": "SukkaW Speedtest Servers International",
           "rule": "DOMAIN,speedtest.amesiaaa.metronetinc.com"
@@ -1109,6 +1671,11 @@
           "id": "1cfb48abbf36",
           "source": "SukkaW Speedtest Servers International",
           "rule": "DOMAIN,speedtest.grm.net"
+        },
+        {
+          "id": "1debbecee8c5",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.cstech.com"
         },
         {
           "id": "1df38b0ae240",
@@ -1131,9 +1698,9 @@
           "rule": "DOMAIN,wrbg-speedtest-02.brightspeed.com"
         },
         {
-          "id": "281fbaf24ced",
+          "id": "29a310f8327b",
           "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.kairun.jp"
+          "rule": "DOMAIN,speedtest.brooketel.coop"
         },
         {
           "id": "2ab9b0da9911",
@@ -1146,14 +1713,14 @@
           "rule": "DOMAIN,speedtest.skywaveconnect.com"
         },
         {
-          "id": "31e8c732b3ed",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stlondon.netcrawler.ca"
-        },
-        {
           "id": "32b355be6336",
           "source": "SukkaW Speedtest Servers International",
           "rule": "DOMAIN,speedtest.bluevalley.net"
+        },
+        {
+          "id": "32c4df87be80",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speed-syd.gigacomm.net.au"
         },
         {
           "id": "34d320d8b02f",
@@ -1161,9 +1728,19 @@
           "rule": "DOMAIN,speedtest.mdtc.net"
         },
         {
-          "id": "3556421114ed",
+          "id": "358795b67fd5",
           "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,sthamilton.netcrawler.ca"
+          "rule": "DOMAIN,speedtest.mornington.ca"
+        },
+        {
+          "id": "37dae1757a6d",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stsaultstemariewireless.rogers.com"
+        },
+        {
+          "id": "394dff5a7003",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stwindsorwireless.rogers.com"
         },
         {
           "id": "3a92209ad6ba",
@@ -1179,6 +1756,16 @@
           "id": "3b0dc040ff61",
           "source": "SukkaW Speedtest Servers International",
           "rule": "DOMAIN,speed.nutelecom.com"
+        },
+        {
+          "id": "3ea882635f75",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speed.sdmnet.com.br"
+        },
+        {
+          "id": "3ee34e80fced",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.dvnpiaaa.metronetinc.com"
         },
         {
           "id": "3f7075e220a1",
@@ -1211,6 +1798,11 @@
           "rule": "DOMAIN,speedtest.cascadecomm.com"
         },
         {
+          "id": "4b2bec89b1bd",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.vacastelecom.net"
+        },
+        {
           "id": "4bbf2a0a0fa3",
           "source": "SukkaW Speedtest Servers International",
           "rule": "DOMAIN,speedtest.mysmbs.com"
@@ -1231,9 +1823,24 @@
           "rule": "DOMAIN,speedtest-lenexa.resoundnetworks.com"
         },
         {
+          "id": "4de50e12bd16",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.hay.net"
+        },
+        {
+          "id": "4fa503514189",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.packetworks.net"
+        },
+        {
           "id": "507325cf0478",
           "source": "SukkaW Speedtest Servers International",
           "rule": "DOMAIN,speedtest.merlin.mb.ca"
+        },
+        {
+          "id": "51219317246c",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.gmtel.net"
         },
         {
           "id": "5180d71261b9",
@@ -1256,6 +1863,16 @@
           "rule": "DOMAIN,speedtest.esu5.org"
         },
         {
+          "id": "5c69bf15997f",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,sp1.speedy.bb-swrag.de"
+        },
+        {
+          "id": "5c6e09ea3600",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.stradacomm.com"
+        },
+        {
           "id": "5f3fcd920887",
           "source": "SukkaW Speedtest Servers International",
           "rule": "DOMAIN,speedtest.ncn.net"
@@ -1266,9 +1883,34 @@
           "rule": "DOMAIN,speedtest.mci.as1003.net"
         },
         {
+          "id": "67fb222e7169",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stbrampton.rogers.com"
+        },
+        {
+          "id": "6a256fc6c285",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.naturalwireless.com"
+        },
+        {
           "id": "6ff5941eb406",
           "source": "SukkaW Speedtest Servers International",
           "rule": "DOMAIN,exc-speedtest.unitedfiber.com"
+        },
+        {
+          "id": "72bb8c1b570f",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest5.windtre.it"
+        },
+        {
+          "id": "75e802499b21",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stbrampton.netcrawler.ca"
+        },
+        {
+          "id": "75f76f006b77",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.58243.as"
         },
         {
           "id": "761a11540f93",
@@ -1284,11 +1926,6 @@
           "id": "7935cf977efe",
           "source": "SukkaW Speedtest Servers International",
           "rule": "DOMAIN,speedtest.wwfn.ca"
-        },
-        {
-          "id": "7a05ae413cba",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.conectstelecom.com.br"
         },
         {
           "id": "7a4042ca0d6f",
@@ -1331,6 +1968,21 @@
           "rule": "DOMAIN,speedtest.fibercomm.net"
         },
         {
+          "id": "87a9233f0df1",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,383-2speedtest.wightman.ca"
+        },
+        {
+          "id": "8b40d9ed9e30",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtestvlc.zafirotelecom.com"
+        },
+        {
+          "id": "8c67eca44a61",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,velocidade.tecsattelecom.com.br"
+        },
+        {
           "id": "8c9d7c03fa30",
           "source": "SukkaW Speedtest Servers International",
           "rule": "DOMAIN,speedtest27.suddenlink.net"
@@ -1366,6 +2018,11 @@
           "rule": "DOMAIN,ookla.mci-1.serverforge.org"
         },
         {
+          "id": "9868c3f8fedf",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.s3rdv.com"
+        },
+        {
           "id": "991108b39981",
           "source": "SukkaW Speedtest Servers International",
           "rule": "DOMAIN,speedtest.mtctech.net"
@@ -1374,11 +2031,6 @@
           "id": "99246723a229",
           "source": "SukkaW Speedtest Servers International",
           "rule": "DOMAIN,speedtest-mci-01.pdx.net.uk"
-        },
-        {
-          "id": "9ef50333ec52",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtestmoh1.airtelbroadband.in"
         },
         {
           "id": "9fc768aebccf",
@@ -1401,6 +2053,11 @@
           "rule": "DOMAIN,sp1.voyageurinternet.ca"
         },
         {
+          "id": "a31c0a6224a2",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,storangeville.rogers.com"
+        },
+        {
           "id": "a64508c249b0",
           "source": "SukkaW Speedtest Servers International",
           "rule": "DOMAIN,lnk-speedtest.networknebraska.net"
@@ -1411,9 +2068,19 @@
           "rule": "DOMAIN,st2a.les.net"
         },
         {
+          "id": "a6687b2369f5",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stwaterloo.rogers.com"
+        },
+        {
           "id": "ab415fae2613",
           "source": "SukkaW Speedtest Servers International",
           "rule": "DOMAIN,speedtest.longlines.com"
+        },
+        {
+          "id": "ac4166a2750e",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtestfdk.angelbroadband.com"
         },
         {
           "id": "accaab45f3ac",
@@ -1421,476 +2088,14 @@
           "rule": "DOMAIN,speedtest-dsm.cowboyhosting.com"
         },
         {
+          "id": "accdf3f5dcf1",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stsarniawireless.rogers.com"
+        },
+        {
           "id": "aecf28573fd6",
           "source": "SukkaW Speedtest Servers International",
           "rule": "DOMAIN,speedtest.heartlandtechnology.com"
-        },
-        {
-          "id": "b7cba41d7626",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest1.dsm1.ippathways.net"
-        },
-        {
-          "id": "b8a0e7029ee0",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stosat-indp-01.sys.comcast.net"
-        },
-        {
-          "id": "bb37aed618a1",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.waterloofiber.com"
-        },
-        {
-          "id": "bfafedcf989a",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,iola-st-ookla.kwikom.com"
-        },
-        {
-          "id": "c0ba82f0fb9d",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,vanspeedtest.altimatel.com"
-        },
-        {
-          "id": "c11b51d67b4a",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stbarrie.netcrawler.ca"
-        },
-        {
-          "id": "c2222406ebe9",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.palmerone.com"
-        },
-        {
-          "id": "c56b34c86c50",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stwinnipegwireless.rogers.com"
-        },
-        {
-          "id": "c65d0fb54ff1",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-central.eastlink.ca"
-        },
-        {
-          "id": "c7316104a7b2",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.cltel.com"
-        },
-        {
-          "id": "cb0ed23687a9",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed.kansas.smishcraft.com"
-        },
-        {
-          "id": "cce8869a397d",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest3a.socket.net"
-        },
-        {
-          "id": "cf1403b737c5",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest1.acentek.net"
-        },
-        {
-          "id": "cf8895c26ec0",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,lnk11-speedtest01.as15108.com"
-        },
-        {
-          "id": "d003609144e4",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-mci-01.accuris.ca"
-        },
-        {
-          "id": "d3bf9a607d1e",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-kc.conexonconnect.com"
-        },
-        {
-          "id": "d7ef6a964002",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest01.imon.net"
-        },
-        {
-          "id": "d8fca8393d99",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,us-central1-c.gcp.spd.synthesis.health"
-        },
-        {
-          "id": "d9a6af3b3da3",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.fortdodgefiber.net"
-        },
-        {
-          "id": "da0c762d5fe6",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.huxleycommunications.net"
-        },
-        {
-          "id": "db82d40a73a2",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest2-kc.kanren.net"
-        },
-        {
-          "id": "e05fce41365e",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,cmrn-speedtest-02.brightspeed.com"
-        },
-        {
-          "id": "e09c0d6af3f4",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-iowa.airstreamcomm.net"
-        },
-        {
-          "id": "e17e18aeef70",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stwaterloo.netcrawler.ca"
-        },
-        {
-          "id": "e241583f591a",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed1.myascend.ca"
-        },
-        {
-          "id": "e2c2236cb36c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest3.westmancom.com"
-        },
-        {
-          "id": "e326bf063776",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stbarrie.rogers.com"
-        },
-        {
-          "id": "e50c69eacdac",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest2.aureon.com"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "0009d45cc71f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-gdrp.merit.edu"
-        },
-        {
-          "id": "0561b044089c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ran-r450-speedtest.metrocomm.com"
-        },
-        {
-          "id": "0711f9d6046b",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,cbpuspeed.aspensmart.net"
-        },
-        {
-          "id": "0811cb3546c0",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stwellandpelhamwireless.rogers.com"
-        },
-        {
-          "id": "0cc435ecaed2",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,teste.freedomnetwork.net.br"
-        },
-        {
-          "id": "0f0435a45fac",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.oa.net"
-        },
-        {
-          "id": "0f923e75457a",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ookla-in.mercuryfiber.com"
-        },
-        {
-          "id": "134564537572",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.sycmilaa.metronetinc.com"
-        },
-        {
-          "id": "15ee8e1a505a",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.volo.net"
-        },
-        {
-          "id": "1753c7265a8d",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,st1.ligtel.com"
-        },
-        {
-          "id": "22e17aa36c22",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-wc.truestreamfiber.us"
-        },
-        {
-          "id": "27aa9cef1e30",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,bytp-speedtest-1.123.net"
-        },
-        {
-          "id": "2a475faf88d3",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,spdtst-southbend.fourway.net"
-        },
-        {
-          "id": "2b911d71aa37",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.i3broadband.com"
-        },
-        {
-          "id": "30afe4b85368",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.chi.gigenet.com"
-        },
-        {
-          "id": "34ed756fe9e2",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest2.mfbroadband.com"
-        },
-        {
-          "id": "36366555a5b5",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ookla.mu.as6453.net"
-        },
-        {
-          "id": "3d35921f1642",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,clg-105-sptest.ncri.com"
-        },
-        {
-          "id": "4243e89e8727",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.tcom.purdue.edu"
-        },
-        {
-          "id": "43f75ae5aa25",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.telbo.net"
-        },
-        {
-          "id": "4491b544431a",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.as53597.net"
-        },
-        {
-          "id": "4a3866e24ddd",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,min-r450-speedtest.metrocomm.com"
-        },
-        {
-          "id": "4b114200a609",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.cirbn.net"
-        },
-        {
-          "id": "4ca06efd9c0c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-srv-a.homeworks.org"
-        },
-        {
-          "id": "4ef30d7df14c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.bltnilaa.metronetinc.com"
-        },
-        {
-          "id": "5423fa711e1c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,sul-r450-speedtest.metrocomm.com"
-        },
-        {
-          "id": "5540cc8e3bac",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stetobicoke.rogers.com"
-        },
-        {
-          "id": "5cb71d1b2142",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,pri-r450-speedtest.metrocomm.com"
-        },
-        {
-          "id": "5ea0d4b206fe",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest2.acentek.net"
-        },
-        {
-          "id": "616c6bffe17f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stkingcity.rogers.com"
-        },
-        {
-          "id": "631ceedda77e",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed.mei.net"
-        },
-        {
-          "id": "6ab9d9e27f4c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.connectjasper.com"
-        },
-        {
-          "id": "6aead9c0f08f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,testmyspeed.urbancom.net"
-        },
-        {
-          "id": "6ba54f697247",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,randomlake-speedtest1.as36001.net"
-        },
-        {
-          "id": "6bd3e7deffb5",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,st-kenosha.sumofiber.com"
-        },
-        {
-          "id": "7180f9019e99",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.springcom.com"
-        },
-        {
-          "id": "794da782a134",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ookla-mispeed.rackgenius.com"
-        },
-        {
-          "id": "7badd291943b",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtestbir.airjaldi.net"
-        },
-        {
-          "id": "7d204e853068",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.oswgilaa.metronetinc.com"
-        },
-        {
-          "id": "856a8514303c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.btc-bci.com"
-        },
-        {
-          "id": "8c8abdf2d7dc",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed.weendeavor.com"
-        },
-        {
-          "id": "8d2554d731e3",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,st1.stratusnet.com"
-        },
-        {
-          "id": "945b9be2fb40",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,aldlmi-speedtest-ookla-01.st.charter.com"
-        },
-        {
-          "id": "96de22a6ddc7",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,st-rockford.sumofiber.com"
-        },
-        {
-          "id": "96e261bbbb9d",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed.tnahosting.net"
-        },
-        {
-          "id": "99d636115e4d",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.kdatacenter.com"
-        },
-        {
-          "id": "a2002b5b2805",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.grr1-mi.incx.net"
-        },
-        {
-          "id": "a5a39e69aa44",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.mhtc.net"
-        },
-        {
-          "id": "a8249c53ba8a",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.thn.uk.syntura.io"
-        },
-        {
-          "id": "ae22d7a42288",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.supranet.net"
-        },
-        {
-          "id": "b03528f13ca1",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.marshallfibernet.com"
-        },
-        {
-          "id": "b366228f3322",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ststratfordwireless.rogers.com"
-        },
-        {
-          "id": "b73df15da330",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stetobicoke.netcrawler.ca"
-        },
-        {
-          "id": "baf9b1ccd504",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed.airmaxbroadband.com"
-        },
-        {
-          "id": "bbccfc3e3b0e",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.matrixtelecon.com.br"
-        },
-        {
-          "id": "c06caa39a296",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.lagrangeremcisp.net"
-        },
-        {
-          "id": "c48494526129",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest3.point-broadband.com"
-        },
-        {
-          "id": "c95a22664ae8",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.kraus.jbarbieri.net"
-        },
-        {
-          "id": "d47fe5fd7010",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-obd.redeconecta.com"
-        },
-        {
-          "id": "d77254c621cc",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest3.myninestar.net"
-        },
-        {
-          "id": "e7f15789e6d0",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.taylor.edu"
-        },
-        {
-          "id": "eacb466cdf37",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,kzspeedtest01.aunalytics.com"
-        },
-        {
-          "id": "ec01ae8210c3",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.zivlinaa.metronetinc.com"
-        },
-        {
-          "id": "ec456ca1f360",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest1.ctstelecom.com"
-        },
-        {
-          "id": "f2367bf1b8eb",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stvaughan.rogers.com"
         }
       ],
       "source_changed_sample": []
