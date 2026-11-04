@@ -242,12 +242,12 @@
     },
     {
       "file": "Speedtest.list",
-      "rules": 1703,
+      "rules": 1701,
       "types": {
-        "DOMAIN": 1590,
+        "DOMAIN": 1588,
         "DOMAIN-SUFFIX": 113
       },
-      "sha256": "328589fe8a41d250dbb05ae52bc5a9e656912ca195dd119f51b29a96ca3087ee"
+      "sha256": "5e377eac05b4d5b2196474c39627aa7432e9dfb7bbfc62b12baca114209f7f94"
     },
     {
       "file": "Speedtest_China.list",
@@ -345,9 +345,9 @@
       "sha256": "dc6dfde863bc0c0034fa3bae09c8a8b090ca385439e866e5ff89fa65eb177c69"
     }
   ],
-  "total_rules": 157405,
+  "total_rules": 157403,
   "rule_types": {
-    "DOMAIN": 3683,
+    "DOMAIN": 3681,
     "DOMAIN-KEYWORD": 87,
     "DOMAIN-SUFFIX": 141348,
     "DOMAIN-WILDCARD": 4,
@@ -375,7 +375,7 @@
     "SukkaW Microsoft CDN": 52,
     "SukkaW Speedtest": 122,
     "SukkaW Speedtest Servers China": 1,
-    "SukkaW Speedtest Servers International": 1579,
+    "SukkaW Speedtest Servers International": 1577,
     "SukkaW Stream": 61,
     "SukkaW Stream HK": 34,
     "SukkaW Stream JP": 27,
@@ -427,7 +427,7 @@
     "Netflix.manifest": "0ffcdd804cc4e56614ba69cc539061c6b5e65ef6ee2e62a01aee3e62902ab9c9",
     "PayPal.manifest": "649b7162f902986f696a1b28e98b3d2b5e6cbda0a9c8e951c552098e68e1382b",
     "SocialMedia.manifest": "c24a95b378d5707682db1edfe03b1424b17e1f4db9e086a71dcbaeffc751f5ab",
-    "Speedtest.manifest": "59d348211cc8cfba07dfb9b59753341562795ece84da5dbb4649fe3e3d80d088",
+    "Speedtest.manifest": "1d38cc9e1b145e6c3f5dec0e7bb64201243fc83a7dcf1bbb87f39223723e0255",
     "Speedtest_China.manifest": "1422ee65ce7dca6937f4119b9f3645a9f79e436faf96341f92e11e39ce894807",
     "Spotify.manifest": "5f1f22f1d8f4081b725902910dc6754a6b1fa868dd8e97e527c39fcc7cf463b0",
     "TWMedia.manifest": "d0a0a64013fa6d8fc70e860246a6d71bc3eb5a462619b1f2c5e20cfbc1f85902",
@@ -440,8 +440,8 @@
   "sources_sha256": "b0fb8eaea8cb2497e50559700040a2784c89138545f33e7b8439bc2531ccf757",
   "override_manifest_sha256": "3fda2e8a21dac7871b29a078e0842524c4cb06f123a79abf669ed650c31eb415",
   "diff_summary": {
-    "total_added": 209,
-    "total_removed": 578,
+    "total_added": 13,
+    "total_removed": 15,
     "total_source_changed": 0
   }
 }
