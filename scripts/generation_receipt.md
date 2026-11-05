@@ -1,20 +1,20 @@
 # Surge 规则生成收据
 
 - 规则文件：30
-- 规则总数：157409
+- 规则总数：157432
 - manifest 文件：30
 
 ## 差异摘要
 
-- 新增：6
-- 删除：0
-- 来源迁移：0
+- 新增：208
+- 删除：185
+- 来源迁移：1
 
 ## 规则类型
 
-- DOMAIN: 3685
+- DOMAIN: 3701
 - DOMAIN-KEYWORD: 87
-- DOMAIN-SUFFIX: 141350
+- DOMAIN-SUFFIX: 141357
 - DOMAIN-WILDCARD: 4
 - IP-ASN: 8
 - IP-CIDR: 8459
@@ -29,19 +29,19 @@
 - Loyalsoldier China CIDR: 9662
 - Manual Rules: 306
 - Rabbit-Spec AIGC: 27
-- Rabbit-Spec China: 363
+- Rabbit-Spec China: 370
 - RocM301 Apple-AI: 16
 - SukkaW AI: 24
 - SukkaW Apple CDN: 158
 - SukkaW Apple CN: 5
 - SukkaW CDN: 27
-- SukkaW Domestic: 696
+- SukkaW Domestic: 697
 - SukkaW Download: 1607
 - SukkaW Game Download: 52
 - SukkaW Microsoft CDN: 52
 - SukkaW Speedtest: 122
 - SukkaW Speedtest Servers China: 1
-- SukkaW Speedtest Servers International: 1577
+- SukkaW Speedtest Servers International: 1593
 - SukkaW Stream: 61
 - SukkaW Stream HK: 34
 - SukkaW Stream JP: 27
@@ -49,7 +49,7 @@
 - SukkaW Stream US: 51
 - Telegram Official CIDR: 11
 - blackmatrix7 Apple: 1546
-- blackmatrix7 ChinaMaxNoIP Domain: 109406
+- blackmatrix7 ChinaMaxNoIP Domain: 109405
 - blackmatrix7 ChinaMedia: 384
 - blackmatrix7 Discord: 29
 - blackmatrix7 Disney: 166
