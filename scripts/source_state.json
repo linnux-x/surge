@@ -19,13 +19,13 @@
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
     "content_length": "3447",
-    "etag": "\"8e422ff3f05765ce4057b0fb8841d210d5183b36a032fc3f917196652594316f\"",
+    "etag": "\"465b2420848f03ada53d3a7509c66c477f4a3df9171ae7a74140e77e5a9e1d21\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
-    "content_length": "87773",
-    "etag": "\"d94b8ec7debf5d2191ca89e2250370a4d98374b989a2a55fea3ae06450c2318e\"",
+    "content_length": "88261",
+    "etag": "\"69aef6ff1388cdc297eb6842f68b6edb659b7c1869d74bf38ca282037eb72384\"",
     "last_modified": null,
     "source_available": true
   },
@@ -36,8 +36,8 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaLab/speedtest-net-servers-dist/master/servers.json": {
-    "content_length": "562161",
-    "etag": "\"6b72133452e1088c03d2325b5cc2f16c79fab7231e2befd2f2c14ae20fe6b0e5\"",
+    "content_length": "568996",
+    "etag": "\"20763f2e950394de2b08a42562a318210698e373e981699aeee75895f185c88e\"",
     "last_modified": null,
     "source_available": true
   },
@@ -186,8 +186,8 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/domainset/game-download.conf": {
-    "content_length": "1892",
-    "etag": "\"fd362521496742d0989f28a40610678f\"",
+    "content_length": null,
+    "etag": "W/\"fd362521496742d0989f28a40610678f\"",
     "last_modified": null,
     "source_available": true
   },
@@ -204,8 +204,8 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/apple_intelligence.conf": {
-    "content_length": "631",
-    "etag": "\"44181ef7d74a7a54621cb2a4fc7feb56\"",
+    "content_length": null,
+    "etag": "W/\"44181ef7d74a7a54621cb2a4fc7feb56\"",
     "last_modified": null,
     "source_available": true
   },
@@ -217,7 +217,7 @@
   },
   "https://ruleset.skk.moe/List/non_ip/domestic.conf": {
     "content_length": null,
-    "etag": "W/\"75e833cec501ee000bbb5ec3a8f23ab4\"",
+    "etag": "W/\"edcfcc652f0b5f5fa6075273428e5458\"",
     "last_modified": null,
     "source_available": true
   },
