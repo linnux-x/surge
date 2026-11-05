@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MANUAL = ROOT / "Rule" / "Manual"
 MANIFEST = MANUAL / "override-manifest.json"
 TEST_CSV = ROOT / "tests" / "expected-routing.csv"
-FORBIDDEN = re.compile(r"(?:\b(?:10|127)\.\d{1,3}\.|\b192\.168\.|\b172\.(?:1[6-9]|2\d|3[01])\.|token=|password=|secret=|ghp_|github_pat_|sk-|BEGIN (?:RSA|OPENSSH|PRIVATE)|https?://[^\s,]+:[^\s,@]+@)", re.I)
+FORBIDDEN = re.compile(r"(?:\b(?:10|127)\.\d{1,3}\.|\b192\.168\.|\b172\.(?:1[6-9]|2\d|3[01])\.|token=|password=|secret=|ghp_|github_pat_|\bsk-|BEGIN (?:RSA|OPENSSH|PRIVATE)|https?://[^\s,]+:[^\s,@]+@)", re.I)
 
 
 def active_rules(path: Path) -> set[str]:

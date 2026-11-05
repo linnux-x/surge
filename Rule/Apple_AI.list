@@ -1,9 +1,9 @@
 # NAME: Apple_AI
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-10-18 05:01:47 +0800
+# UPDATED: 2026-11-05 10:48:48 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 18
+# TOTAL: 24
 
 # ======= Manual Rules ========
 # Apple Intelligence / Siri / Private Relay 等 Apple AI 相关域名
@@ -16,6 +16,15 @@
 DOMAIN-SUFFIX,gsp64-ssl.ls.apple.com
 # 手动补录：替代已排除的 DOMAIN-KEYWORD,siri，只覆盖 Apple 自有 Siri 端点
 DOMAIN-SUFFIX,siri.apple.com
+# 手动补录（2026-11-05，国行 Apple 智能上线后用户提供的端点清单）：Siri 接口与 Private Relay 节点。
+# 这些原本落在 Apple / Global / FINAL；aaplimg.com 的 CNAME 别名不补，Surge 按请求主机名匹配，
+# 不会见到它们；天气、App Store 资源、iCloud 探测与遥测、Apple DoH 是通用服务，不移入 AppleAI。
+DOMAIN,api-siri-prod.apple.com
+DOMAIN,mask-api.fe2.apple-dns.net
+DOMAIN,mask-boot.icloud.com
+DOMAIN,mask-canary.icloud.com
+DOMAIN-SUFFIX,apple-relay.akamaized.net
+DOMAIN-SUFFIX,apple-carry-relay.cloudflare.com
 
 # ======= RocM301 Apple-AI ========
 DOMAIN,guzzoni.apple.com
