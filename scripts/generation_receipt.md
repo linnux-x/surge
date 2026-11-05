@@ -1,20 +1,20 @@
 # Surge 规则生成收据
 
 - 规则文件：30
-- 规则总数：157403
+- 规则总数：157409
 - manifest 文件：30
 
 ## 差异摘要
 
-- 新增：13
-- 删除：15
+- 新增：6
+- 删除：0
 - 来源迁移：0
 
 ## 规则类型
 
-- DOMAIN: 3681
+- DOMAIN: 3685
 - DOMAIN-KEYWORD: 87
-- DOMAIN-SUFFIX: 141348
+- DOMAIN-SUFFIX: 141350
 - DOMAIN-WILDCARD: 4
 - IP-ASN: 8
 - IP-CIDR: 8459
@@ -27,7 +27,7 @@
 
 - ConnersHua AI: 12
 - Loyalsoldier China CIDR: 9662
-- Manual Rules: 300
+- Manual Rules: 306
 - Rabbit-Spec AIGC: 27
 - Rabbit-Spec China: 363
 - RocM301 Apple-AI: 16

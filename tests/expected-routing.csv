@@ -378,3 +378,8 @@ media.licdn.com,SocialMedia.list,SocialMedia,LinkedIn资源（原落FINAL）
 i.pinimg.com,SocialMedia.list,SocialMedia,Pinterest图片（原落FINAL）
 stat.nodeseek.org,SocialMedia.list,SocialMedia,NodeSeek统计
 arstechnica.com,Global.list,Global,科技媒体（移出SocialMedia）
+api-siri-prod.apple.com,Apple_AI.list,Apple_AI,Siri 生产接口（原落 Apple）
+apple-relay.akamaized.net,Apple_AI.list,Apple_AI,Private Relay Akamai 节点（原落 FINAL）
+apple-carry-relay.cloudflare.com,Apple_AI.list,Apple_AI,Private Relay 运营商节点（原落 Global）
+mask-canary.icloud.com,Apple_AI.list,Apple_AI,Private Relay 探测
+weatherkit.apple.com,Apple_CN.list,DIRECT,天气服务不归入 Apple_AI
