@@ -19,13 +19,13 @@
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
     "content_length": "3447",
-    "etag": "\"8aac479debe5b6d5d7b5f064662bf06e229d65594d062a9dec7ecb6e3378896a\"",
+    "etag": "\"f1d684aef5c1ea856c037503b4c5ca7a92ac0bba6d1b932ad01d4e2f7e08d708\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
-    "content_length": "88261",
-    "etag": "\"0d2b082388e37a53c0a9e7c4a82db6bc5481e1eea68704c954645c3c7034f182\"",
+    "content_length": "88947",
+    "etag": "\"f6387721fb21416cccdad505a8a66e0190dfca0082f65ba5ea8c25066dd3bf32\"",
     "last_modified": null,
     "source_available": true
   },
@@ -36,8 +36,8 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaLab/speedtest-net-servers-dist/master/servers.json": {
-    "content_length": "566491",
-    "etag": "\"63480c26388b26eaa082cb3201a8b1f637b7b958dea83712d47c3ab2c52b1e2c\"",
+    "content_length": "557434",
+    "etag": "\"1eaf77adaf0cefa18f4440f422690499bfff8afc2c4ad4d8c988d17bfb204046\"",
     "last_modified": null,
     "source_available": true
   },
