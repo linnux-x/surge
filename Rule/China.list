@@ -1,9 +1,9 @@
 # NAME: China
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-06 05:03:11 +0800
+# UPDATED: 2026-11-08 05:01:43 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 110485
+# TOTAL: 110497
 
 # ======= Manual Rules ========
 # China game download domains — route DIRECT via China policy
@@ -110164,10 +110164,12 @@ DOMAIN-SUFFIX,admin5.com
 DOMAIN-SUFFIX,adukwai.com
 DOMAIN-SUFFIX,adxvip.com
 DOMAIN-SUFFIX,agrantsem.com
+DOMAIN-SUFFIX,ai-indeed.com
 DOMAIN-SUFFIX,airchinalimited.com
 DOMAIN-SUFFIX,alibaba
 DOMAIN-SUFFIX,alibabapictures.com
 DOMAIN-SUFFIX,alihive.com
+DOMAIN-SUFFIX,allawnofs.com
 DOMAIN-SUFFIX,allyes.com
 DOMAIN-SUFFIX,aloys233.top
 DOMAIN-SUFFIX,amap.net
@@ -110178,6 +110180,7 @@ DOMAIN-SUFFIX,appjiagu.com
 DOMAIN-SUFFIX,auxwy.com
 DOMAIN-SUFFIX,awstme.top
 DOMAIN-SUFFIX,baifendian.com
+DOMAIN-SUFFIX,bayescom.com
 DOMAIN-SUFFIX,bdcat.top
 DOMAIN-SUFFIX,bengbeng.com
 DOMAIN-SUFFIX,biddingx.com
@@ -110194,6 +110197,7 @@ DOMAIN-SUFFIX,bpigagtm.com
 DOMAIN-SUFFIX,bplslb.com
 DOMAIN-SUFFIX,bpltm.com
 DOMAIN-SUFFIX,bsbsb.top
+DOMAIN-SUFFIX,bseinfo.net
 DOMAIN-SUFFIX,busyming.com
 DOMAIN-SUFFIX,bvmlt.top
 DOMAIN-SUFFIX,byte7bw.net
@@ -110337,6 +110341,7 @@ DOMAIN-SUFFIX,live.net
 DOMAIN-SUFFIX,liyuans.com
 DOMAIN-SUFFIX,luckysf.net
 DOMAIN-SUFFIX,lufax.com
+DOMAIN-SUFFIX,luyong.com
 DOMAIN-SUFFIX,lydaas.net
 DOMAIN-SUFFIX,lydass.net
 DOMAIN-SUFFIX,manhuaren.com
@@ -110405,11 +110410,13 @@ DOMAIN-SUFFIX,saduck.top
 DOMAIN-SUFFIX,scdng.com
 DOMAIN-SUFFIX,sealsuite.com
 DOMAIN-SUFFIX,sealsuite.net
+DOMAIN-SUFFIX,senseavatar.com
 DOMAIN-SUFFIX,share123.top
 DOMAIN-SUFFIX,shizhuang-inc.net
 DOMAIN-SUFFIX,shouji
 DOMAIN-SUFFIX,shujupie.com
 DOMAIN-SUFFIX,shuqistat.com
+DOMAIN-SUFFIX,shuwen.com
 DOMAIN-SUFFIX,sina
 DOMAIN-SUFFIX,sohu
 DOMAIN-SUFFIX,solarcloud.top
@@ -110430,6 +110437,7 @@ DOMAIN-SUFFIX,tgpro.top
 DOMAIN-SUFFIX,threep.top
 DOMAIN-SUFFIX,tianhw.top
 DOMAIN-SUFFIX,tiapi.net
+DOMAIN-SUFFIX,tidesight.com
 DOMAIN-SUFFIX,tingyun.com
 DOMAIN-SUFFIX,tmall
 DOMAIN-SUFFIX,to8to.com
@@ -110444,6 +110452,7 @@ DOMAIN-SUFFIX,ugdtimg.com
 DOMAIN-SUFFIX,umsns.com
 DOMAIN-SUFFIX,umtrack.com
 DOMAIN-SUFFIX,unicom
+DOMAIN-SUFFIX,upsort.com
 DOMAIN-SUFFIX,uyunad.com
 DOMAIN-SUFFIX,vamaker.com
 DOMAIN-SUFFIX,vcbeat.top
@@ -110486,13 +110495,16 @@ DOMAIN-SUFFIX,xn--r70as2s.xn--fiqs8s
 DOMAIN-SUFFIX,xteko.com
 DOMAIN-SUFFIX,yaoyl.com
 DOMAIN-SUFFIX,yccdn.com
+DOMAIN-SUFFIX,ydshengxue.com
 DOMAIN-SUFFIX,yigao.com
 DOMAIN-SUFFIX,yiqifa.com
 DOMAIN-SUFFIX,youdaoads.com
 DOMAIN-SUFFIX,youkuhonor.com
 DOMAIN-SUFFIX,yto.top
 DOMAIN-SUFFIX,yun
+DOMAIN-SUFFIX,yundouxueyuan.com
 DOMAIN-SUFFIX,yunshipei.com
+DOMAIN-SUFFIX,yybip.com
 DOMAIN-SUFFIX,yyshub.top
 DOMAIN-SUFFIX,zampda.net
 DOMAIN-SUFFIX,zampdsp.com
