@@ -40,3 +40,9 @@ DOMAIN-SUFFIX,tomshardware.com
 DOMAIN-SUFFIX,techpowerup.com
 DOMAIN-SUFFIX,overclock.net
 DOMAIN-SUFFIX,arstechnica.com
+
+# Self-hosted services that previously fell through to FINAL (2026-11-08 monitoring); same Global policy, now explicit
+DOMAIN-SUFFIX,open-meteo.com
+DOMAIN-SUFFIX,home-assistant.io
+DOMAIN-SUFFIX,hacs.xyz
+DOMAIN,api.met.no

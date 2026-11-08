@@ -1,9 +1,9 @@
 # NAME: China
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-08 05:01:43 +0800
+# UPDATED: 2026-11-08 20:17:53 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 110497
+# TOTAL: 110498
 
 # ======= Manual Rules ========
 # China game download domains — route DIRECT via China policy
@@ -17779,6 +17779,7 @@ DOMAIN-SUFFIX,bytefast.net
 DOMAIN-SUFFIX,bytefcdn.com
 DOMAIN-SUFFIX,bytefcdnrd-tob.com
 DOMAIN-SUFFIX,bytefcdnrd.com
+DOMAIN-SUFFIX,bytegecko.com
 DOMAIN-SUFFIX,bytegle.site
 DOMAIN-SUFFIX,bytegle.tech
 DOMAIN-SUFFIX,bytegrowth.com
