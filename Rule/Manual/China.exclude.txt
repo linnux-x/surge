@@ -12,7 +12,6 @@ DOMAIN-SUFFIX,kwai.com
 DOMAIN-SUFFIX,kwai.net
 DOMAIN-SUFFIX,kwaicdn.com
 DOMAIN-SUFFIX,nba.com
-DOMAIN-SUFFIX,snssdk.com
 DOMAIN-SUFFIX,tiktokd.net
 DOMAIN-SUFFIX,tiktokd.org
 DOMAIN-SUFFIX,wetv.vip

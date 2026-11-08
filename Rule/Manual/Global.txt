@@ -46,3 +46,5 @@ DOMAIN-SUFFIX,open-meteo.com
 DOMAIN-SUFFIX,home-assistant.io
 DOMAIN-SUFFIX,hacs.xyz
 DOMAIN,api.met.no
+DOMAIN-SUFFIX,datadoghq.com
+DOMAIN-SUFFIX,sentry.io

@@ -18,3 +18,17 @@ DOMAIN-SUFFIX,4dvertible.com
 
 # Pangle (ByteDance overseas ad network) static assets
 DOMAIN-SUFFIX,i18n-pglstatp.com
+
+# Added from 10 days of observer history (2026-10-30 ~ 11-08)
+# Google ad serving (not imasdk.googleapis.com: video players depend on it)
+DOMAIN-SUFFIX,doubleclick.net
+DOMAIN-SUFFIX,googlesyndication.com
+DOMAIN-SUFFIX,googlesyndication-cn.com
+
+# More mobile game ad networks / mediation
+DOMAIN-SUFFIX,applovin.com
+DOMAIN-SUFFIX,fyber.com
+DOMAIN-SUFFIX,pangle.io
+DOMAIN-SUFFIX,mtgglobals.com
+DOMAIN-SUFFIX,dsp-api.moloco.com
+DOMAIN-SUFFIX,adcolony.com

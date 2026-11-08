@@ -1,3 +1,7 @@
 DOMAIN,trae-api-sg.mchost.guru
 DOMAIN-SUFFIX,marscode.com
 DOMAIN-SUFFIX,trae.ai
+
+# Douyin (domestic ByteDance) API hosts: aweme/is/ib/log-lq.snssdk.com resolve to
+# China CDN IPs (2026-11-08 history review); TikTok international uses isnssdk.com.
+DOMAIN-SUFFIX,snssdk.com
