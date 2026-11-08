@@ -385,3 +385,6 @@ weatherkit.apple.com,Apple_CN.list,DIRECT,天气服务不归入 Apple_AI
 lf3-cdn-tos.bytegecko.com,China.list,DIRECT,抖音/懂车帝国内资源 CDN（2026-11-08 监测解析到移动/联通）
 liveupdate01s.asus.com,Download.list,Download,华硕驱动与 Armoury Crate 更新包
 api.open-meteo.com,Global.list,Global,天气机器人接口，原先落到 FINAL
+muf.app-ads-services.com,AdBlock.list,REJECT,AdMob 广告投放（自维护拦截名单）
+cdn-f.adsmoloco.com,AdBlock.list,REJECT,Moloco 手游广告素材
+googleads.g.doubleclick-cn.net,AdBlock.list,REJECT,Google 中国广告投放

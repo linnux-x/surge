@@ -1,51 +1,31 @@
 # Surge Rule Diff Report
-Generated: 2026-11-08T20:17:54.164383
+Generated: 2026-11-08T20:28:15.224753
 
 ## Summary
 
 | Metric | Count |
 |--------|-------|
-| Files changed | 4 |
-| Rules added | 6 |
-| Rules removed | 1 |
+| Files changed | 1 |
+| Rules added | 8 |
+| Rules removed | 0 |
 | Source attribution changed | 0 |
 
 ## Per-File Changes
 
 | File | Prev | Curr | Added | Removed | Source Δ |
 |------|------|------|-------|---------|----------|
-| China.list | 110497 | 110498 | +1 | -0 | ~0 |
-| Download.list | 1682 | 1683 | +1 | -0 | ~0 |
-| Global.list | 24570 | 24574 | +4 | -0 | ~0 |
-| TikTok.list | 34 | 33 | +0 | -1 | ~0 |
+| AdBlock.list | 0 | 8 | +8 | -0 | ~0 |
 
-## China.list
+## AdBlock.list
 
-**Added: 1** (showing first 1)
+**Added: 8** (showing first 8)
 ```
-  + [blackmatrix7 ChinaMaxNoIP Domain] 143e7c22f69f  DOMAIN-SUFFIX,bytegecko.com
-```
-
-## Download.list
-
-**Added: 1** (showing first 1)
-```
-  + [Manual Rules] d6d69b911d8a  DOMAIN,liveupdate01s.asus.com
-```
-
-## Global.list
-
-**Added: 4** (showing first 4)
-```
-  + [Manual Rules] 5882f1b22fe4  DOMAIN-SUFFIX,home-assistant.io
-  + [Manual Rules] 7c9da41ae99a  DOMAIN-SUFFIX,hacs.xyz
-  + [Manual Rules] 89ffc19c2bae  DOMAIN,api.met.no
-  + [Manual Rules] e86b6d93d31b  DOMAIN-SUFFIX,open-meteo.com
-```
-
-## TikTok.list
-
-**Removed: 1** (showing first 1)
-```
-  - [Manual Rules] 143e7c22f69f  DOMAIN-SUFFIX,bytegecko.com
+  + [Manual Rules] 2739b408f189  DOMAIN-SUFFIX,g.doubleclick-cn.net
+  + [Manual Rules] 39e832abac2d  DOMAIN-SUFFIX,app-ads-services.com
+  + [Manual Rules] 5079f5f782a5  DOMAIN-SUFFIX,inner-active.mobi
+  + [Manual Rules] 5d7012337d9b  DOMAIN-SUFFIX,adsmoloco.com
+  + [Manual Rules] 90fa31802ada  DOMAIN-SUFFIX,liftoff-creatives.io
+  + [Manual Rules] b788eebbf64c  DOMAIN-SUFFIX,i18n-pglstatp.com
+  + [Manual Rules] c2a7948e8e10  DOMAIN-SUFFIX,inmobi.com
+  + [Manual Rules] fdf5ddca3a2b  DOMAIN-SUFFIX,4dvertible.com
 ```

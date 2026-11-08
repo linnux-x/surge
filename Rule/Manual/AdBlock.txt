@@ -1,0 +1,20 @@
+# Hand-curated ad-serving hosts, rejected with pre-matching (see Conf/Linnux.conf).
+# Only pure ad-delivery endpoints observed in real traffic belong here.
+# Do NOT add attribution / deep-link / anti-fraud / crash-report hosts
+# (adjust, branch.io, siftscience, online-metrix, zimperium, sentry):
+# blocking them breaks app links, payments or banking apps.
+# Rewarded-video ads in games stop working when their network is listed here.
+
+# Google AdMob (observed 2026-11-07/08 on iPhone)
+DOMAIN-SUFFIX,app-ads-services.com
+DOMAIN-SUFFIX,g.doubleclick-cn.net
+
+# Mobile game ad networks (observed 2026-11-07/08 on iPhone)
+DOMAIN-SUFFIX,adsmoloco.com
+DOMAIN-SUFFIX,inner-active.mobi
+DOMAIN-SUFFIX,inmobi.com
+DOMAIN-SUFFIX,liftoff-creatives.io
+DOMAIN-SUFFIX,4dvertible.com
+
+# Pangle (ByteDance overseas ad network) static assets
+DOMAIN-SUFFIX,i18n-pglstatp.com
