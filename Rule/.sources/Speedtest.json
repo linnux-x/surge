@@ -11,7 +11,7 @@
       "label": "SukkaW Speedtest Servers International",
       "url": "https://raw.githubusercontent.com/SukkaLab/speedtest-net-servers-dist/master/servers.json",
       "format": "speedtest-json-international",
-      "sha256": "a0361b28459c6f9ec52c9ee1032c4d8db4b443f93e04f23731f8d4df2a9bca3b"
+      "sha256": "c6deb702e83c154da5c649b4184ad530ff68880b76a026a946b909f0aee7d9ae"
     }
   ]
 }
