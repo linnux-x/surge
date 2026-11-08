@@ -388,3 +388,6 @@ api.open-meteo.com,Global.list,Global,天气机器人接口，原先落到 FINAL
 muf.app-ads-services.com,AdBlock.list,REJECT,AdMob 广告投放（自维护拦截名单）
 cdn-f.adsmoloco.com,AdBlock.list,REJECT,Moloco 手游广告素材
 googleads.g.doubleclick-cn.net,AdBlock.list,REJECT,Google 中国广告投放
+aweme.snssdk.com,China.list,DIRECT,抖音 API（国内 CDN），不再随 TikTok 上游走代理
+pagead2.googlesyndication.com,AdBlock.list,REJECT,Google 广告投放
+d.applovin.com,AdBlock.list,REJECT,AppLovin 手游广告聚合

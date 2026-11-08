@@ -40,7 +40,7 @@ CHINA_FALLBACK_EXCLUDE_PATTERNS = (
         r"^domain-suffix,(bilibili[.]tv|biliintl[.]co|biliintl[.]com|"
         r"himalaya[.]com|iflix[.]com|iq[.]com|joox[.]com|"
         r"kwai-group[.]com|kwai[.]com|kwai[.]net|kwaicdn[.]com|"
-        r"nba[.]com|snssdk[.]com|tiktokd[.]net|tiktokd[.]org|"
+        r"nba[.]com|tiktokd[.]net|tiktokd[.]org|"
         r"wetv[.]vip|wetvinfo[.]com)$",
         re.I,
     ),

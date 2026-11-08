@@ -56,3 +56,6 @@ DOMAIN-SUFFIX,paypalhere.cn
 DOMAIN-SUFFIX,paypalhere.com.cn
 DOMAIN-SUFFIX,xn--bnq297cix3a.cn
 DOMAIN-SUFFIX,xoom.net.cn
+
+# Douyin API hosts (removed from TikTok via TikTok.exclude; upstream China lacks them)
+DOMAIN-SUFFIX,snssdk.com

@@ -81,8 +81,9 @@ class SourceTransformTests(unittest.TestCase):
         ]
         self.assertEqual(
             apply_project_guardrails('China.list', lines),
-            ['DOMAIN-SUFFIX,stat-nba.com', 'DOMAIN-SUFFIX,tobsnssdk.com'],
+            ['DOMAIN-SUFFIX,snssdk.com', 'DOMAIN-SUFFIX,stat-nba.com', 'DOMAIN-SUFFIX,tobsnssdk.com'],
         )
+        # snssdk.com is Douyin's domestic API (2026-11-08 history review), so it stays in China.
 
     def test_process_rule_filters_shared_suffixes_before_strict_validation(self):
         with tempfile.TemporaryDirectory() as directory:

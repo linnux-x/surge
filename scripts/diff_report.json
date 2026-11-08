@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-08T20:28:15.224753",
-  "total_added": 8,
-  "total_removed": 0,
+  "generated_at": "2026-11-08T20:46:18.941014",
+  "total_added": 12,
+  "total_removed": 1,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -17,51 +17,56 @@
     },
     {
       "file": "AdBlock.list",
-      "prev_total": 0,
-      "curr_total": 8,
-      "added_count": 8,
+      "prev_total": 8,
+      "curr_total": 17,
+      "added_count": 9,
       "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [
         {
-          "id": "2739b408f189",
+          "id": "02e6e2e5f7f8",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,g.doubleclick-cn.net"
+          "rule": "DOMAIN-SUFFIX,applovin.com"
         },
         {
-          "id": "39e832abac2d",
+          "id": "23a8c93afcd7",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,app-ads-services.com"
+          "rule": "DOMAIN-SUFFIX,fyber.com"
         },
         {
-          "id": "5079f5f782a5",
+          "id": "304802f8abad",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,inner-active.mobi"
+          "rule": "DOMAIN-SUFFIX,googlesyndication-cn.com"
         },
         {
-          "id": "5d7012337d9b",
+          "id": "559f3793dcac",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,adsmoloco.com"
+          "rule": "DOMAIN-SUFFIX,doubleclick.net"
         },
         {
-          "id": "90fa31802ada",
+          "id": "5a9ea058483e",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,liftoff-creatives.io"
+          "rule": "DOMAIN-SUFFIX,dsp-api.moloco.com"
         },
         {
-          "id": "b788eebbf64c",
+          "id": "74ff9b69810f",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,i18n-pglstatp.com"
+          "rule": "DOMAIN-SUFFIX,pangle.io"
         },
         {
-          "id": "c2a7948e8e10",
+          "id": "a20f7af5b257",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,inmobi.com"
+          "rule": "DOMAIN-SUFFIX,adcolony.com"
         },
         {
-          "id": "fdf5ddca3a2b",
+          "id": "b3e1a2170a2f",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,4dvertible.com"
+          "rule": "DOMAIN-SUFFIX,googlesyndication.com"
+        },
+        {
+          "id": "ef758ad3fd60",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,mtgglobals.com"
         }
       ],
       "removed_sample": [],
@@ -114,11 +119,17 @@
     {
       "file": "China.list",
       "prev_total": 110498,
-      "curr_total": 110498,
-      "added_count": 0,
+      "curr_total": 110499,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "07a6605e121c",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,snssdk.com"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -180,11 +191,22 @@
     {
       "file": "Global.list",
       "prev_total": 24574,
-      "curr_total": 24574,
-      "added_count": 0,
+      "curr_total": 24576,
+      "added_count": 2,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "4e0c4120d153",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,datadoghq.com"
+        },
+        {
+          "id": "7a79b2b43b10",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,sentry.io"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -345,12 +367,18 @@
     {
       "file": "TikTok.list",
       "prev_total": 33,
-      "curr_total": 33,
+      "curr_total": 32,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 1,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "07a6605e121c",
+          "source": "blackmatrix7 TikTok",
+          "rule": "DOMAIN-SUFFIX,snssdk.com"
+        }
+      ],
       "source_changed_sample": []
     },
     {
