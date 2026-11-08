@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-08T20:17:54.164383",
-  "total_added": 6,
-  "total_removed": 1,
+  "generated_at": "2026-11-08T20:28:15.224753",
+  "total_added": 8,
+  "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -12,6 +12,58 @@
       "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
+      "removed_sample": [],
+      "source_changed_sample": []
+    },
+    {
+      "file": "AdBlock.list",
+      "prev_total": 0,
+      "curr_total": 8,
+      "added_count": 8,
+      "removed_count": 0,
+      "source_changed_count": 0,
+      "added_sample": [
+        {
+          "id": "2739b408f189",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,g.doubleclick-cn.net"
+        },
+        {
+          "id": "39e832abac2d",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,app-ads-services.com"
+        },
+        {
+          "id": "5079f5f782a5",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,inner-active.mobi"
+        },
+        {
+          "id": "5d7012337d9b",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,adsmoloco.com"
+        },
+        {
+          "id": "90fa31802ada",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,liftoff-creatives.io"
+        },
+        {
+          "id": "b788eebbf64c",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,i18n-pglstatp.com"
+        },
+        {
+          "id": "c2a7948e8e10",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,inmobi.com"
+        },
+        {
+          "id": "fdf5ddca3a2b",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,4dvertible.com"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -61,18 +113,12 @@
     },
     {
       "file": "China.list",
-      "prev_total": 110497,
+      "prev_total": 110498,
       "curr_total": 110498,
-      "added_count": 1,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "143e7c22f69f",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,bytegecko.com"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -111,18 +157,12 @@
     },
     {
       "file": "Download.list",
-      "prev_total": 1682,
+      "prev_total": 1683,
       "curr_total": 1683,
-      "added_count": 1,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "d6d69b911d8a",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,liveupdate01s.asus.com"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -139,33 +179,12 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24570,
+      "prev_total": 24574,
       "curr_total": 24574,
-      "added_count": 4,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "5882f1b22fe4",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,home-assistant.io"
-        },
-        {
-          "id": "7c9da41ae99a",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,hacs.xyz"
-        },
-        {
-          "id": "89ffc19c2bae",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,api.met.no"
-        },
-        {
-          "id": "e86b6d93d31b",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,open-meteo.com"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -325,19 +344,13 @@
     },
     {
       "file": "TikTok.list",
-      "prev_total": 34,
+      "prev_total": 33,
       "curr_total": 33,
       "added_count": 0,
-      "removed_count": 1,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "143e7c22f69f",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,bytegecko.com"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {

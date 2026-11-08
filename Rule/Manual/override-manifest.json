@@ -2,6 +2,7 @@
   "schema_version": 1,
   "policy": "历史 Manual 文件按文件级基线治理；新增或修改 first-match 例外必须在 entries 中声明。",
   "files": {
+    "AdBlock.txt": {"action": "include", "reason": "自维护纯广告投放拦截名单，仅收录实测到的广告投放域名", "destination": "AdBlock.list"},
     "AI.exclude.txt": {"action": "exclude", "reason": "历史共享基础设施与非 AI 归属排除", "destination": "按现有规则顺序落入后续专属规则或 fallback"},
     "AI.txt": {"action": "include", "reason": "历史 AI 专属补充", "destination": "AI.list"},
     "Apple.exclude.txt": {"action": "exclude", "reason": "历史 Apple 归属去重", "destination": "后续 Apple 专属规则或 fallback"},

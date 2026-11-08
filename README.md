@@ -48,6 +48,7 @@ https://raw.githubusercontent.com/linnux-x/surge/main/Conf/Linnux.conf
 
 | 规则文件 | 上游来源 | 说明 |
 |---------|---------|------|
+| 🚫 AdBlock.list | 手工维护 | 实测到的纯广告投放域名小名单；`REJECT,pre-matching`，不收录归因、风控、跳转、崩溃上报 |
 | 📱 AI.list | 3 源 | AI 服务与模型 API |
 | 🍎 Apple.list | blackmatrix7 | Apple 全系服务 |
 | 🍎 Apple_AI.list | 2 源 | Apple Intelligence、Siri 与 Private Relay |

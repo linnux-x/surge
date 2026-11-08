@@ -29,9 +29,10 @@ class FallbackOrderTests(unittest.TestCase):
     def test_parser_excludes_rule_options_from_policy(self):
         module = load_routing_module()
         parsed = module.load_routing_order()
-        self.assertEqual(("WeChat.list", "WeChat"), parsed[0])
-        self.assertEqual(("Speedtest_China.list", "DIRECT"), parsed[1])
-        self.assertEqual(("Apple_AI.list", "Apple_AI"), parsed[3])
+        self.assertEqual(("AdBlock.list", "REJECT"), parsed[0])  # pre-matching is an option, not a policy
+        self.assertEqual(("WeChat.list", "WeChat"), parsed[1])
+        self.assertEqual(("Speedtest_China.list", "DIRECT"), parsed[2])
+        self.assertEqual(("Apple_AI.list", "Apple_AI"), parsed[4])
 
 
 if __name__ == "__main__":
