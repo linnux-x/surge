@@ -55,7 +55,6 @@ DOMAIN,wcnc-lh.akamaihd.net
 DOMAIN,weather-lh.akamaihd.net
 
 # TikTok / overseas ByteDance service hosts belong to TikTok/Social/Global, not China fallback.
-DOMAIN-SUFFIX,bytegecko.com
 DOMAIN-SUFFIX,bytegeckoext.com
 DOMAIN-SUFFIX,byteintl.net
 DOMAIN-SUFFIX,ibytedapm.com

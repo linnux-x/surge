@@ -31,3 +31,6 @@ DOMAIN,ffmpeg.martin-riedl.de
 # Ubiquiti firmware/software and datasheet downloads; not the whole ubnt.com service.
 # https://dl.ui.com/datasheets/unifi/UniFi_Switch_8_DS.pdf
 DOMAIN,dl.ubnt.com
+
+# ASUS Armoury Crate / Live Update packages (CloudFront, GB-sized); 2026-11-08 monitoring saw 1.47GB via Global
+DOMAIN,liveupdate01s.asus.com

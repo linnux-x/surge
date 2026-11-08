@@ -123,7 +123,6 @@ mask.apple-dns.net,Apple_AI.list,Apple_AI,Apple Private Relay DNS
 ls.apple.com,Apple.list,Apple,Apple Siri LinkScribe裸域走Apple
 mask-h2.icloud.com,Apple_AI.list,Apple_AI,Apple Private Relay H2
 cp4.cloudflare.com,Apple_AI.list,Apple_AI,Apple Intelligence Cloudflare
-bytegecko.com,TikTok.list,TikTok,海外ByteDance基础设施
 redditmedia.com,SocialMedia.list,SocialMedia,Reddit媒体资源
 redditstatic.com,SocialMedia.list,SocialMedia,Reddit静态资源
 snapkit.com,SocialMedia.list,SocialMedia,Snap开发者服务
@@ -383,3 +382,6 @@ apple-relay.akamaized.net,Apple_AI.list,Apple_AI,Private Relay Akamai 节点（�
 apple-carry-relay.cloudflare.com,Apple_AI.list,Apple_AI,Private Relay 运营商节点（原落 Global）
 mask-canary.icloud.com,Apple_AI.list,Apple_AI,Private Relay 探测
 weatherkit.apple.com,Apple_CN.list,DIRECT,天气服务不归入 Apple_AI
+lf3-cdn-tos.bytegecko.com,China.list,DIRECT,抖音/懂车帝国内资源 CDN（2026-11-08 监测解析到移动/联通）
+liveupdate01s.asus.com,Download.list,Download,华硕驱动与 Armoury Crate 更新包
+api.open-meteo.com,Global.list,Global,天气机器人接口，原先落到 FINAL

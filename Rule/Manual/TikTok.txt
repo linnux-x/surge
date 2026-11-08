@@ -1,2 +1,1 @@
 # Overseas ByteDance / TikTok infrastructure
-DOMAIN-SUFFIX,bytegecko.com

@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-02 13:35:50 +0800
+# UPDATED: 2026-11-08 20:17:53 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24570
+# TOTAL: 24574
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -48,6 +48,12 @@ DOMAIN-SUFFIX,tomshardware.com
 DOMAIN-SUFFIX,techpowerup.com
 DOMAIN-SUFFIX,overclock.net
 DOMAIN-SUFFIX,arstechnica.com
+
+# Self-hosted services that previously fell through to FINAL (2026-11-08 monitoring); same Global policy, now explicit
+DOMAIN-SUFFIX,open-meteo.com
+DOMAIN-SUFFIX,home-assistant.io
+DOMAIN-SUFFIX,hacs.xyz
+DOMAIN,api.met.no
 
 # ======= blackmatrix7 Global ========
 DOMAIN,1password.drift.click
