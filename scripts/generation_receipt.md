@@ -1,18 +1,18 @@
 # Surge 规则生成收据
 
 - 规则文件：31
-- 规则总数：157440
+- 规则总数：157457
 - manifest 文件：31
 
 ## 差异摘要
 
-- 新增：204
-- 删除：185
+- 新增：51
+- 删除：34
 - 来源迁移：0
 
 ## 规则类型
 
-- DOMAIN: 3690
+- DOMAIN: 3707
 - DOMAIN-KEYWORD: 87
 - DOMAIN-SUFFIX: 141391
 - DOMAIN-WILDCARD: 4
@@ -36,12 +36,12 @@
 - SukkaW Apple CN: 5
 - SukkaW CDN: 27
 - SukkaW Domestic: 697
-- SukkaW Download: 1607
+- SukkaW Download: 1608
 - SukkaW Game Download: 52
 - SukkaW Microsoft CDN: 52
 - SukkaW Speedtest: 122
 - SukkaW Speedtest Servers China: 1
-- SukkaW Speedtest Servers International: 1580
+- SukkaW Speedtest Servers International: 1596
 - SukkaW Stream: 61
 - SukkaW Stream HK: 34
 - SukkaW Stream JP: 27
