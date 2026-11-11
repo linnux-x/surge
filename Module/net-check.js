@@ -14,7 +14,7 @@
  * 许可：本文件含上游作者的代码，版权归各自作者，不适用本仓库的 MIT 许可证。
  *
  * 相对上游的改动：
- *   - 解锁检测的判定逻辑原样保留
+ *   - 解锁检测的判定逻辑原样保留；只改了显示：台湾的国旗换成 🌏 加文字（国行 iPhone 画不出 🇹🇼）
  *   - 落地 IP 改由 IPPure 一次查完（HTTPS），不再另走明文的 ip-api.com；IPPure 不可用时退到 ipwho.is（无评分）
  *   - ASN 归属用 Surge 自带的 $utils.ipaso 本地查询，不再请求 RIPEstat，也不用缓存
  *   - 本地 IP 查询固定走 DIRECT，平安 → 哔哩哔哩 → IPIP 依次兜底
@@ -557,7 +557,9 @@ function note(info) {
 }
 
 // 地区的国旗；没拿到地区时用 🌐 占位，保持宽度一样
+// 国行 iPhone 不显示 🇹🇼，会画成带叉的方框：台湾用 🌏 占位，地区名由调用处写成文字
 function flag(code) {
+  if (code === 'TW') return '🌏';
   return /^[A-Z]{2}$/.test(code) ? String.fromCodePoint(...[...code].map(char => 127397 + char.charCodeAt(0))) : '🌐';
 }
 
@@ -569,7 +571,7 @@ function unlockPanel(items) {
   const passed = items.filter(item => item.info.state === 'ok').length;
   const lines = items.map(item => {
     const text = note(item.info);
-    return `${DOTS[item.info.state] || '⚪️'} ${flag(item.info.region)} ${item.name}${text ? ` ${text}` : ''} · ${seconds(item.info.ms)}`;
+    return `${DOTS[item.info.state] || '⚪️'} ${flag(item.info.region)} ${item.name}${item.info.region === 'TW' ? '（台湾）' : ''}${text ? ` ${text}` : ''} · ${seconds(item.info.ms)}`;
   });
   // 请求失败、待验证的：断在哪个域名和原始报错只写进脚本日志，面板上只留服务名后面的简短原因
   items
@@ -680,7 +682,10 @@ async function localInfo(queryIP) {
     const info = data && typeof data === 'object' ? source.pick(data) : null;
     const ip = queryIP || String((info && info.ip) || '');
     if (!info || !ip) continue;
-    const parts = info.parts.map(part => String(part || '').trim()).filter(Boolean);
+    // 手机上一行放不下「江苏省 南京市 中国电信」：去掉省、市和运营商前面的「中国」
+    const parts = info.parts
+      .map(part => String(part || '').trim().replace(/^(.{2,})[省市]$/, '$1').replace(/^中国(?=.)/, ''))
+      .filter(Boolean);
     return { ip, code: region2(info.code), text: parts.filter((part, i) => parts.indexOf(part) === i).join(' ') };
   }
   return null;
