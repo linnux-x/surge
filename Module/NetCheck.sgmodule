@@ -1,0 +1,14 @@
+#!name=网络检测合集
+#!desc=两个面板：「网络信息」显示本地 IP、入口、落地 IP、IP 纯净度（IPPure）、ASN 归属和当前策略；「解锁检测」检测 YouTube Premium、Netflix、Disney+、ChatGPT、Claude、Gemini（每次约下载 2–3 MB）。可选：网络变化且 IP 有变时发通知。脚本于 2026-11-11 审阅后合并改写自 vfelix7 的 IPPure、流媒体与 AI 解锁和 xream 的网络信息 𝕏，随本仓库更新，无 MITM。
+#!category=网络检测
+#!arguments=Proxy:跟随规则,StreamingProxy:同Proxy,AIProxy:同Proxy,MaskIP:true,ShowLAN:false,Notify:false
+#!arguments-desc=Proxy：落地 IP 和解锁检测走哪个策略或策略组；填「跟随规则」按 Surge 规则走\nStreamingProxy：只给 YouTube、Netflix、Disney+ 指定策略；填「同Proxy」跟 Proxy 一样\nAIProxy：只给 ChatGPT、Claude、Gemini 指定策略；填法同 StreamingProxy\nMaskIP：IP 打码（true / false）\nShowLAN：网络信息里显示局域网地址和 Wi-Fi 名称（true / false）\nNotify：网络变化且 IP 有变时发通知（true / false）
+
+[Panel]
+NetCheck-Info = script-name=netcheck-info, title=网络信息, content=检测中…, style=info, update-interval=600
+NetCheck-Unlock = script-name=netcheck-unlock, title=解锁检测, content=检测中…, style=info, update-interval=1800
+
+[Script]
+netcheck-info = type=generic, timeout=30, script-path=https://raw.githubusercontent.com/linnux-x/surge/main/Module/net-check.js, argument="Mode=net&MaskIP={{{MaskIP}}}&ShowLAN={{{ShowLAN}}}&Proxy={{{Proxy}}}"
+netcheck-unlock = type=generic, timeout=40, script-path=https://raw.githubusercontent.com/linnux-x/surge/main/Module/net-check.js, argument="Mode=unlock&Proxy={{{Proxy}}}&StreamingProxy={{{StreamingProxy}}}&AIProxy={{{AIProxy}}}"
+netcheck-event = type=event, event-name=network-changed, timeout=30, script-path=https://raw.githubusercontent.com/linnux-x/surge/main/Module/net-check.js, argument="Mode=event&Notify={{{Notify}}}&MaskIP={{{MaskIP}}}&Proxy={{{Proxy}}}"
