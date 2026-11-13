@@ -25,3 +25,5 @@ jobs:
       - name: Validate, Test and Check Receipt
         # Same entry point the daily job and full generation use.
         run: python3 scripts/pipeline.py verify --ci
+      - name: Test Looking Glass module
+        run: node tests/test_route_trace.js

@@ -1,0 +1,11 @@
+#!name=Looking Glass · 参考路由追踪
+#!desc=显示公共探针到代理入口、落地 IP 的参考路径：IP、位置、AS；不能视为本机实际路径。借 Globalping 的公共探针跑 mtr（同城同网的探针，不是本机发包），入口与落地的 IP 会发给 Globalping；入口到落地若走专线则看不到。每次刷新用 1～2 次免费额度，面板不自动刷新，点一下才测。
+#!category=网络检测
+#!arguments=Proxy:跟随规则,Probe:自动,MaskIP:true
+#!arguments-desc=Proxy：落地 IP 走哪个策略或策略组查；填「跟随规则」按 Surge 规则走\nProbe：第一段的探针位置；填「自动」按本地出口的城市和运营商选，也可以填 Globalping 的写法如 Nanjing+AS4134\nMaskIP：本地、入口、落地 IP 打码（true / false），中间路由器不打码
+
+[Panel]
+RouteTrace = script-name=route-trace, title=Looking Glass, content=点一下开始追踪（约 10～20 秒）, style=info
+
+[Script]
+route-trace = type=generic, timeout=60, script-path=https://raw.githubusercontent.com/linnux-x/surge/main/Module/route-trace.js, argument="MaskIP={{{MaskIP}}}&Probe={{{Probe}}}&Proxy={{{Proxy}}}"
