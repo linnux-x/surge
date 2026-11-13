@@ -23,9 +23,10 @@ async function run(mode) {
   function request(options, cb) {
     calls.push(options);
     let status = 200, body;
-    if (options.url.includes('my.ippure.com')) {
+    const host = new URL(options.url).hostname;
+    if (host === 'my.ippure.com') {
       body = { ip: mode === 'direct' ? '192.0.2.3' : mode === 'ipv6' ? '2001:db8::1' : '198.51.100.7' };
-    } else if (options.url.includes('pingan.com.cn')) {
+    } else if (host === 'rmb.pingan.com.cn') {
       body = { data: { ip: '192.0.2.3', countryIsoCode: 'CN', country: '中国', region: '江苏省', city: '南京市', isp: '电信' } };
     } else if (options.body) {
       starts++;
