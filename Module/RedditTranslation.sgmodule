@@ -1,0 +1,15 @@
+#!name=Reddit 自动翻译
+#!desc=自动注入 x-reddit-translations 开启 Reddit App 翻译功能
+#!author=RavelloH
+#!arguments=Lang:zh-hans
+#!arguments-desc=Lang：翻译的目标语言，zh-hans 为简体中文，zh-hant 为繁体中文
+# 复制于 2026-11-11，原文件为 RedditTranslation.module；版权归原作者，不适用本仓库的 MIT 许可证。
+# 模块来源：https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/RedditTranslation.module（sha256 bc402927902470e3…）
+# 脚本来源：https://gist.github.com/RavelloH/68ed0626dae69a1ce7c8ad6887087ea1/raw/c008127260bc4dcd550fcd98285048cf6176f602/main.js（sha256 1d3ea8c1046be208…），已改写：语言改为参数 Lang，删除旧请求头不区分大小写
+# 相对原模块：脚本地址改指本仓库，新增参数 Lang
+
+[Script]
+Reddit自动翻译 = type=http-request, pattern=^https?:\/\/gql(-fed)?\.reddit\.com(?::\d+)?(?:\/|$), script-path=https://raw.githubusercontent.com/linnux-x/surge/main/Module/RedditTranslation.js, argument="Lang={{{Lang}}}"
+
+[MITM]
+hostname = %APPEND% gql.reddit.com, gql-fed.reddit.com

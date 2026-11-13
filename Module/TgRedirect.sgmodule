@@ -1,0 +1,15 @@
+#!name = Telegram跳转
+#!desc = 将 https://t.me/... 重定向到你选择的客户端（tg/sg/turrit/ime/ng/lingo）
+#!author = b
+#!category=TG跳转
+#!arguments = Client:"Telegram"
+#!arguments-desc = Client: Telegram/Swiftgram/Turrit/iMe/Nicegram/Lingogram 或 tg/sg/turrit/ime/ng/lingo
+# 复制于 2026-11-11，已检查并优化；模块功能与来源说明见 AuditedModules.md；版权归原作者，不适用本仓库的 MIT 许可证。
+# 模块来源：https://raw.githubusercontent.com/Yu9191/Rewrite/main/TgRedirect.sgmodule（sha256 2a8f176f40a1cc97…）
+# 脚本来源：https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/TgRedirect.js（sha256 b1cc4e493b988393…），已改写：保留查询参数、补全链接类型、只转浏览器页面访问，详见脚本文件头
+
+[Script]
+tme_redirect = type=http-request, pattern=^https?:\/\/t\.me\/.+, requires-body=0, script-path=https://raw.githubusercontent.com/linnux-x/surge/main/Module/TgRedirect.js, argument=client={{{Client}}}
+
+[MITM]
+hostname = %APPEND% t.me
