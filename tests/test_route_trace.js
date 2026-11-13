@@ -64,7 +64,7 @@ async function run(mode) {
   assert.ok(!normal.result.content.includes('198.51.100.7'));
   assert.match(normal.result.content, /198\.51\.••\.7/);
   assert.equal(normal.calls.filter(c => c.body).length, 2);
-  assert.ok(normal.calls.filter(c => c.body).every(c => JSON.parse(c.body).measurementOptions.ipVersion === 4));
+  assert.ok(normal.calls.filter(c => c.body).every(c => !('ipVersion' in JSON.parse(c.body).measurementOptions)));
   for (const [mode, message] of [['direct', /没有经过代理/], ['ipv6', /暂只支持 IPv4/]]) {
     const outcome = await run(mode);
     assert.match(outcome.result.content, message);

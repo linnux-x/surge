@@ -194,7 +194,7 @@ async function startMtr(target, candidates) {
       type: 'mtr',
       target,
       locations: [{ magic, limit: 1 }],
-      measurementOptions: { packets: 3, protocol: 'ICMP', ipVersion: 4 },
+      measurementOptions: { packets: 3, protocol: 'ICMP' },
     });
     const res = await http('POST', GP_API, { headers: GP_HEADERS, body, timeout: 8 });
     const data = res.ok ? parseJSON(res.body) : null;
