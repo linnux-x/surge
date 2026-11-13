@@ -27,3 +27,5 @@ jobs:
         run: python3 scripts/pipeline.py verify --ci
       - name: Test Looking Glass module
         run: node tests/test_route_trace.js
+      - name: Test audited utility modules
+        run: node tests/test_audited_modules.js

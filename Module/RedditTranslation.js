@@ -20,10 +20,12 @@ function readLang(argument) {
   return /^[A-Za-z]{2,3}(?:-[A-Za-z0-9]{2,8})*$/.test(value) ? value.toLowerCase() : DEFAULT_LANG;
 }
 
-const headers = { ...$request.headers };
-Object.keys(headers)
-  .filter(name => name.toLowerCase() === 'x-reddit-translations')
-  .forEach(name => delete headers[name]);
-headers['x-reddit-translations'] = `enabled, seo, ${readLang(typeof $argument === 'undefined' ? '' : $argument)}`;
-
-$done({ headers });
+(function () {
+  if (typeof $request === 'undefined' || !/^https?:\/\/gql(-fed)?\.reddit\.com(?::\d+)?(?:[/?#]|$)/i.test(String($request.url || ''))) return $done({});
+  const headers = { ...$request.headers };
+  Object.keys(headers)
+    .filter(name => name.toLowerCase() === 'x-reddit-translations')
+    .forEach(name => delete headers[name]);
+  headers['x-reddit-translations'] = `enabled, seo, ${readLang(typeof $argument === 'undefined' ? '' : $argument)}`;
+  $done({ headers });
+})();

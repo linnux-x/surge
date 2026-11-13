@@ -9,7 +9,7 @@
 # 相对原模块：脚本地址改指本仓库，新增参数 Lang
 
 [Script]
-Reddit自动翻译 = type=http-request, pattern=^https?:\/\/gql(-fed)?\.reddit\.com, script-path=https://raw.githubusercontent.com/linnux-x/surge/main/Module/RedditTranslation.js, argument="Lang={{{Lang}}}"
+Reddit自动翻译 = type=http-request, pattern=^https?:\/\/gql(-fed)?\.reddit\.com(?::\d+)?(?:\/|$), script-path=https://raw.githubusercontent.com/linnux-x/surge/main/Module/RedditTranslation.js, argument="Lang={{{Lang}}}"
 
 [MITM]
 hostname = %APPEND% gql.reddit.com, gql-fed.reddit.com

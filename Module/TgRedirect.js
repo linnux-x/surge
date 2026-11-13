@@ -46,8 +46,9 @@ function readScheme(argument) {
   else if (text.includes('=')) text = '';
   text = text.trim().replace(/^["']|["']$/g, '');
   if (/^\{\{\{.*\}\}\}$/.test(text)) text = '';
-  const scheme = CLIENTS[text.toLowerCase()] || text;
-  return /^[a-z][a-z0-9+.-]*$/i.test(scheme) ? scheme : 'tg';
+  const name = text.toLowerCase();
+  if (Object.prototype.hasOwnProperty.call(CLIENTS, name)) return CLIENTS[name];
+  return ['tg', 'sg', 'turrit', 'ime', 'ng', 'lingo'].includes(name) ? name : 'tg';
 }
 
 function decode(text) {
@@ -63,12 +64,14 @@ function convert(path, query) {
   const segs = path.split('/').filter(Boolean).map(decode);
   if (segs[0] === 's' && segs[1]) segs.shift(); // t.me/s/<频道> 是网页预览，按频道处理
   const [first, second, third, fourth] = segs;
-  if (!first) return '';
+  if (!first || segs.some(seg => /[\u0000-\u001f\u007f/]/.test(seg))) return '';
 
   const isNumber = value => /^\d+$/.test(value || '');
   const make = (host, params) => {
     const own = Object.keys(params).map(key => `${key}=${encodeURIComponent(params[key])}`);
-    return `${host}?${own.concat(query ? [query] : []).join('&')}`;
+    // 路径已确定的目标字段优先，避免查询串再次指定 domain/post 等改变目标。
+    const extra = query.split('&').filter(part => part && !Object.prototype.hasOwnProperty.call(params, decode(part.split('=')[0])));
+    return `${host}?${own.concat(extra).join('&')}`;
   };
 
   if (first[0] === '+') {
@@ -79,7 +82,7 @@ function convert(path, query) {
   if (first[0] === '$') return first.length > 1 ? make('invoice', { slug: first.slice(1) }) : '';
 
   const key = first.toLowerCase();
-  if (WITH_VALUE[key]) return second ? make(WITH_VALUE[key][0], { [WITH_VALUE[key][1]]: second }) : '';
+  if (Object.prototype.hasOwnProperty.call(WITH_VALUE, key)) return second ? make(WITH_VALUE[key][0], { [WITH_VALUE[key][1]]: second }) : '';
   if (QUERY_ONLY.includes(key)) return query ? make(key, {}) : '';
   if (key === 'share') return /(?:^|&)url=/.test(query) ? make('msg_url', {}) : '';
   if (key === 'boost') {

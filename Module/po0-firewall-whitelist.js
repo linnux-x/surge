@@ -31,6 +31,8 @@
  * 3. 下面的 INLINE_TOKENS 常量（自己维护脚本副本时直接填这里）
  */
 
+// 基于 w0ven/po0fw（sha256 5c397742205f8c13…）优化，版权归原作者。
+// 不适用本仓库 MIT；新增直连、凭据脱敏、槽位校验与非成功响应检查。
 var INLINE_TOKENS = "";
 
 var API_BASE = "https://124.221.69.228/api/firewall/"; // + <token> + "/add"
@@ -86,6 +88,10 @@ function notify(title, subtitle, body) {
 
 // 各客户端失败时回传的 error 五花八门：Loon 在网络瞬断 / TLS 握手失败时
 // 直接回调 error=null，裸 String(null) 只会得到毫无信息量的 "null"。
+function redact(text) {
+  return String(text || "").replace(/pgnfw_[^/\s?&#"'<>]+/g, "[token]");
+}
+
 function describeHttpError(error) {
   var text;
   if (error === null || error === undefined) text = "";
@@ -96,7 +102,7 @@ function describeHttpError(error) {
   if (text === "" || text === "null" || text === "undefined" || text === "{}") {
     return "网络请求失败（超时 / 握手失败 / 被拦截）";
   }
-  return text;
+  return redact(text);
 }
 
 function httpRequestOnce(method, opts) {
@@ -117,7 +123,8 @@ function httpRequestOnce(method, opts) {
       // "self type check failed for Objective-C instance method"。必须直调。
       var cb = function (error, response, body) {
         if (error) resolve({ error: describeHttpError(error) });
-        else resolve({ body: body, status: response && (response.status || response.statusCode) });
+        else if (!response || !(response.status || response.statusCode)) resolve({ error: "接口未返回有效状态" });
+        else resolve({ body: body, status: Number(response.status || response.statusCode) });
       };
       if (method === "POST") $httpClient.post(opts, cb);
       else $httpClient.get(opts, cb);
@@ -143,9 +150,8 @@ var HTTP_RETRY_DELAY_MS = 1500;
 // 几秒后同一 token 即成功。规范 JSON 错误（如 token 无效 {"code":400,...}）不重试。
 function isRetryableServerError(r) {
   if (!r || !r.status) return false;
-  if (r.status >= 500) return true;
-  if (r.status >= 200 && r.status < 300) return false;
-  if (r.status === 403) return false; // 槽位冲突，重试无意义
+  if (r.status >= 500 && r.status < 600) return true;
+  if (r.status !== 400) return false; // 仅裸 400 和 5xx 视为临时服务故障
   try {
     JSON.parse(r.body);
     return false; // 规范 JSON 错误 = 确定性失败，不重试
@@ -159,7 +165,7 @@ function httpRequest(method, opts, attempt) {
   return httpRequestOnce(method, opts).then(function (r) {
     if (!r.error && !isRetryableServerError(r)) return r;
     if (attempt >= HTTP_RETRY) {
-      if (r.error) r.error = r.error + "（已重试 " + HTTP_RETRY + " 次）";
+      if (r.error) r.error = r.error + "（已尝试 " + HTTP_RETRY + " 次）";
       return r;
     }
     return delay(HTTP_RETRY_DELAY_MS * attempt).then(function () {
@@ -186,7 +192,8 @@ function getArgumentTokens() {
     for (var i = 0; i < pairs.length; i++) {
       var idx = pairs[i].indexOf("=");
       if (idx > 0 && pairs[i].slice(0, idx) === "tokens") {
-        return decodeURIComponent(pairs[i].slice(idx + 1));
+        try { return decodeURIComponent(pairs[i].slice(idx + 1)); }
+        catch (e) { return "[invalid]"; }
       }
     }
     // 直接把整串当 token 填的兜底（如 Loon argument="pgnfw_..."）
@@ -260,6 +267,11 @@ function apiCall(token, slot) {
     headers: { "Content-Type": "application/json" },
     body: "",
   };
+  if (isSurgeFamily && !isQX) {
+    opts.policy = "DIRECT";
+    opts["auto-cookie"] = false;
+    opts["auto-redirect"] = false;
+  }
   if (REQUEST_TIMEOUT !== null) opts.timeout = REQUEST_TIMEOUT;
 
   return httpRequest("POST", opts).then(function (r) {
@@ -271,12 +283,13 @@ function apiCall(token, slot) {
     // 带槽位写入且本机 IP 已占用别的槽位 → 服务端 403 冲突，需去 UI 删旧槽位
     if (r.status === 403) {
       return {
-        error: "槽位冲突：本机 IP 已在其它槽位，请先去 UI 删除",
+        error: slot !== null ? "槽位冲突或访问被拒绝，请检查服务端" : "访问被拒绝，请检查 token 和服务端",
         conflict: true,
         currentIp: data && data.currentIp,
       };
     }
-    if (!data) return { error: "响应异常: " + String(r.body).slice(0, 80) };
+    if (!(r.status >= 200 && r.status < 300)) return { error: "接口 HTTP " + r.status };
+    if (!data || typeof data !== "object" || Array.isArray(data) || !Array.isArray(data.whitelist)) return { error: "接口响应格式异常" };
     // whitelist 元素为 {ip, slot} 对象（旧版曾是纯 IP 字符串）：记下 ip→slot 再摊平成 IP 数组
     var raw = Array.isArray(data.whitelist) ? data.whitelist : [];
     data.slotOf = {};
@@ -287,7 +300,7 @@ function apiCall(token, slot) {
     });
     data.whitelist = raw.map(function (e) {
       return e && typeof e === "object" ? e.ip : e;
-    });
+    }).filter(function (ip) { return typeof ip === "string"; });
     data.applied =
       data.enabled === true &&
       data.whitelist.some(function (ip) {
@@ -298,6 +311,7 @@ function apiCall(token, slot) {
 }
 
 function ensureWhitelisted(item, index) {
+  if (item.error) return Promise.resolve({ st: { error: item.error }, slot: null });
   var kvState = STORE_PREFIX + index;
   var kvHist = STORE_PREFIX + "hist_" + index;
   var cellular = onCellular();
@@ -353,10 +367,11 @@ var tokens = (getArgumentTokens() || storeRead(TOKENS_KEY) || INLINE_TOKENS || "
     return s.indexOf("pgnfw_") === 0;
   })
   .map(function (s) {
-    var at = s.indexOf("@");
-    if (at === -1) return { token: s, slot: null };
-    var n = parseInt(s.slice(at + 1), 10);
-    return { token: s.slice(0, at), slot: isNaN(n) ? null : n };
+    var match = /^(pgnfw_[A-Za-z0-9_-]+)(?:@(\d+))?$/.exec(s);
+    if (!match) return { error: "token 或槽位格式无效；槽位必须为非负整数" };
+    var slot = match[2] === undefined ? null : Number(match[2]);
+    if (slot !== null && !Number.isSafeInteger(slot)) return { error: "槽位超出整数范围" };
+    return { token: match[1], slot: slot };
   });
 
 if (tokens.length === 0) {
@@ -384,7 +399,7 @@ if (tokens.length === 0) {
       lines.push(describe(i, results[i]));
 
       var state = (st.currentIp || "?") + "|" + (st.applied ? "1" : "0");
-      if (storeRead(results[i].kvState) !== state) {
+      if (results[i].kvState && storeRead(results[i].kvState) !== state) {
         storeWrite(state, results[i].kvState);
         changed = true;
       }
@@ -402,7 +417,7 @@ if (tokens.length === 0) {
     }
     finish(title, content, allOk);
   }).catch(function (e) {
-    notify("po0 防火墙加白", "脚本异常", String(e && e.message ? e.message : e));
-    finish("po0 加白：脚本异常", String(e && e.message ? e.message : e), false);
+    notify("po0 防火墙加白", "脚本异常", redact(e && e.message ? e.message : e));
+    finish("po0 加白：脚本异常", redact(e && e.message ? e.message : e), false);
   });
 }
