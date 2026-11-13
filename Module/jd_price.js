@@ -61,9 +61,12 @@ async function main() {
         const parse = checkRes(await get_stteId(JD_Url), '获取stteId [V2]');
         link = parse?.result?.link;
         stteId = parse?.result?.stteId;
+        if (!link || stteId == null) throw new Error('商品解析结果不完整');
     }
     const basic = checkRes(await get_spbh(link, stteId, version), '获取 spbh [V1/V2]');
-    const jiagequshi = checkRes(await get_jiagequshi(basic?.result?.url, basic?.result?.spbh), '获取价格趋势')
+    if (!basic.result || !basic.result.url || basic.result.spbh == null) throw new Error('商品基础信息不完整');
+    const jiagequshi = checkRes(await get_jiagequshi(basic.result.url, basic.result.spbh), '获取价格趋势');
+    if (!jiagequshi.result || !jiagequshi.result.trend) throw new Error('价格趋势数据不完整');
     const trend = checkRes(await get_priceRemark(jiagequshi?.result?.trend), '价格备注')
     const ListPriceDetail = trend?.remark?.ListPriceDetail;
     const exclude = new Set(['当前到手价', '历史最低价', '618价格', '双11价格', '30天最低价', '60天最低价', '180天最低价']);
@@ -100,7 +103,7 @@ function Price_HTML(priceList) {
         else if (diff.startsWith('↓')) diffClass = 'down';
         return `<tr><td>${escapeHTML(name)}</td><td>${escapeHTML(date)}</td><td>${escapeHTML(price)}</td><td class="price-diff ${diffClass}">${escapeHTML(diff)}</td></tr>`;
     }).join('');
-    return `<div class="price-container"><table class="price-table"><thead><tr><th>类型</th><th>日期</th><th>价格</th><th>差价</th></tr></thead><tbody>${rows}</tbody></table></div><style>.price-container,.price-table{font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;}.price-container{max-width:800px;margin:10px auto;padding:10px;font-size:13px;font-weight:bold;background:#FFF9F9;color:#333;border-radius:12px;/*容器圆角*/overflow:hidden;/*防止溢出*/box-shadow:0 2px 8px rgba(0,0,0,0.05);/*微阴影更高级感*/}.price-table{width:100%;border-collapse:separate;border-spacing:0;border-radius:8px;/*表格本身圆角*/overflow:hidden;}.price-table th{background:#e61a23;color:#fff;padding:12px;text-align:left;font-weight:bold;}.price-table td{padding:12px;border-bottom:1px solid#EEE;font-weight:bold;}.price-diff.up{color:#C91623;font-weight:bold;}.price-diff.down{color:#00aa00;font-weight:bold;}</style>`;
+    return `<div class="price-container"><table class="price-table"><thead><tr><th>类型</th><th>日期</th><th>价格</th><th>差价</th></tr></thead><tbody>${rows}</tbody></table></div><style>.price-container,.price-table{font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;}.price-container{max-width:800px;margin:10px auto;padding:10px;font-size:13px;font-weight:bold;background:#FFF9F9;color:#333;border-radius:12px;/*容器圆角*/overflow:hidden;/*防止溢出*/box-shadow:0 2px 8px rgba(0,0,0,0.05);/*微阴影更高级感*/}.price-table{width:100%;border-collapse:separate;border-spacing:0;border-radius:8px;/*表格本身圆角*/overflow:hidden;}.price-table th{background:#e61a23;color:#fff;padding:12px;text-align:left;font-weight:bold;}.price-table td{padding:12px;border-bottom:1px solid#EEE;font-weight:bold;}.price-table .price-diff.up{color:#C91623;font-weight:bold;}.price-table .price-diff.down{color:#00aa00;font-weight:bold;}</style>`;
 }
 
 // 提交请求
