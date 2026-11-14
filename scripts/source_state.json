@@ -12,20 +12,20 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/cncidr.txt": {
-    "content_length": "234409",
-    "etag": "\"724747f986a6057813aa77c1b8ae223a1b06428cf2b87381ae16b5d28eb5fdeb\"",
+    "content_length": "234179",
+    "etag": "\"d8695ea47fdded166aa7c66b71c1457c0d3b2ae05e0e50d76137bb20a15640df\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
     "content_length": "3447",
-    "etag": "\"c973e8fb579e8a5ea8322c54a4ab876ad1c17c8c6536d9b76631a5bcfdb84993\"",
+    "etag": "\"e2005a4c6097ffc1352f8c5310d39bc5a7b6902a91e991a1d8f350004ae1c252\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
-    "content_length": "88947",
-    "etag": "\"31adc2709823b79d14b4932b3c86ee3db3659b85bfaca519e55c55cc8fc94d84\"",
+    "content_length": "88675",
+    "etag": "\"c14421488b9bd18f467f7c9a43d330290ad20252edf14b5fc9a5c8f70456a300\"",
     "last_modified": null,
     "source_available": true
   },
@@ -36,8 +36,8 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaLab/speedtest-net-servers-dist/master/servers.json": {
-    "content_length": "559657",
-    "etag": "\"b31f21e5f3752f9ba24fd40417dcc0ba23a9efe770163ed729c6164cdc9250e8\"",
+    "content_length": "575137",
+    "etag": "\"508d21e52088dc8bb92ac4ec59a993d63e921bf98a3e757d4f6743bcf35b4cb8\"",
     "last_modified": null,
     "source_available": true
   },
@@ -217,7 +217,7 @@
   },
   "https://ruleset.skk.moe/List/non_ip/domestic.conf": {
     "content_length": null,
-    "etag": "W/\"edcfcc652f0b5f5fa6075273428e5458\"",
+    "etag": "W/\"8e08f21cdab109e51ce754407fe1efc0\"",
     "last_modified": null,
     "source_available": true
   },

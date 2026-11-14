@@ -5,7 +5,7 @@
       "label": "SukkaW Domestic",
       "url": "https://ruleset.skk.moe/List/non_ip/domestic.conf",
       "format": null,
-      "sha256": "740eb2840abac98af3f03545cf5464b691ab1d2a333053f4b5816c17a475e03e"
+      "sha256": "658ab48fa96f02ebb4450db09c33bbc88f6696ae029455b04fff509773e43f4c"
     },
     {
       "label": "blackmatrix7 ChinaMaxNoIP Domain",
@@ -17,7 +17,7 @@
       "label": "Rabbit-Spec China",
       "url": "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list",
       "format": "domainset",
-      "sha256": "e7982475b3978687f703917e093b052091ff886ac791c1f98d3c91aa188815be"
+      "sha256": "c94c8d554931f0c6131f51de7770024438f547677bd24a4d87bba702258b1be9"
     }
   ]
 }
