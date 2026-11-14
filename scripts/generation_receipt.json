@@ -447,7 +447,7 @@
     "YouTube.manifest": "1b9c3b78afbb311db391e8f2910b25b507296d158a339957a874d918a2869ca7"
   },
   "sources_sha256": "8a9232de6edcb43535fb38065f83d212f295ab09014be17a75158584f91ab5fe",
-  "override_manifest_sha256": "a0ee20fcdd2a2a8aad9c3a39ab3611f28c5462432778015a740f261bc10e5105",
+  "override_manifest_sha256": "37e122a90e8c1f223a994fb7d45ab200203e1636a857434157b37c0292322748",
   "diff_summary": {
     "total_added": 185,
     "total_removed": 211,

@@ -47,6 +47,15 @@
   },
   "entries": [
     {
+      "source_file": "China.txt",
+      "rule": "DOMAIN-SUFFIX,amazon.cn",
+      "reason": "上游移除泛 cn 后缀后仍保持 Amazon 中国既有直连策略，不扩大到其他 cn 域名",
+      "destination": "China.list → DIRECT",
+      "route_tests": [
+        "amazon.cn"
+      ]
+    },
+    {
       "source_file": "AI.exclude.txt",
       "rule": "DOMAIN-SUFFIX,identrust.com",
       "reason": "共享证书服务不应由 AI 代理组覆盖",
