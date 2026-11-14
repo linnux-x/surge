@@ -1,24 +1,24 @@
 # Surge 规则生成收据
 
 - 规则文件：31
-- 规则总数：157431
+- 规则总数：157606
 - manifest 文件：31
 
 ## 差异摘要
 
-- 新增：185
-- 删除：211
+- 新增：417
+- 删除：242
 - 来源迁移：0
 
 ## 规则类型
 
-- DOMAIN: 3681
+- DOMAIN: 3724
 - DOMAIN-KEYWORD: 87
-- DOMAIN-SUFFIX: 141391
+- DOMAIN-SUFFIX: 141530
 - DOMAIN-WILDCARD: 4
 - IP-ASN: 8
-- IP-CIDR: 8466
-- IP-CIDR6: 3541
+- IP-CIDR: 8493
+- IP-CIDR6: 3507
 - PROCESS-NAME: 76
 - URL-REGEX: 5
 - USER-AGENT: 172
@@ -26,22 +26,22 @@
 ## 来源归属
 
 - ConnersHua AI: 12
-- Loyalsoldier China CIDR: 9647
-- Manual Rules: 330
+- Loyalsoldier China CIDR: 9640
+- Manual Rules: 340
 - Rabbit-Spec AIGC: 27
-- Rabbit-Spec China: 382
+- Rabbit-Spec China: 370
 - RocM301 Apple-AI: 16
 - SukkaW AI: 24
 - SukkaW Apple CDN: 158
 - SukkaW Apple CN: 5
 - SukkaW CDN: 27
-- SukkaW Domestic: 697
+- SukkaW Domestic: 840
 - SukkaW Download: 1608
 - SukkaW Game Download: 52
 - SukkaW Microsoft CDN: 52
 - SukkaW Speedtest: 122
 - SukkaW Speedtest Servers China: 1
-- SukkaW Speedtest Servers International: 1570
+- SukkaW Speedtest Servers International: 1610
 - SukkaW Stream: 61
 - SukkaW Stream HK: 34
 - SukkaW Stream JP: 27
@@ -49,7 +49,7 @@
 - SukkaW Stream US: 51
 - Telegram Official CIDR: 11
 - blackmatrix7 Apple: 1546
-- blackmatrix7 ChinaMaxNoIP Domain: 109406
+- blackmatrix7 ChinaMaxNoIP Domain: 109407
 - blackmatrix7 ChinaMedia: 384
 - blackmatrix7 Discord: 29
 - blackmatrix7 Disney: 166
