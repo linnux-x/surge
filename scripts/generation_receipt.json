@@ -250,12 +250,12 @@
     },
     {
       "file": "Speedtest.list",
-      "rules": 1734,
+      "rules": 1705,
       "types": {
-        "DOMAIN": 1621,
+        "DOMAIN": 1592,
         "DOMAIN-SUFFIX": 113
       },
-      "sha256": "0e733beb43f09c28b62c562cd389e5fe459f67b22735410405099b3754763301"
+      "sha256": "1ee9fcdbb746c26ba9e321b4ad9eac478c2f0ef38032e700b1ac0e0155d5250c"
     },
     {
       "file": "Speedtest_China.list",
@@ -353,9 +353,9 @@
       "sha256": "dc6dfde863bc0c0034fa3bae09c8a8b090ca385439e866e5ff89fa65eb177c69"
     }
   ],
-  "total_rules": 157606,
+  "total_rules": 157577,
   "rule_types": {
-    "DOMAIN": 3724,
+    "DOMAIN": 3695,
     "DOMAIN-KEYWORD": 87,
     "DOMAIN-SUFFIX": 141530,
     "DOMAIN-WILDCARD": 4,
@@ -383,7 +383,7 @@
     "SukkaW Microsoft CDN": 52,
     "SukkaW Speedtest": 122,
     "SukkaW Speedtest Servers China": 1,
-    "SukkaW Speedtest Servers International": 1610,
+    "SukkaW Speedtest Servers International": 1581,
     "SukkaW Stream": 61,
     "SukkaW Stream HK": 34,
     "SukkaW Stream JP": 27,
@@ -436,7 +436,7 @@
     "Netflix.manifest": "0ffcdd804cc4e56614ba69cc539061c6b5e65ef6ee2e62a01aee3e62902ab9c9",
     "PayPal.manifest": "649b7162f902986f696a1b28e98b3d2b5e6cbda0a9c8e951c552098e68e1382b",
     "SocialMedia.manifest": "c24a95b378d5707682db1edfe03b1424b17e1f4db9e086a71dcbaeffc751f5ab",
-    "Speedtest.manifest": "1410fcd2af3424155b41211c1d65326389a5b4e6b8cf7674a319ef92069e08c7",
+    "Speedtest.manifest": "d1cfa6c842b3410563c3d862a60b52599aeeee14c1878f263728180c336f4636",
     "Speedtest_China.manifest": "1422ee65ce7dca6937f4119b9f3645a9f79e436faf96341f92e11e39ce894807",
     "Spotify.manifest": "5f1f22f1d8f4081b725902910dc6754a6b1fa868dd8e97e527c39fcc7cf463b0",
     "TWMedia.manifest": "d0a0a64013fa6d8fc70e860246a6d71bc3eb5a462619b1f2c5e20cfbc1f85902",
@@ -449,8 +449,8 @@
   "sources_sha256": "8a9232de6edcb43535fb38065f83d212f295ab09014be17a75158584f91ab5fe",
   "override_manifest_sha256": "37e122a90e8c1f223a994fb7d45ab200203e1636a857434157b37c0292322748",
   "diff_summary": {
-    "total_added": 417,
-    "total_removed": 242,
+    "total_added": 131,
+    "total_removed": 160,
     "total_source_changed": 0
   }
 }
