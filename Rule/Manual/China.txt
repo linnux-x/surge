@@ -59,3 +59,6 @@ DOMAIN-SUFFIX,xoom.net.cn
 
 # Douyin API hosts (removed from TikTok via TikTok.exclude; upstream China lacks them)
 DOMAIN-SUFFIX,snssdk.com
+
+# Preserve Amazon China routing when upstream drops the broad cn suffix.
+DOMAIN-SUFFIX,amazon.cn
