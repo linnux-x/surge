@@ -1,9 +1,9 @@
 # NAME: Speedtest
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-15 05:02:24 +0800
+# UPDATED: 2026-11-16 05:01:54 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1705
+# TOTAL: 1700
 
 # ======= Manual Rules ========
 DOMAIN-SUFFIX,fast.com
@@ -241,7 +241,6 @@ DOMAIN,ind-nperf.verizon.net
 DOMAIN,inova.net.gegnet.com.br
 DOMAIN,iperf-ams-nl.eranium.net
 DOMAIN,iperf.gakijken.nl
-DOMAIN,ipl3pt.fft.ops.eu.uu.net
 DOMAIN,ipl3pt.syd.ops.aspac.uu.net
 DOMAIN,ivry.testdebit.info
 DOMAIN,izm1speedtest.turktelekom.com.tr
@@ -307,6 +306,7 @@ DOMAIN,nohar.softechinfosol.com
 DOMAIN,ns1.anlnetwork.in
 DOMAIN,ns1.fab5network.com
 DOMAIN,ns1.netfmb.in
+DOMAIN,ns2.peer.net.in
 DOMAIN,nt-speed.kbro.com.tw
 DOMAIN,ntp-speed.kbro.com.tw
 DOMAIN,ntp-speedtest.homeplus.net.tw
@@ -379,6 +379,7 @@ DOMAIN,ookla.olin.es
 DOMAIN,ookla.onivia.net
 DOMAIN,ookla.opticaltel.com
 DOMAIN,ookla.paulonet.srv.br
+DOMAIN,ookla.pgservicos.net.br
 DOMAIN,ookla.playmaisreverso.net.br
 DOMAIN,ookla.premierdc.com.tr
 DOMAIN,ookla.siditelecom-isp.com.br
@@ -433,7 +434,6 @@ DOMAIN,seawa00-speedtest.etstelco.com
 DOMAIN,seednet-tc1.seed.net.tw
 DOMAIN,seednet-tn1.seed.net.tw
 DOMAIN,serv.qwistel.in
-DOMAIN,serv8.a2jnetwork.in
 DOMAIN,servidor.speedplay.com.br
 DOMAIN,sfosj0096speedtestserver02.wiline.com
 DOMAIN,sg-bgp-speedtest.nearoute.io
@@ -467,7 +467,6 @@ DOMAIN,sp1.burstfire.net
 DOMAIN,sp1.campanaworks.com
 DOMAIN,sp1.denbroadband.in
 DOMAIN,sp1.gleamnet.in
-DOMAIN,sp1.jdmbroadband.com
 DOMAIN,sp1.jonaz.nl
 DOMAIN,sp1.jump.net.uk
 DOMAIN,sp1.snsinternet.com
@@ -527,6 +526,7 @@ DOMAIN,speed.haefeleconnect.com
 DOMAIN,speed.ktk.de
 DOMAIN,speed.laurensk.nl
 DOMAIN,speed.lordnet.net
+DOMAIN,speed.markham.telmax.ca
 DOMAIN,speed.mel.aussiebroadband.com.au
 DOMAIN,speed.mpvnetworks.com
 DOMAIN,speed.mylink.co.in
@@ -558,8 +558,8 @@ DOMAIN,speed09.gonetspeed.com
 DOMAIN,speed1.airtek.com.ve
 DOMAIN,speed1.directnet7star.com
 DOMAIN,speed1.spitfireuk.net
-DOMAIN,speed1.supersonicinternet.com
 DOMAIN,speed10.aitspl.in
+DOMAIN,speed12.gonetspeed.com
 DOMAIN,speed2.fiberlink.pl
 DOMAIN,speedam.wsp.net.br
 DOMAIN,speedapi.race.com
@@ -959,10 +959,10 @@ DOMAIN,speedtest.jbarbieri.net
 DOMAIN,speedtest.jdtelecom.com.br
 DOMAIN,speedtest.jeebr.net
 DOMAIN,speedtest.jetair.net.in
-DOMAIN,speedtest.jetspeed.com.br
 DOMAIN,speedtest.jmdi.pl
 DOMAIN,speedtest.joycloud.services
 DOMAIN,speedtest.jprdigital.in
+DOMAIN,speedtest.jvswifi.com.br
 DOMAIN,speedtest.kabelnoord.net
 DOMAIN,speedtest.kairun.jp
 DOMAIN,speedtest.kappenhagen.tech
@@ -1083,7 +1083,6 @@ DOMAIN,speedtest.phlconnect.com.br
 DOMAIN,speedtest.pilotfiber.com
 DOMAIN,speedtest.pinerichland.org
 DOMAIN,speedtest.pingless.com
-DOMAIN,speedtest.pinguimtelecom.net.br
 DOMAIN,speedtest.pl-waw.as210558.net
 DOMAIN,speedtest.plusnetworks.com.br
 DOMAIN,speedtest.plutex.de
@@ -1154,12 +1153,10 @@ DOMAIN,speedtest.syd01.launtel.net.au
 DOMAIN,speedtest.syscom.manaus.br
 DOMAIN,speedtest.taifo.com.tw
 DOMAIN,speedtest.teknosos.com.tr
-DOMAIN,speedtest.telbo.net
 DOMAIN,speedtest.telecaravaca.com
 DOMAIN,speedtest.telfs.com
 DOMAIN,speedtest.telmekom.net
 DOMAIN,speedtest.thn.lon.network.as201838.net
-DOMAIN,speedtest.thn.uk.syntura.io
 DOMAIN,speedtest.three.com.hk
 DOMAIN,speedtest.thryve.com.au
 DOMAIN,speedtest.thyrakles.de
@@ -1185,7 +1182,6 @@ DOMAIN,speedtest.undercorp.com.br
 DOMAIN,speedtest.unidata.it
 DOMAIN,speedtest.unitelecom.net.br
 DOMAIN,speedtest.unlimitedfiber.com
-DOMAIN,speedtest.unlimitednet.us
 DOMAIN,speedtest.us-at.kamatera.com
 DOMAIN,speedtest.us-ch.kamatera.com
 DOMAIN,speedtest.us-la.kamatera.com
@@ -1244,7 +1240,6 @@ DOMAIN,speedtest.zerospace.cloud
 DOMAIN,speedtest.zl.osso.network
 DOMAIN,speedtest.zoominternet.net
 DOMAIN,speedtest.zttcc.cloud
-DOMAIN,speedtest001.bfinetworks.com
 DOMAIN,speedtest001.dnainfotel.com
 DOMAIN,speedtest001.ssstpl.in
 DOMAIN,speedtest01.adl1.spintel.net.au
@@ -1379,7 +1374,6 @@ DOMAIN,speedtest9.digimobil.es
 DOMAIN,speedtest9.vodafone.com.tr
 DOMAIN,speedtest9200.sea.acsalaska.net
 DOMAIN,speedtestam.vtal.net.br
-DOMAIN,speedtestap.vtal.net.br
 DOMAIN,speedtestatl.gethotwired.com
 DOMAIN,speedtestbir.airjaldi.net
 DOMAIN,speedtestbti.angelbroadband.com
@@ -1419,6 +1413,7 @@ DOMAIN,speedtestmiami.telecablecr.com
 DOMAIN,speedtestmm01.interplanet.it
 DOMAIN,speedtestmnc.grainconnect.com
 DOMAIN,speedtestmoga.angelbroadband.com
+DOMAIN,speedtestmoh1.airtelbroadband.in
 DOMAIN,speedtestmrt1.airtel.in
 DOMAIN,speedtestmulticraft.multifi.in
 DOMAIN,speedtestmum.actcorp.in
@@ -1439,6 +1434,7 @@ DOMAIN,speedtestrm2.tilab.com
 DOMAIN,speedtestrr.vtal.net.br
 DOMAIN,speedtests.ord.your.org
 DOMAIN,speedtestsaha1.airtel.in
+DOMAIN,speedtestsgc.csmtelecom.net.br
 DOMAIN,speedtestsgp.fpt.vn
 DOMAIN,speedtestshriganganagar.777network.net
 DOMAIN,speedtestsirsa.tripleplay.in
@@ -1478,7 +1474,6 @@ DOMAIN,spttn2.taiwanmobile.com
 DOMAIN,spttp1.taiwanmobile.com
 DOMAIN,spttp1_tc.taiwanmobile.com
 DOMAIN,sptty1.taiwanmobile.com
-DOMAIN,sqaookla.ddns.net
 DOMAIN,srmakspeed.hostycare.in
 DOMAIN,srv-st04.arcolink.it
 DOMAIN,srv-st08.arcolink.it
@@ -1541,7 +1536,6 @@ DOMAIN,stajax.netcrawler.ca
 DOMAIN,stajax.rogers.com
 DOMAIN,stbowmanville.netcrawler.ca
 DOMAIN,stbowmanville.rogers.com
-DOMAIN,stbrampton.rogers.com
 DOMAIN,stbrantford.rogers.com
 DOMAIN,stbrantfordwireless.rogers.com
 DOMAIN,stchathamwireless.rogers.com
@@ -1639,18 +1633,19 @@ DOMAIN,testdevelocidadsev.jazztel.com
 DOMAIN,testdevelocidadten.jazztel.com
 DOMAIN,testdevelocidadvld.jazztel.com
 DOMAIN,teste.diotelecom.com.br
+DOMAIN,teste.freedomnetwork.net.br
 DOMAIN,teste.jsnet.manaus.br
 DOMAIN,teste.linkonfibra.com.br
 DOMAIN,teste.msfibraam.com.br
 DOMAIN,teste.mwhtelecom.com.br
 DOMAIN,teste.newsolutionnet.com.br
 DOMAIN,teste.reatelecom.com.br
-DOMAIN,teste.routinger.com.br
 DOMAIN,teste.suprainternet.com.br
 DOMAIN,teste.tstelecomltda.com.br
 DOMAIN,teste.wnettecnologia.com.br
 DOMAIN,teste.wsfibra.com.br
 DOMAIN,teste.xtremenet.com.br
+DOMAIN,testenew.eibroadband.com
 DOMAIN,testsantaellatv.ddns.net
 DOMAIN,testvelocidad.ibersontel.com
 DOMAIN,testvelocidad.tvcehegin.com
