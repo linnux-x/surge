@@ -1,9 +1,9 @@
 # NAME: AI
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-10-23 05:02:23 +0800
+# UPDATED: 2026-11-16 05:01:51 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 123
+# TOTAL: 124
 
 # ======= Manual Rules ========
 # Anthropic / Claude
@@ -113,6 +113,7 @@ DOMAIN,inference.codeium.com
 DOMAIN,gateway.ai.cloudflare.com
 DOMAIN,server.self-serve.windsurf.com
 DOMAIN-SUFFIX,generativelanguage.googleapis.com
+DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com
 
 # ======= Rabbit-Spec AIGC ========
 DOMAIN-SUFFIX,cursor.com
