@@ -40,8 +40,8 @@ anthropic.auth0.com,Claude.list,Claude,Claude authentication tenant
 anthropic.com.cdn.cloudflare.net,Claude.list,Claude,Claude website CDN alias
 servd-anthropic-website.b-cdn.net,Claude.list,Claude,Claude website CDN
 anthropic-com.ghost.io,Claude.list,Claude,Anthropic Ghost publication host
-downloads.claude.ai,Claude.list,Claude,Claude Code download
-releases.claude.com,Claude.list,Claude,Claude Code update
+downloads.claude.ai,Download.list,Download,SukkaW Download 上游维护的 Claude Code 下载
+releases.claude.com,Download.list,Download,SukkaW Download 上游维护的 Claude Code 更新
 api.statsig.com,AI.list,AI,AI feature flags（specific Statsig endpoint retained）
 events.statsigapi.net,AI.list,AI,AI event telemetry（specific Statsig endpoint retained）
 livekit.cloud,Global,Global,LiveKit parent suffix is shared infrastructure and should not be AI

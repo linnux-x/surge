@@ -1,83 +1,17 @@
 {
-  "generated_at": "2026-11-16T17:40:05.538005",
-  "total_added": 13,
+  "generated_at": "2026-11-16T17:49:40.630995",
+  "total_added": 2,
   "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
     {
       "file": "AI.list",
-      "prev_total": 111,
+      "prev_total": 124,
       "curr_total": 124,
-      "added_count": 13,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "09906a68bf35",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,clau.de"
-        },
-        {
-          "id": "2099cb25dd84",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,claudemcpcontent.com"
-        },
-        {
-          "id": "395b4d02e503",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,cdn.growthbook.io"
-        },
-        {
-          "id": "5ebb6d72f9f2",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,servd-anthropic-website.b-cdn.net"
-        },
-        {
-          "id": "69a58ce3d8db",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,anthropic.com"
-        },
-        {
-          "id": "6b50aa7bb66b",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,anthropic.com.cdn.cloudflare.net"
-        },
-        {
-          "id": "8315082adf4a",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,claudeusercontent.com"
-        },
-        {
-          "id": "93ec0a74a9cb",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,anthropic.auth0.com"
-        },
-        {
-          "id": "9d0ff2f30280",
-          "source": "ConnersHua AI",
-          "rule": "DOMAIN,anthropic-com.ghost.io"
-        },
-        {
-          "id": "b5c2d2041b5e",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,modelcontextprotocol.io"
-        },
-        {
-          "id": "b6ec6b0aa2e6",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,claude.com"
-        },
-        {
-          "id": "bb520987915f",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,claude.ai"
-        },
-        {
-          "id": "d18a58118cc8",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,claudemcpclient.com"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -194,11 +128,22 @@
     {
       "file": "Download.list",
       "prev_total": 1682,
-      "curr_total": 1682,
-      "added_count": 0,
+      "curr_total": 1684,
+      "added_count": 2,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "aea71896ee42",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,downloads.claude.ai"
+        },
+        {
+          "id": "b77d489d4fc1",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,releases.claude.com"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
