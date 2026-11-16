@@ -1,24 +1,11 @@
 # NAME: AI
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-16 05:01:51 +0800
+# UPDATED: 2026-11-16 17:32:31 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 124
+# TOTAL: 111
 
 # ======= Manual Rules ========
-# Anthropic / Claude
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,claude.com
-DOMAIN-SUFFIX,clau.de
-DOMAIN-SUFFIX,claudeusercontent.com
-DOMAIN-SUFFIX,claudemcpclient.com
-DOMAIN-SUFFIX,claudemcpcontent.com
-DOMAIN-SUFFIX,modelcontextprotocol.io
-DOMAIN,cdn.growthbook.io
-DOMAIN,anthropic.auth0.com
-DOMAIN,anthropic.com.cdn.cloudflare.net
-DOMAIN,servd-anthropic-website.b-cdn.net
 
 # Google AI / Gemini / AI Studio / NotebookLM / Jules / Antigravity
 DOMAIN,ai.google.dev
@@ -145,7 +132,6 @@ IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
 
 # ======= ConnersHua AI ========
-DOMAIN,anthropic-com.ghost.io
 DOMAIN-SUFFIX,openrouter.ai
 DOMAIN-SUFFIX,cursor-cdn.com
 DOMAIN-SUFFIX,cursorapi.com

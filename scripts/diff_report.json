@@ -1,24 +1,84 @@
 {
-  "generated_at": "2026-11-16T05:01:55.070777",
-  "total_added": 10,
-  "total_removed": 14,
+  "generated_at": "2026-11-16T17:32:31.868801",
+  "total_added": 13,
+  "total_removed": 15,
   "total_source_changed": 0,
   "diffs": [
     {
       "file": "AI.list",
-      "prev_total": 123,
-      "curr_total": 124,
-      "added_count": 1,
-      "removed_count": 0,
+      "prev_total": 124,
+      "curr_total": 111,
+      "added_count": 0,
+      "removed_count": 13,
       "source_changed_count": 0,
-      "added_sample": [
+      "added_sample": [],
+      "removed_sample": [
         {
-          "id": "43abfae0faec",
-          "source": "SukkaW AI",
-          "rule": "DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com"
+          "id": "09906a68bf35",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,clau.de"
+        },
+        {
+          "id": "2099cb25dd84",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,claudemcpcontent.com"
+        },
+        {
+          "id": "395b4d02e503",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,cdn.growthbook.io"
+        },
+        {
+          "id": "5ebb6d72f9f2",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,servd-anthropic-website.b-cdn.net"
+        },
+        {
+          "id": "69a58ce3d8db",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,anthropic.com"
+        },
+        {
+          "id": "6b50aa7bb66b",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,anthropic.com.cdn.cloudflare.net"
+        },
+        {
+          "id": "8315082adf4a",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,claudeusercontent.com"
+        },
+        {
+          "id": "93ec0a74a9cb",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,anthropic.auth0.com"
+        },
+        {
+          "id": "9d0ff2f30280",
+          "source": "ConnersHua AI",
+          "rule": "DOMAIN,anthropic-com.ghost.io"
+        },
+        {
+          "id": "b5c2d2041b5e",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,modelcontextprotocol.io"
+        },
+        {
+          "id": "b6ec6b0aa2e6",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,claude.com"
+        },
+        {
+          "id": "bb520987915f",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,claude.ai"
+        },
+        {
+          "id": "d18a58118cc8",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,claudemcpclient.com"
         }
       ],
-      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -110,6 +170,83 @@
       "source_changed_sample": []
     },
     {
+      "file": "Claude.list",
+      "prev_total": 0,
+      "curr_total": 13,
+      "added_count": 13,
+      "removed_count": 0,
+      "source_changed_count": 0,
+      "added_sample": [
+        {
+          "id": "09906a68bf35",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,clau.de"
+        },
+        {
+          "id": "2099cb25dd84",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,claudemcpcontent.com"
+        },
+        {
+          "id": "395b4d02e503",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,cdn.growthbook.io"
+        },
+        {
+          "id": "5ebb6d72f9f2",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,servd-anthropic-website.b-cdn.net"
+        },
+        {
+          "id": "69a58ce3d8db",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,anthropic.com"
+        },
+        {
+          "id": "6b50aa7bb66b",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,anthropic.com.cdn.cloudflare.net"
+        },
+        {
+          "id": "8315082adf4a",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,claudeusercontent.com"
+        },
+        {
+          "id": "93ec0a74a9cb",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,anthropic.auth0.com"
+        },
+        {
+          "id": "9d0ff2f30280",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,anthropic-com.ghost.io"
+        },
+        {
+          "id": "b5c2d2041b5e",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,modelcontextprotocol.io"
+        },
+        {
+          "id": "b6ec6b0aa2e6",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,claude.com"
+        },
+        {
+          "id": "bb520987915f",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,claude.ai"
+        },
+        {
+          "id": "d18a58118cc8",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,claudemcpclient.com"
+        }
+      ],
+      "removed_sample": [],
+      "source_changed_sample": []
+    },
+    {
       "file": "Disney.list",
       "prev_total": 166,
       "curr_total": 166,
@@ -123,12 +260,23 @@
     {
       "file": "Download.list",
       "prev_total": 1684,
-      "curr_total": 1684,
+      "curr_total": 1682,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 2,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "aea71896ee42",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,downloads.claude.ai"
+        },
+        {
+          "id": "b77d489d4fc1",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,releases.claude.com"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -254,130 +402,13 @@
     },
     {
       "file": "Speedtest.list",
-      "prev_total": 1705,
+      "prev_total": 1700,
       "curr_total": 1700,
-      "added_count": 9,
-      "removed_count": 14,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "02d48045e4e3",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed12.gonetspeed.com"
-        },
-        {
-          "id": "0cc435ecaed2",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,teste.freedomnetwork.net.br"
-        },
-        {
-          "id": "3e7fd288e9dc",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ookla.pgservicos.net.br"
-        },
-        {
-          "id": "41d750ea2dcd",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.jvswifi.com.br"
-        },
-        {
-          "id": "49f2fe815df7",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed.markham.telmax.ca"
-        },
-        {
-          "id": "9ef50333ec52",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtestmoh1.airtelbroadband.in"
-        },
-        {
-          "id": "a563c1add0ad",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtestsgc.csmtelecom.net.br"
-        },
-        {
-          "id": "ddec00986612",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,testenew.eibroadband.com"
-        },
-        {
-          "id": "ecc3d65b919e",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ns2.peer.net.in"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "43f75ae5aa25",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.telbo.net"
-        },
-        {
-          "id": "474311f1d5b9",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ipl3pt.fft.ops.eu.uu.net"
-        },
-        {
-          "id": "4cdddfe9358b",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,sp1.jdmbroadband.com"
-        },
-        {
-          "id": "55d9d7727d19",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.jetspeed.com.br"
-        },
-        {
-          "id": "5b59c5167680",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,sqaookla.ddns.net"
-        },
-        {
-          "id": "67fb222e7169",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stbrampton.rogers.com"
-        },
-        {
-          "id": "7a805d41d873",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed1.supersonicinternet.com"
-        },
-        {
-          "id": "87268ce3261b",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,teste.routinger.com.br"
-        },
-        {
-          "id": "a8249c53ba8a",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.thn.uk.syntura.io"
-        },
-        {
-          "id": "adbebc476e13",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.unlimitednet.us"
-        },
-        {
-          "id": "c43bf6e51a29",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.pinguimtelecom.net.br"
-        },
-        {
-          "id": "c7730d38d8d7",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest001.bfinetworks.com"
-        },
-        {
-          "id": "d178fd929dbd",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtestap.vtal.net.br"
-        },
-        {
-          "id": "f3bfcd2aa4a9",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,serv8.a2jnetwork.in"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
