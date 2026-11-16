@@ -976,14 +976,14 @@
       "rule": "DOMAIN-SUFFIX,claude.ai",
       "reason": "Claude 网页与客户端服务从通用 AI 组拆分",
       "destination": "Claude.list → Claude",
-      "route_tests": ["claude.ai", "downloads.claude.ai"]
+      "route_tests": ["claude.ai"]
     },
     {
       "source_file": "Claude.txt",
       "rule": "DOMAIN-SUFFIX,claude.com",
       "reason": "Claude 服务与发布域名从通用 AI 或 Download 组拆分",
       "destination": "Claude.list → Claude",
-      "route_tests": ["claude.com", "releases.claude.com"]
+      "route_tests": ["claude.com"]
     },
     {
       "source_file": "Claude.txt",
@@ -998,20 +998,6 @@
       "reason": "现有 Claude MCP 归属从通用 AI 组拆分",
       "destination": "Claude.list → Claude",
       "route_tests": ["modelcontextprotocol.io"]
-    },
-    {
-      "source_file": "Claude.txt",
-      "rule": "DOMAIN,downloads.claude.ai",
-      "reason": "用户确认 Claude Code 下载须使用 Claude 独立策略，不由通用 Download 组截获",
-      "destination": "Claude.list → Claude",
-      "route_tests": ["downloads.claude.ai"]
-    },
-    {
-      "source_file": "Claude.txt",
-      "rule": "DOMAIN,releases.claude.com",
-      "reason": "用户确认 Claude Code 更新须使用 Claude 独立策略，不由通用 Download 组截获",
-      "destination": "Claude.list → Claude",
-      "route_tests": ["releases.claude.com"]
     }
   ]
 }

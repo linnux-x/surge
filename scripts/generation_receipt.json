@@ -103,7 +103,7 @@
         "DOMAIN": 5,
         "DOMAIN-SUFFIX": 8
       },
-      "sha256": "1aa06b0872a9cf87daa6bc91ac44e31538c62b3fc9e2fdd33fa30d088d984b50"
+      "sha256": "329b211510777dadf49e6c0601e3b31009994a5113ee95d9a06651ccc056b778"
     },
     {
       "file": "Disney.list",
@@ -117,14 +117,14 @@
     },
     {
       "file": "Download.list",
-      "rules": 1682,
+      "rules": 1684,
       "types": {
-        "DOMAIN": 1429,
+        "DOMAIN": 1431,
         "DOMAIN-SUFFIX": 233,
         "PROCESS-NAME": 19,
         "URL-REGEX": 1
       },
-      "sha256": "001590664bf0356521f3537da81379da777f29fddb0e13d76c1cbc82cd02ef5b"
+      "sha256": "5674fda7853d9dc37af904c02e9e148f01eedf249b69fe7ab4529b256a4c61bd"
     },
     {
       "file": "Game.list",
@@ -362,9 +362,9 @@
       "sha256": "dc6dfde863bc0c0034fa3bae09c8a8b090ca385439e866e5ff89fa65eb177c69"
     }
   ],
-  "total_rules": 157584,
+  "total_rules": 157586,
   "rule_types": {
-    "DOMAIN": 3694,
+    "DOMAIN": 3696,
     "DOMAIN-KEYWORD": 87,
     "DOMAIN-SUFFIX": 141538,
     "DOMAIN-WILDCARD": 4,
@@ -387,7 +387,7 @@
     "SukkaW Apple CN": 5,
     "SukkaW CDN": 27,
     "SukkaW Domestic": 840,
-    "SukkaW Download": 1606,
+    "SukkaW Download": 1608,
     "SukkaW Game Download": 52,
     "SukkaW Microsoft CDN": 52,
     "SukkaW Speedtest": 122,
@@ -434,7 +434,7 @@
     "China_IP.manifest": "d3fe22776a0b83405c753cb8ca008e3bbd11540dfc83039ee64f66dffc6a76e1",
     "Claude.manifest": "fe5ef991ecbae3ada1430b3ae9739007a7b8df882f2053d760aa3e04804a69bb",
     "Disney.manifest": "4952367b9bc1b50aaeacf8f01c8059c20e75aaf86be6c908d16a4f607a6b866f",
-    "Download.manifest": "f21b7ad431c8bcd4abc2b2daed5e2fe14e0e83d69421fac0b710584d593b92f3",
+    "Download.manifest": "68263d292b8a39b4112d9372c2fc90777f8c2ee108969d591120974158b9bbe6",
     "Game.manifest": "eea8247188853238e4a15c21b3574947a61fd4357bc5568cf3fdb05fad47dc18",
     "Global.manifest": "7899da31e001fc47252b02b8b66b2ffbec1ce0b0d395a2471ae076e6bf44a8dc",
     "GlobalMedia.manifest": "b6b4881352b859ddd645b16042e1696a827204b1c594fc73ab472abaf9d42f72",
@@ -457,9 +457,9 @@
     "YouTube.manifest": "1b9c3b78afbb311db391e8f2910b25b507296d158a339957a874d918a2869ca7"
   },
   "sources_sha256": "3c848fcc1fb329cbe81b5f53c86c0ac9da80df847c4e9a1ab269235cda053f45",
-  "override_manifest_sha256": "01ad8398ae3d8be2303a12567abb19532c8946e5cee417d8fe66d1218ae89242",
+  "override_manifest_sha256": "5b61497902ed90b4f1b3c0083be5bffa660c2e1797464021c0e4ab90725f3b62",
   "diff_summary": {
-    "total_added": 13,
+    "total_added": 2,
     "total_removed": 0,
     "total_source_changed": 0
   }
