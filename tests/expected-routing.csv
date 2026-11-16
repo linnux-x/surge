@@ -324,7 +324,7 @@ notebooklm.google.example.com,FINAL,Global,2026-10-04 审计修复正负样例�
 alkalimakersuite-pa.clients6.google.com.example.com,FINAL,Global,2026-10-04 审计修复正负样例；包含合成域名边界测试
 openai.com,AI.list,AI,2026-10-04 审计修复正负样例；包含合成域名边界测试
 openai-api.arkoselabs.com,AI.list,AI,2026-10-04 审计修复正负样例；包含合成域名边界测试
-openaicomproductionae4b.blob.core.windows.net,AI.list,AI,2026-10-04 审计修复正负样例；包含合成域名边界测试
+openaicomproductionae4b.blob.core.windows.net,Download.list,Download,AI 规则组移至 Download 之后；重叠的 OpenAI Blob 下载主机由 Download 优先处理
 chat.openai.com.cdn.cloudflare.net,AI.list,AI,2026-10-04 审计修复正负样例；包含合成域名边界测试
 volcsirius.com,China.list,DIRECT,字节火山引擎（不得被 siri 关键词劫持到 Apple_AI）
 applesiri.cn,Apple_CN.list,DIRECT,Apple 中国 Siri 站点（Apple_CN 直连）

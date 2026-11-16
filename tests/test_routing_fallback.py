@@ -33,7 +33,8 @@ class FallbackOrderTests(unittest.TestCase):
         self.assertEqual(("WeChat.list", "WeChat"), parsed[1])
         self.assertEqual(("Speedtest_China.list", "DIRECT"), parsed[2])
         self.assertEqual(("Apple_AI.list", "Apple_AI"), parsed[4])
-        self.assertEqual(("Claude.list", "Claude"), parsed[10])
+        self.assertEqual(("Claude.list", "Claude"), parsed[9])
+        self.assertEqual(("AI.list", "AI"), parsed[10])
 
 
 if __name__ == "__main__":

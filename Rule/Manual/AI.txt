@@ -1,4 +1,18 @@
 
+# Anthropic / Claude (kept in AI.list for compatibility; Claude.list matches first)
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,clau.de
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,claudemcpclient.com
+DOMAIN-SUFFIX,claudemcpcontent.com
+DOMAIN-SUFFIX,modelcontextprotocol.io
+DOMAIN,cdn.growthbook.io
+DOMAIN,anthropic.auth0.com
+DOMAIN,anthropic.com.cdn.cloudflare.net
+DOMAIN,servd-anthropic-website.b-cdn.net
+
 # Google AI / Gemini / AI Studio / NotebookLM / Jules / Antigravity
 DOMAIN,ai.google.dev
 DOMAIN,aida.googleapis.com
