@@ -34,6 +34,7 @@ FALLBACK_ORDER: list[tuple[str, str]] = [
     ("Apple.list", "Apple"),
     ("Microsoft_CDN.list", "DIRECT"),
     ("Download.list", "Download"),
+    ("Claude.list", "Claude"),
     ("Game.list", "Game"),
     ("Microsoft.list", "Microsoft"),
     ("Telegram.list", "Telegram"),

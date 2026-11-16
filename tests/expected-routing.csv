@@ -27,12 +27,21 @@ identrust.com,Global.list,Global,共享证书服务不属于 AI
 1.1.1.1,FINAL,Global,Cloudflare 公共 DNS 不属于 AI 且不得被 AS13335 截获
 193.46.211.1,FINAL,Global,Vultr 共享主机地址不属于 AI 且不得被 AS20473 截获
 api.openai.com,AI.list,AI,OpenAI API
-claude.ai,AI.list,AI,Claude AI
-api.anthropic.com,AI.list,AI,Claude API
-claudeusercontent.com,AI.list,AI,Claude user content
-downloads.claude.ai,AI.list,AI,Claude Code download
-modelcontextprotocol.io,AI.list,AI,Claude MCP
-cdn.growthbook.io,AI.list,AI,Claude feature flags
+claude.ai,Claude.list,Claude,Claude AI
+api.anthropic.com,Claude.list,Claude,Claude API
+claude.com,Claude.list,Claude,Claude service domain
+clau.de,Claude.list,Claude,Claude short domain
+claudeusercontent.com,Claude.list,Claude,Claude user content
+api.claudemcpclient.com,Claude.list,Claude,Claude MCP client service
+api.claudemcpcontent.com,Claude.list,Claude,Claude MCP content service
+modelcontextprotocol.io,Claude.list,Claude,Claude MCP
+cdn.growthbook.io,Claude.list,Claude,Claude feature flags
+anthropic.auth0.com,Claude.list,Claude,Claude authentication tenant
+anthropic.com.cdn.cloudflare.net,Claude.list,Claude,Claude website CDN alias
+servd-anthropic-website.b-cdn.net,Claude.list,Claude,Claude website CDN
+anthropic-com.ghost.io,Claude.list,Claude,Anthropic Ghost publication host
+downloads.claude.ai,Claude.list,Claude,Claude Code download
+releases.claude.com,Claude.list,Claude,Claude Code update
 api.statsig.com,AI.list,AI,AI feature flags（specific Statsig endpoint retained）
 events.statsigapi.net,AI.list,AI,AI event telemetry（specific Statsig endpoint retained）
 livekit.cloud,Global,Global,LiveKit parent suffix is shared infrastructure and should not be AI

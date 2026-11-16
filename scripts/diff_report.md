@@ -1,58 +1,65 @@
 # Surge Rule Diff Report
-Generated: 2026-11-16T05:01:55.070777
+Generated: 2026-11-16T17:32:31.868801
 
 ## Summary
 
 | Metric | Count |
 |--------|-------|
-| Files changed | 2 |
-| Rules added | 10 |
-| Rules removed | 14 |
+| Files changed | 3 |
+| Rules added | 13 |
+| Rules removed | 15 |
 | Source attribution changed | 0 |
 
 ## Per-File Changes
 
 | File | Prev | Curr | Added | Removed | Source Δ |
 |------|------|------|-------|---------|----------|
-| AI.list | 123 | 124 | +1 | -0 | ~0 |
-| Speedtest.list | 1705 | 1700 | +9 | -14 | ~0 |
+| AI.list | 124 | 111 | +0 | -13 | ~0 |
+| Claude.list | 0 | 13 | +13 | -0 | ~0 |
+| Download.list | 1684 | 1682 | +0 | -2 | ~0 |
 
 ## AI.list
 
-**Added: 1** (showing first 1)
+**Removed: 13** (showing first 13)
 ```
-  + [SukkaW AI] 43abfae0faec  DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com
-```
-
-## Speedtest.list
-
-**Added: 9** (showing first 9)
-```
-  + [SukkaW Speedtest Servers International] 02d48045e4e3  DOMAIN,speed12.gonetspeed.com
-  + [SukkaW Speedtest Servers International] 0cc435ecaed2  DOMAIN,teste.freedomnetwork.net.br
-  + [SukkaW Speedtest Servers International] 3e7fd288e9dc  DOMAIN,ookla.pgservicos.net.br
-  + [SukkaW Speedtest Servers International] 41d750ea2dcd  DOMAIN,speedtest.jvswifi.com.br
-  + [SukkaW Speedtest Servers International] 49f2fe815df7  DOMAIN,speed.markham.telmax.ca
-  + [SukkaW Speedtest Servers International] 9ef50333ec52  DOMAIN,speedtestmoh1.airtelbroadband.in
-  + [SukkaW Speedtest Servers International] a563c1add0ad  DOMAIN,speedtestsgc.csmtelecom.net.br
-  + [SukkaW Speedtest Servers International] ddec00986612  DOMAIN,testenew.eibroadband.com
-  + [SukkaW Speedtest Servers International] ecc3d65b919e  DOMAIN,ns2.peer.net.in
+  - [Manual Rules] 09906a68bf35  DOMAIN-SUFFIX,clau.de
+  - [Manual Rules] 2099cb25dd84  DOMAIN-SUFFIX,claudemcpcontent.com
+  - [Manual Rules] 395b4d02e503  DOMAIN,cdn.growthbook.io
+  - [Manual Rules] 5ebb6d72f9f2  DOMAIN,servd-anthropic-website.b-cdn.net
+  - [Manual Rules] 69a58ce3d8db  DOMAIN-SUFFIX,anthropic.com
+  - [Manual Rules] 6b50aa7bb66b  DOMAIN,anthropic.com.cdn.cloudflare.net
+  - [Manual Rules] 8315082adf4a  DOMAIN-SUFFIX,claudeusercontent.com
+  - [Manual Rules] 93ec0a74a9cb  DOMAIN,anthropic.auth0.com
+  - [ConnersHua AI] 9d0ff2f30280  DOMAIN,anthropic-com.ghost.io
+  - [Manual Rules] b5c2d2041b5e  DOMAIN-SUFFIX,modelcontextprotocol.io
+  - [Manual Rules] b6ec6b0aa2e6  DOMAIN-SUFFIX,claude.com
+  - [Manual Rules] bb520987915f  DOMAIN-SUFFIX,claude.ai
+  - [Manual Rules] d18a58118cc8  DOMAIN-SUFFIX,claudemcpclient.com
 ```
 
-**Removed: 14** (showing first 14)
+## Claude.list
+
+**Added: 13** (showing first 13)
 ```
-  - [SukkaW Speedtest Servers International] 43f75ae5aa25  DOMAIN,speedtest.telbo.net
-  - [SukkaW Speedtest Servers International] 474311f1d5b9  DOMAIN,ipl3pt.fft.ops.eu.uu.net
-  - [SukkaW Speedtest Servers International] 4cdddfe9358b  DOMAIN,sp1.jdmbroadband.com
-  - [SukkaW Speedtest Servers International] 55d9d7727d19  DOMAIN,speedtest.jetspeed.com.br
-  - [SukkaW Speedtest Servers International] 5b59c5167680  DOMAIN,sqaookla.ddns.net
-  - [SukkaW Speedtest Servers International] 67fb222e7169  DOMAIN,stbrampton.rogers.com
-  - [SukkaW Speedtest Servers International] 7a805d41d873  DOMAIN,speed1.supersonicinternet.com
-  - [SukkaW Speedtest Servers International] 87268ce3261b  DOMAIN,teste.routinger.com.br
-  - [SukkaW Speedtest Servers International] a8249c53ba8a  DOMAIN,speedtest.thn.uk.syntura.io
-  - [SukkaW Speedtest Servers International] adbebc476e13  DOMAIN,speedtest.unlimitednet.us
-  - [SukkaW Speedtest Servers International] c43bf6e51a29  DOMAIN,speedtest.pinguimtelecom.net.br
-  - [SukkaW Speedtest Servers International] c7730d38d8d7  DOMAIN,speedtest001.bfinetworks.com
-  - [SukkaW Speedtest Servers International] d178fd929dbd  DOMAIN,speedtestap.vtal.net.br
-  - [SukkaW Speedtest Servers International] f3bfcd2aa4a9  DOMAIN,serv8.a2jnetwork.in
+  + [Manual Rules] 09906a68bf35  DOMAIN-SUFFIX,clau.de
+  + [Manual Rules] 2099cb25dd84  DOMAIN-SUFFIX,claudemcpcontent.com
+  + [Manual Rules] 395b4d02e503  DOMAIN,cdn.growthbook.io
+  + [Manual Rules] 5ebb6d72f9f2  DOMAIN,servd-anthropic-website.b-cdn.net
+  + [Manual Rules] 69a58ce3d8db  DOMAIN-SUFFIX,anthropic.com
+  + [Manual Rules] 6b50aa7bb66b  DOMAIN,anthropic.com.cdn.cloudflare.net
+  + [Manual Rules] 8315082adf4a  DOMAIN-SUFFIX,claudeusercontent.com
+  + [Manual Rules] 93ec0a74a9cb  DOMAIN,anthropic.auth0.com
+  + [Manual Rules] 9d0ff2f30280  DOMAIN,anthropic-com.ghost.io
+  + [Manual Rules] b5c2d2041b5e  DOMAIN-SUFFIX,modelcontextprotocol.io
+  + [Manual Rules] b6ec6b0aa2e6  DOMAIN-SUFFIX,claude.com
+  + [Manual Rules] bb520987915f  DOMAIN-SUFFIX,claude.ai
+  + [Manual Rules] d18a58118cc8  DOMAIN-SUFFIX,claudemcpclient.com
+```
+
+## Download.list
+
+**Removed: 2** (showing first 2)
+```
+  - [SukkaW Download] aea71896ee42  DOMAIN,downloads.claude.ai
+  - [SukkaW Download] b77d489d4fc1  DOMAIN,releases.claude.com
 ```
