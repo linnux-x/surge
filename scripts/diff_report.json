@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-18T11:23:37.332819",
-  "total_added": 1,
-  "total_removed": 31,
+  "generated_at": "2026-11-18T13:50:56.814468",
+  "total_added": 0,
+  "total_removed": 2,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -127,118 +127,22 @@
     },
     {
       "file": "Download.list",
-      "prev_total": 1684,
-      "curr_total": 1665,
-      "added_count": 1,
-      "removed_count": 20,
+      "prev_total": 1665,
+      "curr_total": 1663,
+      "added_count": 0,
+      "removed_count": 2,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "053bc948ce74",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,s3.amazonaws.com"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [
         {
-          "id": "0a3540c64661",
-          "source": "Manual Rules",
-          "rule": "PROCESS-NAME,BitComet"
-        },
-        {
-          "id": "0d9ec9c0a022",
-          "source": "Manual Rules",
-          "rule": "PROCESS-NAME,qbittorrent*"
-        },
-        {
-          "id": "48f7d672131d",
-          "source": "Manual Rules",
-          "rule": "PROCESS-NAME,transmission-daemon"
-        },
-        {
-          "id": "4ef9673f88bb",
-          "source": "Manual Rules",
-          "rule": "PROCESS-NAME,transmission-qt"
-        },
-        {
-          "id": "521dc4f1fe66",
-          "source": "Manual Rules",
-          "rule": "PROCESS-NAME,NetTransport"
-        },
-        {
-          "id": "53fc9fe4a82f",
+          "id": "aea71896ee42",
           "source": "SukkaW Download",
-          "rule": "DOMAIN-SUFFIX,s3.amazonaws.com"
+          "rule": "DOMAIN,downloads.claude.ai"
         },
         {
-          "id": "66c4779e3049",
-          "source": "Manual Rules",
-          "rule": "PROCESS-NAME,fdm"
-        },
-        {
-          "id": "845016eb88b5",
-          "source": "Manual Rules",
-          "rule": "PROCESS-NAME,ThunderVIP"
-        },
-        {
-          "id": "9148ca32607d",
-          "source": "Manual Rules",
-          "rule": "PROCESS-NAME,aria2c"
-        },
-        {
-          "id": "a0ab0e7dcde9",
-          "source": "Manual Rules",
-          "rule": "PROCESS-NAME,Folx"
-        },
-        {
-          "id": "afb23b943a89",
-          "source": "Manual Rules",
-          "rule": "PROCESS-NAME,uTorrent"
-        },
-        {
-          "id": "b68ec029ad16",
-          "source": "Manual Rules",
-          "rule": "PROCESS-NAME,Thunder"
-        },
-        {
-          "id": "b6ceda7bc95f",
-          "source": "Manual Rules",
-          "rule": "PROCESS-NAME,BaiduNetdisk_mac"
-        },
-        {
-          "id": "bd7ab610b008",
-          "source": "Manual Rules",
-          "rule": "PROCESS-NAME,qbittorrent-nox"
-        },
-        {
-          "id": "c27c3c6e28d1",
-          "source": "Manual Rules",
-          "rule": "PROCESS-NAME,amuled"
-        },
-        {
-          "id": "cf6e44f5b5d6",
-          "source": "Manual Rules",
-          "rule": "PROCESS-NAME,qBittorrent"
-        },
-        {
-          "id": "f2aacca36b7d",
-          "source": "Manual Rules",
-          "rule": "PROCESS-NAME,Transmission"
-        },
-        {
-          "id": "fbeb9cf30e0e",
-          "source": "Manual Rules",
-          "rule": "PROCESS-NAME,WebTorrent Helper"
-        },
-        {
-          "id": "fce34a1a3e7b",
-          "source": "Manual Rules",
-          "rule": "PROCESS-NAME,WebTorrent"
-        },
-        {
-          "id": "fdc5fbcedadb",
-          "source": "Manual Rules",
-          "rule": "PROCESS-NAME,DownloadService"
+          "id": "b77d489d4fc1",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,releases.claude.com"
         }
       ],
       "source_changed_sample": []
@@ -278,19 +182,13 @@
     },
     {
       "file": "Google.list",
-      "prev_total": 688,
+      "prev_total": 687,
       "curr_total": 687,
       "added_count": 0,
-      "removed_count": 1,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "5dddce620527",
-          "source": "blackmatrix7 Google",
-          "rule": "DOMAIN-SUFFIX,oasisfeng.com"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -405,64 +303,13 @@
     },
     {
       "file": "TWMedia.list",
-      "prev_total": 36,
+      "prev_total": 26,
       "curr_total": 26,
       "added_count": 0,
-      "removed_count": 10,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "0773ddeb1396",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN,hbounify-prod.evergent.com"
-        },
-        {
-          "id": "2f434ac89572",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,hbogoasia.tw"
-        },
-        {
-          "id": "3c422020c048",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com"
-        },
-        {
-          "id": "4af641450bb7",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,hboasia.com"
-        },
-        {
-          "id": "4b6815c84297",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,hbogoasia.sg"
-        },
-        {
-          "id": "b6c2c6b5f906",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,hbogoasia.id"
-        },
-        {
-          "id": "d66ecc4059bf",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,hbogoasia.com"
-        },
-        {
-          "id": "d834ff40274d",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN,hbolb.onwardsmg.com"
-        },
-        {
-          "id": "e4b4239d74f3",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,hbogoasia.ph"
-        },
-        {
-          "id": "f3831052cbdd",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,hbogoasia.hk"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {

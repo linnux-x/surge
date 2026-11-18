@@ -4,6 +4,10 @@ DOMAIN,desktop.wifiman.com
 # WeChat download endpoint belongs to WeChat.list, which is evaluated before Download.list
 DOMAIN,dl.wechat.com
 
+# Claude downloads and updates use the Claude policy. Download.list is evaluated first.
+DOMAIN,downloads.claude.ai
+DOMAIN,releases.claude.com
+
 # S3 virtual-hosted buckets include service endpoints such as Venmo.
 DOMAIN-SUFFIX,s3.amazonaws.com
 
