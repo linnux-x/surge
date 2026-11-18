@@ -49,6 +49,13 @@
   },
   "entries": [
     {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN-SUFFIX,mistral.ai",
+      "reason": "Mistral 官方网页、Le Chat 与 API 从 Global 归入 AI 专属策略",
+      "destination": "AI.list → AI",
+      "route_tests": ["mistral.ai", "chat.mistral.ai", "api.mistral.ai", "mistral.ai.example.com"]
+    },
+    {
       "source_file": "Download.txt",
       "rule": "DOMAIN,s3.amazonaws.com",
       "reason": "保留原有 S3 裸域下载策略，只匹配该主机",
