@@ -70,6 +70,9 @@ DOMAIN-SUFFIX,copilot.cloud.microsoft
 # Groq
 DOMAIN-SUFFIX,groq.com
 
+# Mistral Le Chat and API: https://docs.mistral.ai/api/endpoint/chat
+DOMAIN-SUFFIX,mistral.ai
+
 # AI research, benchmarking and agent platforms
 DOMAIN-SUFFIX,artificialanalysis.ai
 DOMAIN-SUFFIX,nousresearch.com

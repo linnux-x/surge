@@ -64,6 +64,11 @@ livekit.cloud,Global,Global,LiveKit parent suffix is shared infrastructure and s
 chatgpt.livekit.cloud,AI.list,AI,ChatGPT-specific LiveKit endpoint remains AI
 api-iam.intercom.io,Global,Global,Intercom IAM is shared support infrastructure and should not be AI
 gemini.google.com,AI.list,AI,Gemini（Google AI子域先行命中AI.list）
+generativelanguage.googleapis.com,AI.list,AI,Gemini API
+mistral.ai,AI.list,AI,Mistral 官方网页
+chat.mistral.ai,AI.list,AI,Mistral Le Chat
+api.mistral.ai,AI.list,AI,Mistral API
+mistral.ai.example.com,FINAL,Global,Mistral 后缀边界不得匹配无关域名
 copilot.microsoft.com,AI.list,AI,Microsoft Copilot
 gs.apple.com,Apple.list,Apple,Apple GS认证（不在Apple_CN.list）
 itunes.apple.com,Apple_CN.list,DIRECT,iTunes CN CDN（优先Apple_CN直连）

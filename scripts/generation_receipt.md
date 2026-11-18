@@ -6,8 +6,8 @@
 
 ## 差异摘要
 
-- 新增：0
-- 删除：2
+- 新增：1
+- 删除：1
 - 来源迁移：0
 
 ## 规则类型
@@ -27,7 +27,7 @@
 
 - ConnersHua AI: 12
 - Loyalsoldier China CIDR: 9640
-- Manual Rules: 337
+- Manual Rules: 338
 - Rabbit-Spec AIGC: 26
 - Rabbit-Spec China: 370
 - RocM301 Apple-AI: 16
@@ -55,7 +55,7 @@
 - blackmatrix7 Disney: 166
 - blackmatrix7 Facebook: 570
 - blackmatrix7 Game: 564
-- blackmatrix7 Global: 24541
+- blackmatrix7 Global: 24540
 - blackmatrix7 GlobalMedia: 2248
 - blackmatrix7 Google: 683
 - blackmatrix7 Instagram: 1

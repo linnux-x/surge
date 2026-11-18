@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-18 11:13:54 +0800
+# UPDATED: 2026-11-18 15:00:40 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24575
+# TOTAL: 24574
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -21568,7 +21568,6 @@ DOMAIN-SUFFIX,missav.com
 DOMAIN-SUFFIX,missav.live
 DOMAIN-SUFFIX,missav.ws
 DOMAIN-SUFFIX,mist.vip
-DOMAIN-SUFFIX,mistral.ai
 DOMAIN-SUFFIX,mit.edu
 DOMAIN-SUFFIX,mitao.com.tw
 DOMAIN-SUFFIX,mitbbs.com
