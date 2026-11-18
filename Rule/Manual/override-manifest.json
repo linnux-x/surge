@@ -317,6 +317,20 @@
       "route_tests": ["pool.ntp.org", "cn.pool.ntp.org"]
     },
     {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN,graph.facebook.com",
+      "reason": "Meta 通用 Graph API 服务多个产品，避免 AI 上游抢占 SocialMedia。来源：https://developers.facebook.com/docs/graph-api/overview",
+      "destination": "SocialMedia.list → SocialMedia",
+      "route_tests": ["graph.facebook.com", "api.muse.ai"]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-WILDCARD,scontent-*.xx.fbcdn.net",
+      "reason": "共享 Facebook 媒体 CDN 保留既有 SocialMedia 归属",
+      "destination": "SocialMedia.list → SocialMedia",
+      "route_tests": ["scontent-lax3-2.xx.fbcdn.net", "api.muse.ai"]
+    },
+    {
       "source_file": "AI.txt",
       "rule": "DOMAIN-SUFFIX,muse.ai",
       "reason": "Meta 官方 Muse 入口及认证/API 子域；Surge 活跃规则求值命中 FINAL，补入 AI。来源：https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",

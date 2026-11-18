@@ -93,6 +93,10 @@ DOMAIN-SUFFIX,clients6.google.com
 DOMAIN,firebaseinstallations.googleapis.com
 DOMAIN-SUFFIX,firebaseinstallations.googleapis.com
 
+# Facebook's general Graph API and media CDN remain in SocialMedia.
+DOMAIN,graph.facebook.com
+DOMAIN-WILDCARD,scontent-*.xx.fbcdn.net
+
 # Generic search/telemetry endpoints are shared across unrelated customers.
 # https://support.algolia.com/hc/en-us/articles/4406975232401
 # https://docs.datadoghq.com/real_user_monitoring/guide/browser-sdk-upgrade/

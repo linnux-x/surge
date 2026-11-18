@@ -187,6 +187,8 @@ metaaivm.com,AI.list,AI,Muse 专属 VM 域名范围
 00000000-0000-4000-8000-000000000001.metaaivm.com,AI.list,AI,合成 UUID 主机验证 Muse VM 后缀覆盖不代表实际用户实例
 agent.meta.ai,AI.list,AI,Muse 既有 Meta AI 入口保持 AI 归属
 auth.meta.com,SocialMedia.list,SocialMedia,Meta 共享认证保持既有归属
+graph.facebook.com,SocialMedia.list,SocialMedia,Meta 通用 Graph API 保留社交分流
+scontent-lax3-2.xx.fbcdn.net,SocialMedia.list,SocialMedia,Facebook 共享媒体 CDN 保留社交分流
 api.github.com,Global.list,Global,通用接口不属于 AI；完整排除行恢复服务归属
 api.msn.com,Microsoft.list,Microsoft,通用接口不属于 AI；完整排除行恢复服务归属
 assets.msn.com,Microsoft.list,Microsoft,通用接口不属于 AI；完整排除行恢复服务归属
