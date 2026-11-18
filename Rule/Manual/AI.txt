@@ -13,6 +13,10 @@ DOMAIN,anthropic.auth0.com
 DOMAIN,anthropic.com.cdn.cloudflare.net
 DOMAIN,servd-anthropic-website.b-cdn.net
 
+# OpenAI network requirements: https://help.openai.com/en/articles/9247338
+DOMAIN-SUFFIX,oaistatsig.com
+DOMAIN,cdn.openaimerge.com
+
 # Google AI / Gemini / AI Studio / NotebookLM / Jules / Antigravity
 DOMAIN,ai.google.dev
 DOMAIN,aida.googleapis.com

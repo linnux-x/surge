@@ -1,31 +1,13 @@
 # NAME: Download
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-16 17:49:40 +0800
+# UPDATED: 2026-11-18 11:23:36 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1684
+# TOTAL: 1665
 
 # ======= Manual Rules ========
-# Borrowed from SukkaW non_ip/direct downloader process rules
-PROCESS-NAME,aria2c
-PROCESS-NAME,fdm
-PROCESS-NAME,Folx
-PROCESS-NAME,NetTransport
-PROCESS-NAME,Thunder
-PROCESS-NAME,ThunderVIP
-PROCESS-NAME,Transmission
-PROCESS-NAME,transmission-daemon
-PROCESS-NAME,transmission-qt
-PROCESS-NAME,BitComet
-PROCESS-NAME,uTorrent
-PROCESS-NAME,qbittorrent*
-PROCESS-NAME,DownloadService
-PROCESS-NAME,qBittorrent
-PROCESS-NAME,qbittorrent-nox
-PROCESS-NAME,WebTorrent
-PROCESS-NAME,WebTorrent Helper
-PROCESS-NAME,amuled
-PROCESS-NAME,BaiduNetdisk_mac
+# Preserve the S3 path-style endpoint without matching virtual-hosted buckets.
+DOMAIN,s3.amazonaws.com
 
 # Borrowed from SukkaW non_ip/download; only the downloader URL-REGEX is copied in this manual layer.
 URL-REGEX,^http://(.+)\.gvt\d\.com/edgedl
@@ -48,7 +30,6 @@ DOMAIN-SUFFIX,cloud-object-storage.appdomain.cloud
 DOMAIN-SUFFIX,cloudflarestorage.com
 DOMAIN-SUFFIX,r2.dev
 DOMAIN-SUFFIX,r2.daocloud.vip
-DOMAIN-SUFFIX,s3.amazonaws.com
 DOMAIN-SUFFIX,s3.us-west-2.amazonaws.com
 DOMAIN-SUFFIX,s3-accelerate.amazonaws.com
 DOMAIN-SUFFIX,s3-global.amazonaws.com

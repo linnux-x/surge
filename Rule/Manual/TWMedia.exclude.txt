@@ -1,3 +1,15 @@
 # Brightcove 是多家媒体共用的视频平台，不应整体固定到台湾节点；保持由 GlobalMedia 处理。
 DOMAIN,players.brightcove.net
 DOMAIN,manifest.prod.boltdns.net
+
+# 这些 HBO Asia 旧端点由 HKMedia 统一处理，沿用原有先命中策略。
+DOMAIN-SUFFIX,hboasia.com
+DOMAIN-SUFFIX,hbogoasia.com
+DOMAIN-SUFFIX,hbogoasia.hk
+DOMAIN-SUFFIX,hbogoasia.id
+DOMAIN-SUFFIX,hbogoasia.ph
+DOMAIN-SUFFIX,hbogoasia.sg
+DOMAIN-SUFFIX,hbogoasia.tw
+DOMAIN,hbolb.onwardsmg.com
+DOMAIN,hbounify-prod.evergent.com
+DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com

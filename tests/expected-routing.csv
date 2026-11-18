@@ -5,10 +5,26 @@ wx.qlogo.cn,WeChat.list,WeChat,微信头像CDN
 open.weixin.qq.com,WeChat.list,WeChat,微信开放平台
 speedtest.net,Speedtest.list,Speedtest,测速主站
 fast.com,Speedtest.list,Speedtest,fast.com仅在此文件
+s3.amazonaws.com,Download.list,Download,S3 裸域保留原有下载策略
+venmo.s3.amazonaws.com,PayPal.list,PayPal,共享 S3 父域收窄后 Venmo 命中专属策略
+sample-bucket.s3.amazonaws.com,Global.list,Global,未明确归属的 S3 bucket 不随 Download 切换
+registry.npmjs.org,Download.list,Download,npm 下载仍可切换出口
+steampipe.akamaized.net,Download.list,Download,Steam 内容下载仍可切换出口
+dl.delivery.mp.microsoft.com,Microsoft_CDN.list,DIRECT,微软专用下载 CDN 维持优先直连
+mensura.cdn-apple.com,Apple_CN.list,DIRECT,Apple 网络质量探测测量本地网络
 cesu-hz.zjtelecom.com.cn,Speedtest_China.list,DIRECT,spiritLHLS 大陆测速节点维持直连
+cesu-hz.zjtelecom.com.cn.prod.hosts.ooklaserver.net,Speedtest_China.list,DIRECT,大陆 Ookla 别名优先于通用 ooklaserver.net 后缀
+speedtest.hk.chinamobile.com,Speedtest.list,Speedtest,香港运营商测速节点继续走可选测速组
 speedtest.dukekunshan.edu.cn,Speedtest_China.list,DIRECT,Sukka 官方地区数据明确为大陆节点
 cpt-ter-speedtest1-vl145.atomic.ac,FINAL,Global,移除 Kelee 独有节点后回落至 Global
 chat.openai.com,AI.list,AI,ChatGPT
+api.oaistatsig.com,AI.list,AI,OpenAI 专用 Statsig 子域
+cdn.openaimerge.com,AI.list,AI,OpenAI 专用 CDN 精确主机
+openaimerge.com,FINAL,Global,OpenAI CDN 规则仅收录精确主机
+apis.google.com,Google.list,Google,Google 通用登录和 API 脚本
+oasisfeng.com,FINAL,Global,独立开发者根域按通用代理兜底
+blog.oasisfeng.com,FINAL,Global,独立开发者博客按通用代理兜底
+gtm.oasisfeng.com,Global.list,Global,已有精细规则归通用代理
 pool.ntp.org,FINAL,Global,共享 NTP 根域不属于 AI
 cn.pool.ntp.org,China.list,DIRECT,中国 NTP 子域不能被 AI 父后缀遮蔽
 stripe.com,Global.list,Global,共享支付服务不属于 AI
@@ -171,6 +187,8 @@ metaaivm.com,AI.list,AI,Muse 专属 VM 域名范围
 00000000-0000-4000-8000-000000000001.metaaivm.com,AI.list,AI,合成 UUID 主机验证 Muse VM 后缀覆盖不代表实际用户实例
 agent.meta.ai,AI.list,AI,Muse 既有 Meta AI 入口保持 AI 归属
 auth.meta.com,SocialMedia.list,SocialMedia,Meta 共享认证保持既有归属
+graph.facebook.com,SocialMedia.list,SocialMedia,Meta 通用 Graph API 保留社交分流
+scontent-lax3-2.xx.fbcdn.net,SocialMedia.list,SocialMedia,Facebook 共享媒体 CDN 保留社交分流
 api.github.com,Global.list,Global,通用接口不属于 AI；完整排除行恢复服务归属
 api.msn.com,Microsoft.list,Microsoft,通用接口不属于 AI；完整排除行恢复服务归属
 assets.msn.com,Microsoft.list,Microsoft,通用接口不属于 AI；完整排除行恢复服务归属
@@ -349,6 +367,17 @@ apm-misaka.biliapi.net,HKMedia.list,HKMedia,Bilibili 国际版 API 先于 ChinaM
 kktv.me,TWMedia.list,TWMedia,KKTV
 ani.gamer.com.tw,TWMedia.list,TWMedia,巴哈姆特动画疯
 linetv.tw,TWMedia.list,TWMedia,LINE TV
+hboasia.com,HKMedia.list,HKMedia,HBO Asia 旧端点保留现有香港策略
+hbogoasia.com,HKMedia.list,HKMedia,HBO Asia 旧端点保留现有香港策略
+hbogoasia.hk,HKMedia.list,HKMedia,HBO Asia 旧端点保留现有香港策略
+hbogoasia.id,HKMedia.list,HKMedia,HBO Asia 旧端点保留现有香港策略
+hbogoasia.ph,HKMedia.list,HKMedia,HBO Asia 旧端点保留现有香港策略
+hbogoasia.sg,HKMedia.list,HKMedia,HBO Asia 旧端点保留现有香港策略
+hbogoasia.tw,HKMedia.list,HKMedia,HBO Asia 旧端点保留现有香港策略
+hbolb.onwardsmg.com,HKMedia.list,HKMedia,HBO Asia 旧端点保留现有香港策略
+hbounify-prod.evergent.com,HKMedia.list,HKMedia,HBO Asia 旧端点保留现有香港策略
+44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,HKMedia.list,HKMedia,HBO Asia 旧端点保留现有香港策略
+hbomax.com,GlobalMedia.list,GlobalMedia,HBO Max 沿用全球媒体策略
 www.4gtv.tv,TWMedia.list,TWMedia,四季线上 子域
 dmm.com,JPMedia.list,JPMedia,DMM 根域
 www.dmm.co.jp,JPMedia.list,JPMedia,DMM 子域

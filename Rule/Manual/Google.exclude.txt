@@ -7,6 +7,11 @@ DOMAIN-SUFFIX,googlevideo.com
 DOMAIN,youtubei.googleapis.com
 DOMAIN-SUFFIX,youtubei.googleapis.com
 
+# Oasis Feng hosts independent projects under this domain.
+# https://blog.oasisfeng.com/
+DOMAIN,oasisfeng.com
+DOMAIN-SUFFIX,oasisfeng.com
+
 # Google AI / Gemini / AI Studio / NotebookLM / Jules / Antigravity belong to AI.list
 DOMAIN,api.ai
 DOMAIN-SUFFIX,api.ai

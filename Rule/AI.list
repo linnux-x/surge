@@ -1,9 +1,9 @@
 # NAME: AI
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-16 17:40:05 +0800
+# UPDATED: 2026-11-18 11:13:53 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 124
+# TOTAL: 125
 
 # ======= Manual Rules ========
 
@@ -20,6 +20,10 @@ DOMAIN,cdn.growthbook.io
 DOMAIN,anthropic.auth0.com
 DOMAIN,anthropic.com.cdn.cloudflare.net
 DOMAIN,servd-anthropic-website.b-cdn.net
+
+# OpenAI network requirements: https://help.openai.com/en/articles/9247338
+DOMAIN-SUFFIX,oaistatsig.com
+DOMAIN,cdn.openaimerge.com
 
 # Google AI / Gemini / AI Studio / NotebookLM / Jules / Antigravity
 DOMAIN,ai.google.dev
@@ -125,7 +129,6 @@ DOMAIN,openaicomproductionae4b.blob.core.windows.net
 DOMAIN,production-openaicom-storage.azureedge.net
 DOMAIN-SUFFIX,aicode.googleapis.com
 DOMAIN-SUFFIX,api.statsig.com
-DOMAIN-SUFFIX,apis.google.com
 DOMAIN-SUFFIX,apple-relay.fastly-edge.com
 DOMAIN-SUFFIX,chatgpt.livekit.cloud
 DOMAIN-SUFFIX,client-api.arkoselabs.com

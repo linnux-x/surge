@@ -17,6 +17,9 @@ DOMAIN,www.bing.com
 DOMAIN-SUFFIX,www.bing.com
 DOMAIN,api.microsoftapp.net
 DOMAIN-SUFFIX,api.microsoftapp.net
+# Google API and sign-in libraries are shared across Google services.
+DOMAIN,apis.google.com
+DOMAIN-SUFFIX,apis.google.com
 DOMAIN-SUFFIX,byteoversea.com
 # apps.mzstatic.com is App Store / Apps and Books CDN; keep it in Apple_CN/DIRECT, not AI.
 DOMAIN-SUFFIX,apps.mzstatic.com
@@ -89,6 +92,10 @@ DOMAIN,clients6.google.com
 DOMAIN-SUFFIX,clients6.google.com
 DOMAIN,firebaseinstallations.googleapis.com
 DOMAIN-SUFFIX,firebaseinstallations.googleapis.com
+
+# Facebook's general Graph API and media CDN remain in SocialMedia.
+DOMAIN,graph.facebook.com
+DOMAIN-WILDCARD,scontent-*.xx.fbcdn.net
 
 # Generic search/telemetry endpoints are shared across unrelated customers.
 # https://support.algolia.com/hc/en-us/articles/4406975232401

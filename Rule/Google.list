@@ -1,9 +1,9 @@
 # NAME: Google
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-10-04 21:58:15 +0800
+# UPDATED: 2026-11-18 11:23:37 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 688
+# TOTAL: 687
 
 # ======= Manual Rules ========
 DOMAIN-SUFFIX,gvt1.com
@@ -558,7 +558,6 @@ DOMAIN-SUFFIX,near.by
 DOMAIN-SUFFIX,nest.com
 DOMAIN-SUFFIX,neverware.com
 DOMAIN-SUFFIX,nomulus.foo
-DOMAIN-SUFFIX,oasisfeng.com
 DOMAIN-SUFFIX,oauthz.com
 DOMAIN-SUFFIX,ok.gle
 DOMAIN-SUFFIX,on.here

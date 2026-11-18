@@ -27,6 +27,8 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 四份地区流媒体（港、台、日、美）先于 `ChinaMedia` 与 `GlobalMedia`，全球通用的流媒体仍归各自专属规则或 `GlobalMedia`；
 其中 `Speedtest_China` 先于 `Speedtest`，`Apple_CN` 先于 `Apple`，下载和游戏先于宽泛 Microsoft 规则。
 
+`Download` 平时可选 `DIRECT`，需要时手动切换代理。下载规则按目的地址分类，GitHub、Docker Hub、PyPI 等已验证直连不稳的源沿用各自的 CDN 或 Global 策略。
+
 ### 使用完整配置示例
 
 1. 导入下方地址，在 Surge 中复制为普通配置，解除整份配置的托管更新。
@@ -72,7 +74,7 @@ https://raw.githubusercontent.com/linnux-x/surge/main/Conf/Linnux.conf
 | ⚡ Speedtest_China.list | Sukka 官方服务器数据 · spiritLHLS | 按明确大陆地区字段筛选测速主机并直连 |
 | ⚡ Speedtest.list | SukkaW · 官方服务器数据 | 国际测速节点与测速服务 · fast.com 仅此文件 |
 | 🎧 Spotify.list | blackmatrix7 | Spotify 音乐服务 |
-| 🇭🇰 HKMedia.list | SukkaW | 香港地区限定流媒体（Viu、myTV SUPER 等） |
+| 🇭🇰 HKMedia.list | SukkaW | 香港地区流媒体（Viu、myTV SUPER 等）及原本经香港组的 HBO Asia 旧端点 |
 | 🇨🇳 TWMedia.list | SukkaW | 台湾地区限定流媒体（KKTV、动画疯等） |
 | 🇯🇵 JPMedia.list | SukkaW | 日本地区限定流媒体（DMM、AbemaTV 等） |
 | 🇺🇸 USMedia.list | SukkaW | 美国地区限定流媒体（Hulu、Paramount+ 等） |

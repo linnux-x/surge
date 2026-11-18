@@ -43,6 +43,15 @@ class SourceTransformTests(unittest.TestCase):
         ]
         self.assertEqual(filter_candidates(candidates + ai_specific, exclude), ai_specific)
 
+    def test_ai_excludes_shared_meta_rules_and_keeps_muse(self):
+        exclude = Path(__file__).resolve().parents[1] / 'Rule/Manual/AI.exclude.txt'
+        upstream = [
+            'DOMAIN,graph.facebook.com',
+            'DOMAIN-WILDCARD,scontent-*.xx.fbcdn.net,extended-matching',
+            'DOMAIN-SUFFIX,muse.ai',
+        ]
+        self.assertEqual(filter_candidates(upstream, exclude), ['DOMAIN-SUFFIX,muse.ai'])
+
     def test_ai_shared_network_exclusions_preserve_anthropic_asn(self):
         exclude = Path(__file__).resolve().parents[1] / 'Rule/Manual/AI.exclude.txt'
         upstream = [

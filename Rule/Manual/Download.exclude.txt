@@ -4,6 +4,9 @@ DOMAIN,desktop.wifiman.com
 # WeChat download endpoint belongs to WeChat.list, which is evaluated before Download.list
 DOMAIN,dl.wechat.com
 
+# S3 virtual-hosted buckets include service endpoints such as Venmo.
+DOMAIN-SUFFIX,s3.amazonaws.com
+
 # GitHub release/archive/container downloads are throttled on direct paths while the Download group defaults to DIRECT.
 # release-assets falls through to CDN.list (repo policy: release downloads → CDN); the rest fall through to Global.list or FINAL.
 DOMAIN,release-assets.githubusercontent.com
