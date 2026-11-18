@@ -98,12 +98,12 @@
     },
     {
       "file": "Claude.list",
-      "rules": 13,
+      "rules": 14,
       "types": {
         "DOMAIN": 5,
-        "DOMAIN-SUFFIX": 8
+        "DOMAIN-SUFFIX": 9
       },
-      "sha256": "5823ecf75966f05718cd1d214bb1d6270a4e2aac7234b0a56721060c13ad5f94"
+      "sha256": "befe551368889d9838d791deee977963a86d43ee1dac555290ab2d59b350da97"
     },
     {
       "file": "Disney.list",
@@ -138,16 +138,16 @@
     },
     {
       "file": "Global.list",
-      "rules": 24574,
+      "rules": 24573,
       "types": {
         "DOMAIN": 111,
         "DOMAIN-KEYWORD": 12,
-        "DOMAIN-SUFFIX": 24362,
+        "DOMAIN-SUFFIX": 24361,
         "IP-CIDR": 83,
         "IP-CIDR6": 1,
         "USER-AGENT": 5
       },
-      "sha256": "5cf61a1d7afa1c9b19ea2d70950efe838541b87957c56820bbbf33d90febae45"
+      "sha256": "c37f3fc406f1aab16991b22ae84c7118f7dafe56489660f4d237ae8450255e69"
     },
     {
       "file": "GlobalMedia.list",
@@ -377,7 +377,7 @@
   "source_attribution": {
     "ConnersHua AI": 12,
     "Loyalsoldier China CIDR": 9640,
-    "Manual Rules": 338,
+    "Manual Rules": 339,
     "Rabbit-Spec AIGC": 26,
     "Rabbit-Spec China": 370,
     "RocM301 Apple-AI": 16,
@@ -405,7 +405,7 @@
     "blackmatrix7 Disney": 166,
     "blackmatrix7 Facebook": 570,
     "blackmatrix7 Game": 564,
-    "blackmatrix7 Global": 24540,
+    "blackmatrix7 Global": 24539,
     "blackmatrix7 GlobalMedia": 2248,
     "blackmatrix7 Google": 683,
     "blackmatrix7 Instagram": 1,
@@ -431,11 +431,11 @@
     "China.manifest": "461f15afcaf0c4d7a479ce5caa279fee8fdcca07cad7e09084eac86023846fec",
     "ChinaMedia.manifest": "8f86b924f2832027ab2d1f8643c4c51953994e84af6ebe3bad2aa553ad3d2616",
     "China_IP.manifest": "d3fe22776a0b83405c753cb8ca008e3bbd11540dfc83039ee64f66dffc6a76e1",
-    "Claude.manifest": "fe5ef991ecbae3ada1430b3ae9739007a7b8df882f2053d760aa3e04804a69bb",
+    "Claude.manifest": "4639cf3e7215faa458cab4be626e2c3f95eadd1f7abac7e573cb9cc3cb85723d",
     "Disney.manifest": "4952367b9bc1b50aaeacf8f01c8059c20e75aaf86be6c908d16a4f607a6b866f",
     "Download.manifest": "c0a133ae8bb58ecd1649e08cef406bf2429ebcccace8d593910734b8372deff1",
     "Game.manifest": "eea8247188853238e4a15c21b3574947a61fd4357bc5568cf3fdb05fad47dc18",
-    "Global.manifest": "48f03711c3cbbf48ed2795aa24cef83128c5b6320bc585bbda229633931bbc44",
+    "Global.manifest": "421058937cdb15b830cb8ed1c28734c8e2cf15bcf119620519a71e1fe531eda5",
     "GlobalMedia.manifest": "b6b4881352b859ddd645b16042e1696a827204b1c594fc73ab472abaf9d42f72",
     "Google.manifest": "3e8722436f72c2997d8beff75e623735cd5ef9e3b1fd23876c2f15eebfc443dd",
     "HKMedia.manifest": "0c18b7a9c04e06f1494645a758f778df16e8a87e55e74837c78069dc46b93f26",
@@ -456,7 +456,7 @@
     "YouTube.manifest": "1b9c3b78afbb311db391e8f2910b25b507296d158a339957a874d918a2869ca7"
   },
   "sources_sha256": "3c848fcc1fb329cbe81b5f53c86c0ac9da80df847c4e9a1ab269235cda053f45",
-  "override_manifest_sha256": "00ae475854b9352b1bac5e2365c99692b4c13f8f1f13de12f944c105e615dd9f",
+  "override_manifest_sha256": "f5e343f6a9f4ae86044f621ab7818373293db0b8eece835f8cc071cbce7ed27d",
   "diff_summary": {
     "total_added": 1,
     "total_removed": 1,

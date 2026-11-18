@@ -1149,6 +1149,13 @@
     },
     {
       "source_file": "Claude.txt",
+      "rule": "DOMAIN-SUFFIX,claude.app",
+      "reason": "Claude Desktop 官方域名及动态实时预览子域从 Global 归入 Claude 策略",
+      "destination": "Claude.list → Claude",
+      "route_tests": ["claude.app", "probe.livepreview.claude.app"]
+    },
+    {
+      "source_file": "Claude.txt",
       "rule": "DOMAIN-SUFFIX,claudeusercontent.com",
       "reason": "Claude 用户内容域名从通用 AI 组拆分",
       "destination": "Claude.list → Claude",

@@ -1,23 +1,17 @@
 {
-  "generated_at": "2026-11-18T15:00:40.555442",
+  "generated_at": "2026-11-18T15:56:50.009080",
   "total_added": 1,
   "total_removed": 1,
   "total_source_changed": 0,
   "diffs": [
     {
       "file": "AI.list",
-      "prev_total": 125,
+      "prev_total": 126,
       "curr_total": 126,
-      "added_count": 1,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "19707883449b",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,mistral.ai"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -112,11 +106,17 @@
     {
       "file": "Claude.list",
       "prev_total": 13,
-      "curr_total": 13,
-      "added_count": 0,
+      "curr_total": 14,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "17539c1e8a11",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,claude.app"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -155,17 +155,17 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24575,
-      "curr_total": 24574,
+      "prev_total": 24574,
+      "curr_total": 24573,
       "added_count": 0,
       "removed_count": 1,
       "source_changed_count": 0,
       "added_sample": [],
       "removed_sample": [
         {
-          "id": "19707883449b",
+          "id": "17539c1e8a11",
           "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,mistral.ai"
+          "rule": "DOMAIN-SUFFIX,claude.app"
         }
       ],
       "source_changed_sample": []

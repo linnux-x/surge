@@ -1,5 +1,5 @@
 # Surge Rule Diff Report
-Generated: 2026-11-18T15:00:40.555442
+Generated: 2026-11-18T15:56:50.009080
 
 ## Summary
 
@@ -14,19 +14,19 @@ Generated: 2026-11-18T15:00:40.555442
 
 | File | Prev | Curr | Added | Removed | Source Δ |
 |------|------|------|-------|---------|----------|
-| AI.list | 125 | 126 | +1 | -0 | ~0 |
-| Global.list | 24575 | 24574 | +0 | -1 | ~0 |
+| Claude.list | 13 | 14 | +1 | -0 | ~0 |
+| Global.list | 24574 | 24573 | +0 | -1 | ~0 |
 
-## AI.list
+## Claude.list
 
 **Added: 1** (showing first 1)
 ```
-  + [Manual Rules] 19707883449b  DOMAIN-SUFFIX,mistral.ai
+  + [Manual Rules] 17539c1e8a11  DOMAIN-SUFFIX,claude.app
 ```
 
 ## Global.list
 
 **Removed: 1** (showing first 1)
 ```
-  - [blackmatrix7 Global] 19707883449b  DOMAIN-SUFFIX,mistral.ai
+  - [blackmatrix7 Global] 17539c1e8a11  DOMAIN-SUFFIX,claude.app
 ```

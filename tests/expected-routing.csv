@@ -46,6 +46,8 @@ api.openai.com,AI.list,AI,OpenAI API
 claude.ai,Claude.list,Claude,Claude AI
 api.anthropic.com,Claude.list,Claude,Claude API
 claude.com,Claude.list,Claude,Claude service domain
+claude.app,Claude.list,Claude,Claude Desktop service domain
+probe.livepreview.claude.app,Claude.list,Claude,Claude Desktop live preview subdomain
 clau.de,Claude.list,Claude,Claude short domain
 claudeusercontent.com,Claude.list,Claude,Claude user content
 api.claudemcpclient.com,Claude.list,Claude,Claude MCP client service
