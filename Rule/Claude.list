@@ -1,12 +1,12 @@
 # NAME: Claude
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-16 17:49:40 +0800
+# UPDATED: 2026-11-18 13:50:56 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 13
 
 # ======= Manual Rules ========
-# Claude / Anthropic service endpoints
+# Claude / Anthropic services, installer downloads and updates
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
