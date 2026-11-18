@@ -5,10 +5,17 @@ wx.qlogo.cn,WeChat.list,WeChat,微信头像CDN
 open.weixin.qq.com,WeChat.list,WeChat,微信开放平台
 speedtest.net,Speedtest.list,Speedtest,测速主站
 fast.com,Speedtest.list,Speedtest,fast.com仅在此文件
+mensura.cdn-apple.com,Apple_CN.list,DIRECT,Apple 网络质量探测测量本地网络
 cesu-hz.zjtelecom.com.cn,Speedtest_China.list,DIRECT,spiritLHLS 大陆测速节点维持直连
+cesu-hz.zjtelecom.com.cn.prod.hosts.ooklaserver.net,Speedtest_China.list,DIRECT,大陆 Ookla 别名优先于通用 ooklaserver.net 后缀
+speedtest.hk.chinamobile.com,Speedtest.list,Speedtest,香港运营商测速节点继续走可选测速组
 speedtest.dukekunshan.edu.cn,Speedtest_China.list,DIRECT,Sukka 官方地区数据明确为大陆节点
 cpt-ter-speedtest1-vl145.atomic.ac,FINAL,Global,移除 Kelee 独有节点后回落至 Global
 chat.openai.com,AI.list,AI,ChatGPT
+api.oaistatsig.com,AI.list,AI,OpenAI 专用 Statsig 子域
+cdn.openaimerge.com,AI.list,AI,OpenAI 专用 CDN 精确主机
+openaimerge.com,FINAL,Global,OpenAI CDN 规则仅收录精确主机
+apis.google.com,Google.list,Google,Google 通用登录和 API 脚本
 pool.ntp.org,FINAL,Global,共享 NTP 根域不属于 AI
 cn.pool.ntp.org,China.list,DIRECT,中国 NTP 子域不能被 AI 父后缀遮蔽
 stripe.com,Global.list,Global,共享支付服务不属于 AI

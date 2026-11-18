@@ -1,18 +1,35 @@
 {
-  "generated_at": "2026-11-16T17:49:40.630995",
+  "generated_at": "2026-11-18T11:13:54.282499",
   "total_added": 2,
-  "total_removed": 0,
+  "total_removed": 3,
   "total_source_changed": 0,
   "diffs": [
     {
       "file": "AI.list",
       "prev_total": 124,
-      "curr_total": 124,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 125,
+      "added_count": 2,
+      "removed_count": 1,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "1b301f2f5b5f",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,oaistatsig.com"
+        },
+        {
+          "id": "8a19cda6f639",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,cdn.openaimerge.com"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "b6557a0d4b7b",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,apis.google.com"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -127,23 +144,12 @@
     },
     {
       "file": "Download.list",
-      "prev_total": 1682,
+      "prev_total": 1684,
       "curr_total": 1684,
-      "added_count": 2,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "aea71896ee42",
-          "source": "SukkaW Download",
-          "rule": "DOMAIN,downloads.claude.ai"
-        },
-        {
-          "id": "b77d489d4fc1",
-          "source": "SukkaW Download",
-          "rule": "DOMAIN,releases.claude.com"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -161,12 +167,18 @@
     {
       "file": "Global.list",
       "prev_total": 24576,
-      "curr_total": 24576,
+      "curr_total": 24575,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 1,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "1b301f2f5b5f",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,oaistatsig.com"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -271,12 +283,18 @@
     {
       "file": "Speedtest.list",
       "prev_total": 1700,
-      "curr_total": 1700,
+      "curr_total": 1699,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 1,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "7876ad5688c2",
+          "source": "SukkaW Speedtest",
+          "rule": "DOMAIN,mensura.cdn-apple.com"
+        }
+      ],
       "source_changed_sample": []
     },
     {

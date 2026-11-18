@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-08 20:44:57 +0800
+# UPDATED: 2026-11-18 11:13:54 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24576
+# TOTAL: 24575
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -11580,7 +11580,6 @@ DOMAIN-SUFFIX,o2action.co.kr
 DOMAIN-SUFFIX,o3.ru
 DOMAIN-SUFFIX,o3t.ru
 DOMAIN-SUFFIX,o3team.ru
-DOMAIN-SUFFIX,oaistatsig.com
 DOMAIN-SUFFIX,oanencore.com
 DOMAIN-SUFFIX,oasis.io
 DOMAIN-SUFFIX,oath.cloud

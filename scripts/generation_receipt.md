@@ -1,20 +1,20 @@
 # Surge 规则生成收据
 
 - 规则文件：32
-- 规则总数：157586
+- 规则总数：157585
 - manifest 文件：32
 
 ## 差异摘要
 
 - 新增：2
-- 删除：0
+- 删除：3
 - 来源迁移：0
 
 ## 规则类型
 
 - DOMAIN: 3696
 - DOMAIN-KEYWORD: 87
-- DOMAIN-SUFFIX: 141538
+- DOMAIN-SUFFIX: 141537
 - DOMAIN-WILDCARD: 4
 - IP-ASN: 8
 - IP-CIDR: 8493
@@ -27,8 +27,8 @@
 
 - ConnersHua AI: 12
 - Loyalsoldier China CIDR: 9640
-- Manual Rules: 353
-- Rabbit-Spec AIGC: 27
+- Manual Rules: 355
+- Rabbit-Spec AIGC: 26
 - Rabbit-Spec China: 370
 - RocM301 Apple-AI: 16
 - SukkaW AI: 25
@@ -39,7 +39,7 @@
 - SukkaW Download: 1608
 - SukkaW Game Download: 52
 - SukkaW Microsoft CDN: 52
-- SukkaW Speedtest: 122
+- SukkaW Speedtest: 121
 - SukkaW Speedtest Servers China: 1
 - SukkaW Speedtest Servers International: 1576
 - SukkaW Stream: 61
@@ -55,7 +55,7 @@
 - blackmatrix7 Disney: 166
 - blackmatrix7 Facebook: 570
 - blackmatrix7 Game: 564
-- blackmatrix7 Global: 24542
+- blackmatrix7 Global: 24541
 - blackmatrix7 GlobalMedia: 2248
 - blackmatrix7 Google: 684
 - blackmatrix7 Instagram: 1

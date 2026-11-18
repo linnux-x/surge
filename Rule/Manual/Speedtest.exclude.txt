@@ -1,0 +1,3 @@
+# Apple network quality measurements use the existing Apple_CN direct route.
+DOMAIN,mensura.cdn-apple.com
+DOMAIN-SUFFIX,mensura.cdn-apple.com
