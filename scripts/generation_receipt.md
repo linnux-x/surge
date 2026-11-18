@@ -1,20 +1,20 @@
 # Surge 规则生成收据
 
 - 规则文件：32
-- 规则总数：157553
+- 规则总数：157551
 - manifest 文件：32
 
 ## 差异摘要
 
-- 新增：1
-- 删除：1
+- 新增：21
+- 删除：23
 - 来源迁移：0
 
 ## 规则类型
 
-- DOMAIN: 3692
+- DOMAIN: 3687
 - DOMAIN-KEYWORD: 87
-- DOMAIN-SUFFIX: 141528
+- DOMAIN-SUFFIX: 141531
 - DOMAIN-WILDCARD: 4
 - IP-ASN: 8
 - IP-CIDR: 8493
@@ -29,7 +29,7 @@
 - Loyalsoldier China CIDR: 9640
 - Manual Rules: 339
 - Rabbit-Spec AIGC: 26
-- Rabbit-Spec China: 370
+- Rabbit-Spec China: 373
 - RocM301 Apple-AI: 16
 - SukkaW AI: 25
 - SukkaW Apple CDN: 158
@@ -41,7 +41,7 @@
 - SukkaW Microsoft CDN: 52
 - SukkaW Speedtest: 121
 - SukkaW Speedtest Servers China: 1
-- SukkaW Speedtest Servers International: 1576
+- SukkaW Speedtest Servers International: 1571
 - SukkaW Stream: 61
 - SukkaW Stream HK: 34
 - SukkaW Stream JP: 27

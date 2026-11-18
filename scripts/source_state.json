@@ -6,8 +6,8 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/AI.list": {
-    "content_length": "2560",
-    "etag": "\"11ad29b5d2fbfc9b6ea9e32139911b56e2472f7b25fcf41c0611097ef43ce5b4\"",
+    "content_length": "2648",
+    "etag": "\"4e802c7d7958afd2790ffee3474417f3d3f7d12694210f0c4b743fc5e0153919\"",
     "last_modified": null,
     "source_available": true
   },
@@ -18,14 +18,14 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
-    "content_length": "3447",
-    "etag": "\"8c03d1a04ce103eb1fad5b98596263f4d163743e46b087543bfcb23aee1f33df\"",
+    "content_length": "3546",
+    "etag": "\"b54380967d018c0276f64008cf00e0531d85aa09a1b689ecd207f82e9b86c8bb\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
-    "content_length": "88675",
-    "etag": "\"4c5420b13a9278b1d70e53a8e955dc09938d9247ba32e97dd8ffb497870b52b2\"",
+    "content_length": "88781",
+    "etag": "\"76d7f40046ae11fdcdb2327fd589c173093ec2787550fd86318d478ca2ef2f74\"",
     "last_modified": null,
     "source_available": true
   },
@@ -36,8 +36,8 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaLab/speedtest-net-servers-dist/master/servers.json": {
-    "content_length": "561759",
-    "etag": "\"25304449cd531bad10325674ccc1b3e27e552a31bd4987de28055cc7274b3770\"",
+    "content_length": "560363",
+    "etag": "\"04e90ab78358b67344164b61fa77c68c8d9f94080b3dc54fb3c80f14643ad29b\"",
     "last_modified": null,
     "source_available": true
   },
@@ -192,8 +192,8 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/ai.conf": {
-    "content_length": null,
-    "etag": "W/\"6a6729b63108325567653d6208be08a3\"",
+    "content_length": "2224",
+    "etag": "\"6a6729b63108325567653d6208be08a3\"",
     "last_modified": null,
     "source_available": true
   },
@@ -204,8 +204,8 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/apple_intelligence.conf": {
-    "content_length": null,
-    "etag": "W/\"44181ef7d74a7a54621cb2a4fc7feb56\"",
+    "content_length": "631",
+    "etag": "\"44181ef7d74a7a54621cb2a4fc7feb56\"",
     "last_modified": null,
     "source_available": true
   },
@@ -216,8 +216,8 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/domestic.conf": {
-    "content_length": null,
-    "etag": "W/\"8e08f21cdab109e51ce754407fe1efc0\"",
+    "content_length": "22814",
+    "etag": "\"8e08f21cdab109e51ce754407fe1efc0\"",
     "last_modified": null,
     "source_available": true
   },
