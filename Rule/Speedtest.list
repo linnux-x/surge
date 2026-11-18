@@ -1,9 +1,9 @@
 # NAME: Speedtest
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-18 11:13:54 +0800
+# UPDATED: 2026-11-18 16:26:31 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1699
+# TOTAL: 1694
 
 # ======= Manual Rules ========
 DOMAIN-SUFFIX,fast.com
@@ -148,7 +148,6 @@ DOMAIN,armageddon.uvensys.de
 DOMAIN,asanet.brsserver.com.br
 DOMAIN,asanet1.brsserver.com.br
 DOMAIN,asbn-speedtest.northstate.net
-DOMAIN,atl-speedtest.shifthosting.com
 DOMAIN,au.st.spacecore.pro
 DOMAIN,aus-nperf.verizon.net
 DOMAIN,bass.fc-net.fr
@@ -180,6 +179,7 @@ DOMAIN,da-speed.kbro.com.tw
 DOMAIN,dabwali.softechinfosol.com
 DOMAIN,dal-speedtest.net.sangoma.net
 DOMAIN,dal-speedtest.transtelco.net
+DOMAIN,dallas.outboundrix.cloud
 DOMAIN,dallas1.cabospeed.com
 DOMAIN,dalspeedtest.rtatel.com
 DOMAIN,de-bln2-ookla-01.wemacom.net
@@ -236,6 +236,7 @@ DOMAIN,hoyalclub.synology.me
 DOMAIN,hs13.aratwifi.com.tr
 DOMAIN,iad-eqx10-ookla-1.99.network
 DOMAIN,ihgtelecom.brsserver.com.br
+DOMAIN,imrteixeira.brsserver.com.br
 DOMAIN,ind-nperf.verizon.net
 DOMAIN,inova.net.gegnet.com.br
 DOMAIN,iperf-ams-nl.eranium.net
@@ -340,6 +341,7 @@ DOMAIN,ookla.a56.as6453.net
 DOMAIN,ookla.aeq.as6453.net
 DOMAIN,ookla.alida.it
 DOMAIN,ookla.ams.atharva.co.id
+DOMAIN,ookla.apuacom.it
 DOMAIN,ookla.araujotelecom.com.br
 DOMAIN,ookla.b2.neptune.net.au
 DOMAIN,ookla.ber-01.testpub.telefonica.de
@@ -371,7 +373,6 @@ DOMAIN,ookla.me1.neptune.net.au
 DOMAIN,ookla.micrologicwv.com
 DOMAIN,ookla.mln.as6453.net
 DOMAIN,ookla.moji.fr
-DOMAIN,ookla.mtt.as6453.net
 DOMAIN,ookla.mu.as6453.net
 DOMAIN,ookla.n0v.as6453.net
 DOMAIN,ookla.olin.es
@@ -397,11 +398,9 @@ DOMAIN,ooklaserver.asbn.va.ogital.net
 DOMAIN,ooklaserver.atln.ga.ogital.net
 DOMAIN,ooklaserver.dlls.tx.ogital.net
 DOMAIN,ooklaserver1-del1.skymaxbroadband.com
-DOMAIN,ooklaspdtstsvr.zitel.com
 DOMAIN,ooklaspeed.statenet.in
 DOMAIN,ooklaspeedtest.as198053.net
 DOMAIN,ooklaspeedtest.d-pcomm.com
-DOMAIN,ooklatins.redeconexaonet.com
 DOMAIN,ord-cos1-ookla-1.99.network
 DOMAIN,owst.gilat.net
 DOMAIN,pauseq4vost1.datamossa.cloud
@@ -460,7 +459,6 @@ DOMAIN,sp1-nl.delska.com
 DOMAIN,sp1.adnbroadband.com
 DOMAIN,sp1.alcort.es
 DOMAIN,sp1.angelbroadband.com
-DOMAIN,sp1.atcc-gns.net
 DOMAIN,sp1.biocablesur.cl
 DOMAIN,sp1.burstfire.net
 DOMAIN,sp1.campanaworks.com
@@ -477,9 +475,7 @@ DOMAIN,sp2.navigabene.it
 DOMAIN,sp2.realtel.in
 DOMAIN,sp2.telered.es
 DOMAIN,sp2.unpl.co.in
-DOMAIN,sp3.atcc-gns.net
 DOMAIN,sp3.novaconn.it
-DOMAIN,sp7.atcc-gns.net
 DOMAIN,spd-100g-ookla.stelogy.io
 DOMAIN,spd-pub-mi-01-01.fastwebnet.it
 DOMAIN,spd-pub-rm-01-01.fastwebnet.it
@@ -515,7 +511,6 @@ DOMAIN,speed.coe.ad.jp
 DOMAIN,speed.cyborgtelecom.com.br
 DOMAIN,speed.datahouse.net
 DOMAIN,speed.de-west-02.wiit-cloud.io
-DOMAIN,speed.dedi.zone
 DOMAIN,speed.fiber23.it
 DOMAIN,speed.fyberlink.com.br
 DOMAIN,speed.g.ml-net.at
@@ -525,7 +520,7 @@ DOMAIN,speed.haefeleconnect.com
 DOMAIN,speed.ktk.de
 DOMAIN,speed.laurensk.nl
 DOMAIN,speed.lordnet.net
-DOMAIN,speed.markham.telmax.ca
+DOMAIN,speed.megasyy.com
 DOMAIN,speed.mel.aussiebroadband.com.au
 DOMAIN,speed.mpvnetworks.com
 DOMAIN,speed.mylink.co.in
@@ -534,7 +529,6 @@ DOMAIN,speed.netassist.es
 DOMAIN,speed.open.ad.jp
 DOMAIN,speed.srv.rent
 DOMAIN,speed.stgscloud.com
-DOMAIN,speed.supersonicinternet.com
 DOMAIN,speed.syd.aussiebroadband.com.au
 DOMAIN,speed.tajbroadband.net
 DOMAIN,speed.telcomnetwork.net
@@ -559,6 +553,7 @@ DOMAIN,speed1.directnet7star.com
 DOMAIN,speed1.spitfireuk.net
 DOMAIN,speed10.aitspl.in
 DOMAIN,speed12.gonetspeed.com
+DOMAIN,speed13.gonetspeed.com
 DOMAIN,speed2.fiberlink.pl
 DOMAIN,speedam.wsp.net.br
 DOMAIN,speedapi.race.com
@@ -570,8 +565,8 @@ DOMAIN,speedfuentes.jeyca.net
 DOMAIN,speedgauge2.optonline.net
 DOMAIN,speedhost.isiline.it
 DOMAIN,speedhost3.isiline.it
-DOMAIN,speedkle.htspl.in
 DOMAIN,speedlon.hyperoptic.com
+DOMAIN,speedmad.sarenet.es
 DOMAIN,speedman.hyperoptic.com
 DOMAIN,speedminas.wifiguay.es
 DOMAIN,speednld.phoenixnap.com
@@ -605,6 +600,7 @@ DOMAIN,speedtest-binghamton.greenlightnetworks.com
 DOMAIN,speedtest-blacktown.optusnet.com.au
 DOMAIN,speedtest-bne-dn1.empower.net.au
 DOMAIN,speedtest-bne.vocus.net
+DOMAIN,speedtest-bne0.encoo.com.au
 DOMAIN,speedtest-bom.melbicom.net
 DOMAIN,speedtest-brendola.wifiweb.it
 DOMAIN,speedtest-brisbane.macquarietelecom.com
@@ -678,6 +674,7 @@ DOMAIN,speedtest-nl.hyperfilter.com
 DOMAIN,speedtest-nl.vdsina.ru
 DOMAIN,speedtest-nl.webdade.com
 DOMAIN,speedtest-nl1.expresshost.cloud
+DOMAIN,speedtest-ntt-fra.as20011.net
 DOMAIN,speedtest-nwrk-nj.wtsky.net
 DOMAIN,speedtest-obd.redeconecta.com
 DOMAIN,speedtest-ookla-alpha.giant.net.uk
@@ -685,7 +682,6 @@ DOMAIN,speedtest-ookla-nce.as62000.net
 DOMAIN,speedtest-ookla-par.as62000.net
 DOMAIN,speedtest-par.flowhardware.ch
 DOMAIN,speedtest-pd.flynet.it
-DOMAIN,speedtest-pd.wifiweb.it
 DOMAIN,speedtest-pit.omnifiber.com
 DOMAIN,speedtest-pl1.expresshost.cloud
 DOMAIN,speedtest-preston-wv.prodigiwv.net
@@ -747,6 +743,7 @@ DOMAIN,speedtest-zl-1.zoominternet.net
 DOMAIN,speedtest.0dayhost.com
 DOMAIN,speedtest.23m.com
 DOMAIN,speedtest.3jglobal.com
+DOMAIN,speedtest.58243.as
 DOMAIN,speedtest.5x5tele.com
 DOMAIN,speedtest.603.sbaedge.net
 DOMAIN,speedtest.7stardigitalnetwork.com
@@ -786,6 +783,7 @@ DOMAIN,speedtest.atl1.jmfnetworks.net
 DOMAIN,speedtest.axclusive.com.sg
 DOMAIN,speedtest.b2.mhn.cloud
 DOMAIN,speedtest.b3online.es
+DOMAIN,speedtest.bakcom.in
 DOMAIN,speedtest.battern.eu
 DOMAIN,speedtest.bbbell.it
 DOMAIN,speedtest.beconet.es
@@ -958,16 +956,14 @@ DOMAIN,speedtest.jbarbieri.net
 DOMAIN,speedtest.jdtelecom.com.br
 DOMAIN,speedtest.jeebr.net
 DOMAIN,speedtest.jetair.net.in
-DOMAIN,speedtest.jmdi.pl
+DOMAIN,speedtest.jetspeed.com.br
 DOMAIN,speedtest.joycloud.services
 DOMAIN,speedtest.jprdigital.in
-DOMAIN,speedtest.jvswifi.com.br
 DOMAIN,speedtest.kabelnoord.net
 DOMAIN,speedtest.kairun.jp
 DOMAIN,speedtest.kappenhagen.tech
 DOMAIN,speedtest.kapper.net
 DOMAIN,speedtest.kapteyan.com.tr
-DOMAIN,speedtest.kdatacenter.com
 DOMAIN,speedtest.kko.me
 DOMAIN,speedtest.konverto.eu
 DOMAIN,speedtest.kosciuskoconnect.com
@@ -1056,7 +1052,6 @@ DOMAIN,speedtest.nik.fiber.nl
 DOMAIN,speedtest.nikhef.qonnected.net
 DOMAIN,speedtest.nikhilnetworksolution.in
 DOMAIN,speedtest.nl-ams.as210558.net
-DOMAIN,speedtest.nl.novoserve.com
 DOMAIN,speedtest.nmparibas.com
 DOMAIN,speedtest.nrbn.ca
 DOMAIN,speedtest.nrflvaaa.metronetinc.com
@@ -1117,7 +1112,6 @@ DOMAIN,speedtest.sea.fdcservers.net
 DOMAIN,speedtest.seaside.ns.ca
 DOMAIN,speedtest.serverpronto.com
 DOMAIN,speedtest.serversistemleri.com
-DOMAIN,speedtest.sesfiber.com.br
 DOMAIN,speedtest.sewan.es
 DOMAIN,speedtest.sewan.fr
 DOMAIN,speedtest.sg.aixxycode.id
@@ -1129,7 +1123,6 @@ DOMAIN,speedtest.sjc.sonic.net
 DOMAIN,speedtest.skylink-data-center.nl
 DOMAIN,speedtest.skynet.net.pl
 DOMAIN,speedtest.skywaywest.net
-DOMAIN,speedtest.slbcloud.fr
 DOMAIN,speedtest.snghosting.com
 DOMAIN,speedtest.softether.co.jp
 DOMAIN,speedtest.spectra.co
@@ -1152,6 +1145,7 @@ DOMAIN,speedtest.syd01.launtel.net.au
 DOMAIN,speedtest.syscom.manaus.br
 DOMAIN,speedtest.taifo.com.tw
 DOMAIN,speedtest.teknosos.com.tr
+DOMAIN,speedtest.telbo.net
 DOMAIN,speedtest.telecaravaca.com
 DOMAIN,speedtest.telfs.com
 DOMAIN,speedtest.telmekom.net
@@ -1166,7 +1160,6 @@ DOMAIN,speedtest.tnp.net.uk
 DOMAIN,speedtest.toob.co.uk
 DOMAIN,speedtest.tor.fdcservers.net
 DOMAIN,speedtest.toshamisp.com
-DOMAIN,speedtest.trined.nl
 DOMAIN,speedtest.trunet.co.in
 DOMAIN,speedtest.tstt.net.tt
 DOMAIN,speedtest.tulix.com
@@ -1181,6 +1174,8 @@ DOMAIN,speedtest.undercorp.com.br
 DOMAIN,speedtest.unidata.it
 DOMAIN,speedtest.unitelecom.net.br
 DOMAIN,speedtest.unlimitedfiber.com
+DOMAIN,speedtest.unlimitednet.us
+DOMAIN,speedtest.uplinkrr.com.br
 DOMAIN,speedtest.us-at.kamatera.com
 DOMAIN,speedtest.us-ch.kamatera.com
 DOMAIN,speedtest.us-la.kamatera.com
@@ -1239,6 +1234,7 @@ DOMAIN,speedtest.zerospace.cloud
 DOMAIN,speedtest.zl.osso.network
 DOMAIN,speedtest.zoominternet.net
 DOMAIN,speedtest.zttcc.cloud
+DOMAIN,speedtest001.bfinetworks.com
 DOMAIN,speedtest001.dnainfotel.com
 DOMAIN,speedtest001.ssstpl.in
 DOMAIN,speedtest01.adl1.spintel.net.au
@@ -1248,7 +1244,6 @@ DOMAIN,speedtest01.bne1.spintel.net.au
 DOMAIN,speedtest01.dataexpress.co.in
 DOMAIN,speedtest01.dro3.solcon.nl
 DOMAIN,speedtest01.mel01.nexthop.net.au
-DOMAIN,speedtest01.mel1.spintel.net.au
 DOMAIN,speedtest01.netmountains.space
 DOMAIN,speedtest01.qualitynet.in
 DOMAIN,speedtest01.srv.asbnva.alticeusa.net
@@ -1308,9 +1303,9 @@ DOMAIN,speedtest1.uniconnect.it
 DOMAIN,speedtest1.whsdk12.net
 DOMAIN,speedtest1.xbase.com
 DOMAIN,speedtest10.digimobil.es
-DOMAIN,speedtest10.haashnet.com
 DOMAIN,speedtest10.vqbn.com
 DOMAIN,speedtest10g.atl.as13760.net
+DOMAIN,speedtest10g.bhm.as13760.net
 DOMAIN,speedtest11.hotspot.koeln
 DOMAIN,speedtest12.digimobil.es
 DOMAIN,speedtest120.dal1.tx.hostedbackbone.net
@@ -1446,7 +1441,6 @@ DOMAIN,speedtestto1.telecomitalia.it
 DOMAIN,speedtestto2.tilab.com
 DOMAIN,speedtestuk1.cybersmart.co.za
 DOMAIN,speedtestus.pvdatanet.com
-DOMAIN,speedtestvlc.zafirotelecom.com
 DOMAIN,speedtestvol.optinet.co.uk
 DOMAIN,speedtestvr01.interplanet.it
 DOMAIN,speedtestwa1.sweet.tv
@@ -1580,6 +1574,7 @@ DOMAIN,stosat-plfi-08p.sys.comcast.net
 DOMAIN,stosat-rvlt-01.sys.comcast.net
 DOMAIN,stoshawa.netcrawler.ca
 DOMAIN,stoshawa.rogers.com
+DOMAIN,stoshawawireless.rogers.com
 DOMAIN,stpickering.netcrawler.ca
 DOMAIN,stpickering.rogers.com
 DOMAIN,str.seyfert.in
@@ -1622,6 +1617,7 @@ DOMAIN,test1.telitel.net
 DOMAIN,test1.telitel.org
 DOMAIN,test1.velocable.com
 DOMAIN,test2.fibertelecom.it
+DOMAIN,testdebit.riv54.fr
 DOMAIN,testdebit.vialis.net
 DOMAIN,testdebitpublic.vialis.net
 DOMAIN,testdevelocidad.aureatelecom.com
@@ -1697,7 +1693,6 @@ DOMAIN,velocimetro.proveinter.com.br
 DOMAIN,velocimetro.speednetworks.com.br
 DOMAIN,velocimetro.wspeednet.com.br
 DOMAIN,velocity.softtelecom.net.br
-DOMAIN,veloteste.mrjomar.com.br
 DOMAIN,warp.cronon.net
 DOMAIN,wd-speedtest.homeplus.net.tw
 DOMAIN,west-speedtest.frontiernetworks.ca

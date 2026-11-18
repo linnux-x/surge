@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-18T15:56:50.009080",
-  "total_added": 1,
-  "total_removed": 1,
+  "generated_at": "2026-11-18T16:26:32.093378",
+  "total_added": 21,
+  "total_removed": 23,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -73,11 +73,27 @@
     {
       "file": "China.list",
       "prev_total": 110641,
-      "curr_total": 110641,
-      "added_count": 0,
+      "curr_total": 110644,
+      "added_count": 3,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "1f9679189d0f",
+          "source": "Rabbit-Spec China",
+          "rule": "DOMAIN-SUFFIX,skland.net"
+        },
+        {
+          "id": "24b4c2c388f6",
+          "source": "Rabbit-Spec China",
+          "rule": "DOMAIN-SUFFIX,arknights.com"
+        },
+        {
+          "id": "e8429d1ccaa8",
+          "source": "Rabbit-Spec China",
+          "rule": "DOMAIN-SUFFIX,octavedge.com"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -105,18 +121,12 @@
     },
     {
       "file": "Claude.list",
-      "prev_total": 13,
+      "prev_total": 14,
       "curr_total": 14,
-      "added_count": 1,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "17539c1e8a11",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,claude.app"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -155,19 +165,13 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24574,
+      "prev_total": 24573,
       "curr_total": 24573,
       "added_count": 0,
-      "removed_count": 1,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "17539c1e8a11",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,claude.app"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -272,12 +276,219 @@
     {
       "file": "Speedtest.list",
       "prev_total": 1699,
-      "curr_total": 1699,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 1694,
+      "added_count": 18,
+      "removed_count": 23,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "03a4f5fa1d5d",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedmad.sarenet.es"
+        },
+        {
+          "id": "1239ddbeead0",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speed13.gonetspeed.com"
+        },
+        {
+          "id": "13ec769f6db0",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.bakcom.in"
+        },
+        {
+          "id": "27ac71d359dd",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest-ntt-fra.as20011.net"
+        },
+        {
+          "id": "3741d6b6e230",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest-bne0.encoo.com.au"
+        },
+        {
+          "id": "42a36a3fbaf2",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speed.megasyy.com"
+        },
+        {
+          "id": "43f75ae5aa25",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.telbo.net"
+        },
+        {
+          "id": "55d9d7727d19",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.jetspeed.com.br"
+        },
+        {
+          "id": "75f76f006b77",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.58243.as"
+        },
+        {
+          "id": "77e057d30353",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.uplinkrr.com.br"
+        },
+        {
+          "id": "934ad5aa9642",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest10g.bhm.as13760.net"
+        },
+        {
+          "id": "96e24c3aaac2",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stoshawawireless.rogers.com"
+        },
+        {
+          "id": "adbebc476e13",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.unlimitednet.us"
+        },
+        {
+          "id": "baf5cc136fee",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,testdebit.riv54.fr"
+        },
+        {
+          "id": "c13e1266476a",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,dallas.outboundrix.cloud"
+        },
+        {
+          "id": "c1ddb625657f",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,ookla.apuacom.it"
+        },
+        {
+          "id": "c7730d38d8d7",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest001.bfinetworks.com"
+        },
+        {
+          "id": "d980d4d61909",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,imrteixeira.brsserver.com.br"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "09ea1f14ec9f",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,ooklatins.redeconexaonet.com"
+        },
+        {
+          "id": "1771f4e00531",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,ooklaspdtstsvr.zitel.com"
+        },
+        {
+          "id": "2c1a5f959732",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest-pd.wifiweb.it"
+        },
+        {
+          "id": "3697595f756d",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,sp3.atcc-gns.net"
+        },
+        {
+          "id": "41d750ea2dcd",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.jvswifi.com.br"
+        },
+        {
+          "id": "49f2fe815df7",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speed.markham.telmax.ca"
+        },
+        {
+          "id": "52ac2cfa318d",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speed.supersonicinternet.com"
+        },
+        {
+          "id": "589d7eeccf53",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,ookla.mtt.as6453.net"
+        },
+        {
+          "id": "60d8613adc98",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,atl-speedtest.shifthosting.com"
+        },
+        {
+          "id": "663d50a31b45",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.jmdi.pl"
+        },
+        {
+          "id": "699e0d05d032",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.nl.novoserve.com"
+        },
+        {
+          "id": "8b40d9ed9e30",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtestvlc.zafirotelecom.com"
+        },
+        {
+          "id": "948613aff3c2",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.slbcloud.fr"
+        },
+        {
+          "id": "96692f154a26",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,veloteste.mrjomar.com.br"
+        },
+        {
+          "id": "99d636115e4d",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.kdatacenter.com"
+        },
+        {
+          "id": "a6d74ac295b7",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedkle.htspl.in"
+        },
+        {
+          "id": "ab5dd4cc9e57",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.trined.nl"
+        },
+        {
+          "id": "aee975c2f9ab",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.sesfiber.com.br"
+        },
+        {
+          "id": "b39848e99989",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest01.mel1.spintel.net.au"
+        },
+        {
+          "id": "c4e158c855b2",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,sp7.atcc-gns.net"
+        },
+        {
+          "id": "d303e7e5e1a8",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest10.haashnet.com"
+        },
+        {
+          "id": "db8629317260",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speed.dedi.zone"
+        },
+        {
+          "id": "dbf1c45872e5",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,sp1.atcc-gns.net"
+        }
+      ],
       "source_changed_sample": []
     },
     {
