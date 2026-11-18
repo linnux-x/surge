@@ -49,6 +49,104 @@
   },
   "entries": [
     {
+      "source_file": "Download.txt",
+      "rule": "DOMAIN,s3.amazonaws.com",
+      "reason": "保留原有 S3 裸域下载策略，只匹配该主机",
+      "destination": "Download.list → Download",
+      "route_tests": ["s3.amazonaws.com", "venmo.s3.amazonaws.com"]
+    },
+    {
+      "source_file": "Download.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,s3.amazonaws.com",
+      "reason": "S3 子域承载不同服务的 bucket，收窄后保留 Venmo 专属策略",
+      "destination": "PayPal.list → PayPal 或 Global.list → Global",
+      "route_tests": ["venmo.s3.amazonaws.com", "sample-bucket.s3.amazonaws.com"]
+    },
+    {
+      "source_file": "Google.exclude.txt",
+      "rule": "DOMAIN,oasisfeng.com",
+      "reason": "独立开发者根域由通用代理处理，覆盖上游精确写法",
+      "destination": "FINAL → Global",
+      "route_tests": ["oasisfeng.com"]
+    },
+    {
+      "source_file": "Google.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,oasisfeng.com",
+      "reason": "独立开发者域用通用代理，保留 gtm 子域现有 Global 精细规则",
+      "destination": "Global.list → Global 或 FINAL → Global",
+      "route_tests": ["oasisfeng.com", "blog.oasisfeng.com", "gtm.oasisfeng.com"]
+    },
+    {
+      "source_file": "TWMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,hboasia.com",
+      "reason": "HBO Asia 旧端点共用于多个地区，保留现有 HKMedia 归属",
+      "destination": "HKMedia.list → HKMedia",
+      "route_tests": ["hboasia.com"]
+    },
+    {
+      "source_file": "TWMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,hbogoasia.com",
+      "reason": "HBO Asia 旧端点共用于多个地区，保留现有 HKMedia 归属",
+      "destination": "HKMedia.list → HKMedia",
+      "route_tests": ["hbogoasia.com"]
+    },
+    {
+      "source_file": "TWMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,hbogoasia.hk",
+      "reason": "HBO Asia 旧端点共用于多个地区，保留现有 HKMedia 归属",
+      "destination": "HKMedia.list → HKMedia",
+      "route_tests": ["hbogoasia.hk"]
+    },
+    {
+      "source_file": "TWMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,hbogoasia.id",
+      "reason": "HBO Asia 旧端点共用于多个地区，保留现有 HKMedia 归属",
+      "destination": "HKMedia.list → HKMedia",
+      "route_tests": ["hbogoasia.id"]
+    },
+    {
+      "source_file": "TWMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,hbogoasia.ph",
+      "reason": "HBO Asia 旧端点共用于多个地区，保留现有 HKMedia 归属",
+      "destination": "HKMedia.list → HKMedia",
+      "route_tests": ["hbogoasia.ph"]
+    },
+    {
+      "source_file": "TWMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,hbogoasia.sg",
+      "reason": "HBO Asia 旧端点共用于多个地区，保留现有 HKMedia 归属",
+      "destination": "HKMedia.list → HKMedia",
+      "route_tests": ["hbogoasia.sg"]
+    },
+    {
+      "source_file": "TWMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,hbogoasia.tw",
+      "reason": "HBO Asia 旧端点共用于多个地区，保留现有 HKMedia 归属",
+      "destination": "HKMedia.list → HKMedia",
+      "route_tests": ["hbogoasia.tw"]
+    },
+    {
+      "source_file": "TWMedia.exclude.txt",
+      "rule": "DOMAIN,hbolb.onwardsmg.com",
+      "reason": "HBO Asia 旧端点共用于多个地区，保留现有 HKMedia 归属",
+      "destination": "HKMedia.list → HKMedia",
+      "route_tests": ["hbolb.onwardsmg.com"]
+    },
+    {
+      "source_file": "TWMedia.exclude.txt",
+      "rule": "DOMAIN,hbounify-prod.evergent.com",
+      "reason": "HBO Asia 旧端点共用于多个地区，保留现有 HKMedia 归属",
+      "destination": "HKMedia.list → HKMedia",
+      "route_tests": ["hbounify-prod.evergent.com"]
+    },
+    {
+      "source_file": "TWMedia.exclude.txt",
+      "rule": "DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com",
+      "reason": "HBO Asia 旧端点共用于多个地区，保留现有 HKMedia 归属",
+      "destination": "HKMedia.list → HKMedia",
+      "route_tests": ["44wilhpljf.execute-api.ap-southeast-1.amazonaws.com"]
+    },
+    {
       "source_file": "Speedtest.exclude.txt",
       "rule": "DOMAIN,mensura.cdn-apple.com",
       "reason": "Apple 网络质量探测沿用 Apple_CN 直连以测量本地网络",
