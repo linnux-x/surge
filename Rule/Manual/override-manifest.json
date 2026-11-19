@@ -17,6 +17,7 @@
     "China.exclude.txt": {"action": "exclude", "reason": "历史中国直连边界修正", "destination": "更早专属规则或 fallback"},
     "China.txt": {"action": "include", "reason": "历史中国直连补充", "destination": "China.list"},
     "ChinaMedia.exclude.txt": {"action": "exclude", "reason": "历史媒体归属去重", "destination": "后续专属规则或 fallback"},
+    "ChinaMedia.txt": {"action": "include", "reason": "国内媒体专用主机和客户端标识", "destination": "ChinaMedia.list → ChinaMedia"},
     "Disney.exclude.txt": {"action": "exclude", "reason": "历史流媒体归属去重", "destination": "后续专属规则或 fallback"},
     "Download.exclude.txt": {"action": "exclude", "reason": "历史下载归属去重", "destination": "后续专属规则或 fallback"},
     "Download.txt": {"action": "include", "reason": "历史下载专属补充", "destination": "Download.list"},
@@ -44,6 +45,7 @@
     "Telegram.txt": {"action": "include", "reason": "真实流量确认的 Telegram 客户端服务补充", "destination": "Telegram.list"},
     "TikTok.exclude.txt": {"action": "exclude", "reason": "历史短视频服务归属去重", "destination": "后续专属规则或 fallback"},
     "TikTok.txt": {"action": "include", "reason": "历史短视频服务补充", "destination": "TikTok.list"},
+    "WeChat.exclude.txt": {"action": "exclude", "reason": "排除腾讯共享基础设施和微信内浏览器的通用标识", "destination": "按目标落入 China、China_IP 或其他适用规则"},
     "WeChat.txt": {"action": "include", "reason": "历史通信服务补充", "destination": "WeChat.list"},
     "YouTube.exclude.txt": {"action": "exclude", "reason": "历史视频服务归属去重", "destination": "后续专属规则或 fallback"}
   },
@@ -1195,6 +1197,260 @@
       "reason": "客户端更新与安装包下载使用同一 Claude 策略",
       "destination": "Claude.list → Claude",
       "route_tests": ["releases.claude.com"]
+    },
+    {
+      "source_file": "WeChat.exclude.txt",
+      "rule": "IP-ASN,132203,no-resolve",
+      "reason": "腾讯 ASN 含 DNSPod 与其他业务，按具体目标继续匹配",
+      "destination": "境内 DNSPod → China_IP.list → DIRECT",
+      "route_tests": [
+        "119.29.29.29",
+        "weixin.qq.com"
+      ]
+    },
+    {
+      "source_file": "WeChat.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,lbs.gtimg.com",
+      "reason": "腾讯位置服务共享静态资源",
+      "destination": "China.list → DIRECT",
+      "route_tests": [
+        "lbs.gtimg.com"
+      ]
+    },
+    {
+      "source_file": "WeChat.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,map.qq.com",
+      "reason": "腾讯地图可供独立应用使用",
+      "destination": "China.list → DIRECT",
+      "route_tests": [
+        "map.qq.com"
+      ]
+    },
+    {
+      "source_file": "WeChat.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,qlogo.cn",
+      "reason": "共享头像父域，保留微信专用主机",
+      "destination": "China.list → DIRECT",
+      "route_tests": [
+        "qlogo.cn",
+        "wx.qlogo.cn"
+      ]
+    },
+    {
+      "source_file": "WeChat.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,qpic.cn",
+      "reason": "共享图片父域，保留公众号图片主机",
+      "destination": "China.list → DIRECT",
+      "route_tests": [
+        "qpic.cn",
+        "mmbiz.qpic.cn"
+      ]
+    },
+    {
+      "source_file": "WeChat.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,tenpay.com",
+      "reason": "财付通同时为微信支付和 QQ 钱包提供服务",
+      "destination": "China.list → DIRECT",
+      "route_tests": [
+        "tenpay.com",
+        "pay.weixin.qq.com"
+      ]
+    },
+    {
+      "source_file": "WeChat.exclude.txt",
+      "rule": "USER-AGENT,MicroMessenger*",
+      "reason": "微信浏览器可给第三方站点发送此标识，保持目标站点原有分流",
+      "destination": "依目标站点的首条命中规则",
+      "route_tests": [
+        "news.sohu.com",
+        "weixin.qq.com"
+      ]
+    },
+    {
+      "source_file": "WeChat.exclude.txt",
+      "rule": "USER-AGENT,WeChat*",
+      "reason": "微信浏览器可给第三方站点发送此标识，保持目标站点原有分流",
+      "destination": "依目标站点的首条命中规则",
+      "route_tests": [
+        "news.sohu.com",
+        "weixin.qq.com"
+      ]
+    },
+    {
+      "source_file": "WeChat.txt",
+      "rule": "DOMAIN,mmbiz.qpic.cn",
+      "reason": "公众号图片 CDN",
+      "destination": "WeChat.list → WeChat",
+      "route_tests": [
+        "mmbiz.qpic.cn"
+      ]
+    },
+    {
+      "source_file": "WeChat.txt",
+      "rule": "DOMAIN,wx.qlogo.cn",
+      "reason": "微信头像 CDN",
+      "destination": "WeChat.list → WeChat",
+      "route_tests": [
+        "wx.qlogo.cn"
+      ]
+    },
+    {
+      "source_file": "ChinaMedia.exclude.txt",
+      "rule": "IP-CIDR,119.29.29.29/32,no-resolve",
+      "reason": "腾讯 DNSPod 公共 DNS",
+      "destination": "China_IP.list → DIRECT",
+      "route_tests": [
+        "119.29.29.29"
+      ]
+    },
+    {
+      "source_file": "ChinaMedia.exclude.txt",
+      "rule": "IP-CIDR,203.107.1.0/24,no-resolve",
+      "reason": "共享网段包含阿里云 HTTPDNS 调度地址",
+      "destination": "China_IP.list → DIRECT",
+      "route_tests": [
+        "203.107.1.1"
+      ]
+    },
+    {
+      "source_file": "ChinaMedia.exclude.txt",
+      "rule": "IP-CIDR,106.11.0.0/16,no-resolve",
+      "reason": "共享网段包含阿里云 HTTPDNS 调度地址",
+      "destination": "China_IP.list → DIRECT",
+      "route_tests": [
+        "106.11.25.239"
+      ]
+    },
+    {
+      "source_file": "ChinaMedia.exclude.txt",
+      "rule": "IP-CIDR,101.224.0.0/13,no-resolve",
+      "reason": "宽泛国内地址段已有中国 IP 兜底",
+      "destination": "China_IP.list → DIRECT",
+      "route_tests": [
+        "101.224.0.1"
+      ]
+    },
+    {
+      "source_file": "ChinaMedia.exclude.txt",
+      "rule": "IP-CIDR,119.176.0.0/12,no-resolve",
+      "reason": "宽泛国内地址段已有中国 IP 兜底",
+      "destination": "China_IP.list → DIRECT",
+      "route_tests": [
+        "119.176.0.1"
+      ]
+    },
+    {
+      "source_file": "ChinaMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,sohu.com",
+      "reason": "搜狐新闻与视频共用父域",
+      "destination": "China.list → DIRECT",
+      "route_tests": [
+        "news.sohu.com",
+        "tv.sohu.com"
+      ]
+    },
+    {
+      "source_file": "ChinaMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,sohu.com.cn",
+      "reason": "共享搜狐父域由中国域名规则兜底",
+      "destination": "China.list → DIRECT",
+      "route_tests": [
+        "sohu.com.cn"
+      ]
+    },
+    {
+      "source_file": "ChinaMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,itc.cn",
+      "reason": "搜狐共享资源父域，保留视频专用子域",
+      "destination": "China.list → DIRECT",
+      "route_tests": [
+        "g1.itc.cn",
+        "css.tv.itc.cn"
+      ]
+    },
+    {
+      "source_file": "ChinaMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,ai.xiaomi.com",
+      "reason": "小爱同学提供通用助手和智能设备控制",
+      "destination": "China.list → DIRECT",
+      "route_tests": [
+        "ai.xiaomi.com"
+      ]
+    },
+    {
+      "source_file": "ChinaMedia.exclude.txt",
+      "rule": "USER-AGENT,*bili*",
+      "reason": "宽泛标识会吸收无关应用或国际版 B 站流量",
+      "destination": "国内及国际版按媒体目标分流",
+      "route_tests": [
+        "bilibili.com",
+        "bilibili.tv"
+      ]
+    },
+    {
+      "source_file": "ChinaMedia.exclude.txt",
+      "rule": "USER-AGENT,bili*",
+      "reason": "宽泛标识会吸收无关应用或国际版 B 站流量",
+      "destination": "国内及国际版按媒体目标分流",
+      "route_tests": [
+        "bilibili.com",
+        "bilibili.tv"
+      ]
+    },
+    {
+      "source_file": "ChinaMedia.exclude.txt",
+      "rule": "USER-AGENT,bili-inter*",
+      "reason": "宽泛标识会吸收无关应用或国际版 B 站流量",
+      "destination": "国内及国际版按媒体目标分流",
+      "route_tests": [
+        "bilibili.com",
+        "bilibili.tv"
+      ]
+    },
+    {
+      "source_file": "ChinaMedia.txt",
+      "rule": "DOMAIN-SUFFIX,tv.sohu.com",
+      "reason": "保留搜狐视频专用主机",
+      "destination": "ChinaMedia.list → ChinaMedia",
+      "route_tests": [
+        "tv.sohu.com"
+      ]
+    },
+    {
+      "source_file": "ChinaMedia.txt",
+      "rule": "DOMAIN-SUFFIX,tv.itc.cn",
+      "reason": "保留搜狐视频专用主机",
+      "destination": "ChinaMedia.list → ChinaMedia",
+      "route_tests": [
+        "css.tv.itc.cn"
+      ]
+    },
+    {
+      "source_file": "ChinaMedia.txt",
+      "rule": "DOMAIN,film.sohu.com",
+      "reason": "保留搜狐视频专用主机",
+      "destination": "ChinaMedia.list → ChinaMedia",
+      "route_tests": [
+        "film.sohu.com"
+      ]
+    },
+    {
+      "source_file": "ChinaMedia.txt",
+      "rule": "USER-AGENT,bilibili/*",
+      "reason": "以产品名和分隔符保留国内客户端识别",
+      "destination": "ChinaMedia.list → ChinaMedia",
+      "route_tests": [
+        "bilibili.com"
+      ]
+    },
+    {
+      "source_file": "ChinaMedia.txt",
+      "rule": "USER-AGENT,bili/*",
+      "reason": "以产品名和分隔符保留国内客户端识别",
+      "destination": "ChinaMedia.list → ChinaMedia",
+      "route_tests": [
+        "bilibili.com"
+      ]
     }
   ]
 }

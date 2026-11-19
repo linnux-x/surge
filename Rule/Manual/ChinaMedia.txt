@@ -1,0 +1,8 @@
+# Preserve Sohu Video when the shared parent domains fall through to China.
+DOMAIN-SUFFIX,tv.sohu.com
+DOMAIN-SUFFIX,tv.itc.cn
+DOMAIN,film.sohu.com
+
+# Lowercase domestic client prefixes, with an explicit product separator.
+USER-AGENT,bilibili/*
+USER-AGENT,bili/*

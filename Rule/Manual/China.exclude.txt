@@ -70,12 +70,7 @@ DOMAIN,vweixinf.tc.qq.com
 DOMAIN,weixin110.qq.com
 DOMAIN,wup.imtt.qq.com
 DOMAIN-SUFFIX,iot-tencent.com
-DOMAIN-SUFFIX,lbs.gtimg.com
-DOMAIN-SUFFIX,map.qq.com
-DOMAIN-SUFFIX,qlogo.cn
-DOMAIN-SUFFIX,qpic.cn
 DOMAIN-SUFFIX,servicewechat.com
-DOMAIN-SUFFIX,tenpay.com
 DOMAIN-SUFFIX,up-hl.3g.qq.com
 DOMAIN-SUFFIX,vweixinthumb.tc.qq.com
 DOMAIN-SUFFIX,wechat.com

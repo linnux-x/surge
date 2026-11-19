@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-19T08:27:05.232231",
-  "total_added": 118,
-  "total_removed": 133,
+  "generated_at": "2026-11-19T16:04:30.174052",
+  "total_added": 10,
+  "total_removed": 20,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -73,23 +73,126 @@
     {
       "file": "China.list",
       "prev_total": 110644,
-      "curr_total": 110644,
-      "added_count": 0,
+      "curr_total": 110647,
+      "added_count": 3,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "57c18cd172d4",
+          "source": "SukkaW Domestic",
+          "rule": "DOMAIN-SUFFIX,qpic.cn"
+        },
+        {
+          "id": "58f514d5819b",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "rule": "DOMAIN-SUFFIX,tenpay.com"
+        },
+        {
+          "id": "c39fd4550951",
+          "source": "SukkaW Domestic",
+          "rule": "DOMAIN-SUFFIX,qlogo.cn"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "ChinaMedia.list",
       "prev_total": 384,
-      "curr_total": 384,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 377,
+      "added_count": 5,
+      "removed_count": 12,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "05655084f59f",
+          "source": "Manual Rules",
+          "rule": "USER-AGENT,bili/*"
+        },
+        {
+          "id": "0613fa6923a4",
+          "source": "Manual Rules",
+          "rule": "USER-AGENT,bilibili/*"
+        },
+        {
+          "id": "15f2255265b0",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,tv.sohu.com"
+        },
+        {
+          "id": "600e8946b9e4",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,film.sohu.com"
+        },
+        {
+          "id": "c84bdce232db",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,tv.itc.cn"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "164bfc51712a",
+          "source": "blackmatrix7 ChinaMedia",
+          "rule": "DOMAIN-SUFFIX,ai.xiaomi.com"
+        },
+        {
+          "id": "1f0cc8df5c73",
+          "source": "blackmatrix7 ChinaMedia",
+          "rule": "IP-CIDR,119.176.0.0/12,no-resolve"
+        },
+        {
+          "id": "3370db0c197b",
+          "source": "blackmatrix7 ChinaMedia",
+          "rule": "DOMAIN-SUFFIX,sohu.com"
+        },
+        {
+          "id": "45fe301bc5f3",
+          "source": "blackmatrix7 ChinaMedia",
+          "rule": "IP-CIDR,119.29.29.29/32,no-resolve"
+        },
+        {
+          "id": "62ba15eb1ea0",
+          "source": "blackmatrix7 ChinaMedia",
+          "rule": "IP-CIDR,203.107.1.0/24,no-resolve"
+        },
+        {
+          "id": "8616538bd7b8",
+          "source": "blackmatrix7 ChinaMedia",
+          "rule": "USER-AGENT,bili*"
+        },
+        {
+          "id": "91ee31d9657a",
+          "source": "blackmatrix7 ChinaMedia",
+          "rule": "IP-CIDR,106.11.0.0/16,no-resolve"
+        },
+        {
+          "id": "a81023748e98",
+          "source": "blackmatrix7 ChinaMedia",
+          "rule": "DOMAIN-SUFFIX,itc.cn"
+        },
+        {
+          "id": "abe5068276c8",
+          "source": "blackmatrix7 ChinaMedia",
+          "rule": "USER-AGENT,bili-inter*"
+        },
+        {
+          "id": "b10b1ff58a4c",
+          "source": "blackmatrix7 ChinaMedia",
+          "rule": "USER-AGENT,*bili*"
+        },
+        {
+          "id": "bdd954ae4546",
+          "source": "blackmatrix7 ChinaMedia",
+          "rule": "IP-CIDR,101.224.0.0/13,no-resolve"
+        },
+        {
+          "id": "c1364709d93b",
+          "source": "blackmatrix7 ChinaMedia",
+          "rule": "DOMAIN-SUFFIX,sohu.com.cn"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -259,1015 +362,13 @@
     },
     {
       "file": "Speedtest.list",
-      "prev_total": 1694,
+      "prev_total": 1679,
       "curr_total": 1679,
-      "added_count": 118,
-      "removed_count": 133,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "0009d45cc71f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-gdrp.merit.edu"
-        },
-        {
-          "id": "012b7f31586b",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ststratford.rogers.com"
-        },
-        {
-          "id": "0561b044089c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ran-r450-speedtest.metrocomm.com"
-        },
-        {
-          "id": "0711f9d6046b",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,cbpuspeed.aspensmart.net"
-        },
-        {
-          "id": "0bd6b487bcf7",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.inovewifi.com.br"
-        },
-        {
-          "id": "0f0435a45fac",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.oa.net"
-        },
-        {
-          "id": "0f923e75457a",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ookla-in.mercuryfiber.com"
-        },
-        {
-          "id": "0f9fc6befe00",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed.idnet.net.br"
-        },
-        {
-          "id": "1204ab7c7137",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,40gspeedtest.mnsi.net"
-        },
-        {
-          "id": "134564537572",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.sycmilaa.metronetinc.com"
-        },
-        {
-          "id": "14c7e265c3d8",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.ibertic.es"
-        },
-        {
-          "id": "15ee8e1a505a",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.volo.net"
-        },
-        {
-          "id": "1753c7265a8d",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,st1.ligtel.com"
-        },
-        {
-          "id": "1debbecee8c5",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.cstech.com"
-        },
-        {
-          "id": "22e17aa36c22",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-wc.truestreamfiber.us"
-        },
-        {
-          "id": "27aa9cef1e30",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,bytp-speedtest-1.123.net"
-        },
-        {
-          "id": "29a310f8327b",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.brooketel.coop"
-        },
-        {
-          "id": "2a475faf88d3",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,spdtst-southbend.fourway.net"
-        },
-        {
-          "id": "2b911d71aa37",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.i3broadband.com"
-        },
-        {
-          "id": "2c1a5f959732",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-pd.wifiweb.it"
-        },
-        {
-          "id": "30afe4b85368",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.chi.gigenet.com"
-        },
-        {
-          "id": "34ed756fe9e2",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest2.mfbroadband.com"
-        },
-        {
-          "id": "358795b67fd5",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.mornington.ca"
-        },
-        {
-          "id": "37dae1757a6d",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stsaultstemariewireless.rogers.com"
-        },
-        {
-          "id": "394dff5a7003",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stwindsorwireless.rogers.com"
-        },
-        {
-          "id": "3ea882635f75",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed.sdmnet.com.br"
-        },
-        {
-          "id": "3ee34e80fced",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.dvnpiaaa.metronetinc.com"
-        },
-        {
-          "id": "41d750ea2dcd",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.jvswifi.com.br"
-        },
-        {
-          "id": "4243e89e8727",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.tcom.purdue.edu"
-        },
-        {
-          "id": "4491b544431a",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.as53597.net"
-        },
-        {
-          "id": "49f2fe815df7",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed.markham.telmax.ca"
-        },
-        {
-          "id": "4a3866e24ddd",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,min-r450-speedtest.metrocomm.com"
-        },
-        {
-          "id": "4b114200a609",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.cirbn.net"
-        },
-        {
-          "id": "4b5905b93b33",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.opiquad.it"
-        },
-        {
-          "id": "4ca06efd9c0c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-srv-a.homeworks.org"
-        },
-        {
-          "id": "4d8a0b572a38",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed.isrcomunicaciones.es"
-        },
-        {
-          "id": "4de50e12bd16",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.hay.net"
-        },
-        {
-          "id": "4ef30d7df14c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.bltnilaa.metronetinc.com"
-        },
-        {
-          "id": "51219317246c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.gmtel.net"
-        },
-        {
-          "id": "5423fa711e1c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,sul-r450-speedtest.metrocomm.com"
-        },
-        {
-          "id": "589d7eeccf53",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ookla.mtt.as6453.net"
-        },
-        {
-          "id": "5b59c5167680",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,sqaookla.ddns.net"
-        },
-        {
-          "id": "5b6c9723716c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.syd.netsg.net.au"
-        },
-        {
-          "id": "5c69bf15997f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,sp1.speedy.bb-swrag.de"
-        },
-        {
-          "id": "5c6e09ea3600",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.stradacomm.com"
-        },
-        {
-          "id": "5cb71d1b2142",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,pri-r450-speedtest.metrocomm.com"
-        },
-        {
-          "id": "5ea0d4b206fe",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest2.acentek.net"
-        },
-        {
-          "id": "5ffb4d6de1c7",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stvaughan.netcrawler.ca"
-        },
-        {
-          "id": "60d8613adc98",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,atl-speedtest.shifthosting.com"
-        },
-        {
-          "id": "616c6bffe17f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stkingcity.rogers.com"
-        },
-        {
-          "id": "631ceedda77e",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed.mei.net"
-        },
-        {
-          "id": "663d50a31b45",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.jmdi.pl"
-        },
-        {
-          "id": "67fb222e7169",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stbrampton.rogers.com"
-        },
-        {
-          "id": "699e0d05d032",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.nl.novoserve.com"
-        },
-        {
-          "id": "6ab9d9e27f4c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.connectjasper.com"
-        },
-        {
-          "id": "6aead9c0f08f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,testmyspeed.urbancom.net"
-        },
-        {
-          "id": "6b8a034fa920",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.wifi4all.it"
-        },
-        {
-          "id": "6ba54f697247",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,randomlake-speedtest1.as36001.net"
-        },
-        {
-          "id": "6bd3e7deffb5",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,st-kenosha.sumofiber.com"
-        },
-        {
-          "id": "7180f9019e99",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.springcom.com"
-        },
-        {
-          "id": "72bb8c1b570f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest5.windtre.it"
-        },
-        {
-          "id": "75e802499b21",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stbrampton.netcrawler.ca"
-        },
-        {
-          "id": "794da782a134",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ookla-mispeed.rackgenius.com"
-        },
-        {
-          "id": "7b2b5f1619fb",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,karnal.sitibroadband.co.in"
-        },
-        {
-          "id": "7d204e853068",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.oswgilaa.metronetinc.com"
-        },
-        {
-          "id": "856a8514303c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.btc-bci.com"
-        },
-        {
-          "id": "87268ce3261b",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,teste.routinger.com.br"
-        },
-        {
-          "id": "87a9233f0df1",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,383-2speedtest.wightman.ca"
-        },
-        {
-          "id": "8b40d9ed9e30",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtestvlc.zafirotelecom.com"
-        },
-        {
-          "id": "8c67eca44a61",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,velocidade.tecsattelecom.com.br"
-        },
-        {
-          "id": "8c8abdf2d7dc",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed.weendeavor.com"
-        },
-        {
-          "id": "8d2554d731e3",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,st1.stratusnet.com"
-        },
-        {
-          "id": "945b9be2fb40",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,aldlmi-speedtest-ookla-01.st.charter.com"
-        },
-        {
-          "id": "948613aff3c2",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.slbcloud.fr"
-        },
-        {
-          "id": "96e261bbbb9d",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed.tnahosting.net"
-        },
-        {
-          "id": "9868c3f8fedf",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.s3rdv.com"
-        },
-        {
-          "id": "9d2342e15aaa",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stkingcity.netcrawler.ca"
-        },
-        {
-          "id": "a2002b5b2805",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.grr1-mi.incx.net"
-        },
-        {
-          "id": "a31c0a6224a2",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,storangeville.rogers.com"
-        },
-        {
-          "id": "a36c101ca431",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,testdebit.tubeo.fr"
-        },
-        {
-          "id": "a5a39e69aa44",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.mhtc.net"
-        },
-        {
-          "id": "a6d74ac295b7",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedkle.htspl.in"
-        },
-        {
-          "id": "a8249c53ba8a",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.thn.uk.syntura.io"
-        },
-        {
-          "id": "accdf3f5dcf1",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stsarniawireless.rogers.com"
-        },
-        {
-          "id": "ae22d7a42288",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.supranet.net"
-        },
-        {
-          "id": "aee975c2f9ab",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.sesfiber.com.br"
-        },
-        {
-          "id": "afce71228313",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,topnet.brsserver.com.br"
-        },
-        {
-          "id": "b03528f13ca1",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.marshallfibernet.com"
-        },
-        {
-          "id": "b366228f3322",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ststratfordwireless.rogers.com"
-        },
-        {
-          "id": "b43cd8b37520",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest01.ehtel.ca"
-        },
-        {
-          "id": "b84a68df407f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.gosfieldtel.ca"
-        },
-        {
-          "id": "bdb150f52525",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest2.hurontel.on.ca"
-        },
-        {
-          "id": "be25db6f77aa",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,sl-04.wemacom.net"
-        },
-        {
-          "id": "c06caa39a296",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.lagrangeremcisp.net"
-        },
-        {
-          "id": "c48494526129",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest3.point-broadband.com"
-        },
-        {
-          "id": "c95a22664ae8",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.kraus.jbarbieri.net"
-        },
-        {
-          "id": "ce3540a348be",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.geneseo.com"
-        },
-        {
-          "id": "d0b106fcb347",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest2.il.mycci.net"
-        },
-        {
-          "id": "d43014812cdf",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.systemlifeline.com"
-        },
-        {
-          "id": "d46b7ceff48c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.host-unlimited.de"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "010770237191",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stscarborough.rogers.com"
-        },
-        {
-          "id": "01d06b461e5c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.readingsd.org"
-        },
-        {
-          "id": "02a0281525c3",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.vel.as205941.net"
-        },
-        {
-          "id": "02d48045e4e3",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed12.gonetspeed.com"
-        },
-        {
-          "id": "0df919f8f00e",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.nrflvaaa.metronetinc.com"
-        },
-        {
-          "id": "0ef16a17f7b4",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stbowmanville.rogers.com"
-        },
-        {
-          "id": "0f56643c702c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stosat-crls-01.sys.comcast.net"
-        },
-        {
-          "id": "1179f68f6982",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,va-speed.magna5.com"
-        },
-        {
-          "id": "1239ddbeead0",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed13.gonetspeed.com"
-        },
-        {
-          "id": "129fa7cf52e5",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-newjersey.ripplefiber.com"
-        },
-        {
-          "id": "16699495d33c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed.uberlinktelecom.com.br"
-        },
-        {
-          "id": "16744b51f48f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-ash.vts.bf"
-        },
-        {
-          "id": "181f2fd1cbb5",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.iad.fdcservers.net"
-        },
-        {
-          "id": "19d98c644b57",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-iad.sectrify.com"
-        },
-        {
-          "id": "1b53005476d3",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.nrbn.ca"
-        },
-        {
-          "id": "1dd706232871",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed10.aitspl.in"
-        },
-        {
-          "id": "1e3705ee2fe6",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.oceansls.com"
-        },
-        {
-          "id": "23d5bd5a13bc",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.gretna.myriverstreet.net"
-        },
-        {
-          "id": "2785a4313085",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,teste.suprainternet.com.br"
-        },
-        {
-          "id": "2786cbd1a5aa",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,test-pbx.opiquad.it"
-        },
-        {
-          "id": "2c84bbbee93c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ooklaserver.asbn.va.ogital.net"
-        },
-        {
-          "id": "30df7f1427c6",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.ette.biz"
-        },
-        {
-          "id": "32c503790c60",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest3.ptd.net"
-        },
-        {
-          "id": "33041c0f7fd7",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stbowmanville.netcrawler.ca"
-        },
-        {
-          "id": "3459aa77ed16",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.macapatelecom.net.br"
-        },
-        {
-          "id": "369df213d503",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,nycmetro-speedtest.reliablesite.net"
-        },
-        {
-          "id": "3a8aec9cda98",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-zl-1.zoominternet.net"
-        },
-        {
-          "id": "3d35921f1642",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,clg-105-sptest.ncri.com"
-        },
-        {
-          "id": "3e7bf0bd143d",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest1.ewr.nj.us.planet.net"
-        },
-        {
-          "id": "414c35bf776f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.us.novoserve.com"
-        },
-        {
-          "id": "42db00569c58",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.getwireless.net"
-        },
-        {
-          "id": "44e1fd099c78",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.sc1.loopinternet.com"
-        },
-        {
-          "id": "4502550a3a9c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,wpa-speed.magna5.com"
-        },
-        {
-          "id": "45f4d00908d6",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-2.hynetwifi.it"
-        },
-        {
-          "id": "473f9b45897a",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.winchesterwireless.com"
-        },
-        {
-          "id": "49ffc4a2950e",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stoshawa.netcrawler.ca"
-        },
-        {
-          "id": "4f8818240273",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stosat-plfi-08p.sys.comcast.net"
-        },
-        {
-          "id": "5193c8145d68",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,crls-speedtest-02.brightspeed.com"
-        },
-        {
-          "id": "52a89dbdad82",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.us-ny2.kamatera.com"
-        },
-        {
-          "id": "52ea711702a9",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtestnorthpointe.arkdnacloud.com"
-        },
-        {
-          "id": "5559912850cd",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.belmontcountygig.com"
-        },
-        {
-          "id": "55c0cb8dcbb9",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest2.pa.mycci.net"
-        },
-        {
-          "id": "56e9dda42623",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedteste.netfast.com.br"
-        },
-        {
-          "id": "57cfe7333ea8",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,fast.blackbearfiber.com"
-        },
-        {
-          "id": "5893bd721aca",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stnorthyork.netcrawler.ca"
-        },
-        {
-          "id": "5ab2e37aaffc",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest31.suddenlink.net"
-        },
-        {
-          "id": "60ac93c18792",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stscarborough.netcrawler.ca"
-        },
-        {
-          "id": "615ab422b360",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,btlr-speedtest-02.brightspeed.com"
-        },
-        {
-          "id": "6240dc262b53",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest1.whsdk12.net"
-        },
-        {
-          "id": "625966c841d3",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest1.ric1.va.hostedbackbone.net"
-        },
-        {
-          "id": "67382fe7fa61",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stoshawa.rogers.com"
-        },
-        {
-          "id": "68c6eb173f83",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,asbn-speedtest.northstate.net"
-        },
-        {
-          "id": "698bcfb1bb21",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-preston-wv.prodigiwv.net"
-        },
-        {
-          "id": "6aafcc1f0064",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.americatelecom.net.br"
-        },
-        {
-          "id": "6b8f1c9f7c44",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stajax.rogers.com"
-        },
-        {
-          "id": "6ef5f28df61c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ookla.aeq.as6453.net"
-        },
-        {
-          "id": "6fbf06a1c59f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.hynetwifi.it"
-        },
-        {
-          "id": "74a6d6e46908",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.wb1.loopinternet.com"
-        },
-        {
-          "id": "7625db817368",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest1.iad1-us.gozfly.net"
-        },
-        {
-          "id": "77cb389996a6",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-bethlehem.greenlightnetworks.com"
-        },
-        {
-          "id": "77e56dc99c59",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,cltn-speedtest-02.brightspeed.com"
-        },
-        {
-          "id": "7c4e62477d2e",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.zoominternet.net"
-        },
-        {
-          "id": "7de305557319",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,altoonaspeedtest.crowsnestbb.net"
-        },
-        {
-          "id": "7f1d4cde7674",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.net360.cloud"
-        },
-        {
-          "id": "8141004af16b",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest02.srv.prnynj.alticeusa.net"
-        },
-        {
-          "id": "81b8486c1e76",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,qoeookla-rmnd-01.sys.comcast.net"
-        },
-        {
-          "id": "83e830bbc65c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest4.point-broadband.com"
-        },
-        {
-          "id": "8487be6e6d95",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.mifflincountywireless.com"
-        },
-        {
-          "id": "85b7f8f6df4c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,spd79.claro.com.br"
-        },
-        {
-          "id": "8921715d28d7",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest2.tmg.net.id"
-        },
-        {
-          "id": "894527aa356c",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,lsdspeed01.lsdops.net"
-        },
-        {
-          "id": "8e36c5eb6ca2",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest2.micronet.in"
-        },
-        {
-          "id": "8fd05fb4ff7e",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest19.suddenlink.net"
-        },
-        {
-          "id": "90617691e3af",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stwhitby.netcrawler.ca"
-        },
-        {
-          "id": "910cf0769104",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-nwrk-nj.wtsky.net"
-        },
-        {
-          "id": "9138c74c88d2",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,vaspeedtest.rackdog.com"
-        },
-        {
-          "id": "934ad5aa9642",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest10g.bhm.as13760.net"
-        },
-        {
-          "id": "9660747a5a08",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speed01.gonetspeed.com"
-        },
-        {
-          "id": "96e24c3aaac2",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stoshawawireless.rogers.com"
-        },
-        {
-          "id": "995889b17f13",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,lsdspeed02.lsdops.net"
-        },
-        {
-          "id": "9b36e6ace41e",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,phlph0001speedtestserver02.wiline.com"
-        },
-        {
-          "id": "9be25423b741",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,servidor.speedplay.com.br"
-        },
-        {
-          "id": "9c36ab36b132",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,phl01.screenshot.download"
-        },
-        {
-          "id": "9cbc5181b52f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.ddps.jp"
-        },
-        {
-          "id": "9ee8a1734e62",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest2.sistelfibra.es"
-        },
-        {
-          "id": "9f094a91d810",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ookla.micrologicwv.com"
-        },
-        {
-          "id": "9f6b30de3d0b",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-server-ash.starry.com"
-        },
-        {
-          "id": "adbebc476e13",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.unlimitednet.us"
-        },
-        {
-          "id": "b06e6a3b7c0f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.philasd.org"
-        },
-        {
-          "id": "b0cc745d6216",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stosat-balt-01.sys.comcast.net"
-        },
-        {
-          "id": "b4f4faf0a782",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.fiberlync.net"
-        },
-        {
-          "id": "b577445ffd28",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ookla-mgw.wvnet.edu"
-        },
-        {
-          "id": "b7070e1bfc5d",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.internetsubway.com"
-        },
-        {
-          "id": "b7ea0351589f",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest.revolutionbroadband.net"
-        },
-        {
-          "id": "b7ff9d48bf4d",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ststcatharineswireless.rogers.com"
-        },
-        {
-          "id": "b8002d9cf7f6",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ookla1.talkiefiber.com"
-        },
-        {
-          "id": "b868fcdc5518",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ookla01.citynet.net"
-        },
-        {
-          "id": "be5af7e0a364",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stpickering.netcrawler.ca"
-        },
-        {
-          "id": "bf6da99bd680",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,ookla-speedtest.iu13.net"
-        },
-        {
-          "id": "bfb3f1c8eb1b",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,speedtest-baltimore.greenlightnetworks.com"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -1339,12 +440,64 @@
     {
       "file": "WeChat.list",
       "prev_total": 101,
-      "curr_total": 101,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 95,
+      "added_count": 2,
+      "removed_count": 8,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "88418904b4c7",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,mmbiz.qpic.cn"
+        },
+        {
+          "id": "d7c6e4c3484e",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,wx.qlogo.cn"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "0f3870166843",
+          "source": "blackmatrix7 WeChat",
+          "rule": "DOMAIN-SUFFIX,map.qq.com"
+        },
+        {
+          "id": "178a77dbe9d2",
+          "source": "blackmatrix7 WeChat",
+          "rule": "IP-ASN,132203,no-resolve"
+        },
+        {
+          "id": "57c18cd172d4",
+          "source": "blackmatrix7 WeChat",
+          "rule": "DOMAIN-SUFFIX,qpic.cn"
+        },
+        {
+          "id": "58f514d5819b",
+          "source": "blackmatrix7 WeChat",
+          "rule": "DOMAIN-SUFFIX,tenpay.com"
+        },
+        {
+          "id": "9a03a6d9bb6f",
+          "source": "blackmatrix7 WeChat",
+          "rule": "DOMAIN-SUFFIX,lbs.gtimg.com"
+        },
+        {
+          "id": "c39fd4550951",
+          "source": "blackmatrix7 WeChat",
+          "rule": "DOMAIN-SUFFIX,qlogo.cn"
+        },
+        {
+          "id": "cc33162af915",
+          "source": "blackmatrix7 WeChat",
+          "rule": "USER-AGENT,WeChat*"
+        },
+        {
+          "id": "fed261f41a71",
+          "source": "blackmatrix7 WeChat",
+          "rule": "USER-AGENT,MicroMessenger*"
+        }
+      ],
       "source_changed_sample": []
     },
     {
