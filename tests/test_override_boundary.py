@@ -18,6 +18,14 @@ class PublicBoundaryPatternTests(unittest.TestCase):
             with self.subTest(text=text):
                 self.assertFalse(FORBIDDEN.search(text))
 
+    def test_private_prefix_must_begin_the_address(self):
+        for prefix in ('10.0.0.0/8', '127.0.0.0/8', '172.16.0.0/12', '192.168.0.0/16'):
+            with self.subTest(prefix=prefix):
+                self.assertIsNotNone(FORBIDDEN.search(f'IP-CIDR,{prefix},no-resolve'))
+        for prefix in ('52.10.0.0/15', '203.172.16.0/24', '8.192.168.0/24'):
+            with self.subTest(prefix=prefix):
+                self.assertIsNone(FORBIDDEN.search(f'IP-CIDR,{prefix},no-resolve'))
+
 
 if __name__ == '__main__':
     unittest.main()

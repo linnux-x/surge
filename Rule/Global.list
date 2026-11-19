@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-18 15:56:49 +0800
+# UPDATED: 2026-11-19 16:52:32 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24573
+# TOTAL: 24603
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -56,6 +56,38 @@ DOMAIN-SUFFIX,hacs.xyz
 DOMAIN,api.met.no
 DOMAIN-SUFFIX,datadoghq.com
 DOMAIN-SUFFIX,sentry.io
+
+# Shared cloud address space moved out of service-specific rules.
+IP-CIDR,35.192.0.0/12,no-resolve
+IP-CIDR,34.192.0.0/16,no-resolve
+IP-CIDR,34.208.0.0/12,no-resolve
+IP-CIDR,34.248.0.0/13,no-resolve
+IP-CIDR,35.160.0.0/13,no-resolve
+IP-CIDR,44.224.0.0/16,no-resolve
+IP-CIDR,44.230.0.0/16,no-resolve
+IP-CIDR,52.0.0.0/15,no-resolve
+IP-CIDR,52.10.0.0/15,no-resolve
+IP-CIDR,52.12.0.0/15,no-resolve
+IP-CIDR,52.22.0.0/16,no-resolve
+IP-CIDR,52.24.0.0/14,no-resolve
+IP-CIDR,52.32.0.0/14,no-resolve
+IP-CIDR,52.40.0.0/14,no-resolve
+IP-CIDR,52.48.0.0/14,no-resolve
+IP-CIDR,52.5.0.0/16,no-resolve
+IP-CIDR,52.54.0.0/16,no-resolve
+IP-CIDR,52.7.0.0/16,no-resolve
+IP-CIDR,52.72.0.0/16,no-resolve
+IP-CIDR,52.88.0.0/15,no-resolve
+IP-CIDR,54.148.0.0/15,no-resolve
+IP-CIDR,54.175.0.0/16,no-resolve
+IP-CIDR,54.186.0.0/15,no-resolve
+IP-CIDR,54.188.0.0/15,no-resolve
+IP-CIDR,54.213.0.0/16,no-resolve
+IP-CIDR,54.68.0.0/15,no-resolve
+IP-CIDR,54.74.0.0/15,no-resolve
+IP-CIDR,54.76.0.0/15,no-resolve
+IP-CIDR,54.85.0.0/16,no-resolve
+IP-CIDR,54.86.0.0/16,no-resolve
 
 # ======= blackmatrix7 Global ========
 DOMAIN,1password.drift.click

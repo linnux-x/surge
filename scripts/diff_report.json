@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-19T16:04:30.174052",
-  "total_added": 10,
-  "total_removed": 20,
+  "generated_at": "2026-11-19T16:52:32.737243",
+  "total_added": 30,
+  "total_removed": 59,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -72,127 +72,24 @@
     },
     {
       "file": "China.list",
-      "prev_total": 110644,
+      "prev_total": 110647,
       "curr_total": 110647,
-      "added_count": 3,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "57c18cd172d4",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,qpic.cn"
-        },
-        {
-          "id": "58f514d5819b",
-          "source": "blackmatrix7 ChinaMaxNoIP Domain",
-          "rule": "DOMAIN-SUFFIX,tenpay.com"
-        },
-        {
-          "id": "c39fd4550951",
-          "source": "SukkaW Domestic",
-          "rule": "DOMAIN-SUFFIX,qlogo.cn"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "ChinaMedia.list",
-      "prev_total": 384,
+      "prev_total": 377,
       "curr_total": 377,
-      "added_count": 5,
-      "removed_count": 12,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "05655084f59f",
-          "source": "Manual Rules",
-          "rule": "USER-AGENT,bili/*"
-        },
-        {
-          "id": "0613fa6923a4",
-          "source": "Manual Rules",
-          "rule": "USER-AGENT,bilibili/*"
-        },
-        {
-          "id": "15f2255265b0",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,tv.sohu.com"
-        },
-        {
-          "id": "600e8946b9e4",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,film.sohu.com"
-        },
-        {
-          "id": "c84bdce232db",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,tv.itc.cn"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "164bfc51712a",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "DOMAIN-SUFFIX,ai.xiaomi.com"
-        },
-        {
-          "id": "1f0cc8df5c73",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR,119.176.0.0/12,no-resolve"
-        },
-        {
-          "id": "3370db0c197b",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "DOMAIN-SUFFIX,sohu.com"
-        },
-        {
-          "id": "45fe301bc5f3",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR,119.29.29.29/32,no-resolve"
-        },
-        {
-          "id": "62ba15eb1ea0",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR,203.107.1.0/24,no-resolve"
-        },
-        {
-          "id": "8616538bd7b8",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,bili*"
-        },
-        {
-          "id": "91ee31d9657a",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR,106.11.0.0/16,no-resolve"
-        },
-        {
-          "id": "a81023748e98",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "DOMAIN-SUFFIX,itc.cn"
-        },
-        {
-          "id": "abe5068276c8",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,bili-inter*"
-        },
-        {
-          "id": "b10b1ff58a4c",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,*bili*"
-        },
-        {
-          "id": "bdd954ae4546",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "IP-CIDR,101.224.0.0/13,no-resolve"
-        },
-        {
-          "id": "c1364709d93b",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "DOMAIN-SUFFIX,sohu.com.cn"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -242,34 +139,337 @@
     {
       "file": "Game.list",
       "prev_total": 572,
-      "curr_total": 572,
+      "curr_total": 571,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 1,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "b25529c3b353",
+          "source": "blackmatrix7 Game",
+          "rule": "IP-CIDR,35.192.0.0/12,no-resolve"
+        }
+      ],
       "source_changed_sample": []
     },
     {
       "file": "Global.list",
       "prev_total": 24573,
-      "curr_total": 24573,
-      "added_count": 0,
+      "curr_total": 24603,
+      "added_count": 30,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "055606dbb40e",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,35.160.0.0/13,no-resolve"
+        },
+        {
+          "id": "2600179c8d50",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,44.224.0.0/16,no-resolve"
+        },
+        {
+          "id": "35da20afb652",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,52.24.0.0/14,no-resolve"
+        },
+        {
+          "id": "36037930c1e6",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,54.86.0.0/16,no-resolve"
+        },
+        {
+          "id": "46ced1bdc84d",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,52.88.0.0/15,no-resolve"
+        },
+        {
+          "id": "472391a19f8f",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,52.7.0.0/16,no-resolve"
+        },
+        {
+          "id": "51445668f420",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,52.0.0.0/15,no-resolve"
+        },
+        {
+          "id": "5736528d220e",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,34.208.0.0/12,no-resolve"
+        },
+        {
+          "id": "5d886892d914",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,54.188.0.0/15,no-resolve"
+        },
+        {
+          "id": "642691050e99",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,52.12.0.0/15,no-resolve"
+        },
+        {
+          "id": "671150735b98",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,54.68.0.0/15,no-resolve"
+        },
+        {
+          "id": "6ebdb466539e",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,44.230.0.0/16,no-resolve"
+        },
+        {
+          "id": "80a824700e7b",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,34.192.0.0/16,no-resolve"
+        },
+        {
+          "id": "9777e36916f7",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,54.85.0.0/16,no-resolve"
+        },
+        {
+          "id": "a01f0147efa3",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,52.72.0.0/16,no-resolve"
+        },
+        {
+          "id": "aafecc20b009",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,54.76.0.0/15,no-resolve"
+        },
+        {
+          "id": "b25529c3b353",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,35.192.0.0/12,no-resolve"
+        },
+        {
+          "id": "b2dc02a8cbb8",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,52.54.0.0/16,no-resolve"
+        },
+        {
+          "id": "b608596f32d6",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,52.40.0.0/14,no-resolve"
+        },
+        {
+          "id": "b9e627e6b40a",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,52.32.0.0/14,no-resolve"
+        },
+        {
+          "id": "bb7ff2760e2c",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,54.213.0.0/16,no-resolve"
+        },
+        {
+          "id": "d52192ef8b65",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,54.186.0.0/15,no-resolve"
+        },
+        {
+          "id": "db7f76e81374",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,54.74.0.0/15,no-resolve"
+        },
+        {
+          "id": "e0e3cd1b1b82",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,52.22.0.0/16,no-resolve"
+        },
+        {
+          "id": "e2bb4e1d79c2",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,52.48.0.0/14,no-resolve"
+        },
+        {
+          "id": "e43b97188e8f",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,54.148.0.0/15,no-resolve"
+        },
+        {
+          "id": "eb5afd986b3f",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,54.175.0.0/16,no-resolve"
+        },
+        {
+          "id": "f60bfb7ea19a",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,34.248.0.0/13,no-resolve"
+        },
+        {
+          "id": "fa17e65971cc",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,52.10.0.0/15,no-resolve"
+        },
+        {
+          "id": "fb88e4884fbc",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,52.5.0.0/16,no-resolve"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "GlobalMedia.list",
       "prev_total": 2317,
-      "curr_total": 2317,
+      "curr_total": 2288,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 29,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "055606dbb40e",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,35.160.0.0/13,no-resolve"
+        },
+        {
+          "id": "2600179c8d50",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,44.224.0.0/16,no-resolve"
+        },
+        {
+          "id": "35da20afb652",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,52.24.0.0/14,no-resolve"
+        },
+        {
+          "id": "36037930c1e6",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,54.86.0.0/16,no-resolve"
+        },
+        {
+          "id": "46ced1bdc84d",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,52.88.0.0/15,no-resolve"
+        },
+        {
+          "id": "472391a19f8f",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,52.7.0.0/16,no-resolve"
+        },
+        {
+          "id": "51445668f420",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,52.0.0.0/15,no-resolve"
+        },
+        {
+          "id": "5736528d220e",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,34.208.0.0/12,no-resolve"
+        },
+        {
+          "id": "5d886892d914",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,54.188.0.0/15,no-resolve"
+        },
+        {
+          "id": "642691050e99",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,52.12.0.0/15,no-resolve"
+        },
+        {
+          "id": "671150735b98",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,54.68.0.0/15,no-resolve"
+        },
+        {
+          "id": "6ebdb466539e",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,44.230.0.0/16,no-resolve"
+        },
+        {
+          "id": "80a824700e7b",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,34.192.0.0/16,no-resolve"
+        },
+        {
+          "id": "9777e36916f7",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,54.85.0.0/16,no-resolve"
+        },
+        {
+          "id": "a01f0147efa3",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,52.72.0.0/16,no-resolve"
+        },
+        {
+          "id": "aafecc20b009",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,54.76.0.0/15,no-resolve"
+        },
+        {
+          "id": "b2dc02a8cbb8",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,52.54.0.0/16,no-resolve"
+        },
+        {
+          "id": "b608596f32d6",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,52.40.0.0/14,no-resolve"
+        },
+        {
+          "id": "b9e627e6b40a",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,52.32.0.0/14,no-resolve"
+        },
+        {
+          "id": "bb7ff2760e2c",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,54.213.0.0/16,no-resolve"
+        },
+        {
+          "id": "d52192ef8b65",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,54.186.0.0/15,no-resolve"
+        },
+        {
+          "id": "db7f76e81374",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,54.74.0.0/15,no-resolve"
+        },
+        {
+          "id": "e0e3cd1b1b82",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,52.22.0.0/16,no-resolve"
+        },
+        {
+          "id": "e2bb4e1d79c2",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,52.48.0.0/14,no-resolve"
+        },
+        {
+          "id": "e43b97188e8f",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,54.148.0.0/15,no-resolve"
+        },
+        {
+          "id": "eb5afd986b3f",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,54.175.0.0/16,no-resolve"
+        },
+        {
+          "id": "f60bfb7ea19a",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,34.248.0.0/13,no-resolve"
+        },
+        {
+          "id": "fa17e65971cc",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,52.10.0.0/15,no-resolve"
+        },
+        {
+          "id": "fb88e4884fbc",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,52.5.0.0/16,no-resolve"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -330,12 +530,158 @@
     {
       "file": "Netflix.list",
       "prev_total": 1152,
-      "curr_total": 1152,
+      "curr_total": 1123,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 29,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "055606dbb40e",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,35.160.0.0/13,no-resolve"
+        },
+        {
+          "id": "2600179c8d50",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,44.224.0.0/16,no-resolve"
+        },
+        {
+          "id": "35da20afb652",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,52.24.0.0/14,no-resolve"
+        },
+        {
+          "id": "36037930c1e6",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,54.86.0.0/16,no-resolve"
+        },
+        {
+          "id": "46ced1bdc84d",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,52.88.0.0/15,no-resolve"
+        },
+        {
+          "id": "472391a19f8f",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,52.7.0.0/16,no-resolve"
+        },
+        {
+          "id": "51445668f420",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,52.0.0.0/15,no-resolve"
+        },
+        {
+          "id": "5736528d220e",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,34.208.0.0/12,no-resolve"
+        },
+        {
+          "id": "5d886892d914",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,54.188.0.0/15,no-resolve"
+        },
+        {
+          "id": "642691050e99",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,52.12.0.0/15,no-resolve"
+        },
+        {
+          "id": "671150735b98",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,54.68.0.0/15,no-resolve"
+        },
+        {
+          "id": "6ebdb466539e",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,44.230.0.0/16,no-resolve"
+        },
+        {
+          "id": "80a824700e7b",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,34.192.0.0/16,no-resolve"
+        },
+        {
+          "id": "9777e36916f7",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,54.85.0.0/16,no-resolve"
+        },
+        {
+          "id": "a01f0147efa3",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,52.72.0.0/16,no-resolve"
+        },
+        {
+          "id": "aafecc20b009",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,54.76.0.0/15,no-resolve"
+        },
+        {
+          "id": "b2dc02a8cbb8",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,52.54.0.0/16,no-resolve"
+        },
+        {
+          "id": "b608596f32d6",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,52.40.0.0/14,no-resolve"
+        },
+        {
+          "id": "b9e627e6b40a",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,52.32.0.0/14,no-resolve"
+        },
+        {
+          "id": "bb7ff2760e2c",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,54.213.0.0/16,no-resolve"
+        },
+        {
+          "id": "d52192ef8b65",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,54.186.0.0/15,no-resolve"
+        },
+        {
+          "id": "db7f76e81374",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,54.74.0.0/15,no-resolve"
+        },
+        {
+          "id": "e0e3cd1b1b82",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,52.22.0.0/16,no-resolve"
+        },
+        {
+          "id": "e2bb4e1d79c2",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,52.48.0.0/14,no-resolve"
+        },
+        {
+          "id": "e43b97188e8f",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,54.148.0.0/15,no-resolve"
+        },
+        {
+          "id": "eb5afd986b3f",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,54.175.0.0/16,no-resolve"
+        },
+        {
+          "id": "f60bfb7ea19a",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,34.248.0.0/13,no-resolve"
+        },
+        {
+          "id": "fa17e65971cc",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,52.10.0.0/15,no-resolve"
+        },
+        {
+          "id": "fb88e4884fbc",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,52.5.0.0/16,no-resolve"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -439,65 +785,13 @@
     },
     {
       "file": "WeChat.list",
-      "prev_total": 101,
+      "prev_total": 95,
       "curr_total": 95,
-      "added_count": 2,
-      "removed_count": 8,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "88418904b4c7",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,mmbiz.qpic.cn"
-        },
-        {
-          "id": "d7c6e4c3484e",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,wx.qlogo.cn"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "0f3870166843",
-          "source": "blackmatrix7 WeChat",
-          "rule": "DOMAIN-SUFFIX,map.qq.com"
-        },
-        {
-          "id": "178a77dbe9d2",
-          "source": "blackmatrix7 WeChat",
-          "rule": "IP-ASN,132203,no-resolve"
-        },
-        {
-          "id": "57c18cd172d4",
-          "source": "blackmatrix7 WeChat",
-          "rule": "DOMAIN-SUFFIX,qpic.cn"
-        },
-        {
-          "id": "58f514d5819b",
-          "source": "blackmatrix7 WeChat",
-          "rule": "DOMAIN-SUFFIX,tenpay.com"
-        },
-        {
-          "id": "9a03a6d9bb6f",
-          "source": "blackmatrix7 WeChat",
-          "rule": "DOMAIN-SUFFIX,lbs.gtimg.com"
-        },
-        {
-          "id": "c39fd4550951",
-          "source": "blackmatrix7 WeChat",
-          "rule": "DOMAIN-SUFFIX,qlogo.cn"
-        },
-        {
-          "id": "cc33162af915",
-          "source": "blackmatrix7 WeChat",
-          "rule": "USER-AGENT,WeChat*"
-        },
-        {
-          "id": "fed261f41a71",
-          "source": "blackmatrix7 WeChat",
-          "rule": "USER-AGENT,MicroMessenger*"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
