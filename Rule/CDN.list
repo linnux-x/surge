@@ -1,7 +1,7 @@
 # NAME: CDN
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-10-24 05:01:22 +0800
+# UPDATED: 2026-11-19 16:55:38 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 31
 
@@ -14,12 +14,15 @@ DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN-SUFFIX,unpkg.com
 DOMAIN-SUFFIX,esm.sh
 
+# Limit service matches to the domain boundary.
+DOMAIN,static.grammarly.com
+DOMAIN-WILDCARD,*-files.gitbook.io
+
 # ======= SukkaW CDN ========
 DOMAIN,cdn-msp.jmcomic.me
 DOMAIN,cdn-msp.18comic.org
 DOMAIN,cdn-msp.18comic.vip
 DOMAIN,cdn-msp.jmcomic-zzz.one
-DOMAIN-KEYWORD,-files.gitbook.io
 DOMAIN-KEYWORD,vod-adaptive.akamaized.net
 DOMAIN-KEYWORD,web-assets.zendesk
 DOMAIN-KEYWORD,-res.cloudinary.com
@@ -38,7 +41,6 @@ DOMAIN-KEYWORD,-assets.worldsex.com
 DOMAIN-KEYWORD,-thumbs.worldsex.com
 DOMAIN-KEYWORD,99avcdn
 DOMAIN-KEYWORD,-images.disco-api.com
-DOMAIN-KEYWORD,static.grammarly.com
 DOMAIN-WILDCARD,cdn.*.dmm.co.jp
 DOMAIN-WILDCARD,rum-ingest.*.signalfx.com
 DOMAIN-WILDCARD,cf-images.*.prod.boltdns.net

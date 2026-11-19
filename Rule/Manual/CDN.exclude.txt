@@ -85,3 +85,7 @@ DOMAIN-WILDCARD,video-thumbnail?.liaoningmovie.net
 DOMAIN-WILDCARD,video?-thumbnail?.fc2.com
 DOMAIN-WILDCARD,video?-thumbnail?.liaoningmovie.net
 DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
+
+# Limit service matches to the domain boundary.
+DOMAIN-KEYWORD,static.grammarly.com
+DOMAIN-KEYWORD,-files.gitbook.io

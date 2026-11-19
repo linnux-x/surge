@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-19T16:52:32.737243",
-  "total_added": 30,
-  "total_removed": 59,
+  "generated_at": "2026-11-19T16:56:55.723065",
+  "total_added": 2,
+  "total_removed": 4,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -63,11 +63,33 @@
       "file": "CDN.list",
       "prev_total": 31,
       "curr_total": 31,
-      "added_count": 0,
-      "removed_count": 0,
+      "added_count": 2,
+      "removed_count": 2,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "47856ae6d238",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-WILDCARD,*-files.gitbook.io"
+        },
+        {
+          "id": "845c46d5e6da",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,static.grammarly.com"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "55b9f2f6d17f",
+          "source": "SukkaW CDN",
+          "rule": "DOMAIN-KEYWORD,static.grammarly.com"
+        },
+        {
+          "id": "b826f325745a",
+          "source": "SukkaW CDN",
+          "rule": "DOMAIN-KEYWORD,-files.gitbook.io"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -138,338 +160,41 @@
     },
     {
       "file": "Game.list",
-      "prev_total": 572,
-      "curr_total": 571,
+      "prev_total": 571,
+      "curr_total": 570,
       "added_count": 0,
       "removed_count": 1,
       "source_changed_count": 0,
       "added_sample": [],
       "removed_sample": [
         {
-          "id": "b25529c3b353",
+          "id": "913b01180db0",
           "source": "blackmatrix7 Game",
-          "rule": "IP-CIDR,35.192.0.0/12,no-resolve"
+          "rule": "DOMAIN-KEYWORD,epicgames"
         }
       ],
       "source_changed_sample": []
     },
     {
       "file": "Global.list",
-      "prev_total": 24573,
+      "prev_total": 24603,
       "curr_total": 24603,
-      "added_count": 30,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "055606dbb40e",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,35.160.0.0/13,no-resolve"
-        },
-        {
-          "id": "2600179c8d50",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,44.224.0.0/16,no-resolve"
-        },
-        {
-          "id": "35da20afb652",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,52.24.0.0/14,no-resolve"
-        },
-        {
-          "id": "36037930c1e6",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,54.86.0.0/16,no-resolve"
-        },
-        {
-          "id": "46ced1bdc84d",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,52.88.0.0/15,no-resolve"
-        },
-        {
-          "id": "472391a19f8f",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,52.7.0.0/16,no-resolve"
-        },
-        {
-          "id": "51445668f420",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,52.0.0.0/15,no-resolve"
-        },
-        {
-          "id": "5736528d220e",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,34.208.0.0/12,no-resolve"
-        },
-        {
-          "id": "5d886892d914",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,54.188.0.0/15,no-resolve"
-        },
-        {
-          "id": "642691050e99",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,52.12.0.0/15,no-resolve"
-        },
-        {
-          "id": "671150735b98",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,54.68.0.0/15,no-resolve"
-        },
-        {
-          "id": "6ebdb466539e",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,44.230.0.0/16,no-resolve"
-        },
-        {
-          "id": "80a824700e7b",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,34.192.0.0/16,no-resolve"
-        },
-        {
-          "id": "9777e36916f7",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,54.85.0.0/16,no-resolve"
-        },
-        {
-          "id": "a01f0147efa3",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,52.72.0.0/16,no-resolve"
-        },
-        {
-          "id": "aafecc20b009",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,54.76.0.0/15,no-resolve"
-        },
-        {
-          "id": "b25529c3b353",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,35.192.0.0/12,no-resolve"
-        },
-        {
-          "id": "b2dc02a8cbb8",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,52.54.0.0/16,no-resolve"
-        },
-        {
-          "id": "b608596f32d6",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,52.40.0.0/14,no-resolve"
-        },
-        {
-          "id": "b9e627e6b40a",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,52.32.0.0/14,no-resolve"
-        },
-        {
-          "id": "bb7ff2760e2c",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,54.213.0.0/16,no-resolve"
-        },
-        {
-          "id": "d52192ef8b65",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,54.186.0.0/15,no-resolve"
-        },
-        {
-          "id": "db7f76e81374",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,54.74.0.0/15,no-resolve"
-        },
-        {
-          "id": "e0e3cd1b1b82",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,52.22.0.0/16,no-resolve"
-        },
-        {
-          "id": "e2bb4e1d79c2",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,52.48.0.0/14,no-resolve"
-        },
-        {
-          "id": "e43b97188e8f",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,54.148.0.0/15,no-resolve"
-        },
-        {
-          "id": "eb5afd986b3f",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,54.175.0.0/16,no-resolve"
-        },
-        {
-          "id": "f60bfb7ea19a",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,34.248.0.0/13,no-resolve"
-        },
-        {
-          "id": "fa17e65971cc",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,52.10.0.0/15,no-resolve"
-        },
-        {
-          "id": "fb88e4884fbc",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,52.5.0.0/16,no-resolve"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "GlobalMedia.list",
-      "prev_total": 2317,
+      "prev_total": 2288,
       "curr_total": 2288,
       "added_count": 0,
-      "removed_count": 29,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "055606dbb40e",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,35.160.0.0/13,no-resolve"
-        },
-        {
-          "id": "2600179c8d50",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,44.224.0.0/16,no-resolve"
-        },
-        {
-          "id": "35da20afb652",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,52.24.0.0/14,no-resolve"
-        },
-        {
-          "id": "36037930c1e6",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,54.86.0.0/16,no-resolve"
-        },
-        {
-          "id": "46ced1bdc84d",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,52.88.0.0/15,no-resolve"
-        },
-        {
-          "id": "472391a19f8f",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,52.7.0.0/16,no-resolve"
-        },
-        {
-          "id": "51445668f420",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,52.0.0.0/15,no-resolve"
-        },
-        {
-          "id": "5736528d220e",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,34.208.0.0/12,no-resolve"
-        },
-        {
-          "id": "5d886892d914",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,54.188.0.0/15,no-resolve"
-        },
-        {
-          "id": "642691050e99",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,52.12.0.0/15,no-resolve"
-        },
-        {
-          "id": "671150735b98",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,54.68.0.0/15,no-resolve"
-        },
-        {
-          "id": "6ebdb466539e",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,44.230.0.0/16,no-resolve"
-        },
-        {
-          "id": "80a824700e7b",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,34.192.0.0/16,no-resolve"
-        },
-        {
-          "id": "9777e36916f7",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,54.85.0.0/16,no-resolve"
-        },
-        {
-          "id": "a01f0147efa3",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,52.72.0.0/16,no-resolve"
-        },
-        {
-          "id": "aafecc20b009",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,54.76.0.0/15,no-resolve"
-        },
-        {
-          "id": "b2dc02a8cbb8",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,52.54.0.0/16,no-resolve"
-        },
-        {
-          "id": "b608596f32d6",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,52.40.0.0/14,no-resolve"
-        },
-        {
-          "id": "b9e627e6b40a",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,52.32.0.0/14,no-resolve"
-        },
-        {
-          "id": "bb7ff2760e2c",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,54.213.0.0/16,no-resolve"
-        },
-        {
-          "id": "d52192ef8b65",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,54.186.0.0/15,no-resolve"
-        },
-        {
-          "id": "db7f76e81374",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,54.74.0.0/15,no-resolve"
-        },
-        {
-          "id": "e0e3cd1b1b82",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,52.22.0.0/16,no-resolve"
-        },
-        {
-          "id": "e2bb4e1d79c2",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,52.48.0.0/14,no-resolve"
-        },
-        {
-          "id": "e43b97188e8f",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,54.148.0.0/15,no-resolve"
-        },
-        {
-          "id": "eb5afd986b3f",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,54.175.0.0/16,no-resolve"
-        },
-        {
-          "id": "f60bfb7ea19a",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,34.248.0.0/13,no-resolve"
-        },
-        {
-          "id": "fa17e65971cc",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,52.10.0.0/15,no-resolve"
-        },
-        {
-          "id": "fb88e4884fbc",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,52.5.0.0/16,no-resolve"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -529,159 +254,13 @@
     },
     {
       "file": "Netflix.list",
-      "prev_total": 1152,
+      "prev_total": 1123,
       "curr_total": 1123,
       "added_count": 0,
-      "removed_count": 29,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "055606dbb40e",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,35.160.0.0/13,no-resolve"
-        },
-        {
-          "id": "2600179c8d50",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,44.224.0.0/16,no-resolve"
-        },
-        {
-          "id": "35da20afb652",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,52.24.0.0/14,no-resolve"
-        },
-        {
-          "id": "36037930c1e6",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,54.86.0.0/16,no-resolve"
-        },
-        {
-          "id": "46ced1bdc84d",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,52.88.0.0/15,no-resolve"
-        },
-        {
-          "id": "472391a19f8f",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,52.7.0.0/16,no-resolve"
-        },
-        {
-          "id": "51445668f420",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,52.0.0.0/15,no-resolve"
-        },
-        {
-          "id": "5736528d220e",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,34.208.0.0/12,no-resolve"
-        },
-        {
-          "id": "5d886892d914",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,54.188.0.0/15,no-resolve"
-        },
-        {
-          "id": "642691050e99",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,52.12.0.0/15,no-resolve"
-        },
-        {
-          "id": "671150735b98",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,54.68.0.0/15,no-resolve"
-        },
-        {
-          "id": "6ebdb466539e",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,44.230.0.0/16,no-resolve"
-        },
-        {
-          "id": "80a824700e7b",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,34.192.0.0/16,no-resolve"
-        },
-        {
-          "id": "9777e36916f7",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,54.85.0.0/16,no-resolve"
-        },
-        {
-          "id": "a01f0147efa3",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,52.72.0.0/16,no-resolve"
-        },
-        {
-          "id": "aafecc20b009",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,54.76.0.0/15,no-resolve"
-        },
-        {
-          "id": "b2dc02a8cbb8",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,52.54.0.0/16,no-resolve"
-        },
-        {
-          "id": "b608596f32d6",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,52.40.0.0/14,no-resolve"
-        },
-        {
-          "id": "b9e627e6b40a",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,52.32.0.0/14,no-resolve"
-        },
-        {
-          "id": "bb7ff2760e2c",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,54.213.0.0/16,no-resolve"
-        },
-        {
-          "id": "d52192ef8b65",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,54.186.0.0/15,no-resolve"
-        },
-        {
-          "id": "db7f76e81374",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,54.74.0.0/15,no-resolve"
-        },
-        {
-          "id": "e0e3cd1b1b82",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,52.22.0.0/16,no-resolve"
-        },
-        {
-          "id": "e2bb4e1d79c2",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,52.48.0.0/14,no-resolve"
-        },
-        {
-          "id": "e43b97188e8f",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,54.148.0.0/15,no-resolve"
-        },
-        {
-          "id": "eb5afd986b3f",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,54.175.0.0/16,no-resolve"
-        },
-        {
-          "id": "f60bfb7ea19a",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,34.248.0.0/13,no-resolve"
-        },
-        {
-          "id": "fa17e65971cc",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,52.10.0.0/15,no-resolve"
-        },
-        {
-          "id": "fb88e4884fbc",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,52.5.0.0/16,no-resolve"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -797,12 +376,18 @@
     {
       "file": "YouTube.list",
       "prev_total": 188,
-      "curr_total": 188,
+      "curr_total": 187,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 1,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "215f8b6d6410",
+          "source": "blackmatrix7 YouTube",
+          "rule": "DOMAIN-KEYWORD,youtube"
+        }
+      ],
       "source_changed_sample": []
     }
   ]

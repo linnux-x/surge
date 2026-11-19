@@ -2339,6 +2339,76 @@
         "54.86.0.1",
         "netflix.com"
       ]
+    },
+    {
+      "source_file": "CDN.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,static.grammarly.com",
+      "reason": "仅匹配明确的 Grammarly CDN 主机",
+      "destination": "CDN.list → CDN",
+      "route_tests": [
+        "static.grammarly.com",
+        "static.grammarly.com.example"
+      ]
+    },
+    {
+      "source_file": "CDN.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,-files.gitbook.io",
+      "reason": "将 GitBook CDN 匹配限制在真实域后缀",
+      "destination": "CDN.list → CDN",
+      "route_tests": [
+        "docs-files.gitbook.io",
+        "docs-files.gitbook.io.example"
+      ]
+    },
+    {
+      "source_file": "Game.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,epicgames",
+      "reason": "Epic 专用域已覆盖，放过只包含关键词的无关域名",
+      "destination": "官方域 → Game.list，其他域按自身规则",
+      "route_tests": [
+        "store.epicgames.com",
+        "not-epicgames.example"
+      ]
+    },
+    {
+      "source_file": "YouTube.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,youtube",
+      "reason": "已有 YouTube 官方域规则，放过只包含关键词的无关域名",
+      "destination": "官方域 → YouTube.list，其他域按自身规则",
+      "route_tests": [
+        "youtube-nocookie.com",
+        "unrelated-youtube.example"
+      ]
+    },
+    {
+      "source_file": "CDN.txt",
+      "rule": "DOMAIN,static.grammarly.com",
+      "reason": "保留 Grammarly 专用静态资源主机",
+      "destination": "CDN.list → CDN",
+      "route_tests": [
+        "static.grammarly.com",
+        "static.grammarly.com.example"
+      ]
+    },
+    {
+      "source_file": "CDN.txt",
+      "rule": "DOMAIN-WILDCARD,*-files.gitbook.io",
+      "reason": "保留以 -files.gitbook.io 结尾的 GitBook CDN 主机",
+      "destination": "CDN.list → CDN",
+      "route_tests": [
+        "docs-files.gitbook.io",
+        "docs-files.gitbook.io.example"
+      ]
+    },
+    {
+      "source_file": "Global.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,youtube",
+      "reason": "移除 YouTube 宽关键词后防止上游副本提前抢占国内或其他专属域名",
+      "destination": "按目标域名原有规则匹配",
+      "route_tests": [
+        "youtube-nocookie.com",
+        "unrelated-youtube.example"
+      ]
     }
   ]
 }
