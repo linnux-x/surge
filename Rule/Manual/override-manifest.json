@@ -1451,6 +1451,894 @@
       "route_tests": [
         "bilibili.com"
       ]
+    },
+    {
+      "source_file": "Game.exclude.txt",
+      "rule": "IP-CIDR,35.192.0.0/12,no-resolve",
+      "reason": "Google Cloud 通用客户网段改归 Global，保留具体游戏域名",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "35.193.0.1"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,35.192.0.0/12,no-resolve",
+      "reason": "Google Cloud 通用客户网段改归 Global，保留具体游戏域名",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "35.193.0.1"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,34.192.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "34.192.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,34.192.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "34.192.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,34.192.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "34.192.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,34.208.0.0/12,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "34.208.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,34.208.0.0/12,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "34.208.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,34.208.0.0/12,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "34.208.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,34.248.0.0/13,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "34.248.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,34.248.0.0/13,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "34.248.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,34.248.0.0/13,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "34.248.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,35.160.0.0/13,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "35.160.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,35.160.0.0/13,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "35.160.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,35.160.0.0/13,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "35.160.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,44.224.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "44.224.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,44.224.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "44.224.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,44.224.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "44.224.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,44.230.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "44.230.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,44.230.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "44.230.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,44.230.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "44.230.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,52.0.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.0.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,52.0.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.0.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,52.0.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.0.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,52.10.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.10.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,52.10.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.10.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,52.10.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.10.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,52.12.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.12.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,52.12.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.12.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,52.12.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.12.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,52.22.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.22.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,52.22.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.22.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,52.22.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.22.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,52.24.0.0/14,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.24.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,52.24.0.0/14,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.24.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,52.24.0.0/14,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.24.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,52.32.0.0/14,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.32.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,52.32.0.0/14,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.32.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,52.32.0.0/14,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.32.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,52.40.0.0/14,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.40.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,52.40.0.0/14,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.40.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,52.40.0.0/14,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.40.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,52.48.0.0/14,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.48.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,52.48.0.0/14,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.48.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,52.48.0.0/14,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.48.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,52.5.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.5.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,52.5.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.5.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,52.5.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.5.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,52.54.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.54.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,52.54.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.54.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,52.54.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.54.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,52.7.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.7.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,52.7.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.7.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,52.7.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.7.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,52.72.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.72.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,52.72.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.72.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,52.72.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.72.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,52.88.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.88.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,52.88.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.88.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,52.88.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "52.88.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,54.148.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.148.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,54.148.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.148.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,54.148.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.148.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,54.175.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.175.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,54.175.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.175.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,54.175.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.175.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,54.186.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.186.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,54.186.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.186.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,54.186.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.186.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,54.188.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.188.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,54.188.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.188.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,54.188.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.188.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,54.213.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.213.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,54.213.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.213.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,54.213.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.213.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,54.68.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.68.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,54.68.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.68.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,54.68.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.68.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,54.74.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.74.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,54.74.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.74.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,54.74.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.74.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,54.76.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.76.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,54.76.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.76.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,54.76.0.0/15,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.76.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,54.85.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.85.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,54.85.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.85.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,54.85.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.85.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,54.86.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.86.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,54.86.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.86.0.1",
+        "netflix.com"
+      ]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,54.86.0.0/16,no-resolve",
+      "reason": "AWS EC2 通用网段改归 Global，保留具体媒体条目和早期专属策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "54.86.0.1",
+        "netflix.com"
+      ]
     }
   ]
 }

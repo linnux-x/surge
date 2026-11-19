@@ -45,3 +45,6 @@ DOMAIN-SUFFIX,steampipe-partner.akamaized.net
 DOMAIN-SUFFIX,steampipe.akamaized.net
 DOMAIN-SUFFIX,ubisoft-orbit-savegames.s3.amazonaws.com
 DOMAIN-SUFFIX,ubisoft-uplay-savegames.s3.amazonaws.com
+
+# Shared Google Cloud customer address space.
+IP-CIDR,35.192.0.0/12,no-resolve

@@ -455,3 +455,33 @@ googleads.g.doubleclick-cn.net,AdBlock.list,REJECT,Google 中国广告投放
 aweme.snssdk.com,China.list,DIRECT,抖音 API（国内 CDN），不再随 TikTok 上游走代理
 pagead2.googlesyndication.com,AdBlock.list,REJECT,Google 广告投放
 d.applovin.com,AdBlock.list,REJECT,AppLovin 手游广告聚合
+35.193.0.1,Global.list,Global,Google Cloud 通用客户地址
+34.192.0.1,Global.list,Global,共享 AWS EC2 网段样本
+34.208.0.1,Global.list,Global,共享 AWS EC2 网段样本
+34.248.0.1,Global.list,Global,共享 AWS EC2 网段样本
+35.160.0.1,Global.list,Global,共享 AWS EC2 网段样本
+44.224.0.1,Global.list,Global,共享 AWS EC2 网段样本
+44.230.0.1,Global.list,Global,共享 AWS EC2 网段样本
+52.0.0.1,Global.list,Global,共享 AWS EC2 网段样本
+52.10.0.1,Global.list,Global,共享 AWS EC2 网段样本
+52.12.0.1,Global.list,Global,共享 AWS EC2 网段样本
+52.22.0.1,Global.list,Global,共享 AWS EC2 网段样本
+52.24.0.1,Global.list,Global,共享 AWS EC2 网段样本
+52.32.0.1,Global.list,Global,共享 AWS EC2 网段样本
+52.40.0.1,Global.list,Global,共享 AWS EC2 网段样本
+52.48.0.1,Global.list,Global,共享 AWS EC2 网段样本
+52.5.0.1,Global.list,Global,共享 AWS EC2 网段样本
+52.54.0.1,Global.list,Global,共享 AWS EC2 网段样本
+52.7.0.1,Global.list,Global,共享 AWS EC2 网段样本
+52.72.0.1,Global.list,Global,共享 AWS EC2 网段样本
+52.88.0.1,Global.list,Global,共享 AWS EC2 网段样本
+54.148.0.1,Global.list,Global,共享 AWS EC2 网段样本
+54.175.0.1,Global.list,Global,共享 AWS EC2 网段样本
+54.186.0.1,Global.list,Global,共享 AWS EC2 网段样本
+54.188.0.1,Global.list,Global,共享 AWS EC2 网段样本
+54.213.0.1,Global.list,Global,共享 AWS EC2 网段样本
+54.68.0.1,Global.list,Global,共享 AWS EC2 网段样本
+54.74.0.1,Global.list,Global,共享 AWS EC2 网段样本
+54.76.0.1,Global.list,Global,共享 AWS EC2 网段样本
+54.85.0.1,Global.list,Global,共享 AWS EC2 网段样本
+54.86.0.1,Global.list,Global,共享 AWS EC2 网段样本
