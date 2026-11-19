@@ -1,9 +1,9 @@
 # NAME: YouTube
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-09-04 05:01:18 +0800
+# UPDATED: 2026-11-19 16:55:38 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 188
+# TOTAL: 187
 
 # ======= blackmatrix7 YouTube ========
 DOMAIN-SUFFIX,ggpht.cn
@@ -183,7 +183,6 @@ DOMAIN-SUFFIX,youtubekids.com
 DOMAIN-SUFFIX,youtubemobilesupport.com
 DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
-DOMAIN-KEYWORD,youtube
 IP-CIDR,172.110.32.0/21,no-resolve
 IP-CIDR,216.73.80.0/20,no-resolve
 IP-CIDR6,2620:120:e000::/40,no-resolve

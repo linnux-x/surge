@@ -5,3 +5,7 @@ DOMAIN,release-assets.githubusercontent.com
 DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN-SUFFIX,unpkg.com
 DOMAIN-SUFFIX,esm.sh
+
+# Limit service matches to the domain boundary.
+DOMAIN,static.grammarly.com
+DOMAIN-WILDCARD,*-files.gitbook.io

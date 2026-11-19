@@ -485,3 +485,11 @@ d.applovin.com,AdBlock.list,REJECT,AppLovin 手游广告聚合
 54.76.0.1,Global.list,Global,共享 AWS EC2 网段样本
 54.85.0.1,Global.list,Global,共享 AWS EC2 网段样本
 54.86.0.1,Global.list,Global,共享 AWS EC2 网段样本
+static.grammarly.com,CDN.list,CDN,Grammarly 静态资源原端点
+static.grammarly.com.example,FINAL,Global,无关后缀不能命中 Grammarly CDN
+docs-files.gitbook.io,CDN.list,CDN,GitBook CDN 的真实域名结构
+docs-files.gitbook.io.example,FINAL,Global,无关后缀不能命中 GitBook CDN
+store.epicgames.com,Game.list,Game,Epic 商店的官方域名
+not-epicgames.example,FINAL,Global,无关域名不能命中 Epic 关键词
+youtube-nocookie.com,YouTube.list,YouTube,YouTube 隐私增强嵌入域
+unrelated-youtube.example,FINAL,Global,无关域名不能命中 YouTube 关键词
