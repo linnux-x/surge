@@ -1,33 +1,33 @@
 # Surge 规则生成收据
 
 - 规则文件：32
-- 规则总数：157536
+- 规则总数：157526
 - manifest 文件：32
 
 ## 差异摘要
 
-- 新增：118
-- 删除：133
+- 新增：10
+- 删除：20
 - 来源迁移：0
 
 ## 规则类型
 
-- DOMAIN: 3672
+- DOMAIN: 3675
 - DOMAIN-KEYWORD: 87
-- DOMAIN-SUFFIX: 141531
+- DOMAIN-SUFFIX: 141527
 - DOMAIN-WILDCARD: 4
-- IP-ASN: 8
-- IP-CIDR: 8493
+- IP-ASN: 7
+- IP-CIDR: 8488
 - IP-CIDR6: 3507
 - PROCESS-NAME: 57
 - URL-REGEX: 5
-- USER-AGENT: 172
+- USER-AGENT: 169
 
 ## 来源归属
 
 - ConnersHua AI: 12
 - Loyalsoldier China CIDR: 9640
-- Manual Rules: 339
+- Manual Rules: 346
 - Rabbit-Spec AIGC: 26
 - Rabbit-Spec China: 373
 - RocM301 Apple-AI: 16
@@ -35,7 +35,7 @@
 - SukkaW Apple CDN: 158
 - SukkaW Apple CN: 5
 - SukkaW CDN: 27
-- SukkaW Domestic: 840
+- SukkaW Domestic: 842
 - SukkaW Download: 1605
 - SukkaW Game Download: 52
 - SukkaW Microsoft CDN: 52
@@ -49,8 +49,8 @@
 - SukkaW Stream US: 51
 - Telegram Official CIDR: 11
 - blackmatrix7 Apple: 1546
-- blackmatrix7 ChinaMaxNoIP Domain: 109407
-- blackmatrix7 ChinaMedia: 384
+- blackmatrix7 ChinaMaxNoIP Domain: 109408
+- blackmatrix7 ChinaMedia: 372
 - blackmatrix7 Discord: 29
 - blackmatrix7 Disney: 166
 - blackmatrix7 Facebook: 570
@@ -66,6 +66,6 @@
 - blackmatrix7 Telegram: 38
 - blackmatrix7 TikTok: 32
 - blackmatrix7 Twitter: 32
-- blackmatrix7 WeChat: 99
+- blackmatrix7 WeChat: 91
 - blackmatrix7 YouTube: 188
 - spiritLHLS Speedtest.cn China: 52

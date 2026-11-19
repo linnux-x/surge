@@ -1,0 +1,11 @@
+# Route shared Tencent infrastructure by destination.
+IP-ASN,132203,no-resolve
+DOMAIN-SUFFIX,lbs.gtimg.com
+DOMAIN-SUFFIX,map.qq.com
+DOMAIN-SUFFIX,qlogo.cn
+DOMAIN-SUFFIX,qpic.cn
+DOMAIN-SUFFIX,tenpay.com
+
+# Embedded browsers can send these headers to unrelated sites.
+USER-AGENT,MicroMessenger*
+USER-AGENT,WeChat*

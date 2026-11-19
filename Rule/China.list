@@ -1,9 +1,9 @@
 # NAME: China
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-18 16:26:30 +0800
+# UPDATED: 2026-11-19 16:04:29 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 110644
+# TOTAL: 110647
 
 # ======= Manual Rules ========
 # China game download domains — route DIRECT via China policy
@@ -128,6 +128,7 @@ DOMAIN-SUFFIX,okr.com
 DOMAIN-SUFFIX,oppo.cn
 DOMAIN-SUFFIX,qbox.me
 DOMAIN-SUFFIX,qcc.com
+DOMAIN-SUFFIX,qpic.cn
 DOMAIN-SUFFIX,sina.cn
 DOMAIN-SUFFIX,t3go.cn
 DOMAIN-SUFFIX,tool.lu
@@ -205,6 +206,7 @@ DOMAIN-SUFFIX,psbc.com
 DOMAIN-SUFFIX,qiku.com
 DOMAIN-SUFFIX,qiyi.com
 DOMAIN-SUFFIX,qiyou.cn
+DOMAIN-SUFFIX,qlogo.cn
 DOMAIN-SUFFIX,quark.cn
 DOMAIN-SUFFIX,qyer.com
 DOMAIN-SUFFIX,sina.com
@@ -86985,6 +86987,7 @@ DOMAIN-SUFFIX,tenorforman.com
 DOMAIN-SUFFIX,tenorshare.com
 DOMAIN-SUFFIX,tenorshare.tw
 DOMAIN-SUFFIX,tenovatech.com
+DOMAIN-SUFFIX,tenpay.com
 DOMAIN-SUFFIX,tenqent.com
 DOMAIN-SUFFIX,tenrays.com
 DOMAIN-SUFFIX,tensafe.com

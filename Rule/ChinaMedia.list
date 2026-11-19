@@ -1,9 +1,19 @@
 # NAME: ChinaMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-09-04 05:00:42 +0800
+# UPDATED: 2026-11-19 16:04:29 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 384
+# TOTAL: 377
+
+# ======= Manual Rules ========
+# Preserve Sohu Video when the shared parent domains fall through to China.
+DOMAIN-SUFFIX,tv.sohu.com
+DOMAIN-SUFFIX,tv.itc.cn
+DOMAIN,film.sohu.com
+
+# Lowercase domestic client prefixes, with an explicit product separator.
+USER-AGENT,bilibili/*
+USER-AGENT,bili/*
 
 # ======= blackmatrix7 ChinaMedia ========
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com
@@ -184,7 +194,6 @@ DOMAIN-SUFFIX,acfun.com
 DOMAIN-SUFFIX,acfun.tv
 DOMAIN-SUFFIX,ads1.lfengmobile.com
 DOMAIN-SUFFIX,afp.pplive.com
-DOMAIN-SUFFIX,ai.xiaomi.com
 DOMAIN-SUFFIX,aianno.cn
 DOMAIN-SUFFIX,aianno.com
 DOMAIN-SUFFIX,aiqiyicloud-mgmt.com
@@ -226,7 +235,6 @@ DOMAIN-SUFFIX,iqiyi.com
 DOMAIN-SUFFIX,iqiyiedge.com
 DOMAIN-SUFFIX,iqiyiedge.net
 DOMAIN-SUFFIX,iqiyipic.com
-DOMAIN-SUFFIX,itc.cn
 DOMAIN-SUFFIX,ixigua.com
 DOMAIN-SUFFIX,jiangbing.cn
 DOMAIN-SUFFIX,jstucdn.com
@@ -274,8 +282,6 @@ DOMAIN-SUFFIX,qy.net
 DOMAIN-SUFFIX,s.zampdsp.com
 DOMAIN-SUFFIX,sk2cdsnw.cn
 DOMAIN-SUFFIX,sogoodtech1.cn
-DOMAIN-SUFFIX,sohu.com
-DOMAIN-SUFFIX,sohu.com.cn
 DOMAIN-SUFFIX,soku.com
 DOMAIN-SUFFIX,suike.cn
 DOMAIN-SUFFIX,taihe.com
@@ -312,11 +318,9 @@ DOMAIN-SUFFIX,zmz2019.com
 DOMAIN-SUFFIX,zmzapi.com
 DOMAIN-SUFFIX,zmzapi.net
 DOMAIN-SUFFIX,zmzfile.com
-IP-CIDR,101.224.0.0/13,no-resolve
 IP-CIDR,101.71.154.241/32,no-resolve
 IP-CIDR,103.126.92.132/31,no-resolve
 IP-CIDR,103.44.56.0/22,no-resolve
-IP-CIDR,106.11.0.0/16,no-resolve
 IP-CIDR,106.75.74.76/32,no-resolve
 IP-CIDR,111.206.25.147/32,no-resolve
 IP-CIDR,112.13.119.17/32,no-resolve
@@ -326,8 +330,6 @@ IP-CIDR,115.236.121.1/32,no-resolve
 IP-CIDR,118.24.63.156/32,no-resolve
 IP-CIDR,118.26.120.0/24,no-resolve
 IP-CIDR,118.26.32.0/23,no-resolve
-IP-CIDR,119.176.0.0/12,no-resolve
-IP-CIDR,119.29.29.29/32,no-resolve
 IP-CIDR,119.3.238.64/32,no-resolve
 IP-CIDR,120.92.108.182/32,no-resolve
 IP-CIDR,120.92.113.99/32,no-resolve
@@ -337,7 +339,6 @@ IP-CIDR,134.175.207.130/32,no-resolve
 IP-CIDR,150.116.92.250/32,no-resolve
 IP-CIDR,164.52.76.18/32,no-resolve
 IP-CIDR,193.112.159.225/32,no-resolve
-IP-CIDR,203.107.1.0/24,no-resolve
 IP-CIDR,223.252.199.66/31,no-resolve
 IP-CIDR,23.211.15.99/32,no-resolve
 IP-CIDR,23.40.241.251/32,no-resolve
@@ -353,10 +354,7 @@ IP-CIDR,59.111.160.197/32,no-resolve
 IP-CIDR,59.111.181.35/32,no-resolve
 IP-CIDR,59.111.181.38/32,no-resolve
 IP-CIDR,59.111.181.60/32,no-resolve
-USER-AGENT,*bili*
 USER-AGENT,Bilibili*
-USER-AGENT,bili*
-USER-AGENT,bili-inter*
 USER-AGENT,%E4%BC%98%E9%85%B7*
 USER-AGENT,%E5%92%AA%E5%92%95%E8%A7%86%E9%A2%91
 USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90
