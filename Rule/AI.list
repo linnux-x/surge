@@ -1,9 +1,9 @@
 # NAME: AI
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-18 15:00:40 +0800
+# UPDATED: 2026-11-21 05:00:16 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 126
+# TOTAL: 127
 
 # ======= Manual Rules ========
 
@@ -109,6 +109,7 @@ DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,jasper.ai
 DOMAIN-SUFFIX,openart.ai
 DOMAIN-SUFFIX,chatgpt.com
+DOMAIN,claude.site
 DOMAIN-SUFFIX,clipdrop.co
 DOMAIN-SUFFIX,chatgpt.site
 DOMAIN-SUFFIX,oaistatic.com
