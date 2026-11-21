@@ -28,3 +28,7 @@ DOMAIN,update.windsurf.com
 
 # ASUS Armoury Crate / Live Update packages (CloudFront, GB-sized); 2026-11-08 monitoring saw 1.47GB via Global
 DOMAIN,liveupdate01s.asus.com
+
+# PlayStation console firmware distribution and update checks.
+DOMAIN-SUFFIX,ps4.update.playstation.net
+DOMAIN-SUFFIX,ps5.update.playstation.net

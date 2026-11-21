@@ -126,3 +126,10 @@ DOMAIN-KEYWORD,microsoft
 
 # Shared global Azure hosting does not imply mainland placement.
 DOMAIN-SUFFIX,windows.net
+
+# Steam connection managers and network checks share the Game route with Valve IPs.
+DOMAIN-SUFFIX,steamserver.net
+
+# PlayStation firmware checks are handled by Download.
+DOMAIN-SUFFIX,dcn01.ps4.update.playstation.net
+DOMAIN-SUFFIX,dcn01.ps5.update.playstation.net

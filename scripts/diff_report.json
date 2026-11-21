@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-21T19:32:47.767687",
-  "total_added": 47,
-  "total_removed": 34,
-  "total_source_changed": 2,
+  "generated_at": "2026-11-21T19:50:13.102081",
+  "total_added": 25,
+  "total_removed": 47,
+  "total_source_changed": 1,
   "diffs": [
     {
       "file": "AI.list",
@@ -83,134 +83,33 @@
     },
     {
       "file": "China.list",
-      "prev_total": 110648,
-      "curr_total": 110668,
-      "added_count": 21,
-      "removed_count": 1,
-      "source_changed_count": 2,
-      "added_sample": [
-        {
-          "id": "00e1b64449ab",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,sovcloud-mx.cn"
-        },
-        {
-          "id": "01ece7944d66",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,sovcloud-static.cn"
-        },
-        {
-          "id": "04a23b5f2cbd",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,sovcloud-usercontent.cn"
-        },
-        {
-          "id": "04f028cf0b56",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,sovcloud.cn"
-        },
-        {
-          "id": "15cc7e632177",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,msauthimages.cn"
-        },
-        {
-          "id": "1dee34f65686",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,windowsazure.cn"
-        },
-        {
-          "id": "3c7ad76f6a48",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,chinacloudapi.cn"
-        },
-        {
-          "id": "4dd9d5abcaa5",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,partner.office365.cn"
-        },
-        {
-          "id": "53ed8e83ec62",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,collector.azure.cn"
-        },
-        {
-          "id": "6c5bd2109452",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,attachments.office365-net.cn"
-        },
-        {
-          "id": "8bf2410f522f",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,msftauthimages.cn"
-        },
-        {
-          "id": "a2d5dd519d82",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,auth.microsoft.cn"
-        },
-        {
-          "id": "a96c8d575eb3",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,msftauth.cn"
-        },
-        {
-          "id": "b09ec36eb75f",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,aadrm.cn"
-        },
-        {
-          "id": "b3d96b7698a9",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,partner.microsoftonline-p.cn"
-        },
-        {
-          "id": "bb81d8ba6c1a",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,azure-mobile.cn"
-        },
-        {
-          "id": "bd56664ae1b2",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,msauth.cn"
-        },
-        {
-          "id": "d53d610886f2",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,microsoftonline.cn"
-        },
-        {
-          "id": "d5a33127236b",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,onmschina.cn"
-        },
-        {
-          "id": "dd810d85b1b0",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,loki.office365.cn"
-        },
-        {
-          "id": "fd63281a0be6",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,chinacloud-mobile.cn"
-        }
-      ],
+      "prev_total": 110668,
+      "curr_total": 110665,
+      "added_count": 0,
+      "removed_count": 3,
+      "source_changed_count": 1,
+      "added_sample": [],
       "removed_sample": [
         {
-          "id": "a020b6a6694e",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,windows.net"
+          "id": "9cbe05fb7e77",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "rule": "DOMAIN-SUFFIX,dcn01.ps4.update.playstation.net"
+        },
+        {
+          "id": "ac912fef9a7b",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,steamserver.net"
+        },
+        {
+          "id": "be80c88b5891",
+          "source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "rule": "DOMAIN-SUFFIX,dcn01.ps5.update.playstation.net"
         }
       ],
       "source_changed_sample": [
         {
-          "id": "7ddb17ee1688",
-          "old_source": "SukkaW Domestic",
-          "new_source": "Manual Rules"
-        },
-        {
-          "id": "5311c188fb80",
-          "old_source": "SukkaW Domestic",
+          "id": "318c61730e78",
+          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
           "new_source": "Manual Rules"
         }
       ]
@@ -262,69 +161,382 @@
     {
       "file": "Download.list",
       "prev_total": 1612,
-      "curr_total": 1612,
-      "added_count": 0,
+      "curr_total": 1614,
+      "added_count": 2,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "388ee7bfac75",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,ps4.update.playstation.net"
+        },
+        {
+          "id": "6f66f1eb92b0",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,ps5.update.playstation.net"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "Game.list",
       "prev_total": 570,
-      "curr_total": 570,
-      "added_count": 0,
-      "removed_count": 0,
-      "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
-      "source_changed_sample": []
-    },
-    {
-      "file": "Global.list",
-      "prev_total": 24640,
-      "curr_total": 24641,
-      "added_count": 4,
-      "removed_count": 3,
+      "curr_total": 549,
+      "added_count": 21,
+      "removed_count": 42,
       "source_changed_count": 0,
       "added_sample": [
         {
-          "id": "18fd1fe3e686",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,azurewebsites.net"
+          "id": "025603985404",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,game.boombeachgame.com"
         },
         {
-          "id": "2a09bc80657c",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,azurefd.net"
+          "id": "1410f354aeff",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR6,2602:801:f005::/48,no-resolve"
         },
         {
-          "id": "e77abcada295",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,cloudapp.net"
+          "id": "36b2f37d37c8",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR6,2404:3fc0::/46,no-resolve"
         },
         {
-          "id": "f181245620d4",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,trafficmanager.net"
+          "id": "44bada408c18",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR6,2602:801:f006::/47,no-resolve"
+        },
+        {
+          "id": "47440916e869",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR6,2602:801:f008::/46,no-resolve"
+        },
+        {
+          "id": "6395d9294562",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR6,2602:801:f00d::/48,no-resolve"
+        },
+        {
+          "id": "6b613a816bc3",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR6,2a01:bc80:8::/46,no-resolve"
+        },
+        {
+          "id": "73fdfb85b555",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,playfabapi.com"
+        },
+        {
+          "id": "748a890fe212",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,game.clashroyaleapp.com"
+        },
+        {
+          "id": "9d258dee2b90",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR6,2404:3fc0:a::/48,no-resolve"
+        },
+        {
+          "id": "ac912fef9a7b",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,steamserver.net"
+        },
+        {
+          "id": "bd2f34f7b016",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR6,2a01:bc80:c::/48,no-resolve"
+        },
+        {
+          "id": "bebbbb807078",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR6,2404:3fc0:8::/47,no-resolve"
+        },
+        {
+          "id": "c356ae668362",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,game.haydaygame.com"
+        },
+        {
+          "id": "cc74629acbca",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,api.minecraftservices.com"
+        },
+        {
+          "id": "cda5c435368c",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,game.clashofclans.com"
+        },
+        {
+          "id": "d2bb3a822032",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,zyngasupport.helpshift.com"
+        },
+        {
+          "id": "d4632fdc41ea",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR6,2602:801:f000::/46,no-resolve"
+        },
+        {
+          "id": "ec12c2faa40d",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,niantic.helpshift.com"
+        },
+        {
+          "id": "f4dc836df5aa",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR6,2602:801:f00e::/48,no-resolve"
+        },
+        {
+          "id": "f820ae7fe10a",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR6,2a01:bc80::/45,no-resolve"
         }
       ],
       "removed_sample": [
         {
-          "id": "4486741450cb",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,onenote.com"
+          "id": "066e41c8f590",
+          "source": "blackmatrix7 Game",
+          "rule": "IP-CIDR,3.82.147.36/32,no-resolve"
         },
         {
-          "id": "9804de830843",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,streaming.mediaservices.windows.net"
+          "id": "0b68072311bd",
+          "source": "blackmatrix7 Game",
+          "rule": "IP-CIDR,18.231.148.103/32,no-resolve"
         },
         {
-          "id": "c0374368d4e0",
+          "id": "0d9f432b39f1",
+          "source": "blackmatrix7 Game",
+          "rule": "DOMAIN,originasserts.akamaized.net"
+        },
+        {
+          "id": "10f15f5d307d",
+          "source": "blackmatrix7 Game",
+          "rule": "DOMAIN-SUFFIX,f3b7q2p3.ssl.hwcdn.net"
+        },
+        {
+          "id": "11360efcbe82",
+          "source": "blackmatrix7 Game",
+          "rule": "IP-CIDR,13.210.25.233/32,no-resolve"
+        },
+        {
+          "id": "1492fcfd3af9",
+          "source": "blackmatrix7 Game",
+          "rule": "DOMAIN-SUFFIX,sony.com"
+        },
+        {
+          "id": "14f994852189",
+          "source": "blackmatrix7 Game",
+          "rule": "DOMAIN-SUFFIX,wiipartyu.com"
+        },
+        {
+          "id": "1ecd32798eb8",
+          "source": "blackmatrix7 Game",
+          "rule": "DOMAIN-SUFFIX,blizzard.nefficient.co.kr"
+        },
+        {
+          "id": "2d33d4ede174",
+          "source": "blackmatrix7 Game",
+          "rule": "IP-CIDR,18.156.137.147/32,no-resolve"
+        },
+        {
+          "id": "2e05ab5e93fc",
+          "source": "blackmatrix7 Game",
+          "rule": "DOMAIN-SUFFIX,riotgames.tv"
+        },
+        {
+          "id": "318c61730e78",
+          "source": "blackmatrix7 Game",
+          "rule": "DOMAIN-SUFFIX,wowchina.com"
+        },
+        {
+          "id": "365f96135c8d",
+          "source": "blackmatrix7 Game",
+          "rule": "DOMAIN-SUFFIX,seagroup.com"
+        },
+        {
+          "id": "37286db0388a",
+          "source": "blackmatrix7 Game",
+          "rule": "IP-CIDR,15.254.1.17/32,no-resolve"
+        },
+        {
+          "id": "373e94a2bdd4",
+          "source": "blackmatrix7 Game",
+          "rule": "DOMAIN-SUFFIX,thelegendarystarfy.com"
+        },
+        {
+          "id": "3c5a059fbff4",
+          "source": "blackmatrix7 Game",
+          "rule": "DOMAIN-KEYWORD,steamstore"
+        },
+        {
+          "id": "40345a550237",
+          "source": "blackmatrix7 Game",
+          "rule": "IP-CIDR,52.50.131.212/32,no-resolve"
+        },
+        {
+          "id": "41fe27f95bb2",
+          "source": "blackmatrix7 Game",
+          "rule": "IP-CIDR,13.212.171.212/32,no-resolve"
+        },
+        {
+          "id": "425e99c387a4",
+          "source": "blackmatrix7 Game",
+          "rule": "IP-CIDR,15.161.130.86/32,no-resolve"
+        },
+        {
+          "id": "42cf10478b13",
+          "source": "blackmatrix7 Game",
+          "rule": "DOMAIN-SUFFIX,championshipseriesleague.com"
+        },
+        {
+          "id": "45b85af82228",
+          "source": "blackmatrix7 Game",
+          "rule": "IP-CIDR,54.207.107.12/32,no-resolve"
+        },
+        {
+          "id": "5165a2a822e2",
+          "source": "blackmatrix7 Game",
+          "rule": "IP-CIDR,13.212.170.102/32,no-resolve"
+        },
+        {
+          "id": "567425cb2d0e",
+          "source": "blackmatrix7 Game",
+          "rule": "IP-CIDR,34.220.160.16/32,no-resolve"
+        },
+        {
+          "id": "5e9bd9b8d671",
+          "source": "blackmatrix7 Game",
+          "rule": "IP-CIDR,3.25.190.152/32,no-resolve"
+        },
+        {
+          "id": "60a47f1ee4bf",
+          "source": "blackmatrix7 Game",
+          "rule": "DOMAIN,eaasserts-a.akamaihd.net"
+        },
+        {
+          "id": "62dccbd21b70",
+          "source": "blackmatrix7 Game",
+          "rule": "DOMAIN-KEYWORD,steambroadcast"
+        },
+        {
+          "id": "6d1196fe63d4",
+          "source": "blackmatrix7 Game",
+          "rule": "IP-CIDR,52.13.42.120/32,no-resolve"
+        },
+        {
+          "id": "7936fa1901f3",
+          "source": "blackmatrix7 Game",
+          "rule": "DOMAIN-SUFFIX,helpshift.com"
+        },
+        {
+          "id": "8b57dabf07e1",
+          "source": "blackmatrix7 Game",
+          "rule": "IP-CIDR,3.1.80.68/32,no-resolve"
+        },
+        {
+          "id": "9989f32813f4",
+          "source": "blackmatrix7 Game",
+          "rule": "IP-CIDR,54.207.104.145/32,no-resolve"
+        },
+        {
+          "id": "9c030630a814",
+          "source": "blackmatrix7 Game",
+          "rule": "IP-CIDR,54.248.64.192/32,no-resolve"
+        },
+        {
+          "id": "9e5960e47090",
+          "source": "blackmatrix7 Game",
+          "rule": "IP-CIDR,52.13.150.128/32,no-resolve"
+        },
+        {
+          "id": "b267472030f9",
+          "source": "blackmatrix7 Game",
+          "rule": "IP-CIDR,35.72.32.125/32,no-resolve"
+        },
+        {
+          "id": "b32965e7f535",
+          "source": "blackmatrix7 Game",
+          "rule": "DOMAIN-KEYWORD,steamuserimages"
+        },
+        {
+          "id": "b47244e808fe",
+          "source": "blackmatrix7 Game",
+          "rule": "DOMAIN-SUFFIX,pokemonwifi.net"
+        },
+        {
+          "id": "c032ab0e4de4",
+          "source": "blackmatrix7 Game",
+          "rule": "IP-CIDR,18.141.176.65/32,no-resolve"
+        },
+        {
+          "id": "c19ecdd4fe34",
+          "source": "blackmatrix7 Game",
+          "rule": "DOMAIN-SUFFIX,cdp.cloud.unity3d.com"
+        },
+        {
+          "id": "c3806d988eea",
+          "source": "blackmatrix7 Game",
+          "rule": "IP-CIDR,35.154.64.7/32,no-resolve"
+        },
+        {
+          "id": "e7782d926bc4",
+          "source": "blackmatrix7 Game",
+          "rule": "IP-CIDR,54.94.196.47/32,no-resolve"
+        },
+        {
+          "id": "ed40aaba9679",
+          "source": "blackmatrix7 Game",
+          "rule": "DOMAIN-SUFFIX,ulol.com"
+        },
+        {
+          "id": "eefb87445b06",
+          "source": "blackmatrix7 Game",
+          "rule": "DOMAIN-SUFFIX,flipnotestudio.com"
+        },
+        {
+          "id": "f0e61b23f0f1",
+          "source": "blackmatrix7 Game",
+          "rule": "DOMAIN-SUFFIX,wiifitu.com"
+        },
+        {
+          "id": "fa7aacb7fe56",
+          "source": "blackmatrix7 Game",
+          "rule": "IP-CIDR,54.207.168.84/32,no-resolve"
+        }
+      ],
+      "source_changed_sample": []
+    },
+    {
+      "file": "Global.list",
+      "prev_total": 24641,
+      "curr_total": 24641,
+      "added_count": 2,
+      "removed_count": 2,
+      "source_changed_count": 0,
+      "added_sample": [
+        {
+          "id": "365f96135c8d",
           "source": "blackmatrix7 Global",
-          "rule": "DOMAIN,vscode.search.windows.net"
+          "rule": "DOMAIN-SUFFIX,seagroup.com"
+        },
+        {
+          "id": "7936fa1901f3",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,helpshift.com"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "3821f336d196",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN,blizzard.nefficient.co.kr"
+        },
+        {
+          "id": "73fdfb85b555",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,playfabapi.com"
         }
       ],
       "source_changed_sample": []
@@ -386,288 +598,24 @@
     },
     {
       "file": "Microsoft.list",
-      "prev_total": 484,
+      "prev_total": 473,
       "curr_total": 473,
-      "added_count": 18,
-      "removed_count": 29,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "1006b23f9469",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,sts.windows.net"
-        },
-        {
-          "id": "1c33e176159a",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,powerapps.com"
-        },
-        {
-          "id": "41a448977dc7",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,clipchamp.com"
-        },
-        {
-          "id": "4486741450cb",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,onenote.com"
-        },
-        {
-          "id": "54f7045bd259",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,redemptionservices.accesscontrol.windows.net"
-        },
-        {
-          "id": "68f47450232b",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,accounts.accesscontrol.windows.net"
-        },
-        {
-          "id": "72397593ae33",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,keydelivery.mediaservices.windows.net"
-        },
-        {
-          "id": "7c982ac9a4e3",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,enterpriseregistration.windows.net"
-        },
-        {
-          "id": "93738c2ba10d",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,management.core.windows.net"
-        },
-        {
-          "id": "95456a8b49f2",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,microsoftusercontent.com"
-        },
-        {
-          "id": "970eb96bf8fb",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,posarprodcssservice.accesscontrol.windows.net"
-        },
-        {
-          "id": "9804de830843",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,streaming.mediaservices.windows.net"
-        },
-        {
-          "id": "9a02605dc101",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,graph.windows.net"
-        },
-        {
-          "id": "a36982b5ed52",
-          "source": "Manual Rules",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478-3481),(IP-CIDR,52.112.0.0/14,no-resolve))"
-        },
-        {
-          "id": "af79a24d5137",
-          "source": "Manual Rules",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478-3481),(IP-CIDR,52.122.0.0/15,no-resolve))"
-        },
-        {
-          "id": "b45c085ef879",
-          "source": "Manual Rules",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478-3481),(IP-CIDR6,2603:1063::/38,no-resolve))"
-        },
-        {
-          "id": "b59bc2c48fb7",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,login.windows.net"
-        },
-        {
-          "id": "c0374368d4e0",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,vscode.search.windows.net"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "00b2645fb2e7",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-SUFFIX,office365tw.com"
-        },
-        {
-          "id": "18fd1fe3e686",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-SUFFIX,azurewebsites.net"
-        },
-        {
-          "id": "1c5dfe19aee6",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-SUFFIX,microsofteca.com"
-        },
-        {
-          "id": "1f0cf387224c",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-SUFFIX,bluehatnights.com"
-        },
-        {
-          "id": "2a09bc80657c",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-SUFFIX,azurefd.net"
-        },
-        {
-          "id": "3b2c0846ecad",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-SUFFIX,office365love.com"
-        },
-        {
-          "id": "4440f67468bf",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "USER-AGENT,OneDrive*"
-        },
-        {
-          "id": "493fb427ac1d",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-SUFFIX,sankie.net"
-        },
-        {
-          "id": "4abb1fedd0e1",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-KEYWORD,onedrive"
-        },
-        {
-          "id": "55b49d757786",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-SUFFIX,microsoft.red"
-        },
-        {
-          "id": "5baf7a7375cc",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "USER-AGENT,Microsoft*"
-        },
-        {
-          "id": "6286437f1578",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-SUFFIX,opentranslatorstothings.org"
-        },
-        {
-          "id": "693291bfdab1",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-SUFFIX,microsoft.com.nsatc.net"
-        },
-        {
-          "id": "700822201997",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-SUFFIX,microsoftlinc.com"
-        },
-        {
-          "id": "7e18cbda3159",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-SUFFIX,microsoftsiteselection.com"
-        },
-        {
-          "id": "8ffeaeeb292f",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-SUFFIX,msignitechina.com"
-        },
-        {
-          "id": "95b6dc718714",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-SUFFIX,microsoftmxfilantropia.com"
-        },
-        {
-          "id": "a020b6a6694e",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-SUFFIX,windows.net"
-        },
-        {
-          "id": "a50b632125b6",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-SUFFIX,windowscommunity.net"
-        },
-        {
-          "id": "b07bddf87073",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-SUFFIX,livingyourambition.com"
-        },
-        {
-          "id": "c18f7e01cc9e",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "PROCESS-NAME,OneDriveUpdater"
-        },
-        {
-          "id": "c87d739be064",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-SUFFIX,meetyourdevices.com"
-        },
-        {
-          "id": "c9404e07a9e3",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "PROCESS-NAME,OneDrive"
-        },
-        {
-          "id": "ccd6a15512c4",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "USER-AGENT,OneDriveiOSApp*"
-        },
-        {
-          "id": "d80da49f96c0",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-SUFFIX,msn.com.nsatc.net"
-        },
-        {
-          "id": "e77abcada295",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-SUFFIX,cloudapp.net"
-        },
-        {
-          "id": "ec73faa5cf41",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-KEYWORD,skydrive"
-        },
-        {
-          "id": "ee9184d16201",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-SUFFIX,msudalosti.com"
-        },
-        {
-          "id": "f181245620d4",
-          "source": "blackmatrix7 Microsoft",
-          "rule": "DOMAIN-SUFFIX,trafficmanager.net"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "Microsoft_CDN.list",
-      "prev_total": 79,
+      "prev_total": 82,
       "curr_total": 82,
-      "added_count": 4,
-      "removed_count": 1,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "1c28733c6f52",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,cdn.odc.officeapps.live.com"
-        },
-        {
-          "id": "278d948ad8d6",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,otelrules.azureedge.net"
-        },
-        {
-          "id": "5aa54ba2b261",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,static.microsoft"
-        },
-        {
-          "id": "7462b1999b84",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,cdn.uci.officeapps.live.com"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "95456a8b49f2",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,microsoftusercontent.com"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {

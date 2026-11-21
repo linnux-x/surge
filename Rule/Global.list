@@ -1,7 +1,7 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 19:32:47 +0800
+# UPDATED: 2026-11-21 19:48:34 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 24641
 
@@ -107,7 +107,6 @@ DOMAIN,az416426.vo.msecnd.net
 DOMAIN,az668014.vo.msecnd.net
 DOMAIN,bbs.boingboing.net
 DOMAIN,beck-online.beck.de
-DOMAIN,blizzard.nefficient.co.kr
 DOMAIN,bybit.ada.support
 DOMAIN,cdn.js7k.com
 DOMAIN,cisco.evergage.com
@@ -12270,7 +12269,6 @@ DOMAIN-SUFFIX,playbydurex.com
 DOMAIN-SUFFIX,playcover.io
 DOMAIN-SUFFIX,playerjs.io
 DOMAIN-SUFFIX,playfab.com
-DOMAIN-SUFFIX,playfabapi.com
 DOMAIN-SUFFIX,playfamily.ru
 DOMAIN-SUFFIX,playforceone.com
 DOMAIN-SUFFIX,playgwent.com
@@ -13725,6 +13723,7 @@ DOMAIN-SUFFIX,sdcountybmw.com
 DOMAIN-SUFFIX,sdm.ru
 DOMAIN-SUFFIX,sdnice.one
 DOMAIN-SUFFIX,sdnitube.buzz
+DOMAIN-SUFFIX,seagroup.com
 DOMAIN-SUFFIX,seamlessupdate.app
 DOMAIN-SUFFIX,seamonkey-project.org
 DOMAIN-SUFFIX,seancody.com
@@ -20563,6 +20562,7 @@ DOMAIN-SUFFIX,hellotxt.com
 DOMAIN-SUFFIX,hellouk.org
 DOMAIN-SUFFIX,helpeachpeople.com
 DOMAIN-SUFFIX,helplinfen.com
+DOMAIN-SUFFIX,helpshift.com
 DOMAIN-SUFFIX,helpster.de
 DOMAIN-SUFFIX,helpzhuling.org
 DOMAIN-SUFFIX,hembed.com
