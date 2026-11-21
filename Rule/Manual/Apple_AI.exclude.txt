@@ -1,7 +1,5 @@
 # apps.mzstatic.com 是 App Store / Apps and Books CDN，保留在 Apple_CN/DIRECT
 DOMAIN-SUFFIX,apps.mzstatic.com
-# SukkaW 测试金丝雀域名
-DOMAIN,7h15_ru1353t_1s_m4d3_by_5ukk4w.skk.moe
 # DOMAIN-SUFFIX,ls.apple.com 太宽泛，会劫持中国区 CDN 节点（gsp4-cn.ls.apple.com 等）。
 DOMAIN-SUFFIX,ls.apple.com
 # RocM301 的 DOMAIN-KEYWORD,siri 是子串匹配，会把 volcsirius.com（字节火山引擎）、
@@ -18,3 +16,15 @@ DOMAIN,gsp64-ssl.ls.apple.com
 DOMAIN-SUFFIX,gsp64-ssl.ls.apple.com
 DOMAIN,gspe1-ssl.ls.apple.com
 DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+
+# Apple 公布的是固定主机，子域沿用所属平台的策略。
+DOMAIN-SUFFIX,apple-relay.apple.com
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+DOMAIN-SUFFIX,cp4.cloudflare.com
+DOMAIN-SUFFIX,mask-h2.icloud.com
+DOMAIN-SUFFIX,mask.icloud.com
+
+# 停用的 Private Relay 别名，当前 mask-api.icloud.com 使用 fe2。
+DOMAIN,mask-api.fe.apple-dns.net
+DOMAIN-SUFFIX,mask-api.fe.apple-dns.net

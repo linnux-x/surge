@@ -1,38 +1,17 @@
 {
-  "generated_at": "2026-11-21T15:41:13.873746",
-  "total_added": 8,
-  "total_removed": 0,
+  "generated_at": "2026-11-21T15:52:28.450662",
+  "total_added": 6,
+  "total_removed": 7,
   "total_source_changed": 0,
   "diffs": [
     {
       "file": "AI.list",
-      "prev_total": 136,
+      "prev_total": 140,
       "curr_total": 140,
-      "added_count": 4,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "68aa8ae76307",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,www.claude.new"
-        },
-        {
-          "id": "783c8c8ed09b",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,www.claudeacademy.com"
-        },
-        {
-          "id": "a02b223a2e69",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,claude.md"
-        },
-        {
-          "id": "aad2bbc989a4",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,claudeacademy.com"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -72,12 +51,79 @@
     {
       "file": "Apple_AI.list",
       "prev_total": 20,
-      "curr_total": 20,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 19,
+      "added_count": 6,
+      "removed_count": 7,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "2ebcc8481ab6",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,apple-relay.cloudflare.com"
+        },
+        {
+          "id": "6e9128c725fe",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,cp4.cloudflare.com"
+        },
+        {
+          "id": "90301f35c67e",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,mask.icloud.com"
+        },
+        {
+          "id": "a97fbc8f931a",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,apple-relay.fastly-edge.com"
+        },
+        {
+          "id": "e1bb003bb23f",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,apple-relay.apple.com"
+        },
+        {
+          "id": "fac6e094ccd4",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,mask-h2.icloud.com"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "21c16ccce25d",
+          "source": "RocM301 Apple-AI",
+          "rule": "DOMAIN-SUFFIX,mask.icloud.com"
+        },
+        {
+          "id": "23d8a46c106a",
+          "source": "RocM301 Apple-AI",
+          "rule": "DOMAIN-SUFFIX,apple-relay.fastly-edge.com"
+        },
+        {
+          "id": "4183bc428f62",
+          "source": "RocM301 Apple-AI",
+          "rule": "DOMAIN-SUFFIX,apple-relay.apple.com"
+        },
+        {
+          "id": "8a6b70b9c294",
+          "source": "RocM301 Apple-AI",
+          "rule": "DOMAIN-SUFFIX,mask-h2.icloud.com"
+        },
+        {
+          "id": "e86b51bf363c",
+          "source": "RocM301 Apple-AI",
+          "rule": "DOMAIN-SUFFIX,apple-relay.cloudflare.com"
+        },
+        {
+          "id": "eb9c099dc8eb",
+          "source": "RocM301 Apple-AI",
+          "rule": "DOMAIN-SUFFIX,cp4.cloudflare.com"
+        },
+        {
+          "id": "f7be4981ca92",
+          "source": "RocM301 Apple-AI",
+          "rule": "DOMAIN,mask-api.fe.apple-dns.net"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -137,33 +183,12 @@
     },
     {
       "file": "Claude.list",
-      "prev_total": 16,
+      "prev_total": 20,
       "curr_total": 20,
-      "added_count": 4,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "68aa8ae76307",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,www.claude.new"
-        },
-        {
-          "id": "783c8c8ed09b",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,www.claudeacademy.com"
-        },
-        {
-          "id": "a02b223a2e69",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,claude.md"
-        },
-        {
-          "id": "aad2bbc989a4",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,claudeacademy.com"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },

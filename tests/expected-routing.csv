@@ -215,6 +215,17 @@ gsp4-cn.ls.apple.com,Apple_CN.list,DIRECT,Apple 地图大陆节点保持直连
 gspe1-ssl.ls.apple.com,Apple.list,Apple,地理位置地区查询
 mask-h2.icloud.com,Apple_AI.list,Apple_AI,Apple Private Relay H2
 cp4.cloudflare.com,Apple_AI.list,Apple_AI,Apple Intelligence Cloudflare
+probe.apple-relay.apple.com,Apple.list,Apple,固定 Apple 中继主机的合成子域沿用常规分流
+probe.apple-relay.cloudflare.com,Global.list,Global,固定 Apple 中继主机的合成子域沿用常规分流
+probe.apple-relay.fastly-edge.com,Global.list,Global,固定 Apple 中继主机的合成子域沿用常规分流
+probe.cp4.cloudflare.com,Global.list,Global,固定 Apple 中继主机的合成子域沿用常规分流
+probe.mask-h2.icloud.com,Apple.list,Apple,固定 Apple 中继主机的合成子域沿用常规分流
+probe.mask.icloud.com,Apple.list,Apple,固定 Apple 中继主机的合成子域沿用常规分流
+apple-relay.cloudflare.com,Apple_AI.list,Apple_AI,Apple 固定中继主机
+apple-relay.fastly-edge.com,Apple_AI.list,Apple_AI,Apple 固定中继主机
+mask-api.icloud.com,Apple_AI.list,Apple_AI,Apple 固定中继主机
+mask-api.fe2.apple-dns.net,Apple_AI.list,Apple_AI,Apple 固定中继主机
+mask-api.fe.apple-dns.net,Apple.list,Apple,停用的 Private Relay 别名沿用通用 Apple
 redditmedia.com,SocialMedia.list,SocialMedia,Reddit媒体资源
 redditstatic.com,SocialMedia.list,SocialMedia,Reddit静态资源
 snapkit.com,SocialMedia.list,SocialMedia,Snap开发者服务

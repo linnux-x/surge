@@ -1025,6 +1025,146 @@
       "route_tests": ["gsp64-ssl.ls.apple.com"]
     },
     {
+      "source_file": "Apple_AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,apple-relay.apple.com",
+      "reason": "Apple 公布的是固定主机，子域沿用所属平台策略",
+      "destination": "Apple.list → Apple",
+      "route_tests": [
+        "apple-relay.apple.com",
+        "probe.apple-relay.apple.com"
+      ]
+    },
+    {
+      "source_file": "Apple_AI.txt",
+      "rule": "DOMAIN,apple-relay.apple.com",
+      "reason": "精确保留 Apple 官方公布的固定中继主机",
+      "destination": "Apple_AI.list → Apple_AI",
+      "route_tests": [
+        "apple-relay.apple.com",
+        "probe.apple-relay.apple.com"
+      ]
+    },
+    {
+      "source_file": "Apple_AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,apple-relay.cloudflare.com",
+      "reason": "Apple 公布的是固定主机，子域沿用所属平台策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "apple-relay.cloudflare.com",
+        "probe.apple-relay.cloudflare.com"
+      ]
+    },
+    {
+      "source_file": "Apple_AI.txt",
+      "rule": "DOMAIN,apple-relay.cloudflare.com",
+      "reason": "精确保留 Apple 官方公布的固定中继主机",
+      "destination": "Apple_AI.list → Apple_AI",
+      "route_tests": [
+        "apple-relay.cloudflare.com",
+        "probe.apple-relay.cloudflare.com"
+      ]
+    },
+    {
+      "source_file": "Apple_AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,apple-relay.fastly-edge.com",
+      "reason": "Apple 公布的是固定主机，子域沿用所属平台策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "apple-relay.fastly-edge.com",
+        "probe.apple-relay.fastly-edge.com"
+      ]
+    },
+    {
+      "source_file": "Apple_AI.txt",
+      "rule": "DOMAIN,apple-relay.fastly-edge.com",
+      "reason": "精确保留 Apple 官方公布的固定中继主机",
+      "destination": "Apple_AI.list → Apple_AI",
+      "route_tests": [
+        "apple-relay.fastly-edge.com",
+        "probe.apple-relay.fastly-edge.com"
+      ]
+    },
+    {
+      "source_file": "Apple_AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,cp4.cloudflare.com",
+      "reason": "Apple 公布的是固定主机，子域沿用所属平台策略",
+      "destination": "Global.list → Global",
+      "route_tests": [
+        "cp4.cloudflare.com",
+        "probe.cp4.cloudflare.com"
+      ]
+    },
+    {
+      "source_file": "Apple_AI.txt",
+      "rule": "DOMAIN,cp4.cloudflare.com",
+      "reason": "精确保留 Apple 官方公布的固定中继主机",
+      "destination": "Apple_AI.list → Apple_AI",
+      "route_tests": [
+        "cp4.cloudflare.com",
+        "probe.cp4.cloudflare.com"
+      ]
+    },
+    {
+      "source_file": "Apple_AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,mask-h2.icloud.com",
+      "reason": "Apple 公布的是固定主机，子域沿用所属平台策略",
+      "destination": "Apple.list → Apple",
+      "route_tests": [
+        "mask-h2.icloud.com",
+        "probe.mask-h2.icloud.com"
+      ]
+    },
+    {
+      "source_file": "Apple_AI.txt",
+      "rule": "DOMAIN,mask-h2.icloud.com",
+      "reason": "精确保留 Apple 官方公布的固定中继主机",
+      "destination": "Apple_AI.list → Apple_AI",
+      "route_tests": [
+        "mask-h2.icloud.com",
+        "probe.mask-h2.icloud.com"
+      ]
+    },
+    {
+      "source_file": "Apple_AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,mask.icloud.com",
+      "reason": "Apple 公布的是固定主机，子域沿用所属平台策略",
+      "destination": "Apple.list → Apple",
+      "route_tests": [
+        "mask.icloud.com",
+        "probe.mask.icloud.com"
+      ]
+    },
+    {
+      "source_file": "Apple_AI.txt",
+      "rule": "DOMAIN,mask.icloud.com",
+      "reason": "精确保留 Apple 官方公布的固定中继主机",
+      "destination": "Apple_AI.list → Apple_AI",
+      "route_tests": [
+        "mask.icloud.com",
+        "probe.mask.icloud.com"
+      ]
+    },
+    {
+      "source_file": "Apple_AI.exclude.txt",
+      "rule": "DOMAIN,mask-api.fe.apple-dns.net",
+      "reason": "旧别名在公开解析器返回 NXDOMAIN，当前中继使用 fe2 别名",
+      "destination": "Apple.list → Apple",
+      "route_tests": [
+        "mask-api.fe.apple-dns.net",
+        "mask-api.fe2.apple-dns.net"
+      ]
+    },
+    {
+      "source_file": "Apple_AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,mask-api.fe.apple-dns.net",
+      "reason": "旧别名在公开解析器返回 NXDOMAIN，当前中继使用 fe2 别名",
+      "destination": "Apple.list → Apple",
+      "route_tests": [
+        "mask-api.fe.apple-dns.net",
+        "mask-api.fe2.apple-dns.net"
+      ]
+    },
+    {
       "source_file": "AI.txt",
       "rule": "DOMAIN-SUFFIX,mistral.ai",
       "reason": "Mistral 官方网页、Le Chat 与 API 从 Global 归入 AI 专属策略",
