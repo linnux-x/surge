@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-19 16:52:32 +0800
+# UPDATED: 2026-11-21 12:24:16 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24603
+# TOTAL: 24604
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -4305,7 +4305,6 @@ DOMAIN-SUFFIX,currently.com
 DOMAIN-SUFFIX,currently.net
 DOMAIN-SUFFIX,currenttime.tv
 DOMAIN-SUFFIX,curseforge.com
-DOMAIN-SUFFIX,cursorvm.com
 DOMAIN-SUFFIX,curve.fi
 DOMAIN-SUFFIX,curvybbwwives.com
 DOMAIN-SUFFIX,curvyerotic.com
@@ -7552,6 +7551,7 @@ DOMAIN-SUFFIX,horsedick.net
 DOMAIN-SUFFIX,horsedicks.net
 DOMAIN-SUFFIX,horsemecum.com
 DOMAIN-SUFFIX,horseporn.tv
+DOMAIN-SUFFIX,host.livekit.cloud
 DOMAIN-SUFFIX,hostborneo.org
 DOMAIN-SUFFIX,hosting.co.uk
 DOMAIN-SUFFIX,hot-arab-films.com
@@ -15659,6 +15659,7 @@ DOMAIN-SUFFIX,turborepo.org
 DOMAIN-SUFFIX,turbotax.com
 DOMAIN-SUFFIX,turbotwitter.com
 DOMAIN-SUFFIX,turkeyblocks.org
+DOMAIN-SUFFIX,turn.livekit.cloud
 DOMAIN-SUFFIX,tusco.ru
 DOMAIN-SUFFIX,tushy.com
 DOMAIN-SUFFIX,tushyraw.com

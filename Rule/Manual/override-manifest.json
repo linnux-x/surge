@@ -52,6 +52,279 @@
   },
   "entries": [
     {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN-SUFFIX,claude.app",
+      "reason": "独立订阅 AI 时兼容 Claude 入口",
+      "destination": "Claude.list → Claude 或单订阅 AI.list → AI",
+      "route_tests": ["claude.app"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,claude.site",
+      "reason": "独立订阅 AI 时兼容 Claude 入口",
+      "destination": "Claude.list → Claude 或单订阅 AI.list → AI",
+      "route_tests": ["claude.site"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,claude.new",
+      "reason": "独立订阅 AI 时兼容 Claude 入口",
+      "destination": "Claude.list → Claude 或单订阅 AI.list → AI",
+      "route_tests": ["claude.new"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,claude.dev",
+      "reason": "独立订阅 AI 时兼容 Claude 入口",
+      "destination": "Claude.list → Claude 或单订阅 AI.list → AI",
+      "route_tests": ["claude.dev"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,www.claude.dev",
+      "reason": "独立订阅 AI 时兼容 Claude 入口",
+      "destination": "Claude.list → Claude 或单订阅 AI.list → AI",
+      "route_tests": ["www.claude.dev"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN-WILDCARD,*-aiplatform.googleapis.com",
+      "reason": "使用供应商官方服务范围匹配 AI 请求",
+      "destination": "AI.list → AI",
+      "route_tests": ["us-central1-aiplatform.googleapis.com"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,aiplatform.us.rep.googleapis.com",
+      "reason": "使用供应商官方服务范围匹配 AI 请求",
+      "destination": "AI.list → AI",
+      "route_tests": ["aiplatform.us.rep.googleapis.com"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,aiplatform.eu.rep.googleapis.com",
+      "reason": "使用供应商官方服务范围匹配 AI 请求",
+      "destination": "AI.list → AI",
+      "route_tests": ["aiplatform.eu.rep.googleapis.com"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,cloudaicompanion.googleapis.com",
+      "reason": "使用供应商官方服务范围匹配 AI 请求",
+      "destination": "AI.list → AI",
+      "route_tests": ["cloudaicompanion.googleapis.com"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,geminicloudassist.googleapis.com",
+      "reason": "使用供应商官方服务范围匹配 AI 请求",
+      "destination": "AI.list → AI",
+      "route_tests": ["geminicloudassist.googleapis.com"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,firebasevertexai.googleapis.com",
+      "reason": "使用供应商官方服务范围匹配 AI 请求",
+      "destination": "AI.list → AI",
+      "route_tests": ["firebasevertexai.googleapis.com"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,flow.google",
+      "reason": "使用供应商官方服务范围匹配 AI 请求",
+      "destination": "AI.list → AI",
+      "route_tests": ["flow.google"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,dialogflow.googleapis.com",
+      "reason": "使用供应商官方服务范围匹配 AI 请求",
+      "destination": "AI.list → AI",
+      "route_tests": ["dialogflow.googleapis.com"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN-WILDCARD,*-dialogflow.googleapis.com",
+      "reason": "使用供应商官方服务范围匹配 AI 请求",
+      "destination": "AI.list → AI",
+      "route_tests": ["eu-dialogflow.googleapis.com"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,copilot-proxy.githubusercontent.com",
+      "reason": "使用供应商官方服务范围匹配 AI 请求",
+      "destination": "AI.list → AI",
+      "route_tests": ["copilot-proxy.githubusercontent.com"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,origin-tracker.githubusercontent.com",
+      "reason": "使用供应商官方服务范围匹配 AI 请求",
+      "destination": "AI.list → AI",
+      "route_tests": ["origin-tracker.githubusercontent.com"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,production-copilot-host.webpubsub.azure.com",
+      "reason": "使用供应商官方服务范围匹配 AI 请求",
+      "destination": "AI.list → AI",
+      "route_tests": ["production-copilot-host.webpubsub.azure.com"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,production-copilot-host-austriaeast.webpubsub.azure.com",
+      "reason": "使用供应商官方服务范围匹配 AI 请求",
+      "destination": "AI.list → AI",
+      "route_tests": ["production-copilot-host-austriaeast.webpubsub.azure.com"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,production-copilot-host-centralus.webpubsub.azure.com",
+      "reason": "使用供应商官方服务范围匹配 AI 请求",
+      "destination": "AI.list → AI",
+      "route_tests": ["production-copilot-host-centralus.webpubsub.azure.com"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,production-copilot-host-centralus-02.webpubsub.azure.com",
+      "reason": "使用供应商官方服务范围匹配 AI 请求",
+      "destination": "AI.list → AI",
+      "route_tests": ["production-copilot-host-centralus-02.webpubsub.azure.com"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,production-copilot-host-eastasia.webpubsub.azure.com",
+      "reason": "使用供应商官方服务范围匹配 AI 请求",
+      "destination": "AI.list → AI",
+      "route_tests": ["production-copilot-host-eastasia.webpubsub.azure.com"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,production-copilot-host-westus.webpubsub.azure.com",
+      "reason": "使用供应商官方服务范围匹配 AI 请求",
+      "destination": "AI.list → AI",
+      "route_tests": ["production-copilot-host-westus.webpubsub.azure.com"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,production-copilot-host-westus3.webpubsub.azure.com",
+      "reason": "使用供应商官方服务范围匹配 AI 请求",
+      "destination": "AI.list → AI",
+      "route_tests": ["production-copilot-host-westus3.webpubsub.azure.com"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,accounts.spacexsi.com",
+      "reason": "使用供应商官方服务范围匹配 AI 请求",
+      "destination": "AI.list → AI",
+      "route_tests": ["accounts.spacexsi.com"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,auth.grokusercontent.com",
+      "reason": "使用供应商官方服务范围匹配 AI 请求",
+      "destination": "AI.list → AI",
+      "route_tests": ["auth.grokusercontent.com"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,auth.grokipedia.com",
+      "reason": "使用供应商官方服务范围匹配 AI 请求",
+      "destination": "AI.list → AI",
+      "route_tests": ["auth.grokipedia.com"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN-SUFFIX,cursorvm.com",
+      "reason": "使用供应商官方服务范围匹配 AI 请求",
+      "destination": "AI.list → AI",
+      "route_tests": ["probe.cursorvm.com"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN,api.app.prod.grazie.aws.intellij.net",
+      "reason": "使用供应商官方服务范围匹配 AI 请求",
+      "destination": "AI.list → AI",
+      "route_tests": ["api.app.prod.grazie.aws.intellij.net"]
+    },
+    {
+      "source_file": "Claude.txt",
+      "rule": "DOMAIN,claude.site",
+      "reason": "精确匹配 Anthropic 公共入口",
+      "destination": "Claude.list → Claude",
+      "route_tests": ["claude.site"]
+    },
+    {
+      "source_file": "Claude.txt",
+      "rule": "DOMAIN,claude.new",
+      "reason": "精确匹配 Anthropic 公共入口",
+      "destination": "Claude.list → Claude",
+      "route_tests": ["claude.new"]
+    },
+    {
+      "source_file": "Claude.txt",
+      "rule": "DOMAIN,claude.dev",
+      "reason": "精确匹配 Anthropic 公共入口",
+      "destination": "Claude.list → Claude",
+      "route_tests": ["claude.dev"]
+    },
+    {
+      "source_file": "Claude.txt",
+      "rule": "DOMAIN,www.claude.dev",
+      "reason": "精确匹配 Anthropic 公共入口",
+      "destination": "Claude.list → Claude",
+      "route_tests": ["www.claude.dev"]
+    },
+    {
+      "source_file": "AI.txt",
+      "rule": "DOMAIN-SUFFIX,modelcontextprotocol.io",
+      "reason": "跨厂商 MCP 规范和注册表归通用 AI",
+      "destination": "AI.list → AI",
+      "route_tests": ["modelcontextprotocol.io", "registry.modelcontextprotocol.io"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,grazie.aws.intellij.net",
+      "reason": "JetBrains AI API 已按精确域归类",
+      "destination": "已核实的 API → AI，其余主机走正常规则",
+      "route_tests": ["api.app.prod.grazie.aws.intellij.net"]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,api.statsig.com",
+      "reason": "共享基础设施或 Google 通用服务由目的地所属规则接管",
+      "destination": "Google、Global 或 FINAL",
+      "route_tests": ["api.statsig.com"]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,host.livekit.cloud",
+      "reason": "共享基础设施或 Google 通用服务由目的地所属规则接管",
+      "destination": "Google、Global 或 FINAL",
+      "route_tests": ["sample.host.livekit.cloud"]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN,cdn.growthbook.io",
+      "reason": "共享基础设施或 Google 通用服务由目的地所属规则接管",
+      "destination": "Google、Global 或 FINAL",
+      "route_tests": ["cdn.growthbook.io"]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,geller-pa.googleapis.com",
+      "reason": "共享基础设施或 Google 通用服务由目的地所属规则接管",
+      "destination": "Google、Global 或 FINAL",
+      "route_tests": ["geller-pa.googleapis.com"]
+    },
+    {
+      "source_file": "AI.exclude.txt",
+      "rule": "URL-REGEX,https://www\\.google\\.com/.*continue=https://gemini\\.google\\.com.+",
+      "reason": "旧正则误收伪后缀且漏掉正常编码，Gemini 原生主机已覆盖",
+      "destination": "Google.list 与 AI.list 按请求主机匹配",
+      "route_tests": ["www.google.com", "gemini.google.com"]
+    },
+    {
       "source_file": "AppleMedia.txt",
       "rule": "DOMAIN-SUFFIX,tv.apple.com",
       "reason": "已核对的 Apple TV 或 Apple News 入口优先于通用 Apple 后缀",
@@ -1506,13 +1779,6 @@
       "reason": "Claude 用户内容域名从通用 AI 组拆分",
       "destination": "Claude.list → Claude",
       "route_tests": ["claudeusercontent.com"]
-    },
-    {
-      "source_file": "Claude.txt",
-      "rule": "DOMAIN-SUFFIX,modelcontextprotocol.io",
-      "reason": "现有 Claude MCP 归属从通用 AI 组拆分",
-      "destination": "Claude.list → Claude",
-      "route_tests": ["modelcontextprotocol.io"]
     },
     {
       "source_file": "Claude.txt",

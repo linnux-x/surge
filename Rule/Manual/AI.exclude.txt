@@ -121,3 +121,33 @@ DOMAIN-KEYWORD,openaicom
 DOMAIN-KEYWORD,notebooklm.google
 DOMAIN-KEYWORD,labs.google
 DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com
+
+# Shared service hosts and ordinary Google services use their normal routes.
+DOMAIN,api.statsig.com
+DOMAIN-SUFFIX,api.statsig.com
+DOMAIN,cdn.growthbook.io
+DOMAIN-SUFFIX,cdn.growthbook.io
+DOMAIN,client-api.arkoselabs.com
+DOMAIN-SUFFIX,client-api.arkoselabs.com
+DOMAIN,events.statsigapi.net
+DOMAIN-SUFFIX,events.statsigapi.net
+DOMAIN,featuregates.org
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN,geller-pa.googleapis.com
+DOMAIN-SUFFIX,geller-pa.googleapis.com
+DOMAIN,host.livekit.cloud
+DOMAIN-SUFFIX,host.livekit.cloud
+DOMAIN,observeit.net
+DOMAIN-SUFFIX,observeit.net
+DOMAIN,proactivebackend-pa.googleapis.com
+DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+DOMAIN,turn.livekit.cloud
+DOMAIN-SUFFIX,turn.livekit.cloud
+
+# Legacy cloud addresses without a verified AI-specific assignment.
+IP-CIDR,129.146.3.78/32,no-resolve
+IP-CIDR,24.199.123.28/32,no-resolve
+IP-CIDR,64.23.132.171/32,no-resolve
+
+# Retire the old Gemini redirect URL rule from upstream as well.
+URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+

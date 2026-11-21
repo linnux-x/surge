@@ -1,9 +1,9 @@
 # NAME: AI
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 08:54:02 +0800
+# UPDATED: 2026-11-21 12:25:36 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 123
+# TOTAL: 136
 
 # ======= Manual Rules ========
 
@@ -11,15 +11,21 @@
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,claude.app
 DOMAIN-SUFFIX,clau.de
 DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN-SUFFIX,claudemcpclient.com
 DOMAIN-SUFFIX,claudemcpcontent.com
-DOMAIN-SUFFIX,modelcontextprotocol.io
-DOMAIN,cdn.growthbook.io
+DOMAIN,claude.site
+DOMAIN,claude.new
+DOMAIN,claude.dev
+DOMAIN,www.claude.dev
 DOMAIN,anthropic.auth0.com
 DOMAIN,anthropic.com.cdn.cloudflare.net
 DOMAIN,servd-anthropic-website.b-cdn.net
+
+# Vendor-neutral MCP specification and registry.
+DOMAIN-SUFFIX,modelcontextprotocol.io
 
 # OpenAI network requirements: https://help.openai.com/en/articles/9247338
 DOMAIN-SUFFIX,oaistatsig.com
@@ -41,6 +47,18 @@ DOMAIN,notebooklm-pa.googleapis.com
 DOMAIN,notebooklm.googleapis.com
 DOMAIN,robinfrontend-pa.googleapis.com
 DOMAIN,vertexai.googleapis.com
+# First-party Google AI APIs, including Google's documented regional naming scheme.
+# https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations
+DOMAIN-WILDCARD,*-aiplatform.googleapis.com
+DOMAIN,aiplatform.us.rep.googleapis.com
+DOMAIN,aiplatform.eu.rep.googleapis.com
+DOMAIN,cloudaicompanion.googleapis.com
+DOMAIN,geminicloudassist.googleapis.com
+DOMAIN,firebasevertexai.googleapis.com
+DOMAIN,flow.google
+# https://docs.cloud.google.com/dialogflow/cx/docs/concept/region
+DOMAIN,dialogflow.googleapis.com
+DOMAIN-WILDCARD,*-dialogflow.googleapis.com
 DOMAIN-SUFFIX,api.ai
 DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,deepmind.google
@@ -48,21 +66,40 @@ DOMAIN-SUFFIX,dialogflow.com
 DOMAIN-SUFFIX,g.ai
 DOMAIN-SUFFIX,gemini.google
 DOMAIN-SUFFIX,generativeai.google
-DOMAIN-SUFFIX,geller-pa.googleapis.com
-DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
 DOMAIN-SUFFIX,aistudio.google.com
 DOMAIN-SUFFIX,makersuite.google.com
 DOMAIN-SUFFIX,notebooklm.google
 DOMAIN-SUFFIX,notebooklm.google.com
 DOMAIN,alkalimakersuite-pa.clients6.google.com
-URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+
 
 # Local coding assistant backend
 DOMAIN,trae-api-sg.mchost.guru
 
 # GitHub Copilot
 DOMAIN-SUFFIX,githubcopilot.com
+# https://docs.github.com/en/copilot/reference/copilot-allowlist-reference
+DOMAIN,copilot-proxy.githubusercontent.com
+DOMAIN,origin-tracker.githubusercontent.com
+DOMAIN,production-copilot-host.webpubsub.azure.com
+DOMAIN,production-copilot-host-austriaeast.webpubsub.azure.com
+DOMAIN,production-copilot-host-centralus.webpubsub.azure.com
+DOMAIN,production-copilot-host-centralus-02.webpubsub.azure.com
+DOMAIN,production-copilot-host-eastasia.webpubsub.azure.com
+DOMAIN,production-copilot-host-westus.webpubsub.azure.com
+DOMAIN,production-copilot-host-westus3.webpubsub.azure.com
+
+# Cursor's documented minimum sign-in hosts and dedicated runtime.
+# auth.grok.com is already covered by grok.com.
+# https://cursor.com/help/troubleshooting/sign-in-domains
+DOMAIN,accounts.spacexsi.com
+DOMAIN,auth.grokusercontent.com
+DOMAIN,auth.grokipedia.com
+DOMAIN-SUFFIX,cursorvm.com
+
+# JetBrains AI Assistant and Junie public API; the China API remains on China.
+# https://youtrack.jetbrains.com/projects/RSRP/articles/SUPPORT-A-297/
+DOMAIN,api.app.prod.grazie.aws.intellij.net
 
 # Microsoft Copilot / Bing Chat
 DOMAIN,sydney.bing.com
@@ -109,7 +146,6 @@ DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,jasper.ai
 DOMAIN-SUFFIX,openart.ai
 DOMAIN-SUFFIX,chatgpt.com
-DOMAIN,claude.site
 DOMAIN-SUFFIX,clipdrop.co
 DOMAIN-SUFFIX,chatgpt.site
 DOMAIN-SUFFIX,oaistatic.com
@@ -132,21 +168,11 @@ DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
 DOMAIN,openaicomproductionae4b.blob.core.windows.net
 DOMAIN,production-openaicom-storage.azureedge.net
 DOMAIN-SUFFIX,aicode.googleapis.com
-DOMAIN-SUFFIX,api.statsig.com
 DOMAIN-SUFFIX,chatgpt.livekit.cloud
-DOMAIN-SUFFIX,client-api.arkoselabs.com
-DOMAIN-SUFFIX,events.statsigapi.net
-DOMAIN-SUFFIX,featuregates.org
-DOMAIN-SUFFIX,host.livekit.cloud
 DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,observeit.net
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,openaicom.imgix.net
-DOMAIN-SUFFIX,turn.livekit.cloud
-IP-CIDR,129.146.3.78/32,no-resolve
-IP-CIDR,24.199.123.28/32,no-resolve
-IP-CIDR,64.23.132.171/32,no-resolve
 
 # ======= ConnersHua AI ========
 DOMAIN,anthropic-com.ghost.io

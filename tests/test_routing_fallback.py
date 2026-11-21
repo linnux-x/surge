@@ -51,6 +51,15 @@ class FallbackOrderTests(unittest.TestCase):
         broad_apple_tv_rules = {"user-agent,appletv*", "user-agent,com.apple.tv*", "process-name,tv"}
         self.assertEqual(broad_apple_tv_rules & global_media, set())
 
+    def test_ai_keeps_claude_standalone_compatibility_without_the_gemini_redirect(self):
+        module = load_routing_module()
+        ai_rules = module.load_ruleset(module.RULE_DIR / "AI.list")
+        for hostname in ("probe.livepreview.claude.app", "claude.site", "claude.new", "claude.dev"):
+            with self.subTest(hostname=hostname):
+                self.assertTrue(module.match_domain(hostname, ai_rules))
+        self.assertFalse(any(rule.startswith("url-regex,") and "continue=" in rule
+                             for rule in ai_rules))
+
 
 if __name__ == "__main__":
     unittest.main()
