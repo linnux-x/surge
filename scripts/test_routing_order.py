@@ -16,7 +16,7 @@ import sys
 from pathlib import Path
 from urllib.parse import urlsplit
 
-from rule_validator import DOMAIN_PORT_RULE_RE
+from rule_validator import DOMAIN_PORT_RULE_RE, VOICE_UDP_RULE_RE
 
 ROOT = Path(__file__).resolve().parents[1]
 RULE_DIR = ROOT / "Rule"
@@ -77,7 +77,8 @@ def load_ruleset(path: Path) -> set[str]:
     return raw_rules
 
 
-def match_domain(domain: str, rules: set[str], *, url: str | None = None, port: int = 443) -> bool:
+def match_domain(domain: str, rules: set[str], *, url: str | None = None,
+                 port: int = 443, protocol: str = "TCP") -> bool:
     """Check if a destination matches any rule in a ruleset.
 
     Implements Surge's matching logic:
@@ -87,7 +88,7 @@ def match_domain(domain: str, rules: set[str], *, url: str | None = None, port: 
     - DOMAIN-WILDCARD: wildcard match (basic * support)
     - IP-CIDR/IP-CIDR6: literal address membership (no DNS lookup)
     - URL-REGEX: match the full URL when explicitly supplied
-    - AND: match an exact domain and destination port together
+    - AND: match an exact domain and port, or a literal CIDR on UDP 3478
     """
     domain_lower = domain.lower().rstrip(".")
     try:
@@ -110,6 +111,10 @@ def match_domain(domain: str, rules: set[str], *, url: str | None = None, port: 
         elif rule_type == "AND" and (domain_port := DOMAIN_PORT_RULE_RE.fullmatch(rule)):
             host, rule_port = domain_port.groups()
             if domain_lower == host.lower() and port == int(rule_port):
+                return True
+        elif (rule_type == "AND" and address is not None and port == 3478 and protocol == "UDP"
+              and (voice_udp := VOICE_UDP_RULE_RE.fullmatch(rule))):
+            if address in ipaddress.ip_network(voice_udp[2]):
                 return True
         elif rule_type in ("IP-CIDR", "IP-CIDR6") and address is not None:
             if address in ipaddress.ip_network(value, strict=False):

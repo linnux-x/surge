@@ -18,6 +18,12 @@
       "url": "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/AI.list",
       "format": null,
       "sha256": "99f02a768917992130e299a0217d2bda19e51dbb056708d9367c75a7581ed92d"
+    },
+    {
+      "label": "OpenAI ChatGPT Voice",
+      "url": "https://openai.com/chatgpt-voice.json",
+      "format": "chatgpt-voice-json",
+      "sha256": "a0a3061104fcf421dd3dbdcd99a47cde6bb197ccbab102468a9f903e992a8aa5"
     }
   ]
 }

@@ -764,3 +764,26 @@ telega.one,Telegram.list,Telegram,Telegram 别名通过域名规则分流
 95.161.72.10,Global,Global,ASN 扩展网段裸 IP 沿后续策略
 91.108.24.1,Global,Global,非 Telegram 的原 Global 聚合子网按现有兜底
 109.239.140.3,Global,Global,其他运营商的旧网段按现有兜底
+copilot-telemetry.githubusercontent.com,AI.list,AI,AI 官方服务端点
+copilot-reports.github.com,AI.list,AI,AI 官方服务端点
+collector.github.com,Global,Global,按用途保留下载或通用分流
+windsurf.com,AI.list,AI,AI 官方服务端点
+server.self-serve.windsurf.com,AI.list,AI,AI 官方服务端点
+server.codeium.com,AI.list,AI,AI 官方服务端点
+codeium.com,AI.list,AI,AI 官方服务端点
+codeiumdata.com,AI.list,AI,AI 官方服务端点
+app.devin.ai,AI.list,AI,AI 官方服务端点
+api.devin.ai,AI.list,AI,AI 官方服务端点
+static.devin.ai,AI.list,AI,AI 官方服务端点
+update.windsurf.com,Download.list,Download,按用途保留下载或通用分流
+cloud.zed.dev,AI.list,AI,AI 官方服务端点
+zed.dev,Global,Global,按用途保留下载或通用分流
+api.zed.dev,Global,Global,按用途保留下载或通用分流
+opencode.ai,AI.list,AI,AI 官方服务端点
+api.together.ai,AI.list,AI,AI 官方服务端点
+api.together.xyz,AI.list,AI,AI 官方服务端点
+router.huggingface.co,AI.list,AI,AI 官方服务端点
+cas-bridge.xethub.hf.co,Download.list,Download,按用途保留下载或通用分流
+sora.com,Global,Global,按用途保留下载或通用分流
+sora.chatgpt.com,AI.list,AI,AI 官方服务端点
+devin.ai,AI.list,AI,Windsurf 官方首页跳转的 Devin Desktop 入口

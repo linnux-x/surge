@@ -23,5 +23,8 @@ DOMAIN,dl.ubnt.com
 # Ubiquiti's official Windows, macOS and Linux WiFiman Desktop installers.
 DOMAIN,desktop.wifiman.com
 
+# Dedicated Devin Desktop / Windsurf update endpoint.
+DOMAIN,update.windsurf.com
+
 # ASUS Armoury Crate / Live Update packages (CloudFront, GB-sized); 2026-11-08 monitoring saw 1.47GB via Global
 DOMAIN,liveupdate01s.asus.com
