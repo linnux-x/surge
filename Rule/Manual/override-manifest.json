@@ -38,6 +38,8 @@
     "Microsoft.exclude.txt": {"action": "exclude", "reason": "历史 Microsoft 归属去重", "destination": "Microsoft_CDN、Download、Game 或 fallback"},
     "Microsoft_CDN.txt": {"action": "include", "reason": "历史 Microsoft CDN 直连补充", "destination": "Microsoft_CDN.list"},
     "Netflix.exclude.txt": {"action": "exclude", "reason": "历史流媒体归属去重", "destination": "后续专属规则或 fallback"},
+    "Netflix.txt": {"action": "include", "reason": "FAST.com 与 Netflix 共享数据节点", "destination": "Netflix.list → Netflix"},
+    "Speedtest_China.txt": {"action": "include", "reason": "补充实测的大陆测速 API", "destination": "Speedtest_China.list → DIRECT"},
     "PayPal.exclude.txt": {"action": "exclude", "reason": "历史金融服务边界修正", "destination": "PayPal 专属规则或 fallback"},
     "SocialMedia.exclude.txt": {"action": "exclude", "reason": "历史社交媒体归属去重", "destination": "后续专属规则或 fallback"},
     "SocialMedia.txt": {"action": "include", "reason": "历史社交媒体补充", "destination": "SocialMedia.list"},
@@ -3445,6 +3447,17 @@
     {"source_file": "Speedtest.exclude.txt", "rule": "DOMAIN-SUFFIX,mirror.nforce.com", "reason": "NFOrce 软件镜像和测速使用不同出口", "destination": "Global.list → Global", "route_tests": ["mirror.nforce.com", "https://mirror.nforce.com/pub/"]},
     {"source_file": "Download.exclude.txt", "rule": "DOMAIN,mirror.nforce.com", "reason": "Mac 实测 Download 直连超时，经 Global 返回 200", "destination": "Global.list → Global", "route_tests": ["mirror.nforce.com", "https://mirror.nforce.com/pub/"]},
     {"source_file": "Global.txt", "rule": "DOMAIN,mirror.nforce.com", "reason": "保持 NFOrce 软件镜像可达，Ookla 8080 仍由 Speedtest 先命中", "destination": "Global.list → Global", "route_tests": ["https://mirror.nforce.com/pub/", "http://mirror.nforce.com:8080/speedtest/upload.php"]},
-    {"source_file": "Download.exclude.txt", "rule": "DOMAIN-SUFFIX,s3.us.archive.org", "reason": "Internet Archive 对象 API 支持上传和读取", "destination": "Global.list → Global", "route_tests": ["stats.s3.us.archive.org"]}
+    {"source_file": "Download.exclude.txt", "rule": "DOMAIN-SUFFIX,s3.us.archive.org", "reason": "Internet Archive 对象 API 支持上传和读取", "destination": "Global.list → Global", "route_tests": ["stats.s3.us.archive.org"]},
+    {"source_file": "Netflix.txt", "rule": "DOMAIN-SUFFIX,fast.com", "reason": "FAST.com 页面与 API 跟随测速数据共用的 Netflix 出口", "destination": "Netflix.list → Netflix", "route_tests": ["fast.com", "api.fast.com", "ipv4-c002-hkg003-pccw-isp.1.oca.nflxvideo.net"]},
+    {"source_file": "GlobalMedia.txt", "rule": "DOMAIN-SUFFIX,fast.com", "reason": "未启用 Netflix.list 时与 Netflix 数据一起走流媒体兜底", "destination": "GlobalMedia.list → GlobalMedia", "route_tests": ["fast.com", "api.fast.com", "ipv4-c002-hkg003-pccw-isp.1.oca.nflxvideo.net"]},
+    {"source_file": "Speedtest.txt", "rule": "DOMAIN,wifiman.com", "reason": "精确匹配 WiFiman 测速首页", "destination": "Speedtest.list → Speedtest", "route_tests": ["wifiman.com"]},
+    {"source_file": "Speedtest.txt", "rule": "DOMAIN,www.wifiman.com", "reason": "精确匹配 WiFiman WWW 入口", "destination": "Speedtest.list → Speedtest", "route_tests": ["www.wifiman.com"]},
+    {"source_file": "Speedtest.txt", "rule": "DOMAIN,speedtest.ubncloud.com", "reason": "WiFiman 官方前端调用的测速节点服务", "destination": "Speedtest.list → Speedtest", "route_tests": ["speedtest.ubncloud.com"]},
+    {"source_file": "Speedtest.txt", "rule": "AND,((DOMAIN,stealth.net),(DEST-PORT,8080))", "reason": "仅将 Stealth Communications 的 Ookla 测速端口交给 Speedtest", "destination": "Speedtest.list → Speedtest", "route_tests": ["http://stealth.net:8080/speedtest/upload.php", "https://stealth.net/"]},
+    {"source_file": "Speedtest.exclude.txt", "rule": "DOMAIN,stealth.net", "reason": "Stealth 官网与 Ookla 端口的用途不同", "destination": "Global.list → Global", "route_tests": ["https://stealth.net/"]},
+    {"source_file": "Speedtest.exclude.txt", "rule": "DOMAIN-SUFFIX,wifiman.com", "reason": "将 WiFiman 安装包和设备管理主机移出测速组", "destination": "Download 或通用策略", "route_tests": ["desktop.wifiman.com", "console.wifiman.com", "wifiman.com"]},
+    {"source_file": "Download.txt", "rule": "DOMAIN,desktop.wifiman.com", "reason": "Ubiquiti 官方下载安装包主机", "destination": "Download.list → Download", "route_tests": ["desktop.wifiman.com"]},
+    {"source_file": "Global.txt", "rule": "DOMAIN,stealth.net", "reason": "Stealth 企业官网，测速端口由 Speedtest 先命中", "destination": "Global.list → Global", "route_tests": ["https://stealth.net/", "http://stealth.net:8080/speedtest/upload.php"]},
+    {"source_file": "Speedtest_China.txt", "rule": "DOMAIN,api-v3.speedtest.cn", "reason": "iPhone Ponte 实测的大陆测速 API", "destination": "Speedtest_China.list → DIRECT", "route_tests": ["api-v3.speedtest.cn"]}
   ]
 }

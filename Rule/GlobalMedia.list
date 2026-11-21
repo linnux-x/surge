@@ -1,11 +1,14 @@
 # NAME: GlobalMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 12:42:22 +0800
+# UPDATED: 2026-11-21 15:12:36 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 2253
+# TOTAL: 2254
 
 # ======= Manual Rules ========
+# Keep the FAST.com front end, API and data on the same policy where Netflix.list is disabled.
+DOMAIN-SUFFIX,fast.com
+
 # Bilibili international / B-Star
 DOMAIN-SUFFIX,p-bstarstatic.akamaized.net
 DOMAIN-SUFFIX,upos-bstar-mirrorakam.akamaized.net

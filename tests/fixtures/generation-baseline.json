@@ -15,7 +15,6 @@
   "guardrails": {
     "Apple_AI.list": [
       "DOMAIN,github.com",
-      "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
       "IP-ASN,15169,no-resolve",
       "IP-CIDR,1.1.1.0/24,no-resolve",
@@ -24,7 +23,6 @@
     ],
     "AI.list": [
       "DOMAIN,github.com",
-      "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
       "IP-ASN,15169,no-resolve",
       "IP-CIDR,1.1.1.0/24,no-resolve",
@@ -33,7 +31,6 @@
     ],
     "Apple.list": [
       "DOMAIN,github.com",
-      "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
       "IP-ASN,15169,no-resolve",
       "IP-CIDR,1.1.1.0/24,no-resolve",
@@ -42,7 +39,6 @@
     ],
     "Apple_CN.list": [
       "DOMAIN,github.com",
-      "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
       "IP-ASN,15169,no-resolve",
       "IP-CIDR,1.1.1.0/24,no-resolve",
@@ -51,7 +47,6 @@
     ],
     "CDN.list": [
       "DOMAIN,github.com",
-      "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
       "IP-ASN,15169,no-resolve",
       "IP-CIDR,1.1.1.0/24,no-resolve",
@@ -60,7 +55,6 @@
     ],
     "Download.list": [
       "DOMAIN,github.com",
-      "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
       "IP-ASN,15169,no-resolve",
       "IP-CIDR,1.1.1.0/24,no-resolve",
@@ -69,13 +63,11 @@
     ],
     "China.list": [
       "DOMAIN,github.com",
-      "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
       "DOMAIN,keep.example"
     ],
     "China_IP.list": [
       "DOMAIN,github.com",
-      "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
       "IP-ASN,15169",
       "IP-CIDR,1.1.1.0/24",
@@ -84,7 +76,6 @@
     ],
     "ChinaMedia.list": [
       "DOMAIN,github.com",
-      "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
       "IP-ASN,15169,no-resolve",
       "IP-CIDR,1.1.1.0/24,no-resolve",
@@ -93,7 +84,6 @@
     ],
     "Disney.list": [
       "DOMAIN,github.com",
-      "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
       "IP-ASN,15169,no-resolve",
       "IP-CIDR,1.1.1.0/24,no-resolve",
@@ -102,7 +92,6 @@
     ],
     "Game.list": [
       "DOMAIN,github.com",
-      "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
       "IP-ASN,15169,no-resolve",
       "IP-CIDR,1.1.1.0/24,no-resolve",
@@ -119,6 +108,7 @@
     ],
     "GlobalMedia.list": [
       "DOMAIN,github.com",
+      "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
       "IP-ASN,15169,no-resolve",
       "IP-CIDR,1.1.1.0/24,no-resolve",
@@ -127,14 +117,12 @@
     ],
     "Google.list": [
       "DOMAIN,github.com",
-      "DOMAIN,fast.com",
       "IP-ASN,15169,no-resolve",
       "IP-CIDR,1.1.1.0/24,no-resolve",
       "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
       "DOMAIN,keep.example"
     ],
     "Microsoft.list": [
-      "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
       "IP-ASN,15169,no-resolve",
       "IP-CIDR,1.1.1.0/24,no-resolve",
@@ -143,7 +131,6 @@
     ],
     "Microsoft_CDN.list": [
       "DOMAIN,github.com",
-      "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
       "IP-ASN,15169,no-resolve",
       "IP-CIDR,1.1.1.0/24,no-resolve",
@@ -152,6 +139,7 @@
     ],
     "Netflix.list": [
       "DOMAIN,github.com",
+      "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
       "IP-ASN,15169,no-resolve",
       "IP-CIDR,1.1.1.0/24,no-resolve",
@@ -160,7 +148,6 @@
     ],
     "PayPal.list": [
       "DOMAIN,github.com",
-      "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
       "IP-ASN,15169,no-resolve",
       "IP-CIDR,1.1.1.0/24,no-resolve",
@@ -169,7 +156,6 @@
     ],
     "SocialMedia.list": [
       "DOMAIN,github.com",
-      "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
       "IP-ASN,15169,no-resolve",
       "IP-CIDR,1.1.1.0/24,no-resolve",
@@ -178,7 +164,6 @@
     ],
     "Speedtest.list": [
       "DOMAIN,github.com",
-      "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
       "IP-ASN,15169,no-resolve",
       "IP-CIDR,1.1.1.0/24,no-resolve",
@@ -187,7 +172,6 @@
     ],
     "Speedtest_China.list": [
       "DOMAIN,github.com",
-      "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
       "IP-ASN,15169,no-resolve",
       "IP-CIDR,1.1.1.0/24,no-resolve",
@@ -196,7 +180,6 @@
     ],
     "Spotify.list": [
       "DOMAIN,github.com",
-      "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
       "IP-ASN,15169,no-resolve",
       "IP-CIDR,1.1.1.0/24,no-resolve",
@@ -205,7 +188,6 @@
     ],
     "Telegram.list": [
       "DOMAIN,github.com",
-      "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
       "IP-ASN,15169,no-resolve",
       "IP-CIDR,1.1.1.0/24,no-resolve",
@@ -214,7 +196,6 @@
     ],
     "TikTok.list": [
       "DOMAIN,github.com",
-      "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
       "IP-ASN,15169,no-resolve",
       "IP-CIDR,1.1.1.0/24,no-resolve",
@@ -223,7 +204,6 @@
     ],
     "WeChat.list": [
       "DOMAIN,github.com",
-      "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
       "IP-ASN,15169,no-resolve",
       "IP-CIDR,1.1.1.0/24,no-resolve",
@@ -232,7 +212,6 @@
     ],
     "YouTube.list": [
       "DOMAIN,github.com",
-      "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
       "IP-ASN,15169,no-resolve",
       "IP-CIDR,1.1.1.0/24,no-resolve",

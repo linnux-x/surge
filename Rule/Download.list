@@ -1,9 +1,9 @@
 # NAME: Download
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 13:14:49 +0800
+# UPDATED: 2026-11-21 15:12:36 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1610
+# TOTAL: 1611
 
 # ======= Manual Rules ========
 # Preserve the S3 path-style endpoint without matching virtual-hosted buckets.
@@ -28,6 +28,8 @@ DOMAIN,ffmpeg.martin-riedl.de
 # Ubiquiti firmware/software and datasheet downloads; not the whole ubnt.com service.
 # https://dl.ui.com/datasheets/unifi/UniFi_Switch_8_DS.pdf
 DOMAIN,dl.ubnt.com
+# Ubiquiti's official Windows, macOS and Linux WiFiman Desktop installers.
+DOMAIN,desktop.wifiman.com
 
 # ASUS Armoury Crate / Live Update packages (CloudFront, GB-sized); 2026-11-08 monitoring saw 1.47GB via Global
 DOMAIN,liveupdate01s.asus.com

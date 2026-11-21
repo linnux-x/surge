@@ -16,7 +16,9 @@ tenpay.com,China.list,DIRECT,财付通共享支付入口
 101.224.0.1,China_IP.list,DIRECT,原媒体宽网段回归样本
 119.176.0.1,China_IP.list,DIRECT,原媒体宽网段回归样本
 speedtest.net,Speedtest.list,Speedtest,测速主站
-fast.com,Speedtest.list,Speedtest,fast.com仅在此文件
+fast.com,Netflix.list,Netflix,FAST 首页跟随 Netflix 测速数据出口
+api.fast.com,Netflix.list,Netflix,FAST API 跟随 Netflix 测速数据出口
+ipv4-c002-hkg003-pccw-isp.1.oca.nflxvideo.net,Netflix.list,Netflix,FAST 官方 API 返回的 Netflix Open Connect 测速节点
 s3.amazonaws.com,Download.list,Download,S3 裸域保留原有下载策略
 venmo.s3.amazonaws.com,PayPal.list,PayPal,共享 S3 父域收窄后 Venmo 命中专属策略
 sample-bucket.s3.amazonaws.com,Global.list,Global,未明确归属的 S3 bucket 不随 Download 切换
@@ -719,3 +721,11 @@ https://mirror.nforce.com/pub/,Global.list,Global,NFOrce 软件镜像直连超�
 deb.debian.org,Download.list,Download,Debian 公共包镜像继续走 Download
 persistent.oaistatic.com,Download.list,Download,OpenAI 客户端安装包继续走 Download
 stats.s3.us.archive.org,Global.list,Global,Internet Archive 对象 API 支持上传和读取
+wifiman.com,Speedtest.list,Speedtest,WiFiman 网页测速入口
+www.wifiman.com,Speedtest.list,Speedtest,WiFiman 网页测速入口
+speedtest.ubncloud.com,Speedtest.list,Speedtest,WiFiman 官方前端的测速节点服务
+desktop.wifiman.com,Download.list,Download,WiFiman 官方桌面安装包
+console.wifiman.com,Global,Global,WiFiman 设备管理入口沿通用海外策略
+https://stealth.net/,Global.list,Global,Stealth 企业官网
+http://stealth.net:8080/speedtest/upload.php,Speedtest.list,Speedtest,Stealth 官方 Ookla 测速端口
+api-v3.speedtest.cn,Speedtest_China.list,DIRECT,大陆测速 API 保持直连
