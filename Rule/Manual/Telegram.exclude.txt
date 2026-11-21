@@ -11,5 +11,21 @@ IP-CIDR,194.221.250.50/32,no-resolve
 IP-CIDR6,2001:b28:f23c::/47,no-resolve
 IP-CIDR6,2a0a:f280::/29,no-resolve
 
-# Redundant because the same ASNs are already emitted as standalone IP-ASN rules.
+# The published Telegram CIDRs define the IP boundary. ASN matches also admit unlisted prefixes.
+IP-ASN,211157,no-resolve
+IP-ASN,44907,no-resolve
+IP-ASN,59930,no-resolve
+IP-ASN,62014,no-resolve
+IP-ASN,62041,no-resolve
 OR,((IP-ASN,44907,no-resolve),(IP-ASN,59930,no-resolve),(IP-ASN,62014,no-resolve),(IP-ASN,62041,no-resolve),(IP-ASN,211157,no-resolve))
+
+# Keep parked sites, third-party contest hosting, and generic keyword matches out of Telegram.
+DOMAIN-SUFFIX,telegramdownload.com
+DOMAIN-SUFFIX,usercontent.dev
+DOMAIN-KEYWORD,nicegram
+
+# Surge process rules match macOS executables.
+PROCESS-NAME,nekox.messenger
+PROCESS-NAME,org.telegram.messenger
+PROCESS-NAME,tw.nekomimi.nekogram
+PROCESS-NAME,xyz.nextalone.nagram

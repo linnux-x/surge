@@ -1,3 +1,6 @@
 # Third-party Telegram client root host observed in real FINAL traffic
 # api.swiftgram.app is already supplied upstream.
 DOMAIN,swiftgram.app
+
+# Nicegram client website. Other services and ads on its subdomains follow their own rules.
+DOMAIN,nicegram.me

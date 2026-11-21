@@ -80,7 +80,7 @@ https://raw.githubusercontent.com/linnux-x/surge/main/Conf/Linnux.conf
 | 🇨🇳 TWMedia.list | SukkaW | 台湾地区限定流媒体（KKTV、动画疯等） |
 | 🇯🇵 JPMedia.list | SukkaW | 日本地区限定流媒体（DMM、AbemaTV 等） |
 | 🇺🇸 USMedia.list | SukkaW | 美国地区限定流媒体（Hulu、Paramount+ 等） |
-| ✈️ Telegram.list | 2 源 | 域名、CIDR、ASN |
+| ✈️ Telegram.list | 2 源 | 服务域名、Telegram 官方 CIDR、Mac 客户端进程 |
 | 🎵 TikTok.list | blackmatrix7 | TikTok |
 | 💚 WeChat.list | blackmatrix7 | 微信相关服务 |
 | ▶️ YouTube.list | blackmatrix7 | YouTube 与 YouTube Music |

@@ -1,7 +1,7 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 15:12:36 +0800
+# UPDATED: 2026-11-21 15:28:33 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 24638
 
@@ -15094,6 +15094,7 @@ DOMAIN-SUFFIX,telebay.com
 DOMAIN-SUFFIX,telega.info
 DOMAIN-SUFFIX,telega.me
 DOMAIN-SUFFIX,telegram-porn.com
+DOMAIN-SUFFIX,telegramdownload.com
 DOMAIN-SUFFIX,telekom.com
 DOMAIN-SUFFIX,telekom.de
 DOMAIN-SUFFIX,telephony.goog
@@ -15904,6 +15905,7 @@ DOMAIN-SUFFIX,usenix.org
 DOMAIN-SUFFIX,userapi.com
 DOMAIN-SUFFIX,userapi.ru
 DOMAIN-SUFFIX,usercentrics.eu
+DOMAIN-SUFFIX,usercontent.dev
 DOMAIN-SUFFIX,userdrive.org
 DOMAIN-SUFFIX,usersdrive.com
 DOMAIN-SUFFIX,usocial.pro
@@ -24583,7 +24585,6 @@ IP-CIDR,101.32.118.0/23,no-resolve
 IP-CIDR,101.32.96.0/20,no-resolve
 IP-CIDR,103.2.28.0/22,no-resolve
 IP-CIDR,103.4.96.0/22,no-resolve
-IP-CIDR,109.239.140.0/24,no-resolve
 IP-CIDR,119.235.224.0/21,no-resolve
 IP-CIDR,119.235.232.0/23,no-resolve
 IP-CIDR,119.235.235.0/24,no-resolve
@@ -24661,7 +24662,6 @@ IP-CIDR,72.52.81.22/32,no-resolve
 IP-CIDR,74.119.76.0/22,no-resolve
 IP-CIDR,74.86.0.0/16,no-resolve
 IP-CIDR,75.126.0.0/16,no-resolve
-IP-CIDR,91.108.0.0/16,no-resolve
 IP-CIDR6,2001:b28:f23c::/47,no-resolve
 USER-AGENT,TwDramas
 USER-AGENT,Duolingo*
