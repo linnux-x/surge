@@ -6,6 +6,8 @@ DOMAIN-SUFFIX,anfutong.com.cn
 DOMAIN-SUFFIX,beibao.cn
 DOMAIN-SUFFIX,beibao.com
 DOMAIN-SUFFIX,beibao.com.cn
+DOMAIN,paypal.cn
+DOMAIN-SUFFIX,paypal.cn
 DOMAIN-SUFFIX,paypal.com.cn
 DOMAIN-SUFFIX,paypal.net.cn
 DOMAIN-SUFFIX,paypal.org.cn
@@ -15,9 +17,18 @@ DOMAIN-SUFFIX,paypalhere.com.cn
 DOMAIN-SUFFIX,xn--bnq297cix3a.cn
 DOMAIN-SUFFIX,xoom.net.cn
 
-# venmo.s3.amazonaws.com is a specific S3 bucket, not a suffix to match subdomains under.
-# Kept as DOMAIN-SUFFIX in upstream but effectively only matches the exact host.
-# No action needed — DOMAIN-SUFFIX on a 4-label host is effectively exact-match.
+# Match only Venmo's bucket and classify by destination hostname.
+DOMAIN-SUFFIX,venmo.s3.amazonaws.com
+USER-AGENT,PayPal*
+
+# Kraken is an open-source Node.js framework. These legacy aliases return NXDOMAIN.
+DOMAIN-SUFFIX,krakenjs.com
+DOMAIN,paypal-referral.com
+DOMAIN-SUFFIX,paypal-referral.com
+DOMAIN,paypal.info
+DOMAIN-SUFFIX,paypal.info
+DOMAIN,venmo.info
+DOMAIN-SUFFIX,venmo.info
 
 # 2026-07 rules audit: DOMAIN-KEYWORD,paypal silently defeated the PayPal-CN
 # policy — it captured paypal.com.cn / paypalhere.cn etc. (listed in

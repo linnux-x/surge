@@ -1,9 +1,24 @@
 # NAME: PayPal
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-09-04 05:00:44 +0800
+# UPDATED: 2026-11-21 18:56:11 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 233
+# TOTAL: 234
+
+# ======= Manual Rules ========
+# Braintree production and sandbox GraphQL hosts.
+# https://developer.paypal.com/braintree/docs/reference/general/braintree-ip-addresses
+DOMAIN,payments.braintree-api.com
+DOMAIN,payments.sandbox.braintree-api.com
+
+# PayPal-owned payout and point-of-sale platforms, including their tenant portals.
+DOMAIN-SUFFIX,hyperwallet.com
+DOMAIN-SUFFIX,paylution.com
+DOMAIN-SUFFIX,zettle.com
+DOMAIN-SUFFIX,izettle.com
+
+# The shared S3 virtual-hosted endpoint is scoped to Venmo's named bucket.
+DOMAIN,venmo.s3.amazonaws.com
 
 # ======= blackmatrix7 PayPal ========
 DOMAIN-SUFFIX,account-paypal.info
@@ -39,7 +54,6 @@ DOMAIN-SUFFIX,fundpaypal.com
 DOMAIN-SUFFIX,getbraintree.com
 DOMAIN-SUFFIX,gmoney.org
 DOMAIN-SUFFIX,i-o-u.info
-DOMAIN-SUFFIX,krakenjs.com
 DOMAIN-SUFFIX,loanbuilder.com
 DOMAIN-SUFFIX,login-paypal.com
 DOMAIN-SUFFIX,login-paypal.info
@@ -131,7 +145,6 @@ DOMAIN-SUFFIX,paypal-proserv.com
 DOMAIN-SUFFIX,paypal-qrshopping.org
 DOMAIN-SUFFIX,paypal-recargacelular.com
 DOMAIN-SUFFIX,paypal-redeem.com
-DOMAIN-SUFFIX,paypal-referral.com
 DOMAIN-SUFFIX,paypal-retail.com
 DOMAIN-SUFFIX,paypal-scoop.com
 DOMAIN-SUFFIX,paypal-search.com
@@ -156,7 +169,6 @@ DOMAIN-SUFFIX,paypal.com
 DOMAIN-SUFFIX,paypal.com.hk
 DOMAIN-SUFFIX,paypal.com.sg
 DOMAIN-SUFFIX,paypal.hk
-DOMAIN-SUFFIX,paypal.info
 DOMAIN-SUFFIX,paypal.jp
 DOMAIN-SUFFIX,paypal.me
 DOMAIN-SUFFIX,paypal.so
@@ -224,10 +236,8 @@ DOMAIN-SUFFIX,thepaypalshop.com
 DOMAIN-SUFFIX,theshoppingexpresslane.net
 DOMAIN-SUFFIX,venmo-touch.com
 DOMAIN-SUFFIX,venmo.com
-DOMAIN-SUFFIX,venmo.info
 DOMAIN-SUFFIX,venmo.net
 DOMAIN-SUFFIX,venmo.org
-DOMAIN-SUFFIX,venmo.s3.amazonaws.com
 DOMAIN-SUFFIX,webmoneyinfo.com
 DOMAIN-SUFFIX,wiremoneytoirelandwithxoomeasierandcheaper.com
 DOMAIN-SUFFIX,www-paypal.info
@@ -238,4 +248,3 @@ DOMAIN-SUFFIX,xoom.com
 DOMAIN-SUFFIX,xoom.io
 DOMAIN-SUFFIX,xoom.us
 DOMAIN-SUFFIX,xoomcom.com
-USER-AGENT,PayPal*

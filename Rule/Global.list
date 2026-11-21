@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 17:57:20 +0800
+# UPDATED: 2026-11-21 18:57:34 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24636
+# TOTAL: 24637
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -9258,6 +9258,7 @@ DOMAIN-SUFFIX,kpinsurances.com
 DOMAIN-SUFFIX,kpptoto.info
 DOMAIN-SUFFIX,kraftonde.com
 DOMAIN-SUFFIX,kraken.onl
+DOMAIN-SUFFIX,krakenjs.com
 DOMAIN-SUFFIX,kremlinbank.ru
 DOMAIN-SUFFIX,krhentai.com
 DOMAIN-SUFFIX,kristenbjorn.com

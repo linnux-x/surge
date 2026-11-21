@@ -253,6 +253,16 @@ DOMAIN-SUFFIX,v.roucdn
 # Google's China-reachable reCAPTCHA mirrors. Unenumerated paypal/recaptcha
 # hosts still reach the proxy via FINAL - Global, so nothing is lost.
 DOMAIN-KEYWORD,paypal
+DOMAIN,paypal.cn
+DOMAIN-SUFFIX,paypal.cn
+# Removing a PayPal entry must not restore its non-destination match or dead domains in Global.
+USER-AGENT,PayPal*
+DOMAIN,paypal-referral.com
+DOMAIN-SUFFIX,paypal-referral.com
+DOMAIN,paypal.info
+DOMAIN-SUFFIX,paypal.info
+DOMAIN,venmo.info
+DOMAIN-SUFFIX,venmo.info
 DOMAIN-SUFFIX,recaptcha-cn.net
 DOMAIN-SUFFIX,recaptcha.net
 

@@ -787,3 +787,23 @@ cas-bridge.xethub.hf.co,Download.list,Download,按用途保留下载或通用分
 sora.com,Global,Global,按用途保留下载或通用分流
 sora.chatgpt.com,AI.list,AI,AI 官方服务端点
 devin.ai,AI.list,AI,Windsurf 官方首页跳转的 Devin Desktop 入口
+paypal.cn,China.list,DIRECT,贝宝中国官网及资源域稳定直连
+www.paypal.cn,China.list,DIRECT,贝宝中国官网及资源域稳定直连
+objects.paypal.cn,China.list,DIRECT,贝宝中国官网及资源域稳定直连
+api.braintreegateway.com,PayPal.list,PayPal,PayPal 官方服务或已验证跳转
+payments.braintree-api.com,PayPal.list,PayPal,PayPal 官方服务或已验证跳转
+payments.sandbox.braintree-api.com,PayPal.list,PayPal,PayPal 官方服务或已验证跳转
+pay.hyperwallet.com,PayPal.list,PayPal,PayPal 官方服务或已验证跳转
+api.sandbox.hyperwallet.com,PayPal.list,PayPal,PayPal 官方服务或已验证跳转
+api.paylution.com,PayPal.list,PayPal,PayPal 官方服务或已验证跳转
+uat-api.paylution.com,PayPal.list,PayPal,PayPal 官方服务或已验证跳转
+developer.zettle.com,PayPal.list,PayPal,PayPal 官方服务或已验证跳转
+oauth.zettle.com,PayPal.list,PayPal,PayPal 官方服务或已验证跳转
+oauth.izettle.com,PayPal.list,PayPal,PayPal 官方服务或已验证跳转
+filipino-music.net,PayPal.list,PayPal,PayPal 官方服务或已验证跳转
+probe.venmo.s3.amazonaws.com,Global,Global,按目标域名保留通用路由
+paypal-cn.example.com,Global,Global,按目标域名保留通用路由
+krakenjs.com,Global,Global,按目标域名保留通用路由
+paypal-referral.com,FINAL,Global,按目标域名保留通用路由
+paypal.info,FINAL,Global,按目标域名保留通用路由
+venmo.info,FINAL,Global,按目标域名保留通用路由
