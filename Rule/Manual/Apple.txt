@@ -12,9 +12,3 @@ DOMAIN-SUFFIX,apple-support.akadns.net
 DOMAIN-SUFFIX,apple.com.akadns.net
 DOMAIN-SUFFIX,apple.com.edgekey.net
 DOMAIN-SUFFIX,icloud.com.akadns.net
-
-# Apple enterprise network requirements (https://support.apple.com/en-us/101555).
-DOMAIN,app-site-association.networking.apple
-DOMAIN,crl3.digicert.com
-DOMAIN,crl4.digicert.com
-DOMAIN,ocsp.digicert.com

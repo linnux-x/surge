@@ -85,7 +85,7 @@ DOMAIN,e16991.b.akamaiedge.net
 DOMAIN-SUFFIX,apzones.com
 DOMAIN-SUFFIX,crashlytics.com
 
-# Keep only the DigiCert hosts Apple documents, listed in Apple.txt.
+# DigiCert is a shared certificate authority. Use the normal destination policy.
 DOMAIN-SUFFIX,digicert.com
 
 # Registration and current BGP show the Level 3 parent; the Apple announcement ended in 2021.
@@ -269,3 +269,44 @@ DOMAIN-SUFFIX,wholesalediscountpurses.com
 DOMAIN-SUFFIX,wholesalefine.com
 DOMAIN-SUFFIX,wholesaleonlinemart.com
 DOMAIN-SUFFIX,worldcoinpay.com
+
+# Shared certificate services and the alternate Associated Domains endpoint.
+DOMAIN,crl3.digicert.com
+DOMAIN-SUFFIX,crl3.digicert.com
+DOMAIN,crl4.digicert.com
+DOMAIN-SUFFIX,crl4.digicert.com
+DOMAIN,ocsp.digicert.com
+DOMAIN-SUFFIX,ocsp.digicert.com
+DOMAIN,app-site-association.networking.apple
+DOMAIN-SUFFIX,app-site-association.networking.apple
+
+# General-purpose open-source projects.
+DOMAIN,servicetalk.io
+DOMAIN-SUFFIX,servicetalk.io
+DOMAIN,webkitgtk.org
+DOMAIN-SUFFIX,webkitgtk.org
+DOMAIN,wpewebkit.org
+DOMAIN-SUFFIX,wpewebkit.org
+
+# Both public DNS resolvers return NXDOMAIN for A and AAAA.
+DOMAIN,aplleipods.com
+DOMAIN-SUFFIX,aplleipods.com
+DOMAIN,app0le.com
+DOMAIN-SUFFIX,app0le.com
+DOMAIN,appleafrica.com
+DOMAIN-SUFFIX,appleafrica.com
+DOMAIN,appleantilles.com
+DOMAIN-SUFFIX,appleantilles.com
+DOMAIN,appleclassicipod.com
+DOMAIN-SUFFIX,appleclassicipod.com
+DOMAIN,applecom.com
+DOMAIN-SUFFIX,applecom.com
+DOMAIN,cdn-apple-mapkit.com
+DOMAIN-SUFFIX,cdn-apple-mapkit.com
+DOMAIN,xn--gtvz22d.wang
+DOMAIN-SUFFIX,xn--gtvz22d.wang
+
+# Withdrawn Apple announcements. Domain routes and current Apple ranges stay in effect.
+IP-CIDR,192.35.50.0/24,no-resolve
+IP-CIDR,198.183.17.0/24,no-resolve
+IP-CIDR,63.92.224.0/19,no-resolve

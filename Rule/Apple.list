@@ -1,9 +1,9 @@
 # NAME: Apple
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 08:54:02 +0800
+# UPDATED: 2026-11-21 19:22:03 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1380
+# TOTAL: 1362
 
 # ======= Manual Rules ========
 DOMAIN,configuration-lb.ls-apple.com.akadns.net
@@ -19,12 +19,6 @@ DOMAIN-SUFFIX,apple-support.akadns.net
 DOMAIN-SUFFIX,apple.com.akadns.net
 DOMAIN-SUFFIX,apple.com.edgekey.net
 DOMAIN-SUFFIX,icloud.com.akadns.net
-
-# Apple enterprise network requirements (https://support.apple.com/en-us/101555).
-DOMAIN,app-site-association.networking.apple
-DOMAIN,crl3.digicert.com
-DOMAIN,crl4.digicert.com
-DOMAIN,ocsp.digicert.com
 
 # ======= blackmatrix7 Apple ========
 DOMAIN,apple-events.akamaized.net
@@ -69,7 +63,6 @@ DOMAIN-SUFFIX,alchemysynth.com
 DOMAIN-SUFFIX,ap0le.com
 DOMAIN-SUFFIX,aple.com
 DOMAIN-SUFFIX,apole.com
-DOMAIN-SUFFIX,app0le.com
 DOMAIN-SUFFIX,appl-e.com
 DOMAIN-SUFFIX,appl.com
 DOMAIN-SUFFIX,appl4e.com
@@ -178,8 +171,6 @@ DOMAIN-SUFFIX,apple.us
 DOMAIN-SUFFIX,apple.xn--czr694b
 DOMAIN-SUFFIX,apple.xn--fiqs8s
 DOMAIN-SUFFIX,apple.xyz
-DOMAIN-SUFFIX,appleafrica.com
-DOMAIN-SUFFIX,appleantilles.com
 DOMAIN-SUFFIX,appleaustralia.com
 DOMAIN-SUFFIX,appleaustralia.com.au
 DOMAIN-SUFFIX,appleaustralia.net.au
@@ -191,7 +182,6 @@ DOMAIN-SUFFIX,applecentar.rs
 DOMAIN-SUFFIX,applecentre.com.au
 DOMAIN-SUFFIX,applecentre.info
 DOMAIN-SUFFIX,appleclub.com.hk
-DOMAIN-SUFFIX,applecom.com
 DOMAIN-SUFFIX,applecomputer-imac.com
 DOMAIN-SUFFIX,applecomputer.co.in
 DOMAIN-SUFFIX,applecomputer.co.nz
@@ -561,7 +551,6 @@ DOMAIN-SUFFIX,casquemonsterbeats.com
 DOMAIN-SUFFIX,casquemonsterbeatsbydre2013.com
 DOMAIN-SUFFIX,casquesbeatsaudio.com
 DOMAIN-SUFFIX,catalina.hk
-DOMAIN-SUFFIX,cdn-apple-mapkit.com
 DOMAIN-SUFFIX,cheap-beats-by-dre.net
 DOMAIN-SUFFIX,cheap-beatsbydre.com
 DOMAIN-SUFFIX,cheapbagshoes.com
@@ -914,7 +903,6 @@ DOMAIN-SUFFIX,safebrowsing.apple
 DOMAIN-SUFFIX,salebeatslasteststyle4you.com
 DOMAIN-SUFFIX,saleblackfridaydrebeats.com
 DOMAIN-SUFFIX,services-apple.net
-DOMAIN-SUFFIX,servicetalk.io
 DOMAIN-SUFFIX,shazam.com
 DOMAIN-SUFFIX,shop-headphones.net
 DOMAIN-SUFFIX,shopbeatsdre.com
@@ -951,13 +939,11 @@ DOMAIN-SUFFIX,vertexsmb.com
 DOMAIN-SUFFIX,vip-beats.com
 DOMAIN-SUFFIX,vipbeatsbydre.com
 DOMAIN-SUFFIX,webkit.org
-DOMAIN-SUFFIX,webkitgtk.org
 DOMAIN-SUFFIX,webobjects.co.uk
 DOMAIN-SUFFIX,webobjects.com
 DOMAIN-SUFFIX,webobjects.de
 DOMAIN-SUFFIX,webobjects.eu
 DOMAIN-SUFFIX,webobjects.net
-DOMAIN-SUFFIX,wpewebkit.org
 DOMAIN-SUFFIX,wuxiapple.com
 DOMAIN-SUFFIX,wwapple.net
 DOMAIN-SUFFIX,www-sms-apple.com
@@ -966,7 +952,6 @@ DOMAIN-SUFFIX,wwwapple.net
 DOMAIN-SUFFIX,wwwlapple.com
 DOMAIN-SUFFIX,xn--fiqs8sxootzz.xn--hxt814e
 DOMAIN-SUFFIX,xn--gtvq61aiijy0b.xn--hxt814e
-DOMAIN-SUFFIX,xn--gtvz22d.wang
 DOMAIN-SUFFIX,xn--gtvz22d.xn--hxt814e
 DOMAIN-SUFFIX,xn--hxtr4rozx.xn--czr694b
 DOMAIN-SUFFIX,xn--kput3imi374g.xn--hxt814e
@@ -1125,7 +1110,6 @@ DOMAIN-SUFFIX,tvappstore.net
 DOMAIN-SUFFIX,wwwicloud.com
 DOMAIN-SUFFIX,wwwitunes.com
 DOMAIN-SUFFIX,aplestore.com
-DOMAIN-SUFFIX,aplleipods.com
 DOMAIN-SUFFIX,apple-imac.com
 DOMAIN-SUFFIX,apple-store.net
 DOMAIN-SUFFIX,apple-store.wang
@@ -1135,7 +1119,6 @@ DOMAIN-SUFFIX,applecare.cc
 DOMAIN-SUFFIX,applecare.eu
 DOMAIN-SUFFIX,applecare.hamburg
 DOMAIN-SUFFIX,applecare.wang
-DOMAIN-SUFFIX,appleclassicipod.com
 DOMAIN-SUFFIX,appleimac.com
 DOMAIN-SUFFIX,appleiphone.hu
 DOMAIN-SUFFIX,appleiphone.net
@@ -1388,9 +1371,6 @@ IP-CIDR,144.178.0.0/19,no-resolve
 IP-CIDR,144.178.36.0/22,no-resolve
 IP-CIDR,144.178.48.0/20,no-resolve
 IP-CIDR,17.0.0.0/8,no-resolve
-IP-CIDR,192.35.50.0/24,no-resolve
-IP-CIDR,198.183.17.0/24,no-resolve
-IP-CIDR,63.92.224.0/19,no-resolve
 IP-CIDR,65.199.22.0/23,no-resolve
 IP-CIDR6,2403:300::/32,no-resolve
 IP-CIDR6,2620:149::/32,no-resolve
