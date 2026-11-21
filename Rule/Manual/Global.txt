@@ -23,6 +23,8 @@ DOMAIN,u.expo.dev
 # Snipaste website and redirects; dedicated download hosts match Download earlier.
 # https://www.snipaste.com/download.html
 DOMAIN-SUFFIX,snipaste.com
+# NFOrce's public mirror needs a proxy. Ookla on port 8080 matches Speedtest first.
+DOMAIN,mirror.nforce.com
 # Overseas game community sites (builds, stats, esports news, completion trackers)
 # seen from the Windows desktop falling through to FINAL; same Global policy,
 # but matching here avoids the local DNS lookup triggered on the way to FINAL.

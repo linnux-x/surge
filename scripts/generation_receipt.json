@@ -122,13 +122,13 @@
     },
     {
       "file": "Download.list",
-      "rules": 1611,
+      "rules": 1610,
       "types": {
-        "DOMAIN": 1434,
+        "DOMAIN": 1433,
         "DOMAIN-SUFFIX": 176,
         "URL-REGEX": 1
       },
-      "sha256": "9342c09622cc3acd167fcf5a9db2d7798efcfd55e2be87ae28077a42fc1d381e"
+      "sha256": "bfbb7b286eb12fc0b2043bb1407da250b325dcf64073d089a3d35fe58ac67f60"
     },
     {
       "file": "Game.list",
@@ -143,16 +143,16 @@
     },
     {
       "file": "Global.list",
-      "rules": 24635,
+      "rules": 24636,
       "types": {
-        "DOMAIN": 111,
+        "DOMAIN": 112,
         "DOMAIN-KEYWORD": 12,
         "DOMAIN-SUFFIX": 24392,
         "IP-CIDR": 114,
         "IP-CIDR6": 1,
         "USER-AGENT": 5
       },
-      "sha256": "2f839642b475dbf22da3cd9e8ebd39d01e6b5020b3822ce205651f9071f20299"
+      "sha256": "f0ecf80dca3f02bd2edbd76887e1325440914ff769790d7dc1067947ce5080e8"
     },
     {
       "file": "GlobalMedia.list",
@@ -390,7 +390,7 @@
   "source_attribution": {
     "ConnersHua AI": 12,
     "Loyalsoldier China CIDR": 9665,
-    "Manual Rules": 454,
+    "Manual Rules": 455,
     "Rabbit-Spec AIGC": 12,
     "Rabbit-Spec China": 373,
     "RocM301 Apple-AI": 13,
@@ -399,7 +399,7 @@
     "SukkaW Apple CN": 5,
     "SukkaW CDN": 25,
     "SukkaW Domestic": 842,
-    "SukkaW Download": 1548,
+    "SukkaW Download": 1547,
     "SukkaW Game Download": 52,
     "SukkaW Microsoft CDN": 52,
     "SukkaW Speedtest": 121,
@@ -446,9 +446,9 @@
     "China_IP.manifest": "02715c2568a0cfaa9b448d3540053b90eb25566a3dccfbafed0cc1899dc88461",
     "Claude.manifest": "e57123ac21634fb1c6279a4daa0fc03fa57fa71f7473b4d918ba91786aea27bd",
     "Disney.manifest": "4952367b9bc1b50aaeacf8f01c8059c20e75aaf86be6c908d16a4f607a6b866f",
-    "Download.manifest": "14fc5d26608812cf8fe3ce3446473e67edf00109074f61ac70c0594a8cced689",
+    "Download.manifest": "e627ab2cfdacd9a91fd12bd6dc5444e0dc92cba4a32868c0d9ee80bece73f2a2",
     "Game.manifest": "3dbeb5cd735858f5cb64c261dbd7bf6503b80fd1c3051db1bc06f9211c4798da",
-    "Global.manifest": "23028a9e77b42537854fd0407b7f6e8c193250b2e47545c5fa3329c0e7d0ff9a",
+    "Global.manifest": "3bbdec1a25e7342ca4c5664d6b67f908db0eb6ee810c2eebd14375616ffb3846",
     "GlobalMedia.manifest": "35954ecc8c3a7bc3cdb88a15988f8cae192beb8c53987508ba5db6b743f65f46",
     "Google.manifest": "3e8722436f72c2997d8beff75e623735cd5ef9e3b1fd23876c2f15eebfc443dd",
     "HKMedia.manifest": "c1f5f6022f6d30fe97fa856f390b00b60ca0beb9a5351b669a335cb144826549",
@@ -470,7 +470,7 @@
     "YouTube.manifest": "2792e949566c45475771780359edfb9cd2ebe0fec073525afdccc2b890017b39"
   },
   "sources_sha256": "1d045effa9ac9f787e234707c85e2dabdec7552bff7f2b711278f38a07421920",
-  "override_manifest_sha256": "9e4e6ce6dd936eb8c91238b15d6ee10f74bcf73b27d6b2d6db65c8826be2aa15",
+  "override_manifest_sha256": "ac780f8b0b071d65c8566bcb71f2f7c19c5bc6935d03f863441f4b5ffe7a4a61",
   "diff_summary": {
     "total_added": 1,
     "total_removed": 1,
