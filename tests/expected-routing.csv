@@ -709,8 +709,9 @@ tas02.sls.update.microsoft.com,Microsoft.list,Microsoft,系统更新服务归 Mi
 fe3cr.delivery.mp.microsoft.com,Microsoft.list,Microsoft,系统更新服务归 Microsoft，更新文件分发沿用 Microsoft_CDN
 officecdn-microsoft-com.akamaized.net,Microsoft_CDN.list,DIRECT,微软软件分发已由更早的 Microsoft_CDN 直连
 ctldl.windowsupdate.com,Microsoft_CDN.list,DIRECT,微软软件分发已由更早的 Microsoft_CDN 直连
-http://mirror.nforce.com:8080/speedtest/upload.php,Speedtest.list,Speedtest,NFOrce 官方测速路径与普通软件镜像分流
-http://mirror.nforce.com:8080/speedtest-other,Download.list,Download,NFOrce 官方测速路径与普通软件镜像分流
+http://mirror.nforce.com:8080/speedtest/upload.php,Speedtest.list,Speedtest,NFOrce 官方测速端口
+http://mirror.nforce.com:8080/,Speedtest.list,Speedtest,NFOrce 测速端口可独立于 URL 路径匹配
+http://mirror.nforce.com:8081/speedtest/upload.php,Download.list,Download,NFOrce 的其他端口沿软件镜像策略
 mirror.nforce.com.prod.hosts.ooklaserver.net,Speedtest.list,Speedtest,NFOrce 官方测速路径与普通软件镜像分流
 server-3386.prod.hosts.ooklaserver.net,Speedtest.list,Speedtest,NFOrce 官方测速路径与普通软件镜像分流
 mirror.nforce.com,Download.list,Download,NFOrce 软件镜像回到 Download

@@ -6,12 +6,13 @@
 
 ## 差异摘要
 
-- 新增：33
-- 删除：61
+- 新增：1
+- 删除：1
 - 来源迁移：0
 
 ## 规则类型
 
+- AND: 1
 - DOMAIN: 3754
 - DOMAIN-KEYWORD: 65
 - DOMAIN-SUFFIX: 141343
@@ -20,7 +21,7 @@
 - IP-CIDR: 8444
 - IP-CIDR6: 3528
 - PROCESS-NAME: 41
-- URL-REGEX: 5
+- URL-REGEX: 4
 - USER-AGENT: 135
 
 ## 来源归属

@@ -274,11 +274,11 @@
       "file": "Speedtest.list",
       "rules": 1725,
       "types": {
+        "AND": 1,
         "DOMAIN": 1611,
-        "DOMAIN-SUFFIX": 113,
-        "URL-REGEX": 1
+        "DOMAIN-SUFFIX": 113
       },
-      "sha256": "660f38750287ef2ffd7bd1966101af4596823c5211b90156ba14d83fc6d5f321"
+      "sha256": "ffbf4a1f35d7ec6d46bfac2821fb37c2425638da95adfd692536aaf00c31b6e3"
     },
     {
       "file": "Speedtest_China.list",
@@ -375,6 +375,7 @@
   ],
   "total_rules": 157331,
   "rule_types": {
+    "AND": 1,
     "DOMAIN": 3754,
     "DOMAIN-KEYWORD": 65,
     "DOMAIN-SUFFIX": 141343,
@@ -383,7 +384,7 @@
     "IP-CIDR": 8444,
     "IP-CIDR6": 3528,
     "PROCESS-NAME": 41,
-    "URL-REGEX": 5,
+    "URL-REGEX": 4,
     "USER-AGENT": 135
   },
   "source_attribution": {
@@ -458,7 +459,7 @@
     "Netflix.manifest": "146c463822de897c075af5b859b69ba5f8ce2869819d13309fdaa48d5ca9b842",
     "PayPal.manifest": "649b7162f902986f696a1b28e98b3d2b5e6cbda0a9c8e951c552098e68e1382b",
     "SocialMedia.manifest": "8f40ee5c95255d61c7960dcdb7bfc59f18df42351afa5aed1897a2a9d8a47fe7",
-    "Speedtest.manifest": "0f8d0bbd8b4562a8320b15dfafd4f5fcd0d74406021282629762c6a2bf9de648",
+    "Speedtest.manifest": "4be515d54de7c63bb268366e4b2ed703fe875e5d5865d78c75c9329d54e43240",
     "Speedtest_China.manifest": "1422ee65ce7dca6937f4119b9f3645a9f79e436faf96341f92e11e39ce894807",
     "Spotify.manifest": "ce2255c57fe02632672d6734eb63da77c654ca4ad8bbd7d5a365327294473949",
     "TWMedia.manifest": "0c968c760889849e8dc84c7aef44102f534a51c1d0b787b07af7e0f133df544f",
@@ -469,10 +470,10 @@
     "YouTube.manifest": "2792e949566c45475771780359edfb9cd2ebe0fec073525afdccc2b890017b39"
   },
   "sources_sha256": "1d045effa9ac9f787e234707c85e2dabdec7552bff7f2b711278f38a07421920",
-  "override_manifest_sha256": "fe1085d6b3a8bf8f131cb15eb418baa2a0cee419f9454f262b3878d207fddf01",
+  "override_manifest_sha256": "9e4e6ce6dd936eb8c91238b15d6ee10f74bcf73b27d6b2d6db65c8826be2aa15",
   "diff_summary": {
-    "total_added": 33,
-    "total_removed": 61,
+    "total_added": 1,
+    "total_removed": 1,
     "total_source_changed": 0
   }
 }

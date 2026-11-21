@@ -16,6 +16,8 @@ import sys
 from pathlib import Path
 from urllib.parse import urlsplit
 
+from rule_validator import DOMAIN_PORT_RULE_RE
+
 ROOT = Path(__file__).resolve().parents[1]
 RULE_DIR = ROOT / "Rule"
 CONF_FILE = ROOT / "Conf" / "Linnux.conf"
@@ -65,7 +67,7 @@ FALLBACK_ORDER: list[tuple[str, str]] = [
 
 
 def load_ruleset(path: Path) -> set[str]:
-    """Load a .list file and return set of lowercase non-comment rules."""
+    """Load non-comment rules, preserving case-sensitive URL patterns."""
     raw_rules: set[str] = set()
     for line in path.read_text(encoding="utf-8", errors="replace").splitlines():
         line = line.strip()
@@ -75,7 +77,7 @@ def load_ruleset(path: Path) -> set[str]:
     return raw_rules
 
 
-def match_domain(domain: str, rules: set[str], *, url: str | None = None) -> bool:
+def match_domain(domain: str, rules: set[str], *, url: str | None = None, port: int = 443) -> bool:
     """Check if a destination matches any rule in a ruleset.
 
     Implements Surge's matching logic:
@@ -85,6 +87,7 @@ def match_domain(domain: str, rules: set[str], *, url: str | None = None) -> boo
     - DOMAIN-WILDCARD: wildcard match (basic * support)
     - IP-CIDR/IP-CIDR6: literal address membership (no DNS lookup)
     - URL-REGEX: match the full URL when explicitly supplied
+    - AND: match an exact domain and destination port together
     """
     domain_lower = domain.lower().rstrip(".")
     try:
@@ -103,6 +106,10 @@ def match_domain(domain: str, rules: set[str], *, url: str | None = None) -> boo
 
         if rule_type == "URL-REGEX" and url is not None:
             if re.search(value, url):
+                return True
+        elif rule_type == "AND" and (domain_port := DOMAIN_PORT_RULE_RE.fullmatch(rule)):
+            host, rule_port = domain_port.groups()
+            if domain_lower == host.lower() and port == int(rule_port):
                 return True
         elif rule_type in ("IP-CIDR", "IP-CIDR6") and address is not None:
             if address in ipaddress.ip_network(value, strict=False):
@@ -191,7 +198,12 @@ def simulate_routing(domain: str, routing_order: list[tuple[str, str]],
     Returns the matched ruleset name (or DIRECT/Global/policy name).
     """
     url = domain if domain.startswith(("http://", "https://")) else None
-    domain = ((urlsplit(url).hostname or "") if url else domain).lower().rstrip(".")
+    port = 443
+    if url:
+        parsed = urlsplit(url)
+        domain = parsed.hostname or ""
+        port = parsed.port if parsed.port is not None else (80 if parsed.scheme == "http" else 443)
+    domain = domain.lower().rstrip(".")
     for entry in routing_order:
         ruleset_name = entry[0]
         policy = entry[1]
@@ -217,7 +229,7 @@ def simulate_routing(domain: str, routing_order: list[tuple[str, str]],
 
         # Check if this is a .list ruleset
         if ruleset_name in rulesets:
-            if match_domain(domain, rulesets[ruleset_name], url=url):
+            if match_domain(domain, rulesets[ruleset_name], url=url, port=port):
                 return f"{ruleset_name}→{policy}"
 
     return "FINAL→Global"  # unreachable fallback
