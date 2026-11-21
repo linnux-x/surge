@@ -1,0 +1,3 @@
+# Office Scripts and Python in Excel use Microsoft application traffic.
+DOMAIN,microsoftusercontent.com
+DOMAIN-SUFFIX,microsoftusercontent.com

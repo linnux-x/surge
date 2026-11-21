@@ -711,8 +711,8 @@ sample-bucket.ks3-rus.ksyuncs.com,China.list,DIRECT,云存储平台服务多个�
 sample-bucket.ks3-sgp.ksyuncs.com,China.list,DIRECT,云存储平台服务多个租户，按提供商或通用策略分流
 sample-bucket.s3.us-west-002.backblazeb2.com,FINAL,Global,云存储平台服务多个租户，按提供商或通用策略分流
 sample-bucket.public.blob.vercel-storage.com,FINAL,Global,云存储平台服务多个租户，按提供商或通用策略分流
-sample-bucket.blob.core.windows.net,Microsoft.list,Microsoft,云存储平台服务多个租户，按提供商或通用策略分流
-sample-bucket.file.core.windows.net,Microsoft.list,Microsoft,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.blob.core.windows.net,Global,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.file.core.windows.net,Global,Global,云存储平台服务多个租户，按提供商或通用策略分流
 sample-bucket.t3.storageapi.dev,FINAL,Global,云存储平台服务多个租户，按提供商或通用策略分流
 sample-bucket.s3-website.cloud.ru,FINAL,Global,云存储平台服务多个租户，按提供商或通用策略分流
 classic.yarnpkg.com,Global.list,Global,网站、文档或归档管理端点沿通用策略
@@ -823,3 +823,80 @@ wpewebkit.org,Global,Global,通用开源项目按通用路由
 198.183.17.1,Global,Global,历史 Apple 公告撤下后沿通用路由
 63.92.224.1,Global,Global,历史 Apple 公告撤下后沿通用路由
 cdn.apple-mapkit.com,Apple_CN.list,DIRECT,Apple 官方 MapKit CDN 沿用直连
+www.onenote.com,Microsoft.list,Microsoft,Microsoft 官方应用、控制面或内容
+make.powerapps.com,Microsoft.list,Microsoft,Microsoft 官方应用、控制面或内容
+app.clipchamp.com,Microsoft.list,Microsoft,Microsoft 官方应用、控制面或内容
+sample.microsoftusercontent.com,Microsoft.list,Microsoft,Microsoft 官方应用、控制面或内容
+accounts.accesscontrol.windows.net,Microsoft.list,Microsoft,Microsoft 官方应用、控制面或内容
+enterpriseregistration.windows.net,Microsoft.list,Microsoft,Microsoft 官方应用、控制面或内容
+graph.windows.net,Microsoft.list,Microsoft,Microsoft 官方应用、控制面或内容
+login.windows.net,Microsoft.list,Microsoft,Microsoft 官方应用、控制面或内容
+sts.windows.net,Microsoft.list,Microsoft,Microsoft 官方应用、控制面或内容
+management.core.windows.net,Microsoft.list,Microsoft,Microsoft 官方应用、控制面或内容
+posarprodcssservice.accesscontrol.windows.net,Microsoft.list,Microsoft,Microsoft 官方应用、控制面或内容
+redemptionservices.accesscontrol.windows.net,Microsoft.list,Microsoft,Microsoft 官方应用、控制面或内容
+vscode.search.windows.net,Microsoft.list,Microsoft,Microsoft 官方应用、控制面或内容
+probe.keydelivery.mediaservices.windows.net,Microsoft.list,Microsoft,Microsoft 官方应用、控制面或内容
+probe.streaming.mediaservices.windows.net,Microsoft.list,Microsoft,Microsoft 官方应用、控制面或内容
+teams.cloud.microsoft,Microsoft.list,Microsoft,Microsoft 官方应用、控制面或内容
+52.112.0.1,Global,Global,共同基础设施或其他站点沿通用分流
+52.122.0.1,Global,Global,共同基础设施或其他站点沿通用分流
+2603:1063::1,Global,Global,共同基础设施或其他站点沿通用分流
+probe.static.microsoft,Microsoft_CDN.list,DIRECT,微软有明确用途的静态资源直连
+otelrules.azureedge.net,Microsoft_CDN.list,DIRECT,微软有明确用途的静态资源直连
+cdn.odc.officeapps.live.com,Microsoft_CDN.list,DIRECT,微软有明确用途的静态资源直连
+cdn.uci.officeapps.live.com,Microsoft_CDN.list,DIRECT,微软有明确用途的静态资源直连
+probe.aadrm.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+probe.auth.microsoft.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+probe.azure-mobile.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+probe.chinacloud-mobile.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+microsoftgraph.chinacloudapi.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+teams.microsoftonline.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+probe.msauth.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+probe.msauthimages.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+probe.msftauth.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+probe.msftauthimages.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+probe.officewebapps.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+probe.onmschina.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+probe.partner.microsoftonline-m-i.net.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+probe.partner.microsoftonline-m.net.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+probe.partner.microsoftonline-p.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+probe.partner.microsoftonline-p.net.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+probe.partner.office365.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+r4.partner.outlook.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+probe.sharepoint.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+probe.sovcloud-mx.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+probe.sovcloud-static.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+probe.sovcloud-usercontent.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+outlook.sovcloud.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+probe.windowsazure.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+attachments.office365-net.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+collector.azure.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+loki.office365.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+portal.partner.microsoftonline.cdnsvc.com,China.list,DIRECT,世纪互联官方服务按域名直连
+login.partner.microsoftonline.cn,China.list,DIRECT,世纪互联官方服务按域名直连
+not-onedrive.example,Global,Global,共同基础设施或其他站点沿通用分流
+not-skydrive.example,Global,Global,共同基础设施或其他站点沿通用分流
+oneclient.sfx.ms,Microsoft.list,Microsoft,Microsoft 官方应用、控制面或内容
+audit-tenant.azurewebsites.net,Global,Global,共同基础设施或其他站点沿通用分流
+audit-tenant.cloudapp.net,Global,Global,共同基础设施或其他站点沿通用分流
+audit-tenant.azurefd.net,Global,Global,共同基础设施或其他站点沿通用分流
+audit-tenant.trafficmanager.net,Global,Global,共同基础设施或其他站点沿通用分流
+audit-tenant.database.windows.net,Global,Global,共同基础设施或其他站点沿通用分流
+bluehatnights.com,FINAL,Global,已失效微软历史域名回归兜底
+livingyourambition.com,FINAL,Global,已失效微软历史域名回归兜底
+meetyourdevices.com,FINAL,Global,已失效微软历史域名回归兜底
+microsoft.com.nsatc.net,FINAL,Global,已失效微软历史域名回归兜底
+microsoft.red,FINAL,Global,已失效微软历史域名回归兜底
+microsofteca.com,FINAL,Global,已失效微软历史域名回归兜底
+microsoftlinc.com,FINAL,Global,已失效微软历史域名回归兜底
+microsoftmxfilantropia.com,FINAL,Global,已失效微软历史域名回归兜底
+microsoftsiteselection.com,FINAL,Global,已失效微软历史域名回归兜底
+msignitechina.com,FINAL,Global,已失效微软历史域名回归兜底
+msn.com.nsatc.net,FINAL,Global,已失效微软历史域名回归兜底
+msudalosti.com,FINAL,Global,已失效微软历史域名回归兜底
+office365love.com,FINAL,Global,已失效微软历史域名回归兜底
+office365tw.com,FINAL,Global,已失效微软历史域名回归兜底
+opentranslatorstothings.org,FINAL,Global,已失效微软历史域名回归兜底
+sankie.net,FINAL,Global,已失效微软历史域名回归兜底
+windowscommunity.net,FINAL,Global,已失效微软历史域名回归兜底

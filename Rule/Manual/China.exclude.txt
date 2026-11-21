@@ -123,3 +123,6 @@ DOMAIN-SUFFIX,tj1-miui-bn-stage01.kscn
 # Broad keyword is shadowed by the earlier Microsoft policy and can falsely
 # classify unrelated domains containing "microsoft" as China/DIRECT.
 DOMAIN-KEYWORD,microsoft
+
+# Shared global Azure hosting does not imply mainland placement.
+DOMAIN-SUFFIX,windows.net

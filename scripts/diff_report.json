@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-21T19:22:03.493080",
-  "total_added": 4,
-  "total_removed": 18,
-  "total_source_changed": 0,
+  "generated_at": "2026-11-21T19:32:47.767687",
+  "total_added": 47,
+  "total_removed": 34,
+  "total_source_changed": 2,
   "diffs": [
     {
       "file": "AI.list",
@@ -28,104 +28,13 @@
     },
     {
       "file": "Apple.list",
-      "prev_total": 1380,
+      "prev_total": 1362,
       "curr_total": 1362,
       "added_count": 0,
-      "removed_count": 18,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "0cafcaa18f73",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,wpewebkit.org"
-        },
-        {
-          "id": "33d343ffa5dc",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,cdn-apple-mapkit.com"
-        },
-        {
-          "id": "4c34a6fc1ad5",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,crl4.digicert.com"
-        },
-        {
-          "id": "5645e49b1076",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,webkitgtk.org"
-        },
-        {
-          "id": "567aab9d4572",
-          "source": "blackmatrix7 Apple",
-          "rule": "IP-CIDR,192.35.50.0/24,no-resolve"
-        },
-        {
-          "id": "5afbd21653de",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,app0le.com"
-        },
-        {
-          "id": "5e1009e78fd0",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,appleantilles.com"
-        },
-        {
-          "id": "6039ff66f85f",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,appleclassicipod.com"
-        },
-        {
-          "id": "71a60a358daa",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,appleafrica.com"
-        },
-        {
-          "id": "7d120be1985c",
-          "source": "blackmatrix7 Apple",
-          "rule": "IP-CIDR,63.92.224.0/19,no-resolve"
-        },
-        {
-          "id": "7d2d6627f589",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,servicetalk.io"
-        },
-        {
-          "id": "aebe0efcfe6a",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,app-site-association.networking.apple"
-        },
-        {
-          "id": "ca5b26100dfe",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,xn--gtvz22d.wang"
-        },
-        {
-          "id": "d773877636d4",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,applecom.com"
-        },
-        {
-          "id": "d9733c43937d",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,ocsp.digicert.com"
-        },
-        {
-          "id": "ebd53c2b5637",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,crl3.digicert.com"
-        },
-        {
-          "id": "f81dcfa229d9",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,aplleipods.com"
-        },
-        {
-          "id": "ff5e1c4767e5",
-          "source": "blackmatrix7 Apple",
-          "rule": "IP-CIDR,198.183.17.0/24,no-resolve"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -152,18 +61,12 @@
     },
     {
       "file": "Apple_CN.list",
-      "prev_total": 225,
+      "prev_total": 226,
       "curr_total": 226,
-      "added_count": 1,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "aebe0efcfe6a",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,app-site-association.networking.apple"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -181,13 +84,136 @@
     {
       "file": "China.list",
       "prev_total": 110648,
-      "curr_total": 110648,
-      "added_count": 0,
-      "removed_count": 0,
-      "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
-      "source_changed_sample": []
+      "curr_total": 110668,
+      "added_count": 21,
+      "removed_count": 1,
+      "source_changed_count": 2,
+      "added_sample": [
+        {
+          "id": "00e1b64449ab",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,sovcloud-mx.cn"
+        },
+        {
+          "id": "01ece7944d66",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,sovcloud-static.cn"
+        },
+        {
+          "id": "04a23b5f2cbd",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,sovcloud-usercontent.cn"
+        },
+        {
+          "id": "04f028cf0b56",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,sovcloud.cn"
+        },
+        {
+          "id": "15cc7e632177",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,msauthimages.cn"
+        },
+        {
+          "id": "1dee34f65686",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,windowsazure.cn"
+        },
+        {
+          "id": "3c7ad76f6a48",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,chinacloudapi.cn"
+        },
+        {
+          "id": "4dd9d5abcaa5",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,partner.office365.cn"
+        },
+        {
+          "id": "53ed8e83ec62",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,collector.azure.cn"
+        },
+        {
+          "id": "6c5bd2109452",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,attachments.office365-net.cn"
+        },
+        {
+          "id": "8bf2410f522f",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,msftauthimages.cn"
+        },
+        {
+          "id": "a2d5dd519d82",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,auth.microsoft.cn"
+        },
+        {
+          "id": "a96c8d575eb3",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,msftauth.cn"
+        },
+        {
+          "id": "b09ec36eb75f",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,aadrm.cn"
+        },
+        {
+          "id": "b3d96b7698a9",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,partner.microsoftonline-p.cn"
+        },
+        {
+          "id": "bb81d8ba6c1a",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,azure-mobile.cn"
+        },
+        {
+          "id": "bd56664ae1b2",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,msauth.cn"
+        },
+        {
+          "id": "d53d610886f2",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,microsoftonline.cn"
+        },
+        {
+          "id": "d5a33127236b",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,onmschina.cn"
+        },
+        {
+          "id": "dd810d85b1b0",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,loki.office365.cn"
+        },
+        {
+          "id": "fd63281a0be6",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,chinacloud-mobile.cn"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "a020b6a6694e",
+          "source": "Rabbit-Spec China",
+          "rule": "DOMAIN-SUFFIX,windows.net"
+        }
+      ],
+      "source_changed_sample": [
+        {
+          "id": "7ddb17ee1688",
+          "old_source": "SukkaW Domestic",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "5311c188fb80",
+          "old_source": "SukkaW Domestic",
+          "new_source": "Manual Rules"
+        }
+      ]
     },
     {
       "file": "ChinaMedia.list",
@@ -257,29 +283,50 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24637,
-      "curr_total": 24640,
-      "added_count": 3,
-      "removed_count": 0,
+      "prev_total": 24640,
+      "curr_total": 24641,
+      "added_count": 4,
+      "removed_count": 3,
       "source_changed_count": 0,
       "added_sample": [
         {
-          "id": "0cafcaa18f73",
+          "id": "18fd1fe3e686",
           "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,wpewebkit.org"
+          "rule": "DOMAIN-SUFFIX,azurewebsites.net"
         },
         {
-          "id": "5645e49b1076",
+          "id": "2a09bc80657c",
           "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,webkitgtk.org"
+          "rule": "DOMAIN-SUFFIX,azurefd.net"
         },
         {
-          "id": "7d2d6627f589",
+          "id": "e77abcada295",
           "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,servicetalk.io"
+          "rule": "DOMAIN-SUFFIX,cloudapp.net"
+        },
+        {
+          "id": "f181245620d4",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,trafficmanager.net"
         }
       ],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "4486741450cb",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,onenote.com"
+        },
+        {
+          "id": "9804de830843",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,streaming.mediaservices.windows.net"
+        },
+        {
+          "id": "c0374368d4e0",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN,vscode.search.windows.net"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -340,23 +387,287 @@
     {
       "file": "Microsoft.list",
       "prev_total": 484,
-      "curr_total": 484,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 473,
+      "added_count": 18,
+      "removed_count": 29,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "1006b23f9469",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,sts.windows.net"
+        },
+        {
+          "id": "1c33e176159a",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,powerapps.com"
+        },
+        {
+          "id": "41a448977dc7",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,clipchamp.com"
+        },
+        {
+          "id": "4486741450cb",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,onenote.com"
+        },
+        {
+          "id": "54f7045bd259",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,redemptionservices.accesscontrol.windows.net"
+        },
+        {
+          "id": "68f47450232b",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,accounts.accesscontrol.windows.net"
+        },
+        {
+          "id": "72397593ae33",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,keydelivery.mediaservices.windows.net"
+        },
+        {
+          "id": "7c982ac9a4e3",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,enterpriseregistration.windows.net"
+        },
+        {
+          "id": "93738c2ba10d",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,management.core.windows.net"
+        },
+        {
+          "id": "95456a8b49f2",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,microsoftusercontent.com"
+        },
+        {
+          "id": "970eb96bf8fb",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,posarprodcssservice.accesscontrol.windows.net"
+        },
+        {
+          "id": "9804de830843",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,streaming.mediaservices.windows.net"
+        },
+        {
+          "id": "9a02605dc101",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,graph.windows.net"
+        },
+        {
+          "id": "a36982b5ed52",
+          "source": "Manual Rules",
+          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478-3481),(IP-CIDR,52.112.0.0/14,no-resolve))"
+        },
+        {
+          "id": "af79a24d5137",
+          "source": "Manual Rules",
+          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478-3481),(IP-CIDR,52.122.0.0/15,no-resolve))"
+        },
+        {
+          "id": "b45c085ef879",
+          "source": "Manual Rules",
+          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478-3481),(IP-CIDR6,2603:1063::/38,no-resolve))"
+        },
+        {
+          "id": "b59bc2c48fb7",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,login.windows.net"
+        },
+        {
+          "id": "c0374368d4e0",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,vscode.search.windows.net"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "00b2645fb2e7",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-SUFFIX,office365tw.com"
+        },
+        {
+          "id": "18fd1fe3e686",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-SUFFIX,azurewebsites.net"
+        },
+        {
+          "id": "1c5dfe19aee6",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-SUFFIX,microsofteca.com"
+        },
+        {
+          "id": "1f0cf387224c",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-SUFFIX,bluehatnights.com"
+        },
+        {
+          "id": "2a09bc80657c",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-SUFFIX,azurefd.net"
+        },
+        {
+          "id": "3b2c0846ecad",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-SUFFIX,office365love.com"
+        },
+        {
+          "id": "4440f67468bf",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "USER-AGENT,OneDrive*"
+        },
+        {
+          "id": "493fb427ac1d",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-SUFFIX,sankie.net"
+        },
+        {
+          "id": "4abb1fedd0e1",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-KEYWORD,onedrive"
+        },
+        {
+          "id": "55b49d757786",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-SUFFIX,microsoft.red"
+        },
+        {
+          "id": "5baf7a7375cc",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "USER-AGENT,Microsoft*"
+        },
+        {
+          "id": "6286437f1578",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-SUFFIX,opentranslatorstothings.org"
+        },
+        {
+          "id": "693291bfdab1",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-SUFFIX,microsoft.com.nsatc.net"
+        },
+        {
+          "id": "700822201997",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-SUFFIX,microsoftlinc.com"
+        },
+        {
+          "id": "7e18cbda3159",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-SUFFIX,microsoftsiteselection.com"
+        },
+        {
+          "id": "8ffeaeeb292f",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-SUFFIX,msignitechina.com"
+        },
+        {
+          "id": "95b6dc718714",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-SUFFIX,microsoftmxfilantropia.com"
+        },
+        {
+          "id": "a020b6a6694e",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-SUFFIX,windows.net"
+        },
+        {
+          "id": "a50b632125b6",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-SUFFIX,windowscommunity.net"
+        },
+        {
+          "id": "b07bddf87073",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-SUFFIX,livingyourambition.com"
+        },
+        {
+          "id": "c18f7e01cc9e",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "PROCESS-NAME,OneDriveUpdater"
+        },
+        {
+          "id": "c87d739be064",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-SUFFIX,meetyourdevices.com"
+        },
+        {
+          "id": "c9404e07a9e3",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "PROCESS-NAME,OneDrive"
+        },
+        {
+          "id": "ccd6a15512c4",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "USER-AGENT,OneDriveiOSApp*"
+        },
+        {
+          "id": "d80da49f96c0",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-SUFFIX,msn.com.nsatc.net"
+        },
+        {
+          "id": "e77abcada295",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-SUFFIX,cloudapp.net"
+        },
+        {
+          "id": "ec73faa5cf41",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-KEYWORD,skydrive"
+        },
+        {
+          "id": "ee9184d16201",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-SUFFIX,msudalosti.com"
+        },
+        {
+          "id": "f181245620d4",
+          "source": "blackmatrix7 Microsoft",
+          "rule": "DOMAIN-SUFFIX,trafficmanager.net"
+        }
+      ],
       "source_changed_sample": []
     },
     {
       "file": "Microsoft_CDN.list",
       "prev_total": 79,
-      "curr_total": 79,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 82,
+      "added_count": 4,
+      "removed_count": 1,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "1c28733c6f52",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,cdn.odc.officeapps.live.com"
+        },
+        {
+          "id": "278d948ad8d6",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,otelrules.azureedge.net"
+        },
+        {
+          "id": "5aa54ba2b261",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,static.microsoft"
+        },
+        {
+          "id": "7462b1999b84",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,cdn.uci.officeapps.live.com"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "95456a8b49f2",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,microsoftusercontent.com"
+        }
+      ],
       "source_changed_sample": []
     },
     {
