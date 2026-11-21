@@ -64,16 +64,16 @@ clau.de,Claude.list,Claude,Claude short domain
 claudeusercontent.com,Claude.list,Claude,Claude user content
 api.claudemcpclient.com,Claude.list,Claude,Claude MCP client service
 api.claudemcpcontent.com,Claude.list,Claude,Claude MCP content service
-modelcontextprotocol.io,Claude.list,Claude,Claude MCP
-cdn.growthbook.io,Claude.list,Claude,Claude feature flags
+modelcontextprotocol.io,AI.list,AI,跨厂商 MCP 规范和注册表
+cdn.growthbook.io,FINAL,Global,共享主机和未证实的云地址走兜底
 anthropic.auth0.com,Claude.list,Claude,Claude authentication tenant
 anthropic.com.cdn.cloudflare.net,Claude.list,Claude,Claude website CDN alias
 servd-anthropic-website.b-cdn.net,Claude.list,Claude,Claude website CDN
 anthropic-com.ghost.io,Claude.list,Claude,Anthropic Ghost publication host
 downloads.claude.ai,Claude.list,Claude,Claude 安装包下载
 releases.claude.com,Claude.list,Claude,Claude 客户端更新
-api.statsig.com,AI.list,AI,AI feature flags（specific Statsig endpoint retained）
-events.statsigapi.net,AI.list,AI,AI event telemetry（specific Statsig endpoint retained）
+api.statsig.com,FINAL,Global,共享主机和未证实的云地址走兜底
+events.statsigapi.net,FINAL,Global,共享主机和未证实的云地址走兜底
 livekit.cloud,Global,Global,LiveKit parent suffix is shared infrastructure and should not be AI
 chatgpt.livekit.cloud,AI.list,AI,ChatGPT-specific LiveKit endpoint remains AI
 api-iam.intercom.io,Global,Global,Intercom IAM is shared support infrastructure and should not be AI
@@ -532,3 +532,53 @@ store.epicgames.com,Game.list,Game,Epic 商店的官方域名
 not-epicgames.example,FINAL,Global,无关域名不能命中 Epic 关键词
 youtube-nocookie.com,YouTube.list,YouTube,YouTube 隐私增强嵌入域
 unrelated-youtube.example,FINAL,Global,无关域名不能命中 YouTube 关键词
+claude.site,Claude.list,Claude,Anthropic 公共入口
+claude.new,Claude.list,Claude,Anthropic 公共入口
+claude.dev,Claude.list,Claude,Anthropic 公共入口
+www.claude.dev,Claude.list,Claude,Anthropic 公共入口
+registry.modelcontextprotocol.io,AI.list,AI,跨厂商 MCP 规范和注册表
+accounts.spacexsi.com,AI.list,AI,Cursor 登录和运行环境
+auth.grokusercontent.com,AI.list,AI,Cursor 登录和运行环境
+auth.grokipedia.com,AI.list,AI,Cursor 登录和运行环境
+auth.grok.com,AI.list,AI,Cursor 登录和运行环境
+probe.cursorvm.com,AI.list,AI,Cursor 登录和运行环境
+aiplatform.googleapis.com,AI.list,AI,Google 官方全局和区域 AI API
+us-central1-aiplatform.googleapis.com,AI.list,AI,Google 官方全局和区域 AI API
+europe-west4-aiplatform.googleapis.com,AI.list,AI,Google 官方全局和区域 AI API
+aiplatform.us.rep.googleapis.com,AI.list,AI,Google 官方全局和区域 AI API
+aiplatform.eu.rep.googleapis.com,AI.list,AI,Google 官方全局和区域 AI API
+dialogflow.googleapis.com,AI.list,AI,Google 官方全局和区域 AI API
+eu-dialogflow.googleapis.com,AI.list,AI,Google 官方全局和区域 AI API
+cloudaicompanion.googleapis.com,AI.list,AI,Google 官方 AI 入口
+geminicloudassist.googleapis.com,AI.list,AI,Google 官方 AI 入口
+firebasevertexai.googleapis.com,AI.list,AI,Google 官方 AI 入口
+flow.google,AI.list,AI,Google 官方 AI 入口
+copilot-proxy.githubusercontent.com,AI.list,AI,GitHub Copilot 补全端点
+origin-tracker.githubusercontent.com,AI.list,AI,GitHub Copilot 补全端点
+production-copilot-host.webpubsub.azure.com,AI.list,AI,GitHub Copilot 云会话 WebSocket
+production-copilot-host-austriaeast.webpubsub.azure.com,AI.list,AI,GitHub Copilot 云会话 WebSocket
+production-copilot-host-centralus.webpubsub.azure.com,AI.list,AI,GitHub Copilot 云会话 WebSocket
+production-copilot-host-centralus-02.webpubsub.azure.com,AI.list,AI,GitHub Copilot 云会话 WebSocket
+production-copilot-host-eastasia.webpubsub.azure.com,AI.list,AI,GitHub Copilot 云会话 WebSocket
+production-copilot-host-westus.webpubsub.azure.com,AI.list,AI,GitHub Copilot 云会话 WebSocket
+production-copilot-host-westus3.webpubsub.azure.com,AI.list,AI,GitHub Copilot 云会话 WebSocket
+api.app.prod.grazie.aws.intellij.net,AI.list,AI,JetBrains 国际版 AI API
+api.ai.jetbrains.com.cn,China.list,DIRECT,中国区 AI 沿用直连
+chat.qwen.ai,China.list,DIRECT,中国区 AI 沿用直连
+dashscope.aliyuncs.com,China.list,DIRECT,中国区 AI 沿用直连
+geller-pa.googleapis.com,Google.list,Google,Google 搜索或通用服务
+proactivebackend-pa.googleapis.com,Google.list,Google,Google 搜索或通用服务
+www.google.com,Google.list,Google,Google 搜索或通用服务
+storage.azure.com,Microsoft.list,Microsoft,普通 Azure 与 Web PubSub 保留 Microsoft
+sample.webpubsub.azure.com,Microsoft.list,Microsoft,普通 Azure 与 Web PubSub 保留 Microsoft
+featuregates.org,FINAL,Global,共享主机和未证实的云地址走兜底
+client-api.arkoselabs.com,FINAL,Global,共享主机和未证实的云地址走兜底
+observeit.net,FINAL,Global,共享主机和未证实的云地址走兜底
+129.146.3.78,FINAL,Global,共享主机和未证实的云地址走兜底
+24.199.123.28,FINAL,Global,共享主机和未证实的云地址走兜底
+64.23.132.171,FINAL,Global,共享主机和未证实的云地址走兜底
+us-central1-aiplatform.googleapis.com.example,FINAL,Global,共享主机和未证实的云地址走兜底
+eu-dialogflow.googleapis.com.example,FINAL,Global,共享主机和未证实的云地址走兜底
+sample.host.livekit.cloud,Global,Global,LiveKit 通用主机归 Global
+sample.turn.livekit.cloud,Global,Global,LiveKit 通用主机归 Global
+downloads.cursor.com,Download.list,Download,Cursor 安装包下载继续走 Download

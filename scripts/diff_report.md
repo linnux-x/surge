@@ -1,217 +1,112 @@
 # Surge Rule Diff Report
-Generated: 2026-11-21T08:55:06.587785
+Generated: 2026-11-21T12:25:36.754918
 
 ## Summary
 
 | Metric | Count |
 |--------|-------|
-| Files changed | 6 |
-| Rules added | 20 |
-| Rules removed | 210 |
-| Source attribution changed | 0 |
+| Files changed | 4 |
+| Rules added | 33 |
+| Rules removed | 18 |
+| Source attribution changed | 1 |
 
 ## Per-File Changes
 
 | File | Prev | Curr | Added | Removed | Source Δ |
 |------|------|------|-------|---------|----------|
-| AI.list | 127 | 123 | +0 | -4 | ~0 |
-| Apple.list | 1552 | 1380 | +8 | -180 | ~0 |
-| AppleMedia.list | 0 | 11 | +11 | -0 | ~0 |
-| Apple_AI.list | 24 | 20 | +0 | -4 | ~0 |
-| Apple_CN.list | 230 | 225 | +1 | -6 | ~0 |
-| GlobalMedia.list | 2288 | 2272 | +0 | -16 | ~0 |
+| AI.list | 123 | 136 | +27 | -14 | ~1 |
+| Claude.list | 14 | 16 | +4 | -2 | ~0 |
+| Global.list | 24603 | 24604 | +2 | -1 | ~0 |
+| GlobalMedia.list | 2272 | 2271 | +0 | -1 | ~0 |
 
 ## AI.list
 
-**Removed: 4** (showing first 4)
+**Added: 27** (showing first 27)
 ```
-  - [Rabbit-Spec AIGC] 1e902f6f0f29  DOMAIN-SUFFIX,guzzoni.apple.com
-  - [Rabbit-Spec AIGC] 23d8a46c106a  DOMAIN-SUFFIX,apple-relay.fastly-edge.com
-  - [Rabbit-Spec AIGC] c3b7ae332522  DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
-  - [Rabbit-Spec AIGC] eb9c099dc8eb  DOMAIN-SUFFIX,cp4.cloudflare.com
-```
-
-## Apple.list
-
-**Added: 8** (showing first 8)
-```
-  + [Manual Rules] 4c34a6fc1ad5  DOMAIN,crl4.digicert.com
-  + [Manual Rules] 89b4c7619f52  DOMAIN-SUFFIX,apple.com.akadns.net
-  + [Manual Rules] 95dfdd170967  DOMAIN-SUFFIX,apple-support.akadns.net
-  + [Manual Rules] aebe0efcfe6a  DOMAIN,app-site-association.networking.apple
-  + [Manual Rules] b6929201bfca  DOMAIN-SUFFIX,apple.com.edgekey.net
-  + [Manual Rules] d9733c43937d  DOMAIN,ocsp.digicert.com
-  + [Manual Rules] ebd53c2b5637  DOMAIN,crl3.digicert.com
-  + [Manual Rules] fb10b053fdf7  DOMAIN-SUFFIX,icloud.com.akadns.net
-```
-
-**Removed: 180** (showing first 100)
-```
-  - [blackmatrix7 Apple] 00aab0c87218  PROCESS-NAME,apsd
-  - [blackmatrix7 Apple] 015431791526  DOMAIN-SUFFIX,leecountytimes.com
-  - [blackmatrix7 Apple] 047266f5a490  DOMAIN-SUFFIX,wholesalediscountpurses.com
-  - [blackmatrix7 Apple] 07af8d4ba938  DOMAIN-SUFFIX,salecheaphandbags.com
-  - [blackmatrix7 Apple] 081e0cfc3efd  DOMAIN-SUFFIX,aanaan.com
-  - [blackmatrix7 Apple] 08e39fe79f62  DOMAIN-SUFFIX,detaliczny.com
-  - [blackmatrix7 Apple] 095161a77384  DOMAIN-SUFFIX,tradevip1.com
-  - [blackmatrix7 Apple] 0b0f4c799b91  DOMAIN-SUFFIX,ajtalk.com
-  - [blackmatrix7 Apple] 0b11e642aaba  DOMAIN-SUFFIX,ogameblog.com
-  - [blackmatrix7 Apple] 0b4990cfa516  DOMAIN-KEYWORD,apple-support.akadns.net
-  - [blackmatrix7 Apple] 0baa7200461f  PROCESS-NAME,fmfd
-  - [blackmatrix7 Apple] 0bf418ebb073  DOMAIN-SUFFIX,v-has.com
-  - [blackmatrix7 Apple] 0c0a253e8f92  DOMAIN-SUFFIX,vipshoes2.com
-  - [blackmatrix7 Apple] 0e627ecaab13  DOMAIN-SUFFIX,specialtyheadphones.com
-  - [blackmatrix7 Apple] 10db618defc9  DOMAIN-SUFFIX,buyshoponly.com
-  - [blackmatrix7 Apple] 13f4109c6b4e  USER-AGENT,FindMyiPhone*
-  - [blackmatrix7 Apple] 1935ca3cd42e  USER-AGENT,com.apple.news*
-  - [blackmatrix7 Apple] 196278ff3ab1  DOMAIN-SUFFIX,mallheadphone.com
-  - [blackmatrix7 Apple] 1b0428bb2999  DOMAIN-SUFFIX,wasdj.com
-  - [blackmatrix7 Apple] 1b61555ce982  DOMAIN-SUFFIX,brandelectronic.com
-  - [blackmatrix7 Apple] 1bab20a5ed4c  USER-AGENT,com.apple.Maps
-  - [blackmatrix7 Apple] 1d0ac2f63207  DOMAIN-SUFFIX,businesswebwise.com
-  - [blackmatrix7 Apple] 1dd2433f8252  DOMAIN-SUFFIX,onsaletrend.com
-  - [blackmatrix7 Apple] 1eed7669ca62  DOMAIN-SUFFIX,theuab.net
-  - [blackmatrix7 Apple] 21f53873227c  DOMAIN-SUFFIX,iphonecase2013.com
-  - [blackmatrix7 Apple] 23a3e97cf892  DOMAIN-SUFFIX,sanvaras.com
-  - [blackmatrix7 Apple] 2653e7cc556f  DOMAIN-SUFFIX,goodsdunk.net
-  - [blackmatrix7 Apple] 2a074d11c377  DOMAIN-SUFFIX,crashlytics.com
-  - [blackmatrix7 Apple] 2a3f31b111eb  DOMAIN-SUFFIX,biitii.com
-  - [blackmatrix7 Apple] 2bb4fa79115e  DOMAIN-SUFFIX,lexuemei.com
-  - [blackmatrix7 Apple] 2c3dec734fab  DOMAIN-SUFFIX,monsterproduct.net
-  - [blackmatrix7 Apple] 2c6bde85d1fd  DOMAIN-SUFFIX,digicert.com
-  - [blackmatrix7 Apple] 2d578e698146  DOMAIN-KEYWORD,smp-device
-  - [blackmatrix7 Apple] 300e04160997  DOMAIN-SUFFIX,ebuyheadphones.com
-  - [blackmatrix7 Apple] 304b4b6fa217  DOMAIN-SUFFIX,worldcoinpay.com
-  - [blackmatrix7 Apple] 329db94df164  DOMAIN-SUFFIX,cheapshoesvip.com
-  - [blackmatrix7 Apple] 3340240a8937  DOMAIN-SUFFIX,pocketbiketrader.com
-  - [blackmatrix7 Apple] 386547a1be4f  DOMAIN-SUFFIX,bossae.com
-  - [blackmatrix7 Apple] 3b61ae8ba877  DOMAIN-SUFFIX,micstl.com
-  - [blackmatrix7 Apple] 3b6352c732ef  DOMAIN-SUFFIX,personeelsland.com
-  - [blackmatrix7 Apple] 41660cfe51d9  DOMAIN-SUFFIX,headset987.com
-  - [blackmatrix7 Apple] 460615972d4a  DOMAIN-SUFFIX,wholesalefine.com
-  - [blackmatrix7 Apple] 4611b86fbda4  DOMAIN-SUFFIX,newlysprung.net
-  - [blackmatrix7 Apple] 465d262c3f62  USER-AGENT,*FindMyiPhone?
-  - [blackmatrix7 Apple] 4a3f4d61bd32  DOMAIN-SUFFIX,wholesale-exporter1.com
-  - [blackmatrix7 Apple] 4a9360de83e1  DOMAIN-SUFFIX,cheerwholesale.us
-  - [blackmatrix7 Apple] 4cfcc2f071c7  DOMAIN-SUFFIX,bbestmall.com
-  - [blackmatrix7 Apple] 4ff3eaa43fba  USER-AGENT,com.apple.tv*
-  - [blackmatrix7 Apple] 502e7f4a15c2  USER-AGENT,AppleTV*
-  - [blackmatrix7 Apple] 513ede60f74f  DOMAIN-SUFFIX,sneaker666.com
-  - [blackmatrix7 Apple] 518fb85ff4e1  DOMAIN-SUFFIX,samebags.com
-  - [blackmatrix7 Apple] 525b098da897  DOMAIN-SUFFIX,nicesshop.net
-  - [blackmatrix7 Apple] 534c23ee38fe  USER-AGENT,com.apple.trustd*
-  - [blackmatrix7 Apple] 5382b860213a  DOMAIN-SUFFIX,begin-trade.com
-  - [blackmatrix7 Apple] 56461ff926d9  DOMAIN-SUFFIX,earphonescheapest.com
-  - [blackmatrix7 Apple] 567e29a2c206  DOMAIN-SUFFIX,honawalaan.com
-  - [blackmatrix7 Apple] 5828fbb4fbf9  DOMAIN-SUFFIX,wholesaleonlinemart.com
-  - [blackmatrix7 Apple] 5b12571be605  DOMAIN-SUFFIX,repswing.com
-  - [blackmatrix7 Apple] 5b679897ad6f  DOMAIN-SUFFIX,incentivetravelgifts.com
-  - [blackmatrix7 Apple] 5ba01fd39a1e  USER-AGENT,passd*
-  - [blackmatrix7 Apple] 5cf204c52151  PROCESS-NAME,mapspushd
-  - [blackmatrix7 Apple] 5f5e8a215a9b  DOMAIN-SUFFIX,dtsell.com
-  - [blackmatrix7 Apple] 5f64d3bbed7f  DOMAIN-SUFFIX,airmay.com
-  - [blackmatrix7 Apple] 5f768a02bfc8  DOMAIN-SUFFIX,shopping-days.net
-  - [blackmatrix7 Apple] 60bdcb46260f  DOMAIN-KEYWORD,testflight
-  - [blackmatrix7 Apple] 6157703e7cef  PROCESS-NAME,CoreLocationAgent
-  - [Manual Rules] 658e11e0300f  DOMAIN,apple.com.akadns.net
-  - [blackmatrix7 Apple] 65a2e9abd285  DOMAIN-SUFFIX,nflhotsalejerseys.com
-  - [blackmatrix7 Apple] 676803873eaa  DOMAIN,lookup-api.apple.com.edgekey.net
-  - [blackmatrix7 Apple] 67d5809d81b7  IP-CIDR,205.180.175.0/24,no-resolve
-  - [blackmatrix7 Apple] 6a116c691846  USER-AGENT,FindMyFriends*
-  - [blackmatrix7 Apple] 6a303646802e  DOMAIN-SUFFIX,headphonepubs.com
-  - [blackmatrix7 Apple] 6c76a23089d2  DOMAIN-SUFFIX,ciattackers.com
-  - [blackmatrix7 Apple] 6d0a05bc2ab0  DOMAIN-SUFFIX,spiritclubs.com
-  - [blackmatrix7 Apple] 6f6f0d08c179  DOMAIN-SUFFIX,paulsimon-music.com
-  - [blackmatrix7 Apple] 70246e47119a  DOMAIN-SUFFIX,aeasyshop.com
-  - [blackmatrix7 Apple] 71671ed20875  DOMAIN-SUFFIX,baxsound.com
-  - [blackmatrix7 Apple] 72cbe4690b2b  DOMAIN-SUFFIX,headphonezip.com
-  - [blackmatrix7 Apple] 77b77aea8f85  DOMAIN-SUFFIX,takegoto.com
-  - [blackmatrix7 Apple] 77f118c7d3b8  DOMAIN-SUFFIX,buzzardflapper.com
-  - [blackmatrix7 Apple] 783a2c68a104  USER-AGENT,Maps*
-  - [blackmatrix7 Apple] 7a634e04a4bb  DOMAIN-SUFFIX,shoppinguheadphones.com
-  - [blackmatrix7 Apple] 7be11428de7c  DOMAIN-SUFFIX,etheadphones.com
-  - [blackmatrix7 Apple] 7cbaca590950  DOMAIN-SUFFIX,free-aa.com
-  - [blackmatrix7 Apple] 7cfec1555fbf  DOMAIN-KEYWORD,apple.com.akadns.net
-  - [blackmatrix7 Apple] 7d88d71fee1b  PROCESS-NAME,com.apple.Maps
-  - [blackmatrix7 Apple] 7deffae610f3  PROCESS-NAME,LookupViewService
-  - [blackmatrix7 Apple] 836392881fd0  DOMAIN-KEYWORD,buy.itunes.apple.com
-  - [blackmatrix7 Apple] 83721b8acc50  USER-AGENT,fmflocatord*
-  - [blackmatrix7 Apple] 84849125f149  DOMAIN-SUFFIX,neborder.com
-  - [blackmatrix7 Apple] 851e3c338142  DOMAIN-SUFFIX,cuffiesaldi.com
-  - [blackmatrix7 Apple] 85d9869ad31c  DOMAIN-SUFFIX,makeeu.com
-  - [blackmatrix7 Apple] 85e79da4a2f3  DOMAIN-SUFFIX,repsneakermall.com
-  - [blackmatrix7 Apple] 862f90e5bcf6  DOMAIN-SUFFIX,free-sns.com
-  - [blackmatrix7 Apple] 8698cdcb7cfa  PROCESS-NAME,netbiosd
-  - [blackmatrix7 Apple] 882299d7a4ad  DOMAIN-SUFFIX,chihair-straightener.com
-  - [blackmatrix7 Apple] 88df64b2d635  DOMAIN-SUFFIX,sulwerphoto.com
-  - [blackmatrix7 Apple] 8b576ff0a96d  PROCESS-NAME,com.apple.geod
-  - [blackmatrix7 Apple] 8c5089bf55f9  DOMAIN-SUFFIX,picknicekicks.net
-  - [blackmatrix7 Apple] 8fa27141a919  DOMAIN-SUFFIX,brandproducts1688.com
-  ... and 80 more
+  + [Manual Rules] 061dfb003b6e  DOMAIN,dialogflow.googleapis.com
+  + [Manual Rules] 0855cda2afe9  DOMAIN,production-copilot-host-westus.webpubsub.azure.com
+  + [Manual Rules] 1106c5f9daf7  DOMAIN,accounts.spacexsi.com
+  + [Manual Rules] 120bba58c982  DOMAIN,auth.grokipedia.com
+  + [Manual Rules] 13cb0a026009  DOMAIN,geminicloudassist.googleapis.com
+  + [Manual Rules] 17539c1e8a11  DOMAIN-SUFFIX,claude.app
+  + [Manual Rules] 17ed196cec02  DOMAIN,claude.new
+  + [Manual Rules] 29914f328abf  DOMAIN,flow.google
+  + [Manual Rules] 2be3f8e88ee3  DOMAIN,cloudaicompanion.googleapis.com
+  + [Manual Rules] 36c22dea2502  DOMAIN,production-copilot-host-centralus-02.webpubsub.azure.com
+  + [Manual Rules] 588b0ccdc796  DOMAIN,production-copilot-host-centralus.webpubsub.azure.com
+  + [Manual Rules] 5cc7d26a9c9e  DOMAIN,production-copilot-host.webpubsub.azure.com
+  + [Manual Rules] 7d590b3e2bb8  DOMAIN,auth.grokusercontent.com
+  + [Manual Rules] 87f37fde06c3  DOMAIN,origin-tracker.githubusercontent.com
+  + [Manual Rules] 8b4e3fbfdc52  DOMAIN-WILDCARD,*-aiplatform.googleapis.com
+  + [Manual Rules] 913a4abec3ed  DOMAIN,production-copilot-host-eastasia.webpubsub.azure.com
+  + [Manual Rules] a43bfc7e121c  DOMAIN,aiplatform.us.rep.googleapis.com
+  + [Manual Rules] aa7c06c4981d  DOMAIN-WILDCARD,*-dialogflow.googleapis.com
+  + [Manual Rules] bc574175298f  DOMAIN,production-copilot-host-austriaeast.webpubsub.azure.com
+  + [Manual Rules] d11c097d9e3a  DOMAIN,www.claude.dev
+  + [Manual Rules] d76ec7f661d8  DOMAIN,production-copilot-host-westus3.webpubsub.azure.com
+  + [Manual Rules] d8490e753e46  DOMAIN,firebasevertexai.googleapis.com
+  + [Manual Rules] e13c3efa411a  DOMAIN,aiplatform.eu.rep.googleapis.com
+  + [Manual Rules] e6680e1bca06  DOMAIN,claude.dev
+  + [Manual Rules] e9a5e2a03ea6  DOMAIN-SUFFIX,cursorvm.com
+  + [Manual Rules] f320df6eb3fc  DOMAIN,api.app.prod.grazie.aws.intellij.net
+  + [Manual Rules] f7a7c00abcf7  DOMAIN,copilot-proxy.githubusercontent.com
 ```
 
-## AppleMedia.list
-
-**Added: 11** (showing first 11)
+**Removed: 14** (showing first 14)
 ```
-  + [Manual Rules] 1a701cc95975  DOMAIN,ocvideo.apple.com
-  + [Manual Rules] 40351eaeef07  DOMAIN,news-client.apple.com
-  + [Manual Rules] 683b705c9f90  DOMAIN,play-edge.itunes.apple.com
-  + [Manual Rules] 6f3442a07e6f  DOMAIN-SUFFIX,tv.apple.com
-  + [Manual Rules] 793a02b5a263  DOMAIN,uts-api.itunes.apple.com
-  + [Manual Rules] 80918f01dda4  DOMAIN,news-events.apple.com
-  + [Manual Rules] a5936a80af05  DOMAIN,hls.itunes.apple.com
-  + [Manual Rules] ab649c510245  DOMAIN-SUFFIX,apple.news
-  + [Manual Rules] b3b71b9361b2  DOMAIN,news-edge.apple.com
-  + [Manual Rules] c26a6a6b519d  DOMAIN,np-edge.itunes.apple.com
-  + [Manual Rules] f9ef3e5a225c  DOMAIN,hls-amt.itunes.apple.com
-```
-
-## Apple_AI.list
-
-**Removed: 4** (showing first 4)
-```
-  - [RocM301 Apple-AI] c3b7ae332522  DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
-  - [RocM301 Apple-AI] d5d02abafd94  DOMAIN,wps.apple.com
-  - [Manual Rules] ec57b182d328  DOMAIN-SUFFIX,gsp64-ssl.ls.apple.com
-  - [RocM301 Apple-AI] efede8aee155  DOMAIN-SUFFIX,gateway.icloud.com
+  - [Rabbit-Spec AIGC] 1dcc20d60a4b  DOMAIN-SUFFIX,featuregates.org
+  - [Rabbit-Spec AIGC] 1fbfa047d8ad  DOMAIN-SUFFIX,client-api.arkoselabs.com
+  - [Manual Rules] 395b4d02e503  DOMAIN,cdn.growthbook.io
+  - [Manual Rules] 98593c22f427  DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+  - [Rabbit-Spec AIGC] aca2332538ad  DOMAIN-SUFFIX,turn.livekit.cloud
+  - [Rabbit-Spec AIGC] b3f222fc947b  DOMAIN-SUFFIX,host.livekit.cloud
+  - [Rabbit-Spec AIGC] c78d14def5ea  IP-CIDR,24.199.123.28/32,no-resolve
+  - [Rabbit-Spec AIGC] d10d35b4e7dc  DOMAIN-SUFFIX,api.statsig.com
+  - [Rabbit-Spec AIGC] d34d969f3f0b  IP-CIDR,64.23.132.171/32,no-resolve
+  - [Rabbit-Spec AIGC] d757313477af  DOMAIN-SUFFIX,events.statsigapi.net
+  - [Rabbit-Spec AIGC] df51702bd3a8  DOMAIN-SUFFIX,observeit.net
+  - [Rabbit-Spec AIGC] e9456a7b7221  IP-CIDR,129.146.3.78/32,no-resolve
+  - [Manual Rules] f1164ee3b6ff  URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+
+  - [Manual Rules] fbd8c01342b9  DOMAIN-SUFFIX,geller-pa.googleapis.com
 ```
 
-## Apple_CN.list
-
-**Added: 1** (showing first 1)
+**Source changed: 1**
 ```
-  + [Manual Rules] d8bfb4642536  DOMAIN-SUFFIX,apzones.com
+  ~ 391d402853fb: [SukkaW AI → Manual Rules]
 ```
 
-**Removed: 6** (showing first 6)
+## Claude.list
+
+**Added: 4** (showing first 4)
 ```
-  - [SukkaW Apple CDN] 0aa154923468  DOMAIN-SUFFIX,seed-sequoia.siri.apple.com
-  - [SukkaW Apple CDN] 139ff6396d14  DOMAIN-SUFFIX,guzzoni.smoot.apple.com
-  - [SukkaW Apple CDN] 1695f9cea76f  DOMAIN-SUFFIX,probe.siri.apple.com
-  - [SukkaW Apple CDN] 1e902f6f0f29  DOMAIN-SUFFIX,guzzoni.apple.com
-  - [SukkaW Apple CDN] 2800ce39f023  DOMAIN-SUFFIX,seed.siri.apple.com
-  - [SukkaW Apple CDN] 51b5c71a3e77  DOMAIN-SUFFIX,seed-swallow.siri.apple.com
+  + [Manual Rules] 17ed196cec02  DOMAIN,claude.new
+  + [Manual Rules] 391d402853fb  DOMAIN,claude.site
+  + [Manual Rules] d11c097d9e3a  DOMAIN,www.claude.dev
+  + [Manual Rules] e6680e1bca06  DOMAIN,claude.dev
+```
+
+**Removed: 2** (showing first 2)
+```
+  - [Manual Rules] 395b4d02e503  DOMAIN,cdn.growthbook.io
+  - [Manual Rules] b5c2d2041b5e  DOMAIN-SUFFIX,modelcontextprotocol.io
+```
+
+## Global.list
+
+**Added: 2** (showing first 2)
+```
+  + [blackmatrix7 Global] aca2332538ad  DOMAIN-SUFFIX,turn.livekit.cloud
+  + [blackmatrix7 Global] b3f222fc947b  DOMAIN-SUFFIX,host.livekit.cloud
+```
+
+**Removed: 1** (showing first 1)
+```
+  - [blackmatrix7 Global] e9a5e2a03ea6  DOMAIN-SUFFIX,cursorvm.com
 ```
 
 ## GlobalMedia.list
 
-**Removed: 16** (showing first 16)
+**Removed: 1** (showing first 1)
 ```
-  - [blackmatrix7 GlobalMedia] 1a701cc95975  DOMAIN,ocvideo.apple.com
-  - [blackmatrix7 GlobalMedia] 40351eaeef07  DOMAIN,news-client.apple.com
-  - [blackmatrix7 GlobalMedia] 4ff3eaa43fba  USER-AGENT,com.apple.tv*
-  - [blackmatrix7 GlobalMedia] 502e7f4a15c2  USER-AGENT,AppleTV*
-  - [SukkaW Stream] 683b705c9f90  DOMAIN,play-edge.itunes.apple.com
-  - [blackmatrix7 GlobalMedia] 6f3442a07e6f  DOMAIN-SUFFIX,tv.apple.com
-  - [SukkaW Stream] 793a02b5a263  DOMAIN,uts-api.itunes.apple.com
-  - [blackmatrix7 GlobalMedia] 80918f01dda4  DOMAIN,news-events.apple.com
-  - [SukkaW Stream] 99f59529614f  PROCESS-NAME,tv
-  - [SukkaW Stream] a5936a80af05  DOMAIN,hls.itunes.apple.com
-  - [blackmatrix7 GlobalMedia] ab649c510245  DOMAIN-SUFFIX,apple.news
-  - [blackmatrix7 GlobalMedia] ad1e7dd22ac1  DOMAIN-SUFFIX,applemusic.com
-  - [blackmatrix7 GlobalMedia] b3b71b9361b2  DOMAIN,news-edge.apple.com
-  - [SukkaW Stream] c26a6a6b519d  DOMAIN,np-edge.itunes.apple.com
-  - [blackmatrix7 GlobalMedia] dd2c581817a8  DOMAIN,apple.comscoreresearch.com
-  - [SukkaW Stream] f9ef3e5a225c  DOMAIN,hls-amt.itunes.apple.com
+  - [blackmatrix7 GlobalMedia] 0641c42114ae  DOMAIN-SUFFIX,grazie.aws.intellij.net
 ```

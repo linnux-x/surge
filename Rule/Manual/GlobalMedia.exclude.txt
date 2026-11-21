@@ -26,6 +26,8 @@ DOMAIN-SUFFIX,cursor.com
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,gemini.google.com
 DOMAIN-SUFFIX,grazie.ai
+# JetBrains AI API namespace, not streaming.
+DOMAIN-SUFFIX,grazie.aws.intellij.net
 DOMAIN-SUFFIX,jetbrains.ai
 DOMAIN-SUFFIX,makersuite.google.com
 DOMAIN-SUFFIX,meta.ai

@@ -1,40 +1,232 @@
 {
-  "generated_at": "2026-11-21T08:55:06.587785",
-  "total_added": 20,
-  "total_removed": 210,
-  "total_source_changed": 0,
+  "generated_at": "2026-11-21T12:25:36.754918",
+  "total_added": 33,
+  "total_removed": 18,
+  "total_source_changed": 1,
   "diffs": [
     {
       "file": "AI.list",
-      "prev_total": 127,
-      "curr_total": 123,
-      "added_count": 0,
-      "removed_count": 4,
-      "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [
+      "prev_total": 123,
+      "curr_total": 136,
+      "added_count": 27,
+      "removed_count": 14,
+      "source_changed_count": 1,
+      "added_sample": [
         {
-          "id": "1e902f6f0f29",
-          "source": "Rabbit-Spec AIGC",
-          "rule": "DOMAIN-SUFFIX,guzzoni.apple.com"
+          "id": "061dfb003b6e",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,dialogflow.googleapis.com"
         },
         {
-          "id": "23d8a46c106a",
-          "source": "Rabbit-Spec AIGC",
-          "rule": "DOMAIN-SUFFIX,apple-relay.fastly-edge.com"
+          "id": "0855cda2afe9",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,production-copilot-host-westus.webpubsub.azure.com"
         },
         {
-          "id": "c3b7ae332522",
-          "source": "Rabbit-Spec AIGC",
-          "rule": "DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com"
+          "id": "1106c5f9daf7",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,accounts.spacexsi.com"
         },
         {
-          "id": "eb9c099dc8eb",
-          "source": "Rabbit-Spec AIGC",
-          "rule": "DOMAIN-SUFFIX,cp4.cloudflare.com"
+          "id": "120bba58c982",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,auth.grokipedia.com"
+        },
+        {
+          "id": "13cb0a026009",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,geminicloudassist.googleapis.com"
+        },
+        {
+          "id": "17539c1e8a11",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,claude.app"
+        },
+        {
+          "id": "17ed196cec02",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,claude.new"
+        },
+        {
+          "id": "29914f328abf",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,flow.google"
+        },
+        {
+          "id": "2be3f8e88ee3",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,cloudaicompanion.googleapis.com"
+        },
+        {
+          "id": "36c22dea2502",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,production-copilot-host-centralus-02.webpubsub.azure.com"
+        },
+        {
+          "id": "588b0ccdc796",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,production-copilot-host-centralus.webpubsub.azure.com"
+        },
+        {
+          "id": "5cc7d26a9c9e",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,production-copilot-host.webpubsub.azure.com"
+        },
+        {
+          "id": "7d590b3e2bb8",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,auth.grokusercontent.com"
+        },
+        {
+          "id": "87f37fde06c3",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,origin-tracker.githubusercontent.com"
+        },
+        {
+          "id": "8b4e3fbfdc52",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-WILDCARD,*-aiplatform.googleapis.com"
+        },
+        {
+          "id": "913a4abec3ed",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,production-copilot-host-eastasia.webpubsub.azure.com"
+        },
+        {
+          "id": "a43bfc7e121c",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,aiplatform.us.rep.googleapis.com"
+        },
+        {
+          "id": "aa7c06c4981d",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-WILDCARD,*-dialogflow.googleapis.com"
+        },
+        {
+          "id": "bc574175298f",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,production-copilot-host-austriaeast.webpubsub.azure.com"
+        },
+        {
+          "id": "d11c097d9e3a",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,www.claude.dev"
+        },
+        {
+          "id": "d76ec7f661d8",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,production-copilot-host-westus3.webpubsub.azure.com"
+        },
+        {
+          "id": "d8490e753e46",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,firebasevertexai.googleapis.com"
+        },
+        {
+          "id": "e13c3efa411a",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,aiplatform.eu.rep.googleapis.com"
+        },
+        {
+          "id": "e6680e1bca06",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,claude.dev"
+        },
+        {
+          "id": "e9a5e2a03ea6",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,cursorvm.com"
+        },
+        {
+          "id": "f320df6eb3fc",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,api.app.prod.grazie.aws.intellij.net"
+        },
+        {
+          "id": "f7a7c00abcf7",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,copilot-proxy.githubusercontent.com"
         }
       ],
-      "source_changed_sample": []
+      "removed_sample": [
+        {
+          "id": "1dcc20d60a4b",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,featuregates.org"
+        },
+        {
+          "id": "1fbfa047d8ad",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,client-api.arkoselabs.com"
+        },
+        {
+          "id": "395b4d02e503",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,cdn.growthbook.io"
+        },
+        {
+          "id": "98593c22f427",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com"
+        },
+        {
+          "id": "aca2332538ad",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,turn.livekit.cloud"
+        },
+        {
+          "id": "b3f222fc947b",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,host.livekit.cloud"
+        },
+        {
+          "id": "c78d14def5ea",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "IP-CIDR,24.199.123.28/32,no-resolve"
+        },
+        {
+          "id": "d10d35b4e7dc",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,api.statsig.com"
+        },
+        {
+          "id": "d34d969f3f0b",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "IP-CIDR,64.23.132.171/32,no-resolve"
+        },
+        {
+          "id": "d757313477af",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,events.statsigapi.net"
+        },
+        {
+          "id": "df51702bd3a8",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,observeit.net"
+        },
+        {
+          "id": "e9456a7b7221",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "IP-CIDR,129.146.3.78/32,no-resolve"
+        },
+        {
+          "id": "f1164ee3b6ff",
+          "source": "Manual Rules",
+          "rule": "URL-REGEX,https://www\\.google\\.com/.*continue=https://gemini\\.google\\.com.+"
+        },
+        {
+          "id": "fbd8c01342b9",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,geller-pa.googleapis.com"
+        }
+      ],
+      "source_changed_sample": [
+        {
+          "id": "391d402853fb",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        }
+      ]
     },
     {
       "file": "AdBlock.list",
@@ -49,702 +241,46 @@
     },
     {
       "file": "Apple.list",
-      "prev_total": 1552,
+      "prev_total": 1380,
       "curr_total": 1380,
-      "added_count": 8,
-      "removed_count": 180,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "4c34a6fc1ad5",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,crl4.digicert.com"
-        },
-        {
-          "id": "89b4c7619f52",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,apple.com.akadns.net"
-        },
-        {
-          "id": "95dfdd170967",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,apple-support.akadns.net"
-        },
-        {
-          "id": "aebe0efcfe6a",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,app-site-association.networking.apple"
-        },
-        {
-          "id": "b6929201bfca",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,apple.com.edgekey.net"
-        },
-        {
-          "id": "d9733c43937d",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,ocsp.digicert.com"
-        },
-        {
-          "id": "ebd53c2b5637",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,crl3.digicert.com"
-        },
-        {
-          "id": "fb10b053fdf7",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,icloud.com.akadns.net"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "00aab0c87218",
-          "source": "blackmatrix7 Apple",
-          "rule": "PROCESS-NAME,apsd"
-        },
-        {
-          "id": "015431791526",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,leecountytimes.com"
-        },
-        {
-          "id": "047266f5a490",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,wholesalediscountpurses.com"
-        },
-        {
-          "id": "07af8d4ba938",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,salecheaphandbags.com"
-        },
-        {
-          "id": "081e0cfc3efd",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,aanaan.com"
-        },
-        {
-          "id": "08e39fe79f62",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,detaliczny.com"
-        },
-        {
-          "id": "095161a77384",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,tradevip1.com"
-        },
-        {
-          "id": "0b0f4c799b91",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,ajtalk.com"
-        },
-        {
-          "id": "0b11e642aaba",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,ogameblog.com"
-        },
-        {
-          "id": "0b4990cfa516",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-KEYWORD,apple-support.akadns.net"
-        },
-        {
-          "id": "0baa7200461f",
-          "source": "blackmatrix7 Apple",
-          "rule": "PROCESS-NAME,fmfd"
-        },
-        {
-          "id": "0bf418ebb073",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,v-has.com"
-        },
-        {
-          "id": "0c0a253e8f92",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,vipshoes2.com"
-        },
-        {
-          "id": "0e627ecaab13",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,specialtyheadphones.com"
-        },
-        {
-          "id": "10db618defc9",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,buyshoponly.com"
-        },
-        {
-          "id": "13f4109c6b4e",
-          "source": "blackmatrix7 Apple",
-          "rule": "USER-AGENT,FindMyiPhone*"
-        },
-        {
-          "id": "1935ca3cd42e",
-          "source": "blackmatrix7 Apple",
-          "rule": "USER-AGENT,com.apple.news*"
-        },
-        {
-          "id": "196278ff3ab1",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,mallheadphone.com"
-        },
-        {
-          "id": "1b0428bb2999",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,wasdj.com"
-        },
-        {
-          "id": "1b61555ce982",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,brandelectronic.com"
-        },
-        {
-          "id": "1bab20a5ed4c",
-          "source": "blackmatrix7 Apple",
-          "rule": "USER-AGENT,com.apple.Maps"
-        },
-        {
-          "id": "1d0ac2f63207",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,businesswebwise.com"
-        },
-        {
-          "id": "1dd2433f8252",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,onsaletrend.com"
-        },
-        {
-          "id": "1eed7669ca62",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,theuab.net"
-        },
-        {
-          "id": "21f53873227c",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,iphonecase2013.com"
-        },
-        {
-          "id": "23a3e97cf892",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,sanvaras.com"
-        },
-        {
-          "id": "2653e7cc556f",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,goodsdunk.net"
-        },
-        {
-          "id": "2a074d11c377",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,crashlytics.com"
-        },
-        {
-          "id": "2a3f31b111eb",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,biitii.com"
-        },
-        {
-          "id": "2bb4fa79115e",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,lexuemei.com"
-        },
-        {
-          "id": "2c3dec734fab",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,monsterproduct.net"
-        },
-        {
-          "id": "2c6bde85d1fd",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,digicert.com"
-        },
-        {
-          "id": "2d578e698146",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-KEYWORD,smp-device"
-        },
-        {
-          "id": "300e04160997",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,ebuyheadphones.com"
-        },
-        {
-          "id": "304b4b6fa217",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,worldcoinpay.com"
-        },
-        {
-          "id": "329db94df164",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,cheapshoesvip.com"
-        },
-        {
-          "id": "3340240a8937",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,pocketbiketrader.com"
-        },
-        {
-          "id": "386547a1be4f",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,bossae.com"
-        },
-        {
-          "id": "3b61ae8ba877",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,micstl.com"
-        },
-        {
-          "id": "3b6352c732ef",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,personeelsland.com"
-        },
-        {
-          "id": "41660cfe51d9",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,headset987.com"
-        },
-        {
-          "id": "460615972d4a",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,wholesalefine.com"
-        },
-        {
-          "id": "4611b86fbda4",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,newlysprung.net"
-        },
-        {
-          "id": "465d262c3f62",
-          "source": "blackmatrix7 Apple",
-          "rule": "USER-AGENT,*FindMyiPhone?"
-        },
-        {
-          "id": "4a3f4d61bd32",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,wholesale-exporter1.com"
-        },
-        {
-          "id": "4a9360de83e1",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,cheerwholesale.us"
-        },
-        {
-          "id": "4cfcc2f071c7",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,bbestmall.com"
-        },
-        {
-          "id": "4ff3eaa43fba",
-          "source": "blackmatrix7 Apple",
-          "rule": "USER-AGENT,com.apple.tv*"
-        },
-        {
-          "id": "502e7f4a15c2",
-          "source": "blackmatrix7 Apple",
-          "rule": "USER-AGENT,AppleTV*"
-        },
-        {
-          "id": "513ede60f74f",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,sneaker666.com"
-        },
-        {
-          "id": "518fb85ff4e1",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,samebags.com"
-        },
-        {
-          "id": "525b098da897",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,nicesshop.net"
-        },
-        {
-          "id": "534c23ee38fe",
-          "source": "blackmatrix7 Apple",
-          "rule": "USER-AGENT,com.apple.trustd*"
-        },
-        {
-          "id": "5382b860213a",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,begin-trade.com"
-        },
-        {
-          "id": "56461ff926d9",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,earphonescheapest.com"
-        },
-        {
-          "id": "567e29a2c206",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,honawalaan.com"
-        },
-        {
-          "id": "5828fbb4fbf9",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,wholesaleonlinemart.com"
-        },
-        {
-          "id": "5b12571be605",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,repswing.com"
-        },
-        {
-          "id": "5b679897ad6f",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,incentivetravelgifts.com"
-        },
-        {
-          "id": "5ba01fd39a1e",
-          "source": "blackmatrix7 Apple",
-          "rule": "USER-AGENT,passd*"
-        },
-        {
-          "id": "5cf204c52151",
-          "source": "blackmatrix7 Apple",
-          "rule": "PROCESS-NAME,mapspushd"
-        },
-        {
-          "id": "5f5e8a215a9b",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,dtsell.com"
-        },
-        {
-          "id": "5f64d3bbed7f",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,airmay.com"
-        },
-        {
-          "id": "5f768a02bfc8",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,shopping-days.net"
-        },
-        {
-          "id": "60bdcb46260f",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-KEYWORD,testflight"
-        },
-        {
-          "id": "6157703e7cef",
-          "source": "blackmatrix7 Apple",
-          "rule": "PROCESS-NAME,CoreLocationAgent"
-        },
-        {
-          "id": "658e11e0300f",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,apple.com.akadns.net"
-        },
-        {
-          "id": "65a2e9abd285",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,nflhotsalejerseys.com"
-        },
-        {
-          "id": "676803873eaa",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN,lookup-api.apple.com.edgekey.net"
-        },
-        {
-          "id": "67d5809d81b7",
-          "source": "blackmatrix7 Apple",
-          "rule": "IP-CIDR,205.180.175.0/24,no-resolve"
-        },
-        {
-          "id": "6a116c691846",
-          "source": "blackmatrix7 Apple",
-          "rule": "USER-AGENT,FindMyFriends*"
-        },
-        {
-          "id": "6a303646802e",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,headphonepubs.com"
-        },
-        {
-          "id": "6c76a23089d2",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,ciattackers.com"
-        },
-        {
-          "id": "6d0a05bc2ab0",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,spiritclubs.com"
-        },
-        {
-          "id": "6f6f0d08c179",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,paulsimon-music.com"
-        },
-        {
-          "id": "70246e47119a",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,aeasyshop.com"
-        },
-        {
-          "id": "71671ed20875",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,baxsound.com"
-        },
-        {
-          "id": "72cbe4690b2b",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,headphonezip.com"
-        },
-        {
-          "id": "77b77aea8f85",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,takegoto.com"
-        },
-        {
-          "id": "77f118c7d3b8",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,buzzardflapper.com"
-        },
-        {
-          "id": "783a2c68a104",
-          "source": "blackmatrix7 Apple",
-          "rule": "USER-AGENT,Maps*"
-        },
-        {
-          "id": "7a634e04a4bb",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,shoppinguheadphones.com"
-        },
-        {
-          "id": "7be11428de7c",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,etheadphones.com"
-        },
-        {
-          "id": "7cbaca590950",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,free-aa.com"
-        },
-        {
-          "id": "7cfec1555fbf",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-KEYWORD,apple.com.akadns.net"
-        },
-        {
-          "id": "7d88d71fee1b",
-          "source": "blackmatrix7 Apple",
-          "rule": "PROCESS-NAME,com.apple.Maps"
-        },
-        {
-          "id": "7deffae610f3",
-          "source": "blackmatrix7 Apple",
-          "rule": "PROCESS-NAME,LookupViewService"
-        },
-        {
-          "id": "836392881fd0",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-KEYWORD,buy.itunes.apple.com"
-        },
-        {
-          "id": "83721b8acc50",
-          "source": "blackmatrix7 Apple",
-          "rule": "USER-AGENT,fmflocatord*"
-        },
-        {
-          "id": "84849125f149",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,neborder.com"
-        },
-        {
-          "id": "851e3c338142",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,cuffiesaldi.com"
-        },
-        {
-          "id": "85d9869ad31c",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,makeeu.com"
-        },
-        {
-          "id": "85e79da4a2f3",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,repsneakermall.com"
-        },
-        {
-          "id": "862f90e5bcf6",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,free-sns.com"
-        },
-        {
-          "id": "8698cdcb7cfa",
-          "source": "blackmatrix7 Apple",
-          "rule": "PROCESS-NAME,netbiosd"
-        },
-        {
-          "id": "882299d7a4ad",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,chihair-straightener.com"
-        },
-        {
-          "id": "88df64b2d635",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,sulwerphoto.com"
-        },
-        {
-          "id": "8b576ff0a96d",
-          "source": "blackmatrix7 Apple",
-          "rule": "PROCESS-NAME,com.apple.geod"
-        },
-        {
-          "id": "8c5089bf55f9",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,picknicekicks.net"
-        },
-        {
-          "id": "8fa27141a919",
-          "source": "blackmatrix7 Apple",
-          "rule": "DOMAIN-SUFFIX,brandproducts1688.com"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "AppleMedia.list",
-      "prev_total": 0,
+      "prev_total": 11,
       "curr_total": 11,
-      "added_count": 11,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "1a701cc95975",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,ocvideo.apple.com"
-        },
-        {
-          "id": "40351eaeef07",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,news-client.apple.com"
-        },
-        {
-          "id": "683b705c9f90",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,play-edge.itunes.apple.com"
-        },
-        {
-          "id": "6f3442a07e6f",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,tv.apple.com"
-        },
-        {
-          "id": "793a02b5a263",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,uts-api.itunes.apple.com"
-        },
-        {
-          "id": "80918f01dda4",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,news-events.apple.com"
-        },
-        {
-          "id": "a5936a80af05",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,hls.itunes.apple.com"
-        },
-        {
-          "id": "ab649c510245",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,apple.news"
-        },
-        {
-          "id": "b3b71b9361b2",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,news-edge.apple.com"
-        },
-        {
-          "id": "c26a6a6b519d",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,np-edge.itunes.apple.com"
-        },
-        {
-          "id": "f9ef3e5a225c",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,hls-amt.itunes.apple.com"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "Apple_AI.list",
-      "prev_total": 24,
+      "prev_total": 20,
       "curr_total": 20,
       "added_count": 0,
-      "removed_count": 4,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "c3b7ae332522",
-          "source": "RocM301 Apple-AI",
-          "rule": "DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com"
-        },
-        {
-          "id": "d5d02abafd94",
-          "source": "RocM301 Apple-AI",
-          "rule": "DOMAIN,wps.apple.com"
-        },
-        {
-          "id": "ec57b182d328",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,gsp64-ssl.ls.apple.com"
-        },
-        {
-          "id": "efede8aee155",
-          "source": "RocM301 Apple-AI",
-          "rule": "DOMAIN-SUFFIX,gateway.icloud.com"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "Apple_CN.list",
-      "prev_total": 230,
+      "prev_total": 225,
       "curr_total": 225,
-      "added_count": 1,
-      "removed_count": 6,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "d8bfb4642536",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,apzones.com"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "0aa154923468",
-          "source": "SukkaW Apple CDN",
-          "rule": "DOMAIN-SUFFIX,seed-sequoia.siri.apple.com"
-        },
-        {
-          "id": "139ff6396d14",
-          "source": "SukkaW Apple CDN",
-          "rule": "DOMAIN-SUFFIX,guzzoni.smoot.apple.com"
-        },
-        {
-          "id": "1695f9cea76f",
-          "source": "SukkaW Apple CDN",
-          "rule": "DOMAIN-SUFFIX,probe.siri.apple.com"
-        },
-        {
-          "id": "1e902f6f0f29",
-          "source": "SukkaW Apple CDN",
-          "rule": "DOMAIN-SUFFIX,guzzoni.apple.com"
-        },
-        {
-          "id": "2800ce39f023",
-          "source": "SukkaW Apple CDN",
-          "rule": "DOMAIN-SUFFIX,seed.siri.apple.com"
-        },
-        {
-          "id": "51b5c71a3e77",
-          "source": "SukkaW Apple CDN",
-          "rule": "DOMAIN-SUFFIX,seed-swallow.siri.apple.com"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -794,12 +330,44 @@
     {
       "file": "Claude.list",
       "prev_total": 14,
-      "curr_total": 14,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 16,
+      "added_count": 4,
+      "removed_count": 2,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "17ed196cec02",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,claude.new"
+        },
+        {
+          "id": "391d402853fb",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,claude.site"
+        },
+        {
+          "id": "d11c097d9e3a",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,www.claude.dev"
+        },
+        {
+          "id": "e6680e1bca06",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,claude.dev"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "395b4d02e503",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,cdn.growthbook.io"
+        },
+        {
+          "id": "b5c2d2041b5e",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,modelcontextprotocol.io"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -838,102 +406,44 @@
     {
       "file": "Global.list",
       "prev_total": 24603,
-      "curr_total": 24603,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 24604,
+      "added_count": 2,
+      "removed_count": 1,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "aca2332538ad",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,turn.livekit.cloud"
+        },
+        {
+          "id": "b3f222fc947b",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,host.livekit.cloud"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "e9a5e2a03ea6",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,cursorvm.com"
+        }
+      ],
       "source_changed_sample": []
     },
     {
       "file": "GlobalMedia.list",
-      "prev_total": 2288,
-      "curr_total": 2272,
+      "prev_total": 2272,
+      "curr_total": 2271,
       "added_count": 0,
-      "removed_count": 16,
+      "removed_count": 1,
       "source_changed_count": 0,
       "added_sample": [],
       "removed_sample": [
         {
-          "id": "1a701cc95975",
+          "id": "0641c42114ae",
           "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN,ocvideo.apple.com"
-        },
-        {
-          "id": "40351eaeef07",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN,news-client.apple.com"
-        },
-        {
-          "id": "4ff3eaa43fba",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,com.apple.tv*"
-        },
-        {
-          "id": "502e7f4a15c2",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,AppleTV*"
-        },
-        {
-          "id": "683b705c9f90",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,play-edge.itunes.apple.com"
-        },
-        {
-          "id": "6f3442a07e6f",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,tv.apple.com"
-        },
-        {
-          "id": "793a02b5a263",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,uts-api.itunes.apple.com"
-        },
-        {
-          "id": "80918f01dda4",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN,news-events.apple.com"
-        },
-        {
-          "id": "99f59529614f",
-          "source": "SukkaW Stream",
-          "rule": "PROCESS-NAME,tv"
-        },
-        {
-          "id": "a5936a80af05",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,hls.itunes.apple.com"
-        },
-        {
-          "id": "ab649c510245",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,apple.news"
-        },
-        {
-          "id": "ad1e7dd22ac1",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,applemusic.com"
-        },
-        {
-          "id": "b3b71b9361b2",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN,news-edge.apple.com"
-        },
-        {
-          "id": "c26a6a6b519d",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,np-edge.itunes.apple.com"
-        },
-        {
-          "id": "dd2c581817a8",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN,apple.comscoreresearch.com"
-        },
-        {
-          "id": "f9ef3e5a225c",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,hls-amt.itunes.apple.com"
+          "rule": "DOMAIN-SUFFIX,grazie.aws.intellij.net"
         }
       ],
       "source_changed_sample": []

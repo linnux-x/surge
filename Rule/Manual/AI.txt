@@ -3,15 +3,21 @@
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,claude.app
 DOMAIN-SUFFIX,clau.de
 DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN-SUFFIX,claudemcpclient.com
 DOMAIN-SUFFIX,claudemcpcontent.com
-DOMAIN-SUFFIX,modelcontextprotocol.io
-DOMAIN,cdn.growthbook.io
+DOMAIN,claude.site
+DOMAIN,claude.new
+DOMAIN,claude.dev
+DOMAIN,www.claude.dev
 DOMAIN,anthropic.auth0.com
 DOMAIN,anthropic.com.cdn.cloudflare.net
 DOMAIN,servd-anthropic-website.b-cdn.net
+
+# Vendor-neutral MCP specification and registry.
+DOMAIN-SUFFIX,modelcontextprotocol.io
 
 # OpenAI network requirements: https://help.openai.com/en/articles/9247338
 DOMAIN-SUFFIX,oaistatsig.com
@@ -38,6 +44,18 @@ DOMAIN,notebooklm.google.com
 DOMAIN,notebooklm.googleapis.com
 DOMAIN,robinfrontend-pa.googleapis.com
 DOMAIN,vertexai.googleapis.com
+# First-party Google AI APIs, including Google's documented regional naming scheme.
+# https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations
+DOMAIN-WILDCARD,*-aiplatform.googleapis.com
+DOMAIN,aiplatform.us.rep.googleapis.com
+DOMAIN,aiplatform.eu.rep.googleapis.com
+DOMAIN,cloudaicompanion.googleapis.com
+DOMAIN,geminicloudassist.googleapis.com
+DOMAIN,firebasevertexai.googleapis.com
+DOMAIN,flow.google
+# https://docs.cloud.google.com/dialogflow/cx/docs/concept/region
+DOMAIN,dialogflow.googleapis.com
+DOMAIN-WILDCARD,*-dialogflow.googleapis.com
 DOMAIN-SUFFIX,api.ai
 DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,deepmind.google
@@ -45,15 +63,12 @@ DOMAIN-SUFFIX,dialogflow.com
 DOMAIN-SUFFIX,g.ai
 DOMAIN-SUFFIX,gemini.google
 DOMAIN-SUFFIX,generativeai.google
-DOMAIN-SUFFIX,geller-pa.googleapis.com
-DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
 DOMAIN-SUFFIX,aistudio.google.com
 DOMAIN-SUFFIX,makersuite.google.com
 DOMAIN-SUFFIX,notebooklm.google
 DOMAIN-SUFFIX,notebooklm.google.com
 DOMAIN,alkalimakersuite-pa.clients6.google.com
-URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+
 
 # Local coding assistant backend
 DOMAIN,trae-api-sg.mchost.guru
@@ -61,6 +76,28 @@ DOMAIN,trae-api-sg.mchost.guru
 # GitHub Copilot
 DOMAIN,api.githubcopilot.com
 DOMAIN-SUFFIX,githubcopilot.com
+# https://docs.github.com/en/copilot/reference/copilot-allowlist-reference
+DOMAIN,copilot-proxy.githubusercontent.com
+DOMAIN,origin-tracker.githubusercontent.com
+DOMAIN,production-copilot-host.webpubsub.azure.com
+DOMAIN,production-copilot-host-austriaeast.webpubsub.azure.com
+DOMAIN,production-copilot-host-centralus.webpubsub.azure.com
+DOMAIN,production-copilot-host-centralus-02.webpubsub.azure.com
+DOMAIN,production-copilot-host-eastasia.webpubsub.azure.com
+DOMAIN,production-copilot-host-westus.webpubsub.azure.com
+DOMAIN,production-copilot-host-westus3.webpubsub.azure.com
+
+# Cursor's documented minimum sign-in hosts and dedicated runtime.
+# auth.grok.com is already covered by grok.com.
+# https://cursor.com/help/troubleshooting/sign-in-domains
+DOMAIN,accounts.spacexsi.com
+DOMAIN,auth.grokusercontent.com
+DOMAIN,auth.grokipedia.com
+DOMAIN-SUFFIX,cursorvm.com
+
+# JetBrains AI Assistant and Junie public API; the China API remains on China.
+# https://youtrack.jetbrains.com/projects/RSRP/articles/SUPPORT-A-297/
+DOMAIN,api.app.prod.grazie.aws.intellij.net
 
 # Microsoft Copilot / Bing Chat
 DOMAIN,sydney.bing.com
