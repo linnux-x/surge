@@ -56,7 +56,10 @@ class FallbackOrderTests(unittest.TestCase):
     def test_ai_keeps_claude_standalone_compatibility_without_the_gemini_redirect(self):
         module = load_routing_module()
         ai_rules = module.load_ruleset(module.RULE_DIR / "AI.list")
-        for hostname in ("probe.livepreview.claude.app", "claude.site", "claude.new", "claude.dev"):
+        for hostname in (
+            "probe.livepreview.claude.app", "claude.site", "claude.new", "claude.dev",
+            "www.claude.new", "claudeacademy.com", "www.claudeacademy.com", "claude.md",
+        ):
             with self.subTest(hostname=hostname):
                 self.assertTrue(module.match_domain(hostname, ai_rules))
         self.assertFalse(any(rule.startswith("url-regex,") and "continue=" in rule

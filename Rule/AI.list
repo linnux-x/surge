@@ -1,9 +1,9 @@
 # NAME: AI
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 12:25:36 +0800
+# UPDATED: 2026-11-21 15:41:13 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 136
+# TOTAL: 140
 
 # ======= Manual Rules ========
 
@@ -18,8 +18,12 @@ DOMAIN-SUFFIX,claudemcpclient.com
 DOMAIN-SUFFIX,claudemcpcontent.com
 DOMAIN,claude.site
 DOMAIN,claude.new
+DOMAIN,www.claude.new
 DOMAIN,claude.dev
 DOMAIN,www.claude.dev
+DOMAIN,claudeacademy.com
+DOMAIN,www.claudeacademy.com
+DOMAIN,claude.md
 DOMAIN,anthropic.auth0.com
 DOMAIN,anthropic.com.cdn.cloudflare.net
 DOMAIN,servd-anthropic-website.b-cdn.net
