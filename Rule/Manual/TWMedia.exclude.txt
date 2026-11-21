@@ -13,3 +13,9 @@ DOMAIN-SUFFIX,hbogoasia.tw
 DOMAIN,hbolb.onwardsmg.com
 DOMAIN,hbounify-prod.evergent.com
 DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
+
+# Manga sites and a shared player SDK have no Taiwan-only streaming scope.
+DOMAIN-SUFFIX,fanfox.net
+DOMAIN-SUFFIX,mangafox.me
+DOMAIN-SUFFIX,viblast.com
+USER-AGENT,Anime*

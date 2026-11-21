@@ -1,9 +1,9 @@
 # NAME: Netflix
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-19 16:48:43 +0800
+# UPDATED: 2026-11-21 12:43:16 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1123
+# TOTAL: 1115
 
 # ======= blackmatrix7 Netflix ========
 DOMAIN,h-netflix.online-metrix.net
@@ -526,9 +526,6 @@ IP-CIDR,185.9.188.0/22,no-resolve
 IP-CIDR,192.173.64.0/18,no-resolve
 IP-CIDR,198.38.96.0/19,no-resolve
 IP-CIDR,198.45.48.0/20,no-resolve
-IP-CIDR,203.116.0.0/16,no-resolve
-IP-CIDR,203.198.0.0/20,no-resolve
-IP-CIDR,203.198.80.0/21,no-resolve
 IP-CIDR,203.75.84.0/24,no-resolve
 IP-CIDR,203.83.220.0/22,no-resolve
 IP-CIDR,204.246.166.0/24,no-resolve
@@ -536,11 +533,8 @@ IP-CIDR,205.251.218.0/24,no-resolve
 IP-CIDR,207.45.72.0/22,no-resolve
 IP-CIDR,208.75.76.0/22,no-resolve
 IP-CIDR,210.0.153.0/24,no-resolve
-IP-CIDR,218.102.32.0/19,no-resolve
-IP-CIDR,219.76.0.0/17,no-resolve
 IP-CIDR,23.23.189.144/28,no-resolve
 IP-CIDR,23.246.0.0/18,no-resolve
-IP-CIDR,23.78.0.0/16,no-resolve
 IP-CIDR,3.0.5.224/27,no-resolve
 IP-CIDR,3.0.5.32/29,no-resolve
 IP-CIDR,3.10.127.32/27,no-resolve
@@ -1047,7 +1041,6 @@ IP-CIDR,52.76.127.0/24,no-resolve
 IP-CIDR,52.78.247.128/26,no-resolve
 IP-CIDR,52.82.128.0/23,no-resolve
 IP-CIDR,52.82.134.0/23,no-resolve
-IP-CIDR,54.0.0.0/16,no-resolve
 IP-CIDR,54.153.254.0/24,no-resolve
 IP-CIDR,54.182.128.0/20,no-resolve
 IP-CIDR,54.182.144.0/21,no-resolve
@@ -1064,7 +1057,6 @@ IP-CIDR,54.182.248.0/22,no-resolve
 IP-CIDR,54.183.255.128/26,no-resolve
 IP-CIDR,54.190.198.32/28,no-resolve
 IP-CIDR,54.204.25.0/28,no-resolve
-IP-CIDR,54.214.128.0/17,no-resolve
 IP-CIDR,54.228.16.0/26,no-resolve
 IP-CIDR,54.232.40.64/26,no-resolve
 IP-CIDR,54.233.204.0/24,no-resolve

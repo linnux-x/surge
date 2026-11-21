@@ -104,15 +104,11 @@ DOMAIN-KEYWORD,tiktokcdn
 # Speedtest endpoint belongs to Speedtest.list, which is evaluated before GlobalMedia.list
 DOMAIN-SUFFIX,speed.hinet.net
 
-# Spotify belongs to Spotify.list, which is evaluated before GlobalMedia.list.
-# All entries below are covered there (the broader USER-AGENT,*Spotify* moved
-# to Rule/Manual/Spotify.txt), so these would be dead first-match duplicates.
+# Spotify playback hosts below are covered by the dedicated set or the fallback in GlobalMedia.txt.
+# Keep broad keywords, UI signatures and unrelated brand sites out of the fallback.
 DOMAIN-SUFFIX,byspotify.com
 DOMAIN-SUFFIX,spotify-everywhere.com
-DOMAIN-SUFFIX,spotify.com
 DOMAIN-SUFFIX,spotify.design
-DOMAIN-SUFFIX,spotifycdn.com
-DOMAIN-SUFFIX,spotifycdn.net
 DOMAIN-SUFFIX,spotifycharts.com
 DOMAIN-SUFFIX,spotifycodes.com
 DOMAIN-SUFFIX,spotifyforbrands.com
@@ -176,3 +172,31 @@ IP-CIDR,54.74.0.0/15,no-resolve
 IP-CIDR,54.76.0.0/15,no-resolve
 IP-CIDR,54.85.0.0/16,no-resolve
 IP-CIDR,54.86.0.0/16,no-resolve
+
+# Destination-free patterns and third-party sites removed from dedicated service lists.
+DOMAIN-SUFFIX,fanfox.net
+DOMAIN-SUFFIX,mangafox.me
+DOMAIN-SUFFIX,viblast.com
+DOMAIN,fanfox.net
+DOMAIN,mangafox.me
+DOMAIN-SUFFIX,dmm.com
+DOMAIN-SUFFIX,amebaownd.com
+DOMAIN-SUFFIX,amebaowndme.com
+DOMAIN-KEYWORD,rthklive
+DOMAIN-KEYWORD,nowtv100
+DOMAIN-KEYWORD,-spotify-com
+USER-AGENT,TVer-Release*
+USER-AGENT,Anime*
+USER-AGENT,LINE*
+USER-AGENT,Max*
+PROCESS-NAME,com.bstar.intl
+
+# Verified ISP and common cloud/CDN ranges, not a specific streaming service.
+IP-CIDR,203.116.0.0/16,no-resolve
+IP-CIDR,203.198.0.0/20,no-resolve
+IP-CIDR,203.198.80.0/21,no-resolve
+IP-CIDR,218.102.32.0/19,no-resolve
+IP-CIDR,219.76.0.0/17,no-resolve
+IP-CIDR,23.78.0.0/16,no-resolve
+IP-CIDR,54.0.0.0/16,no-resolve
+IP-CIDR,54.214.128.0/17,no-resolve

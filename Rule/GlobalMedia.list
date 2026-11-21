@@ -1,9 +1,9 @@
 # NAME: GlobalMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 12:24:16 +0800
+# UPDATED: 2026-11-21 12:42:22 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 2271
+# TOTAL: 2253
 
 # ======= Manual Rules ========
 # Bilibili international / B-Star
@@ -19,6 +19,12 @@ DOMAIN-SUFFIX,giphy.com
 # Media service observed in sustained real FINAL traffic
 DOMAIN-SUFFIX,023168.xyz
 DOMAIN-KEYWORD,023168
+
+# Spotify when the dedicated set is disabled, including Spotify-labelled Akamai audio hosts.
+DOMAIN-SUFFIX,spotify.com
+DOMAIN-SUFFIX,spotifycdn.com
+DOMAIN-SUFFIX,spotifycdn.net
+DOMAIN-WILDCARD,*-spotify-com.akamaized.net
 
 # ======= blackmatrix7 GlobalMedia ========
 DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
@@ -73,8 +79,6 @@ DOMAIN-SUFFIX,amazonvideo.com
 DOMAIN-SUFFIX,amazonvideodirect.cc
 DOMAIN-SUFFIX,ameba.jp
 DOMAIN-SUFFIX,amebame.com
-DOMAIN-SUFFIX,amebaownd.com
-DOMAIN-SUFFIX,amebaowndme.com
 DOMAIN-SUFFIX,ameblo.jp
 DOMAIN-SUFFIX,americasvoice.news
 DOMAIN-SUFFIX,amerikaninsesi.com
@@ -313,7 +317,6 @@ DOMAIN-SUFFIX,dmcdn.net
 DOMAIN-SUFFIX,dmed.technology
 DOMAIN-SUFFIX,dmm-extension.com
 DOMAIN-SUFFIX,dmm.co.jp
-DOMAIN-SUFFIX,dmm.com
 DOMAIN-SUFFIX,dmxleo.com
 DOMAIN-SUFFIX,dnitv.com
 DOMAIN-SUFFIX,dogatch.jp
@@ -992,7 +995,6 @@ DOMAIN-SUFFIX,viacbs.com
 DOMAIN-SUFFIX,viacom.com
 DOMAIN-SUFFIX,viacomcbs.com
 DOMAIN-SUFFIX,viacomcbspressexpress.com
-DOMAIN-SUFFIX,viblast.com
 DOMAIN-SUFFIX,video.a2z.com
 DOMAIN-SUFFIX,videos-f.jwpsrv.com
 DOMAIN-SUFFIX,vidol.tv
@@ -1259,9 +1261,7 @@ DOMAIN-KEYWORD,japronx
 DOMAIN-KEYWORD,jooxweb-api
 DOMAIN-KEYWORD,netflixdnstest
 DOMAIN-KEYWORD,nivod
-DOMAIN-KEYWORD,nowtv100
 DOMAIN-KEYWORD,olevod
-DOMAIN-KEYWORD,rthklive
 DOMAIN-KEYWORD,ttvnw
 DOMAIN-KEYWORD,tvbanywhere
 DOMAIN-KEYWORD,uk-live
@@ -1642,10 +1642,7 @@ IP-CIDR,201.174.249.34/32,no-resolve
 IP-CIDR,201.174.48.130/32,no-resolve
 IP-CIDR,202.188.117.43/32,no-resolve
 IP-CIDR,202.188.117.45/32,no-resolve
-IP-CIDR,203.116.0.0/16,no-resolve
 IP-CIDR,203.177.54.2/32,no-resolve
-IP-CIDR,203.198.0.0/20,no-resolve
-IP-CIDR,203.198.80.0/21,no-resolve
 IP-CIDR,203.211.4.169/32,no-resolve
 IP-CIDR,203.211.4.193/32,no-resolve
 IP-CIDR,203.74.95.131/32,no-resolve
@@ -1744,8 +1741,6 @@ IP-CIDR,216.68.248.182/32,no-resolve
 IP-CIDR,216.68.248.190/32,no-resolve
 IP-CIDR,216.70.1.54/32,no-resolve
 IP-CIDR,216.73.80.0/20,no-resolve
-IP-CIDR,218.102.32.0/19,no-resolve
-IP-CIDR,219.76.0.0/17,no-resolve
 IP-CIDR,23.200.145.146/32,no-resolve
 IP-CIDR,23.210.215.186/32,no-resolve
 IP-CIDR,23.211.15.0/24,no-resolve
@@ -1766,7 +1761,6 @@ IP-CIDR,23.246.0.0/18,no-resolve
 IP-CIDR,23.40.242.10/32,no-resolve
 IP-CIDR,23.53.32.88/32,no-resolve
 IP-CIDR,23.59.252.0/24,no-resolve
-IP-CIDR,23.78.0.0/16,no-resolve
 IP-CIDR,24.101.22.50/32,no-resolve
 IP-CIDR,24.101.22.54/32,no-resolve
 IP-CIDR,24.101.91.13/32,no-resolve
@@ -1821,8 +1815,6 @@ IP-CIDR,51.148.80.18/32,no-resolve
 IP-CIDR,51.148.80.22/32,no-resolve
 IP-CIDR,51.148.80.6/32,no-resolve
 IP-CIDR,52.211.1.180/32,no-resolve
-IP-CIDR,54.0.0.0/16,no-resolve
-IP-CIDR,54.214.128.0/17,no-resolve
 IP-CIDR,58.27.11.201/32,no-resolve
 IP-CIDR,58.27.38.199/32,no-resolve
 IP-CIDR,62.127.102.10/32,no-resolve
@@ -2163,7 +2155,6 @@ IP-CIDR6,2a00:86c0::/32,no-resolve
 IP-CIDR6,2a03:5640::/32,no-resolve
 USER-AGENT,AbemaTV*
 USER-AGENT,All4*
-USER-AGENT,Anime*
 USER-AGENT,Argo*
 USER-AGENT,BBCiPlayer*
 USER-AGENT,DAZN*
@@ -2189,9 +2180,7 @@ USER-AGENT,InstantVideo.US*
 USER-AGENT,JOOX*
 USER-AGENT,KKTV*
 USER-AGENT,LINE%20TV*
-USER-AGENT,LINE*
 USER-AGENT,LINETV*
-USER-AGENT,Max*
 USER-AGENT,My5*
 USER-AGENT,Naver%20TV*
 USER-AGENT,NaverTV*
@@ -2206,7 +2195,6 @@ USER-AGENT,PrimeVideo*
 USER-AGENT,SoundCloud*
 USER-AGENT,TIDAL*
 USER-AGENT,TIDAL*dia
-USER-AGENT,TVer-Release*
 USER-AGENT,TaiwanGood*
 USER-AGENT,Viu*
 USER-AGENT,ViuTV*
@@ -2233,9 +2221,7 @@ PROCESS-NAME,com.vuclip.viu
 # ======= SukkaW Stream ========
 DOMAIN,tubi.tv
 DOMAIN,vudu.com
-DOMAIN-SUFFIX,fanfox.net
 DOMAIN,tubitv.com
-DOMAIN-SUFFIX,mangafox.me
 DOMAIN,www.tubi.tv
 DOMAIN-SUFFIX,hbogoasia.sg
 DOMAIN-SUFFIX,hbogoasia.tw
@@ -2270,7 +2256,6 @@ DOMAIN,d349g9zuie06uo.cloudfront.net
 DOMAIN,d3c7rimkq79yfu.cloudfront.net
 DOMAIN,ds-linear-abematv.akamaized.net
 DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
-DOMAIN-KEYWORD,-spotify-com
 USER-AGENT,Prime Video*
 USER-AGENT,FOX NOW*
 USER-AGENT,HBO NOW*
@@ -2278,7 +2263,6 @@ USER-AGENT,LINE TV*
 USER-AGENT,Naver TV*
 PROCESS-NAME,com.amazon.avod.thirdpartyclient
 PROCESS-NAME,music
-PROCESS-NAME,com.bstar.intl
 PROCESS-NAME,com.hulu.plus
 PROCESS-NAME,com.tencent.ibg.joox
 PROCESS-NAME,com.linecorp.linetv

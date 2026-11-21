@@ -80,3 +80,6 @@ IP-CIDR,54.74.0.0/15,no-resolve
 IP-CIDR,54.76.0.0/15,no-resolve
 IP-CIDR,54.85.0.0/16,no-resolve
 IP-CIDR,54.86.0.0/16,no-resolve
+
+# Public AWS EC2 range released by GlobalMedia (https://ip-ranges.amazonaws.com/ip-ranges.json).
+IP-CIDR,54.214.128.0/17,no-resolve

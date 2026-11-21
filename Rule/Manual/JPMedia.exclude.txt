@@ -1,0 +1,4 @@
+# Shared DMM marketplace and Ameba Ownd site builder; DMM TV has its own entry.
+DOMAIN-SUFFIX,dmm.com
+DOMAIN-SUFFIX,amebaownd.com
+DOMAIN-SUFFIX,amebaowndme.com

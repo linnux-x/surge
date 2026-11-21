@@ -1,0 +1,3 @@
+# Official DMM TV and video delivery entrance.
+DOMAIN-SUFFIX,tv.dmm.com
+DOMAIN-SUFFIX,video.dmm.com

@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 12:24:16 +0800
+# UPDATED: 2026-11-21 12:45:41 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24604
+# TOTAL: 24611
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -88,6 +88,9 @@ IP-CIDR,54.74.0.0/15,no-resolve
 IP-CIDR,54.76.0.0/15,no-resolve
 IP-CIDR,54.85.0.0/16,no-resolve
 IP-CIDR,54.86.0.0/16,no-resolve
+
+# Public AWS EC2 range released by GlobalMedia (https://ip-ranges.amazonaws.com/ip-ranges.json).
+IP-CIDR,54.214.128.0/17,no-resolve
 
 # ======= blackmatrix7 Global ========
 DOMAIN,1password.drift.click
@@ -1548,6 +1551,8 @@ DOMAIN-SUFFIX,amcplus.com
 DOMAIN-SUFFIX,amdfanstore.com
 DOMAIN-SUFFIX,amdgaming.com
 DOMAIN-SUFFIX,amdigital.co.uk
+DOMAIN-SUFFIX,amebaownd.com
+DOMAIN-SUFFIX,amebaowndme.com
 DOMAIN-SUFFIX,amediateka.ru
 DOMAIN-SUFFIX,amnezia.org
 DOMAIN-SUFFIX,amodoll.com
@@ -5868,6 +5873,7 @@ DOMAIN-SUFFIX,fanaken.com
 DOMAIN-SUFFIX,fandango.com
 DOMAIN-SUFFIX,fanfiction.net
 DOMAIN-SUFFIX,fanfictionero.com
+DOMAIN-SUFFIX,fanfox.net
 DOMAIN-SUFFIX,fangsung.com
 DOMAIN-SUFFIX,fanhaodian.com
 DOMAIN-SUFFIX,fanhowab.buzz
@@ -19541,6 +19547,7 @@ DOMAIN-SUFFIX,dlsite.jp
 DOMAIN-SUFFIX,dm530.net
 DOMAIN-SUFFIX,dma.mil
 DOMAIN-SUFFIX,dmhy.org
+DOMAIN-SUFFIX,dmm.com
 DOMAIN-SUFFIX,dns-dns.com
 DOMAIN-SUFFIX,dns-stuff.com
 DOMAIN-SUFFIX,dns.sb
@@ -21428,6 +21435,7 @@ DOMAIN-SUFFIX,manchukuo.net
 DOMAIN-SUFFIX,mandiant.com
 DOMAIN-SUFFIX,mangabz.com
 DOMAIN-SUFFIX,mangafox.com
+DOMAIN-SUFFIX,mangafox.me
 DOMAIN-SUFFIX,mangaup.jp
 DOMAIN-SUFFIX,mangmang.run
 DOMAIN-SUFFIX,manhuabika.com
@@ -24365,6 +24373,7 @@ DOMAIN-SUFFIX,yangzhi.org
 DOMAIN-SUFFIX,yasni.co.uk
 DOMAIN-SUFFIX,yasukuni.or.jp
 DOMAIN-SUFFIX,yayabay.com
+DOMAIN-SUFFIX,ycombinator.com
 DOMAIN-SUFFIX,ydy.com
 DOMAIN-SUFFIX,yeahteentube.com
 DOMAIN-SUFFIX,yecl.net

@@ -151,7 +151,7 @@ for _label, _url, _rs, _fmt in _SOURCES:
 # Manual-only rulesets: no upstream; content comes entirely from Rule/Manual/<name>.txt.
 # AdBlock.list is a deliberately small, hand-curated reject list (2026-11-08) —
 # broad upstream reject lists were disabled because they broke apps too often.
-MANUAL_ONLY_RULESETS: tuple[str, ...] = ("AdBlock.list", "Claude.list", "AppleMedia.list")
+MANUAL_ONLY_RULESETS: tuple[str, ...] = ("AdBlock.list", "Claude.list", "AppleMedia.list", "InternationalMedia.list")
 for _rs in MANUAL_ONLY_RULESETS:
     RULE_SPECS.setdefault(_rs, (_rs.replace(".list", ""), []))
 
@@ -167,7 +167,7 @@ GLOBAL_OVERLAP_RULESETS: tuple[str, ...] = (
     "Microsoft_CDN.list", "Microsoft.list", "Telegram.list", "Download.list",
     "Game.list", "YouTube.list", "TikTok.list", "SocialMedia.list",
     "PayPal.list", "Google.list", "Netflix.list", "Disney.list",
-    "HKMedia.list", "TWMedia.list", "JPMedia.list", "USMedia.list",
+    "InternationalMedia.list", "HKMedia.list", "TWMedia.list", "JPMedia.list", "USMedia.list",
     "ChinaMedia.list", "Spotify.list", "GlobalMedia.list", "CDN.list",
 )
 GLOBAL_REBUILD_ONLY_RULESETS: frozenset[str] = frozenset({"Apple_CN.list"})

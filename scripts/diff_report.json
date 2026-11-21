@@ -1,232 +1,19 @@
 {
-  "generated_at": "2026-11-21T12:25:36.754918",
-  "total_added": 33,
-  "total_removed": 18,
-  "total_source_changed": 1,
+  "generated_at": "2026-11-21T12:45:41.611460",
+  "total_added": 32,
+  "total_removed": 65,
+  "total_source_changed": 3,
   "diffs": [
     {
       "file": "AI.list",
-      "prev_total": 123,
+      "prev_total": 136,
       "curr_total": 136,
-      "added_count": 27,
-      "removed_count": 14,
-      "source_changed_count": 1,
-      "added_sample": [
-        {
-          "id": "061dfb003b6e",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,dialogflow.googleapis.com"
-        },
-        {
-          "id": "0855cda2afe9",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,production-copilot-host-westus.webpubsub.azure.com"
-        },
-        {
-          "id": "1106c5f9daf7",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,accounts.spacexsi.com"
-        },
-        {
-          "id": "120bba58c982",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,auth.grokipedia.com"
-        },
-        {
-          "id": "13cb0a026009",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,geminicloudassist.googleapis.com"
-        },
-        {
-          "id": "17539c1e8a11",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,claude.app"
-        },
-        {
-          "id": "17ed196cec02",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,claude.new"
-        },
-        {
-          "id": "29914f328abf",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,flow.google"
-        },
-        {
-          "id": "2be3f8e88ee3",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,cloudaicompanion.googleapis.com"
-        },
-        {
-          "id": "36c22dea2502",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,production-copilot-host-centralus-02.webpubsub.azure.com"
-        },
-        {
-          "id": "588b0ccdc796",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,production-copilot-host-centralus.webpubsub.azure.com"
-        },
-        {
-          "id": "5cc7d26a9c9e",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,production-copilot-host.webpubsub.azure.com"
-        },
-        {
-          "id": "7d590b3e2bb8",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,auth.grokusercontent.com"
-        },
-        {
-          "id": "87f37fde06c3",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,origin-tracker.githubusercontent.com"
-        },
-        {
-          "id": "8b4e3fbfdc52",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-WILDCARD,*-aiplatform.googleapis.com"
-        },
-        {
-          "id": "913a4abec3ed",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,production-copilot-host-eastasia.webpubsub.azure.com"
-        },
-        {
-          "id": "a43bfc7e121c",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,aiplatform.us.rep.googleapis.com"
-        },
-        {
-          "id": "aa7c06c4981d",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-WILDCARD,*-dialogflow.googleapis.com"
-        },
-        {
-          "id": "bc574175298f",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,production-copilot-host-austriaeast.webpubsub.azure.com"
-        },
-        {
-          "id": "d11c097d9e3a",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,www.claude.dev"
-        },
-        {
-          "id": "d76ec7f661d8",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,production-copilot-host-westus3.webpubsub.azure.com"
-        },
-        {
-          "id": "d8490e753e46",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,firebasevertexai.googleapis.com"
-        },
-        {
-          "id": "e13c3efa411a",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,aiplatform.eu.rep.googleapis.com"
-        },
-        {
-          "id": "e6680e1bca06",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,claude.dev"
-        },
-        {
-          "id": "e9a5e2a03ea6",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,cursorvm.com"
-        },
-        {
-          "id": "f320df6eb3fc",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,api.app.prod.grazie.aws.intellij.net"
-        },
-        {
-          "id": "f7a7c00abcf7",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,copilot-proxy.githubusercontent.com"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "1dcc20d60a4b",
-          "source": "Rabbit-Spec AIGC",
-          "rule": "DOMAIN-SUFFIX,featuregates.org"
-        },
-        {
-          "id": "1fbfa047d8ad",
-          "source": "Rabbit-Spec AIGC",
-          "rule": "DOMAIN-SUFFIX,client-api.arkoselabs.com"
-        },
-        {
-          "id": "395b4d02e503",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,cdn.growthbook.io"
-        },
-        {
-          "id": "98593c22f427",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com"
-        },
-        {
-          "id": "aca2332538ad",
-          "source": "Rabbit-Spec AIGC",
-          "rule": "DOMAIN-SUFFIX,turn.livekit.cloud"
-        },
-        {
-          "id": "b3f222fc947b",
-          "source": "Rabbit-Spec AIGC",
-          "rule": "DOMAIN-SUFFIX,host.livekit.cloud"
-        },
-        {
-          "id": "c78d14def5ea",
-          "source": "Rabbit-Spec AIGC",
-          "rule": "IP-CIDR,24.199.123.28/32,no-resolve"
-        },
-        {
-          "id": "d10d35b4e7dc",
-          "source": "Rabbit-Spec AIGC",
-          "rule": "DOMAIN-SUFFIX,api.statsig.com"
-        },
-        {
-          "id": "d34d969f3f0b",
-          "source": "Rabbit-Spec AIGC",
-          "rule": "IP-CIDR,64.23.132.171/32,no-resolve"
-        },
-        {
-          "id": "d757313477af",
-          "source": "Rabbit-Spec AIGC",
-          "rule": "DOMAIN-SUFFIX,events.statsigapi.net"
-        },
-        {
-          "id": "df51702bd3a8",
-          "source": "Rabbit-Spec AIGC",
-          "rule": "DOMAIN-SUFFIX,observeit.net"
-        },
-        {
-          "id": "e9456a7b7221",
-          "source": "Rabbit-Spec AIGC",
-          "rule": "IP-CIDR,129.146.3.78/32,no-resolve"
-        },
-        {
-          "id": "f1164ee3b6ff",
-          "source": "Manual Rules",
-          "rule": "URL-REGEX,https://www\\.google\\.com/.*continue=https://gemini\\.google\\.com.+"
-        },
-        {
-          "id": "fbd8c01342b9",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,geller-pa.googleapis.com"
-        }
-      ],
-      "source_changed_sample": [
-        {
-          "id": "391d402853fb",
-          "old_source": "SukkaW AI",
-          "new_source": "Manual Rules"
-        }
-      ]
+      "added_count": 0,
+      "removed_count": 0,
+      "source_changed_count": 0,
+      "added_sample": [],
+      "removed_sample": [],
+      "source_changed_sample": []
     },
     {
       "file": "AdBlock.list",
@@ -308,12 +95,23 @@
     {
       "file": "ChinaMedia.list",
       "prev_total": 377,
-      "curr_total": 377,
+      "curr_total": 375,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 2,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "4bfd990ec7e8",
+          "source": "blackmatrix7 ChinaMedia",
+          "rule": "DOMAIN-SUFFIX,pgdt.gtimg.cn"
+        },
+        {
+          "id": "799312f14494",
+          "source": "blackmatrix7 ChinaMedia",
+          "rule": "DOMAIN,rdelivery.qq.com"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -329,45 +127,13 @@
     },
     {
       "file": "Claude.list",
-      "prev_total": 14,
+      "prev_total": 16,
       "curr_total": 16,
-      "added_count": 4,
-      "removed_count": 2,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "17ed196cec02",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,claude.new"
-        },
-        {
-          "id": "391d402853fb",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,claude.site"
-        },
-        {
-          "id": "d11c097d9e3a",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,www.claude.dev"
-        },
-        {
-          "id": "e6680e1bca06",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,claude.dev"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "395b4d02e503",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,cdn.growthbook.io"
-        },
-        {
-          "id": "b5c2d2041b5e",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,modelcontextprotocol.io"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -405,45 +171,190 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24603,
-      "curr_total": 24604,
-      "added_count": 2,
-      "removed_count": 1,
+      "prev_total": 24604,
+      "curr_total": 24611,
+      "added_count": 7,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [
         {
-          "id": "aca2332538ad",
+          "id": "567541f24729",
           "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,turn.livekit.cloud"
+          "rule": "DOMAIN-SUFFIX,fanfox.net"
         },
         {
-          "id": "b3f222fc947b",
+          "id": "6cd2972f4358",
           "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,host.livekit.cloud"
-        }
-      ],
-      "removed_sample": [
+          "rule": "DOMAIN-SUFFIX,amebaownd.com"
+        },
         {
-          "id": "e9a5e2a03ea6",
+          "id": "7f4684f6d7a0",
           "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,cursorvm.com"
+          "rule": "DOMAIN-SUFFIX,ycombinator.com"
+        },
+        {
+          "id": "adaf147ff85d",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,amebaowndme.com"
+        },
+        {
+          "id": "c23217fe3601",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,54.214.128.0/17,no-resolve"
+        },
+        {
+          "id": "d2e351b20519",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,dmm.com"
+        },
+        {
+          "id": "dbf22636fb7d",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,mangafox.me"
         }
       ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "GlobalMedia.list",
-      "prev_total": 2272,
-      "curr_total": 2271,
-      "added_count": 0,
-      "removed_count": 1,
+      "prev_total": 2271,
+      "curr_total": 2253,
+      "added_count": 4,
+      "removed_count": 22,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "1400542b735e",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,spotify.com"
+        },
+        {
+          "id": "6a2de9afdf7f",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,spotifycdn.com"
+        },
+        {
+          "id": "aff29961427f",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-WILDCARD,*-spotify-com.akamaized.net"
+        },
+        {
+          "id": "db4c9a0b8f7f",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,spotifycdn.net"
+        }
+      ],
       "removed_sample": [
         {
-          "id": "0641c42114ae",
+          "id": "0fd799971846",
           "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,grazie.aws.intellij.net"
+          "rule": "IP-CIDR,23.78.0.0/16,no-resolve"
+        },
+        {
+          "id": "12a9abfd863e",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "USER-AGENT,Anime*"
+        },
+        {
+          "id": "1600715fc4a4",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "USER-AGENT,TVer-Release*"
+        },
+        {
+          "id": "19b8924dcc66",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,54.0.0.0/16,no-resolve"
+        },
+        {
+          "id": "2fc98960cf0f",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "USER-AGENT,LINE*"
+        },
+        {
+          "id": "37b160037c57",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,218.102.32.0/19,no-resolve"
+        },
+        {
+          "id": "49a06a91a555",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "DOMAIN-KEYWORD,rthklive"
+        },
+        {
+          "id": "4bb4b0aed913",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,203.116.0.0/16,no-resolve"
+        },
+        {
+          "id": "567541f24729",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN-SUFFIX,fanfox.net"
+        },
+        {
+          "id": "5781b9282bc9",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,203.198.80.0/21,no-resolve"
+        },
+        {
+          "id": "59a5d84869ed",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN-KEYWORD,-spotify-com"
+        },
+        {
+          "id": "6cd2972f4358",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "DOMAIN-SUFFIX,amebaownd.com"
+        },
+        {
+          "id": "8427837d9df1",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "USER-AGENT,Max*"
+        },
+        {
+          "id": "90c518d72d69",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "DOMAIN-KEYWORD,nowtv100"
+        },
+        {
+          "id": "9d988c5bc9da",
+          "source": "SukkaW Stream",
+          "rule": "PROCESS-NAME,com.bstar.intl"
+        },
+        {
+          "id": "a9dd62bf4de6",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,203.198.0.0/20,no-resolve"
+        },
+        {
+          "id": "adaf147ff85d",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "DOMAIN-SUFFIX,amebaowndme.com"
+        },
+        {
+          "id": "b528f18fa1c2",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "DOMAIN-SUFFIX,viblast.com"
+        },
+        {
+          "id": "c23217fe3601",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,54.214.128.0/17,no-resolve"
+        },
+        {
+          "id": "d2e351b20519",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "DOMAIN-SUFFIX,dmm.com"
+        },
+        {
+          "id": "dbf22636fb7d",
+          "source": "SukkaW Stream",
+          "rule": "DOMAIN-SUFFIX,mangafox.me"
+        },
+        {
+          "id": "e101cd433b8a",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "IP-CIDR,219.76.0.0/17,no-resolve"
         }
       ],
       "source_changed_sample": []
@@ -462,23 +373,189 @@
     {
       "file": "HKMedia.list",
       "prev_total": 34,
-      "curr_total": 34,
-      "added_count": 0,
+      "curr_total": 29,
+      "added_count": 3,
+      "removed_count": 8,
+      "source_changed_count": 0,
+      "added_sample": [
+        {
+          "id": "1e802272cc27",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,rthk.org.hk"
+        },
+        {
+          "id": "e8d4bb224eb5",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,rthklive2-lh.akamaihd.net"
+        },
+        {
+          "id": "eb159a702d51",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,rthk.hk"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "49a06a91a555",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN-KEYWORD,rthklive"
+        },
+        {
+          "id": "540dc1deb7d1",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN,upos-bstar-mirrorakam.akamaized.net"
+        },
+        {
+          "id": "7e8af3829204",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN,apm-misaka.biliapi.net"
+        },
+        {
+          "id": "907992957486",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN,upos-bstar1-mirrorakam.akamaized.net"
+        },
+        {
+          "id": "90c518d72d69",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN-KEYWORD,nowtv100"
+        },
+        {
+          "id": "9d988c5bc9da",
+          "source": "SukkaW Stream HK",
+          "rule": "PROCESS-NAME,com.bstar.intl"
+        },
+        {
+          "id": "a418f196ad15",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN-SUFFIX,biliintl.com"
+        },
+        {
+          "id": "df6d0b8ae84d",
+          "source": "SukkaW Stream HK",
+          "rule": "DOMAIN-SUFFIX,bilibili.tv"
+        }
+      ],
+      "source_changed_sample": []
+    },
+    {
+      "file": "InternationalMedia.list",
+      "prev_total": 0,
+      "curr_total": 14,
+      "added_count": 14,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "030d91226d77",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,inter.iqiyi.com"
+        },
+        {
+          "id": "0fc322b3a516",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,bstarstatic.com"
+        },
+        {
+          "id": "1f80510bc598",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,iq.com"
+        },
+        {
+          "id": "328455886527",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,intl-rcd.iqiyi.com"
+        },
+        {
+          "id": "4726be509a57",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv"
+        },
+        {
+          "id": "540dc1deb7d1",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,upos-bstar-mirrorakam.akamaized.net"
+        },
+        {
+          "id": "7e8af3829204",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,apm-misaka.biliapi.net"
+        },
+        {
+          "id": "907992957486",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,upos-bstar1-mirrorakam.akamaized.net"
+        },
+        {
+          "id": "9683b9d72951",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv"
+        },
+        {
+          "id": "a418f196ad15",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,biliintl.com"
+        },
+        {
+          "id": "a7f15d5d644d",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,p-bstarstatic.akamaized.net"
+        },
+        {
+          "id": "bb3f123d8b43",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,intl-subscription.iqiyi.com"
+        },
+        {
+          "id": "d70993d55aa3",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,intl.iqiyi.com"
+        },
+        {
+          "id": "df6d0b8ae84d",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,bilibili.tv"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "JPMedia.list",
       "prev_total": 27,
-      "curr_total": 27,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 26,
+      "added_count": 2,
+      "removed_count": 3,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "08f0d2bb4437",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,tv.dmm.com"
+        },
+        {
+          "id": "a8c72ac6889b",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,video.dmm.com"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "6cd2972f4358",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,amebaownd.com"
+        },
+        {
+          "id": "adaf147ff85d",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,amebaowndme.com"
+        },
+        {
+          "id": "d2e351b20519",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,dmm.com"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -506,12 +583,53 @@
     {
       "file": "Netflix.list",
       "prev_total": 1123,
-      "curr_total": 1123,
+      "curr_total": 1115,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 8,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "0fd799971846",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,23.78.0.0/16,no-resolve"
+        },
+        {
+          "id": "19b8924dcc66",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,54.0.0.0/16,no-resolve"
+        },
+        {
+          "id": "37b160037c57",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,218.102.32.0/19,no-resolve"
+        },
+        {
+          "id": "4bb4b0aed913",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,203.116.0.0/16,no-resolve"
+        },
+        {
+          "id": "5781b9282bc9",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,203.198.80.0/21,no-resolve"
+        },
+        {
+          "id": "a9dd62bf4de6",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,203.198.0.0/20,no-resolve"
+        },
+        {
+          "id": "c23217fe3601",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,54.214.128.0/17,no-resolve"
+        },
+        {
+          "id": "e101cd433b8a",
+          "source": "blackmatrix7 Netflix",
+          "rule": "IP-CIDR,219.76.0.0/17,no-resolve"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -528,13 +646,66 @@
     {
       "file": "SocialMedia.list",
       "prev_total": 675,
-      "curr_total": 675,
-      "added_count": 0,
-      "removed_count": 0,
-      "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
-      "source_changed_sample": []
+      "curr_total": 670,
+      "added_count": 1,
+      "removed_count": 6,
+      "source_changed_count": 3,
+      "added_sample": [
+        {
+          "id": "d998b921cbe4",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,news.ycombinator.com"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "58cd66ecb7af",
+          "source": "blackmatrix7 Facebook",
+          "rule": "DOMAIN-KEYWORD,facebook"
+        },
+        {
+          "id": "7f4684f6d7a0",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,ycombinator.com"
+        },
+        {
+          "id": "86491268f2c4",
+          "source": "blackmatrix7 Instagram",
+          "rule": "DOMAIN-KEYWORD,instagram"
+        },
+        {
+          "id": "8cf22cab2f0c",
+          "source": "blackmatrix7 Facebook",
+          "rule": "DOMAIN-KEYWORD,fbcdn"
+        },
+        {
+          "id": "ac8f076a6d57",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-KEYWORD,whatsapp"
+        },
+        {
+          "id": "c59028273ffc",
+          "source": "blackmatrix7 Twitter",
+          "rule": "DOMAIN-KEYWORD,twitter"
+        }
+      ],
+      "source_changed_sample": [
+        {
+          "id": "982bf62398a2",
+          "old_source": "blackmatrix7 Facebook",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "ca241ae3a9b1",
+          "old_source": "blackmatrix7 Facebook",
+          "new_source": "Manual Rules"
+        },
+        {
+          "id": "b6bc1bcd70e0",
+          "old_source": "blackmatrix7 Facebook",
+          "new_source": "Manual Rules"
+        }
+      ]
     },
     {
       "file": "Speedtest.list",
@@ -562,22 +733,55 @@
       "file": "Spotify.list",
       "prev_total": 32,
       "curr_total": 32,
-      "added_count": 0,
-      "removed_count": 0,
+      "added_count": 1,
+      "removed_count": 1,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "aff29961427f",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-WILDCARD,*-spotify-com.akamaized.net"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "67f7c913a65e",
+          "source": "blackmatrix7 Spotify",
+          "rule": "DOMAIN-KEYWORD,spotify"
+        }
+      ],
       "source_changed_sample": []
     },
     {
       "file": "TWMedia.list",
       "prev_total": 26,
-      "curr_total": 26,
+      "curr_total": 22,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 4,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "12a9abfd863e",
+          "source": "SukkaW Stream TW",
+          "rule": "USER-AGENT,Anime*"
+        },
+        {
+          "id": "567541f24729",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN-SUFFIX,fanfox.net"
+        },
+        {
+          "id": "b528f18fa1c2",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN-SUFFIX,viblast.com"
+        },
+        {
+          "id": "dbf22636fb7d",
+          "source": "SukkaW Stream TW",
+          "rule": "DOMAIN-SUFFIX,mangafox.me"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -605,12 +809,68 @@
     {
       "file": "USMedia.list",
       "prev_total": 51,
-      "curr_total": 51,
+      "curr_total": 40,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 11,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "0d37eb70a201",
+          "source": "SukkaW Stream US",
+          "rule": "USER-AGENT,discovery+*"
+        },
+        {
+          "id": "1600715fc4a4",
+          "source": "SukkaW Stream US",
+          "rule": "USER-AGENT,TVer-Release*"
+        },
+        {
+          "id": "167bddb0ac75",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,discoveryplus.com"
+        },
+        {
+          "id": "2d3123fea9e4",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,disco-api.com"
+        },
+        {
+          "id": "5c6356321742",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,hjholdings.jp"
+        },
+        {
+          "id": "621d52db8fd7",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,happyon.jp"
+        },
+        {
+          "id": "763cf4f2d14f",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,hulu.jp"
+        },
+        {
+          "id": "7c8534b1ff6c",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,discoveryplus.in"
+        },
+        {
+          "id": "886bbee134b6",
+          "source": "SukkaW Stream US",
+          "rule": "USER-AGENT,DPlus*"
+        },
+        {
+          "id": "c407b044de11",
+          "source": "SukkaW Stream US",
+          "rule": "USER-AGENT,Hulu*"
+        },
+        {
+          "id": "f8c50ecbd862",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,discoveryplus.co.uk"
+        }
+      ],
       "source_changed_sample": []
     },
     {

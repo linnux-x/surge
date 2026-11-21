@@ -1,112 +1,217 @@
 # Surge Rule Diff Report
-Generated: 2026-11-21T12:25:36.754918
+Generated: 2026-11-21T12:45:41.611460
 
 ## Summary
 
 | Metric | Count |
 |--------|-------|
-| Files changed | 4 |
-| Rules added | 33 |
-| Rules removed | 18 |
-| Source attribution changed | 1 |
+| Files changed | 11 |
+| Rules added | 32 |
+| Rules removed | 65 |
+| Source attribution changed | 3 |
 
 ## Per-File Changes
 
 | File | Prev | Curr | Added | Removed | Source Δ |
 |------|------|------|-------|---------|----------|
-| AI.list | 123 | 136 | +27 | -14 | ~1 |
-| Claude.list | 14 | 16 | +4 | -2 | ~0 |
-| Global.list | 24603 | 24604 | +2 | -1 | ~0 |
-| GlobalMedia.list | 2272 | 2271 | +0 | -1 | ~0 |
+| ChinaMedia.list | 377 | 375 | +0 | -2 | ~0 |
+| Global.list | 24604 | 24611 | +7 | -0 | ~0 |
+| GlobalMedia.list | 2271 | 2253 | +4 | -22 | ~0 |
+| HKMedia.list | 34 | 29 | +3 | -8 | ~0 |
+| InternationalMedia.list | 0 | 14 | +14 | -0 | ~0 |
+| JPMedia.list | 27 | 26 | +2 | -3 | ~0 |
+| Netflix.list | 1123 | 1115 | +0 | -8 | ~0 |
+| SocialMedia.list | 675 | 670 | +1 | -6 | ~3 |
+| Spotify.list | 32 | 32 | +1 | -1 | ~0 |
+| TWMedia.list | 26 | 22 | +0 | -4 | ~0 |
+| USMedia.list | 51 | 40 | +0 | -11 | ~0 |
 
-## AI.list
-
-**Added: 27** (showing first 27)
-```
-  + [Manual Rules] 061dfb003b6e  DOMAIN,dialogflow.googleapis.com
-  + [Manual Rules] 0855cda2afe9  DOMAIN,production-copilot-host-westus.webpubsub.azure.com
-  + [Manual Rules] 1106c5f9daf7  DOMAIN,accounts.spacexsi.com
-  + [Manual Rules] 120bba58c982  DOMAIN,auth.grokipedia.com
-  + [Manual Rules] 13cb0a026009  DOMAIN,geminicloudassist.googleapis.com
-  + [Manual Rules] 17539c1e8a11  DOMAIN-SUFFIX,claude.app
-  + [Manual Rules] 17ed196cec02  DOMAIN,claude.new
-  + [Manual Rules] 29914f328abf  DOMAIN,flow.google
-  + [Manual Rules] 2be3f8e88ee3  DOMAIN,cloudaicompanion.googleapis.com
-  + [Manual Rules] 36c22dea2502  DOMAIN,production-copilot-host-centralus-02.webpubsub.azure.com
-  + [Manual Rules] 588b0ccdc796  DOMAIN,production-copilot-host-centralus.webpubsub.azure.com
-  + [Manual Rules] 5cc7d26a9c9e  DOMAIN,production-copilot-host.webpubsub.azure.com
-  + [Manual Rules] 7d590b3e2bb8  DOMAIN,auth.grokusercontent.com
-  + [Manual Rules] 87f37fde06c3  DOMAIN,origin-tracker.githubusercontent.com
-  + [Manual Rules] 8b4e3fbfdc52  DOMAIN-WILDCARD,*-aiplatform.googleapis.com
-  + [Manual Rules] 913a4abec3ed  DOMAIN,production-copilot-host-eastasia.webpubsub.azure.com
-  + [Manual Rules] a43bfc7e121c  DOMAIN,aiplatform.us.rep.googleapis.com
-  + [Manual Rules] aa7c06c4981d  DOMAIN-WILDCARD,*-dialogflow.googleapis.com
-  + [Manual Rules] bc574175298f  DOMAIN,production-copilot-host-austriaeast.webpubsub.azure.com
-  + [Manual Rules] d11c097d9e3a  DOMAIN,www.claude.dev
-  + [Manual Rules] d76ec7f661d8  DOMAIN,production-copilot-host-westus3.webpubsub.azure.com
-  + [Manual Rules] d8490e753e46  DOMAIN,firebasevertexai.googleapis.com
-  + [Manual Rules] e13c3efa411a  DOMAIN,aiplatform.eu.rep.googleapis.com
-  + [Manual Rules] e6680e1bca06  DOMAIN,claude.dev
-  + [Manual Rules] e9a5e2a03ea6  DOMAIN-SUFFIX,cursorvm.com
-  + [Manual Rules] f320df6eb3fc  DOMAIN,api.app.prod.grazie.aws.intellij.net
-  + [Manual Rules] f7a7c00abcf7  DOMAIN,copilot-proxy.githubusercontent.com
-```
-
-**Removed: 14** (showing first 14)
-```
-  - [Rabbit-Spec AIGC] 1dcc20d60a4b  DOMAIN-SUFFIX,featuregates.org
-  - [Rabbit-Spec AIGC] 1fbfa047d8ad  DOMAIN-SUFFIX,client-api.arkoselabs.com
-  - [Manual Rules] 395b4d02e503  DOMAIN,cdn.growthbook.io
-  - [Manual Rules] 98593c22f427  DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
-  - [Rabbit-Spec AIGC] aca2332538ad  DOMAIN-SUFFIX,turn.livekit.cloud
-  - [Rabbit-Spec AIGC] b3f222fc947b  DOMAIN-SUFFIX,host.livekit.cloud
-  - [Rabbit-Spec AIGC] c78d14def5ea  IP-CIDR,24.199.123.28/32,no-resolve
-  - [Rabbit-Spec AIGC] d10d35b4e7dc  DOMAIN-SUFFIX,api.statsig.com
-  - [Rabbit-Spec AIGC] d34d969f3f0b  IP-CIDR,64.23.132.171/32,no-resolve
-  - [Rabbit-Spec AIGC] d757313477af  DOMAIN-SUFFIX,events.statsigapi.net
-  - [Rabbit-Spec AIGC] df51702bd3a8  DOMAIN-SUFFIX,observeit.net
-  - [Rabbit-Spec AIGC] e9456a7b7221  IP-CIDR,129.146.3.78/32,no-resolve
-  - [Manual Rules] f1164ee3b6ff  URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+
-  - [Manual Rules] fbd8c01342b9  DOMAIN-SUFFIX,geller-pa.googleapis.com
-```
-
-**Source changed: 1**
-```
-  ~ 391d402853fb: [SukkaW AI → Manual Rules]
-```
-
-## Claude.list
-
-**Added: 4** (showing first 4)
-```
-  + [Manual Rules] 17ed196cec02  DOMAIN,claude.new
-  + [Manual Rules] 391d402853fb  DOMAIN,claude.site
-  + [Manual Rules] d11c097d9e3a  DOMAIN,www.claude.dev
-  + [Manual Rules] e6680e1bca06  DOMAIN,claude.dev
-```
+## ChinaMedia.list
 
 **Removed: 2** (showing first 2)
 ```
-  - [Manual Rules] 395b4d02e503  DOMAIN,cdn.growthbook.io
-  - [Manual Rules] b5c2d2041b5e  DOMAIN-SUFFIX,modelcontextprotocol.io
+  - [blackmatrix7 ChinaMedia] 4bfd990ec7e8  DOMAIN-SUFFIX,pgdt.gtimg.cn
+  - [blackmatrix7 ChinaMedia] 799312f14494  DOMAIN,rdelivery.qq.com
 ```
 
 ## Global.list
 
-**Added: 2** (showing first 2)
+**Added: 7** (showing first 7)
 ```
-  + [blackmatrix7 Global] aca2332538ad  DOMAIN-SUFFIX,turn.livekit.cloud
-  + [blackmatrix7 Global] b3f222fc947b  DOMAIN-SUFFIX,host.livekit.cloud
-```
-
-**Removed: 1** (showing first 1)
-```
-  - [blackmatrix7 Global] e9a5e2a03ea6  DOMAIN-SUFFIX,cursorvm.com
+  + [blackmatrix7 Global] 567541f24729  DOMAIN-SUFFIX,fanfox.net
+  + [blackmatrix7 Global] 6cd2972f4358  DOMAIN-SUFFIX,amebaownd.com
+  + [blackmatrix7 Global] 7f4684f6d7a0  DOMAIN-SUFFIX,ycombinator.com
+  + [blackmatrix7 Global] adaf147ff85d  DOMAIN-SUFFIX,amebaowndme.com
+  + [Manual Rules] c23217fe3601  IP-CIDR,54.214.128.0/17,no-resolve
+  + [blackmatrix7 Global] d2e351b20519  DOMAIN-SUFFIX,dmm.com
+  + [blackmatrix7 Global] dbf22636fb7d  DOMAIN-SUFFIX,mangafox.me
 ```
 
 ## GlobalMedia.list
 
+**Added: 4** (showing first 4)
+```
+  + [Manual Rules] 1400542b735e  DOMAIN-SUFFIX,spotify.com
+  + [Manual Rules] 6a2de9afdf7f  DOMAIN-SUFFIX,spotifycdn.com
+  + [Manual Rules] aff29961427f  DOMAIN-WILDCARD,*-spotify-com.akamaized.net
+  + [Manual Rules] db4c9a0b8f7f  DOMAIN-SUFFIX,spotifycdn.net
+```
+
+**Removed: 22** (showing first 22)
+```
+  - [blackmatrix7 GlobalMedia] 0fd799971846  IP-CIDR,23.78.0.0/16,no-resolve
+  - [blackmatrix7 GlobalMedia] 12a9abfd863e  USER-AGENT,Anime*
+  - [blackmatrix7 GlobalMedia] 1600715fc4a4  USER-AGENT,TVer-Release*
+  - [blackmatrix7 GlobalMedia] 19b8924dcc66  IP-CIDR,54.0.0.0/16,no-resolve
+  - [blackmatrix7 GlobalMedia] 2fc98960cf0f  USER-AGENT,LINE*
+  - [blackmatrix7 GlobalMedia] 37b160037c57  IP-CIDR,218.102.32.0/19,no-resolve
+  - [blackmatrix7 GlobalMedia] 49a06a91a555  DOMAIN-KEYWORD,rthklive
+  - [blackmatrix7 GlobalMedia] 4bb4b0aed913  IP-CIDR,203.116.0.0/16,no-resolve
+  - [SukkaW Stream] 567541f24729  DOMAIN-SUFFIX,fanfox.net
+  - [blackmatrix7 GlobalMedia] 5781b9282bc9  IP-CIDR,203.198.80.0/21,no-resolve
+  - [SukkaW Stream] 59a5d84869ed  DOMAIN-KEYWORD,-spotify-com
+  - [blackmatrix7 GlobalMedia] 6cd2972f4358  DOMAIN-SUFFIX,amebaownd.com
+  - [blackmatrix7 GlobalMedia] 8427837d9df1  USER-AGENT,Max*
+  - [blackmatrix7 GlobalMedia] 90c518d72d69  DOMAIN-KEYWORD,nowtv100
+  - [SukkaW Stream] 9d988c5bc9da  PROCESS-NAME,com.bstar.intl
+  - [blackmatrix7 GlobalMedia] a9dd62bf4de6  IP-CIDR,203.198.0.0/20,no-resolve
+  - [blackmatrix7 GlobalMedia] adaf147ff85d  DOMAIN-SUFFIX,amebaowndme.com
+  - [blackmatrix7 GlobalMedia] b528f18fa1c2  DOMAIN-SUFFIX,viblast.com
+  - [blackmatrix7 GlobalMedia] c23217fe3601  IP-CIDR,54.214.128.0/17,no-resolve
+  - [blackmatrix7 GlobalMedia] d2e351b20519  DOMAIN-SUFFIX,dmm.com
+  - [SukkaW Stream] dbf22636fb7d  DOMAIN-SUFFIX,mangafox.me
+  - [blackmatrix7 GlobalMedia] e101cd433b8a  IP-CIDR,219.76.0.0/17,no-resolve
+```
+
+## HKMedia.list
+
+**Added: 3** (showing first 3)
+```
+  + [Manual Rules] 1e802272cc27  DOMAIN-SUFFIX,rthk.org.hk
+  + [Manual Rules] e8d4bb224eb5  DOMAIN,rthklive2-lh.akamaihd.net
+  + [Manual Rules] eb159a702d51  DOMAIN-SUFFIX,rthk.hk
+```
+
+**Removed: 8** (showing first 8)
+```
+  - [SukkaW Stream HK] 49a06a91a555  DOMAIN-KEYWORD,rthklive
+  - [SukkaW Stream HK] 540dc1deb7d1  DOMAIN,upos-bstar-mirrorakam.akamaized.net
+  - [SukkaW Stream HK] 7e8af3829204  DOMAIN,apm-misaka.biliapi.net
+  - [SukkaW Stream HK] 907992957486  DOMAIN,upos-bstar1-mirrorakam.akamaized.net
+  - [SukkaW Stream HK] 90c518d72d69  DOMAIN-KEYWORD,nowtv100
+  - [SukkaW Stream HK] 9d988c5bc9da  PROCESS-NAME,com.bstar.intl
+  - [SukkaW Stream HK] a418f196ad15  DOMAIN-SUFFIX,biliintl.com
+  - [SukkaW Stream HK] df6d0b8ae84d  DOMAIN-SUFFIX,bilibili.tv
+```
+
+## InternationalMedia.list
+
+**Added: 14** (showing first 14)
+```
+  + [Manual Rules] 030d91226d77  DOMAIN-SUFFIX,inter.iqiyi.com
+  + [Manual Rules] 0fc322b3a516  DOMAIN-SUFFIX,bstarstatic.com
+  + [Manual Rules] 1f80510bc598  DOMAIN-SUFFIX,iq.com
+  + [Manual Rules] 328455886527  DOMAIN-SUFFIX,intl-rcd.iqiyi.com
+  + [Manual Rules] 4726be509a57  DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
+  + [Manual Rules] 540dc1deb7d1  DOMAIN,upos-bstar-mirrorakam.akamaized.net
+  + [Manual Rules] 7e8af3829204  DOMAIN,apm-misaka.biliapi.net
+  + [Manual Rules] 907992957486  DOMAIN,upos-bstar1-mirrorakam.akamaized.net
+  + [Manual Rules] 9683b9d72951  DOMAIN,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
+  + [Manual Rules] a418f196ad15  DOMAIN-SUFFIX,biliintl.com
+  + [Manual Rules] a7f15d5d644d  DOMAIN,p-bstarstatic.akamaized.net
+  + [Manual Rules] bb3f123d8b43  DOMAIN-SUFFIX,intl-subscription.iqiyi.com
+  + [Manual Rules] d70993d55aa3  DOMAIN-SUFFIX,intl.iqiyi.com
+  + [Manual Rules] df6d0b8ae84d  DOMAIN-SUFFIX,bilibili.tv
+```
+
+## JPMedia.list
+
+**Added: 2** (showing first 2)
+```
+  + [Manual Rules] 08f0d2bb4437  DOMAIN-SUFFIX,tv.dmm.com
+  + [Manual Rules] a8c72ac6889b  DOMAIN-SUFFIX,video.dmm.com
+```
+
+**Removed: 3** (showing first 3)
+```
+  - [SukkaW Stream JP] 6cd2972f4358  DOMAIN-SUFFIX,amebaownd.com
+  - [SukkaW Stream JP] adaf147ff85d  DOMAIN-SUFFIX,amebaowndme.com
+  - [SukkaW Stream JP] d2e351b20519  DOMAIN-SUFFIX,dmm.com
+```
+
+## Netflix.list
+
+**Removed: 8** (showing first 8)
+```
+  - [blackmatrix7 Netflix] 0fd799971846  IP-CIDR,23.78.0.0/16,no-resolve
+  - [blackmatrix7 Netflix] 19b8924dcc66  IP-CIDR,54.0.0.0/16,no-resolve
+  - [blackmatrix7 Netflix] 37b160037c57  IP-CIDR,218.102.32.0/19,no-resolve
+  - [blackmatrix7 Netflix] 4bb4b0aed913  IP-CIDR,203.116.0.0/16,no-resolve
+  - [blackmatrix7 Netflix] 5781b9282bc9  IP-CIDR,203.198.80.0/21,no-resolve
+  - [blackmatrix7 Netflix] a9dd62bf4de6  IP-CIDR,203.198.0.0/20,no-resolve
+  - [blackmatrix7 Netflix] c23217fe3601  IP-CIDR,54.214.128.0/17,no-resolve
+  - [blackmatrix7 Netflix] e101cd433b8a  IP-CIDR,219.76.0.0/17,no-resolve
+```
+
+## SocialMedia.list
+
+**Added: 1** (showing first 1)
+```
+  + [Manual Rules] d998b921cbe4  DOMAIN,news.ycombinator.com
+```
+
+**Removed: 6** (showing first 6)
+```
+  - [blackmatrix7 Facebook] 58cd66ecb7af  DOMAIN-KEYWORD,facebook
+  - [Manual Rules] 7f4684f6d7a0  DOMAIN-SUFFIX,ycombinator.com
+  - [blackmatrix7 Instagram] 86491268f2c4  DOMAIN-KEYWORD,instagram
+  - [blackmatrix7 Facebook] 8cf22cab2f0c  DOMAIN-KEYWORD,fbcdn
+  - [Manual Rules] ac8f076a6d57  DOMAIN-KEYWORD,whatsapp
+  - [blackmatrix7 Twitter] c59028273ffc  DOMAIN-KEYWORD,twitter
+```
+
+**Source changed: 3**
+```
+  ~ 982bf62398a2: [blackmatrix7 Facebook → Manual Rules]
+  ~ ca241ae3a9b1: [blackmatrix7 Facebook → Manual Rules]
+  ~ b6bc1bcd70e0: [blackmatrix7 Facebook → Manual Rules]
+```
+
+## Spotify.list
+
+**Added: 1** (showing first 1)
+```
+  + [Manual Rules] aff29961427f  DOMAIN-WILDCARD,*-spotify-com.akamaized.net
+```
+
 **Removed: 1** (showing first 1)
 ```
-  - [blackmatrix7 GlobalMedia] 0641c42114ae  DOMAIN-SUFFIX,grazie.aws.intellij.net
+  - [blackmatrix7 Spotify] 67f7c913a65e  DOMAIN-KEYWORD,spotify
+```
+
+## TWMedia.list
+
+**Removed: 4** (showing first 4)
+```
+  - [SukkaW Stream TW] 12a9abfd863e  USER-AGENT,Anime*
+  - [SukkaW Stream TW] 567541f24729  DOMAIN-SUFFIX,fanfox.net
+  - [SukkaW Stream TW] b528f18fa1c2  DOMAIN-SUFFIX,viblast.com
+  - [SukkaW Stream TW] dbf22636fb7d  DOMAIN-SUFFIX,mangafox.me
+```
+
+## USMedia.list
+
+**Removed: 11** (showing first 11)
+```
+  - [SukkaW Stream US] 0d37eb70a201  USER-AGENT,discovery+*
+  - [SukkaW Stream US] 1600715fc4a4  USER-AGENT,TVer-Release*
+  - [SukkaW Stream US] 167bddb0ac75  DOMAIN-SUFFIX,discoveryplus.com
+  - [SukkaW Stream US] 2d3123fea9e4  DOMAIN-SUFFIX,disco-api.com
+  - [SukkaW Stream US] 5c6356321742  DOMAIN-SUFFIX,hjholdings.jp
+  - [SukkaW Stream US] 621d52db8fd7  DOMAIN-SUFFIX,happyon.jp
+  - [SukkaW Stream US] 763cf4f2d14f  DOMAIN-SUFFIX,hulu.jp
+  - [SukkaW Stream US] 7c8534b1ff6c  DOMAIN-SUFFIX,discoveryplus.in
+  - [SukkaW Stream US] 886bbee134b6  USER-AGENT,DPlus*
+  - [SukkaW Stream US] c407b044de11  USER-AGENT,Hulu*
+  - [SukkaW Stream US] f8c50ecbd862  DOMAIN-SUFFIX,discoveryplus.co.uk
 ```

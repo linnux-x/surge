@@ -60,6 +60,28 @@ class FallbackOrderTests(unittest.TestCase):
         self.assertFalse(any(rule.startswith("url-regex,") and "continue=" in rule
                              for rule in ai_rules))
 
+    def test_spotify_routes_to_global_media_without_the_dedicated_set(self):
+        module = load_routing_module()
+        order = [entry for entry in module.load_routing_order() if entry[0] != "Spotify.list"]
+        rulesets = {path.name: module.load_ruleset(path) for path in module.RULE_DIR.glob("*.list")}
+        for hostname in ("open.spotify.com", "api.spotify.com", "audio-ak-spotify-com.akamaized.net"):
+            with self.subTest(hostname=hostname):
+                self.assertEqual(module.simulate_routing(hostname, order, rulesets),
+                                 "GlobalMedia.list→GlobalMedia")
+
+    def test_compiled_media_lists_omit_unscoped_client_patterns(self):
+        module = load_routing_module()
+        removed = {
+            "TWMedia.list": {"user-agent,anime*"},
+            "USMedia.list": {"user-agent,tver-release*", "user-agent,hulu*"},
+            "GlobalMedia.list": {"user-agent,anime*", "user-agent,tver-release*",
+                                 "user-agent,line*", "user-agent,max*"},
+            "Global.list": {"user-agent,anime*", "domain-keyword,whatsapp", "domain-keyword,spotify"},
+        }
+        for name, patterns in removed.items():
+            with self.subTest(name=name):
+                self.assertFalse(patterns & module.load_ruleset(module.RULE_DIR / name))
+
 
 if __name__ == "__main__":
     unittest.main()

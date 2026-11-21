@@ -1,0 +1,4 @@
+# Radio Television Hong Kong and its identified Akamai live host.
+DOMAIN-SUFFIX,rthk.hk
+DOMAIN-SUFFIX,rthk.org.hk
+DOMAIN,rthklive2-lh.akamaihd.net
