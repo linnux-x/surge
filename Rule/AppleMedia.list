@@ -1,0 +1,27 @@
+# NAME: AppleMedia
+# AUTHOR: linnux-x
+# REPO: https://github.com/linnux-x/surge
+# UPDATED: 2026-11-21 08:54:02 +0800
+# FORMAT: Surge Ruleset
+# TOTAL: 11
+
+# ======= Manual Rules ========
+# Apple TV 播放入口与独立子域
+# https://support.apple.com/guide/tvplus/apdc0cb7ad64/web
+DOMAIN-SUFFIX,tv.apple.com
+# 从原流媒体集迁移的精确播放与目录端点，保留通用 iTunes 商店和 CDN 策略。
+# https://github.com/v2fly/domain-list-community/blob/master/data/apple-tvplus
+# https://ruleset.skk.moe/List/non_ip/stream.conf
+DOMAIN,hls.itunes.apple.com
+DOMAIN,hls-amt.itunes.apple.com
+DOMAIN,np-edge.itunes.apple.com
+DOMAIN,ocvideo.apple.com
+DOMAIN,play-edge.itunes.apple.com
+DOMAIN,uts-api.itunes.apple.com
+
+# Apple News 文章链接及原流媒体集的 News 专属主机
+# https://developer.apple.com/documentation/applenewsformat/supportedinternalurls
+DOMAIN-SUFFIX,apple.news
+DOMAIN,news-client.apple.com
+DOMAIN,news-edge.apple.com
+DOMAIN,news-events.apple.com

@@ -86,10 +86,44 @@ mistral.ai.example.com,FINAL,Global,Mistral 后缀边界不得匹配无关域名
 copilot.microsoft.com,AI.list,AI,Microsoft Copilot
 gs.apple.com,Apple.list,Apple,Apple GS认证（不在Apple_CN.list）
 itunes.apple.com,Apple_CN.list,DIRECT,iTunes CN CDN（优先Apple_CN直连）
+vpp.itunes.apple.com,Apple_CN.list,DIRECT,App 和图书许可证接口保持直连
+play.itunes.apple.com,Apple_CN.list,DIRECT,Apple 课堂和课业的验证接口保持直连
+mesu.apple.com,Apple_CN.list,DIRECT,Apple OTA 更新目录保持直连
 appleid.apple.com,Apple.list,Apple,Apple ID
 icloud.com,Apple.list,Apple,iCloud
 s.mzstatic.com,Apple_CN.list,DIRECT,App Store中国CDN
 apps.mzstatic.com,Apple_CN.list,DIRECT,App Store Apps and Books CDN
+p01.apzones.com,Apple_CN.list,DIRECT,中国大陆 iCloud 服务
+app-site-association.networking.apple,Apple.list,Apple,Apple 通用链接关联域
+testflight.apple.com,Apple.list,Apple,TestFlight 官方主机
+testflight.example.com,FINAL,Global,无关域名不能命中 TestFlight 关键词
+smp-device.example.com,FINAL,Global,无关域名不能命中 Apple 支付关键词
+apple.com.edgekey.net.example.com,FINAL,Global,Apple CDN 别名受后缀边界约束
+firebase-settings.crashlytics.com,Google.list,Google,Firebase Crashlytics 回到 Google
+ocsp.digicert.com,Apple.list,Apple,Apple 官方列出的 OCSP 端点
+crl3.digicert.com,Apple.list,Apple,Apple 官方列出的 CRL 端点
+crl4.digicert.com,Apple.list,Apple,Apple 官方列出的 CRL 端点
+ocsp.digicert.cn,China.list,DIRECT,中国大陆证书验证沿用直连
+www.digicert.com,FINAL,Global,DigiCert 官网沿用常规路由
+reform-apple.com,FINAL,Global,日本装修公司沿用常规路由
+sneaker666.com,FINAL,Global,重注册域名沿用常规路由
+205.180.175.100,FINAL,Global,原 Apple 网段按现行规则继续匹配
+17.57.0.1,Apple.list,Apple,Apple 自有 IP 仍受覆盖
+tv.apple.com,AppleMedia.list,GlobalMedia,Apple TV 官方观看入口
+vod-ap-aoc.tv.apple.com,AppleMedia.list,GlobalMedia,Apple TV 原片播放子域
+hls.itunes.apple.com,AppleMedia.list,GlobalMedia,Apple TV HLS 端点
+hls-amt.itunes.apple.com,AppleMedia.list,GlobalMedia,Apple TV HLS 端点
+uts-api.itunes.apple.com,AppleMedia.list,GlobalMedia,Apple TV 目录 API
+np-edge.itunes.apple.com,AppleMedia.list,GlobalMedia,Apple TV 播放端点
+play-edge.itunes.apple.com,AppleMedia.list,GlobalMedia,Apple TV 播放端点
+ocvideo.apple.com,AppleMedia.list,GlobalMedia,Apple 视频端点
+apple.news,AppleMedia.list,GlobalMedia,Apple News 链接服务
+news-client.apple.com,AppleMedia.list,GlobalMedia,Apple News 客户端端点
+news-edge.apple.com,AppleMedia.list,GlobalMedia,Apple News 客户端端点
+news-events.apple.com,AppleMedia.list,GlobalMedia,Apple News 客户端端点
+applemusic.com,Apple.list,Apple,Apple Music 沿用通用 Apple 策略
+music.apple.com,Apple_CN.list,DIRECT,Apple Music 现有直连例外
+apple.comscoreresearch.com,Apple.list,Apple,Apple 遥测端点沿用通用 Apple 策略
 java.com,China.list,DIRECT,Java 官网中国规则优先于 Global jav 泛关键词
 javascriptcn.com,China.list,DIRECT,中文 JavaScript 站点不应被 jav 泛关键词截获
 amazon.cn,China.list,DIRECT,Amazon 中国不应被 Global amazon 泛关键词截获
@@ -166,12 +200,17 @@ fastgpt.run,AI.list,AI,FastGPT运行服务
 tryfastgpt.ai,AI.list,AI,FastGPT国际服务
 chatjimmy.ai,AI.list,AI,ChatJimmy AI服务
 guzzoni.apple.com,Apple_AI.list,Apple_AI,Apple Intelligence Siri Search
+foo.guzzoni.apple.com,Apple.list,Apple,未确认的 Siri 子域走普通 Apple
 smoot.apple.com,Apple_AI.list,Apple_AI,Apple Intelligence Siri
-apple-relay.apple.com,Apple_AI.list,Apple_AI,Apple Private Relay
-gateway.icloud.com,Apple_AI.list,Apple_AI,Apple iCloud Private Relay Gateway
+apple-relay.apple.com,Apple_AI.list,Apple_AI,Apple Intelligence 扩展
+gateway.icloud.com,Apple.list,Apple,CloudKit 内容和 XProtect 更新
+attester.gateway.icloud.com,Apple.list,Apple,iCloud attester 走普通 Apple
+wps.apple.com,Apple.list,Apple,Safari WebPrivacy 服务
 mask.icloud.com,Apple_AI.list,Apple_AI,Apple iCloud Private Relay
 mask.apple-dns.net,Apple_AI.list,Apple_AI,Apple Private Relay DNS
-ls.apple.com,Apple.list,Apple,Apple Siri LinkScribe裸域走Apple
+ls.apple.com,Apple.list,Apple,Apple 定位服务裸域
+gsp4-cn.ls.apple.com,Apple_CN.list,DIRECT,Apple 地图大陆节点保持直连
+gspe1-ssl.ls.apple.com,Apple.list,Apple,地理位置地区查询
 mask-h2.icloud.com,Apple_AI.list,Apple_AI,Apple Private Relay H2
 cp4.cloudflare.com,Apple_AI.list,Apple_AI,Apple Intelligence Cloudflare
 redditmedia.com,SocialMedia.list,SocialMedia,Reddit媒体资源
@@ -201,7 +240,7 @@ api.223789.example,China.list,DIRECT,用户确认的 223789 关键词直连
 emby.xiaov8.com,China.list,DIRECT,用户确认的 Emby 根域直连
 media.emby.xiaov8.com,China.list,DIRECT,用户确认的 Emby 子域直连
 media023168.example,GlobalMedia.list,GlobalMedia,用户确认的 023168 关键词媒体策略
-gsp64-ssl.ls.apple.com,Apple_AI.list,Apple_AI,Apple Intelligence全球LinkScribe节点
+gsp64-ssl.ls.apple.com,Apple.list,Apple,定位服务遥测
 colocity.speedtest.gslnetworks.com,Speedtest.list,Speedtest,Sukka 官方数据中的境外测速节点
 node-124-160-78-98.speedtest.cn,Speedtest_China.list,DIRECT,spiritLHLS 明确大陆省份的测速节点
 muse.ai,AI.list,AI,Meta Muse 个人 Agent 官方入口

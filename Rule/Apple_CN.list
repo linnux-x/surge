@@ -1,9 +1,9 @@
 # NAME: Apple_CN
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-10-01 05:02:41 +0800
+# UPDATED: 2026-11-21 08:54:02 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 230
+# TOTAL: 225
 
 # ======= Manual Rules ========
 DOMAIN-SUFFIX,appldnld.apple.com.edgesuite.net
@@ -76,6 +76,9 @@ DOMAIN-SUFFIX,xn--czrs0t4phtr3a.cn
 DOMAIN-SUFFIX,xn--fiqs8sxootzz.cn
 DOMAIN-SUFFIX,xn--ohq11k7pl25iyo8a.cn
 
+# Apple documents this suffix for iCloud in China.
+DOMAIN-SUFFIX,apzones.com
+
 # ======= SukkaW Apple CN ========
 DOMAIN-SUFFIX,cn.apple.com
 DOMAIN-SUFFIX,cn.ls.apple.com
@@ -127,7 +130,6 @@ DOMAIN-SUFFIX,swdist.apple.com
 DOMAIN-SUFFIX,swscan.apple.com
 DOMAIN-SUFFIX,sylvan.apple.com
 DOMAIN-SUFFIX,apps.mzstatic.com
-DOMAIN-SUFFIX,guzzoni.apple.com
 DOMAIN-SUFFIX,init-kt.apple.com
 DOMAIN-SUFFIX,pancake.apple.com
 DOMAIN-SUFFIX,sequoia.apple.com
@@ -139,7 +141,6 @@ DOMAIN-SUFFIX,cdsassets.apple.com
 DOMAIN-SUFFIX,cstat.cdn-apple.com
 DOMAIN-SUFFIX,gs-loc-cn.apple.com
 DOMAIN-SUFFIX,iphone-ld.apple.com
-DOMAIN-SUFFIX,seed.siri.apple.com
 DOMAIN-SUFFIX,static.gc.apple.com
 DOMAIN-SUFFIX,swcatalog.apple.com
 DOMAIN-SUFFIX,swcdn.g.aaplimg.com
@@ -153,7 +154,6 @@ DOMAIN-SUFFIX,is2-ssl.mzstatic.com
 DOMAIN-SUFFIX,is3-ssl.mzstatic.com
 DOMAIN-SUFFIX,is4-ssl.mzstatic.com
 DOMAIN-SUFFIX,is5-ssl.mzstatic.com
-DOMAIN-SUFFIX,probe.siri.apple.com
 DOMAIN-SUFFIX,weatherkit.apple.com
 DOMAIN-SUFFIX,adcdownload.apple.com
 DOMAIN-SUFFIX,appleid.cdn-apple.com
@@ -178,7 +178,6 @@ DOMAIN-SUFFIX,configuration.apple.com
 DOMAIN-SUFFIX,devimages-cdn.apple.com
 DOMAIN-SUFFIX,gspe21-ssl.ls.apple.com
 DOMAIN-SUFFIX,gspe35-ssl.ls.apple.com
-DOMAIN-SUFFIX,guzzoni.smoot.apple.com
 DOMAIN-SUFFIX,itunesconnect.apple.com
 DOMAIN-SUFFIX,cdn-cn1.apple-mapkit.com
 DOMAIN-SUFFIX,cdn-cn2.apple-mapkit.com
@@ -193,8 +192,6 @@ DOMAIN-SUFFIX,publicassets.cdn-apple.com
 DOMAIN-SUFFIX,stocks-sparkline.apple.com
 DOMAIN-SUFFIX,updates-http.cdn-apple.com
 DOMAIN-SUFFIX,itunes-apple.com.akadns.net
-DOMAIN-SUFFIX,seed-sequoia.siri.apple.com
-DOMAIN-SUFFIX,seed-swallow.siri.apple.com
 DOMAIN-SUFFIX,store.apple.com.edgekey.net
 DOMAIN-SUFFIX,swdist.apple.com.akadns.net
 DOMAIN-SUFFIX,download.developer.apple.com

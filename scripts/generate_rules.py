@@ -251,7 +251,7 @@ def process_rule(target_name: str, display_name: str, sources: list[Tuple[str, s
     exclude_file = MANUAL_DIR / f"{filename_no_ext}.exclude.txt"
 
     lines: list[str] = []
-    pins = pinned_sources(target_name, rule_dir) if offline else None
+    pins = pinned_sources(target_name, rule_dir) if offline and sources else None
     records: list[dict] = []
 
     # Manual rules first (highest priority)

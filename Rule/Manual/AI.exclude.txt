@@ -69,16 +69,24 @@ DOMAIN-SUFFIX,workos.imgix.net
 # Cloudflare and Vultr host unrelated services. Anthropic's own AS399358 remains AI.
 IP-ASN,13335,no-resolve
 IP-ASN,20473,no-resolve
-# Apple Intelligence domains: now routed by Apple_AI.list (RocM301 + SukkaW) instead of AI.
-# ConnersHua AI upstream still contains these; exclude them from AI.list.
-DOMAIN-SUFFIX,smoot.apple.com
+# Apple assigns these to Siri, PCC, or general Apple services. Exclude both
+# upstream rule types so a DOMAIN to DOMAIN-SUFFIX change cannot reintroduce them.
 DOMAIN,apple-relay.apple.com
+DOMAIN-SUFFIX,apple-relay.apple.com
 DOMAIN,apple-relay.cloudflare.com
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
 DOMAIN,apple-relay.fastly-edge.com
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+DOMAIN,cp4.cloudflare.com
+DOMAIN-SUFFIX,cp4.cloudflare.com
+DOMAIN,gateway.icloud.com
 DOMAIN-SUFFIX,gateway.icloud.com
-
-DOMAIN,guzzoni.apple.com
 DOMAIN,gspe1-ssl.ls.apple.com
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+DOMAIN,guzzoni.apple.com
+DOMAIN-SUFFIX,guzzoni.apple.com
+DOMAIN,smoot.apple.com
+DOMAIN-SUFFIX,smoot.apple.com
 
 # Generic service endpoints are shared by AI and non-AI clients.
 # Keep service-specific Copilot, AI Gateway and Gemini endpoints in AI.

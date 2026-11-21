@@ -67,3 +67,6 @@ DOMAIN-SUFFIX,swiftui.com.cn
 DOMAIN-SUFFIX,xn--czrs0t4phtr3a.cn
 DOMAIN-SUFFIX,xn--fiqs8sxootzz.cn
 DOMAIN-SUFFIX,xn--ohq11k7pl25iyo8a.cn
+
+# Apple documents this suffix for iCloud in China.
+DOMAIN-SUFFIX,apzones.com

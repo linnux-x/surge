@@ -1,2 +1,10 @@
 # Speedtest endpoint belongs to Speedtest.list, which is evaluated before Apple_CN.list
 DOMAIN,mensura.cdn-apple.com
+
+# Siri uses the exact guzzoni host or the Siri/Smoot suffixes in Apple_AI.
+DOMAIN-SUFFIX,guzzoni.apple.com
+DOMAIN-SUFFIX,guzzoni.smoot.apple.com
+DOMAIN-SUFFIX,probe.siri.apple.com
+DOMAIN-SUFFIX,seed.siri.apple.com
+DOMAIN-SUFFIX,seed-sequoia.siri.apple.com
+DOMAIN-SUFFIX,seed-swallow.siri.apple.com

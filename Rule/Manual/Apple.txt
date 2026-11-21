@@ -1,4 +1,3 @@
-DOMAIN,apple.com.akadns.net
 DOMAIN,configuration-lb.ls-apple.com.akadns.net
 DOMAIN,courier-push-apple.com.akadns.net
 DOMAIN,push-apple.com.akadns.net
@@ -7,3 +6,15 @@ DOMAIN,www-cdn.icloud.com.akadns.net
 # Apple Mail CNAME family; do not include the shared akadns.net parent.
 # https://support.apple.com/en-us/102525; mail.me.com CNAME family verified through public DNS on 2026-10-01.
 DOMAIN-SUFFIX,mail.me.com.akadns.net
+
+# Apple-controlled Akamai aliases, matched at a DNS label boundary.
+DOMAIN-SUFFIX,apple-support.akadns.net
+DOMAIN-SUFFIX,apple.com.akadns.net
+DOMAIN-SUFFIX,apple.com.edgekey.net
+DOMAIN-SUFFIX,icloud.com.akadns.net
+
+# Apple enterprise network requirements (https://support.apple.com/en-us/101555).
+DOMAIN,app-site-association.networking.apple
+DOMAIN,crl3.digicert.com
+DOMAIN,crl4.digicert.com
+DOMAIN,ocsp.digicert.com

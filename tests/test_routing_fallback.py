@@ -33,8 +33,23 @@ class FallbackOrderTests(unittest.TestCase):
         self.assertEqual(("WeChat.list", "WeChat"), parsed[1])
         self.assertEqual(("Speedtest_China.list", "DIRECT"), parsed[2])
         self.assertEqual(("Apple_AI.list", "Apple_AI"), parsed[4])
-        self.assertEqual(("Claude.list", "Claude"), parsed[9])
-        self.assertEqual(("AI.list", "AI"), parsed[10])
+        self.assertEqual(("AppleMedia.list", "GlobalMedia"), parsed[5])
+        self.assertEqual(("Claude.list", "Claude"), parsed[10])
+        self.assertEqual(("AI.list", "AI"), parsed[11])
+
+    def test_apple_rules_do_not_route_by_unscoped_request_metadata(self):
+        module = load_routing_module()
+        for name in ("Apple.list", "AppleMedia.list"):
+            with self.subTest(ruleset=name):
+                rules = module.load_ruleset(module.RULE_DIR / name)
+                broad_rules = sorted(rule for rule in rules if rule.startswith((
+                    "domain-keyword,", "user-agent,", "process-name,",
+                )))
+                self.assertEqual(broad_rules, [])
+
+        global_media = module.load_ruleset(module.RULE_DIR / "GlobalMedia.list")
+        broad_apple_tv_rules = {"user-agent,appletv*", "user-agent,com.apple.tv*", "process-name,tv"}
+        self.assertEqual(broad_apple_tv_rules & global_media, set())
 
 
 if __name__ == "__main__":

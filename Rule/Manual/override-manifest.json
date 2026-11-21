@@ -6,6 +6,7 @@
     "AI.exclude.txt": {"action": "exclude", "reason": "历史共享基础设施与非 AI 归属排除", "destination": "按现有规则顺序落入后续专属规则或 fallback"},
     "AI.txt": {"action": "include", "reason": "历史 AI 专属补充", "destination": "AI.list"},
     "Claude.txt": {"action": "include", "reason": "Claude / Anthropic 专属服务与客户端下载更新", "destination": "Claude.list → Claude"},
+    "AppleMedia.txt": {"action": "include", "reason": "Apple TV 与 Apple News 经核对的服务入口", "destination": "AppleMedia.list → GlobalMedia"},
     "Apple.exclude.txt": {"action": "exclude", "reason": "历史 Apple 归属去重", "destination": "后续 Apple 专属规则或 fallback"},
     "Apple.txt": {"action": "include", "reason": "历史 Apple 专属补充", "destination": "Apple.list"},
     "Apple_AI.exclude.txt": {"action": "exclude", "reason": "历史 Apple AI 共享域名排除", "destination": "Apple_CN、Apple 或 fallback"},
@@ -50,6 +51,349 @@
     "YouTube.exclude.txt": {"action": "exclude", "reason": "历史视频服务归属去重", "destination": "后续专属规则或 fallback"}
   },
   "entries": [
+    {
+      "source_file": "AppleMedia.txt",
+      "rule": "DOMAIN-SUFFIX,tv.apple.com",
+      "reason": "已核对的 Apple TV 或 Apple News 入口优先于通用 Apple 后缀",
+      "destination": "AppleMedia.list → GlobalMedia",
+      "route_tests": ["tv.apple.com"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,tv.apple.com",
+      "reason": "同一 Apple 流媒体入口改由较早的 AppleMedia 规则匹配",
+      "destination": "AppleMedia.list → GlobalMedia",
+      "route_tests": ["tv.apple.com"]
+    },
+    {
+      "source_file": "AppleMedia.txt",
+      "rule": "DOMAIN,hls.itunes.apple.com",
+      "reason": "已核对的 Apple TV 或 Apple News 入口优先于通用 Apple 后缀",
+      "destination": "AppleMedia.list → GlobalMedia",
+      "route_tests": ["hls.itunes.apple.com"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "DOMAIN,hls.itunes.apple.com",
+      "reason": "同一 Apple 流媒体入口改由较早的 AppleMedia 规则匹配",
+      "destination": "AppleMedia.list → GlobalMedia",
+      "route_tests": ["hls.itunes.apple.com"]
+    },
+    {
+      "source_file": "AppleMedia.txt",
+      "rule": "DOMAIN,hls-amt.itunes.apple.com",
+      "reason": "已核对的 Apple TV 或 Apple News 入口优先于通用 Apple 后缀",
+      "destination": "AppleMedia.list → GlobalMedia",
+      "route_tests": ["hls-amt.itunes.apple.com"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "DOMAIN,hls-amt.itunes.apple.com",
+      "reason": "同一 Apple 流媒体入口改由较早的 AppleMedia 规则匹配",
+      "destination": "AppleMedia.list → GlobalMedia",
+      "route_tests": ["hls-amt.itunes.apple.com"]
+    },
+    {
+      "source_file": "AppleMedia.txt",
+      "rule": "DOMAIN,np-edge.itunes.apple.com",
+      "reason": "已核对的 Apple TV 或 Apple News 入口优先于通用 Apple 后缀",
+      "destination": "AppleMedia.list → GlobalMedia",
+      "route_tests": ["np-edge.itunes.apple.com"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "DOMAIN,np-edge.itunes.apple.com",
+      "reason": "同一 Apple 流媒体入口改由较早的 AppleMedia 规则匹配",
+      "destination": "AppleMedia.list → GlobalMedia",
+      "route_tests": ["np-edge.itunes.apple.com"]
+    },
+    {
+      "source_file": "AppleMedia.txt",
+      "rule": "DOMAIN,ocvideo.apple.com",
+      "reason": "已核对的 Apple TV 或 Apple News 入口优先于通用 Apple 后缀",
+      "destination": "AppleMedia.list → GlobalMedia",
+      "route_tests": ["ocvideo.apple.com"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "DOMAIN,ocvideo.apple.com",
+      "reason": "同一 Apple 流媒体入口改由较早的 AppleMedia 规则匹配",
+      "destination": "AppleMedia.list → GlobalMedia",
+      "route_tests": ["ocvideo.apple.com"]
+    },
+    {
+      "source_file": "AppleMedia.txt",
+      "rule": "DOMAIN,play-edge.itunes.apple.com",
+      "reason": "已核对的 Apple TV 或 Apple News 入口优先于通用 Apple 后缀",
+      "destination": "AppleMedia.list → GlobalMedia",
+      "route_tests": ["play-edge.itunes.apple.com"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "DOMAIN,play-edge.itunes.apple.com",
+      "reason": "同一 Apple 流媒体入口改由较早的 AppleMedia 规则匹配",
+      "destination": "AppleMedia.list → GlobalMedia",
+      "route_tests": ["play-edge.itunes.apple.com"]
+    },
+    {
+      "source_file": "AppleMedia.txt",
+      "rule": "DOMAIN,uts-api.itunes.apple.com",
+      "reason": "已核对的 Apple TV 或 Apple News 入口优先于通用 Apple 后缀",
+      "destination": "AppleMedia.list → GlobalMedia",
+      "route_tests": ["uts-api.itunes.apple.com"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "DOMAIN,uts-api.itunes.apple.com",
+      "reason": "同一 Apple 流媒体入口改由较早的 AppleMedia 规则匹配",
+      "destination": "AppleMedia.list → GlobalMedia",
+      "route_tests": ["uts-api.itunes.apple.com"]
+    },
+    {
+      "source_file": "AppleMedia.txt",
+      "rule": "DOMAIN-SUFFIX,apple.news",
+      "reason": "已核对的 Apple TV 或 Apple News 入口优先于通用 Apple 后缀",
+      "destination": "AppleMedia.list → GlobalMedia",
+      "route_tests": ["apple.news"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,apple.news",
+      "reason": "同一 Apple 流媒体入口改由较早的 AppleMedia 规则匹配",
+      "destination": "AppleMedia.list → GlobalMedia",
+      "route_tests": ["apple.news"]
+    },
+    {
+      "source_file": "AppleMedia.txt",
+      "rule": "DOMAIN,news-client.apple.com",
+      "reason": "已核对的 Apple TV 或 Apple News 入口优先于通用 Apple 后缀",
+      "destination": "AppleMedia.list → GlobalMedia",
+      "route_tests": ["news-client.apple.com"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "DOMAIN,news-client.apple.com",
+      "reason": "同一 Apple 流媒体入口改由较早的 AppleMedia 规则匹配",
+      "destination": "AppleMedia.list → GlobalMedia",
+      "route_tests": ["news-client.apple.com"]
+    },
+    {
+      "source_file": "AppleMedia.txt",
+      "rule": "DOMAIN,news-edge.apple.com",
+      "reason": "已核对的 Apple TV 或 Apple News 入口优先于通用 Apple 后缀",
+      "destination": "AppleMedia.list → GlobalMedia",
+      "route_tests": ["news-edge.apple.com"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "DOMAIN,news-edge.apple.com",
+      "reason": "同一 Apple 流媒体入口改由较早的 AppleMedia 规则匹配",
+      "destination": "AppleMedia.list → GlobalMedia",
+      "route_tests": ["news-edge.apple.com"]
+    },
+    {
+      "source_file": "AppleMedia.txt",
+      "rule": "DOMAIN,news-events.apple.com",
+      "reason": "已核对的 Apple TV 或 Apple News 入口优先于通用 Apple 后缀",
+      "destination": "AppleMedia.list → GlobalMedia",
+      "route_tests": ["news-events.apple.com"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "DOMAIN,news-events.apple.com",
+      "reason": "同一 Apple 流媒体入口改由较早的 AppleMedia 规则匹配",
+      "destination": "AppleMedia.list → GlobalMedia",
+      "route_tests": ["news-events.apple.com"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,applemusic.com",
+      "reason": "Apple Music 和受众统计采用通用 Apple 策略",
+      "destination": "Apple.list → Apple",
+      "route_tests": ["applemusic.com"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "DOMAIN,apple.comscoreresearch.com",
+      "reason": "Apple Music 和受众统计采用通用 Apple 策略",
+      "destination": "Apple.list → Apple",
+      "route_tests": ["apple.comscoreresearch.com"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "USER-AGENT,AppleTV*",
+      "reason": "客户端标识也可来自无关目的地，改以明确的媒体域名匹配",
+      "destination": "AppleMedia 或由目的地所属规则匹配",
+      "route_tests": ["tv.apple.com"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "USER-AGENT,com.apple.tv*",
+      "reason": "客户端标识也可来自无关目的地，改以明确的媒体域名匹配",
+      "destination": "AppleMedia 或由目的地所属规则匹配",
+      "route_tests": ["tv.apple.com"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "PROCESS-NAME,tv",
+      "reason": "客户端标识也可来自无关目的地，改以明确的媒体域名匹配",
+      "destination": "AppleMedia 或由目的地所属规则匹配",
+      "route_tests": ["tv.apple.com"]
+    },
+    {
+      "source_file": "Apple.txt",
+      "rule": "DOMAIN,app-site-association.networking.apple",
+      "reason": "Apple 官方文档列出的关联域或证书验证主机",
+      "destination": "Apple.list → Apple",
+      "route_tests": ["app-site-association.networking.apple"]
+    },
+    {
+      "source_file": "Apple.txt",
+      "rule": "DOMAIN,crl3.digicert.com",
+      "reason": "Apple 官方文档列出的关联域或证书验证主机",
+      "destination": "Apple.list → Apple",
+      "route_tests": ["crl3.digicert.com"]
+    },
+    {
+      "source_file": "Apple.txt",
+      "rule": "DOMAIN,crl4.digicert.com",
+      "reason": "Apple 官方文档列出的关联域或证书验证主机",
+      "destination": "Apple.list → Apple",
+      "route_tests": ["crl4.digicert.com"]
+    },
+    {
+      "source_file": "Apple.txt",
+      "rule": "DOMAIN,ocsp.digicert.com",
+      "reason": "Apple 官方文档列出的关联域或证书验证主机",
+      "destination": "Apple.list → Apple",
+      "route_tests": ["ocsp.digicert.com"]
+    },
+    {
+      "source_file": "Apple_CN.txt",
+      "rule": "DOMAIN-SUFFIX,apzones.com",
+      "reason": "Apple 官方列为中国大陆 iCloud 服务",
+      "destination": "Apple_CN.list → DIRECT",
+      "route_tests": ["p01.apzones.com"]
+    },
+    {
+      "source_file": "Apple.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,apzones.com",
+      "reason": "中国大陆 iCloud 条目已归入 Apple_CN",
+      "destination": "Apple_CN.list → DIRECT",
+      "route_tests": ["p01.apzones.com"]
+    },
+    {
+      "source_file": "Apple.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,crashlytics.com",
+      "reason": "Firebase Crashlytics 是 Google 的跨平台服务",
+      "destination": "Google.list → Google",
+      "route_tests": ["firebase-settings.crashlytics.com"]
+    },
+    {
+      "source_file": "Apple.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,digicert.com",
+      "reason": "保留 Apple 官方列出的验证主机，释放 DigiCert 通用域名",
+      "destination": "Apple.list → Apple 或依目标继续匹配",
+      "route_tests": ["ocsp.digicert.com", "www.digicert.com"]
+    },
+    {
+      "source_file": "Apple.exclude.txt",
+      "rule": "IP-CIDR,205.180.175.0/24,no-resolve",
+      "reason": "曾由 Apple 宣告的前缀当前仅见 Level 3 父段",
+      "destination": "继续 IP 分流或 FINAL",
+      "route_tests": ["205.180.175.100"]
+    },
+    {
+      "source_file": "Apple.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,reform-apple.com",
+      "reason": "130 个过期或转手 Apple/Beats 域名的回归样本",
+      "destination": "继续 IP 分流或 FINAL",
+      "route_tests": ["reform-apple.com"]
+    },
+    {
+      "source_file": "Apple.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,sneaker666.com",
+      "reason": "130 个过期或转手 Apple/Beats 域名的回归样本",
+      "destination": "继续 IP 分流或 FINAL",
+      "route_tests": ["sneaker666.com"]
+    },
+    {
+      "source_file": "Apple.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,testflight",
+      "reason": "关键词子串会覆盖其他服务的域名",
+      "destination": "Apple 自有端点走 Apple 规则，其他域名按目的地匹配",
+      "route_tests": ["testflight.example.com"]
+    },
+    {
+      "source_file": "Apple.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,smp-device",
+      "reason": "关键词子串会覆盖其他服务的域名",
+      "destination": "Apple 自有端点走 Apple 规则，其他域名按目的地匹配",
+      "route_tests": ["smp-device.example.com"]
+    },
+    {
+      "source_file": "Apple.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,apple.com.edgekey.net",
+      "reason": "关键词子串会覆盖其他服务的域名",
+      "destination": "Apple 自有端点走 Apple 规则，其他域名按目的地匹配",
+      "route_tests": ["apple.com.edgekey.net.example.com"]
+    },
+    {
+      "source_file": "Apple_AI.exclude.txt",
+      "rule": "DOMAIN,gateway.icloud.com",
+      "reason": "CloudKit、WebPrivacy 和定位服务适用通用 Apple 策略",
+      "destination": "Apple.list → Apple",
+      "route_tests": ["gateway.icloud.com"]
+    },
+    {
+      "source_file": "Apple_AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,gateway.icloud.com",
+      "reason": "CloudKit、WebPrivacy 和定位服务适用通用 Apple 策略",
+      "destination": "Apple.list → Apple",
+      "route_tests": ["gateway.icloud.com"]
+    },
+    {
+      "source_file": "Apple_AI.exclude.txt",
+      "rule": "DOMAIN,wps.apple.com",
+      "reason": "CloudKit、WebPrivacy 和定位服务适用通用 Apple 策略",
+      "destination": "Apple.list → Apple",
+      "route_tests": ["wps.apple.com"]
+    },
+    {
+      "source_file": "Apple_AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,wps.apple.com",
+      "reason": "CloudKit、WebPrivacy 和定位服务适用通用 Apple 策略",
+      "destination": "Apple.list → Apple",
+      "route_tests": ["wps.apple.com"]
+    },
+    {
+      "source_file": "Apple_AI.exclude.txt",
+      "rule": "DOMAIN,gspe1-ssl.ls.apple.com",
+      "reason": "CloudKit、WebPrivacy 和定位服务适用通用 Apple 策略",
+      "destination": "Apple.list → Apple",
+      "route_tests": ["gspe1-ssl.ls.apple.com"]
+    },
+    {
+      "source_file": "Apple_AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com",
+      "reason": "CloudKit、WebPrivacy 和定位服务适用通用 Apple 策略",
+      "destination": "Apple.list → Apple",
+      "route_tests": ["gspe1-ssl.ls.apple.com"]
+    },
+    {
+      "source_file": "Apple_AI.exclude.txt",
+      "rule": "DOMAIN,gsp64-ssl.ls.apple.com",
+      "reason": "CloudKit、WebPrivacy 和定位服务适用通用 Apple 策略",
+      "destination": "Apple.list → Apple",
+      "route_tests": ["gsp64-ssl.ls.apple.com"]
+    },
+    {
+      "source_file": "Apple_AI.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,gsp64-ssl.ls.apple.com",
+      "reason": "CloudKit、WebPrivacy 和定位服务适用通用 Apple 策略",
+      "destination": "Apple.list → Apple",
+      "route_tests": ["gsp64-ssl.ls.apple.com"]
+    },
     {
       "source_file": "AI.txt",
       "rule": "DOMAIN-SUFFIX,mistral.ai",
