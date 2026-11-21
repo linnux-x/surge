@@ -170,7 +170,7 @@ officecdn.microsoft.com,Microsoft_CDN.list,DIRECT,MS CDN直连
 download.visualstudio.microsoft.com,Microsoft_CDN.list,DIRECT,VS下载（MS CDN先行命中）
 download.windowsupdate.com,Microsoft_CDN.list,DIRECT,Windows更新（MS CDN先行命中）
 packages.microsoft.com,Download.list,Download,Microsoft 包仓库下载
-update.microsoft.com,Download.list,Download,Microsoft 更新下载
+update.microsoft.com,Microsoft.list,Microsoft,Windows Update 服务跟随 Microsoft 策略
 mcr.microsoft.com,Download.list,Download,Microsoft Container Registry
 minecraft.net,Game.list,Game,Minecraft 游戏域名
 xboxlive.com,Game.list,Game,Xbox Live 游戏域名
@@ -641,3 +641,80 @@ pgdt.gtimg.cn,China.list,DIRECT,非社交或媒体专属的大陆端点
 54.214.155.1,Global.list,Global,AWS 公共 EC2 地址
 api.spotify.com,Spotify.list,Spotify,Spotify 专属启用时优先，可回退 GlobalMedia
 audio-ak-spotify-com.akamaized.net,Spotify.list,Spotify,Spotify 专属启用时优先，可回退 GlobalMedia
+http://redirector.gvt1.com/edgedl/diagnostic,Download.list,Download,仅匹配 Google GVT 主机和 edgedl 路径边界
+https://redirector.gvt1.com/edgedl/diagnostic,Download.list,Download,仅匹配 Google GVT 主机和 edgedl 路径边界
+http://redirector.gvt1.com/edgedl-other,Google.list,Google,仅匹配 Google GVT 主机和 edgedl 路径边界
+http://example.org/path/x.gvt1.com/edgedl/diagnostic,FINAL,Global,仅匹配 Google GVT 主机和 edgedl 路径边界
+redirector.gvt1.com,Google.list,Google,仅匹配 Google GVT 主机和 edgedl 路径边界
+registry.yarnpkg.com,Download.list,Download,保留已确认的包源或安装包专属主机
+repo.packagist.org,Download.list,Download,保留已确认的包源或安装包专属主机
+dl.k8s.io,Download.list,Download,保留已确认的包源或安装包专属主机
+registry.k8s.io,Download.list,Download,保留已确认的包源或安装包专属主机
+sample-bucket.cloud-object-storage.appdomain.cloud,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.cloudflarestorage.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.r2.dev,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.s3.us-west-2.amazonaws.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.s3-accelerate.amazonaws.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.s3-global.amazonaws.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.digitaloceanspaces.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.s3.yandex.net,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.vultrobjects.com,FINAL,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.linodeobjects.com,FINAL,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.cdn77-storage.com,FINAL,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.oss-cn-hongkong.aliyuncs.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.oss-ap-northeast-1.aliyuncs.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.oss-ap-northeast-2.aliyuncs.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.oss-ap-south-1.aliyuncs.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.oss-ap-southeast-1.aliyuncs.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.oss-ap-southeast-2.aliyuncs.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.oss-ap-southeast-3.aliyuncs.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.oss-ap-southeast-5.aliyuncs.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.oss-ap-southeast-6.aliyuncs.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.oss-ap-southeast-7.aliyuncs.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.oss-eu-central-1.aliyuncs.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.oss-eu-west-1.aliyuncs.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.oss-me-east-1.aliyuncs.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.oss-us-east-1.aliyuncs.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.oss-us-west-1.aliyuncs.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.oss-accelerate-overseas.aliyuncs.com,China.list,DIRECT,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.cos.ap-hongkong.myqcloud.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.cos.ap-singapore.myqcloud.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.cos.ap-mumbai.myqcloud.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.cos.ap-jakarta.myqcloud.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.cos.ap-seoul.myqcloud.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.cos.ap-bangkok.myqcloud.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.cos.ap-tokyo.myqcloud.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.cos.na-siliconvalley.myqcloud.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.cos.na-ashburn.myqcloud.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.cos.na-toronto.myqcloud.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.cos.sa-saopaulo.myqcloud.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.cos.eu-frankfurt.myqcloud.com,Global.list,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.ks3-cn-hk-1.ksyuncs.com,China.list,DIRECT,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.ks3-rus.ksyuncs.com,China.list,DIRECT,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.ks3-sgp.ksyuncs.com,China.list,DIRECT,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.s3.us-west-002.backblazeb2.com,FINAL,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.public.blob.vercel-storage.com,FINAL,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.blob.core.windows.net,Microsoft.list,Microsoft,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.file.core.windows.net,Microsoft.list,Microsoft,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.t3.storageapi.dev,FINAL,Global,云存储平台服务多个租户，按提供商或通用策略分流
+sample-bucket.s3-website.cloud.ru,FINAL,Global,云存储平台服务多个租户，按提供商或通用策略分流
+classic.yarnpkg.com,Global.list,Global,网站、文档或归档管理端点沿通用策略
+packagist.org,Global.list,Global,网站、文档或归档管理端点沿通用策略
+mvnrepository.com,Global.list,Global,网站、文档或归档管理端点沿通用策略
+docs.k8s.io,Global.list,Global,网站、文档或归档管理端点沿通用策略
+web.archive.org,Global.list,Global,网站、文档或归档管理端点沿通用策略
+ftp-master.debian.org,Global.list,Global,网站、文档或归档管理端点沿通用策略
+fe2cr.update.microsoft.com,Microsoft.list,Microsoft,系统更新服务归 Microsoft，更新文件分发沿用 Microsoft_CDN
+tas02.sls.update.microsoft.com,Microsoft.list,Microsoft,系统更新服务归 Microsoft，更新文件分发沿用 Microsoft_CDN
+fe3cr.delivery.mp.microsoft.com,Microsoft.list,Microsoft,系统更新服务归 Microsoft，更新文件分发沿用 Microsoft_CDN
+officecdn-microsoft-com.akamaized.net,Microsoft_CDN.list,DIRECT,微软软件分发已由更早的 Microsoft_CDN 直连
+ctldl.windowsupdate.com,Microsoft_CDN.list,DIRECT,微软软件分发已由更早的 Microsoft_CDN 直连
+http://mirror.nforce.com:8080/speedtest/upload.php,Speedtest.list,Speedtest,NFOrce 官方测速路径与普通软件镜像分流
+http://mirror.nforce.com:8080/speedtest-other,Download.list,Download,NFOrce 官方测速路径与普通软件镜像分流
+mirror.nforce.com.prod.hosts.ooklaserver.net,Speedtest.list,Speedtest,NFOrce 官方测速路径与普通软件镜像分流
+server-3386.prod.hosts.ooklaserver.net,Speedtest.list,Speedtest,NFOrce 官方测速路径与普通软件镜像分流
+mirror.nforce.com,Download.list,Download,NFOrce 软件镜像回到 Download
+https://mirror.nforce.com/pub/,Download.list,Download,NFOrce 软件镜像回到 Download
+deb.debian.org,Download.list,Download,Debian 公共包镜像继续走 Download
+persistent.oaistatic.com,Download.list,Download,OpenAI 客户端安装包继续走 Download
+stats.s3.us.archive.org,Global.list,Global,Internet Archive 对象 API 支持上传和读取

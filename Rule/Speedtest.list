@@ -1,13 +1,16 @@
 # NAME: Speedtest
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 05:00:22 +0800
+# UPDATED: 2026-11-21 13:00:35 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 1725
 
 # ======= Manual Rules ========
 DOMAIN-SUFFIX,fast.com
 DOMAIN-SUFFIX,nperf.com
+
+# Ookla advertises the legacy HTTP upload URL on this port. Its TLS aliases already match ooklaserver.net.
+URL-REGEX,^http://mirror\.nforce\.com:8080/speedtest(?:[/?#]|$)
 
 # ======= SukkaW Speedtest ========
 DOMAIN-SUFFIX,speedtest.net
@@ -285,7 +288,6 @@ DOMAIN,mia-speedtest.northstate.net
 DOMAIN,miami-speedtest.reliablesite.net
 DOMAIN,miaspeedtest.blackburn-pr.com
 DOMAIN,mib-rst-sp1.mibroadband.com
-DOMAIN,mirror.nforce.com
 DOMAIN,mns.i-systems.com
 DOMAIN,montsouris3.d2m.c2d.liveservices.fr
 DOMAIN,mrutooklaspeed1.jioconnect.com

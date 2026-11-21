@@ -1,217 +1,139 @@
 # Surge Rule Diff Report
-Generated: 2026-11-21T12:45:41.611460
+Generated: 2026-11-21T13:03:34.157088
 
 ## Summary
 
 | Metric | Count |
 |--------|-------|
-| Files changed | 11 |
-| Rules added | 32 |
-| Rules removed | 65 |
-| Source attribution changed | 3 |
+| Files changed | 3 |
+| Rules added | 33 |
+| Rules removed | 61 |
+| Source attribution changed | 0 |
 
 ## Per-File Changes
 
 | File | Prev | Curr | Added | Removed | Source Δ |
 |------|------|------|-------|---------|----------|
-| ChinaMedia.list | 377 | 375 | +0 | -2 | ~0 |
-| Global.list | 24604 | 24611 | +7 | -0 | ~0 |
-| GlobalMedia.list | 2271 | 2253 | +4 | -22 | ~0 |
-| HKMedia.list | 34 | 29 | +3 | -8 | ~0 |
-| InternationalMedia.list | 0 | 14 | +14 | -0 | ~0 |
-| JPMedia.list | 27 | 26 | +2 | -3 | ~0 |
-| Netflix.list | 1123 | 1115 | +0 | -8 | ~0 |
-| SocialMedia.list | 675 | 670 | +1 | -6 | ~3 |
-| Spotify.list | 32 | 32 | +1 | -1 | ~0 |
-| TWMedia.list | 26 | 22 | +0 | -4 | ~0 |
-| USMedia.list | 51 | 40 | +0 | -11 | ~0 |
+| Download.list | 1663 | 1611 | +8 | -60 | ~0 |
+| Global.list | 24611 | 24635 | +24 | -0 | ~0 |
+| Speedtest.list | 1725 | 1725 | +1 | -1 | ~0 |
 
-## ChinaMedia.list
+## Download.list
 
-**Removed: 2** (showing first 2)
+**Added: 8** (showing first 8)
 ```
-  - [blackmatrix7 ChinaMedia] 4bfd990ec7e8  DOMAIN-SUFFIX,pgdt.gtimg.cn
-  - [blackmatrix7 ChinaMedia] 799312f14494  DOMAIN,rdelivery.qq.com
+  + [SukkaW Download] 0b58b00de4c5  DOMAIN,cursor.blob.core.windows.net
+  + [Manual Rules] 19e47f4f08d2  DOMAIN,openaicomproductionae4b.blob.core.windows.net
+  + [Manual Rules] 4354295a201e  DOMAIN,repo.packagist.org
+  + [SukkaW Download] 8d203a523ba0  DOMAIN,comaps-cdn.s3-website.cloud.ru
+  + [Manual Rules] a161b1485d96  DOMAIN,registry.k8s.io
+  + [Manual Rules] aaaad232dd33  URL-REGEX,^https?://(?i:(?:[a-z0-9-]+\.)+gvt[0-9]\.com)(?::(?:80|443))?/edgedl(?:[/?#]|$)
+  + [Manual Rules] bd47d108964a  DOMAIN,dl.k8s.io
+  + [Manual Rules] d9da39fc97c0  DOMAIN,registry.yarnpkg.com
+```
+
+**Removed: 60** (showing first 60)
+```
+  - [SukkaW Download] 027d1891be4a  DOMAIN-SUFFIX,archive.org
+  - [SukkaW Download] 041f7f32160d  DOMAIN-SUFFIX,delivery.mp.microsoft.com
+  - [SukkaW Download] 0b139f2b7c99  DOMAIN,download.visualstudio.microsoft.com
+  - [SukkaW Download] 10ca1b18b457  DOMAIN-SUFFIX,oss-me-east-1.aliyuncs.com
+  - [SukkaW Download] 1c06aca13d54  DOMAIN-SUFFIX,packagist.org
+  - [SukkaW Download] 26e13be287f0  DOMAIN-SUFFIX,cloud-object-storage.appdomain.cloud
+  - [SukkaW Download] 27f6608344c9  DOMAIN-SUFFIX,update.microsoft.com
+  - [SukkaW Download] 2cb60a187bcf  DOMAIN-SUFFIX,oss-cn-hongkong.aliyuncs.com
+  - [SukkaW Download] 31d72ebbc5a8  DOMAIN-SUFFIX,mvnrepository.com
+  - [SukkaW Download] 3719e9e63413  DOMAIN-SUFFIX,yarnpkg.com
+  - [SukkaW Download] 373ff12a8c11  DOMAIN-SUFFIX,s3.us-west-2.amazonaws.com
+  - [SukkaW Download] 376124cdf626  DOMAIN-SUFFIX,s3.us-west-002.backblazeb2.com
+  - [SukkaW Download] 3a2911a0bc5e  DOMAIN-SUFFIX,oss-ap-southeast-1.aliyuncs.com
+  - [SukkaW Download] 3c6f50070ba9  DOMAIN-SUFFIX,oss-eu-west-1.aliyuncs.com
+  - [SukkaW Download] 3fa1754954af  DOMAIN-SUFFIX,oss-accelerate-overseas.aliyuncs.com
+  - [SukkaW Download] 411f4937dd4a  DOMAIN-SUFFIX,digitaloceanspaces.com
+  - [SukkaW Download] 4e6d80706095  DOMAIN-SUFFIX,oss-ap-southeast-7.aliyuncs.com
+  - [SukkaW Download] 616d7bde6a2b  DOMAIN-SUFFIX,cdn77-storage.com
+  - [SukkaW Download] 621af019fe98  DOMAIN-SUFFIX,ks3-cn-hk-1.ksyuncs.com
+  - [SukkaW Download] 64411357da80  DOMAIN-SUFFIX,cos.ap-singapore.myqcloud.com
+  - [SukkaW Download] 6515cc4ef57a  DOMAIN-SUFFIX,linodeobjects.com
+  - [SukkaW Download] 6718182ccbcd  DOMAIN-SUFFIX,oss-ap-southeast-5.aliyuncs.com
+  - [SukkaW Download] 6a48ccc330a1  DOMAIN-SUFFIX,oss-ap-south-1.aliyuncs.com
+  - [SukkaW Download] 6ce39dd537bd  DOMAIN-SUFFIX,file.core.windows.net
+  - [SukkaW Download] 6ea2d13fa2f0  DOMAIN-SUFFIX,oss-ap-southeast-3.aliyuncs.com
+  - [SukkaW Download] 6ee962633cbf  DOMAIN-SUFFIX,cos.ap-hongkong.myqcloud.com
+  - [SukkaW Download] 6fd5d788737a  DOMAIN-SUFFIX,public.blob.vercel-storage.com
+  - [SukkaW Download] 72132f50aca9  DOMAIN-SUFFIX,cos.na-ashburn.myqcloud.com
+  - [SukkaW Download] 7a3affbfca8a  DOMAIN-SUFFIX,s3-accelerate.amazonaws.com
+  - [SukkaW Download] 7adb29ab8867  DOMAIN-SUFFIX,cos.ap-jakarta.myqcloud.com
+  - [SukkaW Download] 7b9d15e9ff24  DOMAIN-SUFFIX,cos.na-siliconvalley.myqcloud.com
+  - [SukkaW Download] 7c5f6fd9507a  DOMAIN-SUFFIX,ks3-rus.ksyuncs.com
+  - [SukkaW Download] 817045286df0  DOMAIN-SUFFIX,ftp-master.debian.org
+  - [SukkaW Download] 829608e54e2b  DOMAIN-SUFFIX,ks3-sgp.ksyuncs.com
+  - [SukkaW Download] 82af49c6764b  DOMAIN-SUFFIX,oss-ap-southeast-2.aliyuncs.com
+  - [SukkaW Download] 8ca6e89921fa  DOMAIN-SUFFIX,oss-us-west-1.aliyuncs.com
+  - [SukkaW Download] 8ecb8ab62d13  DOMAIN-SUFFIX,oss-eu-central-1.aliyuncs.com
+  - [SukkaW Download] 8f9ee973981d  DOMAIN-SUFFIX,vultrobjects.com
+  - [SukkaW Download] 92979802935e  DOMAIN-SUFFIX,cos.eu-frankfurt.myqcloud.com
+  - [SukkaW Download] 9330cb7dcd51  DOMAIN-SUFFIX,oss-us-east-1.aliyuncs.com
+  - [SukkaW Download] 93602f2474f8  DOMAIN-SUFFIX,r2.dev
+  - [SukkaW Download] 9712d3dcbebb  DOMAIN-SUFFIX,s3-website.cloud.ru
+  - [SukkaW Download] a42b6d19981b  DOMAIN,ctldl.windowsupdate.com
+  - [SukkaW Download] a4a7b4527a18  DOMAIN-SUFFIX,oss-ap-northeast-2.aliyuncs.com
+  - [SukkaW Download] a70ba85c4ff3  DOMAIN-SUFFIX,cos.sa-saopaulo.myqcloud.com
+  - [SukkaW Download] af2d32761982  DOMAIN-SUFFIX,t3.storageapi.dev
+  - [SukkaW Download] b062e6b5dd90  DOMAIN-SUFFIX,blob.core.windows.net
+  - [SukkaW Download] b14484db25d5  DOMAIN-SUFFIX,s3.yandex.net
+  - [Manual Rules] b204346e4e3a  URL-REGEX,^http://(.+)\.gvt\d\.com/edgedl
+  - [SukkaW Download] b8e01898952c  DOMAIN-SUFFIX,cos.ap-tokyo.myqcloud.com
+  - [SukkaW Download] bd656192f417  DOMAIN-SUFFIX,oss-ap-southeast-6.aliyuncs.com
+  - [SukkaW Download] bfd3dd0df044  DOMAIN-SUFFIX,oss-ap-northeast-1.aliyuncs.com
+  - [SukkaW Download] d0fa282992af  DOMAIN-SUFFIX,cloudflarestorage.com
+  - [SukkaW Download] d6297d60f87f  DOMAIN-SUFFIX,k8s.io
+  - [SukkaW Download] da7444cc0bdb  DOMAIN-SUFFIX,cos.na-toronto.myqcloud.com
+  - [SukkaW Download] db40e07ba0c3  DOMAIN,officecdn-microsoft-com.akamaized.net
+  - [SukkaW Download] ec7bdda70712  DOMAIN-SUFFIX,cos.ap-bangkok.myqcloud.com
+  - [SukkaW Download] f95af05fdbf9  DOMAIN-SUFFIX,cos.ap-mumbai.myqcloud.com
+  - [SukkaW Download] fd533d082636  DOMAIN-SUFFIX,cos.ap-seoul.myqcloud.com
+  - [SukkaW Download] ff258dfa8b1b  DOMAIN-SUFFIX,s3-global.amazonaws.com
 ```
 
 ## Global.list
 
-**Added: 7** (showing first 7)
+**Added: 24** (showing first 24)
 ```
-  + [blackmatrix7 Global] 567541f24729  DOMAIN-SUFFIX,fanfox.net
-  + [blackmatrix7 Global] 6cd2972f4358  DOMAIN-SUFFIX,amebaownd.com
-  + [blackmatrix7 Global] 7f4684f6d7a0  DOMAIN-SUFFIX,ycombinator.com
-  + [blackmatrix7 Global] adaf147ff85d  DOMAIN-SUFFIX,amebaowndme.com
-  + [Manual Rules] c23217fe3601  IP-CIDR,54.214.128.0/17,no-resolve
-  + [blackmatrix7 Global] d2e351b20519  DOMAIN-SUFFIX,dmm.com
-  + [blackmatrix7 Global] dbf22636fb7d  DOMAIN-SUFFIX,mangafox.me
-```
-
-## GlobalMedia.list
-
-**Added: 4** (showing first 4)
-```
-  + [Manual Rules] 1400542b735e  DOMAIN-SUFFIX,spotify.com
-  + [Manual Rules] 6a2de9afdf7f  DOMAIN-SUFFIX,spotifycdn.com
-  + [Manual Rules] aff29961427f  DOMAIN-WILDCARD,*-spotify-com.akamaized.net
-  + [Manual Rules] db4c9a0b8f7f  DOMAIN-SUFFIX,spotifycdn.net
-```
-
-**Removed: 22** (showing first 22)
-```
-  - [blackmatrix7 GlobalMedia] 0fd799971846  IP-CIDR,23.78.0.0/16,no-resolve
-  - [blackmatrix7 GlobalMedia] 12a9abfd863e  USER-AGENT,Anime*
-  - [blackmatrix7 GlobalMedia] 1600715fc4a4  USER-AGENT,TVer-Release*
-  - [blackmatrix7 GlobalMedia] 19b8924dcc66  IP-CIDR,54.0.0.0/16,no-resolve
-  - [blackmatrix7 GlobalMedia] 2fc98960cf0f  USER-AGENT,LINE*
-  - [blackmatrix7 GlobalMedia] 37b160037c57  IP-CIDR,218.102.32.0/19,no-resolve
-  - [blackmatrix7 GlobalMedia] 49a06a91a555  DOMAIN-KEYWORD,rthklive
-  - [blackmatrix7 GlobalMedia] 4bb4b0aed913  IP-CIDR,203.116.0.0/16,no-resolve
-  - [SukkaW Stream] 567541f24729  DOMAIN-SUFFIX,fanfox.net
-  - [blackmatrix7 GlobalMedia] 5781b9282bc9  IP-CIDR,203.198.80.0/21,no-resolve
-  - [SukkaW Stream] 59a5d84869ed  DOMAIN-KEYWORD,-spotify-com
-  - [blackmatrix7 GlobalMedia] 6cd2972f4358  DOMAIN-SUFFIX,amebaownd.com
-  - [blackmatrix7 GlobalMedia] 8427837d9df1  USER-AGENT,Max*
-  - [blackmatrix7 GlobalMedia] 90c518d72d69  DOMAIN-KEYWORD,nowtv100
-  - [SukkaW Stream] 9d988c5bc9da  PROCESS-NAME,com.bstar.intl
-  - [blackmatrix7 GlobalMedia] a9dd62bf4de6  IP-CIDR,203.198.0.0/20,no-resolve
-  - [blackmatrix7 GlobalMedia] adaf147ff85d  DOMAIN-SUFFIX,amebaowndme.com
-  - [blackmatrix7 GlobalMedia] b528f18fa1c2  DOMAIN-SUFFIX,viblast.com
-  - [blackmatrix7 GlobalMedia] c23217fe3601  IP-CIDR,54.214.128.0/17,no-resolve
-  - [blackmatrix7 GlobalMedia] d2e351b20519  DOMAIN-SUFFIX,dmm.com
-  - [SukkaW Stream] dbf22636fb7d  DOMAIN-SUFFIX,mangafox.me
-  - [blackmatrix7 GlobalMedia] e101cd433b8a  IP-CIDR,219.76.0.0/17,no-resolve
+  + [blackmatrix7 Global] 027d1891be4a  DOMAIN-SUFFIX,archive.org
+  + [blackmatrix7 Global] 10ca1b18b457  DOMAIN-SUFFIX,oss-me-east-1.aliyuncs.com
+  + [blackmatrix7 Global] 1c06aca13d54  DOMAIN-SUFFIX,packagist.org
+  + [blackmatrix7 Global] 2cb60a187bcf  DOMAIN-SUFFIX,oss-cn-hongkong.aliyuncs.com
+  + [blackmatrix7 Global] 31d72ebbc5a8  DOMAIN-SUFFIX,mvnrepository.com
+  + [blackmatrix7 Global] 3719e9e63413  DOMAIN-SUFFIX,yarnpkg.com
+  + [blackmatrix7 Global] 3a2911a0bc5e  DOMAIN-SUFFIX,oss-ap-southeast-1.aliyuncs.com
+  + [blackmatrix7 Global] 3c6f50070ba9  DOMAIN-SUFFIX,oss-eu-west-1.aliyuncs.com
+  + [blackmatrix7 Global] 411f4937dd4a  DOMAIN-SUFFIX,digitaloceanspaces.com
+  + [blackmatrix7 Global] 4e6d80706095  DOMAIN-SUFFIX,oss-ap-southeast-7.aliyuncs.com
+  + [blackmatrix7 Global] 6718182ccbcd  DOMAIN-SUFFIX,oss-ap-southeast-5.aliyuncs.com
+  + [blackmatrix7 Global] 6a48ccc330a1  DOMAIN-SUFFIX,oss-ap-south-1.aliyuncs.com
+  + [blackmatrix7 Global] 6ea2d13fa2f0  DOMAIN-SUFFIX,oss-ap-southeast-3.aliyuncs.com
+  + [blackmatrix7 Global] 82af49c6764b  DOMAIN-SUFFIX,oss-ap-southeast-2.aliyuncs.com
+  + [blackmatrix7 Global] 8ca6e89921fa  DOMAIN-SUFFIX,oss-us-west-1.aliyuncs.com
+  + [blackmatrix7 Global] 8ecb8ab62d13  DOMAIN-SUFFIX,oss-eu-central-1.aliyuncs.com
+  + [blackmatrix7 Global] 9330cb7dcd51  DOMAIN-SUFFIX,oss-us-east-1.aliyuncs.com
+  + [blackmatrix7 Global] 93602f2474f8  DOMAIN-SUFFIX,r2.dev
+  + [blackmatrix7 Global] a4a7b4527a18  DOMAIN-SUFFIX,oss-ap-northeast-2.aliyuncs.com
+  + [blackmatrix7 Global] b062e6b5dd90  DOMAIN-SUFFIX,blob.core.windows.net
+  + [blackmatrix7 Global] bd656192f417  DOMAIN-SUFFIX,oss-ap-southeast-6.aliyuncs.com
+  + [blackmatrix7 Global] bfd3dd0df044  DOMAIN-SUFFIX,oss-ap-northeast-1.aliyuncs.com
+  + [blackmatrix7 Global] d0fa282992af  DOMAIN-SUFFIX,cloudflarestorage.com
+  + [blackmatrix7 Global] d6297d60f87f  DOMAIN-SUFFIX,k8s.io
 ```
 
-## HKMedia.list
-
-**Added: 3** (showing first 3)
-```
-  + [Manual Rules] 1e802272cc27  DOMAIN-SUFFIX,rthk.org.hk
-  + [Manual Rules] e8d4bb224eb5  DOMAIN,rthklive2-lh.akamaihd.net
-  + [Manual Rules] eb159a702d51  DOMAIN-SUFFIX,rthk.hk
-```
-
-**Removed: 8** (showing first 8)
-```
-  - [SukkaW Stream HK] 49a06a91a555  DOMAIN-KEYWORD,rthklive
-  - [SukkaW Stream HK] 540dc1deb7d1  DOMAIN,upos-bstar-mirrorakam.akamaized.net
-  - [SukkaW Stream HK] 7e8af3829204  DOMAIN,apm-misaka.biliapi.net
-  - [SukkaW Stream HK] 907992957486  DOMAIN,upos-bstar1-mirrorakam.akamaized.net
-  - [SukkaW Stream HK] 90c518d72d69  DOMAIN-KEYWORD,nowtv100
-  - [SukkaW Stream HK] 9d988c5bc9da  PROCESS-NAME,com.bstar.intl
-  - [SukkaW Stream HK] a418f196ad15  DOMAIN-SUFFIX,biliintl.com
-  - [SukkaW Stream HK] df6d0b8ae84d  DOMAIN-SUFFIX,bilibili.tv
-```
-
-## InternationalMedia.list
-
-**Added: 14** (showing first 14)
-```
-  + [Manual Rules] 030d91226d77  DOMAIN-SUFFIX,inter.iqiyi.com
-  + [Manual Rules] 0fc322b3a516  DOMAIN-SUFFIX,bstarstatic.com
-  + [Manual Rules] 1f80510bc598  DOMAIN-SUFFIX,iq.com
-  + [Manual Rules] 328455886527  DOMAIN-SUFFIX,intl-rcd.iqiyi.com
-  + [Manual Rules] 4726be509a57  DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
-  + [Manual Rules] 540dc1deb7d1  DOMAIN,upos-bstar-mirrorakam.akamaized.net
-  + [Manual Rules] 7e8af3829204  DOMAIN,apm-misaka.biliapi.net
-  + [Manual Rules] 907992957486  DOMAIN,upos-bstar1-mirrorakam.akamaized.net
-  + [Manual Rules] 9683b9d72951  DOMAIN,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
-  + [Manual Rules] a418f196ad15  DOMAIN-SUFFIX,biliintl.com
-  + [Manual Rules] a7f15d5d644d  DOMAIN,p-bstarstatic.akamaized.net
-  + [Manual Rules] bb3f123d8b43  DOMAIN-SUFFIX,intl-subscription.iqiyi.com
-  + [Manual Rules] d70993d55aa3  DOMAIN-SUFFIX,intl.iqiyi.com
-  + [Manual Rules] df6d0b8ae84d  DOMAIN-SUFFIX,bilibili.tv
-```
-
-## JPMedia.list
-
-**Added: 2** (showing first 2)
-```
-  + [Manual Rules] 08f0d2bb4437  DOMAIN-SUFFIX,tv.dmm.com
-  + [Manual Rules] a8c72ac6889b  DOMAIN-SUFFIX,video.dmm.com
-```
-
-**Removed: 3** (showing first 3)
-```
-  - [SukkaW Stream JP] 6cd2972f4358  DOMAIN-SUFFIX,amebaownd.com
-  - [SukkaW Stream JP] adaf147ff85d  DOMAIN-SUFFIX,amebaowndme.com
-  - [SukkaW Stream JP] d2e351b20519  DOMAIN-SUFFIX,dmm.com
-```
-
-## Netflix.list
-
-**Removed: 8** (showing first 8)
-```
-  - [blackmatrix7 Netflix] 0fd799971846  IP-CIDR,23.78.0.0/16,no-resolve
-  - [blackmatrix7 Netflix] 19b8924dcc66  IP-CIDR,54.0.0.0/16,no-resolve
-  - [blackmatrix7 Netflix] 37b160037c57  IP-CIDR,218.102.32.0/19,no-resolve
-  - [blackmatrix7 Netflix] 4bb4b0aed913  IP-CIDR,203.116.0.0/16,no-resolve
-  - [blackmatrix7 Netflix] 5781b9282bc9  IP-CIDR,203.198.80.0/21,no-resolve
-  - [blackmatrix7 Netflix] a9dd62bf4de6  IP-CIDR,203.198.0.0/20,no-resolve
-  - [blackmatrix7 Netflix] c23217fe3601  IP-CIDR,54.214.128.0/17,no-resolve
-  - [blackmatrix7 Netflix] e101cd433b8a  IP-CIDR,219.76.0.0/17,no-resolve
-```
-
-## SocialMedia.list
+## Speedtest.list
 
 **Added: 1** (showing first 1)
 ```
-  + [Manual Rules] d998b921cbe4  DOMAIN,news.ycombinator.com
-```
-
-**Removed: 6** (showing first 6)
-```
-  - [blackmatrix7 Facebook] 58cd66ecb7af  DOMAIN-KEYWORD,facebook
-  - [Manual Rules] 7f4684f6d7a0  DOMAIN-SUFFIX,ycombinator.com
-  - [blackmatrix7 Instagram] 86491268f2c4  DOMAIN-KEYWORD,instagram
-  - [blackmatrix7 Facebook] 8cf22cab2f0c  DOMAIN-KEYWORD,fbcdn
-  - [Manual Rules] ac8f076a6d57  DOMAIN-KEYWORD,whatsapp
-  - [blackmatrix7 Twitter] c59028273ffc  DOMAIN-KEYWORD,twitter
-```
-
-**Source changed: 3**
-```
-  ~ 982bf62398a2: [blackmatrix7 Facebook → Manual Rules]
-  ~ ca241ae3a9b1: [blackmatrix7 Facebook → Manual Rules]
-  ~ b6bc1bcd70e0: [blackmatrix7 Facebook → Manual Rules]
-```
-
-## Spotify.list
-
-**Added: 1** (showing first 1)
-```
-  + [Manual Rules] aff29961427f  DOMAIN-WILDCARD,*-spotify-com.akamaized.net
+  + [Manual Rules] 84a1bcca8116  URL-REGEX,^http://mirror\.nforce\.com:8080/speedtest(?:[/?#]|$)
 ```
 
 **Removed: 1** (showing first 1)
 ```
-  - [blackmatrix7 Spotify] 67f7c913a65e  DOMAIN-KEYWORD,spotify
-```
-
-## TWMedia.list
-
-**Removed: 4** (showing first 4)
-```
-  - [SukkaW Stream TW] 12a9abfd863e  USER-AGENT,Anime*
-  - [SukkaW Stream TW] 567541f24729  DOMAIN-SUFFIX,fanfox.net
-  - [SukkaW Stream TW] b528f18fa1c2  DOMAIN-SUFFIX,viblast.com
-  - [SukkaW Stream TW] dbf22636fb7d  DOMAIN-SUFFIX,mangafox.me
-```
-
-## USMedia.list
-
-**Removed: 11** (showing first 11)
-```
-  - [SukkaW Stream US] 0d37eb70a201  USER-AGENT,discovery+*
-  - [SukkaW Stream US] 1600715fc4a4  USER-AGENT,TVer-Release*
-  - [SukkaW Stream US] 167bddb0ac75  DOMAIN-SUFFIX,discoveryplus.com
-  - [SukkaW Stream US] 2d3123fea9e4  DOMAIN-SUFFIX,disco-api.com
-  - [SukkaW Stream US] 5c6356321742  DOMAIN-SUFFIX,hjholdings.jp
-  - [SukkaW Stream US] 621d52db8fd7  DOMAIN-SUFFIX,happyon.jp
-  - [SukkaW Stream US] 763cf4f2d14f  DOMAIN-SUFFIX,hulu.jp
-  - [SukkaW Stream US] 7c8534b1ff6c  DOMAIN-SUFFIX,discoveryplus.in
-  - [SukkaW Stream US] 886bbee134b6  USER-AGENT,DPlus*
-  - [SukkaW Stream US] c407b044de11  USER-AGENT,Hulu*
-  - [SukkaW Stream US] f8c50ecbd862  DOMAIN-SUFFIX,discoveryplus.co.uk
+  - [SukkaW Speedtest Servers International] 54bf5777c659  DOMAIN,mirror.nforce.com
 ```

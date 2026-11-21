@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-21T12:45:41.611460",
-  "total_added": 32,
-  "total_removed": 65,
-  "total_source_changed": 3,
+  "generated_at": "2026-11-21T13:03:34.157088",
+  "total_added": 33,
+  "total_removed": 61,
+  "total_source_changed": 0,
   "diffs": [
     {
       "file": "AI.list",
@@ -94,24 +94,13 @@
     },
     {
       "file": "ChinaMedia.list",
-      "prev_total": 377,
+      "prev_total": 375,
       "curr_total": 375,
       "added_count": 0,
-      "removed_count": 2,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "4bfd990ec7e8",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "DOMAIN-SUFFIX,pgdt.gtimg.cn"
-        },
-        {
-          "id": "799312f14494",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "DOMAIN,rdelivery.qq.com"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -150,12 +139,354 @@
     {
       "file": "Download.list",
       "prev_total": 1663,
-      "curr_total": 1663,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 1611,
+      "added_count": 8,
+      "removed_count": 60,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "0b58b00de4c5",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,cursor.blob.core.windows.net"
+        },
+        {
+          "id": "19e47f4f08d2",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,openaicomproductionae4b.blob.core.windows.net"
+        },
+        {
+          "id": "4354295a201e",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,repo.packagist.org"
+        },
+        {
+          "id": "8d203a523ba0",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,comaps-cdn.s3-website.cloud.ru"
+        },
+        {
+          "id": "a161b1485d96",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,registry.k8s.io"
+        },
+        {
+          "id": "aaaad232dd33",
+          "source": "Manual Rules",
+          "rule": "URL-REGEX,^https?://(?i:(?:[a-z0-9-]+\\.)+gvt[0-9]\\.com)(?::(?:80|443))?/edgedl(?:[/?#]|$)"
+        },
+        {
+          "id": "bd47d108964a",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,dl.k8s.io"
+        },
+        {
+          "id": "d9da39fc97c0",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,registry.yarnpkg.com"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "027d1891be4a",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,archive.org"
+        },
+        {
+          "id": "041f7f32160d",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,delivery.mp.microsoft.com"
+        },
+        {
+          "id": "0b139f2b7c99",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,download.visualstudio.microsoft.com"
+        },
+        {
+          "id": "10ca1b18b457",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,oss-me-east-1.aliyuncs.com"
+        },
+        {
+          "id": "1c06aca13d54",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,packagist.org"
+        },
+        {
+          "id": "26e13be287f0",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,cloud-object-storage.appdomain.cloud"
+        },
+        {
+          "id": "27f6608344c9",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,update.microsoft.com"
+        },
+        {
+          "id": "2cb60a187bcf",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,oss-cn-hongkong.aliyuncs.com"
+        },
+        {
+          "id": "31d72ebbc5a8",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,mvnrepository.com"
+        },
+        {
+          "id": "3719e9e63413",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,yarnpkg.com"
+        },
+        {
+          "id": "373ff12a8c11",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,s3.us-west-2.amazonaws.com"
+        },
+        {
+          "id": "376124cdf626",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,s3.us-west-002.backblazeb2.com"
+        },
+        {
+          "id": "3a2911a0bc5e",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,oss-ap-southeast-1.aliyuncs.com"
+        },
+        {
+          "id": "3c6f50070ba9",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,oss-eu-west-1.aliyuncs.com"
+        },
+        {
+          "id": "3fa1754954af",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,oss-accelerate-overseas.aliyuncs.com"
+        },
+        {
+          "id": "411f4937dd4a",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,digitaloceanspaces.com"
+        },
+        {
+          "id": "4e6d80706095",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,oss-ap-southeast-7.aliyuncs.com"
+        },
+        {
+          "id": "616d7bde6a2b",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,cdn77-storage.com"
+        },
+        {
+          "id": "621af019fe98",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,ks3-cn-hk-1.ksyuncs.com"
+        },
+        {
+          "id": "64411357da80",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,cos.ap-singapore.myqcloud.com"
+        },
+        {
+          "id": "6515cc4ef57a",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,linodeobjects.com"
+        },
+        {
+          "id": "6718182ccbcd",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,oss-ap-southeast-5.aliyuncs.com"
+        },
+        {
+          "id": "6a48ccc330a1",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,oss-ap-south-1.aliyuncs.com"
+        },
+        {
+          "id": "6ce39dd537bd",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,file.core.windows.net"
+        },
+        {
+          "id": "6ea2d13fa2f0",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,oss-ap-southeast-3.aliyuncs.com"
+        },
+        {
+          "id": "6ee962633cbf",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,cos.ap-hongkong.myqcloud.com"
+        },
+        {
+          "id": "6fd5d788737a",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,public.blob.vercel-storage.com"
+        },
+        {
+          "id": "72132f50aca9",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,cos.na-ashburn.myqcloud.com"
+        },
+        {
+          "id": "7a3affbfca8a",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,s3-accelerate.amazonaws.com"
+        },
+        {
+          "id": "7adb29ab8867",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,cos.ap-jakarta.myqcloud.com"
+        },
+        {
+          "id": "7b9d15e9ff24",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,cos.na-siliconvalley.myqcloud.com"
+        },
+        {
+          "id": "7c5f6fd9507a",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,ks3-rus.ksyuncs.com"
+        },
+        {
+          "id": "817045286df0",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,ftp-master.debian.org"
+        },
+        {
+          "id": "829608e54e2b",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,ks3-sgp.ksyuncs.com"
+        },
+        {
+          "id": "82af49c6764b",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,oss-ap-southeast-2.aliyuncs.com"
+        },
+        {
+          "id": "8ca6e89921fa",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,oss-us-west-1.aliyuncs.com"
+        },
+        {
+          "id": "8ecb8ab62d13",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,oss-eu-central-1.aliyuncs.com"
+        },
+        {
+          "id": "8f9ee973981d",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,vultrobjects.com"
+        },
+        {
+          "id": "92979802935e",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,cos.eu-frankfurt.myqcloud.com"
+        },
+        {
+          "id": "9330cb7dcd51",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,oss-us-east-1.aliyuncs.com"
+        },
+        {
+          "id": "93602f2474f8",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,r2.dev"
+        },
+        {
+          "id": "9712d3dcbebb",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,s3-website.cloud.ru"
+        },
+        {
+          "id": "a42b6d19981b",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,ctldl.windowsupdate.com"
+        },
+        {
+          "id": "a4a7b4527a18",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,oss-ap-northeast-2.aliyuncs.com"
+        },
+        {
+          "id": "a70ba85c4ff3",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,cos.sa-saopaulo.myqcloud.com"
+        },
+        {
+          "id": "af2d32761982",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,t3.storageapi.dev"
+        },
+        {
+          "id": "b062e6b5dd90",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,blob.core.windows.net"
+        },
+        {
+          "id": "b14484db25d5",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,s3.yandex.net"
+        },
+        {
+          "id": "b204346e4e3a",
+          "source": "Manual Rules",
+          "rule": "URL-REGEX,^http://(.+)\\.gvt\\d\\.com/edgedl"
+        },
+        {
+          "id": "b8e01898952c",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,cos.ap-tokyo.myqcloud.com"
+        },
+        {
+          "id": "bd656192f417",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,oss-ap-southeast-6.aliyuncs.com"
+        },
+        {
+          "id": "bfd3dd0df044",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,oss-ap-northeast-1.aliyuncs.com"
+        },
+        {
+          "id": "d0fa282992af",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,cloudflarestorage.com"
+        },
+        {
+          "id": "d6297d60f87f",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,k8s.io"
+        },
+        {
+          "id": "da7444cc0bdb",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,cos.na-toronto.myqcloud.com"
+        },
+        {
+          "id": "db40e07ba0c3",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,officecdn-microsoft-com.akamaized.net"
+        },
+        {
+          "id": "ec7bdda70712",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,cos.ap-bangkok.myqcloud.com"
+        },
+        {
+          "id": "f95af05fdbf9",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,cos.ap-mumbai.myqcloud.com"
+        },
+        {
+          "id": "fd533d082636",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,cos.ap-seoul.myqcloud.com"
+        },
+        {
+          "id": "ff258dfa8b1b",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN-SUFFIX,s3-global.amazonaws.com"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -171,46 +502,131 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24604,
-      "curr_total": 24611,
-      "added_count": 7,
+      "prev_total": 24611,
+      "curr_total": 24635,
+      "added_count": 24,
       "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [
         {
-          "id": "567541f24729",
+          "id": "027d1891be4a",
           "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,fanfox.net"
+          "rule": "DOMAIN-SUFFIX,archive.org"
         },
         {
-          "id": "6cd2972f4358",
+          "id": "10ca1b18b457",
           "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,amebaownd.com"
+          "rule": "DOMAIN-SUFFIX,oss-me-east-1.aliyuncs.com"
         },
         {
-          "id": "7f4684f6d7a0",
+          "id": "1c06aca13d54",
           "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,ycombinator.com"
+          "rule": "DOMAIN-SUFFIX,packagist.org"
         },
         {
-          "id": "adaf147ff85d",
+          "id": "2cb60a187bcf",
           "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,amebaowndme.com"
+          "rule": "DOMAIN-SUFFIX,oss-cn-hongkong.aliyuncs.com"
         },
         {
-          "id": "c23217fe3601",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,54.214.128.0/17,no-resolve"
+          "id": "31d72ebbc5a8",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,mvnrepository.com"
         },
         {
-          "id": "d2e351b20519",
+          "id": "3719e9e63413",
           "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,dmm.com"
+          "rule": "DOMAIN-SUFFIX,yarnpkg.com"
         },
         {
-          "id": "dbf22636fb7d",
+          "id": "3a2911a0bc5e",
           "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,mangafox.me"
+          "rule": "DOMAIN-SUFFIX,oss-ap-southeast-1.aliyuncs.com"
+        },
+        {
+          "id": "3c6f50070ba9",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,oss-eu-west-1.aliyuncs.com"
+        },
+        {
+          "id": "411f4937dd4a",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,digitaloceanspaces.com"
+        },
+        {
+          "id": "4e6d80706095",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,oss-ap-southeast-7.aliyuncs.com"
+        },
+        {
+          "id": "6718182ccbcd",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,oss-ap-southeast-5.aliyuncs.com"
+        },
+        {
+          "id": "6a48ccc330a1",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,oss-ap-south-1.aliyuncs.com"
+        },
+        {
+          "id": "6ea2d13fa2f0",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,oss-ap-southeast-3.aliyuncs.com"
+        },
+        {
+          "id": "82af49c6764b",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,oss-ap-southeast-2.aliyuncs.com"
+        },
+        {
+          "id": "8ca6e89921fa",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,oss-us-west-1.aliyuncs.com"
+        },
+        {
+          "id": "8ecb8ab62d13",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,oss-eu-central-1.aliyuncs.com"
+        },
+        {
+          "id": "9330cb7dcd51",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,oss-us-east-1.aliyuncs.com"
+        },
+        {
+          "id": "93602f2474f8",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,r2.dev"
+        },
+        {
+          "id": "a4a7b4527a18",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,oss-ap-northeast-2.aliyuncs.com"
+        },
+        {
+          "id": "b062e6b5dd90",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,blob.core.windows.net"
+        },
+        {
+          "id": "bd656192f417",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,oss-ap-southeast-6.aliyuncs.com"
+        },
+        {
+          "id": "bfd3dd0df044",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,oss-ap-northeast-1.aliyuncs.com"
+        },
+        {
+          "id": "d0fa282992af",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,cloudflarestorage.com"
+        },
+        {
+          "id": "d6297d60f87f",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,k8s.io"
         }
       ],
       "removed_sample": [],
@@ -218,145 +634,13 @@
     },
     {
       "file": "GlobalMedia.list",
-      "prev_total": 2271,
+      "prev_total": 2253,
       "curr_total": 2253,
-      "added_count": 4,
-      "removed_count": 22,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "1400542b735e",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,spotify.com"
-        },
-        {
-          "id": "6a2de9afdf7f",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,spotifycdn.com"
-        },
-        {
-          "id": "aff29961427f",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-WILDCARD,*-spotify-com.akamaized.net"
-        },
-        {
-          "id": "db4c9a0b8f7f",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,spotifycdn.net"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "0fd799971846",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,23.78.0.0/16,no-resolve"
-        },
-        {
-          "id": "12a9abfd863e",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,Anime*"
-        },
-        {
-          "id": "1600715fc4a4",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,TVer-Release*"
-        },
-        {
-          "id": "19b8924dcc66",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,54.0.0.0/16,no-resolve"
-        },
-        {
-          "id": "2fc98960cf0f",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,LINE*"
-        },
-        {
-          "id": "37b160037c57",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,218.102.32.0/19,no-resolve"
-        },
-        {
-          "id": "49a06a91a555",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-KEYWORD,rthklive"
-        },
-        {
-          "id": "4bb4b0aed913",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,203.116.0.0/16,no-resolve"
-        },
-        {
-          "id": "567541f24729",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN-SUFFIX,fanfox.net"
-        },
-        {
-          "id": "5781b9282bc9",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,203.198.80.0/21,no-resolve"
-        },
-        {
-          "id": "59a5d84869ed",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN-KEYWORD,-spotify-com"
-        },
-        {
-          "id": "6cd2972f4358",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,amebaownd.com"
-        },
-        {
-          "id": "8427837d9df1",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,Max*"
-        },
-        {
-          "id": "90c518d72d69",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-KEYWORD,nowtv100"
-        },
-        {
-          "id": "9d988c5bc9da",
-          "source": "SukkaW Stream",
-          "rule": "PROCESS-NAME,com.bstar.intl"
-        },
-        {
-          "id": "a9dd62bf4de6",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,203.198.0.0/20,no-resolve"
-        },
-        {
-          "id": "adaf147ff85d",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,amebaowndme.com"
-        },
-        {
-          "id": "b528f18fa1c2",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,viblast.com"
-        },
-        {
-          "id": "c23217fe3601",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,54.214.128.0/17,no-resolve"
-        },
-        {
-          "id": "d2e351b20519",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,dmm.com"
-        },
-        {
-          "id": "dbf22636fb7d",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN-SUFFIX,mangafox.me"
-        },
-        {
-          "id": "e101cd433b8a",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,219.76.0.0/17,no-resolve"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -372,190 +656,35 @@
     },
     {
       "file": "HKMedia.list",
-      "prev_total": 34,
+      "prev_total": 29,
       "curr_total": 29,
-      "added_count": 3,
-      "removed_count": 8,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "1e802272cc27",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,rthk.org.hk"
-        },
-        {
-          "id": "e8d4bb224eb5",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,rthklive2-lh.akamaihd.net"
-        },
-        {
-          "id": "eb159a702d51",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,rthk.hk"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "49a06a91a555",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN-KEYWORD,rthklive"
-        },
-        {
-          "id": "540dc1deb7d1",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN,upos-bstar-mirrorakam.akamaized.net"
-        },
-        {
-          "id": "7e8af3829204",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN,apm-misaka.biliapi.net"
-        },
-        {
-          "id": "907992957486",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN,upos-bstar1-mirrorakam.akamaized.net"
-        },
-        {
-          "id": "90c518d72d69",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN-KEYWORD,nowtv100"
-        },
-        {
-          "id": "9d988c5bc9da",
-          "source": "SukkaW Stream HK",
-          "rule": "PROCESS-NAME,com.bstar.intl"
-        },
-        {
-          "id": "a418f196ad15",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN-SUFFIX,biliintl.com"
-        },
-        {
-          "id": "df6d0b8ae84d",
-          "source": "SukkaW Stream HK",
-          "rule": "DOMAIN-SUFFIX,bilibili.tv"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "InternationalMedia.list",
-      "prev_total": 0,
+      "prev_total": 14,
       "curr_total": 14,
-      "added_count": 14,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "030d91226d77",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,inter.iqiyi.com"
-        },
-        {
-          "id": "0fc322b3a516",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,bstarstatic.com"
-        },
-        {
-          "id": "1f80510bc598",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,iq.com"
-        },
-        {
-          "id": "328455886527",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,intl-rcd.iqiyi.com"
-        },
-        {
-          "id": "4726be509a57",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv"
-        },
-        {
-          "id": "540dc1deb7d1",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,upos-bstar-mirrorakam.akamaized.net"
-        },
-        {
-          "id": "7e8af3829204",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,apm-misaka.biliapi.net"
-        },
-        {
-          "id": "907992957486",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,upos-bstar1-mirrorakam.akamaized.net"
-        },
-        {
-          "id": "9683b9d72951",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv"
-        },
-        {
-          "id": "a418f196ad15",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,biliintl.com"
-        },
-        {
-          "id": "a7f15d5d644d",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,p-bstarstatic.akamaized.net"
-        },
-        {
-          "id": "bb3f123d8b43",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,intl-subscription.iqiyi.com"
-        },
-        {
-          "id": "d70993d55aa3",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,intl.iqiyi.com"
-        },
-        {
-          "id": "df6d0b8ae84d",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,bilibili.tv"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "JPMedia.list",
-      "prev_total": 27,
+      "prev_total": 26,
       "curr_total": 26,
-      "added_count": 2,
-      "removed_count": 3,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "08f0d2bb4437",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,tv.dmm.com"
-        },
-        {
-          "id": "a8c72ac6889b",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,video.dmm.com"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "6cd2972f4358",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,amebaownd.com"
-        },
-        {
-          "id": "adaf147ff85d",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,amebaowndme.com"
-        },
-        {
-          "id": "d2e351b20519",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,dmm.com"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -582,54 +711,13 @@
     },
     {
       "file": "Netflix.list",
-      "prev_total": 1123,
+      "prev_total": 1115,
       "curr_total": 1115,
       "added_count": 0,
-      "removed_count": 8,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "0fd799971846",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,23.78.0.0/16,no-resolve"
-        },
-        {
-          "id": "19b8924dcc66",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,54.0.0.0/16,no-resolve"
-        },
-        {
-          "id": "37b160037c57",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,218.102.32.0/19,no-resolve"
-        },
-        {
-          "id": "4bb4b0aed913",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,203.116.0.0/16,no-resolve"
-        },
-        {
-          "id": "5781b9282bc9",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,203.198.80.0/21,no-resolve"
-        },
-        {
-          "id": "a9dd62bf4de6",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,203.198.0.0/20,no-resolve"
-        },
-        {
-          "id": "c23217fe3601",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,54.214.128.0/17,no-resolve"
-        },
-        {
-          "id": "e101cd433b8a",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,219.76.0.0/17,no-resolve"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -645,77 +733,36 @@
     },
     {
       "file": "SocialMedia.list",
-      "prev_total": 675,
+      "prev_total": 670,
       "curr_total": 670,
-      "added_count": 1,
-      "removed_count": 6,
-      "source_changed_count": 3,
-      "added_sample": [
-        {
-          "id": "d998b921cbe4",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,news.ycombinator.com"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "58cd66ecb7af",
-          "source": "blackmatrix7 Facebook",
-          "rule": "DOMAIN-KEYWORD,facebook"
-        },
-        {
-          "id": "7f4684f6d7a0",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,ycombinator.com"
-        },
-        {
-          "id": "86491268f2c4",
-          "source": "blackmatrix7 Instagram",
-          "rule": "DOMAIN-KEYWORD,instagram"
-        },
-        {
-          "id": "8cf22cab2f0c",
-          "source": "blackmatrix7 Facebook",
-          "rule": "DOMAIN-KEYWORD,fbcdn"
-        },
-        {
-          "id": "ac8f076a6d57",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-KEYWORD,whatsapp"
-        },
-        {
-          "id": "c59028273ffc",
-          "source": "blackmatrix7 Twitter",
-          "rule": "DOMAIN-KEYWORD,twitter"
-        }
-      ],
-      "source_changed_sample": [
-        {
-          "id": "982bf62398a2",
-          "old_source": "blackmatrix7 Facebook",
-          "new_source": "Manual Rules"
-        },
-        {
-          "id": "ca241ae3a9b1",
-          "old_source": "blackmatrix7 Facebook",
-          "new_source": "Manual Rules"
-        },
-        {
-          "id": "b6bc1bcd70e0",
-          "old_source": "blackmatrix7 Facebook",
-          "new_source": "Manual Rules"
-        }
-      ]
-    },
-    {
-      "file": "Speedtest.list",
-      "prev_total": 1725,
-      "curr_total": 1725,
       "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
       "removed_sample": [],
+      "source_changed_sample": []
+    },
+    {
+      "file": "Speedtest.list",
+      "prev_total": 1725,
+      "curr_total": 1725,
+      "added_count": 1,
+      "removed_count": 1,
+      "source_changed_count": 0,
+      "added_sample": [
+        {
+          "id": "84a1bcca8116",
+          "source": "Manual Rules",
+          "rule": "URL-REGEX,^http://mirror\\.nforce\\.com:8080/speedtest(?:[/?#]|$)"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "54bf5777c659",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,mirror.nforce.com"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -733,55 +780,22 @@
       "file": "Spotify.list",
       "prev_total": 32,
       "curr_total": 32,
-      "added_count": 1,
-      "removed_count": 1,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "aff29961427f",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-WILDCARD,*-spotify-com.akamaized.net"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "67f7c913a65e",
-          "source": "blackmatrix7 Spotify",
-          "rule": "DOMAIN-KEYWORD,spotify"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "TWMedia.list",
-      "prev_total": 26,
+      "prev_total": 22,
       "curr_total": 22,
       "added_count": 0,
-      "removed_count": 4,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "12a9abfd863e",
-          "source": "SukkaW Stream TW",
-          "rule": "USER-AGENT,Anime*"
-        },
-        {
-          "id": "567541f24729",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,fanfox.net"
-        },
-        {
-          "id": "b528f18fa1c2",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,viblast.com"
-        },
-        {
-          "id": "dbf22636fb7d",
-          "source": "SukkaW Stream TW",
-          "rule": "DOMAIN-SUFFIX,mangafox.me"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -808,69 +822,13 @@
     },
     {
       "file": "USMedia.list",
-      "prev_total": 51,
+      "prev_total": 40,
       "curr_total": 40,
       "added_count": 0,
-      "removed_count": 11,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "0d37eb70a201",
-          "source": "SukkaW Stream US",
-          "rule": "USER-AGENT,discovery+*"
-        },
-        {
-          "id": "1600715fc4a4",
-          "source": "SukkaW Stream US",
-          "rule": "USER-AGENT,TVer-Release*"
-        },
-        {
-          "id": "167bddb0ac75",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,discoveryplus.com"
-        },
-        {
-          "id": "2d3123fea9e4",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,disco-api.com"
-        },
-        {
-          "id": "5c6356321742",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,hjholdings.jp"
-        },
-        {
-          "id": "621d52db8fd7",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,happyon.jp"
-        },
-        {
-          "id": "763cf4f2d14f",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,hulu.jp"
-        },
-        {
-          "id": "7c8534b1ff6c",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,discoveryplus.in"
-        },
-        {
-          "id": "886bbee134b6",
-          "source": "SukkaW Stream US",
-          "rule": "USER-AGENT,DPlus*"
-        },
-        {
-          "id": "c407b044de11",
-          "source": "SukkaW Stream US",
-          "rule": "USER-AGENT,Hulu*"
-        },
-        {
-          "id": "f8c50ecbd862",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,discoveryplus.co.uk"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
