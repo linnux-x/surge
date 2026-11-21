@@ -1,9 +1,9 @@
 # NAME: ChinaMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-19 16:04:29 +0800
+# UPDATED: 2026-11-21 12:42:22 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 377
+# TOTAL: 375
 
 # ======= Manual Rules ========
 # Preserve Sohu Video when the shared parent domains fall through to China.
@@ -75,7 +75,6 @@ DOMAIN,ins-eeww7kom.ias.tencent-cloud.net
 DOMAIN,ios.video.mpush.qq.com
 DOMAIN,mam.netease.com
 DOMAIN,moo.qq.com
-DOMAIN,rdelivery.qq.com
 DOMAIN,ts.qq.com
 DOMAIN,v.streaming.qq.com
 DOMAIN,video-public-1258344701.shiply-cdn.qq.com
@@ -260,7 +259,6 @@ DOMAIN-SUFFIX,music.tc.qq.com
 DOMAIN-SUFFIX,music.xiaomi.com
 DOMAIN-SUFFIX,noxagile.duapp.com
 DOMAIN-SUFFIX,ns6mitkxo.cn
-DOMAIN-SUFFIX,pgdt.gtimg.cn
 DOMAIN-SUFFIX,pplive.cn
 DOMAIN-SUFFIX,pps.tv
 DOMAIN-SUFFIX,ppsimg.com

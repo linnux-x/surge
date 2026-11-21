@@ -6,6 +6,10 @@ b21fa1a4dc84	Manual Rules
 ce273c5ed413	Manual Rules
 9c9c9a2d6e36	Manual Rules
 e3e69d38a1c3	Manual Rules
+1400542b735e	Manual Rules
+6a2de9afdf7f	Manual Rules
+db4c9a0b8f7f	Manual Rules
+aff29961427f	Manual Rules
 4726be509a57	blackmatrix7 GlobalMedia
 4e11caf219fc	blackmatrix7 GlobalMedia
 7e8af3829204	blackmatrix7 GlobalMedia
@@ -58,8 +62,6 @@ d3ef37d83261	blackmatrix7 GlobalMedia
 fb1691d0218e	blackmatrix7 GlobalMedia
 fd491b97deef	blackmatrix7 GlobalMedia
 a5a7cb0036a7	blackmatrix7 GlobalMedia
-6cd2972f4358	blackmatrix7 GlobalMedia
-adaf147ff85d	blackmatrix7 GlobalMedia
 eaf7d709883e	blackmatrix7 GlobalMedia
 ec44049bda43	blackmatrix7 GlobalMedia
 ed3504819b72	blackmatrix7 GlobalMedia
@@ -298,7 +300,6 @@ a8c430f84ae9	blackmatrix7 GlobalMedia
 4ea70df53b20	blackmatrix7 GlobalMedia
 1e7d39ed09aa	blackmatrix7 GlobalMedia
 991625adfc02	blackmatrix7 GlobalMedia
-d2e351b20519	blackmatrix7 GlobalMedia
 3f9add00625a	blackmatrix7 GlobalMedia
 dcbeaf20a46a	blackmatrix7 GlobalMedia
 a669f1a63250	blackmatrix7 GlobalMedia
@@ -977,7 +978,6 @@ a2899f6d12ae	blackmatrix7 GlobalMedia
 c8dfb3ad1ff9	blackmatrix7 GlobalMedia
 3ba89f013063	blackmatrix7 GlobalMedia
 f4e8fa4e0dbf	blackmatrix7 GlobalMedia
-b528f18fa1c2	blackmatrix7 GlobalMedia
 f94d61dc641f	blackmatrix7 GlobalMedia
 91831d2964a0	blackmatrix7 GlobalMedia
 3a670c169f4a	blackmatrix7 GlobalMedia
@@ -1244,9 +1244,7 @@ e7ea7c184455	blackmatrix7 GlobalMedia
 98384b6ce99d	blackmatrix7 GlobalMedia
 14b1288eff94	blackmatrix7 GlobalMedia
 2795bacd1adf	blackmatrix7 GlobalMedia
-90c518d72d69	blackmatrix7 GlobalMedia
 58e2b2d44d17	blackmatrix7 GlobalMedia
-49a06a91a555	blackmatrix7 GlobalMedia
 e94c290ab427	blackmatrix7 GlobalMedia
 9f17e27ca75b	blackmatrix7 GlobalMedia
 c2ec71c144c1	blackmatrix7 GlobalMedia
@@ -1627,10 +1625,7 @@ fd6e52031c97	blackmatrix7 GlobalMedia
 b08de4c1ff5c	blackmatrix7 GlobalMedia
 f9eaa0197aba	blackmatrix7 GlobalMedia
 4ad0fad5c614	blackmatrix7 GlobalMedia
-4bb4b0aed913	blackmatrix7 GlobalMedia
 bdea9ace95d3	blackmatrix7 GlobalMedia
-a9dd62bf4de6	blackmatrix7 GlobalMedia
-5781b9282bc9	blackmatrix7 GlobalMedia
 7392b0f2d1b1	blackmatrix7 GlobalMedia
 5fec09f07c9b	blackmatrix7 GlobalMedia
 cbb1310564a3	blackmatrix7 GlobalMedia
@@ -1729,8 +1724,6 @@ e3fcedb9b614	blackmatrix7 GlobalMedia
 ca6fa847c85b	blackmatrix7 GlobalMedia
 abbcddebed82	blackmatrix7 GlobalMedia
 a7f483f7c544	blackmatrix7 GlobalMedia
-37b160037c57	blackmatrix7 GlobalMedia
-e101cd433b8a	blackmatrix7 GlobalMedia
 2a3cbd98dd7d	blackmatrix7 GlobalMedia
 937721327020	blackmatrix7 GlobalMedia
 777be6a67e2e	blackmatrix7 GlobalMedia
@@ -1751,7 +1744,6 @@ b498549f78bb	blackmatrix7 GlobalMedia
 b543c13f1ab0	blackmatrix7 GlobalMedia
 8a03234335b9	blackmatrix7 GlobalMedia
 bfbe4a28fe3d	blackmatrix7 GlobalMedia
-0fd799971846	blackmatrix7 GlobalMedia
 5e855c511062	blackmatrix7 GlobalMedia
 e2c0d715c460	blackmatrix7 GlobalMedia
 03ed8364ea93	blackmatrix7 GlobalMedia
@@ -1806,8 +1798,6 @@ b603204e44ab	blackmatrix7 GlobalMedia
 4a2e8b99c74e	blackmatrix7 GlobalMedia
 d4973eb3bb42	blackmatrix7 GlobalMedia
 403c39ac63a2	blackmatrix7 GlobalMedia
-19b8924dcc66	blackmatrix7 GlobalMedia
-c23217fe3601	blackmatrix7 GlobalMedia
 b738e49e8712	blackmatrix7 GlobalMedia
 389122a91a58	blackmatrix7 GlobalMedia
 7791de4d1007	blackmatrix7 GlobalMedia
@@ -2148,7 +2138,6 @@ b6740f4530ef	blackmatrix7 GlobalMedia
 116403343cbb	blackmatrix7 GlobalMedia
 6575d02885fc	blackmatrix7 GlobalMedia
 48c7084fe49c	blackmatrix7 GlobalMedia
-12a9abfd863e	blackmatrix7 GlobalMedia
 dc94acfcba51	blackmatrix7 GlobalMedia
 71395d34de69	blackmatrix7 GlobalMedia
 a2e0d67204c0	blackmatrix7 GlobalMedia
@@ -2174,9 +2163,7 @@ c407b044de11	blackmatrix7 GlobalMedia
 a9e8c95c237f	blackmatrix7 GlobalMedia
 7dac3869489d	blackmatrix7 GlobalMedia
 989e94c713f4	blackmatrix7 GlobalMedia
-2fc98960cf0f	blackmatrix7 GlobalMedia
 4cc594d67bbb	blackmatrix7 GlobalMedia
-8427837d9df1	blackmatrix7 GlobalMedia
 e2f8bb43caf7	blackmatrix7 GlobalMedia
 b005efc685fe	blackmatrix7 GlobalMedia
 1bd329e97144	blackmatrix7 GlobalMedia
@@ -2191,7 +2178,6 @@ d864587586cc	blackmatrix7 GlobalMedia
 ede2a0c70624	blackmatrix7 GlobalMedia
 f2e709939127	blackmatrix7 GlobalMedia
 8b9c7117708e	blackmatrix7 GlobalMedia
-1600715fc4a4	blackmatrix7 GlobalMedia
 f6d0c8090770	blackmatrix7 GlobalMedia
 f33a7443c52e	blackmatrix7 GlobalMedia
 f02291f504d7	blackmatrix7 GlobalMedia
@@ -2216,9 +2202,7 @@ b097cf554dec	blackmatrix7 GlobalMedia
 330b25e0b1ae	blackmatrix7 GlobalMedia
 f92fe3afc2e1	SukkaW Stream
 bfc0af40323e	SukkaW Stream
-567541f24729	SukkaW Stream
 504432a71a96	SukkaW Stream
-dbf22636fb7d	SukkaW Stream
 3f9e08b89c2c	SukkaW Stream
 4b6815c84297	SukkaW Stream
 2f434ac89572	SukkaW Stream
@@ -2253,7 +2237,6 @@ ac27cd7c615e	SukkaW Stream
 758fe639efba	SukkaW Stream
 1cc846b51d28	SukkaW Stream
 3c422020c048	SukkaW Stream
-59a5d84869ed	SukkaW Stream
 73fd24f517fb	SukkaW Stream
 931bec6c0567	SukkaW Stream
 f815b22bf5cd	SukkaW Stream
@@ -2261,7 +2244,6 @@ f815b22bf5cd	SukkaW Stream
 6038dc2fc443	SukkaW Stream
 839b197a5047	SukkaW Stream
 f59249b2f580	SukkaW Stream
-9d988c5bc9da	SukkaW Stream
 74e63db43f57	SukkaW Stream
 4b79d93a30ad	SukkaW Stream
 c7ea69824750	SukkaW Stream

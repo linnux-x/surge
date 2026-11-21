@@ -1,19 +1,16 @@
 # NAME: TWMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-18 11:23:37 +0800
+# UPDATED: 2026-11-21 12:42:22 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 26
+# TOTAL: 22
 
 # ======= SukkaW Stream TW ========
 DOMAIN-SUFFIX,4gtv.tv
 DOMAIN-SUFFIX,kktv.me
 DOMAIN-SUFFIX,kk.stream
 DOMAIN-SUFFIX,linetv.tw
-DOMAIN-SUFFIX,fanfox.net
 DOMAIN-SUFFIX,kktv.com.tw
-DOMAIN-SUFFIX,mangafox.me
-DOMAIN-SUFFIX,viblast.com
 DOMAIN,www.litv.tv
 DOMAIN,cdi.ofiii.com
 DOMAIN-SUFFIX,bahamut.com.tw
@@ -30,5 +27,4 @@ DOMAIN,litvfreemobile-hichannel.cdn.hinet.net
 USER-AGENT,com.kktv.ios.kktv*
 USER-AGENT,KKTV*
 USER-AGENT,LINE TV*
-USER-AGENT,Anime*
 PROCESS-NAME,com.linecorp.linetv

@@ -2,6 +2,11 @@
   "schema_version": 1,
   "policy": "历史 Manual 文件按文件级基线治理；新增或修改 first-match 例外必须在 entries 中声明。",
   "files": {
+    "Spotify.exclude.txt": {"action": "exclude", "reason": "排除 Spotify 无边界子串", "destination": "专属 Spotify 主机或后续规则"},
+    "JPMedia.exclude.txt": {"action": "exclude", "reason": "排除通用 DMM 或 Ameba 建站域", "destination": "Global 或 FINAL"},
+    "JPMedia.txt": {"action": "include", "reason": "确认的 DMM 视频入口", "destination": "JPMedia.list → JPMedia"},
+    "InternationalMedia.txt": {"action": "include", "reason": "优先匹配 BiliBili 与爱奇艺的国际版端点", "destination": "InternationalMedia.list → GlobalMedia"},
+    "HKMedia.txt": {"action": "include", "reason": "补齐香港电台已验证端点", "destination": "HKMedia.list → HKMedia"},
     "AdBlock.txt": {"action": "include", "reason": "自维护纯广告投放拦截名单，仅收录实测到的广告投放域名", "destination": "AdBlock.list"},
     "AI.exclude.txt": {"action": "exclude", "reason": "历史共享基础设施与非 AI 归属排除", "destination": "按现有规则顺序落入后续专属规则或 fallback"},
     "AI.txt": {"action": "include", "reason": "历史 AI 专属补充", "destination": "AI.list"},
@@ -51,6 +56,356 @@
     "YouTube.exclude.txt": {"action": "exclude", "reason": "历史视频服务归属去重", "destination": "后续专属规则或 fallback"}
   },
   "entries": [
+    {
+      "source_file": "InternationalMedia.txt",
+      "rule": "DOMAIN-SUFFIX,bilibili.tv",
+      "reason": "按已验证的国际版产品域名提前分流",
+      "destination": "InternationalMedia.list → GlobalMedia",
+      "route_tests": ["bilibili.tv"]
+    },
+    {
+      "source_file": "InternationalMedia.txt",
+      "rule": "DOMAIN-SUFFIX,biliintl.com",
+      "reason": "按已验证的国际版产品域名提前分流",
+      "destination": "InternationalMedia.list → GlobalMedia",
+      "route_tests": ["biliintl.com"]
+    },
+    {
+      "source_file": "InternationalMedia.txt",
+      "rule": "DOMAIN-SUFFIX,bstarstatic.com",
+      "reason": "按已验证的国际版产品域名提前分流",
+      "destination": "InternationalMedia.list → GlobalMedia",
+      "route_tests": ["bstarstatic.com"]
+    },
+    {
+      "source_file": "InternationalMedia.txt",
+      "rule": "DOMAIN,apm-misaka.biliapi.net",
+      "reason": "按已验证的国际版产品域名提前分流",
+      "destination": "InternationalMedia.list → GlobalMedia",
+      "route_tests": ["apm-misaka.biliapi.net"]
+    },
+    {
+      "source_file": "InternationalMedia.txt",
+      "rule": "DOMAIN,p-bstarstatic.akamaized.net",
+      "reason": "按已验证的国际版产品域名提前分流",
+      "destination": "InternationalMedia.list → GlobalMedia",
+      "route_tests": ["p-bstarstatic.akamaized.net"]
+    },
+    {
+      "source_file": "InternationalMedia.txt",
+      "rule": "DOMAIN,upos-bstar-mirrorakam.akamaized.net",
+      "reason": "按已验证的国际版产品域名提前分流",
+      "destination": "InternationalMedia.list → GlobalMedia",
+      "route_tests": ["upos-bstar-mirrorakam.akamaized.net"]
+    },
+    {
+      "source_file": "InternationalMedia.txt",
+      "rule": "DOMAIN,upos-bstar1-mirrorakam.akamaized.net",
+      "reason": "按已验证的国际版产品域名提前分流",
+      "destination": "InternationalMedia.list → GlobalMedia",
+      "route_tests": ["upos-bstar1-mirrorakam.akamaized.net"]
+    },
+    {
+      "source_file": "InternationalMedia.txt",
+      "rule": "DOMAIN-SUFFIX,iq.com",
+      "reason": "按已验证的国际版产品域名提前分流",
+      "destination": "InternationalMedia.list → GlobalMedia",
+      "route_tests": ["iq.com"]
+    },
+    {
+      "source_file": "InternationalMedia.txt",
+      "rule": "DOMAIN-SUFFIX,inter.iqiyi.com",
+      "reason": "按已验证的国际版产品域名提前分流",
+      "destination": "InternationalMedia.list → GlobalMedia",
+      "route_tests": ["inter.iqiyi.com"]
+    },
+    {
+      "source_file": "InternationalMedia.txt",
+      "rule": "DOMAIN-SUFFIX,intl.iqiyi.com",
+      "reason": "按已验证的国际版产品域名提前分流",
+      "destination": "InternationalMedia.list → GlobalMedia",
+      "route_tests": ["intl.iqiyi.com"]
+    },
+    {
+      "source_file": "InternationalMedia.txt",
+      "rule": "DOMAIN-SUFFIX,intl-rcd.iqiyi.com",
+      "reason": "按已验证的国际版产品域名提前分流",
+      "destination": "InternationalMedia.list → GlobalMedia",
+      "route_tests": ["intl-rcd.iqiyi.com"]
+    },
+    {
+      "source_file": "InternationalMedia.txt",
+      "rule": "DOMAIN-SUFFIX,intl-subscription.iqiyi.com",
+      "reason": "按已验证的国际版产品域名提前分流",
+      "destination": "InternationalMedia.list → GlobalMedia",
+      "route_tests": ["intl-subscription.iqiyi.com"]
+    },
+    {
+      "source_file": "InternationalMedia.txt",
+      "rule": "DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv",
+      "reason": "按已验证的国际版产品域名提前分流",
+      "destination": "InternationalMedia.list → GlobalMedia",
+      "route_tests": ["akmcdnoversea-tw.inter.ptqy.gitv.tv"]
+    },
+    {
+      "source_file": "InternationalMedia.txt",
+      "rule": "DOMAIN,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv",
+      "reason": "按已验证的国际版产品域名提前分流",
+      "destination": "InternationalMedia.list → GlobalMedia",
+      "route_tests": ["chuangcachecdnoversea-tw.inter.ptqy.gitv.tv"]
+    },
+    {
+      "source_file": "HKMedia.txt",
+      "rule": "DOMAIN,rthklive2-lh.akamaihd.net",
+      "reason": "用核实的直播主机替代关键词",
+      "destination": "HKMedia.list → HKMedia",
+      "route_tests": ["rthklive2-lh.akamaihd.net", "rthklive.example.com"]
+    },
+    {
+      "source_file": "HKMedia.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,nowtv100",
+      "reason": "子串会命中无关站点",
+      "destination": "按目的地主机匹配",
+      "route_tests": ["nowtv100.example.com"]
+    },
+    {
+      "source_file": "HKMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,bilibili.tv",
+      "reason": "国际服务在多个市场运行",
+      "destination": "InternationalMedia.list → GlobalMedia",
+      "route_tests": ["bilibili.tv"]
+    },
+    {
+      "source_file": "TWMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,viblast.com",
+      "reason": "通用播放器 SDK",
+      "destination": "正常匹配至 FINAL",
+      "route_tests": ["viblast.com"]
+    },
+    {
+      "source_file": "TWMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,fanfox.net",
+      "reason": "漫画阅读站采用通用策略",
+      "destination": "Global.list → Global",
+      "route_tests": ["fanfox.net", "mangafox.me"]
+    },
+    {
+      "source_file": "JPMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,dmm.com",
+      "reason": "品牌母域还有外汇等非视频服务",
+      "destination": "普通服务 → Global，专属视频 → JPMedia",
+      "route_tests": ["fx.dmm.com", "tv.dmm.com", "video.dmm.com"]
+    },
+    {
+      "source_file": "JPMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,amebaownd.com",
+      "reason": "建站平台",
+      "destination": "Global.list → Global",
+      "route_tests": ["amebaownd.com"]
+    },
+    {
+      "source_file": "USMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,hulu.jp",
+      "reason": "日本 Hulu 采用日本策略",
+      "destination": "JPMedia.list → JPMedia",
+      "route_tests": ["hulu.jp", "happyon.jp", "hjholdings.jp"]
+    },
+    {
+      "source_file": "USMedia.exclude.txt",
+      "rule": "USER-AGENT,TVer-Release*",
+      "reason": "日本 TVer 的客户端标识不应选择美国组",
+      "destination": "TVer 主机 → JPMedia，其他按目的地匹配",
+      "route_tests": ["tver.jp"]
+    },
+    {
+      "source_file": "ChinaMedia.exclude.txt",
+      "rule": "DOMAIN,rdelivery.qq.com",
+      "reason": "腾讯通用应用配置分发",
+      "destination": "China.list → DIRECT",
+      "route_tests": ["rdelivery.qq.com", "pgdt.gtimg.cn"]
+    },
+    {
+      "source_file": "SocialMedia.txt",
+      "rule": "DOMAIN,news.ycombinator.com",
+      "reason": "Hacker News 精确主机",
+      "destination": "SocialMedia.list → SocialMedia",
+      "route_tests": ["news.ycombinator.com", "jobs.ycombinator.com"]
+    },
+    {
+      "source_file": "SocialMedia.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,whatsapp",
+      "reason": "子串会抢占其他业务主机",
+      "destination": "WhatsApp 专属主机走 SocialMedia，大陆例外走 China",
+      "route_tests": ["wa.me", "tb-whatsapp.com"]
+    },
+    {
+      "source_file": "Global.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,whatsapp",
+      "reason": "防止下游聚合重新引入无边界关键词",
+      "destination": "China 或 FINAL",
+      "route_tests": ["tb-whatsapp.com", "whatsapp.example.com"]
+    },
+    {
+      "source_file": "Global.txt",
+      "rule": "IP-CIDR,54.214.128.0/17,no-resolve",
+      "reason": "AWS 公共 EC2 资源归通用策略",
+      "destination": "Global.list → Global",
+      "route_tests": ["54.214.155.1"]
+    },
+    {
+      "source_file": "GlobalMedia.txt",
+      "rule": "DOMAIN-SUFFIX,spotify.com",
+      "reason": "专属组停用后接管 Spotify 主站和 API",
+      "destination": "Spotify 或 GlobalMedia",
+      "route_tests": ["api.spotify.com"]
+    },
+    {
+      "source_file": "Spotify.exclude.txt",
+      "rule": "DOMAIN-KEYWORD,spotify",
+      "reason": "将第三方 Akamai 匹配限制在真实域名后缀",
+      "destination": "Spotify 或 GlobalMedia，别名按普通回退",
+      "route_tests": ["audio-ak-spotify-com.akamaized.net", "unrelated-spotify-com.akamaized.net.example"]
+    },
+    {
+      "source_file": "USMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,discoveryplus.com",
+      "reason": "Discovery+ 提供多个市场的服务",
+      "destination": "GlobalMedia.list → GlobalMedia",
+      "route_tests": ["discoveryplus.com"]
+    },
+    {
+      "source_file": "USMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,discoveryplus.co.uk",
+      "reason": "Discovery+ 提供多个市场的服务",
+      "destination": "GlobalMedia.list → GlobalMedia",
+      "route_tests": ["discoveryplus.co.uk"]
+    },
+    {
+      "source_file": "USMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,discoveryplus.in",
+      "reason": "Discovery+ 提供多个市场的服务",
+      "destination": "GlobalMedia.list → GlobalMedia",
+      "route_tests": ["discoveryplus.in"]
+    },
+    {
+      "source_file": "USMedia.exclude.txt",
+      "rule": "DOMAIN-SUFFIX,disco-api.com",
+      "reason": "Discovery+ 提供多个市场的服务",
+      "destination": "GlobalMedia.list → GlobalMedia",
+      "route_tests": ["disco-api.com"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,203.116.0.0/16,no-resolve",
+      "reason": "运营商、公共 CDN 或云地址由通用规则判断",
+      "destination": "Global 或 FINAL",
+      "route_tests": ["203.116.88.20"]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,203.116.0.0/16,no-resolve",
+      "reason": "运营商、公共 CDN 或云地址由通用规则判断",
+      "destination": "Global 或 FINAL",
+      "route_tests": ["203.116.88.20"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,203.198.0.0/20,no-resolve",
+      "reason": "运营商、公共 CDN 或云地址由通用规则判断",
+      "destination": "Global 或 FINAL",
+      "route_tests": ["203.198.0.1"]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,203.198.0.0/20,no-resolve",
+      "reason": "运营商、公共 CDN 或云地址由通用规则判断",
+      "destination": "Global 或 FINAL",
+      "route_tests": ["203.198.0.1"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,203.198.80.0/21,no-resolve",
+      "reason": "运营商、公共 CDN 或云地址由通用规则判断",
+      "destination": "Global 或 FINAL",
+      "route_tests": ["203.198.80.1"]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,203.198.80.0/21,no-resolve",
+      "reason": "运营商、公共 CDN 或云地址由通用规则判断",
+      "destination": "Global 或 FINAL",
+      "route_tests": ["203.198.80.1"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,218.102.32.0/19,no-resolve",
+      "reason": "运营商、公共 CDN 或云地址由通用规则判断",
+      "destination": "Global 或 FINAL",
+      "route_tests": ["218.102.32.1"]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,218.102.32.0/19,no-resolve",
+      "reason": "运营商、公共 CDN 或云地址由通用规则判断",
+      "destination": "Global 或 FINAL",
+      "route_tests": ["218.102.32.1"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,219.76.0.0/17,no-resolve",
+      "reason": "运营商、公共 CDN 或云地址由通用规则判断",
+      "destination": "Global 或 FINAL",
+      "route_tests": ["219.76.0.1"]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,219.76.0.0/17,no-resolve",
+      "reason": "运营商、公共 CDN 或云地址由通用规则判断",
+      "destination": "Global 或 FINAL",
+      "route_tests": ["219.76.0.1"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,23.78.0.0/16,no-resolve",
+      "reason": "运营商、公共 CDN 或云地址由通用规则判断",
+      "destination": "Global 或 FINAL",
+      "route_tests": ["23.78.5.6"]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,23.78.0.0/16,no-resolve",
+      "reason": "运营商、公共 CDN 或云地址由通用规则判断",
+      "destination": "Global 或 FINAL",
+      "route_tests": ["23.78.5.6"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,54.0.0.0/16,no-resolve",
+      "reason": "运营商、公共 CDN 或云地址由通用规则判断",
+      "destination": "Global 或 FINAL",
+      "route_tests": ["54.0.4.12"]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,54.0.0.0/16,no-resolve",
+      "reason": "运营商、公共 CDN 或云地址由通用规则判断",
+      "destination": "Global 或 FINAL",
+      "route_tests": ["54.0.4.12"]
+    },
+    {
+      "source_file": "GlobalMedia.exclude.txt",
+      "rule": "IP-CIDR,54.214.128.0/17,no-resolve",
+      "reason": "运营商、公共 CDN 或云地址由通用规则判断",
+      "destination": "Global 或 FINAL",
+      "route_tests": ["54.214.155.1"]
+    },
+    {
+      "source_file": "Netflix.exclude.txt",
+      "rule": "IP-CIDR,54.214.128.0/17,no-resolve",
+      "reason": "运营商、公共 CDN 或云地址由通用规则判断",
+      "destination": "Global 或 FINAL",
+      "route_tests": ["54.214.155.1"]
+    },
     {
       "source_file": "AI.txt",
       "rule": "DOMAIN-SUFFIX,claude.app",

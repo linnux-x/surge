@@ -409,3 +409,12 @@ DOMAIN-SUFFIX,apzones.com
 DOMAIN-SUFFIX,digicert.com
 USER-AGENT,com.apple.trustd*
 PROCESS-NAME,LookupViewService
+
+# Prevent generic media or social signatures from reappearing in the later aggregate.
+DOMAIN-KEYWORD,facebook
+DOMAIN-KEYWORD,fbcdn
+DOMAIN-KEYWORD,instagram
+DOMAIN-KEYWORD,twitter
+DOMAIN-KEYWORD,whatsapp
+DOMAIN-KEYWORD,spotify
+USER-AGENT,Anime*

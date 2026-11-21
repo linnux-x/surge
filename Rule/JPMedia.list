@@ -1,12 +1,16 @@
 # NAME: JPMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-01 16:54:12 +0800
+# UPDATED: 2026-11-21 12:42:22 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 27
+# TOTAL: 26
+
+# ======= Manual Rules ========
+# Official DMM TV and video delivery entrance.
+DOMAIN-SUFFIX,tv.dmm.com
+DOMAIN-SUFFIX,video.dmm.com
 
 # ======= SukkaW Stream JP ========
-DOMAIN-SUFFIX,dmm.com
 DOMAIN-SUFFIX,hulu.jp
 DOMAIN-SUFFIX,tver.jp
 DOMAIN-SUFFIX,abema.io
@@ -23,10 +27,8 @@ DOMAIN-SUFFIX,abema-tv.com
 DOMAIN-SUFFIX,hayabusa.dev
 DOMAIN-SUFFIX,nicovideo.jp
 DOMAIN-SUFFIX,winticket.jp
-DOMAIN-SUFFIX,amebaownd.com
 DOMAIN-SUFFIX,hjholdings.jp
 DOMAIN-SUFFIX,hayabusa.media
-DOMAIN-SUFFIX,amebaowndme.com
 DOMAIN-SUFFIX,dmm-extension.com
 DOMAIN-SUFFIX,dokusho-ojikan.jp
 DOMAIN-SUFFIX,location-plus.nhk.jp

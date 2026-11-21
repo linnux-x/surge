@@ -60,6 +60,7 @@ https://raw.githubusercontent.com/linnux-x/surge/main/Conf/Linnux.conf
 | 📦 CDN.list | SukkaW | CDN、静态资源、下载资源 |
 | 🏠 China.list | 3 源 | 中国大陆直连域名（domain-only） |
 | 🌐 China_IP.list | 1 源 | 中国大陆 IP 回退（不加 no-resolve） |
+| 🌏 InternationalMedia.list | 手工维护 | 国际版 BiliBili 和爱奇艺，优先于地区和大陆规则 |
 | 📺 ChinaMedia.list | blackmatrix7 | 中国媒体服务 |
 | 🏰 Disney.list | blackmatrix7 | Disney+ |
 | ⬇️ Download.list | 2 源 | 下载、软件更新、游戏 CDN |

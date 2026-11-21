@@ -1,0 +1,2 @@
+# Use confirmed Spotify hosts and Akamai labels.
+DOMAIN-KEYWORD,spotify

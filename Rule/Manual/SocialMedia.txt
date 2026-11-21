@@ -1,5 +1,7 @@
-# WhatsApp (Meta, no blackmatrix7 Surge list)
-DOMAIN-KEYWORD,whatsapp
+# WhatsApp official messaging and short links.
+DOMAIN-SUFFIX,whatsapp.com
+DOMAIN-SUFFIX,whatsapp.net
+DOMAIN-SUFFIX,wa.me
 
 # LINE
 DOMAIN-SUFFIX,line.me
@@ -48,7 +50,7 @@ DOMAIN-SUFFIX,hostingdiscussion.com
 DOMAIN-SUFFIX,v2ex.com
 
 # Hacker News
-DOMAIN-SUFFIX,ycombinator.com
+DOMAIN,news.ycombinator.com
 
 # Gaming forums
 DOMAIN-SUFFIX,resetera.com

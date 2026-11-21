@@ -86,3 +86,7 @@ DOMAIN-SUFFIX,ai.xiaomi.com
 USER-AGENT,*bili*
 USER-AGENT,bili*
 USER-AGENT,bili-inter*
+
+# Tencent configuration distribution and ad assets use domestic routing.
+DOMAIN,rdelivery.qq.com
+DOMAIN-SUFFIX,pgdt.gtimg.cn

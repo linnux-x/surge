@@ -149,9 +149,9 @@ gstatic.com,Google.list,Google,Google静态资源
 netflix.com,Netflix.list,Netflix,Netflix
 nflxvideo.net,Netflix.list,Netflix,Netflix视频
 disneyplus.com,Disney.list,Disney,Disney+
-bstarstatic.com,GlobalMedia.list,GlobalMedia,Disney+ CDN（上游归入GlobalMedia）
+bstarstatic.com,InternationalMedia.list,GlobalMedia,国际版 BiliBili 或爱奇艺采用统一的全球媒体策略
 bilibili.com,ChinaMedia.list,ChinaMedia,B站
-iqiyi.com,ChinaMedia.list,ChinaMedia,爱奇艺
+iqiyi.com,ChinaMedia.list,ChinaMedia,大陆爱奇艺仍归 ChinaMedia
 news.sohu.com,China.list,DIRECT,搜狐新闻
 sohu.com.cn,China.list,DIRECT,搜狐共享父域
 g1.itc.cn,China.list,DIRECT,搜狐共享静态资源
@@ -427,8 +427,8 @@ viu.com,HKMedia.list,HKMedia,Viu 根域
 www.viu.com,HKMedia.list,HKMedia,Viu 子域
 viu.tv,HKMedia.list,HKMedia,ViuTV
 mytvsuper.com,HKMedia.list,HKMedia,myTV SUPER
-bilibili.tv,HKMedia.list,HKMedia,Bilibili 国际版
-apm-misaka.biliapi.net,HKMedia.list,HKMedia,Bilibili 国际版 API 先于 ChinaMedia 的 biliapi.net
+bilibili.tv,InternationalMedia.list,GlobalMedia,国际版 BiliBili 或爱奇艺采用统一的全球媒体策略
+apm-misaka.biliapi.net,InternationalMedia.list,GlobalMedia,国际版 BiliBili 或爱奇艺采用统一的全球媒体策略
 kktv.me,TWMedia.list,TWMedia,KKTV
 ani.gamer.com.tw,TWMedia.list,TWMedia,巴哈姆特动画疯
 linetv.tw,TWMedia.list,TWMedia,LINE TV
@@ -444,12 +444,12 @@ hbounify-prod.evergent.com,HKMedia.list,HKMedia,HBO Asia 旧端点保留现有�
 44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,HKMedia.list,HKMedia,HBO Asia 旧端点保留现有香港策略
 hbomax.com,GlobalMedia.list,GlobalMedia,HBO Max 沿用全球媒体策略
 www.4gtv.tv,TWMedia.list,TWMedia,四季线上 子域
-dmm.com,JPMedia.list,JPMedia,DMM 根域
+dmm.com,Global.list,Global,普通站点和共用品牌按全球通用规则处理
 www.dmm.co.jp,JPMedia.list,JPMedia,DMM 子域
 abema.tv,JPMedia.list,JPMedia,AbemaTV
 nicovideo.jp,JPMedia.list,JPMedia,niconico
 hulu.jp,JPMedia.list,JPMedia,Hulu 日本（JPMedia 先于 USMedia）
-tver.jp,JPMedia.list,JPMedia,TVer
+tver.jp,JPMedia.list,JPMedia,日本流媒体的已确认端点
 www.hulu.com,USMedia.list,USMedia,Hulu 美国 子域
 paramountplus.com,USMedia.list,USMedia,Paramount+
 peacocktv.com,USMedia.list,USMedia,Peacock
@@ -582,3 +582,62 @@ eu-dialogflow.googleapis.com.example,FINAL,Global,共享主机和未证实的云
 sample.host.livekit.cloud,Global,Global,LiveKit 通用主机归 Global
 sample.turn.livekit.cloud,Global,Global,LiveKit 通用主机归 Global
 downloads.cursor.com,Download.list,Download,Cursor 安装包下载继续走 Download
+biliintl.com,InternationalMedia.list,GlobalMedia,国际版 BiliBili 或爱奇艺采用统一的全球媒体策略
+p-bstarstatic.akamaized.net,InternationalMedia.list,GlobalMedia,国际版 BiliBili 或爱奇艺采用统一的全球媒体策略
+upos-bstar-mirrorakam.akamaized.net,InternationalMedia.list,GlobalMedia,国际版 BiliBili 或爱奇艺采用统一的全球媒体策略
+upos-bstar1-mirrorakam.akamaized.net,InternationalMedia.list,GlobalMedia,国际版 BiliBili 或爱奇艺采用统一的全球媒体策略
+iq.com,InternationalMedia.list,GlobalMedia,国际版 BiliBili 或爱奇艺采用统一的全球媒体策略
+inter.iqiyi.com,InternationalMedia.list,GlobalMedia,国际版 BiliBili 或爱奇艺采用统一的全球媒体策略
+intl.iqiyi.com,InternationalMedia.list,GlobalMedia,国际版 BiliBili 或爱奇艺采用统一的全球媒体策略
+intl-rcd.iqiyi.com,InternationalMedia.list,GlobalMedia,国际版 BiliBili 或爱奇艺采用统一的全球媒体策略
+intl-subscription.iqiyi.com,InternationalMedia.list,GlobalMedia,国际版 BiliBili 或爱奇艺采用统一的全球媒体策略
+akmcdnoversea-tw.inter.ptqy.gitv.tv,InternationalMedia.list,GlobalMedia,国际版 BiliBili 或爱奇艺采用统一的全球媒体策略
+chuangcachecdnoversea-tw.inter.ptqy.gitv.tv,InternationalMedia.list,GlobalMedia,国际版 BiliBili 或爱奇艺采用统一的全球媒体策略
+p.bstarstatic.com,InternationalMedia.list,GlobalMedia,国际版服务和静态资源统一路由
+pic.bstarstatic.com,InternationalMedia.list,GlobalMedia,国际版服务和静态资源统一路由
+www.iq.com,InternationalMedia.list,GlobalMedia,国际版服务和静态资源统一路由
+gitv.tv,ChinaMedia.list,ChinaMedia,大陆爱奇艺仍归 ChinaMedia
+rthk.hk,HKMedia.list,HKMedia,香港电台明确站点和直播入口
+rthk.org.hk,HKMedia.list,HKMedia,香港电台明确站点和直播入口
+rthklive2-lh.akamaihd.net,HKMedia.list,HKMedia,香港电台明确站点和直播入口
+rthklive.example.com,FINAL,Global,无关域名不能命中宽泛媒体标识
+nowtv100.example.com,FINAL,Global,无关域名不能命中宽泛媒体标识
+facebook.example.com,FINAL,Global,无关域名不能命中宽泛媒体标识
+fbcdn.example.com,FINAL,Global,无关域名不能命中宽泛媒体标识
+instagram.example.com,FINAL,Global,无关域名不能命中宽泛媒体标识
+twitter.example.com,FINAL,Global,无关域名不能命中宽泛媒体标识
+whatsapp.example.com,FINAL,Global,无关域名不能命中宽泛媒体标识
+unrelated-spotify-com.akamaized.net.example,FINAL,Global,无关域名不能命中宽泛媒体标识
+fanfox.net,Global.list,Global,普通站点和共用品牌按全球通用规则处理
+mangafox.me,Global.list,Global,普通站点和共用品牌按全球通用规则处理
+fx.dmm.com,Global.list,Global,普通站点和共用品牌按全球通用规则处理
+amebaownd.com,Global.list,Global,普通站点和共用品牌按全球通用规则处理
+amebaowndme.com,Global.list,Global,普通站点和共用品牌按全球通用规则处理
+www.ycombinator.com,Global.list,Global,普通站点和共用品牌按全球通用规则处理
+jobs.ycombinator.com,Global.list,Global,普通站点和共用品牌按全球通用规则处理
+viblast.com,FINAL,Global,共享 SDK 和基础设施按通用规则处理
+203.116.88.20,FINAL,Global,共享 SDK 和基础设施按通用规则处理
+203.198.0.1,FINAL,Global,共享 SDK 和基础设施按通用规则处理
+203.198.80.1,FINAL,Global,共享 SDK 和基础设施按通用规则处理
+218.102.32.1,FINAL,Global,共享 SDK 和基础设施按通用规则处理
+219.76.0.1,FINAL,Global,共享 SDK 和基础设施按通用规则处理
+23.78.5.6,FINAL,Global,共享 SDK 和基础设施按通用规则处理
+54.0.4.12,FINAL,Global,共享 SDK 和基础设施按通用规则处理
+tv.dmm.com,JPMedia.list,JPMedia,日本流媒体的已确认端点
+video.dmm.com,JPMedia.list,JPMedia,日本流媒体的已确认端点
+happyon.jp,JPMedia.list,JPMedia,日本流媒体的已确认端点
+hjholdings.jp,JPMedia.list,JPMedia,日本流媒体的已确认端点
+discoveryplus.com,GlobalMedia.list,GlobalMedia,Discovery+ 跨市场域名归 GlobalMedia
+discoveryplus.co.uk,GlobalMedia.list,GlobalMedia,Discovery+ 跨市场域名归 GlobalMedia
+discoveryplus.in,GlobalMedia.list,GlobalMedia,Discovery+ 跨市场域名归 GlobalMedia
+disco-api.com,GlobalMedia.list,GlobalMedia,Discovery+ 跨市场域名归 GlobalMedia
+news.ycombinator.com,SocialMedia.list,SocialMedia,Hacker News 和 WhatsApp 的专属域名
+whatsapp.com,SocialMedia.list,SocialMedia,Hacker News 和 WhatsApp 的专属域名
+whatsapp.net,SocialMedia.list,SocialMedia,Hacker News 和 WhatsApp 的专属域名
+wa.me,SocialMedia.list,SocialMedia,Hacker News 和 WhatsApp 的专属域名
+tb-whatsapp.com,China.list,DIRECT,非社交或媒体专属的大陆端点
+rdelivery.qq.com,China.list,DIRECT,非社交或媒体专属的大陆端点
+pgdt.gtimg.cn,China.list,DIRECT,非社交或媒体专属的大陆端点
+54.214.155.1,Global.list,Global,AWS 公共 EC2 地址
+api.spotify.com,Spotify.list,Spotify,Spotify 专属启用时优先，可回退 GlobalMedia
+audio-ak-spotify-com.akamaized.net,Spotify.list,Spotify,Spotify 专属启用时优先，可回退 GlobalMedia
