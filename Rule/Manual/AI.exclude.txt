@@ -151,3 +151,11 @@ IP-CIDR,64.23.132.171/32,no-resolve
 
 # Retire the old Gemini redirect URL rule from upstream as well.
 URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+
+
+# Zed's website, editor updates, and collaboration share this namespace.
+DOMAIN,zed.dev
+DOMAIN-SUFFIX,zed.dev
+
+# The Sora export portal is already covered by chatgpt.com.
+DOMAIN,sora.com
+DOMAIN-SUFFIX,sora.com

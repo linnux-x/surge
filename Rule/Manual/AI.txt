@@ -83,6 +83,8 @@ DOMAIN-SUFFIX,githubcopilot.com
 # https://docs.github.com/en/copilot/reference/copilot-allowlist-reference
 DOMAIN,copilot-proxy.githubusercontent.com
 DOMAIN,origin-tracker.githubusercontent.com
+DOMAIN,copilot-telemetry.githubusercontent.com
+DOMAIN,copilot-reports.github.com
 DOMAIN,production-copilot-host.webpubsub.azure.com
 DOMAIN,production-copilot-host-austriaeast.webpubsub.azure.com
 DOMAIN,production-copilot-host-centralus.webpubsub.azure.com
@@ -98,6 +100,25 @@ DOMAIN,accounts.spacexsi.com
 DOMAIN,auth.grokusercontent.com
 DOMAIN,auth.grokipedia.com
 DOMAIN-SUFFIX,cursorvm.com
+
+# Devin Desktop / Windsurf and Codeium backends.
+# https://docs.devin.ai/desktop/troubleshooting/windsurf-common-issues
+DOMAIN-SUFFIX,windsurf.com
+DOMAIN-SUFFIX,codeium.com
+DOMAIN-SUFFIX,codeiumdata.com
+DOMAIN,devin.ai
+DOMAIN,app.devin.ai
+DOMAIN,api.devin.ai
+DOMAIN,static.devin.ai
+
+# Only the shared cloud host required for Zed's hosted models.
+DOMAIN,cloud.zed.dev
+
+# Inference services. Hugging Face Hub and model downloads have separate routes.
+DOMAIN,opencode.ai
+DOMAIN,api.together.ai
+DOMAIN,api.together.xyz
+DOMAIN,router.huggingface.co
 
 # JetBrains AI Assistant and Junie public API; the China API remains on China.
 # https://youtrack.jetbrains.com/projects/RSRP/articles/SUPPORT-A-297/

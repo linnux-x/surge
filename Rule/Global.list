@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 15:28:33 +0800
+# UPDATED: 2026-11-21 17:57:20 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24638
+# TOTAL: 24636
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -4045,8 +4045,6 @@ DOMAIN-SUFFIX,codeforces.com
 DOMAIN-SUFFIX,codei.sh
 DOMAIN-SUFFIX,codeish.co
 DOMAIN-SUFFIX,codeish.io
-DOMAIN-SUFFIX,codeium.com
-DOMAIN-SUFFIX,codeiumdata.com
 DOMAIN-SUFFIX,codeplex.com
 DOMAIN-SUFFIX,coderabbit.ai
 DOMAIN-SUFFIX,codeseason.by
@@ -14494,6 +14492,7 @@ DOMAIN-SUFFIX,sonytc.co.jp
 DOMAIN-SUFFIX,soolakhi.com
 DOMAIN-SUFFIX,soooyinfor.lol
 DOMAIN-SUFFIX,soporn.com
+DOMAIN-SUFFIX,sora.com
 DOMAIN-SUFFIX,sora6.com
 DOMAIN-SUFFIX,sorairi.info
 DOMAIN-SUFFIX,sos44.com
@@ -17002,7 +17001,6 @@ DOMAIN-SUFFIX,willberis.ru
 DOMAIN-SUFFIX,willyporn.com
 DOMAIN-SUFFIX,windowsuem.com
 DOMAIN-SUFFIX,windsurf.build
-DOMAIN-SUFFIX,windsurf.com
 DOMAIN-SUFFIX,wing.com
 DOMAIN-SUFFIX,wink.am
 DOMAIN-SUFFIX,wink.ru

@@ -6,6 +6,8 @@ This module performs no fetching or output writes.
 """
 from __future__ import annotations
 
+import ipaddress
+import json
 import re
 from pathlib import Path
 from typing import Optional
@@ -74,6 +76,32 @@ def convert_cidr(lines: list[str]) -> list[str]:
         else:
             out.append(line)
     return out
+
+
+def convert_chatgpt_voice(lines: list[str]) -> list[str]:
+    """Match the official Voice prefixes only on UDP 3478."""
+    payload = json.loads("\n".join(lines))
+    prefixes = payload.get("prefixes") if isinstance(payload, dict) else None
+    if not isinstance(prefixes, list) or not prefixes:
+        raise ValueError("ChatGPT Voice metadata must contain a non-empty prefixes array")
+
+    networks = set()
+    for prefix in prefixes:
+        if not isinstance(prefix, dict) or len(prefix.keys() & {"ipv4Prefix", "ipv6Prefix"}) != 1:
+            raise ValueError("ChatGPT Voice entry must contain exactly one IP prefix")
+        field = "ipv4Prefix" if "ipv4Prefix" in prefix else "ipv6Prefix"
+        value = prefix[field]
+        if not isinstance(value, str) or "/" not in value:
+            raise ValueError("ChatGPT Voice entry must use CIDR notation")
+        network = ipaddress.ip_network(value)
+        if network.version != (4 if field == "ipv4Prefix" else 6) or not network.is_global:
+            raise ValueError(f"Invalid ChatGPT Voice prefix: {value}")
+        networks.add(network)
+
+    return [
+        f"AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR{'6' if network.version == 6 else ''},{network},no-resolve))"
+        for network in sorted(networks, key=ipaddress.get_mixed_type_key)
+    ]
 
 
 def filter_candidates(lines: list[str], exclude_file: Optional[Path]) -> list[str]:
@@ -157,6 +185,8 @@ def convert_source(lines: list[str], source_format: str | None) -> list[str]:
     """
     if source_format and source_format.startswith("speedtest-"):
         return convert_speedtest(lines, source_format)
+    if source_format == "chatgpt-voice-json":
+        return convert_chatgpt_voice(lines)
     cleaned = clean_source(lines)
     if source_format == "domainset":
         return convert_domainset(cleaned)

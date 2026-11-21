@@ -3621,6 +3621,25 @@
     {"source_file": "Claude.txt", "rule": "DOMAIN,www.claudeacademy.com", "reason": "跳转到 Anthropic 官方学院", "destination": "Claude.list → Claude", "route_tests": ["www.claudeacademy.com"]},
     {"source_file": "AI.txt", "rule": "DOMAIN,www.claudeacademy.com", "reason": "跳转到 Anthropic 官方学院，兼容独立订阅 AI", "destination": "Claude.list → Claude 或单订阅 AI.list → AI", "route_tests": ["www.claudeacademy.com"]},
     {"source_file": "Claude.txt", "rule": "DOMAIN,claude.md", "reason": "跳转到 Claude Code 官方记忆文档", "destination": "Claude.list → Claude", "route_tests": ["claude.md"]},
-    {"source_file": "AI.txt", "rule": "DOMAIN,claude.md", "reason": "跳转到 Claude Code 官方记忆文档，兼容独立订阅 AI", "destination": "Claude.list → Claude 或单订阅 AI.list → AI", "route_tests": ["claude.md"]}
+    {"source_file": "AI.txt", "rule": "DOMAIN,claude.md", "reason": "跳转到 Claude Code 官方记忆文档，兼容独立订阅 AI", "destination": "Claude.list → Claude 或单订阅 AI.list → AI", "route_tests": ["claude.md"]},
+    {"source_file": "AI.txt", "rule": "DOMAIN,copilot-telemetry.githubusercontent.com", "reason": "GitHub 官方 Copilot 专用客户端遥测", "destination": "AI.list→AI", "route_tests": ["copilot-telemetry.githubusercontent.com", "collector.github.com"]},
+    {"source_file": "AI.txt", "rule": "DOMAIN,copilot-reports.github.com", "reason": "GitHub 官方 Copilot 用量报告主机", "destination": "AI.list→AI", "route_tests": ["copilot-reports.github.com", "api.github.com"]},
+    {"source_file": "AI.txt", "rule": "DOMAIN-SUFFIX,windsurf.com", "reason": "Devin Desktop 官方 Windsurf 后端与入口", "destination": "AI.list→AI；更新主机由 Download 优先匹配", "route_tests": ["windsurf.com", "server.self-serve.windsurf.com", "update.windsurf.com"]},
+    {"source_file": "AI.txt", "rule": "DOMAIN-SUFFIX,codeium.com", "reason": "Devin Desktop 官方 Codeium 后端", "destination": "AI.list→AI", "route_tests": ["server.codeium.com", "codeium.com"]},
+    {"source_file": "AI.txt", "rule": "DOMAIN-SUFFIX,codeiumdata.com", "reason": "Devin Desktop 官方专用数据域", "destination": "AI.list→AI", "route_tests": ["codeiumdata.com"]},
+    {"source_file": "AI.txt", "rule": "DOMAIN,devin.ai", "reason": "Windsurf 官方首页跳转到 Devin Desktop", "destination": "AI.list→AI", "route_tests": ["windsurf.com", "devin.ai"]},
+    {"source_file": "AI.txt", "rule": "DOMAIN,app.devin.ai", "reason": "Devin Web 应用和会话", "destination": "AI.list→AI", "route_tests": ["app.devin.ai"]},
+    {"source_file": "AI.txt", "rule": "DOMAIN,api.devin.ai", "reason": "Devin API 和 ACP WebSocket", "destination": "AI.list→AI", "route_tests": ["api.devin.ai"]},
+    {"source_file": "AI.txt", "rule": "DOMAIN,static.devin.ai", "reason": "Devin Desktop 官方静态资源主机", "destination": "AI.list→AI", "route_tests": ["static.devin.ai"]},
+    {"source_file": "AI.txt", "rule": "DOMAIN,cloud.zed.dev", "reason": "精确保留 Zed 托管模型使用的共享云主机", "destination": "AI.list→AI", "route_tests": ["cloud.zed.dev", "api.zed.dev"]},
+    {"source_file": "AI.txt", "rule": "DOMAIN,opencode.ai", "reason": "OpenCode 官方推理 API 使用该主机", "destination": "AI.list→AI", "route_tests": ["opencode.ai"]},
+    {"source_file": "AI.txt", "rule": "DOMAIN,api.together.ai", "reason": "Together 官方推理 API 主机", "destination": "AI.list→AI", "route_tests": ["api.together.ai"]},
+    {"source_file": "AI.txt", "rule": "DOMAIN,api.together.xyz", "reason": "Together 旧 SDK 使用的兼容推理主机", "destination": "AI.list→AI", "route_tests": ["api.together.xyz"]},
+    {"source_file": "AI.txt", "rule": "DOMAIN,router.huggingface.co", "reason": "Hugging Face 官方推理路由与模型下载使用不同主机", "destination": "AI.list→AI", "route_tests": ["router.huggingface.co", "cas-bridge.xethub.hf.co"]},
+    {"source_file": "Download.txt", "rule": "DOMAIN,update.windsurf.com", "reason": "Devin Desktop 专用更新主机", "destination": "Download.list→Download", "route_tests": ["update.windsurf.com", "server.self-serve.windsurf.com"]},
+    {"source_file": "AI.exclude.txt", "rule": "DOMAIN,zed.dev", "reason": "Zed 通用官网、协作及编辑器服务不随模型出口切换", "destination": "Global 或 FINAL→Global", "route_tests": ["zed.dev", "api.zed.dev", "cloud.zed.dev"]},
+    {"source_file": "AI.exclude.txt", "rule": "DOMAIN,sora.com", "reason": "Sora 已退役，官方导出入口由 chatgpt.com 覆盖", "destination": "Global 或 FINAL→Global", "route_tests": ["sora.com", "sora.chatgpt.com"]},
+    {"source_file": "AI.exclude.txt", "rule": "DOMAIN-SUFFIX,zed.dev", "reason": "Zed 通用官网、协作及编辑器服务不随模型出口切换", "destination": "Global 或 FINAL→Global", "route_tests": ["zed.dev", "api.zed.dev", "cloud.zed.dev"]},
+    {"source_file": "AI.exclude.txt", "rule": "DOMAIN-SUFFIX,sora.com", "reason": "Sora 已退役，官方导出入口由 chatgpt.com 覆盖", "destination": "Global 或 FINAL→Global", "route_tests": ["sora.com", "sora.chatgpt.com"]}
   ]
 }

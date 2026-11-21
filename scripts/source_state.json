@@ -5,6 +5,12 @@
     "last_modified": "Fri, 01 Oct 2021 16:51:55 GMT",
     "source_available": true
   },
+  "https://openai.com/chatgpt-voice.json": {
+    "content_length": "14856",
+    "etag": "0x8DF4381AC969205",
+    "last_modified": "Mon, 16 Nov 2026 01:33:53 GMT",
+    "source_available": true
+  },
   "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/AI.list": {
     "content_length": "2648",
     "etag": "\"4e802c7d7958afd2790ffee3474417f3d3f7d12694210f0c4b743fc5e0153919\"",

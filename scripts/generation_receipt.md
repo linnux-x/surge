@@ -1,21 +1,21 @@
 # Surge 规则生成收据
 
 - 规则文件：34
-- 规则总数：157334
+- 规则总数：157753
 - manifest 文件：34
 
 ## 差异摘要
 
-- 新增：6
-- 删除：7
+- 新增：427
+- 删除：8
 - 来源迁移：0
 
 ## 规则类型
 
-- AND: 2
-- DOMAIN: 3773
+- AND: 413
+- DOMAIN: 3782
 - DOMAIN-KEYWORD: 64
-- DOMAIN-SUFFIX: 141338
+- DOMAIN-SUFFIX: 141337
 - DOMAIN-WILDCARD: 9
 - IP-ASN: 2
 - IP-CIDR: 8442
@@ -26,13 +26,14 @@
 
 ## 来源归属
 
-- ConnersHua AI: 12
+- ConnersHua AI: 11
 - Loyalsoldier China CIDR: 9665
-- Manual Rules: 478
+- Manual Rules: 493
+- OpenAI ChatGPT Voice: 411
 - Rabbit-Spec AIGC: 12
 - Rabbit-Spec China: 373
 - RocM301 Apple-AI: 6
-- SukkaW AI: 25
+- SukkaW AI: 21
 - SukkaW Apple CDN: 152
 - SukkaW Apple CN: 5
 - SukkaW CDN: 25
@@ -56,7 +57,7 @@
 - blackmatrix7 Disney: 166
 - blackmatrix7 Facebook: 565
 - blackmatrix7 Game: 562
-- blackmatrix7 Global: 24571
+- blackmatrix7 Global: 24569
 - blackmatrix7 GlobalMedia: 2190
 - blackmatrix7 Google: 683
 - blackmatrix7 Microsoft: 484

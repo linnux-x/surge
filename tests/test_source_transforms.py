@@ -12,7 +12,9 @@ from unittest.mock import patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 import generate_rules as generator
 import audit_upstream_sources as audit
+from rule_validator import validate_rule_file
 from source_transforms import apply_project_guardrails, clean_source, convert_source, filter_candidates
+from test_routing_order import match_domain
 
 FIXTURE = json.loads((Path(__file__).parent / 'fixtures/generation-baseline.json').read_text())
 
@@ -24,6 +26,29 @@ class FixedTime:
 
 
 class SourceTransformTests(unittest.TestCase):
+    def test_chatgpt_voice_matches_only_listed_prefixes_on_udp_3478(self):
+        lines = [json.dumps({"prefixes": [
+            {"ipv6Prefix": "2606:4700:4700::1111/128"},
+            {"ipv4Prefix": "1.2.3.4/32"},
+            {"ipv4Prefix": "1.2.3.4/32"},
+        ]})]
+        rules = convert_source(lines, "chatgpt-voice-json")
+        self.assertEqual(len(rules), 2)
+        self.assertEqual(validate_rule_file(rules, "AI.list"), [])
+        self.assertTrue(validate_rule_file(rules, "Download.list"))
+        for address in ("1.2.3.4", "2606:4700:4700::1111"):
+            with self.subTest(address=address):
+                self.assertTrue(match_domain(address, set(rules), port=3478, protocol="UDP"))
+                self.assertFalse(match_domain(address, set(rules), port=3478))
+                self.assertFalse(match_domain(address, set(rules), port=443, protocol="UDP"))
+        self.assertFalse(match_domain("1.2.3.5", set(rules), port=3478, protocol="UDP"))
+
+    def test_chatgpt_voice_rejects_malformed_or_local_prefixes(self):
+        for prefixes in ([], [{}], [{"ipv4Prefix": "192.168.0.0/24"}],
+                         [{"ipv6Prefix": "1.2.3.4/32"}], [{"ipv4Prefix": 1}]):
+            with self.subTest(prefixes=prefixes), self.assertRaises(ValueError):
+                convert_source([json.dumps({"prefixes": prefixes})], "chatgpt-voice-json")
+
     def test_ai_exclusions_use_complete_rules_for_both_upstream_formats(self):
         exclude = Path(__file__).resolve().parents[1] / 'Rule/Manual/AI.exclude.txt'
         shared_hosts = [

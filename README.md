@@ -52,7 +52,7 @@ https://raw.githubusercontent.com/linnux-x/surge/main/Conf/Linnux.conf
 |---------|---------|------|
 | 🚫 AdBlock.list | 手工维护 | 实测到的纯广告投放域名小名单；`REJECT,pre-matching`，不收录归因、风控、跳转、崩溃上报 |
 | 🤖 Claude.list | 手工维护 | Claude / Anthropic 服务以及客户端下载与更新 |
-| 📱 AI.list | 3 源 | AI 服务与模型 API |
+| 📱 AI.list | 4 源 | AI 服务、模型 API 与 ChatGPT 语音 |
 | 🍎 Apple.list | blackmatrix7 | Apple 全系服务 |
 | 🍎 Apple_AI.list | 1 源 | Apple Intelligence、Siri 与 Private Relay |
 | 🍎 Apple_CN.list | 2 源 | Apple 中国区 CDN 直连 |

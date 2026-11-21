@@ -42,10 +42,11 @@ ROC301 = BASE_URIS["ROC301"]
 # Official Sukka build output; the same response supplies both geographic views.
 SPEEDTEST_SERVERS = "https://raw.githubusercontent.com/SukkaLab/speedtest-net-servers-dist/master/servers.json"
 SPEEDTEST_CN_CSV = "https://raw.githubusercontent.com/spiritLHLS/speedtest.cn-CN-ID/main/CN.csv"
+CHATGPT_VOICE_PREFIXES = "https://openai.com/chatgpt-voice.json"
 
 # ── Canonical source list ─────────────────────────────────────────────────
 # Each entry: (source_label, source_url, target_ruleset, format_or_None)
-# format: "domainset" | "cidr" | "speedtest-json-cn" | "speedtest-json-international" | "speedtest-cn-csv" | None
+# format: "domainset" | "cidr" | "chatgpt-voice-json" | "speedtest-json-cn" | "speedtest-json-international" | "speedtest-cn-csv" | None
 
 _SOURCES: list[tuple[str, str, str, str | None]] = [
     # Apple_AI.list
@@ -54,6 +55,7 @@ _SOURCES: list[tuple[str, str, str, str | None]] = [
     ("SukkaW AI", f"{SUKKA}/non_ip/ai.conf", "AI.list", None),
     ("Rabbit-Spec AIGC", f"{RABBIT}/AIGC.list", "AI.list", None),
     ("ConnersHua AI", f"{CHUA}/AI.list", "AI.list", None),
+    ("OpenAI ChatGPT Voice", CHATGPT_VOICE_PREFIXES, "AI.list", "chatgpt-voice-json"),
     # Apple.list
     ("blackmatrix7 Apple", f"{BM7}/Apple/Apple_All_No_Resolve.list", "Apple.list", None),
     # Apple_CN.list
