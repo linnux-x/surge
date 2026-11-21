@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-21T15:12:36.902026",
-  "total_added": 10,
-  "total_removed": 3,
+  "generated_at": "2026-11-21T15:28:33.977690",
+  "total_added": 3,
+  "total_removed": 14,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -138,18 +138,12 @@
     },
     {
       "file": "Download.list",
-      "prev_total": 1610,
+      "prev_total": 1611,
       "curr_total": 1611,
-      "added_count": 1,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "003de57ede77",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,desktop.wifiman.com"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -166,40 +160,45 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24636,
+      "prev_total": 24638,
       "curr_total": 24638,
       "added_count": 2,
-      "removed_count": 0,
+      "removed_count": 2,
       "source_changed_count": 0,
       "added_sample": [
         {
-          "id": "0a47195526ee",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,stealth.net"
+          "id": "500ff550e2db",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,usercontent.dev"
         },
         {
-          "id": "db567d161c84",
+          "id": "8346585bd226",
           "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,wifiman.com"
+          "rule": "DOMAIN-SUFFIX,telegramdownload.com"
         }
       ],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "851cd3e1caf2",
+          "source": "blackmatrix7 Global",
+          "rule": "IP-CIDR,91.108.0.0/16,no-resolve"
+        },
+        {
+          "id": "a591070ebd50",
+          "source": "blackmatrix7 Global",
+          "rule": "IP-CIDR,109.239.140.0/24,no-resolve"
+        }
+      ],
       "source_changed_sample": []
     },
     {
       "file": "GlobalMedia.list",
-      "prev_total": 2253,
+      "prev_total": 2254,
       "curr_total": 2254,
-      "added_count": 1,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "d646c37a3d0d",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,fast.com"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -271,18 +270,12 @@
     },
     {
       "file": "Netflix.list",
-      "prev_total": 1115,
+      "prev_total": 1116,
       "curr_total": 1116,
-      "added_count": 1,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "d646c37a3d0d",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,fast.com"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -310,66 +303,23 @@
     },
     {
       "file": "Speedtest.list",
-      "prev_total": 1725,
+      "prev_total": 1726,
       "curr_total": 1726,
-      "added_count": 4,
-      "removed_count": 3,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "132d80b1cad3",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,wifiman.com"
-        },
-        {
-          "id": "3a526b67044b",
-          "source": "Manual Rules",
-          "rule": "AND,((DOMAIN,stealth.net),(DEST-PORT,8080))"
-        },
-        {
-          "id": "a80e7d0edd8d",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,speedtest.ubncloud.com"
-        },
-        {
-          "id": "bb16ef6ead4a",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,www.wifiman.com"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "0a47195526ee",
-          "source": "SukkaW Speedtest Servers International",
-          "rule": "DOMAIN,stealth.net"
-        },
-        {
-          "id": "d646c37a3d0d",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,fast.com"
-        },
-        {
-          "id": "db567d161c84",
-          "source": "SukkaW Speedtest",
-          "rule": "DOMAIN-SUFFIX,wifiman.com"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "Speedtest_China.list",
-      "prev_total": 53,
+      "prev_total": 54,
       "curr_total": 54,
-      "added_count": 1,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "696287a8d603",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,api-v3.speedtest.cn"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -398,12 +348,79 @@
     {
       "file": "Telegram.list",
       "prev_total": 50,
-      "curr_total": 50,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 39,
+      "added_count": 1,
+      "removed_count": 12,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "47b06d84de59",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,nicegram.me"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "33da75575e17",
+          "source": "blackmatrix7 Telegram",
+          "rule": "IP-ASN,59930,no-resolve"
+        },
+        {
+          "id": "48316b9e289f",
+          "source": "blackmatrix7 Telegram",
+          "rule": "IP-ASN,62041,no-resolve"
+        },
+        {
+          "id": "500ff550e2db",
+          "source": "blackmatrix7 Telegram",
+          "rule": "DOMAIN-SUFFIX,usercontent.dev"
+        },
+        {
+          "id": "66c54932bbee",
+          "source": "blackmatrix7 Telegram",
+          "rule": "PROCESS-NAME,nekox.messenger"
+        },
+        {
+          "id": "6885c9fe32bc",
+          "source": "blackmatrix7 Telegram",
+          "rule": "IP-ASN,62014,no-resolve"
+        },
+        {
+          "id": "8346585bd226",
+          "source": "blackmatrix7 Telegram",
+          "rule": "DOMAIN-SUFFIX,telegramdownload.com"
+        },
+        {
+          "id": "b1ed9a20e836",
+          "source": "blackmatrix7 Telegram",
+          "rule": "PROCESS-NAME,tw.nekomimi.nekogram"
+        },
+        {
+          "id": "c0eadeef8dbb",
+          "source": "blackmatrix7 Telegram",
+          "rule": "DOMAIN-KEYWORD,nicegram"
+        },
+        {
+          "id": "c46c920e38dc",
+          "source": "blackmatrix7 Telegram",
+          "rule": "PROCESS-NAME,org.telegram.messenger"
+        },
+        {
+          "id": "caa214068069",
+          "source": "blackmatrix7 Telegram",
+          "rule": "IP-ASN,211157,no-resolve"
+        },
+        {
+          "id": "d713bceb75ec",
+          "source": "blackmatrix7 Telegram",
+          "rule": "PROCESS-NAME,xyz.nextalone.nagram"
+        },
+        {
+          "id": "ee2fa33500c1",
+          "source": "blackmatrix7 Telegram",
+          "rule": "IP-ASN,44907,no-resolve"
+        }
+      ],
       "source_changed_sample": []
     },
     {

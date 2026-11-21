@@ -1,5 +1,8 @@
 DOMAIN,fast.com
 DOMAIN-SUFFIX,fast.com
+# Legacy Telegram ranges in this source include prefixes announced by other operators.
+IP-CIDR,91.108.0.0/16,no-resolve
+IP-CIDR,109.239.140.0/24,no-resolve
 DOMAIN-SUFFIX,akadns.net
 DOMAIN-SUFFIX,akamaiedge.net
 DOMAIN-SUFFIX,akamaihd.net

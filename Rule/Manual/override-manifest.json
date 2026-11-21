@@ -3458,6 +3458,21 @@
     {"source_file": "Speedtest.exclude.txt", "rule": "DOMAIN-SUFFIX,wifiman.com", "reason": "将 WiFiman 安装包和设备管理主机移出测速组", "destination": "Download 或通用策略", "route_tests": ["desktop.wifiman.com", "console.wifiman.com", "wifiman.com"]},
     {"source_file": "Download.txt", "rule": "DOMAIN,desktop.wifiman.com", "reason": "Ubiquiti 官方下载安装包主机", "destination": "Download.list → Download", "route_tests": ["desktop.wifiman.com"]},
     {"source_file": "Global.txt", "rule": "DOMAIN,stealth.net", "reason": "Stealth 企业官网，测速端口由 Speedtest 先命中", "destination": "Global.list → Global", "route_tests": ["https://stealth.net/", "http://stealth.net:8080/speedtest/upload.php"]},
-    {"source_file": "Speedtest_China.txt", "rule": "DOMAIN,api-v3.speedtest.cn", "reason": "iPhone Ponte 实测的大陆测速 API", "destination": "Speedtest_China.list → DIRECT", "route_tests": ["api-v3.speedtest.cn"]}
+    {"source_file": "Speedtest_China.txt", "rule": "DOMAIN,api-v3.speedtest.cn", "reason": "iPhone Ponte 实测的大陆测速 API", "destination": "Speedtest_China.list → DIRECT", "route_tests": ["api-v3.speedtest.cn"]},
+    {"source_file": "Telegram.exclude.txt", "rule": "IP-ASN,211157,no-resolve", "reason": "Telegram IP 边界使用官方 CIDR，避免 ASN 追加未列网段", "destination": "Telegram 官方 CIDR 或现有后续策略", "route_tests": ["149.154.167.51", "185.76.151.10", "95.161.64.99", "95.161.72.10"]},
+    {"source_file": "Telegram.exclude.txt", "rule": "IP-ASN,44907,no-resolve", "reason": "Telegram IP 边界使用官方 CIDR，避免 ASN 追加未列网段", "destination": "Telegram 官方 CIDR 或现有后续策略", "route_tests": ["149.154.167.51", "185.76.151.10", "95.161.64.99", "95.161.72.10"]},
+    {"source_file": "Telegram.exclude.txt", "rule": "IP-ASN,59930,no-resolve", "reason": "Telegram IP 边界使用官方 CIDR，避免 ASN 追加未列网段", "destination": "Telegram 官方 CIDR 或现有后续策略", "route_tests": ["149.154.167.51", "185.76.151.10", "95.161.64.99", "95.161.72.10"]},
+    {"source_file": "Telegram.exclude.txt", "rule": "IP-ASN,62014,no-resolve", "reason": "Telegram IP 边界使用官方 CIDR，避免 ASN 追加未列网段", "destination": "Telegram 官方 CIDR 或现有后续策略", "route_tests": ["149.154.167.51", "185.76.151.10", "95.161.64.99", "95.161.72.10"]},
+    {"source_file": "Telegram.exclude.txt", "rule": "IP-ASN,62041,no-resolve", "reason": "Telegram IP 边界使用官方 CIDR，避免 ASN 追加未列网段", "destination": "Telegram 官方 CIDR 或现有后续策略", "route_tests": ["149.154.167.51", "185.76.151.10", "95.161.64.99", "95.161.72.10"]},
+    {"source_file": "Telegram.exclude.txt", "rule": "DOMAIN-SUFFIX,telegramdownload.com", "reason": "域名现用于停放", "destination": "Global", "route_tests": ["telegramdownload.com"]},
+    {"source_file": "Telegram.exclude.txt", "rule": "DOMAIN-SUFFIX,usercontent.dev", "reason": "Telegram 竞赛托管第三方代码", "destination": "Global", "route_tests": ["entry1075-jsround1.usercontent.dev", "contest.com"]},
+    {"source_file": "Telegram.exclude.txt", "rule": "DOMAIN-KEYWORD,nicegram", "reason": "精确匹配客户端网站，其他广告和无关子串按各自主机分流", "destination": "Telegram 或 Global", "route_tests": ["nicegram.me", "ads.nicegram.me", "unrelated-nicegram.example"]},
+    {"source_file": "Telegram.exclude.txt", "rule": "PROCESS-NAME,nekox.messenger", "reason": "Surge 的进程规则匹配 Mac 可执行文件，Android 包名不参与", "destination": "Telegram 服务域或官方 CIDR", "route_tests": ["api.telegram.org", "149.154.167.51"]},
+    {"source_file": "Telegram.exclude.txt", "rule": "PROCESS-NAME,org.telegram.messenger", "reason": "Surge 的进程规则匹配 Mac 可执行文件，Android 包名不参与", "destination": "Telegram 服务域或官方 CIDR", "route_tests": ["api.telegram.org", "149.154.167.51"]},
+    {"source_file": "Telegram.exclude.txt", "rule": "PROCESS-NAME,tw.nekomimi.nekogram", "reason": "Surge 的进程规则匹配 Mac 可执行文件，Android 包名不参与", "destination": "Telegram 服务域或官方 CIDR", "route_tests": ["api.telegram.org", "149.154.167.51"]},
+    {"source_file": "Telegram.exclude.txt", "rule": "PROCESS-NAME,xyz.nextalone.nagram", "reason": "Surge 的进程规则匹配 Mac 可执行文件，Android 包名不参与", "destination": "Telegram 服务域或官方 CIDR", "route_tests": ["api.telegram.org", "149.154.167.51"]},
+    {"source_file": "Telegram.txt", "rule": "DOMAIN,nicegram.me", "reason": "保留经第一方确认的 Nicegram 客户端网站", "destination": "Telegram.list → Telegram", "route_tests": ["nicegram.me", "ads.nicegram.me"]},
+    {"source_file": "Global.exclude.txt", "rule": "IP-CIDR,91.108.0.0/16,no-resolve", "reason": "历史 Telegram 聚合包含由其他运营商宣告的子网", "destination": "Telegram 官方 CIDR 或现有后续策略", "route_tests": ["91.108.24.1", "91.108.56.130"]},
+    {"source_file": "Global.exclude.txt", "rule": "IP-CIDR,109.239.140.0/24,no-resolve", "reason": "旧 Telegram 网段当前由 AS31500 宣告", "destination": "现有后续策略", "route_tests": ["109.239.140.3"]}
   ]
 }
