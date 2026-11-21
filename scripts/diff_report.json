@@ -1,17 +1,38 @@
 {
-  "generated_at": "2026-11-21T15:28:33.977690",
-  "total_added": 3,
-  "total_removed": 14,
+  "generated_at": "2026-11-21T15:41:13.873746",
+  "total_added": 8,
+  "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
     {
       "file": "AI.list",
       "prev_total": 136,
-      "curr_total": 136,
-      "added_count": 0,
+      "curr_total": 140,
+      "added_count": 4,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "68aa8ae76307",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,www.claude.new"
+        },
+        {
+          "id": "783c8c8ed09b",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,www.claudeacademy.com"
+        },
+        {
+          "id": "a02b223a2e69",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,claude.md"
+        },
+        {
+          "id": "aad2bbc989a4",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,claudeacademy.com"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -117,11 +138,32 @@
     {
       "file": "Claude.list",
       "prev_total": 16,
-      "curr_total": 16,
-      "added_count": 0,
+      "curr_total": 20,
+      "added_count": 4,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "68aa8ae76307",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,www.claude.new"
+        },
+        {
+          "id": "783c8c8ed09b",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,www.claudeacademy.com"
+        },
+        {
+          "id": "a02b223a2e69",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,claude.md"
+        },
+        {
+          "id": "aad2bbc989a4",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,claudeacademy.com"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -162,33 +204,11 @@
       "file": "Global.list",
       "prev_total": 24638,
       "curr_total": 24638,
-      "added_count": 2,
-      "removed_count": 2,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "500ff550e2db",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,usercontent.dev"
-        },
-        {
-          "id": "8346585bd226",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,telegramdownload.com"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "851cd3e1caf2",
-          "source": "blackmatrix7 Global",
-          "rule": "IP-CIDR,91.108.0.0/16,no-resolve"
-        },
-        {
-          "id": "a591070ebd50",
-          "source": "blackmatrix7 Global",
-          "rule": "IP-CIDR,109.239.140.0/24,no-resolve"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -347,80 +367,13 @@
     },
     {
       "file": "Telegram.list",
-      "prev_total": 50,
+      "prev_total": 39,
       "curr_total": 39,
-      "added_count": 1,
-      "removed_count": 12,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "47b06d84de59",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,nicegram.me"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "33da75575e17",
-          "source": "blackmatrix7 Telegram",
-          "rule": "IP-ASN,59930,no-resolve"
-        },
-        {
-          "id": "48316b9e289f",
-          "source": "blackmatrix7 Telegram",
-          "rule": "IP-ASN,62041,no-resolve"
-        },
-        {
-          "id": "500ff550e2db",
-          "source": "blackmatrix7 Telegram",
-          "rule": "DOMAIN-SUFFIX,usercontent.dev"
-        },
-        {
-          "id": "66c54932bbee",
-          "source": "blackmatrix7 Telegram",
-          "rule": "PROCESS-NAME,nekox.messenger"
-        },
-        {
-          "id": "6885c9fe32bc",
-          "source": "blackmatrix7 Telegram",
-          "rule": "IP-ASN,62014,no-resolve"
-        },
-        {
-          "id": "8346585bd226",
-          "source": "blackmatrix7 Telegram",
-          "rule": "DOMAIN-SUFFIX,telegramdownload.com"
-        },
-        {
-          "id": "b1ed9a20e836",
-          "source": "blackmatrix7 Telegram",
-          "rule": "PROCESS-NAME,tw.nekomimi.nekogram"
-        },
-        {
-          "id": "c0eadeef8dbb",
-          "source": "blackmatrix7 Telegram",
-          "rule": "DOMAIN-KEYWORD,nicegram"
-        },
-        {
-          "id": "c46c920e38dc",
-          "source": "blackmatrix7 Telegram",
-          "rule": "PROCESS-NAME,org.telegram.messenger"
-        },
-        {
-          "id": "caa214068069",
-          "source": "blackmatrix7 Telegram",
-          "rule": "IP-ASN,211157,no-resolve"
-        },
-        {
-          "id": "d713bceb75ec",
-          "source": "blackmatrix7 Telegram",
-          "rule": "PROCESS-NAME,xyz.nextalone.nagram"
-        },
-        {
-          "id": "ee2fa33500c1",
-          "source": "blackmatrix7 Telegram",
-          "rule": "IP-ASN,44907,no-resolve"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {

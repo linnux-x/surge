@@ -536,8 +536,12 @@ youtube-nocookie.com,YouTube.list,YouTube,YouTube 隐私增强嵌入域
 unrelated-youtube.example,FINAL,Global,无关域名不能命中 YouTube 关键词
 claude.site,Claude.list,Claude,Anthropic 公共入口
 claude.new,Claude.list,Claude,Anthropic 公共入口
+www.claude.new,Claude.list,Claude,Claude 新会话跳转入口
 claude.dev,Claude.list,Claude,Anthropic 公共入口
 www.claude.dev,Claude.list,Claude,Anthropic 公共入口
+claudeacademy.com,Claude.list,Claude,Claude Academy 跳转入口
+www.claudeacademy.com,Claude.list,Claude,Claude Academy WWW 跳转入口
+claude.md,Claude.list,Claude,Claude Code 官方文档短链
 registry.modelcontextprotocol.io,AI.list,AI,跨厂商 MCP 规范和注册表
 accounts.spacexsi.com,AI.list,AI,Cursor 登录和运行环境
 auth.grokusercontent.com,AI.list,AI,Cursor 登录和运行环境

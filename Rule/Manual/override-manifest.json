@@ -3473,6 +3473,14 @@
     {"source_file": "Telegram.exclude.txt", "rule": "PROCESS-NAME,xyz.nextalone.nagram", "reason": "Surge 的进程规则匹配 Mac 可执行文件，Android 包名不参与", "destination": "Telegram 服务域或官方 CIDR", "route_tests": ["api.telegram.org", "149.154.167.51"]},
     {"source_file": "Telegram.txt", "rule": "DOMAIN,nicegram.me", "reason": "保留经第一方确认的 Nicegram 客户端网站", "destination": "Telegram.list → Telegram", "route_tests": ["nicegram.me", "ads.nicegram.me"]},
     {"source_file": "Global.exclude.txt", "rule": "IP-CIDR,91.108.0.0/16,no-resolve", "reason": "历史 Telegram 聚合包含由其他运营商宣告的子网", "destination": "Telegram 官方 CIDR 或现有后续策略", "route_tests": ["91.108.24.1", "91.108.56.130"]},
-    {"source_file": "Global.exclude.txt", "rule": "IP-CIDR,109.239.140.0/24,no-resolve", "reason": "旧 Telegram 网段当前由 AS31500 宣告", "destination": "现有后续策略", "route_tests": ["109.239.140.3"]}
+    {"source_file": "Global.exclude.txt", "rule": "IP-CIDR,109.239.140.0/24,no-resolve", "reason": "旧 Telegram 网段当前由 AS31500 宣告", "destination": "现有后续策略", "route_tests": ["109.239.140.3"]},
+    {"source_file": "Claude.txt", "rule": "DOMAIN,www.claude.new", "reason": "跳转到 Claude 新会话", "destination": "Claude.list → Claude", "route_tests": ["www.claude.new"]},
+    {"source_file": "AI.txt", "rule": "DOMAIN,www.claude.new", "reason": "跳转到 Claude 新会话，兼容独立订阅 AI", "destination": "Claude.list → Claude 或单订阅 AI.list → AI", "route_tests": ["www.claude.new"]},
+    {"source_file": "Claude.txt", "rule": "DOMAIN,claudeacademy.com", "reason": "跳转到 Anthropic 官方学院", "destination": "Claude.list → Claude", "route_tests": ["claudeacademy.com"]},
+    {"source_file": "AI.txt", "rule": "DOMAIN,claudeacademy.com", "reason": "跳转到 Anthropic 官方学院，兼容独立订阅 AI", "destination": "Claude.list → Claude 或单订阅 AI.list → AI", "route_tests": ["claudeacademy.com"]},
+    {"source_file": "Claude.txt", "rule": "DOMAIN,www.claudeacademy.com", "reason": "跳转到 Anthropic 官方学院", "destination": "Claude.list → Claude", "route_tests": ["www.claudeacademy.com"]},
+    {"source_file": "AI.txt", "rule": "DOMAIN,www.claudeacademy.com", "reason": "跳转到 Anthropic 官方学院，兼容独立订阅 AI", "destination": "Claude.list → Claude 或单订阅 AI.list → AI", "route_tests": ["www.claudeacademy.com"]},
+    {"source_file": "Claude.txt", "rule": "DOMAIN,claude.md", "reason": "跳转到 Claude Code 官方记忆文档", "destination": "Claude.list → Claude", "route_tests": ["claude.md"]},
+    {"source_file": "AI.txt", "rule": "DOMAIN,claude.md", "reason": "跳转到 Claude Code 官方记忆文档，兼容独立订阅 AI", "destination": "Claude.list → Claude 或单订阅 AI.list → AI", "route_tests": ["claude.md"]}
   ]
 }
