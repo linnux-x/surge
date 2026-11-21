@@ -50,6 +50,14 @@ class GenerationSafetyTests(unittest.TestCase):
         self.assertFalse(any('redundant CIDR' in e for e in validate_rule_file(rules, 'Test.list')))
         self.assertTrue(any('redundant CIDR' in e for e in validate_rule_file([rules[0], rules[1]+',no-resolve'], 'Test.list')))
 
+    def test_exact_domain_port_rule_requires_valid_port_and_no_policy(self):
+        from rule_validator import validate_rule_file
+        rule = 'AND,((DOMAIN,test.example),(DEST-PORT,8080))'
+        self.assertEqual(validate_rule_file([rule], 'Speedtest.list'), [])
+        for invalid in (rule.replace('8080', '0'), rule.replace('8080', '65536'), rule + ',DIRECT'):
+            with self.subTest(rule=invalid):
+                self.assertTrue(validate_rule_file([invalid], 'Speedtest.list'))
+
     def test_invalid_incremental_input_fails_before_generation(self):
         import os
         for value in ('[', 'null', '{}', '"AI.list"', '["missing.list"]', '[1]'):

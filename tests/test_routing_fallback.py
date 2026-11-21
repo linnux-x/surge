@@ -3,12 +3,14 @@
 from __future__ import annotations
 
 import importlib.util
+import sys
 import unittest
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "scripts" / "test_routing_order.py"
+sys.path.insert(0, str(SCRIPT.parent))
 
 
 def load_routing_module():

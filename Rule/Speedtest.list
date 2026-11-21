@@ -1,7 +1,7 @@
 # NAME: Speedtest
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 13:00:35 +0800
+# UPDATED: 2026-11-21 13:09:59 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 1725
 
@@ -9,8 +9,8 @@
 DOMAIN-SUFFIX,fast.com
 DOMAIN-SUFFIX,nperf.com
 
-# Ookla advertises the legacy HTTP upload URL on this port. Its TLS aliases already match ooklaserver.net.
-URL-REGEX,^http://mirror\.nforce\.com:8080/speedtest(?:[/?#]|$)
+# Ookla uses port 8080 here, separate from NFOrce's public software mirror.
+AND,((DOMAIN,mirror.nforce.com),(DEST-PORT,8080))
 
 # ======= SukkaW Speedtest ========
 DOMAIN-SUFFIX,speedtest.net

@@ -1,5 +1,5 @@
 DOMAIN-SUFFIX,fast.com
 DOMAIN-SUFFIX,nperf.com
 
-# Ookla advertises the legacy HTTP upload URL on this port. Its TLS aliases already match ooklaserver.net.
-URL-REGEX,^http://mirror\.nforce\.com:8080/speedtest(?:[/?#]|$)
+# Ookla uses port 8080 here, separate from NFOrce's public software mirror.
+AND,((DOMAIN,mirror.nforce.com),(DEST-PORT,8080))

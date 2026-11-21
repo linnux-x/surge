@@ -47,6 +47,7 @@ SUKKAW_MARKER = re.compile(
 )
 DOMAIN_VALUE_RE = re.compile(r"^[a-z0-9](?:[a-z0-9._-]*[a-z0-9])?$")
 DOMAIN_WILDCARD_VALUE_RE = re.compile(r"^[a-z0-9*?](?:[a-z0-9.*?-]*[a-z0-9*?])?$")
+DOMAIN_PORT_RULE_RE = re.compile(r"AND,\(\(DOMAIN,([^,()]+)\),\(DEST-PORT,([0-9]{1,5})\)\)", re.I)
 CONTROL_CHAR_RE = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
 
 PAYPAL_CN_DOMAINS = {
@@ -98,6 +99,14 @@ def validate_rule_file(lines: list[str], target_name: str) -> list[str]:
         if rule_type not in ALLOWED_TYPES:
             errors.append(f"{target_name}:{index} unsupported rule type: {rule}")
             continue
+
+        if rule_type == "AND" and (domain_port := DOMAIN_PORT_RULE_RE.fullmatch(rule)):
+            host, port = domain_port.groups()
+            if not 1 <= int(port) <= 65535:
+                errors.append(f"{target_name}:{index} invalid destination port: {rule}")
+            # Apply the existing domain syntax and ownership checks to the sub-rule.
+            parts = ["DOMAIN", host]
+            rule_type = "DOMAIN"
 
         if rule_type not in {"AND", "OR", "NOT"} and len(parts) < 2:
             errors.append(f"{target_name}:{index} missing value: {rule}")
