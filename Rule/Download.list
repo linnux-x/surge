@@ -1,16 +1,23 @@
 # NAME: Download
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-18 13:50:14 +0800
+# UPDATED: 2026-11-21 13:03:33 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1663
+# TOTAL: 1611
 
 # ======= Manual Rules ========
 # Preserve the S3 path-style endpoint without matching virtual-hosted buckets.
 DOMAIN,s3.amazonaws.com
 
-# Borrowed from SukkaW non_ip/download; only the downloader URL-REGEX is copied in this manual layer.
-URL-REGEX,^http://(.+)\.gvt\d\.com/edgedl
+# Match Google update payloads when Surge can see the URL.
+URL-REGEX,^https?://(?i:(?:[a-z0-9-]+\.)+gvt[0-9]\.com)(?::(?:80|443))?/edgedl(?:[/?#]|$)
+
+# Keep dedicated package and download endpoints after excluding their shared parents.
+DOMAIN,registry.yarnpkg.com
+DOMAIN,repo.packagist.org
+DOMAIN,dl.k8s.io
+DOMAIN,registry.k8s.io
+DOMAIN,openaicomproductionae4b.blob.core.windows.net
 
 # Playwright browser binaries (official registry source).
 # https://github.com/microsoft/playwright/blob/main/packages/playwright-core/src/server/registry/index.ts
@@ -26,63 +33,14 @@ DOMAIN,dl.ubnt.com
 DOMAIN,liveupdate01s.asus.com
 
 # ======= SukkaW Download ========
-DOMAIN-SUFFIX,cloud-object-storage.appdomain.cloud
-DOMAIN-SUFFIX,cloudflarestorage.com
-DOMAIN-SUFFIX,r2.dev
 DOMAIN-SUFFIX,r2.daocloud.vip
-DOMAIN-SUFFIX,s3.us-west-2.amazonaws.com
-DOMAIN-SUFFIX,s3-accelerate.amazonaws.com
-DOMAIN-SUFFIX,s3-global.amazonaws.com
-DOMAIN-SUFFIX,digitaloceanspaces.com
-DOMAIN-SUFFIX,s3.yandex.net
-DOMAIN-SUFFIX,vultrobjects.com
-DOMAIN-SUFFIX,linodeobjects.com
-DOMAIN-SUFFIX,cdn77-storage.com
-DOMAIN-SUFFIX,oss-cn-hongkong.aliyuncs.com
-DOMAIN-SUFFIX,oss-ap-northeast-1.aliyuncs.com
-DOMAIN-SUFFIX,oss-ap-northeast-2.aliyuncs.com
-DOMAIN-SUFFIX,oss-ap-south-1.aliyuncs.com
-DOMAIN-SUFFIX,oss-ap-southeast-1.aliyuncs.com
-DOMAIN-SUFFIX,oss-ap-southeast-2.aliyuncs.com
-DOMAIN-SUFFIX,oss-ap-southeast-3.aliyuncs.com
-DOMAIN-SUFFIX,oss-ap-southeast-5.aliyuncs.com
-DOMAIN-SUFFIX,oss-ap-southeast-6.aliyuncs.com
-DOMAIN-SUFFIX,oss-ap-southeast-7.aliyuncs.com
-DOMAIN-SUFFIX,oss-eu-central-1.aliyuncs.com
-DOMAIN-SUFFIX,oss-eu-west-1.aliyuncs.com
-DOMAIN-SUFFIX,oss-me-east-1.aliyuncs.com
-DOMAIN-SUFFIX,oss-us-east-1.aliyuncs.com
-DOMAIN-SUFFIX,oss-us-west-1.aliyuncs.com
-DOMAIN-SUFFIX,oss-accelerate-overseas.aliyuncs.com
-DOMAIN-SUFFIX,cos.ap-hongkong.myqcloud.com
-DOMAIN-SUFFIX,cos.ap-singapore.myqcloud.com
-DOMAIN-SUFFIX,cos.ap-mumbai.myqcloud.com
-DOMAIN-SUFFIX,cos.ap-jakarta.myqcloud.com
-DOMAIN-SUFFIX,cos.ap-seoul.myqcloud.com
-DOMAIN-SUFFIX,cos.ap-bangkok.myqcloud.com
-DOMAIN-SUFFIX,cos.ap-tokyo.myqcloud.com
-DOMAIN-SUFFIX,cos.na-siliconvalley.myqcloud.com
-DOMAIN-SUFFIX,cos.na-ashburn.myqcloud.com
-DOMAIN-SUFFIX,cos.na-toronto.myqcloud.com
-DOMAIN-SUFFIX,cos.sa-saopaulo.myqcloud.com
-DOMAIN-SUFFIX,cos.eu-frankfurt.myqcloud.com
-DOMAIN-SUFFIX,ks3-cn-hk-1.ksyuncs.com
-DOMAIN-SUFFIX,ks3-rus.ksyuncs.com
-DOMAIN-SUFFIX,ks3-sgp.ksyuncs.com
-DOMAIN-SUFFIX,s3.us-west-002.backblazeb2.com
-DOMAIN-SUFFIX,public.blob.vercel-storage.com
-DOMAIN-SUFFIX,blob.core.windows.net
-DOMAIN-SUFFIX,file.core.windows.net
 DOMAIN,s3.teckids.org
 DOMAIN,cas-bridge.xethub.hf.co
 DOMAIN-SUFFIX,cdn.hf.co
-DOMAIN-SUFFIX,t3.storageapi.dev
-DOMAIN-SUFFIX,s3-website.cloud.ru
 DOMAIN,registry.npmjs.org
 DOMAIN,npm.im
 DOMAIN,replicate.npmjs.com
 DOMAIN,registry.npmjs.com
-DOMAIN-SUFFIX,yarnpkg.com
 DOMAIN,skimdb.npmjs.com
 DOMAIN,rubygems.org
 DOMAIN,index.rubygems.org
@@ -91,7 +49,6 @@ DOMAIN-SUFFIX,repo.anaconda.com
 DOMAIN,npm.jsr.io
 DOMAIN,registry-cdn.wapm.io
 DOMAIN,registry.bower.io
-DOMAIN-SUFFIX,packagist.org
 DOMAIN,cdn.cocoapods.org
 DOMAIN,repo.gradle.org
 DOMAIN,plugins-artifacts.gradle.org
@@ -104,7 +61,6 @@ DOMAIN,go.opentelemetry.io
 DOMAIN,gotest.tools
 DOMAIN,go.yaml.in
 DOMAIN,binaries.prisma.sh
-DOMAIN-SUFFIX,mvnrepository.com
 DOMAIN,repo1.maven.org
 DOMAIN,repository.jboss.org
 DOMAIN-SUFFIX,jitpack.io
@@ -118,7 +74,6 @@ DOMAIN,packages.termux.dev
 DOMAIN,packages-cf.termux.dev
 DOMAIN-SUFFIX,mirrors.utermux.dev
 DOMAIN-SUFFIX,gcr.io
-DOMAIN-SUFFIX,k8s.io
 DOMAIN,cr.yandex
 DOMAIN,mcr.microsoft.com
 DOMAIN,registry.gitlab.com
@@ -154,7 +109,6 @@ DOMAIN-SUFFIX,deb.debian.org
 DOMAIN-SUFFIX,archive.debian.org
 DOMAIN-SUFFIX,ftp.debian.org
 DOMAIN-SUFFIX,ftp2.de.debian.org
-DOMAIN-SUFFIX,ftp-master.debian.org
 DOMAIN-SUFFIX,debian.map.fastlydns.net
 DOMAIN,security.debian.org
 DOMAIN,cloudfront.debian.net
@@ -255,7 +209,6 @@ DOMAIN-SUFFIX,file.io
 DOMAIN-SUFFIX,tmpfiles.org
 DOMAIN-SUFFIX,filebin.net
 DOMAIN-SUFFIX,temp.sh
-DOMAIN-SUFFIX,archive.org
 DOMAIN,distcache.freebsd.org
 DOMAIN,dl.pikpak.site
 DOMAIN,dl.pikpak.io
@@ -268,20 +221,15 @@ DOMAIN,static.adtidy.org
 DOMAIN,download.jetbrains.com
 DOMAIN,download-cdn.jetbrains.com
 DOMAIN,downloads.marketplace.jetbrains.com
-DOMAIN,download.visualstudio.microsoft.com
 DOMAIN,builds.dotnet.microsoft.com
 DOMAIN-SUFFIX,software-download.microsoft.com
-DOMAIN,officecdn-microsoft-com.akamaized.net
 DOMAIN,officecdnmac.microsoft.com
-DOMAIN-SUFFIX,delivery.mp.microsoft.com
 DOMAIN-SUFFIX,download.prss.microsoft.com
-DOMAIN-SUFFIX,update.microsoft.com
 DOMAIN,amupdatedl.microsoft.com
 DOMAIN,amupdatedl2.microsoft.com
 DOMAIN,amupdatedl3.microsoft.com
 DOMAIN,amupdatedl4.microsoft.com
 DOMAIN,amupdatedl5.microsoft.com
-DOMAIN,ctldl.windowsupdate.com
 DOMAIN,packages.microsoft.com
 DOMAIN,cdn.powershellgallery.com
 DOMAIN,edgeupdates.microsoft.com
@@ -440,6 +388,7 @@ DOMAIN,cdn-us-2.comaps.tech
 DOMAIN,cdn-fi-1.comaps.app
 DOMAIN,comaps.openstreetmap.fr
 DOMAIN,comaps-it1.unfoxo.it
+DOMAIN,comaps-cdn.s3-website.cloud.ru
 DOMAIN,mapgen-fi-1.comaps.app
 DOMAIN,download.osmand.net
 DOMAIN,dl2.osmand.net
@@ -1576,6 +1525,7 @@ DOMAIN,s2.animeko.openani.org
 DOMAIN,d.myani.org
 DOMAIN,d2.myani.org
 DOMAIN,downloads.cursor.com
+DOMAIN,cursor.blob.core.windows.net
 DOMAIN,downloads.x-wrt.com
 DOMAIN,onepluscommunityserver.com
 DOMAIN,opfiles.b-cdn.net

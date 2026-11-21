@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 12:45:41 +0800
+# UPDATED: 2026-11-21 13:00:35 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24611
+# TOTAL: 24635
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -2672,6 +2672,7 @@ DOMAIN-SUFFIX,blast.io
 DOMAIN-SUFFIX,blender.org
 DOMAIN-SUFFIX,blinkload.zone
 DOMAIN-SUFFIX,blizzak-juken.jp
+DOMAIN-SUFFIX,blob.core.windows.net
 DOMAIN-SUFFIX,blockchain.com
 DOMAIN-SUFFIX,blockchair.com
 DOMAIN-SUFFIX,blockchair.net
@@ -3990,6 +3991,7 @@ DOMAIN-SUFFIX,cloudflareregistrar.com
 DOMAIN-SUFFIX,cloudflareresearch.com
 DOMAIN-SUFFIX,cloudflareresolve.com
 DOMAIN-SUFFIX,cloudflaressl.com
+DOMAIN-SUFFIX,cloudflarestorage.com
 DOMAIN-SUFFIX,cloudflaresupport.com
 DOMAIN-SUFFIX,cloudflaretest.com
 DOMAIN-SUFFIX,cloudflarewarp.com
@@ -4761,6 +4763,7 @@ DOMAIN-SUFFIX,digitaldesire.com
 DOMAIN-SUFFIX,digitalid.ch
 DOMAIN-SUFFIX,digitalocean-ui.com
 DOMAIN-SUFFIX,digitalocean.com
+DOMAIN-SUFFIX,digitaloceanspaces.com
 DOMAIN-SUFFIX,digitalpack.com
 DOMAIN-SUFFIX,digitalplayground.com
 DOMAIN-SUFFIX,digitalplaygroundnetwork.com
@@ -8997,6 +9000,7 @@ DOMAIN-SUFFIX,jword.jp
 DOMAIN-SUFFIX,jwplatform.com
 DOMAIN-SUFFIX,jzydh.com
 DOMAIN-SUFFIX,k-bnk.ru
+DOMAIN-SUFFIX,k8s.io
 DOMAIN-SUFFIX,k9vidz.com
 DOMAIN-SUFFIX,kaamuu.com
 DOMAIN-SUFFIX,kaggle.net
@@ -11841,6 +11845,21 @@ DOMAIN-SUFFIX,osmfoundation.org
 DOMAIN-SUFFIX,ospray.net
 DOMAIN-SUFFIX,ospray.org
 DOMAIN-SUFFIX,ospserver.net
+DOMAIN-SUFFIX,oss-ap-northeast-1.aliyuncs.com
+DOMAIN-SUFFIX,oss-ap-northeast-2.aliyuncs.com
+DOMAIN-SUFFIX,oss-ap-south-1.aliyuncs.com
+DOMAIN-SUFFIX,oss-ap-southeast-1.aliyuncs.com
+DOMAIN-SUFFIX,oss-ap-southeast-2.aliyuncs.com
+DOMAIN-SUFFIX,oss-ap-southeast-3.aliyuncs.com
+DOMAIN-SUFFIX,oss-ap-southeast-5.aliyuncs.com
+DOMAIN-SUFFIX,oss-ap-southeast-6.aliyuncs.com
+DOMAIN-SUFFIX,oss-ap-southeast-7.aliyuncs.com
+DOMAIN-SUFFIX,oss-cn-hongkong.aliyuncs.com
+DOMAIN-SUFFIX,oss-eu-central-1.aliyuncs.com
+DOMAIN-SUFFIX,oss-eu-west-1.aliyuncs.com
+DOMAIN-SUFFIX,oss-me-east-1.aliyuncs.com
+DOMAIN-SUFFIX,oss-us-east-1.aliyuncs.com
+DOMAIN-SUFFIX,oss-us-west-1.aliyuncs.com
 DOMAIN-SUFFIX,otaku-168.com
 DOMAIN-SUFFIX,otaku18a.info
 DOMAIN-SUFFIX,otaku55.xyz
@@ -11924,6 +11943,7 @@ DOMAIN-SUFFIX,pacifickitchenandhome.com
 DOMAIN-SUFFIX,packagecloud.io
 DOMAIN-SUFFIX,packaging-cadcam.com
 DOMAIN-SUFFIX,packagingcadcam.com
+DOMAIN-SUFFIX,packagist.org
 DOMAIN-SUFFIX,packer.io
 DOMAIN-SUFFIX,pacloudflare.com
 DOMAIN-SUFFIX,paerosnen.club
@@ -12994,6 +13014,7 @@ DOMAIN-SUFFIX,r18.clickme.net
 DOMAIN-SUFFIX,r18av.com
 DOMAIN-SUFFIX,r18lu-avi.shop
 DOMAIN-SUFFIX,r18lu.com
+DOMAIN-SUFFIX,r2.dev
 DOMAIN-SUFFIX,r2modman.com
 DOMAIN-SUFFIX,r34porn.net
 DOMAIN-SUFFIX,rabbitcounter.com
@@ -17818,6 +17839,7 @@ DOMAIN-SUFFIX,yaoliuno.fun
 DOMAIN-SUFFIX,yaoyaomumu.com
 DOMAIN-SUFFIX,yaptube.com
 DOMAIN-SUFFIX,yarininsuyu.com
+DOMAIN-SUFFIX,yarnpkg.com
 DOMAIN-SUFFIX,yasarang.net
 DOMAIN-SUFFIX,yastat.net
 DOMAIN-SUFFIX,yastatic-net.ru
@@ -18564,6 +18586,7 @@ DOMAIN-SUFFIX,archive.fo
 DOMAIN-SUFFIX,archive.is
 DOMAIN-SUFFIX,archive.li
 DOMAIN-SUFFIX,archive.md
+DOMAIN-SUFFIX,archive.org
 DOMAIN-SUFFIX,archive.ph
 DOMAIN-SUFFIX,archive.today
 DOMAIN-SUFFIX,archive.vn
@@ -21720,6 +21743,7 @@ DOMAIN-SUFFIX,muzi.com
 DOMAIN-SUFFIX,muzi.net
 DOMAIN-SUFFIX,muzu.tv
 DOMAIN-SUFFIX,mvg.jp
+DOMAIN-SUFFIX,mvnrepository.com
 DOMAIN-SUFFIX,mx981.com
 DOMAIN-SUFFIX,my-formosa.com
 DOMAIN-SUFFIX,my-private-network.co.uk

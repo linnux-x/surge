@@ -14,6 +14,7 @@ import ipaddress
 import re
 import sys
 from pathlib import Path
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 RULE_DIR = ROOT / "Rule"
@@ -70,12 +71,12 @@ def load_ruleset(path: Path) -> set[str]:
         line = line.strip()
         if not line or line.startswith("#"):
             continue
-        raw_rules.add(line.lower())
+        raw_rules.add(line if line.startswith("URL-REGEX,") else line.lower())
     return raw_rules
 
 
-def match_domain(domain: str, rules: set[str]) -> bool:
-    """Check if a domain matches any rule in a ruleset.
+def match_domain(domain: str, rules: set[str], *, url: str | None = None) -> bool:
+    """Check if a destination matches any rule in a ruleset.
 
     Implements Surge's matching logic:
     - DOMAIN: exact match
@@ -83,6 +84,7 @@ def match_domain(domain: str, rules: set[str]) -> bool:
     - DOMAIN-KEYWORD: keyword appears anywhere in domain
     - DOMAIN-WILDCARD: wildcard match (basic * support)
     - IP-CIDR/IP-CIDR6: literal address membership (no DNS lookup)
+    - URL-REGEX: match the full URL when explicitly supplied
     """
     domain_lower = domain.lower().rstrip(".")
     try:
@@ -91,15 +93,18 @@ def match_domain(domain: str, rules: set[str]) -> bool:
         address = None
 
     for rule in rules:
-        parts = [p.strip() for p in rule.split(",")]
+        parts = [p.strip() for p in rule.split(",", 2)]
         if len(parts) < 2:
             continue
 
         rule_type = parts[0].upper()
         # parts[1] is the bare value; per-rule options live in parts[2:]
-        value = parts[1].lower()
+        value = parts[1] if rule_type == "URL-REGEX" else parts[1].lower()
 
-        if rule_type in ("IP-CIDR", "IP-CIDR6") and address is not None:
+        if rule_type == "URL-REGEX" and url is not None:
+            if re.search(value, url):
+                return True
+        elif rule_type in ("IP-CIDR", "IP-CIDR6") and address is not None:
             if address in ipaddress.ip_network(value, strict=False):
                 return True
         elif rule_type == "DOMAIN":
@@ -185,7 +190,8 @@ def simulate_routing(domain: str, routing_order: list[tuple[str, str]],
 
     Returns the matched ruleset name (or DIRECT/Global/policy name).
     """
-    domain = domain.lower().rstrip(".")
+    url = domain if domain.startswith(("http://", "https://")) else None
+    domain = ((urlsplit(url).hostname or "") if url else domain).lower().rstrip(".")
     for entry in routing_order:
         ruleset_name = entry[0]
         policy = entry[1]
@@ -211,7 +217,7 @@ def simulate_routing(domain: str, routing_order: list[tuple[str, str]],
 
         # Check if this is a .list ruleset
         if ruleset_name in rulesets:
-            if match_domain(domain, rulesets[ruleset_name]):
+            if match_domain(domain, rulesets[ruleset_name], url=url):
                 return f"{ruleset_name}→{policy}"
 
     return "FINAL→Global"  # unreachable fallback
@@ -240,7 +246,7 @@ def main() -> int:
 
     # Load routing order
     routing_order = load_routing_order()
-    print("Coverage: domains and literal CIDR addresses; DNS, ASN, process and SNI/HTTP Host are not simulated.")
+    print("Coverage: domains, literal CIDR addresses and supplied URLs; DNS, ASN, process and SNI/HTTP Host are not simulated.")
     print(f"Loaded routing order: {len(routing_order)} steps")
 
     # Load all .list files

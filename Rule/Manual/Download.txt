@@ -1,8 +1,15 @@
 # Preserve the S3 path-style endpoint without matching virtual-hosted buckets.
 DOMAIN,s3.amazonaws.com
 
-# Borrowed from SukkaW non_ip/download; only the downloader URL-REGEX is copied in this manual layer.
-URL-REGEX,^http://(.+)\.gvt\d\.com/edgedl
+# Match Google update payloads when Surge can see the URL.
+URL-REGEX,^https?://(?i:(?:[a-z0-9-]+\.)+gvt[0-9]\.com)(?::(?:80|443))?/edgedl(?:[/?#]|$)
+
+# Keep dedicated package and download endpoints after excluding their shared parents.
+DOMAIN,registry.yarnpkg.com
+DOMAIN,repo.packagist.org
+DOMAIN,dl.k8s.io
+DOMAIN,registry.k8s.io
+DOMAIN,openaicomproductionae4b.blob.core.windows.net
 
 # Playwright browser binaries (official registry source).
 # https://github.com/microsoft/playwright/blob/main/packages/playwright-core/src/server/registry/index.ts
