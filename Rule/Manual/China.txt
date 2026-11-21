@@ -1,4 +1,4 @@
-# China game download domains — route DIRECT via China policy
+# Mainland China game services and download domains
 DOMAIN-SUFFIX,battlenet.com.cn
 DOMAIN-SUFFIX,blizzard.cn
 DOMAIN-SUFFIX,blizzardgames.cn
@@ -24,7 +24,7 @@ DOMAIN-SUFFIX,steampowered.com.8686c.com
 DOMAIN-SUFFIX,steamstatic.com.8686c.com
 DOMAIN-SUFFIX,wmsjsteam.com
 DOMAIN-SUFFIX,steamchina.com
-DOMAIN-SUFFIX,steamserver.net
+DOMAIN-SUFFIX,wowchina.com
 DOMAIN-SUFFIX,steamcontent.com
 DOMAIN-SUFFIX,xboxlive.cn
 

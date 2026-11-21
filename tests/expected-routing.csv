@@ -380,8 +380,8 @@ xboxstudios.com,Game.list,Game,历史裸值排除迁移：保留原有专属归�
 audit-child.xboxstudios.com,Game.list,Game,历史排除迁移：子域策略保持不变（AWS 归属修正除外）
 gamepass.com,Game.list,Game,历史裸值排除迁移：保留原有专属归属；AWS 修复为通用代理
 audit-child.gamepass.com,Game.list,Game,历史排除迁移：子域策略保持不变（AWS 归属修正除外）
-helpshift.com,Game.list,Game,历史裸值排除迁移：保留原有专属归属；AWS 修复为通用代理
-audit-child.helpshift.com,Game.list,Game,历史排除迁移：子域策略保持不变（AWS 归属修正除外）
+helpshift.com,Global.list,Global,共享客服平台按通用分流，游戏客服按已知租户保留
+audit-child.helpshift.com,Global.list,Global,共享客服平台按通用分流，游戏客服按已知租户保留
 xbox.co,Game.list,Game,历史裸值排除迁移：保留原有专属归属；AWS 修复为通用代理
 audit-child.xbox.co,Game.list,Game,历史排除迁移：子域策略保持不变（AWS 归属修正除外）
 xbox.com,Game.list,Game,历史裸值排除迁移：保留原有专属归属；AWS 修复为通用代理
@@ -900,3 +900,87 @@ office365tw.com,FINAL,Global,已失效微软历史域名回归兜底
 opentranslatorstothings.org,FINAL,Global,已失效微软历史域名回归兜底
 sankie.net,FINAL,Global,已失效微软历史域名回归兜底
 windowscommunity.net,FINAL,Global,已失效微软历史域名回归兜底
+cmp3-hkg1.steamserver.net,Game.list,Game,Valve 官方连接管理与网络检查域名
+cmp1-lax1.steamserver.net,Game.list,Game,Valve 官方连接管理与网络检查域名
+ipv6check-http.steamserver.net,Game.list,Game,Valve 官方连接管理与网络检查域名
+2404:3fc0::1,Game.list,Game,Valve AS32590 已公告的专属 IPv6 前缀
+2404:3fc0:8::1,Game.list,Game,Valve AS32590 已公告的专属 IPv6 前缀
+2404:3fc0:a::1,Game.list,Game,Valve AS32590 已公告的专属 IPv6 前缀
+2602:801:f000::1,Game.list,Game,Valve AS32590 已公告的专属 IPv6 前缀
+2602:801:f005::1,Game.list,Game,Valve AS32590 已公告的专属 IPv6 前缀
+2602:801:f006::1,Game.list,Game,Valve AS32590 已公告的专属 IPv6 前缀
+2602:801:f008::1,Game.list,Game,Valve AS32590 已公告的专属 IPv6 前缀
+2602:801:f00d::1,Game.list,Game,Valve AS32590 已公告的专属 IPv6 前缀
+2602:801:f00e::1,Game.list,Game,Valve AS32590 已公告的专属 IPv6 前缀
+2a01:bc80::1,Game.list,Game,Valve AS32590 已公告的专属 IPv6 前缀
+2a01:bc80:8::1,Game.list,Game,Valve AS32590 已公告的专属 IPv6 前缀
+2a01:bc80:c::1,Game.list,Game,Valve AS32590 已公告的专属 IPv6 前缀
+api.minecraftservices.com,Game.list,Game,Minecraft 玩家档案与权益接口
+sample-title.playfabapi.com,Game.list,Game,PlayFab 游戏标题专属 API 域
+niantic.helpshift.com,Game.list,Game,已核实的游戏客服租户
+zyngasupport.helpshift.com,Game.list,Game,已核实的游戏客服租户
+game.boombeachgame.com,Game.list,Game,Supercell 游戏连接主机随 DNS 使用当前服务地址
+game.clashofclans.com,Game.list,Game,Supercell 游戏连接主机随 DNS 使用当前服务地址
+game.clashroyaleapp.com,Game.list,Game,Supercell 游戏连接主机随 DNS 使用当前服务地址
+game.haydaygame.com,Game.list,Game,Supercell 游戏连接主机随 DNS 使用当前服务地址
+pc.ps4.update.playstation.net,Download.list,Download,PlayStation 官方固件下载和地区更新端点
+dcn01.ps4.update.playstation.net,Download.list,Download,PlayStation 官方固件下载和地区更新端点
+pc.ps5.update.playstation.net,Download.list,Download,PlayStation 官方固件下载和地区更新端点
+dcn01.ps5.update.playstation.net,Download.list,Download,PlayStation 官方固件下载和地区更新端点
+www.wowchina.com,China.list,DIRECT,网易运营的魔兽世界国服
+www.sony.com,China.list,DIRECT,索尼集团消费电子网站回归通用分流
+electronics.sony.com,China.list,DIRECT,索尼集团消费电子网站回归通用分流
+go.sony.com,Global.list,Global,索尼集团消费电子网站回归通用分流
+www.seagroup.com,Global.list,Global,Sea 集团域名涵盖电商和金融服务
+cdp.cloud.unity3d.com,Global.list,Global,Unity 通用分析端点沿 Unity 域名策略
+not-steambroadcast.example,FINAL,Global,用已覆盖的 Steam 主机替代无边界关键词
+steambroadcast.akamaized.net,Game.list,Game,用已覆盖的 Steam 主机替代无边界关键词
+not-steamstore.example,FINAL,Global,用已覆盖的 Steam 主机替代无边界关键词
+steamstore-a.akamaihd.net,Game.list,Game,用已覆盖的 Steam 主机替代无边界关键词
+not-steamuserimages.example,FINAL,Global,用已覆盖的 Steam 主机替代无边界关键词
+steamuserimages-a.akamaihd.net,Game.list,Game,用已覆盖的 Steam 主机替代无边界关键词
+eaasserts-a.akamaihd.net,FINAL,Global,Google Public DNS 与 Cloudflare 均返回 NXDOMAIN
+originasserts.akamaized.net,FINAL,Global,Google Public DNS 与 Cloudflare 均返回 NXDOMAIN
+blizzard.nefficient.co.kr,FINAL,Global,Google Public DNS 与 Cloudflare 均返回 NXDOMAIN
+flipnotestudio.com,FINAL,Global,Google Public DNS 与 Cloudflare 均返回 NXDOMAIN
+pokemonwifi.net,FINAL,Global,Google Public DNS 与 Cloudflare 均返回 NXDOMAIN
+thelegendarystarfy.com,FINAL,Global,Google Public DNS 与 Cloudflare 均返回 NXDOMAIN
+wiifitu.com,FINAL,Global,Google Public DNS 与 Cloudflare 均返回 NXDOMAIN
+wiipartyu.com,FINAL,Global,Google Public DNS 与 Cloudflare 均返回 NXDOMAIN
+championshipseriesleague.com,FINAL,Global,Google Public DNS 与 Cloudflare 均返回 NXDOMAIN
+riotgames.tv,FINAL,Global,Google Public DNS 与 Cloudflare 均返回 NXDOMAIN
+ulol.com,FINAL,Global,Google Public DNS 与 Cloudflare 均返回 NXDOMAIN
+f3b7q2p3.ssl.hwcdn.net,Global.list,Global,Google Public DNS 与 Cloudflare 均返回 NXDOMAIN
+54.94.196.47,FINAL,Global,EC2 仅返回通用反解，缺少当前游戏归属证据
+54.207.104.145,FINAL,Global,EC2 仅返回通用反解，缺少当前游戏归属证据
+54.207.107.12,FINAL,Global,EC2 仅返回通用反解，缺少当前游戏归属证据
+13.210.25.233,FINAL,Global,EC2 仅返回通用反解，缺少当前游戏归属证据
+13.212.170.102,FINAL,Global,EC2 仅返回通用反解，缺少当前游戏归属证据
+13.212.171.212,FINAL,Global,EC2 仅返回通用反解，缺少当前游戏归属证据
+15.161.130.86,FINAL,Global,EC2 仅返回通用反解，缺少当前游戏归属证据
+15.254.1.17,FINAL,Global,EC2 仅返回通用反解，缺少当前游戏归属证据
+18.141.176.65,FINAL,Global,EC2 仅返回通用反解，缺少当前游戏归属证据
+18.156.137.147,FINAL,Global,EC2 仅返回通用反解，缺少当前游戏归属证据
+18.231.148.103,FINAL,Global,EC2 仅返回通用反解，缺少当前游戏归属证据
+3.1.80.68,FINAL,Global,EC2 仅返回通用反解，缺少当前游戏归属证据
+3.25.190.152,FINAL,Global,EC2 仅返回通用反解，缺少当前游戏归属证据
+3.82.147.36,FINAL,Global,EC2 仅返回通用反解，缺少当前游戏归属证据
+34.220.160.16,Global.list,Global,EC2 仅返回通用反解，缺少当前游戏归属证据
+35.154.64.7,FINAL,Global,EC2 仅返回通用反解，缺少当前游戏归属证据
+35.72.32.125,FINAL,Global,EC2 仅返回通用反解，缺少当前游戏归属证据
+52.13.150.128,Global.list,Global,EC2 仅返回通用反解，缺少当前游戏归属证据
+52.13.42.120,Global.list,Global,EC2 仅返回通用反解，缺少当前游戏归属证据
+52.50.131.212,Global.list,Global,EC2 仅返回通用反解，缺少当前游戏归属证据
+54.207.168.84,FINAL,Global,EC2 仅返回通用反解，缺少当前游戏归属证据
+54.248.64.192,FINAL,Global,EC2 仅返回通用反解，缺少当前游戏归属证据
+www.worldofwarcraft.com,Game.list,Game,国际服魔兽世界仍走 Game
+api.playstation.com,Game.list,Game,PlayStation 游戏服务继续走 Game
+gs2.ww.prod.dl.playstation.net,Download.list,Download,PlayStation 游戏内容下载继续走 Download
+steamcontent.com,Download.list,Download,Steam 内容仍可由 Download 单独选出口
+cmp3-hkg1.steamserver.net.example,FINAL,Global,Steam 连接规则严格按域名边界
+2404:3fc0:4::1,FINAL,Global,Valve 当前公告集合外的 IPv6 不进入 Game
+103.28.54.102,Game.list,Game,Steam 香港连接节点对应的裸 IPv4 仍走 Game
+www.playfab.com,Global.list,Global,PlayFab 通用网站仍走 Global
+sessionserver.mojang.com,Game.list,Game,Minecraft Java 会话服务继续走 Game
+resources.download.minecraft.net,Download.list,Download,Minecraft 资源下载继续走 Download
+selectra.helpshift.com,Global.list,Global,共享客服平台的非游戏租户走 Global

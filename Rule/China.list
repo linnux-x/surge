@@ -1,18 +1,18 @@
 # NAME: China
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 19:32:47 +0800
+# UPDATED: 2026-11-21 19:50:12 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 110668
+# TOTAL: 110665
 
 # ======= Manual Rules ========
-# China game download domains — route DIRECT via China policy
+# Mainland China game services and download domains
 DOMAIN-SUFFIX,blizzard.cn
 DOMAIN-SUFFIX,blizzardgames.cn
 DOMAIN-SUFFIX,blzstatic.cn
 DOMAIN-SUFFIX,wmsjsteam.com
 DOMAIN-SUFFIX,steamchina.com
-DOMAIN-SUFFIX,steamserver.net
+DOMAIN-SUFFIX,wowchina.com
 DOMAIN-SUFFIX,steamcontent.com
 DOMAIN-SUFFIX,xboxlive.cn
 
@@ -27629,8 +27629,6 @@ DOMAIN-SUFFIX,dcloudvod.net
 DOMAIN-SUFFIX,dclygroup.com
 DOMAIN-SUFFIX,dcmagcn.com
 DOMAIN-SUFFIX,dcmk17.com
-DOMAIN-SUFFIX,dcn01.ps4.update.playstation.net
-DOMAIN-SUFFIX,dcn01.ps5.update.playstation.net
 DOMAIN-SUFFIX,dcpc.com
 DOMAIN-SUFFIX,dcpfb.com
 DOMAIN-SUFFIX,dcqsq.com
@@ -95196,7 +95194,6 @@ DOMAIN-SUFFIX,wouu.net
 DOMAIN-SUFFIX,wow.fun
 DOMAIN-SUFFIX,wowamazingthings.com
 DOMAIN-SUFFIX,wowcat.net
-DOMAIN-SUFFIX,wowchina.com
 DOMAIN-SUFFIX,wowenda.com
 DOMAIN-SUFFIX,wowenwen.com
 DOMAIN-SUFFIX,wowgf.com

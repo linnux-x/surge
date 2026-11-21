@@ -1,9 +1,9 @@
 # NAME: Download
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 17:57:20 +0800
+# UPDATED: 2026-11-21 19:48:33 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1612
+# TOTAL: 1614
 
 # ======= Manual Rules ========
 # Preserve the S3 path-style endpoint without matching virtual-hosted buckets.
@@ -36,6 +36,10 @@ DOMAIN,update.windsurf.com
 
 # ASUS Armoury Crate / Live Update packages (CloudFront, GB-sized); 2026-11-08 monitoring saw 1.47GB via Global
 DOMAIN,liveupdate01s.asus.com
+
+# PlayStation console firmware distribution and update checks.
+DOMAIN-SUFFIX,ps4.update.playstation.net
+DOMAIN-SUFFIX,ps5.update.playstation.net
 
 # ======= SukkaW Download ========
 DOMAIN-SUFFIX,r2.daocloud.vip

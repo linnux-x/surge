@@ -1,147 +1,129 @@
 # Surge Rule Diff Report
-Generated: 2026-11-21T19:32:47.767687
+Generated: 2026-11-21T19:50:13.102081
 
 ## Summary
 
 | Metric | Count |
 |--------|-------|
 | Files changed | 4 |
-| Rules added | 47 |
-| Rules removed | 34 |
-| Source attribution changed | 2 |
+| Rules added | 25 |
+| Rules removed | 47 |
+| Source attribution changed | 1 |
 
 ## Per-File Changes
 
 | File | Prev | Curr | Added | Removed | Source Δ |
 |------|------|------|-------|---------|----------|
-| China.list | 110648 | 110668 | +21 | -1 | ~2 |
-| Global.list | 24640 | 24641 | +4 | -3 | ~0 |
-| Microsoft.list | 484 | 473 | +18 | -29 | ~0 |
-| Microsoft_CDN.list | 79 | 82 | +4 | -1 | ~0 |
+| China.list | 110668 | 110665 | +0 | -3 | ~1 |
+| Download.list | 1612 | 1614 | +2 | -0 | ~0 |
+| Game.list | 570 | 549 | +21 | -42 | ~0 |
+| Global.list | 24641 | 24641 | +2 | -2 | ~0 |
 
 ## China.list
 
+**Removed: 3** (showing first 3)
+```
+  - [blackmatrix7 ChinaMaxNoIP Domain] 9cbe05fb7e77  DOMAIN-SUFFIX,dcn01.ps4.update.playstation.net
+  - [Manual Rules] ac912fef9a7b  DOMAIN-SUFFIX,steamserver.net
+  - [blackmatrix7 ChinaMaxNoIP Domain] be80c88b5891  DOMAIN-SUFFIX,dcn01.ps5.update.playstation.net
+```
+
+**Source changed: 1**
+```
+  ~ 318c61730e78: [blackmatrix7 ChinaMaxNoIP Domain → Manual Rules]
+```
+
+## Download.list
+
+**Added: 2** (showing first 2)
+```
+  + [Manual Rules] 388ee7bfac75  DOMAIN-SUFFIX,ps4.update.playstation.net
+  + [Manual Rules] 6f66f1eb92b0  DOMAIN-SUFFIX,ps5.update.playstation.net
+```
+
+## Game.list
+
 **Added: 21** (showing first 21)
 ```
-  + [Manual Rules] 00e1b64449ab  DOMAIN-SUFFIX,sovcloud-mx.cn
-  + [Manual Rules] 01ece7944d66  DOMAIN-SUFFIX,sovcloud-static.cn
-  + [Manual Rules] 04a23b5f2cbd  DOMAIN-SUFFIX,sovcloud-usercontent.cn
-  + [Manual Rules] 04f028cf0b56  DOMAIN-SUFFIX,sovcloud.cn
-  + [Manual Rules] 15cc7e632177  DOMAIN-SUFFIX,msauthimages.cn
-  + [Manual Rules] 1dee34f65686  DOMAIN-SUFFIX,windowsazure.cn
-  + [Manual Rules] 3c7ad76f6a48  DOMAIN-SUFFIX,chinacloudapi.cn
-  + [Manual Rules] 4dd9d5abcaa5  DOMAIN-SUFFIX,partner.office365.cn
-  + [Manual Rules] 53ed8e83ec62  DOMAIN,collector.azure.cn
-  + [Manual Rules] 6c5bd2109452  DOMAIN,attachments.office365-net.cn
-  + [Manual Rules] 8bf2410f522f  DOMAIN-SUFFIX,msftauthimages.cn
-  + [Manual Rules] a2d5dd519d82  DOMAIN-SUFFIX,auth.microsoft.cn
-  + [Manual Rules] a96c8d575eb3  DOMAIN-SUFFIX,msftauth.cn
-  + [Manual Rules] b09ec36eb75f  DOMAIN-SUFFIX,aadrm.cn
-  + [Manual Rules] b3d96b7698a9  DOMAIN-SUFFIX,partner.microsoftonline-p.cn
-  + [Manual Rules] bb81d8ba6c1a  DOMAIN-SUFFIX,azure-mobile.cn
-  + [Manual Rules] bd56664ae1b2  DOMAIN-SUFFIX,msauth.cn
-  + [Manual Rules] d53d610886f2  DOMAIN-SUFFIX,microsoftonline.cn
-  + [Manual Rules] d5a33127236b  DOMAIN-SUFFIX,onmschina.cn
-  + [Manual Rules] dd810d85b1b0  DOMAIN,loki.office365.cn
-  + [Manual Rules] fd63281a0be6  DOMAIN-SUFFIX,chinacloud-mobile.cn
+  + [Manual Rules] 025603985404  DOMAIN,game.boombeachgame.com
+  + [Manual Rules] 1410f354aeff  IP-CIDR6,2602:801:f005::/48,no-resolve
+  + [Manual Rules] 36b2f37d37c8  IP-CIDR6,2404:3fc0::/46,no-resolve
+  + [Manual Rules] 44bada408c18  IP-CIDR6,2602:801:f006::/47,no-resolve
+  + [Manual Rules] 47440916e869  IP-CIDR6,2602:801:f008::/46,no-resolve
+  + [Manual Rules] 6395d9294562  IP-CIDR6,2602:801:f00d::/48,no-resolve
+  + [Manual Rules] 6b613a816bc3  IP-CIDR6,2a01:bc80:8::/46,no-resolve
+  + [Manual Rules] 73fdfb85b555  DOMAIN-SUFFIX,playfabapi.com
+  + [Manual Rules] 748a890fe212  DOMAIN,game.clashroyaleapp.com
+  + [Manual Rules] 9d258dee2b90  IP-CIDR6,2404:3fc0:a::/48,no-resolve
+  + [Manual Rules] ac912fef9a7b  DOMAIN-SUFFIX,steamserver.net
+  + [Manual Rules] bd2f34f7b016  IP-CIDR6,2a01:bc80:c::/48,no-resolve
+  + [Manual Rules] bebbbb807078  IP-CIDR6,2404:3fc0:8::/47,no-resolve
+  + [Manual Rules] c356ae668362  DOMAIN,game.haydaygame.com
+  + [Manual Rules] cc74629acbca  DOMAIN,api.minecraftservices.com
+  + [Manual Rules] cda5c435368c  DOMAIN,game.clashofclans.com
+  + [Manual Rules] d2bb3a822032  DOMAIN,zyngasupport.helpshift.com
+  + [Manual Rules] d4632fdc41ea  IP-CIDR6,2602:801:f000::/46,no-resolve
+  + [Manual Rules] ec12c2faa40d  DOMAIN,niantic.helpshift.com
+  + [Manual Rules] f4dc836df5aa  IP-CIDR6,2602:801:f00e::/48,no-resolve
+  + [Manual Rules] f820ae7fe10a  IP-CIDR6,2a01:bc80::/45,no-resolve
 ```
 
-**Removed: 1** (showing first 1)
+**Removed: 42** (showing first 42)
 ```
-  - [Rabbit-Spec China] a020b6a6694e  DOMAIN-SUFFIX,windows.net
-```
-
-**Source changed: 2**
-```
-  ~ 7ddb17ee1688: [SukkaW Domestic → Manual Rules]
-  ~ 5311c188fb80: [SukkaW Domestic → Manual Rules]
+  - [blackmatrix7 Game] 066e41c8f590  IP-CIDR,3.82.147.36/32,no-resolve
+  - [blackmatrix7 Game] 0b68072311bd  IP-CIDR,18.231.148.103/32,no-resolve
+  - [blackmatrix7 Game] 0d9f432b39f1  DOMAIN,originasserts.akamaized.net
+  - [blackmatrix7 Game] 10f15f5d307d  DOMAIN-SUFFIX,f3b7q2p3.ssl.hwcdn.net
+  - [blackmatrix7 Game] 11360efcbe82  IP-CIDR,13.210.25.233/32,no-resolve
+  - [blackmatrix7 Game] 1492fcfd3af9  DOMAIN-SUFFIX,sony.com
+  - [blackmatrix7 Game] 14f994852189  DOMAIN-SUFFIX,wiipartyu.com
+  - [blackmatrix7 Game] 1ecd32798eb8  DOMAIN-SUFFIX,blizzard.nefficient.co.kr
+  - [blackmatrix7 Game] 2d33d4ede174  IP-CIDR,18.156.137.147/32,no-resolve
+  - [blackmatrix7 Game] 2e05ab5e93fc  DOMAIN-SUFFIX,riotgames.tv
+  - [blackmatrix7 Game] 318c61730e78  DOMAIN-SUFFIX,wowchina.com
+  - [blackmatrix7 Game] 365f96135c8d  DOMAIN-SUFFIX,seagroup.com
+  - [blackmatrix7 Game] 37286db0388a  IP-CIDR,15.254.1.17/32,no-resolve
+  - [blackmatrix7 Game] 373e94a2bdd4  DOMAIN-SUFFIX,thelegendarystarfy.com
+  - [blackmatrix7 Game] 3c5a059fbff4  DOMAIN-KEYWORD,steamstore
+  - [blackmatrix7 Game] 40345a550237  IP-CIDR,52.50.131.212/32,no-resolve
+  - [blackmatrix7 Game] 41fe27f95bb2  IP-CIDR,13.212.171.212/32,no-resolve
+  - [blackmatrix7 Game] 425e99c387a4  IP-CIDR,15.161.130.86/32,no-resolve
+  - [blackmatrix7 Game] 42cf10478b13  DOMAIN-SUFFIX,championshipseriesleague.com
+  - [blackmatrix7 Game] 45b85af82228  IP-CIDR,54.207.107.12/32,no-resolve
+  - [blackmatrix7 Game] 5165a2a822e2  IP-CIDR,13.212.170.102/32,no-resolve
+  - [blackmatrix7 Game] 567425cb2d0e  IP-CIDR,34.220.160.16/32,no-resolve
+  - [blackmatrix7 Game] 5e9bd9b8d671  IP-CIDR,3.25.190.152/32,no-resolve
+  - [blackmatrix7 Game] 60a47f1ee4bf  DOMAIN,eaasserts-a.akamaihd.net
+  - [blackmatrix7 Game] 62dccbd21b70  DOMAIN-KEYWORD,steambroadcast
+  - [blackmatrix7 Game] 6d1196fe63d4  IP-CIDR,52.13.42.120/32,no-resolve
+  - [blackmatrix7 Game] 7936fa1901f3  DOMAIN-SUFFIX,helpshift.com
+  - [blackmatrix7 Game] 8b57dabf07e1  IP-CIDR,3.1.80.68/32,no-resolve
+  - [blackmatrix7 Game] 9989f32813f4  IP-CIDR,54.207.104.145/32,no-resolve
+  - [blackmatrix7 Game] 9c030630a814  IP-CIDR,54.248.64.192/32,no-resolve
+  - [blackmatrix7 Game] 9e5960e47090  IP-CIDR,52.13.150.128/32,no-resolve
+  - [blackmatrix7 Game] b267472030f9  IP-CIDR,35.72.32.125/32,no-resolve
+  - [blackmatrix7 Game] b32965e7f535  DOMAIN-KEYWORD,steamuserimages
+  - [blackmatrix7 Game] b47244e808fe  DOMAIN-SUFFIX,pokemonwifi.net
+  - [blackmatrix7 Game] c032ab0e4de4  IP-CIDR,18.141.176.65/32,no-resolve
+  - [blackmatrix7 Game] c19ecdd4fe34  DOMAIN-SUFFIX,cdp.cloud.unity3d.com
+  - [blackmatrix7 Game] c3806d988eea  IP-CIDR,35.154.64.7/32,no-resolve
+  - [blackmatrix7 Game] e7782d926bc4  IP-CIDR,54.94.196.47/32,no-resolve
+  - [blackmatrix7 Game] ed40aaba9679  DOMAIN-SUFFIX,ulol.com
+  - [blackmatrix7 Game] eefb87445b06  DOMAIN-SUFFIX,flipnotestudio.com
+  - [blackmatrix7 Game] f0e61b23f0f1  DOMAIN-SUFFIX,wiifitu.com
+  - [blackmatrix7 Game] fa7aacb7fe56  IP-CIDR,54.207.168.84/32,no-resolve
 ```
 
 ## Global.list
 
-**Added: 4** (showing first 4)
+**Added: 2** (showing first 2)
 ```
-  + [blackmatrix7 Global] 18fd1fe3e686  DOMAIN-SUFFIX,azurewebsites.net
-  + [blackmatrix7 Global] 2a09bc80657c  DOMAIN-SUFFIX,azurefd.net
-  + [blackmatrix7 Global] e77abcada295  DOMAIN-SUFFIX,cloudapp.net
-  + [blackmatrix7 Global] f181245620d4  DOMAIN-SUFFIX,trafficmanager.net
+  + [blackmatrix7 Global] 365f96135c8d  DOMAIN-SUFFIX,seagroup.com
+  + [blackmatrix7 Global] 7936fa1901f3  DOMAIN-SUFFIX,helpshift.com
 ```
 
-**Removed: 3** (showing first 3)
+**Removed: 2** (showing first 2)
 ```
-  - [blackmatrix7 Global] 4486741450cb  DOMAIN-SUFFIX,onenote.com
-  - [blackmatrix7 Global] 9804de830843  DOMAIN-SUFFIX,streaming.mediaservices.windows.net
-  - [blackmatrix7 Global] c0374368d4e0  DOMAIN,vscode.search.windows.net
-```
-
-## Microsoft.list
-
-**Added: 18** (showing first 18)
-```
-  + [Manual Rules] 1006b23f9469  DOMAIN,sts.windows.net
-  + [Manual Rules] 1c33e176159a  DOMAIN-SUFFIX,powerapps.com
-  + [Manual Rules] 41a448977dc7  DOMAIN-SUFFIX,clipchamp.com
-  + [Manual Rules] 4486741450cb  DOMAIN-SUFFIX,onenote.com
-  + [Manual Rules] 54f7045bd259  DOMAIN,redemptionservices.accesscontrol.windows.net
-  + [Manual Rules] 68f47450232b  DOMAIN,accounts.accesscontrol.windows.net
-  + [Manual Rules] 72397593ae33  DOMAIN-SUFFIX,keydelivery.mediaservices.windows.net
-  + [Manual Rules] 7c982ac9a4e3  DOMAIN,enterpriseregistration.windows.net
-  + [Manual Rules] 93738c2ba10d  DOMAIN,management.core.windows.net
-  + [Manual Rules] 95456a8b49f2  DOMAIN-SUFFIX,microsoftusercontent.com
-  + [Manual Rules] 970eb96bf8fb  DOMAIN,posarprodcssservice.accesscontrol.windows.net
-  + [Manual Rules] 9804de830843  DOMAIN-SUFFIX,streaming.mediaservices.windows.net
-  + [Manual Rules] 9a02605dc101  DOMAIN,graph.windows.net
-  + [Manual Rules] a36982b5ed52  AND,((PROTOCOL,UDP),(DEST-PORT,3478-3481),(IP-CIDR,52.112.0.0/14,no-resolve))
-  + [Manual Rules] af79a24d5137  AND,((PROTOCOL,UDP),(DEST-PORT,3478-3481),(IP-CIDR,52.122.0.0/15,no-resolve))
-  + [Manual Rules] b45c085ef879  AND,((PROTOCOL,UDP),(DEST-PORT,3478-3481),(IP-CIDR6,2603:1063::/38,no-resolve))
-  + [Manual Rules] b59bc2c48fb7  DOMAIN,login.windows.net
-  + [Manual Rules] c0374368d4e0  DOMAIN,vscode.search.windows.net
-```
-
-**Removed: 29** (showing first 29)
-```
-  - [blackmatrix7 Microsoft] 00b2645fb2e7  DOMAIN-SUFFIX,office365tw.com
-  - [blackmatrix7 Microsoft] 18fd1fe3e686  DOMAIN-SUFFIX,azurewebsites.net
-  - [blackmatrix7 Microsoft] 1c5dfe19aee6  DOMAIN-SUFFIX,microsofteca.com
-  - [blackmatrix7 Microsoft] 1f0cf387224c  DOMAIN-SUFFIX,bluehatnights.com
-  - [blackmatrix7 Microsoft] 2a09bc80657c  DOMAIN-SUFFIX,azurefd.net
-  - [blackmatrix7 Microsoft] 3b2c0846ecad  DOMAIN-SUFFIX,office365love.com
-  - [blackmatrix7 Microsoft] 4440f67468bf  USER-AGENT,OneDrive*
-  - [blackmatrix7 Microsoft] 493fb427ac1d  DOMAIN-SUFFIX,sankie.net
-  - [blackmatrix7 Microsoft] 4abb1fedd0e1  DOMAIN-KEYWORD,onedrive
-  - [blackmatrix7 Microsoft] 55b49d757786  DOMAIN-SUFFIX,microsoft.red
-  - [blackmatrix7 Microsoft] 5baf7a7375cc  USER-AGENT,Microsoft*
-  - [blackmatrix7 Microsoft] 6286437f1578  DOMAIN-SUFFIX,opentranslatorstothings.org
-  - [blackmatrix7 Microsoft] 693291bfdab1  DOMAIN-SUFFIX,microsoft.com.nsatc.net
-  - [blackmatrix7 Microsoft] 700822201997  DOMAIN-SUFFIX,microsoftlinc.com
-  - [blackmatrix7 Microsoft] 7e18cbda3159  DOMAIN-SUFFIX,microsoftsiteselection.com
-  - [blackmatrix7 Microsoft] 8ffeaeeb292f  DOMAIN-SUFFIX,msignitechina.com
-  - [blackmatrix7 Microsoft] 95b6dc718714  DOMAIN-SUFFIX,microsoftmxfilantropia.com
-  - [blackmatrix7 Microsoft] a020b6a6694e  DOMAIN-SUFFIX,windows.net
-  - [blackmatrix7 Microsoft] a50b632125b6  DOMAIN-SUFFIX,windowscommunity.net
-  - [blackmatrix7 Microsoft] b07bddf87073  DOMAIN-SUFFIX,livingyourambition.com
-  - [blackmatrix7 Microsoft] c18f7e01cc9e  PROCESS-NAME,OneDriveUpdater
-  - [blackmatrix7 Microsoft] c87d739be064  DOMAIN-SUFFIX,meetyourdevices.com
-  - [blackmatrix7 Microsoft] c9404e07a9e3  PROCESS-NAME,OneDrive
-  - [blackmatrix7 Microsoft] ccd6a15512c4  USER-AGENT,OneDriveiOSApp*
-  - [blackmatrix7 Microsoft] d80da49f96c0  DOMAIN-SUFFIX,msn.com.nsatc.net
-  - [blackmatrix7 Microsoft] e77abcada295  DOMAIN-SUFFIX,cloudapp.net
-  - [blackmatrix7 Microsoft] ec73faa5cf41  DOMAIN-KEYWORD,skydrive
-  - [blackmatrix7 Microsoft] ee9184d16201  DOMAIN-SUFFIX,msudalosti.com
-  - [blackmatrix7 Microsoft] f181245620d4  DOMAIN-SUFFIX,trafficmanager.net
-```
-
-## Microsoft_CDN.list
-
-**Added: 4** (showing first 4)
-```
-  + [Manual Rules] 1c28733c6f52  DOMAIN,cdn.odc.officeapps.live.com
-  + [Manual Rules] 278d948ad8d6  DOMAIN,otelrules.azureedge.net
-  + [Manual Rules] 5aa54ba2b261  DOMAIN-SUFFIX,static.microsoft
-  + [Manual Rules] 7462b1999b84  DOMAIN,cdn.uci.officeapps.live.com
-```
-
-**Removed: 1** (showing first 1)
-```
-  - [Manual Rules] 95456a8b49f2  DOMAIN-SUFFIX,microsoftusercontent.com
+  - [blackmatrix7 Global] 3821f336d196  DOMAIN,blizzard.nefficient.co.kr
+  - [blackmatrix7 Global] 73fdfb85b555  DOMAIN-SUFFIX,playfabapi.com
 ```

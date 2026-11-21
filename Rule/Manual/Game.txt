@@ -6,3 +6,33 @@ DOMAIN-SUFFIX,doom.com
 DOMAIN-SUFFIX,elderscrolls.com
 DOMAIN-SUFFIX,king.com
 DOMAIN-SUFFIX,xbx.lv
+
+# Steam connection managers and network checks.
+DOMAIN-SUFFIX,steamserver.net
+
+# Valve AS32590 IPv6 announcements checked 2026-11-21. Adjacent prefixes are combined exactly.
+# https://stat.ripe.net/AS32590
+IP-CIDR6,2404:3fc0::/46,no-resolve
+IP-CIDR6,2404:3fc0:8::/47,no-resolve
+IP-CIDR6,2404:3fc0:a::/48,no-resolve
+IP-CIDR6,2602:801:f000::/46,no-resolve
+IP-CIDR6,2602:801:f005::/48,no-resolve
+IP-CIDR6,2602:801:f006::/47,no-resolve
+IP-CIDR6,2602:801:f008::/46,no-resolve
+IP-CIDR6,2602:801:f00d::/48,no-resolve
+IP-CIDR6,2602:801:f00e::/48,no-resolve
+IP-CIDR6,2a01:bc80::/45,no-resolve
+IP-CIDR6,2a01:bc80:8::/46,no-resolve
+IP-CIDR6,2a01:bc80:c::/48,no-resolve
+
+# Minecraft player services, PlayFab title APIs and verified game support tenants.
+DOMAIN,api.minecraftservices.com
+DOMAIN-SUFFIX,playfabapi.com
+DOMAIN,niantic.helpshift.com
+DOMAIN,zyngasupport.helpshift.com
+
+# Supercell game hosts resolve current endpoints instead of relying on historical EC2 addresses.
+DOMAIN,game.boombeachgame.com
+DOMAIN,game.clashofclans.com
+DOMAIN,game.clashroyaleapp.com
+DOMAIN,game.haydaygame.com

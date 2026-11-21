@@ -27,7 +27,6 @@ DOMAIN-SUFFIX,steampowered.com.8686c.com
 DOMAIN-SUFFIX,steamstatic.com.8686c.com
 DOMAIN-SUFFIX,wmsjsteam.com
 DOMAIN-SUFFIX,steamchina.com
-DOMAIN-SUFFIX,steamserver.net
 DOMAIN-SUFFIX,steamcontent.com
 DOMAIN-SUFFIX,xboxlive.cn
 DOMAIN-SUFFIX,blzddist1-a.akamaihd.net
@@ -51,3 +50,55 @@ IP-CIDR,35.192.0.0/12,no-resolve
 
 # Limit service matches to the domain boundary.
 DOMAIN-KEYWORD,epicgames
+
+# Shared corporate, support and analytics endpoints follow general routing.
+# NetEase operates World of Warcraft for mainland China.
+DOMAIN-SUFFIX,cdp.cloud.unity3d.com
+DOMAIN-SUFFIX,helpshift.com
+DOMAIN-SUFFIX,seagroup.com
+DOMAIN-SUFFIX,sony.com
+DOMAIN-SUFFIX,wowchina.com
+
+# Steam storefront, broadcasts and user media have explicit CDN host rules.
+DOMAIN-KEYWORD,steambroadcast
+DOMAIN-KEYWORD,steamstore
+DOMAIN-KEYWORD,steamuserimages
+
+# Historical domains returned NXDOMAIN from both Google Public DNS and Cloudflare.
+DOMAIN,eaasserts-a.akamaihd.net
+DOMAIN,originasserts.akamaized.net
+DOMAIN-SUFFIX,blizzard.nefficient.co.kr
+DOMAIN-SUFFIX,flipnotestudio.com
+DOMAIN-SUFFIX,pokemonwifi.net
+DOMAIN-SUFFIX,thelegendarystarfy.com
+DOMAIN-SUFFIX,wiifitu.com
+DOMAIN-SUFFIX,wiipartyu.com
+DOMAIN-SUFFIX,championshipseriesleague.com
+DOMAIN-SUFFIX,riotgames.tv
+DOMAIN-SUFFIX,ulol.com
+DOMAIN-SUFFIX,f3b7q2p3.ssl.hwcdn.net
+
+# Historical Blizzard and Supercell IPs now have only generic EC2 reverse DNS.
+# Current game hostnames and independently attributable network rules handle game traffic.
+IP-CIDR,54.94.196.47/32,no-resolve
+IP-CIDR,54.207.104.145/32,no-resolve
+IP-CIDR,54.207.107.12/32,no-resolve
+IP-CIDR,13.210.25.233/32,no-resolve
+IP-CIDR,13.212.170.102/32,no-resolve
+IP-CIDR,13.212.171.212/32,no-resolve
+IP-CIDR,15.161.130.86/32,no-resolve
+IP-CIDR,15.254.1.17/32,no-resolve
+IP-CIDR,18.141.176.65/32,no-resolve
+IP-CIDR,18.156.137.147/32,no-resolve
+IP-CIDR,18.231.148.103/32,no-resolve
+IP-CIDR,3.1.80.68/32,no-resolve
+IP-CIDR,3.25.190.152/32,no-resolve
+IP-CIDR,3.82.147.36/32,no-resolve
+IP-CIDR,34.220.160.16/32,no-resolve
+IP-CIDR,35.154.64.7/32,no-resolve
+IP-CIDR,35.72.32.125/32,no-resolve
+IP-CIDR,52.13.150.128/32,no-resolve
+IP-CIDR,52.13.42.120/32,no-resolve
+IP-CIDR,52.50.131.212/32,no-resolve
+IP-CIDR,54.207.168.84/32,no-resolve
+IP-CIDR,54.248.64.192/32,no-resolve
