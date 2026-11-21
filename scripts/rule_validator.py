@@ -24,6 +24,7 @@ from cidr_rules import redundant_cidr_indices
 from policy import (
     CHINA_FALLBACK_EXCLUDE_PATTERNS,
     FASTCOM_RE,
+    FASTCOM_RULESETS,
     GITHUB_RE,
     SHARED_CDN_PARENTS,
     SHARED_INFRA_EXEMPT_FILES as SHARED_THIRD_PARTY_EXEMPT,
@@ -167,8 +168,8 @@ def validate_rule_file(lines: list[str], target_name: str) -> list[str]:
 
         if target_name == "Microsoft.list" and GITHUB_RE.search(low):
             errors.append(f"{target_name}:{index} GitHub in Microsoft.list: {rule}")
-        if target_name != "Speedtest.list" and FASTCOM_RE.search(low):
-            errors.append(f"{target_name}:{index} fast.com outside Speedtest.list: {rule}")
+        if target_name not in FASTCOM_RULESETS and FASTCOM_RE.search(low):
+            errors.append(f"{target_name}:{index} fast.com outside Netflix and GlobalMedia: {rule}")
         if target_name != "CDN.list" and rule_type == "DOMAIN-SUFFIX" and \
                 len(parts) >= 2 and parts[1].lower() in SHARED_CDN_PARENTS:
             errors.append(f"{target_name}:{index} shared CDN outside CDN.list: {rule}")

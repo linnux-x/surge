@@ -25,6 +25,8 @@ DOMAIN,u.expo.dev
 DOMAIN-SUFFIX,snipaste.com
 # NFOrce's public mirror needs a proxy. Ookla on port 8080 matches Speedtest first.
 DOMAIN,mirror.nforce.com
+# Stealth Communications website. Its Ookla port matches Speedtest earlier.
+DOMAIN,stealth.net
 # Overseas game community sites (builds, stats, esports news, completion trackers)
 # seen from the Windows desktop falling through to FINAL; same Global policy,
 # but matching here avoids the local DNS lookup triggered on the way to FINAL.

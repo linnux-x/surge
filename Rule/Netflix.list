@@ -1,9 +1,13 @@
 # NAME: Netflix
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 12:43:16 +0800
+# UPDATED: 2026-11-21 15:12:36 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1115
+# TOTAL: 1116
+
+# ======= Manual Rules ========
+# FAST.com uses the same Netflix Open Connect CDN as streaming.
+DOMAIN-SUFFIX,fast.com
 
 # ======= blackmatrix7 Netflix ========
 DOMAIN,h-netflix.online-metrix.net

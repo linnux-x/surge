@@ -1,0 +1,2 @@
+# SpeedTest.cn test API observed on iPhone Ponte.
+DOMAIN,api-v3.speedtest.cn

@@ -1,3 +1,6 @@
+# Keep the FAST.com front end, API and data on the same policy where Netflix.list is disabled.
+DOMAIN-SUFFIX,fast.com
+
 # Bilibili international / B-Star
 DOMAIN-SUFFIX,p-bstarstatic.akamaized.net
 DOMAIN-SUFFIX,p.bstarstatic.com

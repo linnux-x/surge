@@ -1,5 +1,12 @@
-DOMAIN-SUFFIX,fast.com
 DOMAIN-SUFFIX,nperf.com
+
+# WiFiman web speed test and its server discovery endpoint.
+DOMAIN,wifiman.com
+DOMAIN,www.wifiman.com
+DOMAIN,speedtest.ubncloud.com
 
 # Ookla uses port 8080 here, separate from NFOrce's public software mirror.
 AND,((DOMAIN,mirror.nforce.com),(DEST-PORT,8080))
+
+# The Stealth Communications website is served on standard web ports.
+AND,((DOMAIN,stealth.net),(DEST-PORT,8080))

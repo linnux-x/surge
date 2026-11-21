@@ -13,6 +13,7 @@ from typing import Optional
 from policy import (
     CHINA_FALLBACK_EXCLUDE_PATTERNS,
     FASTCOM_RE,
+    FASTCOM_RULESETS,
     GITHUB_RE,
     SHARED_INFRA_EXEMPT_FILES,
     SHARED_THIRD_PARTY_SUFFIXES,
@@ -91,6 +92,8 @@ def apply_project_guardrails(target_name: str, lines: list[str]) -> list[str]:
 
     # Filter SukkaW watermark domains before anything else
     out = [l for l in out if not SUKKAW_MARKER.search(l)]
+    if target_name not in FASTCOM_RULESETS:
+        out = [l for l in out if not FASTCOM_RE.search(l)]
 
     # Surge GEOIP is documented for ISO country codes only. Convert the common
     # community shorthand for Google-owned IP ranges to Surge-native IP-ASN.
@@ -101,8 +104,6 @@ def apply_project_guardrails(target_name: str, lines: list[str]) -> list[str]:
 
     if target_name == "Microsoft.list":
         out = [l for l in out if not GITHUB_RE.search(l)]
-    elif target_name in ("Netflix.list", "GlobalMedia.list", "Global.list"):
-        out = [l for l in out if not FASTCOM_RE.search(l)]
     elif target_name == "Google.list":
         out = [l for l in out if not YOUTUBE_RE.search(l)]
     elif target_name == "China.list":

@@ -1,0 +1,2 @@
+# FAST.com uses the same Netflix Open Connect CDN as streaming.
+DOMAIN-SUFFIX,fast.com

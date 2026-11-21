@@ -21,7 +21,8 @@ import re
 # Copilot → AI, release downloads → CDN).
 GITHUB_RE = re.compile(r"github|ghcr[.]io", re.IGNORECASE)
 
-# fast.com belongs to Speedtest.list only.
+# FAST.com uses Netflix Open Connect; both service and fallback use the media policy.
+FASTCOM_RULESETS = frozenset({"Netflix.list", "GlobalMedia.list"})
 FASTCOM_RE = re.compile(r"(^|,)([^,]*[.])?fast[.]com(,|$)", re.IGNORECASE)
 
 # YouTube domains never belong to Google.list (they live in YouTube.list).

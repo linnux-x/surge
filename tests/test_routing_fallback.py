@@ -71,6 +71,15 @@ class FallbackOrderTests(unittest.TestCase):
                 self.assertEqual(module.simulate_routing(hostname, order, rulesets),
                                  "GlobalMedia.list→GlobalMedia")
 
+    def test_fast_uses_media_fallback_with_its_data_nodes(self):
+        module = load_routing_module()
+        order = [entry for entry in module.load_routing_order() if entry[0] != "Netflix.list"]
+        rulesets = {path.name: module.load_ruleset(path) for path in module.RULE_DIR.glob("*.list")}
+        for hostname in ("fast.com", "api.fast.com", "ipv4-c002-hkg003-pccw-isp.1.oca.nflxvideo.net"):
+            with self.subTest(hostname=hostname):
+                self.assertEqual(module.simulate_routing(hostname, order, rulesets),
+                                 "GlobalMedia.list→GlobalMedia")
+
     def test_compiled_media_lists_omit_unscoped_client_patterns(self):
         module = load_routing_module()
         removed = {

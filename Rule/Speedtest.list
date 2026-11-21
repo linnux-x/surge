@@ -1,16 +1,23 @@
 # NAME: Speedtest
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 13:09:59 +0800
+# UPDATED: 2026-11-21 15:12:36 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1725
+# TOTAL: 1726
 
 # ======= Manual Rules ========
-DOMAIN-SUFFIX,fast.com
 DOMAIN-SUFFIX,nperf.com
+
+# WiFiman web speed test and its server discovery endpoint.
+DOMAIN,wifiman.com
+DOMAIN,www.wifiman.com
+DOMAIN,speedtest.ubncloud.com
 
 # Ookla uses port 8080 here, separate from NFOrce's public software mirror.
 AND,((DOMAIN,mirror.nforce.com),(DEST-PORT,8080))
+
+# The Stealth Communications website is served on standard web ports.
+AND,((DOMAIN,stealth.net),(DEST-PORT,8080))
 
 # ======= SukkaW Speedtest ========
 DOMAIN-SUFFIX,speedtest.net
@@ -120,7 +127,6 @@ DOMAIN-SUFFIX,ookla.surfinternet.com
 DOMAIN-SUFFIX,ookla.ham1.x-ion.de
 DOMAIN-SUFFIX,speedtest.sg
 DOMAIN-SUFFIX,speed.cloudflare.com
-DOMAIN-SUFFIX,wifiman.com
 DOMAIN-SUFFIX,wifiman.me
 DOMAIN-SUFFIX,wifiman.ubncloud.com
 DOMAIN-SUFFIX,wifiman-stability-test.ubncloud.com
@@ -1576,7 +1582,6 @@ DOMAIN,stchi.highlinefast.com
 DOMAIN,stdal.highlinefast.com
 DOMAIN,stdel.blazencr.com
 DOMAIN,stdel.tatatelebusiness.com
-DOMAIN,stealth.net
 DOMAIN,stest.broadstarnet.in
 DOMAIN,stest.ultraconnect.com.br
 DOMAIN,stgeorgetownwireless.rogers.com

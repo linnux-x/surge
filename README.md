@@ -74,7 +74,7 @@ https://raw.githubusercontent.com/linnux-x/surge/main/Conf/Linnux.conf
 | 💰 PayPal.list | blackmatrix7 | PayPal |
 | 💬 SocialMedia.list | 4 源 | 社交媒体聚合（海外平台） |
 | ⚡ Speedtest_China.list | Sukka 官方服务器数据 · spiritLHLS | 按明确大陆地区字段筛选测速主机并直连 |
-| ⚡ Speedtest.list | SukkaW · 官方服务器数据 | 国际测速节点与测速服务 · fast.com 仅此文件 |
+| ⚡ Speedtest.list | SukkaW · 官方服务器数据 | 国际测速节点与专属测速服务 |
 | 🎧 Spotify.list | blackmatrix7 | Spotify 音乐服务 |
 | 🇭🇰 HKMedia.list | SukkaW | 香港地区流媒体（Viu、myTV SUPER 等）及原本经香港组的 HBO Asia 旧端点 |
 | 🇨🇳 TWMedia.list | SukkaW | 台湾地区限定流媒体（KKTV、动画疯等） |
@@ -89,8 +89,9 @@ https://raw.githubusercontent.com/linnux-x/surge/main/Conf/Linnux.conf
 
 ## 测速来源与覆盖
 
-- `Speedtest.list`：Sukka 的服务域名列表、官方测速服务器数据中的境外主机，以及本地 fast.com / nperf.com 规则。
+- `Speedtest.list`：Sukka 的服务域名列表、官方测速服务器数据中的境外主机，以及本地 nperf.com 等规则。
 - `Speedtest_China.list`：同一 Sukka 数据中 `cc=CN` 且 `country=China` 的主机，再由 spiritLHLS 的大陆省份 CSV 补充。
+- FAST.com 的页面、API 和测速数据统一使用 Netflix 出口。未启用 `Netflix.list` 时由 `GlobalMedia.list` 接管。
 - Sukka 官方 JSON 一次下载、分别生成两份列表；JSON 更新会触发两份规则和 Global 重建，CSV 更新会触发大陆规则和 Global 重建。
 - 两份来源都不是全球测速节点全集；未覆盖的节点由后续规则匹配。
 

@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 13:14:49 +0800
+# UPDATED: 2026-11-21 15:12:36 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24636
+# TOTAL: 24638
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -33,6 +33,8 @@ DOMAIN,u.expo.dev
 DOMAIN-SUFFIX,snipaste.com
 # NFOrce's public mirror needs a proxy. Ookla on port 8080 matches Speedtest first.
 DOMAIN,mirror.nforce.com
+# Stealth Communications website. Its Ookla port matches Speedtest earlier.
+DOMAIN,stealth.net
 # Overseas game community sites (builds, stats, esports news, completion trackers)
 # seen from the Windows desktop falling through to FINAL; same Global policy,
 # but matching here avoids the local DNS lookup triggered on the way to FINAL.
@@ -16947,6 +16949,7 @@ DOMAIN-SUFFIX,wifesharingpics.com
 DOMAIN-SUFFIX,wifevideos.net
 DOMAIN-SUFFIX,wifewantstoplay.com
 DOMAIN-SUFFIX,wifi-mx.com
+DOMAIN-SUFFIX,wifiman.com
 DOMAIN-SUFFIX,wiki.gg
 DOMAIN-SUFFIX,wikia.org
 DOMAIN-SUFFIX,wikidot.com

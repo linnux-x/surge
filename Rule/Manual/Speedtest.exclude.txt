@@ -5,3 +5,7 @@ DOMAIN-SUFFIX,mensura.cdn-apple.com
 # NFOrce also serves ordinary software mirrors on this hostname.
 DOMAIN,mirror.nforce.com
 DOMAIN-SUFFIX,mirror.nforce.com
+
+# Keep ordinary websites and the WiFiman Desktop installer out of Speedtest.
+DOMAIN,stealth.net
+DOMAIN-SUFFIX,wifiman.com
