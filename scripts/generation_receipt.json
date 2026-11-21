@@ -41,12 +41,12 @@
     },
     {
       "file": "Apple_AI.list",
-      "rules": 20,
+      "rules": 19,
       "types": {
-        "DOMAIN": 9,
-        "DOMAIN-SUFFIX": 11
+        "DOMAIN": 14,
+        "DOMAIN-SUFFIX": 5
       },
-      "sha256": "a64d8f67e1103548dc2093f57e8b3778f928c12ca0421c681e3a1a5886341148"
+      "sha256": "a06f6c9097bdc888368290ccd51aa93ed7d31baa27b3168f2a2f7d4952cbb709"
     },
     {
       "file": "Apple_CN.list",
@@ -371,12 +371,12 @@
       "sha256": "12a597803cef9bc77ac8f2c1a3d57d30009676b2af71c8a4ba8e91fd773c1af0"
     }
   ],
-  "total_rules": 157335,
+  "total_rules": 157334,
   "rule_types": {
     "AND": 2,
-    "DOMAIN": 3768,
+    "DOMAIN": 3773,
     "DOMAIN-KEYWORD": 64,
-    "DOMAIN-SUFFIX": 141344,
+    "DOMAIN-SUFFIX": 141338,
     "DOMAIN-WILDCARD": 9,
     "IP-ASN": 2,
     "IP-CIDR": 8442,
@@ -388,10 +388,10 @@
   "source_attribution": {
     "ConnersHua AI": 12,
     "Loyalsoldier China CIDR": 9665,
-    "Manual Rules": 472,
+    "Manual Rules": 478,
     "Rabbit-Spec AIGC": 12,
     "Rabbit-Spec China": 373,
-    "RocM301 Apple-AI": 13,
+    "RocM301 Apple-AI": 6,
     "SukkaW AI": 25,
     "SukkaW Apple CDN": 152,
     "SukkaW Apple CN": 5,
@@ -436,7 +436,7 @@
     "AdBlock.manifest": "c7bedbd5e84159b346bc079d882aec3b25d0c9f9d4fd5923a4046d6e47ab065d",
     "Apple.manifest": "bd0b19cba3f8c6c41a1ea6216e708eb3cd02c93ae92511c878896d63ed259ea9",
     "AppleMedia.manifest": "d06efaca30249307cc6d5b1fe0df1039d7e6564c270412a944a26509f06ed085",
-    "Apple_AI.manifest": "d18fad47b67799e40ed7cec4341d074831b09f02c4abc482d6ae3c7ea9e76fc2",
+    "Apple_AI.manifest": "0d5b5a5cd034b2a5de8e12a8dd1291d9b0af74506fd92283d9558be4f85f51ad",
     "Apple_CN.manifest": "9827b974b91dc0304f68e2e9a192254f1b41f5a79658c439443406675015619c",
     "CDN.manifest": "ffa90e01060ef6db52af7ee5121125d5f6434b15fe0c39c9c85f8e5833495d54",
     "China.manifest": "046cd19de7709b4bd75e63e2b82bf1f4934045867808082573197da7a8035043",
@@ -467,11 +467,11 @@
     "WeChat.manifest": "d3084ce7e23c44e8e792dadcf800b2db7c42059ad62b6abf4cb631c4e5305d02",
     "YouTube.manifest": "2792e949566c45475771780359edfb9cd2ebe0fec073525afdccc2b890017b39"
   },
-  "sources_sha256": "1d045effa9ac9f787e234707c85e2dabdec7552bff7f2b711278f38a07421920",
-  "override_manifest_sha256": "ac42982f451bf3e94e9c718baed802bf234cf48a48778818e11d8c2b6a3bff25",
+  "sources_sha256": "1c2395e56c64f7f35d1dc07dae9a06acd7ca6032bd91a3226fe64d9ead4a3227",
+  "override_manifest_sha256": "b657bfce8cc81bafaefbba01c44bad6906a25632e7a3c149aa3b7aa799a2b422",
   "diff_summary": {
-    "total_added": 8,
-    "total_removed": 0,
+    "total_added": 6,
+    "total_removed": 7,
     "total_source_changed": 0
   }
 }

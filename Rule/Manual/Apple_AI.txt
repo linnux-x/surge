@@ -1,5 +1,5 @@
 # Apple Intelligence / Siri / Private Relay 等 Apple AI 相关域名
-# 上游来源：RocM301 Apple-AI + SukkaW Apple Intelligence
+# 上游来源：RocM301 Apple-AI
 # 策略：Apple_AI（默认 Proxy，支持地区选择）
 #
 # 注意：apps.mzstatic.com 已排除（保留在 Apple_CN/DIRECT）
@@ -15,3 +15,10 @@ DOMAIN,mask-boot.icloud.com
 DOMAIN,mask-canary.icloud.com
 DOMAIN-SUFFIX,apple-relay.akamaized.net
 DOMAIN-SUFFIX,apple-carry-relay.cloudflare.com
+# Apple 企业网络文档列出的固定中继主机。
+DOMAIN,apple-relay.apple.com
+DOMAIN,apple-relay.cloudflare.com
+DOMAIN,apple-relay.fastly-edge.com
+DOMAIN,cp4.cloudflare.com
+DOMAIN,mask-h2.icloud.com
+DOMAIN,mask.icloud.com

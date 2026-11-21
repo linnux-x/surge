@@ -1,13 +1,13 @@
 # NAME: Apple_AI
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 08:54:02 +0800
+# UPDATED: 2026-11-21 15:52:28 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 20
+# TOTAL: 19
 
 # ======= Manual Rules ========
 # Apple Intelligence / Siri / Private Relay 等 Apple AI 相关域名
-# 上游来源：RocM301 Apple-AI + SukkaW Apple Intelligence
+# 上游来源：RocM301 Apple-AI
 # 策略：Apple_AI（默认 Proxy，支持地区选择）
 #
 # 注意：apps.mzstatic.com 已排除（保留在 Apple_CN/DIRECT）
@@ -23,20 +23,18 @@ DOMAIN,mask-boot.icloud.com
 DOMAIN,mask-canary.icloud.com
 DOMAIN-SUFFIX,apple-relay.akamaized.net
 DOMAIN-SUFFIX,apple-carry-relay.cloudflare.com
+# Apple 企业网络文档列出的固定中继主机。
+DOMAIN,apple-relay.apple.com
+DOMAIN,apple-relay.cloudflare.com
+DOMAIN,apple-relay.fastly-edge.com
+DOMAIN,cp4.cloudflare.com
+DOMAIN,mask-h2.icloud.com
+DOMAIN,mask.icloud.com
 
 # ======= RocM301 Apple-AI ========
 DOMAIN,guzzoni.apple.com
-DOMAIN,mask-api.fe.apple-dns.net
 DOMAIN,mask-api.icloud.com
 DOMAIN,mask-t.apple-dns.net
 DOMAIN,mask.apple-dns.net
 DOMAIN-SUFFIX,smoot.apple.com
-DOMAIN-SUFFIX,apple-relay.apple.com
-DOMAIN-SUFFIX,apple-relay.cloudflare.com
-DOMAIN-SUFFIX,apple-relay.fastly-edge.com
 DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net
-DOMAIN-SUFFIX,cp4.cloudflare.com
-DOMAIN-SUFFIX,mask-h2.icloud.com
-DOMAIN-SUFFIX,mask.icloud.com
-
-# ======= SukkaW Apple Intelligence ========

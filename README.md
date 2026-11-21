@@ -54,7 +54,7 @@ https://raw.githubusercontent.com/linnux-x/surge/main/Conf/Linnux.conf
 | 🤖 Claude.list | 手工维护 | Claude / Anthropic 服务以及客户端下载与更新 |
 | 📱 AI.list | 3 源 | AI 服务与模型 API |
 | 🍎 Apple.list | blackmatrix7 | Apple 全系服务 |
-| 🍎 Apple_AI.list | 2 源 | Apple Intelligence、Siri 与 Private Relay |
+| 🍎 Apple_AI.list | 1 源 | Apple Intelligence、Siri 与 Private Relay |
 | 🍎 Apple_CN.list | 2 源 | Apple 中国区 CDN 直连 |
 | 🍎 AppleMedia.list | 手工维护 | Apple TV 播放与 Apple News 专属端点 |
 | 📦 CDN.list | SukkaW | CDN、静态资源、下载资源 |

@@ -50,7 +50,6 @@ SPEEDTEST_CN_CSV = "https://raw.githubusercontent.com/spiritLHLS/speedtest.cn-CN
 _SOURCES: list[tuple[str, str, str, str | None]] = [
     # Apple_AI.list
     ("RocM301 Apple-AI", f"{ROC301}/Apple-AI.list", "Apple_AI.list", None),
-    ("SukkaW Apple Intelligence", f"{SUKKA}/non_ip/apple_intelligence.conf", "Apple_AI.list", None),
     # AI.list
     ("SukkaW AI", f"{SUKKA}/non_ip/ai.conf", "AI.list", None),
     ("Rabbit-Spec AIGC", f"{RABBIT}/AIGC.list", "AI.list", None),
