@@ -49,9 +49,11 @@ SUKKAW_MARKER = re.compile(
 DOMAIN_VALUE_RE = re.compile(r"^[a-z0-9](?:[a-z0-9._-]*[a-z0-9])?$")
 DOMAIN_WILDCARD_VALUE_RE = re.compile(r"^[a-z0-9*?](?:[a-z0-9.*?-]*[a-z0-9*?])?$")
 DOMAIN_PORT_RULE_RE = re.compile(r"AND,\(\(DOMAIN,([^,()]+)\),\(DEST-PORT,([0-9]{1,5})\)\)", re.I)
-VOICE_UDP_RULE_RE = re.compile(
-    r"AND,\(\(PROTOCOL,UDP\),\(DEST-PORT,3478\),\((IP-CIDR6?),([0-9a-f.:]+/[0-9]+),no-resolve\)\)", re.I
+UDP_MEDIA_RULE_RE = re.compile(
+    r"AND,\(\(PROTOCOL,UDP\),\(DEST-PORT,(3478(?:-3481)?)\),\((IP-CIDR6?),([0-9a-f.:]+/[0-9]+),no-resolve\)\)",
+    re.I,
 )
+UDP_MEDIA_PORTS = {"AI.list": "3478", "Microsoft.list": "3478-3481"}
 CONTROL_CHAR_RE = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
 
 PAYPAL_CN_DOMAINS = {
@@ -104,16 +106,16 @@ def validate_rule_file(lines: list[str], target_name: str) -> list[str]:
             errors.append(f"{target_name}:{index} unsupported rule type: {rule}")
             continue
 
-        if rule_type == "AND" and (voice_udp := VOICE_UDP_RULE_RE.fullmatch(rule)):
-            cidr_type, prefix = voice_udp.groups()
+        if rule_type == "AND" and (media_rule := UDP_MEDIA_RULE_RE.fullmatch(rule)):
+            ports, cidr_type, prefix = media_rule.groups()
             try:
                 network = ipaddress.ip_network(prefix)
             except ValueError as exc:
-                errors.append(f"{target_name}:{index} invalid Voice CIDR: {exc}")
+                errors.append(f"{target_name}:{index} invalid media CIDR: {exc}")
             else:
                 version = 6 if cidr_type.upper() == "IP-CIDR6" else 4
-                if target_name != "AI.list" or network.version != version or not network.is_global:
-                    errors.append(f"{target_name}:{index} invalid ChatGPT Voice rule: {rule}")
+                if UDP_MEDIA_PORTS.get(target_name) != ports or network.version != version or not network.is_global:
+                    errors.append(f"{target_name}:{index} invalid UDP media rule: {rule}")
             continue
 
         if rule_type == "AND" and (domain_port := DOMAIN_PORT_RULE_RE.fullmatch(rule)):

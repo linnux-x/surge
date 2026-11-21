@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 19:22:03 +0800
+# UPDATED: 2026-11-21 19:32:47 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24640
+# TOTAL: 24641
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -193,7 +193,6 @@ DOMAIN,utcnist.colorado.edu
 DOMAIN,utcnist2.colorado.edu
 DOMAIN,utcnist3.colorado.edu
 DOMAIN,vmware.tt.omtrdc.net
-DOMAIN,vscode.search.windows.net
 DOMAIN,wetv.qq.com
 DOMAIN,widgets.stripst.com
 DOMAIN,wrds-www.wharton.upenn.edu
@@ -2220,6 +2219,7 @@ DOMAIN-SUFFIX,azubu.tv
 DOMAIN-SUFFIX,azure-api.net
 DOMAIN-SUFFIX,azurecr.io
 DOMAIN-SUFFIX,azureedge.us
+DOMAIN-SUFFIX,azurefd.net
 DOMAIN-SUFFIX,azurestaticapps.net
 DOMAIN-SUFFIX,b-eroland.net
 DOMAIN-SUFFIX,b-ok.africa
@@ -3962,6 +3962,7 @@ DOMAIN-SUFFIX,clipsex.asia
 DOMAIN-SUFFIX,clitgames.com
 DOMAIN-SUFFIX,clock.isc.org
 DOMAIN-SUFFIX,clojure.org
+DOMAIN-SUFFIX,cloudapp.net
 DOMAIN-SUFFIX,cloudc.one
 DOMAIN-SUFFIX,cloudchoose.com
 DOMAIN-SUFFIX,cloudcone.net
@@ -14753,7 +14754,6 @@ DOMAIN-SUFFIX,straitsx.com
 DOMAIN-SUFFIX,stream-mydirtyhobby.biz
 DOMAIN-SUFFIX,streamate.com
 DOMAIN-SUFFIX,streamhentaimovies.com
-DOMAIN-SUFFIX,streaming.mediaservices.windows.net
 DOMAIN-SUFFIX,streamingporn.xyz
 DOMAIN-SUFFIX,streamlatina.com
 DOMAIN-SUFFIX,streamporn.cc
@@ -15514,6 +15514,7 @@ DOMAIN-SUFFIX,tracker.gg
 DOMAIN-SUFFIX,tracker.network
 DOMAIN-SUFFIX,trae.ai
 DOMAIN-SUFFIX,traffichaus.com
+DOMAIN-SUFFIX,trafficmanager.net
 DOMAIN-SUFFIX,tranny.one
 DOMAIN-SUFFIX,trannygem.com
 DOMAIN-SUFFIX,trannytube.tv
@@ -18681,6 +18682,7 @@ DOMAIN-SUFFIX,axureformac.com
 DOMAIN-SUFFIX,azerbaycan.tv
 DOMAIN-SUFFIX,azerimix.com
 DOMAIN-SUFFIX,azirevpn.com
+DOMAIN-SUFFIX,azurewebsites.net
 DOMAIN-SUFFIX,b-ok.cc
 DOMAIN-SUFFIX,b0ne.com
 DOMAIN-SUFFIX,baby-kingdom.com
@@ -22094,7 +22096,6 @@ DOMAIN-SUFFIX,onapp.com
 DOMAIN-SUFFIX,one.one
 DOMAIN-SUFFIX,onedumb.com
 DOMAIN-SUFFIX,onejav.com
-DOMAIN-SUFFIX,onenote.com
 DOMAIN-SUFFIX,onesto.re
 DOMAIN-SUFFIX,onestore.co.kr
 DOMAIN-SUFFIX,onevps.com

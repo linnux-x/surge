@@ -63,3 +63,34 @@ DOMAIN-SUFFIX,snssdk.com
 
 # Preserve Amazon China routing when upstream drops the broad cn suffix.
 DOMAIN-SUFFIX,amazon.cn
+
+# Microsoft 365 operated by 21Vianet. Shared worldwide sign-in domains keep their existing route.
+# https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet
+DOMAIN-SUFFIX,aadrm.cn
+DOMAIN-SUFFIX,auth.microsoft.cn
+DOMAIN-SUFFIX,azure-mobile.cn
+DOMAIN-SUFFIX,chinacloud-mobile.cn
+DOMAIN-SUFFIX,chinacloudapi.cn
+DOMAIN-SUFFIX,microsoftonline.cn
+DOMAIN-SUFFIX,msauth.cn
+DOMAIN-SUFFIX,msauthimages.cn
+DOMAIN-SUFFIX,msftauth.cn
+DOMAIN-SUFFIX,msftauthimages.cn
+DOMAIN-SUFFIX,officewebapps.cn
+DOMAIN-SUFFIX,onmschina.cn
+DOMAIN-SUFFIX,partner.microsoftonline-m-i.net.cn
+DOMAIN-SUFFIX,partner.microsoftonline-m.net.cn
+DOMAIN-SUFFIX,partner.microsoftonline-p.cn
+DOMAIN-SUFFIX,partner.microsoftonline-p.net.cn
+DOMAIN-SUFFIX,partner.office365.cn
+DOMAIN-SUFFIX,partner.outlook.cn
+DOMAIN-SUFFIX,sharepoint.cn
+DOMAIN-SUFFIX,sovcloud-mx.cn
+DOMAIN-SUFFIX,sovcloud-static.cn
+DOMAIN-SUFFIX,sovcloud-usercontent.cn
+DOMAIN-SUFFIX,sovcloud.cn
+DOMAIN-SUFFIX,windowsazure.cn
+DOMAIN,attachments.office365-net.cn
+DOMAIN,collector.azure.cn
+DOMAIN,loki.office365.cn
+DOMAIN,portal.partner.microsoftonline.cdnsvc.com

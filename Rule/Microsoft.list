@@ -1,9 +1,35 @@
 # NAME: Microsoft
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-10-04 21:58:15 +0800
+# UPDATED: 2026-11-21 19:32:47 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 484
+# TOTAL: 473
+
+# ======= Manual Rules ========
+# First-party Microsoft applications and isolated Office content.
+DOMAIN-SUFFIX,onenote.com
+DOMAIN-SUFFIX,powerapps.com
+DOMAIN-SUFFIX,clipchamp.com
+DOMAIN-SUFFIX,microsoftusercontent.com
+
+# Microsoft service endpoints inside shared Azure namespaces.
+DOMAIN,accounts.accesscontrol.windows.net
+DOMAIN,enterpriseregistration.windows.net
+DOMAIN,graph.windows.net
+DOMAIN,login.windows.net
+DOMAIN,sts.windows.net
+DOMAIN,management.core.windows.net
+DOMAIN,posarprodcssservice.accesscontrol.windows.net
+DOMAIN,redemptionservices.accesscontrol.windows.net
+DOMAIN,vscode.search.windows.net
+DOMAIN-SUFFIX,keydelivery.mediaservices.windows.net
+DOMAIN-SUFFIX,streaming.mediaservices.windows.net
+
+# Teams Worldwide media, endpoint set 11 (2026-11-21).
+# https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges
+AND,((PROTOCOL,UDP),(DEST-PORT,3478-3481),(IP-CIDR,52.112.0.0/14,no-resolve))
+AND,((PROTOCOL,UDP),(DEST-PORT,3478-3481),(IP-CIDR,52.122.0.0/15,no-resolve))
+AND,((PROTOCOL,UDP),(DEST-PORT,3478-3481),(IP-CIDR6,2603:1063::/38,no-resolve))
 
 # ======= blackmatrix7 Microsoft ========
 DOMAIN,vsmarketplacebadge.apphb.com
@@ -53,7 +79,6 @@ DOMAIN-SUFFIX,azuredigitaltwins.net
 DOMAIN-SUFFIX,azuredns-prd.info
 DOMAIN-SUFFIX,azuredns-prd.org
 DOMAIN-SUFFIX,azureedge-test.net
-DOMAIN-SUFFIX,azurefd.net
 DOMAIN-SUFFIX,azurefd.us
 DOMAIN-SUFFIX,azureiotcentral.com
 DOMAIN-SUFFIX,azureiotsolutions.com
@@ -64,7 +89,6 @@ DOMAIN-SUFFIX,azurerms.com
 DOMAIN-SUFFIX,azureserviceprofiler.com
 DOMAIN-SUFFIX,azuresmartspaces.net
 DOMAIN-SUFFIX,azurestackvalidation.com
-DOMAIN-SUFFIX,azurewebsites.net
 DOMAIN-SUFFIX,bbing.com
 DOMAIN-SUFFIX,bibg.com
 DOMAIN-SUFFIX,biing.com
@@ -96,7 +120,6 @@ DOMAIN-SUFFIX,bingworld.com
 DOMAIN-SUFFIX,biying.com
 DOMAIN-SUFFIX,blazor.net
 DOMAIN-SUFFIX,bluehatil.com
-DOMAIN-SUFFIX,bluehatnights.com
 DOMAIN-SUFFIX,boswp.com
 DOMAIN-SUFFIX,botframework.com
 DOMAIN-SUFFIX,brazilpartneruniversity.com
@@ -106,7 +129,6 @@ DOMAIN-SUFFIX,cegid-cloud.cn
 DOMAIN-SUFFIX,centralvalidation.com
 DOMAIN-SUFFIX,ch9.ms
 DOMAIN-SUFFIX,charticulator.com
-DOMAIN-SUFFIX,cloudapp.net
 DOMAIN-SUFFIX,cloudappsecurity.com
 DOMAIN-SUFFIX,codethemicrobit.com
 DOMAIN-SUFFIX,cortana.ai
@@ -182,7 +204,6 @@ DOMAIN-SUFFIX,live.com.au
 DOMAIN-SUFFIX,live.eu
 DOMAIN-SUFFIX,live.net
 DOMAIN-SUFFIX,livetileedge.dsx.mp.microsoft.com.edgekey.net
-DOMAIN-SUFFIX,livingyourambition.com
 DOMAIN-SUFFIX,localytics.com
 DOMAIN-SUFFIX,lync.com
 DOMAIN-SUFFIX,m12.vc
@@ -194,7 +215,6 @@ DOMAIN-SUFFIX,mapblast.com
 DOMAIN-SUFFIX,mappoint.com
 DOMAIN-SUFFIX,masalladeloslimites.com
 DOMAIN-SUFFIX,meetfasttrack.com
-DOMAIN-SUFFIX,meetyourdevices.com
 DOMAIN-SUFFIX,mepn.com
 DOMAIN-SUFFIX,mesh.com
 DOMAIN-SUFFIX,microbit.org
@@ -214,7 +234,6 @@ DOMAIN-SUFFIX,microsoft.cat
 DOMAIN-SUFFIX,microsoft.ch
 DOMAIN-SUFFIX,microsoft.cl
 DOMAIN-SUFFIX,microsoft.com
-DOMAIN-SUFFIX,microsoft.com.nsatc.net
 DOMAIN-SUFFIX,microsoft.cz
 DOMAIN-SUFFIX,microsoft.de
 DOMAIN-SUFFIX,microsoft.dk
@@ -235,7 +254,6 @@ DOMAIN-SUFFIX,microsoft.md
 DOMAIN-SUFFIX,microsoft.net
 DOMAIN-SUFFIX,microsoft.pl
 DOMAIN-SUFFIX,microsoft.pt
-DOMAIN-SUFFIX,microsoft.red
 DOMAIN-SUFFIX,microsoft.ro
 DOMAIN-SUFFIX,microsoft.rs
 DOMAIN-SUFFIX,microsoft.ru
@@ -260,7 +278,6 @@ DOMAIN-SUFFIX,microsoftcloudsummit.com
 DOMAIN-SUFFIX,microsoftcloudworkshop.com
 DOMAIN-SUFFIX,microsoftcommunitytraining.com
 DOMAIN-SUFFIX,microsoftdiplomados.com
-DOMAIN-SUFFIX,microsofteca.com
 DOMAIN-SUFFIX,microsoftedge.com
 DOMAIN-SUFFIX,microsoftedgeinsider.com
 DOMAIN-SUFFIX,microsoftemail.com
@@ -273,8 +290,6 @@ DOMAIN-SUFFIX,microsoftiotcentral.com
 DOMAIN-SUFFIX,microsoftiotinsiderlabs.com
 DOMAIN-SUFFIX,microsoftlatamaitour.com
 DOMAIN-SUFFIX,microsoftlatamholiday.com
-DOMAIN-SUFFIX,microsoftlinc.com
-DOMAIN-SUFFIX,microsoftmxfilantropia.com
 DOMAIN-SUFFIX,microsoftnews.cc
 DOMAIN-SUFFIX,microsoftnews.com
 DOMAIN-SUFFIX,microsoftnews.net
@@ -298,7 +313,6 @@ DOMAIN-SUFFIX,microsoftready.com
 DOMAIN-SUFFIX,microsoftsilverlight.com
 DOMAIN-SUFFIX,microsoftsilverlight.net
 DOMAIN-SUFFIX,microsoftsilverlight.org
-DOMAIN-SUFFIX,microsoftsiteselection.com
 DOMAIN-SUFFIX,microsoftsqlserver.com
 DOMAIN-SUFFIX,microsoftstart.com
 DOMAIN-SUFFIX,microsoftstore.com
@@ -333,10 +347,8 @@ DOMAIN-SUFFIX,msftidentity.com
 DOMAIN-SUFFIX,msftnet.org
 DOMAIN-SUFFIX,msgamesresearch.com
 DOMAIN-SUFFIX,msidentity.com
-DOMAIN-SUFFIX,msignitechina.com
 DOMAIN-SUFFIX,msinnovationchallenge.com
 DOMAIN-SUFFIX,msn.com
-DOMAIN-SUFFIX,msn.com.nsatc.net
 DOMAIN-SUFFIX,msn.com.tw
 DOMAIN-SUFFIX,msn.net
 DOMAIN-SUFFIX,msnewskids.com
@@ -349,7 +361,6 @@ DOMAIN-SUFFIX,mspairlift.com
 DOMAIN-SUFFIX,msropendata.com
 DOMAIN-SUFFIX,mstea.ms
 DOMAIN-SUFFIX,msturing.org
-DOMAIN-SUFFIX,msudalosti.com
 DOMAIN-SUFFIX,msunlimitedcloudsummit.com
 DOMAIN-SUFFIX,msvevent.com
 DOMAIN-SUFFIX,msxiaobing.com
@@ -368,8 +379,6 @@ DOMAIN-SUFFIX,office
 DOMAIN-SUFFIX,office.com
 DOMAIN-SUFFIX,office.net
 DOMAIN-SUFFIX,office365.com
-DOMAIN-SUFFIX,office365love.com
-DOMAIN-SUFFIX,office365tw.com
 DOMAIN-SUFFIX,officeppe.net
 DOMAIN-SUFFIX,omniroot.com
 DOMAIN-SUFFIX,onedrive.co
@@ -380,7 +389,6 @@ DOMAIN-SUFFIX,onedrive.org
 DOMAIN-SUFFIX,onenote.net
 DOMAIN-SUFFIX,onestore.ms
 DOMAIN-SUFFIX,onmicrosoft.com
-DOMAIN-SUFFIX,opentranslatorstothings.org
 DOMAIN-SUFFIX,opticsforthecloud.net
 DOMAIN-SUFFIX,osdinfra.net
 DOMAIN-SUFFIX,outingsapp.com
@@ -406,7 +414,6 @@ DOMAIN-SUFFIX,renovacionoffice.com
 DOMAIN-SUFFIX,s-msedge.net
 DOMAIN-SUFFIX,s-msft.com
 DOMAIN-SUFFIX,s-msn.com
-DOMAIN-SUFFIX,sankie.net
 DOMAIN-SUFFIX,sclive.net
 DOMAIN-SUFFIX,serverlesslibrary.net
 DOMAIN-SUFFIX,sfx.ms
@@ -429,7 +436,6 @@ DOMAIN-SUFFIX,tailwindtraders.com
 DOMAIN-SUFFIX,techhub.ms
 DOMAIN-SUFFIX,tfsallin.net
 DOMAIN-SUFFIX,timelinestoryteller.com
-DOMAIN-SUFFIX,trafficmanager.net
 DOMAIN-SUFFIX,translatetheweb.com
 DOMAIN-SUFFIX,tryfunctions.com
 DOMAIN-SUFFIX,unity3dcloud.cn
@@ -458,11 +464,9 @@ DOMAIN-SUFFIX,windows
 DOMAIN-SUFFIX,windows-int.net
 DOMAIN-SUFFIX,windows-ppe.net
 DOMAIN-SUFFIX,windows.com
-DOMAIN-SUFFIX,windows.net
 DOMAIN-SUFFIX,windows.nl
 DOMAIN-SUFFIX,windows8.hk
 DOMAIN-SUFFIX,windowsazure.com
-DOMAIN-SUFFIX,windowscommunity.net
 DOMAIN-SUFFIX,windowsmarketplace.com
 DOMAIN-SUFFIX,windowsphone-int.com
 DOMAIN-SUFFIX,windowsphone.com
@@ -483,10 +487,3 @@ DOMAIN-SUFFIX,onedrive.com
 DOMAIN-SUFFIX,sharepoint.com
 DOMAIN-SUFFIX,sharepointonline.com
 DOMAIN-SUFFIX,spoprod-a.akamaihd.net
-DOMAIN-KEYWORD,onedrive
-DOMAIN-KEYWORD,skydrive
-USER-AGENT,Microsoft*
-USER-AGENT,OneDrive*
-USER-AGENT,OneDriveiOSApp*
-PROCESS-NAME,OneDrive
-PROCESS-NAME,OneDriveUpdater

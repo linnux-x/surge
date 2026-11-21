@@ -1,0 +1,24 @@
+# First-party Microsoft applications and isolated Office content.
+DOMAIN-SUFFIX,onenote.com
+DOMAIN-SUFFIX,powerapps.com
+DOMAIN-SUFFIX,clipchamp.com
+DOMAIN-SUFFIX,microsoftusercontent.com
+
+# Microsoft service endpoints inside shared Azure namespaces.
+DOMAIN,accounts.accesscontrol.windows.net
+DOMAIN,enterpriseregistration.windows.net
+DOMAIN,graph.windows.net
+DOMAIN,login.windows.net
+DOMAIN,sts.windows.net
+DOMAIN,management.core.windows.net
+DOMAIN,posarprodcssservice.accesscontrol.windows.net
+DOMAIN,redemptionservices.accesscontrol.windows.net
+DOMAIN,vscode.search.windows.net
+DOMAIN-SUFFIX,keydelivery.mediaservices.windows.net
+DOMAIN-SUFFIX,streaming.mediaservices.windows.net
+
+# Teams Worldwide media, endpoint set 11 (2026-11-21).
+# https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges
+AND,((PROTOCOL,UDP),(DEST-PORT,3478-3481),(IP-CIDR,52.112.0.0/14,no-resolve))
+AND,((PROTOCOL,UDP),(DEST-PORT,3478-3481),(IP-CIDR,52.122.0.0/15,no-resolve))
+AND,((PROTOCOL,UDP),(DEST-PORT,3478-3481),(IP-CIDR6,2603:1063::/38,no-resolve))

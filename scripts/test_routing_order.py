@@ -16,7 +16,7 @@ import sys
 from pathlib import Path
 from urllib.parse import urlsplit
 
-from rule_validator import DOMAIN_PORT_RULE_RE, VOICE_UDP_RULE_RE
+from rule_validator import DOMAIN_PORT_RULE_RE, UDP_MEDIA_RULE_RE
 
 ROOT = Path(__file__).resolve().parents[1]
 RULE_DIR = ROOT / "Rule"
@@ -88,7 +88,7 @@ def match_domain(domain: str, rules: set[str], *, url: str | None = None,
     - DOMAIN-WILDCARD: wildcard match (basic * support)
     - IP-CIDR/IP-CIDR6: literal address membership (no DNS lookup)
     - URL-REGEX: match the full URL when explicitly supplied
-    - AND: match an exact domain and port, or a literal CIDR on UDP 3478
+    - AND: match an exact domain and port, or a literal CIDR on a scoped UDP port
     """
     domain_lower = domain.lower().rstrip(".")
     try:
@@ -112,9 +112,11 @@ def match_domain(domain: str, rules: set[str], *, url: str | None = None,
             host, rule_port = domain_port.groups()
             if domain_lower == host.lower() and port == int(rule_port):
                 return True
-        elif (rule_type == "AND" and address is not None and port == 3478 and protocol == "UDP"
-              and (voice_udp := VOICE_UDP_RULE_RE.fullmatch(rule))):
-            if address in ipaddress.ip_network(voice_udp[2]):
+        elif (rule_type == "AND" and address is not None and protocol == "UDP"
+              and (media_rule := UDP_MEDIA_RULE_RE.fullmatch(rule))):
+            ports, _, prefix = media_rule.groups()
+            first, _, last = ports.partition("-")
+            if int(first) <= port <= int(last or first) and address in ipaddress.ip_network(prefix):
                 return True
         elif rule_type in ("IP-CIDR", "IP-CIDR6") and address is not None:
             if address in ipaddress.ip_network(value, strict=False):
@@ -197,13 +199,13 @@ def load_routing_order() -> list[tuple[str, str]]:
 
 
 def simulate_routing(domain: str, routing_order: list[tuple[str, str]],
-                     rulesets: dict[str, set[str]]) -> str:
+                     rulesets: dict[str, set[str]], *, port: int = 443,
+                     protocol: str = "TCP") -> str:
     """Simulate first-match routing for a domain.
 
     Returns the matched ruleset name (or DIRECT/Global/policy name).
     """
     url = domain if domain.startswith(("http://", "https://")) else None
-    port = 443
     if url:
         parsed = urlsplit(url)
         domain = parsed.hostname or ""
@@ -234,7 +236,7 @@ def simulate_routing(domain: str, routing_order: list[tuple[str, str]],
 
         # Check if this is a .list ruleset
         if ruleset_name in rulesets:
-            if match_domain(domain, rulesets[ruleset_name], url=url, port=port):
+            if match_domain(domain, rulesets[ruleset_name], url=url, port=port, protocol=protocol):
                 return f"{ruleset_name}→{policy}"
 
     return "FINAL→Global"  # unreachable fallback

@@ -1,9 +1,9 @@
 # NAME: China
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 18:56:11 +0800
+# UPDATED: 2026-11-21 19:32:47 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 110648
+# TOTAL: 110668
 
 # ======= Manual Rules ========
 # China game download domains — route DIRECT via China policy
@@ -44,6 +44,32 @@ DOMAIN-SUFFIX,snssdk.com
 
 # Preserve Amazon China routing when upstream drops the broad cn suffix.
 DOMAIN-SUFFIX,amazon.cn
+
+# Microsoft 365 operated by 21Vianet. Shared worldwide sign-in domains keep their existing route.
+# https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet
+DOMAIN-SUFFIX,aadrm.cn
+DOMAIN-SUFFIX,auth.microsoft.cn
+DOMAIN-SUFFIX,azure-mobile.cn
+DOMAIN-SUFFIX,chinacloud-mobile.cn
+DOMAIN-SUFFIX,chinacloudapi.cn
+DOMAIN-SUFFIX,microsoftonline.cn
+DOMAIN-SUFFIX,msauth.cn
+DOMAIN-SUFFIX,msauthimages.cn
+DOMAIN-SUFFIX,msftauth.cn
+DOMAIN-SUFFIX,msftauthimages.cn
+DOMAIN-SUFFIX,officewebapps.cn
+DOMAIN-SUFFIX,onmschina.cn
+DOMAIN-SUFFIX,partner.microsoftonline-p.cn
+DOMAIN-SUFFIX,partner.office365.cn
+DOMAIN-SUFFIX,sharepoint.cn
+DOMAIN-SUFFIX,sovcloud-mx.cn
+DOMAIN-SUFFIX,sovcloud-static.cn
+DOMAIN-SUFFIX,sovcloud-usercontent.cn
+DOMAIN-SUFFIX,sovcloud.cn
+DOMAIN-SUFFIX,windowsazure.cn
+DOMAIN,attachments.office365-net.cn
+DOMAIN,collector.azure.cn
+DOMAIN,loki.office365.cn
 
 # ======= SukkaW Domestic ========
 DOMAIN-SUFFIX,3.cn
@@ -761,7 +787,6 @@ DOMAIN-SUFFIX,pinduoduo.net
 DOMAIN-SUFFIX,ppxstatic.com
 DOMAIN-SUFFIX,qcloudimg.com
 DOMAIN-SUFFIX,realmebbs.com
-DOMAIN-SUFFIX,sharepoint.cn
 DOMAIN-SUFFIX,soufunimg.com
 DOMAIN-SUFFIX,takungpao.com
 DOMAIN-SUFFIX,tantanapp.com
@@ -847,7 +872,6 @@ DOMAIN-SUFFIX,hihonorcloud.com
 DOMAIN-SUFFIX,huaweistatic.com
 DOMAIN-SUFFIX,huoshanzhibo.com
 DOMAIN-SUFFIX,mobileservice.cn
-DOMAIN-SUFFIX,officewebapps.cn
 DOMAIN-SUFFIX,realmemobile.com
 DOMAIN-SUFFIX,segmentfault.com
 DOMAIN-SUFFIX,tencent-cloud.cn
@@ -110631,7 +110655,6 @@ DOMAIN-SUFFIX,weibopay.com
 DOMAIN-SUFFIX,weixing.com
 DOMAIN-SUFFIX,whalecloud.com
 DOMAIN-SUFFIX,windows.com
-DOMAIN-SUFFIX,windows.net
 DOMAIN-SUFFIX,womendedw.com
 DOMAIN-SUFFIX,wrating.com
 DOMAIN-SUFFIX,wumii.com

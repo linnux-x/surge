@@ -172,7 +172,6 @@ DOMAIN-SUFFIX,microsoftreactor.cn
 DOMAIN-SUFFIX,microsoftreactor.com.cn
 DOMAIN-SUFFIX,microsoftstore.com.cn
 DOMAIN-SUFFIX,microsofttranslator-int.cn
-DOMAIN-SUFFIX,microsoftusercontent.com
 DOMAIN-SUFFIX,mmais.com.cn
 DOMAIN-SUFFIX,mncmsidlab1.cn
 DOMAIN-SUFFIX,msappproxy.cn
@@ -204,7 +203,6 @@ DOMAIN-SUFFIX,officecdn-microsoft-com.akamaized.net
 DOMAIN-SUFFIX,officedev.cn
 DOMAIN-SUFFIX,officeplus.cn
 DOMAIN-SUFFIX,officewebapps.cn
-DOMAIN-SUFFIX,onenote.com
 DOMAIN-SUFFIX,onmschina.cn
 DOMAIN-SUFFIX,outlook.cn
 DOMAIN-SUFFIX,pbiwebcontent.cn
@@ -250,3 +248,55 @@ DOMAIN-KEYWORD,microsoft
 # DOMAIN-KEYWORD,1drv 只有 4 个字符，会误匹配 51drv.com 等国内域名；
 # 1drv.ms / 1drv.com 已由 DOMAIN-SUFFIX 精确覆盖。
 DOMAIN-KEYWORD,1drv
+
+# Classify Microsoft traffic by destination.
+DOMAIN-KEYWORD,onedrive
+DOMAIN-KEYWORD,skydrive
+USER-AGENT,Microsoft*
+USER-AGENT,OneDrive*
+USER-AGENT,OneDriveiOSApp*
+PROCESS-NAME,OneDrive
+PROCESS-NAME,OneDriveUpdater
+
+# Shared Azure hosting domains can contain third-party tenants.
+DOMAIN-SUFFIX,azurewebsites.net
+DOMAIN-SUFFIX,cloudapp.net
+DOMAIN-SUFFIX,azurefd.net
+DOMAIN-SUFFIX,trafficmanager.net
+DOMAIN-SUFFIX,windows.net
+
+# Retired Microsoft domains. A and AAAA return NXDOMAIN on both public resolvers.
+DOMAIN,bluehatnights.com
+DOMAIN-SUFFIX,bluehatnights.com
+DOMAIN,livingyourambition.com
+DOMAIN-SUFFIX,livingyourambition.com
+DOMAIN,meetyourdevices.com
+DOMAIN-SUFFIX,meetyourdevices.com
+DOMAIN,microsoft.com.nsatc.net
+DOMAIN-SUFFIX,microsoft.com.nsatc.net
+DOMAIN,microsoft.red
+DOMAIN-SUFFIX,microsoft.red
+DOMAIN,microsofteca.com
+DOMAIN-SUFFIX,microsofteca.com
+DOMAIN,microsoftlinc.com
+DOMAIN-SUFFIX,microsoftlinc.com
+DOMAIN,microsoftmxfilantropia.com
+DOMAIN-SUFFIX,microsoftmxfilantropia.com
+DOMAIN,microsoftsiteselection.com
+DOMAIN-SUFFIX,microsoftsiteselection.com
+DOMAIN,msignitechina.com
+DOMAIN-SUFFIX,msignitechina.com
+DOMAIN,msn.com.nsatc.net
+DOMAIN-SUFFIX,msn.com.nsatc.net
+DOMAIN,msudalosti.com
+DOMAIN-SUFFIX,msudalosti.com
+DOMAIN,office365love.com
+DOMAIN-SUFFIX,office365love.com
+DOMAIN,office365tw.com
+DOMAIN-SUFFIX,office365tw.com
+DOMAIN,opentranslatorstothings.org
+DOMAIN-SUFFIX,opentranslatorstothings.org
+DOMAIN,sankie.net
+DOMAIN-SUFFIX,sankie.net
+DOMAIN,windowscommunity.net
+DOMAIN-SUFFIX,windowscommunity.net

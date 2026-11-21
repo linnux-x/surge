@@ -23,6 +23,29 @@ def load_routing_module():
 
 
 class FallbackOrderTests(unittest.TestCase):
+    def test_teams_worldwide_media_uses_microsoft_only_on_its_udp_ports(self):
+        module = load_routing_module()
+        order = module.load_routing_order()
+        rulesets = {path.name: module.load_ruleset(path) for path in module.RULE_DIR.glob("*.list")}
+
+        for address in ("52.112.0.1", "52.122.0.1", "2603:1063::1"):
+            with self.subTest(address=address):
+                for port in range(3478, 3482):
+                    self.assertEqual(
+                        module.simulate_routing(address, order, rulesets, port=port, protocol="UDP"),
+                        "Microsoft.list→Microsoft",
+                    )
+                for port, protocol in ((3477, "UDP"), (3482, "UDP"), (3478, "TCP")):
+                    self.assertEqual(
+                        module.simulate_routing(address, order, rulesets, port=port, protocol=protocol),
+                        "FINAL→Global",
+                    )
+
+        self.assertEqual(
+            module.simulate_routing("42.159.34.33", order, rulesets, port=3478, protocol="UDP"),
+            "China_IP.list→DIRECT",
+        )
+
     def test_fallback_order_matches_public_config(self):
         module = load_routing_module()
         parsed = module.load_routing_order()
