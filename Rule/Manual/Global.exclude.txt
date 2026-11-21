@@ -431,3 +431,24 @@ DOMAIN-KEYWORD,twitter
 DOMAIN-KEYWORD,whatsapp
 DOMAIN-KEYWORD,spotify
 USER-AGENT,Anime*
+
+# Retired Apple aliases must not be restored from the aggregate upstream.
+DOMAIN,aplleipods.com
+DOMAIN-SUFFIX,aplleipods.com
+DOMAIN,app0le.com
+DOMAIN-SUFFIX,app0le.com
+DOMAIN,appleafrica.com
+DOMAIN-SUFFIX,appleafrica.com
+DOMAIN,appleantilles.com
+DOMAIN-SUFFIX,appleantilles.com
+DOMAIN,appleclassicipod.com
+DOMAIN-SUFFIX,appleclassicipod.com
+DOMAIN,applecom.com
+DOMAIN-SUFFIX,applecom.com
+DOMAIN,cdn-apple-mapkit.com
+DOMAIN-SUFFIX,cdn-apple-mapkit.com
+DOMAIN,xn--gtvz22d.wang
+DOMAIN-SUFFIX,xn--gtvz22d.wang
+IP-CIDR,192.35.50.0/24,no-resolve
+IP-CIDR,198.183.17.0/24,no-resolve
+IP-CIDR,63.92.224.0/19,no-resolve

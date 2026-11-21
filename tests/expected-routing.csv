@@ -96,15 +96,15 @@ icloud.com,Apple.list,Apple,iCloud
 s.mzstatic.com,Apple_CN.list,DIRECT,App Store中国CDN
 apps.mzstatic.com,Apple_CN.list,DIRECT,App Store Apps and Books CDN
 p01.apzones.com,Apple_CN.list,DIRECT,中国大陆 iCloud 服务
-app-site-association.networking.apple,Apple.list,Apple,Apple 通用链接关联域
+app-site-association.networking.apple,Apple_CN.list,DIRECT,Apple 通用链接关联域
 testflight.apple.com,Apple.list,Apple,TestFlight 官方主机
 testflight.example.com,FINAL,Global,无关域名不能命中 TestFlight 关键词
 smp-device.example.com,FINAL,Global,无关域名不能命中 Apple 支付关键词
 apple.com.edgekey.net.example.com,FINAL,Global,Apple CDN 别名受后缀边界约束
 firebase-settings.crashlytics.com,Google.list,Google,Firebase Crashlytics 回到 Google
-ocsp.digicert.com,Apple.list,Apple,Apple 官方列出的 OCSP 端点
-crl3.digicert.com,Apple.list,Apple,Apple 官方列出的 CRL 端点
-crl4.digicert.com,Apple.list,Apple,Apple 官方列出的 CRL 端点
+ocsp.digicert.com,Global,Global,DigiCert 共享证书服务按通用路由
+crl3.digicert.com,Global,Global,DigiCert 共享证书服务按通用路由
+crl4.digicert.com,Global,Global,DigiCert 共享证书服务按通用路由
 ocsp.digicert.cn,China.list,DIRECT,中国大陆证书验证沿用直连
 www.digicert.com,FINAL,Global,DigiCert 官网沿用常规路由
 reform-apple.com,FINAL,Global,日本装修公司沿用常规路由
@@ -807,3 +807,19 @@ krakenjs.com,Global,Global,按目标域名保留通用路由
 paypal-referral.com,FINAL,Global,按目标域名保留通用路由
 paypal.info,FINAL,Global,按目标域名保留通用路由
 venmo.info,FINAL,Global,按目标域名保留通用路由
+app-site-association.cdn-apple.com,Apple_CN.list,DIRECT,Apple 通用链接双端点统一直连
+aplleipods.com,Global,Global,失效历史 Apple 域名按通用兜底
+app0le.com,Global,Global,失效历史 Apple 域名按通用兜底
+appleafrica.com,Global,Global,失效历史 Apple 域名按通用兜底
+appleantilles.com,Global,Global,失效历史 Apple 域名按通用兜底
+appleclassicipod.com,Global,Global,失效历史 Apple 域名按通用兜底
+applecom.com,Global,Global,失效历史 Apple 域名按通用兜底
+cdn-apple-mapkit.com,Global,Global,失效历史 Apple 域名按通用兜底
+xn--gtvz22d.wang,Global,Global,失效历史 Apple 域名按通用兜底
+servicetalk.io,Global,Global,通用开源项目按通用路由
+webkitgtk.org,Global,Global,通用开源项目按通用路由
+wpewebkit.org,Global,Global,通用开源项目按通用路由
+192.35.50.1,Global,Global,历史 Apple 公告撤下后沿通用路由
+198.183.17.1,Global,Global,历史 Apple 公告撤下后沿通用路由
+63.92.224.1,Global,Global,历史 Apple 公告撤下后沿通用路由
+cdn.apple-mapkit.com,Apple_CN.list,DIRECT,Apple 官方 MapKit CDN 沿用直连

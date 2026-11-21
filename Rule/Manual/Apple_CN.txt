@@ -70,3 +70,6 @@ DOMAIN-SUFFIX,xn--ohq11k7pl25iyo8a.cn
 
 # Apple documents this suffix for iCloud in China.
 DOMAIN-SUFFIX,apzones.com
+
+# Associated domains: use the same policy as app-site-association.cdn-apple.com.
+DOMAIN,app-site-association.networking.apple

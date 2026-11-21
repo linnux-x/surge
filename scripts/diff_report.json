@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-21T18:57:34.283023",
-  "total_added": 9,
-  "total_removed": 6,
+  "generated_at": "2026-11-21T19:22:03.493080",
+  "total_added": 4,
+  "total_removed": 18,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -29,12 +29,103 @@
     {
       "file": "Apple.list",
       "prev_total": 1380,
-      "curr_total": 1380,
+      "curr_total": 1362,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 18,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "0cafcaa18f73",
+          "source": "blackmatrix7 Apple",
+          "rule": "DOMAIN-SUFFIX,wpewebkit.org"
+        },
+        {
+          "id": "33d343ffa5dc",
+          "source": "blackmatrix7 Apple",
+          "rule": "DOMAIN-SUFFIX,cdn-apple-mapkit.com"
+        },
+        {
+          "id": "4c34a6fc1ad5",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,crl4.digicert.com"
+        },
+        {
+          "id": "5645e49b1076",
+          "source": "blackmatrix7 Apple",
+          "rule": "DOMAIN-SUFFIX,webkitgtk.org"
+        },
+        {
+          "id": "567aab9d4572",
+          "source": "blackmatrix7 Apple",
+          "rule": "IP-CIDR,192.35.50.0/24,no-resolve"
+        },
+        {
+          "id": "5afbd21653de",
+          "source": "blackmatrix7 Apple",
+          "rule": "DOMAIN-SUFFIX,app0le.com"
+        },
+        {
+          "id": "5e1009e78fd0",
+          "source": "blackmatrix7 Apple",
+          "rule": "DOMAIN-SUFFIX,appleantilles.com"
+        },
+        {
+          "id": "6039ff66f85f",
+          "source": "blackmatrix7 Apple",
+          "rule": "DOMAIN-SUFFIX,appleclassicipod.com"
+        },
+        {
+          "id": "71a60a358daa",
+          "source": "blackmatrix7 Apple",
+          "rule": "DOMAIN-SUFFIX,appleafrica.com"
+        },
+        {
+          "id": "7d120be1985c",
+          "source": "blackmatrix7 Apple",
+          "rule": "IP-CIDR,63.92.224.0/19,no-resolve"
+        },
+        {
+          "id": "7d2d6627f589",
+          "source": "blackmatrix7 Apple",
+          "rule": "DOMAIN-SUFFIX,servicetalk.io"
+        },
+        {
+          "id": "aebe0efcfe6a",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,app-site-association.networking.apple"
+        },
+        {
+          "id": "ca5b26100dfe",
+          "source": "blackmatrix7 Apple",
+          "rule": "DOMAIN-SUFFIX,xn--gtvz22d.wang"
+        },
+        {
+          "id": "d773877636d4",
+          "source": "blackmatrix7 Apple",
+          "rule": "DOMAIN-SUFFIX,applecom.com"
+        },
+        {
+          "id": "d9733c43937d",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,ocsp.digicert.com"
+        },
+        {
+          "id": "ebd53c2b5637",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,crl3.digicert.com"
+        },
+        {
+          "id": "f81dcfa229d9",
+          "source": "blackmatrix7 Apple",
+          "rule": "DOMAIN-SUFFIX,aplleipods.com"
+        },
+        {
+          "id": "ff5e1c4767e5",
+          "source": "blackmatrix7 Apple",
+          "rule": "IP-CIDR,198.183.17.0/24,no-resolve"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -62,11 +153,17 @@
     {
       "file": "Apple_CN.list",
       "prev_total": 225,
-      "curr_total": 225,
-      "added_count": 0,
+      "curr_total": 226,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "aebe0efcfe6a",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,app-site-association.networking.apple"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -83,18 +180,12 @@
     },
     {
       "file": "China.list",
-      "prev_total": 110647,
+      "prev_total": 110648,
       "curr_total": 110648,
-      "added_count": 1,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "2d1b25bf57f7",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,paypal.cn"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -166,16 +257,26 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24636,
-      "curr_total": 24637,
-      "added_count": 1,
+      "prev_total": 24637,
+      "curr_total": 24640,
+      "added_count": 3,
       "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [
         {
-          "id": "6adaa541866e",
+          "id": "0cafcaa18f73",
           "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,krakenjs.com"
+          "rule": "DOMAIN-SUFFIX,wpewebkit.org"
+        },
+        {
+          "id": "5645e49b1076",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,webkitgtk.org"
+        },
+        {
+          "id": "7d2d6627f589",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,servicetalk.io"
         }
       ],
       "removed_sample": [],
@@ -271,80 +372,13 @@
     },
     {
       "file": "PayPal.list",
-      "prev_total": 233,
+      "prev_total": 234,
       "curr_total": 234,
-      "added_count": 7,
-      "removed_count": 6,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "0e2e1386dd3e",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,zettle.com"
-        },
-        {
-          "id": "76fca66aab16",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,venmo.s3.amazonaws.com"
-        },
-        {
-          "id": "833c3a25fa60",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,payments.sandbox.braintree-api.com"
-        },
-        {
-          "id": "853c4ca4402e",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,payments.braintree-api.com"
-        },
-        {
-          "id": "9981688f620c",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,hyperwallet.com"
-        },
-        {
-          "id": "cac8a0d39048",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,izettle.com"
-        },
-        {
-          "id": "f70c54274709",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,paylution.com"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "359882143efe",
-          "source": "blackmatrix7 PayPal",
-          "rule": "DOMAIN-SUFFIX,venmo.info"
-        },
-        {
-          "id": "5441dcd9756d",
-          "source": "blackmatrix7 PayPal",
-          "rule": "USER-AGENT,PayPal*"
-        },
-        {
-          "id": "5d27ff730b23",
-          "source": "blackmatrix7 PayPal",
-          "rule": "DOMAIN-SUFFIX,paypal-referral.com"
-        },
-        {
-          "id": "6adaa541866e",
-          "source": "blackmatrix7 PayPal",
-          "rule": "DOMAIN-SUFFIX,krakenjs.com"
-        },
-        {
-          "id": "6b8c31e4e694",
-          "source": "blackmatrix7 PayPal",
-          "rule": "DOMAIN-SUFFIX,venmo.s3.amazonaws.com"
-        },
-        {
-          "id": "bb60771a2e67",
-          "source": "blackmatrix7 PayPal",
-          "rule": "DOMAIN-SUFFIX,paypal.info"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {

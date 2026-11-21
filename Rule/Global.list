@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 18:57:34 +0800
+# UPDATED: 2026-11-21 19:22:03 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24637
+# TOTAL: 24640
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -13808,6 +13808,7 @@ DOMAIN-SUFFIX,servercore.live
 DOMAIN-SUFFIX,serverfault.com
 DOMAIN-SUFFIX,services-exchange.com
 DOMAIN-SUFFIX,serviceshp.com
+DOMAIN-SUFFIX,servicetalk.io
 DOMAIN-SUFFIX,serviporno.com
 DOMAIN-SUFFIX,seselah.com
 DOMAIN-SUFFIX,sesenovel.com
@@ -16861,6 +16862,7 @@ DOMAIN-SUFFIX,webflow.com
 DOMAIN-SUFFIX,webgata.net
 DOMAIN-SUFFIX,webgirlsonline.net
 DOMAIN-SUFFIX,webhosting.com
+DOMAIN-SUFFIX,webkitgtk.org
 DOMAIN-SUFFIX,weblate.org
 DOMAIN-SUFFIX,webmademovies.org
 DOMAIN-SUFFIX,webnovel.com
@@ -17089,6 +17091,7 @@ DOMAIN-SUFFIX,wowsblitz.com
 DOMAIN-SUFFIX,wowstars.com
 DOMAIN-SUFFIX,wowyoungporn.com
 DOMAIN-SUFFIX,wp-themes.com
+DOMAIN-SUFFIX,wpewebkit.org
 DOMAIN-SUFFIX,wpmailsmtp.com
 DOMAIN-SUFFIX,wpvip.com
 DOMAIN-SUFFIX,wrenchead.com
