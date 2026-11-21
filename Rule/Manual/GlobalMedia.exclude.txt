@@ -121,6 +121,29 @@ DOMAIN-KEYWORD,spotify
 USER-AGENT,*Spotify*
 USER-AGENT,Spotify*
 
+# Apple TV 和 Apple News 的精确端点由较早的 AppleMedia.list 匹配。
+DOMAIN-SUFFIX,tv.apple.com
+DOMAIN,linear.tv.apple.com
+DOMAIN,hls.itunes.apple.com
+DOMAIN,hls-amt.itunes.apple.com
+DOMAIN,np-edge.itunes.apple.com
+DOMAIN,ocvideo.apple.com
+DOMAIN,play-edge.itunes.apple.com
+DOMAIN,uts-api.itunes.apple.com
+DOMAIN-SUFFIX,apple.news
+DOMAIN,news-client.apple.com
+DOMAIN,news-edge.apple.com
+DOMAIN,news-events.apple.com
+
+# Apple Music 入口和第三方受众统计沿用通用 Apple 路由。
+DOMAIN-SUFFIX,applemusic.com
+DOMAIN,apple.comscoreresearch.com
+
+# 客户端标识不限定目的域名，播放端点由 AppleMedia.list 匹配。
+USER-AGENT,AppleTV*
+USER-AGENT,com.apple.tv*
+PROCESS-NAME,tv
+
 # Broad AWS EC2 ranges shared by non-media workloads.
 IP-CIDR,34.192.0.0/16,no-resolve
 IP-CIDR,34.208.0.0/12,no-resolve

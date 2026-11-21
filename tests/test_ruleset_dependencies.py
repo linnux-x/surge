@@ -19,8 +19,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class DependencyTests(unittest.TestCase):
-    def test_all_selections_match_pre_refactor_trigger_set(self):
-        triggers = set(FIXTURE['overlap_dependents'])
+    def test_all_selections_match_expected_trigger_set(self):
+        triggers = set(FIXTURE['overlap_dependents']) | {'AppleMedia.list'}
         self.assertEqual(OVERLAP_DEPENDENTS, triggers)
         self.assertEqual(set(GLOBAL_OVERLAP_RULESETS), triggers - {'Apple_CN.list'})
         self.assertEqual(GLOBAL_REBUILD_ONLY_RULESETS, {'Apple_CN.list'})

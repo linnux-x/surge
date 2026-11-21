@@ -25,7 +25,7 @@ RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/China.list,D
 规则按 first-match 顺序匹配。完整加载顺序以 [Conf/Linnux.conf](Conf/Linnux.conf) 为准：
 微信、测速、Apple AI、AI 等专用服务在前，Global、China、LAN、China IP 和 FINAL 在后。
 四份地区流媒体（港、台、日、美）先于 `ChinaMedia` 与 `GlobalMedia`，全球通用的流媒体仍归各自专属规则或 `GlobalMedia`；
-其中 `Speedtest_China` 先于 `Speedtest`，`Apple_CN` 先于 `Apple`，下载和游戏先于宽泛 Microsoft 规则。
+其中 `Speedtest_China` 先于 `Speedtest`，`AppleMedia` 先于 `Apple_CN` 和 `Apple` 并使用 `GlobalMedia` 策略，下载和游戏先于宽泛 Microsoft 规则。
 
 `Download` 平时可选 `DIRECT`，需要时手动切换代理。下载规则按目的地址分类，GitHub、Docker Hub、PyPI 等已验证直连不稳的源沿用各自的 CDN 或 Global 策略。
 
@@ -56,6 +56,7 @@ https://raw.githubusercontent.com/linnux-x/surge/main/Conf/Linnux.conf
 | 🍎 Apple.list | blackmatrix7 | Apple 全系服务 |
 | 🍎 Apple_AI.list | 2 源 | Apple Intelligence、Siri 与 Private Relay |
 | 🍎 Apple_CN.list | 2 源 | Apple 中国区 CDN 直连 |
+| 🍎 AppleMedia.list | 手工维护 | Apple TV 播放与 Apple News 专属端点 |
 | 📦 CDN.list | SukkaW | CDN、静态资源、下载资源 |
 | 🏠 China.list | 3 源 | 中国大陆直连域名（domain-only） |
 | 🌐 China_IP.list | 1 源 | 中国大陆 IP 回退（不加 no-resolve） |

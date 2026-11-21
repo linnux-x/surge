@@ -29,6 +29,7 @@ FALLBACK_ORDER: list[tuple[str, str]] = [
     ("Speedtest_China.list", "DIRECT"),
     ("Speedtest.list", "Speedtest"),
     ("Apple_AI.list", "Apple_AI"),
+    ("AppleMedia.list", "GlobalMedia"),
     ("Apple_CN.list", "DIRECT"),
     ("Apple.list", "Apple"),
     ("Microsoft_CDN.list", "DIRECT"),

@@ -4,8 +4,6 @@
 #
 # 注意：apps.mzstatic.com 已排除（保留在 Apple_CN/DIRECT）
 # 注意：DOMAIN-SUFFIX,ls.apple.com 已排除（避免劫持中国区节点）
-# 手动补录：上游未覆盖的全球 LinkScribe 节点
-DOMAIN-SUFFIX,gsp64-ssl.ls.apple.com
 # 手动补录：替代已排除的 DOMAIN-KEYWORD,siri，只覆盖 Apple 自有 Siri 端点
 DOMAIN-SUFFIX,siri.apple.com
 # 手动补录（2026-11-05，国行 Apple 智能上线后用户提供的端点清单）：Siri 接口与 Private Relay 节点。

@@ -24,6 +24,16 @@ class GeneratorContextTests(unittest.TestCase):
             self.assertTrue((Path(target) / 'AI.list').is_file())
             self.assertTrue((Path(target) / '.sources' / 'AI.json').is_file())
 
+    def test_new_manual_only_ruleset_can_be_generated_offline(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            manual = root / 'Manual'
+            manual.mkdir()
+            (manual / 'AppleMedia.txt').write_text('DOMAIN,tv.apple.com\n')
+            with patch.object(generator, 'MANUAL_DIR', manual), redirect_stdout(io.StringIO()):
+                generator.process_rule('AppleMedia.list', 'AppleMedia', [], rule_dir=root, offline=True)
+            self.assertIn('DOMAIN,tv.apple.com\n', (root / 'AppleMedia.list').read_text())
+
     def test_validation_failure_returns_1_and_publishes_nothing(self):
         with tempfile.TemporaryDirectory() as d:
             root = Path(d)

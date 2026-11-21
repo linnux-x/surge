@@ -1,9 +1,9 @@
 # NAME: GlobalMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-19 16:48:43 +0800
+# UPDATED: 2026-11-21 08:55:06 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 2288
+# TOTAL: 2272
 
 # ======= Manual Rules ========
 # Bilibili international / B-Star
@@ -24,7 +24,6 @@ DOMAIN-KEYWORD,023168
 DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
 DOMAIN,api.okzy.tv
 DOMAIN,apm-misaka.biliapi.net
-DOMAIN,apple.comscoreresearch.com
 DOMAIN,bcbolt446c5271-a.akamaihd.net
 DOMAIN,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
 DOMAIN,cs428.wpc.edgecastcdn.net
@@ -41,10 +40,6 @@ DOMAIN,hulu.map.fastly.net
 DOMAIN,images-daznservices-com.cdn.ampproject.org
 DOMAIN,itvpnpmobile-a.akamaihd.net
 DOMAIN,ktpx.amazon.com
-DOMAIN,news-client.apple.com
-DOMAIN,news-edge.apple.com
-DOMAIN,news-events.apple.com
-DOMAIN,ocvideo.apple.com
 DOMAIN,rpg.pic-imges.com
 DOMAIN,rthklive2-lh.akamaihd.net
 DOMAIN-SUFFIX,112263.com
@@ -90,8 +85,6 @@ DOMAIN-SUFFIX,amerikiskhma.com
 DOMAIN-SUFFIX,amlg.io
 DOMAIN-SUFFIX,anidom.com
 DOMAIN-SUFFIX,api.tv.colnv.com
-DOMAIN-SUFFIX,apple.news
-DOMAIN-SUFFIX,applemusic.com
 DOMAIN-SUFFIX,assetshuluimcom-a.akamaihd.net
 DOMAIN-SUFFIX,att.tv
 DOMAIN-SUFFIX,atttvnow.com
@@ -968,7 +961,6 @@ DOMAIN-SUFFIX,tidal.com
 DOMAIN-SUFFIX,tidalhifi.com
 DOMAIN-SUFFIX,timestalks.com
 DOMAIN-SUFFIX,ttvnw.net
-DOMAIN-SUFFIX,tv.apple.com
 DOMAIN-SUFFIX,tvb.com
 DOMAIN-SUFFIX,tvb.com.au
 DOMAIN-SUFFIX,tvbanywhere.com
@@ -2173,7 +2165,6 @@ IP-CIDR6,2a03:5640::/32,no-resolve
 USER-AGENT,AbemaTV*
 USER-AGENT,All4*
 USER-AGENT,Anime*
-USER-AGENT,AppleTV*
 USER-AGENT,Argo*
 USER-AGENT,BBCiPlayer*
 USER-AGENT,DAZN*
@@ -2223,7 +2214,6 @@ USER-AGENT,ViuTV*
 USER-AGENT,WeMusic*
 USER-AGENT,WeTV*
 USER-AGENT,app/bstar*
-USER-AGENT,com.apple.tv*
 USER-AGENT,com.kktv*
 USER-AGENT,com.kktv.ios.kktv*
 USER-AGENT,discovery+*
@@ -2255,19 +2245,14 @@ DOMAIN,bbc.mp-pxcdn.com
 DOMAIN-SUFFIX,tvlicensing.co.uk
 DOMAIN-SUFFIX,psg.cdn.hgc.com.hk
 DOMAIN,athome.fandango.com
-DOMAIN,hls.itunes.apple.com
 DOMAIN-SUFFIX,location-plus.nhk.jp
 DOMAIN,prod-api.crackle.com
 DOMAIN,cache.video.iqiyi.com
-DOMAIN,hls-amt.itunes.apple.com
-DOMAIN,np-edge.itunes.apple.com
-DOMAIN,uts-api.itunes.apple.com
 DOMAIN,dashasiafox.akamaized.net
 DOMAIN-SUFFIX,dcalivedazn.akamaized.net
 DOMAIN-SUFFIX,dcblivedazn.akamaized.net
 DOMAIN-SUFFIX,production-public.tubi.io
 DOMAIN-SUFFIX,spotify-com.akamaized.net
-DOMAIN,play-edge.itunes.apple.com
 DOMAIN,staticasiafox.akamaized.net
 DOMAIN,dfp6rglgjqszk.cloudfront.net
 DOMAIN,dmqdd6hw24ucf.cloudfront.net
@@ -2293,7 +2278,6 @@ USER-AGENT,HBO NOW*
 USER-AGENT,LINE TV*
 USER-AGENT,Naver TV*
 PROCESS-NAME,com.amazon.avod.thirdpartyclient
-PROCESS-NAME,tv
 PROCESS-NAME,music
 PROCESS-NAME,com.bstar.intl
 PROCESS-NAME,com.hulu.plus
