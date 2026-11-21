@@ -1,0 +1,13 @@
+# Braintree production and sandbox GraphQL hosts.
+# https://developer.paypal.com/braintree/docs/reference/general/braintree-ip-addresses
+DOMAIN,payments.braintree-api.com
+DOMAIN,payments.sandbox.braintree-api.com
+
+# PayPal-owned payout and point-of-sale platforms, including their tenant portals.
+DOMAIN-SUFFIX,hyperwallet.com
+DOMAIN-SUFFIX,paylution.com
+DOMAIN-SUFFIX,zettle.com
+DOMAIN-SUFFIX,izettle.com
+
+# The shared S3 virtual-hosted endpoint is scoped to Venmo's named bucket.
+DOMAIN,venmo.s3.amazonaws.com

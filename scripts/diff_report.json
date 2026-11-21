@@ -1,545 +1,18 @@
 {
-  "generated_at": "2026-11-21T17:59:02.197259",
-  "total_added": 427,
-  "total_removed": 8,
+  "generated_at": "2026-11-21T18:57:34.283023",
+  "total_added": 9,
+  "total_removed": 6,
   "total_source_changed": 0,
   "diffs": [
     {
       "file": "AI.list",
-      "prev_total": 140,
+      "prev_total": 560,
       "curr_total": 560,
-      "added_count": 425,
-      "removed_count": 5,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "003db6211d33",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.25.136.71/32,no-resolve))"
-        },
-        {
-          "id": "0067f5836b50",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,4.151.125.58/32,no-resolve))"
-        },
-        {
-          "id": "010f7a23069e",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.168.16.99/32,no-resolve))"
-        },
-        {
-          "id": "0227523d3db5",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,57.154.51.173/32,no-resolve))"
-        },
-        {
-          "id": "039eeff95b08",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.165.158.214/32,no-resolve))"
-        },
-        {
-          "id": "04d9b409ff1a",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.118.36.228/32,no-resolve))"
-        },
-        {
-          "id": "04f499370cdf",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,138.91.23.93/32,no-resolve))"
-        },
-        {
-          "id": "054017db361c",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,4.201.104.14/32,no-resolve))"
-        },
-        {
-          "id": "05a3188ea936",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.211.100.168/32,no-resolve))"
-        },
-        {
-          "id": "05f4ca2527fd",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,4.151.200.38/32,no-resolve))"
-        },
-        {
-          "id": "066b5dd965a0",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.125.138.65/32,no-resolve))"
-        },
-        {
-          "id": "071276f09dcb",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,172.204.26.187/32,no-resolve))"
-        },
-        {
-          "id": "07426844093a",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,191.232.190.216/32,no-resolve))"
-        },
-        {
-          "id": "07887c6eea1d",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.219.124.186/32,no-resolve))"
-        },
-        {
-          "id": "08533a4a0e9e",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,74.7.32.33/32,no-resolve))"
-        },
-        {
-          "id": "0a55b9e9f925",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.203.144.245/32,no-resolve))"
-        },
-        {
-          "id": "0a5e49d4905c",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,4.197.185.255/32,no-resolve))"
-        },
-        {
-          "id": "0a760c4238f1",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,52.243.62.231/32,no-resolve))"
-        },
-        {
-          "id": "0ab19081873e",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.69.27.102/32,no-resolve))"
-        },
-        {
-          "id": "0b270a477f15",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,134.138.48.99/32,no-resolve))"
-        },
-        {
-          "id": "0ba4031674f0",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.215.51.56/32,no-resolve))"
-        },
-        {
-          "id": "0c46b12537cf",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,172.204.26.194/32,no-resolve))"
-        },
-        {
-          "id": "0cda6d95a685",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,158.158.35.12/32,no-resolve))"
-        },
-        {
-          "id": "0da01a5bd008",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.98.94.72/32,no-resolve))"
-        },
-        {
-          "id": "0fad01020a15",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.66.44.126/32,no-resolve))"
-        },
-        {
-          "id": "0fd0d46604e5",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,172.173.91.17/32,no-resolve))"
-        },
-        {
-          "id": "0fe17eb7930e",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,52.140.124.30/32,no-resolve))"
-        },
-        {
-          "id": "10c2d4e04824",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,9.160.163.154/32,no-resolve))"
-        },
-        {
-          "id": "12df60c4d103",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,4.242.133.59/32,no-resolve))"
-        },
-        {
-          "id": "131a82953220",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,172.203.39.49/32,no-resolve))"
-        },
-        {
-          "id": "1376c1b1eaa1",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,52.237.113.253/32,no-resolve))"
-        },
-        {
-          "id": "1416b2ceec7b",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.61.69.127/32,no-resolve))"
-        },
-        {
-          "id": "1444232bd9fd",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.213.73.163/32,no-resolve))"
-        },
-        {
-          "id": "14c813c11f0e",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.197.177.17/32,no-resolve))"
-        },
-        {
-          "id": "15388702eeec",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,70.153.147.96/32,no-resolve))"
-        },
-        {
-          "id": "169173e87152",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.219.109.3/32,no-resolve))"
-        },
-        {
-          "id": "179ef1a52a12",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.194.216.186/32,no-resolve))"
-        },
-        {
-          "id": "186dbb59a15f",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,9.160.35.238/32,no-resolve))"
-        },
-        {
-          "id": "1a5a68c2e18e",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,68.155.152.41/32,no-resolve))"
-        },
-        {
-          "id": "1ace2eee6ae4",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,51.116.89.102/32,no-resolve))"
-        },
-        {
-          "id": "1b37b22076ac",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,172.202.23.232/32,no-resolve))"
-        },
-        {
-          "id": "1b3a480dd93f",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.89.101.223/32,no-resolve))"
-        },
-        {
-          "id": "1b49988575dd",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,13.71.25.29/32,no-resolve))"
-        },
-        {
-          "id": "1b6b90d91e6f",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.9.6.44/32,no-resolve))"
-        },
-        {
-          "id": "1e8c90e51c50",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.196.195.248/32,no-resolve))"
-        },
-        {
-          "id": "1ebd66a3e569",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,74.248.120.121/32,no-resolve))"
-        },
-        {
-          "id": "1fbe96922dc8",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,9.205.94.184/32,no-resolve))"
-        },
-        {
-          "id": "213cba52221d",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,4.155.146.196/32,no-resolve))"
-        },
-        {
-          "id": "21b781bf6085",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.225.156.200/32,no-resolve))"
-        },
-        {
-          "id": "21fd845e331a",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,85.211.193.130/32,no-resolve))"
-        },
-        {
-          "id": "2200419be158",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,9.205.159.128/32,no-resolve))"
-        },
-        {
-          "id": "22049bf7c02d",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,51.57.68.153/32,no-resolve))"
-        },
-        {
-          "id": "2212385cfc2a",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,172.184.136.176/32,no-resolve))"
-        },
-        {
-          "id": "223217497295",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.234.111.90/32,no-resolve))"
-        },
-        {
-          "id": "223661aedfb6",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,172.204.24.194/32,no-resolve))"
-        },
-        {
-          "id": "230e52d8afce",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,51.107.168.125/32,no-resolve))"
-        },
-        {
-          "id": "232efd68fbd9",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,134.138.48.156/32,no-resolve))"
-        },
-        {
-          "id": "23338e5cc0ba",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.171.138.58/32,no-resolve))"
-        },
-        {
-          "id": "23e483c741c1",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.113.195.227/32,no-resolve))"
-        },
-        {
-          "id": "2472e1a80e51",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,52.150.164.49/32,no-resolve))"
-        },
-        {
-          "id": "248cfea80942",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,130.131.242.81/32,no-resolve))"
-        },
-        {
-          "id": "25382918f424",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,9.205.159.144/32,no-resolve))"
-        },
-        {
-          "id": "254319ebd51e",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.205.234.64/32,no-resolve))"
-        },
-        {
-          "id": "259c26bcdc2b",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,9.205.94.183/32,no-resolve))"
-        },
-        {
-          "id": "25db7a43739a",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,72.146.20.246/32,no-resolve))"
-        },
-        {
-          "id": "2683ce40adb9",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,134.138.49.186/32,no-resolve))"
-        },
-        {
-          "id": "2751c22cd6bb",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,158.158.96.28/32,no-resolve))"
-        },
-        {
-          "id": "27d89da8f512",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.113.199.182/32,no-resolve))"
-        },
-        {
-          "id": "29975eeedade",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.211.207.196/32,no-resolve))"
-        },
-        {
-          "id": "2a2a1867bccd",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,68.221.176.216/32,no-resolve))"
-        },
-        {
-          "id": "2aea9e03b279",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,85.211.195.125/32,no-resolve))"
-        },
-        {
-          "id": "2b308370fbb0",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.125.96.144/32,no-resolve))"
-        },
-        {
-          "id": "2b701e465c2f",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,172.166.108.88/32,no-resolve))"
-        },
-        {
-          "id": "2c361b78199b",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,9.205.248.42/32,no-resolve))"
-        },
-        {
-          "id": "2c8ce2407d20",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.236.64.56/32,no-resolve))"
-        },
-        {
-          "id": "2d5a060dd0a5",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,52.253.109.199/32,no-resolve))"
-        },
-        {
-          "id": "2dd1623fdcbf",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.215.254.178/32,no-resolve))"
-        },
-        {
-          "id": "2def2ea1d511",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.89.130.145/32,no-resolve))"
-        },
-        {
-          "id": "2e03985dd1ff",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.226.89.95/32,no-resolve))"
-        },
-        {
-          "id": "2e2751df9ced",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.42.209.232/32,no-resolve))"
-        },
-        {
-          "id": "2e5f8cdbe69a",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,128.24.89.254/32,no-resolve))"
-        },
-        {
-          "id": "2f90b97043fb",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.207.202.126/32,no-resolve))"
-        },
-        {
-          "id": "315cf1f0160b",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,85.211.247.9/32,no-resolve))"
-        },
-        {
-          "id": "3250017c2c52",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.168.48.117/32,no-resolve))"
-        },
-        {
-          "id": "327fe8306c22",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,4.151.178.112/32,no-resolve))"
-        },
-        {
-          "id": "33784d8ab23c",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,134.138.48.201/32,no-resolve))"
-        },
-        {
-          "id": "349367ed5460",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,52.148.5.163/32,no-resolve))"
-        },
-        {
-          "id": "3645fc27640f",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.214.225.136/32,no-resolve))"
-        },
-        {
-          "id": "37bcc11a8496",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.207.197.123/32,no-resolve))"
-        },
-        {
-          "id": "380ca8d2d6c8",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,4.246.114.35/32,no-resolve))"
-        },
-        {
-          "id": "3897a682082d",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,4.225.200.166/32,no-resolve))"
-        },
-        {
-          "id": "395686c30728",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.219.100.169/32,no-resolve))"
-        },
-        {
-          "id": "3b1ddeedffbd",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,13.78.198.12/32,no-resolve))"
-        },
-        {
-          "id": "3c563bb9ea23",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,4.151.204.68/32,no-resolve))"
-        },
-        {
-          "id": "3c95ddef5563",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,172.200.47.199/32,no-resolve))"
-        },
-        {
-          "id": "3d97ddfa7429",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,85.211.180.16/32,no-resolve))"
-        },
-        {
-          "id": "3ef81e052db1",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,74.248.35.102/32,no-resolve))"
-        },
-        {
-          "id": "3f30f648e81f",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.215.219.87/32,no-resolve))"
-        },
-        {
-          "id": "3faca9fcd699",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,4.218.14.95/32,no-resolve))"
-        },
-        {
-          "id": "40b09d3b1ad3",
-          "source": "OpenAI ChatGPT Voice",
-          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.118.174.239/32,no-resolve))"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "008b9f4f529d",
-          "source": "SukkaW AI",
-          "rule": "DOMAIN,inference.codeium.com"
-        },
-        {
-          "id": "1c7247bf5d58",
-          "source": "SukkaW AI",
-          "rule": "DOMAIN,server.self-serve.windsurf.com"
-        },
-        {
-          "id": "2ac458b39d5e",
-          "source": "SukkaW AI",
-          "rule": "DOMAIN,server.codeium.com"
-        },
-        {
-          "id": "7c41d7205568",
-          "source": "SukkaW AI",
-          "rule": "DOMAIN-SUFFIX,sora.com"
-        },
-        {
-          "id": "97841db724f6",
-          "source": "ConnersHua AI",
-          "rule": "DOMAIN-SUFFIX,zed.dev"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -611,11 +84,17 @@
     {
       "file": "China.list",
       "prev_total": 110647,
-      "curr_total": 110647,
-      "added_count": 0,
+      "curr_total": 110648,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "2d1b25bf57f7",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,paypal.cn"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -665,18 +144,12 @@
     },
     {
       "file": "Download.list",
-      "prev_total": 1611,
+      "prev_total": 1612,
       "curr_total": 1612,
-      "added_count": 1,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "4e884bf59743",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,update.windsurf.com"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -693,35 +166,19 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24638,
-      "curr_total": 24636,
+      "prev_total": 24636,
+      "curr_total": 24637,
       "added_count": 1,
-      "removed_count": 3,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [
         {
-          "id": "7c41d7205568",
+          "id": "6adaa541866e",
           "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,sora.com"
+          "rule": "DOMAIN-SUFFIX,krakenjs.com"
         }
       ],
-      "removed_sample": [
-        {
-          "id": "c55c2b010c2c",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,codeiumdata.com"
-        },
-        {
-          "id": "cb6008a15c2b",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,windsurf.com"
-        },
-        {
-          "id": "e85b1a3db0b5",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,codeium.com"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -815,12 +272,79 @@
     {
       "file": "PayPal.list",
       "prev_total": 233,
-      "curr_total": 233,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 234,
+      "added_count": 7,
+      "removed_count": 6,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "0e2e1386dd3e",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,zettle.com"
+        },
+        {
+          "id": "76fca66aab16",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,venmo.s3.amazonaws.com"
+        },
+        {
+          "id": "833c3a25fa60",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,payments.sandbox.braintree-api.com"
+        },
+        {
+          "id": "853c4ca4402e",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,payments.braintree-api.com"
+        },
+        {
+          "id": "9981688f620c",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,hyperwallet.com"
+        },
+        {
+          "id": "cac8a0d39048",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,izettle.com"
+        },
+        {
+          "id": "f70c54274709",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,paylution.com"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "359882143efe",
+          "source": "blackmatrix7 PayPal",
+          "rule": "DOMAIN-SUFFIX,venmo.info"
+        },
+        {
+          "id": "5441dcd9756d",
+          "source": "blackmatrix7 PayPal",
+          "rule": "USER-AGENT,PayPal*"
+        },
+        {
+          "id": "5d27ff730b23",
+          "source": "blackmatrix7 PayPal",
+          "rule": "DOMAIN-SUFFIX,paypal-referral.com"
+        },
+        {
+          "id": "6adaa541866e",
+          "source": "blackmatrix7 PayPal",
+          "rule": "DOMAIN-SUFFIX,krakenjs.com"
+        },
+        {
+          "id": "6b8c31e4e694",
+          "source": "blackmatrix7 PayPal",
+          "rule": "DOMAIN-SUFFIX,venmo.s3.amazonaws.com"
+        },
+        {
+          "id": "bb60771a2e67",
+          "source": "blackmatrix7 PayPal",
+          "rule": "DOMAIN-SUFFIX,paypal.info"
+        }
+      ],
       "source_changed_sample": []
     },
     {

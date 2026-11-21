@@ -1,9 +1,9 @@
 # NAME: China
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-19 16:04:29 +0800
+# UPDATED: 2026-11-21 18:56:11 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 110647
+# TOTAL: 110648
 
 # ======= Manual Rules ========
 # China game download domains — route DIRECT via China policy
@@ -34,6 +34,7 @@ DOMAIN-SUFFIX,anfutong.cn
 DOMAIN-SUFFIX,anfutong.com
 DOMAIN-SUFFIX,beibao.cn
 DOMAIN-SUFFIX,beibao.com
+DOMAIN-SUFFIX,paypal.cn
 DOMAIN-SUFFIX,paypalcommunity.cn
 DOMAIN-SUFFIX,paypalhere.cn
 DOMAIN-SUFFIX,xn--bnq297cix3a.cn
