@@ -1,9 +1,9 @@
 # NAME: Download
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 13:03:33 +0800
+# UPDATED: 2026-11-21 13:14:49 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1611
+# TOTAL: 1610
 
 # ======= Manual Rules ========
 # Preserve the S3 path-style endpoint without matching virtual-hosted buckets.
@@ -591,7 +591,6 @@ DOMAIN,debian.snt.utwente.nl
 DOMAIN,mirror.ams.macarne.com
 DOMAIN,mirror.bgp.rodeo
 DOMAIN,mirror.duocast.net
-DOMAIN,mirror.nforce.com
 DOMAIN,mirror.nl.leaseweb.net
 DOMAIN,mirrors.hostiserver.com
 DOMAIN,mirror.tngnet.com

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T13:09:59.718853",
+  "generated_at": "2026-11-21T13:14:49.589356",
   "total_added": 1,
   "total_removed": 1,
   "total_source_changed": 0,
@@ -139,12 +139,18 @@
     {
       "file": "Download.list",
       "prev_total": 1611,
-      "curr_total": 1611,
+      "curr_total": 1610,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 1,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "54bf5777c659",
+          "source": "SukkaW Download",
+          "rule": "DOMAIN,mirror.nforce.com"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -161,11 +167,17 @@
     {
       "file": "Global.list",
       "prev_total": 24635,
-      "curr_total": 24635,
-      "added_count": 0,
+      "curr_total": 24636,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "54bf5777c659",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,mirror.nforce.com"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -283,23 +295,11 @@
       "file": "Speedtest.list",
       "prev_total": 1725,
       "curr_total": 1725,
-      "added_count": 1,
-      "removed_count": 1,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "25420bcdd9d7",
-          "source": "Manual Rules",
-          "rule": "AND,((DOMAIN,mirror.nforce.com),(DEST-PORT,8080))"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "84a1bcca8116",
-          "source": "Manual Rules",
-          "rule": "URL-REGEX,^http://mirror\\.nforce\\.com:8080/speedtest(?:[/?#]|$)"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {

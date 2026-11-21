@@ -28,7 +28,7 @@
 
 - ConnersHua AI: 12
 - Loyalsoldier China CIDR: 9665
-- Manual Rules: 454
+- Manual Rules: 455
 - Rabbit-Spec AIGC: 12
 - Rabbit-Spec China: 373
 - RocM301 Apple-AI: 13
@@ -37,7 +37,7 @@
 - SukkaW Apple CN: 5
 - SukkaW CDN: 25
 - SukkaW Domestic: 842
-- SukkaW Download: 1548
+- SukkaW Download: 1547
 - SukkaW Game Download: 52
 - SukkaW Microsoft CDN: 52
 - SukkaW Speedtest: 121

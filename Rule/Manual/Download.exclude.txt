@@ -93,3 +93,6 @@ DOMAIN-SUFFIX,delivery.mp.microsoft.com
 DOMAIN,download.visualstudio.microsoft.com
 DOMAIN,officecdn-microsoft-com.akamaized.net
 DOMAIN,ctldl.windowsupdate.com
+
+# NFOrce software mirror timed out on DIRECT and returned 200 through Global.
+DOMAIN,mirror.nforce.com
