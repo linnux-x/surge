@@ -4,3 +4,6 @@ DOMAIN,swiftgram.app
 
 # Nicegram client website. Other services and ads on its subdomains follow their own rules.
 DOMAIN,nicegram.me
+
+# Telegram Desktop process routing allows Google Public DNS to match Google.
+AND,((PROCESS-NAME,telegram-desktop),(NOT,((OR,((DOMAIN,dns.google),(DOMAIN,dns.google.com),(IP-CIDR,8.8.8.8/32,no-resolve),(IP-CIDR,8.8.4.4/32,no-resolve),(IP-CIDR6,2001:4860:4860::8888/128,no-resolve),(IP-CIDR6,2001:4860:4860::8844/128,no-resolve))))))

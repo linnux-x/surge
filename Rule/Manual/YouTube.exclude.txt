@@ -5,3 +5,20 @@ DOMAIN-SUFFIX,gvt2.com
 
 # Limit service matches to the domain boundary.
 DOMAIN-KEYWORD,youtube
+
+# Apply destination boundaries to the web, session and image hosts.
+DOMAIN-SUFFIX,youtube.com
+DOMAIN-SUFFIX,ggpht.com
+USER-AGENT,*YouTubeMusic*
+USER-AGENT,*com.google.ios.youtubemusic*
+USER-AGENT,*youtube*
+USER-AGENT,YouTube*
+USER-AGENT,YouTubeMusic*
+USER-AGENT,com.google.ios.youtube*
+USER-AGENT,com.google.ios.youtubemusic*
+
+# YouTube Go ended in 2022 and these regional hosts return HTTP 404.
+DOMAIN-SUFFIX,youtubego.co.id
+DOMAIN-SUFFIX,youtubego.co.in
+DOMAIN-SUFFIX,youtubego.id
+DOMAIN-SUFFIX,youtubego.in

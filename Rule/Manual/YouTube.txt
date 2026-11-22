@@ -1,0 +1,8 @@
+# Shared Google sign-in follows Google. Other youtube.com destinations follow YouTube.
+AND,((DOMAIN-SUFFIX,youtube.com),(NOT,((DOMAIN,accounts.youtube.com))))
+
+# YouTube-specific artwork and creator APIs on shared Google domains.
+DOMAIN,yt3.ggpht.com
+DOMAIN,yt3.googleusercontent.com
+DOMAIN,youtubeanalytics.googleapis.com
+DOMAIN,youtubereporting.googleapis.com

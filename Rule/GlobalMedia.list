@@ -1,9 +1,9 @@
 # NAME: GlobalMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 15:12:36 +0800
+# UPDATED: 2026-11-22 16:38:45 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 2254
+# TOTAL: 2242
 
 # ======= Manual Rules ========
 # Keep the FAST.com front end, API and data on the same policy where Netflix.list is disabled.
@@ -351,7 +351,6 @@ DOMAIN-SUFFIX,f1manager.com
 DOMAIN-SUFFIX,f1play.com
 DOMAIN-SUFFIX,fetnet.net
 DOMAIN-SUFFIX,findyourlimits.com
-DOMAIN-SUFFIX,firebaseio.com
 DOMAIN-SUFFIX,fls-na.amazon.com
 DOMAIN-SUFFIX,flxvpn.net
 DOMAIN-SUFFIX,formula1.com
@@ -1240,12 +1239,8 @@ DOMAIN-SUFFIX,youtubeeducation.com
 DOMAIN-SUFFIX,youtubeembeddedplayer.googleapis.com
 DOMAIN-SUFFIX,youtubefanfest.com
 DOMAIN-SUFFIX,youtubegaming.com
-DOMAIN-SUFFIX,youtubego.co.id
-DOMAIN-SUFFIX,youtubego.co.in
 DOMAIN-SUFFIX,youtubego.com
 DOMAIN-SUFFIX,youtubego.com.br
-DOMAIN-SUFFIX,youtubego.id
-DOMAIN-SUFFIX,youtubego.in
 DOMAIN-SUFFIX,youtubei.googleapis.com
 DOMAIN-SUFFIX,youtubekids.com
 DOMAIN-SUFFIX,youtubemobilesupport.com
@@ -2209,13 +2204,6 @@ USER-AGENT,com.kktv.ios.kktv*
 USER-AGENT,discovery+*
 USER-AGENT,encoreTVB*
 USER-AGENT,mytv*
-USER-AGENT,*youtube*
-USER-AGENT,YouTube*
-USER-AGENT,com.google.ios.youtube*
-USER-AGENT,*YouTubeMusic*
-USER-AGENT,*com.google.ios.youtubemusic*
-USER-AGENT,YouTubeMusic*
-USER-AGENT,com.google.ios.youtubemusic*
 URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/
 PROCESS-NAME,com.viu.pad
 PROCESS-NAME,com.viu.phone

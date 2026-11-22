@@ -16,7 +16,7 @@ import sys
 from pathlib import Path
 from urllib.parse import urlsplit
 
-from rule_validator import DOMAIN_PORT_RULE_RE, UDP_MEDIA_RULE_RE
+from rule_validator import DOMAIN_PORT_RULE_RE, DOMAIN_SUFFIX_EXCEPTION_RE, UDP_MEDIA_RULE_RE
 
 ROOT = Path(__file__).resolve().parents[1]
 RULE_DIR = ROOT / "Rule"
@@ -88,7 +88,7 @@ def match_domain(domain: str, rules: set[str], *, url: str | None = None,
     - DOMAIN-WILDCARD: wildcard match (basic * support)
     - IP-CIDR/IP-CIDR6: literal address membership (no DNS lookup)
     - URL-REGEX: match the full URL when explicitly supplied
-    - AND: match an exact domain and port, or a literal CIDR on a scoped UDP port
+    - AND: match a domain and port, a suffix with an exact exception, or a scoped UDP CIDR
     """
     domain_lower = domain.lower().rstrip(".")
     try:
@@ -107,6 +107,10 @@ def match_domain(domain: str, rules: set[str], *, url: str | None = None,
 
         if rule_type == "URL-REGEX" and url is not None:
             if re.search(value, url):
+                return True
+        elif rule_type == "AND" and (domain_boundary := DOMAIN_SUFFIX_EXCEPTION_RE.fullmatch(rule)):
+            suffix, excluded_host = domain_boundary.groups()
+            if domain_lower != excluded_host and (domain_lower == suffix or domain_lower.endswith("." + suffix)):
                 return True
         elif rule_type == "AND" and (domain_port := DOMAIN_PORT_RULE_RE.fullmatch(rule)):
             host, rule_port = domain_port.groups()

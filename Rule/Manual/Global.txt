@@ -99,3 +99,11 @@ DOMAIN-SUFFIX,ibytedtos.com
 DOMAIN-SUFFIX,ibyteimg.com
 DOMAIN-SUFFIX,bytedapm.com
 DOMAIN-SUFFIX,lifeattiktok.com
+
+# Google Cloud and Firebase tenant application endpoints.
+DOMAIN-SUFFIX,appspot.com
+DOMAIN-SUFFIX,cloudfunctions.net
+DOMAIN-SUFFIX,firebaseapp.com
+DOMAIN-SUFFIX,firebaseio.com
+DOMAIN-SUFFIX,run.app
+DOMAIN-SUFFIX,web.app

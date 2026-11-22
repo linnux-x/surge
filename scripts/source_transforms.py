@@ -133,7 +133,9 @@ def apply_project_guardrails(target_name: str, lines: list[str]) -> list[str]:
     if target_name == "Microsoft.list":
         out = [l for l in out if not GITHUB_RE.search(l)]
     elif target_name == "Google.list":
-        out = [l for l in out if not YOUTUBE_RE.search(l)]
+        # Chrome and YouTube share this Google account endpoint.
+        out = [line for line in out
+               if line == "DOMAIN,accounts.youtube.com" or not YOUTUBE_RE.search(line)]
     elif target_name == "China.list":
         out = [l for l in out if not re.match(r"^(IP-CIDR|IP-CIDR6|IP-ASN),", l, re.IGNORECASE)]
         out = [

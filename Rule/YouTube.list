@@ -1,13 +1,22 @@
 # NAME: YouTube
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-19 16:55:38 +0800
+# UPDATED: 2026-11-22 16:38:45 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 187
+# TOTAL: 179
+
+# ======= Manual Rules ========
+# Shared Google sign-in follows Google. Other youtube.com destinations follow YouTube.
+AND,((DOMAIN-SUFFIX,youtube.com),(NOT,((DOMAIN,accounts.youtube.com))))
+
+# YouTube-specific artwork and creator APIs on shared Google domains.
+DOMAIN,yt3.ggpht.com
+DOMAIN,yt3.googleusercontent.com
+DOMAIN,youtubeanalytics.googleapis.com
+DOMAIN,youtubereporting.googleapis.com
 
 # ======= blackmatrix7 YouTube ========
 DOMAIN-SUFFIX,ggpht.cn
-DOMAIN-SUFFIX,ggpht.com
 DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,video.google.com
 DOMAIN-SUFFIX,wide-youtube.l.google.com
@@ -51,7 +60,6 @@ DOMAIN-SUFFIX,youtube.co.uk
 DOMAIN-SUFFIX,youtube.co.ve
 DOMAIN-SUFFIX,youtube.co.za
 DOMAIN-SUFFIX,youtube.co.zw
-DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,youtube.com.ar
 DOMAIN-SUFFIX,youtube.com.au
 DOMAIN-SUFFIX,youtube.com.az
@@ -172,12 +180,8 @@ DOMAIN-SUFFIX,youtubeeducation.com
 DOMAIN-SUFFIX,youtubeembeddedplayer.googleapis.com
 DOMAIN-SUFFIX,youtubefanfest.com
 DOMAIN-SUFFIX,youtubegaming.com
-DOMAIN-SUFFIX,youtubego.co.id
-DOMAIN-SUFFIX,youtubego.co.in
 DOMAIN-SUFFIX,youtubego.com
 DOMAIN-SUFFIX,youtubego.com.br
-DOMAIN-SUFFIX,youtubego.id
-DOMAIN-SUFFIX,youtubego.in
 DOMAIN-SUFFIX,youtubei.googleapis.com
 DOMAIN-SUFFIX,youtubekids.com
 DOMAIN-SUFFIX,youtubemobilesupport.com
@@ -186,10 +190,3 @@ DOMAIN-SUFFIX,ytimg.com
 IP-CIDR,172.110.32.0/21,no-resolve
 IP-CIDR,216.73.80.0/20,no-resolve
 IP-CIDR6,2620:120:e000::/40,no-resolve
-USER-AGENT,*YouTubeMusic*
-USER-AGENT,*com.google.ios.youtubemusic*
-USER-AGENT,*youtube*
-USER-AGENT,YouTube*
-USER-AGENT,YouTubeMusic*
-USER-AGENT,com.google.ios.youtube*
-USER-AGENT,com.google.ios.youtubemusic*
