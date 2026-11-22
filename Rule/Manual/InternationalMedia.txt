@@ -13,5 +13,6 @@ DOMAIN-SUFFIX,inter.iqiyi.com
 DOMAIN-SUFFIX,intl.iqiyi.com
 DOMAIN-SUFFIX,intl-rcd.iqiyi.com
 DOMAIN-SUFFIX,intl-subscription.iqiyi.com
+DOMAIN,tw.iqiyi.com
 DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
 DOMAIN,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv

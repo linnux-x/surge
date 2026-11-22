@@ -18,6 +18,7 @@ DOMAIN-SUFFIX,mvk.com
 # Bluesky
 DOMAIN-SUFFIX,bsky.app
 DOMAIN-SUFFIX,bsky.social
+DOMAIN,api.bsky.chat
 
 # Dcard (Taiwan social)
 DOMAIN-SUFFIX,dcard.tw

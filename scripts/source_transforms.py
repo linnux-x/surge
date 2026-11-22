@@ -17,9 +17,11 @@ from policy import (
     FASTCOM_RE,
     FASTCOM_RULESETS,
     GITHUB_RE,
+    HOST_SCOPED_RULESETS,
     SHARED_INFRA_EXEMPT_FILES,
     SHARED_THIRD_PARTY_SUFFIXES,
     YOUTUBE_RE,
+    violates_media_boundary,
 )
 from rule_validator import SUKKAW_MARKER
 from exclusions import exclusion_key, read_exclusions
@@ -144,6 +146,12 @@ def apply_project_guardrails(target_name: str, lines: list[str]) -> list[str]:
         ]
     elif target_name == "China_IP.list":
         out = [re.sub(r",(no-resolve|NO-RESOLVE)", "", l, flags=re.IGNORECASE) for l in out]
+
+    if target_name in HOST_SCOPED_RULESETS:
+        out = [
+            line for line in out
+            if not violates_media_boundary(target_name, line)
+        ]
 
     # The strict validator rejects whole shared identity, telemetry, and consent
     # suffixes in service-specific rulesets. Enforce the same invariant before

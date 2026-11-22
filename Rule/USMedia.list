@@ -1,9 +1,9 @@
 # NAME: USMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 12:42:22 +0800
+# UPDATED: 2026-11-22 17:37:11 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 40
+# TOTAL: 35
 
 # ======= SukkaW Stream US ========
 DOMAIN-SUFFIX,fox.com
@@ -40,9 +40,4 @@ DOMAIN,cbsservice.aws.syncbak.com
 DOMAIN,staticasiafox.akamaized.net
 DOMAIN,bcbolt446c5271-a.akamaihd.net
 DOMAIN,cbsplaylistserver.aws.syncbak.com
-USER-AGENT,FOX NOW*
-USER-AGENT,FOXPlus*
-USER-AGENT,encoreTVB*
-USER-AGENT,PPlus*
-USER-AGENT,PeacockMobile*
 PROCESS-NAME,com.hulu.plus

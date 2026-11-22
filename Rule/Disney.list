@@ -1,9 +1,9 @@
 # NAME: Disney
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-09-04 05:00:42 +0800
+# UPDATED: 2026-11-22 17:37:11 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 166
+# TOTAL: 165
 
 # ======= blackmatrix7 Disney ========
 DOMAIN-SUFFIX,20thcenturystudios.com.au
@@ -169,6 +169,5 @@ DOMAIN-SUFFIX,thewaltdisneycompany.com
 DOMAIN-SUFFIX,thisispolaris.com
 DOMAIN-SUFFIX,watchdisneyfe.com
 DOMAIN-SUFFIX,watchespn.com
-USER-AGENT,Disney+*
 PROCESS-NAME,com.disney.datg.videoplatforms.android.abc
 PROCESS-NAME,com.disney.disneyplus

@@ -5,6 +5,7 @@
     "Spotify.exclude.txt": {"action": "exclude", "reason": "排除 Spotify 无边界子串", "destination": "专属 Spotify 主机或后续规则"},
     "JPMedia.exclude.txt": {"action": "exclude", "reason": "排除通用 DMM 或 Ameba 建站域", "destination": "Global 或 FINAL"},
     "JPMedia.txt": {"action": "include", "reason": "确认的 DMM 视频入口", "destination": "JPMedia.list → JPMedia"},
+    "TWMedia.txt": {"action": "include", "reason": "已核实的 Hami Video 主站及 CDN", "destination": "TWMedia.list → TWMedia"},
     "InternationalMedia.txt": {"action": "include", "reason": "优先匹配 BiliBili 与爱奇艺的国际版端点", "destination": "InternationalMedia.list → GlobalMedia"},
     "HKMedia.txt": {"action": "include", "reason": "补齐香港电台已验证端点", "destination": "HKMedia.list → HKMedia"},
     "AdBlock.txt": {"action": "include", "reason": "自维护纯广告投放拦截名单，仅收录实测到的广告投放域名", "destination": "AdBlock.list"},

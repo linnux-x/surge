@@ -1,3 +1,6 @@
 # Official DMM TV and video delivery entrance.
 DOMAIN-SUFFIX,tv.dmm.com
 DOMAIN-SUFFIX,video.dmm.com
+
+# Abema CDN hostname, limited to the DNS suffix boundary.
+DOMAIN-SUFFIX,abematv.akamaized.net

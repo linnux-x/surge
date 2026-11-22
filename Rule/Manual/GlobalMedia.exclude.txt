@@ -216,3 +216,14 @@ DOMAIN-SUFFIX,youtubego.in
 
 # Firebase tenant endpoints use generic routing.
 DOMAIN-SUFFIX,firebaseio.com
+
+# Whole ISP suffix includes unrelated email and broadband services.
+DOMAIN-SUFFIX,hinet.net
+
+# Shared Akamai edge, also excluded from Netflix.
+DOMAIN,e13252.dscg.akamaiedge.net
+
+# Keep KINX and shared EC2 addresses out of the streaming policy.
+IP-CIDR,1.201.0.0/24,no-resolve
+IP-CIDR,52.211.1.180/32,no-resolve
+IP-CIDR,99.81.97.56/32,no-resolve

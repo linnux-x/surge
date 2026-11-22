@@ -25,6 +25,31 @@ GITHUB_RE = re.compile(r"github|ghcr[.]io", re.IGNORECASE)
 FASTCOM_RULESETS = frozenset({"Netflix.list", "GlobalMedia.list"})
 FASTCOM_RE = re.compile(r"(^|,)([^,]*[.])?fast[.]com(,|$)", re.IGNORECASE)
 
+# Match media by destination or app identity, including in the Global fallback.
+HOST_SCOPED_RULESETS = frozenset({
+    "Netflix.list", "Disney.list", "HKMedia.list", "TWMedia.list", "JPMedia.list",
+    "USMedia.list", "ChinaMedia.list", "Spotify.list", "GlobalMedia.list", "Global.list",
+})
+REVIEWED_HOST_KEYWORDS = {"GlobalMedia.list": "023168", "Global.list": "porn"}
+NETFLIX_OPEN_CONNECT_ASNS = frozenset({"2906", "40027"})
+
+
+def violates_media_boundary(target: str, rule: str) -> bool:
+    if target not in HOST_SCOPED_RULESETS:
+        return False
+    kind, _, value = rule.partition(",")
+    kind = kind.strip().upper()
+    value = value.split(",", 1)[0].strip().lower()
+    if kind in {"DOMAIN-KEYWORD", "USER-AGENT"}:
+        return kind != "DOMAIN-KEYWORD" or value != REVIEWED_HOST_KEYWORDS.get(target)
+    if target == "Netflix.list" and kind in {"IP-CIDR", "IP-CIDR6", "IP-ASN", "GEOIP"}:
+        return kind != "IP-ASN" or value not in NETFLIX_OPEN_CONNECT_ASNS
+    if target == "GlobalMedia.list" and kind in {"DOMAIN", "DOMAIN-SUFFIX"}:
+        return (value == "hinet.net" or value in SHARED_THIRD_PARTY_SUFFIXES
+                or value in SHARED_THIRD_PARTY_DOMAINS)
+    return False
+
+
 # Keep YouTube service domains in YouTube.list. Google keeps the shared sign-in host.
 YOUTUBE_RE = re.compile(
     r"youtube|ytimg[.]com|googlevideo[.]com|youtubei[.]googleapis[.]com",
@@ -94,14 +119,14 @@ SHARED_CDN_PARENTS = {
 SHARED_THIRD_PARTY_SUFFIXES = {
     "auth0.com",
     "cookielaw.org", "onetrust.com", "adobedtm.com",
-    "braze.com", "newrelic.com", "nr-data.net",
+    "braze.com", "braze.eu", "conviva.com", "newrelic.com", "nr-data.net",
     "optimizely.com", "segment.io", "sentry.io",
 }
 SHARED_THIRD_PARTY_DOMAINS = {"js-agent.newrelic.com"}
 
 # Aggregate rulesets exempt from shared-infrastructure checks.
 SHARED_INFRA_EXEMPT_FILES = {
-    "Global.list", "GlobalMedia.list", "CDN.list", "Direct.list",
+    "Global.list", "CDN.list", "Direct.list",
     "China.list", "China_IP.list", "ChinaMedia.list", "Download.list",
 }
 

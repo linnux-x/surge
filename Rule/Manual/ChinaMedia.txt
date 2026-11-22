@@ -6,3 +6,6 @@ DOMAIN,film.sohu.com
 # Lowercase domestic client prefixes, with an explicit product separator.
 USER-AGENT,bilibili/*
 USER-AGENT,bili/*
+
+# Tencent QQLive cache, scoped to the official hostname.
+DOMAIN,cache.tv.qq.com
