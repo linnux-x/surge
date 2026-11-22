@@ -55,7 +55,7 @@ UDP_MEDIA_RULE_RE = re.compile(
 )
 UDP_MEDIA_PORTS = {"AI.list": "3478", "Microsoft.list": "3478-3481"}
 DOMAIN_SUFFIX_EXCEPTION_RE = re.compile(
-    r"AND,\(\(DOMAIN-SUFFIX,([^,()]+)\),\(NOT,\(\(DOMAIN,([^,()]+)\)\)\)\)",
+    r"AND,\(\(DOMAIN-SUFFIX,([^,()]+)\),\(NOT,\(\((DOMAIN(?:-SUFFIX)?),([^,()]+)\)\)\)\)",
     re.I,
 )
 TELEGRAM_DNS_EXCEPTION = (
@@ -133,7 +133,7 @@ def validate_rule_file(lines: list[str], target_name: str) -> list[str]:
             continue
 
         if rule_type == "AND" and (domain_boundary := DOMAIN_SUFFIX_EXCEPTION_RE.fullmatch(rule)):
-            suffix, excluded_host = domain_boundary.groups()
+            suffix, _, excluded_host = domain_boundary.groups()
             if not DOMAIN_VALUE_RE.fullmatch(excluded_host) or not excluded_host.endswith("." + suffix):
                 errors.append(f"{target_name}:{index} invalid domain suffix exception: {rule}")
             parts = ["DOMAIN-SUFFIX", suffix]

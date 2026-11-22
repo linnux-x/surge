@@ -9,3 +9,30 @@ DOMAIN-SUFFIX,esm.sh
 # Limit service matches to the domain boundary.
 DOMAIN,static.grammarly.com
 DOMAIN-WILDCARD,*-files.gitbook.io
+
+# Official package, support and telemetry-agent static assets.
+DOMAIN,cdnjs.cloudflare.com
+DOMAIN,esm.run
+DOMAIN,assets.zendesk.com
+DOMAIN,static.zdassets.com
+DOMAIN,web-assets.zendesk.com
+DOMAIN,cdn.signalfx.com
+DOMAIN,cdn.observability.splunkcloud.com
+
+# Cloudinary public and per-project asset delivery hosts.
+DOMAIN,res.cloudinary.com
+DOMAIN-WILDCARD,*-res.cloudinary.com
+
+# Retain media and asset routes within the original delivery hostname.
+DOMAIN-WILDCARD,*vod-adaptive.akamaized.net
+DOMAIN-WILDCARD,*-thumbs.pornhost.com
+DOMAIN-WILDCARD,*-cdn.eporner.com
+DOMAIN-WILDCARD,*-assets.worldsex.com
+DOMAIN-WILDCARD,*-thumbs.worldsex.com
+DOMAIN,cdn.adultempire.com
+DOMAIN,static.trustpilot.com
+DOMAIN,scripts.trustpilot.com
+DOMAIN,images.trustpilot.com
+DOMAIN,cdn.trustpilot.net
+DOMAIN,assets.trustpilot.net
+DOMAIN,images.trustpilot.net
