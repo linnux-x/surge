@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-22 16:14:35 +0800
+# UPDATED: 2026-11-22 16:38:45 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24646
+# TOTAL: 24652
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -107,6 +107,14 @@ DOMAIN-SUFFIX,ibytedtos.com
 DOMAIN-SUFFIX,ibyteimg.com
 DOMAIN-SUFFIX,bytedapm.com
 DOMAIN-SUFFIX,lifeattiktok.com
+
+# Google Cloud and Firebase tenant application endpoints.
+DOMAIN-SUFFIX,appspot.com
+DOMAIN-SUFFIX,cloudfunctions.net
+DOMAIN-SUFFIX,firebaseapp.com
+DOMAIN-SUFFIX,firebaseio.com
+DOMAIN-SUFFIX,run.app
+DOMAIN-SUFFIX,web.app
 
 # ======= blackmatrix7 Global ========
 DOMAIN,1password.drift.click

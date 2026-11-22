@@ -198,3 +198,21 @@ IP-CIDR,219.76.0.0/17,no-resolve
 IP-CIDR,23.78.0.0/16,no-resolve
 IP-CIDR,54.0.0.0/16,no-resolve
 IP-CIDR,54.214.128.0/17,no-resolve
+
+# Remove copies of destination-independent YouTube UA matches.
+USER-AGENT,*YouTubeMusic*
+USER-AGENT,*com.google.ios.youtubemusic*
+USER-AGENT,*youtube*
+USER-AGENT,YouTube*
+USER-AGENT,YouTubeMusic*
+USER-AGENT,com.google.ios.youtube*
+USER-AGENT,com.google.ios.youtubemusic*
+
+# Keep retired YouTube Go hosts out of upstream fallback rules.
+DOMAIN-SUFFIX,youtubego.co.id
+DOMAIN-SUFFIX,youtubego.co.in
+DOMAIN-SUFFIX,youtubego.id
+DOMAIN-SUFFIX,youtubego.in
+
+# Firebase tenant endpoints use generic routing.
+DOMAIN-SUFFIX,firebaseio.com

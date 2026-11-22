@@ -29,3 +29,6 @@ PROCESS-NAME,nekox.messenger
 PROCESS-NAME,org.telegram.messenger
 PROCESS-NAME,tw.nekomimi.nekogram
 PROCESS-NAME,xyz.nextalone.nagram
+
+# Use the process rule with a Google Public DNS exception.
+PROCESS-NAME,telegram-desktop

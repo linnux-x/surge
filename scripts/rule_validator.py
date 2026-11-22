@@ -54,6 +54,17 @@ UDP_MEDIA_RULE_RE = re.compile(
     re.I,
 )
 UDP_MEDIA_PORTS = {"AI.list": "3478", "Microsoft.list": "3478-3481"}
+DOMAIN_SUFFIX_EXCEPTION_RE = re.compile(
+    r"AND,\(\(DOMAIN-SUFFIX,([^,()]+)\),\(NOT,\(\(DOMAIN,([^,()]+)\)\)\)\)",
+    re.I,
+)
+TELEGRAM_DNS_EXCEPTION = (
+    "AND,((PROCESS-NAME,telegram-desktop),"
+    "(NOT,((OR,((DOMAIN,dns.google),(DOMAIN,dns.google.com),"
+    "(IP-CIDR,8.8.8.8/32,no-resolve),(IP-CIDR,8.8.4.4/32,no-resolve),"
+    "(IP-CIDR6,2001:4860:4860::8888/128,no-resolve),"
+    "(IP-CIDR6,2001:4860:4860::8844/128,no-resolve))))))"
+)
 CONTROL_CHAR_RE = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
 
 PAYPAL_CN_DOMAINS = {
@@ -117,6 +128,16 @@ def validate_rule_file(lines: list[str], target_name: str) -> list[str]:
                 if UDP_MEDIA_PORTS.get(target_name) != ports or network.version != version or not network.is_global:
                     errors.append(f"{target_name}:{index} invalid UDP media rule: {rule}")
             continue
+
+        if target_name == "Telegram.list" and low == TELEGRAM_DNS_EXCEPTION.lower():
+            continue
+
+        if rule_type == "AND" and (domain_boundary := DOMAIN_SUFFIX_EXCEPTION_RE.fullmatch(rule)):
+            suffix, excluded_host = domain_boundary.groups()
+            if not DOMAIN_VALUE_RE.fullmatch(excluded_host) or not excluded_host.endswith("." + suffix):
+                errors.append(f"{target_name}:{index} invalid domain suffix exception: {rule}")
+            parts = ["DOMAIN-SUFFIX", suffix]
+            rule_type = "DOMAIN-SUFFIX"
 
         if rule_type == "AND" and (domain_port := DOMAIN_PORT_RULE_RE.fullmatch(rule)):
             host, port = domain_port.groups()

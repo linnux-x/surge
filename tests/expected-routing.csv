@@ -1044,3 +1044,57 @@ p16-tiktokcdn-com.akamaized.net.example,FINAL,Global,Akamai 主机规则按明�
 www.worldfcdn.com,China.list,DIRECT,共享 CDN 父域沿通用规则
 api.tiktokv.com,TikTok.list,TikTok,TikTok 应用 API 保留
 api.tiktokv.us,TikTok.list,TikTok,TikTok 美区应用 API 保留
+music.youtube.com,YouTube.list,YouTube,YouTube 专属域与浏览器共用账号入口分流
+tv.youtube.com,YouTube.list,YouTube,YouTube 专属域与浏览器共用账号入口分流
+accounts.youtube.com,Google.list,Google,YouTube 专属域与浏览器共用账号入口分流
+yt3.ggpht.com,YouTube.list,YouTube,YouTube 官方头像、徽章或创作者报表服务
+yt3.googleusercontent.com,YouTube.list,YouTube,YouTube 官方头像、徽章或创作者报表服务
+youtubeanalytics.googleapis.com,YouTube.list,YouTube,YouTube 官方头像、徽章或创作者报表服务
+youtubereporting.googleapis.com,YouTube.list,YouTube,YouTube 官方头像、徽章或创作者报表服务
+lh3.ggpht.com,Google.list,Google,Google Play 和 Chrome Web Store 共用图片，YouTube 徽章主机独立匹配
+lh4.ggpht.com,Google.list,Google,Google Play 和 Chrome Web Store 共用图片，YouTube 徽章主机独立匹配
+lh5.ggpht.com,Google.list,Google,Google Play 和 Chrome Web Store 共用图片，YouTube 徽章主机独立匹配
+lh6.ggpht.com,Google.list,Google,Google Play 和 Chrome Web Store 共用图片，YouTube 徽章主机独立匹配
+cros-omahaproxy.appspot.com,Google.list,Google,Google Chrome 自用端点保留 Google
+chromiumdash.appspot.com,Google.list,Google,Google Chrome 自用端点保留 Google
+gweb-gettingstartedguide.appspot.com,Google.list,Google,Google Chrome 自用端点保留 Google
+omahaproxy.appspot.com,Google.list,Google,Google Chrome 自用端点保留 Google
+tenant.appspot.com,Global.list,Global,默认托管域下包含客户创建的项目，沿通用分流
+tenant.cloudfunctions.net,Global.list,Global,默认托管域下包含客户创建的项目，沿通用分流
+tenant.firebaseapp.com,Global.list,Global,默认托管域下包含客户创建的项目，沿通用分流
+tenant.firebaseio.com,Global.list,Global,默认托管域下包含客户创建的项目，沿通用分流
+tenant.run.app,Global.list,Global,默认托管域下包含客户创建的项目，沿通用分流
+tenant.web.app,Global.list,Global,默认托管域下包含客户创建的项目，沿通用分流
+www.recaptcha.net,China.list,DIRECT,应用进程和 UA 会捕获无关流量，按目的地规则分流
+play.google.com,Google.list,Google,应用进程和 UA 会捕获无关流量，按目的地规则分流
+unrelated-appspot.example,FINAL,Global,移除会匹配无关站点的子串规则
+unrelated-blogspot.example,FINAL,Global,移除会匹配无关站点的子串规则
+sample.blogspot.com,Google.list,Google,移除会匹配无关站点的子串规则
+app-measurement.net,FINAL,Global,Google Public DNS 和 Cloudflare 均返回 NXDOMAIN
+certificate-transparency.dev,FINAL,Global,Google Public DNS 和 Cloudflare 均返回 NXDOMAIN
+www.youtubego.co.id,FINAL,Global,停服的 YouTube Go 地区主机返回 HTTP 404
+www.youtubego.co.in,FINAL,Global,停服的 YouTube Go 地区主机返回 HTTP 404
+www.youtubego.id,FINAL,Global,停服的 YouTube Go 地区主机返回 HTTP 404
+www.youtubego.in,FINAL,Global,停服的 YouTube Go 地区主机返回 HTTP 404
+8.8.8.8,Google.list,Google,Google Public DNS 官方 IP
+8.8.4.4,Google.list,Google,Google Public DNS 官方 IP
+2001:4860:4860::8888,Google.list,Google,Google Public DNS 官方 IP
+2001:4860:4860::8844,Google.list,Google,Google Public DNS 官方 IP
+meet.turns.goog,Google.list,Google,Google Meet 官方媒体 SNI
+workspace.turns.goog,Google.list,Google,Google Meet 官方媒体 SNI
+142.250.82.1,Google.list,Google,Google Meet 官方媒体网络
+2001:4860:4864:4:8000::,Google.list,Google,Google Meet 官方媒体网络
+2001:4860:4864:5::1,Google.list,Google,Google Meet 官方媒体网络
+2001:4860:4864:6::1,Google.list,Google,Google Meet 官方媒体网络
+dns.google.com,Google.list,Google,Telegram Desktop 进程规则为 Google Public DNS 留出目的地址例外
+34.0.160.3,FINAL,Global,欧洲 Google Cloud 客户 IPv4 地址回通用分流
+2600:1902:260::3,FINAL,Global,Google Cloud 客户 IPv6 地址回通用分流
+35.207.128.3,Global.list,Global,Google Cloud 客户地址在已有 Global 网段中
+74.125.250.1,Google.list,Google,现有 Google CIDR 已涵盖 Workspace Meet
+74.125.247.128,Google.list,Google,现有 Google CIDR 已涵盖 Workspace Meet 单地址
+172.110.32.1,YouTube.list,YouTube,YouTube 登记的 IPv4
+216.73.80.1,YouTube.list,YouTube,YouTube 登记的 IPv4
+2620:120:e000::1,YouTube.list,YouTube,YouTube 登记的 IPv6
+youtubego.com,YouTube.list,YouTube,仍跳转到 YouTube 的域名
+youtube.com.example,FINAL,Global,YouTube 规则按域名边界匹配
+gcr.io,Download.list,Download,Google 容器下载保持优先分流

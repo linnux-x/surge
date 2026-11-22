@@ -1,19 +1,38 @@
 # NAME: Google
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-18 11:23:37 +0800
+# UPDATED: 2026-11-22 16:41:52 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 687
+# TOTAL: 684
 
 # ======= Manual Rules ========
 DOMAIN-SUFFIX,gvt1.com
 DOMAIN-SUFFIX,gvt2.com
 
-# GEOIP match for all Google ASN IP ranges (catches unknown Google IPs not covered by domain rules)
-IP-ASN,15169,no-resolve
-
 # Google Public DNS observed in real FINAL traffic
 DOMAIN,dns.google
+
+# Shared Google accounts and images, and Google-owned Chrome services hosted on App Engine.
+DOMAIN,accounts.youtube.com
+DOMAIN-SUFFIX,ggpht.com
+DOMAIN,cros-omahaproxy.appspot.com
+DOMAIN,chromiumdash.appspot.com
+DOMAIN,gweb-gettingstartedguide.appspot.com
+DOMAIN,omahaproxy.appspot.com
+
+# Google Public DNS addresses. DNS over HTTPS also uses dns.google.com.
+IP-CIDR,8.8.8.8/32,no-resolve
+IP-CIDR,8.8.4.4/32,no-resolve
+IP-CIDR6,2001:4860:4860::8888/128,no-resolve
+IP-CIDR6,2001:4860:4860::8844/128,no-resolve
+
+# Google Meet media ranges outside the existing Google IPv4 blocks.
+DOMAIN,meet.turns.goog
+DOMAIN,workspace.turns.goog
+IP-CIDR,142.250.82.0/24,no-resolve
+IP-CIDR6,2001:4860:4864:4:8000::/128,no-resolve
+IP-CIDR6,2001:4860:4864:5::/64,no-resolve
+IP-CIDR6,2001:4860:4864:6::/64,no-resolve
 
 # ======= blackmatrix7 Google ========
 DOMAIN,voice.telephony.goog
@@ -49,12 +68,10 @@ DOMAIN-SUFFIX,apigee.com
 DOMAIN-SUFFIX,app-analytics-services.com
 DOMAIN-SUFFIX,app-measurement-cn.com
 DOMAIN-SUFFIX,app-measurement.com
-DOMAIN-SUFFIX,app-measurement.net
 DOMAIN-SUFFIX,appbridge.ca
 DOMAIN-SUFFIX,appbridge.io
 DOMAIN-SUFFIX,appbridge.it
 DOMAIN-SUFFIX,apps5.oingo.com
-DOMAIN-SUFFIX,appspot.com
 DOMAIN-SUFFIX,apture.com
 DOMAIN-SUFFIX,area120.com
 DOMAIN-SUFFIX,asp-cc.com
@@ -154,7 +171,6 @@ DOMAIN-SUFFIX,bumptunes.com
 DOMAIN-SUFFIX,c.gle
 DOMAIN-SUFFIX,campuslondon.com
 DOMAIN-SUFFIX,capitalg.com
-DOMAIN-SUFFIX,certificate-transparency.dev
 DOMAIN-SUFFIX,certificate-transparency.org
 DOMAIN-SUFFIX,charlestonroadregistry.com
 DOMAIN-SUFFIX,chat.gle
@@ -171,7 +187,6 @@ DOMAIN-SUFFIX,chroniclesec.com
 DOMAIN-SUFFIX,clickserve.cc-dt.com
 DOMAIN-SUFFIX,clickserver.googleads.com
 DOMAIN-SUFFIX,cloudburstresearch.com
-DOMAIN-SUFFIX,cloudfunctions.net
 DOMAIN-SUFFIX,cloudproxy.app
 DOMAIN-SUFFIX,cloudrobotics.com
 DOMAIN-SUFFIX,cobrasearch.com
@@ -214,8 +229,6 @@ DOMAIN-SUFFIX,fastlane.tools
 DOMAIN-SUFFIX,feedburner.com
 DOMAIN-SUFFIX,fflick.com
 DOMAIN-SUFFIX,financeleadsonline.com
-DOMAIN-SUFFIX,firebaseapp.com
-DOMAIN-SUFFIX,firebaseio.com
 DOMAIN-SUFFIX,flutter.dev
 DOMAIN-SUFFIX,flutterapp.com
 DOMAIN-SUFFIX,foofle.com
@@ -604,7 +617,6 @@ DOMAIN-SUFFIX,redhotlabs.com
 DOMAIN-SUFFIX,registry.google
 DOMAIN-SUFFIX,revolv.com
 DOMAIN-SUFFIX,ridepenguin.com
-DOMAIN-SUFFIX,run.app
 DOMAIN-SUFFIX,savethedate.foo
 DOMAIN-SUFFIX,saynow.com
 DOMAIN-SUFFIX,schema.org
@@ -655,7 +667,6 @@ DOMAIN-SUFFIX,wallet.com
 DOMAIN-SUFFIX,waveprotocol.org
 DOMAIN-SUFFIX,waymo.com
 DOMAIN-SUFFIX,waze.com
-DOMAIN-SUFFIX,web.app
 DOMAIN-SUFFIX,web.dev
 DOMAIN-SUFFIX,webappfieldguide.com
 DOMAIN-SUFFIX,webmproject.org
@@ -687,15 +698,5 @@ DOMAIN-SUFFIX,zukunftswerkstatt.de
 DOMAIN-SUFFIX,zynamics.com
 DOMAIN-SUFFIX,googledrive.com
 DOMAIN-SUFFIX,googleusercontent.com
-DOMAIN-KEYWORD,appspot
-DOMAIN-KEYWORD,blogspot
 IP-CIDR,173.194.0.0/16,no-resolve
 IP-CIDR,74.125.0.0/16,no-resolve
-USER-AGENT,%E4%BA%91%E7%AB%AF%E7%A1%AC%E7%9B%98*
-USER-AGENT,*com.google.Drive*
-USER-AGENT,Google.Drive*
-PROCESS-NAME,com.android.vending
-PROCESS-NAME,com.google.android.gms
-PROCESS-NAME,com.google.android.gsf
-PROCESS-NAME,com.google.android.play.games
-PROCESS-NAME,BackupandSync

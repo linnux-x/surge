@@ -1,23 +1,17 @@
 {
-  "generated_at": "2026-11-22T16:14:35.412995",
-  "total_added": 32,
-  "total_removed": 18,
+  "generated_at": "2026-11-22T16:41:52.357446",
+  "total_added": 28,
+  "total_removed": 45,
   "total_source_changed": 0,
   "diffs": [
     {
       "file": "AI.list",
-      "prev_total": 560,
+      "prev_total": 561,
       "curr_total": 561,
-      "added_count": 1,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "ee546a83d352",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,dreamina.capcut.com"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -89,19 +83,13 @@
     },
     {
       "file": "China.list",
-      "prev_total": 110665,
+      "prev_total": 110664,
       "curr_total": 110664,
       "added_count": 0,
-      "removed_count": 1,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "13fb0898db37",
-          "source": "Rabbit-Spec China",
-          "rule": "DOMAIN-SUFFIX,analytics.tiktok.com"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -172,112 +160,304 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24641,
-      "curr_total": 24646,
-      "added_count": 10,
-      "removed_count": 5,
+      "prev_total": 24646,
+      "curr_total": 24652,
+      "added_count": 6,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [
         {
-          "id": "00d5c63bd3d8",
+          "id": "54b39dcebe9a",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,capcutcdn-us.com"
+          "rule": "DOMAIN-SUFFIX,firebaseio.com"
         },
         {
-          "id": "1e39b3a6531b",
+          "id": "5a30ebe8123f",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,bytedapm.com"
+          "rule": "DOMAIN-SUFFIX,firebaseapp.com"
         },
         {
-          "id": "1f0d6e2494f9",
+          "id": "7df93f3679c6",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,capcutapi.com"
+          "rule": "DOMAIN-SUFFIX,appspot.com"
         },
         {
-          "id": "2675c6d3c2af",
+          "id": "b5b00f6a07d1",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,capcut.com"
+          "rule": "DOMAIN-SUFFIX,cloudfunctions.net"
         },
         {
-          "id": "460498e1548e",
+          "id": "bed8ccaf5201",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,capcutstatic.com"
+          "rule": "DOMAIN-SUFFIX,run.app"
         },
         {
-          "id": "461ef8b80b5f",
+          "id": "e6fc4b14adfa",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,lemon8-app.com"
-        },
-        {
-          "id": "b84f0a9af961",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,ibyteimg.com"
-        },
-        {
-          "id": "ce05c951fc7a",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,ibytedtos.com"
-        },
-        {
-          "id": "db25b4026fee",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,capcutapi.us"
-        },
-        {
-          "id": "f60588e199a8",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,lifeattiktok.com"
+          "rule": "DOMAIN-SUFFIX,web.app"
         }
       ],
-      "removed_sample": [
-        {
-          "id": "5290de0484f3",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,tiktokv.eu"
-        },
-        {
-          "id": "58883933effa",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,tiktokcdn-eu.com"
-        },
-        {
-          "id": "ad809d1824c8",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,tiktokw.us"
-        },
-        {
-          "id": "e4a1112e04d1",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,ttlivecdn.com"
-        },
-        {
-          "id": "f129f6c8239e",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,tiktokw.eu"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "GlobalMedia.list",
       "prev_total": 2254,
-      "curr_total": 2254,
+      "curr_total": 2242,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 12,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "117bfdcdc37b",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "USER-AGENT,YouTube*"
+        },
+        {
+          "id": "1acbd919549f",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "USER-AGENT,com.google.ios.youtube*"
+        },
+        {
+          "id": "2ef8d5d1fc40",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "DOMAIN-SUFFIX,youtubego.co.id"
+        },
+        {
+          "id": "30ff465a05a9",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "DOMAIN-SUFFIX,youtubego.in"
+        },
+        {
+          "id": "4614e2585a8a",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "DOMAIN-SUFFIX,youtubego.id"
+        },
+        {
+          "id": "47908cb42760",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "USER-AGENT,YouTubeMusic*"
+        },
+        {
+          "id": "54b39dcebe9a",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "DOMAIN-SUFFIX,firebaseio.com"
+        },
+        {
+          "id": "939c8566838e",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "USER-AGENT,*com.google.ios.youtubemusic*"
+        },
+        {
+          "id": "b247be74d620",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "USER-AGENT,com.google.ios.youtubemusic*"
+        },
+        {
+          "id": "b38203651afd",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "DOMAIN-SUFFIX,youtubego.co.in"
+        },
+        {
+          "id": "b481ba0e2e8f",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "USER-AGENT,*youtube*"
+        },
+        {
+          "id": "bbec51ab900d",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "USER-AGENT,*YouTubeMusic*"
+        }
+      ],
       "source_changed_sample": []
     },
     {
       "file": "Google.list",
       "prev_total": 687,
-      "curr_total": 687,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 684,
+      "added_count": 16,
+      "removed_count": 19,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "401a61a4c991",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,ggpht.com"
+        },
+        {
+          "id": "470aa108b6f1",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR6,2001:4860:4860::8844/128,no-resolve"
+        },
+        {
+          "id": "4b5256e914c2",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,accounts.youtube.com"
+        },
+        {
+          "id": "4e82154d42aa",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,8.8.8.8/32,no-resolve"
+        },
+        {
+          "id": "4f148b275435",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,gweb-gettingstartedguide.appspot.com"
+        },
+        {
+          "id": "7899e85c407b",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,chromiumdash.appspot.com"
+        },
+        {
+          "id": "78eea33cd004",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,cros-omahaproxy.appspot.com"
+        },
+        {
+          "id": "8ae7d4a44818",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR6,2001:4860:4860::8888/128,no-resolve"
+        },
+        {
+          "id": "9d6e2f9a787d",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR6,2001:4860:4864:6::/64,no-resolve"
+        },
+        {
+          "id": "b6c88281a32b",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,meet.turns.goog"
+        },
+        {
+          "id": "b9ce6ccd7981",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,omahaproxy.appspot.com"
+        },
+        {
+          "id": "bec001d19e3d",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR6,2001:4860:4864:4:8000::/128,no-resolve"
+        },
+        {
+          "id": "c8ae64e3d9ea",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR6,2001:4860:4864:5::/64,no-resolve"
+        },
+        {
+          "id": "dc845dab5cb4",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,8.8.4.4/32,no-resolve"
+        },
+        {
+          "id": "e81fbb92671e",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,142.250.82.0/24,no-resolve"
+        },
+        {
+          "id": "ed2787ec16b4",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,workspace.turns.goog"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "34dc06430476",
+          "source": "blackmatrix7 Google",
+          "rule": "DOMAIN-KEYWORD,appspot"
+        },
+        {
+          "id": "3759b93c14f2",
+          "source": "blackmatrix7 Google",
+          "rule": "PROCESS-NAME,com.google.android.gms"
+        },
+        {
+          "id": "42ad2d1519fd",
+          "source": "blackmatrix7 Google",
+          "rule": "USER-AGENT,Google.Drive*"
+        },
+        {
+          "id": "54b39dcebe9a",
+          "source": "blackmatrix7 Google",
+          "rule": "DOMAIN-SUFFIX,firebaseio.com"
+        },
+        {
+          "id": "5a30ebe8123f",
+          "source": "blackmatrix7 Google",
+          "rule": "DOMAIN-SUFFIX,firebaseapp.com"
+        },
+        {
+          "id": "736594470b2a",
+          "source": "blackmatrix7 Google",
+          "rule": "DOMAIN-SUFFIX,certificate-transparency.dev"
+        },
+        {
+          "id": "7af741f8072a",
+          "source": "blackmatrix7 Google",
+          "rule": "DOMAIN-SUFFIX,app-measurement.net"
+        },
+        {
+          "id": "7df93f3679c6",
+          "source": "blackmatrix7 Google",
+          "rule": "DOMAIN-SUFFIX,appspot.com"
+        },
+        {
+          "id": "843fbc9e5651",
+          "source": "blackmatrix7 Google",
+          "rule": "PROCESS-NAME,com.android.vending"
+        },
+        {
+          "id": "959f6a001910",
+          "source": "blackmatrix7 Google",
+          "rule": "DOMAIN-KEYWORD,blogspot"
+        },
+        {
+          "id": "a9f7a710ad3c",
+          "source": "blackmatrix7 Google",
+          "rule": "PROCESS-NAME,BackupandSync"
+        },
+        {
+          "id": "b589aac848f7",
+          "source": "blackmatrix7 Google",
+          "rule": "USER-AGENT,*com.google.Drive*"
+        },
+        {
+          "id": "b5b00f6a07d1",
+          "source": "blackmatrix7 Google",
+          "rule": "DOMAIN-SUFFIX,cloudfunctions.net"
+        },
+        {
+          "id": "bcfb11b92ebf",
+          "source": "blackmatrix7 Google",
+          "rule": "USER-AGENT,%E4%BA%91%E7%AB%AF%E7%A1%AC%E7%9B%98*"
+        },
+        {
+          "id": "bed8ccaf5201",
+          "source": "blackmatrix7 Google",
+          "rule": "DOMAIN-SUFFIX,run.app"
+        },
+        {
+          "id": "e6fc4b14adfa",
+          "source": "blackmatrix7 Google",
+          "rule": "DOMAIN-SUFFIX,web.app"
+        },
+        {
+          "id": "e748554de8c0",
+          "source": "Manual Rules",
+          "rule": "IP-ASN,15169,no-resolve"
+        },
+        {
+          "id": "edce5c67442b",
+          "source": "blackmatrix7 Google",
+          "rule": "PROCESS-NAME,com.google.android.play.games"
+        },
+        {
+          "id": "ff67f6d80942",
+          "source": "blackmatrix7 Google",
+          "rule": "PROCESS-NAME,com.google.android.gsf"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -416,189 +596,34 @@
       "file": "Telegram.list",
       "prev_total": 39,
       "curr_total": 39,
+      "added_count": 1,
+      "removed_count": 1,
+      "source_changed_count": 0,
+      "added_sample": [
+        {
+          "id": "b00bf63e31ac",
+          "source": "Manual Rules",
+          "rule": "AND,((PROCESS-NAME,telegram-desktop),(NOT,((OR,((DOMAIN,dns.google),(DOMAIN,dns.google.com),(IP-CIDR,8.8.8.8/32,no-resolve),(IP-CIDR,8.8.4.4/32,no-resolve),(IP-CIDR6,2001:4860:4860::8888/128,no-resolve),(IP-CIDR6,2001:4860:4860::8844/128,no-resolve))))))"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "4252b94245de",
+          "source": "blackmatrix7 Telegram",
+          "rule": "PROCESS-NAME,telegram-desktop"
+        }
+      ],
+      "source_changed_sample": []
+    },
+    {
+      "file": "TikTok.list",
+      "prev_total": 41,
+      "curr_total": 41,
       "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
       "removed_sample": [],
-      "source_changed_sample": []
-    },
-    {
-      "file": "TikTok.list",
-      "prev_total": 32,
-      "curr_total": 41,
-      "added_count": 21,
-      "removed_count": 12,
-      "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "01a2727ee6d6",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,p16-g1-sign-sg.ibyteimg.com"
-        },
-        {
-          "id": "09c20ca93ddf",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,p16-g1-sign-va.ibyteimg.com"
-        },
-        {
-          "id": "120edb5e8ac5",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,pull-fcdn-base2.s.bytefcdn-oversea.com"
-        },
-        {
-          "id": "1cf6d84689b2",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,ttlivecdn.com.c.bytefcdn-oversea.com"
-        },
-        {
-          "id": "346bf0cbd413",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,p16-oec-sg.ibyteimg.com"
-        },
-        {
-          "id": "4e323cc5ee5b",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,sf16-scmcdn-va.ibytedtos.com"
-        },
-        {
-          "id": "4e607c1a0804",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,p16-g1-sign-useast2a.ibyteimg.com"
-        },
-        {
-          "id": "5290de0484f3",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,tiktokv.eu"
-        },
-        {
-          "id": "58883933effa",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,tiktokcdn-eu.com"
-        },
-        {
-          "id": "73a557420550",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,tiktokshop.com"
-        },
-        {
-          "id": "7c2d5df4171c",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,pull-fcdn-base4.s.bytefcdn-oversea.com"
-        },
-        {
-          "id": "960abfcd94fa",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,tiktokforbusiness.com"
-        },
-        {
-          "id": "9e70e73073c8",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,tiktokglobalshop.com"
-        },
-        {
-          "id": "ad809d1824c8",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,tiktokw.us"
-        },
-        {
-          "id": "e4a1112e04d1",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,ttlivecdn.com"
-        },
-        {
-          "id": "ece49ea13bd7",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,ttlivecdn.com.c.worldfcdn.com"
-        },
-        {
-          "id": "f129f6c8239e",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,tiktokw.eu"
-        },
-        {
-          "id": "f19af890d71a",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,tiktokshopglobalselling.com"
-        },
-        {
-          "id": "f4583195eb56",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,pull-fcdn-base1.s.bytefcdn-oversea.com"
-        },
-        {
-          "id": "f743d845e1c3",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,pull-third-base1.s.bytefcdn-oversea.com"
-        },
-        {
-          "id": "fadb4444145f",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,tiktokapis.com"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "054145bf0bb8",
-          "source": "blackmatrix7 TikTok",
-          "rule": "DOMAIN-SUFFIX,tiktokmusic.app"
-        },
-        {
-          "id": "0894b6f6d191",
-          "source": "blackmatrix7 TikTok",
-          "rule": "DOMAIN-KEYWORD,musical.ly"
-        },
-        {
-          "id": "1e39b3a6531b",
-          "source": "blackmatrix7 TikTok",
-          "rule": "DOMAIN-SUFFIX,bytedapm.com"
-        },
-        {
-          "id": "1f0d6e2494f9",
-          "source": "blackmatrix7 TikTok",
-          "rule": "DOMAIN-SUFFIX,capcutapi.com"
-        },
-        {
-          "id": "2675c6d3c2af",
-          "source": "blackmatrix7 TikTok",
-          "rule": "DOMAIN-SUFFIX,capcut.com"
-        },
-        {
-          "id": "299f281a4cea",
-          "source": "blackmatrix7 TikTok",
-          "rule": "DOMAIN-KEYWORD,tiktok"
-        },
-        {
-          "id": "460498e1548e",
-          "source": "blackmatrix7 TikTok",
-          "rule": "DOMAIN-SUFFIX,capcutstatic.com"
-        },
-        {
-          "id": "a3fa2f7a0586",
-          "source": "blackmatrix7 TikTok",
-          "rule": "USER-AGENT,TikTok*"
-        },
-        {
-          "id": "b84f0a9af961",
-          "source": "blackmatrix7 TikTok",
-          "rule": "DOMAIN-SUFFIX,ibyteimg.com"
-        },
-        {
-          "id": "c3a99eddfd18",
-          "source": "blackmatrix7 TikTok",
-          "rule": "PROCESS-NAME,com.zhiliaoapp.musically"
-        },
-        {
-          "id": "ce05c951fc7a",
-          "source": "blackmatrix7 TikTok",
-          "rule": "DOMAIN-SUFFIX,ibytedtos.com"
-        },
-        {
-          "id": "db25b4026fee",
-          "source": "blackmatrix7 TikTok",
-          "rule": "DOMAIN-SUFFIX,capcutapi.us"
-        }
-      ],
       "source_changed_sample": []
     },
     {
@@ -626,12 +651,104 @@
     {
       "file": "YouTube.list",
       "prev_total": 187,
-      "curr_total": 187,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 179,
+      "added_count": 5,
+      "removed_count": 13,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "80ad3ee66314",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,youtubereporting.googleapis.com"
+        },
+        {
+          "id": "84f64f31dc71",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,yt3.ggpht.com"
+        },
+        {
+          "id": "8f60ec856ad2",
+          "source": "Manual Rules",
+          "rule": "AND,((DOMAIN-SUFFIX,youtube.com),(NOT,((DOMAIN,accounts.youtube.com))))"
+        },
+        {
+          "id": "a07d8e52a9c9",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,youtubeanalytics.googleapis.com"
+        },
+        {
+          "id": "c8601b07916c",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,yt3.googleusercontent.com"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "117bfdcdc37b",
+          "source": "blackmatrix7 YouTube",
+          "rule": "USER-AGENT,YouTube*"
+        },
+        {
+          "id": "1acbd919549f",
+          "source": "blackmatrix7 YouTube",
+          "rule": "USER-AGENT,com.google.ios.youtube*"
+        },
+        {
+          "id": "2ef8d5d1fc40",
+          "source": "blackmatrix7 YouTube",
+          "rule": "DOMAIN-SUFFIX,youtubego.co.id"
+        },
+        {
+          "id": "30ff465a05a9",
+          "source": "blackmatrix7 YouTube",
+          "rule": "DOMAIN-SUFFIX,youtubego.in"
+        },
+        {
+          "id": "401a61a4c991",
+          "source": "blackmatrix7 YouTube",
+          "rule": "DOMAIN-SUFFIX,ggpht.com"
+        },
+        {
+          "id": "4614e2585a8a",
+          "source": "blackmatrix7 YouTube",
+          "rule": "DOMAIN-SUFFIX,youtubego.id"
+        },
+        {
+          "id": "47908cb42760",
+          "source": "blackmatrix7 YouTube",
+          "rule": "USER-AGENT,YouTubeMusic*"
+        },
+        {
+          "id": "939c8566838e",
+          "source": "blackmatrix7 YouTube",
+          "rule": "USER-AGENT,*com.google.ios.youtubemusic*"
+        },
+        {
+          "id": "b247be74d620",
+          "source": "blackmatrix7 YouTube",
+          "rule": "USER-AGENT,com.google.ios.youtubemusic*"
+        },
+        {
+          "id": "b38203651afd",
+          "source": "blackmatrix7 YouTube",
+          "rule": "DOMAIN-SUFFIX,youtubego.co.in"
+        },
+        {
+          "id": "b481ba0e2e8f",
+          "source": "blackmatrix7 YouTube",
+          "rule": "USER-AGENT,*youtube*"
+        },
+        {
+          "id": "bbec51ab900d",
+          "source": "blackmatrix7 YouTube",
+          "rule": "USER-AGENT,*YouTubeMusic*"
+        },
+        {
+          "id": "ff14637482cd",
+          "source": "blackmatrix7 YouTube",
+          "rule": "DOMAIN-SUFFIX,youtube.com"
+        }
+      ],
       "source_changed_sample": []
     }
   ]

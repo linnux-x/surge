@@ -97,3 +97,25 @@ DOMAIN-KEYWORD,google
 # DOMAIN-KEYWORD,gmail 是子串匹配，会把 suningmail.com、qingmail.com 等国内邮箱
 # 送进 Google 代理组；gmail.com / googlemail.com 已由 DOMAIN-SUFFIX 精确覆盖。
 DOMAIN-KEYWORD,gmail
+
+# Tenant applications and destination-independent application and keyword matching.
+DOMAIN-SUFFIX,appspot.com
+DOMAIN-SUFFIX,cloudfunctions.net
+DOMAIN-SUFFIX,firebaseapp.com
+DOMAIN-SUFFIX,firebaseio.com
+DOMAIN-SUFFIX,run.app
+DOMAIN-SUFFIX,web.app
+DOMAIN-KEYWORD,appspot
+DOMAIN-KEYWORD,blogspot
+USER-AGENT,%E4%BA%91%E7%AB%AF%E7%A1%AC%E7%9B%98*
+USER-AGENT,*com.google.Drive*
+USER-AGENT,Google.Drive*
+PROCESS-NAME,com.android.vending
+PROCESS-NAME,com.google.android.gms
+PROCESS-NAME,com.google.android.gsf
+PROCESS-NAME,com.google.android.play.games
+PROCESS-NAME,BackupandSync
+
+# Two public resolvers returned NXDOMAIN for these retired domains.
+DOMAIN-SUFFIX,app-measurement.net
+DOMAIN-SUFFIX,certificate-transparency.dev

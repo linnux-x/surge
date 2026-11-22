@@ -1,7 +1,7 @@
 # NAME: Telegram
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 15:28:33 +0800
+# UPDATED: 2026-11-22 16:38:45 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 39
 
@@ -12,6 +12,9 @@ DOMAIN,swiftgram.app
 
 # Nicegram client website. Other services and ads on its subdomains follow their own rules.
 DOMAIN,nicegram.me
+
+# Telegram Desktop process routing allows Google Public DNS to match Google.
+AND,((PROCESS-NAME,telegram-desktop),(NOT,((OR,((DOMAIN,dns.google),(DOMAIN,dns.google.com),(IP-CIDR,8.8.8.8/32,no-resolve),(IP-CIDR,8.8.4.4/32,no-resolve),(IP-CIDR6,2001:4860:4860::8888/128,no-resolve),(IP-CIDR6,2001:4860:4860::8844/128,no-resolve))))))
 
 # ======= blackmatrix7 Telegram ========
 DOMAIN,api.imem.app
@@ -39,7 +42,6 @@ DOMAIN-SUFFIX,tx.me
 IP-CIDR,149.154.160.0/20,no-resolve
 IP-CIDR6,2001:67c:4e8::/48,no-resolve
 IP-CIDR6,2001:b28:f23f::/48,no-resolve
-PROCESS-NAME,telegram-desktop
 
 # ======= Telegram Official CIDR ========
 IP-CIDR,91.108.56.0/22,no-resolve

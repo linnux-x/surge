@@ -2,8 +2,27 @@
 DOMAIN-SUFFIX,gvt1.com
 DOMAIN-SUFFIX,gvt2.com
 
-# GEOIP match for all Google ASN IP ranges (catches unknown Google IPs not covered by domain rules)
-GEOIP,GOOGLE
-
 # Google Public DNS observed in real FINAL traffic
 DOMAIN,dns.google
+
+# Shared Google accounts and images, and Google-owned Chrome services hosted on App Engine.
+DOMAIN,accounts.youtube.com
+DOMAIN-SUFFIX,ggpht.com
+DOMAIN,cros-omahaproxy.appspot.com
+DOMAIN,chromiumdash.appspot.com
+DOMAIN,gweb-gettingstartedguide.appspot.com
+DOMAIN,omahaproxy.appspot.com
+
+# Google Public DNS addresses. DNS over HTTPS also uses dns.google.com.
+IP-CIDR,8.8.8.8/32,no-resolve
+IP-CIDR,8.8.4.4/32,no-resolve
+IP-CIDR6,2001:4860:4860::8888/128,no-resolve
+IP-CIDR6,2001:4860:4860::8844/128,no-resolve
+
+# Google Meet media ranges outside the existing Google IPv4 blocks.
+DOMAIN,meet.turns.goog
+DOMAIN,workspace.turns.goog
+IP-CIDR,142.250.82.0/24,no-resolve
+IP-CIDR6,2001:4860:4864:4:8000::/128,no-resolve
+IP-CIDR6,2001:4860:4864:5::/64,no-resolve
+IP-CIDR6,2001:4860:4864:6::/64,no-resolve

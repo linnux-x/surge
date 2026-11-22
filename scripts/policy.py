@@ -25,7 +25,7 @@ GITHUB_RE = re.compile(r"github|ghcr[.]io", re.IGNORECASE)
 FASTCOM_RULESETS = frozenset({"Netflix.list", "GlobalMedia.list"})
 FASTCOM_RE = re.compile(r"(^|,)([^,]*[.])?fast[.]com(,|$)", re.IGNORECASE)
 
-# YouTube domains never belong to Google.list (they live in YouTube.list).
+# Keep YouTube service domains in YouTube.list. Google keeps the shared sign-in host.
 YOUTUBE_RE = re.compile(
     r"youtube|ytimg[.]com|googlevideo[.]com|youtubei[.]googleapis[.]com",
     re.IGNORECASE,
