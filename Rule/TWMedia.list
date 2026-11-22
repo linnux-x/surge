@@ -1,9 +1,14 @@
 # NAME: TWMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 12:42:22 +0800
+# UPDATED: 2026-11-22 17:37:11 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 22
+# TOTAL: 21
+
+# ======= Manual Rules ========
+# Hami Video uses service-specific HiNet hostnames.
+DOMAIN-SUFFIX,hamivideo.hinet.net
+DOMAIN-WILDCARD,*-hamivideo.cdn.hinet.net
 
 # ======= SukkaW Stream TW ========
 DOMAIN-SUFFIX,4gtv.tv
@@ -24,7 +29,4 @@ DOMAIN,ntdfreepc-tgc.cdn.hinet.net
 DOMAIN,d3c7rimkq79yfu.cloudfront.net
 DOMAIN,4gtvfreepcvod-cds.cdn.hinet.net
 DOMAIN,litvfreemobile-hichannel.cdn.hinet.net
-USER-AGENT,com.kktv.ios.kktv*
-USER-AGENT,KKTV*
-USER-AGENT,LINE TV*
 PROCESS-NAME,com.linecorp.linetv

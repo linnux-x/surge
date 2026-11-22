@@ -1,2 +1,7 @@
 # FAST.com uses the same Netflix Open Connect CDN as streaming.
 DOMAIN-SUFFIX,fast.com
+
+# Netflix Open Connect peering and embedded appliances.
+# https://openconnect.zendesk.com/hc/en-us/articles/360035533071-Network-configuration
+IP-ASN,2906,no-resolve
+IP-ASN,40027,no-resolve

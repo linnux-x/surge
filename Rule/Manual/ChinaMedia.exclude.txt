@@ -90,3 +90,6 @@ USER-AGENT,bili-inter*
 # Tencent configuration distribution and ad assets use domestic routing.
 DOMAIN,rdelivery.qq.com
 DOMAIN-SUFFIX,pgdt.gtimg.cn
+
+# Tencent shared CDN parent follows China; GlobalMedia keeps its video namespace.
+DOMAIN-SUFFIX,smtcdns.net

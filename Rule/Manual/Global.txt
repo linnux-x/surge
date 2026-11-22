@@ -117,3 +117,19 @@ DOMAIN-SUFFIX,observability.splunkcloud.com
 
 # Samsung global destination with an exception for mainland support.
 AND,((DOMAIN-SUFFIX,samsung.com),(NOT,((DOMAIN-SUFFIX,support-cn.samsung.com))))
+
+# Shared identity, marketing, analytics and ISP services use the general policy.
+DOMAIN-SUFFIX,braze.com
+DOMAIN-SUFFIX,braze.eu
+DOMAIN-SUFFIX,conviva.com
+DOMAIN-SUFFIX,cookielaw.org
+DOMAIN-SUFFIX,onetrust.com
+DOMAIN-SUFFIX,hinet.net
+
+# Docker Hub authentication and registry stay on the general proxy.
+DOMAIN,auth.docker.io
+DOMAIN,registry-1.docker.io
+
+# AWS EC2 addresses removed from the media fallback.
+IP-CIDR,52.211.1.180/32,no-resolve
+IP-CIDR,99.81.97.56/32,no-resolve

@@ -1,0 +1,3 @@
+# Hami Video uses service-specific HiNet hostnames.
+DOMAIN-SUFFIX,hamivideo.hinet.net
+DOMAIN-WILDCARD,*-hamivideo.cdn.hinet.net

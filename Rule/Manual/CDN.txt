@@ -5,6 +5,9 @@ DOMAIN,release-assets.githubusercontent.com
 DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN-SUFFIX,unpkg.com
 DOMAIN-SUFFIX,esm.sh
+DOMAIN,cdn.statically.io
+DOMAIN,cdn.cookielaw.org
+DOMAIN,js-agent.newrelic.com
 
 # Limit service matches to the domain boundary.
 DOMAIN,static.grammarly.com

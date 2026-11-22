@@ -141,9 +141,6 @@
       "DOMAIN,github.com",
       "DOMAIN,fast.com",
       "DOMAIN,www.youtube.com",
-      "IP-ASN,15169,no-resolve",
-      "IP-CIDR,1.1.1.0/24,no-resolve",
-      "IP-CIDR6,2606:4700::/32,NO-RESOLVE",
       "DOMAIN,keep.example"
     ],
     "PayPal.list": [

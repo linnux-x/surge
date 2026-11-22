@@ -21,3 +21,12 @@ DOMAIN-SUFFIX,spotify.com
 DOMAIN-SUFFIX,spotifycdn.com
 DOMAIN-SUFFIX,spotifycdn.net
 DOMAIN-WILDCARD,*-spotify-com.akamaized.net
+
+# Hami Video and Abema fallback if regional groups are omitted.
+DOMAIN-SUFFIX,hamivideo.hinet.net
+DOMAIN-WILDCARD,*-hamivideo.cdn.hinet.net
+DOMAIN-SUFFIX,abematv.akamaized.net
+
+# Netflix Open Connect when the dedicated set is disabled.
+IP-ASN,2906,no-resolve
+IP-ASN,40027,no-resolve

@@ -1,14 +1,17 @@
 # NAME: JPMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 12:42:22 +0800
+# UPDATED: 2026-11-22 17:37:11 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 26
+# TOTAL: 25
 
 # ======= Manual Rules ========
 # Official DMM TV and video delivery entrance.
 DOMAIN-SUFFIX,tv.dmm.com
 DOMAIN-SUFFIX,video.dmm.com
+
+# Abema CDN hostname, limited to the DNS suffix boundary.
+DOMAIN-SUFFIX,abematv.akamaized.net
 
 # ======= SukkaW Stream JP ========
 DOMAIN-SUFFIX,hulu.jp
@@ -33,5 +36,3 @@ DOMAIN-SUFFIX,dmm-extension.com
 DOMAIN-SUFFIX,dokusho-ojikan.jp
 DOMAIN-SUFFIX,location-plus.nhk.jp
 DOMAIN,ds-linear-abematv.akamaized.net
-USER-AGENT,AbemaTV*
-USER-AGENT,Niconico*

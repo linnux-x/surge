@@ -1,9 +1,9 @@
 # NAME: HKMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 12:42:22 +0800
+# UPDATED: 2026-11-22 17:37:11 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 29
+# TOTAL: 27
 
 # ======= Manual Rules ========
 # Radio Television Hong Kong and its identified Akamai live host.
@@ -32,8 +32,6 @@ DOMAIN,dfp6rglgjqszk.cloudfront.net
 DOMAIN,d1k2us671qcoau.cloudfront.net
 DOMAIN,d2anahhhmp1ffz.cloudfront.net
 DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
-USER-AGENT,Viu*
-USER-AGENT,mytv*
 PROCESS-NAME,com.viu.pad
 PROCESS-NAME,com.viu.phone
 PROCESS-NAME,com.vuclip.viu

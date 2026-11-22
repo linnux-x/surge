@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-22 17:04:50 +0800
+# UPDATED: 2026-11-22 17:38:02 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24625
+# TOTAL: 24635
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -125,6 +125,22 @@ DOMAIN-SUFFIX,observability.splunkcloud.com
 
 # Samsung global destination with an exception for mainland support.
 AND,((DOMAIN-SUFFIX,samsung.com),(NOT,((DOMAIN-SUFFIX,support-cn.samsung.com))))
+
+# Shared identity, marketing, analytics and ISP services use the general policy.
+DOMAIN-SUFFIX,braze.com
+DOMAIN-SUFFIX,braze.eu
+DOMAIN-SUFFIX,conviva.com
+DOMAIN-SUFFIX,cookielaw.org
+DOMAIN-SUFFIX,onetrust.com
+DOMAIN-SUFFIX,hinet.net
+
+# Docker Hub authentication and registry stay on the general proxy.
+DOMAIN,auth.docker.io
+DOMAIN,registry-1.docker.io
+
+# AWS EC2 addresses removed from the media fallback.
+IP-CIDR,52.211.1.180/32,no-resolve
+IP-CIDR,99.81.97.56/32,no-resolve
 
 # ======= blackmatrix7 Global ========
 DOMAIN,1password.drift.click
@@ -13379,7 +13395,6 @@ DOMAIN-SUFFIX,rockettube.com
 DOMAIN-SUFFIX,rocksextube.com
 DOMAIN-SUFFIX,rockstarnorth.com
 DOMAIN-SUFFIX,rockylinux.org
-DOMAIN-SUFFIX,roco.qq.com
 DOMAIN-SUFFIX,roku.com
 DOMAIN-SUFFIX,rokutime.com
 DOMAIN-SUFFIX,rolls-roycecullinan.com
@@ -18426,6 +18441,7 @@ DOMAIN-SUFFIX,adelaidebbs.com
 DOMAIN-SUFFIX,adguard-vpn.com
 DOMAIN-SUFFIX,adguard.org
 DOMAIN-SUFFIX,adobe.com
+DOMAIN-SUFFIX,adobedtm.com
 DOMAIN-SUFFIX,adpl.org.hk
 DOMAIN-SUFFIX,adtidy.org
 DOMAIN-SUFFIX,adult-sex-games.com
@@ -19459,7 +19475,6 @@ DOMAIN-SUFFIX,cusu.hk
 DOMAIN-SUFFIX,cutout.pro
 DOMAIN-SUFFIX,cutscenes.net
 DOMAIN-SUFFIX,cw.com.tw
-DOMAIN-SUFFIX,cws.conviva.com
 DOMAIN-SUFFIX,cyberctm.com
 DOMAIN-SUFFIX,cyberghostvpn.com
 DOMAIN-SUFFIX,cygames.jp
@@ -24596,6 +24611,7 @@ DOMAIN-SUFFIX,zzcartoon.com
 DOMAIN-SUFFIX,zzcloud.me
 DOMAIN-SUFFIX,zzux.com
 DOMAIN-KEYWORD,porn
+IP-CIDR,1.201.0.0/24,no-resolve
 IP-CIDR,101.32.118.0/23,no-resolve
 IP-CIDR,101.32.96.0/20,no-resolve
 IP-CIDR,103.2.28.0/22,no-resolve

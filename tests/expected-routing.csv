@@ -477,7 +477,7 @@ pkg-containers.githubusercontent.com,Global.list,Global,GHCR 镜像层直连限�
 codeload.github.com,Global.list,Global,GitHub 源码归档直连限速，移出 Download
 ghcr.io,Global.list,Global,GHCR 镜像仓库直连限速，移出 Download
 pkg.ghcr.io,Global.list,Global,GHCR 子域名随后缀一并移出 Download
-registry-1.docker.io,FINAL,Global,Docker Hub 镜像仓库直连限速，移出 Download 后回落 Global
+registry-1.docker.io,Global.list,Global,Docker Hub 镜像拉取与推送使用显式通用代理
 production.cloudflare.docker.com,Global.list,Global,Docker Hub 镜像层 CDN 直连限速，移出 Download
 fastly.docker.com,Global.list,Global,Docker Hub 镜像层 CDN 直连限速，移出 Download
 cdn.mobalytics.gg,Global.list,Global,英雄联盟出装/数据站（此前落到 FINAL）
@@ -1200,3 +1200,33 @@ www.duolingo.com,Global.list,Global,保留已核实的正式站或通用分流�
 raw.githubusercontent.com,Global.list,Global,保留已核实的正式站或通用分流边界
 lookup.telegram.example,FINAL,Global,保留已核实的正式站或通用分流边界
 cdn.jsdelivr.net,CDN.list,CDN,保留已核实的正式站或通用分流边界
+auth.docker.io,Global.list,Global,Docker Hub 认证使用显式通用代理
+api.bsky.chat,SocialMedia.list,SocialMedia,Bluesky 私信 API 与主站统一分流
+cdn.statically.io,CDN.list,CDN,Statically 官方静态资源端点
+cdn.cookielaw.org,CDN.list,CDN,OneTrust 公共脚本 CDN
+login.onetrust.com,Global.list,Global,OneTrust 共享管理主机
+rest.iad-01.braze.com,Global.list,Global,Braze 通用客户 API
+rest.fra-01.braze.eu,Global.list,Global,Braze 欧洲通用客户 API
+cws.conviva.com,Global.list,Global,Conviva 共享遥测
+webmail.hinet.net,Global.list,Global,HiNet 邮件与流媒体分离
+hamivideo.hinet.net,TWMedia.list,TWMedia,Hami Video 台湾地区媒体
+weblive-hamivideo.cdn.hinet.net,TWMedia.list,TWMedia,Hami Video 专属播放端点
+weblive-hamivideo.cdn.hinet.net.example.com,FINAL,Global,拒绝假 HiNet 后缀
+abematv.akamaized.net,JPMedia.list,JPMedia,Abema 专属 CDN
+abematv.akamaized.net.example.com,FINAL,Global,拒绝伪造 Akamai 后缀
+example-ttvnw.example.com,FINAL,Global,非 Twitch 域名不进入媒体策略
+video-weaver.example.ttvnw.net,GlobalMedia.list,GlobalMedia,Twitch 正式分发后缀保留
+finance-bbcfmt.example.com,FINAL,Global,限制 BBC 匹配至实际域名
+bbcfmt.s.llnwi.net,GlobalMedia.list,GlobalMedia,BBC 内容 CDN 后缀保留
+tw.iqiyi.com,InternationalMedia.list,GlobalMedia,台湾旧入口跳转至爱奇艺国际站
+www.iqiyi.com,ChinaMedia.list,ChinaMedia,爱奇艺大陆主站仍走国内媒体
+cache.tv.qq.com,ChinaMedia.list,ChinaMedia,腾讯 QQLive 缓存
+roco.qq.com,China.list,DIRECT,腾讯洛克王国国服
+www.smtcdns.net,China.list,DIRECT,腾讯通用 CDN 父域使用国内默认规则
+video.v.smtcdns.net,GlobalMedia.list,GlobalMedia,保留腾讯视频分发子域与 .com 一致
+108.128.160.1,FINAL,Global,Netflix 取消不具备服务归属证据的共享 EC2 子网
+52.211.1.180,Global.list,Global,共享 EC2 地址移出媒体
+99.81.97.56,Global.list,Global,共享 EC2 地址移出媒体
+1.201.0.1,Global.list,Global,KINX 公用地址回归通用规则
+js-agent.newrelic.com,CDN.list,CDN,New Relic 共享脚本 CDN
+e13252.dscg.akamaiedge.net,FINAL,Global,无法归给单一媒体服务的共享 Akamai 节点

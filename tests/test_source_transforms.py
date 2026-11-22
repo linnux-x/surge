@@ -104,6 +104,21 @@ class SourceTransformTests(unittest.TestCase):
         )
         self.assertEqual(apply_project_guardrails('Global.list', lines), lines)
 
+    def test_media_matchers_cannot_return_through_global_fallback(self):
+        unscoped = ['user-agent,Argo*', 'DOMAIN-KEYWORD,ttvnw']
+        scoped = ['DOMAIN-SUFFIX,ttvnw.net', 'PROCESS-NAME,tv.twitch.android.app']
+        for target in ('GlobalMedia.list', 'Global.list', 'ChinaMedia.list', 'Netflix.list'):
+            with self.subTest(target=target):
+                self.assertEqual(apply_project_guardrails(target, unscoped + scoped), scoped)
+                self.assertEqual(len(validate_rule_file(unscoped, target)), len(unscoped))
+
+    def test_netflix_does_not_inherit_shared_ip_ranges(self):
+        unverified = ['IP-CIDR,108.128.160.0/23,no-resolve', 'IP-ASN,16509,no-resolve']
+        verified = ['IP-ASN,2906,no-resolve', 'IP-ASN,40027,no-resolve']
+        self.assertEqual(apply_project_guardrails('Netflix.list', unverified + verified), verified)
+        self.assertEqual(validate_rule_file(verified, 'Netflix.list'), [])
+        self.assertEqual(len(validate_rule_file(unverified, 'Netflix.list')), len(unverified))
+
     def test_china_guardrail_filters_known_overseas_media_and_shared_cdn(self):
         lines = [
             'DOMAIN-SUFFIX,snssdk.com',

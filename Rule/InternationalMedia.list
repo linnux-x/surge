@@ -1,9 +1,9 @@
 # NAME: InternationalMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 12:42:22 +0800
+# UPDATED: 2026-11-22 17:37:11 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 14
+# TOTAL: 15
 
 # ======= Manual Rules ========
 # Bilibili international site and its B-Star delivery endpoints (https://www.bilibili.tv/en/about).
@@ -21,5 +21,6 @@ DOMAIN-SUFFIX,inter.iqiyi.com
 DOMAIN-SUFFIX,intl.iqiyi.com
 DOMAIN-SUFFIX,intl-rcd.iqiyi.com
 DOMAIN-SUFFIX,intl-subscription.iqiyi.com
+DOMAIN,tw.iqiyi.com
 DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
 DOMAIN,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
