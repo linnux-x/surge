@@ -94,3 +94,7 @@ DOMAIN,attachments.office365-net.cn
 DOMAIN,collector.azure.cn
 DOMAIN,loki.office365.cn
 DOMAIN,portal.partner.microsoftonline.cdnsvc.com
+
+# Mainland Tencent gaming community and Samsung China support.
+DOMAIN-SUFFIX,gouhuo.qq.com
+DOMAIN-SUFFIX,support-cn.samsung.com

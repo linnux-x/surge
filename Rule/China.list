@@ -1,7 +1,7 @@
 # NAME: China
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-22 16:14:35 +0800
+# UPDATED: 2026-11-22 17:04:50 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 110664
 
@@ -70,6 +70,9 @@ DOMAIN-SUFFIX,windowsazure.cn
 DOMAIN,attachments.office365-net.cn
 DOMAIN,collector.azure.cn
 DOMAIN,loki.office365.cn
+
+# Mainland Tencent gaming community and Samsung China support.
+DOMAIN-SUFFIX,support-cn.samsung.com
 
 # ======= SukkaW Domestic ========
 DOMAIN-SUFFIX,3.cn
@@ -84176,7 +84179,6 @@ DOMAIN-SUFFIX,suporpharm.com
 DOMAIN-SUFFIX,supplierlist.com
 DOMAIN-SUFFIX,supplygw.com
 DOMAIN-SUFFIX,supplywater.com
-DOMAIN-SUFFIX,support-cn.samsung.com
 DOMAIN-SUFFIX,supreme-oe.com
 DOMAIN-SUFFIX,supsion.com
 DOMAIN-SUFFIX,supwisdom.com

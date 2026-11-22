@@ -107,3 +107,13 @@ DOMAIN-SUFFIX,firebaseapp.com
 DOMAIN-SUFFIX,firebaseio.com
 DOMAIN-SUFFIX,run.app
 DOMAIN-SUFFIX,web.app
+
+# Shared search APIs and Splunk browser monitoring service endpoints.
+DOMAIN-SUFFIX,algolia.net
+DOMAIN-SUFFIX,algolianet.com
+DOMAIN-SUFFIX,algolianet.net
+DOMAIN-SUFFIX,signalfx.com
+DOMAIN-SUFFIX,observability.splunkcloud.com
+
+# Samsung global destination with an exception for mainland support.
+AND,((DOMAIN-SUFFIX,samsung.com),(NOT,((DOMAIN-SUFFIX,support-cn.samsung.com))))

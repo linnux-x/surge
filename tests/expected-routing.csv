@@ -405,8 +405,8 @@ s3.us-east-1.amazonaws.com,Global.list,Global,2026-10-04 审计修复正负样�
 sts.amazonaws.com,Global.list,Global,2026-10-04 审计修复正负样例；包含合成域名边界测试
 byteoversea.com,TikTok.list,TikTok,2026-10-04 审计修复正负样例；包含合成域名边界测试
 cdn.byteoversea.com,TikTok.list,TikTok,2026-10-04 审计修复正负样例；包含合成域名边界测试
-algolia.net,FINAL,Global,2026-10-04 审计修复正负样例；包含合成域名边界测试
-customer-dsn.algolia.net,CDN.list,CDN,2026-10-04 审计修复正负样例；包含合成域名边界测试
+algolia.net,Global.list,Global,搜索和遥测 API 走通用分流
+customer-dsn.algolia.net,Global.list,Global,移除会匹配无关域名的子串规则
 browser-intake-datadoghq.com,FINAL,Global,2026-10-04 审计修复正负样例；包含合成域名边界测试
 browser-intake-us5-datadoghq.com,FINAL,Global,2026-10-04 审计修复正负样例；包含合成域名边界测试
 rum.browser-intake-datadoghq.com,FINAL,Global,2026-10-04 审计修复正负样例；包含合成域名边界测试
@@ -1098,3 +1098,105 @@ dns.google.com,Google.list,Google,Telegram Desktop 进程规则为 Google Public
 youtubego.com,YouTube.list,YouTube,仍跳转到 YouTube 的域名
 youtube.com.example,FINAL,Global,YouTube 规则按域名边界匹配
 gcr.io,Download.list,Download,Google 容器下载保持优先分流
+cdnjs.cloudflare.com,CDN.list,CDN,已核实的静态资源或分发入口
+esm.run,CDN.list,CDN,已核实的静态资源或分发入口
+assets.zendesk.com,CDN.list,CDN,已核实的静态资源或分发入口
+static.zdassets.com,CDN.list,CDN,已核实的静态资源或分发入口
+web-assets.zendesk.com,CDN.list,CDN,已核实的静态资源或分发入口
+cdn.signalfx.com,CDN.list,CDN,已核实的静态资源或分发入口
+cdn.observability.splunkcloud.com,CDN.list,CDN,已核实的静态资源或分发入口
+res.cloudinary.com,CDN.list,CDN,已核实的静态资源或分发入口
+edge-vod-adaptive.akamaized.net,CDN.list,CDN,完整的分发主机边界
+audit-vod-adaptive.akamaized.net.example,FINAL,Global,移除会匹配无关域名的子串规则
+audit-web-assets.zendesk.example,FINAL,Global,移除会匹配无关域名的子串规则
+demo-res.cloudinary.com,CDN.list,CDN,完整的分发主机边界
+audit--res.cloudinary.com.example,FINAL,Global,移除会匹配无关域名的子串规则
+audit-dsn.algolia.net.example,FINAL,Global,移除会匹配无关域名的子串规则
+sample-thumbs.pornhost.com,CDN.list,CDN,完整的分发主机边界
+audit--thumbs.pornhost.com.example,Global.list,Global,移除会匹配无关域名的子串规则
+sample-cdn.eporner.com,CDN.list,CDN,完整的分发主机边界
+audit--cdn.eporner.com.example,Global.list,Global,移除会匹配无关域名的子串规则
+cdn.adultempire.com,CDN.list,CDN,使用已列明的完整静态主机
+audit-cdn.adultempire.com.example,FINAL,Global,移除会匹配无关域名的子串规则
+audit--assets.dmm.co.jp.example,FINAL,Global,移除会匹配无关域名的子串规则
+media-assets.dmm.co.jp,JPMedia.list,JPMedia,移除会匹配无关域名的子串规则
+static.trustpilot.com,CDN.list,CDN,使用已列明的完整静态主机
+audit-static.trustpilot.com.example,FINAL,Global,移除会匹配无关域名的子串规则
+scripts.trustpilot.com,CDN.list,CDN,使用已列明的完整静态主机
+audit-scripts.trustpilot.com.example,FINAL,Global,移除会匹配无关域名的子串规则
+images.trustpilot.com,CDN.list,CDN,使用已列明的完整静态主机
+audit-images.trustpilot.com.example,FINAL,Global,移除会匹配无关域名的子串规则
+cdn.trustpilot.net,CDN.list,CDN,使用已列明的完整静态主机
+audit-cdn.trustpilot.net.example,FINAL,Global,移除会匹配无关域名的子串规则
+assets.trustpilot.net,CDN.list,CDN,使用已列明的完整静态主机
+audit-assets.trustpilot.net.example,FINAL,Global,移除会匹配无关域名的子串规则
+images.trustpilot.net,CDN.list,CDN,使用已列明的完整静态主机
+audit-images.trustpilot.net.example,FINAL,Global,移除会匹配无关域名的子串规则
+sample-assets.worldsex.com,CDN.list,CDN,完整的分发主机边界
+audit--assets.worldsex.com.example,FINAL,Global,移除会匹配无关域名的子串规则
+sample-thumbs.worldsex.com,CDN.list,CDN,完整的分发主机边界
+audit--thumbs.worldsex.com.example,FINAL,Global,移除会匹配无关域名的子串规则
+audit-99avcdn.example,FINAL,Global,移除会匹配无关域名的子串规则
+audit--images.disco-api.com.example,FINAL,Global,移除会匹配无关域名的子串规则
+sample-images.disco-api.com,GlobalMedia.list,GlobalMedia,移除会匹配无关域名的子串规则
+rum-ingest.us0.signalfx.com,Global.list,Global,Splunk 监测数据上报走通用策略
+cdn.sample.dmm.co.jp,JPMedia.list,JPMedia,DMM 资产由更早的日本流媒体规则覆盖
+customer-1.algolianet.com,Global.list,Global,搜索和遥测 API 走通用分流
+algolianet.net,Global.list,Global,搜索和遥测 API 走通用分流
+rum-ingest.us0.observability.splunkcloud.com,Global.list,Global,搜索和遥测 API 走通用分流
+audit-pinterest.example,FINAL,Global,防止品牌子串抢走国内域名
+pinterest.baidu.com,China.list,DIRECT,防止品牌子串抢走国内域名
+audit-twimg.example,FINAL,Global,防止品牌子串抢走国内域名
+twimg.baidu.com,China.list,DIRECT,防止品牌子串抢走国内域名
+audit-wikileaks.example,FINAL,Global,防止品牌子串抢走国内域名
+wikileaks.baidu.com,China.list,DIRECT,防止品牌子串抢走国内域名
+audit-1e100.example,FINAL,Global,防止品牌子串抢走国内域名
+1e100.baidu.com,China.list,DIRECT,防止品牌子串抢走国内域名
+audit-abema.example,FINAL,Global,防止品牌子串抢走国内域名
+abema.baidu.com,China.list,DIRECT,防止品牌子串抢走国内域名
+audit-appledaily.example,FINAL,Global,防止品牌子串抢走国内域名
+appledaily.baidu.com,China.list,DIRECT,防止品牌子串抢走国内域名
+audit-beetalk.example,FINAL,Global,防止品牌子串抢走国内域名
+beetalk.baidu.com,China.list,DIRECT,防止品牌子串抢走国内域名
+audit-dlercloud.example,FINAL,Global,防止品牌子串抢走国内域名
+dlercloud.baidu.com,China.list,DIRECT,防止品牌子串抢走国内域名
+audit-dropbox.example,FINAL,Global,防止品牌子串抢走国内域名
+dropbox.baidu.com,China.list,DIRECT,防止品牌子串抢走国内域名
+audit-sci-hub.example,FINAL,Global,防止品牌子串抢走国内域名
+sci-hub.baidu.com,China.list,DIRECT,防止品牌子串抢走国内域名
+audit-telegram.example,FINAL,Global,防止品牌子串抢走国内域名
+telegram.baidu.com,China.list,DIRECT,防止品牌子串抢走国内域名
+www.baidu.com,China.list,DIRECT,应用 UA 不限定访问目标
+support-cn.samsung.com,China.list,DIRECT,三星全球站与中国区支持使用各自策略
+asset.support-cn.samsung.com,China.list,DIRECT,三星全球站与中国区支持使用各自策略
+www.samsung.com,Global.list,Global,三星全球站与中国区支持使用各自策略
+gouhuo.qq.com,China.list,DIRECT,腾讯国内游戏社区直连
+120.232.181.162,China_IP.list,DIRECT,国内运营商地址缺少当前海外服务归属证据
+120.241.147.226,China_IP.list,DIRECT,国内运营商地址缺少当前海外服务归属证据
+120.253.253.226,China_IP.list,DIRECT,国内运营商地址缺少当前海外服务归属证据
+120.253.255.162,China_IP.list,DIRECT,国内运营商地址缺少当前海外服务归属证据
+120.253.255.34,China_IP.list,DIRECT,国内运营商地址缺少当前海外服务归属证据
+120.253.255.98,China_IP.list,DIRECT,国内运营商地址缺少当前海外服务归属证据
+180.163.150.162,China_IP.list,DIRECT,国内运营商地址缺少当前海外服务归属证据
+180.163.150.34,China_IP.list,DIRECT,国内运营商地址缺少当前海外服务归属证据
+180.163.151.162,China_IP.list,DIRECT,国内运营商地址缺少当前海外服务归属证据
+180.163.151.34,China_IP.list,DIRECT,国内运营商地址缺少当前海外服务归属证据
+220.181.174.162,China_IP.list,DIRECT,国内运营商地址缺少当前海外服务归属证据
+220.181.174.226,China_IP.list,DIRECT,国内运营商地址缺少当前海外服务归属证据
+220.181.174.34,China_IP.list,DIRECT,国内运营商地址缺少当前海外服务归属证据
+17.252.156.1,Apple.list,Apple,由 Apple 更早的规则完全覆盖
+2001:b28:f23c::1,Telegram.list,Telegram,由 Telegram 更早的两条 IPv6 完全覆盖
+res.cloudinary.com.example,FINAL,Global,保留已核实的正式站或通用分流边界
+99avcdn.baidu.com,China.list,DIRECT,保留已核实的正式站或通用分流边界
+www.cloudflare.com,Global.list,Global,保留已核实的正式站或通用分流边界
+oss-cn-hongkong.aliyuncs.com,Global.list,Global,保留已核实的正式站或通用分流边界
+oss-cn-hangzhou.aliyuncs.com,China.list,DIRECT,保留已核实的正式站或通用分流边界
+203.208.39.1,Global.list,Global,保留已核实的正式站或通用分流边界
+203.208.40.1,Global.list,Global,保留已核实的正式站或通用分流边界
+203.208.43.1,Global.list,Global,保留已核实的正式站或通用分流边界
+203.208.50.1,Global.list,Global,保留已核实的正式站或通用分流边界
+www.dropbox.com,Global.list,Global,保留已核实的正式站或通用分流边界
+www.duolingo.com,Global.list,Global,保留已核实的正式站或通用分流边界
+raw.githubusercontent.com,Global.list,Global,保留已核实的正式站或通用分流边界
+lookup.telegram.example,FINAL,Global,保留已核实的正式站或通用分流边界
+cdn.jsdelivr.net,CDN.list,CDN,保留已核实的正式站或通用分流边界

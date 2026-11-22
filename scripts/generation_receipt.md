@@ -1,34 +1,34 @@
 # Surge 规则生成收据
 
 - 规则文件：34
-- 规则总数：157730
+- 规则总数：157704
 - manifest 文件：34
 
 ## 差异摘要
 
-- 新增：28
-- 删除：45
-- 来源迁移：0
+- 新增：27
+- 删除：53
+- 来源迁移：1
 
 ## 规则类型
 
-- AND: 418
-- DOMAIN: 3821
-- DOMAIN-KEYWORD: 55
-- DOMAIN-SUFFIX: 141316
-- DOMAIN-WILDCARD: 9
+- AND: 419
+- DOMAIN: 3836
+- DOMAIN-KEYWORD: 26
+- DOMAIN-SUFFIX: 141319
+- DOMAIN-WILDCARD: 13
 - IP-ASN: 1
-- IP-CIDR: 8420
-- IP-CIDR6: 3545
+- IP-CIDR: 8406
+- IP-CIDR6: 3544
 - PROCESS-NAME: 28
 - URL-REGEX: 4
-- USER-AGENT: 113
+- USER-AGENT: 108
 
 ## 来源归属
 
 - ConnersHua AI: 11
 - Loyalsoldier China CIDR: 9665
-- Manual Rules: 624
+- Manual Rules: 652
 - OpenAI ChatGPT Voice: 411
 - Rabbit-Spec AIGC: 12
 - Rabbit-Spec China: 371
@@ -36,7 +36,7 @@
 - SukkaW AI: 21
 - SukkaW Apple CDN: 152
 - SukkaW Apple CN: 5
-- SukkaW CDN: 25
+- SukkaW CDN: 5
 - SukkaW Domestic: 840
 - SukkaW Download: 1547
 - SukkaW Game Download: 52
@@ -51,13 +51,13 @@
 - SukkaW Stream US: 40
 - Telegram Official CIDR: 11
 - blackmatrix7 Apple: 1354
-- blackmatrix7 ChinaMaxNoIP Domain: 109405
+- blackmatrix7 ChinaMaxNoIP Domain: 109404
 - blackmatrix7 ChinaMedia: 370
 - blackmatrix7 Discord: 29
 - blackmatrix7 Disney: 166
 - blackmatrix7 Facebook: 565
 - blackmatrix7 Game: 520
-- blackmatrix7 Global: 24569
+- blackmatrix7 Global: 24536
 - blackmatrix7 GlobalMedia: 2178
 - blackmatrix7 Google: 665
 - blackmatrix7 Microsoft: 455

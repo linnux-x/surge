@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-22T16:41:52.357446",
-  "total_added": 28,
-  "total_removed": 45,
-  "total_source_changed": 0,
+  "generated_at": "2026-11-22T17:06:41.893367",
+  "total_added": 27,
+  "total_removed": 53,
+  "total_source_changed": 1,
   "diffs": [
     {
       "file": "AI.list",
@@ -73,12 +73,219 @@
     {
       "file": "CDN.list",
       "prev_total": 31,
-      "curr_total": 31,
-      "added_count": 0,
-      "removed_count": 0,
+      "curr_total": 32,
+      "added_count": 21,
+      "removed_count": 20,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "011195f4b467",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-WILDCARD,*-cdn.eporner.com"
+        },
+        {
+          "id": "0ef90856a50d",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-WILDCARD,*-res.cloudinary.com"
+        },
+        {
+          "id": "2bfe727c782d",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,cdn.signalfx.com"
+        },
+        {
+          "id": "50bc2d32b20f",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,cdn.trustpilot.net"
+        },
+        {
+          "id": "55dbb353791a",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,static.trustpilot.com"
+        },
+        {
+          "id": "5de1dd7f5cef",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-WILDCARD,*-thumbs.worldsex.com"
+        },
+        {
+          "id": "67d4a664b4b4",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,assets.trustpilot.net"
+        },
+        {
+          "id": "6f034ad2a04b",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,cdnjs.cloudflare.com"
+        },
+        {
+          "id": "76a8fd6df672",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,scripts.trustpilot.com"
+        },
+        {
+          "id": "77d1ad0b2e71",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,images.trustpilot.com"
+        },
+        {
+          "id": "8db0fd8720ee",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,esm.run"
+        },
+        {
+          "id": "8e13224f1db1",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-WILDCARD,*-thumbs.pornhost.com"
+        },
+        {
+          "id": "ad724a0b0631",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,cdn.observability.splunkcloud.com"
+        },
+        {
+          "id": "baa46d43cd06",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,web-assets.zendesk.com"
+        },
+        {
+          "id": "c2dd64f3b8d4",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,res.cloudinary.com"
+        },
+        {
+          "id": "c8036a6b7ef1",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,static.zdassets.com"
+        },
+        {
+          "id": "cbd1aa7dbfd0",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-WILDCARD,*-assets.worldsex.com"
+        },
+        {
+          "id": "d5bac6c9c58b",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,cdn.adultempire.com"
+        },
+        {
+          "id": "ddc68c70ebcf",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,assets.zendesk.com"
+        },
+        {
+          "id": "f349930e8a57",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,images.trustpilot.net"
+        },
+        {
+          "id": "f62d952fae1b",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-WILDCARD,*vod-adaptive.akamaized.net"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "072823502153",
+          "source": "SukkaW CDN",
+          "rule": "DOMAIN-KEYWORD,scripts.trustpilot.com"
+        },
+        {
+          "id": "1b41adb53c3f",
+          "source": "SukkaW CDN",
+          "rule": "DOMAIN-KEYWORD,web-assets.zendesk"
+        },
+        {
+          "id": "36a9bfde01dc",
+          "source": "SukkaW CDN",
+          "rule": "DOMAIN-KEYWORD,images.trustpilot.com"
+        },
+        {
+          "id": "3ad31346eb51",
+          "source": "SukkaW CDN",
+          "rule": "DOMAIN-WILDCARD,cdn.*.dmm.co.jp"
+        },
+        {
+          "id": "3c3bcb6111cb",
+          "source": "SukkaW CDN",
+          "rule": "DOMAIN-KEYWORD,cdn.trustpilot.net"
+        },
+        {
+          "id": "3f6236a0d7bc",
+          "source": "SukkaW CDN",
+          "rule": "DOMAIN-KEYWORD,vod-adaptive.akamaized.net"
+        },
+        {
+          "id": "5b289e32b16d",
+          "source": "SukkaW CDN",
+          "rule": "DOMAIN-KEYWORD,-cdn.eporner.com"
+        },
+        {
+          "id": "5f2d6d392282",
+          "source": "SukkaW CDN",
+          "rule": "DOMAIN-KEYWORD,-thumbs.pornhost.com"
+        },
+        {
+          "id": "840292ed5b7e",
+          "source": "SukkaW CDN",
+          "rule": "DOMAIN-KEYWORD,-assets.dmm.co.jp"
+        },
+        {
+          "id": "a1f0899f899f",
+          "source": "SukkaW CDN",
+          "rule": "DOMAIN-KEYWORD,-res.cloudinary.com"
+        },
+        {
+          "id": "ae75a9271dc4",
+          "source": "SukkaW CDN",
+          "rule": "DOMAIN-KEYWORD,dsn.algolia.net"
+        },
+        {
+          "id": "b28668ed791b",
+          "source": "SukkaW CDN",
+          "rule": "DOMAIN-WILDCARD,rum-ingest.*.signalfx.com"
+        },
+        {
+          "id": "cc7d471c332a",
+          "source": "SukkaW CDN",
+          "rule": "DOMAIN-KEYWORD,-images.disco-api.com"
+        },
+        {
+          "id": "d32d436c9bfa",
+          "source": "SukkaW CDN",
+          "rule": "DOMAIN-KEYWORD,static.trustpilot.com"
+        },
+        {
+          "id": "daedc7693708",
+          "source": "SukkaW CDN",
+          "rule": "DOMAIN-KEYWORD,99avcdn"
+        },
+        {
+          "id": "df6a96fceb77",
+          "source": "SukkaW CDN",
+          "rule": "DOMAIN-KEYWORD,-assets.worldsex.com"
+        },
+        {
+          "id": "e2362183e816",
+          "source": "SukkaW CDN",
+          "rule": "DOMAIN-KEYWORD,-thumbs.worldsex.com"
+        },
+        {
+          "id": "e54ab9f514dc",
+          "source": "SukkaW CDN",
+          "rule": "DOMAIN-KEYWORD,cdn.adultempire.com"
+        },
+        {
+          "id": "ed456503e3a6",
+          "source": "SukkaW CDN",
+          "rule": "DOMAIN-KEYWORD,images.trustpilot.net"
+        },
+        {
+          "id": "fd09997cde97",
+          "source": "SukkaW CDN",
+          "rule": "DOMAIN-KEYWORD,assets.trustpilot.net"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -87,10 +294,16 @@
       "curr_total": 110664,
       "added_count": 0,
       "removed_count": 0,
-      "source_changed_count": 0,
+      "source_changed_count": 1,
       "added_sample": [],
       "removed_sample": [],
-      "source_changed_sample": []
+      "source_changed_sample": [
+        {
+          "id": "53867080ef6c",
+          "old_source": "blackmatrix7 ChinaMaxNoIP Domain",
+          "new_source": "Manual Rules"
+        }
+      ]
     },
     {
       "file": "ChinaMedia.list",
@@ -160,304 +373,232 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24646,
-      "curr_total": 24652,
+      "prev_total": 24652,
+      "curr_total": 24625,
       "added_count": 6,
-      "removed_count": 0,
+      "removed_count": 33,
       "source_changed_count": 0,
       "added_sample": [
         {
-          "id": "54b39dcebe9a",
+          "id": "3dd4448916d7",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,firebaseio.com"
+          "rule": "AND,((DOMAIN-SUFFIX,samsung.com),(NOT,((DOMAIN-SUFFIX,support-cn.samsung.com))))"
         },
         {
-          "id": "5a30ebe8123f",
+          "id": "78b56aa32ffa",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,firebaseapp.com"
+          "rule": "DOMAIN-SUFFIX,observability.splunkcloud.com"
         },
         {
-          "id": "7df93f3679c6",
+          "id": "7a0093b8d8ff",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,appspot.com"
+          "rule": "DOMAIN-SUFFIX,algolianet.com"
         },
         {
-          "id": "b5b00f6a07d1",
+          "id": "a04f365940ee",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,cloudfunctions.net"
+          "rule": "DOMAIN-SUFFIX,algolianet.net"
         },
         {
-          "id": "bed8ccaf5201",
+          "id": "f8994ce14d80",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,run.app"
+          "rule": "DOMAIN-SUFFIX,signalfx.com"
         },
         {
-          "id": "e6fc4b14adfa",
+          "id": "fe8ff5859ba9",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,web.app"
+          "rule": "DOMAIN-SUFFIX,algolia.net"
         }
       ],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "166c570679e2",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-KEYWORD,dlercloud"
+        },
+        {
+          "id": "198334c38af5",
+          "source": "blackmatrix7 Global",
+          "rule": "IP-CIDR,220.181.174.34/32,no-resolve"
+        },
+        {
+          "id": "22a2f1a3d720",
+          "source": "blackmatrix7 Global",
+          "rule": "USER-AGENT,battleroyale*"
+        },
+        {
+          "id": "390968e3deba",
+          "source": "blackmatrix7 Global",
+          "rule": "IP-CIDR,180.163.150.162/32,no-resolve"
+        },
+        {
+          "id": "3976487e8c9a",
+          "source": "blackmatrix7 Global",
+          "rule": "IP-CIDR,120.253.253.226/32,no-resolve"
+        },
+        {
+          "id": "40b8c9b65f22",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-KEYWORD,telegram"
+        },
+        {
+          "id": "411905b527a6",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-KEYWORD,twimg"
+        },
+        {
+          "id": "43bf12c382bd",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,samsung.com"
+        },
+        {
+          "id": "50f6377d7b93",
+          "source": "blackmatrix7 Global",
+          "rule": "IP-CIDR,120.253.255.98/32,no-resolve"
+        },
+        {
+          "id": "68f1ea2abcdc",
+          "source": "blackmatrix7 Global",
+          "rule": "IP-CIDR,120.232.181.162/32,no-resolve"
+        },
+        {
+          "id": "6a969a1320ae",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,gouhuo.qq.com"
+        },
+        {
+          "id": "7326ffd7bdb8",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-KEYWORD,dropbox"
+        },
+        {
+          "id": "747c02eaac2e",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-KEYWORD,1e100"
+        },
+        {
+          "id": "83df1e86b55a",
+          "source": "blackmatrix7 Global",
+          "rule": "IP-CIDR,120.253.255.162/32,no-resolve"
+        },
+        {
+          "id": "8dbe42df2679",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-KEYWORD,abema"
+        },
+        {
+          "id": "8e057bbaa44a",
+          "source": "blackmatrix7 Global",
+          "rule": "USER-AGENT,WhatsApp*"
+        },
+        {
+          "id": "9aeed80f57b2",
+          "source": "blackmatrix7 Global",
+          "rule": "IP-CIDR,180.163.151.162/32,no-resolve"
+        },
+        {
+          "id": "a2c05805d4ae",
+          "source": "blackmatrix7 Global",
+          "rule": "IP-CIDR6,2001:b28:f23c::/47,no-resolve"
+        },
+        {
+          "id": "aebb8f790cb8",
+          "source": "blackmatrix7 Global",
+          "rule": "IP-CIDR,120.241.147.226/32,no-resolve"
+        },
+        {
+          "id": "b2613e738c98",
+          "source": "blackmatrix7 Global",
+          "rule": "IP-CIDR,180.163.151.34/32,no-resolve"
+        },
+        {
+          "id": "b268ab5f93b9",
+          "source": "blackmatrix7 Global",
+          "rule": "IP-CIDR,220.181.174.226/32,no-resolve"
+        },
+        {
+          "id": "c015fc82b571",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-KEYWORD,wikileaks"
+        },
+        {
+          "id": "c7d32587de1b",
+          "source": "blackmatrix7 Global",
+          "rule": "IP-CIDR,120.253.255.34/32,no-resolve"
+        },
+        {
+          "id": "ca6b0ac05563",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-KEYWORD,sci-hub"
+        },
+        {
+          "id": "d2afdd5780cf",
+          "source": "blackmatrix7 Global",
+          "rule": "USER-AGENT,Duolingo*"
+        },
+        {
+          "id": "f00e17bcb0ee",
+          "source": "blackmatrix7 Global",
+          "rule": "IP-CIDR,220.181.174.162/32,no-resolve"
+        },
+        {
+          "id": "f01c8aa716f1",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-KEYWORD,beetalk"
+        },
+        {
+          "id": "f32b519641c9",
+          "source": "blackmatrix7 Global",
+          "rule": "USER-AGENT,Roam*"
+        },
+        {
+          "id": "f6dc15ff3cfa",
+          "source": "blackmatrix7 Global",
+          "rule": "USER-AGENT,TwDramas"
+        },
+        {
+          "id": "f8cb43c325db",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-KEYWORD,appledaily"
+        },
+        {
+          "id": "f95908b5788d",
+          "source": "blackmatrix7 Global",
+          "rule": "IP-CIDR,17.252.156.0/23,no-resolve"
+        },
+        {
+          "id": "fc14c3596273",
+          "source": "blackmatrix7 Global",
+          "rule": "IP-CIDR,180.163.150.34/32,no-resolve"
+        },
+        {
+          "id": "fcc6f525ef7a",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-KEYWORD,pinterest"
+        }
+      ],
       "source_changed_sample": []
     },
     {
       "file": "GlobalMedia.list",
-      "prev_total": 2254,
+      "prev_total": 2242,
       "curr_total": 2242,
       "added_count": 0,
-      "removed_count": 12,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "117bfdcdc37b",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,YouTube*"
-        },
-        {
-          "id": "1acbd919549f",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,com.google.ios.youtube*"
-        },
-        {
-          "id": "2ef8d5d1fc40",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,youtubego.co.id"
-        },
-        {
-          "id": "30ff465a05a9",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,youtubego.in"
-        },
-        {
-          "id": "4614e2585a8a",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,youtubego.id"
-        },
-        {
-          "id": "47908cb42760",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,YouTubeMusic*"
-        },
-        {
-          "id": "54b39dcebe9a",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,firebaseio.com"
-        },
-        {
-          "id": "939c8566838e",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,*com.google.ios.youtubemusic*"
-        },
-        {
-          "id": "b247be74d620",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,com.google.ios.youtubemusic*"
-        },
-        {
-          "id": "b38203651afd",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,youtubego.co.in"
-        },
-        {
-          "id": "b481ba0e2e8f",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,*youtube*"
-        },
-        {
-          "id": "bbec51ab900d",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,*YouTubeMusic*"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "Google.list",
-      "prev_total": 687,
+      "prev_total": 684,
       "curr_total": 684,
-      "added_count": 16,
-      "removed_count": 19,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "401a61a4c991",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,ggpht.com"
-        },
-        {
-          "id": "470aa108b6f1",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR6,2001:4860:4860::8844/128,no-resolve"
-        },
-        {
-          "id": "4b5256e914c2",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,accounts.youtube.com"
-        },
-        {
-          "id": "4e82154d42aa",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,8.8.8.8/32,no-resolve"
-        },
-        {
-          "id": "4f148b275435",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,gweb-gettingstartedguide.appspot.com"
-        },
-        {
-          "id": "7899e85c407b",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,chromiumdash.appspot.com"
-        },
-        {
-          "id": "78eea33cd004",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,cros-omahaproxy.appspot.com"
-        },
-        {
-          "id": "8ae7d4a44818",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR6,2001:4860:4860::8888/128,no-resolve"
-        },
-        {
-          "id": "9d6e2f9a787d",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR6,2001:4860:4864:6::/64,no-resolve"
-        },
-        {
-          "id": "b6c88281a32b",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,meet.turns.goog"
-        },
-        {
-          "id": "b9ce6ccd7981",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,omahaproxy.appspot.com"
-        },
-        {
-          "id": "bec001d19e3d",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR6,2001:4860:4864:4:8000::/128,no-resolve"
-        },
-        {
-          "id": "c8ae64e3d9ea",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR6,2001:4860:4864:5::/64,no-resolve"
-        },
-        {
-          "id": "dc845dab5cb4",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,8.8.4.4/32,no-resolve"
-        },
-        {
-          "id": "e81fbb92671e",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,142.250.82.0/24,no-resolve"
-        },
-        {
-          "id": "ed2787ec16b4",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,workspace.turns.goog"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "34dc06430476",
-          "source": "blackmatrix7 Google",
-          "rule": "DOMAIN-KEYWORD,appspot"
-        },
-        {
-          "id": "3759b93c14f2",
-          "source": "blackmatrix7 Google",
-          "rule": "PROCESS-NAME,com.google.android.gms"
-        },
-        {
-          "id": "42ad2d1519fd",
-          "source": "blackmatrix7 Google",
-          "rule": "USER-AGENT,Google.Drive*"
-        },
-        {
-          "id": "54b39dcebe9a",
-          "source": "blackmatrix7 Google",
-          "rule": "DOMAIN-SUFFIX,firebaseio.com"
-        },
-        {
-          "id": "5a30ebe8123f",
-          "source": "blackmatrix7 Google",
-          "rule": "DOMAIN-SUFFIX,firebaseapp.com"
-        },
-        {
-          "id": "736594470b2a",
-          "source": "blackmatrix7 Google",
-          "rule": "DOMAIN-SUFFIX,certificate-transparency.dev"
-        },
-        {
-          "id": "7af741f8072a",
-          "source": "blackmatrix7 Google",
-          "rule": "DOMAIN-SUFFIX,app-measurement.net"
-        },
-        {
-          "id": "7df93f3679c6",
-          "source": "blackmatrix7 Google",
-          "rule": "DOMAIN-SUFFIX,appspot.com"
-        },
-        {
-          "id": "843fbc9e5651",
-          "source": "blackmatrix7 Google",
-          "rule": "PROCESS-NAME,com.android.vending"
-        },
-        {
-          "id": "959f6a001910",
-          "source": "blackmatrix7 Google",
-          "rule": "DOMAIN-KEYWORD,blogspot"
-        },
-        {
-          "id": "a9f7a710ad3c",
-          "source": "blackmatrix7 Google",
-          "rule": "PROCESS-NAME,BackupandSync"
-        },
-        {
-          "id": "b589aac848f7",
-          "source": "blackmatrix7 Google",
-          "rule": "USER-AGENT,*com.google.Drive*"
-        },
-        {
-          "id": "b5b00f6a07d1",
-          "source": "blackmatrix7 Google",
-          "rule": "DOMAIN-SUFFIX,cloudfunctions.net"
-        },
-        {
-          "id": "bcfb11b92ebf",
-          "source": "blackmatrix7 Google",
-          "rule": "USER-AGENT,%E4%BA%91%E7%AB%AF%E7%A1%AC%E7%9B%98*"
-        },
-        {
-          "id": "bed8ccaf5201",
-          "source": "blackmatrix7 Google",
-          "rule": "DOMAIN-SUFFIX,run.app"
-        },
-        {
-          "id": "e6fc4b14adfa",
-          "source": "blackmatrix7 Google",
-          "rule": "DOMAIN-SUFFIX,web.app"
-        },
-        {
-          "id": "e748554de8c0",
-          "source": "Manual Rules",
-          "rule": "IP-ASN,15169,no-resolve"
-        },
-        {
-          "id": "edce5c67442b",
-          "source": "blackmatrix7 Google",
-          "rule": "PROCESS-NAME,com.google.android.play.games"
-        },
-        {
-          "id": "ff67f6d80942",
-          "source": "blackmatrix7 Google",
-          "rule": "PROCESS-NAME,com.google.android.gsf"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -596,23 +737,11 @@
       "file": "Telegram.list",
       "prev_total": 39,
       "curr_total": 39,
-      "added_count": 1,
-      "removed_count": 1,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "b00bf63e31ac",
-          "source": "Manual Rules",
-          "rule": "AND,((PROCESS-NAME,telegram-desktop),(NOT,((OR,((DOMAIN,dns.google),(DOMAIN,dns.google.com),(IP-CIDR,8.8.8.8/32,no-resolve),(IP-CIDR,8.8.4.4/32,no-resolve),(IP-CIDR6,2001:4860:4860::8888/128,no-resolve),(IP-CIDR6,2001:4860:4860::8844/128,no-resolve))))))"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "4252b94245de",
-          "source": "blackmatrix7 Telegram",
-          "rule": "PROCESS-NAME,telegram-desktop"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -650,105 +779,13 @@
     },
     {
       "file": "YouTube.list",
-      "prev_total": 187,
+      "prev_total": 179,
       "curr_total": 179,
-      "added_count": 5,
-      "removed_count": 13,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "80ad3ee66314",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,youtubereporting.googleapis.com"
-        },
-        {
-          "id": "84f64f31dc71",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,yt3.ggpht.com"
-        },
-        {
-          "id": "8f60ec856ad2",
-          "source": "Manual Rules",
-          "rule": "AND,((DOMAIN-SUFFIX,youtube.com),(NOT,((DOMAIN,accounts.youtube.com))))"
-        },
-        {
-          "id": "a07d8e52a9c9",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,youtubeanalytics.googleapis.com"
-        },
-        {
-          "id": "c8601b07916c",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,yt3.googleusercontent.com"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "117bfdcdc37b",
-          "source": "blackmatrix7 YouTube",
-          "rule": "USER-AGENT,YouTube*"
-        },
-        {
-          "id": "1acbd919549f",
-          "source": "blackmatrix7 YouTube",
-          "rule": "USER-AGENT,com.google.ios.youtube*"
-        },
-        {
-          "id": "2ef8d5d1fc40",
-          "source": "blackmatrix7 YouTube",
-          "rule": "DOMAIN-SUFFIX,youtubego.co.id"
-        },
-        {
-          "id": "30ff465a05a9",
-          "source": "blackmatrix7 YouTube",
-          "rule": "DOMAIN-SUFFIX,youtubego.in"
-        },
-        {
-          "id": "401a61a4c991",
-          "source": "blackmatrix7 YouTube",
-          "rule": "DOMAIN-SUFFIX,ggpht.com"
-        },
-        {
-          "id": "4614e2585a8a",
-          "source": "blackmatrix7 YouTube",
-          "rule": "DOMAIN-SUFFIX,youtubego.id"
-        },
-        {
-          "id": "47908cb42760",
-          "source": "blackmatrix7 YouTube",
-          "rule": "USER-AGENT,YouTubeMusic*"
-        },
-        {
-          "id": "939c8566838e",
-          "source": "blackmatrix7 YouTube",
-          "rule": "USER-AGENT,*com.google.ios.youtubemusic*"
-        },
-        {
-          "id": "b247be74d620",
-          "source": "blackmatrix7 YouTube",
-          "rule": "USER-AGENT,com.google.ios.youtubemusic*"
-        },
-        {
-          "id": "b38203651afd",
-          "source": "blackmatrix7 YouTube",
-          "rule": "DOMAIN-SUFFIX,youtubego.co.in"
-        },
-        {
-          "id": "b481ba0e2e8f",
-          "source": "blackmatrix7 YouTube",
-          "rule": "USER-AGENT,*youtube*"
-        },
-        {
-          "id": "bbec51ab900d",
-          "source": "blackmatrix7 YouTube",
-          "rule": "USER-AGENT,*YouTubeMusic*"
-        },
-        {
-          "id": "ff14637482cd",
-          "source": "blackmatrix7 YouTube",
-          "rule": "DOMAIN-SUFFIX,youtube.com"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     }
   ]
