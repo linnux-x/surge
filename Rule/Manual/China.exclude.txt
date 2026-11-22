@@ -133,3 +133,6 @@ DOMAIN-SUFFIX,steamserver.net
 # PlayStation firmware checks are handled by Download.
 DOMAIN-SUFFIX,dcn01.ps4.update.playstation.net
 DOMAIN-SUFFIX,dcn01.ps5.update.playstation.net
+
+# The TikTok Pixel host follows the existing tiktok.com domain rule.
+DOMAIN-SUFFIX,analytics.tiktok.com

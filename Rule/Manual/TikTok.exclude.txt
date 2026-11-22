@@ -5,3 +5,21 @@ DOMAIN-SUFFIX,trae.ai
 # Douyin (domestic ByteDance) API hosts: aweme/is/ib/log-lq.snssdk.com resolve to
 # China CDN IPs (2026-11-08 history review); TikTok international uses isnssdk.com.
 DOMAIN-SUFFIX,snssdk.com
+
+# Route by destination. Global excludes its copies of the same keyword and UA rules.
+DOMAIN-KEYWORD,musical.ly
+DOMAIN-KEYWORD,tiktok
+USER-AGENT,TikTok*
+PROCESS-NAME,com.zhiliaoapp.musically
+
+# CapCut and the shared ByteDance hosts belong to Global. Dreamina has its own AI host.
+DOMAIN-SUFFIX,capcut.com
+DOMAIN-SUFFIX,capcutapi.com
+DOMAIN-SUFFIX,capcutapi.us
+DOMAIN-SUFFIX,capcutstatic.com
+DOMAIN-SUFFIX,ibytedtos.com
+DOMAIN-SUFFIX,ibyteimg.com
+DOMAIN-SUFFIX,bytedapm.com
+
+# TikTok Music ended in November 2024.
+DOMAIN-SUFFIX,tiktokmusic.app

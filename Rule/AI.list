@@ -1,9 +1,9 @@
 # NAME: AI
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 17:59:01 +0800
+# UPDATED: 2026-11-22 16:14:34 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 560
+# TOTAL: 561
 
 # ======= Manual Rules ========
 
@@ -157,6 +157,9 @@ DOMAIN-SUFFIX,metaaivm.com
 
 # Bound Google Labs to its own domain and subdomains.
 DOMAIN-SUFFIX,labs.google
+
+# Dreamina generative image and video service under the CapCut domain.
+DOMAIN,dreamina.capcut.com
 
 # ======= SukkaW AI ========
 DOMAIN-SUFFIX,x.ai

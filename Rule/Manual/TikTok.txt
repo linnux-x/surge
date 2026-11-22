@@ -1,1 +1,26 @@
-# Overseas ByteDance / TikTok infrastructure
+# TikTok developer APIs, Shop and regional web and media endpoints.
+DOMAIN-SUFFIX,tiktokapis.com
+DOMAIN-SUFFIX,tiktokshop.com
+DOMAIN-SUFFIX,tiktokglobalshop.com
+DOMAIN-SUFFIX,tiktokshopglobalselling.com
+DOMAIN-SUFFIX,tiktokforbusiness.com
+DOMAIN-SUFFIX,tiktokv.eu
+DOMAIN-SUFFIX,tiktokw.eu
+DOMAIN-SUFFIX,tiktokw.us
+DOMAIN-SUFFIX,tiktokcdn-eu.com
+
+# TikTok LIVE and its dedicated aliases on shared CDN providers.
+DOMAIN-SUFFIX,ttlivecdn.com
+DOMAIN-SUFFIX,ttlivecdn.com.c.worldfcdn.com
+DOMAIN-SUFFIX,ttlivecdn.com.c.bytefcdn-oversea.com
+DOMAIN,pull-fcdn-base1.s.bytefcdn-oversea.com
+DOMAIN,pull-fcdn-base2.s.bytefcdn-oversea.com
+DOMAIN,pull-fcdn-base4.s.bytefcdn-oversea.com
+DOMAIN,pull-third-base1.s.bytefcdn-oversea.com
+
+# TikTok application, Shop and Ads hosts on otherwise shared ByteDance CDN domains.
+DOMAIN,p16-g1-sign-sg.ibyteimg.com
+DOMAIN,p16-g1-sign-va.ibyteimg.com
+DOMAIN,p16-g1-sign-useast2a.ibyteimg.com
+DOMAIN,p16-oec-sg.ibyteimg.com
+DOMAIN,sf16-scmcdn-va.ibytedtos.com
