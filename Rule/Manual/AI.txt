@@ -155,3 +155,6 @@ DOMAIN-SUFFIX,metaaivm.com
 
 # Bound Google Labs to its own domain and subdomains.
 DOMAIN-SUFFIX,labs.google
+
+# Dreamina generative image and video service under the CapCut domain.
+DOMAIN,dreamina.capcut.com

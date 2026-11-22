@@ -508,3 +508,8 @@ DOMAIN-SUFFIX,thelegendarystarfy.com
 DOMAIN-SUFFIX,ulol.com
 DOMAIN-SUFFIX,wiifitu.com
 DOMAIN-SUFFIX,wiipartyu.com
+
+# TikTok uses explicit destinations; these upstream matches can capture unrelated traffic.
+DOMAIN-KEYWORD,musical.ly
+DOMAIN-KEYWORD,tiktok
+USER-AGENT,TikTok*

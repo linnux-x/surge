@@ -87,3 +87,15 @@ IP-CIDR,54.86.0.0/16,no-resolve
 
 # Public AWS EC2 range released by GlobalMedia (https://ip-ranges.amazonaws.com/ip-ranges.json).
 IP-CIDR,54.214.128.0/17,no-resolve
+
+# CapCut, Lemon8 and overseas ByteDance resources used across products.
+DOMAIN-SUFFIX,capcut.com
+DOMAIN-SUFFIX,capcutapi.com
+DOMAIN-SUFFIX,capcutapi.us
+DOMAIN-SUFFIX,capcutstatic.com
+DOMAIN-SUFFIX,capcutcdn-us.com
+DOMAIN-SUFFIX,lemon8-app.com
+DOMAIN-SUFFIX,ibytedtos.com
+DOMAIN-SUFFIX,ibyteimg.com
+DOMAIN-SUFFIX,bytedapm.com
+DOMAIN-SUFFIX,lifeattiktok.com

@@ -1,9 +1,9 @@
 # NAME: China
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 19:50:12 +0800
+# UPDATED: 2026-11-22 16:14:35 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 110665
+# TOTAL: 110664
 
 # ======= Manual Rules ========
 # Mainland China game services and download domains
@@ -110359,7 +110359,6 @@ DOMAIN-SUFFIX,allawnofs.com
 DOMAIN-SUFFIX,allyes.com
 DOMAIN-SUFFIX,aloys233.top
 DOMAIN-SUFFIX,amap.net
-DOMAIN-SUFFIX,analytics.tiktok.com
 DOMAIN-SUFFIX,anquan
 DOMAIN-SUFFIX,anquan.org
 DOMAIN-SUFFIX,appjiagu.com

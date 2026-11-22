@@ -984,3 +984,63 @@ www.playfab.com,Global.list,Global,PlayFab 通用网站仍走 Global
 sessionserver.mojang.com,Game.list,Game,Minecraft Java 会话服务继续走 Game
 resources.download.minecraft.net,Download.list,Download,Minecraft 资源下载继续走 Download
 selectra.helpshift.com,Global.list,Global,共享客服平台的非游戏租户走 Global
+open.tiktokapis.com,TikTok.list,TikTok,已核实的 TikTok 服务域名
+open-upload.tiktokapis.com,TikTok.list,TikTok,已核实的 TikTok 服务域名
+www.tiktokshop.com,TikTok.list,TikTok,已核实的 TikTok 服务域名
+partner.tiktokshop.com,TikTok.list,TikTok,已核实的 TikTok 服务域名
+seller.tiktokglobalshop.com,TikTok.list,TikTok,已核实的 TikTok 服务域名
+www.tiktokshopglobalselling.com,TikTok.list,TikTok,已核实的 TikTok 服务域名
+seller.eu.tiktokshopglobalselling.com,TikTok.list,TikTok,已核实的 TikTok 服务域名
+seller.us.tiktokshopglobalselling.com,TikTok.list,TikTok,已核实的 TikTok 服务域名
+www.tiktokforbusiness.com,TikTok.list,TikTok,已核实的 TikTok 服务域名
+api.tiktokv.eu,TikTok.list,TikTok,已核实的 TikTok 服务域名
+webcast.tiktokv.eu,TikTok.list,TikTok,已核实的 TikTok 服务域名
+frontier.tiktokv.eu,TikTok.list,TikTok,已核实的 TikTok 服务域名
+www.tiktokw.eu,TikTok.list,TikTok,已核实的 TikTok 服务域名
+www.tiktokw.us,TikTok.list,TikTok,已核实的 TikTok 服务域名
+sf19-music.tiktokcdn-eu.com,TikTok.list,TikTok,已核实的 TikTok 服务域名
+pull-f5-sg01.ttlivecdn.com,TikTok.list,TikTok,TikTok LIVE 拉流服务及其 CDN 专属别名
+pull-q5-va01.ttlivecdn.com,TikTok.list,TikTok,TikTok LIVE 拉流服务及其 CDN 专属别名
+pull-f5-sg01.ttlivecdn.com.c.worldfcdn.com,TikTok.list,TikTok,TikTok LIVE 拉流服务及其 CDN 专属别名
+pull-q5-sg01.ttlivecdn.com.c.bytefcdn-oversea.com,TikTok.list,TikTok,TikTok LIVE 拉流服务及其 CDN 专属别名
+pull-fcdn-base1.s.bytefcdn-oversea.com,TikTok.list,TikTok,TikTok LIVE 直播域的当前 CNAME 目标
+pull-fcdn-base2.s.bytefcdn-oversea.com,TikTok.list,TikTok,TikTok LIVE 直播域的当前 CNAME 目标
+pull-fcdn-base4.s.bytefcdn-oversea.com,TikTok.list,TikTok,TikTok LIVE 直播域的当前 CNAME 目标
+pull-third-base1.s.bytefcdn-oversea.com,TikTok.list,TikTok,TikTok LIVE 直播域的当前 CNAME 目标
+p16-g1-sign-sg.ibyteimg.com,TikTok.list,TikTok,已核实的 TikTok 专用内容、Shop 或 Ads 主机
+p16-g1-sign-va.ibyteimg.com,TikTok.list,TikTok,已核实的 TikTok 专用内容、Shop 或 Ads 主机
+p16-g1-sign-useast2a.ibyteimg.com,TikTok.list,TikTok,已核实的 TikTok 专用内容、Shop 或 Ads 主机
+p16-oec-sg.ibyteimg.com,TikTok.list,TikTok,已核实的 TikTok 专用内容、Shop 或 Ads 主机
+sf16-scmcdn-va.ibytedtos.com,TikTok.list,TikTok,已核实的 TikTok 专用内容、Shop 或 Ads 主机
+www.capcut.com,Global.list,Global,CapCut 产品域名与资源
+edit-api-sg.capcut.com,Global.list,Global,CapCut 产品域名与资源
+api.capcutapi.com,Global.list,Global,CapCut 产品域名与资源
+api.capcutapi.us,Global.list,Global,CapCut 产品域名与资源
+sf16-ug-neutral.capcutstatic.com,Global.list,Global,CapCut 产品域名与资源
+sf16-web-tos-buz.capcutcdn-us.com,Global.list,Global,CapCut 产品域名与资源
+sf19-draftcdn-sg.ibytedtos.com,Global.list,Global,跨产品资源或独立站点沿通用出口
+sf16-muse-va.ibytedtos.com,Global.list,Global,跨产品资源或独立站点沿通用出口
+p16-seeyou-sg.ibyteimg.com,Global.list,Global,跨产品资源或独立站点沿通用出口
+p16-lemon8-sign-sg.ibyteimg.com,Global.list,Global,跨产品资源或独立站点沿通用出口
+sf16-short-sg.bytedapm.com,Global.list,Global,跨产品资源或独立站点沿通用出口
+www.lemon8-app.com,Global.list,Global,跨产品资源或独立站点沿通用出口
+lifeattiktok.com,Global.list,Global,跨产品资源或独立站点沿通用出口
+unrelated-tiktok.example,FINAL,Global,无边界的品牌关键词误匹配无关域名
+tiktok.com.example,FINAL,Global,无边界的品牌关键词误匹配无关域名
+www.tiktok.com,TikTok.list,TikTok,无边界的品牌关键词误匹配无关域名
+unrelated-musical.ly.example,FINAL,Global,保留合法域名后缀并移除子串匹配
+api.musical.ly,TikTok.list,TikTok,保留合法域名后缀并移除子串匹配
+www.douyin.com,China.list,DIRECT,用户代理无法限定目的地，抖音和其他网站按目标分流
+example.com,FINAL,Global,用户代理无法限定目的地，抖音和其他网站按目标分流
+p11-sign.douyinpic.com,China.list,DIRECT,进程名无法限定目的地，保留每个目的域的分流
+www.tiktokmusic.app,FINAL,Global,TikTok Music 已停服
+analytics.tiktok.com,TikTok.list,TikTok,TikTok Pixel 域名由 TikTok 专用规则处理
+dreamina.capcut.com,AI.list,AI,Dreamina 官方图像与视频生成服务
+lf-dy-sourcecdn-tos.bytegecko.com,China.list,DIRECT,抖音资源 CDN 保持直连
+www.jianying.com,China.list,DIRECT,剪映国内版保持直连
+seller-us.tiktok.com,TikTok.list,TikTok,TikTok Shop 美国区商家中心
+p16-tiktokcdn-com.akamaized.net,TikTok.list,TikTok,TikTok 专属 Akamai 主机保留
+p16-tiktokcdn-com.akamaized.net.example,FINAL,Global,Akamai 主机规则按明确边界匹配
+www.worldfcdn.com,China.list,DIRECT,共享 CDN 父域沿通用规则
+api.tiktokv.com,TikTok.list,TikTok,TikTok 应用 API 保留
+api.tiktokv.us,TikTok.list,TikTok,TikTok 美区应用 API 保留
