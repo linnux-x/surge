@@ -13,3 +13,7 @@ DOMAIN-SUFFIX,discoveryplus.com
 DOMAIN-SUFFIX,discoveryplus.co.uk
 DOMAIN-SUFFIX,discoveryplus.in
 DOMAIN-SUFFIX,disco-api.com
+
+# Shared streaming infrastructure used across regions.
+DOMAIN-SUFFIX,uplynk.com
+DOMAIN-SUFFIX,theplatform.com

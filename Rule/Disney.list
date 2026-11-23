@@ -1,9 +1,9 @@
 # NAME: Disney
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-23 09:17:11 +0800
+# UPDATED: 2026-11-23 10:13:54 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 151
+# TOTAL: 142
 
 # ======= Manual Rules ========
 
@@ -18,7 +18,6 @@ DOMAIN-SUFFIX,20thcenturystudios.com.br
 DOMAIN-SUFFIX,20thcenturystudios.jp
 DOMAIN-SUFFIX,abc-studios.com
 DOMAIN-SUFFIX,abc.com
-DOMAIN-SUFFIX,adventuresbydisney.com
 DOMAIN-SUFFIX,babble.com
 DOMAIN-SUFFIX,babyzone.com
 DOMAIN-SUFFIX,bamgrid.com
@@ -70,14 +69,11 @@ DOMAIN-SUFFIX,disney.ro
 DOMAIN-SUFFIX,disney.ru
 DOMAIN-SUFFIX,disney.se
 DOMAIN-SUFFIX,disney.sg
-DOMAIN-SUFFIX,disneyadsales.com
 DOMAIN-SUFFIX,disneyarena.com
-DOMAIN-SUFFIX,disneyaulani.com
 DOMAIN-SUFFIX,disneybaby.com
 DOMAIN-SUFFIX,disneychannelonstage.com
 DOMAIN-SUFFIX,disneychannelroadtrip.com
 DOMAIN-SUFFIX,disneyenconcert.com
-DOMAIN-SUFFIX,disneyiejobs.com
 DOMAIN-SUFFIX,disneyinflight.com
 DOMAIN-SUFFIX,disneyinternational.com
 DOMAIN-SUFFIX,disneyinternationalhd.com
@@ -105,15 +101,11 @@ DOMAIN-SUFFIX,disneypeoplesurveys.com
 DOMAIN-SUFFIX,disneyplus.bn5x.net
 DOMAIN-SUFFIX,disneyplus.com
 DOMAIN-SUFFIX,disneyplus.com.ssl.sc.omtrdc.net
-DOMAIN-SUFFIX,disneyprivacycenter.com
 DOMAIN-SUFFIX,disneyredirects.com
 DOMAIN-SUFFIX,disneysrivieraresort.com
 DOMAIN-SUFFIX,disneystreaming.com
 DOMAIN-SUFFIX,disneysubscription.com
-DOMAIN-SUFFIX,disneytermsofuse.com
-DOMAIN-SUFFIX,disneytickets.co.uk
 DOMAIN-SUFFIX,disneyturkiye.com.tr
-DOMAIN-SUFFIX,disneytvajobs.com
 DOMAIN-SUFFIX,dlp-media.com
 DOMAIN-SUFFIX,dmed.technology
 DOMAIN-SUFFIX,dssedge.com
@@ -138,7 +130,6 @@ DOMAIN-SUFFIX,marvelsuperheroseptember.com
 DOMAIN-SUFFIX,marvelsuperwar.com
 DOMAIN-SUFFIX,mickey.tv
 DOMAIN-SUFFIX,moviesanywhere.com
-DOMAIN-SUFFIX,natgeomaps.com
 DOMAIN-SUFFIX,nationalgeographic.com
 DOMAIN-SUFFIX,nationalgeographicpartners.com
 DOMAIN-SUFFIX,ngeo.com

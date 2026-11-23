@@ -2,3 +2,9 @@
 DOMAIN-SUFFIX,dmm.com
 DOMAIN-SUFFIX,amebaownd.com
 DOMAIN-SUFFIX,amebaowndme.com
+
+# Ameba blogging, portal and manga sites use general routing.
+DOMAIN-SUFFIX,ameba.jp
+DOMAIN-SUFFIX,ameblo.jp
+DOMAIN-SUFFIX,amebame.com
+DOMAIN-SUFFIX,dokusho-ojikan.jp

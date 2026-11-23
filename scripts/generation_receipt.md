@@ -1,33 +1,33 @@
 # Surge 规则生成收据
 
 - 规则文件：35
-- 规则总数：156508
+- 规则总数：156493
 - manifest 文件：35
 
 ## 差异摘要
 
-- 新增：4
-- 删除：0
+- 新增：17
+- 删除：32
 - 来源迁移：0
 
 ## 规则类型
 
 - AND: 421
-- DOMAIN: 3849
-- DOMAIN-KEYWORD: 3
-- DOMAIN-SUFFIX: 141319
+- DOMAIN: 3850
+- DOMAIN-KEYWORD: 1
+- DOMAIN-SUFFIX: 141307
 - DOMAIN-WILDCARD: 15
 - IP-ASN: 5
 - IP-CIDR: 7324
 - IP-CIDR6: 3540
-- PROCESS-NAME: 28
-- URL-REGEX: 4
+- PROCESS-NAME: 27
+- URL-REGEX: 3
 
 ## 来源归属
 
 - ConnersHua AI: 11
 - Loyalsoldier China CIDR: 9665
-- Manual Rules: 729
+- Manual Rules: 744
 - OpenAI ChatGPT Voice: 411
 - Rabbit-Spec AIGC: 12
 - Rabbit-Spec China: 371
@@ -43,21 +43,21 @@
 - SukkaW Speedtest: 120
 - SukkaW Speedtest Servers China: 1
 - SukkaW Speedtest Servers International: 1600
-- SukkaW Stream: 49
+- SukkaW Stream: 48
 - SukkaW Stream HK: 24
-- SukkaW Stream JP: 22
+- SukkaW Stream JP: 18
 - SukkaW Stream TW: 19
-- SukkaW Stream US: 35
+- SukkaW Stream US: 33
 - Telegram Official CIDR: 11
 - blackmatrix7 Apple: 1354
 - blackmatrix7 ChinaMaxNoIP Domain: 109404
 - blackmatrix7 ChinaMedia: 339
 - blackmatrix7 Discord: 29
-- blackmatrix7 Disney: 148
-- blackmatrix7 Facebook: 557
+- blackmatrix7 Disney: 139
+- blackmatrix7 Facebook: 556
 - blackmatrix7 Game: 520
 - blackmatrix7 Global: 24536
-- blackmatrix7 GlobalMedia: 2074
+- blackmatrix7 GlobalMedia: 2061
 - blackmatrix7 Google: 665
 - blackmatrix7 Microsoft: 455
 - blackmatrix7 Netflix: 24

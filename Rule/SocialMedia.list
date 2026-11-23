@@ -1,9 +1,9 @@
 # NAME: SocialMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-23 08:25:29 +0800
+# UPDATED: 2026-11-23 10:13:55 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 663
+# TOTAL: 662
 
 # ======= Manual Rules ========
 # WhatsApp official messaging and short links.
@@ -666,7 +666,6 @@ IP-CIDR,108.168.180.96/27,no-resolve
 IP-CIDR,108.168.254.65/32,no-resolve
 IP-CIDR,108.168.255.224/32,no-resolve
 IP-CIDR,108.168.255.227/32,no-resolve
-IP-CIDR,108.177.8.0/21,no-resolve
 IP-CIDR,119.235.224.0/24,no-resolve
 IP-CIDR,119.235.232.0/24,no-resolve
 IP-CIDR,119.235.236.0/23,no-resolve

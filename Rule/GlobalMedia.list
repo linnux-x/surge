@@ -1,9 +1,9 @@
 # NAME: GlobalMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-23 09:17:11 +0800
+# UPDATED: 2026-11-23 10:13:55 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 2153
+# TOTAL: 2138
 
 # ======= Manual Rules ========
 # Keep the FAST.com front end, API and data on the same policy where Netflix.list is disabled.
@@ -21,7 +21,6 @@ DOMAIN-SUFFIX,giphy.com
 
 # Media service observed in sustained real FINAL traffic
 DOMAIN-SUFFIX,023168.xyz
-DOMAIN-KEYWORD,023168
 
 # Spotify when the dedicated set is disabled, including Spotify-labelled Akamai audio hosts.
 DOMAIN-SUFFIX,spotify.com
@@ -92,8 +91,6 @@ DOMAIN-SUFFIX,abc.com
 DOMAIN-SUFFIX,abema-tv.com
 DOMAIN-SUFFIX,abema.io
 DOMAIN-SUFFIX,abema.tv
-DOMAIN-SUFFIX,aboutamazon.com
-DOMAIN-SUFFIX,adventuresbydisney.com
 DOMAIN-SUFFIX,adx.promo
 DOMAIN-SUFFIX,afewmomentswith.com
 DOMAIN-SUFFIX,afp.com
@@ -109,9 +106,6 @@ DOMAIN-SUFFIX,amazonuniversity.jobs
 DOMAIN-SUFFIX,amazonvideo.cc
 DOMAIN-SUFFIX,amazonvideo.com
 DOMAIN-SUFFIX,amazonvideodirect.cc
-DOMAIN-SUFFIX,ameba.jp
-DOMAIN-SUFFIX,amebame.com
-DOMAIN-SUFFIX,ameblo.jp
 DOMAIN-SUFFIX,americasvoice.news
 DOMAIN-SUFFIX,amerikaninsesi.com
 DOMAIN-SUFFIX,amerikaninsesi.org
@@ -292,14 +286,11 @@ DOMAIN-SUFFIX,disney.ro
 DOMAIN-SUFFIX,disney.ru
 DOMAIN-SUFFIX,disney.se
 DOMAIN-SUFFIX,disney.sg
-DOMAIN-SUFFIX,disneyadsales.com
 DOMAIN-SUFFIX,disneyarena.com
-DOMAIN-SUFFIX,disneyaulani.com
 DOMAIN-SUFFIX,disneybaby.com
 DOMAIN-SUFFIX,disneychannelonstage.com
 DOMAIN-SUFFIX,disneychannelroadtrip.com
 DOMAIN-SUFFIX,disneyenconcert.com
-DOMAIN-SUFFIX,disneyiejobs.com
 DOMAIN-SUFFIX,disneyinflight.com
 DOMAIN-SUFFIX,disneyinternational.com
 DOMAIN-SUFFIX,disneyinternationalhd.com
@@ -331,9 +322,7 @@ DOMAIN-SUFFIX,disneyredirects.com
 DOMAIN-SUFFIX,disneysrivieraresort.com
 DOMAIN-SUFFIX,disneystreaming.com
 DOMAIN-SUFFIX,disneysubscription.com
-DOMAIN-SUFFIX,disneytickets.co.uk
 DOMAIN-SUFFIX,disneyturkiye.com.tr
-DOMAIN-SUFFIX,disneytvajobs.com
 DOMAIN-SUFFIX,dm-event.net
 DOMAIN-SUFFIX,dmc.nico
 DOMAIN-SUFFIX,dmcdn.net
@@ -343,7 +332,6 @@ DOMAIN-SUFFIX,dmm.co.jp
 DOMAIN-SUFFIX,dmxleo.com
 DOMAIN-SUFFIX,dnitv.com
 DOMAIN-SUFFIX,dogatch.jp
-DOMAIN-SUFFIX,dokusho-ojikan.jp
 DOMAIN-SUFFIX,dssott.com
 DOMAIN-SUFFIX,dtci.co
 DOMAIN-SUFFIX,dtci.technology
@@ -761,7 +749,6 @@ DOMAIN-SUFFIX,myq2.com
 DOMAIN-SUFFIX,mytvsuper.com
 DOMAIN-SUFFIX,mytvsuperlimited.hb.omtrdc.net
 DOMAIN-SUFFIX,mytvsuperlimited.sc.omtrdc.net
-DOMAIN-SUFFIX,natgeomaps.com
 DOMAIN-SUFFIX,nationalgeographic.com
 DOMAIN-SUFFIX,nationalgeographicpartners.com
 DOMAIN-SUFFIX,nbc-sports.go-vip.net
@@ -2131,7 +2118,6 @@ IP-CIDR6,2620:10c:7000::/44,no-resolve
 IP-CIDR6,2620:120:e000::/40,no-resolve
 IP-CIDR6,2a00:86c0::/32,no-resolve
 IP-CIDR6,2a03:5640::/32,no-resolve
-URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/
 PROCESS-NAME,com.viu.pad
 PROCESS-NAME,com.viu.phone
 PROCESS-NAME,com.vuclip.viu
@@ -2178,7 +2164,6 @@ DOMAIN,4gtvfreepcvod-cds.cdn.hinet.net
 DOMAIN,ds-linear-abematv.akamaized.net
 DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
 PROCESS-NAME,com.amazon.avod.thirdpartyclient
-PROCESS-NAME,music
 PROCESS-NAME,com.hulu.plus
 PROCESS-NAME,com.tencent.ibg.joox
 PROCESS-NAME,com.linecorp.linetv

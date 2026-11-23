@@ -1,9 +1,9 @@
 # NAME: USMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-22 17:37:11 +0800
+# UPDATED: 2026-11-23 10:13:55 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 35
+# TOTAL: 33
 
 # ======= SukkaW Stream US ========
 DOMAIN-SUFFIX,fox.com
@@ -19,7 +19,6 @@ DOMAIN-SUFFIX,dnitv.com
 DOMAIN-SUFFIX,foxdcg.com
 DOMAIN-SUFFIX,huluim.com
 DOMAIN,tubitv.com
-DOMAIN-SUFFIX,uplynk.com
 DOMAIN-SUFFIX,foxplus.com
 DOMAIN,www.tubi.tv
 DOMAIN-SUFFIX,showtime.com
@@ -29,7 +28,6 @@ DOMAIN-SUFFIX,peacocktv.com
 DOMAIN-SUFFIX,cbsaavideo.com
 DOMAIN-SUFFIX,hulustream.com
 DOMAIN,www.tubitv.com
-DOMAIN-SUFFIX,theplatform.com
 DOMAIN-SUFFIX,paramountplus.com
 DOMAIN,athome.fandango.com
 DOMAIN,prod-api.crackle.com
