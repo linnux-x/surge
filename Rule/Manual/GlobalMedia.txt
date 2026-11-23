@@ -30,3 +30,8 @@ DOMAIN-SUFFIX,abematv.akamaized.net
 # Netflix Open Connect when the dedicated set is disabled.
 IP-ASN,2906,no-resolve
 IP-ASN,40027,no-resolve
+
+# Video services under shared Korean portals.
+DOMAIN-SUFFIX,tv.kakao.com
+DOMAIN-SUFFIX,tv.naver.com
+DOMAIN-SUFFIX,chzzk.naver.com

@@ -1230,3 +1230,35 @@ video.v.smtcdns.net,GlobalMedia.list,GlobalMedia,保留腾讯视频分发子域�
 1.201.0.1,Global.list,Global,KINX 公用地址回归通用规则
 js-agent.newrelic.com,CDN.list,CDN,New Relic 共享脚本 CDN
 e13252.dscg.akamaiedge.net,FINAL,Global,无法归给单一媒体服务的共享 Akamai 节点
+ai.meta.com,AI.list,AI,Meta 官方 Muse 与 AI 产品资料
+dev.meta.ai,AI.list,AI,Muse Code 安装更新及开发平台
+https://dev.meta.ai/install.sh,AI.list,AI,Meta 官方 Muse Code 安装地址
+https://dev.meta.ai/install.ps1,AI.list,AI,Meta 官方 Muse Code Windows 安装地址
+api.meta.ai,AI.list,AI,Muse Code 和 Meta Model API
+research.meta.ai,AI.list,AI,Muse 研究入口
+www.meta.com,SocialMedia.list,SocialMedia,Meta 共享帮助站保留社交策略
+muse.jhu.edu,Global.list,Global,Project MUSE 学术站不涉及 Meta Muse
+storage.googleapis.com,Google.list,Google,Google Cloud Storage 通用端点
+api.cloudflare.com,Global.list,Global,Cloudflare 共享管理 API
+in.appcenter.ms,Microsoft.list,Microsoft,Microsoft App Center 共享端点
+developer.meta.com,SocialMedia.list,SocialMedia,Meta 通用开发入口
+lf3-static.bytednsdoc.com,China.list,DIRECT,字节共享静态主机沿用中国直连
+143.198.1.1,FINAL,Global,DigitalOcean 公共云地址正常回退
+kauth.kakao.com,Global.list,Global,Kakao 通用 OAuth
+dapi.kakao.com,Global.list,Global,Kakao 地图及搜索 API
+nid.naver.com,Global.list,Global,Naver 通用登录
+mail.naver.com,Global.list,Global,Naver 邮箱
+mail.daum.net,Global.list,Global,Daum 邮箱
+tv.kakao.com,GlobalMedia.list,GlobalMedia,KakaoTV 专属视频
+tv.naver.com,GlobalMedia.list,GlobalMedia,Naver TV 专属视频
+chzzk.naver.com,GlobalMedia.list,GlobalMedia,Chzzk 专属直播域名
+23.211.15.99,Global.list,Global,Akamai 通用边缘地址
+23.211.15.100,Global.list,Global,Akamai 公共网段使用统一通用策略
+3.123.36.126,Global.list,Global,未证实租户归属的 AWS 地址从社交移入通用策略
+35.157.215.84,Global.list,Global,公共 EC2 地址使用通用策略
+35.157.217.255,Global.list,Global,公共 EC2 地址使用通用策略
+52.58.209.134,Global.list,Global,现有通用 AWS CIDR 接管
+54.162.243.80,Global.list,Global,公共 EC2 地址使用通用策略
+54.173.34.141,Global.list,Global,公共 EC2 地址使用通用策略
+54.235.23.242,Global.list,Global,公共 EC2 地址使用通用策略
+54.93.124.31,Global.list,Global,现有通用 AWS CIDR 接管

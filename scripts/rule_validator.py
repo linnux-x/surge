@@ -32,7 +32,7 @@ from policy import (
     SHARED_THIRD_PARTY_SUFFIXES,
     RISKY_DOMAIN_KEYWORDS,  # re-exported for existing importers
     is_risky_domain_keyword,
-    violates_media_boundary,
+    violates_routing_boundary,
 )
 
 ALLOWED_TYPES = {
@@ -196,8 +196,8 @@ def validate_rule_file(lines: list[str], target_name: str) -> list[str]:
 
         # ── Project-specific policies ──
 
-        if violates_media_boundary(target_name, ",".join(parts)):
-            errors.append(f"{target_name}:{index} unscoped media rule: {rule}")
+        if violates_routing_boundary(target_name, ",".join(parts)):
+            errors.append(f"{target_name}:{index} rule outside the service boundary: {rule}")
         if target_name == "China.list" and rule_type in {"IP-CIDR", "IP-CIDR6", "IP-ASN"}:
             errors.append(f"{target_name}:{index} IP rule in China.list: {rule}")
         if target_name == "China_IP.list" and rule_type in {"IP-CIDR", "IP-CIDR6", "IP-ASN"} and \

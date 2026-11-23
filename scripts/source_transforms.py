@@ -21,7 +21,7 @@ from policy import (
     SHARED_INFRA_EXEMPT_FILES,
     SHARED_THIRD_PARTY_SUFFIXES,
     YOUTUBE_RE,
-    violates_media_boundary,
+    violates_routing_boundary,
 )
 from rule_validator import SUKKAW_MARKER
 from exclusions import exclusion_key, read_exclusions
@@ -147,10 +147,10 @@ def apply_project_guardrails(target_name: str, lines: list[str]) -> list[str]:
     elif target_name == "China_IP.list":
         out = [re.sub(r",(no-resolve|NO-RESOLVE)", "", l, flags=re.IGNORECASE) for l in out]
 
-    if target_name in HOST_SCOPED_RULESETS:
+    if target_name in HOST_SCOPED_RULESETS or target_name == "AI.list":
         out = [
             line for line in out
-            if not violates_media_boundary(target_name, line)
+            if not violates_routing_boundary(target_name, line)
         ]
 
     # The strict validator rejects whole shared identity, telemetry, and consent

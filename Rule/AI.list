@@ -1,9 +1,9 @@
 # NAME: AI
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-22 16:14:34 +0800
+# UPDATED: 2026-11-23 08:25:28 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 561
+# TOTAL: 562
 
 # ======= Manual Rules ========
 
@@ -155,6 +155,11 @@ DOMAIN-SUFFIX,jina.ai
 DOMAIN-SUFFIX,muse.ai
 DOMAIN-SUFFIX,metaaivm.com
 
+# Official Meta AI product pages, Muse Code installer and Model API.
+# https://ai.meta.com/muse/ and https://dev.meta.ai/docs/overview
+DOMAIN,ai.meta.com
+DOMAIN-SUFFIX,meta.ai
+
 # Bound Google Labs to its own domain and subdomains.
 DOMAIN-SUFFIX,labs.google
 
@@ -165,7 +170,6 @@ DOMAIN,dreamina.capcut.com
 DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,ai.com
 DOMAIN-SUFFIX,dify.ai
-DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,grok.com

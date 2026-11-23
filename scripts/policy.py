@@ -25,27 +25,51 @@ GITHUB_RE = re.compile(r"github|ghcr[.]io", re.IGNORECASE)
 FASTCOM_RULESETS = frozenset({"Netflix.list", "GlobalMedia.list"})
 FASTCOM_RE = re.compile(r"(^|,)([^,]*[.])?fast[.]com(,|$)", re.IGNORECASE)
 
-# Match media by destination or app identity, including in the Global fallback.
+# Match media by destination or app identity. Direct and Global fallback
+# policies also need a destination regardless of the request's User-Agent.
 HOST_SCOPED_RULESETS = frozenset({
     "Netflix.list", "Disney.list", "HKMedia.list", "TWMedia.list", "JPMedia.list",
-    "USMedia.list", "ChinaMedia.list", "Spotify.list", "GlobalMedia.list", "Global.list",
+    "USMedia.list", "ChinaMedia.list", "Spotify.list", "GlobalMedia.list", "Global.list", "China.list",
 })
-REVIEWED_HOST_KEYWORDS = {"GlobalMedia.list": "023168", "Global.list": "porn"}
+REVIEWED_HOST_KEYWORDS = {"GlobalMedia.list": "023168", "Global.list": "porn", "China.list": "223789"}
 NETFLIX_OPEN_CONNECT_ASNS = frozenset({"2906", "40027"})
+MULTISERVICE_MEDIA_PARENTS = frozenset({
+    "daum.net", "daumkakao.io", "hinet.net", "kakao.co.kr", "kakao.com", "kakaocorp.com", "naver.com",
+})
+AI_SHARED_HOSTS = frozenset({
+    "amazonaws.com", "api.cloudflare.com", "appcenter.ms", "aws.dev", "awsapps.com",
+    "awsstatic.com", "azure.com", "cloudflare.com", "developer.meta.com",
+    "facebook.com", "fbcdn.net", "google.com", "googleapis.com", "gstatic.com",
+    "in.appcenter.ms", "lf3-static.bytednsdoc.com", "meta.com", "sso.amazonaws.com",
+    "storage.googleapis.com", "windows.net",
+})
+# Shared IAM Identity Center and Cognito endpoints across AWS regions.
+AWS_SHARED_IDENTITY_RE = re.compile(
+    r"(?:device[.])?(?:sso|oidc|cognito-idp|cognito-identity)(?:-fips)?[.]"
+    r"[a-z0-9-]+[.](?:amazonaws[.]com(?:[.]cn)?|api[.]aws)"
+)
 
 
-def violates_media_boundary(target: str, rule: str) -> bool:
-    if target not in HOST_SCOPED_RULESETS:
+def violates_routing_boundary(target: str, rule: str) -> bool:
+    if target not in HOST_SCOPED_RULESETS and target != "AI.list":
         return False
     kind, _, value = rule.partition(",")
     kind = kind.strip().upper()
     value = value.split(",", 1)[0].strip().lower()
+    if target == "AI.list":
+        if kind in {"IP-CIDR", "IP-CIDR6", "IP-ASN", "GEOIP"}:
+            # Voice supports protocol-scoped CIDRs. Anthropic has a reviewed,
+            # dedicated ASN. Shared hosts must never select AI by address.
+            return (kind, value) != ("IP-ASN", "399358")
+        return kind in {"DOMAIN", "DOMAIN-SUFFIX"} and (
+            value in AI_SHARED_HOSTS or AWS_SHARED_IDENTITY_RE.fullmatch(value) is not None
+        )
     if kind in {"DOMAIN-KEYWORD", "USER-AGENT"}:
         return kind != "DOMAIN-KEYWORD" or value != REVIEWED_HOST_KEYWORDS.get(target)
     if target == "Netflix.list" and kind in {"IP-CIDR", "IP-CIDR6", "IP-ASN", "GEOIP"}:
         return kind != "IP-ASN" or value not in NETFLIX_OPEN_CONNECT_ASNS
     if target == "GlobalMedia.list" and kind in {"DOMAIN", "DOMAIN-SUFFIX"}:
-        return (value == "hinet.net" or value in SHARED_THIRD_PARTY_SUFFIXES
+        return (value in MULTISERVICE_MEDIA_PARENTS or value in SHARED_THIRD_PARTY_SUFFIXES
                 or value in SHARED_THIRD_PARTY_DOMAINS)
     return False
 

@@ -1,9 +1,9 @@
 # NAME: China
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-22 17:04:50 +0800
+# UPDATED: 2026-11-23 08:25:29 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 110664
+# TOTAL: 110661
 
 # ======= Manual Rules ========
 # Mainland China game services and download domains
@@ -912,9 +912,6 @@ DOMAIN,cn.download.nvidia.com
 DOMAIN-SUFFIX,kingsoft-office-service.com
 DOMAIN-SUFFIX,dl.delivery.mp.microsoft.com
 DOMAIN-WILDCARD,qhimgs?.com
-USER-AGENT,%E4%BC%98%E9%85%B7*
-USER-AGENT,%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D*
-USER-AGENT,TeslaMap
 
 # ======= blackmatrix7 ChinaMaxNoIP Domain ========
 DOMAIN-SUFFIX,0.zone

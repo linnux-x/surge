@@ -112,6 +112,36 @@ class SourceTransformTests(unittest.TestCase):
                 self.assertEqual(apply_project_guardrails(target, unscoped + scoped), scoped)
                 self.assertEqual(len(validate_rule_file(unscoped, target)), len(unscoped))
 
+    def test_china_requires_a_destination_for_direct_routing(self):
+        unscoped = ['USER-AGENT,TeslaMap', 'USER-AGENT,%E4%BC%98%E9%85%B7*']
+        scoped = ['DOMAIN-KEYWORD,223789', 'DOMAIN-SUFFIX,taobao.com']
+        self.assertEqual(apply_project_guardrails('China.list', unscoped + scoped), scoped)
+        self.assertEqual(len(validate_rule_file(unscoped, 'China.list')), len(unscoped))
+
+    def test_media_allows_video_children_of_general_portals(self):
+        broad = ['DOMAIN-SUFFIX,naver.com', 'DOMAIN-SUFFIX,kakao.com', 'DOMAIN,daum.net']
+        video = ['DOMAIN-SUFFIX,tv.naver.com', 'DOMAIN-SUFFIX,tv.kakao.com']
+        self.assertEqual(apply_project_guardrails('GlobalMedia.list', broad + video), video)
+        self.assertEqual(len(validate_rule_file(broad, 'GlobalMedia.list')), len(broad))
+
+    def test_ai_rejects_shared_provider_hosts_and_unreviewed_ip_rules(self):
+        shared = [
+            'DOMAIN,api.cloudflare.com', 'DOMAIN-SUFFIX,storage.googleapis.com',
+            'DOMAIN,in.appcenter.ms', 'DOMAIN,developer.meta.com',
+            'DOMAIN-SUFFIX,lf3-static.bytednsdoc.com', 'IP-ASN,14061',
+            'IP-CIDR,160.79.104.0/21,no-resolve', 'IP-CIDR6,2604:f20::/32,no-resolve',
+            'DOMAIN-SUFFIX,awsapps.com', 'DOMAIN-SUFFIX,sso.amazonaws.com',
+            'DOMAIN,cognito-identity.us-east-1.amazonaws.com', 'DOMAIN,oidc.eu-west-1.api.aws',
+        ]
+        reviewed = [
+            'DOMAIN-SUFFIX,muse.ai', 'DOMAIN,ai.meta.com',
+            'DOMAIN,gateway.ai.cloudflare.com', 'IP-ASN,399358,no-resolve',
+            'AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,1.2.3.4/32,no-resolve))',
+        ]
+        self.assertEqual(apply_project_guardrails('AI.list', shared + reviewed), reviewed)
+        self.assertTrue(all(validate_rule_file([rule], 'AI.list') for rule in shared))
+        self.assertEqual(validate_rule_file(reviewed, 'AI.list'), [])
+
     def test_netflix_does_not_inherit_shared_ip_ranges(self):
         unverified = ['IP-CIDR,108.128.160.0/23,no-resolve', 'IP-ASN,16509,no-resolve']
         verified = ['IP-ASN,2906,no-resolve', 'IP-ASN,40027,no-resolve']

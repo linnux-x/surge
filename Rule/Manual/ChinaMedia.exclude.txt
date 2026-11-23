@@ -93,3 +93,6 @@ DOMAIN-SUFFIX,pgdt.gtimg.cn
 
 # Tencent shared CDN parent follows China; GlobalMedia keeps its video namespace.
 DOMAIN-SUFFIX,smtcdns.net
+
+# Shared Akamai edge inside the general 23.211.15.0/24 CDN prefix.
+IP-CIDR,23.211.15.99/32,no-resolve
