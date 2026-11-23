@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-23 08:25:29 +0800
+# UPDATED: 2026-11-23 09:17:11 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24648
+# TOTAL: 24666
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -158,6 +158,30 @@ IP-CIDR,35.157.217.255/32,no-resolve
 IP-CIDR,54.162.243.80/32,no-resolve
 IP-CIDR,54.173.34.141/32,no-resolve
 IP-CIDR,54.235.23.242/32,no-resolve
+
+# Netflix investor relations, studio and engineering websites.
+DOMAIN-SUFFIX,netflixinvestor.com
+DOMAIN-SUFFIX,netflixstudios.com
+DOMAIN-SUFFIX,netflixtechblog.com
+
+# Disney corporate, parks, shopping and ABC News websites.
+DOMAIN-SUFFIX,abcnews.com
+DOMAIN-SUFFIX,abcnews.edgesuite.net
+DOMAIN-SUFFIX,disneycareers.com
+DOMAIN-SUFFIX,disneycruisebrasil.com
+DOMAIN-SUFFIX,disneylandparis.com
+DOMAIN-SUFFIX,disneystore.com
+DOMAIN-SUFFIX,disneyworld-go.com
+DOMAIN-SUFFIX,go-disneyworldgo.com
+DOMAIN-SUFFIX,marvel.com
+DOMAIN-SUFFIX,shopdisney.com
+DOMAIN-SUFFIX,shops-disney.com
+DOMAIN-SUFFIX,thewaltdisneycompany.com
+DOMAIN-SUFFIX,go.com
+
+# Standalone Google Cloud addresses previously associated with Spotify.
+IP-CIDR,104.154.127.126/32,no-resolve
+IP-CIDR,35.186.224.47/32,no-resolve
 
 # ======= blackmatrix7 Global ========
 DOMAIN,1password.drift.click
@@ -14617,7 +14641,6 @@ DOMAIN-SUFFIX,sponichi.co.jp
 DOMAIN-SUFFIX,sportmail.ru
 DOMAIN-SUFFIX,sportswomanoftheyear.co.uk
 DOMAIN-SUFFIX,sportswomenoftheyear.co.uk
-DOMAIN-SUFFIX,spotify.link
 DOMAIN-SUFFIX,spotifyforvendors.com
 DOMAIN-SUFFIX,spraynwash.com
 DOMAIN-SUFFIX,spreadporn.org
@@ -21928,6 +21951,7 @@ DOMAIN-SUFFIX,netcolony.com
 DOMAIN-SUFFIX,netdna-cdn.com
 DOMAIN-SUFFIX,netfirms.com
 DOMAIN-SUFFIX,netflav.com
+DOMAIN-SUFFIX,netflix.net
 DOMAIN-SUFFIX,netlify.app
 DOMAIN-SUFFIX,netmarble.com
 DOMAIN-SUFFIX,netme.cc

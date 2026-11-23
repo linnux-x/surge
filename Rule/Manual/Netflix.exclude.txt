@@ -53,3 +53,10 @@ IP-CIDR,219.76.0.0/17,no-resolve
 IP-CIDR,23.78.0.0/16,no-resolve
 IP-CIDR,54.0.0.0/16,no-resolve
 IP-CIDR,54.214.128.0/17,no-resolve
+
+# Investor relations, studios and engineering sites use Global.
+DOMAIN-SUFFIX,netflix.net
+DOMAIN-SUFFIX,ir.netflix.net
+DOMAIN-SUFFIX,netflixinvestor.com
+DOMAIN-SUFFIX,netflixstudios.com
+DOMAIN-SUFFIX,netflixtechblog.com

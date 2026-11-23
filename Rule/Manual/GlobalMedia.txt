@@ -35,3 +35,20 @@ IP-ASN,40027,no-resolve
 DOMAIN-SUFFIX,tv.kakao.com
 DOMAIN-SUFFIX,tv.naver.com
 DOMAIN-SUFFIX,chzzk.naver.com
+
+# Keep Netflix service hosts while releasing the investor relations subtree.
+AND,((DOMAIN-SUFFIX,netflix.net),(NOT,((DOMAIN-SUFFIX,ir.netflix.net))))
+
+# Preserve legacy ABC, ESPN and Disney identity endpoints after narrowing go.com.
+DOMAIN-SUFFIX,abc.go.com
+DOMAIN-SUFFIX,espn.go.com
+DOMAIN-SUFFIX,registerdisney.go.com
+
+# JioHotstar serves multiple markets independently of Disney+.
+DOMAIN-SUFFIX,hotstar-cdn.net
+DOMAIN-SUFFIX,hotstar-labs.com
+DOMAIN-SUFFIX,hotstar.com
+DOMAIN-SUFFIX,hotstarext.com
+
+# Official Spotify short links (Spotify Embeds oEmbed documentation).
+DOMAIN-SUFFIX,spotify.link

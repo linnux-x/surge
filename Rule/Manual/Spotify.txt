@@ -5,3 +5,6 @@ USER-AGENT,*Spotify*
 
 # Spotify-labelled Akamai delivery (also used by the GlobalMedia fallback).
 DOMAIN-WILDCARD,*-spotify-com.akamaized.net
+
+# Official Spotify short links (Spotify Embeds oEmbed documentation).
+DOMAIN-SUFFIX,spotify.link

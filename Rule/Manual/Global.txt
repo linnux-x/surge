@@ -150,3 +150,28 @@ IP-CIDR,35.157.217.255/32,no-resolve
 IP-CIDR,54.162.243.80/32,no-resolve
 IP-CIDR,54.173.34.141/32,no-resolve
 IP-CIDR,54.235.23.242/32,no-resolve
+
+# Netflix investor relations, studio and engineering websites.
+DOMAIN-SUFFIX,ir.netflix.net
+DOMAIN-SUFFIX,netflixinvestor.com
+DOMAIN-SUFFIX,netflixstudios.com
+DOMAIN-SUFFIX,netflixtechblog.com
+
+# Disney corporate, parks, shopping and ABC News websites.
+DOMAIN-SUFFIX,abcnews.com
+DOMAIN-SUFFIX,abcnews.edgesuite.net
+DOMAIN-SUFFIX,disneycareers.com
+DOMAIN-SUFFIX,disneycruisebrasil.com
+DOMAIN-SUFFIX,disneylandparis.com
+DOMAIN-SUFFIX,disneystore.com
+DOMAIN-SUFFIX,disneyworld-go.com
+DOMAIN-SUFFIX,go-disneyworldgo.com
+DOMAIN-SUFFIX,marvel.com
+DOMAIN-SUFFIX,shopdisney.com
+DOMAIN-SUFFIX,shops-disney.com
+DOMAIN-SUFFIX,thewaltdisneycompany.com
+DOMAIN-SUFFIX,go.com
+
+# Standalone Google Cloud addresses previously associated with Spotify.
+IP-CIDR,104.154.127.126/32,no-resolve
+IP-CIDR,35.186.224.47/32,no-resolve
