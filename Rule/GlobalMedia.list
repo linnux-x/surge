@@ -1,9 +1,9 @@
 # NAME: GlobalMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-23 08:25:29 +0800
+# UPDATED: 2026-11-23 09:17:11 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 2158
+# TOTAL: 2153
 
 # ======= Manual Rules ========
 # Keep the FAST.com front end, API and data on the same policy where Netflix.list is disabled.
@@ -42,6 +42,23 @@ IP-ASN,40027,no-resolve
 DOMAIN-SUFFIX,tv.kakao.com
 DOMAIN-SUFFIX,tv.naver.com
 DOMAIN-SUFFIX,chzzk.naver.com
+
+# Keep Netflix service hosts while releasing the investor relations subtree.
+AND,((DOMAIN-SUFFIX,netflix.net),(NOT,((DOMAIN-SUFFIX,ir.netflix.net))))
+
+# Preserve legacy ABC, ESPN and Disney identity endpoints after narrowing go.com.
+DOMAIN-SUFFIX,abc.go.com
+DOMAIN-SUFFIX,espn.go.com
+DOMAIN-SUFFIX,registerdisney.go.com
+
+# JioHotstar serves multiple markets independently of Disney+.
+DOMAIN-SUFFIX,hotstar-cdn.net
+DOMAIN-SUFFIX,hotstar-labs.com
+DOMAIN-SUFFIX,hotstar.com
+DOMAIN-SUFFIX,hotstarext.com
+
+# Official Spotify short links (Spotify Embeds oEmbed documentation).
+DOMAIN-SUFFIX,spotify.link
 
 # ======= blackmatrix7 GlobalMedia ========
 DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
@@ -279,10 +296,8 @@ DOMAIN-SUFFIX,disneyadsales.com
 DOMAIN-SUFFIX,disneyarena.com
 DOMAIN-SUFFIX,disneyaulani.com
 DOMAIN-SUFFIX,disneybaby.com
-DOMAIN-SUFFIX,disneycareers.com
 DOMAIN-SUFFIX,disneychannelonstage.com
 DOMAIN-SUFFIX,disneychannelroadtrip.com
-DOMAIN-SUFFIX,disneycruisebrasil.com
 DOMAIN-SUFFIX,disneyenconcert.com
 DOMAIN-SUFFIX,disneyiejobs.com
 DOMAIN-SUFFIX,disneyinflight.com
@@ -314,13 +329,11 @@ DOMAIN-SUFFIX,disneyplus.com
 DOMAIN-SUFFIX,disneyplus.com.ssl.sc.omtrdc.net
 DOMAIN-SUFFIX,disneyredirects.com
 DOMAIN-SUFFIX,disneysrivieraresort.com
-DOMAIN-SUFFIX,disneystore.com
 DOMAIN-SUFFIX,disneystreaming.com
 DOMAIN-SUFFIX,disneysubscription.com
 DOMAIN-SUFFIX,disneytickets.co.uk
 DOMAIN-SUFFIX,disneyturkiye.com.tr
 DOMAIN-SUFFIX,disneytvajobs.com
-DOMAIN-SUFFIX,disneyworld-go.com
 DOMAIN-SUFFIX,dm-event.net
 DOMAIN-SUFFIX,dmc.nico
 DOMAIN-SUFFIX,dmcdn.net
@@ -551,8 +564,6 @@ DOMAIN-SUFFIX,gamer.com.tw
 DOMAIN-SUFFIX,geraldoatlarge.com
 DOMAIN-SUFFIX,getblueshift.com
 DOMAIN-SUFFIX,glasamerike.net
-DOMAIN-SUFFIX,go-disneyworldgo.com
-DOMAIN-SUFFIX,go.com
 DOMAIN-SUFFIX,golos-ameriki.ru
 DOMAIN-SUFFIX,golosameriki.com
 DOMAIN-SUFFIX,gooddaychicago.com
@@ -694,7 +705,6 @@ DOMAIN-SUFFIX,logx.optimizely.com
 DOMAIN-SUFFIX,londonreal.tv
 DOMAIN-SUFFIX,m-content-viki.s.llnwi.net
 DOMAIN-SUFFIX,manifest.prod.boltdns.net
-DOMAIN-SUFFIX,marvel.com
 DOMAIN-SUFFIX,marvel10thanniversary.com
 DOMAIN-SUFFIX,marveldimensionofheroes.com
 DOMAIN-SUFFIX,marvelparty.net
@@ -770,7 +780,6 @@ DOMAIN-SUFFIX,netflix.ca
 DOMAIN-SUFFIX,netflix.com
 DOMAIN-SUFFIX,netflix.com.au
 DOMAIN-SUFFIX,netflix.com.edgesuite.net
-DOMAIN-SUFFIX,netflix.net
 DOMAIN-SUFFIX,netflixdnstest0.com
 DOMAIN-SUFFIX,netflixdnstest1.com
 DOMAIN-SUFFIX,netflixdnstest2.com
@@ -781,9 +790,6 @@ DOMAIN-SUFFIX,netflixdnstest6.com
 DOMAIN-SUFFIX,netflixdnstest7.com
 DOMAIN-SUFFIX,netflixdnstest8.com
 DOMAIN-SUFFIX,netflixdnstest9.com
-DOMAIN-SUFFIX,netflixinvestor.com
-DOMAIN-SUFFIX,netflixstudios.com
-DOMAIN-SUFFIX,netflixtechblog.com
 DOMAIN-SUFFIX,nettyinternet.com
 DOMAIN-SUFFIX,newpppp.com
 DOMAIN-SUFFIX,newsnowfox.com
@@ -916,8 +922,6 @@ DOMAIN-SUFFIX,scdn.co
 DOMAIN-SUFFIX,screens-lab.jp
 DOMAIN-SUFFIX,seattlespheres.com
 DOMAIN-SUFFIX,sho.com
-DOMAIN-SUFFIX,shopdisney.com
-DOMAIN-SUFFIX,shops-disney.com
 DOMAIN-SUFFIX,shopspeedtv.com
 DOMAIN-SUFFIX,showtime.com
 DOMAIN-SUFFIX,simg.jp
@@ -1758,7 +1762,6 @@ IP-CIDR,24.220.183.156/31,no-resolve
 IP-CIDR,24.220.183.158/32,no-resolve
 IP-CIDR,24.222.87.162/32,no-resolve
 IP-CIDR,27.0.236.0/22,no-resolve
-IP-CIDR,35.186.224.47/32,no-resolve
 IP-CIDR,37.143.80.10/32,no-resolve
 IP-CIDR,37.143.80.14/32,no-resolve
 IP-CIDR,37.143.80.6/32,no-resolve

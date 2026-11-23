@@ -25,3 +25,25 @@ DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com
 
 # hsprepack.akamaized.net is Akamai CDN — shared, not Disney-specific.
 DOMAIN-SUFFIX,hsprepack.akamaized.net
+
+# Group portal, news, stores, jobs, parks and corporate sites use Global.
+DOMAIN-SUFFIX,abcnews.com
+DOMAIN-SUFFIX,abcnews.edgesuite.net
+DOMAIN-SUFFIX,disneycareers.com
+DOMAIN-SUFFIX,disneycruisebrasil.com
+DOMAIN-SUFFIX,disneylandparis.com
+DOMAIN-SUFFIX,disneystore.com
+DOMAIN-SUFFIX,disneyworld-go.com
+DOMAIN-SUFFIX,go-disneyworldgo.com
+DOMAIN-SUFFIX,marvel.com
+DOMAIN-SUFFIX,shopdisney.com
+DOMAIN-SUFFIX,shops-disney.com
+DOMAIN-SUFFIX,thewaltdisneycompany.com
+DOMAIN-SUFFIX,go.com
+DOMAIN-SUFFIX,abcnews.go.com
+
+# JioHotstar is a separately distributed streaming service.
+DOMAIN-SUFFIX,hotstar-cdn.net
+DOMAIN-SUFFIX,hotstar-labs.com
+DOMAIN-SUFFIX,hotstar.com
+DOMAIN-SUFFIX,hotstarext.com

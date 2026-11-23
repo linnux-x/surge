@@ -5,3 +5,6 @@ DOMAIN-SUFFIX,fast.com
 # https://openconnect.zendesk.com/hc/en-us/articles/360035533071-Network-configuration
 IP-ASN,2906,no-resolve
 IP-ASN,40027,no-resolve
+
+# Keep Netflix service hosts while releasing the investor relations subtree.
+AND,((DOMAIN-SUFFIX,netflix.net),(NOT,((DOMAIN-SUFFIX,ir.netflix.net))))

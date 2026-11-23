@@ -230,3 +230,30 @@ IP-CIDR,99.81.97.56/32,no-resolve
 
 # Shared Akamai CDN edge previously covered by both media rulesets.
 IP-CIDR,23.211.15.0/24,no-resolve
+
+# Investor relations, studios and engineering sites use Global.
+DOMAIN-SUFFIX,netflix.net
+DOMAIN-SUFFIX,ir.netflix.net
+DOMAIN-SUFFIX,netflixinvestor.com
+DOMAIN-SUFFIX,netflixstudios.com
+DOMAIN-SUFFIX,netflixtechblog.com
+
+# Group portal, news, stores, jobs, parks and corporate sites use Global.
+DOMAIN-SUFFIX,abcnews.com
+DOMAIN-SUFFIX,abcnews.edgesuite.net
+DOMAIN-SUFFIX,disneycareers.com
+DOMAIN-SUFFIX,disneycruisebrasil.com
+DOMAIN-SUFFIX,disneylandparis.com
+DOMAIN-SUFFIX,disneystore.com
+DOMAIN-SUFFIX,disneyworld-go.com
+DOMAIN-SUFFIX,go-disneyworldgo.com
+DOMAIN-SUFFIX,marvel.com
+DOMAIN-SUFFIX,shopdisney.com
+DOMAIN-SUFFIX,shops-disney.com
+DOMAIN-SUFFIX,thewaltdisneycompany.com
+DOMAIN-SUFFIX,go.com
+DOMAIN-SUFFIX,abcnews.go.com
+
+# Google Cloud IPs without verified Spotify tenant attribution.
+IP-CIDR,104.154.127.126/32,no-resolve
+IP-CIDR,35.186.224.47/32,no-resolve

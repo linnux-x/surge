@@ -1262,3 +1262,37 @@ chzzk.naver.com,GlobalMedia.list,GlobalMedia,Chzzk 专属直播域名
 54.173.34.141,Global.list,Global,公共 EC2 地址使用通用策略
 54.235.23.242,Global.list,Global,公共 EC2 地址使用通用策略
 54.93.124.31,Global.list,Global,现有通用 AWS CIDR 接管
+ir.netflix.net,Global.list,Global,Netflix 企业站点
+netflixinvestor.com,Global.list,Global,Netflix 企业站点
+netflixstudios.com,Global.list,Global,Netflix 企业站点
+netflixtechblog.com,Global.list,Global,Netflix 企业站点
+feeds.ir.netflix.net,Global.list,Global,Netflix 企业站点
+netflix.net,Netflix.list,Netflix,保留 Netflix 服务域的其余范围
+go.com,Global.list,Global,Disney 集团一般站点
+abcnews.go.com,Global.list,Global,Disney 集团一般站点
+disneyworld.disney.go.com,Global.list,Global,Disney 集团一般站点
+abcnews.com,Global.list,Global,Disney 集团一般站点
+abcnews.edgesuite.net,Global.list,Global,Disney 集团一般站点
+disneycareers.com,Global.list,Global,Disney 集团一般站点
+disneycruisebrasil.com,Global.list,Global,Disney 集团一般站点
+disneylandparis.com,Global.list,Global,Disney 集团一般站点
+disneystore.com,Global.list,Global,Disney 集团一般站点
+disneyworld-go.com,Global.list,Global,Disney 集团一般站点
+go-disneyworldgo.com,Global.list,Global,Disney 集团一般站点
+marvel.com,Global.list,Global,Disney 集团一般站点
+shopdisney.com,Global.list,Global,Disney 集团一般站点
+shops-disney.com,Global.list,Global,Disney 集团一般站点
+thewaltdisneycompany.com,Global.list,Global,Disney 集团一般站点
+abc.go.com,Disney.list,Disney,go.com 下单独保留的媒体与认证端点
+espn.go.com,Disney.list,Disney,go.com 下单独保留的媒体与认证端点
+registerdisney.go.com,Disney.list,Disney,go.com 下单独保留的媒体与认证端点
+my.disney.com,Disney.list,Disney,Disney+ 登录与分发
+bamgrid.com,Disney.list,Disney,Disney+ 登录与分发
+dssott.com,Disney.list,Disney,Disney+ 登录与分发
+hotstar-cdn.net,GlobalMedia.list,GlobalMedia,JioHotstar 多地区流媒体
+hotstar-labs.com,GlobalMedia.list,GlobalMedia,JioHotstar 多地区流媒体
+hotstar.com,GlobalMedia.list,GlobalMedia,JioHotstar 多地区流媒体
+hotstarext.com,GlobalMedia.list,GlobalMedia,JioHotstar 多地区流媒体
+104.154.127.126,Global.list,Global,Google Cloud 裸 IP 使用通用策略
+35.186.224.47,Global.list,Global,Google Cloud 裸 IP 使用通用策略
+spotify.link,Spotify.list,Spotify,Spotify 官方分享短链

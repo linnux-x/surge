@@ -1,0 +1,5 @@
+
+# Preserve legacy ABC, ESPN and Disney identity endpoints after narrowing go.com.
+DOMAIN-SUFFIX,abc.go.com
+DOMAIN-SUFFIX,espn.go.com
+DOMAIN-SUFFIX,registerdisney.go.com

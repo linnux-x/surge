@@ -1,9 +1,9 @@
 # NAME: Netflix
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-22 17:37:11 +0800
+# UPDATED: 2026-11-23 09:17:11 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 31
+# TOTAL: 28
 
 # ======= Manual Rules ========
 # FAST.com uses the same Netflix Open Connect CDN as streaming.
@@ -14,6 +14,9 @@ DOMAIN-SUFFIX,fast.com
 IP-ASN,2906,no-resolve
 IP-ASN,40027,no-resolve
 
+# Keep Netflix service hosts while releasing the investor relations subtree.
+AND,((DOMAIN-SUFFIX,netflix.net),(NOT,((DOMAIN-SUFFIX,ir.netflix.net))))
+
 # ======= blackmatrix7 Netflix ========
 DOMAIN,h-netflix.online-metrix.net
 DOMAIN-SUFFIX,flxvpn.net
@@ -21,7 +24,6 @@ DOMAIN-SUFFIX,netflix.ca
 DOMAIN-SUFFIX,netflix.com
 DOMAIN-SUFFIX,netflix.com.au
 DOMAIN-SUFFIX,netflix.com.edgesuite.net
-DOMAIN-SUFFIX,netflix.net
 DOMAIN-SUFFIX,netflixdnstest0.com
 DOMAIN-SUFFIX,netflixdnstest1.com
 DOMAIN-SUFFIX,netflixdnstest10.com
@@ -33,9 +35,6 @@ DOMAIN-SUFFIX,netflixdnstest6.com
 DOMAIN-SUFFIX,netflixdnstest7.com
 DOMAIN-SUFFIX,netflixdnstest8.com
 DOMAIN-SUFFIX,netflixdnstest9.com
-DOMAIN-SUFFIX,netflixinvestor.com
-DOMAIN-SUFFIX,netflixstudios.com
-DOMAIN-SUFFIX,netflixtechblog.com
 DOMAIN-SUFFIX,nflxext.com
 DOMAIN-SUFFIX,nflximg.com
 DOMAIN-SUFFIX,nflximg.net

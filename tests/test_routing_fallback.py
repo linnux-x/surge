@@ -92,7 +92,7 @@ class FallbackOrderTests(unittest.TestCase):
         module = load_routing_module()
         order = [entry for entry in module.load_routing_order() if entry[0] != "Spotify.list"]
         rulesets = {path.name: module.load_ruleset(path) for path in module.RULE_DIR.glob("*.list")}
-        for hostname in ("open.spotify.com", "api.spotify.com", "audio-ak-spotify-com.akamaized.net"):
+        for hostname in ("open.spotify.com", "api.spotify.com", "spotify.link", "audio-ak-spotify-com.akamaized.net"):
             with self.subTest(hostname=hostname):
                 self.assertEqual(module.simulate_routing(hostname, order, rulesets),
                                  "GlobalMedia.list→GlobalMedia")
@@ -118,6 +118,18 @@ class FallbackOrderTests(unittest.TestCase):
         for name, patterns in removed.items():
             with self.subTest(name=name):
                 self.assertFalse(patterns & module.load_ruleset(module.RULE_DIR / name))
+
+    def test_general_sites_stay_out_of_media_fallback(self):
+        module = load_routing_module()
+        dedicated = {"Disney.list", "Netflix.list", "Spotify.list"}
+        order = [entry for entry in module.load_routing_order() if entry[0] not in dedicated]
+        rulesets = {path.name: module.load_ruleset(path) for path in module.RULE_DIR.glob("*.list")}
+        for hostname in ("feeds.ir.netflix.net", "abcnews.go.com", "disneystore.com", "35.186.224.47"):
+            with self.subTest(hostname=hostname):
+                self.assertEqual(module.simulate_routing(hostname, order, rulesets), "Global.list→Global")
+        for hostname in ("netflix.net", "my.disney.com", "registerdisney.go.com", "hotstar.com"):
+            with self.subTest(hostname=hostname):
+                self.assertEqual(module.simulate_routing(hostname, order, rulesets), "GlobalMedia.list→GlobalMedia")
 
 
 if __name__ == "__main__":
