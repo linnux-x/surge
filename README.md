@@ -57,6 +57,7 @@ https://raw.githubusercontent.com/linnux-x/surge/main/Conf/Linnux.conf
 | 🍎 Apple_AI.list | 1 源 | Apple Intelligence、Siri 与 Private Relay |
 | 🍎 Apple_CN.list | 2 源 | Apple 中国区 CDN 直连 |
 | 🍎 AppleMedia.list | 手工维护 | Apple TV 播放与 Apple News 专属端点 |
+| 💰 Binance.list | 手工维护 | Binance Global 官网、交易 API、行情和静态资源，可单独启用 |
 | 📦 CDN.list | SukkaW | CDN、静态资源、下载资源 |
 | 🏠 China.list | 3 源 | 中国大陆直连域名（domain-only） |
 | 🌐 China_IP.list | 1 源 | 中国大陆 IP 回退（不加 no-resolve） |
@@ -86,6 +87,12 @@ https://raw.githubusercontent.com/linnux-x/surge/main/Conf/Linnux.conf
 | ▶️ YouTube.list | blackmatrix7 | YouTube 与 YouTube Music |
 
 多数规则集另有 `Rule/Manual/<名称>.txt` 追加与 `<名称>.exclude.txt` 排除，Manual 优先于上游，见 [Rule/Manual/README.md](Rule/Manual/README.md)。
+
+`Binance.list` 可通过 `Conf/Linnux.conf` 中标注的位置启用。在自定义配置中，将以下条目放在 `Global.list` 之前，并将 `Binance` 定义为手选策略组。
+
+```ini
+RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/Binance.list,Binance,extended-matching
+```
 
 ## 测速来源与覆盖
 

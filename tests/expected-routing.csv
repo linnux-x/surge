@@ -1296,3 +1296,13 @@ hotstarext.com,GlobalMedia.list,GlobalMedia,JioHotstar 多地区流媒体
 104.154.127.126,Global.list,Global,Google Cloud 裸 IP 使用通用策略
 35.186.224.47,Global.list,Global,Google Cloud 裸 IP 使用通用策略
 spotify.link,Spotify.list,Spotify,Spotify 官方分享短链
+www.binance.com,Global.list,Global,Binance 未启用时的官网分流
+accounts.binance.com,Global.list,Global,Binance 未启用时的登录分流
+api.binance.com,Global.list,Global,Binance 未启用时的交易 API 分流
+stream.binance.com,Global.list,Global,Binance 未启用时的行情分流
+ws-api.binance.com,Global.list,Global,Binance 未启用时的 WebSocket API 分流
+data-api.binance.vision,Global.list,Global,Binance 未启用时的公共数据分流
+data-stream.binance.vision,Global.list,Global,Binance 未启用时的公共行情分流
+bin.bnbstatic.com,FINAL,Global,Binance 未启用时的静态资源分流
+public.bnbstatic.com,FINAL,Global,Binance 未启用时的静态资源分流
+www.binance.us,Global.list,Global,Binance.US 继续走现有通用策略

@@ -1,0 +1,16 @@
+# NAME: Binance
+# AUTHOR: linnux-x
+# REPO: https://github.com/linnux-x/surge
+# UPDATED: 2026-11-23 09:31:23 +0800
+# FORMAT: Surge Ruleset
+# TOTAL: 4
+
+# ======= Manual Rules ========
+# Binance Global website, account, trading API and public market data.
+# https://developers.binance.com/en/docs/products/spot/rest-api
+DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binance.vision
+
+# Binance static assets and documents on the verified hosts.
+DOMAIN,bin.bnbstatic.com
+DOMAIN,public.bnbstatic.com
