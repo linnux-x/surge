@@ -65,11 +65,13 @@ class FallbackOrderTests(unittest.TestCase):
         rulesets = {path.name: module.load_ruleset(path) for path in module.RULE_DIR.glob("*.list")}
         for hostname in ("www.binance.com", "accounts.binance.com", "api.binance.com",
                          "stream.binance.com", "ws-api.binance.com", "data-api.binance.vision",
-                         "data-stream.binance.vision", "bin.bnbstatic.com", "public.bnbstatic.com"):
+                         "data-stream.binance.vision", "bin.bnbstatic.com", "public.bnbstatic.com",
+                         "bpay.binanceapi.com"):
             with self.subTest(hostname=hostname):
                 self.assertEqual(module.simulate_routing(hostname, order, rulesets), "Binance.list→Binance")
         for hostname, expected in (
             ("www.binance.us", "Global.list→Global"),
+            ("api.binanceapi.com", "Global.list→Global"),
             ("www.bnbchain.org", "Global.list→Global"),
             ("other.bnbstatic.com", "FINAL→Global"),
             ("binance.com.example", "FINAL→Global"),

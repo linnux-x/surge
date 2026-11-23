@@ -47,3 +47,14 @@ DOMAIN-SUFFIX,hotstar-cdn.net
 DOMAIN-SUFFIX,hotstar-labs.com
 DOMAIN-SUFFIX,hotstar.com
 DOMAIN-SUFFIX,hotstarext.com
+
+# Disney advertising, recruiting, legal, ticketing, travel and retail are general websites.
+DOMAIN-SUFFIX,adventuresbydisney.com
+DOMAIN-SUFFIX,disneyadsales.com
+DOMAIN-SUFFIX,disneyaulani.com
+DOMAIN-SUFFIX,disneyiejobs.com
+DOMAIN-SUFFIX,disneyprivacycenter.com
+DOMAIN-SUFFIX,disneytermsofuse.com
+DOMAIN-SUFFIX,disneytickets.co.uk
+DOMAIN-SUFFIX,disneytvajobs.com
+DOMAIN-SUFFIX,natgeomaps.com

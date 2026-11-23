@@ -249,10 +249,10 @@ weixingshangye.com,China.list,DIRECT,中国备案商业网站直连
 appinn.me,China.list,DIRECT,小众软件官方论坛直连
 po0.io,China.list,DIRECT,用户确认的 po0 根域直连
 console.po0.io,China.list,DIRECT,用户确认的 po0 子域直连
-api.223789.example,China.list,DIRECT,用户确认的 223789 关键词直连
+api.223789.example,FINAL,Global,无关域名不能仅凭数字子串直连
 emby.xiaov8.com,China.list,DIRECT,用户确认的 Emby 根域直连
 media.emby.xiaov8.com,China.list,DIRECT,用户确认的 Emby 子域直连
-media023168.example,GlobalMedia.list,GlobalMedia,用户确认的 023168 关键词媒体策略
+media023168.example,FINAL,Global,无关域名不能仅凭数字子串进入媒体策略
 gsp64-ssl.ls.apple.com,Apple.list,Apple,定位服务遥测
 colocity.speedtest.gslnetworks.com,Speedtest.list,Speedtest,Sukka 官方数据中的境外测速节点
 node-124-160-78-98.speedtest.cn,Speedtest_China.list,DIRECT,spiritLHLS 明确大陆省份的测速节点
@@ -1306,3 +1306,34 @@ data-stream.binance.vision,Global.list,Global,Binance 未启用时的公共行�
 bin.bnbstatic.com,FINAL,Global,Binance 未启用时的静态资源分流
 public.bnbstatic.com,FINAL,Global,Binance 未启用时的静态资源分流
 www.binance.us,Global.list,Global,Binance.US 继续走现有通用策略
+108.177.8.1,Google.list,Google,Google 公布的网段由 Google 接管
+108.177.11.1,Google.list,Google,Google 公布的网段由 Google 接管
+108.177.16.1,FINAL,Global,旁邻网段不扩大到 Google
+bpay.binanceapi.com,Global.list,Global,Binance 关闭时保留原通用分流
+api.binanceapi.com,Global.list,Global,Binance 关闭时保留原通用分流
+ameba.jp,Global.list,Global,Ameba 博客帮助和一般服务
+ameblo.jp,Global.list,Global,Ameba 博客帮助和一般服务
+amebame.com,Global.list,Global,Ameba 博客帮助和一般服务
+dokusho-ojikan.jp,Global.list,Global,Ameba 博客帮助和一般服务
+staff.ameblo.jp,Global.list,Global,Ameba 博客帮助和一般服务
+helps.ameba.jp,Global.list,Global,Ameba 博客帮助和一般服务
+abema.io,JPMedia.list,JPMedia,Abema 播放继续走日本媒体
+uplynk.com,GlobalMedia.list,GlobalMedia,共享视频平台按媒体通用分流
+theplatform.com,GlobalMedia.list,GlobalMedia,共享视频平台按媒体通用分流
+content.uplynk.com,GlobalMedia.list,GlobalMedia,共享视频平台按媒体通用分流
+link.theplatform.com,GlobalMedia.list,GlobalMedia,共享视频平台按媒体通用分流
+adventuresbydisney.com,Global.list,Global,企业或非播放业务网站
+disneyadsales.com,Global.list,Global,企业或非播放业务网站
+disneyaulani.com,Global.list,Global,企业或非播放业务网站
+disneyiejobs.com,Global.list,Global,企业或非播放业务网站
+disneyprivacycenter.com,Global.list,Global,企业或非播放业务网站
+disneytermsofuse.com,Global.list,Global,企业或非播放业务网站
+disneytickets.co.uk,Global.list,Global,企业或非播放业务网站
+disneytvajobs.com,Global.list,Global,企业或非播放业务网站
+natgeomaps.com,Global.list,Global,企业或非播放业务网站
+aboutamazon.com,Global.list,Global,企业或非播放业务网站
+https://www.amazon.com/gp/video/storefront,Global.list,Global,共享商城路径按主机分流
+www.primevideo.com,GlobalMedia.list,GlobalMedia,Prime Video 专属服务主机
+atv-ps.amazon.com,GlobalMedia.list,GlobalMedia,Prime Video 专属服务主机
+223789.xyz,China.list,DIRECT,已确认的 223789 服务域名继续直连
+service.223789.xyz,China.list,DIRECT,已确认的 223789 服务域名继续直连

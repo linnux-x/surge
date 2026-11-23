@@ -38,7 +38,7 @@ DOMAIN-SUFFIX,appinn.me
 DOMAIN-SUFFIX,po0.io
 
 # User-confirmed China service routing.
-DOMAIN-KEYWORD,223789
+DOMAIN-SUFFIX,223789.xyz
 DOMAIN-SUFFIX,emby.xiaov8.com
 
 # PayPal China domestic services (安付通/贝宝) — excluded from PayPal proxy to China/DIRECT.

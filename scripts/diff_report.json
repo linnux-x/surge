@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-23T09:31:24.022783",
-  "total_added": 4,
-  "total_removed": 0,
+  "generated_at": "2026-11-23T10:13:55.252506",
+  "total_added": 17,
+  "total_removed": 32,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -72,31 +72,16 @@
     },
     {
       "file": "Binance.list",
-      "prev_total": 0,
-      "curr_total": 4,
-      "added_count": 4,
+      "prev_total": 4,
+      "curr_total": 5,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [
         {
-          "id": "45c1e5f5a351",
+          "id": "3fc32e9101b0",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,binance.com"
-        },
-        {
-          "id": "5cab93ab6479",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,bin.bnbstatic.com"
-        },
-        {
-          "id": "90333197d256",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,binance.vision"
-        },
-        {
-          "id": "f03c6f89cf3c",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,public.bnbstatic.com"
+          "rule": "DOMAIN,bpay.binanceapi.com"
         }
       ],
       "removed_sample": [],
@@ -117,11 +102,23 @@
       "file": "China.list",
       "prev_total": 110661,
       "curr_total": 110661,
-      "added_count": 0,
-      "removed_count": 0,
+      "added_count": 1,
+      "removed_count": 1,
       "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
+      "added_sample": [
+        {
+          "id": "da3020d97154",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,223789.xyz"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "914c64de3e00",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-KEYWORD,223789"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -160,12 +157,58 @@
     {
       "file": "Disney.list",
       "prev_total": 151,
-      "curr_total": 151,
+      "curr_total": 142,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 9,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "0b1888a69cb7",
+          "source": "blackmatrix7 Disney",
+          "rule": "DOMAIN-SUFFIX,disneytermsofuse.com"
+        },
+        {
+          "id": "16b0add3e301",
+          "source": "blackmatrix7 Disney",
+          "rule": "DOMAIN-SUFFIX,disneyiejobs.com"
+        },
+        {
+          "id": "2ee95d576c87",
+          "source": "blackmatrix7 Disney",
+          "rule": "DOMAIN-SUFFIX,disneyprivacycenter.com"
+        },
+        {
+          "id": "4616a58c8504",
+          "source": "blackmatrix7 Disney",
+          "rule": "DOMAIN-SUFFIX,disneyaulani.com"
+        },
+        {
+          "id": "4b35db4e200f",
+          "source": "blackmatrix7 Disney",
+          "rule": "DOMAIN-SUFFIX,disneyadsales.com"
+        },
+        {
+          "id": "95faee2bd95f",
+          "source": "blackmatrix7 Disney",
+          "rule": "DOMAIN-SUFFIX,disneytickets.co.uk"
+        },
+        {
+          "id": "a8c430f84ae9",
+          "source": "blackmatrix7 Disney",
+          "rule": "DOMAIN-SUFFIX,disneytvajobs.com"
+        },
+        {
+          "id": "c25eec2e0599",
+          "source": "blackmatrix7 Disney",
+          "rule": "DOMAIN-SUFFIX,adventuresbydisney.com"
+        },
+        {
+          "id": "f92d06a553bf",
+          "source": "blackmatrix7 Disney",
+          "rule": "DOMAIN-SUFFIX,natgeomaps.com"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -193,33 +236,186 @@
     {
       "file": "Global.list",
       "prev_total": 24666,
-      "curr_total": 24666,
-      "added_count": 0,
+      "curr_total": 24680,
+      "added_count": 14,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "0b1888a69cb7",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,disneytermsofuse.com"
+        },
+        {
+          "id": "16b0add3e301",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,disneyiejobs.com"
+        },
+        {
+          "id": "2ee95d576c87",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,disneyprivacycenter.com"
+        },
+        {
+          "id": "3d790edffb68",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,aboutamazon.com"
+        },
+        {
+          "id": "4616a58c8504",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,disneyaulani.com"
+        },
+        {
+          "id": "4b35db4e200f",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,disneyadsales.com"
+        },
+        {
+          "id": "95faee2bd95f",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,disneytickets.co.uk"
+        },
+        {
+          "id": "a5a7cb0036a7",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,amebame.com"
+        },
+        {
+          "id": "a8c430f84ae9",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,disneytvajobs.com"
+        },
+        {
+          "id": "c25eec2e0599",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,adventuresbydisney.com"
+        },
+        {
+          "id": "c320245b083c",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,dokusho-ojikan.jp"
+        },
+        {
+          "id": "eaf7d709883e",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,ameblo.jp"
+        },
+        {
+          "id": "f92d06a553bf",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,natgeomaps.com"
+        },
+        {
+          "id": "fd491b97deef",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,ameba.jp"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "GlobalMedia.list",
       "prev_total": 2153,
-      "curr_total": 2153,
+      "curr_total": 2138,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 15,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "16b0add3e301",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "DOMAIN-SUFFIX,disneyiejobs.com"
+        },
+        {
+          "id": "3d790edffb68",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "DOMAIN-SUFFIX,aboutamazon.com"
+        },
+        {
+          "id": "4616a58c8504",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "DOMAIN-SUFFIX,disneyaulani.com"
+        },
+        {
+          "id": "4b35db4e200f",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "DOMAIN-SUFFIX,disneyadsales.com"
+        },
+        {
+          "id": "533741016741",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "URL-REGEX,^https?:\\/\\/www\\.amazon\\.com\\/(Amazon-Video|gp\\/video)\\/"
+        },
+        {
+          "id": "95faee2bd95f",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "DOMAIN-SUFFIX,disneytickets.co.uk"
+        },
+        {
+          "id": "a5a7cb0036a7",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "DOMAIN-SUFFIX,amebame.com"
+        },
+        {
+          "id": "a8c430f84ae9",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "DOMAIN-SUFFIX,disneytvajobs.com"
+        },
+        {
+          "id": "c25eec2e0599",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "DOMAIN-SUFFIX,adventuresbydisney.com"
+        },
+        {
+          "id": "c320245b083c",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "DOMAIN-SUFFIX,dokusho-ojikan.jp"
+        },
+        {
+          "id": "e3e69d38a1c3",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-KEYWORD,023168"
+        },
+        {
+          "id": "eaf7d709883e",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "DOMAIN-SUFFIX,ameblo.jp"
+        },
+        {
+          "id": "f59249b2f580",
+          "source": "SukkaW Stream",
+          "rule": "PROCESS-NAME,music"
+        },
+        {
+          "id": "f92d06a553bf",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "DOMAIN-SUFFIX,natgeomaps.com"
+        },
+        {
+          "id": "fd491b97deef",
+          "source": "blackmatrix7 GlobalMedia",
+          "rule": "DOMAIN-SUFFIX,ameba.jp"
+        }
+      ],
       "source_changed_sample": []
     },
     {
       "file": "Google.list",
       "prev_total": 684,
-      "curr_total": 684,
-      "added_count": 0,
+      "curr_total": 685,
+      "added_count": 1,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [],
+      "added_sample": [
+        {
+          "id": "6dad89470664",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,108.177.8.0/21,no-resolve"
+        }
+      ],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -248,12 +444,33 @@
     {
       "file": "JPMedia.list",
       "prev_total": 25,
-      "curr_total": 25,
+      "curr_total": 21,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 4,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "a5a7cb0036a7",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,amebame.com"
+        },
+        {
+          "id": "c320245b083c",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,dokusho-ojikan.jp"
+        },
+        {
+          "id": "eaf7d709883e",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,ameblo.jp"
+        },
+        {
+          "id": "fd491b97deef",
+          "source": "SukkaW Stream JP",
+          "rule": "DOMAIN-SUFFIX,ameba.jp"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -303,12 +520,18 @@
     {
       "file": "SocialMedia.list",
       "prev_total": 663,
-      "curr_total": 663,
+      "curr_total": 662,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 1,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "6dad89470664",
+          "source": "blackmatrix7 Facebook",
+          "rule": "IP-CIDR,108.177.8.0/21,no-resolve"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -380,12 +603,23 @@
     {
       "file": "USMedia.list",
       "prev_total": 35,
-      "curr_total": 35,
+      "curr_total": 33,
       "added_count": 0,
-      "removed_count": 0,
+      "removed_count": 2,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [],
+      "removed_sample": [
+        {
+          "id": "02aa3604bb50",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,uplynk.com"
+        },
+        {
+          "id": "c31dce063d32",
+          "source": "SukkaW Stream US",
+          "rule": "DOMAIN-SUFFIX,theplatform.com"
+        }
+      ],
       "source_changed_sample": []
     },
     {

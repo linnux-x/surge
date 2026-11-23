@@ -14,7 +14,6 @@ DOMAIN-SUFFIX,giphy.com
 
 # Media service observed in sustained real FINAL traffic
 DOMAIN-SUFFIX,023168.xyz
-DOMAIN-KEYWORD,023168
 
 # Spotify when the dedicated set is disabled, including Spotify-labelled Akamai audio hosts.
 DOMAIN-SUFFIX,spotify.com

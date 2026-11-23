@@ -1,9 +1,9 @@
 # NAME: Google
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-22 16:41:52 +0800
+# UPDATED: 2026-11-23 10:13:55 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 684
+# TOTAL: 685
 
 # ======= Manual Rules ========
 DOMAIN-SUFFIX,gvt1.com
@@ -33,6 +33,9 @@ IP-CIDR,142.250.82.0/24,no-resolve
 IP-CIDR6,2001:4860:4864:4:8000::/128,no-resolve
 IP-CIDR6,2001:4860:4864:5::/64,no-resolve
 IP-CIDR6,2001:4860:4864:6::/64,no-resolve
+
+# Google network verified against Google's published address ranges.
+IP-CIDR,108.177.8.0/21,no-resolve
 
 # ======= blackmatrix7 Google ========
 DOMAIN,voice.telephony.goog

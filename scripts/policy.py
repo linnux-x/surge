@@ -31,7 +31,7 @@ HOST_SCOPED_RULESETS = frozenset({
     "Netflix.list", "Disney.list", "HKMedia.list", "TWMedia.list", "JPMedia.list",
     "USMedia.list", "ChinaMedia.list", "Spotify.list", "GlobalMedia.list", "Global.list", "China.list",
 })
-REVIEWED_HOST_KEYWORDS = {"GlobalMedia.list": "023168", "Global.list": "porn", "China.list": "223789"}
+REVIEWED_HOST_KEYWORDS = {"Global.list": "porn"}
 NETFLIX_OPEN_CONNECT_ASNS = frozenset({"2906", "40027"})
 MULTISERVICE_MEDIA_PARENTS = frozenset({
     "daum.net", "daumkakao.io", "hinet.net", "kakao.co.kr", "kakao.com", "kakaocorp.com", "naver.com",

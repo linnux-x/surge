@@ -113,8 +113,8 @@ class SourceTransformTests(unittest.TestCase):
                 self.assertEqual(len(validate_rule_file(unscoped, target)), len(unscoped))
 
     def test_china_requires_a_destination_for_direct_routing(self):
-        unscoped = ['USER-AGENT,TeslaMap', 'USER-AGENT,%E4%BC%98%E9%85%B7*']
-        scoped = ['DOMAIN-KEYWORD,223789', 'DOMAIN-SUFFIX,taobao.com']
+        unscoped = ['USER-AGENT,TeslaMap', 'USER-AGENT,%E4%BC%98%E9%85%B7*', 'DOMAIN-KEYWORD,223789']
+        scoped = ['DOMAIN-SUFFIX,223789.xyz', 'DOMAIN-SUFFIX,taobao.com']
         self.assertEqual(apply_project_guardrails('China.list', unscoped + scoped), scoped)
         self.assertEqual(len(validate_rule_file(unscoped, 'China.list')), len(unscoped))
 

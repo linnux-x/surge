@@ -1,7 +1,7 @@
 # NAME: China
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-23 08:25:29 +0800
+# UPDATED: 2026-11-23 10:13:54 +0800
 # FORMAT: Surge Ruleset
 # TOTAL: 110661
 
@@ -26,7 +26,7 @@ DOMAIN-SUFFIX,appinn.me
 DOMAIN-SUFFIX,po0.io
 
 # User-confirmed China service routing.
-DOMAIN-KEYWORD,223789
+DOMAIN-SUFFIX,223789.xyz
 DOMAIN-SUFFIX,emby.xiaov8.com
 
 # PayPal China domestic services (安付通/贝宝) — excluded from PayPal proxy to China/DIRECT.

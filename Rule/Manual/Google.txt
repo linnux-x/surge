@@ -26,3 +26,6 @@ IP-CIDR,142.250.82.0/24,no-resolve
 IP-CIDR6,2001:4860:4864:4:8000::/128,no-resolve
 IP-CIDR6,2001:4860:4864:5::/64,no-resolve
 IP-CIDR6,2001:4860:4864:6::/64,no-resolve
+
+# Google network verified against Google's published address ranges.
+IP-CIDR,108.177.8.0/21,no-resolve

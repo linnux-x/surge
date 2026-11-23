@@ -1,9 +1,9 @@
 # NAME: Global
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-23 09:17:11 +0800
+# UPDATED: 2026-11-23 10:13:54 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 24666
+# TOTAL: 24680
 
 # ======= Manual Rules ========
 # VPS providers and hosting recommendations requiring proxy access
@@ -182,6 +182,24 @@ DOMAIN-SUFFIX,go.com
 # Standalone Google Cloud addresses previously associated with Spotify.
 IP-CIDR,104.154.127.126/32,no-resolve
 IP-CIDR,35.186.224.47/32,no-resolve
+
+# Ameba general services; Abema playback is handled earlier.
+DOMAIN-SUFFIX,ameba.jp
+DOMAIN-SUFFIX,ameblo.jp
+DOMAIN-SUFFIX,amebame.com
+DOMAIN-SUFFIX,dokusho-ojikan.jp
+
+# Disney and Amazon general websites.
+DOMAIN-SUFFIX,adventuresbydisney.com
+DOMAIN-SUFFIX,disneyadsales.com
+DOMAIN-SUFFIX,disneyaulani.com
+DOMAIN-SUFFIX,disneyiejobs.com
+DOMAIN-SUFFIX,disneyprivacycenter.com
+DOMAIN-SUFFIX,disneytermsofuse.com
+DOMAIN-SUFFIX,disneytickets.co.uk
+DOMAIN-SUFFIX,disneytvajobs.com
+DOMAIN-SUFFIX,natgeomaps.com
+DOMAIN-SUFFIX,aboutamazon.com
 
 # ======= blackmatrix7 Global ========
 DOMAIN,1password.drift.click

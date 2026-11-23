@@ -257,3 +257,29 @@ DOMAIN-SUFFIX,abcnews.go.com
 # Google Cloud IPs without verified Spotify tenant attribution.
 IP-CIDR,104.154.127.126/32,no-resolve
 IP-CIDR,35.186.224.47/32,no-resolve
+
+# Ameba blogging, portal and manga sites use general routing.
+DOMAIN-SUFFIX,ameba.jp
+DOMAIN-SUFFIX,ameblo.jp
+DOMAIN-SUFFIX,amebame.com
+DOMAIN-SUFFIX,dokusho-ojikan.jp
+
+# Disney advertising, recruiting, legal, ticketing, travel and retail are general websites.
+DOMAIN-SUFFIX,adventuresbydisney.com
+DOMAIN-SUFFIX,disneyadsales.com
+DOMAIN-SUFFIX,disneyaulani.com
+DOMAIN-SUFFIX,disneyiejobs.com
+DOMAIN-SUFFIX,disneyprivacycenter.com
+DOMAIN-SUFFIX,disneytermsofuse.com
+DOMAIN-SUFFIX,disneytickets.co.uk
+DOMAIN-SUFFIX,disneytvajobs.com
+DOMAIN-SUFFIX,natgeomaps.com
+
+# Amazon corporate newsroom.
+DOMAIN-SUFFIX,aboutamazon.com
+
+# Use Prime Video service hosts without requiring URL visibility on the shared store.
+URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/
+
+# A generic process basename can capture unrelated traffic.
+PROCESS-NAME,music

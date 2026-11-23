@@ -6,3 +6,6 @@ DOMAIN-SUFFIX,binance.vision
 # Binance static assets and documents on the verified hosts.
 DOMAIN,bin.bnbstatic.com
 DOMAIN,public.bnbstatic.com
+
+# Binance Pay Merchant API (developers.binance.com/en/docs/products/binance-pay-merchant/api-common).
+DOMAIN,bpay.binanceapi.com
