@@ -227,3 +227,6 @@ DOMAIN,e13252.dscg.akamaiedge.net
 IP-CIDR,1.201.0.0/24,no-resolve
 IP-CIDR,52.211.1.180/32,no-resolve
 IP-CIDR,99.81.97.56/32,no-resolve
+
+# Shared Akamai CDN edge previously covered by both media rulesets.
+IP-CIDR,23.211.15.0/24,no-resolve

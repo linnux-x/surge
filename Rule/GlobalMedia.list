@@ -1,9 +1,9 @@
 # NAME: GlobalMedia
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-22 17:37:11 +0800
+# UPDATED: 2026-11-23 08:25:29 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 2162
+# TOTAL: 2158
 
 # ======= Manual Rules ========
 # Keep the FAST.com front end, API and data on the same policy where Netflix.list is disabled.
@@ -37,6 +37,11 @@ DOMAIN-SUFFIX,abematv.akamaized.net
 # Netflix Open Connect when the dedicated set is disabled.
 IP-ASN,2906,no-resolve
 IP-ASN,40027,no-resolve
+
+# Video services under shared Korean portals.
+DOMAIN-SUFFIX,tv.kakao.com
+DOMAIN-SUFFIX,tv.naver.com
+DOMAIN-SUFFIX,chzzk.naver.com
 
 # ======= blackmatrix7 GlobalMedia ========
 DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
@@ -202,9 +207,7 @@ DOMAIN-SUFFIX,dai.ly
 DOMAIN-SUFFIX,dailymotion.com
 DOMAIN-SUFFIX,dandalinvoa.com
 DOMAIN-SUFFIX,darivoa.com
-DOMAIN-SUFFIX,daum.net
 DOMAIN-SUFFIX,daumcdn.net
-DOMAIN-SUFFIX,daumkakao.io
 DOMAIN-SUFFIX,daumpotplayer.com
 DOMAIN-SUFFIX,dazn-api.com
 DOMAIN-SUFFIX,dazn.com
@@ -668,9 +671,6 @@ DOMAIN-SUFFIX,joinmaidez.com
 DOMAIN-SUFFIX,joox.com
 DOMAIN-SUFFIX,jtvnw.net
 DOMAIN-SUFFIX,jwplayer.com
-DOMAIN-SUFFIX,kakao.co.kr
-DOMAIN-SUFFIX,kakao.com
-DOMAIN-SUFFIX,kakaocorp.com
 DOMAIN-SUFFIX,kalhlspd-a.akamaihd.net
 DOMAIN-SUFFIX,kfs.io
 DOMAIN-SUFFIX,kicu.tv
@@ -754,7 +754,6 @@ DOMAIN-SUFFIX,mytvsuperlimited.sc.omtrdc.net
 DOMAIN-SUFFIX,natgeomaps.com
 DOMAIN-SUFFIX,nationalgeographic.com
 DOMAIN-SUFFIX,nationalgeographicpartners.com
-DOMAIN-SUFFIX,naver.com
 DOMAIN-SUFFIX,nbc-sports.go-vip.net
 DOMAIN-SUFFIX,nbc.co
 DOMAIN-SUFFIX,nbc.com
@@ -1722,7 +1721,6 @@ IP-CIDR,216.70.1.54/32,no-resolve
 IP-CIDR,216.73.80.0/20,no-resolve
 IP-CIDR,23.200.145.146/32,no-resolve
 IP-CIDR,23.210.215.186/32,no-resolve
-IP-CIDR,23.211.15.0/24,no-resolve
 IP-CIDR,23.219.172.0/24,no-resolve
 IP-CIDR,23.228.129.239/32,no-resolve
 IP-CIDR,23.228.129.247/32,no-resolve

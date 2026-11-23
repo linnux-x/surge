@@ -153,6 +153,11 @@ DOMAIN-SUFFIX,jina.ai
 DOMAIN-SUFFIX,muse.ai
 DOMAIN-SUFFIX,metaaivm.com
 
+# Official Meta AI product pages, Muse Code installer and Model API.
+# https://ai.meta.com/muse/ and https://dev.meta.ai/docs/overview
+DOMAIN,ai.meta.com
+DOMAIN-SUFFIX,meta.ai
+
 # Bound Google Labs to its own domain and subdomains.
 DOMAIN-SUFFIX,labs.google
 

@@ -1,19 +1,31 @@
 {
-  "generated_at": "2026-11-22T17:38:02.407027",
-  "total_added": 31,
-  "total_removed": 1224,
-  "total_source_changed": 0,
+  "generated_at": "2026-11-23T08:25:29.993094",
+  "total_added": 17,
+  "total_removed": 19,
+  "total_source_changed": 1,
   "diffs": [
     {
       "file": "AI.list",
       "prev_total": 561,
-      "curr_total": 561,
-      "added_count": 0,
+      "curr_total": 562,
+      "added_count": 1,
       "removed_count": 0,
-      "source_changed_count": 0,
-      "added_sample": [],
+      "source_changed_count": 1,
+      "added_sample": [
+        {
+          "id": "3f22cbdc0d9c",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,ai.meta.com"
+        }
+      ],
       "removed_sample": [],
-      "source_changed_sample": []
+      "source_changed_sample": [
+        {
+          "id": "4dad2df0bf10",
+          "old_source": "SukkaW AI",
+          "new_source": "Manual Rules"
+        }
+      ]
     },
     {
       "file": "AdBlock.list",
@@ -72,35 +84,8 @@
     },
     {
       "file": "CDN.list",
-      "prev_total": 32,
+      "prev_total": 35,
       "curr_total": 35,
-      "added_count": 3,
-      "removed_count": 0,
-      "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "1b3cdb534a65",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,js-agent.newrelic.com"
-        },
-        {
-          "id": "33cd4b1bc6dc",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,cdn.statically.io"
-        },
-        {
-          "id": "9481e80817e6",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,cdn.cookielaw.org"
-        }
-      ],
-      "removed_sample": [],
-      "source_changed_sample": []
-    },
-    {
-      "file": "China.list",
-      "prev_total": 110664,
-      "curr_total": 110664,
       "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
@@ -109,179 +94,45 @@
       "source_changed_sample": []
     },
     {
-      "file": "ChinaMedia.list",
-      "prev_total": 375,
-      "curr_total": 344,
-      "added_count": 1,
-      "removed_count": 32,
+      "file": "China.list",
+      "prev_total": 110664,
+      "curr_total": 110661,
+      "added_count": 0,
+      "removed_count": 3,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "c2c192a742dc",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,cache.tv.qq.com"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [
         {
-          "id": "00382501ccea",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,walkman*"
-        },
-        {
-          "id": "0429a5adb409",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,MiguVideo*"
-        },
-        {
-          "id": "05655084f59f",
-          "source": "Manual Rules",
-          "rule": "USER-AGENT,bili/*"
-        },
-        {
-          "id": "0613fa6923a4",
-          "source": "Manual Rules",
-          "rule": "USER-AGENT,bilibili/*"
-        },
-        {
-          "id": "09159f8d56c1",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,%E9%85%B7%E6%88%91%E9%9F%B3%E4%B9%90*"
-        },
-        {
-          "id": "1823fb02dd09",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,baiduyinyue"
-        },
-        {
-          "id": "2ea606bcd51b",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,PPStream*"
-        },
-        {
-          "id": "31a5d1dcbe00",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90"
+          "id": "1e2dbaff18e5",
+          "source": "SukkaW Domestic",
+          "rule": "USER-AGENT,TeslaMap"
         },
         {
           "id": "359cc6c5c715",
-          "source": "blackmatrix7 ChinaMedia",
+          "source": "SukkaW Domestic",
           "rule": "USER-AGENT,%E4%BC%98%E9%85%B7*"
         },
         {
-          "id": "3647f57959ed",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,%E5%92%AA%E5%92%95%E8%A7%86%E9%A2%91"
-        },
+          "id": "4ef1969d7902",
+          "source": "SukkaW Domestic",
+          "rule": "USER-AGENT,%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D*"
+        }
+      ],
+      "source_changed_sample": []
+    },
+    {
+      "file": "ChinaMedia.list",
+      "prev_total": 344,
+      "curr_total": 343,
+      "added_count": 0,
+      "removed_count": 1,
+      "source_changed_count": 0,
+      "added_sample": [],
+      "removed_sample": [
         {
-          "id": "3c6d64324b29",
+          "id": "6f6f8f376d3d",
           "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,NeteaseMusic*"
-        },
-        {
-          "id": "428817a9ee9d",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,TencentMidasConnect*"
-        },
-        {
-          "id": "428e8ec6e5b7",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,live4iphone*"
-        },
-        {
-          "id": "43c2493e9ebc",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,MOO*"
-        },
-        {
-          "id": "45845dd22646",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,iQiYi*"
-        },
-        {
-          "id": "4ad7fcc47d93",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,YYeTs*"
-        },
-        {
-          "id": "559761ff78e0",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,QQ%E9%9F%B3%E4%B9%90"
-        },
-        {
-          "id": "590ed3d7c8ed",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,QIYI*"
-        },
-        {
-          "id": "5b32de7535b5",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,DomesticMedia*"
-        },
-        {
-          "id": "60004ae4ae54",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*"
-        },
-        {
-          "id": "755b16237d7a",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,QYPlayer*"
-        },
-        {
-          "id": "7f281bd2a532",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,xiami*"
-        },
-        {
-          "id": "8947f667c761",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,MOO%E9%9F%B3%E4%B9%90*"
-        },
-        {
-          "id": "a0dde551080b",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,Youku*"
-        },
-        {
-          "id": "a238200acb2d",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,Bilibili*"
-        },
-        {
-          "id": "ac2e27b3d71c",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,AcFun*"
-        },
-        {
-          "id": "b29cdd18dafc",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "DOMAIN-SUFFIX,smtcdns.net"
-        },
-        {
-          "id": "bcce4db0da13",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,QQ%e9%9f%b3%e4%b9%90*"
-        },
-        {
-          "id": "c760a3e90a54",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,*QIYI*"
-        },
-        {
-          "id": "ed4be28e6ad2",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,qqlive4iphone*"
-        },
-        {
-          "id": "f7120ee417d1",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,MGTV*"
-        },
-        {
-          "id": "fe14fbdda65e",
-          "source": "blackmatrix7 ChinaMedia",
-          "rule": "USER-AGENT,QQMusic*"
+          "rule": "IP-CIDR,23.211.15.99/32,no-resolve"
         }
       ],
       "source_changed_sample": []
@@ -310,19 +161,13 @@
     },
     {
       "file": "Disney.list",
-      "prev_total": 166,
+      "prev_total": 165,
       "curr_total": 165,
       "added_count": 0,
-      "removed_count": 1,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "9205ffed09f9",
-          "source": "blackmatrix7 Disney",
-          "rule": "USER-AGENT,Disney+*"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -349,576 +194,140 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24625,
-      "curr_total": 24635,
-      "added_count": 12,
-      "removed_count": 2,
+      "prev_total": 24635,
+      "curr_total": 24648,
+      "added_count": 13,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [
         {
-          "id": "0c7167e94029",
+          "id": "05332accf4b6",
           "source": "Manual Rules",
-          "rule": "IP-CIDR,99.81.97.56/32,no-resolve"
+          "rule": "IP-CIDR,54.235.23.242/32,no-resolve"
         },
         {
-          "id": "3fe79fe89105",
+          "id": "236d8663dc39",
           "source": "Manual Rules",
-          "rule": "DOMAIN,auth.docker.io"
+          "rule": "DOMAIN-SUFFIX,kakaocorp.com"
         },
         {
-          "id": "403c39ac63a2",
+          "id": "28b4c827d811",
           "source": "Manual Rules",
-          "rule": "IP-CIDR,52.211.1.180/32,no-resolve"
+          "rule": "DOMAIN-SUFFIX,kakao.com"
         },
         {
-          "id": "5f5444011928",
+          "id": "393693fb8365",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,hinet.net"
+          "rule": "DOMAIN-SUFFIX,kakao.co.kr"
         },
         {
-          "id": "62922901cca3",
+          "id": "4929ba7060c0",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,conviva.com"
+          "rule": "IP-CIDR,35.157.217.255/32,no-resolve"
         },
         {
-          "id": "8dee36d5fc6b",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,adobedtm.com"
-        },
-        {
-          "id": "b7e9cf78da9a",
+          "id": "5c7e313f6444",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,cookielaw.org"
+          "rule": "DOMAIN-SUFFIX,daum.net"
         },
         {
-          "id": "ba1380095ddc",
+          "id": "5ce134845213",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,braze.com"
+          "rule": "DOMAIN-SUFFIX,naver.com"
         },
         {
-          "id": "d7cb25ccb42b",
-          "source": "blackmatrix7 Global",
-          "rule": "IP-CIDR,1.201.0.0/24,no-resolve"
-        },
-        {
-          "id": "e39376b9e7f5",
+          "id": "616b5d77c5a7",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,braze.eu"
+          "rule": "IP-CIDR,3.123.36.126/32,no-resolve"
         },
         {
-          "id": "f930ee9ca489",
+          "id": "7495e2303c7c",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,onetrust.com"
+          "rule": "IP-CIDR,54.162.243.80/32,no-resolve"
         },
         {
-          "id": "f9efbe85a522",
+          "id": "777be6a67e2e",
           "source": "Manual Rules",
-          "rule": "DOMAIN,registry-1.docker.io"
+          "rule": "IP-CIDR,23.211.15.0/24,no-resolve"
+        },
+        {
+          "id": "96ae53d4e98b",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,daumkakao.io"
+        },
+        {
+          "id": "b2b2431dd384",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,54.173.34.141/32,no-resolve"
+        },
+        {
+          "id": "fcc2a23cad15",
+          "source": "Manual Rules",
+          "rule": "IP-CIDR,35.157.215.84/32,no-resolve"
         }
       ],
-      "removed_sample": [
-        {
-          "id": "8ae4d48e750d",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,cws.conviva.com"
-        },
-        {
-          "id": "f49c16eafc21",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,roco.qq.com"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "GlobalMedia.list",
-      "prev_total": 2242,
-      "curr_total": 2162,
-      "added_count": 8,
-      "removed_count": 88,
+      "prev_total": 2162,
+      "curr_total": 2158,
+      "added_count": 3,
+      "removed_count": 7,
       "source_changed_count": 0,
       "added_sample": [
         {
-          "id": "288af4fca4a0",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,gamer2-cds.cdn.hinet.net"
-        },
-        {
-          "id": "6a5d85fcce53",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,gamer-cds.cdn.hinet.net"
-        },
-        {
-          "id": "77627133e378",
+          "id": "58185bf7a239",
           "source": "Manual Rules",
-          "rule": "IP-ASN,40027,no-resolve"
+          "rule": "DOMAIN-SUFFIX,tv.kakao.com"
         },
         {
-          "id": "7dd3bd4e0cc0",
+          "id": "9dcabe745a4c",
           "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,hamivideo.hinet.net"
+          "rule": "DOMAIN-SUFFIX,tv.naver.com"
         },
         {
-          "id": "928097bfb6c2",
+          "id": "d89f5c57600e",
           "source": "Manual Rules",
-          "rule": "IP-ASN,2906,no-resolve"
-        },
-        {
-          "id": "b3b233330837",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,abematv.akamaized.net"
-        },
-        {
-          "id": "beaddaaa4235",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-WILDCARD,*-hamivideo.cdn.hinet.net"
-        },
-        {
-          "id": "d99c6907f7e3",
-          "source": "SukkaW Stream",
-          "rule": "DOMAIN,4gtvfreepcvod-cds.cdn.hinet.net"
+          "rule": "DOMAIN-SUFFIX,chzzk.naver.com"
         }
       ],
       "removed_sample": [
         {
-          "id": "0afbcb353c5f",
+          "id": "236d8663dc39",
           "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-KEYWORD,apiproxy-device-prod-nlb-"
+          "rule": "DOMAIN-SUFFIX,kakaocorp.com"
         },
         {
-          "id": "0c0706da9670",
+          "id": "28b4c827d811",
           "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,ITV_Player*"
+          "rule": "DOMAIN-SUFFIX,kakao.com"
         },
         {
-          "id": "0c7167e94029",
+          "id": "393693fb8365",
           "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,99.81.97.56/32,no-resolve"
+          "rule": "DOMAIN-SUFFIX,kakao.co.kr"
         },
         {
-          "id": "0d37eb70a201",
+          "id": "5c7e313f6444",
           "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,discovery+*"
+          "rule": "DOMAIN-SUFFIX,daum.net"
         },
         {
-          "id": "0e9eabe42842",
+          "id": "5ce134845213",
           "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,FOXNOW*"
+          "rule": "DOMAIN-SUFFIX,naver.com"
         },
         {
-          "id": "0f8ab88f182f",
+          "id": "777be6a67e2e",
           "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,WeMusic*"
+          "rule": "IP-CIDR,23.211.15.0/24,no-resolve"
         },
         {
-          "id": "102ee7c55b53",
+          "id": "96ae53d4e98b",
           "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,HWTVMobile*"
-        },
-        {
-          "id": "13caa1100d7f",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,Niconico*"
-        },
-        {
-          "id": "14b1288eff94",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-KEYWORD,netflixdnstest"
-        },
-        {
-          "id": "1892d0572740",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,HBO*"
-        },
-        {
-          "id": "1bd329e97144",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,NaverTV*"
-        },
-        {
-          "id": "253166952db8",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,app/bstar*"
-        },
-        {
-          "id": "2795bacd1adf",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-KEYWORD,nivod"
-        },
-        {
-          "id": "2cac1523c4dd",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,HBOMAX*"
-        },
-        {
-          "id": "2d7d80d3f706",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-KEYWORD,japronx"
-        },
-        {
-          "id": "3356f99bdd44",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,FOXPlus*"
-        },
-        {
-          "id": "3455cc7294ae",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,PeacockMobile*"
-        },
-        {
-          "id": "396bf9603b9d",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,HBOGOPRODHKG*"
-        },
-        {
-          "id": "3bbacc593c71",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,WeTV*"
-        },
-        {
-          "id": "3f1be3b049f7",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-KEYWORD,bbcfmt"
-        },
-        {
-          "id": "403c39ac63a2",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,52.211.1.180/32,no-resolve"
-        },
-        {
-          "id": "43f9cb1c0285",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-KEYWORD,abematv.akamaized.net"
-        },
-        {
-          "id": "4561571b4886",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-KEYWORD,hamivideo.cdn.hinet.net"
-        },
-        {
-          "id": "48a104f0c0b9",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-KEYWORD,voddazn"
-        },
-        {
-          "id": "48c7084fe49c",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,All4*"
-        },
-        {
-          "id": "49603cb7b0f5",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,mytv*"
-        },
-        {
-          "id": "4a3a3ec81bac",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,PPlus*"
-        },
-        {
-          "id": "4cc594d67bbb",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,LINETV*"
-        },
-        {
-          "id": "58e2b2d44d17",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-KEYWORD,olevod"
-        },
-        {
-          "id": "5bf0a7385b8f",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,PBS*"
-        },
-        {
-          "id": "5f5444011928",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,hinet.net"
-        },
-        {
-          "id": "6038dc2fc443",
-          "source": "SukkaW Stream",
-          "rule": "USER-AGENT,Naver TV*"
-        },
-        {
-          "id": "62922901cca3",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,conviva.com"
-        },
-        {
-          "id": "6575d02885fc",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,AbemaTV*"
-        },
-        {
-          "id": "69c97a3ecb19",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,Disney*"
-        },
-        {
-          "id": "71395d34de69",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,BBCiPlayer*"
-        },
-        {
-          "id": "7267ab08ef90",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-KEYWORD,discovery.uplynk.com"
-        },
-        {
-          "id": "729daae0aa48",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,Himalaya*"
-        },
-        {
-          "id": "73fd24f517fb",
-          "source": "SukkaW Stream",
-          "rule": "USER-AGENT,Prime Video*"
-        },
-        {
-          "id": "759d03debb46",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-KEYWORD,dualstack.ichnaea-web-"
-        },
-        {
-          "id": "7673e4a8ead2",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,Pandora*"
-        },
-        {
-          "id": "7dac3869489d",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,KKTV*"
-        },
-        {
-          "id": "886bbee134b6",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,DPlus*"
-        },
-        {
-          "id": "8b2190abec35",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,InstantVideo.US*"
-        },
-        {
-          "id": "8b9c7117708e",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,TIDAL*dia"
-        },
-        {
-          "id": "8dee36d5fc6b",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,adobedtm.com"
-        },
-        {
-          "id": "9205ffed09f9",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,Disney+*"
-        },
-        {
-          "id": "931bec6c0567",
-          "source": "SukkaW Stream",
-          "rule": "USER-AGENT,FOX NOW*"
-        },
-        {
-          "id": "93655eb657b6",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,HBO%20GO%20PROD*"
-        },
-        {
-          "id": "93aba43439e8",
-          "source": "SukkaW Stream",
-          "rule": "USER-AGENT,LINE TV*"
-        },
-        {
-          "id": "96d3fb9721cc",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,encoreTVB*"
-        },
-        {
-          "id": "98384b6ce99d",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-KEYWORD,jooxweb-api"
-        },
-        {
-          "id": "989e94c713f4",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,LINE%20TV*"
-        },
-        {
-          "id": "9f17e27ca75b",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-KEYWORD,tvbanywhere"
-        },
-        {
-          "id": "a2e0d67204c0",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,DAZN*"
-        },
-        {
-          "id": "a5009a0262da",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,HBO%20GO%20PROD%20HKG*"
-        },
-        {
-          "id": "a9e8c95c237f",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,JOOX*"
-        },
-        {
-          "id": "abcf939bc6eb",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,HBO%20NOW*"
-        },
-        {
-          "id": "b005efc685fe",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,Naver%20TV*"
-        },
-        {
-          "id": "b7e9cf78da9a",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,cookielaw.org"
-        },
-        {
-          "id": "b7fdea40fb16",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN,e13252.dscg.akamaiedge.net"
-        },
-        {
-          "id": "ba1380095ddc",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,braze.com"
-        },
-        {
-          "id": "bc73a70a6bfa",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,Prime%20Video*"
-        },
-        {
-          "id": "c1f8a35674ed",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,Overcast*"
-        },
-        {
-          "id": "c2ec71c144c1",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-KEYWORD,uk-live"
-        },
-        {
-          "id": "c407b044de11",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,Hulu*"
-        },
-        {
-          "id": "cce990de8cd7",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,Deezer*"
-        },
-        {
-          "id": "d696ea5dcb38",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,HBONOW*"
-        },
-        {
-          "id": "d7cb25ccb42b",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,1.201.0.0/24,no-resolve"
-        },
-        {
-          "id": "d864587586cc",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,PrimeVideo*"
-        },
-        {
-          "id": "dc8f33a0f66b",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-KEYWORD,avoddashs"
-        },
-        {
-          "id": "dc94acfcba51",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,Argo*"
-        },
-        {
-          "id": "e2f8bb43caf7",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,My5*"
-        },
-        {
-          "id": "e74c5bd47088",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,com.kktv.ios.kktv*"
-        },
-        {
-          "id": "e7ea7c184455",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-KEYWORD,japonx"
-        },
-        {
-          "id": "e94c290ab427",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-KEYWORD,ttvnw"
-        },
-        {
-          "id": "ede2a0c70624",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,SoundCloud*"
-        },
-        {
-          "id": "eed29a169554",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,com.kktv*"
-        },
-        {
-          "id": "f02291f504d7",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,ViuTV*"
-        },
-        {
-          "id": "f2e709939127",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,TIDAL*"
-        },
-        {
-          "id": "f33a7443c52e",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,Viu*"
-        },
-        {
-          "id": "f6d0c8090770",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,TaiwanGood*"
-        },
-        {
-          "id": "f7506eb2d0f9",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-KEYWORD,dualstack.apiproxy-"
-        },
-        {
-          "id": "f815b22bf5cd",
-          "source": "SukkaW Stream",
-          "rule": "USER-AGENT,HBO NOW*"
-        },
-        {
-          "id": "f930ee9ca489",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,onetrust.com"
-        },
-        {
-          "id": "fb2eed200f9f",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,js-agent.newrelic.com"
-        },
-        {
-          "id": "fb9c6bfaca9d",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "USER-AGENT,FOX%20NOW*"
-        },
-        {
-          "id": "fe24595bf107",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-KEYWORD,hbogoasia"
+          "rule": "DOMAIN-SUFFIX,daumkakao.io"
         }
       ],
       "source_changed_sample": []
@@ -936,69 +345,35 @@
     },
     {
       "file": "HKMedia.list",
-      "prev_total": 29,
+      "prev_total": 27,
       "curr_total": 27,
       "added_count": 0,
-      "removed_count": 2,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "49603cb7b0f5",
-          "source": "SukkaW Stream HK",
-          "rule": "USER-AGENT,mytv*"
-        },
-        {
-          "id": "f33a7443c52e",
-          "source": "SukkaW Stream HK",
-          "rule": "USER-AGENT,Viu*"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "InternationalMedia.list",
-      "prev_total": 14,
+      "prev_total": 15,
       "curr_total": 15,
-      "added_count": 1,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "adaea4bafa14",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,tw.iqiyi.com"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "JPMedia.list",
-      "prev_total": 26,
+      "prev_total": 25,
       "curr_total": 25,
-      "added_count": 1,
-      "removed_count": 2,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "b3b233330837",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,abematv.akamaized.net"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "13caa1100d7f",
-          "source": "SukkaW Stream JP",
-          "rule": "USER-AGENT,Niconico*"
-        },
-        {
-          "id": "6575d02885fc",
-          "source": "SukkaW Stream JP",
-          "rule": "USER-AGENT,AbemaTV*"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -1025,525 +400,13 @@
     },
     {
       "file": "Netflix.list",
-      "prev_total": 1116,
+      "prev_total": 31,
       "curr_total": 31,
-      "added_count": 2,
-      "removed_count": 1087,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "77627133e378",
-          "source": "Manual Rules",
-          "rule": "IP-ASN,40027,no-resolve"
-        },
-        {
-          "id": "928097bfb6c2",
-          "source": "Manual Rules",
-          "rule": "IP-ASN,2906,no-resolve"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "0035e72338ff",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,43.207.179.176/29,no-resolve"
-        },
-        {
-          "id": "00c4a04027eb",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,44.192.255.128/28,no-resolve"
-        },
-        {
-          "id": "00d508cc92a0",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,18.153.184.88/30,no-resolve"
-        },
-        {
-          "id": "00eb2324232b",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,76.223.96.0/21,no-resolve"
-        },
-        {
-          "id": "015c875fc024",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,18.252.4.16/29,no-resolve"
-        },
-        {
-          "id": "0191d4adf8fc",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,130.176.136.0/23,no-resolve"
-        },
-        {
-          "id": "02287e0b4a7b",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.15.35.0/24,no-resolve"
-        },
-        {
-          "id": "02571b67a916",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,18.180.180.0/23,no-resolve"
-        },
-        {
-          "id": "0277f35605be",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,35.73.0.0/22,no-resolve"
-        },
-        {
-          "id": "02841435e5d5",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,103.87.204.0/22,no-resolve"
-        },
-        {
-          "id": "028b1075460e",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.255.16.0/22,no-resolve"
-        },
-        {
-          "id": "028e8583a54e",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.251.109.92/30,no-resolve"
-        },
-        {
-          "id": "02f2d94bb476",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,130.176.78.0/23,no-resolve"
-        },
-        {
-          "id": "0387ce44b581",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.35.160.0/22,no-resolve"
-        },
-        {
-          "id": "03f846cc5bfd",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,65.0.192.176/28,no-resolve"
-        },
-        {
-          "id": "040059397089",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.26.109.216/30,no-resolve"
-        },
-        {
-          "id": "043c5127c4f2",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,18.192.216.0/22,no-resolve"
-        },
-        {
-          "id": "0442cb91d034",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,54.247.241.96/29,no-resolve"
-        },
-        {
-          "id": "04450f68c744",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,13.52.201.0/24,no-resolve"
-        },
-        {
-          "id": "04616d1cb581",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.28.70.48/28,no-resolve"
-        },
-        {
-          "id": "049c7996fe60",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,18.153.184.84/31,no-resolve"
-        },
-        {
-          "id": "04a425552b95",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.36.190.0/23,no-resolve"
-        },
-        {
-          "id": "04cf5b73ed9f",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,13.40.202.0/23,no-resolve"
-        },
-        {
-          "id": "04d54b12b760",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,35.72.164.232/29,no-resolve"
-        },
-        {
-          "id": "04de006bbb6a",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,35.180.1.16/28,no-resolve"
-        },
-        {
-          "id": "0519cb2ac3e2",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,13.36.84.48/28,no-resolve"
-        },
-        {
-          "id": "0538c76423c1",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,18.200.212.0/23,no-resolve"
-        },
-        {
-          "id": "0585c2bd1407",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,15.222.43.64/26,no-resolve"
-        },
-        {
-          "id": "05903b28afa4",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.238.178.128/25,no-resolve"
-        },
-        {
-          "id": "06a6c7518799",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.64.226.232/29,no-resolve"
-        },
-        {
-          "id": "06b39ab077cd",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.251.144.0/29,no-resolve"
-        },
-        {
-          "id": "070612a94f40",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,13.48.186.128/26,no-resolve"
-        },
-        {
-          "id": "0726cc9330c8",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.144.141.192/26,no-resolve"
-        },
-        {
-          "id": "072f940b01fa",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,18.168.37.136/29,no-resolve"
-        },
-        {
-          "id": "073bf83d756d",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,18.246.181.0/24,no-resolve"
-        },
-        {
-          "id": "07572956f24e",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,13.250.186.128/26,no-resolve"
-        },
-        {
-          "id": "083ae8d2f7a7",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,35.152.74.136/30,no-resolve"
-        },
-        {
-          "id": "08538fd25e85",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,13.213.20.144/28,no-resolve"
-        },
-        {
-          "id": "08673e279fc3",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,13.250.186.16/29,no-resolve"
-        },
-        {
-          "id": "08ba2dc811d1",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,13.246.70.0/23,no-resolve"
-        },
-        {
-          "id": "08bc41c11100",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.101.226.80/28,no-resolve"
-        },
-        {
-          "id": "08d0dd9117a2",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.101.163.64/27,no-resolve"
-        },
-        {
-          "id": "08e2ded0db6d",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,18.168.36.0/24,no-resolve"
-        },
-        {
-          "id": "092aac9a95c4",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,205.251.218.0/24,no-resolve"
-        },
-        {
-          "id": "09c775f12680",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.65.128.0/21,no-resolve"
-        },
-        {
-          "id": "0a029fd34c11",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.71.104.0/24,no-resolve"
-        },
-        {
-          "id": "0a45a3e9ff65",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,54.182.176.0/21,no-resolve"
-        },
-        {
-          "id": "0a58b4372a47",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,13.211.12.192/27,no-resolve"
-        },
-        {
-          "id": "0ae601a45477",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,52.47.73.160/27,no-resolve"
-        },
-        {
-          "id": "0afbcb353c5f",
-          "source": "blackmatrix7 Netflix",
-          "rule": "DOMAIN-KEYWORD,apiproxy-device-prod-nlb-"
-        },
-        {
-          "id": "0b02df53955e",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,13.208.33.8/29,no-resolve"
-        },
-        {
-          "id": "0b9a5ca8b14b",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,13.124.247.0/24,no-resolve"
-        },
-        {
-          "id": "0bb4b5b63a65",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.228.181.0/24,no-resolve"
-        },
-        {
-          "id": "0bd8ee1e531d",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.228.182.8/31,no-resolve"
-        },
-        {
-          "id": "0bec7417d3c0",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.26.83.0/24,no-resolve"
-        },
-        {
-          "id": "0c76fc50362e",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,35.80.36.192/27,no-resolve"
-        },
-        {
-          "id": "0d03b9673472",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,44.234.90.252/30,no-resolve"
-        },
-        {
-          "id": "0d494816c8a9",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,44.242.181.0/27,no-resolve"
-        },
-        {
-          "id": "0d68a92c5808",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.146.29.66/31,no-resolve"
-        },
-        {
-          "id": "0ddee0cc19d2",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.101.160.240/29,no-resolve"
-        },
-        {
-          "id": "0e56b7447b72",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.97.192.128/25,no-resolve"
-        },
-        {
-          "id": "0e7447eca8dd",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.28.255.80/28,no-resolve"
-        },
-        {
-          "id": "0edd08798273",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,16.50.67.0/25,no-resolve"
-        },
-        {
-          "id": "0eeb8bca3d0c",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,18.156.54.0/23,no-resolve"
-        },
-        {
-          "id": "0eec6fe421dd",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,44.216.41.160/29,no-resolve"
-        },
-        {
-          "id": "0f5fcdf4662e",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,18.135.226.192/26,no-resolve"
-        },
-        {
-          "id": "0ffb62c54810",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,34.226.106.180/32,no-resolve"
-        },
-        {
-          "id": "10133a300980",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,13.209.1.56/29,no-resolve"
-        },
-        {
-          "id": "10aeb59273b5",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.112.96.0/25,no-resolve"
-        },
-        {
-          "id": "10cba94ef840",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.209.83.0/25,no-resolve"
-        },
-        {
-          "id": "115f034fb372",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,130.176.96.0/19,no-resolve"
-        },
-        {
-          "id": "116403343cbb",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR6,2a03:5640::/32,no-resolve"
-        },
-        {
-          "id": "116cb7e96be2",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,13.39.103.180/30,no-resolve"
-        },
-        {
-          "id": "117d982a81a9",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,13.36.84.126/31,no-resolve"
-        },
-        {
-          "id": "1283033d09ba",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,15.228.151.0/24,no-resolve"
-        },
-        {
-          "id": "128e6d6cd202",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,18.254.148.0/22,no-resolve"
-        },
-        {
-          "id": "12a99f1869a9",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,15.168.105.144/28,no-resolve"
-        },
-        {
-          "id": "12cd2e0fbca9",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,15.161.247.128/27,no-resolve"
-        },
-        {
-          "id": "12f37699843a",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,18.144.76.32/29,no-resolve"
-        },
-        {
-          "id": "133ab186052f",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,18.246.184.0/23,no-resolve"
-        },
-        {
-          "id": "136304801cca",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,18.100.64.128/25,no-resolve"
-        },
-        {
-          "id": "139257ea5649",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,15.222.16.32/27,no-resolve"
-        },
-        {
-          "id": "13d1516971c6",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,43.218.56.128/25,no-resolve"
-        },
-        {
-          "id": "1409ff161393",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,54.233.255.128/26,no-resolve"
-        },
-        {
-          "id": "141b9131e0a0",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,13.230.21.128/26,no-resolve"
-        },
-        {
-          "id": "14277bc7e95f",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.29.89.0/24,no-resolve"
-        },
-        {
-          "id": "14b1288eff94",
-          "source": "blackmatrix7 Netflix",
-          "rule": "DOMAIN-KEYWORD,netflixdnstest"
-        },
-        {
-          "id": "14d825ccb087",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,35.72.36.140/30,no-resolve"
-        },
-        {
-          "id": "15294a7dfbcc",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,18.168.37.48/30,no-resolve"
-        },
-        {
-          "id": "15344e0348af",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,70.232.86.126/32,no-resolve"
-        },
-        {
-          "id": "15386a84c39a",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,54.252.79.128/26,no-resolve"
-        },
-        {
-          "id": "15436f4c9a37",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.251.95.128/27,no-resolve"
-        },
-        {
-          "id": "155835fda59b",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.248.186.64/29,no-resolve"
-        },
-        {
-          "id": "1587222ba575",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.21.86.0/23,no-resolve"
-        },
-        {
-          "id": "1589b3438601",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,13.209.1.0/28,no-resolve"
-        },
-        {
-          "id": "15a804e60118",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,44.222.159.166/31,no-resolve"
-        },
-        {
-          "id": "15a892bc7feb",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.234.232.224/27,no-resolve"
-        },
-        {
-          "id": "15c292077b61",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,3.12.23.88/29,no-resolve"
-        },
-        {
-          "id": "164559f76b44",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,54.251.31.128/26,no-resolve"
-        },
-        {
-          "id": "166082369f06",
-          "source": "blackmatrix7 Netflix",
-          "rule": "IP-CIDR,13.60.1.84/31,no-resolve"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -1559,19 +422,54 @@
     },
     {
       "file": "SocialMedia.list",
-      "prev_total": 670,
-      "curr_total": 671,
-      "added_count": 1,
-      "removed_count": 0,
+      "prev_total": 671,
+      "curr_total": 663,
+      "added_count": 0,
+      "removed_count": 8,
       "source_changed_count": 0,
-      "added_sample": [
+      "added_sample": [],
+      "removed_sample": [
         {
-          "id": "fdfcf01e144e",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,api.bsky.chat"
+          "id": "05332accf4b6",
+          "source": "blackmatrix7 Facebook",
+          "rule": "IP-CIDR,54.235.23.242/32,no-resolve"
+        },
+        {
+          "id": "4929ba7060c0",
+          "source": "blackmatrix7 Facebook",
+          "rule": "IP-CIDR,35.157.217.255/32,no-resolve"
+        },
+        {
+          "id": "616b5d77c5a7",
+          "source": "blackmatrix7 Facebook",
+          "rule": "IP-CIDR,3.123.36.126/32,no-resolve"
+        },
+        {
+          "id": "7495e2303c7c",
+          "source": "blackmatrix7 Facebook",
+          "rule": "IP-CIDR,54.162.243.80/32,no-resolve"
+        },
+        {
+          "id": "8977a1c28e3f",
+          "source": "blackmatrix7 Facebook",
+          "rule": "IP-CIDR,52.58.209.134/32,no-resolve"
+        },
+        {
+          "id": "b2b2431dd384",
+          "source": "blackmatrix7 Facebook",
+          "rule": "IP-CIDR,54.173.34.141/32,no-resolve"
+        },
+        {
+          "id": "fa92f0ef44ac",
+          "source": "blackmatrix7 Facebook",
+          "rule": "IP-CIDR,54.93.124.31/32,no-resolve"
+        },
+        {
+          "id": "fcc2a23cad15",
+          "source": "blackmatrix7 Facebook",
+          "rule": "IP-CIDR,35.157.215.84/32,no-resolve"
         }
       ],
-      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -1598,62 +496,24 @@
     },
     {
       "file": "Spotify.list",
-      "prev_total": 32,
+      "prev_total": 30,
       "curr_total": 30,
       "added_count": 0,
-      "removed_count": 2,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "3c9e48786abd",
-          "source": "Manual Rules",
-          "rule": "USER-AGENT,*Spotify*"
-        },
-        {
-          "id": "ebe09d07c69f",
-          "source": "blackmatrix7 Spotify",
-          "rule": "USER-AGENT,Spotify*"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "TWMedia.list",
-      "prev_total": 22,
+      "prev_total": 21,
       "curr_total": 21,
-      "added_count": 2,
-      "removed_count": 3,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "7dd3bd4e0cc0",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,hamivideo.hinet.net"
-        },
-        {
-          "id": "beaddaaa4235",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-WILDCARD,*-hamivideo.cdn.hinet.net"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "7dac3869489d",
-          "source": "SukkaW Stream TW",
-          "rule": "USER-AGENT,KKTV*"
-        },
-        {
-          "id": "93aba43439e8",
-          "source": "SukkaW Stream TW",
-          "rule": "USER-AGENT,LINE TV*"
-        },
-        {
-          "id": "e74c5bd47088",
-          "source": "SukkaW Stream TW",
-          "rule": "USER-AGENT,com.kktv.ios.kktv*"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -1680,39 +540,13 @@
     },
     {
       "file": "USMedia.list",
-      "prev_total": 40,
+      "prev_total": 35,
       "curr_total": 35,
       "added_count": 0,
-      "removed_count": 5,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "3356f99bdd44",
-          "source": "SukkaW Stream US",
-          "rule": "USER-AGENT,FOXPlus*"
-        },
-        {
-          "id": "3455cc7294ae",
-          "source": "SukkaW Stream US",
-          "rule": "USER-AGENT,PeacockMobile*"
-        },
-        {
-          "id": "4a3a3ec81bac",
-          "source": "SukkaW Stream US",
-          "rule": "USER-AGENT,PPlus*"
-        },
-        {
-          "id": "931bec6c0567",
-          "source": "SukkaW Stream US",
-          "rule": "USER-AGENT,FOX NOW*"
-        },
-        {
-          "id": "96d3fb9721cc",
-          "source": "SukkaW Stream US",
-          "rule": "USER-AGENT,encoreTVB*"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {

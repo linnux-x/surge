@@ -133,3 +133,20 @@ DOMAIN,registry-1.docker.io
 # AWS EC2 addresses removed from the media fallback.
 IP-CIDR,52.211.1.180/32,no-resolve
 IP-CIDR,99.81.97.56/32,no-resolve
+
+# General login, mail, maps and APIs. Media child domains are matched earlier.
+DOMAIN-SUFFIX,daum.net
+DOMAIN-SUFFIX,daumkakao.io
+DOMAIN-SUFFIX,kakao.co.kr
+DOMAIN-SUFFIX,kakao.com
+DOMAIN-SUFFIX,kakaocorp.com
+DOMAIN-SUFFIX,naver.com
+
+# Shared Akamai edge and standalone AWS EC2 addresses from service rules.
+IP-CIDR,23.211.15.0/24,no-resolve
+IP-CIDR,3.123.36.126/32,no-resolve
+IP-CIDR,35.157.215.84/32,no-resolve
+IP-CIDR,35.157.217.255/32,no-resolve
+IP-CIDR,54.162.243.80/32,no-resolve
+IP-CIDR,54.173.34.141/32,no-resolve
+IP-CIDR,54.235.23.242/32,no-resolve
