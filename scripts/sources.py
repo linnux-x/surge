@@ -152,7 +152,9 @@ for _label, _url, _rs, _fmt in _SOURCES:
 # Manual-only rulesets: no upstream; content comes entirely from Rule/Manual/<name>.txt.
 # AdBlock.list is a deliberately small, hand-curated reject list (2026-11-08) —
 # broad upstream reject lists were disabled because they broke apps too often.
-MANUAL_ONLY_RULESETS: tuple[str, ...] = ("AdBlock.list", "Claude.list", "AppleMedia.list", "InternationalMedia.list")
+MANUAL_ONLY_RULESETS: tuple[str, ...] = (
+    "AdBlock.list", "Claude.list", "AppleMedia.list", "InternationalMedia.list", "Binance.list",
+)
 for _rs in MANUAL_ONLY_RULESETS:
     RULE_SPECS.setdefault(_rs, (_rs.replace(".list", ""), []))
 
@@ -162,6 +164,7 @@ ALL_RULESETS: set[str] = set(RULE_SPECS.keys())
 # Exact-text overlap pruning is intentionally narrower than regeneration.
 # Apple_CN triggers a Global rebuild for historical compatibility, but must not
 # be added to the prune set without a separate routing-policy review.
+# Binance is opt-in, so existing Global coverage must remain available.
 GLOBAL_OVERLAP_RULESETS: tuple[str, ...] = (
     "WeChat.list", "Speedtest_China.list", "Speedtest.list", "Apple_AI.list", "AppleMedia.list",
     "Claude.list", "AI.list", "Apple.list",

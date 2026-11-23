@@ -6,6 +6,7 @@ import importlib.util
 import sys
 import unittest
 from pathlib import Path
+from tempfile import TemporaryDirectory
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -50,6 +51,31 @@ class FallbackOrderTests(unittest.TestCase):
         module = load_routing_module()
         parsed = module.load_routing_order()
         self.assertEqual(module.FALLBACK_ORDER, parsed)
+
+    def test_binance_opt_in_routes_exchange_hosts_and_leaves_other_services_alone(self):
+        module = load_routing_module()
+        config = module.CONF_FILE.read_text(encoding="utf-8")
+        optional_rule = "# RULE-SET,https://raw.githubusercontent.com/linnux-x/surge/main/Rule/Binance.list,Binance,extended-matching"
+        self.assertEqual(config.count(optional_rule), 1)
+        with TemporaryDirectory() as tmp:
+            module.CONF_FILE = Path(tmp) / "Linnux.conf"
+            module.CONF_FILE.write_text(config.replace(optional_rule, optional_rule.removeprefix("# ")),
+                                        encoding="utf-8")
+            order = module.load_routing_order()
+        rulesets = {path.name: module.load_ruleset(path) for path in module.RULE_DIR.glob("*.list")}
+        for hostname in ("www.binance.com", "accounts.binance.com", "api.binance.com",
+                         "stream.binance.com", "ws-api.binance.com", "data-api.binance.vision",
+                         "data-stream.binance.vision", "bin.bnbstatic.com", "public.bnbstatic.com"):
+            with self.subTest(hostname=hostname):
+                self.assertEqual(module.simulate_routing(hostname, order, rulesets), "Binance.list→Binance")
+        for hostname, expected in (
+            ("www.binance.us", "Global.list→Global"),
+            ("www.bnbchain.org", "Global.list→Global"),
+            ("other.bnbstatic.com", "FINAL→Global"),
+            ("binance.com.example", "FINAL→Global"),
+        ):
+            with self.subTest(hostname=hostname):
+                self.assertEqual(module.simulate_routing(hostname, order, rulesets), expected)
 
     def test_parser_excludes_rule_options_from_policy(self):
         module = load_routing_module()

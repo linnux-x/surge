@@ -13,6 +13,7 @@
     "AI.txt": {"action": "include", "reason": "历史 AI 专属补充", "destination": "AI.list"},
     "Claude.txt": {"action": "include", "reason": "Claude / Anthropic 专属服务与客户端下载更新", "destination": "Claude.list → Claude"},
     "AppleMedia.txt": {"action": "include", "reason": "Apple TV 与 Apple News 经核对的服务入口", "destination": "AppleMedia.list → GlobalMedia"},
+    "Binance.txt": {"action": "include", "reason": "Binance Global 公开文档和静态资源端点", "destination": "启用后 Binance.list → Binance"},
     "Apple.exclude.txt": {"action": "exclude", "reason": "历史 Apple 归属去重", "destination": "后续 Apple 专属规则或 fallback"},
     "Apple.txt": {"action": "include", "reason": "历史 Apple 专属补充", "destination": "Apple.list"},
     "Apple_AI.exclude.txt": {"action": "exclude", "reason": "历史 Apple AI 共享域名排除", "destination": "Apple_CN、Apple 或 fallback"},
@@ -64,6 +65,10 @@
     "YouTube.exclude.txt": {"action": "exclude", "reason": "历史视频服务归属去重", "destination": "后续专属规则或 fallback"}
   },
   "entries": [
+    {"source_file": "Binance.txt", "rule": "DOMAIN-SUFFIX,binance.com", "reason": "币安公开站点、登录、交易和行情接口", "destination": "启用后 Binance.list → Binance", "route_tests": ["www.binance.com", "accounts.binance.com", "api.binance.com", "stream.binance.com", "ws-api.binance.com"]},
+    {"source_file": "Binance.txt", "rule": "DOMAIN-SUFFIX,binance.vision", "reason": "官方公共数据和开发者服务", "destination": "启用后 Binance.list → Binance", "route_tests": ["data-api.binance.vision", "data-stream.binance.vision"]},
+    {"source_file": "Binance.txt", "rule": "DOMAIN,bin.bnbstatic.com", "reason": "币安官方静态资源主机", "destination": "启用后 Binance.list → Binance", "route_tests": ["bin.bnbstatic.com"]},
+    {"source_file": "Binance.txt", "rule": "DOMAIN,public.bnbstatic.com", "reason": "币安官方公共静态资源主机", "destination": "启用后 Binance.list → Binance", "route_tests": ["public.bnbstatic.com"]},
     {
       "source_file": "InternationalMedia.txt",
       "rule": "DOMAIN-SUFFIX,bilibili.tv",

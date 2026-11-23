@@ -59,6 +59,15 @@
       "sha256": "128f86f14df113398393b329d1c89a3c9a7d8a9ba5e5ff19dcfd5c646373a855"
     },
     {
+      "file": "Binance.list",
+      "rules": 4,
+      "types": {
+        "DOMAIN": 2,
+        "DOMAIN-SUFFIX": 2
+      },
+      "sha256": "f2db0a698dfc065f464502ed98070d42ad658365b3e81269573e6bbcc48fb43d"
+    },
+    {
       "file": "CDN.list",
       "rules": 35,
       "types": {
@@ -354,12 +363,12 @@
       "sha256": "978ca938676b434955d6775ac43d0cf055b2ba30b87f55b4eec4f229b2d8511b"
     }
   ],
-  "total_rules": 156504,
+  "total_rules": 156508,
   "rule_types": {
     "AND": 421,
-    "DOMAIN": 3847,
+    "DOMAIN": 3849,
     "DOMAIN-KEYWORD": 3,
-    "DOMAIN-SUFFIX": 141317,
+    "DOMAIN-SUFFIX": 141319,
     "DOMAIN-WILDCARD": 15,
     "IP-ASN": 5,
     "IP-CIDR": 7324,
@@ -370,7 +379,7 @@
   "source_attribution": {
     "ConnersHua AI": 11,
     "Loyalsoldier China CIDR": 9665,
-    "Manual Rules": 725,
+    "Manual Rules": 729,
     "OpenAI ChatGPT Voice": 411,
     "Rabbit-Spec AIGC": 12,
     "Rabbit-Spec China": 371,
@@ -413,7 +422,7 @@
     "blackmatrix7 YouTube": 174,
     "spiritLHLS Speedtest.cn China": 52
   },
-  "manifest_files": 34,
+  "manifest_files": 35,
   "manifests_sha256": {
     "AI.manifest": "2179536ff57ac0524c53df55aefd90dee788883ad480dcd144442dfc53225eb8",
     "AdBlock.manifest": "c7bedbd5e84159b346bc079d882aec3b25d0c9f9d4fd5923a4046d6e47ab065d",
@@ -421,6 +430,7 @@
     "AppleMedia.manifest": "d06efaca30249307cc6d5b1fe0df1039d7e6564c270412a944a26509f06ed085",
     "Apple_AI.manifest": "0d5b5a5cd034b2a5de8e12a8dd1291d9b0af74506fd92283d9558be4f85f51ad",
     "Apple_CN.manifest": "8e878cd5ed63f35179e3c92fa238c32e65eb5ed8644572e72b39b1dbd1f1467e",
+    "Binance.manifest": "1de80a41f610a7dd897602382c51408cded25a85c4377303e1238c6f1932792b",
     "CDN.manifest": "9ee67fb06a3f28115a431b81ccd77110a662a27378513768b05985f3038bb21f",
     "China.manifest": "4a6afb431a5360099819ff7779e85170d38c69efb68ad16901cffb7daf0d362d",
     "ChinaMedia.manifest": "2cb7d2352706c8f1c77c04921588e773cd79906fa30a5964eccecd519e56e0ff",
@@ -450,11 +460,11 @@
     "WeChat.manifest": "d3084ce7e23c44e8e792dadcf800b2db7c42059ad62b6abf4cb631c4e5305d02",
     "YouTube.manifest": "5693c5ad6b9a17c96419bd4630fa244295c15b35671d24269279db1b01ae74bc"
   },
-  "sources_sha256": "674139cca0a6b98adfe358fe77dfbc42b51aff7c6af13de7efb839d9191bf499",
-  "override_manifest_sha256": "6d00d6343e9e9c5408da7f5461d0674bdff8114d24e878c24dc7abd8b7478525",
+  "sources_sha256": "b5f15cd28fa93ee986f471fc42fc1a8d820865efc0dc515c23f95431fa6d092f",
+  "override_manifest_sha256": "72ea6bccbc39d0e1d18c5d9015b7e10c6589ba01d8533bd77c13657a21fc7f82",
   "diff_summary": {
-    "total_added": 33,
-    "total_removed": 38,
+    "total_added": 4,
+    "total_removed": 0,
     "total_source_changed": 0
   }
 }

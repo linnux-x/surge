@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-23T09:17:11.677760",
-  "total_added": 33,
-  "total_removed": 38,
+  "generated_at": "2026-11-23T09:31:24.022783",
+  "total_added": 4,
+  "total_removed": 0,
   "total_source_changed": 0,
   "diffs": [
     {
@@ -71,6 +71,38 @@
       "source_changed_sample": []
     },
     {
+      "file": "Binance.list",
+      "prev_total": 0,
+      "curr_total": 4,
+      "added_count": 4,
+      "removed_count": 0,
+      "source_changed_count": 0,
+      "added_sample": [
+        {
+          "id": "45c1e5f5a351",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,binance.com"
+        },
+        {
+          "id": "5cab93ab6479",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,bin.bnbstatic.com"
+        },
+        {
+          "id": "90333197d256",
+          "source": "Manual Rules",
+          "rule": "DOMAIN-SUFFIX,binance.vision"
+        },
+        {
+          "id": "f03c6f89cf3c",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,public.bnbstatic.com"
+        }
+      ],
+      "removed_sample": [],
+      "source_changed_sample": []
+    },
+    {
       "file": "CDN.list",
       "prev_total": 35,
       "curr_total": 35,
@@ -127,115 +159,13 @@
     },
     {
       "file": "Disney.list",
-      "prev_total": 165,
+      "prev_total": 151,
       "curr_total": 151,
-      "added_count": 3,
-      "removed_count": 17,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "075c1321a44d",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,registerdisney.go.com"
-        },
-        {
-          "id": "db4822c89873",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,abc.go.com"
-        },
-        {
-          "id": "ff86a3ff1520",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,espn.go.com"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "012cd74eb82a",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,abcnews.com"
-        },
-        {
-          "id": "11b62698a902",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,hotstar-cdn.net"
-        },
-        {
-          "id": "2a2bcb0868f2",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,marvel.com"
-        },
-        {
-          "id": "2f84d4fa8900",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,disneycruisebrasil.com"
-        },
-        {
-          "id": "3cd00a6d0988",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,thewaltdisneycompany.com"
-        },
-        {
-          "id": "4a04c2846ddc",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,shops-disney.com"
-        },
-        {
-          "id": "65bc2859fcf9",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,hotstar.com"
-        },
-        {
-          "id": "6cedad3c2887",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,hotstarext.com"
-        },
-        {
-          "id": "7cfd085f44a4",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,disneystore.com"
-        },
-        {
-          "id": "82dfaa20c3c6",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,disneyworld-go.com"
-        },
-        {
-          "id": "9880c9f7fac9",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,disneylandparis.com"
-        },
-        {
-          "id": "ae0c096b14ee",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,shopdisney.com"
-        },
-        {
-          "id": "b9289d990f46",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,go-disneyworldgo.com"
-        },
-        {
-          "id": "e0a044f5aabe",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,abcnews.edgesuite.net"
-        },
-        {
-          "id": "e473622036b6",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,hotstar-labs.com"
-        },
-        {
-          "id": "f7cf4449225c",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,go.com"
-        },
-        {
-          "id": "ffcb8be16f85",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,disneycareers.com"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -262,243 +192,24 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24648,
+      "prev_total": 24666,
       "curr_total": 24666,
-      "added_count": 19,
-      "removed_count": 1,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "012cd74eb82a",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,abcnews.com"
-        },
-        {
-          "id": "0b6944d722d8",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,netflixstudios.com"
-        },
-        {
-          "id": "2a2bcb0868f2",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,marvel.com"
-        },
-        {
-          "id": "2f84d4fa8900",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,disneycruisebrasil.com"
-        },
-        {
-          "id": "3cd00a6d0988",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,thewaltdisneycompany.com"
-        },
-        {
-          "id": "4a04c2846ddc",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,shops-disney.com"
-        },
-        {
-          "id": "7cfd085f44a4",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,disneystore.com"
-        },
-        {
-          "id": "82dfaa20c3c6",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,disneyworld-go.com"
-        },
-        {
-          "id": "9880c9f7fac9",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,disneylandparis.com"
-        },
-        {
-          "id": "a4cf7f444838",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,35.186.224.47/32,no-resolve"
-        },
-        {
-          "id": "ae0c096b14ee",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,shopdisney.com"
-        },
-        {
-          "id": "b23fa77e9c63",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,netflixinvestor.com"
-        },
-        {
-          "id": "b9289d990f46",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,go-disneyworldgo.com"
-        },
-        {
-          "id": "c14226df3691",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,104.154.127.126/32,no-resolve"
-        },
-        {
-          "id": "dc19217a9dbd",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,netflixtechblog.com"
-        },
-        {
-          "id": "e0a044f5aabe",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,abcnews.edgesuite.net"
-        },
-        {
-          "id": "f7cf4449225c",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,go.com"
-        },
-        {
-          "id": "fdef0c3d66c1",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,netflix.net"
-        },
-        {
-          "id": "ffcb8be16f85",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,disneycareers.com"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "7592ce589a44",
-          "source": "blackmatrix7 Global",
-          "rule": "DOMAIN-SUFFIX,spotify.link"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
       "file": "GlobalMedia.list",
-      "prev_total": 2158,
+      "prev_total": 2153,
       "curr_total": 2153,
-      "added_count": 9,
-      "removed_count": 14,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "075c1321a44d",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,registerdisney.go.com"
-        },
-        {
-          "id": "11b62698a902",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,hotstar-cdn.net"
-        },
-        {
-          "id": "65bc2859fcf9",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,hotstar.com"
-        },
-        {
-          "id": "6cedad3c2887",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,hotstarext.com"
-        },
-        {
-          "id": "7592ce589a44",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,spotify.link"
-        },
-        {
-          "id": "a3f928d03110",
-          "source": "Manual Rules",
-          "rule": "AND,((DOMAIN-SUFFIX,netflix.net),(NOT,((DOMAIN-SUFFIX,ir.netflix.net))))"
-        },
-        {
-          "id": "db4822c89873",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,abc.go.com"
-        },
-        {
-          "id": "e473622036b6",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,hotstar-labs.com"
-        },
-        {
-          "id": "ff86a3ff1520",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,espn.go.com"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "0b6944d722d8",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,netflixstudios.com"
-        },
-        {
-          "id": "2a2bcb0868f2",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,marvel.com"
-        },
-        {
-          "id": "2f84d4fa8900",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,disneycruisebrasil.com"
-        },
-        {
-          "id": "4a04c2846ddc",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,shops-disney.com"
-        },
-        {
-          "id": "7cfd085f44a4",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,disneystore.com"
-        },
-        {
-          "id": "82dfaa20c3c6",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,disneyworld-go.com"
-        },
-        {
-          "id": "a4cf7f444838",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "IP-CIDR,35.186.224.47/32,no-resolve"
-        },
-        {
-          "id": "ae0c096b14ee",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,shopdisney.com"
-        },
-        {
-          "id": "b23fa77e9c63",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,netflixinvestor.com"
-        },
-        {
-          "id": "b9289d990f46",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,go-disneyworldgo.com"
-        },
-        {
-          "id": "dc19217a9dbd",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,netflixtechblog.com"
-        },
-        {
-          "id": "f7cf4449225c",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,go.com"
-        },
-        {
-          "id": "fdef0c3d66c1",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,netflix.net"
-        },
-        {
-          "id": "ffcb8be16f85",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,disneycareers.com"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -569,40 +280,13 @@
     },
     {
       "file": "Netflix.list",
-      "prev_total": 31,
+      "prev_total": 28,
       "curr_total": 28,
-      "added_count": 1,
-      "removed_count": 4,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "a3f928d03110",
-          "source": "Manual Rules",
-          "rule": "AND,((DOMAIN-SUFFIX,netflix.net),(NOT,((DOMAIN-SUFFIX,ir.netflix.net))))"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "0b6944d722d8",
-          "source": "blackmatrix7 Netflix",
-          "rule": "DOMAIN-SUFFIX,netflixstudios.com"
-        },
-        {
-          "id": "b23fa77e9c63",
-          "source": "blackmatrix7 Netflix",
-          "rule": "DOMAIN-SUFFIX,netflixinvestor.com"
-        },
-        {
-          "id": "dc19217a9dbd",
-          "source": "blackmatrix7 Netflix",
-          "rule": "DOMAIN-SUFFIX,netflixtechblog.com"
-        },
-        {
-          "id": "fdef0c3d66c1",
-          "source": "blackmatrix7 Netflix",
-          "rule": "DOMAIN-SUFFIX,netflix.net"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -651,30 +335,13 @@
     },
     {
       "file": "Spotify.list",
-      "prev_total": 30,
+      "prev_total": 29,
       "curr_total": 29,
-      "added_count": 1,
-      "removed_count": 2,
+      "added_count": 0,
+      "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "7592ce589a44",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,spotify.link"
-        }
-      ],
-      "removed_sample": [
-        {
-          "id": "a4cf7f444838",
-          "source": "blackmatrix7 Spotify",
-          "rule": "IP-CIDR,35.186.224.47/32,no-resolve"
-        },
-        {
-          "id": "c14226df3691",
-          "source": "blackmatrix7 Spotify",
-          "rule": "IP-CIDR,104.154.127.126/32,no-resolve"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
