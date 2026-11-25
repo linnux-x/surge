@@ -11,7 +11,7 @@
       "label": "Rabbit-Spec AIGC",
       "url": "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list",
       "format": null,
-      "sha256": "2dd5e7118640fa57c027da7b550b0af89e7c9c1b50bd3daf4981caae3f2f34f8"
+      "sha256": "2d7dda9d459c22dcfff3277ddca0c7c9eda49c719d5e7b76e4811f7b431a2272"
     },
     {
       "label": "ConnersHua AI",
@@ -23,7 +23,7 @@
       "label": "OpenAI ChatGPT Voice",
       "url": "https://openai.com/chatgpt-voice.json",
       "format": "chatgpt-voice-json",
-      "sha256": "a0a3061104fcf421dd3dbdcd99a47cde6bb197ccbab102468a9f903e992a8aa5"
+      "sha256": "43d42689ce6134de117f70d1c72d40153afa6c0f1efc250db7c2340af51a44f3"
     }
   ]
 }

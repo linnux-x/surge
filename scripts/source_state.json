@@ -6,9 +6,9 @@
     "source_available": true
   },
   "https://openai.com/chatgpt-voice.json": {
-    "content_length": "14856",
-    "etag": "0x8DF4381AC969205",
-    "last_modified": "Mon, 16 Nov 2026 01:33:53 GMT",
+    "content_length": "16043",
+    "etag": "0x8DF4A6194829D3D",
+    "last_modified": "Tue, 24 Nov 2026 19:31:47 GMT",
     "source_available": true
   },
   "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/AI.list": {
@@ -24,14 +24,14 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
-    "content_length": "3601",
-    "etag": "\"d89343fbbeca65aab002312415db6534aa6ee93b5e425c9fd5bcaae793bd72ff\"",
+    "content_length": "11201",
+    "etag": "\"8ed7400ee573fb468f689fcd3af77ffd44cb2a2f5a632636968b2e05f011fe65\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
-    "content_length": "88800",
-    "etag": "\"fb7c00b1e64738e47de64f3c77d1d65166a18794e9c0a6896a02ddc83e8ff435\"",
+    "content_length": "89066",
+    "etag": "\"183f2a80c726b0313bcf799d75841c71c309db0344526a57f2f6265bbd68703e\"",
     "last_modified": null,
     "source_available": true
   },
@@ -42,8 +42,8 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaLab/speedtest-net-servers-dist/master/servers.json": {
-    "content_length": "572104",
-    "etag": "\"bffb4739f4067bdae4db162da1c18a058743ec900174764aa2824da00976b575\"",
+    "content_length": "571694",
+    "etag": "\"f354fd0106d8336fa0260ae1992b50214861f2424bf92e6a0ebcfdca2e5ddb81\"",
     "last_modified": null,
     "source_available": true
   },
@@ -216,8 +216,8 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/domestic.conf": {
-    "content_length": null,
-    "etag": "W/\"8e08f21cdab109e51ce754407fe1efc0\"",
+    "content_length": "22814",
+    "etag": "\"8e08f21cdab109e51ce754407fe1efc0\"",
     "last_modified": null,
     "source_available": true
   },
@@ -228,8 +228,8 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/stream.conf": {
-    "content_length": "10487",
-    "etag": "\"9a2922b0fd583ef357efc8a4d76cd7a2\"",
+    "content_length": null,
+    "etag": "W/\"9a2922b0fd583ef357efc8a4d76cd7a2\"",
     "last_modified": null,
     "source_available": true
   },
@@ -240,8 +240,8 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/stream_jp.conf": {
-    "content_length": null,
-    "etag": "W/\"6121e3d4e8f04898df68b853d2653d8c\"",
+    "content_length": "1221",
+    "etag": "\"6121e3d4e8f04898df68b853d2653d8c\"",
     "last_modified": null,
     "source_available": true
   },
@@ -252,8 +252,8 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/stream_us.conf": {
-    "content_length": null,
-    "etag": "W/\"65232c6a73f3f65bdb26f920fc7e5172\"",
+    "content_length": "1959",
+    "etag": "\"65232c6a73f3f65bdb26f920fc7e5172\"",
     "last_modified": null,
     "source_available": true
   }
