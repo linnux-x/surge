@@ -78,6 +78,14 @@ class SourceTransformTests(unittest.TestCase):
         retained = ['DOMAIN,api.openai.com', 'DOMAIN-SUFFIX,notgrammarly.com']
         self.assertEqual(filter_candidates(upstream + retained, exclude), retained)
 
+    def test_ai_keeps_cross_product_bytedapm_in_global(self):
+        exclude = Path(__file__).resolve().parents[1] / 'Rule/Manual/AI.exclude.txt'
+        candidates = [f'{kind},sf16-short-sg.bytedapm.com{option}'
+                      for kind in ('DOMAIN', 'DOMAIN-SUFFIX')
+                      for option in ('', ',extended-matching')]
+        retained = ['DOMAIN-SUFFIX,byteoversea.net', 'DOMAIN,api.openai.com']
+        self.assertEqual(filter_candidates(candidates + retained, exclude), retained)
+
     def test_ai_excludes_shared_meta_rules_and_keeps_muse(self):
         exclude = Path(__file__).resolve().parents[1] / 'Rule/Manual/AI.exclude.txt'
         upstream = [

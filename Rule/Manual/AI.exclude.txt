@@ -166,3 +166,7 @@ DOMAIN,grammarly.com
 DOMAIN-SUFFIX,grammarly.com
 DOMAIN,static.grammarly.com
 DOMAIN-SUFFIX,static.grammarly.com
+
+# 跨产品资源已有 Global 父域与严格路由回归，不随 AI 上游新增条目改组。
+DOMAIN,sf16-short-sg.bytedapm.com
+DOMAIN-SUFFIX,sf16-short-sg.bytedapm.com
