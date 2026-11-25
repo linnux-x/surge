@@ -68,6 +68,16 @@ class SourceTransformTests(unittest.TestCase):
         ]
         self.assertEqual(filter_candidates(candidates + ai_specific, exclude), ai_specific)
 
+    def test_grammarly_upstream_cannot_capture_existing_cdn_route(self):
+        exclude = Path(__file__).resolve().parents[1] / 'Rule/Manual/AI.exclude.txt'
+        # 上游曾用整个根后缀抢占 CDN；同时覆盖精确类型和选项变体。
+        upstream = [f'{kind},{host}{option}'
+                    for host in ('grammarly.com', 'static.grammarly.com')
+                    for kind in ('DOMAIN', 'DOMAIN-SUFFIX')
+                    for option in ('', ',extended-matching')]
+        retained = ['DOMAIN,api.openai.com', 'DOMAIN-SUFFIX,notgrammarly.com']
+        self.assertEqual(filter_candidates(upstream + retained, exclude), retained)
+
     def test_ai_excludes_shared_meta_rules_and_keeps_muse(self):
         exclude = Path(__file__).resolve().parents[1] / 'Rule/Manual/AI.exclude.txt'
         upstream = [

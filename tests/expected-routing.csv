@@ -539,6 +539,8 @@ d.applovin.com,AdBlock.list,REJECT,AppLovin 手游广告聚合
 54.86.0.1,Global.list,Global,共享 AWS EC2 网段样本
 static.grammarly.com,CDN.list,CDN,Grammarly 静态资源原端点
 static.grammarly.com.example,FINAL,Global,无关后缀不能命中 Grammarly CDN
+grammarly.com,FINAL,Global,排除上游宽泛 AI 父域后保持原有通用回退
+app.grammarly.com,FINAL,Global,非静态子域不随 CDN 或 AI 专属策略切换
 docs-files.gitbook.io,CDN.list,CDN,GitBook CDN 的真实域名结构
 docs-files.gitbook.io.example,FINAL,Global,无关后缀不能命中 GitBook CDN
 store.epicgames.com,Game.list,Game,Epic 商店的官方域名
