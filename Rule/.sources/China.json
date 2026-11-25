@@ -17,7 +17,7 @@
       "label": "Rabbit-Spec China",
       "url": "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list",
       "format": "domainset",
-      "sha256": "4738e30dcda05d3a318fffa0105ea983fafe1de3e8d5f95162db7af72002395c"
+      "sha256": "57c6301d08b72d85655ea7315393daaf9461f6fabe32209b14a19a2b5e8751f6"
     }
   ]
 }

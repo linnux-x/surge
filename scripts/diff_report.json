@@ -1,19 +1,702 @@
 {
-  "generated_at": "2026-11-23T10:13:55.252506",
-  "total_added": 17,
-  "total_removed": 32,
-  "total_source_changed": 0,
+  "generated_at": "2026-11-26T05:56:38.335837",
+  "total_added": 259,
+  "total_removed": 115,
+  "total_source_changed": 7,
   "diffs": [
     {
       "file": "AI.list",
       "prev_total": 562,
-      "curr_total": 562,
-      "added_count": 0,
-      "removed_count": 0,
-      "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [],
-      "source_changed_sample": []
+      "curr_total": 751,
+      "added_count": 218,
+      "removed_count": 29,
+      "source_changed_count": 7,
+      "added_sample": [
+        {
+          "id": "0008c650028f",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,comfyregistry.org"
+        },
+        {
+          "id": "00ec72a6045d",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com"
+        },
+        {
+          "id": "040160cb39b2",
+          "source": "OpenAI ChatGPT Voice",
+          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,172.196.43.61/32,no-resolve))"
+        },
+        {
+          "id": "0641c42114ae",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,grazie.aws.intellij.net"
+        },
+        {
+          "id": "077a3f9e3ec1",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,civitai.com"
+        },
+        {
+          "id": "08dbd846d0a7",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,heygen.com"
+        },
+        {
+          "id": "094355df1ecb",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,replit.com"
+        },
+        {
+          "id": "098538b69eaf",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,qoder.com"
+        },
+        {
+          "id": "09992d928ec2",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN,aws-language-servers.us-east-1.amazonaws.com"
+        },
+        {
+          "id": "0a6f66a7c22e",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN,codewhisperer.us-east-1.amazonaws.com"
+        },
+        {
+          "id": "0b0ed9433bc9",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,grok.x.com"
+        },
+        {
+          "id": "0b2abfd79e07",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,commandcode.ai"
+        },
+        {
+          "id": "0b5042f9439f",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,firefly.adobe.io"
+        },
+        {
+          "id": "0cfa38a820bd",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,elevenlabsusercontent.com"
+        },
+        {
+          "id": "0d07a72900e6",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN,appsgenaiserver-pa.clients6.google.com"
+        },
+        {
+          "id": "0d795a7eab07",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,lmstudio.ai"
+        },
+        {
+          "id": "0dc1e449f52c",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,interface.feedback"
+        },
+        {
+          "id": "0e764216738c",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,windsurf.build"
+        },
+        {
+          "id": "0e80e8feab61",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,kilo.ai"
+        },
+        {
+          "id": "0f160f7335e0",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,claude.dev"
+        },
+        {
+          "id": "0fa4bf1171df",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,notebook.google.com"
+        },
+        {
+          "id": "10a5cafc7cf6",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,starling.zijieapi.com"
+        },
+        {
+          "id": "131328ae9781",
+          "source": "OpenAI ChatGPT Voice",
+          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.127.120.244/32,no-resolve))"
+        },
+        {
+          "id": "1578f20db917",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN,webchannel-alkalimakersuite-pa.clients6.google.com"
+        },
+        {
+          "id": "163299f9bab3",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN,copilotprodattachments.blob.core.windows.net"
+        },
+        {
+          "id": "18357c2e145c",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,trae.ai"
+        },
+        {
+          "id": "190b735b8d93",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,crewai.com"
+        },
+        {
+          "id": "1973799cf09a",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,lmarena.ai"
+        },
+        {
+          "id": "1a178acbd995",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,duck.ai"
+        },
+        {
+          "id": "1c83b1e6987f",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,q.us-east-1.amazonaws.com"
+        },
+        {
+          "id": "1e890e4bf12d",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN,aws-toolkit-language-servers.amazonaws.com"
+        },
+        {
+          "id": "219ea3d92bab",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,chutes.ai"
+        },
+        {
+          "id": "2700baab159d",
+          "source": "OpenAI ChatGPT Voice",
+          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,51.105.39.183/32,no-resolve))"
+        },
+        {
+          "id": "2bf354c75852",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,openclaw.ai"
+        },
+        {
+          "id": "2cfc30e96392",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,continue.dev"
+        },
+        {
+          "id": "2d56e78f2391",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,gemini.gstatic.com"
+        },
+        {
+          "id": "2ee8b7b89090",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,opencode.ai"
+        },
+        {
+          "id": "3363fad5b3c6",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,runwayml.com"
+        },
+        {
+          "id": "3658017d5749",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,ai.google.dev"
+        },
+        {
+          "id": "37bf29a75ca0",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,labstailwind.pa.googleapis.com"
+        },
+        {
+          "id": "390f15ee6e48",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,descript.com"
+        },
+        {
+          "id": "399674e3eff9",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,notebook.google"
+        },
+        {
+          "id": "3eba7e5ecf3d",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN,gateway.bingviz.microsoftapp.net"
+        },
+        {
+          "id": "3fd9b76387e7",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,antigravity.google.com"
+        },
+        {
+          "id": "41d76d67ae8c",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,cici.com"
+        },
+        {
+          "id": "423394c806b2",
+          "source": "OpenAI ChatGPT Voice",
+          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.124.193.23/32,no-resolve))"
+        },
+        {
+          "id": "43e0778cfa9d",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,bolt.new"
+        },
+        {
+          "id": "45360c62beff",
+          "source": "OpenAI ChatGPT Voice",
+          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,57.156.64.73/32,no-resolve))"
+        },
+        {
+          "id": "45e12299ff7b",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,tron-sg.bytelemon.com"
+        },
+        {
+          "id": "479d797dc5ef",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,h2o.ai"
+        },
+        {
+          "id": "49f05aa0823e",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,repl.it"
+        },
+        {
+          "id": "4b3491a1725d",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,ant.dev"
+        },
+        {
+          "id": "4c6c24bb567e",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,manuscdn.com"
+        },
+        {
+          "id": "4d5713126265",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,you.com"
+        },
+        {
+          "id": "4e4eab776be9",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN,idetoolkits-hostedfiles.amazonaws.com"
+        },
+        {
+          "id": "4f045bbc358e",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,perplexity.com"
+        },
+        {
+          "id": "4ff7dc804988",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,character.ai"
+        },
+        {
+          "id": "51e8dc0f9a64",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,jetbrains.ai"
+        },
+        {
+          "id": "52952258f996",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,gemma.ai"
+        },
+        {
+          "id": "54c6d2db1509",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,crixet.com"
+        },
+        {
+          "id": "561cfb9d1361",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,replit.dev"
+        },
+        {
+          "id": "571eaf32d448",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,v0.dev"
+        },
+        {
+          "id": "58b7a5b7d6fe",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,edgeservices.bing.com"
+        },
+        {
+          "id": "58c9e9711972",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,midjourney.com"
+        },
+        {
+          "id": "590dad9ffd92",
+          "source": "OpenAI ChatGPT Voice",
+          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.175.112.94/32,no-resolve))"
+        },
+        {
+          "id": "591d986e60b3",
+          "source": "OpenAI ChatGPT Voice",
+          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.78.168.55/32,no-resolve))"
+        },
+        {
+          "id": "5ceaf0badd01",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,langchain.com"
+        },
+        {
+          "id": "602c7788cdd7",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,synthesia.io"
+        },
+        {
+          "id": "619167cf7180",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,cohere.com"
+        },
+        {
+          "id": "61a4c4f18289",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN,ppl-ai-file-upload.s3.amazonaws.com"
+        },
+        {
+          "id": "643bcce596ac",
+          "source": "OpenAI ChatGPT Voice",
+          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.213.235.219/32,no-resolve))"
+        },
+        {
+          "id": "64de5d3f5b34",
+          "source": "OpenAI ChatGPT Voice",
+          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,172.172.179.197/32,no-resolve))"
+        },
+        {
+          "id": "659d472b6743",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,abtestvm-sg.bytedance.com"
+        },
+        {
+          "id": "66621031ad89",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,openai.org"
+        },
+        {
+          "id": "67bfb69a3112",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN,appsgenaiserver-pa.clients.google.com"
+        },
+        {
+          "id": "6a3fbd144de1",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,aida.googleapis.com"
+        },
+        {
+          "id": "6af257303e51",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN,copilot-workspace.githubnext.com"
+        },
+        {
+          "id": "6b2b4ee2e589",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,anthropic.com.cn"
+        },
+        {
+          "id": "6b99969f7bb8",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,leonardo.ai"
+        },
+        {
+          "id": "6c07fc15c1a3",
+          "source": "OpenAI ChatGPT Voice",
+          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,74.152.66.187/32,no-resolve))"
+        },
+        {
+          "id": "6de19f0b7fbd",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,tabnine.com"
+        },
+        {
+          "id": "6f1edbdba9e4",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,mcpservertest.online"
+        },
+        {
+          "id": "704dc7551c92",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,ciciaicdn.com"
+        },
+        {
+          "id": "7210faa9eac6",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN,ai.developer.meta.com"
+        },
+        {
+          "id": "722ea69a4728",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,cody.dev"
+        },
+        {
+          "id": "7454c2190801",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,youmind.com"
+        },
+        {
+          "id": "7490702e4d65",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,muthos.com"
+        },
+        {
+          "id": "754423811481",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,suno.ai"
+        },
+        {
+          "id": "75fa2c809f68",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,llamameta.net"
+        },
+        {
+          "id": "77f698d29ea2",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN,client-telemetry.us-east-1.amazonaws.com"
+        },
+        {
+          "id": "7c80df553966",
+          "source": "OpenAI ChatGPT Voice",
+          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.165.191.7/32,no-resolve))"
+        },
+        {
+          "id": "7da74b7ef7be",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "IP-ASN,399358,no-resolve"
+        },
+        {
+          "id": "7e5f1f5fd6bb",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,lumalabs.ai"
+        },
+        {
+          "id": "80769d1c6add",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,otter.ai"
+        },
+        {
+          "id": "812b8b8bc9f9",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,youmind.ai"
+        },
+        {
+          "id": "81bfa50350f5",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,ai.studio"
+        },
+        {
+          "id": "846de140d696",
+          "source": "OpenAI ChatGPT Voice",
+          "rule": "AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.200.182.97/32,no-resolve))"
+        },
+        {
+          "id": "85745039dfce",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,ampcode.com"
+        },
+        {
+          "id": "87aa5d797529",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,modelcontextprotocol.net"
+        },
+        {
+          "id": "87daba4d3d94",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN-SUFFIX,v0.app"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "047cc5f8bd4d",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,antigravity.google"
+        },
+        {
+          "id": "107f612efba1",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,antigravity-unleash.goog"
+        },
+        {
+          "id": "120bba58c982",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,auth.grokipedia.com"
+        },
+        {
+          "id": "17ed196cec02",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,claude.new"
+        },
+        {
+          "id": "29914f328abf",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,flow.google"
+        },
+        {
+          "id": "2abac546c15e",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,trae-api-sg.mchost.guru"
+        },
+        {
+          "id": "3767ca234c2e",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,robinfrontend-pa.googleapis.com"
+        },
+        {
+          "id": "391d402853fb",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,claude.site"
+        },
+        {
+          "id": "405fda27adf6",
+          "source": "Rabbit-Spec AIGC",
+          "rule": "DOMAIN,chat.openai.com.cdn.cloudflare.net"
+        },
+        {
+          "id": "46ac15f42c69",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,ai.google.dev"
+        },
+        {
+          "id": "619d261c2c90",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,aida.googleapis.com"
+        },
+        {
+          "id": "61bd93b136ea",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,api.together.ai"
+        },
+        {
+          "id": "68aa8ae76307",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,www.claude.new"
+        },
+        {
+          "id": "783c8c8ed09b",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,www.claudeacademy.com"
+        },
+        {
+          "id": "7c0d5c855aef",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,opencode.ai"
+        },
+        {
+          "id": "95705d1d523a",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,api.devin.ai"
+        },
+        {
+          "id": "aad2bbc989a4",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,claudeacademy.com"
+        },
+        {
+          "id": "b8318f06bb26",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,router.huggingface.co"
+        },
+        {
+          "id": "c393b4a65a75",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,static.devin.ai"
+        },
+        {
+          "id": "c882ca09b881",
+          "source": "SukkaW AI",
+          "rule": "DOMAIN,api.jetbrains.ai"
+        },
+        {
+          "id": "d11c097d9e3a",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,www.claude.dev"
+        },
+        {
+          "id": "d2b4d957442c",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,jules.google.com"
+        },
+        {
+          "id": "da97cad3b7e3",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,aisandbox-pa.googleapis.com"
+        },
+        {
+          "id": "dbc5d5f95763",
+          "source": "SukkaW AI",
+          "rule": "DOMAIN,gateway.ai.cloudflare.com"
+        },
+        {
+          "id": "e6680e1bca06",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,claude.dev"
+        },
+        {
+          "id": "f1e1338d0af6",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,app.devin.ai"
+        },
+        {
+          "id": "f1eb0f6db67e",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,api.together.xyz"
+        },
+        {
+          "id": "f320df6eb3fc",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,api.app.prod.grazie.aws.intellij.net"
+        },
+        {
+          "id": "ffa6365b4993",
+          "source": "Manual Rules",
+          "rule": "DOMAIN,devin.ai"
+        }
+      ],
+      "source_changed_sample": [
+        {
+          "id": "4c96ae31dbf1",
+          "old_source": "ConnersHua AI",
+          "new_source": "Rabbit-Spec AIGC"
+        },
+        {
+          "id": "6cf089f4f159",
+          "old_source": "ConnersHua AI",
+          "new_source": "Rabbit-Spec AIGC"
+        },
+        {
+          "id": "d68cabdb1f69",
+          "old_source": "ConnersHua AI",
+          "new_source": "Rabbit-Spec AIGC"
+        },
+        {
+          "id": "9d0ff2f30280",
+          "old_source": "ConnersHua AI",
+          "new_source": "Rabbit-Spec AIGC"
+        },
+        {
+          "id": "54faa00968bf",
+          "old_source": "ConnersHua AI",
+          "new_source": "Rabbit-Spec AIGC"
+        },
+        {
+          "id": "ce9f29ed7edf",
+          "old_source": "ConnersHua AI",
+          "new_source": "Rabbit-Spec AIGC"
+        },
+        {
+          "id": "2fd8b3258bd3",
+          "old_source": "ConnersHua AI",
+          "new_source": "Rabbit-Spec AIGC"
+        }
+      ]
     },
     {
       "file": "AdBlock.list",
@@ -72,18 +755,12 @@
     },
     {
       "file": "Binance.list",
-      "prev_total": 4,
+      "prev_total": 5,
       "curr_total": 5,
-      "added_count": 1,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "3fc32e9101b0",
-          "source": "Manual Rules",
-          "rule": "DOMAIN,bpay.binanceapi.com"
-        }
-      ],
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -101,24 +778,43 @@
     {
       "file": "China.list",
       "prev_total": 110661,
-      "curr_total": 110661,
-      "added_count": 1,
-      "removed_count": 1,
+      "curr_total": 110667,
+      "added_count": 6,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [
         {
-          "id": "da3020d97154",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,223789.xyz"
-        }
-      ],
-      "removed_sample": [
+          "id": "3ad9f264f759",
+          "source": "Rabbit-Spec China",
+          "rule": "DOMAIN-SUFFIX,lujincaifu.com"
+        },
         {
-          "id": "914c64de3e00",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-KEYWORD,223789"
+          "id": "5846578138e0",
+          "source": "Rabbit-Spec China",
+          "rule": "DOMAIN-SUFFIX,lenovofuturecenter.com"
+        },
+        {
+          "id": "67c401020726",
+          "source": "Rabbit-Spec China",
+          "rule": "DOMAIN-SUFFIX,qpmcn.com"
+        },
+        {
+          "id": "771d9a2cd3b6",
+          "source": "Rabbit-Spec China",
+          "rule": "DOMAIN-SUFFIX,yqbmall.com"
+        },
+        {
+          "id": "8e9f8ca9928f",
+          "source": "Rabbit-Spec China",
+          "rule": "DOMAIN-SUFFIX,zhaoliangjipc.com"
+        },
+        {
+          "id": "c814c8c003f3",
+          "source": "Rabbit-Spec China",
+          "rule": "DOMAIN-SUFFIX,172.com"
         }
       ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -156,59 +852,13 @@
     },
     {
       "file": "Disney.list",
-      "prev_total": 151,
+      "prev_total": 142,
       "curr_total": 142,
       "added_count": 0,
-      "removed_count": 9,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "0b1888a69cb7",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,disneytermsofuse.com"
-        },
-        {
-          "id": "16b0add3e301",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,disneyiejobs.com"
-        },
-        {
-          "id": "2ee95d576c87",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,disneyprivacycenter.com"
-        },
-        {
-          "id": "4616a58c8504",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,disneyaulani.com"
-        },
-        {
-          "id": "4b35db4e200f",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,disneyadsales.com"
-        },
-        {
-          "id": "95faee2bd95f",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,disneytickets.co.uk"
-        },
-        {
-          "id": "a8c430f84ae9",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,disneytvajobs.com"
-        },
-        {
-          "id": "c25eec2e0599",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,adventuresbydisney.com"
-        },
-        {
-          "id": "f92d06a553bf",
-          "source": "blackmatrix7 Disney",
-          "rule": "DOMAIN-SUFFIX,natgeomaps.com"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -235,187 +885,345 @@
     },
     {
       "file": "Global.list",
-      "prev_total": 24666,
-      "curr_total": 24680,
-      "added_count": 14,
-      "removed_count": 0,
-      "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "0b1888a69cb7",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,disneytermsofuse.com"
-        },
-        {
-          "id": "16b0add3e301",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,disneyiejobs.com"
-        },
-        {
-          "id": "2ee95d576c87",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,disneyprivacycenter.com"
-        },
-        {
-          "id": "3d790edffb68",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,aboutamazon.com"
-        },
-        {
-          "id": "4616a58c8504",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,disneyaulani.com"
-        },
-        {
-          "id": "4b35db4e200f",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,disneyadsales.com"
-        },
-        {
-          "id": "95faee2bd95f",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,disneytickets.co.uk"
-        },
-        {
-          "id": "a5a7cb0036a7",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,amebame.com"
-        },
-        {
-          "id": "a8c430f84ae9",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,disneytvajobs.com"
-        },
-        {
-          "id": "c25eec2e0599",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,adventuresbydisney.com"
-        },
-        {
-          "id": "c320245b083c",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,dokusho-ojikan.jp"
-        },
-        {
-          "id": "eaf7d709883e",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,ameblo.jp"
-        },
-        {
-          "id": "f92d06a553bf",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,natgeomaps.com"
-        },
-        {
-          "id": "fd491b97deef",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-SUFFIX,ameba.jp"
-        }
-      ],
-      "removed_sample": [],
-      "source_changed_sample": []
-    },
-    {
-      "file": "GlobalMedia.list",
-      "prev_total": 2153,
-      "curr_total": 2138,
+      "prev_total": 24680,
+      "curr_total": 24618,
       "added_count": 0,
-      "removed_count": 15,
+      "removed_count": 62,
       "source_changed_count": 0,
       "added_sample": [],
       "removed_sample": [
         {
-          "id": "16b0add3e301",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,disneyiejobs.com"
+          "id": "0008c650028f",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,comfyregistry.org"
         },
         {
-          "id": "3d790edffb68",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,aboutamazon.com"
+          "id": "077a3f9e3ec1",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,civitai.com"
         },
         {
-          "id": "4616a58c8504",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,disneyaulani.com"
+          "id": "0d795a7eab07",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,lmstudio.ai"
         },
         {
-          "id": "4b35db4e200f",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,disneyadsales.com"
+          "id": "0e764216738c",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,windsurf.build"
         },
         {
-          "id": "533741016741",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "URL-REGEX,^https?:\\/\\/www\\.amazon\\.com\\/(Amazon-Video|gp\\/video)\\/"
+          "id": "0f160f7335e0",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,claude.dev"
         },
         {
-          "id": "95faee2bd95f",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,disneytickets.co.uk"
+          "id": "18357c2e145c",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,trae.ai"
         },
         {
-          "id": "a5a7cb0036a7",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,amebame.com"
+          "id": "190b735b8d93",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,crewai.com"
         },
         {
-          "id": "a8c430f84ae9",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,disneytvajobs.com"
+          "id": "1973799cf09a",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,lmarena.ai"
         },
         {
-          "id": "c25eec2e0599",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,adventuresbydisney.com"
+          "id": "1a178acbd995",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,duck.ai"
         },
         {
-          "id": "c320245b083c",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,dokusho-ojikan.jp"
+          "id": "219ea3d92bab",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,chutes.ai"
         },
         {
-          "id": "e3e69d38a1c3",
-          "source": "Manual Rules",
-          "rule": "DOMAIN-KEYWORD,023168"
+          "id": "2bf354c75852",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,openclaw.ai"
         },
         {
-          "id": "eaf7d709883e",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,ameblo.jp"
+          "id": "2ee8b7b89090",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,opencode.ai"
         },
         {
-          "id": "f59249b2f580",
-          "source": "SukkaW Stream",
-          "rule": "PROCESS-NAME,music"
+          "id": "41d76d67ae8c",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,cici.com"
         },
         {
-          "id": "f92d06a553bf",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,natgeomaps.com"
+          "id": "479d797dc5ef",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,h2o.ai"
         },
         {
-          "id": "fd491b97deef",
-          "source": "blackmatrix7 GlobalMedia",
-          "rule": "DOMAIN-SUFFIX,ameba.jp"
+          "id": "4b3491a1725d",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,ant.dev"
+        },
+        {
+          "id": "4d5713126265",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,you.com"
+        },
+        {
+          "id": "4f045bbc358e",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,perplexity.com"
+        },
+        {
+          "id": "4ff7dc804988",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,character.ai"
+        },
+        {
+          "id": "51e8dc0f9a64",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,jetbrains.ai"
+        },
+        {
+          "id": "54c6d2db1509",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,crixet.com"
+        },
+        {
+          "id": "58c9e9711972",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,midjourney.com"
+        },
+        {
+          "id": "5ceaf0badd01",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,langchain.com"
+        },
+        {
+          "id": "619167cf7180",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,cohere.com"
+        },
+        {
+          "id": "66621031ad89",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,openai.org"
+        },
+        {
+          "id": "6b99969f7bb8",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,leonardo.ai"
+        },
+        {
+          "id": "7454c2190801",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,youmind.com"
+        },
+        {
+          "id": "754423811481",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,suno.ai"
+        },
+        {
+          "id": "812b8b8bc9f9",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,youmind.ai"
+        },
+        {
+          "id": "81bfa50350f5",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,ai.studio"
+        },
+        {
+          "id": "87e39872b847",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,kiro.dev"
+        },
+        {
+          "id": "8df36186079e",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,hf.space"
+        },
+        {
+          "id": "91df6fe07412",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,cohere.ai"
+        },
+        {
+          "id": "9287be9bdfa1",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,huggingface.co"
+        },
+        {
+          "id": "93c47fe0a183",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,youmind.site"
+        },
+        {
+          "id": "9464ee13b59d",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,chatbotclaude.com"
+        },
+        {
+          "id": "95033fd92bc9",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,ciciai.com"
+        },
+        {
+          "id": "96c9f6104d50",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,atmeta.com"
+        },
+        {
+          "id": "9cadc89307f6",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,comfy.org"
+        },
+        {
+          "id": "9cec67cbe61c",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,cerebras.ai"
+        },
+        {
+          "id": "9e49db6e06dc",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,anthropic.team"
+        },
+        {
+          "id": "9e938dc5c9c2",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,antspace.dev"
+        },
+        {
+          "id": "9f98d08cfd51",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,llama.com"
+        },
+        {
+          "id": "a1a1d525ce1e",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,coze.com"
+        },
+        {
+          "id": "b214bcdbbc6b",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,marscode.com"
+        },
+        {
+          "id": "b368b38efee1",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,manus.im"
+        },
+        {
+          "id": "b849525a4e78",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,claudeacademy.com"
+        },
+        {
+          "id": "b94593f2dc7e",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,hf.co"
+        },
+        {
+          "id": "bdcf2ee30a7f",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,suno.com"
+        },
+        {
+          "id": "bde927d4d8f4",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,claude.site"
+        },
+        {
+          "id": "cc4a87dd21d6",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,sourcegraph.com"
+        },
+        {
+          "id": "cced77d62e90",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,diabrowser.com"
+        },
+        {
+          "id": "d34f2571e86c",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,devin.ai"
+        },
+        {
+          "id": "d37d92eaaf15",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,claudepages.dev"
+        },
+        {
+          "id": "d71c4ffcdcc0",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,coderabbit.ai"
+        },
+        {
+          "id": "d779b23c6b10",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,ollama.com"
+        },
+        {
+          "id": "dcbc72e64ba6",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,elevenlabs.io"
+        },
+        {
+          "id": "e5a203127750",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,claude.new"
+        },
+        {
+          "id": "ec8dcbe65712",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,claudestudio.com"
+        },
+        {
+          "id": "f754d54caeb3",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,grokipedia.com"
+        },
+        {
+          "id": "fbf53c3240ba",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,diabrowser.engineering"
+        },
+        {
+          "id": "fcf2426bc57d",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,elevenlabs.com"
+        },
+        {
+          "id": "fddb16e749d7",
+          "source": "blackmatrix7 Global",
+          "rule": "DOMAIN-SUFFIX,lovart.ai"
         }
       ],
       "source_changed_sample": []
     },
     {
-      "file": "Google.list",
-      "prev_total": 684,
-      "curr_total": 685,
-      "added_count": 1,
+      "file": "GlobalMedia.list",
+      "prev_total": 2138,
+      "curr_total": 2138,
+      "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
-      "added_sample": [
-        {
-          "id": "6dad89470664",
-          "source": "Manual Rules",
-          "rule": "IP-CIDR,108.177.8.0/21,no-resolve"
-        }
-      ],
+      "added_sample": [],
+      "removed_sample": [],
+      "source_changed_sample": []
+    },
+    {
+      "file": "Google.list",
+      "prev_total": 685,
+      "curr_total": 685,
+      "added_count": 0,
+      "removed_count": 0,
+      "source_changed_count": 0,
+      "added_sample": [],
       "removed_sample": [],
       "source_changed_sample": []
     },
@@ -443,34 +1251,13 @@
     },
     {
       "file": "JPMedia.list",
-      "prev_total": 25,
+      "prev_total": 21,
       "curr_total": 21,
       "added_count": 0,
-      "removed_count": 4,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "a5a7cb0036a7",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,amebame.com"
-        },
-        {
-          "id": "c320245b083c",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,dokusho-ojikan.jp"
-        },
-        {
-          "id": "eaf7d709883e",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,ameblo.jp"
-        },
-        {
-          "id": "fd491b97deef",
-          "source": "SukkaW Stream JP",
-          "rule": "DOMAIN-SUFFIX,ameba.jp"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {
@@ -519,30 +1306,321 @@
     },
     {
       "file": "SocialMedia.list",
-      "prev_total": 663,
+      "prev_total": 662,
       "curr_total": 662,
-      "added_count": 0,
-      "removed_count": 1,
-      "source_changed_count": 0,
-      "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "6dad89470664",
-          "source": "blackmatrix7 Facebook",
-          "rule": "IP-CIDR,108.177.8.0/21,no-resolve"
-        }
-      ],
-      "source_changed_sample": []
-    },
-    {
-      "file": "Speedtest.list",
-      "prev_total": 1726,
-      "curr_total": 1726,
       "added_count": 0,
       "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
       "removed_sample": [],
+      "source_changed_sample": []
+    },
+    {
+      "file": "Speedtest.list",
+      "prev_total": 1726,
+      "curr_total": 1737,
+      "added_count": 35,
+      "removed_count": 24,
+      "source_changed_count": 0,
+      "added_sample": [
+        {
+          "id": "0ab0cf8a6ab9",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.novateldigital.com"
+        },
+        {
+          "id": "16699495d33c",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speed.uberlinktelecom.com.br"
+        },
+        {
+          "id": "26f9e3f546b4",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.ilitha.com"
+        },
+        {
+          "id": "2c4e9bf40557",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,velocity.softtelecom.net.br"
+        },
+        {
+          "id": "31e8ffa70b1a",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.pnb.vodafoneidea.com"
+        },
+        {
+          "id": "4347ba8f1b04",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,lhr.speedtest.rustbanned.net"
+        },
+        {
+          "id": "5540cc8e3bac",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stetobicoke.rogers.com"
+        },
+        {
+          "id": "559412db0709",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stpanipat.softechinfosol.com"
+        },
+        {
+          "id": "5b6c9723716c",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.syd.netsg.net.au"
+        },
+        {
+          "id": "5ffb4d6de1c7",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stvaughan.netcrawler.ca"
+        },
+        {
+          "id": "616c6bffe17f",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stkingcity.rogers.com"
+        },
+        {
+          "id": "6a42e55feb6b",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.hk.aixxycode.id"
+        },
+        {
+          "id": "72bb8c1b570f",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest5.windtre.it"
+        },
+        {
+          "id": "830bf10487c6",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,gisho.work"
+        },
+        {
+          "id": "890fa3aca5ec",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.orixinet.com.br"
+        },
+        {
+          "id": "8921715d28d7",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest2.tmg.net.id"
+        },
+        {
+          "id": "8e36c5eb6ca2",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest2.micronet.in"
+        },
+        {
+          "id": "934ad5aa9642",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest10g.bhm.as13760.net"
+        },
+        {
+          "id": "96692f154a26",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,veloteste.mrjomar.com.br"
+        },
+        {
+          "id": "9bf7f0647b9f",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.duocast.net"
+        },
+        {
+          "id": "9d2342e15aaa",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stkingcity.netcrawler.ca"
+        },
+        {
+          "id": "9ef50333ec52",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtestmoh1.airtelbroadband.in"
+        },
+        {
+          "id": "a1b9d99a6b53",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtestus.pvdatanet.com"
+        },
+        {
+          "id": "a1bec4214ce1",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,fetdl2.seed.net.tw"
+        },
+        {
+          "id": "b683bdd82f27",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,st02.mtnsat.net"
+        },
+        {
+          "id": "b73df15da330",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stetobicoke.netcrawler.ca"
+        },
+        {
+          "id": "bfe7445158e5",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,st04.mtnsat.net"
+        },
+        {
+          "id": "c11b51d67b4a",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stbarrie.netcrawler.ca"
+        },
+        {
+          "id": "c7730d38d8d7",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest001.bfinetworks.com"
+        },
+        {
+          "id": "e40a990fb123",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,kc.speedtest.rustbanned.net"
+        },
+        {
+          "id": "e41fcdf67e6f",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.bemol.com.br"
+        },
+        {
+          "id": "f1d4ed4013f8",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,bpwoippy.vialis.net"
+        },
+        {
+          "id": "f2367bf1b8eb",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,stvaughan.rogers.com"
+        },
+        {
+          "id": "f4122684bf9e",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest-ams.retn.net"
+        },
+        {
+          "id": "ffd9e1eeef68",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest1.tmg.net.id"
+        }
+      ],
+      "removed_sample": [
+        {
+          "id": "0d9b9f55b7a6",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,lifitelecom.brsserver.com.br"
+        },
+        {
+          "id": "1b2d33f3bf55",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest4.ekowebtech.net"
+        },
+        {
+          "id": "33e4b49c77f9",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,ookla.la.ca.sharktech.net"
+        },
+        {
+          "id": "3a3a932c44e1",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speed.airwavesinternet.com"
+        },
+        {
+          "id": "400b94581e4f",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,test.eolo.it"
+        },
+        {
+          "id": "435df8f008e0",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.respawnhost.com"
+        },
+        {
+          "id": "43c9e647d2a9",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest-adelaide.optusnet.com.au"
+        },
+        {
+          "id": "499c1e741ef8",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,asanet1.brsserver.com.br"
+        },
+        {
+          "id": "4cdddfe9358b",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,sp1.jdmbroadband.com"
+        },
+        {
+          "id": "4d8a0b572a38",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speed.isrcomunicaciones.es"
+        },
+        {
+          "id": "589d7eeccf53",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,ookla.mtt.as6453.net"
+        },
+        {
+          "id": "645c547cce51",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.onetouchexpress.com"
+        },
+        {
+          "id": "678f7dfca317",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest-par.flowhardware.ch"
+        },
+        {
+          "id": "8a039e9d08ba",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.interligpro.com.br"
+        },
+        {
+          "id": "9549a51bac8f",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,ookla.mln.as6453.net"
+        },
+        {
+          "id": "a74e0e560bca",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedt-mi.skycdn.it"
+        },
+        {
+          "id": "a8249c53ba8a",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.thn.uk.syntura.io"
+        },
+        {
+          "id": "b28cbd1348be",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,velocimetro.wspeednet.com.br"
+        },
+        {
+          "id": "b8439ac0d8f2",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.chi.sharktech.net"
+        },
+        {
+          "id": "c3109cd31fc9",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,srv02-sjdm.imj-wanklik.com"
+        },
+        {
+          "id": "cce8869a397d",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest3a.socket.net"
+        },
+        {
+          "id": "d0647073e22a",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,airspeed.airwavesinternet.com"
+        },
+        {
+          "id": "f72f656d309d",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.apexbroadband.in"
+        },
+        {
+          "id": "fc64f25abeb6",
+          "source": "SukkaW Speedtest Servers International",
+          "rule": "DOMAIN,speedtest.absolutevalidation.com"
+        }
+      ],
       "source_changed_sample": []
     },
     {
@@ -602,24 +1680,13 @@
     },
     {
       "file": "USMedia.list",
-      "prev_total": 35,
+      "prev_total": 33,
       "curr_total": 33,
       "added_count": 0,
-      "removed_count": 2,
+      "removed_count": 0,
       "source_changed_count": 0,
       "added_sample": [],
-      "removed_sample": [
-        {
-          "id": "02aa3604bb50",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,uplynk.com"
-        },
-        {
-          "id": "c31dce063d32",
-          "source": "SukkaW Stream US",
-          "rule": "DOMAIN-SUFFIX,theplatform.com"
-        }
-      ],
+      "removed_sample": [],
       "source_changed_sample": []
     },
     {

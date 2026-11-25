@@ -1,9 +1,9 @@
 # NAME: China
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-23 10:13:54 +0800
+# UPDATED: 2026-11-26 05:56:34 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 110661
+# TOTAL: 110667
 
 # ======= Manual Rules ========
 # Mainland China game services and download domains
@@ -110328,6 +110328,7 @@ DOMAIN,cdp.cloud.unity3d.com
 DOMAIN,config.uca.cloud.unity3d.com
 DOMAIN,time.izatcloud.net
 DOMAIN-SUFFIX,123juzi.net
+DOMAIN-SUFFIX,172.com
 DOMAIN-SUFFIX,2345.cc
 DOMAIN-SUFFIX,2345.com
 DOMAIN-SUFFIX,365dmp.com
@@ -110511,6 +110512,7 @@ DOMAIN-SUFFIX,larksuite.com.ttdns2.com
 DOMAIN-SUFFIX,larksuiteimg.com
 DOMAIN-SUFFIX,larkvc.com
 DOMAIN-SUFFIX,lebo.top
+DOMAIN-SUFFIX,lenovofuturecenter.com
 DOMAIN-SUFFIX,letsign.com
 DOMAIN-SUFFIX,lg3000.top
 DOMAIN-SUFFIX,lgstatic.com
@@ -110519,6 +110521,7 @@ DOMAIN-SUFFIX,linkvans.com
 DOMAIN-SUFFIX,liyuans.com
 DOMAIN-SUFFIX,luckysf.net
 DOMAIN-SUFFIX,lufax.com
+DOMAIN-SUFFIX,lujincaifu.com
 DOMAIN-SUFFIX,luyong.com
 DOMAIN-SUFFIX,lydaas.net
 DOMAIN-SUFFIX,lydass.net
@@ -110574,6 +110577,7 @@ DOMAIN-SUFFIX,poizon.net
 DOMAIN-SUFFIX,ppxhhh.com
 DOMAIN-SUFFIX,puata.info
 DOMAIN-SUFFIX,pushcfg.com
+DOMAIN-SUFFIX,qpmcn.com
 DOMAIN-SUFFIX,qq.wang
 DOMAIN-SUFFIX,qq.xn--fiqs8s
 DOMAIN-SUFFIX,qtmojo.com
@@ -110674,6 +110678,7 @@ DOMAIN-SUFFIX,yigao.com
 DOMAIN-SUFFIX,yiqifa.com
 DOMAIN-SUFFIX,youdaoads.com
 DOMAIN-SUFFIX,youkuhonor.com
+DOMAIN-SUFFIX,yqbmall.com
 DOMAIN-SUFFIX,yto.top
 DOMAIN-SUFFIX,yun
 DOMAIN-SUFFIX,yundouxueyuan.com
@@ -110684,6 +110689,7 @@ DOMAIN-SUFFIX,zampda.net
 DOMAIN-SUFFIX,zampdsp.com
 DOMAIN-SUFFIX,zctnet.top
 DOMAIN-SUFFIX,zhanzhang.net
+DOMAIN-SUFFIX,zhaoliangjipc.com
 DOMAIN-SUFFIX,zhiziyun.com
 DOMAIN-SUFFIX,zijiedj.com
 DOMAIN-SUFFIX,zmzfile.com
