@@ -159,3 +159,10 @@ DOMAIN-SUFFIX,zed.dev
 # The Sora export portal is already covered by chatgpt.com.
 DOMAIN,sora.com
 DOMAIN-SUFFIX,sora.com
+
+# Grammarly 静态资源保持 CDN；不让上游根后缀抢占现有分流。
+# 根域和其余子域保持原有后续规则 / FINAL，不新增整站 AI 归类。
+DOMAIN,grammarly.com
+DOMAIN-SUFFIX,grammarly.com
+DOMAIN,static.grammarly.com
+DOMAIN-SUFFIX,static.grammarly.com
