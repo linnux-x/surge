@@ -1,9 +1,9 @@
 # NAME: China
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-26 05:56:34 +0800
+# UPDATED: 2026-11-28 05:00:39 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 110667
+# TOTAL: 110669
 
 # ======= Manual Rules ========
 # Mainland China game services and download domains
@@ -110440,6 +110440,7 @@ DOMAIN-SUFFIX,dxpmedia.com
 DOMAIN-SUFFIX,easou.com
 DOMAIN-SUFFIX,easyliao.com
 DOMAIN-SUFFIX,easytomessage.com
+DOMAIN-SUFFIX,echooai.com
 DOMAIN-SUFFIX,edgemonix.top
 DOMAIN-SUFFIX,eeyy.com
 DOMAIN-SUFFIX,emarbox.com
@@ -110448,6 +110449,7 @@ DOMAIN-SUFFIX,fastapi.net
 DOMAIN-SUFFIX,favonis.cloud
 DOMAIN-SUFFIX,favonis.com
 DOMAIN-SUFFIX,favonis.space
+DOMAIN-SUFFIX,fazhipro.com
 DOMAIN-SUFFIX,fengniaojipei.net
 DOMAIN-SUFFIX,fly-airchina.com
 DOMAIN-SUFFIX,fugetech.com
@@ -110587,6 +110589,7 @@ DOMAIN-SUFFIX,qwapp.top
 DOMAIN-SUFFIX,ro.com
 DOMAIN-SUFFIX,rtbasia.com
 DOMAIN-SUFFIX,rumt-zh.com
+DOMAIN-SUFFIX,saasfz.com
 DOMAIN-SUFFIX,saduck.top
 DOMAIN-SUFFIX,scdng.com
 DOMAIN-SUFFIX,sealsuite.com
@@ -110664,7 +110667,6 @@ DOMAIN-SUFFIX,xdrig.com
 DOMAIN-SUFFIX,xgzb.top
 DOMAIN-SUFFIX,xhsrcdn.com
 DOMAIN-SUFFIX,xiangrikuisite.com
-DOMAIN-SUFFIX,xihuan
 DOMAIN-SUFFIX,xn--8y0a063a
 DOMAIN-SUFFIX,xn--9krt00a
 DOMAIN-SUFFIX,xn--fiq53l6wcx3kp9bc7joo6apn8a.xn--fiqs8s
