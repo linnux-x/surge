@@ -18,20 +18,20 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/cncidr.txt": {
-    "content_length": "234865",
-    "etag": "\"3aae4765873c9e01a870276f5d479e13e0598391009925469c47e659ff718880\"",
+    "content_length": "236742",
+    "etag": "\"ac341dddacb595e4030524efa6fd98a663c309b0aa2664fc6c5a06f21b77f7f8\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list": {
     "content_length": "11201",
-    "etag": "\"8ed7400ee573fb468f689fcd3af77ffd44cb2a2f5a632636968b2e05f011fe65\"",
+    "etag": "\"5454e1d04ae99527d6011007093e3bc87374bbbd01b0b0c5660600d87a0aeb05\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/China.list": {
-    "content_length": "89066",
-    "etag": "\"183f2a80c726b0313bcf799d75841c71c309db0344526a57f2f6265bbd68703e\"",
+    "content_length": "89194",
+    "etag": "\"2af17841f67a12b86599467cc562beb27e694d5092696d9f2d157253573862fe\"",
     "last_modified": null,
     "source_available": true
   },
@@ -42,14 +42,14 @@
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaLab/speedtest-net-servers-dist/master/servers.json": {
-    "content_length": "571694",
-    "etag": "\"f354fd0106d8336fa0260ae1992b50214861f2424bf92e6a0ebcfdca2e5ddb81\"",
+    "content_length": "563231",
+    "etag": "\"c5fbc69feff70e2436c6a91dcba30fefbb88a0b9a896c260394c9553a03211bb\"",
     "last_modified": null,
     "source_available": true
   },
   "https://raw.githubusercontent.com/SukkaW/Surge/master/Source/domainset/download.conf": {
-    "content_length": "35331",
-    "etag": "\"68dad320d233b4b79dd41be87281aad3fcbebb1cdd120853a6db4bab8e45bd05\"",
+    "content_length": "35221",
+    "etag": "\"333070be9b26408d16e0a7b98f69517e0b4ae3890d216f7587e4053cee84402f\"",
     "last_modified": null,
     "source_available": true
   },
@@ -199,7 +199,7 @@
   },
   "https://ruleset.skk.moe/List/non_ip/ai.conf": {
     "content_length": null,
-    "etag": "W/\"f4d71bb3abeb6f1e0630b1c8298222d4\"",
+    "etag": "W/\"4fc71bfa204b5b0c0577d09e5659e2bc\"",
     "last_modified": null,
     "source_available": true
   },
@@ -216,14 +216,14 @@
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/domestic.conf": {
-    "content_length": "22814",
-    "etag": "\"8e08f21cdab109e51ce754407fe1efc0\"",
+    "content_length": null,
+    "etag": "W/\"8e08f21cdab109e51ce754407fe1efc0\"",
     "last_modified": null,
     "source_available": true
   },
   "https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf": {
-    "content_length": null,
-    "etag": "W/\"8b8443d87d10fadfd76dca457c1c880d\"",
+    "content_length": "3076",
+    "etag": "\"8b8443d87d10fadfd76dca457c1c880d\"",
     "last_modified": null,
     "source_available": true
   },

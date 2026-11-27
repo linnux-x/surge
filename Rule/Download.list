@@ -1,9 +1,9 @@
 # NAME: Download
 # AUTHOR: linnux-x
 # REPO: https://github.com/linnux-x/surge
-# UPDATED: 2026-11-21 19:48:33 +0800
+# UPDATED: 2026-11-28 05:00:37 +0800
 # FORMAT: Surge Ruleset
-# TOTAL: 1614
+# TOTAL: 1609
 
 # ======= Manual Rules ========
 # Preserve the S3 path-style endpoint without matching virtual-hosted buckets.
@@ -796,7 +796,6 @@ DOMAIN,mirror.unimagdalena.edu.co
 DOMAIN,mirrors.atlas.net.co
 DOMAIN,ubuntu.ucr.ac.cr
 DOMAIN,ubuntu.grad.hr
-DOMAIN,mirror.library.ucy.ac.cy
 DOMAIN,ftp.linux.cz
 DOMAIN,ucho.ignum.cz
 DOMAIN,mirrors.fibianet.dk
@@ -838,7 +837,6 @@ DOMAIN,mirror.kamp.de
 DOMAIN,mirror.kkg.berlin
 DOMAIN,mirror.liquidrp.de
 DOMAIN,mirror.scaleuptech.com
-DOMAIN,mirror.thunderhosting.cloud
 DOMAIN,mirror2.tuxinator.org
 DOMAIN,packages.oth-regensburg.de
 DOMAIN,suse.uni-leipzig.de
@@ -1221,7 +1219,6 @@ DOMAIN,ftp.byfly.by.org
 DOMAIN,mirror.switch.ch
 DOMAIN,mirror.easyname.ch
 DOMAIN,mirror.hosting90.cz
-DOMAIN,mirror.netcologne.de.org
 DOMAIN,apache.lauf-forum.at
 DOMAIN-SUFFIX,mirror.digionline.de
 DOMAIN,mirror.23media.de
@@ -1323,7 +1320,6 @@ DOMAIN,ftp.mpi-inf.mpg.de
 DOMAIN,mirror.bibleonline.ru
 DOMAIN,osl.ugr.es
 DOMAIN,cpan.ip-connect.vn.ua
-DOMAIN,cpan.mines-albi.fr
 DOMAIN,ftp.ntua.gr
 DOMAIN,ftp.heanet.ie
 DOMAIN,ftp.eutelia.it
@@ -1368,7 +1364,6 @@ DOMAIN,mirror.unpad.ac.id
 DOMAIN,ctan.net
 DOMAIN,ftp.u-aizu.ac.jp
 DOMAIN,ftp.harukasan.org
-DOMAIN,ftp.ktug.org
 DOMAIN,mirror.aut.ac.nz
 DOMAIN-SUFFIX,mirror.norbert-ruehl.de
 DOMAIN,ftp.mpi-sb.mpg.de

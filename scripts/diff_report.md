@@ -1,320 +1,442 @@
 # Surge Rule Diff Report
-Generated: 2026-11-26T05:56:38.335837
+Generated: 2026-11-28T05:00:42.915292
 
 ## Summary
 
 | Metric | Count |
 |--------|-------|
 | Files changed | 4 |
-| Rules added | 259 |
-| Rules removed | 115 |
-| Source attribution changed | 7 |
+| Rules added | 293 |
+| Rules removed | 252 |
+| Source attribution changed | 0 |
 
 ## Per-File Changes
 
 | File | Prev | Curr | Added | Removed | Source Δ |
 |------|------|------|-------|---------|----------|
-| AI.list | 562 | 751 | +218 | -29 | ~7 |
-| China.list | 110661 | 110667 | +6 | -0 | ~0 |
-| Global.list | 24680 | 24618 | +0 | -62 | ~0 |
-| Speedtest.list | 1726 | 1737 | +35 | -24 | ~0 |
-
-## AI.list
-
-**Added: 218** (showing first 100)
-```
-  + [Rabbit-Spec AIGC] 0008c650028f  DOMAIN-SUFFIX,comfyregistry.org
-  + [Rabbit-Spec AIGC] 00ec72a6045d  DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com
-  + [OpenAI ChatGPT Voice] 040160cb39b2  AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,172.196.43.61/32,no-resolve))
-  + [Rabbit-Spec AIGC] 0641c42114ae  DOMAIN-SUFFIX,grazie.aws.intellij.net
-  + [Rabbit-Spec AIGC] 077a3f9e3ec1  DOMAIN-SUFFIX,civitai.com
-  + [Rabbit-Spec AIGC] 08dbd846d0a7  DOMAIN-SUFFIX,heygen.com
-  + [Rabbit-Spec AIGC] 094355df1ecb  DOMAIN-SUFFIX,replit.com
-  + [Rabbit-Spec AIGC] 098538b69eaf  DOMAIN-SUFFIX,qoder.com
-  + [Rabbit-Spec AIGC] 09992d928ec2  DOMAIN,aws-language-servers.us-east-1.amazonaws.com
-  + [Rabbit-Spec AIGC] 0a6f66a7c22e  DOMAIN,codewhisperer.us-east-1.amazonaws.com
-  + [Rabbit-Spec AIGC] 0b0ed9433bc9  DOMAIN-SUFFIX,grok.x.com
-  + [Rabbit-Spec AIGC] 0b2abfd79e07  DOMAIN-SUFFIX,commandcode.ai
-  + [Rabbit-Spec AIGC] 0b5042f9439f  DOMAIN-SUFFIX,firefly.adobe.io
-  + [Rabbit-Spec AIGC] 0cfa38a820bd  DOMAIN-SUFFIX,elevenlabsusercontent.com
-  + [Rabbit-Spec AIGC] 0d07a72900e6  DOMAIN,appsgenaiserver-pa.clients6.google.com
-  + [Rabbit-Spec AIGC] 0d795a7eab07  DOMAIN-SUFFIX,lmstudio.ai
-  + [Rabbit-Spec AIGC] 0dc1e449f52c  DOMAIN-SUFFIX,interface.feedback
-  + [Rabbit-Spec AIGC] 0e764216738c  DOMAIN-SUFFIX,windsurf.build
-  + [Rabbit-Spec AIGC] 0e80e8feab61  DOMAIN-SUFFIX,kilo.ai
-  + [Rabbit-Spec AIGC] 0f160f7335e0  DOMAIN-SUFFIX,claude.dev
-  + [Rabbit-Spec AIGC] 0fa4bf1171df  DOMAIN-SUFFIX,notebook.google.com
-  + [Rabbit-Spec AIGC] 10a5cafc7cf6  DOMAIN-SUFFIX,starling.zijieapi.com
-  + [OpenAI ChatGPT Voice] 131328ae9781  AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.127.120.244/32,no-resolve))
-  + [Rabbit-Spec AIGC] 1578f20db917  DOMAIN,webchannel-alkalimakersuite-pa.clients6.google.com
-  + [Rabbit-Spec AIGC] 163299f9bab3  DOMAIN,copilotprodattachments.blob.core.windows.net
-  + [Rabbit-Spec AIGC] 18357c2e145c  DOMAIN-SUFFIX,trae.ai
-  + [Rabbit-Spec AIGC] 190b735b8d93  DOMAIN-SUFFIX,crewai.com
-  + [Rabbit-Spec AIGC] 1973799cf09a  DOMAIN-SUFFIX,lmarena.ai
-  + [Rabbit-Spec AIGC] 1a178acbd995  DOMAIN-SUFFIX,duck.ai
-  + [Rabbit-Spec AIGC] 1c83b1e6987f  DOMAIN-SUFFIX,q.us-east-1.amazonaws.com
-  + [Rabbit-Spec AIGC] 1e890e4bf12d  DOMAIN,aws-toolkit-language-servers.amazonaws.com
-  + [Rabbit-Spec AIGC] 219ea3d92bab  DOMAIN-SUFFIX,chutes.ai
-  + [OpenAI ChatGPT Voice] 2700baab159d  AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,51.105.39.183/32,no-resolve))
-  + [Rabbit-Spec AIGC] 2bf354c75852  DOMAIN-SUFFIX,openclaw.ai
-  + [Rabbit-Spec AIGC] 2cfc30e96392  DOMAIN-SUFFIX,continue.dev
-  + [Rabbit-Spec AIGC] 2d56e78f2391  DOMAIN-SUFFIX,gemini.gstatic.com
-  + [Rabbit-Spec AIGC] 2ee8b7b89090  DOMAIN-SUFFIX,opencode.ai
-  + [Rabbit-Spec AIGC] 3363fad5b3c6  DOMAIN-SUFFIX,runwayml.com
-  + [Rabbit-Spec AIGC] 3658017d5749  DOMAIN-SUFFIX,ai.google.dev
-  + [Rabbit-Spec AIGC] 37bf29a75ca0  DOMAIN-SUFFIX,labstailwind.pa.googleapis.com
-  + [Rabbit-Spec AIGC] 390f15ee6e48  DOMAIN-SUFFIX,descript.com
-  + [Rabbit-Spec AIGC] 399674e3eff9  DOMAIN-SUFFIX,notebook.google
-  + [Rabbit-Spec AIGC] 3eba7e5ecf3d  DOMAIN,gateway.bingviz.microsoftapp.net
-  + [Rabbit-Spec AIGC] 3fd9b76387e7  DOMAIN-SUFFIX,antigravity.google.com
-  + [Rabbit-Spec AIGC] 41d76d67ae8c  DOMAIN-SUFFIX,cici.com
-  + [OpenAI ChatGPT Voice] 423394c806b2  AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.124.193.23/32,no-resolve))
-  + [Rabbit-Spec AIGC] 43e0778cfa9d  DOMAIN-SUFFIX,bolt.new
-  + [OpenAI ChatGPT Voice] 45360c62beff  AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,57.156.64.73/32,no-resolve))
-  + [Rabbit-Spec AIGC] 45e12299ff7b  DOMAIN-SUFFIX,tron-sg.bytelemon.com
-  + [Rabbit-Spec AIGC] 479d797dc5ef  DOMAIN-SUFFIX,h2o.ai
-  + [Rabbit-Spec AIGC] 49f05aa0823e  DOMAIN-SUFFIX,repl.it
-  + [Rabbit-Spec AIGC] 4b3491a1725d  DOMAIN-SUFFIX,ant.dev
-  + [Rabbit-Spec AIGC] 4c6c24bb567e  DOMAIN-SUFFIX,manuscdn.com
-  + [Rabbit-Spec AIGC] 4d5713126265  DOMAIN-SUFFIX,you.com
-  + [Rabbit-Spec AIGC] 4e4eab776be9  DOMAIN,idetoolkits-hostedfiles.amazonaws.com
-  + [Rabbit-Spec AIGC] 4f045bbc358e  DOMAIN-SUFFIX,perplexity.com
-  + [Rabbit-Spec AIGC] 4ff7dc804988  DOMAIN-SUFFIX,character.ai
-  + [Rabbit-Spec AIGC] 51e8dc0f9a64  DOMAIN-SUFFIX,jetbrains.ai
-  + [Rabbit-Spec AIGC] 52952258f996  DOMAIN-SUFFIX,gemma.ai
-  + [Rabbit-Spec AIGC] 54c6d2db1509  DOMAIN-SUFFIX,crixet.com
-  + [Rabbit-Spec AIGC] 561cfb9d1361  DOMAIN-SUFFIX,replit.dev
-  + [Rabbit-Spec AIGC] 571eaf32d448  DOMAIN-SUFFIX,v0.dev
-  + [Rabbit-Spec AIGC] 58b7a5b7d6fe  DOMAIN-SUFFIX,edgeservices.bing.com
-  + [Rabbit-Spec AIGC] 58c9e9711972  DOMAIN-SUFFIX,midjourney.com
-  + [OpenAI ChatGPT Voice] 590dad9ffd92  AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.175.112.94/32,no-resolve))
-  + [OpenAI ChatGPT Voice] 591d986e60b3  AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.78.168.55/32,no-resolve))
-  + [Rabbit-Spec AIGC] 5ceaf0badd01  DOMAIN-SUFFIX,langchain.com
-  + [Rabbit-Spec AIGC] 602c7788cdd7  DOMAIN-SUFFIX,synthesia.io
-  + [Rabbit-Spec AIGC] 619167cf7180  DOMAIN-SUFFIX,cohere.com
-  + [Rabbit-Spec AIGC] 61a4c4f18289  DOMAIN,ppl-ai-file-upload.s3.amazonaws.com
-  + [OpenAI ChatGPT Voice] 643bcce596ac  AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.213.235.219/32,no-resolve))
-  + [OpenAI ChatGPT Voice] 64de5d3f5b34  AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,172.172.179.197/32,no-resolve))
-  + [Rabbit-Spec AIGC] 659d472b6743  DOMAIN-SUFFIX,abtestvm-sg.bytedance.com
-  + [Rabbit-Spec AIGC] 66621031ad89  DOMAIN-SUFFIX,openai.org
-  + [Rabbit-Spec AIGC] 67bfb69a3112  DOMAIN,appsgenaiserver-pa.clients.google.com
-  + [Rabbit-Spec AIGC] 6a3fbd144de1  DOMAIN-SUFFIX,aida.googleapis.com
-  + [Rabbit-Spec AIGC] 6af257303e51  DOMAIN,copilot-workspace.githubnext.com
-  + [Rabbit-Spec AIGC] 6b2b4ee2e589  DOMAIN-SUFFIX,anthropic.com.cn
-  + [Rabbit-Spec AIGC] 6b99969f7bb8  DOMAIN-SUFFIX,leonardo.ai
-  + [OpenAI ChatGPT Voice] 6c07fc15c1a3  AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,74.152.66.187/32,no-resolve))
-  + [Rabbit-Spec AIGC] 6de19f0b7fbd  DOMAIN-SUFFIX,tabnine.com
-  + [Rabbit-Spec AIGC] 6f1edbdba9e4  DOMAIN-SUFFIX,mcpservertest.online
-  + [Rabbit-Spec AIGC] 704dc7551c92  DOMAIN-SUFFIX,ciciaicdn.com
-  + [Rabbit-Spec AIGC] 7210faa9eac6  DOMAIN,ai.developer.meta.com
-  + [Rabbit-Spec AIGC] 722ea69a4728  DOMAIN-SUFFIX,cody.dev
-  + [Rabbit-Spec AIGC] 7454c2190801  DOMAIN-SUFFIX,youmind.com
-  + [Rabbit-Spec AIGC] 7490702e4d65  DOMAIN-SUFFIX,muthos.com
-  + [Rabbit-Spec AIGC] 754423811481  DOMAIN-SUFFIX,suno.ai
-  + [Rabbit-Spec AIGC] 75fa2c809f68  DOMAIN-SUFFIX,llamameta.net
-  + [Rabbit-Spec AIGC] 77f698d29ea2  DOMAIN,client-telemetry.us-east-1.amazonaws.com
-  + [OpenAI ChatGPT Voice] 7c80df553966  AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.165.191.7/32,no-resolve))
-  + [Rabbit-Spec AIGC] 7da74b7ef7be  IP-ASN,399358,no-resolve
-  + [Rabbit-Spec AIGC] 7e5f1f5fd6bb  DOMAIN-SUFFIX,lumalabs.ai
-  + [Rabbit-Spec AIGC] 80769d1c6add  DOMAIN-SUFFIX,otter.ai
-  + [Rabbit-Spec AIGC] 812b8b8bc9f9  DOMAIN-SUFFIX,youmind.ai
-  + [Rabbit-Spec AIGC] 81bfa50350f5  DOMAIN-SUFFIX,ai.studio
-  + [OpenAI ChatGPT Voice] 846de140d696  AND,((PROTOCOL,UDP),(DEST-PORT,3478),(IP-CIDR,20.200.182.97/32,no-resolve))
-  + [Rabbit-Spec AIGC] 85745039dfce  DOMAIN-SUFFIX,ampcode.com
-  + [Rabbit-Spec AIGC] 87aa5d797529  DOMAIN-SUFFIX,modelcontextprotocol.net
-  + [Rabbit-Spec AIGC] 87daba4d3d94  DOMAIN-SUFFIX,v0.app
-  ... and 118 more
-```
-
-**Removed: 29** (showing first 29)
-```
-  - [Manual Rules] 047cc5f8bd4d  DOMAIN,antigravity.google
-  - [Manual Rules] 107f612efba1  DOMAIN,antigravity-unleash.goog
-  - [Manual Rules] 120bba58c982  DOMAIN,auth.grokipedia.com
-  - [Manual Rules] 17ed196cec02  DOMAIN,claude.new
-  - [Manual Rules] 29914f328abf  DOMAIN,flow.google
-  - [Manual Rules] 2abac546c15e  DOMAIN,trae-api-sg.mchost.guru
-  - [Manual Rules] 3767ca234c2e  DOMAIN,robinfrontend-pa.googleapis.com
-  - [Manual Rules] 391d402853fb  DOMAIN,claude.site
-  - [Rabbit-Spec AIGC] 405fda27adf6  DOMAIN,chat.openai.com.cdn.cloudflare.net
-  - [Manual Rules] 46ac15f42c69  DOMAIN,ai.google.dev
-  - [Manual Rules] 619d261c2c90  DOMAIN,aida.googleapis.com
-  - [Manual Rules] 61bd93b136ea  DOMAIN,api.together.ai
-  - [Manual Rules] 68aa8ae76307  DOMAIN,www.claude.new
-  - [Manual Rules] 783c8c8ed09b  DOMAIN,www.claudeacademy.com
-  - [Manual Rules] 7c0d5c855aef  DOMAIN,opencode.ai
-  - [Manual Rules] 95705d1d523a  DOMAIN,api.devin.ai
-  - [Manual Rules] aad2bbc989a4  DOMAIN,claudeacademy.com
-  - [Manual Rules] b8318f06bb26  DOMAIN,router.huggingface.co
-  - [Manual Rules] c393b4a65a75  DOMAIN,static.devin.ai
-  - [SukkaW AI] c882ca09b881  DOMAIN,api.jetbrains.ai
-  - [Manual Rules] d11c097d9e3a  DOMAIN,www.claude.dev
-  - [Manual Rules] d2b4d957442c  DOMAIN,jules.google.com
-  - [Manual Rules] da97cad3b7e3  DOMAIN,aisandbox-pa.googleapis.com
-  - [SukkaW AI] dbc5d5f95763  DOMAIN,gateway.ai.cloudflare.com
-  - [Manual Rules] e6680e1bca06  DOMAIN,claude.dev
-  - [Manual Rules] f1e1338d0af6  DOMAIN,app.devin.ai
-  - [Manual Rules] f1eb0f6db67e  DOMAIN,api.together.xyz
-  - [Manual Rules] f320df6eb3fc  DOMAIN,api.app.prod.grazie.aws.intellij.net
-  - [Manual Rules] ffa6365b4993  DOMAIN,devin.ai
-```
-
-**Source changed: 7**
-```
-  ~ 4c96ae31dbf1: [ConnersHua AI → Rabbit-Spec AIGC]
-  ~ 6cf089f4f159: [ConnersHua AI → Rabbit-Spec AIGC]
-  ~ d68cabdb1f69: [ConnersHua AI → Rabbit-Spec AIGC]
-  ~ 9d0ff2f30280: [ConnersHua AI → Rabbit-Spec AIGC]
-  ~ 54faa00968bf: [ConnersHua AI → Rabbit-Spec AIGC]
-  ~ ce9f29ed7edf: [ConnersHua AI → Rabbit-Spec AIGC]
-  ~ 2fd8b3258bd3: [ConnersHua AI → Rabbit-Spec AIGC]
-```
+| China.list | 110667 | 110669 | +3 | -1 | ~0 |
+| China_IP.list | 9665 | 9735 | +144 | -74 | ~0 |
+| Download.list | 1614 | 1609 | +0 | -5 | ~0 |
+| Speedtest.list | 1737 | 1711 | +146 | -172 | ~0 |
 
 ## China.list
 
-**Added: 6** (showing first 6)
+**Added: 3** (showing first 3)
 ```
-  + [Rabbit-Spec China] 3ad9f264f759  DOMAIN-SUFFIX,lujincaifu.com
-  + [Rabbit-Spec China] 5846578138e0  DOMAIN-SUFFIX,lenovofuturecenter.com
-  + [Rabbit-Spec China] 67c401020726  DOMAIN-SUFFIX,qpmcn.com
-  + [Rabbit-Spec China] 771d9a2cd3b6  DOMAIN-SUFFIX,yqbmall.com
-  + [Rabbit-Spec China] 8e9f8ca9928f  DOMAIN-SUFFIX,zhaoliangjipc.com
-  + [Rabbit-Spec China] c814c8c003f3  DOMAIN-SUFFIX,172.com
+  + [Rabbit-Spec China] 3dafa3595514  DOMAIN-SUFFIX,fazhipro.com
+  + [Rabbit-Spec China] 3fb8546f73ff  DOMAIN-SUFFIX,saasfz.com
+  + [Rabbit-Spec China] c0dc7b92d1f2  DOMAIN-SUFFIX,echooai.com
 ```
 
-## Global.list
-
-**Removed: 62** (showing first 62)
+**Removed: 1** (showing first 1)
 ```
-  - [blackmatrix7 Global] 0008c650028f  DOMAIN-SUFFIX,comfyregistry.org
-  - [blackmatrix7 Global] 077a3f9e3ec1  DOMAIN-SUFFIX,civitai.com
-  - [blackmatrix7 Global] 0d795a7eab07  DOMAIN-SUFFIX,lmstudio.ai
-  - [blackmatrix7 Global] 0e764216738c  DOMAIN-SUFFIX,windsurf.build
-  - [blackmatrix7 Global] 0f160f7335e0  DOMAIN-SUFFIX,claude.dev
-  - [blackmatrix7 Global] 18357c2e145c  DOMAIN-SUFFIX,trae.ai
-  - [blackmatrix7 Global] 190b735b8d93  DOMAIN-SUFFIX,crewai.com
-  - [blackmatrix7 Global] 1973799cf09a  DOMAIN-SUFFIX,lmarena.ai
-  - [blackmatrix7 Global] 1a178acbd995  DOMAIN-SUFFIX,duck.ai
-  - [blackmatrix7 Global] 219ea3d92bab  DOMAIN-SUFFIX,chutes.ai
-  - [blackmatrix7 Global] 2bf354c75852  DOMAIN-SUFFIX,openclaw.ai
-  - [blackmatrix7 Global] 2ee8b7b89090  DOMAIN-SUFFIX,opencode.ai
-  - [blackmatrix7 Global] 41d76d67ae8c  DOMAIN-SUFFIX,cici.com
-  - [blackmatrix7 Global] 479d797dc5ef  DOMAIN-SUFFIX,h2o.ai
-  - [blackmatrix7 Global] 4b3491a1725d  DOMAIN-SUFFIX,ant.dev
-  - [blackmatrix7 Global] 4d5713126265  DOMAIN-SUFFIX,you.com
-  - [blackmatrix7 Global] 4f045bbc358e  DOMAIN-SUFFIX,perplexity.com
-  - [blackmatrix7 Global] 4ff7dc804988  DOMAIN-SUFFIX,character.ai
-  - [blackmatrix7 Global] 51e8dc0f9a64  DOMAIN-SUFFIX,jetbrains.ai
-  - [blackmatrix7 Global] 54c6d2db1509  DOMAIN-SUFFIX,crixet.com
-  - [blackmatrix7 Global] 58c9e9711972  DOMAIN-SUFFIX,midjourney.com
-  - [blackmatrix7 Global] 5ceaf0badd01  DOMAIN-SUFFIX,langchain.com
-  - [blackmatrix7 Global] 619167cf7180  DOMAIN-SUFFIX,cohere.com
-  - [blackmatrix7 Global] 66621031ad89  DOMAIN-SUFFIX,openai.org
-  - [blackmatrix7 Global] 6b99969f7bb8  DOMAIN-SUFFIX,leonardo.ai
-  - [blackmatrix7 Global] 7454c2190801  DOMAIN-SUFFIX,youmind.com
-  - [blackmatrix7 Global] 754423811481  DOMAIN-SUFFIX,suno.ai
-  - [blackmatrix7 Global] 812b8b8bc9f9  DOMAIN-SUFFIX,youmind.ai
-  - [blackmatrix7 Global] 81bfa50350f5  DOMAIN-SUFFIX,ai.studio
-  - [blackmatrix7 Global] 87e39872b847  DOMAIN-SUFFIX,kiro.dev
-  - [blackmatrix7 Global] 8df36186079e  DOMAIN-SUFFIX,hf.space
-  - [blackmatrix7 Global] 91df6fe07412  DOMAIN-SUFFIX,cohere.ai
-  - [blackmatrix7 Global] 9287be9bdfa1  DOMAIN-SUFFIX,huggingface.co
-  - [blackmatrix7 Global] 93c47fe0a183  DOMAIN-SUFFIX,youmind.site
-  - [blackmatrix7 Global] 9464ee13b59d  DOMAIN-SUFFIX,chatbotclaude.com
-  - [blackmatrix7 Global] 95033fd92bc9  DOMAIN-SUFFIX,ciciai.com
-  - [blackmatrix7 Global] 96c9f6104d50  DOMAIN-SUFFIX,atmeta.com
-  - [blackmatrix7 Global] 9cadc89307f6  DOMAIN-SUFFIX,comfy.org
-  - [blackmatrix7 Global] 9cec67cbe61c  DOMAIN-SUFFIX,cerebras.ai
-  - [blackmatrix7 Global] 9e49db6e06dc  DOMAIN-SUFFIX,anthropic.team
-  - [blackmatrix7 Global] 9e938dc5c9c2  DOMAIN-SUFFIX,antspace.dev
-  - [blackmatrix7 Global] 9f98d08cfd51  DOMAIN-SUFFIX,llama.com
-  - [blackmatrix7 Global] a1a1d525ce1e  DOMAIN-SUFFIX,coze.com
-  - [blackmatrix7 Global] b214bcdbbc6b  DOMAIN-SUFFIX,marscode.com
-  - [blackmatrix7 Global] b368b38efee1  DOMAIN-SUFFIX,manus.im
-  - [blackmatrix7 Global] b849525a4e78  DOMAIN-SUFFIX,claudeacademy.com
-  - [blackmatrix7 Global] b94593f2dc7e  DOMAIN-SUFFIX,hf.co
-  - [blackmatrix7 Global] bdcf2ee30a7f  DOMAIN-SUFFIX,suno.com
-  - [blackmatrix7 Global] bde927d4d8f4  DOMAIN-SUFFIX,claude.site
-  - [blackmatrix7 Global] cc4a87dd21d6  DOMAIN-SUFFIX,sourcegraph.com
-  - [blackmatrix7 Global] cced77d62e90  DOMAIN-SUFFIX,diabrowser.com
-  - [blackmatrix7 Global] d34f2571e86c  DOMAIN-SUFFIX,devin.ai
-  - [blackmatrix7 Global] d37d92eaaf15  DOMAIN-SUFFIX,claudepages.dev
-  - [blackmatrix7 Global] d71c4ffcdcc0  DOMAIN-SUFFIX,coderabbit.ai
-  - [blackmatrix7 Global] d779b23c6b10  DOMAIN-SUFFIX,ollama.com
-  - [blackmatrix7 Global] dcbc72e64ba6  DOMAIN-SUFFIX,elevenlabs.io
-  - [blackmatrix7 Global] e5a203127750  DOMAIN-SUFFIX,claude.new
-  - [blackmatrix7 Global] ec8dcbe65712  DOMAIN-SUFFIX,claudestudio.com
-  - [blackmatrix7 Global] f754d54caeb3  DOMAIN-SUFFIX,grokipedia.com
-  - [blackmatrix7 Global] fbf53c3240ba  DOMAIN-SUFFIX,diabrowser.engineering
-  - [blackmatrix7 Global] fcf2426bc57d  DOMAIN-SUFFIX,elevenlabs.com
-  - [blackmatrix7 Global] fddb16e749d7  DOMAIN-SUFFIX,lovart.ai
+  - [Rabbit-Spec China] 2a6a2c033ed3  DOMAIN-SUFFIX,xihuan
+```
+
+## China_IP.list
+
+**Added: 144** (showing first 100)
+```
+  + [Loyalsoldier China CIDR] 0064a8e08e75  IP-CIDR,180.223.244.0/22
+  + [Loyalsoldier China CIDR] 0473e97ce8e5  IP-CIDR6,2001:df7:d940::/48
+  + [Loyalsoldier China CIDR] 06eff7cb4731  IP-CIDR6,2001:df0:d880::/48
+  + [Loyalsoldier China CIDR] 0a384708cad6  IP-CIDR,103.73.0.0/19
+  + [Loyalsoldier China CIDR] 10c3dde24872  IP-CIDR,223.123.198.0/23
+  + [Loyalsoldier China CIDR] 10e546b63ffc  IP-CIDR6,2001:df0:2e80::/48
+  + [Loyalsoldier China CIDR] 11b908b93c94  IP-CIDR,180.223.239.0/24
+  + [Loyalsoldier China CIDR] 16351ef6a873  IP-CIDR,119.161.224.0/19
+  + [Loyalsoldier China CIDR] 184284372fa5  IP-CIDR,180.223.20.0/22
+  + [Loyalsoldier China CIDR] 1a7e9f27f37d  IP-CIDR,211.102.144.0/21
+  + [Loyalsoldier China CIDR] 1b4dc4262f33  IP-CIDR6,2001:df4:4b80::/48
+  + [Loyalsoldier China CIDR] 1e511fff4ddf  IP-CIDR6,2406:840:980d::/48
+  + [Loyalsoldier China CIDR] 1e5cb5006b9b  IP-CIDR,150.248.176.0/20
+  + [Loyalsoldier China CIDR] 2113d6e07c08  IP-CIDR6,2001:df0:ac40::/48
+  + [Loyalsoldier China CIDR] 240ffe2a374c  IP-CIDR6,2001:df3:15c0::/48
+  + [Loyalsoldier China CIDR] 241e11cc7cfc  IP-CIDR6,2001:df3:d0c0::/48
+  + [Loyalsoldier China CIDR] 2786c9e287d2  IP-CIDR,222.126.192.0/18
+  + [Loyalsoldier China CIDR] 28e8cc9c60c1  IP-CIDR,180.223.195.0/24
+  + [Loyalsoldier China CIDR] 2b5ad0580ce8  IP-CIDR,222.126.160.0/21
+  + [Loyalsoldier China CIDR] 2b9076e87ab6  IP-CIDR,180.223.236.0/23
+  + [Loyalsoldier China CIDR] 2e19387609d1  IP-CIDR6,2a0a:d682:e000::/36
+  + [Loyalsoldier China CIDR] 2f1da7a4f79c  IP-CIDR,103.150.214.0/24
+  + [Loyalsoldier China CIDR] 2f8553f1d580  IP-CIDR,180.223.19.0/24
+  + [Loyalsoldier China CIDR] 36ac628a3fba  IP-CIDR6,2001:678:12c4::/48
+  + [Loyalsoldier China CIDR] 39b1596d4ec8  IP-CIDR,211.102.156.0/22
+  + [Loyalsoldier China CIDR] 3b972f7efeb4  IP-CIDR,180.223.17.0/24
+  + [Loyalsoldier China CIDR] 3cc0968447e4  IP-CIDR,202.149.224.0/19
+  + [Loyalsoldier China CIDR] 3db2c5a7e54e  IP-CIDR6,2001:df0:9c0::/48
+  + [Loyalsoldier China CIDR] 3ef69097e446  IP-CIDR6,2001:4510::/29
+  + [Loyalsoldier China CIDR] 3f4199d50d79  IP-CIDR,180.223.28.0/23
+  + [Loyalsoldier China CIDR] 426f60d8e780  IP-CIDR,103.132.166.0/23
+  + [Loyalsoldier China CIDR] 436515e94536  IP-CIDR6,2001:df3:a680::/48
+  + [Loyalsoldier China CIDR] 44e4484634fb  IP-CIDR6,2001:df1:d180::/48
+  + [Loyalsoldier China CIDR] 4537cbb68f03  IP-CIDR6,2001:df2:5780::/48
+  + [Loyalsoldier China CIDR] 459716f335f5  IP-CIDR6,2001:df0:bf80::/48
+  + [Loyalsoldier China CIDR] 4669cef56389  IP-CIDR6,2001:df4:2780::/48
+  + [Loyalsoldier China CIDR] 48e71c760e2f  IP-CIDR,180.223.187.0/24
+  + [Loyalsoldier China CIDR] 49f3ae300b96  IP-CIDR6,2406:840:9974::/47
+  + [Loyalsoldier China CIDR] 4a16ac2b3608  IP-CIDR,150.248.192.0/18
+  + [Loyalsoldier China CIDR] 4b2d88c67377  IP-CIDR6,2406:840:980e::/47
+  + [Loyalsoldier China CIDR] 532a1d679aae  IP-CIDR6,2001:678:12b8::/48
+  + [Loyalsoldier China CIDR] 54f3586a667a  IP-CIDR6,2406:840:c69::/48
+  + [Loyalsoldier China CIDR] 5656533361ea  IP-CIDR6,2001:df5:2fc0::/48
+  + [Loyalsoldier China CIDR] 56a38f955918  IP-CIDR6,2001:67c:ebc::/48
+  + [Loyalsoldier China CIDR] 57f810691820  IP-CIDR,180.223.53.0/24
+  + [Loyalsoldier China CIDR] 591ca12309f2  IP-CIDR,180.223.170.0/24
+  + [Loyalsoldier China CIDR] 596605201aec  IP-CIDR,183.91.49.0/24
+  + [Loyalsoldier China CIDR] 59b6d870c0d1  IP-CIDR6,2001:df6:100::/48
+  + [Loyalsoldier China CIDR] 5c271036fa57  IP-CIDR,202.55.27.0/24
+  + [Loyalsoldier China CIDR] 5c7627545431  IP-CIDR,103.202.56.0/21
+  + [Loyalsoldier China CIDR] 5e66d62df3e7  IP-CIDR6,2400:5a60::/41
+  + [Loyalsoldier China CIDR] 61ecb3964b81  IP-CIDR,150.248.0.0/17
+  + [Loyalsoldier China CIDR] 635d77a124a1  IP-CIDR6,2001:df4:2e80::/48
+  + [Loyalsoldier China CIDR] 6393772a962f  IP-CIDR,180.223.25.0/24
+  + [Loyalsoldier China CIDR] 64d4046d5035  IP-CIDR,180.223.178.0/24
+  + [Loyalsoldier China CIDR] 661709c4ed56  IP-CIDR6,2001:df2:8bc0::/48
+  + [Loyalsoldier China CIDR] 662d0ee1e16f  IP-CIDR6,2001:df6:6800::/48
+  + [Loyalsoldier China CIDR] 66379660e08b  IP-CIDR6,2001:67c:a1c::/48
+  + [Loyalsoldier China CIDR] 681c752d987c  IP-CIDR6,2001:df1:5280::/48
+  + [Loyalsoldier China CIDR] 6afa5cc7f955  IP-CIDR6,2001:7fa:10::/48
+  + [Loyalsoldier China CIDR] 6e76624b921e  IP-CIDR,103.104.198.0/23
+  + [Loyalsoldier China CIDR] 6fea53611592  IP-CIDR6,2001:df1:6180::/48
+  + [Loyalsoldier China CIDR] 707d4ff082d3  IP-CIDR6,2406:840:9978::/45
+  + [Loyalsoldier China CIDR] 712112b1fceb  IP-CIDR6,2001:df2:c240::/48
+  + [Loyalsoldier China CIDR] 7155e1a74f19  IP-CIDR6,2001:dd8:5::/48
+  + [Loyalsoldier China CIDR] 7272254c23d9  IP-CIDR6,2001:df4:c580::/48
+  + [Loyalsoldier China CIDR] 7363b93febd5  IP-CIDR6,2001:e80::/32
+  + [Loyalsoldier China CIDR] 76eab61f2b48  IP-CIDR,103.202.152.0/21
+  + [Loyalsoldier China CIDR] 77f8ab9935fa  IP-CIDR,180.223.180.0/23
+  + [Loyalsoldier China CIDR] 781ed4d1a184  IP-CIDR,180.223.174.0/24
+  + [Loyalsoldier China CIDR] 7b7538ef62ab  IP-CIDR,103.132.165.0/24
+  + [Loyalsoldier China CIDR] 7b7dab27479c  IP-CIDR,180.223.191.0/24
+  + [Loyalsoldier China CIDR] 7c954a4dae86  IP-CIDR6,2001:df5:5f80::/48
+  + [Loyalsoldier China CIDR] 7cdaf9814a97  IP-CIDR,180.223.165.0/24
+  + [Loyalsoldier China CIDR] 7d213268a2bc  IP-CIDR6,2406:840:e400::/39
+  + [Loyalsoldier China CIDR] 7e103bbf2182  IP-CIDR6,2001:df0:25c0::/48
+  + [Loyalsoldier China CIDR] 7e1ac14a8c72  IP-CIDR6,2001:df3:ef80::/48
+  + [Loyalsoldier China CIDR] 7f0a1e6155c7  IP-CIDR6,2001:df7:6600::/48
+  + [Loyalsoldier China CIDR] 830195c60280  IP-CIDR6,2001:df3:7440::/48
+  + [Loyalsoldier China CIDR] 84e64397c5e4  IP-CIDR,180.223.172.0/24
+  + [Loyalsoldier China CIDR] 85a4116df77c  IP-CIDR6,2001:df3:c680::/48
+  + [Loyalsoldier China CIDR] 8698609d0ee3  IP-CIDR6,2001:4438::/32
+  + [Loyalsoldier China CIDR] 89237248eb2e  IP-CIDR6,2001:df0:f8c0::/48
+  + [Loyalsoldier China CIDR] 8a3efd84cc89  IP-CIDR6,2400:9380:9081::/48
+  + [Loyalsoldier China CIDR] 8c94e7e404d8  IP-CIDR6,2001:df1:5b80::/48
+  + [Loyalsoldier China CIDR] 8f03d65dc96e  IP-CIDR6,2001:df0:1bc0::/48
+  + [Loyalsoldier China CIDR] 91143bf43a36  IP-CIDR,222.126.128.0/19
+  + [Loyalsoldier China CIDR] 91f19c29c9cd  IP-CIDR6,2001:df2:a580::/48
+  + [Loyalsoldier China CIDR] 92b4cef17d31  IP-CIDR6,2001:df4:4d80::/48
+  + [Loyalsoldier China CIDR] 956bc2e5e66d  IP-CIDR,180.223.176.0/24
+  + [Loyalsoldier China CIDR] 97ab8ceca4c6  IP-CIDR6,2001:daa::/32
+  + [Loyalsoldier China CIDR] a6148d4bee83  IP-CIDR6,2406:840:feff::/48
+  + [Loyalsoldier China CIDR] a683fd25782f  IP-CIDR,124.21.240.0/20
+  + [Loyalsoldier China CIDR] a7133805b6d7  IP-CIDR6,2001:df6:5d00::/48
+  + [Loyalsoldier China CIDR] a906fb436fb8  IP-CIDR6,2001:256::/32
+  + [Loyalsoldier China CIDR] a9f8044a6dbd  IP-CIDR6,2400:9380:9281::/48
+  + [Loyalsoldier China CIDR] aa3b5fbc4dfd  IP-CIDR,180.223.60.0/22
+  + [Loyalsoldier China CIDR] aaaaa79eb195  IP-CIDR6,2406:840:9970::/46
+  + [Loyalsoldier China CIDR] af765011c92d  IP-CIDR6,2001:f38::/32
+  + [Loyalsoldier China CIDR] afdae8084549  IP-CIDR6,2001:df0:9d40::/48
+  ... and 44 more
+```
+
+**Removed: 74** (showing first 74)
+```
+  - [Loyalsoldier China CIDR] 094dc62eaf48  IP-CIDR,202.55.31.0/24
+  - [Loyalsoldier China CIDR] 0a5815ce98c1  IP-CIDR,202.149.248.0/22
+  - [Loyalsoldier China CIDR] 0a7b1cac676f  IP-CIDR6,2406:bdc0::/32
+  - [Loyalsoldier China CIDR] 111b92a2d561  IP-CIDR6,2001:daa:4::/47
+  - [Loyalsoldier China CIDR] 12ba55493c56  IP-CIDR,103.132.161.0/24
+  - [Loyalsoldier China CIDR] 24a7dbcbeeed  IP-CIDR6,2001:da8::/32
+  - [Loyalsoldier China CIDR] 2a01002b5ec7  IP-CIDR,124.20.240.0/20
+  - [Loyalsoldier China CIDR] 2ae66c22f717  IP-CIDR,103.202.154.0/23
+  - [Loyalsoldier China CIDR] 2ce90221a350  IP-CIDR6,2400:5a60:40::/42
+  - [Loyalsoldier China CIDR] 34994d6a7704  IP-CIDR6,2001:4510:400::/40
+  - [Loyalsoldier China CIDR] 35365212d52b  IP-CIDR6,2406:840:e0ea::/47
+  - [Loyalsoldier China CIDR] 3680f542e82f  IP-CIDR,103.73.12.0/22
+  - [Loyalsoldier China CIDR] 381d7fa38547  IP-CIDR6,2001:daa:9::/48
+  - [Loyalsoldier China CIDR] 394242117622  IP-CIDR6,2400:9380:9280::/47
+  - [Loyalsoldier China CIDR] 3e95d2a1856f  IP-CIDR,202.55.24.0/22
+  - [Loyalsoldier China CIDR] 3fac3daa6d89  IP-CIDR,183.91.52.0/22
+  - [Loyalsoldier China CIDR] 42580c8ca649  IP-CIDR,223.123.196.0/22
+  - [Loyalsoldier China CIDR] 447feac517e2  IP-CIDR6,2406:840:e560::/44
+  - [Loyalsoldier China CIDR] 45a93a126955  IP-CIDR,202.55.18.0/23
+  - [Loyalsoldier China CIDR] 4d26ef8cc1fd  IP-CIDR6,2001:daa:1::/48
+  - [Loyalsoldier China CIDR] 4d6574e87223  IP-CIDR6,2406:840:e570::/45
+  - [Loyalsoldier China CIDR] 4e81db150fc6  IP-CIDR,103.202.156.0/22
+  - [Loyalsoldier China CIDR] 58d9ad8faba1  IP-CIDR,103.104.199.0/24
+  - [Loyalsoldier China CIDR] 5a7ba7e659ee  IP-CIDR6,2406:840:e580::/41
+  - [Loyalsoldier China CIDR] 5c2be7b88478  IP-CIDR,103.202.152.0/24
+  - [Loyalsoldier China CIDR] 5d783f9a2c6e  IP-CIDR,103.73.16.0/20
+  - [Loyalsoldier China CIDR] 620f03bd9bcc  IP-CIDR6,2406:840:980c::/46
+  - [Loyalsoldier China CIDR] 6318d1a3e8de  IP-CIDR6,2400:5a60:20::/43
+  - [Loyalsoldier China CIDR] 72617aa3658f  IP-CIDR6,2406:840:e500::/42
+  - [Loyalsoldier China CIDR] 7670faf04ce1  IP-CIDR6,2406:840:e57f::/48
+  - [Loyalsoldier China CIDR] 7ffb32aac84f  IP-CIDR6,2001:4511:1480::/41
+  - [Loyalsoldier China CIDR] 8113ab73d9f6  IP-CIDR6,2400:5a60:3::/48
+  - [Loyalsoldier China CIDR] 87990c3c47a9  IP-CIDR,150.248.0.0/16
+  - [Loyalsoldier China CIDR] 8ef12687cce9  IP-CIDR,103.109.106.0/23
+  - [Loyalsoldier China CIDR] 9053dd7fec9f  IP-CIDR6,2406:840:e578::/46
+  - [Loyalsoldier China CIDR] 92e495c273c6  IP-CIDR6,2001:daa:2::/47
+  - [Loyalsoldier China CIDR] 948170ddf5ea  IP-CIDR6,2406:840:9970::/44
+  - [Loyalsoldier China CIDR] 95f0eae0020c  IP-CIDR,223.123.205.0/24
+  - [Loyalsoldier China CIDR] 9d49eb84dc6e  IP-CIDR,183.91.50.0/24
+  - [Loyalsoldier China CIDR] 9e927e1b28dd  IP-CIDR6,2001:4510:1480::/41
+  - [Loyalsoldier China CIDR] a591000eeba0  IP-CIDR,124.21.224.0/20
+  - [Loyalsoldier China CIDR] a63fdaffe832  IP-CIDR,222.126.128.0/17
+  - [Loyalsoldier China CIDR] a748776179af  IP-CIDR6,2400:5a60:10::/44
+  - [Loyalsoldier China CIDR] a83717b013e1  IP-CIDR,103.73.10.0/23
+  - [Loyalsoldier China CIDR] a8e8998d3c19  IP-CIDR6,2001:daa:6::/48
+  - [Loyalsoldier China CIDR] ae0d528cd193  IP-CIDR,103.99.62.0/24
+  - [Loyalsoldier China CIDR] b0c9cb51e173  IP-CIDR,124.20.128.0/18
+  - [Loyalsoldier China CIDR] b2f8ad9296f7  IP-CIDR,119.161.192.0/18
+  - [Loyalsoldier China CIDR] b372851798c1  IP-CIDR6,2400:5a60:8::/45
+  - [Loyalsoldier China CIDR] b40c6898caf5  IP-CIDR6,2406:840:e0e9::/48
+  - [Loyalsoldier China CIDR] b630bde54621  IP-CIDR,142.86.255.0/24
+  - [Loyalsoldier China CIDR] b7ae3d3fbe2d  IP-CIDR,103.202.56.0/22
+  - [Loyalsoldier China CIDR] bf212c3c10bd  IP-CIDR,103.73.0.0/21
+  - [Loyalsoldier China CIDR] c371e2e5381e  IP-CIDR,202.55.28.0/23
+  - [Loyalsoldier China CIDR] c6fea9d78e64  IP-CIDR6,2400:5a60::/47
+  - [Loyalsoldier China CIDR] c711c25e5a2e  IP-CIDR6,2400:5a60:4::/46
+  - [Loyalsoldier China CIDR] cf6be2a6fdbc  IP-CIDR,117.120.196.0/22
+  - [Loyalsoldier China CIDR] d009c539b896  IP-CIDR6,2406:840:e400::/40
+  - [Loyalsoldier China CIDR] d40bb63ad56d  IP-CIDR6,2400:9380:9080::/47
+  - [Loyalsoldier China CIDR] d4ac83b50008  IP-CIDR,202.55.4.0/24
+  - [Loyalsoldier China CIDR] d8fcab0d1f16  IP-CIDR,202.55.20.0/22
+  - [Loyalsoldier China CIDR] d90ed697bbed  IP-CIDR,202.149.255.0/24
+  - [Loyalsoldier China CIDR] dd660b52963a  IP-CIDR,202.149.252.0/23
+  - [Loyalsoldier China CIDR] dd9b29723b5c  IP-CIDR,211.102.144.0/20
+  - [Loyalsoldier China CIDR] e0299ffa085c  IP-CIDR,103.202.60.0/24
+  - [Loyalsoldier China CIDR] e1841060a97c  IP-CIDR6,2406:840:c68::/45
+  - [Loyalsoldier China CIDR] e648b097d794  IP-CIDR,103.202.62.0/23
+  - [Loyalsoldier China CIDR] e7f6c7330d8d  IP-CIDR6,2406:840:e57c::/47
+  - [Loyalsoldier China CIDR] e8a61a9a4a15  IP-CIDR,183.91.48.0/23
+  - [Loyalsoldier China CIDR] e8e102d81b04  IP-CIDR,202.149.240.0/21
+  - [Loyalsoldier China CIDR] ec4c3b1e55cf  IP-CIDR,202.149.224.0/20
+  - [Loyalsoldier China CIDR] f5680045601a  IP-CIDR6,2406:840:e540::/43
+  - [Loyalsoldier China CIDR] f8c1e13a0ee9  IP-CIDR6,2406:840:e0ec::/46
+  - [Loyalsoldier China CIDR] fcb83456c612  IP-CIDR,202.55.0.0/23
+```
+
+## Download.list
+
+**Removed: 5** (showing first 5)
+```
+  - [SukkaW Download] 1b7d5112fbe9  DOMAIN,mirror.library.ucy.ac.cy
+  - [SukkaW Download] 3e52baba9610  DOMAIN,ftp.ktug.org
+  - [SukkaW Download] 9e30a9124083  DOMAIN,mirror.thunderhosting.cloud
+  - [SukkaW Download] bea9c7cf8579  DOMAIN,mirror.netcologne.de.org
+  - [SukkaW Download] ec081797a402  DOMAIN,cpan.mines-albi.fr
 ```
 
 ## Speedtest.list
 
-**Added: 35** (showing first 35)
+**Added: 146** (showing first 100)
 ```
-  + [SukkaW Speedtest Servers International] 0ab0cf8a6ab9  DOMAIN,speedtest.novateldigital.com
-  + [SukkaW Speedtest Servers International] 16699495d33c  DOMAIN,speed.uberlinktelecom.com.br
-  + [SukkaW Speedtest Servers International] 26f9e3f546b4  DOMAIN,speedtest.ilitha.com
-  + [SukkaW Speedtest Servers International] 2c4e9bf40557  DOMAIN,velocity.softtelecom.net.br
-  + [SukkaW Speedtest Servers International] 31e8ffa70b1a  DOMAIN,speedtest.pnb.vodafoneidea.com
-  + [SukkaW Speedtest Servers International] 4347ba8f1b04  DOMAIN,lhr.speedtest.rustbanned.net
-  + [SukkaW Speedtest Servers International] 5540cc8e3bac  DOMAIN,stetobicoke.rogers.com
-  + [SukkaW Speedtest Servers International] 559412db0709  DOMAIN,stpanipat.softechinfosol.com
-  + [SukkaW Speedtest Servers International] 5b6c9723716c  DOMAIN,speedtest.syd.netsg.net.au
-  + [SukkaW Speedtest Servers International] 5ffb4d6de1c7  DOMAIN,stvaughan.netcrawler.ca
-  + [SukkaW Speedtest Servers International] 616c6bffe17f  DOMAIN,stkingcity.rogers.com
-  + [SukkaW Speedtest Servers International] 6a42e55feb6b  DOMAIN,speedtest.hk.aixxycode.id
-  + [SukkaW Speedtest Servers International] 72bb8c1b570f  DOMAIN,speedtest5.windtre.it
-  + [SukkaW Speedtest Servers International] 830bf10487c6  DOMAIN,gisho.work
-  + [SukkaW Speedtest Servers International] 890fa3aca5ec  DOMAIN,speedtest.orixinet.com.br
-  + [SukkaW Speedtest Servers International] 8921715d28d7  DOMAIN,speedtest2.tmg.net.id
-  + [SukkaW Speedtest Servers International] 8e36c5eb6ca2  DOMAIN,speedtest2.micronet.in
-  + [SukkaW Speedtest Servers International] 934ad5aa9642  DOMAIN,speedtest10g.bhm.as13760.net
-  + [SukkaW Speedtest Servers International] 96692f154a26  DOMAIN,veloteste.mrjomar.com.br
-  + [SukkaW Speedtest Servers International] 9bf7f0647b9f  DOMAIN,speedtest.duocast.net
-  + [SukkaW Speedtest Servers International] 9d2342e15aaa  DOMAIN,stkingcity.netcrawler.ca
-  + [SukkaW Speedtest Servers International] 9ef50333ec52  DOMAIN,speedtestmoh1.airtelbroadband.in
-  + [SukkaW Speedtest Servers International] a1b9d99a6b53  DOMAIN,speedtestus.pvdatanet.com
-  + [SukkaW Speedtest Servers International] a1bec4214ce1  DOMAIN,fetdl2.seed.net.tw
-  + [SukkaW Speedtest Servers International] b683bdd82f27  DOMAIN,st02.mtnsat.net
-  + [SukkaW Speedtest Servers International] b73df15da330  DOMAIN,stetobicoke.netcrawler.ca
-  + [SukkaW Speedtest Servers International] bfe7445158e5  DOMAIN,st04.mtnsat.net
-  + [SukkaW Speedtest Servers International] c11b51d67b4a  DOMAIN,stbarrie.netcrawler.ca
-  + [SukkaW Speedtest Servers International] c7730d38d8d7  DOMAIN,speedtest001.bfinetworks.com
-  + [SukkaW Speedtest Servers International] e40a990fb123  DOMAIN,kc.speedtest.rustbanned.net
-  + [SukkaW Speedtest Servers International] e41fcdf67e6f  DOMAIN,speedtest.bemol.com.br
-  + [SukkaW Speedtest Servers International] f1d4ed4013f8  DOMAIN,bpwoippy.vialis.net
-  + [SukkaW Speedtest Servers International] f2367bf1b8eb  DOMAIN,stvaughan.rogers.com
-  + [SukkaW Speedtest Servers International] f4122684bf9e  DOMAIN,speedtest-ams.retn.net
-  + [SukkaW Speedtest Servers International] ffd9e1eeef68  DOMAIN,speedtest1.tmg.net.id
+  + [SukkaW Speedtest Servers International] 010770237191  DOMAIN,stscarborough.rogers.com
+  + [SukkaW Speedtest Servers International] 01d06b461e5c  DOMAIN,speedtest.readingsd.org
+  + [SukkaW Speedtest Servers International] 0811cb3546c0  DOMAIN,stwellandpelhamwireless.rogers.com
+  + [SukkaW Speedtest Servers International] 09ea1f14ec9f  DOMAIN,ooklatins.redeconexaonet.com
+  + [SukkaW Speedtest Servers International] 0d9b9f55b7a6  DOMAIN,lifitelecom.brsserver.com.br
+  + [SukkaW Speedtest Servers International] 0df919f8f00e  DOMAIN,speedtest.nrflvaaa.metronetinc.com
+  + [SukkaW Speedtest Servers International] 0ef16a17f7b4  DOMAIN,stbowmanville.rogers.com
+  + [SukkaW Speedtest Servers International] 0f56643c702c  DOMAIN,stosat-crls-01.sys.comcast.net
+  + [SukkaW Speedtest Servers International] 1179f68f6982  DOMAIN,va-speed.magna5.com
+  + [SukkaW Speedtest Servers International] 1239ddbeead0  DOMAIN,speed13.gonetspeed.com
+  + [SukkaW Speedtest Servers International] 129fa7cf52e5  DOMAIN,speedtest-newjersey.ripplefiber.com
+  + [SukkaW Speedtest Servers International] 16744b51f48f  DOMAIN,speedtest-ash.vts.bf
+  + [SukkaW Speedtest Servers International] 181f2fd1cbb5  DOMAIN,speedtest.iad.fdcservers.net
+  + [SukkaW Speedtest Servers International] 19d98c644b57  DOMAIN,speedtest-iad.sectrify.com
+  + [SukkaW Speedtest Servers International] 1b53005476d3  DOMAIN,speedtest.nrbn.ca
+  + [SukkaW Speedtest Servers International] 1dd706232871  DOMAIN,speed10.aitspl.in
+  + [SukkaW Speedtest Servers International] 1e3705ee2fe6  DOMAIN,speedtest.oceansls.com
+  + [SukkaW Speedtest Servers International] 23d5bd5a13bc  DOMAIN,speedtest.gretna.myriverstreet.net
+  + [SukkaW Speedtest Servers International] 2c84bbbee93c  DOMAIN,ooklaserver.asbn.va.ogital.net
+  + [SukkaW Speedtest Servers International] 30df7f1427c6  DOMAIN,speedtest.ette.biz
+  + [SukkaW Speedtest Servers International] 32c503790c60  DOMAIN,speedtest3.ptd.net
+  + [SukkaW Speedtest Servers International] 32e092b9546f  DOMAIN,ookla-london3.tropicalhosting.net
+  + [SukkaW Speedtest Servers International] 33041c0f7fd7  DOMAIN,stbowmanville.netcrawler.ca
+  + [SukkaW Speedtest Servers International] 33e4b49c77f9  DOMAIN,ookla.la.ca.sharktech.net
+  + [SukkaW Speedtest Servers International] 3459aa77ed16  DOMAIN,speedtest.macapatelecom.net.br
+  + [SukkaW Speedtest Servers International] 369df213d503  DOMAIN,nycmetro-speedtest.reliablesite.net
+  + [SukkaW Speedtest Servers International] 3a3a932c44e1  DOMAIN,speed.airwavesinternet.com
+  + [SukkaW Speedtest Servers International] 3a8aec9cda98  DOMAIN,speedtest-zl-1.zoominternet.net
+  + [SukkaW Speedtest Servers International] 3d35921f1642  DOMAIN,clg-105-sptest.ncri.com
+  + [SukkaW Speedtest Servers International] 3e7bf0bd143d  DOMAIN,speedtest1.ewr.nj.us.planet.net
+  + [SukkaW Speedtest Servers International] 400b94581e4f  DOMAIN,test.eolo.it
+  + [SukkaW Speedtest Servers International] 414c35bf776f  DOMAIN,speedtest.us.novoserve.com
+  + [SukkaW Speedtest Servers International] 42db00569c58  DOMAIN,speedtest.getwireless.net
+  + [SukkaW Speedtest Servers International] 43c9e647d2a9  DOMAIN,speedtest-adelaide.optusnet.com.au
+  + [SukkaW Speedtest Servers International] 44e1fd099c78  DOMAIN,speedtest.sc1.loopinternet.com
+  + [SukkaW Speedtest Servers International] 4502550a3a9c  DOMAIN,wpa-speed.magna5.com
+  + [SukkaW Speedtest Servers International] 4571f1abe520  DOMAIN,speedtestmacapa.webflash.net.br
+  + [SukkaW Speedtest Servers International] 473f9b45897a  DOMAIN,speedtest.winchesterwireless.com
+  + [SukkaW Speedtest Servers International] 49f2fe815df7  DOMAIN,speed.markham.telmax.ca
+  + [SukkaW Speedtest Servers International] 49ffc4a2950e  DOMAIN,stoshawa.netcrawler.ca
+  + [SukkaW Speedtest Servers International] 4cdddfe9358b  DOMAIN,sp1.jdmbroadband.com
+  + [SukkaW Speedtest Servers International] 4d3968c87aec  DOMAIN,stintl.ospot.in
+  + [SukkaW Speedtest Servers International] 4f8818240273  DOMAIN,stosat-plfi-08p.sys.comcast.net
+  + [SukkaW Speedtest Servers International] 5193c8145d68  DOMAIN,crls-speedtest-02.brightspeed.com
+  + [SukkaW Speedtest Servers International] 52a89dbdad82  DOMAIN,speedtest.us-ny2.kamatera.com
+  + [SukkaW Speedtest Servers International] 52ea711702a9  DOMAIN,speedtestnorthpointe.arkdnacloud.com
+  + [SukkaW Speedtest Servers International] 5559912850cd  DOMAIN,speedtest.belmontcountygig.com
+  + [SukkaW Speedtest Servers International] 55c0cb8dcbb9  DOMAIN,speedtest2.pa.mycci.net
+  + [SukkaW Speedtest Servers International] 57cfe7333ea8  DOMAIN,fast.blackbearfiber.com
+  + [SukkaW Speedtest Servers International] 5893bd721aca  DOMAIN,stnorthyork.netcrawler.ca
+  + [SukkaW Speedtest Servers International] 589d7eeccf53  DOMAIN,ookla.mtt.as6453.net
+  + [SukkaW Speedtest Servers International] 5ab2e37aaffc  DOMAIN,speedtest31.suddenlink.net
+  + [SukkaW Speedtest Servers International] 60ac93c18792  DOMAIN,stscarborough.netcrawler.ca
+  + [SukkaW Speedtest Servers International] 615ab422b360  DOMAIN,btlr-speedtest-02.brightspeed.com
+  + [SukkaW Speedtest Servers International] 6240dc262b53  DOMAIN,speedtest1.whsdk12.net
+  + [SukkaW Speedtest Servers International] 625966c841d3  DOMAIN,speedtest1.ric1.va.hostedbackbone.net
+  + [SukkaW Speedtest Servers International] 6722a4f62ff8  DOMAIN,stbowmanvillewireless.rogers.com
+  + [SukkaW Speedtest Servers International] 67382fe7fa61  DOMAIN,stoshawa.rogers.com
+  + [SukkaW Speedtest Servers International] 68c6eb173f83  DOMAIN,asbn-speedtest.northstate.net
+  + [SukkaW Speedtest Servers International] 698bcfb1bb21  DOMAIN,speedtest-preston-wv.prodigiwv.net
+  + [SukkaW Speedtest Servers International] 6aafcc1f0064  DOMAIN,speedtest.americatelecom.net.br
+  + [SukkaW Speedtest Servers International] 6b8f1c9f7c44  DOMAIN,stajax.rogers.com
+  + [SukkaW Speedtest Servers International] 6ef5f28df61c  DOMAIN,ookla.aeq.as6453.net
+  + [SukkaW Speedtest Servers International] 74a6d6e46908  DOMAIN,speedtest.wb1.loopinternet.com
+  + [SukkaW Speedtest Servers International] 75bd11ea02e4  DOMAIN,speed-fra.laudat.org
+  + [SukkaW Speedtest Servers International] 7625db817368  DOMAIN,speedtest1.iad1-us.gozfly.net
+  + [SukkaW Speedtest Servers International] 77cb389996a6  DOMAIN,speedtest-bethlehem.greenlightnetworks.com
+  + [SukkaW Speedtest Servers International] 77e56dc99c59  DOMAIN,cltn-speedtest-02.brightspeed.com
+  + [SukkaW Speedtest Servers International] 7c4e62477d2e  DOMAIN,speedtest.zoominternet.net
+  + [SukkaW Speedtest Servers International] 7de305557319  DOMAIN,altoonaspeedtest.crowsnestbb.net
+  + [SukkaW Speedtest Servers International] 8141004af16b  DOMAIN,speedtest02.srv.prnynj.alticeusa.net
+  + [SukkaW Speedtest Servers International] 81b8486c1e76  DOMAIN,qoeookla-rmnd-01.sys.comcast.net
+  + [SukkaW Speedtest Servers International] 83e830bbc65c  DOMAIN,speedtest4.point-broadband.com
+  + [SukkaW Speedtest Servers International] 8487be6e6d95  DOMAIN,speedtest.mifflincountywireless.com
+  + [SukkaW Speedtest Servers International] 85b7f8f6df4c  DOMAIN,spd79.claro.com.br
+  + [SukkaW Speedtest Servers International] 8632dbc95ac0  DOMAIN,stnorthyorkwireless.rogers.com
+  + [SukkaW Speedtest Servers International] 894527aa356c  DOMAIN,lsdspeed01.lsdops.net
+  + [SukkaW Speedtest Servers International] 8fb9855a4808  DOMAIN,reikonteste.reikoninternet.com.br
+  + [SukkaW Speedtest Servers International] 8fd05fb4ff7e  DOMAIN,speedtest19.suddenlink.net
+  + [SukkaW Speedtest Servers International] 90617691e3af  DOMAIN,stwhitby.netcrawler.ca
+  + [SukkaW Speedtest Servers International] 910cf0769104  DOMAIN,speedtest-nwrk-nj.wtsky.net
+  + [SukkaW Speedtest Servers International] 9138c74c88d2  DOMAIN,vaspeedtest.rackdog.com
+  + [SukkaW Speedtest Servers International] 91dd7903cffa  DOMAIN,speedtest.conectaamazonia.com.br
+  + [SukkaW Speedtest Servers International] 9660747a5a08  DOMAIN,speed01.gonetspeed.com
+  + [SukkaW Speedtest Servers International] 96e24c3aaac2  DOMAIN,stoshawawireless.rogers.com
+  + [SukkaW Speedtest Servers International] 995889b17f13  DOMAIN,lsdspeed02.lsdops.net
+  + [SukkaW Speedtest Servers International] 9b36e6ace41e  DOMAIN,phlph0001speedtestserver02.wiline.com
+  + [SukkaW Speedtest Servers International] 9c36ab36b132  DOMAIN,phl01.screenshot.download
+  + [SukkaW Speedtest Servers International] 9ee8a1734e62  DOMAIN,speedtest2.sistelfibra.es
+  + [SukkaW Speedtest Servers International] 9f094a91d810  DOMAIN,ookla.micrologicwv.com
+  + [SukkaW Speedtest Servers International] 9f6b30de3d0b  DOMAIN,speedtest-server-ash.starry.com
+  + [SukkaW Speedtest Servers International] a933b6c67760  DOMAIN,speedtest.wsp.net.br
+  + [SukkaW Speedtest Servers International] aeef367331bf  DOMAIN,speedtest.speednetmacapa.com.br
+  + [SukkaW Speedtest Servers International] b01a9f97e3be  DOMAIN,sttorontowireless.rogers.com
+  + [SukkaW Speedtest Servers International] b06e6a3b7c0f  DOMAIN,speedtest.philasd.org
+  + [SukkaW Speedtest Servers International] b0cc745d6216  DOMAIN,stosat-balt-01.sys.comcast.net
+  + [SukkaW Speedtest Servers International] b28cbd1348be  DOMAIN,velocimetro.wspeednet.com.br
+  + [SukkaW Speedtest Servers International] b39848e99989  DOMAIN,speedtest01.mel1.spintel.net.au
+  + [SukkaW Speedtest Servers International] b4f4faf0a782  DOMAIN,speedtest.fiberlync.net
+  + [SukkaW Speedtest Servers International] b577445ffd28  DOMAIN,ookla-mgw.wvnet.edu
+  ... and 46 more
 ```
 
-**Removed: 24** (showing first 24)
+**Removed: 172** (showing first 100)
 ```
-  - [SukkaW Speedtest Servers International] 0d9b9f55b7a6  DOMAIN,lifitelecom.brsserver.com.br
-  - [SukkaW Speedtest Servers International] 1b2d33f3bf55  DOMAIN,speedtest4.ekowebtech.net
-  - [SukkaW Speedtest Servers International] 33e4b49c77f9  DOMAIN,ookla.la.ca.sharktech.net
-  - [SukkaW Speedtest Servers International] 3a3a932c44e1  DOMAIN,speed.airwavesinternet.com
-  - [SukkaW Speedtest Servers International] 400b94581e4f  DOMAIN,test.eolo.it
-  - [SukkaW Speedtest Servers International] 435df8f008e0  DOMAIN,speedtest.respawnhost.com
-  - [SukkaW Speedtest Servers International] 43c9e647d2a9  DOMAIN,speedtest-adelaide.optusnet.com.au
-  - [SukkaW Speedtest Servers International] 499c1e741ef8  DOMAIN,asanet1.brsserver.com.br
-  - [SukkaW Speedtest Servers International] 4cdddfe9358b  DOMAIN,sp1.jdmbroadband.com
-  - [SukkaW Speedtest Servers International] 4d8a0b572a38  DOMAIN,speed.isrcomunicaciones.es
-  - [SukkaW Speedtest Servers International] 589d7eeccf53  DOMAIN,ookla.mtt.as6453.net
-  - [SukkaW Speedtest Servers International] 645c547cce51  DOMAIN,speedtest.onetouchexpress.com
-  - [SukkaW Speedtest Servers International] 678f7dfca317  DOMAIN,speedtest-par.flowhardware.ch
-  - [SukkaW Speedtest Servers International] 8a039e9d08ba  DOMAIN,speedtest.interligpro.com.br
-  - [SukkaW Speedtest Servers International] 9549a51bac8f  DOMAIN,ookla.mln.as6453.net
-  - [SukkaW Speedtest Servers International] a74e0e560bca  DOMAIN,speedt-mi.skycdn.it
-  - [SukkaW Speedtest Servers International] a8249c53ba8a  DOMAIN,speedtest.thn.uk.syntura.io
-  - [SukkaW Speedtest Servers International] b28cbd1348be  DOMAIN,velocimetro.wspeednet.com.br
-  - [SukkaW Speedtest Servers International] b8439ac0d8f2  DOMAIN,speedtest.chi.sharktech.net
-  - [SukkaW Speedtest Servers International] c3109cd31fc9  DOMAIN,srv02-sjdm.imj-wanklik.com
-  - [SukkaW Speedtest Servers International] cce8869a397d  DOMAIN,speedtest3a.socket.net
-  - [SukkaW Speedtest Servers International] d0647073e22a  DOMAIN,airspeed.airwavesinternet.com
-  - [SukkaW Speedtest Servers International] f72f656d309d  DOMAIN,speedtest.apexbroadband.in
-  - [SukkaW Speedtest Servers International] fc64f25abeb6  DOMAIN,speedtest.absolutevalidation.com
+  - [SukkaW Speedtest Servers International] 012b7f31586b  DOMAIN,ststratford.rogers.com
+  - [SukkaW Speedtest Servers International] 02b7b422882f  DOMAIN,speedtest.sentco.net
+  - [SukkaW Speedtest Servers International] 04df25e28545  DOMAIN,speedtest.premieronline.net
+  - [SukkaW Speedtest Servers International] 078081ad0b3d  DOMAIN,speedtest.rfnow.net
+  - [SukkaW Speedtest Servers International] 0a21ac426b0c  DOMAIN,speedtest.octaplus.uk
+  - [SukkaW Speedtest Servers International] 0ab0cf8a6ab9  DOMAIN,speedtest.novateldigital.com
+  - [SukkaW Speedtest Servers International] 0bd6b487bcf7  DOMAIN,speedtest.inovewifi.com.br
+  - [SukkaW Speedtest Servers International] 0cc435ecaed2  DOMAIN,teste.freedomnetwork.net.br
+  - [SukkaW Speedtest Servers International] 0f9fc6befe00  DOMAIN,speed.idnet.net.br
+  - [SukkaW Speedtest Servers International] 1204ab7c7137  DOMAIN,40gspeedtest.mnsi.net
+  - [SukkaW Speedtest Servers International] 12ca2bed9dbb  DOMAIN,speedtest.atccomm.net
+  - [SukkaW Speedtest Servers International] 1303e426ad0f  DOMAIN,speed-pd.dispaisy.systems
+  - [SukkaW Speedtest Servers International] 13dc2485ab95  DOMAIN,speedtest.heartofiowa.coop
+  - [SukkaW Speedtest Servers International] 14696c5e4444  DOMAIN,speedtest.cmltelephone.com
+  - [SukkaW Speedtest Servers International] 14c7e265c3d8  DOMAIN,speedtest.ibertic.es
+  - [SukkaW Speedtest Servers International] 189c17014e83  DOMAIN,speedtest.amesiaaa.metronetinc.com
+  - [SukkaW Speedtest Servers International] 1cfb48abbf36  DOMAIN,speedtest.grm.net
+  - [SukkaW Speedtest Servers International] 1debbecee8c5  DOMAIN,speedtest.cstech.com
+  - [SukkaW Speedtest Servers International] 1df38b0ae240  DOMAIN,speedtest1.valleyfiber.ca
+  - [SukkaW Speedtest Servers International] 1e9ede2ea46b  DOMAIN,speedtest.westianet.com
+  - [SukkaW Speedtest Servers International] 22d288599e8f  DOMAIN,speedtest01.bne1.spintel.net.au
+  - [SukkaW Speedtest Servers International] 2785a4313085  DOMAIN,teste.suprainternet.com.br
+  - [SukkaW Speedtest Servers International] 281c33e17703  DOMAIN,speedtest.ecmnet.com.br
+  - [SukkaW Speedtest Servers International] 29a310f8327b  DOMAIN,speedtest.brooketel.coop
+  - [SukkaW Speedtest Servers International] 2ab9b0da9911  DOMAIN,lcrs-speedtest-02.brightspeed.com
+  - [SukkaW Speedtest Servers International] 2c1a5f959732  DOMAIN,speedtest-pd.wifiweb.it
+  - [SukkaW Speedtest Servers International] 304d2683e43f  DOMAIN,speedtest.skywaveconnect.com
+  - [SukkaW Speedtest Servers International] 32b355be6336  DOMAIN,speedtest.bluevalley.net
+  - [SukkaW Speedtest Servers International] 3307fbfaba51  DOMAIN,st3.surajnetwork.com
+  - [SukkaW Speedtest Servers International] 34d320d8b02f  DOMAIN,speedtest.mdtc.net
+  - [SukkaW Speedtest Servers International] 358795b67fd5  DOMAIN,speedtest.mornington.ca
+  - [SukkaW Speedtest Servers International] 37dae1757a6d  DOMAIN,stsaultstemariewireless.rogers.com
+  - [SukkaW Speedtest Servers International] 394dff5a7003  DOMAIN,stwindsorwireless.rogers.com
+  - [SukkaW Speedtest Servers International] 3a92209ad6ba  DOMAIN,speedtest-01.omnitel.biz
+  - [SukkaW Speedtest Servers International] 3a97abf4595c  DOMAIN,speedtest1.oma.nxlink.com
+  - [SukkaW Speedtest Servers International] 3b0dc040ff61  DOMAIN,speed.nutelecom.com
+  - [SukkaW Speedtest Servers International] 3ea882635f75  DOMAIN,speed.sdmnet.com.br
+  - [SukkaW Speedtest Servers International] 3ee34e80fced  DOMAIN,speedtest.dvnpiaaa.metronetinc.com
+  - [SukkaW Speedtest Servers International] 3f2a1255658c  DOMAIN,blfd-speed-01.gpcom.com
+  - [SukkaW Speedtest Servers International] 3f7075e220a1  DOMAIN,ksczks-speedtest-ookla-01.st.charter.com
+  - [SukkaW Speedtest Servers International] 3f8306542a0b  DOMAIN,stsudburywireless.rogers.com
+  - [SukkaW Speedtest Servers International] 41bc4d2333e5  DOMAIN,speedtest.cvalley.net
+  - [SukkaW Speedtest Servers International] 41d750ea2dcd  DOMAIN,speedtest.jvswifi.com.br
+  - [SukkaW Speedtest Servers International] 45ed5f3bd479  DOMAIN,speedtest.tcaexpress.net
+  - [SukkaW Speedtest Servers International] 48e2d32a2895  DOMAIN,speedtest.cascadecomm.com
+  - [SukkaW Speedtest Servers International] 4bbf2a0a0fa3  DOMAIN,speedtest.mysmbs.com
+  - [SukkaW Speedtest Servers International] 4bc2ef4606ca  DOMAIN,st-oma-1.binary.net
+  - [SukkaW Speedtest Servers International] 4c8fd6b2f3f6  DOMAIN,ookla-ks.mercuryfiber.com
+  - [SukkaW Speedtest Servers International] 4d517e99e743  DOMAIN,mns.i-systems.com
+  - [SukkaW Speedtest Servers International] 4db3cbb342cd  DOMAIN,speedtest-lenexa.resoundnetworks.com
+  - [SukkaW Speedtest Servers International] 4de50e12bd16  DOMAIN,speedtest.hay.net
+  - [SukkaW Speedtest Servers International] 507325cf0478  DOMAIN,speedtest.merlin.mb.ca
+  - [SukkaW Speedtest Servers International] 51219317246c  DOMAIN,speedtest.gmtel.net
+  - [SukkaW Speedtest Servers International] 5180d71261b9  DOMAIN,speedtest.pimcommcorp.com
+  - [SukkaW Speedtest Servers International] 52138baf5666  DOMAIN,speedtest-mum.froze.in
+  - [SukkaW Speedtest Servers International] 52d0a6f0b307  DOMAIN,speedtest.45networks.ca
+  - [SukkaW Speedtest Servers International] 565ea387b1e5  DOMAIN,speedtest.cfu.net
+  - [SukkaW Speedtest Servers International] 56e9dda42623  DOMAIN,speedteste.netfast.com.br
+  - [SukkaW Speedtest Servers International] 58e6d169adef  DOMAIN,speedtest.esu5.org
+  - [SukkaW Speedtest Servers International] 59f0ec25e179  DOMAIN,blar-speed-01.gpcom.com
+  - [SukkaW Speedtest Servers International] 5b6c9723716c  DOMAIN,speedtest.syd.netsg.net.au
+  - [SukkaW Speedtest Servers International] 5c69bf15997f  DOMAIN,sp1.speedy.bb-swrag.de
+  - [SukkaW Speedtest Servers International] 5c6e09ea3600  DOMAIN,speedtest.stradacomm.com
+  - [SukkaW Speedtest Servers International] 5dc175d6c501  DOMAIN,teste.tstelecomltda.com.br
+  - [SukkaW Speedtest Servers International] 5f3fcd920887  DOMAIN,speedtest.ncn.net
+  - [SukkaW Speedtest Servers International] 5ffb4d6de1c7  DOMAIN,stvaughan.netcrawler.ca
+  - [SukkaW Speedtest Servers International] 605cfb35f522  DOMAIN,speedtest.mci.as1003.net
+  - [SukkaW Speedtest Servers International] 616c6bffe17f  DOMAIN,stkingcity.rogers.com
+  - [SukkaW Speedtest Servers International] 6b8a034fa920  DOMAIN,speedtest.wifi4all.it
+  - [SukkaW Speedtest Servers International] 6bd15d569f45  DOMAIN,velocidade.csrnetwork.com.br
+  - [SukkaW Speedtest Servers International] 6db06cea3422  DOMAIN,speedtest.internetarribes.es
+  - [SukkaW Speedtest Servers International] 6ff5941eb406  DOMAIN,exc-speedtest.unitedfiber.com
+  - [SukkaW Speedtest Servers International] 72bb8c1b570f  DOMAIN,speedtest5.windtre.it
+  - [SukkaW Speedtest Servers International] 73112e9dc2cb  DOMAIN,speedtest01.adl1.spintel.net.au
+  - [SukkaW Speedtest Servers International] 761a11540f93  DOMAIN,siouxcity1.cabospeed.com
+  - [SukkaW Speedtest Servers International] 7666539d8d51  DOMAIN,speedtest2.valleyfiber.ca
+  - [SukkaW Speedtest Servers International] 76c205f9d894  DOMAIN,speedtest.linknetbv.com
+  - [SukkaW Speedtest Servers International] 7935cf977efe  DOMAIN,speedtest.wwfn.ca
+  - [SukkaW Speedtest Servers International] 7a4042ca0d6f  DOMAIN,stbarriewireless.rogers.com
+  - [SukkaW Speedtest Servers International] 7a55e968bb85  DOMAIN,speedtest.unitedfiber.com
+  - [SukkaW Speedtest Servers International] 7ad78e8435d7  DOMAIN,speed.ddbroadband.co.in
+  - [SukkaW Speedtest Servers International] 7b2b5f1619fb  DOMAIN,karnal.sitibroadband.co.in
+  - [SukkaW Speedtest Servers International] 7bdc14806a7c  DOMAIN,speedtest.wccta.com
+  - [SukkaW Speedtest Servers International] 7ccc323c4514  DOMAIN,iperf-ams-nl.eranium.net
+  - [SukkaW Speedtest Servers International] 7ea92d713139  DOMAIN,speedtest.rochmnaa.metronetinc.com
+  - [SukkaW Speedtest Servers International] 809ed12ed910  DOMAIN,speedtest.nemr.net
+  - [SukkaW Speedtest Servers International] 84b8446a854b  DOMAIN,speedtest10g.ics-llc.net
+  - [SukkaW Speedtest Servers International] 86b839ab050c  DOMAIN,velocidade.4wnet.com.br
+  - [SukkaW Speedtest Servers International] 86f4178b9153  DOMAIN,speedtest.fibercomm.net
+  - [SukkaW Speedtest Servers International] 87a9233f0df1  DOMAIN,383-2speedtest.wightman.ca
+  - [SukkaW Speedtest Servers International] 8c67eca44a61  DOMAIN,velocidade.tecsattelecom.com.br
+  - [SukkaW Speedtest Servers International] 8c9d7c03fa30  DOMAIN,speedtest27.suddenlink.net
+  - [SukkaW Speedtest Servers International] 8cfc393702b7  DOMAIN,speedtest.kc2.everfastfiber.com
+  - [SukkaW Speedtest Servers International] 905125f73ee5  DOMAIN,speedtest.mvec.com
+  - [SukkaW Speedtest Servers International] 9052a64cc3fd  DOMAIN,speedtest25.wiatel.com
+  - [SukkaW Speedtest Servers International] 9073adefc65d  DOMAIN,speedtest.neitel.net
+  - [SukkaW Speedtest Servers International] 934ad5aa9642  DOMAIN,speedtest10g.bhm.as13760.net
+  - [SukkaW Speedtest Servers International] 93617c692bd8  DOMAIN,ookla.mci-1.serverforge.org
+  - [SukkaW Speedtest Servers International] 9868c3f8fedf  DOMAIN,speedtest.s3rdv.com
+  - [SukkaW Speedtest Servers International] 991108b39981  DOMAIN,speedtest.mtctech.net
+  ... and 72 more
 ```

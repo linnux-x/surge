@@ -1,48 +1,48 @@
 # Surge 规则生成收据
 
 - 规则文件：35
-- 规则总数：156637
+- 规则总数：156678
 - manifest 文件：35
 
 ## 差异摘要
 
-- 新增：259
-- 删除：115
-- 来源迁移：7
+- 新增：293
+- 删除：252
+- 来源迁移：0
 
 ## 规则类型
 
 - AND: 454
-- DOMAIN: 3854
+- DOMAIN: 3823
 - DOMAIN-KEYWORD: 1
-- DOMAIN-SUFFIX: 141413
+- DOMAIN-SUFFIX: 141415
 - DOMAIN-WILDCARD: 15
 - IP-ASN: 6
-- IP-CIDR: 7324
-- IP-CIDR6: 3540
+- IP-CIDR: 7345
+- IP-CIDR6: 3589
 - PROCESS-NAME: 27
 - URL-REGEX: 3
 
 ## 来源归属
 
 - ConnersHua AI: 4
-- Loyalsoldier China CIDR: 9665
+- Loyalsoldier China CIDR: 9735
 - Manual Rules: 718
 - OpenAI ChatGPT Voice: 444
 - Rabbit-Spec AIGC: 203
-- Rabbit-Spec China: 377
+- Rabbit-Spec China: 379
 - RocM301 Apple-AI: 6
 - SukkaW AI: 18
 - SukkaW Apple CDN: 152
 - SukkaW Apple CN: 5
 - SukkaW CDN: 5
 - SukkaW Domestic: 837
-- SukkaW Download: 1547
+- SukkaW Download: 1542
 - SukkaW Game Download: 52
 - SukkaW Microsoft CDN: 52
 - SukkaW Speedtest: 120
 - SukkaW Speedtest Servers China: 1
-- SukkaW Speedtest Servers International: 1611
+- SukkaW Speedtest Servers International: 1585
 - SukkaW Stream: 48
 - SukkaW Stream HK: 24
 - SukkaW Stream JP: 18
